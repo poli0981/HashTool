@@ -128,6 +128,8 @@ public partial class CreateHashViewModel : ObservableObject
             catch (Exception ex)
             {
                 // Xử lý lỗi (ví dụ file đang được mở bởi app khác)
+                await MessageBoxHelper.ShowAsync("Lỗi nén file", 
+                    $"Không thể tạo file nén:\n{ex.Message}");
             }
         }
     }
@@ -152,9 +154,32 @@ public partial class CreateHashViewModel : ObservableObject
             file.Status = $"Đang tính ({file.SelectedAlgorithm})..."; 
             try
             {
+                // Kiểm tra file tồn tại trước khi tính hash
+                if (!File.Exists(file.FilePath))
+                {
+                    file.Status = "Lỗi: File không tồn tại";
+                    failCount++;
+                    continue;
+                }
+
                 file.ResultHash = await _hashService.ComputeHashAsync(file.FilePath, file.SelectedAlgorithm, CancellationToken.None);
                 file.Status = "Hoàn tất";
                 successCount++;
+            }
+            catch (FileNotFoundException)
+            {
+                file.Status = "Lỗi: File không tìm thấy";
+                failCount++;
+            }
+            catch (UnauthorizedAccessException)
+            {
+                file.Status = "Lỗi: Không có quyền truy cập";
+                failCount++;
+            }
+            catch (IOException)
+            {
+                file.Status = "Lỗi: File đang được sử dụng";
+                failCount++;
             }
             catch (Exception ex)
             {
@@ -239,12 +264,36 @@ public partial class CreateHashViewModel : ObservableObject
         item.Status = $"Đang tính ({item.SelectedAlgorithm})...";
         try
         {
+            // Kiểm tra file tồn tại trước khi tính hash
+            if (!File.Exists(item.FilePath))
+            {
+                item.Status = "Lỗi: File không tồn tại";
+                await MessageBoxHelper.ShowAsync("Lỗi", $"File không tồn tại:\n{item.FilePath}");
+                return;
+            }
+
             item.ResultHash = await _hashService.ComputeHashAsync(item.FilePath, item.SelectedAlgorithm, CancellationToken.None);
             item.Status = "Hoàn tất";
         }
+        catch (FileNotFoundException ex)
+        {
+            item.Status = "Lỗi: File không tìm thấy";
+            await MessageBoxHelper.ShowAsync("Lỗi", $"Không tìm thấy file:\n{ex.Message}");
+        }
+        catch (UnauthorizedAccessException ex)
+        {
+            item.Status = "Lỗi: Không có quyền truy cập";
+            await MessageBoxHelper.ShowAsync("Lỗi", $"Không có quyền truy cập file:\n{ex.Message}");
+        }
+        catch (IOException ex)
+        {
+            item.Status = "Lỗi: File đang được sử dụng";
+            await MessageBoxHelper.ShowAsync("Lỗi", $"Không thể đọc file (có thể đang được sử dụng):\n{ex.Message}");
+        }
         catch (Exception ex)
         {
-            item.Status = "Lỗi";
+            item.Status = "Lỗi: " + ex.Message;
+            await MessageBoxHelper.ShowAsync("Lỗi", $"Lỗi không xác định:\n{ex.Message}");
         }
         finally
         {

@@ -23,9 +23,9 @@ public static class MessageBoxHelper
         };
 
         // Lấy theme background hiện tại (nếu có) để không bị trắng toát trong dark mode
-        if (Application.Current.TryFindResource("PaneBackgroundBrush", null, out var bg))
+        if (Application.Current?.TryFindResource("PaneBackgroundBrush", null, out var bg) == true && bg is IBrush brush)
         {
-            window.Background = (IBrush)bg;
+            window.Background = brush;
         }
 
         var textBlock = new TextBlock
