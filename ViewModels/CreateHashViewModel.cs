@@ -15,11 +15,15 @@ using System.Diagnostics;
 
 namespace CheckHash.ViewModels;
 
-public partial class CreateHashViewModel : ObservableObject
+public partial class CreateHashViewModel : ObservableObject, IDisposable
 {
     public LocalizationService Localization => LocalizationService.Instance;
     private LocalizationService L => LocalizationService.Instance;
     private readonly HashService _hashService = new();
+    private ConfigurationService ConfigService => ConfigurationService.Instance;
+    private PreferencesService Prefs => PreferencesService.Instance;
+    private LoggerService Logger => LoggerService.Instance;
+
     public string TotalFilesText => string.Format(L["Lbl_TotalFiles"], Files.Count);
 
     public ObservableCollection<FileItem> Files { get; } = new();
@@ -28,36 +32,74 @@ public partial class CreateHashViewModel : ObservableObject
 
     private bool CanComputeAll => Files.Count > 0;
 
+    public CreateHashViewModel()
+    {
+        Prefs.ForceCancelRequested += OnForceCancelRequested;
+    }
+
+    public void Dispose()
+    {
+        Prefs.ForceCancelRequested -= OnForceCancelRequested;
+        foreach (var file in Files)
+        {
+            file.Cts?.Dispose();
+        }
+    }
+
+    private void OnForceCancelRequested(object? sender, EventArgs e)
+    {
+        Logger.Log("Force Cancel requested by user.", LogLevel.Warning);
+        foreach (var file in Files)
+        {
+            file.Cts?.Cancel();
+        }
+    }
+
     [RelayCommand]
     private async Task AddFiles(Avalonia.Controls.Window window)
     {
+        Logger.Log("Opening file picker for Create Hash...");
         var files = await window.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
         { 
             AllowMultiple = true,
             Title = L["Dialog_SelectFiles"]
         });
 
+        var config = ConfigService.Load();
+        long limitBytes = 0;
+        if (config.IsFileSizeLimitEnabled)
+        {
+            limitBytes = Prefs.GetMaxSizeBytes();
+        }
+
         foreach (var file in files)
         {
             if (!Files.Any(f => f.FilePath == file.Path.LocalPath))
             {
-                // Lấy thông tin file size
                 var info = new FileInfo(file.Path.LocalPath);
+
+                if (config.IsFileSizeLimitEnabled && info.Length > limitBytes)
+                {
+                    var msg = $"File {file.Name} exceeds the size limit of {config.FileSizeLimitValue} {config.FileSizeLimitUnit}.";
+                    Logger.Log(msg, LogLevel.Warning);
+                    await MessageBoxHelper.ShowAsync(L["Msg_Error"], msg);
+                    continue;
+                }
 
                 Files.Add(new FileItem
                 {
                     FileName = file.Name,
                     FilePath = file.Path.LocalPath,
-                    FileSize = FileItem.FormatSize(info.Length), // <--- Hiển thị size
+                    FileSize = FileItem.FormatSize(info.Length),
                     SelectedAlgorithm = HashType.SHA256
                 });
+                Logger.Log($"Added file: {file.Name}");
             }
         }
 
         OnPropertyChanged(nameof(TotalFilesText));
         ComputeAllCommand.NotifyCanExecuteChanged();
     }
-
 
     [RelayCommand]
     private async Task CompressFiles(Avalonia.Controls.Window window)
@@ -84,6 +126,7 @@ public partial class CreateHashViewModel : ObservableObject
             try
             {
                 var zipPath = fileSave.Path.LocalPath;
+                Logger.Log($"Compressing files to: {zipPath}");
 
                 await Task.Run(() =>
                 {
@@ -92,31 +135,25 @@ public partial class CreateHashViewModel : ObservableObject
                     using var archive = ZipFile.Open(zipPath, ZipArchiveMode.Create);
                     foreach (var item in Files)
                     {
-                        // Chỉ nén file hash nếu đã tính toán xong
                         if (!string.IsNullOrEmpty(item.ResultHash))
                         {
                             var ext = item.SelectedAlgorithm.ToString().ToLower();
                             var hashFileName = $"{item.FileName}.{ext}";
                             
-                            // Tạo entry trong zip với nội dung là hash
                             var entry = archive.CreateEntry(hashFileName);
                             using var entryStream = entry.Open();
                             using var writer = new StreamWriter(entryStream);
                             writer.Write(item.ResultHash);
                         }
-                        else
-                        {
-                            // Nếu chưa tính hash, có thể tự động tính hoặc bỏ qua
-                            // Ở đây ta bỏ qua để tránh logic phức tạp trong luồng nén
-                        }
                     }
                 });
 
                 foreach (var f in Files) f.Status = L["Status_Compressed"];
+                Logger.Log("Compression successful.", LogLevel.Success);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                // Xử lý lỗi
+                Logger.Log($"Compression failed: {ex.Message}", LogLevel.Error);
             }
         }
     }
@@ -124,23 +161,26 @@ public partial class CreateHashViewModel : ObservableObject
     [RelayCommand]
     private void ClearList()
     {
+        foreach (var file in Files)
+        {
+            file.Cts?.Cancel();
+            file.Cts?.Dispose();
+        }
         Files.Clear();
         OnPropertyChanged(nameof(TotalFilesText));
-        ComputeAllCommand.NotifyCanExecuteChanged(); // List rỗng -> Disable nút
+        ComputeAllCommand.NotifyCanExecuteChanged();
+        Logger.Log("Cleared file list.");
     }
 
     [RelayCommand(CanExecute = nameof(CanComputeAll))]
     private async Task ComputeAll()
     {
+        Logger.Log("Starting batch computation...");
         int success = 0; int fail = 0; int cancelled = 0;
-
-        // QUAN TRỌNG: Dùng .ToList() để tạo bản sao danh sách.
-        // Vì nếu user bấm Xóa trong lúc vòng lặp đang chạy, Files.Remove sẽ gây lỗi crash vòng lặp.
         var queue = Files.ToList();
 
         foreach (var file in queue)
         {
-            // Kiểm tra lại xem file còn trong list chính không (có thể đã bị xóa thủ công)
             if (!Files.Contains(file)) continue;
 
             await ProcessItemAsync(file);
@@ -150,17 +190,17 @@ public partial class CreateHashViewModel : ObservableObject
             else fail++;
         }
         
-        Debug.WriteLine($"Cancelled: {cancelled}"); // Sử dụng biến để suppress warning
+        Logger.Log($"Batch finished. Success: {success}, Failed: {fail}, Cancelled: {cancelled}");
 
         await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], 
             string.Format(L["Msg_Result_Content"], success, fail));
     }
+
     [RelayCommand]
     private async Task SaveHashFile(FileItem item)
     {
         if (string.IsNullOrEmpty(item.ResultHash)) return;
 
-        // Lưu đuôi file theo thuật toán của item đó
         var ext = item.SelectedAlgorithm.ToString().ToLower();
 
         var window =
@@ -183,6 +223,7 @@ public partial class CreateHashViewModel : ObservableObject
             using var writer = new StreamWriter(stream);
             await writer.WriteAsync(item.ResultHash);
             item.Status = L["Status_Saved"];
+            Logger.Log($"Saved hash file for {item.FileName}", LogLevel.Success);
         }
     }
 
@@ -191,7 +232,6 @@ public partial class CreateHashViewModel : ObservableObject
     {
         if (string.IsNullOrEmpty(hash)) return;
 
-        // Lấy Clipboard từ ApplicationLifetime (Hỗ trợ cả Windows/Mac)
         if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime
             {
                 MainWindow: { } window
@@ -201,7 +241,7 @@ public partial class CreateHashViewModel : ObservableObject
             if (clipboard != null)
             {
                 await clipboard.SetTextAsync(hash);
-                // Có thể hiện thông báo nhỏ "Copied" nếu muốn (Optional)
+                Logger.Log("Hash copied to clipboard.");
             }
         }
     }
@@ -210,30 +250,37 @@ public partial class CreateHashViewModel : ObservableObject
     {
         item.IsProcessing = true;
         item.Status = string.Format(L["Status_Processing"], item.SelectedAlgorithm);
-        item.ProcessDuration = ""; // Reset thời gian
+        item.ProcessDuration = "";
         
-        // Tạo Token hủy mới
         item.Cts = new CancellationTokenSource();
-        var stopwatch = Stopwatch.StartNew(); // Bắt đầu bấm giờ
+        
+        if (Prefs.IsFileTimeoutEnabled)
+        {
+            item.Cts.CancelAfter(TimeSpan.FromSeconds(Prefs.FileTimeoutSeconds));
+        }
+
+        var stopwatch = Stopwatch.StartNew();
+        Logger.Log($"Computing hash for {item.FileName} ({item.SelectedAlgorithm})...");
 
         try
         {
-            // Truyền Token vào Service
             item.ResultHash = await _hashService.ComputeHashAsync(item.FilePath, item.SelectedAlgorithm, item.Cts.Token);
             item.Status = L["Status_Done"];
+            Logger.Log($"Computed {item.FileName}: {item.ResultHash}", LogLevel.Success);
         }
         catch (OperationCanceledException)
         {
             item.Status = L["Status_Cancelled"];
+            Logger.Log($"Cancelled computation for {item.FileName}", LogLevel.Warning);
         }
         catch (Exception ex)
         {
             item.Status = string.Format(L["Status_Error"], ex.Message);
+            Logger.Log($"Error computing {item.FileName}: {ex.Message}", LogLevel.Error);
         }
         finally
         {
             stopwatch.Stop();
-            // Format thời gian: nếu < 1s hiện ms, > 1s hiện giây
             item.ProcessDuration = stopwatch.Elapsed.TotalSeconds < 1 
                 ? $"{stopwatch.ElapsedMilliseconds}ms" 
                 : $"{stopwatch.Elapsed.TotalSeconds:F2}s";
@@ -243,7 +290,6 @@ public partial class CreateHashViewModel : ObservableObject
             item.Cts = null;
         }
     }
-    
     
     [RelayCommand]
     private async Task ComputeSingle(FileItem item)
@@ -256,18 +302,18 @@ public partial class CreateHashViewModel : ObservableObject
         await ProcessItemAsync(item);
     }
 
-    // 1. Tính năng mới: Xóa 1 file khỏi list
     [RelayCommand]
     private void RemoveFile(FileItem item)
     {
-        // Nếu đang chạy -> Hủy tác vụ
         item.Cts?.Cancel();
+        item.Cts?.Dispose(); // Fix memory leak
 
         if (Files.Contains(item))
         {
             Files.Remove(item);
             OnPropertyChanged(nameof(TotalFilesText));
             ComputeAllCommand.NotifyCanExecuteChanged();
+            Logger.Log($"Removed file: {item.FileName}");
         }
     }
 }

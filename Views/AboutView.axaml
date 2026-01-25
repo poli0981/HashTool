@@ -14,9 +14,8 @@
                     BorderBrush="{DynamicResource GlassBorderBrush}" BorderThickness="1">
                 <Grid ColumnDefinitions="Auto, *">
                     <!-- Logo -->
-                    <icons:MaterialIcon Kind="ShieldCheck" Width="80" Height="80" 
-                                        Foreground="{DynamicResource SystemAccentColor}"
-                                        VerticalAlignment="Top" Margin="0,0,25,0"/>
+                    <Image Source="/Assets/logo_in_app.png" Width="80" Height="80" 
+                           VerticalAlignment="Top" Margin="0,0,25,0"/>
                     
                     <StackPanel Grid.Column="1" Spacing="5">
                         <TextBlock Text="{Binding AppName}" FontSize="24" FontWeight="Bold"/>

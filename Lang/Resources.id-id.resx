@@ -1,0 +1,464 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="AppTitle">
+        <value>Hash Tool</value>
+    </data>
+    <data name="Menu_Create">
+        <value>Buat Hash</value>
+    </data>
+    <data name="Menu_Check">
+        <value>Verifikasi Hash</value>
+    </data>
+    <data name="Menu_Settings">
+        <value>Pengaturan</value>
+    </data>
+    <data name="Menu_Update">
+        <value>Periksa Pembaruan</value>
+    </data>
+    <data name="Menu_Theme">
+        <value>Tema</value>
+    </data>
+    <data name="Menu_About">
+        <value>Tentang</value>
+    </data>
+    <data name="Menu_Developer">
+        <value>Pengembang</value>
+    </data>
+    <data name="Btn_AddFiles">
+        <value>Tambah File...</value>
+    </data>
+    <data name="Btn_Clear">
+        <value>Hapus Daftar</value>
+    </data>
+    <data name="Btn_CalcAll">
+        <value>HITUNG SEMUA</value>
+    </data>
+    <data name="Btn_Compress">
+        <value>Kompres (.Zip)</value>
+    </data>
+    <data name="Btn_CheckAll">
+        <value>PERIKSA SEMUA</value>
+    </data>
+    <data name="Btn_CheckNow">
+        <value>Periksa Sekarang</value>
+    </data>
+    <data name="Btn_Install">
+        <value>Instal</value>
+    </data>
+    <data name="Btn_Accept">
+        <value>Terima</value>
+    </data>
+    <data name="Btn_Decline">
+        <value>Batal</value>
+    </data>
+    <data name="Title_CreateHash">
+        <value>Buat Hash &amp; Kompres</value>
+    </data>
+    <data name="Title_CheckHash">
+        <value>Verifikasi Massal</value>
+    </data>
+    <data name="Title_Update">
+        <value>Periksa Pembaruan</value>
+    </data>
+    <data name="Title_Disclaimer">
+        <value>Peringatan Versi Developer</value>
+    </data>
+    <data name="Title_About">
+        <value>Tentang</value>
+    </data>
+    <data name="Help_CreateHash">
+        <value>Tips: Shift+C untuk hitung semua, Shift+Z untuk kompres, Ctrl+F untuk tambah file.</value>
+    </data>
+    <data name="Help_CheckHash">
+        <value>Tips: Shift+A untuk periksa semua, Ctrl+F untuk tambah file, Ctrl+Shift+H untuk hapus daftar.</value>
+    </data>
+    <data name="Lbl_Status_Ready">
+        <value>Siap</value>
+    </data>
+    <data name="Lbl_Sample">
+        <value>Contoh:</value>
+    </data>
+    <data name="Lbl_CurrentVersion">
+        <value>Versi saat ini: {0}</value>
+    </data>
+    <data name="Lbl_Channel">
+        <value>Saluran rilis:</value>
+    </data>
+    <data name="Lbl_TotalFiles">
+        <value>Total file: {0}</value>
+    </data>
+    <data name="Channel_Stable">
+        <value>Stable (Stabil)</value>
+    </data>
+    <data name="Channel_Dev">
+        <value>Dev (Pengembang)</value>
+    </data>
+    <data name="Settings_Language">
+        <value>Bahasa</value>
+    </data>
+    <data name="Settings_Theme">
+        <value>Tema</value>
+    </data>
+    <data name="Settings_ThemeStyle">
+        <value>Gaya tema</value>
+    </data>
+    <data name="Settings_ThemeVariant">
+        <value>Terang/Gelap</value>
+    </data>
+    <data name="Settings_Font">
+        <value>Font</value>
+    </data>
+    <data name="Settings_FontSize">
+        <value>Ukuran font (pt)</value>
+    </data>
+    <data name="Settings_AutoFont">
+        <value>Pilih font optimal otomatis untuk bahasa</value>
+    </data>
+    <data name="Settings_LockFont">
+        <value>Gunakan sebagai font default (Kunci perubahan)</value>
+    </data>
+    <data name="Settings_Scale">
+        <value>Skala UI</value>
+    </data>
+    <data name="Settings_MaskHash">
+        <value>Masker Hash (Keamanan)</value>
+    </data>
+    <data name="Settings_Reset">
+        <value>Reset tema</value>
+    </data>
+    <data name="Settings_Other">
+        <value>Privasi &amp; Keamanan</value>
+    </data>
+    <data name="Settings_SetDefault">
+        <value>Jadikan default</value>
+    </data>
+    <data name="Settings_CustomColor">
+        <value>Warna teks kustom</value>
+    </data>
+    <data name="Settings_TextTest">
+        <value>Rubah cokelat cepat melompat di atas anjing malas.</value>
+    </data>
+    <data name="Settings_Advanced">
+        <value>Lanjutan</value>
+    </data>
+    <data name="Settings_AdminMode">
+        <value>Jalankan sebagai Administrator</value>
+    </data>
+    <data name="Settings_AdminDesc">
+        <value>Perlu restart. Izinkan akses ke file terlindungi.</value>
+    </data>
+    <data name="Settings_FileSizeLimit">
+        <value>Batas ukuran file input</value>
+    </data>
+    <data name="Settings_FileSizeDesc">
+        <value>Batas ukuran maksimal untuk file yang diproses.</value>
+    </data>
+    <data name="Settings_ForceQuitTimeout">
+        <value>Timeout paksa keluar</value>
+    </data>
+    <data name="Settings_ForceQuitDesc">
+        <value>Waktu (detik) sebelum menganggap app macet.</value>
+    </data>
+    <data name="Settings_FileTimeout">
+        <value>Timeout pemrosesan file</value>
+    </data>
+    <data name="Settings_FileTimeoutDesc">
+        <value>Paksa batalkan jika file terlalu lama.</value>
+    </data>
+    <data name="Settings_Emergency">
+        <value>Aksi darurat</value>
+    </data>
+    <data name="Settings_EmergencyDesc">
+        <value>Paksa keluar app dan batalkan semua tugas seketika.</value>
+    </data>
+    <data name="Settings_BtnForceQuit">
+        <value>Paksa Keluar &amp; Batalkan Semua</value>
+    </data>
+    <data name="Settings_Configuration">
+        <value>Konfigurasi</value>
+    </data>
+    <data name="Settings_LockSettings">
+        <value>Kunci pengaturan (Simpan sebagai default)</value>
+    </data>
+    <data name="Settings_LockDesc">
+        <value>Cegah perubahan tidak sengaja. Hanya masker hash tetap aktif.</value>
+    </data>
+    <data name="Settings_ResetAll">
+        <value>Reset semua pengaturan</value>
+    </data>
+    <data name="Settings_ResetDesc">
+        <value>Kembalikan ke default awal.</value>
+    </data>
+    <data name="Settings_ConfigPath">
+        <value>Path file konfigurasi</value>
+    </data>
+    <data name="Settings_ConfigDesc">
+        <value>Tampilkan path lengkap dan salin ke clipboard.</value>
+    </data>
+    <data name="Settings_ShowPath">
+        <value>Tampilkan path</value>
+    </data>
+    <data name="Settings_AutoSave">
+        <value>Pengaturan otomatis disimpan ke config.json</value>
+    </data>
+    <data name="Settings_DeveloperMode">
+        <value>Mode pengembang</value>
+    </data>
+    <data name="Settings_DeveloperDesc">
+        <value>Aktifkan log dan debug tingkat lanjut.</value>
+    </data>
+    <data name="Dev_Console">
+        <value>Konsol Pengembang</value>
+    </data>
+    <data name="Dev_Beta">
+        <value>BETA</value>
+    </data>
+    <data name="Dev_Recording">
+        <value>Sedang Merekam</value>
+    </data>
+    <data name="Dev_Paused">
+        <value>Dijeda</value>
+    </data>
+    <data name="Dev_SaveToFile">
+        <value>Simpan ke file</value>
+    </data>
+    <data name="Dev_NoSave">
+        <value>Tidak simpan</value>
+    </data>
+    <data name="Dev_Clear">
+        <value>Bersihkan Konsol</value>
+    </data>
+    <data name="Dev_Copy">
+        <value>Salin semua</value>
+    </data>
+    <data name="Dev_OpenFolder">
+        <value>Buka folder Log</value>
+    </data>
+    <data name="About_Author">
+        <value>Penulis</value>
+    </data>
+    <data name="About_Software">
+        <value>Perangkat Lunak</value>
+    </data>
+    <data name="About_ThirdParty">
+        <value>Pustaka pihak ketiga</value>
+    </data>
+    <data name="About_Copyright">
+        <value>Hak Cipta</value>
+    </data>
+    <data name="About_Desc">
+        <value>Alat kuat untuk membuat dan memverifikasi hash file.</value>
+    </data>
+    <data name="About_License">
+        <value>Dirilis di bawah lisensi MIT.</value>
+    </data>
+    <data name="About_Tech">
+        <value>Teknologi</value>
+    </data>
+    <data name="About_TechContent">
+        <value>Dibangun dengan C# dan .NET 10.0.102.</value>
+    </data>
+    <data name="About_AI">
+        <value>Bantuan AI</value>
+    </data>
+    <data name="About_AIContent">
+        <value>Perangkat lunak ini dikembangkan dengan bantuan AI (Gemini 3 Pro dan Grok 4.1).</value>
+    </data>
+    <data name="Status_Processing">
+        <value>Memproses ({0})...</value>
+    </data>
+    <data name="Status_Done">
+        <value>Selesai</value>
+    </data>
+    <data name="Status_Error">
+        <value>Kesalahan: {0}</value>
+    </data>
+    <data name="Status_Cancelled">
+        <value>Dibatalkan</value>
+    </data>
+    <data name="Status_Saved">
+        <value>Tersimpan!</value>
+    </data>
+    <data name="Status_Compressed">
+        <value>Terkompresi!</value>
+    </data>
+    <data name="Status_Waiting">
+        <value>Menunggu hash/input...</value>
+    </data>
+    <data name="Status_MissingOriginal">
+        <value>File asli hilang!</value>
+    </data>
+    <data name="Status_MissingHash">
+        <value>Hash hilang (Masukkan atau butuh file hash)</value>
+    </data>
+    <data name="Status_Valid">
+        <value>VALID</value>
+    </data>
+    <data name="Status_Invalid">
+        <value>TIDAK COCOK!</value>
+    </data>
+    <data name="Status_HashFileLoaded">
+        <value>File hash dimuat</value>
+    </data>
+    <data name="Status_HashFileMismatch">
+        <value>Nama file hash tidak cocok!</value>
+    </data>
+    <data name="Status_NoHashFound">
+        <value>File tidak mengandung hash!</value>
+    </data>
+    <data name="Status_Checking">
+        <value>Memeriksa pembaruan...</value>
+    </data>
+    <data name="Status_NewVersion">
+        <value>Versi baru terdeteksi!</value>
+    </data>
+    <data name="Status_Latest">
+        <value>Anda menggunakan versi terbaru.</value>
+    </data>
+    <data name="Status_CheckError">
+        <value>Kesalahan pemeriksaan pembaruan: {0}</value>
+    </data>
+    <data name="Status_Installing">
+        <value>Mengunduh dan menginstal...</value>
+    </data>
+    <data name="Status_InstallError">
+        <value>Kesalahan instalasi: {0}</value>
+    </data>
+    <data name="Status_ReadyFromHash">
+        <value>Siap (Dari file .hash)</value>
+    </data>
+    <data name="Status_LostOriginal">
+        <value>File asli hilang!</value>
+    </data>
+    <data name="Status_DropHashMismatch">
+        <value>Nama file hash tidak cocok!</value>
+    </data>
+    <data name="Status_DropHashSuccess">
+        <value>File hash di-drop</value>
+    </data>
+    <data name="Status_DropNoHash">
+        <value>File tidak mengandung hash!</value>
+    </data>
+    <data name="Status_ReadError">
+        <value>Kesalahan baca file</value>
+    </data>
+    <data name="Msg_Result_Title">
+        <value>Hasil</value>
+    </data>
+    <data name="Msg_Result_Content">
+        <value>Pemrosesan selesai!
+
+            ✅ Berhasil: {0}
+            ❌ Gagal: {1}</value>
+    </data>
+    <data name="Msg_CheckResult">
+        <value>Memeriksa {0} file.
+            ✅ Cocok: {1}
+            ❌ Tidak cocok/Kesalahan: {2}
+            ⛔ Dibatalkan: {3}</value>
+    </data>
+    <data name="Msg_WrongHashFile">
+        <value>File salah!</value>
+    </data>
+    <data name="Msg_WrongHashFileContent">
+        <value>File hash tidak cocok!
+
+            File asli: {0}
+            File dipilih: {1}
+
+            Pilih file hash pendamping yang benar.</value>
+    </data>
+    <data name="Msg_UpdateTitle">
+        <value>Pembaruan Baru</value>
+    </data>
+    <data name="Msg_UpdateContent">
+        <value>Versi: {0}
+
+            Perubahan:
+            {1}
+
+            Klik 'Perbarui sekarang' untuk mengunduh.</value>
+    </data>
+    <data name="Msg_NoUpdate">
+        <value>Tidak ada pembaruan lebih baru.</value>
+    </data>
+    <data name="Msg_Error">
+        <value>Kesalahan</value>
+    </data>
+    <data name="Msg_ReadHashError">
+        <value>Tidak dapat membaca file hash ini.</value>
+    </data>
+    <data name="Msg_ConfigCheck">
+        <value>Periksa Konfigurasi</value>
+    </data>
+    <data name="Msg_ConfigExists">
+        <value>File ada di:
+            {0}</value>
+    </data>
+    <data name="Msg_ConfigMissing">
+        <value>File tidak ada!</value>
+    </data>
+    <data name="Msg_ConfigCreated">
+        <value>File berhasil dibuat!</value>
+    </data>
+    <data name="Msg_ConfigCopied">
+        <value>Path konfigurasi disalin.</value>
+    </data>
+    <data name="Msg_AdminMode">
+        <value>Mode Administrator</value>
+    </data>
+    <data name="Msg_AdminRestart">
+        <value>Restart aplikasi agar perubahan berlaku.</value>
+    </data>
+    <data name="Msg_OpenFolderError">
+        <value>Tidak dapat membuka folder: {0}</value>
+    </data>
+    <data name="Msg_DisclaimerTitle">
+        <value>⚠️ PERINGATAN VERSI PENGEMBANG</value>
+    </data>
+    <data name="Msg_DisclaimerContent">
+        <value>Anda akan beralih ke saluran pembaruan Developer (Pre-release).
+
+            Versi ini mungkin mengandung bug, tidak stabil, dan dapat menyebabkan kehilangan data.
+
+            Saya tidak bertanggung jawab atas masalah apa pun dari penggunaan versi ini.</value>
+    </data>
+    <data name="Msg_DisclaimerAgree">
+        <value>Saya telah membaca dan setuju. Saya bertanggung jawab penuh.</value>
+    </data>
+    <data name="Dialog_SaveHash">
+        <value>Simpan File Hash</value>
+    </data>
+    <data name="Dialog_SaveZip">
+        <value>Simpan File Terkompresi</value>
+    </data>
+    <data name="Dialog_SelectFiles">
+        <value>Pilih file untuk hash</value>
+    </data>
+    <data name="Dialog_SelectHashFile">
+        <value>Pilih file hash untuk: {0}</value>
+    </data>
+    <data name="Dialog_SelectCheckFiles">
+        <value>Pilih file (Asli atau file .hash)</value>
+    </data>
+    <data name="Header_Fallback">
+        <value>Lanjutan: Kembali ke versi lama (Fallback)</value>
+    </data>
+    <data name="Desc_Fallback">
+        <value>Fitur ini memungkinkan menginstal versi tertentu jika versi baru bermasalah.</value>
+    </data>
+    <data name="Watermark_PasteDrop">
+        <value>Tempel/Drop...</value>
+    </data>
+</root>

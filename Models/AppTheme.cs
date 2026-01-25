@@ -3,7 +3,7 @@ namespace CheckHash.Models;
 public enum AppThemeStyle
 {
     Fluent,
-    MicaCustom, // Thay thế LiquidGlass
+    MicaCustom,
     Google,
     HighContrast,
     Colorblind

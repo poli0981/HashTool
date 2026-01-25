@@ -11,7 +11,6 @@ public partial class DisclaimerWindow : Window
     public DisclaimerWindow()
     {
         InitializeComponent();
-        // Set DataContext để Binding Localization
         DataContext = LocalizationService.Instance;
     }
 

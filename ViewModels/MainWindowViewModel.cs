@@ -1,32 +1,33 @@
 ﻿using Avalonia;
-using Avalonia.Styling;
 using CheckHash.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.ComponentModel;
 using Avalonia.Controls.ApplicationLifetimes;
 using System.Threading.Tasks;
+using CheckHash.Models;
 
 namespace CheckHash.ViewModels;
 
 public partial class MainWindowViewModel : ObservableObject
 {
     [ObservableProperty] private object _currentPage;
-    // Pane luôn mở, không còn tính năng đóng mở
     [ObservableProperty] private bool _isPaneOpen = true;
     
     public PreferencesService Prefs => PreferencesService.Instance;
     public LocalizationService L => LocalizationService.Instance;
+    public LocalizationService Localization => LocalizationService.Instance;
     public SettingsViewModel SettingsVM { get; } = new();
     public FontService FontConfig => FontService.Instance;
+    public ThemeService Theme => ThemeService.Instance;
 
-    // Các property text cho Menu để đảm bảo cập nhật ngôn ngữ
     public string MenuCreateText => L["Menu_Create"];
     public string MenuCheckText => L["Menu_Check"];
     public string MenuSettingsText => L["Menu_Settings"];
     public string MenuUpdateText => L["Menu_Update"];
     public string MenuThemeText => L["Menu_Theme"];
     public string MenuAboutText => L["Menu_About"];
+    public string MenuDeveloperText => L["Menu_Developer"]; // Thêm property này
     public string AppTitleText => L["AppTitle"];
 
     [RelayCommand]
@@ -35,6 +36,7 @@ public partial class MainWindowViewModel : ObservableObject
     public CheckHashViewModel CheckHashVM { get; } = new();
     public UpdateViewModel UpdateVM { get; } = new();
     public AboutViewModel AboutVM { get; } = new();
+    public DeveloperViewModel DeveloperVM { get; } = new();
 
     public MainWindowViewModel()
     {
@@ -46,18 +48,16 @@ public partial class MainWindowViewModel : ObservableObject
     {
         if (e.PropertyName == "Item[]")
         {
-            // Cập nhật toàn bộ text menu
             OnPropertyChanged(nameof(MenuCreateText));
             OnPropertyChanged(nameof(MenuCheckText));
             OnPropertyChanged(nameof(MenuSettingsText));
             OnPropertyChanged(nameof(MenuUpdateText));
             OnPropertyChanged(nameof(MenuThemeText));
             OnPropertyChanged(nameof(MenuAboutText));
+            OnPropertyChanged(nameof(MenuDeveloperText));
             OnPropertyChanged(nameof(AppTitleText));
         }
     }
-
-    // Đã loại bỏ TriggerPaneCommand vì Pane luôn mở
 
     [RelayCommand]
     private void NavigateToCreate() => CurrentPage = CreateHashVM;
@@ -70,19 +70,23 @@ public partial class MainWindowViewModel : ObservableObject
 
     [RelayCommand]
     private void NavigateToAbout() => CurrentPage = AboutVM;
+    
+    [RelayCommand]
+    private void NavigateToDeveloper() => CurrentPage = DeveloperVM;
 
     [RelayCommand]
     private void ToggleTheme()
     {
-        var app = Application.Current;
-        if (app is not null)
+        if (Theme.CurrentThemeVariant == AppThemeVariant.Dark)
         {
-            var theme = app.RequestedThemeVariant;
-            app.RequestedThemeVariant = (theme == ThemeVariant.Dark) ? ThemeVariant.Light : ThemeVariant.Dark;
+            Theme.CurrentThemeVariant = AppThemeVariant.Light;
+        }
+        else
+        {
+            Theme.CurrentThemeVariant = AppThemeVariant.Dark;
         }
     }
 
-    // Command chung để mở File Picker, sẽ gọi command của trang con tương ứng
     [RelayCommand]
     private async Task OpenFilePicker()
     {
@@ -99,7 +103,6 @@ public partial class MainWindowViewModel : ObservableObject
         }
     }
 
-    // Command chung để xóa danh sách
     [RelayCommand]
     private void ClearAllLists()
     {
@@ -107,7 +110,6 @@ public partial class MainWindowViewModel : ObservableObject
         CheckHashVM.ClearListCommand.Execute(null);
     }
 
-    // Hotkey Commands
     [RelayCommand]
     private async Task HotkeyCheckAll()
     {

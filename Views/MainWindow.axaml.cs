@@ -22,10 +22,10 @@ public partial class MainWindow : Window
     private async void OnHashFileDrop(object? sender, DragEventArgs e)
     {
 #pragma warning disable CS0618 // Type or member is obsolete
-        // 1. Kiểm tra xem có phải là file không
+        // Check if dropped data contains files
         if (e.Data.Contains(DataFormats.Files))
         {
-            var files = e.Data.GetFiles()?.ToList(); // ToList để tránh multiple enumeration
+            var files = e.Data.GetFiles()?.ToList();
             if (files != null && files.Count > 0)
             {
                 var filePath = files[0].Path.LocalPath;
@@ -46,7 +46,7 @@ public partial class MainWindow : Window
                         // 3. Đọc nội dung file
                         var content = await File.ReadAllTextAsync(filePath);
                     
-                        // 4. Lọc lấy mã Hash (Regex tìm chuỗi Hex)
+                        // 4. Lọc lấy mã Hash
                         var match = Regex.Match(content, @"[a-fA-F0-9]{32,128}");
                         if (match.Success)
                         {
@@ -56,7 +56,6 @@ public partial class MainWindow : Window
                         }
                         else
                         {
-                            // Nếu file không chứa mã hash (vd kéo nhầm file ảnh)
                             item.Status = L["Status_DropNoHash"];
                         }
                     }

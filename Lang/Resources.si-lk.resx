@@ -1,0 +1,474 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="AppTitle">
+        <value>Hash Tool</value>
+    </data>
+    <data name="Menu_Create">
+        <value>හෑෂ් නිර්මාණය</value>
+    </data>
+    <data name="Menu_Check">
+        <value>හෑෂ් පරීක්ෂා කිරීම</value>
+    </data>
+    <data name="Menu_Settings">
+        <value>සැකසුම්</value>
+    </data>
+    <data name="Menu_Update">
+        <value>යාවත්කාලීන පරීක්ෂා කිරීම</value>
+    </data>
+    <data name="Menu_Theme">
+        <value>තේමාව</value>
+    </data>
+    <data name="Menu_About">
+        <value>ගැන</value>
+    </data>
+    <data name="Menu_Developer">
+        <value>සංවර්ධක</value>
+    </data>
+    <data name="Btn_AddFiles">
+        <value>ගොනු එකතු කරන්න...</value>
+    </data>
+    <data name="Btn_Clear">
+        <value>ලැයිස්තුව මකන්න</value>
+    </data>
+    <data name="Btn_CalcAll">
+        <value>සියල්ල ගණනය කරන්න</value>
+    </data>
+    <data name="Btn_Compress">
+        <value>සම්පීඩනය (.Zip)</value>
+    </data>
+    <data name="Btn_CheckAll">
+        <value>සියල්ල පරීක්ෂා කරන්න</value>
+    </data>
+    <data name="Btn_CheckNow">
+        <value>දැන් පරීක්ෂා කරන්න</value>
+    </data>
+    <data name="Btn_Install">
+        <value>ස්ථාපනය</value>
+    </data>
+    <data name="Btn_Accept">
+        <value>පිළිගන්න</value>
+    </data>
+    <data name="Btn_Decline">
+        <value>අවලංගු කරන්න</value>
+    </data>
+    <data name="Title_CreateHash">
+        <value>හෑෂ් නිර්මාණය &amp; සම්පීඩනය</value>
+    </data>
+    <data name="Title_CheckHash">
+        <value>කාණ්ඩ පරීක්ෂා කිරීම</value>
+    </data>
+    <data name="Title_Update">
+        <value>යාවත්කාලීන පරීක්ෂා කිරීම</value>
+    </data>
+    <data name="Title_Disclaimer">
+        <value>සංවර්ධක අනුවාදය සඳහා අනතුරු ඇඟවීම</value>
+    </data>
+    <data name="Title_About">
+        <value>ගැන</value>
+    </data>
+    <data name="Help_CreateHash">
+        <value>උපදෙස්: Shift+C සියල්ල ගණනය කිරීමට, Shift+Z සම්පීඩනයට, Ctrl+F ගොනු එකතු කිරීමට。</value>
+    </data>
+    <data name="Help_CheckHash">
+        <value>උපදෙස්: Shift+A සියල්ල පරීක්ෂා කිරීමට, Ctrl+F ගොනු එකතු කිරීමට, Ctrl+Shift+H ලැයිස්තුව මකන්න।</value>
+    </data>
+    <data name="Lbl_Status_Ready">
+        <value>සූදානම්</value>
+    </data>
+    <data name="Lbl_Sample">
+        <value>උදාහරණය:</value>
+    </data>
+    <data name="Lbl_CurrentVersion">
+        <value>වත්මන් අනුවාදය: {0}</value>
+    </data>
+    <data name="Lbl_Channel">
+        <value>නිකුත් කිරීමේ නාලිකාව:</value>
+    </data>
+    <data name="Lbl_TotalFiles">
+        <value>මුළු ගොනු ගණන: {0}</value>
+    </data>
+    <data name="Channel_Stable">
+        <value>Stable (ස්ථායී)</value>
+    </data>
+    <data name="Channel_Dev">
+        <value>Dev (සංවර්ධක)</value>
+    </data>
+    <data name="Settings_Language">
+        <value>භාෂාව</value>
+    </data>
+    <data name="Settings_Theme">
+        <value>තේමාව</value>
+    </data>
+    <data name="Settings_ThemeStyle">
+        <value>තේමා විලාසය</value>
+    </data>
+    <data name="Settings_ThemeVariant">
+        <value>ආලෝක/අඳුරු</value>
+    </data>
+    <data name="Settings_Font">
+        <value>අකුරු</value>
+    </data>
+    <data name="Settings_FontSize">
+        <value>අකුරු ප්‍රමාණය (pt)</value>
+    </data>
+    <data name="Settings_AutoFont">
+        <value>භාෂාවට ගැලපෙන හොඳම අකුරු ස්වයංක්‍රීයව තෝරන්න</value>
+    </data>
+    <data name="Settings_LockFont">
+        <value>පෙරනිමි අකුරු ලෙස භාවිතා කරන්න (වෙනස්කම් අගුළු දමන්න)</value>
+    </data>
+    <data name="Settings_Scale">
+        <value>UI මාපකය</value>
+    </data>
+    <data name="Settings_MaskHash">
+        <value>හෑෂ් සඟවන්න (ආරක්ෂාව)</value>
+    </data>
+    <data name="Settings_Reset">
+        <value>තේමාව නැවත සකස් කරන්න</value>
+    </data>
+    <data name="Settings_Other">
+        <value>පෞද්ගලිකත්වය &amp; ආරක්ෂාව</value>
+    </data>
+    <data name="Settings_SetDefault">
+        <value>පෙරනිමි ලෙස සකසන්න</value>
+    </data>
+    <data name="Settings_CustomColor">
+        <value>අභිරුචි පාඨ වර්ණය</value>
+    </data>
+    <data name="Settings_TextTest">
+        <value>The quick brown fox jumps over the lazy dog.</value>
+    </data>
+    <data name="Settings_Advanced">
+        <value>උසස්</value>
+    </data>
+    <data name="Settings_AdminMode">
+        <value>පරිපාලක ලෙස ක්‍රියාත්මක කරන්න</value>
+    </data>
+    <data name="Settings_AdminDesc">
+        <value>නැවත ආරම්භ කිරීම අවශ්‍යයි. ආරක්ෂිත ගොනු වෙත ප්‍රවේශයට ඉඩ දෙයි。</value>
+    </data>
+    <data name="Settings_FileSizeLimit">
+        <value>ආදාන ගොනු ප්‍රමාණ සීමාව</value>
+    </data>
+    <data name="Settings_FileSizeDesc">
+        <value>සැකසුම් කළ ගොනු සඳහා උපරිම ප්‍රමාණ සීමාව。</value>
+    </data>
+    <data name="Settings_ForceQuitTimeout">
+        <value>බලහත්කාරයෙන් වසා දැමීමේ කාල සීමාව</value>
+    </data>
+    <data name="Settings_ForceQuitDesc">
+        <value>අයදුම freeze ලෙස සැලකීමට පෙර කාලය (තත්පර).</value>
+    </data>
+    <data name="Settings_FileTimeout">
+        <value>ගොනු සැකසුම් කාල සීමාව</value>
+    </data>
+    <data name="Settings_FileTimeoutDesc">
+        <value>ගොනු දිගු කාලයක් ගත වුවහොත් බලහත්කාරයෙන් අවලංගු කරන්න。</value>
+    </data>
+    <data name="Settings_Emergency">
+        <value>හදිසි ක්‍රියාමාර්ගය</value>
+    </data>
+    <data name="Settings_EmergencyDesc">
+        <value>අයදුම බලහත්කාරයෙන් වසා දමා සියලු කාර්යයන් වහාම අවලංගු කරන්න。</value>
+    </data>
+    <data name="Settings_BtnForceQuit">
+        <value>බලහත්කාරයෙන් වසා දමන්න &amp; සියල්ල අවලංගු කරන්න</value>
+    </data>
+    <data name="Settings_Configuration">
+        <value>වින්‍යාසය</value>
+    </data>
+    <data name="Settings_LockSettings">
+        <value>සැකසුම් අගුළු දමන්න (පෙරනිමි ලෙස සුරකින්න)</value>
+    </data>
+    <data name="Settings_LockDesc">
+        <value>අහම්බෙන් වෙනස්කම් වළක්වයි. හෑෂ් සඟවීම පමණක් ක්‍රියාත්මක වේ。</value>
+    </data>
+    <data name="Settings_ResetAll">
+        <value>සියලු සැකසුම් නැවත සකස් කරන්න</value>
+    </data>
+    <data name="Settings_ResetDesc">
+        <value>මුල් පෙරනිමි වටිනාකම් වෙත ආපසු ගෙන එන්න。</value>
+    </data>
+    <data name="Settings_ConfigPath">
+        <value>වින්‍යාස ගොනු මාර්ගය</value>
+    </data>
+    <data name="Settings_ConfigDesc">
+        <value>සම්පූර්ණ මාර්ගය පෙන්වා ක්ලිප්බෝඩ් එකට පිටපත් කරන්න。</value>
+    </data>
+    <data name="Settings_ShowPath">
+        <value>මාර්ගය පෙන්වන්න</value>
+    </data>
+    <data name="Settings_AutoSave">
+        <value>සැකසුම් config.json වෙත ස්වයංක්‍රීයව සුරකිනු ලැබේ</value>
+    </data>
+    <data name="Settings_DeveloperMode">
+        <value>සංවර්ධක මාදිලිය</value>
+    </data>
+    <data name="Settings_DeveloperDesc">
+        <value>උසස් ලොග් කිරීම් සහ දෝෂ නිරාකරණ මෙවලම් සක්‍රිය කරන්න।</value>
+    </data>
+    <data name="Dev_Console">
+        <value>සංවර්ධක කොන්සෝලය</value>
+    </data>
+    <data name="Dev_Beta">
+        <value>BETA</value>
+    </data>
+    <data name="Dev_Recording">
+        <value>පටිගත කිරීම</value>
+    </data>
+    <data name="Dev_Paused">
+        <value>විරාමය</value>
+    </data>
+    <data name="Dev_SaveToFile">
+        <value>ගොනුවක සුරකින්න</value>
+    </data>
+    <data name="Dev_NoSave">
+        <value>සුරකින්න එපා</value>
+    </data>
+    <data name="Dev_Clear">
+        <value>කොන්සෝලය මකන්න</value>
+    </data>
+    <data name="Dev_Copy">
+        <value>සියල්ල පිටපත් කරන්න</value>
+    </data>
+    <data name="Dev_OpenFolder">
+        <value>ලොග් ෆෝල්ඩරය විවෘත කරන්න</value>
+    </data>
+    <data name="About_Author">
+        <value>කතුවරයා</value>
+    </data>
+    <data name="About_Software">
+        <value>මෘදුකාංග</value>
+    </data>
+    <data name="About_ThirdParty">
+        <value>තෙවන පාර්ශ්ව ග්‍රන්ථාගාර</value>
+    </data>
+    <data name="About_Copyright">
+        <value>ප්‍රකාශන හිමිකම</value>
+    </data>
+    <data name="About_Desc">
+        <value>ගොනු හෑෂ් නිර්මාණය සහ පරීක්ෂා කිරීම සඳහා බලවත් මෙවලමකි。</value>
+    </data>
+    <data name="About_License">
+        <value>MIT බලපත්‍රය යටතේ නිකුත් කර ඇත。</value>
+    </data>
+    <data name="About_Tech">
+        <value>තාක්ෂණය</value>
+    </data>
+    <data name="About_TechContent">
+        <value>C# සහ .NET 10.0.102 භාවිතයෙන් තනා ඇත。</value>
+    </data>
+    <data name="About_AI">
+        <value>AI ආධාර</value>
+    </data>
+    <data name="About_AIContent">
+        <value>මෙම මෘදුකාංගය AI ආධාරයෙන් සංවර්ධනය කර ඇත (Gemini 3 Pro සහ Grok 4.1)।</value>
+    </data>
+    <data name="Status_Processing">
+        <value>සැකසෙමින් ({0})...</value>
+    </data>
+    <data name="Status_Done">
+        <value>අවසන්</value>
+    </data>
+    <data name="Status_Error">
+        <value>දෝෂය: {0}</value>
+    </data>
+    <data name="Status_Cancelled">
+        <value>අවලංගු කරන ලදී</value>
+    </data>
+    <data name="Status_Saved">
+        <value>සුරකින ලදී!</value>
+    </data>
+    <data name="Status_Compressed">
+        <value>සම්පීඩිතයි!</value>
+    </data>
+    <data name="Status_Waiting">
+        <value>හෑෂ්/ආදානය සඳහා බලා සිටිනවා...</value>
+    </data>
+    <data name="Status_MissingOriginal">
+        <value>මුල් ගොනුව නැත!</value>
+    </data>
+    <data name="Status_MissingHash">
+        <value>හෑෂ් නැත (ඇතුලත් කරන්න හෝ හෑෂ් ගොනුව අවශ්‍යයි)</value>
+    </data>
+    <data name="Status_Valid">
+        <value>වලංගුයි</value>
+    </data>
+    <data name="Status_Invalid">
+        <value>නොගැලපේ!</value>
+    </data>
+    <data name="Status_HashFileLoaded">
+        <value>හෑෂ් ගොනුව පූරණය විය</value>
+    </data>
+    <data name="Status_HashFileMismatch">
+        <value>හෑෂ් ගොනු නාමය නොගැලපේ!</value>
+    </data>
+    <data name="Status_NoHashFound">
+        <value>ගොනුවේ හෑෂ් නැත!</value>
+    </data>
+    <data name="Status_Checking">
+        <value>යාවත්කාලීන පරීක්ෂා කරමින්...</value>
+    </data>
+    <data name="Status_NewVersion">
+        <value>නව අනුවාදයක් හමු විය!</value>
+    </data>
+    <data name="Status_Latest">
+        <value>ඔබ නවතම අනුවාදය භාවිතා කරයි。</value>
+    </data>
+    <data name="Status_CheckError">
+        <value>යාවත්කාලීන පරීක්ෂා දෝෂය: {0}</value>
+    </data>
+    <data name="Status_Installing">
+        <value>බාගත කර ස්ථාපනය කරමින්...</value>
+    </data>
+    <data name="Status_InstallError">
+        <value>ස්ථාපන දෝෂය: {0}</value>
+    </data>
+    <data name="Status_ReadyFromHash">
+        <value>සූදානම් (.hash ගොනුවෙන්)</value>
+    </data>
+    <data name="Status_LostOriginal">
+        <value>මුල් ගොනුව නැති විය!</value>
+    </data>
+    <data name="Status_DropHashMismatch">
+        <value>හෑෂ් ගොනු නාමය නොගැලපේ!</value>
+    </data>
+    <data name="Status_DropHashSuccess">
+        <value>හෑෂ් ගොනුව බිඳ දමන ලදී</value>
+    </data>
+    <data name="Status_DropNoHash">
+        <value>ගොනුවේ හෑෂ් නැත!</value>
+    </data>
+    <data name="Status_ReadError">
+        <value>ගොනු කියවීමේ දෝෂය</value>
+    </data>
+    <data name="Msg_Result_Title">
+        <value>ප්‍රතිඵලය</value>
+    </data>
+    <data name="Msg_Result_Content">
+        <value>සැකසුම් අවසන්!
+
+            ✅ සාර්ථක: {0}
+            ❌ අසාර්ථක: {1}
+        </value>
+    </data>
+    <data name="Msg_CheckResult">
+        <value>{0} ගොනු පරීක්ෂා කර ඇත.
+            ✅ ගැලපීම්: {1}
+            ❌ නොගැලපීම්/දෝෂ: {2}
+            ⛔ අවලංගු කරන ලදී: {3}
+        </value>
+    </data>
+    <data name="Msg_WrongHashFile">
+        <value>වැරදි ගොනුව!</value>
+    </data>
+    <data name="Msg_WrongHashFileContent">
+        <value>හෑෂ් ගොනුව නොගැලපේ!
+
+            මුල් ගොනුව: {0}
+            තෝරාගත් ගොනුව: {1}
+
+            නිවැරදි අනුබද්ධ හෑෂ් ගොනුව තෝරන්න。
+        </value>
+    </data>
+    <data name="Msg_UpdateTitle">
+        <value>නව යාවත්කාලීනය</value>
+    </data>
+    <data name="Msg_UpdateContent">
+        <value>අනුවාදය: {0}
+
+            වෙනස්කම්:
+            {1}
+
+            බාගත කිරීමට 'දැන් යාවත්කාලීන කරන්න' ක්ලික් කරන්න。
+        </value>
+    </data>
+    <data name="Msg_NoUpdate">
+        <value>නවතම යාවත්කාලීනයක් හමු නොවීය。</value>
+    </data>
+    <data name="Msg_Error">
+        <value>දෝෂය</value>
+    </data>
+    <data name="Msg_ReadHashError">
+        <value>මෙම හෑෂ් ගොනුව කියවීමට නොහැකි විය。</value>
+    </data>
+    <data name="Msg_ConfigCheck">
+        <value>වින්‍යාස පරීක්ෂා කිරීම</value>
+    </data>
+    <data name="Msg_ConfigExists">
+        <value>ගොනුව මෙහි ඇත:
+            {0}
+        </value>
+    </data>
+    <data name="Msg_ConfigMissing">
+        <value>ගොනුව නැත!</value>
+    </data>
+    <data name="Msg_ConfigCreated">
+        <value>ගොනුව සාර්ථකව නිර්මාණය විය!</value>
+    </data>
+    <data name="Msg_ConfigCopied">
+        <value>වින්‍යාස මාර්ගය පිටපත් විය。</value>
+    </data>
+    <data name="Msg_AdminMode">
+        <value>පරිපාලක මාදිලිය</value>
+    </data>
+    <data name="Msg_AdminRestart">
+        <value>වෙනස්කම් බලාත්මක කිරීමට අයදුම නැවත ආරම්භ කරන්න。</value>
+    </data>
+    <data name="Msg_OpenFolderError">
+        <value>ෆෝල්ඩරය විවෘත කිරීමට නොහැකි විය: {0}</value>
+    </data>
+    <data name="Msg_DisclaimerTitle">
+        <value>⚠️ සංවර්ධක අනුවාදය සඳහා අනතුරු ඇඟවීම</value>
+    </data>
+    <data name="Msg_DisclaimerContent">
+        <value>ඔබ සංවර්ධක (Pre-release) යාවත්කාලීන නාලිකාවට මාරු වෙමින් සිටී.
+
+            මෙම අනුවාදයේ දෝෂ තිබිය හැක, අස්ථායී විය හැක සහ දත්ත නැතිවීමට හේතු විය හැක.
+
+            මෙම අනුවාදය භාවිතයෙන් ඇතිවන ඕනෑම ගැටලුවකට මම වගකීම භාර නොගන්නා බව කරුණාවෙන් සලකන්න。
+        </value>
+    </data>
+    <data name="Msg_DisclaimerAgree">
+        <value>මම කියවා එකඟ වෙමි. මම සම්පූර්ණ වගකීම භාරගන්නා බව පිළිගන්නා බව සඳහන් කරමි.</value>
+    </data>
+    <data name="Dialog_SaveHash">
+        <value>හෑෂ් ගොනුව සුරකින්න</value>
+    </data>
+    <data name="Dialog_SaveZip">
+        <value>සම්පීඩිත ගොනුව සුරකින්න</value>
+    </data>
+    <data name="Dialog_SelectFiles">
+        <value>හෑෂ් කිරීමට ගොනු තෝරන්න</value>
+    </data>
+    <data name="Dialog_SelectHashFile">
+        <value>{0} සඳහා හෑෂ් ගොනුව තෝරන්න</value>
+    </data>
+    <data name="Dialog_SelectCheckFiles">
+        <value>ගොනු තෝරන්න (මුල් හෝ .hash ගොනුව)</value>
+    </data>
+    <data name="Header_Fallback">
+        <value>උසස්: පැරණි අනුවාදයට ආපසු යාම (Fallback)</value>
+    </data>
+    <data name="Desc_Fallback">
+        <value>නව අනුවාදයේ ගැටලු ඇත්නම් විශේෂිත අනුවාදයක් ස්ථාපනය කිරීමට මෙම ශ්‍රිතය ඉඩ දෙයි。</value>
+    </data>
+    <data name="Watermark_PasteDrop">
+        <value>අලවන්න/බිඳ දමන්න...</value>
+    </data>
+</root>

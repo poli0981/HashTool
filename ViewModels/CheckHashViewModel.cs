@@ -13,16 +13,19 @@ using System.Threading.Tasks;
 
 namespace CheckHash.ViewModels;
 
-public partial class CheckHashViewModel : ObservableObject
+public partial class CheckHashViewModel : ObservableObject, IDisposable
 {
     public LocalizationService Localization => LocalizationService.Instance;
     private LocalizationService L => LocalizationService.Instance;
     private readonly HashService _hashService = new();
+    private ConfigurationService ConfigService => ConfigurationService.Instance;
+    private PreferencesService Prefs => PreferencesService.Instance;
+    private LoggerService Logger => LoggerService.Instance;
 
-    // Danh sách file cần check
+    // List file to check
     public ObservableCollection<FileItem> Files { get; } = new();
 
-    // Thuật toán CHUNG cho đợt check này (để tìm file sidecar tương ứng)
+    // Hash Algorithms
     public ObservableCollection<HashType> AlgorithmList { get; } = new(Enum.GetValues<HashType>());
     [ObservableProperty] private HashType _globalAlgorithm = HashType.SHA256;
 
@@ -33,13 +36,43 @@ public partial class CheckHashViewModel : ObservableObject
 
     public string TotalFilesText => string.Format(L["Lbl_TotalFiles"], Files.Count);
 
+    public CheckHashViewModel()
+    {
+        // Force cancel event
+        Prefs.ForceCancelRequested += OnForceCancelRequested;
+    }
+
+    public void Dispose()
+    {
+        Prefs.ForceCancelRequested -= OnForceCancelRequested;
+        foreach (var file in Files)
+        {
+            file.Cts?.Dispose();
+        }
+    }
+
+    private void OnForceCancelRequested(object? sender, EventArgs e)
+    {
+        Logger.Log("Force Cancel requested by user (Check Hash).", LogLevel.Warning);
+        foreach (var file in Files)
+        {
+            file.Cts?.Cancel();
+        }
+    }
+
     [RelayCommand]
     private void ClearList()
     {
+        foreach (var file in Files)
+        {
+            file.Cts?.Cancel();
+            file.Cts?.Dispose();
+        }
         Files.Clear();
         ProgressValue = 0;
         OnPropertyChanged(nameof(TotalFilesText));
         VerifyAllCommand.NotifyCanExecuteChanged();
+        Logger.Log("Cleared check list.");
     }
 
     private bool CanVerify => Files.Count > 0 && !IsChecking;
@@ -47,6 +80,7 @@ public partial class CheckHashViewModel : ObservableObject
     [RelayCommand(CanExecute = nameof(CanVerify))]
     private async Task VerifyAll()
     {
+        Logger.Log("Starting batch verification...");
         IsChecking = true;
         ProgressMax = Files.Count;
         ProgressValue = 0;
@@ -65,9 +99,11 @@ public partial class CheckHashViewModel : ObservableObject
         
         IsChecking = false;
         
-        // Đếm lại kết quả để hiện thông báo
+        // Count results to show summary
         int match = Files.Count(f => f.IsMatch == true);
         int failCount = Files.Count(f => f.IsMatch == false);
+        
+        Logger.Log($"Batch verification finished. Match: {match}, Mismatch/Error: {failCount}, Cancelled: {cancelled}", LogLevel.Info);
         
         await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], 
             string.Format(L["Msg_CheckResult"], Files.Count, match, failCount, cancelled));
@@ -78,39 +114,69 @@ public partial class CheckHashViewModel : ObservableObject
     {
         try
         {
+            Logger.Log("Opening file picker for Check Hash...");
             var result = await window.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions 
             { 
                 AllowMultiple = true,
                 Title = L["Dialog_SelectCheckFiles"]
             });
 
+            var config = ConfigService.Load();
+            long limitBytes = 0;
+            if (config.IsFileSizeLimitEnabled)
+            {
+                limitBytes = Prefs.GetMaxSizeBytes();
+            }
+
             foreach (var file in result)
             {
                 var path = file.Path.LocalPath;
                 var info = new FileInfo(path);
-                // TrimStart('.') để loại bỏ dấu chấm, ví dụ ".sha256" -> "sha256"
+
+                // 5. Check file size limit
+                if (config.IsFileSizeLimitEnabled && info.Length > limitBytes)
+                {
+                    var msg = $"File {file.Name} exceeds the size limit of {config.FileSizeLimitValue} {config.FileSizeLimitUnit}.";
+                    Logger.Log(msg, LogLevel.Warning);
+                    await MessageBoxHelper.ShowAsync(L["Msg_Error"], msg);
+                    continue;
+                }
+
+                // TrimStart('.') is to avoid leading dot in extension
                 var ext = Path.GetExtension(path).TrimStart('.').ToUpper();
                 
-                // Thử parse extension thành HashType
+                // Parse extension to see if it's a known hash file
                 var isHashFile = Enum.TryParse<HashType>(ext, true, out var detectedAlgo);
                 
                 if (isHashFile)
                 {
                     var dir = Path.GetDirectoryName(path);
-                    if (dir == null) continue; // Bỏ qua nếu không xác định được thư mục
+                    if (dir == null) continue; // Continue if folder not found
 
                     var sourcePath = Path.Combine(dir, Path.GetFileNameWithoutExtension(path));
                     
+                    // Check file size limit of original file
+                    if (File.Exists(sourcePath))
+                    {
+                        var sourceInfo = new FileInfo(sourcePath);
+                        if (config.IsFileSizeLimitEnabled && sourceInfo.Length > limitBytes)
+                        {
+                            var msg = $"File {Path.GetFileName(sourcePath)} exceeds the size limit of {config.FileSizeLimitValue} {config.FileSizeLimitUnit}.";
+                            Logger.Log(msg, LogLevel.Warning);
+                            await MessageBoxHelper.ShowAsync(L["Msg_Error"], msg);
+                            continue; // Bỏ qua file này
+                        }
+                    }
+
                     var item = new FileItem
                     {
-                        FileName = Path.GetFileName(sourcePath), // Tên file gốc
+                        FileName = Path.GetFileName(sourcePath),
                         FilePath = sourcePath,
-                        ExpectedHash = await ReadHashFromFile(path), // Đọc luôn hash
+                        ExpectedHash = await ReadHashFromFile(path),
                         Status = File.Exists(sourcePath) ? L["Status_ReadyFromHash"] : L["Status_MissingOriginal"],
-                        SelectedAlgorithm = detectedAlgo // Tự set thuật toán theo đuôi file
+                        SelectedAlgorithm = detectedAlgo
                     };
                     
-                    // Nếu file gốc tồn tại, lấy size
                     if (File.Exists(sourcePath))
                     {
                         var sourceInfo = new FileInfo(sourcePath);
@@ -118,13 +184,23 @@ public partial class CheckHashViewModel : ObservableObject
                     }
                     else
                     {
-                        item.IsMatch = false; // Đánh dấu lỗi ngay
+                        item.IsMatch = false;
                     }
                     
                     Files.Add(item);
+                    Logger.Log($"Added check item (from hash file): {item.FileName}");
                 }
                 else
                 {
+                    // Regular file to check
+                    if (config.IsFileSizeLimitEnabled && info.Length > limitBytes)
+                    {
+                        var msg = $"File {file.Name} exceeds the size limit of {config.FileSizeLimitValue} {config.FileSizeLimitUnit}.";
+                        Logger.Log(msg, LogLevel.Warning);
+                        await MessageBoxHelper.ShowAsync(L["Msg_Error"], msg);
+                        continue;
+                    }
+
                     if (!Files.Any(f => f.FilePath == path))
                     {
                         Files.Add(new FileItem
@@ -133,8 +209,9 @@ public partial class CheckHashViewModel : ObservableObject
                             FilePath = path,
                             FileSize = FileItem.FormatSize(info.Length),
                             Status = L["Status_Waiting"],
-                            ExpectedHash = "" // Để trống cho phép nhập tay
+                            ExpectedHash = "" // Not set yet (user can input or load later)
                         });
+                        Logger.Log($"Added check item: {file.Name}");
                     }
                 }
             }
@@ -144,17 +221,17 @@ public partial class CheckHashViewModel : ObservableObject
         }
         catch (Exception ex)
         {
+            Logger.Log($"Error adding files: {ex.Message}", LogLevel.Error);
             await MessageBoxHelper.ShowAsync(L["Msg_Error"], ex.Message);
         }
     }
-
-    // Hàm phụ trợ đọc file hash (thường file hash có dạng: "HASH  filename" hoặc chỉ "HASH")
+    
     private async Task<string> ReadHashFromFile(string path)
     {
         try 
         {
             var content = await File.ReadAllTextAsync(path);
-            // Lấy chuỗi ký tự Hex đầu tiên tìm thấy
+            // Find the first hash-like string in the content
             var match = Regex.Match(content, @"[a-fA-F0-9]{32,128}");
             return match.Success ? match.Value : content.Trim();
         }
@@ -170,6 +247,7 @@ public partial class CheckHashViewModel : ObservableObject
             Files.Remove(item);
             OnPropertyChanged(nameof(TotalFilesText));
             VerifyAllCommand.NotifyCanExecuteChanged();
+            Logger.Log($"Removed check item: {item.FileName}");
         }
     }
     
@@ -181,47 +259,7 @@ public partial class CheckHashViewModel : ObservableObject
             item.Cts?.Cancel();
             return;
         }
-        // Thay vì gọi ProcessItemAsync (chỉ tính hash), ta gọi VerifyItemLogic (tính + so sánh)
         await VerifyItemLogic(item);
-    }
-    
-    
-    private async Task ProcessItemAsync(FileItem item)
-    {
-        item.IsProcessing = true;
-        item.Status = string.Format(L["Status_Processing"], item.SelectedAlgorithm);
-        item.ProcessDuration = "";
-        
-        // Tạo Token hủy mới
-        item.Cts = new CancellationTokenSource();
-        var stopwatch = Stopwatch.StartNew();
-
-        try
-        {
-            // Truyền Token vào Service
-            item.ResultHash = await _hashService.ComputeHashAsync(item.FilePath, item.SelectedAlgorithm, item.Cts.Token);
-            item.Status = L["Status_Done"];
-        }
-        catch (OperationCanceledException)
-        {
-            item.Status = L["Status_Cancelled"];
-        }
-        catch (Exception)
-        {
-            item.Status = L["Msg_Error"];
-        }
-        finally
-        {
-            stopwatch.Stop();
-            // Format thời gian: nếu < 1s hiện ms, > 1s hiện giây
-            item.ProcessDuration = stopwatch.Elapsed.TotalSeconds < 1 
-                ? $"{stopwatch.ElapsedMilliseconds}ms" 
-                : $"{stopwatch.Elapsed.TotalSeconds:F2}s";
-
-            item.IsProcessing = false;
-            item.Cts?.Dispose();
-            item.Cts = null;
-        }
     }
     
     private async Task VerifyItemLogic(FileItem file)
@@ -230,26 +268,37 @@ public partial class CheckHashViewModel : ObservableObject
         file.IsMatch = null;
         file.ProcessDuration = "";
         file.Cts = new CancellationTokenSource();
+        
+        // Set timeout if enabled
+        if (Prefs.IsFileTimeoutEnabled)
+        {
+            file.Cts.CancelAfter(TimeSpan.FromSeconds(Prefs.FileTimeoutSeconds));
+        }
+
         var sw = Stopwatch.StartNew();
+        Logger.Log($"Verifying {file.FileName}...");
+
         try
         {
-            // Bước 1: Check file gốc
+            // Step 1: Check file existence
             if (!File.Exists(file.FilePath))
             {
                 file.Status = L["Status_LostOriginal"];
                 file.IsMatch = false;
-                return; // Thoát luôn
+                Logger.Log($"Original file missing: {file.FileName}", LogLevel.Error);
+                return; // If file not found, skip further checks
             }
             
             if (string.IsNullOrWhiteSpace(file.ExpectedHash))
             {
-                // Chưa nhập tay -> Thử tìm file sidecar
+                // If no expected hash, try to find sidecar file
                 var globalExt = GlobalAlgorithm.ToString().ToLower();
                 var sidecarPath = $"{file.FilePath}.{globalExt}";
                 
                 if (File.Exists(sidecarPath))
                 {
                     file.ExpectedHash = await ReadHashFromFile(sidecarPath);
+                    Logger.Log($"Found sidecar hash for {file.FileName}");
                 }
             }
 
@@ -257,10 +306,11 @@ public partial class CheckHashViewModel : ObservableObject
             {
                 file.Status = L["Status_MissingHash"];
                 file.IsMatch = false;
+                Logger.Log($"Missing expected hash for {file.FileName}", LogLevel.Warning);
             }
             else
             {
-                file.Status = L["Status_Waiting"]; // Tạm dùng Waiting hoặc Processing
+                file.Status = L["Status_Waiting"];
                 
                 var algoToCheck = GlobalAlgorithm;
 
@@ -269,11 +319,13 @@ public partial class CheckHashViewModel : ObservableObject
                 {
                     file.Status = L["Status_Valid"];
                     file.IsMatch = true;
+                    Logger.Log($"Verification VALID: {file.FileName}", LogLevel.Success);
                 }
                 else
                 {
                     file.Status = L["Status_Invalid"];
                     file.IsMatch = false;
+                    Logger.Log($"Verification INVALID: {file.FileName}. Expected: {file.ExpectedHash}, Actual: {actualHash}", LogLevel.Error);
                 }
             }
         }
@@ -281,10 +333,12 @@ public partial class CheckHashViewModel : ObservableObject
         {
             file.Status = L["Status_Cancelled"];
             file.IsMatch = null;
+            Logger.Log($"Verification cancelled: {file.FileName}", LogLevel.Warning);
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            file.Status = L["Msg_Error"];
+            file.Status = ex.Message; // Show error message in status
+            Logger.Log($"Verification error {file.FileName}: {ex.Message}", LogLevel.Error);
         }
         finally
         {
@@ -302,7 +356,7 @@ public partial class CheckHashViewModel : ObservableObject
         var window = Avalonia.Application.Current?.ApplicationLifetime is Avalonia.Controls.ApplicationLifetimes.IClassicDesktopStyleApplicationLifetime desktop ? desktop.MainWindow : null;
         if (window == null) return;
 
-        // Mở hộp thoại chọn file
+        // Open file picker to select hash file
         var result = await window.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
         {
             Title = string.Format(L["Dialog_SelectHashFile"], item.FileName),
@@ -314,8 +368,9 @@ public partial class CheckHashViewModel : ObservableObject
             var hashFilePath = result[0].Path.LocalPath;
             var hashFileName = Path.GetFileName(hashFilePath);
             
-            // Bỏ check tên file hash phải chứa tên file gốc, vì người dùng có thể chọn file hash bất kỳ
-            
+            // Check file name to see if it matches the original file
+            // If not match, show warning
+            // 1. Check file name
             if (!hashFileName.Contains(item.FileName, StringComparison.OrdinalIgnoreCase))
             {
                 await MessageBoxHelper.ShowAsync(L["Msg_WrongHashFile"], 
@@ -323,15 +378,17 @@ public partial class CheckHashViewModel : ObservableObject
                 return;
             }
 
-            // 2. Nếu khớp -> Đọc và điền vào ô
+            // 2. If all good, read hash from file
             try 
             {
                 item.ExpectedHash = await ReadHashFromFile(hashFilePath);
                 item.Status = L["Status_HashFileLoaded"];
+                Logger.Log($"Loaded hash file for {item.FileName}");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_ReadHashError"]);
+                Logger.Log($"Error reading hash file: {ex.Message}", LogLevel.Error);
             }
         }
     }

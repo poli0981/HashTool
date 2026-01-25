@@ -20,7 +20,7 @@ public class UpdateService
     public UpdateService()
     {
         _httpClient = new HttpClient();
-        // GitHub API yêu cầu User-Agent
+        // GitHub API requires a User-Agent header
         _httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("CheckHash", "1.0"));
 
         try 
@@ -29,7 +29,7 @@ public class UpdateService
         }
         catch 
         { 
-            // Bỏ qua lỗi nếu chạy local debug chưa pack
+            // Ignore initialization errors
         }
     }
 
@@ -57,26 +57,23 @@ public class UpdateService
         _manager.ApplyUpdatesAndRestart(info);
     }
 
-    // MỚI: Lấy Release Notes từ GitHub API
+    // Release Notes from GitHub API
     public async Task<string> GetReleaseNotesAsync(string version)
     {
         try
         {
-            // Chuyển đổi URL repo thành URL API
-            // Từ: https://github.com/user/repo
-            // Thành: https://api.github.com/repos/user/repo/releases/tags/{version}
+            // Build GitHub API URL of the release by tag name
+            // From https://github.com/user/repo
+            // To https://api.github.com/repos/user/repo/releases/tags/{version}
             
             var apiUrlBase = RepoUrl.Replace("https://github.com/", "https://api.github.com/repos/");
             
-            // Thử với version gốc (ví dụ: 1.0.1)
+            // Try without 'v' prefix (e.g: 1.0.1)
             var url = $"{apiUrlBase}/releases/tags/{version}";
-            
-            // Nếu GitHub dùng tag có chữ 'v' (ví dụ v1.0.1), logic này có thể cần điều chỉnh
-            // Tuy nhiên Velopack thường khuyến nghị tag trùng version SemVer.
             
             var response = await _httpClient.GetAsync(url);
             
-            // Nếu 404, thử thêm 'v' vào trước (fallback common case)
+            // If url not found, try with 'v' prefix (e.g: v1.0.1)
             if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
             {
                 url = $"{apiUrlBase}/releases/tags/v{version}";
@@ -87,7 +84,7 @@ public class UpdateService
             {
                 var json = await response.Content.ReadAsStringAsync();
                 var node = JsonNode.Parse(json);
-                return node?["body"]?.ToString() ?? "Không có nội dung chi tiết.";
+                return node?["body"]?.ToString() ?? "No release notes available.";
             }
         }
         catch
@@ -95,6 +92,6 @@ public class UpdateService
             // Ignore network errors
         }
 
-        return "Không thể tải thông tin chi tiết từ GitHub.";
+        return "Don't download information on GitHub";
     }
 }

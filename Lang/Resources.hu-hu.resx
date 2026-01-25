@@ -1,0 +1,464 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="AppTitle">
+        <value>Hash Tool</value>
+    </data>
+    <data name="Menu_Create">
+        <value>Hash létrehozása</value>
+    </data>
+    <data name="Menu_Check">
+        <value>Hash ellenőrzése</value>
+    </data>
+    <data name="Menu_Settings">
+        <value>Beállítások</value>
+    </data>
+    <data name="Menu_Update">
+        <value>Frissítések keresése</value>
+    </data>
+    <data name="Menu_Theme">
+        <value>Téma</value>
+    </data>
+    <data name="Menu_About">
+        <value>Névjegy</value>
+    </data>
+    <data name="Menu_Developer">
+        <value>Fejlesztő</value>
+    </data>
+    <data name="Btn_AddFiles">
+        <value>Fájlok hozzáadása...</value>
+    </data>
+    <data name="Btn_Clear">
+        <value>Lista törlése</value>
+    </data>
+    <data name="Btn_CalcAll">
+        <value>MINDENT SZÁMOL</value>
+    </data>
+    <data name="Btn_Compress">
+        <value>Tömörítés (.Zip)</value>
+    </data>
+    <data name="Btn_CheckAll">
+        <value>MINDENT ELLENŐRIZ</value>
+    </data>
+    <data name="Btn_CheckNow">
+        <value>Ellenőrzés most</value>
+    </data>
+    <data name="Btn_Install">
+        <value>Telepítés</value>
+    </data>
+    <data name="Btn_Accept">
+        <value>Elfogadás</value>
+    </data>
+    <data name="Btn_Decline">
+        <value>Elutasítás</value>
+    </data>
+    <data name="Title_CreateHash">
+        <value>Hash létrehozása és tömörítés</value>
+    </data>
+    <data name="Title_CheckHash">
+        <value>Tömeges ellenőrzés</value>
+    </data>
+    <data name="Title_Update">
+        <value>Frissítések keresése</value>
+    </data>
+    <data name="Title_Disclaimer">
+        <value>Fejlesztői verzió figyelmeztetés</value>
+    </data>
+    <data name="Title_About">
+        <value>Névjegy</value>
+    </data>
+    <data name="Help_CreateHash">
+        <value>Tipp: Shift+C mindent számol, Shift+Z tömörít, Ctrl+F fájl hozzáadás.</value>
+    </data>
+    <data name="Help_CheckHash">
+        <value>Tipp: Shift+A mindent ellenőriz, Ctrl+F fájl hozzáadás, Ctrl+Shift+H lista törlés.</value>
+    </data>
+    <data name="Lbl_Status_Ready">
+        <value>Kész</value>
+    </data>
+    <data name="Lbl_Sample">
+        <value>Példa:</value>
+    </data>
+    <data name="Lbl_CurrentVersion">
+        <value>Jelenlegi verzió: {0}</value>
+    </data>
+    <data name="Lbl_Channel">
+        <value>Kiadási csatorna:</value>
+    </data>
+    <data name="Lbl_TotalFiles">
+        <value>Összes fájl: {0}</value>
+    </data>
+    <data name="Channel_Stable">
+        <value>Stable (Stabil)</value>
+    </data>
+    <data name="Channel_Dev">
+        <value>Dev (Fejlesztő)</value>
+    </data>
+    <data name="Settings_Language">
+        <value>Nyelv</value>
+    </data>
+    <data name="Settings_Theme">
+        <value>Téma</value>
+    </data>
+    <data name="Settings_ThemeStyle">
+        <value>Téma stílus</value>
+    </data>
+    <data name="Settings_ThemeVariant">
+        <value>Világos/Sötét</value>
+    </data>
+    <data name="Settings_Font">
+        <value>Betűtípus</value>
+    </data>
+    <data name="Settings_FontSize">
+        <value>Betűméret (pt)</value>
+    </data>
+    <data name="Settings_AutoFont">
+        <value>Automatikus optimális betűtípus választás nyelvhez</value>
+    </data>
+    <data name="Settings_LockFont">
+        <value>Használat alapértelmezettként (Változtatások zárolása)</value>
+    </data>
+    <data name="Settings_Scale">
+        <value>UI Méretezés</value>
+    </data>
+    <data name="Settings_MaskHash">
+        <value>Hash maszkolás (Biztonság)</value>
+    </data>
+    <data name="Settings_Reset">
+        <value>Téma visszaállítás</value>
+    </data>
+    <data name="Settings_Other">
+        <value>Adatvédelem és Biztonság</value>
+    </data>
+    <data name="Settings_SetDefault">
+        <value>Beállítás alapértelmezettként</value>
+    </data>
+    <data name="Settings_CustomColor">
+        <value>Egyéni szövegszín</value>
+    </data>
+    <data name="Settings_TextTest">
+        <value>A gyors barna róka átugrik a lusta kutyán.</value>
+    </data>
+    <data name="Settings_Advanced">
+        <value>Haladó</value>
+    </data>
+    <data name="Settings_AdminMode">
+        <value>Futtatás rendszergazdaként</value>
+    </data>
+    <data name="Settings_AdminDesc">
+        <value>Újraindítás szükséges. Engedélyezi a védett fájlokhoz való hozzáférést.</value>
+    </data>
+    <data name="Settings_FileSizeLimit">
+        <value>Bemeneti fájlméret korlát</value>
+    </data>
+    <data name="Settings_FileSizeDesc">
+        <value>Maximális méretkorlát a feldolgozandó fájlokhoz.</value>
+    </data>
+    <data name="Settings_ForceQuitTimeout">
+        <value>Kényszerített kilépés időkorlát</value>
+    </data>
+    <data name="Settings_ForceQuitDesc">
+        <value>Idő (másodperc) mielőtt az app lefagyottnak tekinthető.</value>
+    </data>
+    <data name="Settings_FileTimeout">
+        <value>Fájlfeldolgozás időkorlát</value>
+    </data>
+    <data name="Settings_FileTimeoutDesc">
+        <value>Kényszerített megszakítás, ha egy fájl túl sokáig tart.</value>
+    </data>
+    <data name="Settings_Emergency">
+        <value>Sürgősségi művelet</value>
+    </data>
+    <data name="Settings_EmergencyDesc">
+        <value>App kényszerített kilépés és minden feladat azonnali megszakítása.</value>
+    </data>
+    <data name="Settings_BtnForceQuit">
+        <value>Kényszerített Kilépés &amp; Minden Megszakítása</value>
+    </data>
+    <data name="Settings_Configuration">
+        <value>Konfiguráció</value>
+    </data>
+    <data name="Settings_LockSettings">
+        <value>Beállítások zárolása (Mentés alapértelmezettként)</value>
+    </data>
+    <data name="Settings_LockDesc">
+        <value>Megakadályozza a véletlen változtatásokat. Csak a hash maszkolás marad aktív.</value>
+    </data>
+    <data name="Settings_ResetAll">
+        <value>Minden beállítás visszaállítása</value>
+    </data>
+    <data name="Settings_ResetDesc">
+        <value>Visszaállítás az eredeti alapértelmezett értékekre.</value>
+    </data>
+    <data name="Settings_ConfigPath">
+        <value>Konfigurációs fájl elérési útja</value>
+    </data>
+    <data name="Settings_ConfigDesc">
+        <value>Teljes elérési út megjelenítése és vágólapra másolás.</value>
+    </data>
+    <data name="Settings_ShowPath">
+        <value>Elérési út megjelenítése</value>
+    </data>
+    <data name="Settings_AutoSave">
+        <value>Beállítások automatikusan mentve a config.json-ba</value>
+    </data>
+    <data name="Settings_DeveloperMode">
+        <value>Fejlesztői mód</value>
+    </data>
+    <data name="Settings_DeveloperDesc">
+        <value>Haladó naplózási és hibakeresési eszközök engedélyezése.</value>
+    </data>
+    <data name="Dev_Console">
+        <value>Fejlesztői Konzol</value>
+    </data>
+    <data name="Dev_Beta">
+        <value>BETA</value>
+    </data>
+    <data name="Dev_Recording">
+        <value>Felvétel</value>
+    </data>
+    <data name="Dev_Paused">
+        <value>Szüneteltetve</value>
+    </data>
+    <data name="Dev_SaveToFile">
+        <value>Mentés fájlba</value>
+    </data>
+    <data name="Dev_NoSave">
+        <value>Ne mentse</value>
+    </data>
+    <data name="Dev_Clear">
+        <value>Konzol törlése</value>
+    </data>
+    <data name="Dev_Copy">
+        <value>Minden másolása</value>
+    </data>
+    <data name="Dev_OpenFolder">
+        <value>Log mappa megnyitása</value>
+    </data>
+    <data name="About_Author">
+        <value>Szerző</value>
+    </data>
+    <data name="About_Software">
+        <value>Szoftver</value>
+    </data>
+    <data name="About_ThirdParty">
+        <value>Harmadik féltől származó könyvtárak</value>
+    </data>
+    <data name="About_Copyright">
+        <value>Szerzői jog</value>
+    </data>
+    <data name="About_Desc">
+        <value>Erőteljes eszköz fájlhash-ek létrehozásához és ellenőrzéséhez.</value>
+    </data>
+    <data name="About_License">
+        <value>MIT licenc alatt kiadva.</value>
+    </data>
+    <data name="About_Tech">
+        <value>Technológia</value>
+    </data>
+    <data name="About_TechContent">
+        <value>C# és .NET 10.0.102 használatával építve.</value>
+    </data>
+    <data name="About_AI">
+        <value>AI támogatás</value>
+    </data>
+    <data name="About_AIContent">
+        <value>Ez a szoftver AI támogatással készült (Gemini 3 Pro és Grok 4.1).</value>
+    </data>
+    <data name="Status_Processing">
+        <value>Feldolgozás ({0})...</value>
+    </data>
+    <data name="Status_Done">
+        <value>Kész</value>
+    </data>
+    <data name="Status_Error">
+        <value>Hiba: {0}</value>
+    </data>
+    <data name="Status_Cancelled">
+        <value>Megszakítva</value>
+    </data>
+    <data name="Status_Saved">
+        <value>Mentve!</value>
+    </data>
+    <data name="Status_Compressed">
+        <value>Tömörítve!</value>
+    </data>
+    <data name="Status_Waiting">
+        <value>Hash/bemenet várakozás...</value>
+    </data>
+    <data name="Status_MissingOriginal">
+        <value>Hiányzik az eredeti fájl!</value>
+    </data>
+    <data name="Status_MissingHash">
+        <value>Hiányzik a hash (Bevitel vagy hash fájl szükséges)</value>
+    </data>
+    <data name="Status_Valid">
+        <value>ÉRVÉNYES</value>
+    </data>
+    <data name="Status_Invalid">
+        <value>ELTÉRÉS!</value>
+    </data>
+    <data name="Status_HashFileLoaded">
+        <value>Hash fájl betöltve</value>
+    </data>
+    <data name="Status_HashFileMismatch">
+        <value>Hash fájlnév eltérés!</value>
+    </data>
+    <data name="Status_NoHashFound">
+        <value>A fájl nem tartalmaz hash-t!</value>
+    </data>
+    <data name="Status_Checking">
+        <value>Frissítések keresése...</value>
+    </data>
+    <data name="Status_NewVersion">
+        <value>Új verzió észlelve!</value>
+    </data>
+    <data name="Status_Latest">
+        <value>A legújabb verziót használod.</value>
+    </data>
+    <data name="Status_CheckError">
+        <value>Frissítés ellenőrzési hiba: {0}</value>
+    </data>
+    <data name="Status_Installing">
+        <value>Letöltés és telepítés...</value>
+    </data>
+    <data name="Status_InstallError">
+        <value>Telepítési hiba: {0}</value>
+    </data>
+    <data name="Status_ReadyFromHash">
+        <value>Kész (.hash fájlból)</value>
+    </data>
+    <data name="Status_LostOriginal">
+        <value>Eredeti fájl elveszett!</value>
+    </data>
+    <data name="Status_DropHashMismatch">
+        <value>Hash fájlnév eltérés!</value>
+    </data>
+    <data name="Status_DropHashSuccess">
+        <value>Hash fájl eldobva</value>
+    </data>
+    <data name="Status_DropNoHash">
+        <value>A fájl nem tartalmaz hash-t!</value>
+    </data>
+    <data name="Status_ReadError">
+        <value>Fájl olvasási hiba</value>
+    </data>
+    <data name="Msg_Result_Title">
+        <value>Eredmény</value>
+    </data>
+    <data name="Msg_Result_Content">
+        <value>Feldolgozás kész!
+
+            ✅ Siker: {0}
+            ❌ Sikertelen: {1}</value>
+    </data>
+    <data name="Msg_CheckResult">
+        <value>{0} fájl ellenőrizve.
+            ✅ Egyezés: {1}
+            ❌ Eltérés/Hiba: {2}
+            ⛔ Megszakítva: {3}</value>
+    </data>
+    <data name="Msg_WrongHashFile">
+        <value>Rossz fájl!</value>
+    </data>
+    <data name="Msg_WrongHashFileContent">
+        <value>Hash fájl eltérés!
+
+            Eredeti fájl: {0}
+            Kiválasztott fájl: {1}
+
+            Válaszd a megfelelő kísérő hash fájlt.</value>
+    </data>
+    <data name="Msg_UpdateTitle">
+        <value>Új Frissítés</value>
+    </data>
+    <data name="Msg_UpdateContent">
+        <value>Verzió: {0}
+
+            Változások:
+            {1}
+
+            Kattints 'Frissítés most' a letöltéshez.</value>
+    </data>
+    <data name="Msg_NoUpdate">
+        <value>Nem található újabb frissítés.</value>
+    </data>
+    <data name="Msg_Error">
+        <value>Hiba</value>
+    </data>
+    <data name="Msg_ReadHashError">
+        <value>Nem lehet olvasni ezt a hash fájlt.</value>
+    </data>
+    <data name="Msg_ConfigCheck">
+        <value>Konfiguráció ellenőrzés</value>
+    </data>
+    <data name="Msg_ConfigExists">
+        <value>Fájl létezik itt:
+            {0}</value>
+    </data>
+    <data name="Msg_ConfigMissing">
+        <value>Fájl nem létezik!</value>
+    </data>
+    <data name="Msg_ConfigCreated">
+        <value>Fájl sikeresen létrehozva!</value>
+    </data>
+    <data name="Msg_ConfigCopied">
+        <value>Konfigurációs útvonal másolva.</value>
+    </data>
+    <data name="Msg_AdminMode">
+        <value>Rendszergazdai mód</value>
+    </data>
+    <data name="Msg_AdminRestart">
+        <value>Indítsd újra az appot a változások érvényesítéséhez.</value>
+    </data>
+    <data name="Msg_OpenFolderError">
+        <value>Nem lehet megnyitni a mappát: {0}</value>
+    </data>
+    <data name="Msg_DisclaimerTitle">
+        <value>⚠️ FEJLESZTŐI VERZIÓ FIGYELMEZTETÉS</value>
+    </data>
+    <data name="Msg_DisclaimerContent">
+        <value>Épp a Developer (Pre-release) frissítési csatornára váltasz.
+
+            Ez a verzió hibákat tartalmazhat, instabil lehet és adatvesztést okozhat.
+
+            Nem vállalok felelősséget a verzió használatából eredő problémákért.</value>
+    </data>
+    <data name="Msg_DisclaimerAgree">
+        <value>Elolvastam és elfogadom. Teljes felelősséget vállalok.</value>
+    </data>
+    <data name="Dialog_SaveHash">
+        <value>Hash fájl mentése</value>
+    </data>
+    <data name="Dialog_SaveZip">
+        <value>Tömörített fájl mentése</value>
+    </data>
+    <data name="Dialog_SelectFiles">
+        <value>Fájlok kiválasztása hash-hoz</value>
+    </data>
+    <data name="Dialog_SelectHashFile">
+        <value>Hash fájl kiválasztása ehhez: {0}</value>
+    </data>
+    <data name="Dialog_SelectCheckFiles">
+        <value>Fájlok kiválasztása (Eredeti vagy .hash fájl)</value>
+    </data>
+    <data name="Header_Fallback">
+        <value>Haladó: Visszatérés régebbi verzióhoz (Fallback)</value>
+    </data>
+    <data name="Desc_Fallback">
+        <value>Ez a funkció lehetővé teszi egy adott verzió telepítését, ha az új problémás.</value>
+    </data>
+    <data name="Watermark_PasteDrop">
+        <value>Beillesztés/Eldobás...</value>
+    </data>
+</root>

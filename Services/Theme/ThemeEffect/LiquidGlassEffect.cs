@@ -1,10 +1,8 @@
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Media;
-using System;
 using System.Runtime.InteropServices; // Để check OS
 using Avalonia.Controls.ApplicationLifetimes;
-using Avalonia.Styling;
 
 namespace CheckHash.Services.ThemeEffects;
 

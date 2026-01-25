@@ -9,20 +9,16 @@ namespace CheckHash.ViewModels;
 
 public partial class UpdateViewModel : ObservableObject
 {
-    // Public để Binding từ View
     public LocalizationService Localization => LocalizationService.Instance;
-    
-    // Private shortcut để dùng trong code
     private LocalizationService L => LocalizationService.Instance;
-
     private readonly UpdateService _updateService = new();
+    private LoggerService Logger => LoggerService.Instance;
     
     [ObservableProperty] private string _currentVersionText;
     [ObservableProperty] private string _statusMessage;
     [ObservableProperty] private bool _isChecking;
     [ObservableProperty] private bool _isUpdateAvailable;
     
-    // Dropdown chọn kênh (0: Stable, 1: Dev)
     [ObservableProperty] private int _selectedChannelIndex; 
 
     public UpdateViewModel()
@@ -33,18 +29,20 @@ public partial class UpdateViewModel : ObservableObject
 
     async partial void OnSelectedChannelIndexChanged(int value)
     {
-        if (value == 1) // Chọn Dev
+        if (value == 1) // Developer Channel
         {
-            // Hiện Disclaimer
             var accepted = await ShowDisclaimer();
             if (!accepted)
             {
-                // Nếu không đồng ý, quay về Stable
                 SelectedChannelIndex = 0; 
                 return;
             }
+            Logger.Log("Switched to Developer Channel.", LogLevel.Warning);
         }
-        // Tự động check khi đổi kênh
+        else
+        {
+            Logger.Log("Switched to Stable Channel.");
+        }
         await CheckUpdate();
     }
 
@@ -52,10 +50,9 @@ public partial class UpdateViewModel : ObservableObject
     {
         if (Avalonia.Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
-            // Kiểm tra MainWindow null
             if (desktop.MainWindow == null) return false;
 
-            var dialog = new CheckHash.Views.DisclaimerWindow();
+            var dialog = new Views.DisclaimerWindow();
             await dialog.ShowDialog(desktop.MainWindow);
             return dialog.IsAccepted;
         }
@@ -65,6 +62,7 @@ public partial class UpdateViewModel : ObservableObject
     [RelayCommand]
     private async Task CheckUpdate()
     {
+        Logger.Log("Checking for updates...");
         IsChecking = true;
         StatusMessage = L["Status_Checking"];
         IsUpdateAvailable = false;
@@ -80,8 +78,8 @@ public partial class UpdateViewModel : ObservableObject
                 StatusMessage = L["Status_NewVersion"];
                 
                 var version = updateInfo.TargetFullRelease.Version.ToString();
+                Logger.Log($"New version found: {version}", LogLevel.Success);
                 
-                // Fetch Release Notes từ GitHub
                 var notes = await _updateService.GetReleaseNotesAsync(version);
                 
                 await MessageBoxHelper.ShowAsync(L["Msg_UpdateTitle"], 
@@ -92,12 +90,14 @@ public partial class UpdateViewModel : ObservableObject
             else
             {
                 StatusMessage = L["Status_Latest"];
+                Logger.Log("Application is up to date.");
                 await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], L["Msg_NoUpdate"]);
             }
         }
         catch (Exception ex)
         {
             StatusMessage = string.Format(L["Status_CheckError"], ex.Message);
+            Logger.Log($"Update check failed: {ex.Message}", LogLevel.Error);
         }
         finally
         {
@@ -108,16 +108,17 @@ public partial class UpdateViewModel : ObservableObject
     private async Task InstallUpdate(Velopack.UpdateInfo info)
     {
         StatusMessage = L["Status_Installing"];
-        IsChecking = true; // Block UI
+        IsChecking = true; 
+        Logger.Log("Downloading and installing update...");
         try
         {
             await _updateService.DownloadAndInstallAsync(info);
-            // App sẽ tự restart sau dòng này
         }
         catch (Exception ex)
         {
             StatusMessage = string.Format(L["Status_InstallError"], ex.Message);
             IsChecking = false;
+            Logger.Log($"Install failed: {ex.Message}", LogLevel.Error);
         }
     }
 }

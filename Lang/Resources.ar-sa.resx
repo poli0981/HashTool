@@ -1,0 +1,458 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="AppTitle">
+        <value>مدقق التجزئة برو</value>
+    </data>
+    <data name="Menu_Create">
+        <value>إنشاء تجزئة</value>
+    </data>
+    <data name="Menu_Check">
+        <value>التحقق من التجزئة</value>
+    </data>
+    <data name="Menu_Settings">
+        <value>الإعدادات</value>
+    </data>
+    <data name="Menu_Update">
+        <value>تحديث</value>
+    </data>
+    <data name="Menu_Theme">
+        <value>تبديل السمة</value>
+    </data>
+    <data name="Menu_About">
+        <value>حول</value>
+    </data>
+    <data name="Menu_Developer">
+        <value>مطور</value>
+    </data>
+    <data name="Btn_AddFiles">
+        <value>إضافة ملفات...</value>
+    </data>
+    <data name="Btn_Clear">
+        <value>مسح القائمة</value>
+    </data>
+    <data name="Btn_CalcAll">
+        <value>حساب الكل</value>
+    </data>
+    <data name="Btn_Compress">
+        <value>ضغط (.Zip)</value>
+    </data>
+    <data name="Btn_CheckAll">
+        <value>التحقق من الكل</value>
+    </data>
+    <data name="Btn_CheckNow">
+        <value>تحقق الآن</value>
+    </data>
+    <data name="Btn_Install">
+        <value>تثبيت</value>
+    </data>
+    <data name="Btn_Accept">
+        <value>تأكيد</value>
+    </data>
+    <data name="Btn_Decline">
+        <value>إلغاء</value>
+    </data>
+    <data name="Title_CreateHash">
+        <value>إنشاء تجزئة وضغط</value>
+    </data>
+    <data name="Title_CheckHash">
+        <value>تحقق دفعة</value>
+    </data>
+    <data name="Title_Update">
+        <value>التحقق من وجود تحديثات</value>
+    </data>
+    <data name="Title_Disclaimer">
+        <value>تحذير نسخة المطور</value>
+    </data>
+    <data name="Title_About">
+        <value>حول</value>
+    </data>
+    <data name="Help_CreateHash">
+        <value>نصيحة: Shift+C للحساب، Shift+Z للضغط، Ctrl+F للإضافة.</value>
+    </data>
+    <data name="Help_CheckHash">
+        <value>نصيحة: Shift+A للتحقق، Ctrl+F للإضافة، Ctrl+Shift+H للمسح.</value>
+    </data>
+    <data name="Lbl_Status_Ready">
+        <value>جاهز</value>
+    </data>
+    <data name="Lbl_Sample">
+        <value>عينة:</value>
+    </data>
+    <data name="Lbl_CurrentVersion">
+        <value>الإصدار الحالي: {0}</value>
+    </data>
+    <data name="Lbl_Channel">
+        <value>قناة الإصدار:</value>
+    </data>
+    <data name="Lbl_TotalFiles">
+        <value>إجمالي الملفات: {0}</value>
+    </data>
+    <data name="Channel_Stable">
+        <value>مستقر</value>
+    </data>
+    <data name="Channel_Dev">
+        <value>مطور</value>
+    </data>
+    <data name="Settings_Language">
+        <value>اللغة</value>
+    </data>
+    <data name="Settings_Theme">
+        <value>السمة</value>
+    </data>
+    <data name="Settings_ThemeStyle">
+        <value>نمط السمة</value>
+    </data>
+    <data name="Settings_ThemeVariant">
+        <value>متغير السمة</value>
+    </data>
+    <data name="Settings_Font">
+        <value>الخط</value>
+    </data>
+    <data name="Settings_FontSize">
+        <value>حجم الخط (نقطة)</value>
+    </data>
+    <data name="Settings_AutoFont">
+        <value>تحديد الخط الأمثل للغة تلقائيًا</value>
+    </data>
+    <data name="Settings_LockFont">
+        <value>تعيين كخط افتراضي (قفل التغييرات)</value>
+    </data>
+    <data name="Settings_Scale">
+        <value>مقياس الواجهة</value>
+    </data>
+    <data name="Settings_MaskHash">
+        <value>إخفاء رمز التجزئة (خصوصية)</value>
+    </data>
+    <data name="Settings_Reset">
+        <value>إعادة تعيين المظهر</value>
+    </data>
+    <data name="Settings_Other">
+        <value>الخصوصية والأمان</value>
+    </data>
+    <data name="Settings_SetDefault">
+        <value>تعيين كافتراضي</value>
+    </data>
+    <data name="Settings_Advanced">
+        <value>متقدم</value>
+    </data>
+    <data name="Settings_AdminMode">
+        <value>تشغيل كمسؤول</value>
+    </data>
+    <data name="Settings_AdminDesc">
+        <value>يتطلب إعادة التشغيل. يسمح بالوصول إلى الملفات المحمية.</value>
+    </data>
+    <data name="Settings_FileSizeLimit">
+        <value>حد حجم الملف المدخل</value>
+    </data>
+    <data name="Settings_FileSizeDesc">
+        <value>تقييد الحد الأقصى لحجم الملف للتحقق.</value>
+    </data>
+    <data name="Settings_ForceQuitTimeout">
+        <value>مهلة الخروج القسري</value>
+    </data>
+    <data name="Settings_ForceQuitDesc">
+        <value>الوقت (بالثواني) قبل اعتبار التطبيق متجمدًا.</value>
+    </data>
+    <data name="Settings_FileTimeout">
+        <value>مهلة معالجة الملف</value>
+    </data>
+    <data name="Settings_FileTimeoutDesc">
+        <value>إلغاء قسري إذا استغرقت معالجة ملف واحد وقتًا طويلاً.</value>
+    </data>
+    <data name="Settings_Emergency">
+        <value>إجراء طارئ</value>
+    </data>
+    <data name="Settings_EmergencyDesc">
+        <value>الخروج القسري من التطبيق وإلغاء جميع المهام فورًا.</value>
+    </data>
+    <data name="Settings_BtnForceQuit">
+        <value>خروج قسري وإلغاء الكل</value>
+    </data>
+    <data name="Settings_Configuration">
+        <value>التكوين</value>
+    </data>
+    <data name="Settings_LockSettings">
+        <value>قفل الإعدادات (حفظ كافتراضي)</value>
+    </data>
+    <data name="Settings_LockDesc">
+        <value>منع التغييرات العرضية. يبقى إخفاء التجزئة نشطًا فقط.</value>
+    </data>
+    <data name="Settings_ResetAll">
+        <value>إعادة تعيين كافة الإعدادات</value>
+    </data>
+    <data name="Settings_ResetDesc">
+        <value>استعادة الإعدادات الافتراضية للمصنع.</value>
+    </data>
+    <data name="Settings_ConfigPath">
+        <value>مسار ملف التكوين</value>
+    </data>
+    <data name="Settings_ConfigDesc">
+        <value>إظهار المسار الكامل ونسخه إلى الحافظة.</value>
+    </data>
+    <data name="Settings_ShowPath">
+        <value>إظهار المسار</value>
+    </data>
+    <data name="Settings_AutoSave">
+        <value>يتم حفظ الإعدادات تلقائيًا في config.json</value>
+    </data>
+    <data name="Settings_DeveloperMode">
+        <value>وضع المطور</value>
+    </data>
+    <data name="Settings_DeveloperDesc">
+        <value>تمكين أدوات التسجيل وتصحيح الأخطاء المتقدمة.</value>
+    </data>
+    <data name="Dev_Console">
+        <value>وحدة تحكم المطور</value>
+    </data>
+    <data name="Dev_Beta">
+        <value>تجريبي</value>
+    </data>
+    <data name="Dev_Recording">
+        <value>تسجيل</value>
+    </data>
+    <data name="Dev_Paused">
+        <value>متوقف مؤقتًا</value>
+    </data>
+    <data name="Dev_SaveToFile">
+        <value>حفظ في ملف</value>
+    </data>
+    <data name="Dev_NoSave">
+        <value>عدم الحفظ</value>
+    </data>
+    <data name="Dev_Clear">
+        <value>مسح وحدة التحكم</value>
+    </data>
+    <data name="Dev_Copy">
+        <value>نسخ الكل</value>
+    </data>
+    <data name="Dev_OpenFolder">
+        <value>فتح مجلد السجل</value>
+    </data>
+    <data name="About_Author">
+        <value>المؤلف</value>
+    </data>
+    <data name="About_Software">
+        <value>البرنامج</value>
+    </data>
+    <data name="About_ThirdParty">
+        <value>مكتبات الطرف الثالث</value>
+    </data>
+    <data name="About_Copyright">
+        <value>حقوق النشر</value>
+    </data>
+    <data name="About_Desc">
+        <value>أداة قوية للتحقق من وإنشاء تجزئات الملفات.</value>
+    </data>
+    <data name="About_License">
+        <value>صدر تحت رخصة MIT.</value>
+    </data>
+    <data name="About_Tech">
+        <value>التقنية</value>
+    </data>
+    <data name="About_TechContent">
+        <value>تم بناؤه باستخدام C# و .NET 10.0.102.</value>
+    </data>
+    <data name="About_AI">
+        <value>مساعدة الذكاء الاصطناعي</value>
+    </data>
+    <data name="About_AIContent">
+        <value>تم تطوير هذا البرنامج بمساعدة الذكاء الاصطناعي (Gemini 3 Pro و Grok 4.1).</value>
+    </data>
+    <data name="Status_Processing">
+        <value>جاري الحساب ({0})...</value>
+    </data>
+    <data name="Status_Done">
+        <value>تم</value>
+    </data>
+    <data name="Status_Error">
+        <value>خطأ: {0}</value>
+    </data>
+    <data name="Status_Cancelled">
+        <value>تم الإلغاء</value>
+    </data>
+    <data name="Status_Saved">
+        <value>تم الحفظ!</value>
+    </data>
+    <data name="Status_Compressed">
+        <value>تم الضغط!</value>
+    </data>
+    <data name="Status_Waiting">
+        <value>في انتظار...</value>
+    </data>
+    <data name="Status_MissingOriginal">
+        <value>الملف الأصلي مفقود!</value>
+    </data>
+    <data name="Status_MissingHash">
+        <value>رمز التجزئة مفقود (أدخل أو أسقط ملفًا)</value>
+    </data>
+    <data name="Status_Valid">
+        <value>صالح</value>
+    </data>
+    <data name="Status_Invalid">
+        <value>غير متطابق!</value>
+    </data>
+    <data name="Status_HashFileLoaded">
+        <value>تم تحميل ملف التجزئة</value>
+    </data>
+    <data name="Status_HashFileMismatch">
+        <value>اسم ملف التجزئة غير متطابق!</value>
+    </data>
+    <data name="Status_NoHashFound">
+        <value>لم يتم العثور على رمز تجزئة في الملف!</value>
+    </data>
+    <data name="Status_Checking">
+        <value>جاري التحقق من وجود تحديثات...</value>
+    </data>
+    <data name="Status_NewVersion">
+        <value>تم العثور على إصدار جديد!</value>
+    </data>
+    <data name="Status_Latest">
+        <value>أنت تستخدم أحدث إصدار.</value>
+    </data>
+    <data name="Status_CheckError">
+        <value>خطأ في التحقق: {0}</value>
+    </data>
+    <data name="Status_Installing">
+        <value>جاري التنزيل والتثبيت...</value>
+    </data>
+    <data name="Status_InstallError">
+        <value>خطأ في التثبيت: {0}</value>
+    </data>
+    <data name="Status_ReadyFromHash">
+        <value>جاهز (من ملف .hash)</value>
+    </data>
+    <data name="Status_LostOriginal">
+        <value>فقد الملف الأصلي!</value>
+    </data>
+    <data name="Status_DropHashMismatch">
+        <value>اسم ملف التجزئة غير متطابق!</value>
+    </data>
+    <data name="Status_DropHashSuccess">
+        <value>تم إسقاط ملف التجزئة</value>
+    </data>
+    <data name="Status_DropNoHash">
+        <value>الملف لا يحتوي على رمز تجزئة!</value>
+    </data>
+    <data name="Status_ReadError">
+        <value>خطأ في القراءة</value>
+    </data>
+    <data name="Msg_Result_Title">
+        <value>النتيجة</value>
+    </data>
+    <data name="Msg_Result_Content">
+        <value>انتهت العملية!
+
+            ✅ نجاح: {0}
+            ❌ فشل: {1}</value>
+    </data>
+    <data name="Msg_CheckResult">
+        <value>تم فحص {0} ملفات.
+            ✅ تطابق: {1}
+            ❌ عدم تطابق/خطأ: {2}
+            ⛔ تم الإلغاء: {3}</value>
+    </data>
+    <data name="Msg_WrongHashFile">
+        <value>ملف خاطئ!</value>
+    </data>
+    <data name="Msg_WrongHashFileContent">
+        <value>ملف التجزئة غير متطابق!
+
+            الأصلي: {0}
+            المحدد: {1}
+
+            الرجاء تحديد ملف التجزئة الصحيح المصاحب.</value>
+    </data>
+    <data name="Msg_UpdateTitle">
+        <value>تحديث جديد</value>
+    </data>
+    <data name="Msg_UpdateContent">
+        <value>الإصدار: {0}
+
+            التغييرات:
+            {1}
+
+            انقر فوق 'تثبيت' للتنزيل.</value>
+    </data>
+    <data name="Msg_NoUpdate">
+        <value>لم يتم العثور على تحديثات أحدث.</value>
+    </data>
+    <data name="Msg_Error">
+        <value>خطأ</value>
+    </data>
+    <data name="Msg_ReadHashError">
+        <value>لا يمكن قراءة ملف التجزئة هذا.</value>
+    </data>
+    <data name="Msg_ConfigCheck">
+        <value>فحص التكوين</value>
+    </data>
+    <data name="Msg_ConfigExists">
+        <value>الملف موجود في:
+            {0}</value>
+    </data>
+    <data name="Msg_ConfigMissing">
+        <value>الملف غير موجود!</value>
+    </data>
+    <data name="Msg_ConfigCreated">
+        <value>تم إنشاء الملف بنجاح!</value>
+    </data>
+    <data name="Msg_ConfigCopied">
+        <value>تم نسخ مسار التكوين إلى الحافظة.</value>
+    </data>
+    <data name="Msg_AdminMode">
+        <value>وضع المسؤول</value>
+    </data>
+    <data name="Msg_AdminRestart">
+        <value>يرجى إعادة تشغيل التطبيق لتصبح التغييرات سارية المفعول.</value>
+    </data>
+    <data name="Msg_OpenFolderError">
+        <value>لا يمكن فتح المجلد: {0}</value>
+    </data>
+    <data name="Msg_DisclaimerTitle">
+        <value>⚠️ تحذير المطور</value>
+    </data>
+    <data name="Msg_DisclaimerContent">
+        <value>أنت على وشك التبديل إلى قناة المطور (ما قبل الإصدار).
+
+            قد يحتوي هذا الإصدار على أخطاء، وقد يكون غير مستقر، وقد يتسبب في فقدان البيانات.
+
+            نحن لسنا مسؤولين عن أي مشاكل تنشأ عن استخدام هذا الإصدار.</value>
+    </data>
+    <data name="Msg_DisclaimerAgree">
+        <value>لقد قرأت ووافقت. أتحمل المسؤولية الكاملة.</value>
+    </data>
+    <data name="Dialog_SaveHash">
+        <value>حفظ ملف التجزئة</value>
+    </data>
+    <data name="Dialog_SaveZip">
+        <value>حفظ الأرشيف</value>
+    </data>
+    <data name="Dialog_SelectFiles">
+        <value>تحديد الملفات للتجزئة</value>
+    </data>
+    <data name="Dialog_SelectHashFile">
+        <value>تحديد ملف التجزئة لـ: {0}</value>
+    </data>
+    <data name="Dialog_SelectCheckFiles">
+        <value>تحديد الملفات (الأصلية أو .hash)</value>
+    </data>
+    <data name="Header_Fallback">
+        <value>متقدم: الرجوع إلى إصدار أقدم</value>
+    </data>
+    <data name="Desc_Fallback">
+        <value>تتيح لك هذه الميزة تثبيت إصدار معين إذا كان الإصدار الجديد به أخطاء.</value>
+    </data>
+    <data name="Watermark_PasteDrop">
+        <value>لصق/إسقاط...</value>
+    </data>
+</root>

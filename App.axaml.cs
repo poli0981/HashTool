@@ -1,11 +1,13 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
-using Avalonia.Data.Core;
 using Avalonia.Data.Core.Plugins;
 using System.Linq;
 using Avalonia.Markup.Xaml;
+using CheckHash.Services;
 using CheckHash.ViewModels;
 using CheckHash.Views;
+using System;
+using System.Threading.Tasks;
 
 namespace CheckHash;
 
@@ -18,10 +20,24 @@ public partial class App : Application
 
     public override void OnFrameworkInitializationCompleted()
     {
+        // Setup Global Exception Handling
+        AppDomain.CurrentDomain.UnhandledException += (sender, args) =>
+        {
+            var ex = args.ExceptionObject as Exception;
+            LoggerService.Instance.Log($"Unhandled Exception: {ex?.Message}\nStackTrace: {ex?.StackTrace}", LogLevel.Error);
+        };
+
+        TaskScheduler.UnobservedTaskException += (sender, args) =>
+        {
+            LoggerService.Instance.Log($"Unobserved Task Exception: {args.Exception.Message}", LogLevel.Error);
+            args.SetObserved();
+        };
+
+        // Đảm bảo file config tồn tại ngay khi khởi động
+        ConfigurationService.Instance.EnsureConfigFileExists();
+
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
-            // Avoid duplicate validations from both Avalonia and the CommunityToolkit. 
-            // More info: https://docs.avaloniaui.net/docs/guides/development-guides/data-validation#manage-validationplugins
             DisableAvaloniaDataAnnotationValidation();
             desktop.MainWindow = new MainWindow
             {
@@ -34,11 +50,9 @@ public partial class App : Application
 
     private void DisableAvaloniaDataAnnotationValidation()
     {
-        // Get an array of plugins to remove
         var dataValidationPluginsToRemove =
             BindingPlugins.DataValidators.OfType<DataAnnotationsValidationPlugin>().ToArray();
 
-        // remove each entry found
         foreach (var plugin in dataValidationPluginsToRemove)
         {
             BindingPlugins.DataValidators.Remove(plugin);

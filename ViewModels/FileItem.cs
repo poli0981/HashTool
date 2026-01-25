@@ -16,14 +16,14 @@ public partial class FileItem : ObservableObject
     [ObservableProperty] private bool _isProcessing;
     [ObservableProperty] private string _processDuration = "";
 
-    // Dùng cho Tạo Hash
+    // Algorithm Select
     [ObservableProperty] private HashType _selectedAlgorithm = HashType.SHA256;
 
-    // Dùng cho Check Hash
+    // Check Hash
     [ObservableProperty] private string _expectedHash = "";
     [ObservableProperty] private bool? _isMatch;
     
-    // Trạng thái hiện/ẩn hash (khi bật chế độ che)
+    // Reveal/Hide Expected Hash
     [ObservableProperty] private bool _isRevealed;
 
     public CancellationTokenSource? Cts { get; set; }
@@ -33,7 +33,6 @@ public partial class FileItem : ObservableObject
         _status = L["Lbl_Status_Ready"];
     }
 
-    // Helper: Định dạng dung lượng file cho dễ đọc
     public static string FormatSize(long bytes)
     {
         string[] sizes = { "B", "KB", "MB", "GB", "TB" };

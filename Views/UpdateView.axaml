@@ -5,7 +5,6 @@
              x:Class="CheckHash.Views.UpdateView"
              x:DataType="vm:UpdateViewModel">
     
-    <!-- Đã bỏ Border bao ngoài vì MainWindow đã có Border cho Content -->
     <StackPanel Spacing="20">
         <TextBlock Text="{Binding Localization[Title_Update]}" FontSize="20" FontWeight="Bold"/>
 

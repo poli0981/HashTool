@@ -15,6 +15,7 @@ public static class UrlHelper
             }
             else if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
             {
+                // Trên macOS, lệnh 'open' có thể mở cả URL và thư mục
                 Process.Start("open", url);
             }
             else // Linux
@@ -22,6 +23,9 @@ public static class UrlHelper
                 Process.Start("xdg-open", url);
             }
         }
-        catch { /* Log error nếu cần */ }
+        catch 
+        { 
+            // Fallback hoặc log error
+        }
     }
 }

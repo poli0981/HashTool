@@ -51,16 +51,16 @@ public static class ThemePalettes
                     p["AppBackgroundColor"] = Color.Parse("#FFFFFF");
                     p["AppBackgroundBrush"] = Brush.Parse("#FFFFFF");
                     
-                    p["PaneBackgroundColor"] = Color.Parse("#F1F3F4"); // Grey 100
+                    p["PaneBackgroundColor"] = Color.Parse("#F1F3F4"); // Gray 100
                     p["PaneBackgroundBrush"] = Brush.Parse("#F1F3F4");
                     p["GlassBorderBrush"] = Brushes.Transparent;
                 }
                 else
                 {
-                    p["AppBackgroundColor"] = Color.Parse("#202124"); // Dark Grey
+                    p["AppBackgroundColor"] = Color.Parse("#202124"); // Dark Gray
                     p["AppBackgroundBrush"] = Brush.Parse("#202124");
                     
-                    p["PaneBackgroundColor"] = Color.Parse("#303134"); // Grey 800
+                    p["PaneBackgroundColor"] = Color.Parse("#303134"); // Gray 800
                     p["PaneBackgroundBrush"] = Brush.Parse("#303134");
                     p["GlassBorderBrush"] = Brushes.Transparent;
                 }

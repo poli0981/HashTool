@@ -1,0 +1,464 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="AppTitle">
+        <value>Hash Tool</value>
+    </data>
+    <data name="Menu_Create">
+        <value>Създай Хеш</value>
+    </data>
+    <data name="Menu_Check">
+        <value>Провери Хеш</value>
+    </data>
+    <data name="Menu_Settings">
+        <value>Настройки</value>
+    </data>
+    <data name="Menu_Update">
+        <value>Провери за актуализации</value>
+    </data>
+    <data name="Menu_Theme">
+        <value>Тема</value>
+    </data>
+    <data name="Menu_About">
+        <value>За програмата</value>
+    </data>
+    <data name="Menu_Developer">
+        <value>Разработчик</value>
+    </data>
+    <data name="Btn_AddFiles">
+        <value>Добави файлове...</value>
+    </data>
+    <data name="Btn_Clear">
+        <value>Изчисти списъка</value>
+    </data>
+    <data name="Btn_CalcAll">
+        <value>ИЗЧИСЛИ ВСИЧКО</value>
+    </data>
+    <data name="Btn_Compress">
+        <value>Компресирай (.Zip)</value>
+    </data>
+    <data name="Btn_CheckAll">
+        <value>ПРОВЕРИ ВСИЧКО</value>
+    </data>
+    <data name="Btn_CheckNow">
+        <value>Провери сега</value>
+    </data>
+    <data name="Btn_Install">
+        <value>Инсталирай</value>
+    </data>
+    <data name="Btn_Accept">
+        <value>Приеми</value>
+    </data>
+    <data name="Btn_Decline">
+        <value>Откажи</value>
+    </data>
+    <data name="Title_CreateHash">
+        <value>Създай Хеш &amp; Компресирай</value>
+    </data>
+    <data name="Title_CheckHash">
+        <value>Масова проверка</value>
+    </data>
+    <data name="Title_Update">
+        <value>Провери за актуализации</value>
+    </data>
+    <data name="Title_Disclaimer">
+        <value>Предупреждение за Developer версия</value>
+    </data>
+    <data name="Title_About">
+        <value>За програмата</value>
+    </data>
+    <data name="Help_CreateHash">
+        <value>Съвет: Shift+C за изчисляване на всичко, Shift+Z за компресия, Ctrl+F за добавяне на файлове.</value>
+    </data>
+    <data name="Help_CheckHash">
+        <value>Съвет: Shift+A за проверка на всичко, Ctrl+F за добавяне на файлове, Ctrl+Shift+H за изчистване на списъка.</value>
+    </data>
+    <data name="Lbl_Status_Ready">
+        <value>Готов</value>
+    </data>
+    <data name="Lbl_Sample">
+        <value>Пример:</value>
+    </data>
+    <data name="Lbl_CurrentVersion">
+        <value>Текуща версия: {0}</value>
+    </data>
+    <data name="Lbl_Channel">
+        <value>Канал на изданието:</value>
+    </data>
+    <data name="Lbl_TotalFiles">
+        <value>Общо файлове: {0}</value>
+    </data>
+    <data name="Channel_Stable">
+        <value>Stable (Стабилна)</value>
+    </data>
+    <data name="Channel_Dev">
+        <value>Dev (Разработчик)</value>
+    </data>
+    <data name="Settings_Language">
+        <value>Език</value>
+    </data>
+    <data name="Settings_Theme">
+        <value>Тема</value>
+    </data>
+    <data name="Settings_ThemeStyle">
+        <value>Стил на темата</value>
+    </data>
+    <data name="Settings_ThemeVariant">
+        <value>Светла/Тъмна</value>
+    </data>
+    <data name="Settings_Font">
+        <value>Шрифт</value>
+    </data>
+    <data name="Settings_FontSize">
+        <value>Размер на шрифта (pt)</value>
+    </data>
+    <data name="Settings_AutoFont">
+        <value>Автоматичен избор на оптимален шрифт за езика</value>
+    </data>
+    <data name="Settings_LockFont">
+        <value>Използвай като подразбиращ шрифт (Заключи промени)</value>
+    </data>
+    <data name="Settings_Scale">
+        <value>Мащабиране на интерфейса</value>
+    </data>
+    <data name="Settings_MaskHash">
+        <value>Маскирай Хеш (Сигурност)</value>
+    </data>
+    <data name="Settings_Reset">
+        <value>Нулирай темата</value>
+    </data>
+    <data name="Settings_Other">
+        <value>Поверителност &amp; Сигурност</value>
+    </data>
+    <data name="Settings_SetDefault">
+        <value>Задай като подразбиращо</value>
+    </data>
+    <data name="Settings_CustomColor">
+        <value>Персонализиран цвят на текста</value>
+    </data>
+    <data name="Settings_TextTest">
+        <value>Бързата кафява лисица прескача мързеливото куче.</value>
+    </data>
+    <data name="Settings_Advanced">
+        <value>Разширени</value>
+    </data>
+    <data name="Settings_AdminMode">
+        <value>Изпълни като Администратор</value>
+    </data>
+    <data name="Settings_AdminDesc">
+        <value>Изисква рестарт. Позволява достъп до защитени файлове.</value>
+    </data>
+    <data name="Settings_FileSizeLimit">
+        <value>Ограничение на размера на входните файлове</value>
+    </data>
+    <data name="Settings_FileSizeDesc">
+        <value>Максимално ограничение на размера за обработваните файлове.</value>
+    </data>
+    <data name="Settings_ForceQuitTimeout">
+        <value>Таймаут за принудително затваряне</value>
+    </data>
+    <data name="Settings_ForceQuitDesc">
+        <value>Време (секунди) преди приложението да се счита за замръзнало.</value>
+    </data>
+    <data name="Settings_FileTimeout">
+        <value>Таймаут за обработка на файл</value>
+    </data>
+    <data name="Settings_FileTimeoutDesc">
+        <value>Принудително отменяне, ако файлът отнема твърде много време.</value>
+    </data>
+    <data name="Settings_Emergency">
+        <value>Спешно действие</value>
+    </data>
+    <data name="Settings_EmergencyDesc">
+        <value>Принудително затваряне на приложението и отменяне на всички задачи веднага.</value>
+    </data>
+    <data name="Settings_BtnForceQuit">
+        <value>Принудително Затваряне &amp; Отмени Всичко</value>
+    </data>
+    <data name="Settings_Configuration">
+        <value>Конфигурация</value>
+    </data>
+    <data name="Settings_LockSettings">
+        <value>Заключи настройки (Запази като подразбиращи)</value>
+    </data>
+    <data name="Settings_LockDesc">
+        <value>Предотвратява случайни промени. Само маската на хеша остава активна.</value>
+    </data>
+    <data name="Settings_ResetAll">
+        <value>Нулирай всички настройки</value>
+    </data>
+    <data name="Settings_ResetDesc">
+        <value>Възстанови до първоначалните подразбиращи стойности.</value>
+    </data>
+    <data name="Settings_ConfigPath">
+        <value>Път до конфигурационния файл</value>
+    </data>
+    <data name="Settings_ConfigDesc">
+        <value>Показва пълния път и копира в клипборда.</value>
+    </data>
+    <data name="Settings_ShowPath">
+        <value>Показвай пътя</value>
+    </data>
+    <data name="Settings_AutoSave">
+        <value>Настройките се запазват автоматично в config.json</value>
+    </data>
+    <data name="Settings_DeveloperMode">
+        <value>Режим на разработчика</value>
+    </data>
+    <data name="Settings_DeveloperDesc">
+        <value>Активирай разширени инструменти за логване и отстраняване на грешки.</value>
+    </data>
+    <data name="Dev_Console">
+        <value>Конзола на разработчика</value>
+    </data>
+    <data name="Dev_Beta">
+        <value>BETA</value>
+    </data>
+    <data name="Dev_Recording">
+        <value>Запис</value>
+    </data>
+    <data name="Dev_Paused">
+        <value>Пауза</value>
+    </data>
+    <data name="Dev_SaveToFile">
+        <value>Запази във файл</value>
+    </data>
+    <data name="Dev_NoSave">
+        <value>Не запазвай</value>
+    </data>
+    <data name="Dev_Clear">
+        <value>Изчисти конзолата</value>
+    </data>
+    <data name="Dev_Copy">
+        <value>Копирай всичко</value>
+    </data>
+    <data name="Dev_OpenFolder">
+        <value>Отвори папка с логове</value>
+    </data>
+    <data name="About_Author">
+        <value>Автор</value>
+    </data>
+    <data name="About_Software">
+        <value>Софтуер</value>
+    </data>
+    <data name="About_ThirdParty">
+        <value>Библиотеки на трети страни</value>
+    </data>
+    <data name="About_Copyright">
+        <value>Авторски права</value>
+    </data>
+    <data name="About_Desc">
+        <value>Мощен инструмент за създаване и проверка на хешове на файлове.</value>
+    </data>
+    <data name="About_License">
+        <value>Издаден под лиценз MIT.</value>
+    </data>
+    <data name="About_Tech">
+        <value>Технология</value>
+    </data>
+    <data name="About_TechContent">
+        <value>Създаден с C# и .NET 10.0.102.</value>
+    </data>
+    <data name="About_AI">
+        <value>Подкрепа от AI</value>
+    </data>
+    <data name="About_AIContent">
+        <value>Този софтуер е разработен с помощта на AI (Gemini 3 Pro и Grok 4.1).</value>
+    </data>
+    <data name="Status_Processing">
+        <value>Обработка ({0})...</value>
+    </data>
+    <data name="Status_Done">
+        <value>Завършено</value>
+    </data>
+    <data name="Status_Error">
+        <value>Грешка: {0}</value>
+    </data>
+    <data name="Status_Cancelled">
+        <value>Отменено</value>
+    </data>
+    <data name="Status_Saved">
+        <value>Запазено!</value>
+    </data>
+    <data name="Status_Compressed">
+        <value>Компресирано!</value>
+    </data>
+    <data name="Status_Waiting">
+        <value>Чакане на хеш/вход...</value>
+    </data>
+    <data name="Status_MissingOriginal">
+        <value>Липсва оригинален файл!</value>
+    </data>
+    <data name="Status_MissingHash">
+        <value>Липсва хеш (Въведете или нужен хеш файл)</value>
+    </data>
+    <data name="Status_Valid">
+        <value>ВАЛИДЕН</value>
+    </data>
+    <data name="Status_Invalid">
+        <value>НЕСЪОТВЕТСТВИЕ!</value>
+    </data>
+    <data name="Status_HashFileLoaded">
+        <value>Хеш файл зареден</value>
+    </data>
+    <data name="Status_HashFileMismatch">
+        <value>Име на хеш файл не съвпада!</value>
+    </data>
+    <data name="Status_NoHashFound">
+        <value>Файлът не съдържа хеш!</value>
+    </data>
+    <data name="Status_Checking">
+        <value>Проверка за актуализации...</value>
+    </data>
+    <data name="Status_NewVersion">
+        <value>Открита нова версия!</value>
+    </data>
+    <data name="Status_Latest">
+        <value>Използвате най-новата версия.</value>
+    </data>
+    <data name="Status_CheckError">
+        <value>Грешка при проверка на актуализации: {0}</value>
+    </data>
+    <data name="Status_Installing">
+        <value>Изтегляне и инсталиране...</value>
+    </data>
+    <data name="Status_InstallError">
+        <value>Грешка при инсталиране: {0}</value>
+    </data>
+    <data name="Status_ReadyFromHash">
+        <value>Готов (От .hash файл)</value>
+    </data>
+    <data name="Status_LostOriginal">
+        <value>Оригинален файл изгубен!</value>
+    </data>
+    <data name="Status_DropHashMismatch">
+        <value>Име на хеш файл не съвпада!</value>
+    </data>
+    <data name="Status_DropHashSuccess">
+        <value>Хеш файл пуснат</value>
+    </data>
+    <data name="Status_DropNoHash">
+        <value>Файлът не съдържа хеш!</value>
+    </data>
+    <data name="Status_ReadError">
+        <value>Грешка при четене на файл</value>
+    </data>
+    <data name="Msg_Result_Title">
+        <value>Резултат</value>
+    </data>
+    <data name="Msg_Result_Content">
+        <value>Обработката завършена!
+
+            ✅ Успехи: {0}
+            ❌ Неуспехи: {1}</value>
+    </data>
+    <data name="Msg_CheckResult">
+        <value>Проверени {0} файла.
+            ✅ Съвпадения: {1}
+            ❌ Несъвпадения/Грешки: {2}
+            ⛔ Отменени: {3}</value>
+    </data>
+    <data name="Msg_WrongHashFile">
+        <value>Грешен файл!</value>
+    </data>
+    <data name="Msg_WrongHashFileContent">
+        <value>Хеш файлът не съвпада!
+
+            Оригинален файл: {0}
+            Избран файл: {1}
+
+            Моля, изберете правилния придружаващ хеш файл.</value>
+    </data>
+    <data name="Msg_UpdateTitle">
+        <value>Нова актуализация</value>
+    </data>
+    <data name="Msg_UpdateContent">
+        <value>Версия: {0}
+
+            Промени:
+            {1}
+
+            Кликнете 'Актуализирай сега' за изтегляне.</value>
+    </data>
+    <data name="Msg_NoUpdate">
+        <value>Няма по-нова актуализация.</value>
+    </data>
+    <data name="Msg_Error">
+        <value>Грешка</value>
+    </data>
+    <data name="Msg_ReadHashError">
+        <value>Не може да се прочете този хеш файл.</value>
+    </data>
+    <data name="Msg_ConfigCheck">
+        <value>Проверка на конфигурацията</value>
+    </data>
+    <data name="Msg_ConfigExists">
+        <value>Файлът съществува на:
+            {0}</value>
+    </data>
+    <data name="Msg_ConfigMissing">
+        <value>Файлът не съществува!</value>
+    </data>
+    <data name="Msg_ConfigCreated">
+        <value>Файлът е създаден успешно!</value>
+    </data>
+    <data name="Msg_ConfigCopied">
+        <value>Пътят на конфигурацията е копиран.</value>
+    </data>
+    <data name="Msg_AdminMode">
+        <value>Администраторски режим</value>
+    </data>
+    <data name="Msg_AdminRestart">
+        <value>Рестартирайте приложението, за да влязат промените в сила.</value>
+    </data>
+    <data name="Msg_OpenFolderError">
+        <value>Не може да се отвори папката: {0}</value>
+    </data>
+    <data name="Msg_DisclaimerTitle">
+        <value>⚠️ ПРЕДУПРЕЖДЕНИЕ ЗА РАЗРАБОТЧИК ВЕРСИЯ</value>
+    </data>
+    <data name="Msg_DisclaimerContent">
+        <value>Точно превключвате към Developer (Pre-release) канал за актуализации.
+
+            Тази версия може да съдържа грешки, да е нестабилна и да причини загуба на данни.
+
+            Не нося отговорност за проблеми, възникнали от използването на тази версия.</value>
+    </data>
+    <data name="Msg_DisclaimerAgree">
+        <value>Прочетох и съгласен съм. Поемам пълна отговорност.</value>
+    </data>
+    <data name="Dialog_SaveHash">
+        <value>Запази Хеш файл</value>
+    </data>
+    <data name="Dialog_SaveZip">
+        <value>Запази компресиран файл</value>
+    </data>
+    <data name="Dialog_SelectFiles">
+        <value>Изберете файлове за хеширане</value>
+    </data>
+    <data name="Dialog_SelectHashFile">
+        <value>Изберете хеш файл за: {0}</value>
+    </data>
+    <data name="Dialog_SelectCheckFiles">
+        <value>Изберете файлове (Оригинален или .hash файл)</value>
+    </data>
+    <data name="Header_Fallback">
+        <value>Разширени: Връщане към по-стара версия (Fallback)</value>
+    </data>
+    <data name="Desc_Fallback">
+        <value>Тази функция позволява инсталиране на конкретна версия, ако новата има проблеми.</value>
+    </data>
+    <data name="Watermark_PasteDrop">
+        <value>Постави/Пусни...</value>
+    </data>
+</root>

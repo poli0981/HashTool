@@ -6,7 +6,7 @@
         xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
         x:Class="CheckHash.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-        Icon="/Assets/avalonia-logo.ico"
+        Icon="/Assets/icon/favicon.ico"
         Title="{Binding AppTitleText}"
         Width="1280" Height="720"
         WindowStartupLocation="CenterScreen"
@@ -17,34 +17,24 @@
         CanResize="True"
         FontFamily="{Binding SettingsVM.Font.SelectedFont}"
         FontSize="{Binding SettingsVM.Font.BaseFontSize}"
-        >
-    
+        FlowDirection="{Binding L.FlowDirection}">
+
     <Window.Resources>
         <conv:HashMaskConverter x:Key="HashMaskConverter" />
     </Window.Resources>
-    
+
     <!-- Key Bindings -->
     <Window.KeyBindings>
-        <!-- Shift + A: Check All -->
         <KeyBinding Gesture="Shift+A" Command="{Binding HotkeyCheckAllCommand}" />
-        
-        <!-- Shift + C: Create All -->
         <KeyBinding Gesture="Shift+C" Command="{Binding HotkeyCreateAllCommand}" />
-        
-        <!-- Ctrl + F / Cmd + F: Open File Picker (Tùy thuộc vào trang hiện tại) -->
         <KeyBinding Gesture="Ctrl+F" Command="{Binding OpenFilePickerCommand}" />
-        <KeyBinding Gesture="Meta+F" Command="{Binding OpenFilePickerCommand}" /> <!-- For Mac -->
-
-        <!-- Shift + Z: Compress All -->
+        <KeyBinding Gesture="Meta+F" Command="{Binding OpenFilePickerCommand}" />
         <KeyBinding Gesture="Shift+Z" Command="{Binding HotkeyCompressAllCommand}" />
-
-        <!-- Ctrl + Shift + H: Clear All (Cho cả 2 trang) -->
         <KeyBinding Gesture="Ctrl+Shift+H" Command="{Binding ClearAllListsCommand}" />
         <KeyBinding Gesture="Meta+Shift+H" Command="{Binding ClearAllListsCommand}" />
     </Window.KeyBindings>
-    
+
     <Window.Styles>
-        <!-- Style cho Menu Button -->
         <Style Selector="Button.MenuBtn">
             <Setter Property="Background" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0" />
@@ -60,17 +50,16 @@
                 </Transitions>
             </Setter>
         </Style>
-        
+
         <Style Selector="Button.MenuBtn:pointerover">
-            <Setter Property="Background" Value="{DynamicResource SystemAccentColorLight}" /> <!-- Cần định nghĩa màu này hoặc dùng Opacity -->
+            <Setter Property="Background" Value="{DynamicResource SystemAccentColorLight}" />
             <Setter Property="RenderTransform" Value="scale(1.02)" />
         </Style>
-        
+
         <Style Selector="Button.MenuBtn:pressed">
             <Setter Property="RenderTransform" Value="scale(0.98)" />
         </Style>
 
-        <!-- Style cho Icon trong Menu Button -->
         <Style Selector="Button.MenuBtn icons|MaterialIcon">
             <Setter Property="Transitions">
                 <Transitions>
@@ -78,64 +67,63 @@
                 </Transitions>
             </Setter>
         </Style>
-        
-        <!-- Hiệu ứng khi Hover vào Icon (khi Pane đóng) -->
+
         <Style Selector="SplitView[IsPaneOpen=False] Button.MenuBtn:pointerover icons|MaterialIcon">
             <Setter Property="Foreground" Value="{DynamicResource SystemAccentColor}" />
         </Style>
-        
-        <!-- Hiệu ứng khi Hover vào Button (khi Pane mở): Đổi màu cả Icon và Text -->
+
         <Style Selector="SplitView[IsPaneOpen=True] Button.MenuBtn:pointerover icons|MaterialIcon">
             <Setter Property="Foreground" Value="{DynamicResource SystemAccentColor}" />
         </Style>
         <Style Selector="SplitView[IsPaneOpen=True] Button.MenuBtn:pointerover TextBlock">
             <Setter Property="Foreground" Value="{DynamicResource SystemAccentColor}" />
         </Style>
-
     </Window.Styles>
-    
+
     <Window.DataTemplates>
         <DataTemplate DataType="vm:SettingsViewModel">
             <views:SettingsView />
         </DataTemplate>
-        
         <DataTemplate DataType="vm:AboutViewModel">
             <views:AboutView />
         </DataTemplate>
-
+        <DataTemplate DataType="vm:DeveloperViewModel">
+            <views:DeveloperView />
+        </DataTemplate>
         <DataTemplate DataType="vm:CreateHashViewModel">
             <Grid RowDefinitions="Auto, Auto, *">
                 <Grid ColumnDefinitions="*, Auto">
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="{Binding Localization[Title_CreateHash]}" FontSize="24" FontWeight="Bold" Margin="0,0,0,5" />
+                        <TextBlock Text="{Binding Localization[Title_CreateHash]}" FontSize="24" FontWeight="Bold"
+                                   Margin="0,0,0,5" />
                         <!-- Help Text -->
-                        <TextBlock Text="{Binding Localization[Help_CreateHash]}" FontSize="12" Opacity="0.6" FontStyle="Italic" Margin="0,0,0,15"/>
+                        <TextBlock Text="{Binding Localization[Help_CreateHash]}" FontSize="12" Opacity="0.6"
+                                   FontStyle="Italic" Margin="0,0,0,15" />
                     </StackPanel>
                     <TextBlock Grid.Column="1" Text="{Binding TotalFilesText}" VerticalAlignment="Center" Opacity="0.7" />
                 </Grid>
 
                 <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="10" Margin="0,0,0,15">
                     <Button Content="{Binding Localization[Btn_AddFiles]}" Command="{Binding AddFilesCommand}"
-                            CommandParameter="{Binding $parent[Window]}" 
-                            ToolTip.Tip="Ctrl+F / Cmd+F"/>
-                    <Button Content="{Binding Localization[Btn_Clear]}" Command="{Binding ClearListCommand}" 
-                            ToolTip.Tip="Ctrl+Shift+H"/>
+                            CommandParameter="{Binding $parent[Window]}"
+                            ToolTip.Tip="Ctrl+F / Cmd+F" />
+                    <Button Content="{Binding Localization[Btn_Clear]}" Command="{Binding ClearListCommand}"
+                            ToolTip.Tip="Ctrl+Shift+H" />
                     <Button Content="{Binding Localization[Btn_Compress]}"
                             Command="{Binding CompressFilesCommand}"
                             CommandParameter="{Binding $parent[Window]}"
-                            IsEnabled="{Binding Files.Count}" 
-                            ToolTip.Tip="Shift+Z"/>
+                            IsEnabled="{Binding Files.Count}"
+                            ToolTip.Tip="Shift+Z" />
                     <Button Content="{Binding Localization[Btn_CalcAll]}"
                             Background="{DynamicResource SystemAccentColor}" Foreground="White"
-                            Command="{Binding ComputeAllCommand}" 
-                            ToolTip.Tip="Shift+C"/>
+                            Command="{Binding ComputeAllCommand}"
+                            ToolTip.Tip="Shift+C" />
                 </StackPanel>
 
                 <ListBox Grid.Row="2" ItemsSource="{Binding Files}" Background="Transparent">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Border BorderBrush="#30808080" BorderThickness="0,0,0,1" Padding="5">
-                                <!-- Điều chỉnh lại Grid Columns để rộng rãi hơn cho Hash -->
                                 <Grid ColumnDefinitions="*, 90, 80, 200, 40, 80, 100">
 
                                     <!-- 0: File Name -->
@@ -160,7 +148,7 @@
                                               SelectedItem="{Binding SelectedAlgorithm}"
                                               VerticalAlignment="Center" Margin="0,0,5,0" Width="95" />
 
-                                    <!-- 3: Hash Result (Có nút Mắt) -->
+                                    <!-- 3: Hash Result (Eye to Hide/Reveal) -->
                                     <Grid Grid.Column="3" ColumnDefinitions="*, Auto">
                                         <TextBox Grid.Column="0"
                                                  IsReadOnly="True" VerticalAlignment="Center"
@@ -169,20 +157,23 @@
                                                  TextWrapping="NoWrap">
                                             <TextBox.Text>
                                                 <MultiBinding Converter="{StaticResource HashMaskConverter}">
-                                                    <Binding Path="ResultHash"/>
-                                                    <Binding Path="$parent[Window].((vm:MainWindowViewModel)DataContext).Prefs.IsHashMaskingEnabled"/> 
-                                                    <Binding Path="IsRevealed"/>
+                                                    <Binding Path="ResultHash" />
+                                                    <Binding
+                                                        Path="$parent[Window].((vm:MainWindowViewModel)DataContext).Prefs.IsHashMaskingEnabled" />
+                                                    <Binding Path="IsRevealed" />
                                                 </MultiBinding>
                                             </TextBox.Text>
                                         </TextBox>
 
-                                        <ToggleButton Grid.Column="1" 
+                                        <ToggleButton Grid.Column="1"
                                                       IsChecked="{Binding IsRevealed}"
                                                       Background="Transparent" Padding="4" Margin="2,0,0,0"
                                                       IsVisible="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).Prefs.IsHashMaskingEnabled}">
                                             <Panel>
-                                                <icons:MaterialIcon Kind="EyeOutline" Width="16" Height="16" IsVisible="{Binding !IsRevealed}"/>
-                                                <icons:MaterialIcon Kind="EyeOffOutline" Width="16" Height="16" IsVisible="{Binding IsRevealed}"/>
+                                                <icons:MaterialIcon Kind="EyeOutline" Width="16" Height="16"
+                                                                    IsVisible="{Binding !IsRevealed}" />
+                                                <icons:MaterialIcon Kind="EyeOffOutline" Width="16" Height="16"
+                                                                    IsVisible="{Binding IsRevealed}" />
                                             </Panel>
                                         </ToggleButton>
                                     </Grid>
@@ -197,7 +188,7 @@
 
                                     <!-- 5: Status -->
                                     <TextBlock Grid.Column="5" Text="{Binding Status}"
-                                               VerticalAlignment="Center" Foreground="#00bfff" FontSize="10"
+                                               VerticalAlignment="Center" Foreground="#00bfff" FontSize="12"
                                                TextWrapping="Wrap" />
 
                                     <!-- 6: Actions -->
@@ -244,9 +235,11 @@
             <Grid RowDefinitions="Auto, Auto, Auto, *">
                 <Grid ColumnDefinitions="*, Auto">
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="{Binding Localization[Title_CheckHash]}" FontSize="24" FontWeight="Bold" Margin="0,0,0,5" />
+                        <TextBlock Text="{Binding Localization[Title_CheckHash]}" FontSize="24" FontWeight="Bold"
+                                   Margin="0,0,0,5" />
                         <!-- Help Text -->
-                        <TextBlock Text="{Binding Localization[Help_CheckHash]}" FontSize="12" Opacity="0.6" FontStyle="Italic" Margin="0,0,0,15"/>
+                        <TextBlock Text="{Binding Localization[Help_CheckHash]}" FontSize="12" Opacity="0.6"
+                                   FontStyle="Italic" Margin="0,0,0,15" />
                     </StackPanel>
                     <TextBlock Grid.Column="1" Text="{Binding TotalFilesText}" VerticalAlignment="Center" Opacity="0.7" />
                 </Grid>
@@ -254,10 +247,10 @@
                 <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="10" Margin="0,0,0,10">
                     <Button Content="{Binding Localization[Btn_AddFiles]}"
                             Command="{Binding AddFilesToCheckCommand}"
-                            CommandParameter="{Binding $parent[Window]}" 
-                            ToolTip.Tip="Ctrl+F / Cmd+F"/>
-                    <Button Content="{Binding Localization[Btn_Clear]}" Command="{Binding ClearListCommand}" 
-                            ToolTip.Tip="Ctrl+Shift+H"/>
+                            CommandParameter="{Binding $parent[Window]}"
+                            ToolTip.Tip="Ctrl+F / Cmd+F" />
+                    <Button Content="{Binding Localization[Btn_Clear]}" Command="{Binding ClearListCommand}"
+                            ToolTip.Tip="Ctrl+Shift+H" />
 
                     <TextBlock Text="{Binding Localization[Lbl_Sample]}" VerticalAlignment="Center" />
                     <ComboBox ItemsSource="{Binding AlgorithmList}" SelectedItem="{Binding GlobalAlgorithm}"
@@ -265,8 +258,8 @@
 
                     <Button Content="{Binding Localization[Btn_CheckAll]}"
                             Background="{DynamicResource SystemAccentColor}" Foreground="White"
-                            Command="{Binding VerifyAllCommand}" 
-                            ToolTip.Tip="Shift+A"/>
+                            Command="{Binding VerifyAllCommand}"
+                            ToolTip.Tip="Shift+A" />
                 </StackPanel>
 
                 <ProgressBar Grid.Row="2" Minimum="0" Maximum="{Binding ProgressMax}" Value="{Binding ProgressValue}"
@@ -294,52 +287,56 @@
 
                                     <!-- Hash Input/Display -->
                                     <Grid Grid.Column="2" ColumnDefinitions="*, Auto, Auto" Margin="0,0,10,0">
-                                        
-                                        <!-- TẠM THỜI: Dùng TextBlock hiển thị Mask đè lên TextBox khi cần che. -->
                                         <Panel Grid.Column="0">
-                                            <!-- Masked View (Chỉ hiện khi Mask ON và Not Revealed) -->
-                                            <TextBlock VerticalAlignment="Center" FontFamily="Consolas, Monospace" FontSize="11"
+                                            <TextBlock VerticalAlignment="Center" FontFamily="Consolas, Monospace"
+                                                       FontSize="11"
                                                        Margin="5,0">
                                                 <TextBlock.Text>
                                                     <MultiBinding Converter="{StaticResource HashMaskConverter}">
-                                                        <Binding Path="ExpectedHash"/>
-                                                        <Binding Path="$parent[Window].((vm:MainWindowViewModel)DataContext).Prefs.IsHashMaskingEnabled"/> 
-                                                        <Binding Path="IsRevealed"/> <!-- Đã fix: IsRevealed thay vì !IsRevealed -->
+                                                        <Binding Path="ExpectedHash" />
+                                                        <Binding
+                                                            Path="$parent[Window].((vm:MainWindowViewModel)DataContext).Prefs.IsHashMaskingEnabled" />
+                                                        <Binding Path="IsRevealed" />
                                                     </MultiBinding>
                                                 </TextBlock.Text>
                                                 <TextBlock.IsVisible>
                                                     <MultiBinding Converter="{x:Static BoolConverters.And}">
-                                                        <Binding Path="$parent[Window].((vm:MainWindowViewModel)DataContext).Prefs.IsHashMaskingEnabled"/>
-                                                        <Binding Path="!IsRevealed"/>
+                                                        <Binding
+                                                            Path="$parent[Window].((vm:MainWindowViewModel)DataContext).Prefs.IsHashMaskingEnabled" />
+                                                        <Binding Path="!IsRevealed" />
                                                     </MultiBinding>
                                                 </TextBlock.IsVisible>
                                             </TextBlock>
-                                            
-                                            <!-- TextBox thật sự (Hiện khi Mask OFF hoặc Revealed) -->
+
+                                            <!-- TextBox Real (Mask OFF/ Revealed) -->
                                             <TextBox Name="HashInputBox"
                                                      Text="{Binding ExpectedHash, Mode=TwoWay}"
                                                      Watermark="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Watermark_PasteDrop]}"
-                                                     VerticalAlignment="Center" FontFamily="Consolas, Monospace" FontSize="11"
+                                                     VerticalAlignment="Center" FontFamily="Consolas, Monospace"
+                                                     FontSize="11"
                                                      DragDrop.AllowDrop="True" DragDrop.Drop="OnHashFileDrop">
                                                 <TextBox.IsVisible>
                                                     <MultiBinding Converter="{x:Static BoolConverters.Or}">
-                                                        <Binding Path="!$parent[Window].((vm:MainWindowViewModel)DataContext).Prefs.IsHashMaskingEnabled"/>
-                                                        <Binding Path="IsRevealed"/>
+                                                        <Binding
+                                                            Path="!$parent[Window].((vm:MainWindowViewModel)DataContext).Prefs.IsHashMaskingEnabled" />
+                                                        <Binding Path="IsRevealed" />
                                                     </MultiBinding>
                                                 </TextBox.IsVisible>
                                             </TextBox>
                                         </Panel>
 
-                                        <ToggleButton Grid.Column="1" 
+                                        <ToggleButton Grid.Column="1"
                                                       IsChecked="{Binding IsRevealed}"
                                                       Background="Transparent" Padding="4" Margin="2,0,0,0"
                                                       IsVisible="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).Prefs.IsHashMaskingEnabled}">
                                             <Panel>
-                                                <icons:MaterialIcon Kind="EyeOutline" Width="16" Height="16" IsVisible="{Binding !IsRevealed}"/>
-                                                <icons:MaterialIcon Kind="EyeOffOutline" Width="16" Height="16" IsVisible="{Binding IsRevealed}"/>
+                                                <icons:MaterialIcon Kind="EyeOutline" Width="16" Height="16"
+                                                                    IsVisible="{Binding !IsRevealed}" />
+                                                <icons:MaterialIcon Kind="EyeOffOutline" Width="16" Height="16"
+                                                                    IsVisible="{Binding IsRevealed}" />
                                             </Panel>
                                         </ToggleButton>
-                                        
+
                                         <Button Grid.Column="2" Margin="2,0,0,0" Padding="5" Background="Transparent"
                                                 Command="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).BrowseHashFileCommand}"
                                                 CommandParameter="{Binding .}">
@@ -350,7 +347,7 @@
 
                                     <TextBlock Grid.Column="3" Text="{Binding Status}"
                                                FontWeight="Bold" VerticalAlignment="Center" TextWrapping="Wrap"
-                                               FontSize="11">
+                                               FontSize="12">
                                     </TextBlock>
 
                                     <StackPanel Grid.Column="4" Orientation="Horizontal" Spacing="5"
@@ -382,14 +379,11 @@
                 </ListBox>
             </Grid>
         </DataTemplate>
-
         <DataTemplate DataType="vm:UpdateViewModel">
             <views:UpdateView />
         </DataTemplate>
-
     </Window.DataTemplates>
 
-    <!-- Bọc toàn bộ nội dung trong LayoutTransformControl để hỗ trợ Scale -->
     <LayoutTransformControl>
         <LayoutTransformControl.LayoutTransform>
             <ScaleTransform ScaleX="{Binding SettingsVM.Font.UiScale}"
@@ -398,21 +392,21 @@
 
         <SplitView IsPaneOpen="{Binding IsPaneOpen}"
                    DisplayMode="Inline"
-                   OpenPaneLength="250"
-                   PaneBackground="Transparent"> <!-- PaneBackground Transparent để thấy khoảng hở -->
+                   OpenPaneLength="265"
+                   PaneBackground="Transparent">
 
             <SplitView.Pane>
-                <!-- Bọc Pane trong Border để tạo hiệu ứng nổi và bo góc -->
-                <Border Background="{DynamicResource PaneBackgroundBrush}" 
-                        CornerRadius="12" 
-                        Margin="15,40,10,25"
+                <Border Background="{DynamicResource PaneBackgroundBrush}"
+                        CornerRadius="12"
+                        Margin="15,40, 5,25"
                         BorderBrush="{DynamicResource GlassBorderBrush}"
                         BorderThickness="1">
                     <Grid RowDefinitions="Auto, *, Auto" Margin="0,10">
                         <!-- Logo / App Name -->
                         <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="10" Margin="20,10,0,20">
-                            <icons:MaterialIcon Kind="ShieldCheck" Width="32" Height="32" Foreground="{DynamicResource SystemAccentColor}" />
-                            <TextBlock Text="CheckHash" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" />
+                            <Image Source="/Assets/logo_in_app.png" Width="32" Height="32" VerticalAlignment="Center"/>
+                            <TextBlock Text="{Binding AppTitleText}" FontSize="20" FontWeight="Bold"
+                                       VerticalAlignment="Center" />
                         </StackPanel>
 
                         <ScrollViewer Grid.Row="1">
@@ -421,7 +415,8 @@
                                     <Grid ColumnDefinitions="60, *">
                                         <icons:MaterialIcon Grid.Column="0" Kind="FilePlus" Width="24" Height="24"
                                                             HorizontalAlignment="Center" />
-                                        <TextBlock Grid.Column="1" Text="{Binding MenuCreateText}" VerticalAlignment="Center"
+                                        <TextBlock Grid.Column="1" Text="{Binding MenuCreateText}"
+                                                   VerticalAlignment="Center"
                                                    FontWeight="SemiBold" />
                                     </Grid>
                                 </Button>
@@ -430,7 +425,8 @@
                                     <Grid ColumnDefinitions="60, *">
                                         <icons:MaterialIcon Grid.Column="0" Kind="FileCheck" Width="24" Height="24"
                                                             HorizontalAlignment="Center" />
-                                        <TextBlock Grid.Column="1" Text="{Binding MenuCheckText}" VerticalAlignment="Center"
+                                        <TextBlock Grid.Column="1" Text="{Binding MenuCheckText}"
+                                                   VerticalAlignment="Center"
                                                    FontWeight="SemiBold" />
                                     </Grid>
                                 </Button>
@@ -449,25 +445,39 @@
                                     <Grid ColumnDefinitions="60, *">
                                         <icons:MaterialIcon Grid.Column="0" Kind="CloudDownload" Width="24" Height="24"
                                                             HorizontalAlignment="Center" />
-                                        <TextBlock Grid.Column="1" Text="{Binding MenuUpdateText}" VerticalAlignment="Center"
+                                        <TextBlock Grid.Column="1" Text="{Binding MenuUpdateText}"
+                                                   VerticalAlignment="Center"
                                                    FontWeight="SemiBold" />
                                     </Grid>
                                 </Button>
-                                
+
                                 <Button Command="{Binding NavigateToAboutCommand}" Classes="MenuBtn">
                                     <Grid ColumnDefinitions="60, *">
-                                        <icons:MaterialIcon Grid.Column="0" Kind="InformationOutline" Width="24" Height="24"
+                                        <icons:MaterialIcon Grid.Column="0" Kind="InformationOutline" Width="24"
+                                                            Height="24"
                                                             HorizontalAlignment="Center" />
-                                        <TextBlock Grid.Column="1" Text="{Binding MenuAboutText}" VerticalAlignment="Center"
+                                        <TextBlock Grid.Column="1" Text="{Binding MenuAboutText}"
+                                                   VerticalAlignment="Center"
                                                    FontWeight="SemiBold" />
+                                    </Grid>
+                                </Button>
+
+                                <Button Command="{Binding NavigateToDeveloperCommand}" Classes="MenuBtn"
+                                        IsVisible="{Binding SettingsVM.IsDeveloperModeEnabled}">
+                                    <Grid ColumnDefinitions="60, *">
+                                        <icons:MaterialIcon Grid.Column="0" Kind="Console" Width="24" Height="24"
+                                                            HorizontalAlignment="Center" Foreground="#00FF00" />
+                                        <TextBlock Grid.Column="1" Text="{Binding Localization[Menu_Developer]}"
+                                                   VerticalAlignment="Center"
+                                                   FontWeight="SemiBold" Foreground="#00FF00" />
                                     </Grid>
                                 </Button>
 
                             </StackPanel>
                         </ScrollViewer>
 
-
                         <Button Grid.Row="2" Command="{Binding ToggleThemeCommand}"
+                                IsEnabled="{Binding !SettingsVM.IsSettingsLocked}"
                                 Classes="MenuBtn">
                             <Grid ColumnDefinitions="60, *">
                                 <icons:MaterialIcon Grid.Column="0" Kind="ThemeLightDark" Width="24" Height="24"
@@ -480,13 +490,11 @@
             </SplitView.Pane>
 
             <SplitView.Content>
-                <!-- Bọc Content trong Border để tạo hiệu ứng nổi và bo góc -->
-                <Border Padding="20" CornerRadius="12" 
+                <Border Padding="20" CornerRadius="12"
                         Background="{DynamicResource AppBackgroundBrush}"
                         Margin="0,40,25,25"
                         BorderBrush="{DynamicResource GlassBorderBrush}"
                         BorderThickness="1">
-                    <!-- Thêm ScrollViewer để nội dung không bị cắt khi resize -->
                     <ContentControl Content="{Binding CurrentPage}" />
                 </Border>
             </SplitView.Content>

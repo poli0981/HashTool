@@ -1,0 +1,464 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="AppTitle">
+        <value>ابزار هَش</value>
+    </data>
+    <data name="Menu_Create">
+        <value>ایجاد هَش</value>
+    </data>
+    <data name="Menu_Check">
+        <value>بررسی هَش</value>
+    </data>
+    <data name="Menu_Settings">
+        <value>تنظیمات</value>
+    </data>
+    <data name="Menu_Update">
+        <value>بررسی به‌روزرسانی</value>
+    </data>
+    <data name="Menu_Theme">
+        <value>تم</value>
+    </data>
+    <data name="Menu_About">
+        <value>درباره</value>
+    </data>
+    <data name="Menu_Developer">
+        <value>توسعه‌دهنده</value>
+    </data>
+    <data name="Btn_AddFiles">
+        <value>افزودن فایل‌ها...</value>
+    </data>
+    <data name="Btn_Clear">
+        <value>پاک کردن لیست</value>
+    </data>
+    <data name="Btn_CalcAll">
+        <value>محاسبه همه</value>
+    </data>
+    <data name="Btn_Compress">
+        <value>فشرده‌سازی (.Zip)</value>
+    </data>
+    <data name="Btn_CheckAll">
+        <value>بررسی همه</value>
+    </data>
+    <data name="Btn_CheckNow">
+        <value>بررسی اکنون</value>
+    </data>
+    <data name="Btn_Install">
+        <value>نصب</value>
+    </data>
+    <data name="Btn_Accept">
+        <value>پذیرش</value>
+    </data>
+    <data name="Btn_Decline">
+        <value>لغو</value>
+    </data>
+    <data name="Title_CreateHash">
+        <value>ایجاد هَش و فشرده‌سازی</value>
+    </data>
+    <data name="Title_CheckHash">
+        <value>بررسی دسته‌ای</value>
+    </data>
+    <data name="Title_Update">
+        <value>بررسی به‌روزرسانی</value>
+    </data>
+    <data name="Title_Disclaimer">
+        <value>هشدار نسخه توسعه‌دهنده</value>
+    </data>
+    <data name="Title_About">
+        <value>درباره</value>
+    </data>
+    <data name="Help_CreateHash">
+        <value>نکته: Shift+C برای محاسبه همه، Shift+Z برای فشرده‌سازی، Ctrl+F برای افزودن فایل.</value>
+    </data>
+    <data name="Help_CheckHash">
+        <value>نکته: Shift+A برای بررسی همه، Ctrl+F برای افزودن فایل، Ctrl+Shift+H برای پاک کردن لیست.</value>
+    </data>
+    <data name="Lbl_Status_Ready">
+        <value>آماده</value>
+    </data>
+    <data name="Lbl_Sample">
+        <value>نمونه:</value>
+    </data>
+    <data name="Lbl_CurrentVersion">
+        <value>نسخه فعلی: {0}</value>
+    </data>
+    <data name="Lbl_Channel">
+        <value>کانال انتشار:</value>
+    </data>
+    <data name="Lbl_TotalFiles">
+        <value>تعداد کل فایل‌ها: {0}</value>
+    </data>
+    <data name="Channel_Stable">
+        <value>Stable (پایدار)</value>
+    </data>
+    <data name="Channel_Dev">
+        <value>Dev (توسعه‌دهنده)</value>
+    </data>
+    <data name="Settings_Language">
+        <value>زبان</value>
+    </data>
+    <data name="Settings_Theme">
+        <value>تم</value>
+    </data>
+    <data name="Settings_ThemeStyle">
+        <value>سبک تم</value>
+    </data>
+    <data name="Settings_ThemeVariant">
+        <value>روشن/تیره</value>
+    </data>
+    <data name="Settings_Font">
+        <value>فونت</value>
+    </data>
+    <data name="Settings_FontSize">
+        <value>اندازه فونت (pt)</value>
+    </data>
+    <data name="Settings_AutoFont">
+        <value>انتخاب خودکار فونت بهینه برای زبان</value>
+    </data>
+    <data name="Settings_LockFont">
+        <value>استفاده به عنوان فونت پیش‌فرض (قفل تغییرات)</value>
+    </data>
+    <data name="Settings_Scale">
+        <value>مقیاس رابط کاربری</value>
+    </data>
+    <data name="Settings_MaskHash">
+        <value>ماسک هَش (امنیت)</value>
+    </data>
+    <data name="Settings_Reset">
+        <value>بازنشانی تم</value>
+    </data>
+    <data name="Settings_Other">
+        <value>حریم خصوصی و امنیت</value>
+    </data>
+    <data name="Settings_SetDefault">
+        <value>تنظیم به عنوان پیش‌فرض</value>
+    </data>
+    <data name="Settings_CustomColor">
+        <value>رنگ متن سفارشی</value>
+    </data>
+    <data name="Settings_TextTest">
+        <value>روباه قهوه‌ای سریع از روی سگ تنبل می‌پرد.</value>
+    </data>
+    <data name="Settings_Advanced">
+        <value>پیشرفته</value>
+    </data>
+    <data name="Settings_AdminMode">
+        <value>اجرای به عنوان مدیر</value>
+    </data>
+    <data name="Settings_AdminDesc">
+        <value>نیاز به راه‌اندازی مجدد دارد. اجازه دسترسی به فایل‌های محافظت‌شده را می‌دهد.</value>
+    </data>
+    <data name="Settings_FileSizeLimit">
+        <value>محدودیت اندازه فایل ورودی</value>
+    </data>
+    <data name="Settings_FileSizeDesc">
+        <value>حداکثر محدودیت اندازه برای فایل‌های پردازش‌شونده.</value>
+    </data>
+    <data name="Settings_ForceQuitTimeout">
+        <value>تایم‌اوت خروج اجباری</value>
+    </data>
+    <data name="Settings_ForceQuitDesc">
+        <value>زمان (ثانیه) قبل از در نظر گرفتن برنامه به عنوان فریز شده.</value>
+    </data>
+    <data name="Settings_FileTimeout">
+        <value>تایم‌اوت پردازش فایل</value>
+    </data>
+    <data name="Settings_FileTimeoutDesc">
+        <value>لغو اجباری اگر یک فایل بیش از حد طول بکشد.</value>
+    </data>
+    <data name="Settings_Emergency">
+        <value>اقدام اضطراری</value>
+    </data>
+    <data name="Settings_EmergencyDesc">
+        <value>خروج اجباری برنامه و لغو همه وظایف بلافاصله.</value>
+    </data>
+    <data name="Settings_BtnForceQuit">
+        <value>خروج اجباری و لغو همه</value>
+    </data>
+    <data name="Settings_Configuration">
+        <value>پیکربندی</value>
+    </data>
+    <data name="Settings_LockSettings">
+        <value>قفل تنظیمات (ذخیره به عنوان پیش‌فرض)</value>
+    </data>
+    <data name="Settings_LockDesc">
+        <value>جلوگیری از تغییرات تصادفی. فقط ماسک هَش فعال می‌ماند.</value>
+    </data>
+    <data name="Settings_ResetAll">
+        <value>بازنشانی همه تنظیمات</value>
+    </data>
+    <data name="Settings_ResetDesc">
+        <value>بازگردانی به مقادیر پیش‌فرض اولیه.</value>
+    </data>
+    <data name="Settings_ConfigPath">
+        <value>مسیر فایل پیکربندی</value>
+    </data>
+    <data name="Settings_ConfigDesc">
+        <value>نمایش مسیر کامل و کپی به کلیپ‌بورد.</value>
+    </data>
+    <data name="Settings_ShowPath">
+        <value>نمایش مسیر</value>
+    </data>
+    <data name="Settings_AutoSave">
+        <value>تنظیمات به طور خودکار در config.json ذخیره می‌شوند</value>
+    </data>
+    <data name="Settings_DeveloperMode">
+        <value>حالت توسعه‌دهنده</value>
+    </data>
+    <data name="Settings_DeveloperDesc">
+        <value>فعال کردن ابزارهای پیشرفته لاگ و دیباگ.</value>
+    </data>
+    <data name="Dev_Console">
+        <value>کنسول توسعه‌دهنده</value>
+    </data>
+    <data name="Dev_Beta">
+        <value>بتا</value>
+    </data>
+    <data name="Dev_Recording">
+        <value>در حال ضبط</value>
+    </data>
+    <data name="Dev_Paused">
+        <value>مکث شده</value>
+    </data>
+    <data name="Dev_SaveToFile">
+        <value>ذخیره در فایل</value>
+    </data>
+    <data name="Dev_NoSave">
+        <value>ذخیره نکن</value>
+    </data>
+    <data name="Dev_Clear">
+        <value>پاک کردن کنسول</value>
+    </data>
+    <data name="Dev_Copy">
+        <value>کپی همه</value>
+    </data>
+    <data name="Dev_OpenFolder">
+        <value>باز کردن پوشه لاگ</value>
+    </data>
+    <data name="About_Author">
+        <value>نویسنده</value>
+    </data>
+    <data name="About_Software">
+        <value>نرم‌افزار</value>
+    </data>
+    <data name="About_ThirdParty">
+        <value>کتابخانه‌های شخص ثالث</value>
+    </data>
+    <data name="About_Copyright">
+        <value>حق نشر</value>
+    </data>
+    <data name="About_Desc">
+        <value>ابزار قدرتمند برای ایجاد و بررسی هَش فایل‌ها.</value>
+    </data>
+    <data name="About_License">
+        <value>تحت مجوز MIT منتشر شده.</value>
+    </data>
+    <data name="About_Tech">
+        <value>فناوری</value>
+    </data>
+    <data name="About_TechContent">
+        <value>ساخته شده با C# و .NET 10.0.102.</value>
+    </data>
+    <data name="About_AI">
+        <value>کمک هوش مصنوعی</value>
+    </data>
+    <data name="About_AIContent">
+        <value>این نرم‌افزار با کمک هوش مصنوعی توسعه یافته (Gemini 3 Pro و Grok 4.1).</value>
+    </data>
+    <data name="Status_Processing">
+        <value>در حال پردازش ({0})...</value>
+    </data>
+    <data name="Status_Done">
+        <value>کامل شد</value>
+    </data>
+    <data name="Status_Error">
+        <value>خطا: {0}</value>
+    </data>
+    <data name="Status_Cancelled">
+        <value>لغو شد</value>
+    </data>
+    <data name="Status_Saved">
+        <value>ذخیره شد!</value>
+    </data>
+    <data name="Status_Compressed">
+        <value>فشرده شد!</value>
+    </data>
+    <data name="Status_Waiting">
+        <value>در انتظار هَش/ورودی...</value>
+    </data>
+    <data name="Status_MissingOriginal">
+        <value>فایل اصلی گم شده!</value>
+    </data>
+    <data name="Status_MissingHash">
+        <value>هَش گم شده (ورودی یا فایل هَش لازم است)</value>
+    </data>
+    <data name="Status_Valid">
+        <value>معتبر</value>
+    </data>
+    <data name="Status_Invalid">
+        <value>عدم تطابق!</value>
+    </data>
+    <data name="Status_HashFileLoaded">
+        <value>فایل هَش بارگذاری شد</value>
+    </data>
+    <data name="Status_HashFileMismatch">
+        <value>نام فایل هَش تطابق ندارد!</value>
+    </data>
+    <data name="Status_NoHashFound">
+        <value>فایل حاوی هَش نیست!</value>
+    </data>
+    <data name="Status_Checking">
+        <value>در حال بررسی به‌روزرسانی...</value>
+    </data>
+    <data name="Status_NewVersion">
+        <value>نسخه جدید شناسایی شد!</value>
+    </data>
+    <data name="Status_Latest">
+        <value>شما از آخرین نسخه استفاده می‌کنید.</value>
+    </data>
+    <data name="Status_CheckError">
+        <value>خطا در بررسی به‌روزرسانی: {0}</value>
+    </data>
+    <data name="Status_Installing">
+        <value>در حال دانلود و نصب...</value>
+    </data>
+    <data name="Status_InstallError">
+        <value>خطا در نصب: {0}</value>
+    </data>
+    <data name="Status_ReadyFromHash">
+        <value>آماده (از فایل .hash)</value>
+    </data>
+    <data name="Status_LostOriginal">
+        <value>فایل اصلی گم شده!</value>
+    </data>
+    <data name="Status_DropHashMismatch">
+        <value>نام فایل هَش تطابق ندارد!</value>
+    </data>
+    <data name="Status_DropHashSuccess">
+        <value>فایل هَش دراپ شد</value>
+    </data>
+    <data name="Status_DropNoHash">
+        <value>فایل حاوی هَش نیست!</value>
+    </data>
+    <data name="Status_ReadError">
+        <value>خطا در خواندن فایل</value>
+    </data>
+    <data name="Msg_Result_Title">
+        <value>نتیجه</value>
+    </data>
+    <data name="Msg_Result_Content">
+        <value>پردازش کامل شد!
+
+            ✅ موفقیت: {0}
+            ❌ شکست: {1}</value>
+    </data>
+    <data name="Msg_CheckResult">
+        <value>{0} فایل بررسی شد.
+            ✅ تطابق: {1}
+            ❌ عدم تطابق/خطا: {2}
+            ⛔ لغو شده: {3}</value>
+    </data>
+    <data name="Msg_WrongHashFile">
+        <value>فایل اشتباه!</value>
+    </data>
+    <data name="Msg_WrongHashFileContent">
+        <value>فایل هَش تطابق ندارد!
+
+            فایل اصلی: {0}
+            فایل انتخاب شده: {1}
+
+            لطفاً فایل هَش همراه درست را انتخاب کنید.</value>
+    </data>
+    <data name="Msg_UpdateTitle">
+        <value>به‌روزرسانی جدید</value>
+    </data>
+    <data name="Msg_UpdateContent">
+        <value>نسخه: {0}
+
+            تغییرات:
+            {1}
+
+            برای دانلود روی 'به‌روزرسانی اکنون' کلیک کنید.</value>
+    </data>
+    <data name="Msg_NoUpdate">
+        <value>به‌روزرسانی جدیدتری یافت نشد.</value>
+    </data>
+    <data name="Msg_Error">
+        <value>خطا</value>
+    </data>
+    <data name="Msg_ReadHashError">
+        <value>این فایل هَش قابل خواندن نیست.</value>
+    </data>
+    <data name="Msg_ConfigCheck">
+        <value>بررسی پیکربندی</value>
+    </data>
+    <data name="Msg_ConfigExists">
+        <value>فایل در اینجا وجود دارد:
+            {0}</value>
+    </data>
+    <data name="Msg_ConfigMissing">
+        <value>فایل وجود ندارد!</value>
+    </data>
+    <data name="Msg_ConfigCreated">
+        <value>فایل با موفقیت ایجاد شد!</value>
+    </data>
+    <data name="Msg_ConfigCopied">
+        <value>مسیر پیکربندی کپی شد.</value>
+    </data>
+    <data name="Msg_AdminMode">
+        <value>حالت مدیر</value>
+    </data>
+    <data name="Msg_AdminRestart">
+        <value>برای اعمال تغییرات برنامه را مجدداً راه‌اندازی کنید.</value>
+    </data>
+    <data name="Msg_OpenFolderError">
+        <value>پوشه باز نمی‌شود: {0}</value>
+    </data>
+    <data name="Msg_DisclaimerTitle">
+        <value>⚠️ هشدار نسخه توسعه‌دهنده</value>
+    </data>
+    <data name="Msg_DisclaimerContent">
+        <value>در حال تغییر به کانال به‌روزرسانی توسعه‌دهنده (پیش‌نشر) هستید.
+
+            این نسخه ممکن است باگ داشته باشد، ناپایدار باشد و باعث از دست رفتن داده شود.
+
+            من مسئول هیچ مشکلی ناشی از استفاده از این نسخه نیستم.</value>
+    </data>
+    <data name="Msg_DisclaimerAgree">
+        <value>خواندم و موافقم. مسئولیت کامل را می‌پذیرم.</value>
+    </data>
+    <data name="Dialog_SaveHash">
+        <value>ذخیره فایل هَش</value>
+    </data>
+    <data name="Dialog_SaveZip">
+        <value>ذخیره فایل فشرده</value>
+    </data>
+    <data name="Dialog_SelectFiles">
+        <value>انتخاب فایل‌ها برای هَش</value>
+    </data>
+    <data name="Dialog_SelectHashFile">
+        <value>انتخاب فایل هَش برای: {0}</value>
+    </data>
+    <data name="Dialog_SelectCheckFiles">
+        <value>انتخاب فایل‌ها (اصلی یا فایل .hash)</value>
+    </data>
+    <data name="Header_Fallback">
+        <value>پیشرفته: بازگشت به نسخه قدیمی (Fallback)</value>
+    </data>
+    <data name="Desc_Fallback">
+        <value>این ویژگی اجازه نصب نسخه خاص را در صورت مشکل‌دار بودن نسخه جدید می‌دهد.</value>
+    </data>
+    <data name="Watermark_PasteDrop">
+        <value>چسباندن/رها کردن...</value>
+    </data>
+</root>

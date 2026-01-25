@@ -1,0 +1,464 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="AppTitle">
+        <value>Hash Tool</value>
+    </data>
+    <data name="Menu_Create">
+        <value>Criar Hash</value>
+    </data>
+    <data name="Menu_Check">
+        <value>Verificar Hash</value>
+    </data>
+    <data name="Menu_Settings">
+        <value>Configurações</value>
+    </data>
+    <data name="Menu_Update">
+        <value>Verificar Atualizações</value>
+    </data>
+    <data name="Menu_Theme">
+        <value>Tema</value>
+    </data>
+    <data name="Menu_About">
+        <value>Sobre</value>
+    </data>
+    <data name="Menu_Developer">
+        <value>Desenvolvedor</value>
+    </data>
+    <data name="Btn_AddFiles">
+        <value>Adicionar Arquivos...</value>
+    </data>
+    <data name="Btn_Clear">
+        <value>Limpar Lista</value>
+    </data>
+    <data name="Btn_CalcAll">
+        <value>CALCULAR TODOS</value>
+    </data>
+    <data name="Btn_Compress">
+        <value>Compactar (.Zip)</value>
+    </data>
+    <data name="Btn_CheckAll">
+        <value>VERIFICAR TODOS</value>
+    </data>
+    <data name="Btn_CheckNow">
+        <value>Verificar Agora</value>
+    </data>
+    <data name="Btn_Install">
+        <value>Instalar</value>
+    </data>
+    <data name="Btn_Accept">
+        <value>Aceitar</value>
+    </data>
+    <data name="Btn_Decline">
+        <value>Cancelar</value>
+    </data>
+    <data name="Title_CreateHash">
+        <value>Criar Hash &amp; Compactar</value>
+    </data>
+    <data name="Title_CheckHash">
+        <value>Verificação em Lote</value>
+    </data>
+    <data name="Title_Update">
+        <value>Verificar Atualizações</value>
+    </data>
+    <data name="Title_Disclaimer">
+        <value>Aviso da Versão Developer</value>
+    </data>
+    <data name="Title_About">
+        <value>Sobre</value>
+    </data>
+    <data name="Help_CreateHash">
+        <value>Dica: Shift+C para calcular todos, Shift+Z para compactar, Ctrl+F para adicionar arquivos.</value>
+    </data>
+    <data name="Help_CheckHash">
+        <value>Dica: Shift+A para verificar todos, Ctrl+F para adicionar arquivos, Ctrl+Shift+H para limpar lista.</value>
+    </data>
+    <data name="Lbl_Status_Ready">
+        <value>Pronto</value>
+    </data>
+    <data name="Lbl_Sample">
+        <value>Exemplo:</value>
+    </data>
+    <data name="Lbl_CurrentVersion">
+        <value>Versão atual: {0}</value>
+    </data>
+    <data name="Lbl_Channel">
+        <value>Canal de lançamento:</value>
+    </data>
+    <data name="Lbl_TotalFiles">
+        <value>Total de arquivos: {0}</value>
+    </data>
+    <data name="Channel_Stable">
+        <value>Stable (Estável)</value>
+    </data>
+    <data name="Channel_Dev">
+        <value>Dev (Desenvolvedor)</value>
+    </data>
+    <data name="Settings_Language">
+        <value>Idioma</value>
+    </data>
+    <data name="Settings_Theme">
+        <value>Tema</value>
+    </data>
+    <data name="Settings_ThemeStyle">
+        <value>Estilo do tema</value>
+    </data>
+    <data name="Settings_ThemeVariant">
+        <value>Claro/Escuro</value>
+    </data>
+    <data name="Settings_Font">
+        <value>Fonte</value>
+    </data>
+    <data name="Settings_FontSize">
+        <value>Tamanho da fonte (pt)</value>
+    </data>
+    <data name="Settings_AutoFont">
+        <value>Selecionar automaticamente fonte ideal para o idioma</value>
+    </data>
+    <data name="Settings_LockFont">
+        <value>Usar como fonte padrão (Bloquear alterações)</value>
+    </data>
+    <data name="Settings_Scale">
+        <value>Escala da Interface</value>
+    </data>
+    <data name="Settings_MaskHash">
+        <value>Mascarar Hash (Segurança)</value>
+    </data>
+    <data name="Settings_Reset">
+        <value>Redefinir tema</value>
+    </data>
+    <data name="Settings_Other">
+        <value>Privacidade &amp; Segurança</value>
+    </data>
+    <data name="Settings_SetDefault">
+        <value>Definir como padrão</value>
+    </data>
+    <data name="Settings_CustomColor">
+        <value>Cor de texto personalizada</value>
+    </data>
+    <data name="Settings_TextTest">
+        <value>A rápida raposa marrom pula sobre o cachorro preguiçoso.</value>
+    </data>
+    <data name="Settings_Advanced">
+        <value>Avançado</value>
+    </data>
+    <data name="Settings_AdminMode">
+        <value>Executar como Administrador</value>
+    </data>
+    <data name="Settings_AdminDesc">
+        <value>Requer reinício. Permite acesso a arquivos protegidos.</value>
+    </data>
+    <data name="Settings_FileSizeLimit">
+        <value>Limite de tamanho de arquivo de entrada</value>
+    </data>
+    <data name="Settings_FileSizeDesc">
+        <value>Limite máximo de tamanho para arquivos a serem processados.</value>
+    </data>
+    <data name="Settings_ForceQuitTimeout">
+        <value>Tempo limite para Forçar Saída</value>
+    </data>
+    <data name="Settings_ForceQuitDesc">
+        <value>Tempo (segundos) antes de considerar o app congelado.</value>
+    </data>
+    <data name="Settings_FileTimeout">
+        <value>Tempo limite de processamento de arquivo</value>
+    </data>
+    <data name="Settings_FileTimeoutDesc">
+        <value>Cancelar forçado se um arquivo demorar demais.</value>
+    </data>
+    <data name="Settings_Emergency">
+        <value>Ação de emergência</value>
+    </data>
+    <data name="Settings_EmergencyDesc">
+        <value>Forçar saída do app e cancelar todas as tarefas imediatamente.</value>
+    </data>
+    <data name="Settings_BtnForceQuit">
+        <value>Forçar Saída &amp; Cancelar Tudo</value>
+    </data>
+    <data name="Settings_Configuration">
+        <value>Configuração</value>
+    </data>
+    <data name="Settings_LockSettings">
+        <value>Bloquear configurações (Salvar como padrão)</value>
+    </data>
+    <data name="Settings_LockDesc">
+        <value>Evita alterações acidentais. Apenas mascaramento de hash permanece ativo.</value>
+    </data>
+    <data name="Settings_ResetAll">
+        <value>Redefinir todas as configurações</value>
+    </data>
+    <data name="Settings_ResetDesc">
+        <value>Restaurar para os padrões iniciais.</value>
+    </data>
+    <data name="Settings_ConfigPath">
+        <value>Caminho do arquivo de configuração</value>
+    </data>
+    <data name="Settings_ConfigDesc">
+        <value>Mostrar caminho completo e copiar para área de transferência.</value>
+    </data>
+    <data name="Settings_ShowPath">
+        <value>Mostrar caminho</value>
+    </data>
+    <data name="Settings_AutoSave">
+        <value>Configurações são salvas automaticamente em config.json</value>
+    </data>
+    <data name="Settings_DeveloperMode">
+        <value>Modo desenvolvedor</value>
+    </data>
+    <data name="Settings_DeveloperDesc">
+        <value>Ativar ferramentas avançadas de log e depuração.</value>
+    </data>
+    <data name="Dev_Console">
+        <value>Console do Desenvolvedor</value>
+    </data>
+    <data name="Dev_Beta">
+        <value>BETA</value>
+    </data>
+    <data name="Dev_Recording">
+        <value>Gravando</value>
+    </data>
+    <data name="Dev_Paused">
+        <value>Pausado</value>
+    </data>
+    <data name="Dev_SaveToFile">
+        <value>Salvar em arquivo</value>
+    </data>
+    <data name="Dev_NoSave">
+        <value>Não salvar</value>
+    </data>
+    <data name="Dev_Clear">
+        <value>Limpar Console</value>
+    </data>
+    <data name="Dev_Copy">
+        <value>Copiar tudo</value>
+    </data>
+    <data name="Dev_OpenFolder">
+        <value>Abrir pasta de Logs</value>
+    </data>
+    <data name="About_Author">
+        <value>Autor</value>
+    </data>
+    <data name="About_Software">
+        <value>Software</value>
+    </data>
+    <data name="About_ThirdParty">
+        <value>Bibliotecas de terceiros</value>
+    </data>
+    <data name="About_Copyright">
+        <value>Direitos autorais</value>
+    </data>
+    <data name="About_Desc">
+        <value>Ferramenta poderosa para gerar e verificar hashes de arquivos.</value>
+    </data>
+    <data name="About_License">
+        <value>Lançado sob licença MIT.</value>
+    </data>
+    <data name="About_Tech">
+        <value>Tecnologia</value>
+    </data>
+    <data name="About_TechContent">
+        <value>Construído com C# e .NET 10.0.102.</value>
+    </data>
+    <data name="About_AI">
+        <value>Suporte de IA</value>
+    </data>
+    <data name="About_AIContent">
+        <value>Este software foi desenvolvido com assistência de IA (Gemini 3 Pro e Grok 4.1).</value>
+    </data>
+    <data name="Status_Processing">
+        <value>Processando ({0})...</value>
+    </data>
+    <data name="Status_Done">
+        <value>Concluído</value>
+    </data>
+    <data name="Status_Error">
+        <value>Erro: {0}</value>
+    </data>
+    <data name="Status_Cancelled">
+        <value>Cancelado</value>
+    </data>
+    <data name="Status_Saved">
+        <value>Salvo!</value>
+    </data>
+    <data name="Status_Compressed">
+        <value>Compactado!</value>
+    </data>
+    <data name="Status_Waiting">
+        <value>Aguardando hash/entrada...</value>
+    </data>
+    <data name="Status_MissingOriginal">
+        <value>Arquivo original ausente!</value>
+    </data>
+    <data name="Status_MissingHash">
+        <value>Hash ausente (Inserir ou arquivo hash necessário)</value>
+    </data>
+    <data name="Status_Valid">
+        <value>VÁLIDO</value>
+    </data>
+    <data name="Status_Invalid">
+        <value>DIFERENÇA!</value>
+    </data>
+    <data name="Status_HashFileLoaded">
+        <value>Arquivo hash carregado</value>
+    </data>
+    <data name="Status_HashFileMismatch">
+        <value>Nome do arquivo hash não corresponde!</value>
+    </data>
+    <data name="Status_NoHashFound">
+        <value>Arquivo não contém hash!</value>
+    </data>
+    <data name="Status_Checking">
+        <value>Verificando atualizações...</value>
+    </data>
+    <data name="Status_NewVersion">
+        <value>Nova versão detectada!</value>
+    </data>
+    <data name="Status_Latest">
+        <value>Você está usando a versão mais recente.</value>
+    </data>
+    <data name="Status_CheckError">
+        <value>Erro na verificação de atualização: {0}</value>
+    </data>
+    <data name="Status_Installing">
+        <value>Baixando e instalando...</value>
+    </data>
+    <data name="Status_InstallError">
+        <value>Erro de instalação: {0}</value>
+    </data>
+    <data name="Status_ReadyFromHash">
+        <value>Pronto (Do arquivo .hash)</value>
+    </data>
+    <data name="Status_LostOriginal">
+        <value>Arquivo original perdido!</value>
+    </data>
+    <data name="Status_DropHashMismatch">
+        <value>Nome do arquivo hash não corresponde!</value>
+    </data>
+    <data name="Status_DropHashSuccess">
+        <value>Arquivo hash solto</value>
+    </data>
+    <data name="Status_DropNoHash">
+        <value>Arquivo não contém hash!</value>
+    </data>
+    <data name="Status_ReadError">
+        <value>Erro de leitura de arquivo</value>
+    </data>
+    <data name="Msg_Result_Title">
+        <value>Resultado</value>
+    </data>
+    <data name="Msg_Result_Content">
+        <value>Processamento concluído!
+
+            ✅ Sucessos: {0}
+            ❌ Falhas: {1}</value>
+    </data>
+    <data name="Msg_CheckResult">
+        <value>Verificados {0} arquivos.
+            ✅ Correspondências: {1}
+            ❌ Diferenças/Erros: {2}
+            ⛔ Cancelados: {3}</value>
+    </data>
+    <data name="Msg_WrongHashFile">
+        <value>Arquivo errado!</value>
+    </data>
+    <data name="Msg_WrongHashFileContent">
+        <value>Arquivo hash não corresponde!
+
+            Arquivo original: {0}
+            Arquivo selecionado: {1}
+
+            Por favor, selecione o arquivo hash correto acompanhante.</value>
+    </data>
+    <data name="Msg_UpdateTitle">
+        <value>Nova Atualização</value>
+    </data>
+    <data name="Msg_UpdateContent">
+        <value>Versão: {0}
+
+            Mudanças:
+            {1}
+
+            Clique em 'Atualizar agora' para baixar.</value>
+    </data>
+    <data name="Msg_NoUpdate">
+        <value>Nenhuma atualização mais recente encontrada.</value>
+    </data>
+    <data name="Msg_Error">
+        <value>Erro</value>
+    </data>
+    <data name="Msg_ReadHashError">
+        <value>Não foi possível ler este arquivo hash.</value>
+    </data>
+    <data name="Msg_ConfigCheck">
+        <value>Verificação de Configuração</value>
+    </data>
+    <data name="Msg_ConfigExists">
+        <value>Arquivo existe em:
+            {0}</value>
+    </data>
+    <data name="Msg_ConfigMissing">
+        <value>Arquivo não existe!</value>
+    </data>
+    <data name="Msg_ConfigCreated">
+        <value>Arquivo criado com sucesso!</value>
+    </data>
+    <data name="Msg_ConfigCopied">
+        <value>Caminho de configuração copiado.</value>
+    </data>
+    <data name="Msg_AdminMode">
+        <value>Modo Administrador</value>
+    </data>
+    <data name="Msg_AdminRestart">
+        <value>Reinicie o aplicativo para que as alterações entrem em vigor.</value>
+    </data>
+    <data name="Msg_OpenFolderError">
+        <value>Não foi possível abrir a pasta: {0}</value>
+    </data>
+    <data name="Msg_DisclaimerTitle">
+        <value>⚠️ AVISO DA VERSÃO DESENVOLVEDOR</value>
+    </data>
+    <data name="Msg_DisclaimerContent">
+        <value>Você está prestes a mudar para o canal de atualizações Developer (Pré-lançamento).
+
+            Esta versão pode conter bugs, ser instável e causar perda de dados.
+
+            Não me responsabilizo por quaisquer problemas decorrentes do uso desta versão.</value>
+    </data>
+    <data name="Msg_DisclaimerAgree">
+        <value>Li e concordo. Assumo total responsabilidade.</value>
+    </data>
+    <data name="Dialog_SaveHash">
+        <value>Salvar Arquivo Hash</value>
+    </data>
+    <data name="Dialog_SaveZip">
+        <value>Salvar Arquivo Compactado</value>
+    </data>
+    <data name="Dialog_SelectFiles">
+        <value>Selecionar arquivos para hash</value>
+    </data>
+    <data name="Dialog_SelectHashFile">
+        <value>Selecionar arquivo hash para: {0}</value>
+    </data>
+    <data name="Dialog_SelectCheckFiles">
+        <value>Selecionar arquivos (Original ou arquivo .hash)</value>
+    </data>
+    <data name="Header_Fallback">
+        <value>Avançado: Reverter para versão anterior (Fallback)</value>
+    </data>
+    <data name="Desc_Fallback">
+        <value>Esta função permite instalar uma versão específica se a nova tiver problemas.</value>
+    </data>
+    <data name="Watermark_PasteDrop">
+        <value>Colar/Soltar...</value>
+    </data>
+</root>

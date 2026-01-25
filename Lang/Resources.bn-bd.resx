@@ -1,0 +1,464 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="AppTitle">
+        <value>Hash Tool</value>
+    </data>
+    <data name="Menu_Create">
+        <value>হ্যাশ তৈরি করুন</value>
+    </data>
+    <data name="Menu_Check">
+        <value>হ্যাশ যাচাই করুন</value>
+    </data>
+    <data name="Menu_Settings">
+        <value>সেটিংস</value>
+    </data>
+    <data name="Menu_Update">
+        <value>আপডেট চেক করুন</value>
+    </data>
+    <data name="Menu_Theme">
+        <value>থিম</value>
+    </data>
+    <data name="Menu_About">
+        <value>সম্পর্কে</value>
+    </data>
+    <data name="Menu_Developer">
+        <value>ডেভেলপার</value>
+    </data>
+    <data name="Btn_AddFiles">
+        <value>ফাইল যোগ করুন...</value>
+    </data>
+    <data name="Btn_Clear">
+        <value>তালিকা মুছুন</value>
+    </data>
+    <data name="Btn_CalcAll">
+        <value>সব গণনা করুন</value>
+    </data>
+    <data name="Btn_Compress">
+        <value>কম্প্রেস (.Zip)</value>
+    </data>
+    <data name="Btn_CheckAll">
+        <value>সব যাচাই করুন</value>
+    </data>
+    <data name="Btn_CheckNow">
+        <value>এখনই যাচাই করুন</value>
+    </data>
+    <data name="Btn_Install">
+        <value>ইনস্টল করুন</value>
+    </data>
+    <data name="Btn_Accept">
+        <value>গ্রহণ করুন</value>
+    </data>
+    <data name="Btn_Decline">
+        <value>বাতিল করুন</value>
+    </data>
+    <data name="Title_CreateHash">
+        <value>হ্যাশ তৈরি ও কম্প্রেস</value>
+    </data>
+    <data name="Title_CheckHash">
+        <value>ব্যাচ যাচাই</value>
+    </data>
+    <data name="Title_Update">
+        <value>আপডেট চেক করুন</value>
+    </data>
+    <data name="Title_Disclaimer">
+        <value>ডেভেলপার সংস্করণ সতর্কতা</value>
+    </data>
+    <data name="Title_About">
+        <value>সম্পর্কে</value>
+    </data>
+    <data name="Help_CreateHash">
+        <value>টিপ: Shift+C সব গণনা করতে, Shift+Z কম্প্রেস করতে, Ctrl+F ফাইল যোগ করতে।</value>
+    </data>
+    <data name="Help_CheckHash">
+        <value>টিপ: Shift+A সব যাচাই করতে, Ctrl+F ফাইল যোগ করতে, Ctrl+Shift+H তালিকা মুছতে।</value>
+    </data>
+    <data name="Lbl_Status_Ready">
+        <value>প্রস্তুত</value>
+    </data>
+    <data name="Lbl_Sample">
+        <value>উদাহরণ:</value>
+    </data>
+    <data name="Lbl_CurrentVersion">
+        <value>বর্তমান সংস্করণ: {0}</value>
+    </data>
+    <data name="Lbl_Channel">
+        <value>রিলিজ চ্যানেল:</value>
+    </data>
+    <data name="Lbl_TotalFiles">
+        <value>মোট ফাইল: {0}</value>
+    </data>
+    <data name="Channel_Stable">
+        <value>Stable (স্থির)</value>
+    </data>
+    <data name="Channel_Dev">
+        <value>Dev (ডেভেলপার)</value>
+    </data>
+    <data name="Settings_Language">
+        <value>ভাষা</value>
+    </data>
+    <data name="Settings_Theme">
+        <value>থিম</value>
+    </data>
+    <data name="Settings_ThemeStyle">
+        <value>থিম স্টাইল</value>
+    </data>
+    <data name="Settings_ThemeVariant">
+        <value>আলোকিত/অন্ধকার</value>
+    </data>
+    <data name="Settings_Font">
+        <value>ফন্ট</value>
+    </data>
+    <data name="Settings_FontSize">
+        <value>ফন্ট সাইজ (pt)</value>
+    </data>
+    <data name="Settings_AutoFont">
+        <value>ভাষার জন্য স্বয়ংক্রিয় সেরা ফন্ট নির্বাচন</value>
+    </data>
+    <data name="Settings_LockFont">
+        <value>ডিফল্ট ফন্ট হিসেবে ব্যবহার (পরিবর্তন লক)</value>
+    </data>
+    <data name="Settings_Scale">
+        <value>UI স্কেল</value>
+    </data>
+    <data name="Settings_MaskHash">
+        <value>হ্যাশ মাস্ক (নিরাপত্তা)</value>
+    </data>
+    <data name="Settings_Reset">
+        <value>থিম রিসেট করুন</value>
+    </data>
+    <data name="Settings_Other">
+        <value>গোপনীয়তা ও নিরাপত্তা</value>
+    </data>
+    <data name="Settings_SetDefault">
+        <value>ডিফল্ট সেট করুন</value>
+    </data>
+    <data name="Settings_CustomColor">
+        <value>কাস্টম টেক্সট রং</value>
+    </data>
+    <data name="Settings_TextTest">
+        <value>দ্রুত বাদামী শিয়াল অলস কুকুরের উপর লাফ দেয়।</value>
+    </data>
+    <data name="Settings_Advanced">
+        <value>উন্নত</value>
+    </data>
+    <data name="Settings_AdminMode">
+        <value>অ্যাডমিনিস্ট্রেটর হিসেবে চালান</value>
+    </data>
+    <data name="Settings_AdminDesc">
+        <value>রিস্টার্ট প্রয়োজন। সুরক্ষিত ফাইল অ্যাক্সেস অনুমতি দেয়।</value>
+    </data>
+    <data name="Settings_FileSizeLimit">
+        <value>ইনপুট ফাইল সাইজ সীমা</value>
+    </data>
+    <data name="Settings_FileSizeDesc">
+        <value>প্রসেস করা ফাইলের সর্বোচ্চ সাইজ সীমা।</value>
+    </data>
+    <data name="Settings_ForceQuitTimeout">
+        <value>ফোর্স কুইট টাইমআউট</value>
+    </data>
+    <data name="Settings_ForceQuitDesc">
+        <value>অ্যাপ ফ্রিজ ধরার আগের সময় (সেকেন্ড)।</value>
+    </data>
+    <data name="Settings_FileTimeout">
+        <value>ফাইল প্রসেসিং টাইমআউট</value>
+    </data>
+    <data name="Settings_FileTimeoutDesc">
+        <value>ফাইল অনেক সময় নিলে ফোর্স ক্যান্সেল।</value>
+    </data>
+    <data name="Settings_Emergency">
+        <value>জরুরি অ্যাকশন</value>
+    </data>
+    <data name="Settings_EmergencyDesc">
+        <value>অ্যাপ ফোর্স কুইট করে সব টাস্ক তাৎক্ষণিক ক্যান্সেল।</value>
+    </data>
+    <data name="Settings_BtnForceQuit">
+        <value>ফোর্স কুইট &amp; সব ক্যান্সেল</value>
+    </data>
+    <data name="Settings_Configuration">
+        <value>কনফিগারেশন</value>
+    </data>
+    <data name="Settings_LockSettings">
+        <value>সেটিংস লক করুন (ডিফল্ট হিসেবে সেভ)</value>
+    </data>
+    <data name="Settings_LockDesc">
+        <value>দুর্ঘটনাজনিত পরিবর্তন প্রতিরোধ করে। শুধু হ্যাশ মাস্কিং সক্রিয় থাকে।</value>
+    </data>
+    <data name="Settings_ResetAll">
+        <value>সব সেটিংস রিসেট করুন</value>
+    </data>
+    <data name="Settings_ResetDesc">
+        <value>প্রাথমিক ডিফল্টে ফিরে যান।</value>
+    </data>
+    <data name="Settings_ConfigPath">
+        <value>কনফিগারেশন ফাইল পাথ</value>
+    </data>
+    <data name="Settings_ConfigDesc">
+        <value>পূর্ণ পাথ দেখান এবং ক্লিপবোর্ডে কপি করুন।</value>
+    </data>
+    <data name="Settings_ShowPath">
+        <value>পাথ দেখান</value>
+    </data>
+    <data name="Settings_AutoSave">
+        <value>সেটিংস config.json-এ স্বয়ংক্রিয় সেভ হয়</value>
+    </data>
+    <data name="Settings_DeveloperMode">
+        <value>ডেভেলপার মোড</value>
+    </data>
+    <data name="Settings_DeveloperDesc">
+        <value>উন্নত লগিং এবং ডিবাগিং টুল সক্রিয় করুন।</value>
+    </data>
+    <data name="Dev_Console">
+        <value>ডেভেলপার কনসোল</value>
+    </data>
+    <data name="Dev_Beta">
+        <value>BETA</value>
+    </data>
+    <data name="Dev_Recording">
+        <value>রেকর্ডিং</value>
+    </data>
+    <data name="Dev_Paused">
+        <value>পজ করা</value>
+    </data>
+    <data name="Dev_SaveToFile">
+        <value>ফাইলে সেভ করুন</value>
+    </data>
+    <data name="Dev_NoSave">
+        <value>সেভ করবেন না</value>
+    </data>
+    <data name="Dev_Clear">
+        <value>কনসোল মুছুন</value>
+    </data>
+    <data name="Dev_Copy">
+        <value>সব কপি করুন</value>
+    </data>
+    <data name="Dev_OpenFolder">
+        <value>লগ ফোল্ডার খুলুন</value>
+    </data>
+    <data name="About_Author">
+        <value>লেখক</value>
+    </data>
+    <data name="About_Software">
+        <value>সফটওয়্যার</value>
+    </data>
+    <data name="About_ThirdParty">
+        <value>থার্ড-পার্টি লাইব্রেরি</value>
+    </data>
+    <data name="About_Copyright">
+        <value>কপিরাইট</value>
+    </data>
+    <data name="About_Desc">
+        <value>ফাইল হ্যাশ তৈরি ও যাচাইয়ের জন্য শক্তিশালী টুল।</value>
+    </data>
+    <data name="About_License">
+        <value>MIT লাইসেন্সের অধীনে প্রকাশিত।</value>
+    </data>
+    <data name="About_Tech">
+        <value>প্রযুক্তি</value>
+    </data>
+    <data name="About_TechContent">
+        <value>C# এবং .NET 10.0.102 দিয়ে তৈরি।</value>
+    </data>
+    <data name="About_AI">
+        <value>AI সহায়তা</value>
+    </data>
+    <data name="About_AIContent">
+        <value>এই সফটওয়্যারটি AI সহায়তায় তৈরি (Gemini 3 Pro এবং Grok 4.1)।</value>
+    </data>
+    <data name="Status_Processing">
+        <value>প্রসেসিং ({0})...</value>
+    </data>
+    <data name="Status_Done">
+        <value>সম্পন্ন</value>
+    </data>
+    <data name="Status_Error">
+        <value>ত্রুটি: {0}</value>
+    </data>
+    <data name="Status_Cancelled">
+        <value>বাতিল করা হয়েছে</value>
+    </data>
+    <data name="Status_Saved">
+        <value>সেভ করা হয়েছে!</value>
+    </data>
+    <data name="Status_Compressed">
+        <value>কম্প্রেস করা হয়েছে!</value>
+    </data>
+    <data name="Status_Waiting">
+        <value>হ্যাশ/ইনপুট অপেক্ষা...</value>
+    </data>
+    <data name="Status_MissingOriginal">
+        <value>অরিজিনাল ফাইল অনুপস্থিত!</value>
+    </data>
+    <data name="Status_MissingHash">
+        <value>হ্যাশ অনুপস্থিত (ইনপুট বা হ্যাশ ফাইল দরকার)</value>
+    </data>
+    <data name="Status_Valid">
+        <value>বৈধ</value>
+    </data>
+    <data name="Status_Invalid">
+        <value>অমিল!</value>
+    </data>
+    <data name="Status_HashFileLoaded">
+        <value>হ্যাশ ফাইল লোড করা হয়েছে</value>
+    </data>
+    <data name="Status_HashFileMismatch">
+        <value>হ্যাশ ফাইল নাম অমিল!</value>
+    </data>
+    <data name="Status_NoHashFound">
+        <value>ফাইলে হ্যাশ পাওয়া যায়নি!</value>
+    </data>
+    <data name="Status_Checking">
+        <value>আপডেট চেক করা হচ্ছে...</value>
+    </data>
+    <data name="Status_NewVersion">
+        <value>নতুন সংস্করণ পাওয়া গেছে!</value>
+    </data>
+    <data name="Status_Latest">
+        <value>আপনি সর্বশেষ সংস্করণ ব্যবহার করছেন।</value>
+    </data>
+    <data name="Status_CheckError">
+        <value>আপডেট চেক ত্রুটি: {0}</value>
+    </data>
+    <data name="Status_Installing">
+        <value>ডাউনলোড ও ইনস্টল করা হচ্ছে...</value>
+    </data>
+    <data name="Status_InstallError">
+        <value>ইনস্টলেশন ত্রুটি: {0}</value>
+    </data>
+    <data name="Status_ReadyFromHash">
+        <value>প্রস্তুত (.hash ফাইল থেকে)</value>
+    </data>
+    <data name="Status_LostOriginal">
+        <value>অরিজিনাল ফাইল হারিয়ে গেছে!</value>
+    </data>
+    <data name="Status_DropHashMismatch">
+        <value>হ্যাশ ফাইল নাম অমিল!</value>
+    </data>
+    <data name="Status_DropHashSuccess">
+        <value>হ্যাশ ফাইল ড্রপ করা হয়েছে</value>
+    </data>
+    <data name="Status_DropNoHash">
+        <value>ফাইলে হ্যাশ নেই!</value>
+    </data>
+    <data name="Status_ReadError">
+        <value>ফাইল পড়ার ত্রুটি</value>
+    </data>
+    <data name="Msg_Result_Title">
+        <value>ফলাফল</value>
+    </data>
+    <data name="Msg_Result_Content">
+        <value>প্রসেসিং সম্পন্ন!
+
+            ✅ সফল: {0}
+            ❌ ব্যর্থ: {1}</value>
+    </data>
+    <data name="Msg_CheckResult">
+        <value>{0} ফাইল যাচাই করা হয়েছে।
+            ✅ মিল: {1}
+            ❌ অমিল/ত্রুটি: {2}
+            ⛔ বাতিল: {3}</value>
+    </data>
+    <data name="Msg_WrongHashFile">
+        <value>ভুল ফাইল!</value>
+    </data>
+    <data name="Msg_WrongHashFileContent">
+        <value>হ্যাশ ফাইল অমিল!
+
+            অরিজিনাল ফাইল: {0}
+            নির্বাচিত ফাইল: {1}
+
+            সঠিক সংযুক্ত হ্যাশ ফাইল নির্বাচন করুন।</value>
+    </data>
+    <data name="Msg_UpdateTitle">
+        <value>নতুন আপডেট</value>
+    </data>
+    <data name="Msg_UpdateContent">
+        <value>সংস্করণ: {0}
+
+            পরিবর্তন:
+            {1}
+
+            ডাউনলোড করতে 'এখনই আপডেট করুন' ক্লিক করুন।</value>
+    </data>
+    <data name="Msg_NoUpdate">
+        <value>কোনো নতুন আপডেট পাওয়া যায়নি।</value>
+    </data>
+    <data name="Msg_Error">
+        <value>ত্রুটি</value>
+    </data>
+    <data name="Msg_ReadHashError">
+        <value>এই হ্যাশ ফাইল পড়া যায়নি।</value>
+    </data>
+    <data name="Msg_ConfigCheck">
+        <value>কনফিগারেশন চেক</value>
+    </data>
+    <data name="Msg_ConfigExists">
+        <value>ফাইল এখানে আছে:
+            {0}</value>
+    </data>
+    <data name="Msg_ConfigMissing">
+        <value>ফাইল নেই!</value>
+    </data>
+    <data name="Msg_ConfigCreated">
+        <value>ফাইল সফলভাবে তৈরি হয়েছে!</value>
+    </data>
+    <data name="Msg_ConfigCopied">
+        <value>কনফিগারেশন পাথ কপি করা হয়েছে।</value>
+    </data>
+    <data name="Msg_AdminMode">
+        <value>অ্যাডমিন মোড</value>
+    </data>
+    <data name="Msg_AdminRestart">
+        <value>পরিবর্তন কার্যকর করতে অ্যাপ রিস্টার্ট করুন।</value>
+    </data>
+    <data name="Msg_OpenFolderError">
+        <value>ফোল্ডার খোলা যায়নি: {0}</value>
+    </data>
+    <data name="Msg_DisclaimerTitle">
+        <value>⚠️ ডেভেলপার সংস্করণ সতর্কতা</value>
+    </data>
+    <data name="Msg_DisclaimerContent">
+        <value>আপনি ডেভেলপার (প্রি-রিলিজ) আপডেট চ্যানেলে স্যুইচ করতে যাচ্ছেন।
+
+            এই সংস্করণে বাগ থাকতে পারে, অস্থির হতে পারে এবং ডেটা হারাতে পারে।
+
+            এই সংস্করণ ব্যবহার থেকে উদ্ভূত কোনো সমস্যার জন্য আমি দায়ী নই।</value>
+    </data>
+    <data name="Msg_DisclaimerAgree">
+        <value>আমি পড়েছি এবং সম্মত। আমি পূর্ণ দায়িত্ব গ্রহণ করছি।</value>
+    </data>
+    <data name="Dialog_SaveHash">
+        <value>হ্যাশ ফাইল সেভ করুন</value>
+    </data>
+    <data name="Dialog_SaveZip">
+        <value>কম্প্রেসড ফাইল সেভ করুন</value>
+    </data>
+    <data name="Dialog_SelectFiles">
+        <value>হ্যাশ করার জন্য ফাইল নির্বাচন করুন</value>
+    </data>
+    <data name="Dialog_SelectHashFile">
+        <value>{0} এর জন্য হ্যাশ ফাইল নির্বাচন করুন</value>
+    </data>
+    <data name="Dialog_SelectCheckFiles">
+        <value>ফাইল নির্বাচন করুন (অরিজিনাল বা .hash ফাইল)</value>
+    </data>
+    <data name="Header_Fallback">
+        <value>উন্নত: পুরোনো সংস্করণে ফিরে যান (Fallback)</value>
+    </data>
+    <data name="Desc_Fallback">
+        <value>এই ফিচার নতুন সংস্করণে সমস্যা হলে নির্দিষ্ট সংস্করণ ইনস্টল করতে দেয়।</value>
+    </data>
+    <data name="Watermark_PasteDrop">
+        <value>পেস্ট/ড্রপ...</value>
+    </data>
+</root>

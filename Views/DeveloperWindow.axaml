@@ -1,0 +1,63 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:CheckHash.ViewModels"
+             xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             x:Class="CheckHash.Views.DeveloperView"
+             x:DataType="vm:DeveloperViewModel">
+
+    <Grid RowDefinitions="Auto, *">
+        <!-- Toolbar -->
+        <Border Grid.Row="0" Padding="10" Background="{DynamicResource PaneBackgroundBrush}" 
+                BorderBrush="{DynamicResource GlassBorderBrush}" BorderThickness="0,0,0,1">
+            <Grid ColumnDefinitions="Auto, *, Auto">
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <TextBlock Text="{Binding Localization[Dev_Console]}" FontSize="20" FontWeight="Bold" VerticalAlignment="Center"/>
+                    <Border Background="#30808080" CornerRadius="4" Padding="5,2">
+                        <TextBlock Text="{Binding Localization[Dev_Beta]}" FontSize="10" FontWeight="Bold"/>
+                    </Border>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="10">
+                    <ToggleSwitch IsChecked="{Binding Logger.IsRecording}" 
+                                  OnContent="{Binding Localization[Dev_Recording]}" 
+                                  OffContent="{Binding Localization[Dev_Paused]}"
+                                  ToolTip.Tip="Pause/Resume real-time logging"/>
+                    
+                    <ToggleSwitch IsChecked="{Binding Logger.IsSavingDebugLog}" 
+                                  OnContent="{Binding Localization[Dev_SaveToFile]}" 
+                                  OffContent="{Binding Localization[Dev_NoSave]}"
+                                  ToolTip.Tip="Save debug logs to disk"/>
+
+                    <Button Command="{Binding ClearLogsCommand}" ToolTip.Tip="{Binding Localization[Dev_Clear]}">
+                        <icons:MaterialIcon Kind="Broom" Width="20" Height="20"/>
+                    </Button>
+                    
+                    <Button Command="{Binding CopyLogsCommand}" ToolTip.Tip="{Binding Localization[Dev_Copy]}">
+                        <icons:MaterialIcon Kind="ContentCopy" Width="20" Height="20"/>
+                    </Button>
+                    
+                    <Button Command="{Binding OpenLogFolderCommand}" ToolTip.Tip="{Binding Localization[Dev_OpenFolder]}">
+                        <icons:MaterialIcon Kind="FolderOpen" Width="20" Height="20"/>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Console Output -->
+        <Border Grid.Row="1" Background="#1E1E1E" Padding="10">
+            <ScrollViewer>
+                <ItemsControl ItemsSource="{Binding Logs}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}" 
+                                       FontFamily="Consolas, Monospace" 
+                                       FontSize="12" 
+                                       Foreground="#00FF00" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

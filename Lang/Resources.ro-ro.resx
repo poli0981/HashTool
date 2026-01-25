@@ -1,0 +1,464 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="AppTitle">
+        <value>Hash Tool</value>
+    </data>
+    <data name="Menu_Create">
+        <value>Creare Hash</value>
+    </data>
+    <data name="Menu_Check">
+        <value>Verificare Hash</value>
+    </data>
+    <data name="Menu_Settings">
+        <value>Setări</value>
+    </data>
+    <data name="Menu_Update">
+        <value>Verificare Actualizări</value>
+    </data>
+    <data name="Menu_Theme">
+        <value>Temă</value>
+    </data>
+    <data name="Menu_About">
+        <value>Despre</value>
+    </data>
+    <data name="Menu_Developer">
+        <value>Dezvoltator</value>
+    </data>
+    <data name="Btn_AddFiles">
+        <value>Adăugare Fișiere...</value>
+    </data>
+    <data name="Btn_Clear">
+        <value>Șterge Lista</value>
+    </data>
+    <data name="Btn_CalcAll">
+        <value>CALCULEAZĂ TOT</value>
+    </data>
+    <data name="Btn_Compress">
+        <value>Comprimă (.Zip)</value>
+    </data>
+    <data name="Btn_CheckAll">
+        <value>VERIFICĂ TOT</value>
+    </data>
+    <data name="Btn_CheckNow">
+        <value>Verifică Acum</value>
+    </data>
+    <data name="Btn_Install">
+        <value>Instalare</value>
+    </data>
+    <data name="Btn_Accept">
+        <value>Accept</value>
+    </data>
+    <data name="Btn_Decline">
+        <value>Refuză</value>
+    </data>
+    <data name="Title_CreateHash">
+        <value>Creare Hash &amp; Comprimare</value>
+    </data>
+    <data name="Title_CheckHash">
+        <value>Verificare în Masă</value>
+    </data>
+    <data name="Title_Update">
+        <value>Verificare Actualizări</value>
+    </data>
+    <data name="Title_Disclaimer">
+        <value>Avertisment Versiune Developer</value>
+    </data>
+    <data name="Title_About">
+        <value>Despre</value>
+    </data>
+    <data name="Help_CreateHash">
+        <value>Sfat: Shift+C pentru calcul totul, Shift+Z pentru comprimare, Ctrl+F pentru adăugare fișiere.</value>
+    </data>
+    <data name="Help_CheckHash">
+        <value>Sfat: Shift+A pentru verificare totul, Ctrl+F pentru adăugare fișiere, Ctrl+Shift+H pentru ștergere listă.</value>
+    </data>
+    <data name="Lbl_Status_Ready">
+        <value>Gata</value>
+    </data>
+    <data name="Lbl_Sample">
+        <value>Exemplu:</value>
+    </data>
+    <data name="Lbl_CurrentVersion">
+        <value>Versiune curentă: {0}</value>
+    </data>
+    <data name="Lbl_Channel">
+        <value>Canal de lansare:</value>
+    </data>
+    <data name="Lbl_TotalFiles">
+        <value>Total fișiere: {0}</value>
+    </data>
+    <data name="Channel_Stable">
+        <value>Stable (Stabilă)</value>
+    </data>
+    <data name="Channel_Dev">
+        <value>Dev (Dezvoltator)</value>
+    </data>
+    <data name="Settings_Language">
+        <value>Limbă</value>
+    </data>
+    <data name="Settings_Theme">
+        <value>Temă</value>
+    </data>
+    <data name="Settings_ThemeStyle">
+        <value>Stil temă</value>
+    </data>
+    <data name="Settings_ThemeVariant">
+        <value>Deschis/Întunecat</value>
+    </data>
+    <data name="Settings_Font">
+        <value>Font</value>
+    </data>
+    <data name="Settings_FontSize">
+        <value>Dimensiune font (pt)</value>
+    </data>
+    <data name="Settings_AutoFont">
+        <value>Selectare automată font optim pentru limbă</value>
+    </data>
+    <data name="Settings_LockFont">
+        <value>Folosește ca font implicit (Blochează modificări)</value>
+    </data>
+    <data name="Settings_Scale">
+        <value>Scală Interfață</value>
+    </data>
+    <data name="Settings_MaskHash">
+        <value>Mascare Hash (Securitate)</value>
+    </data>
+    <data name="Settings_Reset">
+        <value>Resetează tema</value>
+    </data>
+    <data name="Settings_Other">
+        <value>Confidențialitate &amp; Securitate</value>
+    </data>
+    <data name="Settings_SetDefault">
+        <value>Setează ca implicit</value>
+    </data>
+    <data name="Settings_CustomColor">
+        <value>Culoare text personalizată</value>
+    </data>
+    <data name="Settings_TextTest">
+        <value>Vulpea maro rapidă sare peste câinele leneș.</value>
+    </data>
+    <data name="Settings_Advanced">
+        <value>Avansate</value>
+    </data>
+    <data name="Settings_AdminMode">
+        <value>Rulează ca Administrator</value>
+    </data>
+    <data name="Settings_AdminDesc">
+        <value>Necesită repornire. Permite acces la fișiere protejate.</value>
+    </data>
+    <data name="Settings_FileSizeLimit">
+        <value>Limită dimensiune fișier intrare</value>
+    </data>
+    <data name="Settings_FileSizeDesc">
+        <value>Limită maximă dimensiune pentru fișiere procesate.</value>
+    </data>
+    <data name="Settings_ForceQuitTimeout">
+        <value>Timeout închidere forțată</value>
+    </data>
+    <data name="Settings_ForceQuitDesc">
+        <value>Timp (secunde) înainte de a considera aplicația blocată.</value>
+    </data>
+    <data name="Settings_FileTimeout">
+        <value>Timeout procesare fișier</value>
+    </data>
+    <data name="Settings_FileTimeoutDesc">
+        <value>Anulare forțată dacă un fișier durează prea mult.</value>
+    </data>
+    <data name="Settings_Emergency">
+        <value>Acțiune de urgență</value>
+    </data>
+    <data name="Settings_EmergencyDesc">
+        <value>Închidere forțată aplicație și anulare toate sarcinile imediat.</value>
+    </data>
+    <data name="Settings_BtnForceQuit">
+        <value>Închidere Forțată &amp; Anulează Tot</value>
+    </data>
+    <data name="Settings_Configuration">
+        <value>Configurație</value>
+    </data>
+    <data name="Settings_LockSettings">
+        <value>Blochează setări (Salvează ca implicit)</value>
+    </data>
+    <data name="Settings_LockDesc">
+        <value>Previne modificări accidentale. Doar mascarea hash rămâne activă.</value>
+    </data>
+    <data name="Settings_ResetAll">
+        <value>Resetează toate setările</value>
+    </data>
+    <data name="Settings_ResetDesc">
+        <value>Restaurează valorile implicite inițiale.</value>
+    </data>
+    <data name="Settings_ConfigPath">
+        <value>Cale fișier configurație</value>
+    </data>
+    <data name="Settings_ConfigDesc">
+        <value>Afișează calea completă și copiază în clipboard.</value>
+    </data>
+    <data name="Settings_ShowPath">
+        <value>Afișează calea</value>
+    </data>
+    <data name="Settings_AutoSave">
+        <value>Setările sunt salvate automat în config.json</value>
+    </data>
+    <data name="Settings_DeveloperMode">
+        <value>Mod dezvoltator</value>
+    </data>
+    <data name="Settings_DeveloperDesc">
+        <value>Activează instrumente avansate de log și debug.</value>
+    </data>
+    <data name="Dev_Console">
+        <value>Consolă Dezvoltator</value>
+    </data>
+    <data name="Dev_Beta">
+        <value>BETA</value>
+    </data>
+    <data name="Dev_Recording">
+        <value>Înregistrare</value>
+    </data>
+    <data name="Dev_Paused">
+        <value>Pauză</value>
+    </data>
+    <data name="Dev_SaveToFile">
+        <value>Salvează în fișier</value>
+    </data>
+    <data name="Dev_NoSave">
+        <value>Nu salva</value>
+    </data>
+    <data name="Dev_Clear">
+        <value>Șterge Consola</value>
+    </data>
+    <data name="Dev_Copy">
+        <value>Copiază tot</value>
+    </data>
+    <data name="Dev_OpenFolder">
+        <value>Deschide folder Log</value>
+    </data>
+    <data name="About_Author">
+        <value>Autor</value>
+    </data>
+    <data name="About_Software">
+        <value>Software</value>
+    </data>
+    <data name="About_ThirdParty">
+        <value>Biblioteci terțe</value>
+    </data>
+    <data name="About_Copyright">
+        <value>Drepturi de autor</value>
+    </data>
+    <data name="About_Desc">
+        <value>Instrument puternic pentru generarea și verificarea hash-urilor fișierelor.</value>
+    </data>
+    <data name="About_License">
+        <value>Lansat sub licența MIT.</value>
+    </data>
+    <data name="About_Tech">
+        <value>Tehnologie</value>
+    </data>
+    <data name="About_TechContent">
+        <value>Construit cu C# și .NET 10.0.102.</value>
+    </data>
+    <data name="About_AI">
+        <value>Asistență AI</value>
+    </data>
+    <data name="About_AIContent">
+        <value>Acest software a fost dezvoltat cu asistență AI (Gemini 3 Pro și Grok 4.1).</value>
+    </data>
+    <data name="Status_Processing">
+        <value>Se procesează ({0})...</value>
+    </data>
+    <data name="Status_Done">
+        <value>Finalizat</value>
+    </data>
+    <data name="Status_Error">
+        <value>Eroare: {0}</value>
+    </data>
+    <data name="Status_Cancelled">
+        <value>Anulat</value>
+    </data>
+    <data name="Status_Saved">
+        <value>Salvat!</value>
+    </data>
+    <data name="Status_Compressed">
+        <value>Comprimat!</value>
+    </data>
+    <data name="Status_Waiting">
+        <value>Așteptare hash/intrare...</value>
+    </data>
+    <data name="Status_MissingOriginal">
+        <value>Fișier original lipsă!</value>
+    </data>
+    <data name="Status_MissingHash">
+        <value>Hash lipsă (Introduceți sau fișier hash necesar)</value>
+    </data>
+    <data name="Status_Valid">
+        <value>VALID</value>
+    </data>
+    <data name="Status_Invalid">
+        <value>NEPOTRIVIRE!</value>
+    </data>
+    <data name="Status_HashFileLoaded">
+        <value>Fișier hash încărcat</value>
+    </data>
+    <data name="Status_HashFileMismatch">
+        <value>Nume fișier hash nepotrivit!</value>
+    </data>
+    <data name="Status_NoHashFound">
+        <value>Fișierul nu conține hash!</value>
+    </data>
+    <data name="Status_Checking">
+        <value>Verificare actualizări...</value>
+    </data>
+    <data name="Status_NewVersion">
+        <value>Versiune nouă detectată!</value>
+    </data>
+    <data name="Status_Latest">
+        <value>Folosești cea mai recentă versiune.</value>
+    </data>
+    <data name="Status_CheckError">
+        <value>Eroare verificare actualizări: {0}</value>
+    </data>
+    <data name="Status_Installing">
+        <value>Descărcare și instalare...</value>
+    </data>
+    <data name="Status_InstallError">
+        <value>Eroare instalare: {0}</value>
+    </data>
+    <data name="Status_ReadyFromHash">
+        <value>Gata (Din fișier .hash)</value>
+    </data>
+    <data name="Status_LostOriginal">
+        <value>Fișier original pierdut!</value>
+    </data>
+    <data name="Status_DropHashMismatch">
+        <value>Nume fișier hash nepotrivit!</value>
+    </data>
+    <data name="Status_DropHashSuccess">
+        <value>Fișier hash aruncat</value>
+    </data>
+    <data name="Status_DropNoHash">
+        <value>Fișierul nu conține hash!</value>
+    </data>
+    <data name="Status_ReadError">
+        <value>Eroare citire fișier</value>
+    </data>
+    <data name="Msg_Result_Title">
+        <value>Rezultat</value>
+    </data>
+    <data name="Msg_Result_Content">
+        <value>Procesare finalizată!
+
+            ✅ Succes: {0}
+            ❌ Eșec: {1}</value>
+    </data>
+    <data name="Msg_CheckResult">
+        <value>Verificate {0} fișiere.
+            ✅ Potriviri: {1}
+            ❌ Nepotriviri/Eroare: {2}
+            ⛔ Anulate: {3}</value>
+    </data>
+    <data name="Msg_WrongHashFile">
+        <value>Fișier greșit!</value>
+    </data>
+    <data name="Msg_WrongHashFileContent">
+        <value>Fișier hash nepotrivit!
+
+            Fișier original: {0}
+            Fișier selectat: {1}
+
+            Selectați fișierul hash corect asociat.</value>
+    </data>
+    <data name="Msg_UpdateTitle">
+        <value>Actualizare Nouă</value>
+    </data>
+    <data name="Msg_UpdateContent">
+        <value>Versiune: {0}
+
+            Modificări:
+            {1}
+
+            Apasă 'Actualizează acum' pentru descărcare.</value>
+    </data>
+    <data name="Msg_NoUpdate">
+        <value>Nu s-a găsit actualizare mai nouă.</value>
+    </data>
+    <data name="Msg_Error">
+        <value>Eroare</value>
+    </data>
+    <data name="Msg_ReadHashError">
+        <value>Nu s-a putut citi acest fișier hash.</value>
+    </data>
+    <data name="Msg_ConfigCheck">
+        <value>Verificare Configurație</value>
+    </data>
+    <data name="Msg_ConfigExists">
+        <value>Fișierul există la:
+            {0}</value>
+    </data>
+    <data name="Msg_ConfigMissing">
+        <value>Fișierul nu există!</value>
+    </data>
+    <data name="Msg_ConfigCreated">
+        <value>Fișier creat cu succes!</value>
+    </data>
+    <data name="Msg_ConfigCopied">
+        <value>Calea configurației copiată.</value>
+    </data>
+    <data name="Msg_AdminMode">
+        <value>Mod Administrator</value>
+    </data>
+    <data name="Msg_AdminRestart">
+        <value>Reporniți aplicația pentru ca modificările să aibă efect.</value>
+    </data>
+    <data name="Msg_OpenFolderError">
+        <value>Nu se poate deschide folderul: {0}</value>
+    </data>
+    <data name="Msg_DisclaimerTitle">
+        <value>⚠️ AVERTISMENT VERSIUNE DEZVOLTATOR</value>
+    </data>
+    <data name="Msg_DisclaimerContent">
+        <value>Ești pe cale să treci la canalul de actualizări Developer (Pre-release).
+
+            Această versiune poate conține erori, fi instabilă și provoca pierdere de date.
+
+            Nu sunt responsabil pentru problemele apărute din utilizarea acestei versiuni.</value>
+    </data>
+    <data name="Msg_DisclaimerAgree">
+        <value>Am citit și accept. Îmi asum întreaga responsabilitate.</value>
+    </data>
+    <data name="Dialog_SaveHash">
+        <value>Salvează Fișier Hash</value>
+    </data>
+    <data name="Dialog_SaveZip">
+        <value>Salvează Fișier Comprimat</value>
+    </data>
+    <data name="Dialog_SelectFiles">
+        <value>Selectează fișiere pentru hash</value>
+    </data>
+    <data name="Dialog_SelectHashFile">
+        <value>Selectează fișier hash pentru: {0}</value>
+    </data>
+    <data name="Dialog_SelectCheckFiles">
+        <value>Selectează fișiere (Original sau fișier .hash)</value>
+    </data>
+    <data name="Header_Fallback">
+        <value>Avansate: Revenire la versiune veche (Fallback)</value>
+    </data>
+    <data name="Desc_Fallback">
+        <value>Această funcție permite instalarea unei versiuni specifice dacă cea nouă are probleme.</value>
+    </data>
+    <data name="Watermark_PasteDrop">
+        <value>Lipire/Aruncare...</value>
+    </data>
+</root>

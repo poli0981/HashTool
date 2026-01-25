@@ -1,116 +1,218 @@
-using Avalonia.Platform;
 using CommunityToolkit.Mvvm.ComponentModel;
-using System.Text.Json;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Globalization;
+using System.Linq;
+using System.Resources;
+using System.Threading;
+using Avalonia.Media;
 
 namespace CheckHash.Services;
 
 public partial class LocalizationService : ObservableObject
 {
-    // Singleton để truy cập từ mọi nơi
     public static LocalizationService Instance { get; } = new();
 
-    private Dictionary<string, string> _currentResources = new();
+    // ResourceManager -> CheckHash.Lang.Resources
+    private readonly ResourceManager _resourceManager;
+    private CultureInfo _currentCulture;
 
-    // Danh sách ngôn ngữ hỗ trợ
     public List<LanguageItem> AvailableLanguages { get; } = new()
     {
-        new("Auto (System)", "auto"), // Thêm tùy chọn Auto
-        new("English", "en-US"),
-        new("Tiếng Việt", "vi-VN")
+        // AUTO DETECT LANGUAGE
+        //---------------------------------------//
+        new("Auto (System)", "auto"),  // completed (auto detect, if your system language is not supported, it will default to English)
+        // ASIA LANGUAGES
+        //---------------------------------------//
+        new("English (US)", "en-US"), // completed
+        
+        // SOUTHEAST ASIA LANGUAGES
+        new("Tiếng Việt", "vi-VN"),  // completed
+        new("Bahasa Indonesia", "id-ID"),// completed
+        new("ภาษาไทย (Thai)", "th-TH"),// completed
+        new("Filipino (Tagalog)", "fil-PH"),// completed
+        // Bahasa Malaysia
+        new("Bahasa Melayu", "ms-MY"), // completed
+        new("မြန်မာ (Burmese)", "my-MM"), // completed
+        new("ខ្មែរ (Khmer)", "km-KH"), // completed
+        new("ລາວ (Lao)", "lo-LA"), // completed
+        // tet (Timor-Leste) not supported by .NET natively yet (if .NET supported this language in the future,uncomment this line)
+        // new("Tetun (Timor-Leste)", "tet-TL"),
+        
+        // MIDDLE EAST/ WEST ASIA LANGUAGES
+        new("العربية (Arabic)", "ar-SA"), // completed
+        new("فارسی (Persian)", "fa-IR"), // completed
+        new("עברית (Hebrew)", "he-IL"),
+        // Turkish
+        new("Türkçe (Turkish)", "tr-TR"), // completed
+        
+        //---------------------------------------//
+        // SOUTH ASIA LANGUAGES
+        new("हिन्दी (Hindi)", "hi-IN"),  // completed
+        new("বাংলা (Bengali)", "bn-BD"), // completed
+        // Sri Lanka - Sinhala
+        new("සිංහල (Sinhala)", "si-LK"), // completed
+        //--------------------------------------//
+        // EAST ASIA LANGUAGES
+        new("Traditional Chinese (Taiwan)", "zh-hant"), // completed
+        new("简体中文 (Chinese Simplified)", "zh-hans-cn"), // completed
+        new("日本語 (Japanese)", "ja-jp"),// completed
+        new("한국어 (Korean)", "ko-KR"), // completed
+        new("Монгол (Mongolian)", "mn-MN"), // completed
+        
+        // EUROPE LANGUAGES
+        //---------------------------------------//
+        new("----Europe Region-------","--"), // Use to separate, no function
+        new("Español (Spanish)", "es-ES"), // completed
+        new("Français (French)", "fr-FR"), // completed
+        new("Deutsch (German)", "de-DE"),  // completed
+        // Sweden
+        new("Svenska (Swedish)", "sv-SE"), // completed
+        // pl - pl
+        new("Polski (Polish)", "pl-PL"), // completed
+        // Russian
+        new("Русский (Russian)", "ru-RU"), // completed
+        // Romanian
+        new("Română (Romanian)", "ro-RO"), // completed
+        // Ukrainian
+        new("Українська (Ukrainian)", "uk-UA"), // completed
+        // Croatia
+        new("Hrvatski (Croatian)", "hr-HR"), // completed
+        // Czech
+        new("Čeština (Czech)", "cs-CZ"), // completed
+        // Italy
+        new("Italiano (Italian)", "it-IT"), // completed
+        // Serbia (Latin)
+        new("Srpski (Serbian Latin)", "sr-latn-RS"), // completed
+        // Bulgaria
+        new("Български (Bulgarian)", "bg-BG"), // completed
+        // Denmark (chưa tính Greenland)
+        new("Dansk (Danish)", "da-DK"), // completed
+        // Greece
+        new("Ελληνικά (Greek)", "el-GR"), // completed
+        //  fi-fi 
+        new("Suomeksi (Finnish)", "fi-FI"), // completed
+        // Hungary
+        new("Magyar (Hungarian)", "hu-HU"), // completed
+        // Norway
+        new("Norsk (Norwegian)", "nb-NO"), // completed
+        // Netherlands
+        new("Nederlands (Dutch)", "nl-NL"), // completed
+        // Slovenia
+        new("Slovenščina (Slovenian)", "sl-SI"), // completed
+        
+        
+        //---------------------------------------//
+        // NORTH - CENTRAL AMERICA & CARIBBEAN LANGUAGES
+        new("----North/Central America & Caribbean Region-------","--"), // Used to separate, no function
+        
+        // -- South America LANGUAGES
+        new("----South America Region-------","--"), // Used to separate, no function
+        new("Português (Brasil)", "pt-BR"), // completed
     };
 
     [ObservableProperty] private LanguageItem _selectedLanguage;
+    [ObservableProperty] private FlowDirection _flowDirection = FlowDirection.LeftToRight;
 
-    // Indexer: Chìa khóa vàng để Binding trong XAML. Ví dụ: {Binding L[Menu_Create]}
+    // Indexer
     public string this[string key]
     {
         get
         {
-            if (_currentResources.TryGetValue(key, out var value))
-                return value;
-            return $"[{key}]"; // Trả về key nếu không tìm thấy (để dễ debug)
+            try
+            {
+                var str = _resourceManager.GetString(key, _currentCulture);
+                return string.IsNullOrEmpty(str) ? $"[{key}]" : str;
+            }
+            catch
+            {
+                return $"[{key}]";
+            }
         }
     }
 
     public LocalizationService()
     {
-        // Mặc định chọn Auto
-        SelectedLanguage = AvailableLanguages[0]; 
-        
-        // Load ngôn ngữ dựa trên lựa chọn (nếu Auto thì detect)
-        var codeToLoad = SelectedLanguage.Code == "auto" ? DetectSystemLanguageCode() : SelectedLanguage.Code;
-        LoadLanguage(codeToLoad);
+        _resourceManager = new ResourceManager("CheckHash.Lang.Resources", typeof(LocalizationService).Assembly);
+
+        _selectedLanguage = AvailableLanguages[0];
+        var codeToLoad = DetectSystemLanguageCode();
+        SetLanguage(codeToLoad);
     }
 
     partial void OnSelectedLanguageChanged(LanguageItem value)
     {
         var codeToLoad = value.Code == "auto" ? DetectSystemLanguageCode() : value.Code;
-        LoadLanguage(codeToLoad);
-        
-        // Tự động cập nhật font
+        SetLanguage(codeToLoad);
         FontService.Instance.SetFontForLanguage(codeToLoad);
     }
 
     private string DetectSystemLanguageCode()
     {
+        var supportedLanguages = AvailableLanguages.Skip(1).ToList();
+        string fallbackCode = supportedLanguages.FirstOrDefault()?.Code ?? "en-US";
+
         try 
         {
-            // 1. Lấy Culture của hệ điều hành
-            var systemCulture = CultureInfo.CurrentUICulture;
-            
-            // 2. Tìm trong danh sách app xem có cái nào khớp chính xác không (VD: máy là vi-VN -> khớp vi-VN)
-            // Bỏ qua item "auto" khi tìm kiếm
-            var exactMatch = AvailableLanguages
-                .Skip(1) 
-                .FirstOrDefault(x => x.Code.Equals(systemCulture.Name, StringComparison.OrdinalIgnoreCase));
+            var candidates = new[] { CultureInfo.CurrentUICulture, CultureInfo.CurrentCulture };
 
-            if (exactMatch != null) return exactMatch.Code;
+            foreach (var culture in candidates)
+            {
+                if (culture == null) continue;
 
-            // 3. Nếu không khớp chính xác, tìm khớp theo mã 2 ký tự (VD: máy là en-GB -> khớp en-US)
-            var twoLetterMatch = AvailableLanguages
-                .Skip(1)
-                .FirstOrDefault(x => x.Code.StartsWith(systemCulture.TwoLetterISOLanguageName));
+                var exactMatch = supportedLanguages.FirstOrDefault(x => 
+                    x.Code.Equals(culture.Name, StringComparison.OrdinalIgnoreCase));
+                if (exactMatch != null) return exactMatch.Code;
 
-            if (twoLetterMatch != null) return twoLetterMatch.Code;
+                var twoLetterMatch = supportedLanguages.FirstOrDefault(x => 
+                    x.Code.StartsWith(culture.TwoLetterISOLanguageName, StringComparison.OrdinalIgnoreCase));
+                if (twoLetterMatch != null) return twoLetterMatch.Code;
+            }
         }
-        catch 
-        {
-            // Ignore errors
-        }
+        catch { }
 
-        // 4. Fallback
-        return "en-US";
+        return fallbackCode;
     }
 
-    private void LoadLanguage(string languageCode)
+    private void SetLanguage(string languageCode)
     {
-        // Sửa tên assembly từ HashChecker thành CheckHash
-        var uri = new Uri($"avares://CheckHash/Assets/I18N/{languageCode}.json");
-        
-        if (AssetLoader.Exists(uri))
+        try
         {
-            using var stream = AssetLoader.Open(uri);
-            using var reader = new StreamReader(stream);
-            var json = reader.ReadToEnd();
+            _currentCulture = new CultureInfo(languageCode);
             
-            var dict = JsonSerializer.Deserialize<Dictionary<string, string>>(json);
-            if (dict != null)
-            {
-                _currentResources = dict;
-                
-                // Thông báo cập nhật cho TOÀN BỘ property binding qua Indexer
-                OnPropertyChanged("Item[]"); 
-            }
+            // Update Thread Culture
+            Thread.CurrentThread.CurrentCulture = _currentCulture;
+            Thread.CurrentThread.CurrentUICulture = _currentCulture;
+
+            UpdateFlowDirection(languageCode);
+            
+            // Update UI bindings
+            OnPropertyChanged("Item[]"); 
+        }
+        catch
+        {
+            _currentCulture = new CultureInfo("en-US");
+            OnPropertyChanged("Item[]");
+        }
+    }
+
+    private void UpdateFlowDirection(string languageCode)
+    {
+        var rtlLanguages = new[] { "ar", "he", "fa", "ur", "yi", "ps" };
+        var parts = languageCode.Split('-');
+        var twoLetterCode = parts.Length > 0 ? parts[0].ToLower() : languageCode.ToLower();
+
+        if (rtlLanguages.Contains(twoLetterCode))
+        {
+            FlowDirection = FlowDirection.RightToLeft;
+        }
+        else
+        {
+            FlowDirection = FlowDirection.LeftToRight;
         }
     }
 }
 
-// Class phụ để hiển thị trong ComboBox
 public record LanguageItem(string Name, string Code)
 {
     public override string ToString() => Name;

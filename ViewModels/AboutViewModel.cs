@@ -10,14 +10,14 @@ public partial class AboutViewModel : ObservableObject
 {
     public LocalizationService Localization => LocalizationService.Instance;
 
-    // Thông tin cơ bản
-    public string AppName => "HashChecker Pro";
+    // Basic Info
+    public string AppName => "Hash Tool";
     public string Version => Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "1.0.0";
-    public string AuthorName => "Poli0981"; // Tên hiển thị
+    public string AuthorName => "Poli0981"; // My name :D
     public string GitHubProfile => "https://github.com/poli0981";
     public string Copyright => $"© 2026 {AuthorName}. All rights reserved.";
     
-    // Danh sách thư viện bên thứ 3 (Credits)
+    // Credits 3rd party libraries
     public ObservableCollection<LibraryItem> Libraries { get; } = new()
     {
         new("Avalonia UI version 11.3.11 ", "MIT License", "https://avaloniaui.net/"),
@@ -26,7 +26,7 @@ public partial class AboutViewModel : ObservableObject
         new("Velopack version 0.0.1298", "MIT License", "https://velopack.io/"),
     };
 
-    // Lệnh mở link
+    // Open URL in default browser of user
     [RelayCommand]
     private void OpenUrl(string url)
     {

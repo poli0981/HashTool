@@ -1,0 +1,464 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="AppTitle">
+        <value>Hash Tool</value>
+    </data>
+    <data name="Menu_Create">
+        <value>ສ້າງ Hash</value>
+    </data>
+    <data name="Menu_Check">
+        <value>ກວດສອບ Hash</value>
+    </data>
+    <data name="Menu_Settings">
+        <value>ການຕັ້ງຄ່າ</value>
+    </data>
+    <data name="Menu_Update">
+        <value>ກວດສອບການອັບເດດ</value>
+    </data>
+    <data name="Menu_Theme">
+        <value>ຮູບແບບ</value>
+    </data>
+    <data name="Menu_About">
+        <value>ກ່ຽວກັບ</value>
+    </data>
+    <data name="Menu_Developer">
+        <value>ນັກພັດທະນາ</value>
+    </data>
+    <data name="Btn_AddFiles">
+        <value>ເພີ່ມໄຟລ໌...</value>
+    </data>
+    <data name="Btn_Clear">
+        <value>ລ້າງລາຍການ</value>
+    </data>
+    <data name="Btn_CalcAll">
+        <value>ຄຳນວນທັງໝົດ</value>
+    </data>
+    <data name="Btn_Compress">
+        <value>ບີບອັດ (.Zip)</value>
+    </data>
+    <data name="Btn_CheckAll">
+        <value>ກວດສອບທັງໝົດ</value>
+    </data>
+    <data name="Btn_CheckNow">
+        <value>ກວດສອບດຽວນີ້</value>
+    </data>
+    <data name="Btn_Install">
+        <value>ຕິດຕັ້ງ</value>
+    </data>
+    <data name="Btn_Accept">
+        <value>ຍອມຮັບ</value>
+    </data>
+    <data name="Btn_Decline">
+        <value>ປະຕິເສດ</value>
+    </data>
+    <data name="Title_CreateHash">
+        <value>ສ້າງ Hash &amp; ບີບອັດ</value>
+    </data>
+    <data name="Title_CheckHash">
+        <value>ການກວດສອບຊຸດ</value>
+    </data>
+    <data name="Title_Update">
+        <value>ກວດສອບການອັບເດດ</value>
+    </data>
+    <data name="Title_Disclaimer">
+        <value>ຄຳເຕືອນສຳລັບຮຸ່ນພັດທະນາ</value>
+    </data>
+    <data name="Title_About">
+        <value>ກ່ຽວກັບ</value>
+    </data>
+    <data name="Help_CreateHash">
+        <value>ຄຳແນະນຳ: Shift+C ເພື່ອຄຳນວນທັງໝົດ, Shift+Z ເພື່ອບີບອັດ, Ctrl+F ເພື່ອເພີ່ມໄຟລ໌。</value>
+    </data>
+    <data name="Help_CheckHash">
+        <value>ຄຳແນະນຳ: Shift+A ເພື່ອກວດສອບທັງໝົດ, Ctrl+F ເພື່ອເພີ່ມໄຟລ໌, Ctrl+Shift+H ເພື່ອລ້າງລາຍການ।</value>
+    </data>
+    <data name="Lbl_Status_Ready">
+        <value>ພ້ອມ</value>
+    </data>
+    <data name="Lbl_Sample">
+        <value>ຕົວຢ່າງ:</value>
+    </data>
+    <data name="Lbl_CurrentVersion">
+        <value>ຮຸ່ນປັດຈຸບັນ: {0}</value>
+    </data>
+    <data name="Lbl_Channel">
+        <value>ຊ່ອງທາງການປ່ອຍ:</value>
+    </data>
+    <data name="Lbl_TotalFiles">
+        <value>ຈຳນວນໄຟລ໌ທັງໝົດ: {0}</value>
+    </data>
+    <data name="Channel_Stable">
+        <value>Stable (ຄົງທີ່)</value>
+    </data>
+    <data name="Channel_Dev">
+        <value>Dev (ນັກພັດທະນາ)</value>
+    </data>
+    <data name="Settings_Language">
+        <value>ພາສາ</value>
+    </data>
+    <data name="Settings_Theme">
+        <value>ຮູບແບບ</value>
+    </data>
+    <data name="Settings_ThemeStyle">
+        <value>ຮູບແບບຮູບແບບ</value>
+    </data>
+    <data name="Settings_ThemeVariant">
+        <value>ສະຫວ່າງ/ມືດ</value>
+    </data>
+    <data name="Settings_Font">
+        <value>ຟອນ</value>
+    </data>
+    <data name="Settings_FontSize">
+        <value>ຂະໜາດຟອນ (pt)</value>
+    </data>
+    <data name="Settings_AutoFont">
+        <value>ເລືອກຟອນທີ່ດີທີ່ສຸດອັດຕະໂນມັດສຳລັບພາສາ</value>
+    </data>
+    <data name="Settings_LockFont">
+        <value>ໃຊ້ເປັນຟອນເລີ່ມຕົ້ນ (ລັອກການປ່ຽນແປງ)</value>
+    </data>
+    <data name="Settings_Scale">
+        <value>ຂະໜາດ UI</value>
+    </data>
+    <data name="Settings_MaskHash">
+        <value>ປິດບັງ Hash (ຄວາມປອດໄພ)</value>
+    </data>
+    <data name="Settings_Reset">
+        <value>ຣີເຊັດຮູບແບບ</value>
+    </data>
+    <data name="Settings_Other">
+        <value>ຄວາມເປັນສ່ວນຕົວ &amp; ຄວາມປອດໄພ</value>
+    </data>
+    <data name="Settings_SetDefault">
+        <value>ຕັ້ງເປັນເລີ່ມຕົ້ນ</value>
+    </data>
+    <data name="Settings_CustomColor">
+        <value>ສີຂໍ້ຄວາມກຳນົດເອງ</value>
+    </data>
+    <data name="Settings_TextTest">
+        <value>The quick brown fox jumps over the lazy dog.</value>
+    </data>
+    <data name="Settings_Advanced">
+        <value>ຂັ້ນສູງ</value>
+    </data>
+    <data name="Settings_AdminMode">
+        <value>ດຳເນີນການເປັນຜູ້ຄວບຄຸມລະບົບ</value>
+    </data>
+    <data name="Settings_AdminDesc">
+        <value>ຕ້ອງການເລີ່ມໃໝ່. ອະນຸຍາດໃຫ້ເຂົ້າເຖິງໄຟລ໌ທີ່ປ້ອງກັນ.</value>
+    </data>
+    <data name="Settings_FileSizeLimit">
+        <value>ຂອບເຂດຂະໜາດໄຟລ໌ປ້ອນຂໍ້ມູນ</value>
+    </data>
+    <data name="Settings_FileSizeDesc">
+        <value>ຂອບເຂດຂະໜາດສູງສຸດສຳລັບໄຟລ໌ທີ່ຈະດຳເນີນການ.</value>
+    </data>
+    <data name="Settings_ForceQuitTimeout">
+        <value>ເວລາອອກແບບບັງຄັບ</value>
+    </data>
+    <data name="Settings_ForceQuitDesc">
+        <value>ເວລາ (ວິນາທີ) ກ່ອນຖືວ່າແອັບຄ້າງ.</value>
+    </data>
+    <data name="Settings_FileTimeout">
+        <value>ເວລາດຳເນີນການໄຟລ໌</value>
+    </data>
+    <data name="Settings_FileTimeoutDesc">
+        <value>ບັງຄັບຍົກເລີກຖ້າໄຟລ໌ໃຊ້ເວລາດົນເກີນໄປ.</value>
+    </data>
+    <data name="Settings_Emergency">
+        <value>ການດຳເນີນງານສຸກເສີນ</value>
+    </data>
+    <data name="Settings_EmergencyDesc">
+        <value>ບັງຄັບອອກແອັບແລະຍົກເລີກທຸກວຽກງານທັນທີ.</value>
+    </data>
+    <data name="Settings_BtnForceQuit">
+        <value>ບັງຄັບອອກ &amp; ຍົກເລີກທັງໝົດ</value>
+    </data>
+    <data name="Settings_Configuration">
+        <value>ການຕັ້ງຄ່າ</value>
+    </data>
+    <data name="Settings_LockSettings">
+        <value>ລັອກການຕັ້ງຄ່າ (ບັນທຶກເປັນເລີ່ມຕົ້ນ)</value>
+    </data>
+    <data name="Settings_LockDesc">
+        <value>ປ້ອງກັນການປ່ຽນແປງໂດຍບັງເອີນ. ມີພຽງການປິດບັງ hash ທີ່ຍັງເຄື່ອນໄຫວ.</value>
+    </data>
+    <data name="Settings_ResetAll">
+        <value>ຣີເຊັດການຕັ້ງຄ່າທັງໝົດ</value>
+    </data>
+    <data name="Settings_ResetDesc">
+        <value>ກັບຄືນສູ່ຄ່າເລີ່ມຕົ້ນດັ້ງເດີມ.</value>
+    </data>
+    <data name="Settings_ConfigPath">
+        <value>ເສັ້ນທາງໄຟລ໌ການຕັ້ງຄ່າ</value>
+    </data>
+    <data name="Settings_ConfigDesc">
+        <value>ສະແດງເສັ້ນທາງເຕັມແລະຄັດລອກໄປຄລິບບອດ.</value>
+    </data>
+    <data name="Settings_ShowPath">
+        <value>ສະແດງເສັ້ນທາງ</value>
+    </data>
+    <data name="Settings_AutoSave">
+        <value>ການຕັ້ງຄ່າຖືກບັນທຶກອັດຕະໂນມັດໃນ config.json</value>
+    </data>
+    <data name="Settings_DeveloperMode">
+        <value>ໂຫມດນັກພັດທະນາ</value>
+    </data>
+    <data name="Settings_DeveloperDesc">
+        <value>ເປີດໃຊ້ເຄື່ອງມືບັນທຶກແລະແກ້ໄຂຂໍ້ຜິດພາດຂັ້ນສູງ.</value>
+    </data>
+    <data name="Dev_Console">
+        <value>ຄອນໂຊນັກພັດທະນາ</value>
+    </data>
+    <data name="Dev_Beta">
+        <value>BETA</value>
+    </data>
+    <data name="Dev_Recording">
+        <value>ກຳລັງບັນທຶກ</value>
+    </data>
+    <data name="Dev_Paused">
+        <value>ຢຸດຊົ່ວຄາວ</value>
+    </data>
+    <data name="Dev_SaveToFile">
+        <value>ບັນທຶກໄປໄຟລ໌</value>
+    </data>
+    <data name="Dev_NoSave">
+        <value>ບໍ່ບັນທຶກ</value>
+    </data>
+    <data name="Dev_Clear">
+        <value>ລ້າງຄອນໂຊນ</value>
+    </data>
+    <data name="Dev_Copy">
+        <value>ຄັດລອກທັງໝົດ</value>
+    </data>
+    <data name="Dev_OpenFolder">
+        <value>ເປີດໂຟນເດີບັນທຶກ</value>
+    </data>
+    <data name="About_Author">
+        <value>ຜູ້ຂຽນ</value>
+    </data>
+    <data name="About_Software">
+        <value>ຊອບແວ</value>
+    </data>
+    <data name="About_ThirdParty">
+        <value>ຫ້ອງສະໝຸດພາກສ່ວນທີສາມ</value>
+    </data>
+    <data name="About_Copyright">
+        <value>ລິຂະສິດ</value>
+    </data>
+    <data name="About_Desc">
+        <value>ເຄື່ອງມືທີ່ມີປະສິດທິພາບສຳລັບການສ້າງແລະກວດສອບ hash ໄຟລ໌.</value>
+    </data>
+    <data name="About_License">
+        <value>ອອກໃບອະນຸຍາດ MIT.</value>
+    </data>
+    <data name="About_Tech">
+        <value>ເທກໂນໂລຢີ</value>
+    </data>
+    <data name="About_TechContent">
+        <value>ສ້າງດ້ວຍ C# ແລະ .NET 10.0.102.</value>
+    </data>
+    <data name="About_AI">
+        <value>ການຊ່ວຍເຫຼືອ AI</value>
+    </data>
+    <data name="About_AIContent">
+        <value>ຊອບແວນີ້ໄດ້ພັດທະນາດ້ວຍການຊ່ວຍເຫຼືອຈາກ AI (Gemini 3 Pro ແລະ Grok 4.1).</value>
+    </data>
+    <data name="Status_Processing">
+        <value>ກຳລັງດຳເນີນການ ({0})...</value>
+    </data>
+    <data name="Status_Done">
+        <value>ສຳເລັດ</value>
+    </data>
+    <data name="Status_Error">
+        <value>ຜິດພາດ: {0}</value>
+    </data>
+    <data name="Status_Cancelled">
+        <value>ຍົກເລີກ</value>
+    </data>
+    <data name="Status_Saved">
+        <value>ບັນທຶກແລ້ວ!</value>
+    </data>
+    <data name="Status_Compressed">
+        <value>ບີບອັດແລ້ວ!</value>
+    </data>
+    <data name="Status_Waiting">
+        <value>ລໍຖ້າ hash/ປ້ອນຂໍ້ມູນ...</value>
+    </data>
+    <data name="Status_MissingOriginal">
+        <value>ຂາດໄຟລ໌ຕົ້ນສະບັບ!</value>
+    </data>
+    <data name="Status_MissingHash">
+        <value>ຂາດ hash (ປ້ອນຫຼືຕ້ອງການໄຟລ໌ hash)</value>
+    </data>
+    <data name="Status_Valid">
+        <value>ຖືກຕ້ອງ</value>
+    </data>
+    <data name="Status_Invalid">
+        <value>ບໍ່ກົງກັນ!</value>
+    </data>
+    <data name="Status_HashFileLoaded">
+        <value>ໄຟລ໌ hash ໂຫຼດແລ້ວ</value>
+    </data>
+    <data name="Status_HashFileMismatch">
+        <value>ຊື່ໄຟລ໌ hash ບໍ່ກົງກັນ!</value>
+    </data>
+    <data name="Status_NoHashFound">
+        <value>ໄຟລ໌ບໍ່ມີ hash!</value>
+    </data>
+    <data name="Status_Checking">
+        <value>ກຳລັງກວດສອບການອັບເດດ...</value>
+    </data>
+    <data name="Status_NewVersion">
+        <value>ພົບຮຸ່ນໃໝ່!</value>
+    </data>
+    <data name="Status_Latest">
+        <value>ທ່ານກຳລັງໃຊ້ຮຸ່ນຫຼ້າສຸດ.</value>
+    </data>
+    <data name="Status_CheckError">
+        <value>ຜິດພາດການກວດສອບອັບເດດ: {0}</value>
+    </data>
+    <data name="Status_Installing">
+        <value>ກຳລັງດາວໂຫຼດແລະຕິດຕັ້ງ...</value>
+    </data>
+    <data name="Status_InstallError">
+        <value>ຜິດພາດການຕິດຕັ້ງ: {0}</value>
+    </data>
+    <data name="Status_ReadyFromHash">
+        <value>ພ້ອມ (ຈາກໄຟລ໌ .hash)</value>
+    </data>
+    <data name="Status_LostOriginal">
+        <value>ໄຟລ໌ຕົ້ນສະບັບຫາຍ!</value>
+    </data>
+    <data name="Status_DropHashMismatch">
+        <value>ຊື່ໄຟລ໌ hash ບໍ່ກົງກັນ!</value>
+    </data>
+    <data name="Status_DropHashSuccess">
+        <value>ໄຟລ໌ hash ຖືກປ່ອຍ</value>
+    </data>
+    <data name="Status_DropNoHash">
+        <value>ໄຟລ໌ບໍ່ມີ hash!</value>
+    </data>
+    <data name="Status_ReadError">
+        <value>ຜິດພາດການອ່ານໄຟລ໌</value>
+    </data>
+    <data name="Msg_Result_Title">
+        <value>ຜົນ</value>
+    </data>
+    <data name="Msg_Result_Content">
+        <value>ການດຳເນີນການສຳເລັດ!
+
+            ✅ ສຳເລັດ: {0}
+            ❌ ບໍ່ສຳເລັດ: {1}</value>
+    </data>
+    <data name="Msg_CheckResult">
+        <value>ກວດສອບ {0} ໄຟລ໌ແລ້ວ.
+            ✅ ກົງກັນ: {1}
+            ❌ ບໍ່ກົງກັນ/ຜິດພາດ: {2}
+            ⛔ ຍົກເລີກ: {3}</value>
+    </data>
+    <data name="Msg_WrongHashFile">
+        <value>ໄຟລ໌ຜິດ!</value>
+    </data>
+    <data name="Msg_WrongHashFileContent">
+        <value>ໄຟລ໌ hash ບໍ່ກົງກັນ!
+
+            ໄຟລ໌ຕົ້ນສະບັບ: {0}
+            ໄຟລ໌ທີ່ເລືອກ: {1}
+
+            ກະລຸນາເລືອກໄຟລ໌ hash ທີ່ຖືກຕ້ອງທີ່ມາພ້ອມ.</value>
+    </data>
+    <data name="Msg_UpdateTitle">
+        <value>ການອັບເດດໃໝ່</value>
+    </data>
+    <data name="Msg_UpdateContent">
+        <value>ຮຸ່ນ: {0}
+
+            ການປ່ຽນແປງ:
+            {1}
+
+            ກົດ 'ອັບເດດດຽວນີ້' ເພື່ອດາວໂຫຼດ.</value>
+    </data>
+    <data name="Msg_NoUpdate">
+        <value>ບໍ່ພົບການອັບເດດໃໝ່ກວ່າ.</value>
+    </data>
+    <data name="Msg_Error">
+        <value>ຜິດພາດ</value>
+    </data>
+    <data name="Msg_ReadHashError">
+        <value>ບໍ່ສາມາດອ່ານໄຟລ໌ hash ນີ້ໄດ້.</value>
+    </data>
+    <data name="Msg_ConfigCheck">
+        <value>ການກວດສອບການຕັ້ງຄ່າ</value>
+    </data>
+    <data name="Msg_ConfigExists">
+        <value>ໄຟລ໌ມີຢູ່ທີ່:
+            {0}</value>
+    </data>
+    <data name="Msg_ConfigMissing">
+        <value>ໄຟລ໌ບໍ່ມີ!</value>
+    </data>
+    <data name="Msg_ConfigCreated">
+        <value>ໄຟລ໌ສ້າງສຳເລັດ!</value>
+    </data>
+    <data name="Msg_ConfigCopied">
+        <value>ເສັ້ນທາງການຕັ້ງຄ່າຖືກຄັດລອກ.</value>
+    </data>
+    <data name="Msg_AdminMode">
+        <value>ໂຫມດຜູ້ຄວບຄຸມລະບົບ</value>
+    </data>
+    <data name="Msg_AdminRestart">
+        <value>ກະລຸນາເລີ່ມແອັບໃໝ່ເພື່ອໃຫ້ການປ່ຽນແປງມີຜົນບັງຄັບໃຊ້.</value>
+    </data>
+    <data name="Msg_OpenFolderError">
+        <value>ບໍ່ສາມາດເປີດໂຟນເດີໄດ້: {0}</value>
+    </data>
+    <data name="Msg_DisclaimerTitle">
+        <value>⚠️ ຄຳເຕືອນສຳລັບຮຸ່ນພັດທະນາ</value>
+    </data>
+    <data name="Msg_DisclaimerContent">
+        <value>ທ່ານກຳລັງປ່ຽນໄປໃຊ້ຊ່ອງທາງອັບເດດພັດທະນາ (Pre-release).
+
+            ຮຸ່ນນີ້ອາດມີບັກ, ບໍ່ສະຖຽນ ແລະອາດເຮັດໃຫ້ຂໍ້ມູນສູນຫາຍ.
+
+            ຂ້ອຍບໍ່ຮັບຜິດຊອບຕໍ່ບັນຫາໃດໆທີ່ເກີດຈາກການໃຊ້ຮຸ່ນນີ້.</value>
+    </data>
+    <data name="Msg_DisclaimerAgree">
+        <value>ຂ້ອຍໄດ້ອ່ານແລະຍອມຮັບ. ຂ້ອຍຮັບຜິດຊອບເຕັມທີ່.</value>
+    </data>
+    <data name="Dialog_SaveHash">
+        <value>ບັນທຶກໄຟລ໌ Hash</value>
+    </data>
+    <data name="Dialog_SaveZip">
+        <value>ບັນທຶກໄຟລ໌ບີບອັດ</value>
+    </data>
+    <data name="Dialog_SelectFiles">
+        <value>ເລືອກໄຟລ໌ທີ່ຈະ hash</value>
+    </data>
+    <data name="Dialog_SelectHashFile">
+        <value>ເລືອກໄຟລ໌ hash ສຳລັບ: {0}</value>
+    </data>
+    <data name="Dialog_SelectCheckFiles">
+        <value>ເລືອກໄຟລ໌ (ຕົ້ນສະບັບ ຫຼືໄຟລ໌ .hash)</value>
+    </data>
+    <data name="Header_Fallback">
+        <value>ຂັ້ນສູງ: ກັບຄືນໄປຮຸ່ນເກົ່າ (Fallback)</value>
+    </data>
+    <data name="Desc_Fallback">
+        <value>ຄຸນສົມບັດນີ້ອະນຸຍາດໃຫ້ຕິດຕັ້ງຮຸ່ນສະເພາະຖ້າຮຸ່ນໃໝ່ມີບັນຫາ.</value>
+    </data>
+    <data name="Watermark_PasteDrop">
+        <value>ວາງ/ປ່ອຍ...</value>
+    </data>
+</root>

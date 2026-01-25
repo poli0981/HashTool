@@ -19,8 +19,7 @@ public static class MessageBoxHelper
             WindowStartupLocation = WindowStartupLocation.CenterOwner,
             CanResize = false
         };
-
-        // Lấy theme background hiện tại để đồng bộ Dark/Light mode
+        
         if (Application.Current != null && Application.Current.TryFindResource("PaneBackgroundBrush", null, out var bg) && bg is IBrush brush)
         {
             window.Background = brush;
@@ -45,7 +44,7 @@ public static class MessageBoxHelper
         };
         
         
-        // Đóng cửa sổ khi nhấn OK
+        // Close the window when the button is clicked
         button.Click += (_, _) => window.Close();
 
         var stackPanel = new StackPanel
@@ -56,8 +55,7 @@ public static class MessageBoxHelper
 
         window.Content = stackPanel;
 
-        if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop &&
-            desktop.MainWindow != null)
+        if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop && desktop.MainWindow != null)
         {
             await window.ShowDialog(desktop.MainWindow);
         }

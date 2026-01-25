@@ -15,7 +15,7 @@ public class FontSettingsData
     public string? FontName { get; set; }
     public double UiScale { get; set; } = 1.0;
     public bool IsAutoFont { get; set; } = true;
-    public bool IsLockedFont { get; set; } = false; // Checkbox mới
+    public bool IsLockedFont { get; set; } = false;
     public double BaseFontSize { get; set; } = 14.0;
 }
 
@@ -68,7 +68,7 @@ public partial class FontService : ObservableObject
     {
         if (value)
         {
-            IsAutoFont = false; // Lock bật thì Auto tắt
+            IsAutoFont = false;
             SaveLog(SelectedFont.Name);
         }
         SaveSettings();
@@ -175,17 +175,27 @@ public partial class FontService : ObservableObject
 
     public void SetFontForLanguage(string langCode)
     {
-        if (!IsAutoFont && !IsLockedFont) return; // Nếu manual mode thì không đổi
-        if (IsLockedFont) return; // Nếu đã lock thì tuyệt đối không đổi
+        if (!IsAutoFont && !IsLockedFont) return;
+        if (IsLockedFont) return;
+        
+        string[] targetFonts;
 
-        string[] targetFonts = langCode switch
+        if (langCode.StartsWith("ja"))
         {
-            "ja-JP" => new[] { "Meiryo UI", "Yu Gothic UI", "MS UI Gothic" },
-            "zh-CN" => new[] { "Microsoft YaHei UI", "SimHei" },
-            "ko-KR" => new[] { "Malgun Gothic", "Batang" },
-            "ar-SA" => new[] { "Segoe UI", "Tahoma" },
-            _ => new[] { "Inter", "Segoe UI", "Arial", "Roboto" }
-        };
+            targetFonts = new[] { "Meiryo UI", "Yu Gothic UI", "MS UI Gothic" };
+        }
+        else if (langCode.StartsWith("ko"))
+        {
+            targetFonts = new[] { "Malgun Gothic", "Batang" };
+        }
+        else if (langCode.StartsWith("ar") || langCode.StartsWith("fa"))
+        {
+            targetFonts = new[] { "Segoe UI", "Arial", "Tahoma" };
+        }
+        else
+        {
+            targetFonts = new[] { "Inter", "Segoe UI", "Arial", "Roboto" };
+        }
 
         FontFamily? foundFont = null;
         foreach (var target in targetFonts)
@@ -198,11 +208,14 @@ public partial class FontService : ObservableObject
         else SelectedFont = FontFamily.Default;
     }
 
-    // Cập nhật hàm Reset (nếu cần)
+    // 
     public void ResetSettings()
     {
         UiScale = 1.0;
         BaseFontSize = 14.0;
         SelectedFont = FontFamily.Default;
+        IsAutoFont = true;
+        IsLockedFont = false;
+        SaveSettings();
     }
 }
