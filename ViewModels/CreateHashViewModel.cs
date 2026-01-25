@@ -13,6 +13,7 @@ using System.IO.Compression;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using System.Diagnostics;
+using Avalonia.Threading;
 
 namespace CheckHash.ViewModels;
 
@@ -182,16 +183,23 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
         int success = 0; int fail = 0; int cancelled = 0;
         var queue = Files.ToList();
 
-        foreach (var file in queue)
+        await Parallel.ForEachAsync(queue, new ParallelOptions
         {
-            if (!Files.Contains(file)) continue;
+            MaxDegreeOfParallelism = Environment.ProcessorCount
+        }, async (file, ct) =>
+        {
+            bool exists = await Dispatcher.UIThread.InvokeAsync(() => Files.Contains(file));
+            if (!exists) return;
 
             await ProcessItemAsync(file);
 
-            if (file.Status == L["Status_Done"]) success++;
-            else if (file.Status == L["Status_Cancelled"]) cancelled++;
-            else fail++;
-        }
+            await Dispatcher.UIThread.InvokeAsync(() =>
+            {
+                if (file.Status == L["Status_Done"]) success++;
+                else if (file.Status == L["Status_Cancelled"]) cancelled++;
+                else fail++;
+            });
+        });
         
         Logger.Log($"Batch finished. Success: {success}, Failed: {fail}, Cancelled: {cancelled}");
 
@@ -251,9 +259,12 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
     
     private async Task ProcessItemAsync(FileItem item)
     {
-        item.IsProcessing = true;
-        item.Status = string.Format(L["Status_Processing"], item.SelectedAlgorithm);
-        item.ProcessDuration = "";
+        await Dispatcher.UIThread.InvokeAsync(() =>
+        {
+            item.IsProcessing = true;
+            item.Status = string.Format(L["Status_Processing"], item.SelectedAlgorithm);
+            item.ProcessDuration = "";
+        });
         
         item.Cts = new CancellationTokenSource();
         
@@ -267,28 +278,38 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
 
         try
         {
-            item.ResultHash = await _hashService.ComputeHashAsync(item.FilePath, item.SelectedAlgorithm, item.Cts.Token);
-            item.Status = L["Status_Done"];
-            Logger.Log($"Computed {item.FileName}: {item.ResultHash}", LogLevel.Success);
+            var hash = await _hashService.ComputeHashAsync(item.FilePath, item.SelectedAlgorithm, item.Cts.Token);
+
+            await Dispatcher.UIThread.InvokeAsync(() =>
+            {
+                item.ResultHash = hash;
+                item.Status = L["Status_Done"];
+            });
+            Logger.Log($"Computed {item.FileName}: {hash}", LogLevel.Success);
         }
         catch (OperationCanceledException)
         {
-            item.Status = L["Status_Cancelled"];
+            await Dispatcher.UIThread.InvokeAsync(() => item.Status = L["Status_Cancelled"]);
             Logger.Log($"Cancelled computation for {item.FileName}", LogLevel.Warning);
         }
         catch (Exception ex)
         {
-            item.Status = string.Format(L["Status_Error"], ex.Message);
+            await Dispatcher.UIThread.InvokeAsync(() => item.Status = string.Format(L["Status_Error"], ex.Message));
             Logger.Log($"Error computing {item.FileName}: {ex.Message}", LogLevel.Error);
         }
         finally
         {
             stopwatch.Stop();
-            item.ProcessDuration = stopwatch.Elapsed.TotalSeconds < 1 
+            var duration = stopwatch.Elapsed.TotalSeconds < 1
                 ? $"{stopwatch.ElapsedMilliseconds}ms" 
                 : $"{stopwatch.Elapsed.TotalSeconds:F2}s";
 
-            item.IsProcessing = false;
+            await Dispatcher.UIThread.InvokeAsync(() =>
+            {
+                item.ProcessDuration = duration;
+                item.IsProcessing = false;
+            });
+
             item.Cts?.Dispose();
             item.Cts = null;
         }

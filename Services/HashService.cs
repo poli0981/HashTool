@@ -11,7 +11,7 @@ public enum HashType { MD5, SHA1, SHA256, SHA384, SHA512 }
 
 public class HashService
 {
-    private const int BufferSize = 1024 * 1024; 
+    private const int BufferSize = 81920;
 
     public async Task<string> ComputeHashAsync(string filePath, HashType type, CancellationToken token)
     {
