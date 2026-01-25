@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
@@ -14,29 +15,6 @@ public class HashService
 
     public async Task<string> ComputeHashAsync(string filePath, HashType type, CancellationToken token)
     {
-        if (!File.Exists(filePath))
-        {
-            throw new FileNotFoundException("File corrupted or deleted.");
-        }
-
-        if (IsFileLocked(filePath))
-        {
-            throw new IOException("File is being used by another process.");
-        }
-
-        try
-        {
-            using (File.Open(filePath, FileMode.Open, FileAccess.Read, FileShare.Read)) { }
-        }
-        catch (UnauthorizedAccessException)
-        {
-            throw new UnauthorizedAccessException("Access denied. Run as Administrator.");
-        }
-        catch (FileNotFoundException)
-        {
-            throw new FileNotFoundException("File corrupted or deleted.");
-        }
-
         try
         {
             using var stream = new FileStream(
@@ -61,32 +39,22 @@ public class HashService
         }
         catch (FileNotFoundException)
         {
-             throw new FileNotFoundException("File corrupted or deleted during process.");
+             throw new FileNotFoundException("File corrupted or deleted.");
+        }
+        catch (UnauthorizedAccessException)
+        {
+            throw new UnauthorizedAccessException("Access denied. Run as Administrator.");
         }
         catch (IOException ex)
         {
+             // Check if it's a sharing violation (HRESULT 0x80070020)
+             int hr = Marshal.GetHRForException(ex);
+             if ((hr & 0xFFFF) == 32)
+             {
+                 throw new IOException("File is being used by another process.");
+             }
+
              throw new IOException($"IO Error: {ex.Message}", ex);
         }
-    }
-
-    private bool IsFileLocked(string filePath)
-    {
-        try
-        {
-            using (FileStream stream = File.Open(filePath, FileMode.Open, FileAccess.Read, FileShare.None))
-            {
-                stream.Close();
-            }
-        }
-        catch (IOException)
-        {
-            return true;
-        }
-        catch
-        {
-            // Ignore other exceptions in check
-        }
-
-        return false;
     }
 }
