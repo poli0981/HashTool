@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -81,7 +85,9 @@
         <value>Astuce : Shift+C pour tout calculer, Shift+Z pour compresser, Ctrl+F pour ajouter des fichiers.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Astuce : Shift+A pour tout vérifier, Ctrl+F pour ajouter des fichiers, Ctrl+Shift+H pour vider la liste.</value>
+        <value>Astuce : Shift+A pour tout vérifier, Ctrl+F pour ajouter des fichiers, Ctrl+Shift+H pour vider la
+            liste.
+        </value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Prêt</value>
@@ -360,13 +366,15 @@
         <value>Traitement terminé !
 
             ✅ Réussis : {0}
-            ❌ Échecs : {1}</value>
+            ❌ Échecs : {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Vérification de {0} fichiers.
             ✅ Correspondances : {1}
             ❌ Non-concordances/Erreurs : {2}
-            ⛔ Annulés : {3}</value>
+            ⛔ Annulés : {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Mauvais fichier !</value>
@@ -377,7 +385,8 @@
             Fichier original : {0}
             Fichier sélectionné : {1}
 
-            Veuillez sélectionner le fichier hash correct.</value>
+            Veuillez sélectionner le fichier hash correct.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>Nouvelle mise à jour</value>
@@ -388,7 +397,8 @@
             Changements :
             {1}
 
-            Cliquez sur « Mettre à jour maintenant » pour télécharger.</value>
+            Cliquez sur « Mettre à jour maintenant » pour télécharger.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>Aucune mise à jour plus récente trouvée.</value>
@@ -404,7 +414,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>Le fichier existe à :
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>Le fichier n'existe pas !</value>
@@ -432,7 +443,8 @@
 
             Cette version peut contenir des bugs, être instable et causer une perte de données.
 
-            Je ne suis pas responsable des problèmes résultant de l'utilisation de cette version.</value>
+            Je ne suis pas responsable des problèmes résultant de l'utilisation de cette version.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>J'ai lu et j'accepte. J'assume l'entière responsabilité.</value>

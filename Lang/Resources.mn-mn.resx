@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -360,13 +364,15 @@
         <value>Боловсруулалт дууссан!
 
             ✅ Амжилт: {0}
-            ❌ Бүтэлгүй: {1}</value>
+            ❌ Бүтэлгүй: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>{0} файл шалгасан.
             ✅ Таарсан: {1}
             ❌ Таараагүй/Алдаа: {2}
-            ⛔ Цуцлагдсан: {3}</value>
+            ⛔ Цуцлагдсан: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Буруу файл!</value>
@@ -377,7 +383,8 @@
             Анхны файл: {0}
             Сонгосон файл: {1}
 
-            Зөв дагалдах хэш файлыг сонгоно уу.</value>
+            Зөв дагалдах хэш файлыг сонгоно уу.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>Шинэ шинэчлэлт</value>
@@ -388,7 +395,8 @@
             Өөрчлөлтүүд:
             {1}
 
-            Татаж авахын тулд 'Одоо шинэчлэх' дарна уу.</value>
+            Татаж авахын тулд 'Одоо шинэчлэх' дарна уу.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>Шинэ шинэчлэлт олдсонгүй.</value>
@@ -404,7 +412,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>Файл энд байна:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>Файл байхгүй!</value>
@@ -432,7 +441,8 @@
 
             Энэ хувилбар алдаа агуулж болзошгүй, тогтворгүй байж болох ба өгөгдөл алдахад хүргэж болзошгүй.
 
-            Энэ хувилбарыг ашигласнаас үүссэн аливаа асуудалд би хариуцлага хүлээхгүй.</value>
+            Энэ хувилбарыг ашигласнаас үүссэн аливаа асуудалд би хариуцлага хүлээхгүй.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Би уншиж, зөвшөөрч байна. Би бүрэн хариуцлага хүлээнэ.</value>

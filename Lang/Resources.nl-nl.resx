@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -81,7 +85,9 @@
         <value>Tip: Shift+C om alles te berekenen, Shift+Z om te comprimeren, Ctrl+F om bestanden toe te voegen.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A om alles te controleren, Ctrl+F om bestanden toe te voegen, Ctrl+Shift+H om lijst te wissen.</value>
+        <value>Tip: Shift+A om alles te controleren, Ctrl+F om bestanden toe te voegen, Ctrl+Shift+H om lijst te
+            wissen.
+        </value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Klaar</value>
@@ -360,13 +366,15 @@
         <value>Verwerking voltooid!
 
             ✅ Successen: {0}
-            ❌ Mislukkingen: {1}</value>
+            ❌ Mislukkingen: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>{0} bestanden gecontroleerd.
             ✅ Overeenkomsten: {1}
             ❌ Verschillen/Fouten: {2}
-            ⛔ Geannuleerd: {3}</value>
+            ⛔ Geannuleerd: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Verkeerd bestand!</value>
@@ -377,7 +385,8 @@
             Origineel bestand: {0}
             Geselecteerd bestand: {1}
 
-            Selecteer het juiste bijbehorende hash-bestand.</value>
+            Selecteer het juiste bijbehorende hash-bestand.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>Nieuwe Update</value>
@@ -388,7 +397,8 @@
             Wijzigingen:
             {1}
 
-            Klik op 'Nu bijwerken' om te downloaden.</value>
+            Klik op 'Nu bijwerken' om te downloaden.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>Geen nieuwere update gevonden.</value>
@@ -404,7 +414,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>Bestand bestaat op:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>Bestand bestaat niet!</value>
@@ -432,7 +443,8 @@
 
             Deze versie kan bugs bevatten, instabiel zijn en gegevensverlies veroorzaken.
 
-            Ik ben niet verantwoordelijk voor problemen die ontstaan door het gebruik van deze versie.</value>
+            Ik ben niet verantwoordelijk voor problemen die ontstaan door het gebruik van deze versie.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Ik heb gelezen en ga akkoord. Ik neem volledige verantwoordelijkheid.</value>
@@ -456,7 +468,8 @@
         <value>Geavanceerd: Terug naar oudere versie (Fallback)</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Deze functie maakt het mogelijk een specifieke versie te installeren als de nieuwe problemen heeft.</value>
+        <value>Deze functie maakt het mogelijk een specifieke versie te installeren als de nieuwe problemen heeft.
+        </value>
     </data>
     <data name="Watermark_PasteDrop">
         <value>Plakken/Neerzetten...</value>

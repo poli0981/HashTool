@@ -67,12 +67,9 @@ public partial class SettingsViewModel : ObservableObject
                 OnPropertyChanged(nameof(CanSetLanguageDefault));
                 Logger.Log($"Language changed to {Localization.SelectedLanguage.Code}");
             }
-            // Lắng nghe sự kiện thay đổi Indexer để refresh UI nếu cần
             else if (e.PropertyName == "Item[]")
             {
-                // Ép cập nhật các property phụ thuộc ngôn ngữ nếu có
-                // Trong trường hợp này, View binding trực tiếp vào Localization[...] nên sẽ tự cập nhật
-                // Nhưng nếu có property nào trong VM dùng string format, cần cập nhật ở đây
+
             }
         };
         

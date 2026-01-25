@@ -902,5 +902,77 @@ namespace CheckHash.Lang {
                 return ResourceManager.GetString("Watermark_PasteDrop", resourceCulture);
             }
         }
+        
+        public static string Tip_CopyHash {
+            get {
+                return ResourceManager.GetString("Tip_CopyHash", resourceCulture);
+            }
+        }
+        
+        public static string Tip_BrowseHash {
+            get {
+                return ResourceManager.GetString("Tip_BrowseHash", resourceCulture);
+            }
+        }
+        
+        public static string Tip_RemoveFile {
+            get {
+                return ResourceManager.GetString("Tip_RemoveFile", resourceCulture);
+            }
+        }
+        
+        public static string Tip_Verify {
+            get {
+                return ResourceManager.GetString("Tip_Verify", resourceCulture);
+            }
+        }
+        
+        public static string Tip_Compute {
+            get {
+                return ResourceManager.GetString("Tip_Compute", resourceCulture);
+            }
+        }
+        
+        public static string Tip_Stop {
+            get {
+                return ResourceManager.GetString("Tip_Stop", resourceCulture);
+            }
+        }
+        
+        public static string Msg_ConfirmExit_Title {
+            get {
+                return ResourceManager.GetString("Msg_ConfirmExit_Title", resourceCulture);
+            }
+        }
+        
+        public static string Msg_ConfirmExit_Content {
+            get {
+                return ResourceManager.GetString("Msg_ConfirmExit_Content", resourceCulture);
+            }
+        }
+        
+        public static string Btn_Yes {
+            get {
+                return ResourceManager.GetString("Btn_Yes", resourceCulture);
+            }
+        }
+        
+        public static string Btn_No {
+            get {
+                return ResourceManager.GetString("Btn_No", resourceCulture);
+            }
+        }
+        
+        public static string Msg_TaskCancelled_Title {
+            get {
+                return ResourceManager.GetString("Msg_TaskCancelled_Title", resourceCulture);
+            }
+        }
+        
+        public static string Msg_TaskCancelled_Content {
+            get {
+                return ResourceManager.GetString("Msg_TaskCancelled_Content", resourceCulture);
+            }
+        }
     }
 }

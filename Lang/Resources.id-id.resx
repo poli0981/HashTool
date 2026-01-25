@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -360,13 +364,15 @@
         <value>Pemrosesan selesai!
 
             ✅ Berhasil: {0}
-            ❌ Gagal: {1}</value>
+            ❌ Gagal: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Memeriksa {0} file.
             ✅ Cocok: {1}
             ❌ Tidak cocok/Kesalahan: {2}
-            ⛔ Dibatalkan: {3}</value>
+            ⛔ Dibatalkan: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>File salah!</value>
@@ -377,7 +383,8 @@
             File asli: {0}
             File dipilih: {1}
 
-            Pilih file hash pendamping yang benar.</value>
+            Pilih file hash pendamping yang benar.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>Pembaruan Baru</value>
@@ -388,7 +395,8 @@
             Perubahan:
             {1}
 
-            Klik 'Perbarui sekarang' untuk mengunduh.</value>
+            Klik 'Perbarui sekarang' untuk mengunduh.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>Tidak ada pembaruan lebih baru.</value>
@@ -404,7 +412,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>File ada di:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>File tidak ada!</value>
@@ -432,7 +441,8 @@
 
             Versi ini mungkin mengandung bug, tidak stabil, dan dapat menyebabkan kehilangan data.
 
-            Saya tidak bertanggung jawab atas masalah apa pun dari penggunaan versi ini.</value>
+            Saya tidak bertanggung jawab atas masalah apa pun dari penggunaan versi ini.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Saya telah membaca dan setuju. Saya bertanggung jawab penuh.</value>

@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>हैश टूल</value>
@@ -360,13 +364,15 @@
         <value>प्रोसेसिंग पूरी हुई!
 
             ✅ सफल: {0}
-            ❌ असफल: {1}</value>
+            ❌ असफल: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>{0} फाइलें जांच की गईं।
             ✅ मेल: {1}
             ❌ बेमेल/त्रुटि: {2}
-            ⛔ रद्द: {3}</value>
+            ⛔ रद्द: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>गलत फाइल!</value>
@@ -377,7 +383,8 @@
             मूल फाइल: {0}
             चुनी गई फाइल: {1}
 
-            कृपया सही संलग्न हैश फाइल चुनें।</value>
+            कृपया सही संलग्न हैश फाइल चुनें।
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>नया अपडेट</value>
@@ -388,7 +395,8 @@
             परिवर्तन:
             {1}
 
-            डाउनलोड करने के लिए 'अभी अपडेट करें' क्लिक करें।</value>
+            डाउनलोड करने के लिए 'अभी अपडेट करें' क्लिक करें।
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>कोई नया अपडेट नहीं मिला।</value>
@@ -404,7 +412,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>फाइल यहां मौजूद है:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>फाइल मौजूद नहीं है!</value>
@@ -432,7 +441,8 @@
 
             इस संस्करण में बग हो सकते हैं, अस्थिर हो सकता है और डेटा हानि का कारण बन सकता है।
 
-            इस संस्करण के उपयोग से उत्पन्न किसी भी समस्या के लिए मैं जिम्मेदार नहीं हूं।</value>
+            इस संस्करण के उपयोग से उत्पन्न किसी भी समस्या के लिए मैं जिम्मेदार नहीं हूं।
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>मैंने पढ़ा और सहमत हूं। मैं पूरी जिम्मेदारी लेता हूं।</value>

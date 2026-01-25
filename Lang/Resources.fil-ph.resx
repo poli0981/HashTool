@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -81,7 +85,8 @@
         <value>Tip: Shift+C para kalkulahin lahat, Shift+Z para i-compress, Ctrl+F para magdagdag ng files.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A para suriin lahat, Ctrl+F para magdagdag ng files, Ctrl+Shift+H para i-clear ang listahan.</value>
+        <value>Tip: Shift+A para suriin lahat, Ctrl+F para magdagdag ng files, Ctrl+Shift+H para i-clear ang listahan.
+        </value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Handa na</value>
@@ -360,13 +365,15 @@
         <value>Tapos na ang proseso!
 
             ✅ Tagumpay: {0}
-            ❌ Kabiguan: {1}</value>
+            ❌ Kabiguan: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Sinuri ang {0} file.
             ✅ Tugma: {1}
             ❌ Hindi tugma/Error: {2}
-            ⛔ Kinansela: {3}</value>
+            ⛔ Kinansela: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Maling file!</value>
@@ -377,7 +384,8 @@
             Original file: {0}
             Pinili na file: {1}
 
-            Pumili ng tamang kasamang hash file.</value>
+            Pumili ng tamang kasamang hash file.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>Bagong Update</value>
@@ -388,7 +396,8 @@
             Mga pagbabago:
             {1}
 
-            I-click ang 'I-update Ngayon' para i-download.</value>
+            I-click ang 'I-update Ngayon' para i-download.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>Walang mas bagong update na natagpuan.</value>
@@ -404,7 +413,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>May file sa:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>Walang file!</value>
@@ -432,7 +442,8 @@
 
             Ang bersyon na ito ay maaaring may bugs, hindi stable, at maaaring magdulot ng data loss.
 
-            Hindi ako mananagot sa anumang problema mula sa paggamit nito.</value>
+            Hindi ako mananagot sa anumang problema mula sa paggamit nito.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Nabasa ko at sumasang-ayon. Akin ang buong responsibilidad.</value>
@@ -456,7 +467,8 @@
         <value>Advanced: Bumalik sa lumang bersyon (Fallback)</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Ang feature na ito ay nagpapahintulot na mag-install ng specific version kung may problema ang bago.</value>
+        <value>Ang feature na ito ay nagpapahintulot na mag-install ng specific version kung may problema ang bago.
+        </value>
     </data>
     <data name="Watermark_PasteDrop">
         <value>I-paste/I-drop...</value>

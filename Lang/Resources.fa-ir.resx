@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>ابزار هَش</value>
@@ -360,13 +364,15 @@
         <value>پردازش کامل شد!
 
             ✅ موفقیت: {0}
-            ❌ شکست: {1}</value>
+            ❌ شکست: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>{0} فایل بررسی شد.
             ✅ تطابق: {1}
             ❌ عدم تطابق/خطا: {2}
-            ⛔ لغو شده: {3}</value>
+            ⛔ لغو شده: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>فایل اشتباه!</value>
@@ -377,7 +383,8 @@
             فایل اصلی: {0}
             فایل انتخاب شده: {1}
 
-            لطفاً فایل هَش همراه درست را انتخاب کنید.</value>
+            لطفاً فایل هَش همراه درست را انتخاب کنید.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>به‌روزرسانی جدید</value>
@@ -388,7 +395,8 @@
             تغییرات:
             {1}
 
-            برای دانلود روی 'به‌روزرسانی اکنون' کلیک کنید.</value>
+            برای دانلود روی 'به‌روزرسانی اکنون' کلیک کنید.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>به‌روزرسانی جدیدتری یافت نشد.</value>
@@ -404,7 +412,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>فایل در اینجا وجود دارد:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>فایل وجود ندارد!</value>
@@ -432,7 +441,8 @@
 
             این نسخه ممکن است باگ داشته باشد، ناپایدار باشد و باعث از دست رفتن داده شود.
 
-            من مسئول هیچ مشکلی ناشی از استفاده از این نسخه نیستم.</value>
+            من مسئول هیچ مشکلی ناشی از استفاده از این نسخه نیستم.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>خواندم و موافقم. مسئولیت کامل را می‌پذیرم.</value>

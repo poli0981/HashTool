@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -360,13 +364,15 @@
         <value>ການດຳເນີນການສຳເລັດ!
 
             ✅ ສຳເລັດ: {0}
-            ❌ ບໍ່ສຳເລັດ: {1}</value>
+            ❌ ບໍ່ສຳເລັດ: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>ກວດສອບ {0} ໄຟລ໌ແລ້ວ.
             ✅ ກົງກັນ: {1}
             ❌ ບໍ່ກົງກັນ/ຜິດພາດ: {2}
-            ⛔ ຍົກເລີກ: {3}</value>
+            ⛔ ຍົກເລີກ: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>ໄຟລ໌ຜິດ!</value>
@@ -377,7 +383,8 @@
             ໄຟລ໌ຕົ້ນສະບັບ: {0}
             ໄຟລ໌ທີ່ເລືອກ: {1}
 
-            ກະລຸນາເລືອກໄຟລ໌ hash ທີ່ຖືກຕ້ອງທີ່ມາພ້ອມ.</value>
+            ກະລຸນາເລືອກໄຟລ໌ hash ທີ່ຖືກຕ້ອງທີ່ມາພ້ອມ.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>ການອັບເດດໃໝ່</value>
@@ -388,7 +395,8 @@
             ການປ່ຽນແປງ:
             {1}
 
-            ກົດ 'ອັບເດດດຽວນີ້' ເພື່ອດາວໂຫຼດ.</value>
+            ກົດ 'ອັບເດດດຽວນີ້' ເພື່ອດາວໂຫຼດ.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>ບໍ່ພົບການອັບເດດໃໝ່ກວ່າ.</value>
@@ -404,7 +412,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>ໄຟລ໌ມີຢູ່ທີ່:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>ໄຟລ໌ບໍ່ມີ!</value>
@@ -432,7 +441,8 @@
 
             ຮຸ່ນນີ້ອາດມີບັກ, ບໍ່ສະຖຽນ ແລະອາດເຮັດໃຫ້ຂໍ້ມູນສູນຫາຍ.
 
-            ຂ້ອຍບໍ່ຮັບຜິດຊອບຕໍ່ບັນຫາໃດໆທີ່ເກີດຈາກການໃຊ້ຮຸ່ນນີ້.</value>
+            ຂ້ອຍບໍ່ຮັບຜິດຊອບຕໍ່ບັນຫາໃດໆທີ່ເກີດຈາກການໃຊ້ຮຸ່ນນີ້.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>ຂ້ອຍໄດ້ອ່ານແລະຍອມຮັບ. ຂ້ອຍຮັບຜິດຊອບເຕັມທີ່.</value>

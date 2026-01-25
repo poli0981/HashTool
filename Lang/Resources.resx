@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <root>
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <xsd:element name="root" msdata:IsDataSet="true">
-            
+
         </xsd:element>
     </xsd:schema>
     <resheader name="resmimetype">
@@ -13,10 +14,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -367,13 +372,15 @@
         <value>Processing completed!
 
             ✅ Success: {0}
-            ❌ Failed: {1}</value>
+            ❌ Failed: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Checked {0} files.
             ✅ Match: {1}
             ❌ Mismatch/Error: {2}
-            ⛔ Cancelled: {3}</value>
+            ⛔ Cancelled: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Wrong file!</value>
@@ -384,7 +391,8 @@
             Original file: {0}
             Selected file: {1}
 
-            Please select the correct accompanying hash file.</value>
+            Please select the correct accompanying hash file.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>New Update</value>
@@ -395,7 +403,8 @@
             Changes:
             {1}
 
-            Click 'Update Now' to download.</value>
+            Click 'Update Now' to download.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>No newer update found.</value>
@@ -411,7 +420,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>File exists at:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>File does not exist!</value>
@@ -439,7 +449,8 @@
 
             This version may contain bugs, be unstable, and could cause data loss.
 
-            I am not responsible for any issues arising from using this version.</value>
+            I am not responsible for any issues arising from using this version.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>I have read and agree. I accept full responsibility.</value>

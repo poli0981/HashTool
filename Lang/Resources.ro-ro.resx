@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -81,7 +85,9 @@
         <value>Sfat: Shift+C pentru calcul totul, Shift+Z pentru comprimare, Ctrl+F pentru adăugare fișiere.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Sfat: Shift+A pentru verificare totul, Ctrl+F pentru adăugare fișiere, Ctrl+Shift+H pentru ștergere listă.</value>
+        <value>Sfat: Shift+A pentru verificare totul, Ctrl+F pentru adăugare fișiere, Ctrl+Shift+H pentru ștergere
+            listă.
+        </value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Gata</value>
@@ -360,13 +366,15 @@
         <value>Procesare finalizată!
 
             ✅ Succes: {0}
-            ❌ Eșec: {1}</value>
+            ❌ Eșec: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Verificate {0} fișiere.
             ✅ Potriviri: {1}
             ❌ Nepotriviri/Eroare: {2}
-            ⛔ Anulate: {3}</value>
+            ⛔ Anulate: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Fișier greșit!</value>
@@ -377,7 +385,8 @@
             Fișier original: {0}
             Fișier selectat: {1}
 
-            Selectați fișierul hash corect asociat.</value>
+            Selectați fișierul hash corect asociat.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>Actualizare Nouă</value>
@@ -388,7 +397,8 @@
             Modificări:
             {1}
 
-            Apasă 'Actualizează acum' pentru descărcare.</value>
+            Apasă 'Actualizează acum' pentru descărcare.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>Nu s-a găsit actualizare mai nouă.</value>
@@ -404,7 +414,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>Fișierul există la:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>Fișierul nu există!</value>
@@ -432,7 +443,8 @@
 
             Această versiune poate conține erori, fi instabilă și provoca pierdere de date.
 
-            Nu sunt responsabil pentru problemele apărute din utilizarea acestei versiuni.</value>
+            Nu sunt responsabil pentru problemele apărute din utilizarea acestei versiuni.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Am citit și accept. Îmi asum întreaga responsabilitate.</value>

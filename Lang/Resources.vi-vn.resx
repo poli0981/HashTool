@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -357,13 +361,15 @@
         <value>Đã xử lý xong!
 
             ✅ Thành công: {0}
-            ❌ Thất bại: {1}</value>
+            ❌ Thất bại: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Đã kiểm tra {0} file.
             ✅ Khớp: {1}
             ❌ Lệch/Lỗi: {2}
-            ⛔ Đã hủy: {3}</value>
+            ⛔ Đã hủy: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Sai file!</value>
@@ -374,7 +380,8 @@
             File gốc: {0}
             File chọn: {1}
 
-            Vui lòng chọn đúng file hash đi kèm.</value>
+            Vui lòng chọn đúng file hash đi kèm.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>Cập nhật mới</value>
@@ -385,7 +392,8 @@
             Thay đổi:
             {1}
 
-            Nhấn 'Cập nhật ngay' để tải về.</value>
+            Nhấn 'Cập nhật ngay' để tải về.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>Không tìm thấy bản cập nhật nào mới hơn.</value>
@@ -401,7 +409,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>File tồn tại tại:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>File không tồn tại!</value>
@@ -429,7 +438,8 @@
 
             Phiên bản này có thể chứa lỗi, chưa ổn định và có thể gây mất dữ liệu.
 
-            Tôi không chịu trách nhiệm về bất kỳ lỗi phát sinh nào khi sử dụng phiên bản này.</value>
+            Tôi không chịu trách nhiệm về bất kỳ lỗi phát sinh nào khi sử dụng phiên bản này.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Tôi đã đọc và đồng ý. Tôi sẽ tự chịu trách nhiệm.</value>

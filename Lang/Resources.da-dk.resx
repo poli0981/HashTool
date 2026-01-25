@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -81,7 +85,8 @@
         <value>Tip: Shift+C for at beregne alt, Shift+Z for at komprimere, Ctrl+F for at tilføje filer.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A for at kontrollere alt, Ctrl+F for at tilføje filer, Ctrl+Shift+H for at rydde liste.</value>
+        <value>Tip: Shift+A for at kontrollere alt, Ctrl+F for at tilføje filer, Ctrl+Shift+H for at rydde liste.
+        </value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Klar</value>
@@ -360,13 +365,15 @@
         <value>Behandling færdig!
 
             ✅ Succeser: {0}
-            ❌ Fejl: {1}</value>
+            ❌ Fejl: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>{0} filer kontrolleret.
             ✅ Match: {1}
             ❌ Uoverensstemmelser/Fejl: {2}
-            ⛔ Annulleret: {3}</value>
+            ⛔ Annulleret: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Forkert fil!</value>
@@ -377,7 +384,8 @@
             Originalfil: {0}
             Valgt fil: {1}
 
-            Vælg den rigtige medfølgende hash-fil.</value>
+            Vælg den rigtige medfølgende hash-fil.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>Ny opdatering</value>
@@ -388,7 +396,8 @@
             Ændringer:
             {1}
 
-            Klik på 'Opdater nu' for at downloade.</value>
+            Klik på 'Opdater nu' for at downloade.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>Ingen nyere opdatering fundet.</value>
@@ -404,7 +413,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>Filen findes på:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>Filen findes ikke!</value>
@@ -432,7 +442,8 @@
 
             Denne version kan indeholde fejl, være ustabil og forårsage datatab.
 
-            Jeg påtager mig intet ansvar for problemer, der opstår ved brug af denne version.</value>
+            Jeg påtager mig intet ansvar for problemer, der opstår ved brug af denne version.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Jeg har læst og accepterer. Jeg påtager mig fuldt ansvar.</value>

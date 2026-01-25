@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -81,7 +85,9 @@
         <value>Съвет: Shift+C за изчисляване на всичко, Shift+Z за компресия, Ctrl+F за добавяне на файлове.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Съвет: Shift+A за проверка на всичко, Ctrl+F за добавяне на файлове, Ctrl+Shift+H за изчистване на списъка.</value>
+        <value>Съвет: Shift+A за проверка на всичко, Ctrl+F за добавяне на файлове, Ctrl+Shift+H за изчистване на
+            списъка.
+        </value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Готов</value>
@@ -360,13 +366,15 @@
         <value>Обработката завършена!
 
             ✅ Успехи: {0}
-            ❌ Неуспехи: {1}</value>
+            ❌ Неуспехи: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Проверени {0} файла.
             ✅ Съвпадения: {1}
             ❌ Несъвпадения/Грешки: {2}
-            ⛔ Отменени: {3}</value>
+            ⛔ Отменени: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Грешен файл!</value>
@@ -377,7 +385,8 @@
             Оригинален файл: {0}
             Избран файл: {1}
 
-            Моля, изберете правилния придружаващ хеш файл.</value>
+            Моля, изберете правилния придружаващ хеш файл.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>Нова актуализация</value>
@@ -388,7 +397,8 @@
             Промени:
             {1}
 
-            Кликнете 'Актуализирай сега' за изтегляне.</value>
+            Кликнете 'Актуализирай сега' за изтегляне.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>Няма по-нова актуализация.</value>
@@ -404,7 +414,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>Файлът съществува на:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>Файлът не съществува!</value>
@@ -432,7 +443,8 @@
 
             Тази версия може да съдържа грешки, да е нестабилна и да причини загуба на данни.
 
-            Не нося отговорност за проблеми, възникнали от използването на тази версия.</value>
+            Не нося отговорност за проблеми, възникнали от използването на тази версия.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Прочетох и съгласен съм. Поемам пълна отговорност.</value>

@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -360,13 +364,15 @@
         <value>လုပ်ဆောင်မှု ပြီးဆုံးပါပြီ!
 
             ✅ အောင်မြင်မှု။ {0}
-            ❌ မအောင်မြင်မှု။ {1}</value>
+            ❌ မအောင်မြင်မှု။ {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>{0} ဖိုင်ကို စစ်ဆေးပြီးပါပြီ။
             ✅ ကိုက်ညီမှု။ {1}
             ❌ မကိုက်ညီမှု/အမှား။ {2}
-            ⛔ ပယ်ဖျက်ခဲ့သည်။ {3}</value>
+            ⛔ ပယ်ဖျက်ခဲ့သည်။ {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>မှားယွင်းသော ဖိုင်!</value>
@@ -377,7 +383,8 @@
             မူရင်း ဖိုင်။ {0}
             ရွေးချယ်ထားသော ဖိုင်။ {1}
 
-            မှန်ကန်သော အဖော်ဟက်ရှ် ဖိုင်ကို ရွေးချယ်ပါ။</value>
+            မှန်ကန်သော အဖော်ဟက်ရှ် ဖိုင်ကို ရွေးချယ်ပါ။
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>အပ်ဒိတ်အသစ်</value>
@@ -388,7 +395,8 @@
             ပြောင်းလဲမှုများ။
             {1}
 
-            ဒေါင်းလုဒ်လုပ်ရန် 'ယခု အပ်ဒိတ်လုပ်ပါ' ကို နှိပ်ပါ။</value>
+            ဒေါင်းလုဒ်လုပ်ရန် 'ယခု အပ်ဒိတ်လုပ်ပါ' ကို နှိပ်ပါ။
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>ပိုမိုနောက်ဆုံး အပ်ဒိတ် မတွေ့ပါ။</value>
@@ -404,7 +412,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>ဖိုင်ရှိသည်။
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>ဖိုင်မရှိပါ!</value>
@@ -432,7 +441,8 @@
 
             ဤဗားရှင်းတွင် ချို့ယွင်းချက်များ ပါနိုင်သည်၊ မတည်မငြိမ်ဖြစ်နိုင်ပြီး ဒေတာ ဆုံးရှုံးမှုကို ဖြစ်စေနိုင်သည်။
 
-            ဤဗားရှင်းကို အသုံးပြုခြင်းမှ ဖြစ်ပေါ်လာသော ပြဿနာများအတွက် ကျွန်ုပ် တာဝန်မယူပါ။</value>
+            ဤဗားရှင်းကို အသုံးပြုခြင်းမှ ဖြစ်ပေါ်လာသော ပြဿနာများအတွက် ကျွန်ုပ် တာဝန်မယူပါ။
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>ကျွန်ုပ် ဖတ်ပြီး သဘောတူပါသည်။ ကျွန်ုပ် အပြည့်အဝ တာဝန်ယူပါသည်။</value>

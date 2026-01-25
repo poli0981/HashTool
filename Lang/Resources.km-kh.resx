@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -360,13 +364,15 @@
         <value>ដំណើរការបានបញ្ចប់!
 
             ✅ ជោគជ័យ៖ {0}
-            ❌ បរាជ័យ៖ {1}</value>
+            ❌ បរាជ័យ៖ {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>បានពិនិត្យ {0} ឯកសារ។
             ✅ ត្រូវគ្នា៖ {1}
             ❌ មិនត្រូវគ្នា/កំហុស៖ {2}
-            ⛔ បានបោះបង់៖ {3}</value>
+            ⛔ បានបោះបង់៖ {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>ឯកសារខុស!</value>
@@ -377,7 +383,8 @@
             ឯកសារដើម៖ {0}
             ឯកសារដែលជ្រើសរើស៖ {1}
 
-            សូមជ្រើសរើសឯកសារ hash ដែលត្រឹមត្រូវ។</value>
+            សូមជ្រើសរើសឯកសារ hash ដែលត្រឹមត្រូវ។
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>ធ្វើបច្ចុប្បន្នភាពថ្មី</value>
@@ -388,7 +395,8 @@
             ការផ្លាស់ប្តូរ៖
             {1}
 
-            ចុច 'ធ្វើបច្ចុប្បន្នភាពឥឡូវ' ដើម្បីទាញយក។</value>
+            ចុច 'ធ្វើបច្ចុប្បន្នភាពឥឡូវ' ដើម្បីទាញយក។
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>មិនមានធ្វើបច្ចុប្បន្នភាពថ្មីជាងនេះទេ។</value>
@@ -404,7 +412,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>ឯកសារមាននៅ៖
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>ឯកសារមិនមាន!</value>
@@ -432,7 +441,8 @@
 
             កំណែនេះអាចមានកំហុស មិនស្ថិរភាព និងអាចបណ្តាលឱ្យបាត់បង់ទិន្នន័យ។
 
-            ខ្ញុំមិនទទួលខុសត្រូវចំពោះបញ្ហាណាមួយដែលកើតឡើងពីការប្រើប្រាស់កំណែនេះទេ។</value>
+            ខ្ញុំមិនទទួលខុសត្រូវចំពោះបញ្ហាណាមួយដែលកើតឡើងពីការប្រើប្រាស់កំណែនេះទេ។
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>ខ្ញុំបានអាន និងយល់ព្រម។ ខ្ញុំទទួលខុសត្រូវពេញលេញ។</value>

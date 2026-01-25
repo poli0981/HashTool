@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -360,13 +364,15 @@
         <value>Обработка завершена!
 
             ✅ Успех: {0}
-            ❌ Неудачи: {1}</value>
+            ❌ Неудачи: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Проверено {0} файлов.
             ✅ Совпадения: {1}
             ❌ Несовпадения/Ошибки: {2}
-            ⛔ Отменено: {3}</value>
+            ⛔ Отменено: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Неверный файл!</value>
@@ -377,7 +383,8 @@
             Исходный файл: {0}
             Выбранный файл: {1}
 
-            Пожалуйста, выберите правильный сопроводительный файл хеша.</value>
+            Пожалуйста, выберите правильный сопроводительный файл хеша.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>Новое обновление</value>
@@ -388,7 +395,8 @@
             Изменения:
             {1}
 
-            Нажмите «Обновить сейчас» для загрузки.</value>
+            Нажмите «Обновить сейчас» для загрузки.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>Более новых обновлений не найдено.</value>
@@ -404,7 +412,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>Файл существует по пути:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>Файл не существует!</value>
@@ -432,7 +441,8 @@
 
             Эта версия может содержать ошибки, быть нестабильной и вызвать потерю данных.
 
-            Я не несу ответственности за любые проблемы, возникшие при использовании этой версии.</value>
+            Я не несу ответственности за любые проблемы, возникшие при использовании этой версии.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Я прочитал и согласен. Я беру на себя полную ответственность.</value>

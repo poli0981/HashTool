@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -360,13 +364,15 @@
         <value>Obrada dovršena!
 
             ✅ Uspjesi: {0}
-            ❌ Neuspjesi: {1}</value>
+            ❌ Neuspjesi: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Provjereno {0} datoteka.
             ✅ Podudaranja: {1}
             ❌ Nepodudaranja/Greške: {2}
-            ⛔ Otkazano: {3}</value>
+            ⛔ Otkazano: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Pogrešna datoteka!</value>
@@ -377,7 +383,8 @@
             Originalna datoteka: {0}
             Odabrana datoteka: {1}
 
-            Odaberite ispravnu prateću hash datoteku.</value>
+            Odaberite ispravnu prateću hash datoteku.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>Novo ažuriranje</value>
@@ -388,7 +395,8 @@
             Promjene:
             {1}
 
-            Kliknite 'Ažuriraj sada' za preuzimanje.</value>
+            Kliknite 'Ažuriraj sada' za preuzimanje.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>Nema novijeg ažuriranja.</value>
@@ -404,7 +412,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>Datoteka postoji na:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>Datoteka ne postoji!</value>
@@ -432,7 +441,8 @@
 
             Ova verzija može sadržavati greške, biti nestabilna i uzrokovati gubitak podataka.
 
-            Ne snosim odgovornost za probleme nastale korištenjem ove verzije.</value>
+            Ne snosim odgovornost za probleme nastale korištenjem ove verzije.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Pročitao sam i slažem se. Preuzimam punu odgovornost.</value>

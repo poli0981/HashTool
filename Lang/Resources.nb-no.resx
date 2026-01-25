@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -81,7 +85,8 @@
         <value>Tips: Shift+C for å beregne alt, Shift+Z for å komprimere, Ctrl+F for å legge til filer.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tips: Shift+A for å kontrollere alt, Ctrl+F for å legge til filer, Ctrl+Shift+H for å tømme liste.</value>
+        <value>Tips: Shift+A for å kontrollere alt, Ctrl+F for å legge til filer, Ctrl+Shift+H for å tømme liste.
+        </value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Klar</value>
@@ -360,13 +365,15 @@
         <value>Behandling fullført!
 
             ✅ Suksesser: {0}
-            ❌ Feil: {1}</value>
+            ❌ Feil: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>{0} filer kontrollert.
             ✅ Treff: {1}
             ❌ Avvik/Feil: {2}
-            ⛔ Avbrutt: {3}</value>
+            ⛔ Avbrutt: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Feil fil!</value>
@@ -377,7 +384,8 @@
             Originalfil: {0}
             Valgt fil: {1}
 
-            Velg riktig medfølgende hash-fil.</value>
+            Velg riktig medfølgende hash-fil.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>Ny oppdatering</value>
@@ -388,7 +396,8 @@
             Endringer:
             {1}
 
-            Klikk på 'Oppdater nå' for å laste ned.</value>
+            Klikk på 'Oppdater nå' for å laste ned.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>Ingen nyere oppdatering funnet.</value>
@@ -404,7 +413,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>Filen finnes på:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>Filen finnes ikke!</value>
@@ -432,7 +442,8 @@
 
             Denne versjonen kan inneholde feil, være ustabil og forårsake datatap.
 
-            Jeg tar ikke ansvar for problemer som oppstår ved bruk av denne versjonen.</value>
+            Jeg tar ikke ansvar for problemer som oppstår ved bruk av denne versjonen.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Jeg har lest og godtar. Jeg tar fullt ansvar.</value>

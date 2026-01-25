@@ -6,10 +6,14 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppTitle">
         <value>Hash Tool</value>
@@ -360,13 +364,15 @@
         <value>İşlem tamamlandı!
 
             ✅ Başarılı: {0}
-            ❌ Başarısız: {1}</value>
+            ❌ Başarısız: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>{0} dosya doğrulandı.
             ✅ Eşleşme: {1}
             ❌ Uyuşmazlık/Hata: {2}
-            ⛔ İptal: {3}</value>
+            ⛔ İptal: {3}
+        </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Yanlış dosya!</value>
@@ -377,7 +383,8 @@
             Orijinal dosya: {0}
             Seçilen dosya: {1}
 
-            Lütfen doğru eşlik eden hash dosyasını seçin.</value>
+            Lütfen doğru eşlik eden hash dosyasını seçin.
+        </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>Yeni Güncelleme</value>
@@ -388,7 +395,8 @@
             Değişiklikler:
             {1}
 
-            İndirmek için 'Şimdi Güncelle' tıklayın.</value>
+            İndirmek için 'Şimdi Güncelle' tıklayın.
+        </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>Daha yeni güncelleme bulunamadı.</value>
@@ -404,7 +412,8 @@
     </data>
     <data name="Msg_ConfigExists">
         <value>Dosya şu konumda mevcut:
-            {0}</value>
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>Dosya mevcut değil!</value>
@@ -432,7 +441,8 @@
 
             Bu sürüm hatalar içerebilir, kararsız olabilir ve veri kaybına neden olabilir.
 
-            Bu sürümün kullanımından doğan herhangi bir sorundan sorumlu değilim.</value>
+            Bu sürümün kullanımından doğan herhangi bir sorundan sorumlu değilim.
+        </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Okudum ve kabul ediyorum. Tüm sorumluluğu üstleniyorum.</value>
