@@ -182,6 +182,8 @@
                                     <Button Grid.Column="4" Padding="5" Background="Transparent" BorderThickness="0"
                                             Command="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).CopyToClipboardCommand}"
                                             CommandParameter="{Binding ResultHash}"
+                                            ToolTip.Tip="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).Localization[Tip_CopyHash]}"
+                                            AutomationProperties.Name="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).Localization[Tip_CopyHash]}"
                                             IsVisible="{Binding ResultHash, Converter={x:Static StringConverters.IsNotNullOrEmpty}}">
                                         <icons:MaterialIcon Kind="ContentCopy" Width="16" Height="16" />
                                     </Button>
@@ -196,6 +198,7 @@
                                                 HorizontalAlignment="Right">
                                         <Button Padding="5"
                                                 ToolTip.Tip="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).Localization[Dialog_SaveHash]}"
+                                                AutomationProperties.Name="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).Localization[Dialog_SaveHash]}"
                                                 Background="Transparent"
                                                 Command="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).SaveHashFileCommand}"
                                                 CommandParameter="{Binding .}"
@@ -205,7 +208,14 @@
 
                                         <Button Padding="5" Background="Transparent"
                                                 Command="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).ComputeSingleCommand}"
-                                                CommandParameter="{Binding .}">
+                                                CommandParameter="{Binding .}"
+                                                AutomationProperties.Name="Compute or Stop">
+                                            <ToolTip.Tip>
+                                                <Panel>
+                                                    <TextBlock Text="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).Localization[Tip_Compute]}" IsVisible="{Binding !IsProcessing}"/>
+                                                    <TextBlock Text="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).Localization[Tip_Stop]}" IsVisible="{Binding IsProcessing}"/>
+                                                </Panel>
+                                            </ToolTip.Tip>
                                             <Panel>
                                                 <icons:MaterialIcon Kind="PlayCircleOutline" Width="18" Height="18"
                                                                     Foreground="LimeGreen"
@@ -216,7 +226,10 @@
                                             </Panel>
                                         </Button>
 
-                                        <Button Padding="5" ToolTip.Tip="Xóa &amp; Hủy" Background="Transparent"
+                                        <Button Padding="5"
+                                                ToolTip.Tip="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).Localization[Tip_RemoveFile]}"
+                                                AutomationProperties.Name="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).Localization[Tip_RemoveFile]}"
+                                                Background="Transparent"
                                                 Command="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).RemoveFileCommand}"
                                                 CommandParameter="{Binding .}">
                                             <icons:MaterialIcon Kind="TrashCanOutline" Width="18" Height="18"
@@ -339,7 +352,9 @@
 
                                         <Button Grid.Column="2" Margin="2,0,0,0" Padding="5" Background="Transparent"
                                                 Command="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).BrowseHashFileCommand}"
-                                                CommandParameter="{Binding .}">
+                                                CommandParameter="{Binding .}"
+                                                ToolTip.Tip="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_BrowseHash]}"
+                                                AutomationProperties.Name="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_BrowseHash]}">
                                             <icons:MaterialIcon Kind="FileFind" Width="18" Height="18"
                                                                 Foreground="#00bfff" />
                                         </Button>
@@ -354,7 +369,14 @@
                                                 HorizontalAlignment="Right">
                                         <Button Padding="5" Background="Transparent"
                                                 Command="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).VerifySingleCommand}"
-                                                CommandParameter="{Binding .}">
+                                                CommandParameter="{Binding .}"
+                                                AutomationProperties.Name="Verify or Stop">
+                                            <ToolTip.Tip>
+                                                <Panel>
+                                                    <TextBlock Text="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_Verify]}" IsVisible="{Binding !IsProcessing}"/>
+                                                    <TextBlock Text="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_Stop]}" IsVisible="{Binding IsProcessing}"/>
+                                                </Panel>
+                                            </ToolTip.Tip>
                                             <Panel>
                                                 <icons:MaterialIcon Kind="PlayCircleOutline" Width="18" Height="18"
                                                                     Foreground="LimeGreen"
@@ -365,7 +387,10 @@
                                             </Panel>
                                         </Button>
 
-                                        <Button Padding="5" ToolTip.Tip="Xóa &amp; Hủy" Background="Transparent"
+                                        <Button Padding="5"
+                                                ToolTip.Tip="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_RemoveFile]}"
+                                                AutomationProperties.Name="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_RemoveFile]}"
+                                                Background="Transparent"
                                                 Command="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).RemoveFileCommand}"
                                                 CommandParameter="{Binding .}">
                                             <icons:MaterialIcon Kind="TrashCanOutline" Width="18" Height="18"

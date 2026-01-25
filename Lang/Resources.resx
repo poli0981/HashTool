@@ -468,4 +468,22 @@
     <data name="Watermark_PasteDrop">
         <value>Paste/Drop...</value>
     </data>
+    <data name="Tip_CopyHash">
+        <value>Copy Hash</value>
+    </data>
+    <data name="Tip_BrowseHash">
+        <value>Browse Hash File</value>
+    </data>
+    <data name="Tip_RemoveFile">
+        <value>Remove File</value>
+    </data>
+    <data name="Tip_Verify">
+        <value>Verify</value>
+    </data>
+    <data name="Tip_Compute">
+        <value>Compute</value>
+    </data>
+    <data name="Tip_Stop">
+        <value>Stop</value>
+    </data>
 </root>
