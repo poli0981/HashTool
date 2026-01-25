@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using CheckHash.Services;
@@ -72,9 +73,11 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
             limitBytes = Prefs.GetMaxSizeBytes();
         }
 
+        var existingPaths = new HashSet<string>(Files.Select(f => f.FilePath));
+
         foreach (var file in files)
         {
-            if (!Files.Any(f => f.FilePath == file.Path.LocalPath))
+            if (existingPaths.Add(file.Path.LocalPath))
             {
                 var info = new FileInfo(file.Path.LocalPath);
 
