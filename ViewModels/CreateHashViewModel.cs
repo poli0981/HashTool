@@ -32,7 +32,16 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
 
     public ObservableCollection<HashType> AlgorithmList { get; } = new(Enum.GetValues<HashType>());
 
-    private bool CanComputeAll => Files.Count > 0;
+    [ObservableProperty]
+    [NotifyCanExecuteChangedFor(nameof(ComputeAllCommand))]
+    [NotifyCanExecuteChangedFor(nameof(AddFilesCommand))]
+    [NotifyCanExecuteChangedFor(nameof(ClearListCommand))]
+    [NotifyCanExecuteChangedFor(nameof(CompressFilesCommand))]
+    private bool _isComputing;
+
+    private bool CanComputeAll => Files.Count > 0 && !IsComputing;
+    private bool CanModifyList => !IsComputing;
+    private bool CanCompress => Files.Count > 0 && !IsComputing;
 
     public CreateHashViewModel()
     {
@@ -57,7 +66,7 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
         }
     }
 
-    [RelayCommand]
+    [RelayCommand(CanExecute = nameof(CanModifyList))]
     private async Task AddFiles(Avalonia.Controls.Window window)
     {
         Logger.Log("Opening file picker for Create Hash...");
@@ -105,7 +114,7 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
         ComputeAllCommand.NotifyCanExecuteChanged();
     }
 
-    [RelayCommand]
+    [RelayCommand(CanExecute = nameof(CanCompress))]
     private async Task CompressFiles(Avalonia.Controls.Window window)
     {
         if (Files.Count == 0) return;
@@ -162,7 +171,7 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
         }
     }
 
-    [RelayCommand]
+    [RelayCommand(CanExecute = nameof(CanModifyList))]
     private void ClearList()
     {
         foreach (var file in Files)
@@ -180,6 +189,7 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
     private async Task ComputeAll()
     {
         Logger.Log("Starting batch computation...");
+        IsComputing = true;
         int success = 0; int fail = 0; int cancelled = 0;
         var queue = Files.ToList();
 
@@ -201,10 +211,20 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
             });
         });
         
+        IsComputing = false;
         Logger.Log($"Batch finished. Success: {success}, Failed: {fail}, Cancelled: {cancelled}");
 
-        await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], 
-            string.Format(L["Msg_Result_Content"], success, fail));
+        if (cancelled > 0)
+        {
+            var msg = L["Msg_TaskCancelled_Content"];
+            Logger.Log(msg, LogLevel.Warning);
+            await MessageBoxHelper.ShowAsync(L["Msg_TaskCancelled_Title"], msg);
+        }
+        else
+        {
+            await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
+                string.Format(L["Msg_Result_Content"], success, fail));
+        }
     }
 
     [RelayCommand]
