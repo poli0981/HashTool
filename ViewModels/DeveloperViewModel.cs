@@ -15,6 +15,17 @@ public partial class DeveloperViewModel : ObservableObject
     // Binding in Logger.Logs
     public ObservableCollection<string> Logs => Logger.Logs;
 
+    public DeveloperViewModel()
+    {
+        Localization.PropertyChanged += (s, e) =>
+        {
+            if (e.PropertyName == "Item[]")
+            {
+                OnPropertyChanged(nameof(Localization));
+            }
+        };
+    }
+
     [RelayCommand]
     private void ClearLogs()
     {

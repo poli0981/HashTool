@@ -69,7 +69,7 @@ public partial class SettingsViewModel : ObservableObject
             }
             else if (e.PropertyName == "Item[]")
             {
-
+                OnPropertyChanged(nameof(Localization));
             }
         };
         

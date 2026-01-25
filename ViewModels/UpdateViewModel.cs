@@ -25,6 +25,15 @@ public partial class UpdateViewModel : ObservableObject
     {
         CurrentVersionText = string.Format(L["Lbl_CurrentVersion"], _updateService.CurrentVersion);
         StatusMessage = L["Lbl_Status_Ready"];
+
+        Localization.PropertyChanged += (s, e) =>
+        {
+            if (e.PropertyName == "Item[]")
+            {
+                CurrentVersionText = string.Format(L["Lbl_CurrentVersion"], _updateService.CurrentVersion);
+                OnPropertyChanged(nameof(Localization));
+            }
+        };
     }
 
     async partial void OnSelectedChannelIndexChanged(int value)

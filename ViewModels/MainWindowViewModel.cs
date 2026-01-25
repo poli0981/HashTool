@@ -48,6 +48,7 @@ public partial class MainWindowViewModel : ObservableObject
     {
         if (e.PropertyName == "Item[]")
         {
+            OnPropertyChanged(nameof(Localization));
             OnPropertyChanged(nameof(MenuCreateText));
             OnPropertyChanged(nameof(MenuCheckText));
             OnPropertyChanged(nameof(MenuSettingsText));
