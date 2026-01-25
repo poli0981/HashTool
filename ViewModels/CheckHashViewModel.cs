@@ -36,6 +36,8 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
 
     public string TotalFilesText => string.Format(L["Lbl_TotalFiles"], Files.Count);
 
+    private const long MaxHashFileSize = 1024 * 1024; // 1MB
+
     public CheckHashViewModel()
     {
         // Force cancel event
@@ -230,6 +232,13 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
     {
         try 
         {
+            var info = new FileInfo(path);
+            if (info.Length > MaxHashFileSize)
+            {
+                Logger.Log($"Hash file too large (>{MaxHashFileSize/1024}KB): {path}", LogLevel.Warning);
+                return "";
+            }
+
             var content = await File.ReadAllTextAsync(path);
             // Find the first hash-like string in the content
             var match = Regex.Match(content, @"[a-fA-F0-9]{32,128}");
