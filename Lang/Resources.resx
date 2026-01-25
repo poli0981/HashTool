@@ -486,4 +486,22 @@
     <data name="Tip_Stop">
         <value>Stop</value>
     </data>
+    <data name="Msg_ConfirmExit_Title">
+        <value>Confirm Exit</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content">
+        <value>If you exit the app, all task is canceled, Are you sure?</value>
+    </data>
+    <data name="Btn_Yes">
+        <value>Yes</value>
+    </data>
+    <data name="Btn_No">
+        <value>No</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title">
+        <value>Process Stopped</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content">
+        <value>The process was canceled or timed out.</value>
+    </data>
 </root>

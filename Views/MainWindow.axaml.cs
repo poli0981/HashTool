@@ -18,6 +18,37 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
+    private bool _canClose = false;
+
+    protected override async void OnClosing(WindowClosingEventArgs e)
+    {
+        base.OnClosing(e);
+
+        if (_canClose) return;
+
+        if (DataContext is MainWindowViewModel vm)
+        {
+            if (vm.CheckHashVM.IsChecking || vm.CreateHashVM.IsComputing)
+            {
+                e.Cancel = true;
+
+                var result = await MessageBoxHelper.ShowConfirmationAsync(
+                    L["Msg_ConfirmExit_Title"],
+                    L["Msg_ConfirmExit_Content"],
+                    L["Btn_Yes"],
+                    L["Btn_No"]);
+
+                if (result)
+                {
+                    _canClose = true;
+                    vm.CheckHashVM.Dispose();
+                    vm.CreateHashVM.Dispose();
+                    Close();
+                }
+            }
+        }
+    }
+
     // Sự kiện khi Kéo file vào TextBox
     private async void OnHashFileDrop(object? sender, DragEventArgs e)
     {

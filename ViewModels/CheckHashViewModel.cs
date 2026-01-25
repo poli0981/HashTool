@@ -33,7 +33,13 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
     // Progress Bar
     [ObservableProperty] private double _progressValue;
     [ObservableProperty] private double _progressMax = 100;
-    [ObservableProperty] private bool _isChecking;
+
+    [ObservableProperty]
+    [NotifyCanExecuteChangedFor(nameof(VerifyAllCommand))]
+    [NotifyCanExecuteChangedFor(nameof(AddFilesToCheckCommand))]
+    [NotifyCanExecuteChangedFor(nameof(ClearListCommand))]
+    [NotifyCanExecuteChangedFor(nameof(RemoveFileCommand))]
+    private bool _isChecking;
 
     public string TotalFilesText => string.Format(L["Lbl_TotalFiles"], Files.Count);
 
@@ -63,7 +69,9 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
         }
     }
 
-    [RelayCommand]
+    private bool CanModifyList => !IsChecking;
+
+    [RelayCommand(CanExecute = nameof(CanModifyList))]
     private void ClearList()
     {
         foreach (var file in Files)
@@ -116,11 +124,20 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
         
         Logger.Log($"Batch verification finished. Match: {match}, Mismatch/Error: {failCount}, Cancelled: {cancelled}", LogLevel.Info);
         
-        await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], 
-            string.Format(L["Msg_CheckResult"], Files.Count, match, failCount, cancelled));
+        if (cancelled > 0)
+        {
+            var msg = L["Msg_TaskCancelled_Content"];
+            Logger.Log(msg, LogLevel.Warning);
+            await MessageBoxHelper.ShowAsync(L["Msg_TaskCancelled_Title"], msg);
+        }
+        else
+        {
+            await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
+                string.Format(L["Msg_CheckResult"], Files.Count, match, failCount, cancelled));
+        }
     }
     
-    [RelayCommand]
+    [RelayCommand(CanExecute = nameof(CanModifyList))]
     private async Task AddFilesToCheck(Avalonia.Controls.Window window)
     {
         try
@@ -256,7 +273,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
         catch { return ""; }
     }
     
-    [RelayCommand]
+    [RelayCommand(CanExecute = nameof(CanModifyList))]
     private void RemoveFile(FileItem item)
     {
         item.Cts?.Cancel();
