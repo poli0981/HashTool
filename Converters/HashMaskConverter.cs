@@ -9,7 +9,7 @@ public class HashMaskConverter : IMultiValueConverter
 {
     public object? Convert(IList<object?> values, Type targetType, object? parameter, CultureInfo culture)
     {
-        // values[0]: Hash string gốc
+        // values[0]: Hash string to be masked
         // values[1]: IsHashMaskingEnabled (Global Setting)
         // values[2]: IsRevealed (Local Item State)
 
@@ -19,8 +19,8 @@ public class HashMaskConverter : IMultiValueConverter
         var isMaskingEnabled = values[1] as bool? ?? false;
         var isRevealed = values[2] as bool? ?? false;
 
-        // Nếu tham số là "MaskOnly" -> Chỉ trả về chuỗi đã che (dùng cho TextBlock đè lên)
-        // Logic này dùng cho CheckHashView khi muốn hiển thị TextBlock che đè lên TextBox
+        // If parameter is "MaskOnly"  -> Hide hash
+        // Logic use for CheckHashView when user choose "Show Only Masked" option
         if (parameter as string == "MaskOnly")
         {
              if (string.IsNullOrEmpty(hash)) return "";
@@ -30,13 +30,13 @@ public class HashMaskConverter : IMultiValueConverter
 
         if (string.IsNullOrEmpty(hash)) return "";
 
-        // Nếu không bật tính năng che -> hiện nguyên
+        // If masking is disabled -> Show full hash
         if (!isMaskingEnabled) return hash;
 
-        // Nếu bật che, nhưng user bấm hiện -> hiện nguyên
+        // If revealed -> Show full hash
         if (isRevealed) return hash;
 
-        // Còn lại -> Che (hiện 4 ký tự đầu, 4 ký tự cuối, giữa là sao)
+        // Otherwise, show masked hash of format: "abcd****wxyz"
         if (hash.Length <= 8) return new string('*', hash.Length);
         
         return $"{hash[..4]}{new string('*', hash.Length - 8)}{hash[^4..]}";

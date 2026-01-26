@@ -9,29 +9,29 @@ namespace CheckHash.ViewModels;
 
 public partial class UpdateViewModel : ObservableObject
 {
-    public LocalizationService Localization => LocalizationService.Instance;
+    [ObservableProperty] private LocalizationProxy _localization = new(LocalizationService.Instance);
     private LocalizationService L => LocalizationService.Instance;
     private readonly UpdateService _updateService = new();
     private LoggerService Logger => LoggerService.Instance;
-    
+
     [ObservableProperty] private string _currentVersionText;
     [ObservableProperty] private string _statusMessage;
     [ObservableProperty] private bool _isChecking;
     [ObservableProperty] private bool _isUpdateAvailable;
-    
-    [ObservableProperty] private int _selectedChannelIndex; 
+
+    [ObservableProperty] private int _selectedChannelIndex;
 
     public UpdateViewModel()
     {
         CurrentVersionText = string.Format(L["Lbl_CurrentVersion"], _updateService.CurrentVersion);
         StatusMessage = L["Lbl_Status_Ready"];
 
-        Localization.PropertyChanged += (s, e) =>
+        LocalizationService.Instance.PropertyChanged += (s, e) =>
         {
             if (e.PropertyName == "Item[]")
             {
                 CurrentVersionText = string.Format(L["Lbl_CurrentVersion"], _updateService.CurrentVersion);
-                OnPropertyChanged(nameof(Localization));
+                Localization = new LocalizationProxy(LocalizationService.Instance);
             }
         };
     }
@@ -43,7 +43,7 @@ public partial class UpdateViewModel : ObservableObject
             var accepted = await ShowDisclaimer();
             if (!accepted)
             {
-                SelectedChannelIndex = 0; 
+                SelectedChannelIndex = 0;
                 return;
             }
             Logger.Log("Switched to Developer Channel.", LogLevel.Warning);
@@ -85,15 +85,15 @@ public partial class UpdateViewModel : ObservableObject
             {
                 IsUpdateAvailable = true;
                 StatusMessage = L["Status_NewVersion"];
-                
+
                 var version = updateInfo.TargetFullRelease.Version.ToString();
                 Logger.Log($"New version found: {version}", LogLevel.Success);
-                
+
                 var notes = await _updateService.GetReleaseNotesAsync(version);
-                
-                await MessageBoxHelper.ShowAsync(L["Msg_UpdateTitle"], 
+
+                await MessageBoxHelper.ShowAsync(L["Msg_UpdateTitle"],
                     string.Format(L["Msg_UpdateContent"], version, notes));
-                
+
                 await InstallUpdate(updateInfo);
             }
             else
@@ -117,7 +117,7 @@ public partial class UpdateViewModel : ObservableObject
     private async Task InstallUpdate(Velopack.UpdateInfo info)
     {
         StatusMessage = L["Status_Installing"];
-        IsChecking = true; 
+        IsChecking = true;
         Logger.Log("Downloading and installing update...");
         try
         {

@@ -16,7 +16,7 @@ namespace CheckHash.ViewModels;
 
 public partial class CheckHashViewModel : ObservableObject, IDisposable
 {
-    public LocalizationService Localization => LocalizationService.Instance;
+    [ObservableProperty] private LocalizationProxy _localization = new(LocalizationService.Instance);
     private LocalizationService L => LocalizationService.Instance;
     private readonly HashService _hashService = new();
     private ConfigurationService ConfigService => ConfigurationService.Instance;
@@ -49,6 +49,15 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
     {
         // Force cancel event
         Prefs.ForceCancelRequested += OnForceCancelRequested;
+
+        LocalizationService.Instance.PropertyChanged += (s, e) =>
+        {
+            if (e.PropertyName == "Item[]")
+            {
+                Localization = new LocalizationProxy(LocalizationService.Instance);
+                OnPropertyChanged(nameof(TotalFilesText));
+            }
+        };
     }
 
     public void Dispose()

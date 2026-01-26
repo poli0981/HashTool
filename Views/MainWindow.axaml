@@ -492,7 +492,7 @@
                                     <Grid ColumnDefinitions="60, *">
                                         <icons:MaterialIcon Grid.Column="0" Kind="Console" Width="24" Height="24"
                                                             HorizontalAlignment="Center" Foreground="#00FF00" />
-                                        <TextBlock Grid.Column="1" Text="{Binding Localization[Menu_Developer]}"
+                                        <TextBlock Grid.Column="1" Text="{Binding MenuDeveloperText}"
                                                    VerticalAlignment="Center"
                                                    FontWeight="SemiBold" Foreground="#00FF00" />
                                     </Grid>

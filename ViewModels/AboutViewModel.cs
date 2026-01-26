@@ -8,7 +8,7 @@ namespace CheckHash.ViewModels;
 
 public partial class AboutViewModel : ObservableObject
 {
-    public LocalizationService Localization => LocalizationService.Instance;
+    [ObservableProperty] private LocalizationProxy _localization = new(LocalizationService.Instance);
 
     // Basic Info
     public string AppName => "Hash Tool";
@@ -16,7 +16,7 @@ public partial class AboutViewModel : ObservableObject
     public string AuthorName => "Poli0981"; // My name :D
     public string GitHubProfile => "https://github.com/poli0981";
     public string Copyright => $"© 2026 {AuthorName}. All rights reserved.";
-    
+
     // Credits 3rd party libraries
     public ObservableCollection<LibraryItem> Libraries { get; } = new()
     {
@@ -25,6 +25,17 @@ public partial class AboutViewModel : ObservableObject
         new("Material.Icons.Avalonia Ver 2.4.1", "MIT License", "https://github.com/AvaloniaUtils/Material.Icons.Avalonia"),
         new("Velopack version 0.0.1298", "MIT License", "https://velopack.io/"),
     };
+
+    public AboutViewModel()
+    {
+        LocalizationService.Instance.PropertyChanged += (s, e) =>
+        {
+            if (e.PropertyName == "Item[]")
+            {
+                Localization = new LocalizationProxy(LocalizationService.Instance);
+            }
+        };
+    }
 
     // Open URL in default browser of user
     [RelayCommand]

@@ -5,9 +5,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CheckHash.Services;
 using CheckHash.Models;
 using CommunityToolkit.Mvvm.Input;
-using Avalonia.Media;
 using System.IO;
-using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using Avalonia;
@@ -17,7 +15,7 @@ namespace CheckHash.ViewModels;
 
 public partial class SettingsViewModel : ObservableObject
 {
-    public LocalizationService Localization => LocalizationService.Instance;
+    [ObservableProperty] private LocalizationProxy _localization = new(LocalizationService.Instance);
     private LocalizationService L => LocalizationService.Instance;
     public FontService Font => FontService.Instance;
     public PreferencesService Prefs => PreferencesService.Instance;
@@ -26,17 +24,17 @@ public partial class SettingsViewModel : ObservableObject
     private LoggerService Logger => LoggerService.Instance;
 
     [ObservableProperty] private List<AppThemeStyle> _filteredThemeStyles;
-    
+
     [ObservableProperty] private bool _isSettingsLocked;
     [ObservableProperty] private bool _isDeveloperModeEnabled;
-    
+
     public bool CanSetLanguageDefault => Localization.SelectedLanguage.Code != "auto";
 
     public List<FileSizeUnit> FileSizeUnits { get; } = Enum.GetValues(typeof(FileSizeUnit)).Cast<FileSizeUnit>().ToList();
 
     [ObservableProperty] private bool _isAdminModeEnabled;
     [ObservableProperty] private int _forceQuitTimeout;
-    
+
     public bool IsAdminModeSupported => RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
 
     // Config Path
@@ -46,7 +44,7 @@ public partial class SettingsViewModel : ObservableObject
     public SettingsViewModel()
     {
         UpdateFilteredThemes();
-        
+
         Theme.PropertyChanged += (s, e) =>
         {
             if (e.PropertyName == nameof(Theme.CurrentThemeVariant))
@@ -60,16 +58,16 @@ public partial class SettingsViewModel : ObservableObject
             }
         };
 
-        Localization.PropertyChanged += (s, e) =>
+        LocalizationService.Instance.PropertyChanged += (s, e) =>
         {
-            if (e.PropertyName == nameof(Localization.SelectedLanguage))
+            if (e.PropertyName == nameof(LocalizationService.Instance.SelectedLanguage))
             {
                 OnPropertyChanged(nameof(CanSetLanguageDefault));
-                Logger.Log($"Language changed to {Localization.SelectedLanguage.Code}");
+                Logger.Log($"Language changed to {LocalizationService.Instance.SelectedLanguage.Code}");
             }
             else if (e.PropertyName == "Item[]")
             {
-                OnPropertyChanged(nameof(Localization));
+                Localization = new LocalizationProxy(LocalizationService.Instance);
             }
         };
         

@@ -16,6 +16,8 @@ public partial class LocalizationService : ObservableObject
     // ResourceManager -> CheckHash.Lang.Resources
     private readonly ResourceManager _resourceManager;
     private CultureInfo _currentCulture;
+    private readonly CultureInfo _systemUICulture;
+    private readonly CultureInfo _systemCulture;
 
     public List<LanguageItem> AvailableLanguages { get; } = new()
     {
@@ -25,7 +27,7 @@ public partial class LocalizationService : ObservableObject
         // ASIA LANGUAGES
         //---------------------------------------//
         new("English (US)", "en-US"), // completed
-        
+
         // SOUTHEAST ASIA LANGUAGES
         new("Tiếng Việt", "vi-VN"),  // completed
         new("Bahasa Indonesia", "id-ID"),// completed
@@ -37,15 +39,14 @@ public partial class LocalizationService : ObservableObject
         new("ខ្មែរ (Khmer)", "km-KH"), // completed
         new("ລາວ (Lao)", "lo-LA"), // completed
         // tet (Timor-Leste) not supported by .NET natively yet (if .NET supported this language in the future,uncomment this line)
-        // new("Tetun (Timor-Leste)", "tet-TL"),
-        
+
         // MIDDLE EAST/ WEST ASIA LANGUAGES
         new("العربية (Arabic)", "ar-SA"), // completed
         new("فارسی (Persian)", "fa-IR"), // completed
         new("עברית (Hebrew)", "he-IL"),
         // Turkish
         new("Türkçe (Turkish)", "tr-TR"), // completed
-        
+
         //---------------------------------------//
         // SOUTH ASIA LANGUAGES
         new("हिन्दी (Hindi)", "hi-IN"),  // completed
@@ -59,7 +60,7 @@ public partial class LocalizationService : ObservableObject
         new("日本語 (Japanese)", "ja-jp"),// completed
         new("한국어 (Korean)", "ko-KR"), // completed
         new("Монгол (Mongolian)", "mn-MN"), // completed
-        
+
         // EUROPE LANGUAGES
         //---------------------------------------//
         new("----Europe Region-------","--"), // Use to separate, no function
@@ -90,7 +91,7 @@ public partial class LocalizationService : ObservableObject
         new("Dansk (Danish)", "da-DK"), // completed
         // Greece
         new("Ελληνικά (Greek)", "el-GR"), // completed
-        //  fi-fi 
+        //  fi-fi
         new("Suomeksi (Finnish)", "fi-FI"), // completed
         // Hungary
         new("Magyar (Hungarian)", "hu-HU"), // completed
@@ -100,12 +101,12 @@ public partial class LocalizationService : ObservableObject
         new("Nederlands (Dutch)", "nl-NL"), // completed
         // Slovenia
         new("Slovenščina (Slovenian)", "sl-SI"), // completed
-        
-        
+
+
         //---------------------------------------//
         // NORTH - CENTRAL AMERICA & CARIBBEAN LANGUAGES
         new("----North/Central America & Caribbean Region-------","--"), // Used to separate, no function
-        
+
         // -- South America LANGUAGES
         new("----South America Region-------","--"), // Used to separate, no function
         new("Português (Brasil)", "pt-BR"), // completed
@@ -133,6 +134,8 @@ public partial class LocalizationService : ObservableObject
 
     public LocalizationService()
     {
+        _systemUICulture = CultureInfo.CurrentUICulture;
+        _systemCulture = CultureInfo.CurrentCulture;
         _resourceManager = new ResourceManager("CheckHash.Lang.Resources", typeof(LocalizationService).Assembly);
 
         _selectedLanguage = AvailableLanguages[0];
@@ -152,9 +155,9 @@ public partial class LocalizationService : ObservableObject
         var supportedLanguages = AvailableLanguages.Skip(1).ToList();
         string fallbackCode = supportedLanguages.FirstOrDefault()?.Code ?? "en-US";
 
-        try 
+        try
         {
-            var candidates = new[] { CultureInfo.CurrentUICulture, CultureInfo.CurrentCulture };
+            var candidates = new[] { _systemUICulture, _systemCulture };
 
             foreach (var culture in candidates)
             {

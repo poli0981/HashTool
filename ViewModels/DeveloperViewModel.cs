@@ -10,18 +10,18 @@ namespace CheckHash.ViewModels;
 public partial class DeveloperViewModel : ObservableObject
 {
     public LoggerService Logger => LoggerService.Instance;
-    public LocalizationService Localization => LocalizationService.Instance;
+    [ObservableProperty] private LocalizationProxy _localization = new(LocalizationService.Instance);
 
     // Binding in Logger.Logs
     public ObservableCollection<string> Logs => Logger.Logs;
 
     public DeveloperViewModel()
     {
-        Localization.PropertyChanged += (s, e) =>
+        LocalizationService.Instance.PropertyChanged += (s, e) =>
         {
             if (e.PropertyName == "Item[]")
             {
-                OnPropertyChanged(nameof(Localization));
+                Localization = new LocalizationProxy(LocalizationService.Instance);
             }
         };
     }
