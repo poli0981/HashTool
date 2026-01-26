@@ -515,4 +515,31 @@
     <data name="Msg_TaskCancelled_Content">
         <value>The process was canceled or timed out.</value>
     </data>
+    <data name="Settings_ThemeSystem">
+        <value>System</value>
+    </data>
+    <data name="Settings_ThemeLight">
+        <value>Light</value>
+    </data>
+    <data name="Settings_ThemeDark">
+        <value>Dark</value>
+    </data>
+    <data name="Unit_Seconds">
+        <value>seconds</value>
+    </data>
+    <data name="Dev_ToolTip_Pause">
+        <value>Pause/Resume real-time logging</value>
+    </data>
+    <data name="Dev_ToolTip_Save">
+        <value>Save debug logs to disk</value>
+    </data>
+    <data name="Dialog_FileType_Zip">
+        <value>ZIP Archive</value>
+    </data>
+    <data name="Btn_OK">
+        <value>OK</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded">
+        <value>File {0} exceeds the size limit of {1} {2}.</value>
+    </data>
 </root>

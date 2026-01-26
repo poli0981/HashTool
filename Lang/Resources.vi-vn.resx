@@ -106,7 +106,7 @@
         <value>Stable (Ổn định)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Dev (Developer)</value>
+        <value>Dev Edition</value>
     </data>
     <data name="Settings_Language">
         <value>Ngôn ngữ</value>
@@ -359,10 +359,8 @@
     </data>
     <data name="Msg_Result_Content">
         <value>Đã xử lý xong!
-
             ✅ Thành công: {0}
-            ❌ Thất bại: {1}
-        </value>
+            ❌ Thất bại: {1}</value>
     </data>
     <data name="Msg_CheckResult">
         <value>Đã kiểm tra {0} file.
@@ -466,6 +464,69 @@
         <value>Tính năng này cho phép bạn cài đặt một phiên bản cụ thể nếu bản mới bị lỗi.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Paste/Drop...</value>
+        <value>Dán/Thả vào đây...</value>
+    </data>
+    <data name="Unit_Seconds" xml:space="preserve">
+        <value>Giây</value>
+    </data>
+    <data name="Tip_Verify" xml:space="preserve">
+        <value>Xác nhận</value>
+    </data>
+    <data name="Tip_Stop" xml:space="preserve">
+        <value>Dừng</value>
+    </data>
+    <data name="Tip_RemoveFile" xml:space="preserve">
+        <value>Xoá file</value>
+    </data>
+    <data name="Tip_CopyHash" xml:space="preserve">
+        <value>Sao chép Hash</value>
+    </data>
+    <data name="Tip_Compute" xml:space="preserve">
+        <value>Tính toán</value>
+    </data>
+    <data name="Tip_BrowseHash" xml:space="preserve">
+        <value>Truy cập Hash</value>
+    </data>
+    <data name="Settings_ThemeDark" xml:space="preserve">
+        <value>Tối</value>
+    </data>
+    <data name="Settings_ThemeLight" xml:space="preserve">
+        <value>Sáng</value>
+    </data>
+    <data name="Settings_ThemeSystem" xml:space="preserve">
+        <value>Hệ thống</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title" xml:space="preserve">
+        <value>Tiến trình đã dừng lại</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded" xml:space="preserve">
+        <value>Tệp này {0} vượt quá giới hạn {1} {2}.</value>
+    </data>
+    <data name="Btn_Yes" xml:space="preserve">
+        <value>Có</value>
+    </data>
+    <data name="Btn_OK" xml:space="preserve">
+        <value>Okê</value>
+    </data>
+    <data name="Btn_No" xml:space="preserve">
+        <value>Không</value>
+    </data>
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
+        <value>File nén .zip</value>
+    </data>
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
+        <value>Xác nhận thoát</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
+        <value>Nếu thoát ứng dụng, mọi tiến trình sẽ bị huỷ. Bạn có chắc không?</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content" xml:space="preserve">
+        <value>Tiến trình đã bị dừng lại do quá giới hạn thời gian.</value>
+    </data>
+    <data name="Dev_ToolTip_Save" xml:space="preserve">
+        <value>Lưu debug log vào ổ đĩa.</value>
+    </data>
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
+        <value>Dừng tạm thời lưu log thời gian thực.</value>
     </data>
 </root>
