@@ -28,7 +28,7 @@
         <value>সেটিংস</value>
     </data>
     <data name="Menu_Update">
-        <value>আপডেট চেক করুন</value>
+        <value>আপডেট</value>
     </data>
     <data name="Menu_Theme">
         <value>থিম</value>
@@ -64,7 +64,7 @@
         <value>গ্রহণ করুন</value>
     </data>
     <data name="Btn_Decline">
-        <value>বাতিল করুন</value>
+        <value>প্রত্যাখ্যান করুন</value>
     </data>
     <data name="Title_CreateHash">
         <value>হ্যাশ তৈরি ও কম্প্রেস</value>
@@ -82,16 +82,16 @@
         <value>সম্পর্কে</value>
     </data>
     <data name="Help_CreateHash">
-        <value>টিপ: Shift+C সব গণনা করতে, Shift+Z কম্প্রেস করতে, Ctrl+F ফাইল যোগ করতে।</value>
+        <value>টিপ: Shift+C সব গণনা, Shift+Z কম্প্রেস, Ctrl+F ফাইল যোগ করুন।</value>
     </data>
     <data name="Help_CheckHash">
-        <value>টিপ: Shift+A সব যাচাই করতে, Ctrl+F ফাইল যোগ করতে, Ctrl+Shift+H তালিকা মুছতে।</value>
+        <value>টিপ: Shift+A সব যাচাই, Ctrl+F ফাইল যোগ করুন, Ctrl+Shift+H তালিকা মুছুন।</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>প্রস্তুত</value>
     </data>
     <data name="Lbl_Sample">
-        <value>উদাহরণ:</value>
+        <value>নমুনা:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>বর্তমান সংস্করণ: {0}</value>
@@ -103,10 +103,10 @@
         <value>মোট ফাইল: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stable (স্থির)</value>
+        <value>স্থিতিশীল</value>
     </data>
     <data name="Channel_Dev">
-        <value>Dev (ডেভেলপার)</value>
+        <value>ডেভ সংস্করণ</value>
     </data>
     <data name="Settings_Language">
         <value>ভাষা</value>
@@ -118,7 +118,7 @@
         <value>থিম স্টাইল</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>আলোকিত/অন্ধকার</value>
+        <value>হালকা/গাঢ়</value>
     </data>
     <data name="Settings_Font">
         <value>ফন্ট</value>
@@ -127,16 +127,16 @@
         <value>ফন্ট সাইজ (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>ভাষার জন্য স্বয়ংক্রিয় সেরা ফন্ট নির্বাচন</value>
+        <value>ভাষার জন্য সর্বোত্তম ফন্ট স্বয়ংক্রিয়ভাবে নির্বাচন করুন</value>
     </data>
     <data name="Settings_LockFont">
-        <value>ডিফল্ট ফন্ট হিসেবে ব্যবহার (পরিবর্তন লক)</value>
+        <value>ডিফল্ট ফন্ট হিসেবে লক করুন</value>
     </data>
     <data name="Settings_Scale">
         <value>UI স্কেল</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>হ্যাশ মাস্ক (নিরাপত্তা)</value>
+        <value>হ্যাশ মান মাস্ক করুন (নিরাপত্তা)</value>
     </data>
     <data name="Settings_Reset">
         <value>থিম রিসেট করুন</value>
@@ -149,9 +149,6 @@
     </data>
     <data name="Settings_CustomColor">
         <value>কাস্টম টেক্সট রং</value>
-    </data>
-    <data name="Settings_TextTest">
-        <value>দ্রুত বাদামী শিয়াল অলস কুকুরের উপর লাফ দেয়।</value>
     </data>
     <data name="Settings_Advanced">
         <value>উন্নত</value>
@@ -166,55 +163,55 @@
         <value>ইনপুট ফাইল সাইজ সীমা</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>প্রসেস করা ফাইলের সর্বোচ্চ সাইজ সীমা।</value>
+        <value>প্রসেস করার জন্য সর্বোচ্চ সাইজ।</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
         <value>ফোর্স কুইট টাইমআউট</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>অ্যাপ ফ্রিজ ধরার আগের সময় (সেকেন্ড)।</value>
+        <value>অ্যাপ ফ্রিজ মনে করার আগে সময় (সেকেন্ড)।</value>
     </data>
     <data name="Settings_FileTimeout">
         <value>ফাইল প্রসেসিং টাইমআউট</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>ফাইল অনেক সময় নিলে ফোর্স ক্যান্সেল।</value>
+        <value>একটি ফাইল অনেক সময় নিলে বাতিল করুন।</value>
     </data>
     <data name="Settings_Emergency">
         <value>জরুরি অ্যাকশন</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>অ্যাপ ফোর্স কুইট করে সব টাস্ক তাৎক্ষণিক ক্যান্সেল।</value>
+        <value>অ্যাপ ফোর্স কুইট করুন এবং সব টাস্ক তৎক্ষণাৎ বাতিল করুন।</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>ফোর্স কুইট &amp; সব ক্যান্সেল</value>
+        <value>ফোর্স কুইট ও সব বাতিল করুন</value>
     </data>
     <data name="Settings_Configuration">
         <value>কনফিগারেশন</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>সেটিংস লক করুন (ডিফল্ট হিসেবে সেভ)</value>
+        <value>সেটিংস লক করুন (ডিফল্ট হিসেবে সেভ করুন)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>দুর্ঘটনাজনিত পরিবর্তন প্রতিরোধ করে। শুধু হ্যাশ মাস্কিং সক্রিয় থাকে।</value>
+        <value>দুর্ঘটনাজনিত পরিবর্তন রোধ করুন। শুধু হ্যাশ মাস্কিং এখনো অ্যাডজাস্ট করা যাবে।</value>
     </data>
     <data name="Settings_ResetAll">
         <value>সব সেটিংস রিসেট করুন</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>প্রাথমিক ডিফল্টে ফিরে যান।</value>
+        <value>ফ্যাক্টরি ডিফল্টে ফিরিয়ে আনুন।</value>
     </data>
     <data name="Settings_ConfigPath">
         <value>কনফিগারেশন ফাইল পাথ</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>পূর্ণ পাথ দেখান এবং ক্লিপবোর্ডে কপি করুন।</value>
+        <value>সম্পূর্ণ পাথ দেখান এবং ক্লিপবোর্ডে কপি করুন।</value>
     </data>
     <data name="Settings_ShowPath">
         <value>পাথ দেখান</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>সেটিংস config.json-এ স্বয়ংক্রিয় সেভ হয়</value>
+        <value>সেটিংস config.json-এ স্বয়ংক্রিয়ভাবে সেভ হয়</value>
     </data>
     <data name="Settings_DeveloperMode">
         <value>ডেভেলপার মোড</value>
@@ -232,7 +229,7 @@
         <value>রেকর্ডিং</value>
     </data>
     <data name="Dev_Paused">
-        <value>পজ করা</value>
+        <value>পজ করা হয়েছে</value>
     </data>
     <data name="Dev_SaveToFile">
         <value>ফাইলে সেভ করুন</value>
@@ -256,13 +253,13 @@
         <value>সফটওয়্যার</value>
     </data>
     <data name="About_ThirdParty">
-        <value>থার্ড-পার্টি লাইব্রেরি</value>
+        <value>তৃতীয় পক্ষের লাইব্রেরি</value>
     </data>
     <data name="About_Copyright">
         <value>কপিরাইট</value>
     </data>
     <data name="About_Desc">
-        <value>ফাইল হ্যাশ তৈরি ও যাচাইয়ের জন্য শক্তিশালী টুল।</value>
+        <value>ফাইল হ্যাশ তৈরি, যাচাই এবং কম্প্রেস করার শক্তিশালী টুল। অথবা আমি এমনটাই মনে করি :)</value>
     </data>
     <data name="About_License">
         <value>MIT লাইসেন্সের অধীনে প্রকাশিত।</value>
@@ -277,13 +274,13 @@
         <value>AI সহায়তা</value>
     </data>
     <data name="About_AIContent">
-        <value>এই সফটওয়্যারটি AI সহায়তায় তৈরি (Gemini 3 Pro এবং Grok 4.1)।</value>
+        <value>এই সফটওয়্যারটি AI সহায়তায় তৈরি করা হয়েছে (Gemini 3 Pro এবং Grok 4.1)।</value>
     </data>
     <data name="Status_Processing">
         <value>প্রসেসিং ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>সম্পন্ন</value>
+        <value>সম্পূর্ণ</value>
     </data>
     <data name="Status_Error">
         <value>ত্রুটি: {0}</value>
@@ -298,13 +295,13 @@
         <value>কম্প্রেস করা হয়েছে!</value>
     </data>
     <data name="Status_Waiting">
-        <value>হ্যাশ/ইনপুট অপেক্ষা...</value>
+        <value>হ্যাশ/ইনপুটের জন্য অপেক্ষা করছে...</value>
     </data>
     <data name="Status_MissingOriginal">
         <value>অরিজিনাল ফাইল অনুপস্থিত!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>হ্যাশ অনুপস্থিত (ইনপুট বা হ্যাশ ফাইল দরকার)</value>
+        <value>হ্যাশ মান অনুপস্থিত (ইনপুট করুন বা হ্যাশ ফাইল লোড করুন)</value>
     </data>
     <data name="Status_Valid">
         <value>বৈধ</value>
@@ -322,7 +319,7 @@
         <value>ফাইলে হ্যাশ পাওয়া যায়নি!</value>
     </data>
     <data name="Status_Checking">
-        <value>আপডেট চেক করা হচ্ছে...</value>
+        <value>আপডেট চেক করছে...</value>
     </data>
     <data name="Status_NewVersion">
         <value>নতুন সংস্করণ পাওয়া গেছে!</value>
@@ -334,7 +331,7 @@
         <value>আপডেট চেক ত্রুটি: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>ডাউনলোড ও ইনস্টল করা হচ্ছে...</value>
+        <value>ডাউনলোড ও ইনস্টল করছে...</value>
     </data>
     <data name="Status_InstallError">
         <value>ইনস্টলেশন ত্রুটি: {0}</value>
@@ -349,27 +346,26 @@
         <value>হ্যাশ ফাইল নাম অমিল!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>হ্যাশ ফাইল ড্রপ করা হয়েছে</value>
+        <value>হ্যাশ ফাইল ড্রপ সফল</value>
     </data>
     <data name="Status_DropNoHash">
         <value>ফাইলে হ্যাশ নেই!</value>
     </data>
     <data name="Status_ReadError">
-        <value>ফাইল পড়ার ত্রুটি</value>
+        <value>ফাইল পড়তে ত্রুটি</value>
     </data>
     <data name="Msg_Result_Title">
         <value>ফলাফল</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>প্রসেসিং সম্পন্ন!
-
+        <value>প্রসেসিং সম্পূর্ণ!
             ✅ সফল: {0}
             ❌ ব্যর্থ: {1}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>{0} ফাইল যাচাই করা হয়েছে।
-            ✅ মিল: {1}
+        <value>{0} ফাইল চেক করা হয়েছে।
+            ✅ মিলেছে: {1}
             ❌ অমিল/ত্রুটি: {2}
             ⛔ বাতিল: {3}
         </value>
@@ -383,7 +379,7 @@
             অরিজিনাল ফাইল: {0}
             নির্বাচিত ফাইল: {1}
 
-            সঠিক সংযুক্ত হ্যাশ ফাইল নির্বাচন করুন।
+            সঠিক হ্যাশ ফাইল নির্বাচন করুন।
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -395,7 +391,7 @@
             পরিবর্তন:
             {1}
 
-            ডাউনলোড করতে 'এখনই আপডেট করুন' ক্লিক করুন।
+            'এখনই আপডেট করুন' ক্লিক করে ডাউনলোড করুন।
         </value>
     </data>
     <data name="Msg_NoUpdate">
@@ -405,7 +401,7 @@
         <value>ত্রুটি</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>এই হ্যাশ ফাইল পড়া যায়নি।</value>
+        <value>এই হ্যাশ ফাইল পড়তে পারছি না।</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>কনফিগারেশন চেক</value>
@@ -425,13 +421,13 @@
         <value>কনফিগারেশন পাথ কপি করা হয়েছে।</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>অ্যাডমিন মোড</value>
+        <value>অ্যাডমিনিস্ট্রেটর মোড</value>
     </data>
     <data name="Msg_AdminRestart">
         <value>পরিবর্তন কার্যকর করতে অ্যাপ রিস্টার্ট করুন।</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>ফোল্ডার খোলা যায়নি: {0}</value>
+        <value>ফোল্ডার খুলতে পারছি না: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
         <value>⚠️ ডেভেলপার সংস্করণ সতর্কতা</value>
@@ -445,7 +441,7 @@
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>আমি পড়েছি এবং সম্মত। আমি পূর্ণ দায়িত্ব গ্রহণ করছি।</value>
+        <value>আমি পড়েছি এবং সম্মত। আমি পুরো দায়িত্ব গ্রহণ করছি।</value>
     </data>
     <data name="Dialog_SaveHash">
         <value>হ্যাশ ফাইল সেভ করুন</value>
@@ -463,12 +459,96 @@
         <value>ফাইল নির্বাচন করুন (অরিজিনাল বা .hash ফাইল)</value>
     </data>
     <data name="Header_Fallback">
-        <value>উন্নত: পুরোনো সংস্করণে ফিরে যান (Fallback)</value>
+        <value>উন্নত: পুরোনো সংস্করণে ফিরে যান</value>
     </data>
     <data name="Desc_Fallback">
-        <value>এই ফিচার নতুন সংস্করণে সমস্যা হলে নির্দিষ্ট সংস্করণ ইনস্টল করতে দেয়।</value>
+        <value>এই ফিচারটি নতুন সংস্করণে সমস্যা থাকলে নির্দিষ্ট সংস্করণ ইনস্টল করার অনুমতি দেয়।</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>পেস্ট/ড্রপ...</value>
+        <value>এখানে পেস্ট/ড্রপ করুন...</value>
+    </data>
+    <data name="Unit_Seconds">
+        <value>সেকেন্ড</value>
+    </data>
+    <data name="Tip_Verify">
+        <value>যাচাই করুন</value>
+    </data>
+    <data name="Tip_Stop">
+        <value>থামান</value>
+    </data>
+    <data name="Tip_RemoveFile">
+        <value>ফাইল মুছুন</value>
+    </data>
+    <data name="Tip_CopyHash">
+        <value>হ্যাশ কপি করুন</value>
+    </data>
+    <data name="Tip_Compute">
+        <value>গণনা করুন</value>
+    </data>
+    <data name="Tip_BrowseHash">
+        <value>হ্যাশ ব্রাউজ করুন</value>
+    </data>
+    <data name="Settings_ThemeDark">
+        <value>গাঢ়</value>
+    </data>
+    <data name="Settings_ThemeLight">
+        <value>হালকা</value>
+    </data>
+    <data name="Settings_ThemeSystem">
+        <value>সিস্টেম</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title">
+        <value>টাস্ক থামানো হয়েছে</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded">
+        <value>ফাইল {0} সীমা {1} {2} অতিক্রম করেছে।</value>
+    </data>
+    <data name="Btn_Yes">
+        <value>হ্যাঁ</value>
+    </data>
+    <data name="Btn_OK">
+        <value>ঠিক আছে</value>
+    </data>
+    <data name="Btn_No">
+        <value>না</value>
+    </data>
+    <data name="Dialog_FileType_Zip">
+        <value>Zip কম্প্রেসড ফাইল</value>
+    </data>
+    <data name="Msg_ConfirmExit_Title">
+        <value>প্রস্থান নিশ্চিত করুন</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content">
+        <value>প্রস্থান করলে সব চলমান টাস্ক বাতিল হবে। নিশ্চিত?</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content">
+        <value>টাইমআউটের কারণে টাস্ক থামানো হয়েছে।</value>
+    </data>
+    <data name="Dev_ToolTip_Save">
+        <value>ডিবাগ লগ ডিস্কে সেভ করুন।</value>
+    </data>
+    <data name="Dev_ToolTip_Pause">
+        <value>রিয়েল-টাইম লগিং পজ করুন।</value>
+    </data>
+    <data name="Tip_ShowHash">
+        <value>হ্যাশ দেখান</value>
+    </data>
+    <data name="Tip_HideHash">
+        <value>হ্যাশ লুকান</value>
+    </data>
+    <data name="Tip_CopyPath">
+        <value>পাথ কপি করুন</value>
+    </data>
+    <data name="Msg_DiskFull">
+        <value>আপনার ড্রাইভ ফুল হয়ে গেছে। অন্য জায়গা বেছে নিন ভাই :)</value>
+    </data>
+    <data name="Tip_HashVisibility">
+        <value>হ্যাশ দৃশ্যমানতা</value>
+    </data>
+    <data name="EmptyState_DropFiles">
+        <value>কোনো ফাইল নেই। শুরু করতে 'ফাইল যোগ করুন' ক্লিক করুন।</value>
+    </data>
+    <data name="Settings_LockTheme">
+        <value>এই থিমটি ডিফল্ট হিসেবে লক করুন</value>
     </data>
 </root>

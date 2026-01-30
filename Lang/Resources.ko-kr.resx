@@ -6,9 +6,549 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
+    <data name="AppTitle">
+        <value>Hash Tool</value>
+    </data>
+    <data name="Menu_Create">
+        <value>해시 생성</value>
+    </data>
+    <data name="Menu_Check">
+        <value>해시 검증</value>
+    </data>
+    <data name="Menu_Settings">
+        <value>설정</value>
+    </data>
+    <data name="Menu_Update">
+        <value>업데이트</value>
+    </data>
+    <data name="Menu_Theme">
+        <value>테마</value>
+    </data>
+    <data name="Menu_About">
+        <value>정보</value>
+    </data>
+    <data name="Menu_Developer">
+        <value>개발자</value>
+    </data>
+    <data name="Btn_AddFiles">
+        <value>파일 추가...</value>
+    </data>
+    <data name="Btn_Clear">
+        <value>목록 지우기</value>
+    </data>
+    <data name="Btn_CalcAll">
+        <value>전체 계산</value>
+    </data>
+    <data name="Btn_Compress">
+        <value>압축 (.Zip)</value>
+    </data>
+    <data name="Btn_CheckAll">
+        <value>전체 검증</value>
+    </data>
+    <data name="Btn_CheckNow">
+        <value>즉시 검증</value>
+    </data>
+    <data name="Btn_Install">
+        <value>설치</value>
+    </data>
+    <data name="Btn_Accept">
+        <value>수락</value>
+    </data>
+    <data name="Btn_Decline">
+        <value>취소</value>
+    </data>
+    <data name="Title_CreateHash">
+        <value>해시 생성 및 압축</value>
+    </data>
+    <data name="Title_CheckHash">
+        <value>일괄 검증</value>
+    </data>
+    <data name="Title_Update">
+        <value>업데이트 확인</value>
+    </data>
+    <data name="Title_Disclaimer">
+        <value>개발자 버전 경고</value>
+    </data>
+    <data name="Title_About">
+        <value>정보</value>
+    </data>
+    <data name="Help_CreateHash">
+        <value>팁: Shift+C 전체 계산, Shift+Z 압축, Ctrl+F 파일 추가.</value>
+    </data>
+    <data name="Help_CheckHash">
+        <value>팁: Shift+A 전체 검증, Ctrl+F 파일 추가, Ctrl+Shift+H 목록 지우기.</value>
+    </data>
+    <data name="Lbl_Status_Ready">
+        <value>준비됨</value>
+    </data>
+    <data name="Lbl_Sample">
+        <value>예시:</value>
+    </data>
+    <data name="Lbl_CurrentVersion">
+        <value>현재 버전: {0}</value>
+    </data>
+    <data name="Lbl_Channel">
+        <value>배포 채널:</value>
+    </data>
+    <data name="Lbl_TotalFiles">
+        <value>총 파일 수: {0}</value>
+    </data>
+    <data name="Channel_Stable">
+        <value>안정판</value>
+    </data>
+    <data name="Channel_Dev">
+        <value>개발판</value>
+    </data>
+    <data name="Settings_Language">
+        <value>언어</value>
+    </data>
+    <data name="Settings_Theme">
+        <value>테마</value>
+    </data>
+    <data name="Settings_ThemeStyle">
+        <value>테마 스타일</value>
+    </data>
+    <data name="Settings_ThemeVariant">
+        <value>밝음/어두움</value>
+    </data>
+    <data name="Settings_Font">
+        <value>글꼴</value>
+    </data>
+    <data name="Settings_FontSize">
+        <value>글꼴 크기 (pt)</value>
+    </data>
+    <data name="Settings_AutoFont">
+        <value>언어에 최적화된 글꼴 자동 선택</value>
+    </data>
+    <data name="Settings_LockFont">
+        <value>기본 글꼴로 잠금</value>
+    </data>
+    <data name="Settings_Scale">
+        <value>UI 배율</value>
+    </data>
+    <data name="Settings_MaskHash">
+        <value>해시 값 마스킹 (보안)</value>
+    </data>
+    <data name="Settings_Reset">
+        <value>테마 초기화</value>
+    </data>
+    <data name="Settings_Other">
+        <value>개인정보 및 보안</value>
+    </data>
+    <data name="Settings_SetDefault">
+        <value>기본값으로 설정</value>
+    </data>
+    <data name="Settings_CustomColor">
+        <value>사용자 지정 텍스트 색상</value>
+    </data>
+    <data name="Settings_Advanced">
+        <value>고급</value>
+    </data>
+    <data name="Settings_AdminMode">
+        <value>관리자 권한으로 실행</value>
+    </data>
+    <data name="Settings_AdminDesc">
+        <value>재시작 필요. 보호된 파일에 접근 허용.</value>
+    </data>
+    <data name="Settings_FileSizeLimit">
+        <value>입력 파일 크기 제한</value>
+    </data>
+    <data name="Settings_FileSizeDesc">
+        <value>처리할 파일의 최대 크기.</value>
+    </data>
+    <data name="Settings_ForceQuitTimeout">
+        <value>강제 종료 타임아웃</value>
+    </data>
+    <data name="Settings_ForceQuitDesc">
+        <value>앱이 멈췄다고 판단하기 전 대기 시간 (초).</value>
+    </data>
+    <data name="Settings_FileTimeout">
+        <value>단일 파일 처리 타임아웃</value>
+    </data>
+    <data name="Settings_FileTimeoutDesc">
+        <value>단일 파일이 너무 오래 걸리면 취소.</value>
+    </data>
+    <data name="Settings_Emergency">
+        <value>긴급 조치</value>
+    </data>
+    <data name="Settings_EmergencyDesc">
+        <value>즉시 앱 강제 종료 및 모든 작업 취소.</value>
+    </data>
+    <data name="Settings_BtnForceQuit">
+        <value>강제 종료 및 모두 취소</value>
+    </data>
+    <data name="Settings_Configuration">
+        <value>구성</value>
+    </data>
+    <data name="Settings_LockSettings">
+        <value>설정 잠금 (기본값 저장)</value>
+    </data>
+    <data name="Settings_LockDesc">
+        <value>실수로 변경 방지. 해시 마스킹만 조정 가능.</value>
+    </data>
+    <data name="Settings_ResetAll">
+        <value>모든 설정 초기화</value>
+    </data>
+    <data name="Settings_ResetDesc">
+        <value>공장 초기값으로 복원.</value>
+    </data>
+    <data name="Settings_ConfigPath">
+        <value>구성 파일 경로</value>
+    </data>
+    <data name="Settings_ConfigDesc">
+        <value>전체 경로 표시 및 클립보드 복사.</value>
+    </data>
+    <data name="Settings_ShowPath">
+        <value>경로 표시</value>
+    </data>
+    <data name="Settings_AutoSave">
+        <value>설정이 config.json에 자동 저장됩니다</value>
+    </data>
+    <data name="Settings_DeveloperMode">
+        <value>개발자 모드</value>
+    </data>
+    <data name="Settings_DeveloperDesc">
+        <value>고급 로깅 및 디버깅 도구 활성화.</value>
+    </data>
+    <data name="Dev_Console">
+        <value>개발자 콘솔</value>
+    </data>
+    <data name="Dev_Beta">
+        <value>BETA</value>
+    </data>
+    <data name="Dev_Recording">
+        <value>녹화 중</value>
+    </data>
+    <data name="Dev_Paused">
+        <value>일시정지</value>
+    </data>
+    <data name="Dev_SaveToFile">
+        <value>파일로 저장</value>
+    </data>
+    <data name="Dev_NoSave">
+        <value>저장 안 함</value>
+    </data>
+    <data name="Dev_Clear">
+        <value>콘솔 지우기</value>
+    </data>
+    <data name="Dev_Copy">
+        <value>전체 복사</value>
+    </data>
+    <data name="Dev_OpenFolder">
+        <value>로그 폴더 열기</value>
+    </data>
+    <data name="About_Author">
+        <value>작성자</value>
+    </data>
+    <data name="About_Software">
+        <value>소프트웨어</value>
+    </data>
+    <data name="About_ThirdParty">
+        <value>서드파티 라이브러리</value>
+    </data>
+    <data name="About_Copyright">
+        <value>저작권</value>
+    </data>
+    <data name="About_Desc">
+        <value>파일 해시 생성, 검증 및 압축을 위한 강력한 도구. 적어도 나는 그렇게 생각함 :)</value>
+    </data>
+    <data name="About_License">
+        <value>MIT 라이선스로 배포됨.</value>
+    </data>
+    <data name="About_Tech">
+        <value>기술</value>
+    </data>
+    <data name="About_TechContent">
+        <value>C# 및 .NET 10.0.102로 제작됨.</value>
+    </data>
+    <data name="About_AI">
+        <value>AI 지원</value>
+    </data>
+    <data name="About_AIContent">
+        <value>이 소프트웨어는 개발 과정에서 AI의 도움을 받았습니다 (Gemini 3 Pro 및 Grok 4.1).</value>
+    </data>
+    <data name="Status_Processing">
+        <value>처리 중 ({0})...</value>
+    </data>
+    <data name="Status_Done">
+        <value>완료</value>
+    </data>
+    <data name="Status_Error">
+        <value>오류: {0}</value>
+    </data>
+    <data name="Status_Cancelled">
+        <value>취소됨</value>
+    </data>
+    <data name="Status_Saved">
+        <value>저장됨!</value>
+    </data>
+    <data name="Status_Compressed">
+        <value>압축 완료!</value>
+    </data>
+    <data name="Status_Waiting">
+        <value>해시/입력 대기 중...</value>
+    </data>
+    <data name="Status_MissingOriginal">
+        <value>원본 파일 없음!</value>
+    </data>
+    <data name="Status_MissingHash">
+        <value>해시 값 없음 (입력 또는 해시 파일 로드)</value>
+    </data>
+    <data name="Status_Valid">
+        <value>유효</value>
+    </data>
+    <data name="Status_Invalid">
+        <value>불일치!</value>
+    </data>
+    <data name="Status_HashFileLoaded">
+        <value>해시 파일 로드됨</value>
+    </data>
+    <data name="Status_HashFileMismatch">
+        <value>해시 파일 이름 불일치!</value>
+    </data>
+    <data name="Status_NoHashFound">
+        <value>파일에 해시가 없음!</value>
+    </data>
+    <data name="Status_Checking">
+        <value>업데이트 확인 중...</value>
+    </data>
+    <data name="Status_NewVersion">
+        <value>새 버전 발견!</value>
+    </data>
+    <data name="Status_Latest">
+        <value>최신 버전입니다.</value>
+    </data>
+    <data name="Status_CheckError">
+        <value>업데이트 확인 오류: {0}</value>
+    </data>
+    <data name="Status_Installing">
+        <value>다운로드 및 설치 중...</value>
+    </data>
+    <data name="Status_InstallError">
+        <value>설치 오류: {0}</value>
+    </data>
+    <data name="Status_ReadyFromHash">
+        <value>준비됨 (.hash 파일로부터)</value>
+    </data>
+    <data name="Status_LostOriginal">
+        <value>원본 파일 손실!</value>
+    </data>
+    <data name="Status_DropHashMismatch">
+        <value>해시 파일 이름 불일치!</value>
+    </data>
+    <data name="Status_DropHashSuccess">
+        <value>해시 파일 드롭 성공</value>
+    </data>
+    <data name="Status_DropNoHash">
+        <value>파일에 해시가 없음!</value>
+    </data>
+    <data name="Status_ReadError">
+        <value>파일 읽기 오류</value>
+    </data>
+    <data name="Msg_Result_Title">
+        <value>결과</value>
+    </data>
+    <data name="Msg_Result_Content">
+        <value>처리 완료!
+            ✅ 성공: {0}
+            ❌ 실패: {1}
+        </value>
+    </data>
+    <data name="Msg_CheckResult">
+        <value>{0}개 파일 확인됨.
+            ✅ 일치: {1}
+            ❌ 불일치/오류: {2}
+            ⛔ 취소됨: {3}
+        </value>
+    </data>
+    <data name="Msg_WrongHashFile">
+        <value>잘못된 파일!</value>
+    </data>
+    <data name="Msg_WrongHashFileContent">
+        <value>해시 파일 불일치!
+
+            원본 파일: {0}
+            선택 파일: {1}
+
+            올바른 해시 파일을 선택하세요.
+        </value>
+    </data>
+    <data name="Msg_UpdateTitle">
+        <value>새 업데이트</value>
+    </data>
+    <data name="Msg_UpdateContent">
+        <value>버전: {0}
+
+            변경 사항:
+            {1}
+
+            '즉시 업데이트'를 클릭하여 다운로드하세요.
+        </value>
+    </data>
+    <data name="Msg_NoUpdate">
+        <value>더 새로운 업데이트가 없습니다.</value>
+    </data>
+    <data name="Msg_Error">
+        <value>오류</value>
+    </data>
+    <data name="Msg_ReadHashError">
+        <value>이 해시 파일을 읽을 수 없습니다.</value>
+    </data>
+    <data name="Msg_ConfigCheck">
+        <value>구성 확인</value>
+    </data>
+    <data name="Msg_ConfigExists">
+        <value>파일 위치:
+            {0}
+        </value>
+    </data>
+    <data name="Msg_ConfigMissing">
+        <value>파일이 없습니다!</value>
+    </data>
+    <data name="Msg_ConfigCreated">
+        <value>파일 생성 성공!</value>
+    </data>
+    <data name="Msg_ConfigCopied">
+        <value>구성 경로 복사됨.</value>
+    </data>
+    <data name="Msg_AdminMode">
+        <value>관리자 모드</value>
+    </data>
+    <data name="Msg_AdminRestart">
+        <value>변경 적용을 위해 앱을 다시 시작하세요.</value>
+    </data>
+    <data name="Msg_OpenFolderError">
+        <value>폴더를 열 수 없습니다: {0}</value>
+    </data>
+    <data name="Msg_DisclaimerTitle">
+        <value>⚠️ 개발자 버전 경고</value>
+    </data>
+    <data name="Msg_DisclaimerContent">
+        <value>개발자 (프리릴리스) 업데이트 채널로 전환하려 합니다.
+
+            이 버전은 버그가 있을 수 있고 불안정하며 데이터 손실이 발생할 수 있습니다.
+
+            이 버전 사용으로 인한 모든 문제는 본인이 책임지지 않습니다.
+        </value>
+    </data>
+    <data name="Msg_DisclaimerAgree">
+        <value>읽었으며 동의합니다. 모든 책임을 제가 집니다.</value>
+    </data>
+    <data name="Dialog_SaveHash">
+        <value>해시 파일 저장</value>
+    </data>
+    <data name="Dialog_SaveZip">
+        <value>압축 파일 저장</value>
+    </data>
+    <data name="Dialog_SelectFiles">
+        <value>해시 계산할 파일 선택</value>
+    </data>
+    <data name="Dialog_SelectHashFile">
+        <value>{0}의 해시 파일 선택</value>
+    </data>
+    <data name="Dialog_SelectCheckFiles">
+        <value>파일 선택 (원본 또는 .hash 파일)</value>
+    </data>
+    <data name="Header_Fallback">
+        <value>고급: 이전 버전으로 롤백</value>
+    </data>
+    <data name="Desc_Fallback">
+        <value>새 버전에 문제가 있을 때 특정 버전을 설치할 수 있습니다.</value>
+    </data>
+    <data name="Watermark_PasteDrop">
+        <value>여기에 붙여넣기/드롭...</value>
+    </data>
+    <data name="Unit_Seconds">
+        <value>초</value>
+    </data>
+    <data name="Tip_Verify">
+        <value>검증</value>
+    </data>
+    <data name="Tip_Stop">
+        <value>중지</value>
+    </data>
+    <data name="Tip_RemoveFile">
+        <value>파일 제거</value>
+    </data>
+    <data name="Tip_CopyHash">
+        <value>해시 복사</value>
+    </data>
+    <data name="Tip_Compute">
+        <value>계산</value>
+    </data>
+    <data name="Tip_BrowseHash">
+        <value>해시 탐색</value>
+    </data>
+    <data name="Settings_ThemeDark">
+        <value>어두움</value>
+    </data>
+    <data name="Settings_ThemeLight">
+        <value>밝음</value>
+    </data>
+    <data name="Settings_ThemeSystem">
+        <value>시스템</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title">
+        <value>작업 중지됨</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded">
+        <value>파일 {0}이(가) 제한 {1} {2}을(를) 초과했습니다.</value>
+    </data>
+    <data name="Btn_Yes">
+        <value>예</value>
+    </data>
+    <data name="Btn_OK">
+        <value>확인</value>
+    </data>
+    <data name="Btn_No">
+        <value>아니오</value>
+    </data>
+    <data name="Dialog_FileType_Zip">
+        <value>Zip 압축 파일</value>
+    </data>
+    <data name="Msg_ConfirmExit_Title">
+        <value>종료 확인</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content">
+        <value>종료하면 모든 진행 중 작업이 취소됩니다. 계속하시겠습니까?</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content">
+        <value>타임아웃으로 인해 작업이 중지되었습니다.</value>
+    </data>
+    <data name="Dev_ToolTip_Save">
+        <value>디버그 로그를 디스크에 저장.</value>
+    </data>
+    <data name="Dev_ToolTip_Pause">
+        <value>실시간 로깅 일시정지.</value>
+    </data>
+    <data name="Tip_ShowHash">
+        <value>해시 표시</value>
+    </data>
+    <data name="Tip_HideHash">
+        <value>해시 숨김</value>
+    </data>
+    <data name="Tip_CopyPath">
+        <value>경로 복사</value>
+    </data>
+    <data name="Msg_DiskFull">
+        <value>디스크 공간이 부족합니다. 다른 위치를 선택하세요 :)</value>
+    </data>
+    <data name="Tip_HashVisibility">
+        <value>해시 가시성</value>
+    </data>
+    <data name="EmptyState_DropFiles">
+        <value>파일 없음. '파일 추가'를 클릭하여 시작하세요.</value>
+    </data>
+    <data name="Settings_LockTheme">
+        <value>이 테마를 기본으로 잠금</value>
+    </data>
 </root>

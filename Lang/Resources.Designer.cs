@@ -315,12 +315,6 @@ namespace CheckHash.Lang {
             }
         }
         
-        public static string Settings_TextTest {
-            get {
-                return ResourceManager.GetString("Settings_TextTest", resourceCulture);
-            }
-        }
-        
         public static string Settings_Advanced {
             get {
                 return ResourceManager.GetString("Settings_Advanced", resourceCulture);
@@ -903,21 +897,9 @@ namespace CheckHash.Lang {
             }
         }
         
-        public static string Tip_CopyHash {
+        public static string Unit_Seconds {
             get {
-                return ResourceManager.GetString("Tip_CopyHash", resourceCulture);
-            }
-        }
-        
-        public static string Tip_BrowseHash {
-            get {
-                return ResourceManager.GetString("Tip_BrowseHash", resourceCulture);
-            }
-        }
-        
-        public static string Tip_RemoveFile {
-            get {
-                return ResourceManager.GetString("Tip_RemoveFile", resourceCulture);
+                return ResourceManager.GetString("Unit_Seconds", resourceCulture);
             }
         }
         
@@ -927,15 +909,87 @@ namespace CheckHash.Lang {
             }
         }
         
+        public static string Tip_Stop {
+            get {
+                return ResourceManager.GetString("Tip_Stop", resourceCulture);
+            }
+        }
+        
+        public static string Tip_RemoveFile {
+            get {
+                return ResourceManager.GetString("Tip_RemoveFile", resourceCulture);
+            }
+        }
+        
+        public static string Tip_CopyHash {
+            get {
+                return ResourceManager.GetString("Tip_CopyHash", resourceCulture);
+            }
+        }
+        
         public static string Tip_Compute {
             get {
                 return ResourceManager.GetString("Tip_Compute", resourceCulture);
             }
         }
         
-        public static string Tip_Stop {
+        public static string Tip_BrowseHash {
             get {
-                return ResourceManager.GetString("Tip_Stop", resourceCulture);
+                return ResourceManager.GetString("Tip_BrowseHash", resourceCulture);
+            }
+        }
+        
+        public static string Settings_ThemeDark {
+            get {
+                return ResourceManager.GetString("Settings_ThemeDark", resourceCulture);
+            }
+        }
+        
+        public static string Settings_ThemeLight {
+            get {
+                return ResourceManager.GetString("Settings_ThemeLight", resourceCulture);
+            }
+        }
+        
+        public static string Settings_ThemeSystem {
+            get {
+                return ResourceManager.GetString("Settings_ThemeSystem", resourceCulture);
+            }
+        }
+        
+        public static string Msg_TaskCancelled_Title {
+            get {
+                return ResourceManager.GetString("Msg_TaskCancelled_Title", resourceCulture);
+            }
+        }
+        
+        public static string Msg_FileSizeLimitExceeded {
+            get {
+                return ResourceManager.GetString("Msg_FileSizeLimitExceeded", resourceCulture);
+            }
+        }
+        
+        public static string Btn_Yes {
+            get {
+                return ResourceManager.GetString("Btn_Yes", resourceCulture);
+            }
+        }
+        
+        public static string Btn_OK {
+            get {
+                return ResourceManager.GetString("Btn_OK", resourceCulture);
+            }
+        }
+        
+        public static string Btn_No {
+            get {
+                return ResourceManager.GetString("Btn_No", resourceCulture);
+            }
+        }
+        
+        public static string Dialog_FileType_Zip {
+            get {
+                return ResourceManager.GetString("Dialog_FileType_Zip", resourceCulture);
             }
         }
         
@@ -951,57 +1005,9 @@ namespace CheckHash.Lang {
             }
         }
         
-        public static string Btn_Yes {
-            get {
-                return ResourceManager.GetString("Btn_Yes", resourceCulture);
-            }
-        }
-        
-        public static string Btn_No {
-            get {
-                return ResourceManager.GetString("Btn_No", resourceCulture);
-            }
-        }
-        
-        public static string Msg_TaskCancelled_Title {
-            get {
-                return ResourceManager.GetString("Msg_TaskCancelled_Title", resourceCulture);
-            }
-        }
-        
         public static string Msg_TaskCancelled_Content {
             get {
                 return ResourceManager.GetString("Msg_TaskCancelled_Content", resourceCulture);
-            }
-        }
-        
-        public static string Settings_ThemeSystem {
-            get {
-                return ResourceManager.GetString("Settings_ThemeSystem", resourceCulture);
-            }
-        }
-        
-        public static string Settings_ThemeLight {
-            get {
-                return ResourceManager.GetString("Settings_ThemeLight", resourceCulture);
-            }
-        }
-        
-        public static string Settings_ThemeDark {
-            get {
-                return ResourceManager.GetString("Settings_ThemeDark", resourceCulture);
-            }
-        }
-        
-        public static string Unit_Seconds {
-            get {
-                return ResourceManager.GetString("Unit_Seconds", resourceCulture);
-            }
-        }
-        
-        public static string Dev_ToolTip_Pause {
-            get {
-                return ResourceManager.GetString("Dev_ToolTip_Pause", resourceCulture);
             }
         }
         
@@ -1011,21 +1017,9 @@ namespace CheckHash.Lang {
             }
         }
         
-        public static string Dialog_FileType_Zip {
+        public static string Dev_ToolTip_Pause {
             get {
-                return ResourceManager.GetString("Dialog_FileType_Zip", resourceCulture);
-            }
-        }
-        
-        public static string Btn_OK {
-            get {
-                return ResourceManager.GetString("Btn_OK", resourceCulture);
-            }
-        }
-        
-        public static string Msg_FileSizeLimitExceeded {
-            get {
-                return ResourceManager.GetString("Msg_FileSizeLimitExceeded", resourceCulture);
+                return ResourceManager.GetString("Dev_ToolTip_Pause", resourceCulture);
             }
         }
         
@@ -1041,12 +1035,6 @@ namespace CheckHash.Lang {
             }
         }
         
-        public static string Tip_HashVisibility {
-            get {
-                return ResourceManager.GetString("Tip_HashVisibility", resourceCulture);
-            }
-        }
-        
         public static string Tip_CopyPath {
             get {
                 return ResourceManager.GetString("Tip_CopyPath", resourceCulture);
@@ -1056,6 +1044,24 @@ namespace CheckHash.Lang {
         public static string Msg_DiskFull {
             get {
                 return ResourceManager.GetString("Msg_DiskFull", resourceCulture);
+            }
+        }
+        
+        public static string Tip_HashVisibility {
+            get {
+                return ResourceManager.GetString("Tip_HashVisibility", resourceCulture);
+            }
+        }
+        
+        public static string EmptyState_DropFiles {
+            get {
+                return ResourceManager.GetString("EmptyState_DropFiles", resourceCulture);
+            }
+        }
+        
+        public static string Settings_LockTheme {
+            get {
+                return ResourceManager.GetString("Settings_LockTheme", resourceCulture);
             }
         }
     }

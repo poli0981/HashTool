@@ -19,540 +19,539 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Hash genereren</value>
+        <value>Krijo Hash</value>
     </data>
     <data name="Menu_Check">
-        <value>Hash controleren</value>
+        <value>Verifiko Hash</value>
     </data>
     <data name="Menu_Settings">
-        <value>Instellingen</value>
+        <value>Cilësimet</value>
     </data>
     <data name="Menu_Update">
-        <value>Update</value>
+        <value>Përditëso</value>
     </data>
     <data name="Menu_Theme">
-        <value>Thema</value>
+        <value>Tema</value>
     </data>
     <data name="Menu_About">
-        <value>Over</value>
+        <value>Rreth</value>
     </data>
     <data name="Menu_Developer">
-        <value>Ontwikkelaar</value>
+        <value>Zhvillues</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>Bestanden toevoegen...</value>
+        <value>Shto Skedarë...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Lijst wissen</value>
+        <value>Pastro Listën</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>ALLES BEREKENEN</value>
+        <value>LLOGARIT TË GJITHA</value>
     </data>
     <data name="Btn_Compress">
-        <value>Comprimeren (.Zip)</value>
+        <value>Kompreso (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ALLES CONTROLEREN</value>
+        <value>VERIFIKO TË GJITHA</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Nu controleren</value>
+        <value>Verifiko Tani</value>
     </data>
     <data name="Btn_Install">
-        <value>Installeren</value>
+        <value>Instalo</value>
     </data>
     <data name="Btn_Accept">
-        <value>Accepteren</value>
+        <value>Prano</value>
     </data>
     <data name="Btn_Decline">
-        <value>Weigeren</value>
+        <value>Refuzo</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Hash genereren &amp; comprimeren</value>
+        <value>Krijo Hash &amp; Kompreso</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Batchcontrole</value>
+        <value>Verifikim Grumbull</value>
     </data>
     <data name="Title_Update">
-        <value>Controleren op updates</value>
+        <value>Kontrollo Përditësimet</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Waarschuwing ontwikkelaarsversie</value>
+        <value>Paralajmërim Version Zhvilluesi</value>
     </data>
     <data name="Title_About">
-        <value>Over</value>
+        <value>Rreth</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tip: Shift+C om alles te berekenen, Shift+Z om te comprimeren, Ctrl+F om bestanden toe te voegen.</value>
+        <value>Këshillë: Shift+C për Llogarit të Gjitha, Shift+Z për Kompreso, Ctrl+F për Shto Skedarë.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A om alles te controleren, Ctrl+F om bestanden toe te voegen, Ctrl+Shift+H om lijst te
-            wissen.
+        <value>Këshillë: Shift+A për Verifiko të Gjitha, Ctrl+F për Shto Skedarë, Ctrl+Shift+H për Pastro Listën.
         </value>
     </data>
     <data name="Lbl_Status_Ready">
-        <value>Klaar</value>
+        <value>Gati</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Voorbeeld:</value>
+        <value>Shembull:</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>Huidige versie: {0}</value>
+        <value>Versioni aktual: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Releasekanaal:</value>
+        <value>Kanali i publikimit:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Totaal bestanden: {0}</value>
+        <value>Total skedarë: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabiel</value>
+        <value>Stabil</value>
     </data>
     <data name="Channel_Dev">
-        <value>Ontwikkelaarseditie</value>
+        <value>Version Zhvilluesi</value>
     </data>
     <data name="Settings_Language">
-        <value>Taal</value>
+        <value>Gjuha</value>
     </data>
     <data name="Settings_Theme">
-        <value>Thema</value>
+        <value>Tema</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>Themastijl</value>
+        <value>Stili i temës</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Licht/Donker</value>
+        <value>E ndritshme/E errët</value>
     </data>
     <data name="Settings_Font">
-        <value>Lettertype</value>
+        <value>Shkronja</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Lettergrootte (pt)</value>
+        <value>Madhësia shkronjave (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automatisch optimale lettertype voor taal selecteren</value>
+        <value>Zgjidh automatikisht shkronjën optimale për gjuhën</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Vergrendelen als standaardlettertype</value>
+        <value>Blloko si shkronjë default</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI-schaal</value>
+        <value>Shkalla UI</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Hash-waarden maskeren (Beveiliging)</value>
+        <value>Masko Vlerat Hash (Siguri)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Thema resetten</value>
+        <value>Rivendos temën</value>
     </data>
     <data name="Settings_Other">
-        <value>Privacy &amp; Beveiliging</value>
+        <value>Privatësi &amp; Siguri</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Instellen als standaard</value>
+        <value>Vendos si default</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Aangepaste tekstkleur</value>
+        <value>Ngjyrë teksti e personalizuar</value>
     </data>
     <data name="Settings_Advanced">
-        <value>Geavanceerd</value>
+        <value>Avancuar</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Als administrator uitvoeren</value>
+        <value>Ekzekuto si administrator</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Herstart vereist. Geeft toegang tot beveiligde bestanden.</value>
+        <value>Kërkon rinisje. Lejon qasje në skedarë të mbrojtur.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Limiet invoerbestandsgrootte</value>
+        <value>Kufizim madhësie skedari hyrës</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maximale grootte voor te verwerken bestanden.</value>
+        <value>Madhësia maksimale për skedarët për përpunim.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Timeout geforceerd afsluiten</value>
+        <value>Kohë dalje e detyruar</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Tijd (seconden) voordat app als vastgelopen wordt beschouwd.</value>
+        <value>Kohë (sekonda) para se app të konsiderohet e ngrirë.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Timeout bestandsverwerking</value>
+        <value>Kohë përpunimi skedari</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Annuleren als één bestand te lang duurt.</value>
+        <value>Anulo nëse një skedar merr shumë kohë.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Noodactie</value>
+        <value>Veprim urgjent</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>App geforceerd afsluiten en alle taken onmiddellijk annuleren.</value>
+        <value>Mbyllje e detyruar e app dhe anulim i menjëhershëm i të gjitha detyrave.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Geforceerd afsluiten &amp; Alles annuleren</value>
+        <value>Dalje e detyruar &amp; Anulo të gjitha</value>
     </data>
     <data name="Settings_Configuration">
-        <value>Configuratie</value>
+        <value>Konfigurimi</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Instellingen vergrendelen (Opslaan als standaard)</value>
+        <value>Blloko cilësimet (Ruaj si default)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Voorkom onbedoelde wijzigingen. Alleen hash-maskering blijft aanpasbaar.</value>
+        <value>Parandalon ndryshime aksidentale. Vetëm maskimi Hash mbetet i rregullueshëm.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Alle instellingen resetten</value>
+        <value>Rivendos të gjitha cilësimet</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Terugzetten naar fabrieksinstellingen.</value>
+        <value>Rikthe në cilësimet e fabrikës.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Configuratiebestandspad</value>
+        <value>Rruga skedarit konfigurimi</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Volledig pad tonen en kopiëren naar klembord.</value>
+        <value>Shfaq rrugën e plotë dhe kopjo në clipboard.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Pad tonen</value>
+        <value>Shfaq rrugën</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Instellingen worden automatisch opgeslagen in config.json</value>
+        <value>Cilësimet ruhen automatikisht në config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Ontwikkelaarsmodus</value>
+        <value>Modalitet zhvilluesi</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Geavanceerde logging en debugtools inschakelen.</value>
+        <value>Aktivizo regjistrim të avancuar dhe vegla debug.</value>
     </data>
     <data name="Dev_Console">
-        <value>Ontwikkelaarsconsole</value>
+        <value>Konsolë zhvilluesi</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Opname</value>
+        <value>Regjistrim</value>
     </data>
     <data name="Dev_Paused">
-        <value>Gepauzeerd</value>
+        <value>Në pauzë</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>Opslaan in bestand</value>
+        <value>Ruaj në skedar</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Niet opslaan</value>
+        <value>Mos ruaj</value>
     </data>
     <data name="Dev_Clear">
-        <value>Console wissen</value>
+        <value>Pastro konsolën</value>
     </data>
     <data name="Dev_Copy">
-        <value>Alles kopiëren</value>
+        <value>Kopjo të gjitha</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Logmap openen</value>
+        <value>Hap dosjen e logeve</value>
     </data>
     <data name="About_Author">
-        <value>Auteur</value>
+        <value>Autor</value>
     </data>
     <data name="About_Software">
-        <value>Software</value>
+        <value>Softuer</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Derde partij bibliotheken</value>
+        <value>Librari të palëve të treta</value>
     </data>
     <data name="About_Copyright">
-        <value>Auteursrecht</value>
+        <value>Të drejta autori</value>
     </data>
     <data name="About_Desc">
-        <value>Krachtig hulpmiddel voor het genereren, controleren en comprimeren van bestandshashes. Of dat denk ik
-            tenminste :)
+        <value>Vegël e fuqishme për të krijuar, verifikuar dhe kompresuar hash skedarësh. Ose të paktën kështu mendoj
+            :)
         </value>
     </data>
     <data name="About_License">
-        <value>Uitgegeven onder MIT-licentie.</value>
+        <value>Lëshuar nën licencën MIT.</value>
     </data>
     <data name="About_Tech">
-        <value>Technologie</value>
+        <value>Teknologji</value>
     </data>
     <data name="About_TechContent">
-        <value>Gebouwd met C# en .NET 10.0.102.</value>
+        <value>Ndërtuar me C# dhe .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>AI-ondersteuning</value>
+        <value>Ndihmë AI</value>
     </data>
     <data name="About_AIContent">
-        <value>Deze software is ontwikkeld met hulp van AI (Gemini 3 Pro en Grok 4.1).</value>
+        <value>Ky softuer u zhvillua me ndihmën e AI (Gemini 3 Pro dhe Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
-        <value>Verwerken ({0})...</value>
+        <value>Përpunim ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>Voltooid</value>
+        <value>Përfunduar</value>
     </data>
     <data name="Status_Error">
-        <value>Fout: {0}</value>
+        <value>Gabim: {0}</value>
     </data>
     <data name="Status_Cancelled">
-        <value>Geannuleerd</value>
+        <value>Anuluar</value>
     </data>
     <data name="Status_Saved">
-        <value>Opgeslagen!</value>
+        <value>Ruajtur!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Gecomprimeerd!</value>
+        <value>Kompresuar!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Wachten op hash/invoer...</value>
+        <value>Në pritje të hash/hyrjes...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Origineel bestand ontbreekt!</value>
+        <value>Mungon skedari origjinal!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash-waarde ontbreekt (Voer in of laad hashbestand)</value>
+        <value>Mungon vlera hash (Shkruani ose ngarkoni skedar hash)</value>
     </data>
     <data name="Status_Valid">
-        <value>GELDIG</value>
+        <value>VALIDE</value>
     </data>
     <data name="Status_Invalid">
-        <value>ONGELDIG!</value>
+        <value>E PAVLEFSHME!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Hashbestand geladen</value>
+        <value>Skedari hash u ngarkua</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hashbestandsnaam komt niet overeen!</value>
+        <value>Emri i skedarit hash nuk përputhet!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Bestand bevat geen hash!</value>
+        <value>Skedari nuk përmban hash!</value>
     </data>
     <data name="Status_Checking">
-        <value>Controleren op updates...</value>
+        <value>Kontrollim përditësimesh...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Nieuwe versie gedetecteerd!</value>
+        <value>Zbuluar version i ri!</value>
     </data>
     <data name="Status_Latest">
-        <value>Je gebruikt de nieuwste versie.</value>
+        <value>Po përdorni versionin më të fundit.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Updatecontrolefout: {0}</value>
+        <value>Gabim kontrolli përditësimi: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Downloaden en installeren...</value>
+        <value>Shkarkim dhe instalim...</value>
     </data>
     <data name="Status_InstallError">
-        <value>Installatiefout: {0}</value>
+        <value>Gabim instalimi: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Klaar (Van .hash-bestand)</value>
+        <value>Gati (Nga skedari .hash)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Origineel bestand verloren!</value>
+        <value>Skedari origjinal humbur!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hashbestandsnaam komt niet overeen!</value>
+        <value>Emri i skedarit hash nuk përputhet!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hashbestand succesvol gedropt</value>
+        <value>Skedari hash u hodh me sukses</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Bestand bevat geen hash!</value>
+        <value>Skedari nuk përmban hash!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Bestandleesfout</value>
+        <value>Gabim leximi skedari</value>
     </data>
     <data name="Msg_Result_Title">
-        <value>Resultaat</value>
+        <value>Rezultati</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Verwerking voltooid!
-            ✅ Succes: {0}
-            ❌ Mislukt: {1}
+        <value>Përpunimi përfundoi!
+            ✅ Sukses: {0}
+            ❌ Dështim: {1}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>{0} bestanden gecontroleerd.
-            ✅ Overeenkomst: {1}
-            ❌ Geen overeenkomst/Fout: {2}
-            ⛔ Geannuleerd: {3}
+        <value>Kontrolluar {0} skedarë.
+            ✅ Përputhet: {1}
+            ❌ Nuk përputhet/Gabim: {2}
+            ⛔ Anuluar: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>Verkeerd bestand!</value>
+        <value>Skedar i gabuar!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hashbestand komt niet overeen!
+        <value>Skedari hash nuk përputhet!
 
-            Origineel bestand: {0}
-            Geselecteerd bestand: {1}
+            Skedari origjinal: {0}
+            Skedari i zgjedhur: {1}
 
-            Selecteer het juiste bijgevoegde hashbestand.
+            Ju lutem zgjidhni skedarin hash të saktë të bashkangjitur.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Nieuwe update</value>
+        <value>Përditësim i ri</value>
     </data>
     <data name="Msg_UpdateContent">
-        <value>Versie: {0}
+        <value>Versioni: {0}
 
-            Wijzigingen:
+            Ndryshimet:
             {1}
 
-            Klik 'Nu bijwerken' om te downloaden.
+            Klikoni 'Përditëso tani' për të shkarkuar.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Geen nieuwere updates gevonden.</value>
+        <value>Nuk u gjetën përditësime më të reja.</value>
     </data>
     <data name="Msg_Error">
-        <value>Fout</value>
+        <value>Gabim</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Kan dit hashbestand niet lezen.</value>
+        <value>Nuk mund të lexohet ky skedar hash.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Configuratiecontrole</value>
+        <value>Kontroll konfigurimi</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Bestand bestaat op:
+        <value>Skedari ekziston në:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Bestand bestaat niet!</value>
+        <value>Skedari nuk ekziston!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Bestand succesvol aangemaakt!</value>
+        <value>Skedari u krijua me sukses!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Configuratiepad gekopieerd.</value>
+        <value>Rruga konfigurimi u kopjua.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Beheerdersmodus</value>
+        <value>Modalitet administrator</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Herstart de toepassing om wijzigingen toe te passen.</value>
+        <value>Ju lutem rinisni aplikacionin që ndryshimet të hyjnë në fuqi.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Kan map niet openen: {0}</value>
+        <value>Nuk mund të hapet dosja: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ WAARSCHUWING ONTWIKKELAARSVERSIE</value>
+        <value>⚠️ PARALAJMËRIM VERSION ZHVILLUESI</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Je staat op het punt over te schakelen naar het ontwikkelaarsupdatekanaal (prerelease).
+        <value>Ju jeni duke kaluar në kanalin e përditësimeve Zhvillues (para-version).
 
-            Deze versie kan bugs bevatten, instabiel zijn en gegevensverlies veroorzaken.
+            Kjo version mund të përmbajë gabime, të jetë e paqëndrueshme dhe të shkaktojë humbje të dhënash.
 
-            Ik ben niet verantwoordelijk voor problemen die ontstaan door het gebruik van deze versie.
+            Unë nuk jam përgjegjës për problemet që rrjedhin nga përdorimi i kësaj versioni.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Ik heb gelezen en ga akkoord. Ik neem volledige verantwoordelijkheid.</value>
+        <value>Kam lexuar dhe pranoj. Marr përgjegjësinë e plotë.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Hashbestand opslaan</value>
+        <value>Ruaj skedarin hash</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Gecomprimeerd bestand opslaan</value>
+        <value>Ruaj skedarin e kompresuar</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Bestanden selecteren voor hash</value>
+        <value>Zgjidh skedarë për hash</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Hashbestand selecteren voor: {0}</value>
+        <value>Zgjidh skedarin hash për: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Bestanden selecteren (Origineel of .hash-bestand)</value>
+        <value>Zgjidh skedarë (Origjinal ose skedar .hash)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Geavanceerd: Terugval naar oudere versie</value>
+        <value>Avancuar: Kthehu në versionin e vjetër</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Deze functie staat toe een specifieke versie te installeren als de nieuwe problemen heeft.</value>
+        <value>Kjo veçori lejon instalimin e një versioni specifik nëse versioni i ri ka probleme.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Plak/Drop hier...</value>
+        <value>Ngjite/Hidhe këtu...</value>
     </data>
     <data name="Unit_Seconds">
-        <value>Seconden</value>
+        <value>Sekonda</value>
     </data>
     <data name="Tip_Verify">
-        <value>Verifiëren</value>
+        <value>Verifiko</value>
     </data>
     <data name="Tip_Stop">
-        <value>Stoppen</value>
+        <value>Ndalo</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>Bestand verwijderen</value>
+        <value>Hiq skedarin</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Hash kopiëren</value>
+        <value>Kopjo hash</value>
     </data>
     <data name="Tip_Compute">
-        <value>Berekenen</value>
+        <value>Llogarit</value>
     </data>
     <data name="Tip_BrowseHash">
-        <value>Hash doorbladeren</value>
+        <value>Shfleto hash</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>Donker</value>
+        <value>E errët</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>Licht</value>
+        <value>E ndritshme</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>Systeem</value>
+        <value>Sistem</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>Taak gestopt</value>
+        <value>Detyra u ndal</value>
     </data>
     <data name="Msg_FileSizeLimitExceeded">
-        <value>Bestand {0} overschrijdt limiet {1} {2}.</value>
+        <value>Skedari {0} tejkalon limitin {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
-        <value>Ja</value>
+        <value>Po</value>
     </data>
     <data name="Btn_OK">
         <value>OK</value>
     </data>
     <data name="Btn_No">
-        <value>Nee</value>
+        <value>Jo</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip-archief</value>
+        <value>Arkiv Zip</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Afsluiten bevestigen</value>
+        <value>Konfirmo daljen</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Afsluiten annuleert alle lopende taken. Weet je het zeker?</value>
+        <value>Dalja do të anulojë të gjitha detyrat në vazhdim. Je i sigurt?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Taak gestopt vanwege timeout.</value>
+        <value>Detyra u ndal për shkak të timeout.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Debuglog opslaan op schijf.</value>
+        <value>Ruaj log debug në disk.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Realtime logging pauzeren.</value>
+        <value>Pauzo regjistrimin në kohë reale.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Hash tonen</value>
+        <value>Shfaq hash</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Hash verbergen</value>
+        <value>Fshih hash</value>
     </data>
     <data name="Tip_CopyPath">
-        <value>Pad kopiëren</value>
+        <value>Kopjo rrugën</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Je schijf is vol. Kies een andere locatie makker :)</value>
+        <value>Disku yt është plot. Zgjidh vend tjetër shok :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Hash-zichtbaarheid</value>
+        <value>Dukshmëria e hash</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Geen bestanden. Klik 'Bestanden toevoegen' om te beginnen.</value>
+        <value>Nuk ka skedarë. Kliko 'Shto Skedarë' për të filluar.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Dit thema vergrendelen als standaard</value>
+        <value>Blloko këtë temë si default</value>
     </data>
 </root>

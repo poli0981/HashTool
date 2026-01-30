@@ -19,540 +19,537 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Hash genereren</value>
+        <value>Búa til hash</value>
     </data>
     <data name="Menu_Check">
-        <value>Hash controleren</value>
+        <value>Athuga hash</value>
     </data>
     <data name="Menu_Settings">
-        <value>Instellingen</value>
+        <value>Stillingar</value>
     </data>
     <data name="Menu_Update">
-        <value>Update</value>
+        <value>Uppfæra</value>
     </data>
     <data name="Menu_Theme">
-        <value>Thema</value>
+        <value>Þema</value>
     </data>
     <data name="Menu_About">
-        <value>Over</value>
+        <value>Um</value>
     </data>
     <data name="Menu_Developer">
-        <value>Ontwikkelaar</value>
+        <value>Forritari</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>Bestanden toevoegen...</value>
+        <value>Bæta við skrám...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Lijst wissen</value>
+        <value>Hreinsa lista</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>ALLES BEREKENEN</value>
+        <value>REIKNA ALLT</value>
     </data>
     <data name="Btn_Compress">
-        <value>Comprimeren (.Zip)</value>
+        <value>Þjappa (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ALLES CONTROLEREN</value>
+        <value>ATHUGA ALLT</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Nu controleren</value>
+        <value>Athuga núna</value>
     </data>
     <data name="Btn_Install">
-        <value>Installeren</value>
+        <value>Setja upp</value>
     </data>
     <data name="Btn_Accept">
-        <value>Accepteren</value>
+        <value>Samþykkja</value>
     </data>
     <data name="Btn_Decline">
-        <value>Weigeren</value>
+        <value>Hafna</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Hash genereren &amp; comprimeren</value>
+        <value>Búa til hash &amp; þjappa</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Batchcontrole</value>
+        <value>Hópathugun</value>
     </data>
     <data name="Title_Update">
-        <value>Controleren op updates</value>
+        <value>Athuga uppfærslur</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Waarschuwing ontwikkelaarsversie</value>
+        <value>Viðvörun fyrir þróunarútgáfu</value>
     </data>
     <data name="Title_About">
-        <value>Over</value>
+        <value>Um</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tip: Shift+C om alles te berekenen, Shift+Z om te comprimeren, Ctrl+F om bestanden toe te voegen.</value>
+        <value>Ábending: Shift+C til að reikna allt, Shift+Z til að þjappa, Ctrl+F til að bæta við skrám.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A om alles te controleren, Ctrl+F om bestanden toe te voegen, Ctrl+Shift+H om lijst te
-            wissen.
+        <value>Ábending: Shift+A til að athuga allt, Ctrl+F til að bæta við skrám, Ctrl+Shift+H til að hreinsa lista.
         </value>
     </data>
     <data name="Lbl_Status_Ready">
-        <value>Klaar</value>
+        <value>Tilbúið</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Voorbeeld:</value>
+        <value>Dæmi:</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>Huidige versie: {0}</value>
+        <value>Núverandi útgáfa: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Releasekanaal:</value>
+        <value>Útgáfurás:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Totaal bestanden: {0}</value>
+        <value>Alls: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabiel</value>
+        <value>Stöðug</value>
     </data>
     <data name="Channel_Dev">
-        <value>Ontwikkelaarseditie</value>
+        <value>Þróunarútgáfa</value>
     </data>
     <data name="Settings_Language">
-        <value>Taal</value>
+        <value>Tungumál</value>
     </data>
     <data name="Settings_Theme">
-        <value>Thema</value>
+        <value>Þema</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>Themastijl</value>
+        <value>Þemastíll</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Licht/Donker</value>
+        <value>Ljós/Dökkt</value>
     </data>
     <data name="Settings_Font">
-        <value>Lettertype</value>
+        <value>Letur</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Lettergrootte (pt)</value>
+        <value>Leturstærð (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automatisch optimale lettertype voor taal selecteren</value>
+        <value>Sjálfvirk val á besta letri fyrir tungumál</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Vergrendelen als standaardlettertype</value>
+        <value>Læsa sem sjálfgefið letur</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI-schaal</value>
+        <value>Skölun UI</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Hash-waarden maskeren (Beveiliging)</value>
+        <value>Fela hash-gildi (Öryggi)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Thema resetten</value>
+        <value>Endurstilla þema</value>
     </data>
     <data name="Settings_Other">
-        <value>Privacy &amp; Beveiliging</value>
+        <value>Persónuvernd &amp; öryggi</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Instellen als standaard</value>
+        <value>Setja sem sjálfgefið</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Aangepaste tekstkleur</value>
+        <value>Sérsniðinn textalitur</value>
     </data>
     <data name="Settings_Advanced">
-        <value>Geavanceerd</value>
+        <value>Ítarlegt</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Als administrator uitvoeren</value>
+        <value>Keyra sem stjórnandi</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Herstart vereist. Geeft toegang tot beveiligde bestanden.</value>
+        <value>Krefst endurræsingar. Leyfir aðgang að vernduðum skrám.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Limiet invoerbestandsgrootte</value>
+        <value>Inntaksskrárstærðarmörk</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maximale grootte voor te verwerken bestanden.</value>
+        <value>Hámarksstærð fyrir skrár til vinnslu.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Timeout geforceerd afsluiten</value>
+        <value>Tímamörk fyrir þvingaða lokun</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Tijd (seconden) voordat app als vastgelopen wordt beschouwd.</value>
+        <value>Tími (sekúndur) áður en forritið er talið fast.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Timeout bestandsverwerking</value>
+        <value>Tímamörk fyrir skráarvinnslu</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Annuleren als één bestand te lang duurt.</value>
+        <value>Hætta við ef ein skrá tekur of langan tíma.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Noodactie</value>
+        <value>Neyðaraðgerð</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>App geforceerd afsluiten en alle taken onmiddellijk annuleren.</value>
+        <value>Þvinguð lokun forrits og hætta við allar verkefni strax.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Geforceerd afsluiten &amp; Alles annuleren</value>
+        <value>Þvinguð lokun &amp; hætta við allt</value>
     </data>
     <data name="Settings_Configuration">
-        <value>Configuratie</value>
+        <value>Stillingar</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Instellingen vergrendelen (Opslaan als standaard)</value>
+        <value>Læsa stillingum (Vista sem sjálfgefið)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Voorkom onbedoelde wijzigingen. Alleen hash-maskering blijft aanpasbaar.</value>
+        <value>Koma í veg fyrir óviljandi breytingar. Aðeins felulag hash er enn stillanlegt.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Alle instellingen resetten</value>
+        <value>Endurstilla allar stillingar</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Terugzetten naar fabrieksinstellingen.</value>
+        <value>Endurheimta verksmiðjustillingar.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Configuratiebestandspad</value>
+        <value>Slóð stillingaskrár</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Volledig pad tonen en kopiëren naar klembord.</value>
+        <value>Sýna fulla slóð og afrita í klippispjald.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Pad tonen</value>
+        <value>Sýna slóð</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Instellingen worden automatisch opgeslagen in config.json</value>
+        <value>Stillingar vistast sjálfkrafa í config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Ontwikkelaarsmodus</value>
+        <value>Þróunaraðgerð</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Geavanceerde logging en debugtools inschakelen.</value>
+        <value>Virkja háþróaða skráningu og villuleitarverkfæri.</value>
     </data>
     <data name="Dev_Console">
-        <value>Ontwikkelaarsconsole</value>
+        <value>Þróunarkonsóll</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Opname</value>
+        <value>Upptaka</value>
     </data>
     <data name="Dev_Paused">
-        <value>Gepauzeerd</value>
+        <value>Í bið</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>Opslaan in bestand</value>
+        <value>Vista í skrá</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Niet opslaan</value>
+        <value>Engin vistun</value>
     </data>
     <data name="Dev_Clear">
-        <value>Console wissen</value>
+        <value>Hreinsa konsóll</value>
     </data>
     <data name="Dev_Copy">
-        <value>Alles kopiëren</value>
+        <value>Afrita allt</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Logmap openen</value>
+        <value>Opna loggmöppu</value>
     </data>
     <data name="About_Author">
-        <value>Auteur</value>
+        <value>Höfundur</value>
     </data>
     <data name="About_Software">
-        <value>Software</value>
+        <value>Hugbúnaður</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Derde partij bibliotheken</value>
+        <value>Þriðju aðila bókasöfn</value>
     </data>
     <data name="About_Copyright">
-        <value>Auteursrecht</value>
+        <value>Höfundarréttur</value>
     </data>
     <data name="About_Desc">
-        <value>Krachtig hulpmiddel voor het genereren, controleren en comprimeren van bestandshashes. Of dat denk ik
-            tenminste :)
-        </value>
+        <value>Öflugt tól til að búa til, athuga og þjappa hash skrám. Eða ég held það allavega :)</value>
     </data>
     <data name="About_License">
-        <value>Uitgegeven onder MIT-licentie.</value>
+        <value>Gefið út undir MIT leyfi.</value>
     </data>
     <data name="About_Tech">
-        <value>Technologie</value>
+        <value>Tækni</value>
     </data>
     <data name="About_TechContent">
-        <value>Gebouwd met C# en .NET 10.0.102.</value>
+        <value>Byggt með C# og .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>AI-ondersteuning</value>
+        <value>AI aðstoð</value>
     </data>
     <data name="About_AIContent">
-        <value>Deze software is ontwikkeld met hulp van AI (Gemini 3 Pro en Grok 4.1).</value>
+        <value>Þessi hugbúnaður var þróaður með aðstoð AI (Gemini 3 Pro og Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
-        <value>Verwerken ({0})...</value>
+        <value>Vinnsla ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>Voltooid</value>
+        <value>Lokið</value>
     </data>
     <data name="Status_Error">
-        <value>Fout: {0}</value>
+        <value>Villa: {0}</value>
     </data>
     <data name="Status_Cancelled">
-        <value>Geannuleerd</value>
+        <value>Hætt við</value>
     </data>
     <data name="Status_Saved">
-        <value>Opgeslagen!</value>
+        <value>Vistað!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Gecomprimeerd!</value>
+        <value>Þjappað!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Wachten op hash/invoer...</value>
+        <value>Bíður eftir hash/inntaki...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Origineel bestand ontbreekt!</value>
+        <value>Upprunaleg skrá vantar!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash-waarde ontbreekt (Voer in of laad hashbestand)</value>
+        <value>Hash gildi vantar (Sláðu inn eða hlaða inn hash skrá)</value>
     </data>
     <data name="Status_Valid">
-        <value>GELDIG</value>
+        <value>GILT</value>
     </data>
     <data name="Status_Invalid">
-        <value>ONGELDIG!</value>
+        <value>ÓGILT!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Hashbestand geladen</value>
+        <value>Hash skrá hlaðin</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hashbestandsnaam komt niet overeen!</value>
+        <value>Nafn hash skrár passar ekki!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Bestand bevat geen hash!</value>
+        <value>Skráin inniheldur ekkert hash!</value>
     </data>
     <data name="Status_Checking">
-        <value>Controleren op updates...</value>
+        <value>Athuga uppfærslur...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Nieuwe versie gedetecteerd!</value>
+        <value>Ný útgáfa fannst!</value>
     </data>
     <data name="Status_Latest">
-        <value>Je gebruikt de nieuwste versie.</value>
+        <value>Þú ert að nota nýjustu útgáfuna.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Updatecontrolefout: {0}</value>
+        <value>Villa við að athuga uppfærslur: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Downloaden en installeren...</value>
+        <value>Sæki og set upp...</value>
     </data>
     <data name="Status_InstallError">
-        <value>Installatiefout: {0}</value>
+        <value>Uppsetningarvilla: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Klaar (Van .hash-bestand)</value>
+        <value>Tilbúið (Frá .hash skrá)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Origineel bestand verloren!</value>
+        <value>Upprunaleg skrá týnd!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hashbestandsnaam komt niet overeen!</value>
+        <value>Nafn hash skrár passar ekki!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hashbestand succesvol gedropt</value>
+        <value>Hash skrá sleppt með góðum árangri</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Bestand bevat geen hash!</value>
+        <value>Skráin inniheldur ekkert hash!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Bestandleesfout</value>
+        <value>Villa við að lesa skrá</value>
     </data>
     <data name="Msg_Result_Title">
-        <value>Resultaat</value>
+        <value>Niðurstaða</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Verwerking voltooid!
-            ✅ Succes: {0}
-            ❌ Mislukt: {1}
+        <value>Vinnsla lokið!
+            ✅ Árangur: {0}
+            ❌ Bilun: {1}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>{0} bestanden gecontroleerd.
-            ✅ Overeenkomst: {1}
-            ❌ Geen overeenkomst/Fout: {2}
-            ⛔ Geannuleerd: {3}
+        <value>Athugaði {0} skrár.
+            ✅ Passar: {1}
+            ❌ Passar ekki/Villa: {2}
+            ⛔ Hætt við: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>Verkeerd bestand!</value>
+        <value>Röng skrá!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hashbestand komt niet overeen!
+        <value>Hash skrá passar ekki!
 
-            Origineel bestand: {0}
-            Geselecteerd bestand: {1}
+            Upprunaleg skrá: {0}
+            Valin skrá: {1}
 
-            Selecteer het juiste bijgevoegde hashbestand.
+            Vinsamlegast veldu rétta meðfylgjandi hash skrá.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Nieuwe update</value>
+        <value>Ný uppfærsla</value>
     </data>
     <data name="Msg_UpdateContent">
-        <value>Versie: {0}
+        <value>Útgáfa: {0}
 
-            Wijzigingen:
+            Breytingar:
             {1}
 
-            Klik 'Nu bijwerken' om te downloaden.
+            Smelltu á 'Uppfæra núna' til að sækja.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Geen nieuwere updates gevonden.</value>
+        <value>Engar nýrri uppfærslur fundust.</value>
     </data>
     <data name="Msg_Error">
-        <value>Fout</value>
+        <value>Villa</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Kan dit hashbestand niet lezen.</value>
+        <value>Get ekki lesið þessa hash skrá.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Configuratiecontrole</value>
+        <value>Stillingaathugun</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Bestand bestaat op:
+        <value>Skrá er til staðar á:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Bestand bestaat niet!</value>
+        <value>Skrá vantar!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Bestand succesvol aangemaakt!</value>
+        <value>Skrá búin til með góðum árangri!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Configuratiepad gekopieerd.</value>
+        <value>Stillingaslóð afrituð.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Beheerdersmodus</value>
+        <value>Stjórnandahamur</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Herstart de toepassing om wijzigingen toe te passen.</value>
+        <value>Endurræstu forritið til að breytingar taki gildi.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Kan map niet openen: {0}</value>
+        <value>Get ekki opnað möppu: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ WAARSCHUWING ONTWIKKELAARSVERSIE</value>
+        <value>⚠️ VIÐVÖRUN FYRIR ÞRÓUNARÚTGÁFU</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Je staat op het punt over te schakelen naar het ontwikkelaarsupdatekanaal (prerelease).
+        <value>Þú ert að skipta yfir í þróunarrás (forútgáfa).
 
-            Deze versie kan bugs bevatten, instabiel zijn en gegevensverlies veroorzaken.
+            Þessi útgáfa getur innihaldið villur, verið óstöðug og valdið gagnatapi.
 
-            Ik ben niet verantwoordelijk voor problemen die ontstaan door het gebruik van deze versie.
+            Ég ber ekki ábyrgð á vandamálum sem stafa af notkun þessarar útgáfu.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Ik heb gelezen en ga akkoord. Ik neem volledige verantwoordelijkheid.</value>
+        <value>Ég hef lesið og samþykki. Ég tek á mig fulla ábyrgð.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Hashbestand opslaan</value>
+        <value>Vista hash skrá</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Gecomprimeerd bestand opslaan</value>
+        <value>Vista þjappaða skrá</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Bestanden selecteren voor hash</value>
+        <value>Veldu skrár til hash</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Hashbestand selecteren voor: {0}</value>
+        <value>Veldu hash skrá fyrir: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Bestanden selecteren (Origineel of .hash-bestand)</value>
+        <value>Veldu skrár (Upprunaleg eða .hash skrá)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Geavanceerd: Terugval naar oudere versie</value>
+        <value>Ítarlegt: Fara aftur í eldri útgáfu</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Deze functie staat toe een specifieke versie te installeren als de nieuwe problemen heeft.</value>
+        <value>Þessi eiginleiki leyfir uppsetningu á tiltekinni útgáfu ef nýja er með vandamál.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Plak/Drop hier...</value>
+        <value>Límdu/Slepptu hér...</value>
     </data>
     <data name="Unit_Seconds">
-        <value>Seconden</value>
+        <value>Sekúndur</value>
     </data>
     <data name="Tip_Verify">
-        <value>Verifiëren</value>
+        <value>Staðfesta</value>
     </data>
     <data name="Tip_Stop">
-        <value>Stoppen</value>
+        <value>Stöðva</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>Bestand verwijderen</value>
+        <value>Fjarlægja skrá</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Hash kopiëren</value>
+        <value>Afrita hash</value>
     </data>
     <data name="Tip_Compute">
-        <value>Berekenen</value>
+        <value>Reikna</value>
     </data>
     <data name="Tip_BrowseHash">
-        <value>Hash doorbladeren</value>
+        <value>Skoða hash</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>Donker</value>
+        <value>Dökkt</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>Licht</value>
+        <value>Ljóst</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>Systeem</value>
+        <value>Kerfi</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>Taak gestopt</value>
+        <value>Verkefni stöðvað</value>
     </data>
     <data name="Msg_FileSizeLimitExceeded">
-        <value>Bestand {0} overschrijdt limiet {1} {2}.</value>
+        <value>Skrá {0} fer yfir mörk {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
-        <value>Ja</value>
+        <value>Já</value>
     </data>
     <data name="Btn_OK">
         <value>OK</value>
     </data>
     <data name="Btn_No">
-        <value>Nee</value>
+        <value>Nei</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip-archief</value>
+        <value>Zip safn</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Afsluiten bevestigen</value>
+        <value>Staðfesta brottför</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Afsluiten annuleert alle lopende taken. Weet je het zeker?</value>
+        <value>Brotför hættir við öllum verkefnum í gangi. Ertu viss?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Taak gestopt vanwege timeout.</value>
+        <value>Verkefni stöðvað vegna tímamarka.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Debuglog opslaan op schijf.</value>
+        <value>Vista villuleitarskrá á disk.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Realtime logging pauzeren.</value>
+        <value>Pausa rauntíma skráningu.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Hash tonen</value>
+        <value>Sýna hash</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Hash verbergen</value>
+        <value>Fela hash</value>
     </data>
     <data name="Tip_CopyPath">
-        <value>Pad kopiëren</value>
+        <value>Afrita slóð</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Je schijf is vol. Kies een andere locatie makker :)</value>
+        <value>Diskurinn þinn er fullur. Veldu annan stað vinur :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Hash-zichtbaarheid</value>
+        <value>Hash sýnileiki</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Geen bestanden. Klik 'Bestanden toevoegen' om te beginnen.</value>
+        <value>Engar skrár. Smelltu 'Bæta við skrám' til að byrja.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Dit thema vergrendelen als standaard</value>
+        <value>Læsa þema sem sjálfgefið</value>
     </data>
 </root>

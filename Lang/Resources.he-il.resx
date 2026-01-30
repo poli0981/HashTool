@@ -1,0 +1,554 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="AppTitle">
+        <value>Hash Tool</value>
+    </data>
+    <data name="Menu_Create">
+        <value>צור האש</value>
+    </data>
+    <data name="Menu_Check">
+        <value>בדוק האש</value>
+    </data>
+    <data name="Menu_Settings">
+        <value>הגדרות</value>
+    </data>
+    <data name="Menu_Update">
+        <value>עדכון</value>
+    </data>
+    <data name="Menu_Theme">
+        <value>ערכת נושא</value>
+    </data>
+    <data name="Menu_About">
+        <value>אודות</value>
+    </data>
+    <data name="Menu_Developer">
+        <value>מפתח</value>
+    </data>
+    <data name="Btn_AddFiles">
+        <value>הוסף קבצים...</value>
+    </data>
+    <data name="Btn_Clear">
+        <value>נקה רשימה</value>
+    </data>
+    <data name="Btn_CalcAll">
+        <value>חשב הכל</value>
+    </data>
+    <data name="Btn_Compress">
+        <value>דחוס (.Zip)</value>
+    </data>
+    <data name="Btn_CheckAll">
+        <value>בדוק הכל</value>
+    </data>
+    <data name="Btn_CheckNow">
+        <value>בדוק עכשיו</value>
+    </data>
+    <data name="Btn_Install">
+        <value>התקן</value>
+    </data>
+    <data name="Btn_Accept">
+        <value>אשר</value>
+    </data>
+    <data name="Btn_Decline">
+        <value>דחה</value>
+    </data>
+    <data name="Title_CreateHash">
+        <value>צור האש ודחוס</value>
+    </data>
+    <data name="Title_CheckHash">
+        <value>בדיקה קבוצתית</value>
+    </data>
+    <data name="Title_Update">
+        <value>בדוק עדכונים</value>
+    </data>
+    <data name="Title_Disclaimer">
+        <value>אזהרת גרסת מפתח</value>
+    </data>
+    <data name="Title_About">
+        <value>אודות</value>
+    </data>
+    <data name="Help_creationHash">
+        <value>טיפ: Shift+C לחשב הכל, Shift+Z לדחוס, Ctrl+F להוסיף קבצים.</value>
+    </data>
+    <data name="Help_CheckHash">
+        <value>טיפ: Shift+A לבדוק הכל, Ctrl+F להוסיף קבצים, Ctrl+Shift+H לנקות רשימה.</value>
+    </data>
+    <data name="Lbl_Status_Ready">
+        <value>מוכן</value>
+    </data>
+    <data name="Lbl_Sample">
+        <value>דוגמה:</value>
+    </data>
+    <data name="Lbl_CurrentVersion">
+        <value>גרסה נוכחית: {0}</value>
+    </data>
+    <data name="Lbl_Channel">
+        <value>ערוץ שחרור:</value>
+    </data>
+    <data name="Lbl_TotalFiles">
+        <value>סך הקבצים: {0}</value>
+    </data>
+    <data name="Channel_Stable">
+        <value>יציב</value>
+    </data>
+    <data name="Channel_Dev">
+        <value>גרסת מפתח</value>
+    </data>
+    <data name="Settings_Language">
+        <value>שפה</value>
+    </data>
+    <data name="Settings_Theme">
+        <value>ערכת נושא</value>
+    </data>
+    <data name="Settings_ThemeStyle">
+        <value>סגנון ערכה</value>
+    </data>
+    <data name="Settings_ThemeVariant">
+        <value>בהיר/כהה</value>
+    </data>
+    <data name="Settings_Font">
+        <value>גופן</value>
+    </data>
+    <data name="Settings_FontSize">
+        <value>גודל גופן (pt)</value>
+    </data>
+    <data name="Settings_AutoFont">
+        <value>בחר גופן אופטימלי אוטומטית לשפה</value>
+    </data>
+    <data name="Settings_LockFont">
+        <value>נעל כגופן ברירת מחדל</value>
+    </data>
+    <data name="Settings_Scale">
+        <value>קנה מידה של ממשק</value>
+    </data>
+    <data name="Settings_MaskHash">
+        <value>הסתר ערכי האש (אבטחה)</value>
+    </data>
+    <data name="Settings_Reset">
+        <value>אפס ערכת נושא</value>
+    </data>
+    <data name="Settings_Other">
+        <value>פרטיות ואבטחה</value>
+    </data>
+    <data name="Settings_SetDefault">
+        <value>הגדר כברירת מחדל</value>
+    </data>
+    <data name="Settings_CustomColor">
+        <value>צבע טקסט מותאם אישית</value>
+    </data>
+    <data name="Settings_Advanced">
+        <value>מתקדם</value>
+    </data>
+    <data name="Settings_AdminMode">
+        <value>הפעל כמנהל</value>
+    </data>
+    <data name="Settings_AdminDesc">
+        <value>דורש הפעלה מחדש. מאפשר גישה לקבצים מוגנים.</value>
+    </data>
+    <data name="Settings_FileSizeLimit">
+        <value>מגבלת גודל קובץ קלט</value>
+    </data>
+    <data name="Settings_FileSizeDesc">
+        <value>גודל מרבי לקבצים לעיבוד.</value>
+    </data>
+    <data name="Settings_ForceQuitTimeout">
+        <value>זמן המתנה לכיבוי כפוי</value>
+    </data>
+    <data name="Settings_ForceQuitDesc">
+        <value>זמן (שניות) לפני שמחשיבים את האפליקציה כקפואה.</value>
+    </data>
+    <data name="Settings_FileTimeout">
+        <value>זמן המתנה לעיבוד קובץ</value>
+    </data>
+    <data name="Settings_FileTimeoutDesc">
+        <value>בטל אם קובץ אחד לוקח יותר מדי זמן.</value>
+    </data>
+    <data name="Settings_Emergency">
+        <value>פעולה חירום</value>
+    </data>
+    <data name="Settings_EmergencyDesc">
+        <value>כיבוי כפוי של האפליקציה וביטול כל המשימות מיד.</value>
+    </data>
+    <data name="Settings_BtnForceQuit">
+        <value>כיבוי כפוי וביטול הכל</value>
+    </data>
+    <data name="Settings_Configuration">
+        <value>תצורה</value>
+    </data>
+    <data name="Settings_LockSettings">
+        <value>נעל הגדרות (שמור כברירת מחדל)</value>
+    </data>
+    <data name="Settings_LockDesc">
+        <value>מנע שינויים מקריים. רק הסתרת האש ניתנת להתאמה.</value>
+    </data>
+    <data name="Settings_ResetAll">
+        <value>אפס כל ההגדרות</value>
+    </data>
+    <data name="Settings_ResetDesc">
+        <value>שחזר להגדרות יצרן.</value>
+    </data>
+    <data name="Settings_ConfigPath">
+        <value>נתיב קובץ תצורה</value>
+    </data>
+    <data name="Settings_ConfigDesc">
+        <value>הצג נתיב מלא והעתק ללוח.</value>
+    </data>
+    <data name="Settings_ShowPath">
+        <value>הצג נתיב</value>
+    </data>
+    <data name="Settings_AutoSave">
+        <value>ההגדרות נשמרות אוטומטית ב-config.json</value>
+    </data>
+    <data name="Settings_DeveloperMode">
+        <value>מצב מפתח</value>
+    </data>
+    <data name="Settings_DeveloperDesc">
+        <value>הפעל כלי רישום והצגת באגים מתקדמים.</value>
+    </data>
+    <data name="Dev_Console">
+        <value>קונסול מפתח</value>
+    </data>
+    <data name="Dev_Beta">
+        <value>BETA</value>
+    </data>
+    <data name="Dev_Recording">
+        <value>בהקלטה</value>
+    </data>
+    <data name="Dev_Paused">
+        <value>מושהה</value>
+    </data>
+    <data name="Dev_SaveToFile">
+        <value>שמור לקובץ</value>
+    </data>
+    <data name="Dev_NoSave">
+        <value>לא לשמור</value>
+    </data>
+    <data name="Dev_Clear">
+        <value>נקה קונסול</value>
+    </data>
+    <data name="Dev_Copy">
+        <value>העתק הכל</value>
+    </data>
+    <data name="Dev_OpenFolder">
+        <value>פתח תיקיית לוג</value>
+    </data>
+    <data name="About_Author">
+        <value>יוצר</value>
+    </data>
+    <data name="About_Software">
+        <value>תוכנה</value>
+    </data>
+    <data name="About_ThirdParty">
+        <value>ספריות צד שלישי</value>
+    </data>
+    <data name="About_Copyright">
+        <value>זכויות יוצרים</value>
+    </data>
+    <data name="About_Desc">
+        <value>כלי חזק ליצירה, בדיקה ודחיסה של האש קבצים. או לפחות אני חושב ככה :)</value>
+    </data>
+    <data name="About_License">
+        <value>פורסם תחת רישיון MIT.</value>
+    </data>
+    <data name="About_Tech">
+        <value>טכנולוגיה</value>
+    </data>
+    <data name="About_TechContent">
+        <value>נבנה עם C# ו-.NET 10.0.102.</value>
+    </data>
+    <data name="About_AI">
+        <value>סיוע AI</value>
+    </data>
+    <data name="About_AIContent">
+        <value>תוכנה זו פותחה בסיוע AI (Gemini 3 Pro ו-Grok 4.1).</value>
+    </data>
+    <data name="Status_Processing">
+        <value>מעבד ({0})...</value>
+    </data>
+    <data name="Status_Done">
+        <value>הושלם</value>
+    </data>
+    <data name="Status_Error">
+        <value>שגיאה: {0}</value>
+    </data>
+    <data name="Status_Cancelled">
+        <value>בוטל</value>
+    </data>
+    <data name="Status_Saved">
+        <value>נשמר!</value>
+    </data>
+    <data name="Status_Compressed">
+        <value>דחוס!</value>
+    </data>
+    <data name="Status_Waiting">
+        <value>ממתין להאש/קלט...</value>
+    </data>
+    <data name="Status_MissingOriginal">
+        <value>קובץ מקורי חסר!</value>
+    </data>
+    <data name="Status_MissingHash">
+        <value>ערך האש חסר (הזן או טען קובץ האש)</value>
+    </data>
+    <data name="Status_Valid">
+        <value>תקין</value>
+    </data>
+    <data name="Status_Invalid">
+        <value>לא תואם!</value>
+    </data>
+    <data name="Status_HashFileLoaded">
+        <value>קובץ האש נטען</value>
+    </data>
+    <data name="Status_HashFileMismatch">
+        <value>שם קובץ האש לא תואם!</value>
+    </data>
+    <data name="Status_NoHashFound">
+        <value>הקובץ אינו מכיל האש!</value>
+    </data>
+    <data name="Status_Checking">
+        <value>בודק עדכונים...</value>
+    </data>
+    <data name="Status_NewVersion">
+        <value>גרסה חדשה זוהתה!</value>
+    </data>
+    <data name="Status_Latest">
+        <value>אתה משתמש בגרסה העדכנית ביותר.</value>
+    </data>
+    <data name="Status_CheckError">
+        <value>שגיאת בדיקת עדכון: {0}</value>
+    </data>
+    <data name="Status_Installing">
+        <value>מוריד ומתקין...</value>
+    </data>
+    <data name="Status_InstallError">
+        <value>שגיאת התקנה: {0}</value>
+    </data>
+    <data name="Status_ReadyFromHash">
+        <value>מוכן (מקובץ .hash)</value>
+    </data>
+    <data name="Status_LostOriginal">
+        <value>קובץ מקורי אבד!</value>
+    </data>
+    <data name="Status_DropHashMismatch">
+        <value>שם קובץ האש לא תואם!</value>
+    </data>
+    <data name="Status_DropHashSuccess">
+        <value>קובץ האש הושלך בהצלחה</value>
+    </data>
+    <data name="Status_DropNoHash">
+        <value>הקובץ אינו מכיל האש!</value>
+    </data>
+    <data name="Status_ReadError">
+        <value>שגיאת קריאת קובץ</value>
+    </data>
+    <data name="Msg_Result_Title">
+        <value>תוצאה</value>
+    </data>
+    <data name="Msg_Result_Content">
+        <value>העיבוד הושלם!
+            ✅ הצלחה: {0}
+            ❌ כשל: {1}
+        </value>
+    </data>
+    <data name="Msg_CheckResult">
+        <value>נבדקו {0} קבצים.
+            ✅ תואם: {1}
+            ❌ לא תואם/שגיאה: {2}
+            ⛔ בוטל: {3}
+        </value>
+    </data>
+    <data name="Msg_WrongHashFile">
+        <value>קובץ שגוי!</value>
+    </data>
+    <data name="Msg_WrongHashFileContent">
+        <value>קובץ האש לא תואם!
+
+            קובץ מקורי: {0}
+            קובץ נבחר: {1}
+
+            אנא בחר את קובץ ההאש הנכון.
+        </value>
+    </data>
+    <data name="Msg_UpdateTitle">
+        <value>עדכון חדש</value>
+    </data>
+    <data name="Msg_UpdateContent">
+        <value>גרסה: {0}
+
+            שינויים:
+            {1}
+
+            לחץ 'עדכן עכשיו' להורדה.
+        </value>
+    </data>
+    <data name="Msg_NoUpdate">
+        <value>לא נמצאו עדכונים חדשים יותר.</value>
+    </data>
+    <data name="Msg_Error">
+        <value>שגיאה</value>
+    </data>
+    <data name="Msg_ReadHashError">
+        <value>לא ניתן לקרוא קובץ האש זה.</value>
+    </data>
+    <data name="Msg_ConfigCheck">
+        <value>בדיקת תצורה</value>
+    </data>
+    <data name="Msg_ConfigExists">
+        <value>הקובץ קיים ב:
+            {0}
+        </value>
+    </data>
+    <data name="Msg_ConfigMissing">
+        <value>הקובץ לא קיים!</value>
+    </data>
+    <data name="Msg_ConfigCreated">
+        <value>הקובץ נוצר בהצלחה!</value>
+    </data>
+    <data name="Msg_ConfigCopied">
+        <value>נתיב התצורה הועתק.</value>
+    </data>
+    <data name="Msg_AdminMode">
+        <value>מצב מנהל</value>
+    </data>
+    <data name="Msg_AdminRestart">
+        <value>אנא הפעל מחדש את האפליקציה כדי שהשינויים ייכנסו לתוקף.</value>
+    </data>
+    <data name="Msg_OpenFolderError">
+        <value>לא ניתן לפתוח תיקייה: {0}</value>
+    </data>
+    <data name="Msg_DisclaimerTitle">
+        <value>⚠️ אזהרת גרסת מפתח</value>
+    </data>
+    <data name="Msg_DisclaimerContent">
+        <value>אתה עומד לעבור לערוץ עדכוני מפתח (פרי-ריליז).
+
+            גרסה זו עלולה להכיל באגים, להיות לא יציבה ולגרום לאובדן נתונים.
+
+            אני לא אחראי לכל בעיה שתיגרם משימוש בגרסה זו.
+        </value>
+    </data>
+    <data name="Msg_DisclaimerAgree">
+        <value>קראתי והסכמתי. אני לוקח אחריות מלאה.</value>
+    </data>
+    <data name="Dialog_SaveHash">
+        <value>שמור קובץ האש</value>
+    </data>
+    <data name="Dialog_SaveZip">
+        <value>שמור קובץ דחוס</value>
+    </data>
+    <data name="Dialog_SelectFiles">
+        <value>בחר קבצים להאש</value>
+    </data>
+    <data name="Dialog_SelectHashFile">
+        <value>בחר קובץ האש עבור: {0}</value>
+    </data>
+    <data name="Dialog_SelectCheckFiles">
+        <value>בחר קבצים (מקורי או קובץ .hash)</value>
+    </data>
+    <data name="Header_Fallback">
+        <value>מתקדם: חזרה לגרסה ישנה יותר</value>
+    </data>
+    <data name="Desc_Fallback">
+        <value>תכונה זו מאפשרת התקנת גרסה ספציפית אם החדשה בעייתית.</value>
+    </data>
+    <data name="Watermark_PasteDrop">
+        <value>הדבק/שחרר כאן...</value>
+    </data>
+    <data name="Unit_Seconds">
+        <value>שניות</value>
+    </data>
+    <data name="Tip_Verify">
+        <value>אמת</value>
+    </data>
+    <data name="Tip_Stop">
+        <value>עצור</value>
+    </data>
+    <data name="Tip_RemoveFile">
+        <value>הסר קובץ</value>
+    </data>
+    <data name="Tip_CopyHash">
+        <value>העתק האש</value>
+    </data>
+    <data name="Tip_Compute">
+        <value>חשב</value>
+    </data>
+    <data name="Tip_BrowseHash">
+        <value>עיין בהאש</value>
+    </data>
+    <data name="Settings_ThemeDark">
+        <value>כהה</value>
+    </data>
+    <data name="Settings_ThemeLight">
+        <value>בהיר</value>
+    </data>
+    <data name="Settings_ThemeSystem">
+        <value>מערכת</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title">
+        <value>משימה בוטלה</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded">
+        <value>קובץ {0} חורג מהמגבלה {1} {2}.</value>
+    </data>
+    <data name="Btn_Yes">
+        <value>כן</value>
+    </data>
+    <data name="Btn_OK">
+        <value>אישור</value>
+    </data>
+    <data name="Btn_No">
+        <value>לא</value>
+    </data>
+    <data name="Dialog_FileType_Zip">
+        <value>ארכיון Zip</value>
+    </data>
+    <data name="Msg_ConfirmExit_Title">
+        <value>אשר יציאה</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content">
+        <value>יציאה תבטל את כל המשימות הפעילות. בטוח?</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content">
+        <value>המשימה בוטלה עקב פסק זמן.</value>
+    </data>
+    <data name="Dev_ToolTip_Save">
+        <value>שמור לוג דיבאג לדיסק.</value>
+    </data>
+    <data name="Dev_ToolTip_Pause">
+        <value>השהה רישום בזמן אמת.</value>
+    </data>
+    <data name="Tip_ShowHash">
+        <value>הצג האש</value>
+    </data>
+    <data name="Tip_HideHash">
+        <value>הסתר האש</value>
+    </data>
+    <data name="Tip_CopyPath">
+        <value>העתק נתיב</value>
+    </data>
+    <data name="Msg_DiskFull">
+        <value>הכונן שלך מלא. בחר מיקום אחר אחי :)</value>
+    </data>
+    <data name="Tip_HashVisibility">
+        <value>נראות האש</value>
+    </data>
+    <data name="EmptyState_DropFiles">
+        <value>אין קבצים. לחץ 'הוסף קבצים' להתחלה.</value>
+    </data>
+    <data name="Settings_LockTheme">
+        <value>נעל ערכה זו כברירת מחדל</value>
+    </data>
+</root>

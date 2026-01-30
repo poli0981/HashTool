@@ -1,0 +1,554 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="AppTitle">
+        <value>Hash Tool</value>
+    </data>
+    <data name="Menu_Create">
+        <value>هېش جوړول</value>
+    </data>
+    <data name="Menu_Check">
+        <value>هېش چک کول</value>
+    </data>
+    <data name="Menu_Settings">
+        <value>ترتیبات</value>
+    </data>
+    <data name="Menu_Update">
+        <value>اپډېټ</value>
+    </data>
+    <data name="Menu_Theme">
+        <value>تیم</value>
+    </data>
+    <data name="Menu_About">
+        <value>په اړه</value>
+    </data>
+    <data name="Menu_Developer">
+        <value>پراختیا کوونکی</value>
+    </data>
+    <data name="Btn_AddFiles">
+        <value>فایلونه اضافه کړئ...</value>
+    </data>
+    <data name="Btn_Clear">
+        <value>لیست پاک کړئ</value>
+    </data>
+    <data name="Btn_CalcAll">
+        <value>ټول حساب کړئ</value>
+    </data>
+    <data name="Btn_Compress">
+        <value>کمپرېس (.Zip)</value>
+    </data>
+    <data name="Btn_CheckAll">
+        <value>ټول چک کړئ</value>
+    </data>
+    <data name="Btn_CheckNow">
+        <value>اوس چک کړئ</value>
+    </data>
+    <data name="Btn_Install">
+        <value>انسټال کړئ</value>
+    </data>
+    <data name="Btn_Accept">
+        <value>منل</value>
+    </data>
+    <data name="Btn_Decline">
+        <value>رد کړئ</value>
+    </data>
+    <data name="Title_CreateHash">
+        <value>هېش جوړول او کمپرېس</value>
+    </data>
+    <data name="Title_CheckHash">
+        <value>بیچ تصدیق</value>
+    </data>
+    <data name="Title_Update">
+        <value>اپډېټ چک کړئ</value>
+    </data>
+    <data name="Title_Disclaimer">
+        <value>پراختیا کوونکي نسخه خبرداری</value>
+    </data>
+    <data name="Title_About">
+        <value>په اړه</value>
+    </data>
+    <data name="Help_CreateHash">
+        <value>لارښوونه: Shift+C ټول حساب کړئ، Shift+Z کمپرېس، Ctrl+F فایلونه اضافه کړئ.</value>
+    </data>
+    <data name="Help_CheckHash">
+        <value>لارښوونه: Shift+A ټول چک کړئ، Ctrl+F فایلونه اضافه کړئ، Ctrl+Shift+H لیست پاک کړئ.</value>
+    </data>
+    <data name="Lbl_Status_Ready">
+        <value>تیار</value>
+    </data>
+    <data name="Lbl_Sample">
+        <value>نمونې:</value>
+    </data>
+    <data name="Lbl_CurrentVersion">
+        <value>اوسنۍ نسخه: {0}</value>
+    </data>
+    <data name="Lbl_Channel">
+        <value>ریلیز چینل:</value>
+    </data>
+    <data name="Lbl_TotalFiles">
+        <value>ټول فایلونه: {0}</value>
+    </data>
+    <data name="Channel_Stable">
+        <value>ثابت</value>
+    </data>
+    <data name="Channel_Dev">
+        <value>ډېو ایډیشن</value>
+    </data>
+    <data name="Settings_Language">
+        <value>ژبه</value>
+    </data>
+    <data name="Settings_Theme">
+        <value>تیم</value>
+    </data>
+    <data name="Settings_ThemeStyle">
+        <value>تیم سټایل</value>
+    </data>
+    <data name="Settings_ThemeVariant">
+        <value>روښانه/تیاره</value>
+    </data>
+    <data name="Settings_Font">
+        <value>فانټ</value>
+    </data>
+    <data name="Settings_FontSize">
+        <value>فانټ سائز (pt)</value>
+    </data>
+    <data name="Settings_AutoFont">
+        <value>ژبې لپاره غوره فانټ په اتومات ډول غوره کړئ</value>
+    </data>
+    <data name="Settings_LockFont">
+        <value>ډیفالټ فانټ په توګه لاک کړئ</value>
+    </data>
+    <data name="Settings_Scale">
+        <value>UI سکیل</value>
+    </data>
+    <data name="Settings_MaskHash">
+        <value>هېش ارزښتونه ماسک کړئ (امنیت)</value>
+    </data>
+    <data name="Settings_Reset">
+        <value>تیم ری سیٹ کړئ</value>
+    </data>
+    <data name="Settings_Other">
+        <value>خصوصیت او امنیت</value>
+    </data>
+    <data name="Settings_SetDefault">
+        <value>ډیفالټ سیټ کړئ</value>
+    </data>
+    <data name="Settings_CustomColor">
+        <value>کسټم متن رنګ</value>
+    </data>
+    <data name="Settings_Advanced">
+        <value>پرمختللی</value>
+    </data>
+    <data name="Settings_AdminMode">
+        <value>د مدیر په توګه چل کړئ</value>
+    </data>
+    <data name="Settings_AdminDesc">
+        <value>ری سټارټ ته اړتیا لري. محافظت شوي فایلونو ته لاسرسی اجازه ورکوي.</value>
+    </data>
+    <data name="Settings_FileSizeLimit">
+        <value>انپوټ فایل سائز حد</value>
+    </data>
+    <data name="Settings_FileSizeDesc">
+        <value>پروسس کولو لپاره اعظمي سائز.</value>
+    </data>
+    <data name="Settings_ForceQuitTimeout">
+        <value>فورس کوټ ټایم اوټ</value>
+    </data>
+    <data name="Settings_ForceQuitDesc">
+        <value>اپ فریز ګڼل کېدو نه مخکې وخت (سیکنډ).</value>
+    </data>
+    <data name="Settings_FileTimeout">
+        <value>فایل پروسس ټایم اوټ</value>
+    </data>
+    <data name="Settings_FileTimeoutDesc">
+        <value>که یو فایل ډېر وخت ونیسي نو کنسل کړئ.</value>
+    </data>
+    <data name="Settings_Emergency">
+        <value>بیړنی عمل</value>
+    </data>
+    <data name="Settings_EmergencyDesc">
+        <value>اپ فورس کوټ کړئ او ټول ټاسکونه سمدستي کنسل کړئ.</value>
+    </data>
+    <data name="Settings_BtnForceQuit">
+        <value>فورس کوټ او ټول کنسل کړئ</value>
+    </data>
+    <data name="Settings_Configuration">
+        <value>کنفیګریشن</value>
+    </data>
+    <data name="Settings_LockSettings">
+        <value>ترتیبات لاک کړئ (ډیفالټ په توګه سیو کړئ)</value>
+    </data>
+    <data name="Settings_LockDesc">
+        <value>ناوړه بدلونونه مخنیوی وکړئ. یوازې هېش ماسکینګ لا تنظیم کیدای شي.</value>
+    </data>
+    <data name="Settings_ResetAll">
+        <value>ټول ترتیبات ری سیٹ کړئ</value>
+    </data>
+    <data name="Settings_ResetDesc">
+        <value>فابریکې ډیفالټ ته بیرته راګرځوئ.</value>
+    </data>
+    <data name="Settings_ConfigPath">
+        <value>کنفیګریشن فایل پټنوم</value>
+    </data>
+    <data name="Settings_ConfigDesc">
+        <value>بشپړ پټنوم ښکاره کړئ او کلیپ بورډ ته کاپي کړئ.</value>
+    </data>
+    <data name="Settings_ShowPath">
+        <value>پټنوم ښکاره کړئ</value>
+    </data>
+    <data name="Settings_AutoSave">
+        <value>ترتیبات په اتومات ډول config.json ته سیو کیږي</value>
+    </data>
+    <data name="Settings_DeveloperMode">
+        <value>ډېوېلپر موډ</value>
+    </data>
+    <data name="Settings_DeveloperDesc">
+        <value>پرمختللي لاګینګ او ډیبګینګ وسیلې فعال کړئ.</value>
+    </data>
+    <data name="Dev_Console">
+        <value>ډېوېلپر کنسول</value>
+    </data>
+    <data name="Dev_Beta">
+        <value>BETA</value>
+    </data>
+    <data name="Dev_Recording">
+        <value>ریکارډینګ</value>
+    </data>
+    <data name="Dev_Paused">
+        <value>پاز شوی</value>
+    </data>
+    <data name="Dev_SaveToFile">
+        <value>فایل ته سیو کړئ</value>
+    </data>
+    <data name="Dev_NoSave">
+        <value>سیو مه کوئ</value>
+    </data>
+    <data name="Dev_Clear">
+        <value>کنسول پاک کړئ</value>
+    </data>
+    <data name="Dev_Copy">
+        <value>ټول کاپي کړئ</value>
+    </data>
+    <data name="Dev_OpenFolder">
+        <value>لاګ فولډر خلاص کړئ</value>
+    </data>
+    <data name="About_Author">
+        <value>لیکونکی</value>
+    </data>
+    <data name="About_Software">
+        <value>سافټویر</value>
+    </data>
+    <data name="About_ThirdParty">
+        <value>درېیم ګړې کتابتونونه</value>
+    </data>
+    <data name="About_Copyright">
+        <value>کاپي رایټ</value>
+    </data>
+    <data name="About_Desc">
+        <value>د فایل هېش جوړولو، چک کولو او کمپرېس کولو لپاره قوي وسیلې. یا لږ تر لږه ما ته داسې ښکاري :)</value>
+    </data>
+    <data name="About_License">
+        <value>MIT لایسنس لاندې خپور شوی.</value>
+    </data>
+    <data name="About_Tech">
+        <value>ټیکنالوژي</value>
+    </data>
+    <data name="About_TechContent">
+        <value>C# او .NET 10.0.102 سره جوړ شوی.</value>
+    </data>
+    <data name="About_AI">
+        <value>AI مرسته</value>
+    </data>
+    <data name="About_AIContent">
+        <value>دا سافټویر د AI مرستې سره جوړ شوی (Gemini 3 Pro او Grok 4.1).</value>
+    </data>
+    <data name="Status_Processing">
+        <value>پروسس کوي ({0})...</value>
+    </data>
+    <data name="Status_Done">
+        <value>بشپړ شو</value>
+    </data>
+    <data name="Status_Error">
+        <value>تېروتنه: {0}</value>
+    </data>
+    <data name="Status_Cancelled">
+        <value>کنسل شوی</value>
+    </data>
+    <data name="Status_Saved">
+        <value>سیو شوی!</value>
+    </data>
+    <data name="Status_Compressed">
+        <value>کمپرېس شوی!</value>
+    </data>
+    <data name="Status_Waiting">
+        <value>د هېش/انپوټ لپاره انتظار...</value>
+    </data>
+    <data name="Status_MissingOriginal">
+        <value>اصلي فایل ورک دی!</value>
+    </data>
+    <data name="Status_MissingHash">
+        <value>هېش ارزښت ورک دی (انپوټ کړئ یا هېش فایل لوډ کړئ)</value>
+    </data>
+    <data name="Status_Valid">
+        <value>صحیح</value>
+    </data>
+    <data name="Status_Invalid">
+        <value>ناسمه!</value>
+    </data>
+    <data name="Status_HashFileLoaded">
+        <value>هېش فایل لوډ شوی</value>
+    </data>
+    <data name="Status_HashFileMismatch">
+        <value>هېش فایل نوم ناسمه!</value>
+    </data>
+    <data name="Status_NoHashFound">
+        <value>فایل کې هېش نشته!</value>
+    </data>
+    <data name="Status_Checking">
+        <value>اپډېټ چک کوي...</value>
+    </data>
+    <data name="Status_NewVersion">
+        <value>نوی نسخه موندل شوی!</value>
+    </data>
+    <data name="Status_Latest">
+        <value>تاسو وروستۍ نسخه کاروئ.</value>
+    </data>
+    <data name="Status_CheckError">
+        <value>اپډېټ چک تېروتنه: {0}</value>
+    </data>
+    <data name="Status_Installing">
+        <value>ډاونلوډ او انسټال کوي...</value>
+    </data>
+    <data name="Status_InstallError">
+        <value>انسټال تېروتنه: {0}</value>
+    </data>
+    <data name="Status_ReadyFromHash">
+        <value>تیار (.hash فایل څخه)</value>
+    </data>
+    <data name="Status_LostOriginal">
+        <value>اصلي فایل ورک شوی!</value>
+    </data>
+    <data name="Status_DropHashMismatch">
+        <value>هېش فایل نوم ناسمه!</value>
+    </data>
+    <data name="Status_DropHashSuccess">
+        <value>هېش فایل ډراپ بریالی</value>
+    </data>
+    <data name="Status_DropNoHash">
+        <value>فایل کې هېش نشته!</value>
+    </data>
+    <data name="Status_ReadError">
+        <value>فایل لوستلو تېروتنه</value>
+    </data>
+    <data name="Msg_Result_Title">
+        <value>نتایج</value>
+    </data>
+    <data name="Msg_Result_Content">
+        <value>پروسس بشپړ شو!
+            ✅ بریالی: {0}
+            ❌ ناکام: {1}
+        </value>
+    </data>
+    <data name="Msg_CheckResult">
+        <value>{0} فایلونه چک شوي.
+            ✅ میل: {1}
+            ❌ ناسمه/تېروتنه: {2}
+            ⛔ کنسل: {3}
+        </value>
+    </data>
+    <data name="Msg_WrongHashFile">
+        <value>غلط فایل!</value>
+    </data>
+    <data name="Msg_WrongHashFileContent">
+        <value>هېش فایل ناسمه!
+
+            اصلي فایل: {0}
+            غوره شوی فایل: {1}
+
+            صحیح هېش فایل غوره کړئ.
+        </value>
+    </data>
+    <data name="Msg_UpdateTitle">
+        <value>نوی اپډېټ</value>
+    </data>
+    <data name="Msg_UpdateContent">
+        <value>نسخه: {0}
+
+            بدلونونه:
+            {1}
+
+            'اوس اپډېټ کړئ' کلیک کړئ ترڅو ډاونلوډ کړئ.
+        </value>
+    </data>
+    <data name="Msg_NoUpdate">
+        <value>نوی اپډېټ نشته.</value>
+    </data>
+    <data name="Msg_Error">
+        <value>تېروتنه</value>
+    </data>
+    <data name="Msg_ReadHashError">
+        <value>دا هېش فایل لوستل نشي کولی.</value>
+    </data>
+    <data name="Msg_ConfigCheck">
+        <value>کنفیګریشن چک</value>
+    </data>
+    <data name="Msg_ConfigExists">
+        <value>فایل دلته دی:
+            {0}
+        </value>
+    </data>
+    <data name="Msg_ConfigMissing">
+        <value>فایل نشته!</value>
+    </data>
+    <data name="Msg_ConfigCreated">
+        <value>فایل په بریالیتوب سره جوړ شو!</value>
+    </data>
+    <data name="Msg_ConfigCopied">
+        <value>کنفیګریشن پټنوم کاپي شو.</value>
+    </data>
+    <data name="Msg_AdminMode">
+        <value>مدیر موډ</value>
+    </data>
+    <data name="Msg_AdminRestart">
+        <value>بدلونونه پلي کولو لپاره اپ ری سټارټ کړئ.</value>
+    </data>
+    <data name="Msg_OpenFolderError">
+        <value>فولډر خلاص نشي کولی: {0}</value>
+    </data>
+    <data name="Msg_DisclaimerTitle">
+        <value>⚠️ پراختیا کوونکي نسخه خبرداری</value>
+    </data>
+    <data name="Msg_DisclaimerContent">
+        <value>تاسو د پراختیا کوونکي (پری ریلیز) اپډېټ چینل ته بدلون کوئ.
+
+            دا نسخه کې باګونه وي، ناثابت وي او ډېټا له لاسه ورکولی شي.
+
+            د دې نسخې کارولو له امله رامینځته شوي کومې ستونزې لپاره زه مسؤل نه یم.
+        </value>
+    </data>
+    <data name="Msg_DisclaimerAgree">
+        <value>ما ولول او موافق یم. زه پوره مسؤلیت منم.</value>
+    </data>
+    <data name="Dialog_SaveHash">
+        <value>هېش فایل سیو کړئ</value>
+    </data>
+    <data name="Dialog_SaveZip">
+        <value>کمپرېس شوی فایل سیو کړئ</value>
+    </data>
+    <data name="Dialog_SelectFiles">
+        <value>هېش کولو لپاره فایلونه غوره کړئ</value>
+    </data>
+    <data name="Dialog_SelectHashFile">
+        <value>{0} لپاره هېش فایل غوره کړئ</value>
+    </data>
+    <data name="Dialog_SelectCheckFiles">
+        <value>فایلونه غوره کړئ (اصلي یا .hash فایل)</value>
+    </data>
+    <data name="Header_Fallback">
+        <value>پرمختللی: پخواني نسخه ته بیرته</value>
+    </data>
+    <data name="Desc_Fallback">
+        <value>دا فیچر تاسو ته اجازه درکوي چې که نوې نسخه ستونزه ولري نو ځانګړې نسخه انسټال کړئ.</value>
+    </data>
+    <data name="Watermark_PasteDrop">
+        <value>دلته پیسټ/ډراپ کړئ...</value>
+    </data>
+    <data name="Unit_Seconds">
+        <value>سیکنډ</value>
+    </data>
+    <data name="Tip_Verify">
+        <value>تصدیق کړئ</value>
+    </data>
+    <data name="Tip_Stop">
+        <value>تم کړئ</value>
+    </data>
+    <data name="Tip_RemoveFile">
+        <value>فایل لرې کړئ</value>
+    </data>
+    <data name="Tip_CopyHash">
+        <value>هېش کاپي کړئ</value>
+    </data>
+    <data name="Tip_Compute">
+        <value>حساب کړئ</value>
+    </data>
+    <data name="Tip_BrowseHash">
+        <value>هېش براوز کړئ</value>
+    </data>
+    <data name="Settings_ThemeDark">
+        <value>تیاره</value>
+    </data>
+    <data name="Settings_ThemeLight">
+        <value>روښانه</value>
+    </data>
+    <data name="Settings_ThemeSystem">
+        <value>سیسټم</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title">
+        <value>ټاسک تم شو</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded">
+        <value>فایل {0} له حد {1} {2} زیات دی.</value>
+    </data>
+    <data name="Btn_Yes">
+        <value>هو</value>
+    </data>
+    <data name="Btn_OK">
+        <value>اوکې</value>
+    </data>
+    <data name="Btn_No">
+        <value>نه</value>
+    </data>
+    <data name="Dialog_FileType_Zip">
+        <value>Zip کمپرېس شوی فایل</value>
+    </data>
+    <data name="Msg_ConfirmExit_Title">
+        <value>وتلو تصدیق</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content">
+        <value>وتل به ټول روان ټاسکونه کنسل کړي. څرګنده یې؟</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content">
+        <value>ټایم اوټ له امله ټاسک تم شو.</value>
+    </data>
+    <data name="Dev_ToolTip_Save">
+        <value>ډیبګ لاګ ډیسک ته سیو کړئ.</value>
+    </data>
+    <data name="Dev_ToolTip_Pause">
+        <value>رییل ټایم لاګینګ پاز کړئ.</value>
+    </data>
+    <data name="Tip_ShowHash">
+        <value>هېش ښکاره کړئ</value>
+    </data>
+    <data name="Tip_HideHash">
+        <value>هېش پټ کړئ</value>
+    </data>
+    <data name="Tip_CopyPath">
+        <value>پټنوم کاپي کړئ</value>
+    </data>
+    <data name="Msg_DiskFull">
+        <value>ستاسو ډرایو ډک دی. بل ځای غوره کړئ بھائی :)</value>
+    </data>
+    <data name="Tip_HashVisibility">
+        <value>هېش لیدل</value>
+    </data>
+    <data name="EmptyState_DropFiles">
+        <value>هیڅ فایل نشته. پیل کولو لپاره 'فایلونه اضافه کړئ' کلیک کړئ.</value>
+    </data>
+    <data name="Settings_LockTheme">
+        <value>دا تیم ډیفالټ په توګه لاک کړئ</value>
+    </data>
+</root>

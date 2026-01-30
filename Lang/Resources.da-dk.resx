@@ -19,16 +19,16 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Opret Hash</value>
+        <value>Opret hash</value>
     </data>
     <data name="Menu_Check">
-        <value>Kontroller Hash</value>
+        <value>Kontroller hash</value>
     </data>
     <data name="Menu_Settings">
         <value>Indstillinger</value>
     </data>
     <data name="Menu_Update">
-        <value>Søg opdateringer</value>
+        <value>Opdater</value>
     </data>
     <data name="Menu_Theme">
         <value>Tema</value>
@@ -43,16 +43,16 @@
         <value>Tilføj filer...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Ryd liste</value>
+        <value>Ryd listen</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>BEREGN ALT</value>
+        <value>BEREGN ALLE</value>
     </data>
     <data name="Btn_Compress">
         <value>Komprimer (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>KONTROLLER ALT</value>
+        <value>KONTROLLER ALLE</value>
     </data>
     <data name="Btn_CheckNow">
         <value>Kontroller nu</value>
@@ -64,28 +64,28 @@
         <value>Accepter</value>
     </data>
     <data name="Btn_Decline">
-        <value>Annuller</value>
+        <value>Afvis</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Opret Hash &amp; Komprimer</value>
+        <value>Opret hash &amp; komprimer</value>
     </data>
     <data name="Title_CheckHash">
         <value>Massekontrol</value>
     </data>
     <data name="Title_Update">
-        <value>Søg opdateringer</value>
+        <value>Søg efter opdateringer</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Advarsel for Developer-version</value>
+        <value>Advarsel for udviklerversion</value>
     </data>
     <data name="Title_About">
         <value>Om</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tip: Shift+C for at beregne alt, Shift+Z for at komprimere, Ctrl+F for at tilføje filer.</value>
+        <value>Tip: Shift+C for at beregne alle, Shift+Z for at komprimere, Ctrl+F for at tilføje filer.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A for at kontrollere alt, Ctrl+F for at tilføje filer, Ctrl+Shift+H for at rydde liste.
+        <value>Tip: Shift+A for at kontrollere alle, Ctrl+F for at tilføje filer, Ctrl+Shift+H for at rydde listen.
         </value>
     </data>
     <data name="Lbl_Status_Ready">
@@ -95,19 +95,19 @@
         <value>Eksempel:</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>Aktuel version: {0}</value>
+        <value>Nuværende version: {0}</value>
     </data>
     <data name="Lbl_Channel">
         <value>Udgivelseskanal:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Samlet antal filer: {0}</value>
+        <value>Total filer: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stable (Stabil)</value>
+        <value>Stabil</value>
     </data>
     <data name="Channel_Dev">
-        <value>Dev (Udvikler)</value>
+        <value>Udviklerversion</value>
     </data>
     <data name="Settings_Language">
         <value>Sprog</value>
@@ -128,46 +128,43 @@
         <value>Skriftstørrelse (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Vælg automatisk optimal skrifttype for sprog</value>
+        <value>Automatisk vælg optimal skrifttype for sprog</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Brug som standardskrifttype (Lås ændringer)</value>
+        <value>Lås som standardskrifttype</value>
     </data>
     <data name="Settings_Scale">
         <value>UI-skala</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Masker Hash (Sikkerhed)</value>
+        <value>Masker hashværdier (Sikkerhed)</value>
     </data>
     <data name="Settings_Reset">
         <value>Nulstil tema</value>
     </data>
     <data name="Settings_Other">
-        <value>Privatliv &amp; Sikkerhed</value>
+        <value>Privatliv &amp; sikkerhed</value>
     </data>
     <data name="Settings_SetDefault">
         <value>Angiv som standard</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Tilpasset tekstfarve</value>
-    </data>
-    <data name="Settings_TextTest">
-        <value>Den hurtige brune ræv springer over den dovne hund.</value>
+        <value>Brugerdefineret tekstfarve</value>
     </data>
     <data name="Settings_Advanced">
         <value>Avanceret</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Kør som Administrator</value>
+        <value>Kør som administrator</value>
     </data>
     <data name="Settings_AdminDesc">
         <value>Kræver genstart. Tillader adgang til beskyttede filer.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Grænse for inddatafilstørrelse</value>
+        <value>Grænse for inputfilstørrelse</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maksimal størrelsesgrænse for filer, der skal behandles.</value>
+        <value>Maksimal størrelse for filer, der skal behandles.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
         <value>Timeout for tvungen afslutning</value>
@@ -179,16 +176,16 @@
         <value>Timeout for filbehandling</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Tvungen afbrydelse, hvis en fil tager for lang tid.</value>
+        <value>Annuller, hvis en enkelt fil tager for lang tid.</value>
     </data>
     <data name="Settings_Emergency">
         <value>Nødhandling</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Tvungen afslutning af appen og afbryd alle opgaver øjeblikkeligt.</value>
+        <value>Tvungen afslutning af appen og annullering af alle opgaver øjeblikkeligt.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Tvungen Afslutning &amp; Afbryd Alt</value>
+        <value>Tvungen afslutning &amp; annullér alle</value>
     </data>
     <data name="Settings_Configuration">
         <value>Konfiguration</value>
@@ -197,16 +194,16 @@
         <value>Lås indstillinger (Gem som standard)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Forhindrer utilsigtede ændringer. Kun hash-maskering forbliver aktiv.</value>
+        <value>Forhindre utilsigtede ændringer. Kun hash-maskering kan justeres.</value>
     </data>
     <data name="Settings_ResetAll">
         <value>Nulstil alle indstillinger</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Gendan til oprindelige standardværdier.</value>
+        <value>Gendan fabriksindstillinger.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Sti til konfigurationsfil</value>
+        <value>Konfigurationsfilsti</value>
     </data>
     <data name="Settings_ConfigDesc">
         <value>Vis fuld sti og kopier til udklipsholder.</value>
@@ -221,7 +218,7 @@
         <value>Udviklertilstand</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Aktiver avancerede lognings- og fejlfindingsværktøjer.</value>
+        <value>Aktivér avancerede lognings- og fejlfindingsværktøjer.</value>
     </data>
     <data name="Dev_Console">
         <value>Udviklerkonsol</value>
@@ -230,22 +227,22 @@
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Optagelse</value>
+        <value>Optager</value>
     </data>
     <data name="Dev_Paused">
-        <value>Pause</value>
+        <value>Pauseret</value>
     </data>
     <data name="Dev_SaveToFile">
         <value>Gem til fil</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Gem ikke</value>
+        <value>Ingen gem</value>
     </data>
     <data name="Dev_Clear">
         <value>Ryd konsollen</value>
     </data>
     <data name="Dev_Copy">
-        <value>Kopier alt</value>
+        <value>Kopiér alt</value>
     </data>
     <data name="Dev_OpenFolder">
         <value>Åbn logmappe</value>
@@ -263,10 +260,12 @@
         <value>Ophavsret</value>
     </data>
     <data name="About_Desc">
-        <value>Kraftfuldt værktøj til at oprette og verificere filhash.</value>
+        <value>Et kraftfuldt værktøj til at oprette, kontrollere og komprimere filhash. Eller det tror jeg i hvert fald
+            :)
+        </value>
     </data>
     <data name="About_License">
-        <value>Udgivet under MIT-licens.</value>
+        <value>Udgivet under MIT-licensen.</value>
     </data>
     <data name="About_Tech">
         <value>Teknologi</value>
@@ -275,10 +274,10 @@
         <value>Bygget med C# og .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>AI-support</value>
+        <value>AI-hjælp</value>
     </data>
     <data name="About_AIContent">
-        <value>Denne software er udviklet med AI-support (Gemini 3 Pro og Grok 4.1).</value>
+        <value>Denne software blev udviklet med hjælp fra AI (Gemini 3 Pro og Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
         <value>Behandler ({0})...</value>
@@ -305,7 +304,7 @@
         <value>Originalfil mangler!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash mangler (Indtast eller hash-fil nødvendig)</value>
+        <value>Hashværdi mangler (Indtast eller indlæs hashfil)</value>
     </data>
     <data name="Status_Valid">
         <value>GYLDIG</value>
@@ -314,16 +313,16 @@
         <value>UGYLDIG!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Hash-fil indlæst</value>
+        <value>Hashfil indlæst</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hash-filnavn matcher ikke!</value>
+        <value>Hashfilnavn matcher ikke!</value>
     </data>
     <data name="Status_NoHashFound">
         <value>Filen indeholder ingen hash!</value>
     </data>
     <data name="Status_Checking">
-        <value>Søger opdateringer...</value>
+        <value>Søger efter opdateringer...</value>
     </data>
     <data name="Status_NewVersion">
         <value>Ny version fundet!</value>
@@ -332,7 +331,7 @@
         <value>Du bruger den nyeste version.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Fejl ved opdateringssøgning: {0}</value>
+        <value>Fejl ved opdateringstjek: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>Downloader og installerer...</value>
@@ -347,10 +346,10 @@
         <value>Originalfil tabt!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hash-filnavn matcher ikke!</value>
+        <value>Hashfilnavn matcher ikke!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hash-fil droppet</value>
+        <value>Hashfil droppet succesfuldt</value>
     </data>
     <data name="Status_DropNoHash">
         <value>Filen indeholder ingen hash!</value>
@@ -363,15 +362,14 @@
     </data>
     <data name="Msg_Result_Content">
         <value>Behandling færdig!
-
-            ✅ Succeser: {0}
+            ✅ Succes: {0}
             ❌ Fejl: {1}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>{0} filer kontrolleret.
-            ✅ Match: {1}
-            ❌ Uoverensstemmelser/Fejl: {2}
+        <value>Kontrollerede {0} filer.
+            ✅ Matcher: {1}
+            ❌ Matcher ikke/Fejl: {2}
             ⛔ Annulleret: {3}
         </value>
     </data>
@@ -379,12 +377,12 @@
         <value>Forkert fil!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hash-fil matcher ikke!
+        <value>Hashfil matcher ikke!
 
             Originalfil: {0}
             Valgt fil: {1}
 
-            Vælg den rigtige medfølgende hash-fil.
+            Vælg venligst den korrekte medfølgende hashfil.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -396,31 +394,31 @@
             Ændringer:
             {1}
 
-            Klik på 'Opdater nu' for at downloade.
+            Klik 'Opdater nu' for at downloade.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Ingen nyere opdatering fundet.</value>
+        <value>Ingen nyere opdateringer fundet.</value>
     </data>
     <data name="Msg_Error">
         <value>Fejl</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Kan ikke læse denne hash-fil.</value>
+        <value>Kan ikke læse denne hashfil.</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>Konfigurationskontrol</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Filen findes på:
+        <value>Fil findes på:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Filen findes ikke!</value>
+        <value>Fil mangler!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Filen oprettet succesfuldt!</value>
+        <value>Fil oprettet succesfuldt!</value>
     </data>
     <data name="Msg_ConfigCopied">
         <value>Konfigurationssti kopieret.</value>
@@ -438,18 +436,18 @@
         <value>⚠️ ADVARSEL FOR UDVIKLER VERSION</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Du er ved at skifte til Developer (Pre-release) opdateringskanal.
+        <value>Du er ved at skifte til udviklerkanalen (præ-release).
 
             Denne version kan indeholde fejl, være ustabil og forårsage datatab.
 
-            Jeg påtager mig intet ansvar for problemer, der opstår ved brug af denne version.
+            Jeg er ikke ansvarlig for problemer, der opstår ved brug af denne version.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Jeg har læst og accepterer. Jeg påtager mig fuldt ansvar.</value>
+        <value>Jeg har læst og accepterer. Jeg tager fuldt ansvar.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Gem Hash-fil</value>
+        <value>Gem hashfil</value>
     </data>
     <data name="Dialog_SaveZip">
         <value>Gem komprimeret fil</value>
@@ -458,18 +456,102 @@
         <value>Vælg filer til hash</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Vælg hash-fil for: {0}</value>
+        <value>Vælg hashfil for: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
         <value>Vælg filer (Original eller .hash-fil)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Avanceret: Tilbage til ældre version (Fallback)</value>
+        <value>Avanceret: Tilbage til ældre version</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Denne funktion tillader installation af en specifik version, hvis den nye har problemer.</value>
+        <value>Denne funktion tillader installation af specifik version, hvis den nye har problemer.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Indsæt/Slip...</value>
+        <value>Indsæt/Slip her...</value>
+    </data>
+    <data name="Unit_Seconds">
+        <value>Sekunder</value>
+    </data>
+    <data name="Tip_Verify">
+        <value>Kontroller</value>
+    </data>
+    <data name="Tip_Stop">
+        <value>Stop</value>
+    </data>
+    <data name="Tip_RemoveFile">
+        <value>Fjern fil</value>
+    </data>
+    <data name="Tip_CopyHash">
+        <value>Kopier hash</value>
+    </data>
+    <data name="Tip_Compute">
+        <value>Beregn</value>
+    </data>
+    <data name="Tip_BrowseHash">
+        <value>Gennemse hash</value>
+    </data>
+    <data name="Settings_ThemeDark">
+        <value>Mørk</value>
+    </data>
+    <data name="Settings_ThemeLight">
+        <value>Lys</value>
+    </data>
+    <data name="Settings_ThemeSystem">
+        <value>System</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title">
+        <value>Opgave stoppet</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded">
+        <value>Fil {0} overskrider grænsen {1} {2}.</value>
+    </data>
+    <data name="Btn_Yes">
+        <value>Ja</value>
+    </data>
+    <data name="Btn_OK">
+        <value>OK</value>
+    </data>
+    <data name="Btn_No">
+        <value>Nej</value>
+    </data>
+    <data name="Dialog_FileType_Zip">
+        <value>Zip-arkiv</value>
+    </data>
+    <data name="Msg_ConfirmExit_Title">
+        <value>Bekræft afslutning</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content">
+        <value>Afslutning annullerer alle igangværende opgaver. Er du sikker?</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content">
+        <value>Opgave stoppet på grund af timeout.</value>
+    </data>
+    <data name="Dev_ToolTip_Save">
+        <value>Gem debuglog til disk.</value>
+    </data>
+    <data name="Dev_ToolTip_Pause">
+        <value>Pause realtidslogning.</value>
+    </data>
+    <data name="Tip_ShowHash">
+        <value>Vis hash</value>
+    </data>
+    <data name="Tip_HideHash">
+        <value>Skjul hash</value>
+    </data>
+    <data name="Tip_CopyPath">
+        <value>Kopier sti</value>
+    </data>
+    <data name="Msg_DiskFull">
+        <value>Din disk er fuld. Vælg anden placering makker :)</value>
+    </data>
+    <data name="Tip_HashVisibility">
+        <value>Hash-synlighed</value>
+    </data>
+    <data name="EmptyState_DropFiles">
+        <value>Ingen filer. Klik 'Tilføj filer' for at starte.</value>
+    </data>
+    <data name="Settings_LockTheme">
+        <value>Lås dette tema som standard</value>
     </data>
 </root>

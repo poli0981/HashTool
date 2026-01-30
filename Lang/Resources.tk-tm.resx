@@ -19,540 +19,537 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Hash genereren</value>
+        <value>Hash döret</value>
     </data>
     <data name="Menu_Check">
-        <value>Hash controleren</value>
+        <value>Hash barla</value>
     </data>
     <data name="Menu_Settings">
-        <value>Instellingen</value>
+        <value>Sazlamalar</value>
     </data>
     <data name="Menu_Update">
-        <value>Update</value>
+        <value>Täzelenme</value>
     </data>
     <data name="Menu_Theme">
-        <value>Thema</value>
+        <value>Tema</value>
     </data>
     <data name="Menu_About">
-        <value>Over</value>
+        <value>Hakda</value>
     </data>
     <data name="Menu_Developer">
-        <value>Ontwikkelaar</value>
+        <value>Öndüriji</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>Bestanden toevoegen...</value>
+        <value>Faýllar goş...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Lijst wissen</value>
+        <value>Sanawy arassala</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>ALLES BEREKENEN</value>
+        <value>ÄHLISINI HASAPLA</value>
     </data>
     <data name="Btn_Compress">
-        <value>Comprimeren (.Zip)</value>
+        <value>Gysmak (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ALLES CONTROLEREN</value>
+        <value>ÄHLISINI BARLA</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Nu controleren</value>
+        <value>Şu wagt barla</value>
     </data>
     <data name="Btn_Install">
-        <value>Installeren</value>
+        <value>Gurmak</value>
     </data>
     <data name="Btn_Accept">
-        <value>Accepteren</value>
+        <value>Kabul et</value>
     </data>
     <data name="Btn_Decline">
-        <value>Weigeren</value>
+        <value>Ret et</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Hash genereren &amp; comprimeren</value>
+        <value>Hash döret &amp; gysmak</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Batchcontrole</value>
+        <value>Topar barlag</value>
     </data>
     <data name="Title_Update">
-        <value>Controleren op updates</value>
+        <value>Täzelenmeleri barla</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Waarschuwing ontwikkelaarsversie</value>
+        <value>Öndüriji wersiýasy duýduryşy</value>
     </data>
     <data name="Title_About">
-        <value>Over</value>
+        <value>Hakda</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tip: Shift+C om alles te berekenen, Shift+Z om te comprimeren, Ctrl+F om bestanden toe te voegen.</value>
+        <value>Maslahat: Shift+C ählisini hasapla, Shift+Z gysmak, Ctrl+F faýllar goş.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A om alles te controleren, Ctrl+F om bestanden toe te voegen, Ctrl+Shift+H om lijst te
-            wissen.
-        </value>
+        <value>Maslahat: Shift+A ählisini barla, Ctrl+F faýllar goş, Ctrl+Shift+H sanawy arassala.</value>
     </data>
     <data name="Lbl_Status_Ready">
-        <value>Klaar</value>
+        <value>Taýýar</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Voorbeeld:</value>
+        <value>Mysal:</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>Huidige versie: {0}</value>
+        <value>Häzirki wersiýa: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Releasekanaal:</value>
+        <value>Çykan kanal:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Totaal bestanden: {0}</value>
+        <value>Jemi faýllar: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabiel</value>
+        <value>Ygtybarly</value>
     </data>
     <data name="Channel_Dev">
-        <value>Ontwikkelaarseditie</value>
+        <value>Öndüriji wersiýasy</value>
     </data>
     <data name="Settings_Language">
-        <value>Taal</value>
+        <value>Dil</value>
     </data>
     <data name="Settings_Theme">
-        <value>Thema</value>
+        <value>Tema</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>Themastijl</value>
+        <value>Tema stili</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Licht/Donker</value>
+        <value>Ýagty/ Garangy</value>
     </data>
     <data name="Settings_Font">
-        <value>Lettertype</value>
+        <value>Şrift</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Lettergrootte (pt)</value>
+        <value>Şrift ölçegi (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automatisch optimale lettertype voor taal selecteren</value>
+        <value>Dil üçin iň gowy şrifti awtomat saýla</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Vergrendelen als standaardlettertype</value>
+        <value>Gaýybana şrift hökmünde gulpla</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI-schaal</value>
+        <value>UI ölçeği</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Hash-waarden maskeren (Beveiliging)</value>
+        <value>Hash bahalaryny maskala (Howpsuzlyk)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Thema resetten</value>
+        <value>Temany täzele</value>
     </data>
     <data name="Settings_Other">
-        <value>Privacy &amp; Beveiliging</value>
+        <value>Gizlinlik we howpsuzlyk</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Instellen als standaard</value>
+        <value>Gaýybana et</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Aangepaste tekstkleur</value>
+        <value>Özbaşdak tekst reňki</value>
     </data>
     <data name="Settings_Advanced">
-        <value>Geavanceerd</value>
+        <value>Giňeldilen</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Als administrator uitvoeren</value>
+        <value>Administrator hökmünde işlet</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Herstart vereist. Geeft toegang tot beveiligde bestanden.</value>
+        <value>Gaýtadan başlamak gerek. Goragly faýllara elýeterlilik berýär.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Limiet invoerbestandsgrootte</value>
+        <value>Giriş faýl ölçeg chek</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maximale grootte voor te verwerken bestanden.</value>
+        <value>Işlemek üçin maksimum ölçeg.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Timeout geforceerd afsluiten</value>
+        <value>Zor bilen çykmak wagty chek</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Tijd (seconden) voordat app als vastgelopen wordt beschouwd.</value>
+        <value>Programma dondugy hasaplanmazdan öň wagt (sekunt).</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Timeout bestandsverwerking</value>
+        <value>Faýl işlemek wagty chek</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Annuleren als één bestand te lang duurt.</value>
+        <value>Bir faýl gaty uzak wagt alsa ýatyr.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Noodactie</value>
+        <value>Gyssagly hereket</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>App geforceerd afsluiten en alle taken onmiddellijk annuleren.</value>
+        <value>Programmany zor bilen ýap we ähli işleri derrew ýatyr.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Geforceerd afsluiten &amp; Alles annuleren</value>
+        <value>Zor bilen çyk we ählisini ýatyr</value>
     </data>
     <data name="Settings_Configuration">
-        <value>Configuratie</value>
+        <value>Konfigurasiýa</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Instellingen vergrendelen (Opslaan als standaard)</value>
+        <value>Sazlamalary gulpla (Gaýybana hökmünde sakla)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Voorkom onbedoelde wijzigingen. Alleen hash-maskering blijft aanpasbaar.</value>
+        <value>Tötänleýin üýtgeşmeleriň öňüni al. Diňe hash maskalamak sazlanyp biler.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Alle instellingen resetten</value>
+        <value>Ähli sazlamalary täzele</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Terugzetten naar fabrieksinstellingen.</value>
+        <value>Fabrika gaýybana ýagdaýyna gaýt.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Configuratiebestandspad</value>
+        <value>Konfigurasiýa faýl ýoly</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Volledig pad tonen en kopiëren naar klembord.</value>
+        <value>Doly ýoly görkez we bufera göçür.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Pad tonen</value>
+        <value>Ýoly görkez</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Instellingen worden automatisch opgeslagen in config.json</value>
+        <value>Sazlamalar config.json-a awtomat saklanýar</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Ontwikkelaarsmodus</value>
+        <value>Öndüriji rejimi</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Geavanceerde logging en debugtools inschakelen.</value>
+        <value>Giňeldilen log we debug gurallaryny işjeňleşdir.</value>
     </data>
     <data name="Dev_Console">
-        <value>Ontwikkelaarsconsole</value>
+        <value>Öndüriji konsoly</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Opname</value>
+        <value>Ýazgy edilýär</value>
     </data>
     <data name="Dev_Paused">
-        <value>Gepauzeerd</value>
+        <value>Durkezildi</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>Opslaan in bestand</value>
+        <value>Faýla sakla</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Niet opslaan</value>
+        <value>Saklama</value>
     </data>
     <data name="Dev_Clear">
-        <value>Console wissen</value>
+        <value>Konsoly arassala</value>
     </data>
     <data name="Dev_Copy">
-        <value>Alles kopiëren</value>
+        <value>Ählisini göçür</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Logmap openen</value>
+        <value>Log papkasy aç</value>
     </data>
     <data name="About_Author">
-        <value>Auteur</value>
+        <value>Ýazyjy</value>
     </data>
     <data name="About_Software">
-        <value>Software</value>
+        <value>Programma</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Derde partij bibliotheken</value>
+        <value>Üçünji tarap kitaphanalar</value>
     </data>
     <data name="About_Copyright">
-        <value>Auteursrecht</value>
+        <value>Awtorlyk hukugy</value>
     </data>
     <data name="About_Desc">
-        <value>Krachtig hulpmiddel voor het genereren, controleren en comprimeren van bestandshashes. Of dat denk ik
-            tenminste :)
+        <value>Faýl hashlaryny döretmek, barlamak we gysmak üçin güýçli gurallık. Ýa-da men şeýle pikir edýärin :)
         </value>
     </data>
     <data name="About_License">
-        <value>Uitgegeven onder MIT-licentie.</value>
+        <value>MIT lisenziýasy astynda çykaryldy.</value>
     </data>
     <data name="About_Tech">
-        <value>Technologie</value>
+        <value>Tehnologiýa</value>
     </data>
     <data name="About_TechContent">
-        <value>Gebouwd met C# en .NET 10.0.102.</value>
+        <value>C# we .NET 10.0.102 bilen guruldy.</value>
     </data>
     <data name="About_AI">
-        <value>AI-ondersteuning</value>
+        <value>AI kömegi</value>
     </data>
     <data name="About_AIContent">
-        <value>Deze software is ontwikkeld met hulp van AI (Gemini 3 Pro en Grok 4.1).</value>
+        <value>Bu programma AI kömegi bilen öndürildi (Gemini 3 Pro we Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
-        <value>Verwerken ({0})...</value>
+        <value>Işlenýär ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>Voltooid</value>
+        <value>Tamamlandy</value>
     </data>
     <data name="Status_Error">
-        <value>Fout: {0}</value>
+        <value>Ýalňyşlyk: {0}</value>
     </data>
     <data name="Status_Cancelled">
-        <value>Geannuleerd</value>
+        <value>Ýatyryldy</value>
     </data>
     <data name="Status_Saved">
-        <value>Opgeslagen!</value>
+        <value>Saklandy!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Gecomprimeerd!</value>
+        <value>Gysyldy!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Wachten op hash/invoer...</value>
+        <value>Hash/giriş garaşýar...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Origineel bestand ontbreekt!</value>
+        <value>Asyl faýl ýok!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash-waarde ontbreekt (Voer in of laad hashbestand)</value>
+        <value>Hash bahasy ýok (Giriziň ýa-da hash faýlyny ýükläň)</value>
     </data>
     <data name="Status_Valid">
-        <value>GELDIG</value>
+        <value>DOGRY</value>
     </data>
     <data name="Status_Invalid">
-        <value>ONGELDIG!</value>
+        <value>UÝTGÄNMEZ!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Hashbestand geladen</value>
+        <value>Hash faýly ýüklendi</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hashbestandsnaam komt niet overeen!</value>
+        <value>Hash faýl ady uýtgeşmezlik!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Bestand bevat geen hash!</value>
+        <value>Faýlda hash ýok!</value>
     </data>
     <data name="Status_Checking">
-        <value>Controleren op updates...</value>
+        <value>Täzelenmeleri barlaýar...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Nieuwe versie gedetecteerd!</value>
+        <value>Täze wersiýa tapyldy!</value>
     </data>
     <data name="Status_Latest">
-        <value>Je gebruikt de nieuwste versie.</value>
+        <value>Iň soňky wersiýany ulanýarsyňyz.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Updatecontrolefout: {0}</value>
+        <value>Täzelenme barlag ýalňyşlygy: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Downloaden en installeren...</value>
+        <value>Ýüklenýär we gurulýar...</value>
     </data>
     <data name="Status_InstallError">
-        <value>Installatiefout: {0}</value>
+        <value>Gurulma ýalňyşlygy: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Klaar (Van .hash-bestand)</value>
+        <value>Taýýar (.hash faýlyndan)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Origineel bestand verloren!</value>
+        <value>Asyl faýl ýitdi!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hashbestandsnaam komt niet overeen!</value>
+        <value>Hash faýl ady uýtgeşmezlik!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hashbestand succesvol gedropt</value>
+        <value>Hash faýly üstünlikli taşlandy</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Bestand bevat geen hash!</value>
+        <value>Faýlda hash ýok!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Bestandleesfout</value>
+        <value>Faýl okamak ýalňyşlygy</value>
     </data>
     <data name="Msg_Result_Title">
-        <value>Resultaat</value>
+        <value>Netije</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Verwerking voltooid!
-            ✅ Succes: {0}
-            ❌ Mislukt: {1}
+        <value>Işleniş tamamlandy!
+            ✅ Üstünlik: {0}
+            ❌ Şowsuz: {1}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>{0} bestanden gecontroleerd.
-            ✅ Overeenkomst: {1}
-            ❌ Geen overeenkomst/Fout: {2}
-            ⛔ Geannuleerd: {3}
+        <value>{0} faýl barlandy.
+            ✅ Gabat gelýär: {1}
+            ❌ Gabat gelmeýär/Ýalňyşlyk: {2}
+            ⛔ Ýatyryldy: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>Verkeerd bestand!</value>
+        <value>Nädogry faýl!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hashbestand komt niet overeen!
+        <value>Hash faýly gabat gelmeýär!
 
-            Origineel bestand: {0}
-            Geselecteerd bestand: {1}
+            Asyl faýl: {0}
+            Saýlanan faýl: {1}
 
-            Selecteer het juiste bijgevoegde hashbestand.
+            Dogry hash faýlyny saýlaň.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Nieuwe update</value>
+        <value>Täze täzelenme</value>
     </data>
     <data name="Msg_UpdateContent">
-        <value>Versie: {0}
+        <value>Wersiýa: {0}
 
-            Wijzigingen:
+            Üýtgeşmeler:
             {1}
 
-            Klik 'Nu bijwerken' om te downloaden.
+            Ýüklemek üçin 'Şu wagt täzele' basyň.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Geen nieuwere updates gevonden.</value>
+        <value>Has täze täzelenme tapylmady.</value>
     </data>
     <data name="Msg_Error">
-        <value>Fout</value>
+        <value>Ýalňyşlyk</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Kan dit hashbestand niet lezen.</value>
+        <value>Bu hash faýlyny okaýmaýär.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Configuratiecontrole</value>
+        <value>Konfigurasiýa barlag</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Bestand bestaat op:
+        <value>Faýl şu ýerde:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Bestand bestaat niet!</value>
+        <value>Faýl ýok!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Bestand succesvol aangemaakt!</value>
+        <value>Faýl üstünlikli döredildi!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Configuratiepad gekopieerd.</value>
+        <value>Konfigurasiýa ýoly göçürildi.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Beheerdersmodus</value>
+        <value>Administrator rejimi</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Herstart de toepassing om wijzigingen toe te passen.</value>
+        <value>Üýtgeşmeleriň güýjüne girmegi üçin programmany gaýtadan başlatyň.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Kan map niet openen: {0}</value>
+        <value>Papkany açyp bilmeýäris: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ WAARSCHUWING ONTWIKKELAARSVERSIE</value>
+        <value>⚠️ ÖNDÜRIJI WERSIÝASY DUÝDURYŞY</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Je staat op het punt over te schakelen naar het ontwikkelaarsupdatekanaal (prerelease).
+        <value>Öndüriji (öňünden çykan) täzelenme kanalyna geçmekçi.
 
-            Deze versie kan bugs bevatten, instabiel zijn en gegevensverlies veroorzaken.
+            Bu wersiýada näsazlyklar bolup biler, durnuksyz bolup biler we maglumatlary ýitirip biler.
 
-            Ik ben niet verantwoordelijk voor problemen die ontstaan door het gebruik van deze versie.
+            Bu wersiýany ulanmakdan gelip çykýan islendik mesele üçin jogapkär däl.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Ik heb gelezen en ga akkoord. Ik neem volledige verantwoordelijkheid.</value>
+        <value>Men okadym we razy. Doly jogapkärçiligi öz üstüme alýaryn.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Hashbestand opslaan</value>
+        <value>Hash faýlyny sakla</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Gecomprimeerd bestand opslaan</value>
+        <value>Gysylan faýly sakla</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Bestanden selecteren voor hash</value>
+        <value>Hash üçin faýllary saýla</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Hashbestand selecteren voor: {0}</value>
+        <value>{0} üçin hash faýlyny saýla</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Bestanden selecteren (Origineel of .hash-bestand)</value>
+        <value>Faýllary saýla (Asyl ýa-da .hash faýly)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Geavanceerd: Terugval naar oudere versie</value>
+        <value>Giňeldilen: Eskisi wersiýa gaýt</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Deze functie staat toe een specifieke versie te installeren als de nieuwe problemen heeft.</value>
+        <value>Täze wersiýada mesele bar bolsa belli wersiýany gurmak mümkinçiligini berýär.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Plak/Drop hier...</value>
+        <value>Bu ýere ýelme/taşla...</value>
     </data>
     <data name="Unit_Seconds">
-        <value>Seconden</value>
+        <value>Sekunt</value>
     </data>
     <data name="Tip_Verify">
-        <value>Verifiëren</value>
+        <value>Barla</value>
     </data>
     <data name="Tip_Stop">
-        <value>Stoppen</value>
+        <value>Dur</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>Bestand verwijderen</value>
+        <value>Faýly aýyr</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Hash kopiëren</value>
+        <value>Hash göçür</value>
     </data>
     <data name="Tip_Compute">
-        <value>Berekenen</value>
+        <value>Hasapla</value>
     </data>
     <data name="Tip_BrowseHash">
-        <value>Hash doorbladeren</value>
+        <value>Hash göz aýla</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>Donker</value>
+        <value>Garangy</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>Licht</value>
+        <value>Ýagty</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>Systeem</value>
+        <value>Sistema</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>Taak gestopt</value>
+        <value>Iş durdy</value>
     </data>
     <data name="Msg_FileSizeLimitExceeded">
-        <value>Bestand {0} overschrijdt limiet {1} {2}.</value>
+        <value>Faýl {0} {1} {2} çäkden geçdi.</value>
     </data>
     <data name="Btn_Yes">
-        <value>Ja</value>
+        <value>Hawa</value>
     </data>
     <data name="Btn_OK">
-        <value>OK</value>
+        <value>Bolýar</value>
     </data>
     <data name="Btn_No">
-        <value>Nee</value>
+        <value>Ýok</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip-archief</value>
+        <value>Zip arhiv</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Afsluiten bevestigen</value>
+        <value>Çykyş tassyklama</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Afsluiten annuleert alle lopende taken. Weet je het zeker?</value>
+        <value>Çykyş ähli dowam edýän işleri ýatyrar. Ynamlymy?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Taak gestopt vanwege timeout.</value>
+        <value>Wagt çäkden dolay iş durdy.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Debuglog opslaan op schijf.</value>
+        <value>Debug log-y diske sakla.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Realtime logging pauzeren.</value>
+        <value>Hakyky wagt log-y dur.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Hash tonen</value>
+        <value>Hash görkez</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Hash verbergen</value>
+        <value>Hash ýaşyr</value>
     </data>
     <data name="Tip_CopyPath">
-        <value>Pad kopiëren</value>
+        <value>Ýoly göçür</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Je schijf is vol. Kies een andere locatie makker :)</value>
+        <value>Diskiň doludy. Başga ýer saýlaň :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Hash-zichtbaarheid</value>
+        <value>Hash görünmekligi</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Geen bestanden. Klik 'Bestanden toevoegen' om te beginnen.</value>
+        <value>Faýl ýok. Başlamak üçin 'Faýllar goş' basyň.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Dit thema vergrendelen als standaard</value>
+        <value>Bu temany gaýybana hökmünde gulpla</value>
     </data>
 </root>

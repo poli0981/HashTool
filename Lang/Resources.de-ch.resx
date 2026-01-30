@@ -19,493 +19,492 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Hash genereren</value>
+        <value>Hash erstellen</value>
     </data>
     <data name="Menu_Check">
-        <value>Hash controleren</value>
+        <value>Hash pruefen</value>
     </data>
     <data name="Menu_Settings">
-        <value>Instellingen</value>
+        <value>Einstellungen</value>
     </data>
     <data name="Menu_Update">
         <value>Update</value>
     </data>
     <data name="Menu_Theme">
-        <value>Thema</value>
+        <value>Theme</value>
     </data>
     <data name="Menu_About">
-        <value>Over</value>
+        <value>Ueber</value>
     </data>
     <data name="Menu_Developer">
-        <value>Ontwikkelaar</value>
+        <value>Entwickler</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>Bestanden toevoegen...</value>
+        <value>Dateien hinzufuegen...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Lijst wissen</value>
+        <value>Liste leeren</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>ALLES BEREKENEN</value>
+        <value>ALLES BERECHNEN</value>
     </data>
     <data name="Btn_Compress">
-        <value>Comprimeren (.Zip)</value>
+        <value>Komprimieren (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ALLES CONTROLEREN</value>
+        <value>ALLES PRUEFEN</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Nu controleren</value>
+        <value>Jetzt pruefen</value>
     </data>
     <data name="Btn_Install">
-        <value>Installeren</value>
+        <value>Installieren</value>
     </data>
     <data name="Btn_Accept">
-        <value>Accepteren</value>
+        <value>Akzeptieren</value>
     </data>
     <data name="Btn_Decline">
-        <value>Weigeren</value>
+        <value>Ablehnen</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Hash genereren &amp; comprimeren</value>
+        <value>Hash erstellen &amp; komprimieren</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Batchcontrole</value>
+        <value>Stapelpruefung</value>
     </data>
     <data name="Title_Update">
-        <value>Controleren op updates</value>
+        <value>Nach Updates suchen</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Waarschuwing ontwikkelaarsversie</value>
+        <value>Entwicklerversion Warnung</value>
     </data>
     <data name="Title_About">
-        <value>Over</value>
+        <value>Ueber</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tip: Shift+C om alles te berekenen, Shift+Z om te comprimeren, Ctrl+F om bestanden toe te voegen.</value>
+        <value>Tipp: Shift+C alles berechnen, Shift+Z komprimieren, Ctrl+F Dateien hinzufuegen.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A om alles te controleren, Ctrl+F om bestanden toe te voegen, Ctrl+Shift+H om lijst te
-            wissen.
-        </value>
+        <value>Tipp: Shift+A alles pruefen, Ctrl+F Dateien hinzufuegen, Ctrl+Shift+H Liste leeren.</value>
     </data>
     <data name="Lbl_Status_Ready">
-        <value>Klaar</value>
+        <value>Bereit</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Voorbeeld:</value>
+        <value>Beispiel:</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>Huidige versie: {0}</value>
+        <value>Aktuelle Version: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Releasekanaal:</value>
+        <value>Veroeffentlichungskanal:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Totaal bestanden: {0}</value>
+        <value>Gesamtdateien: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabiel</value>
+        <value>Stabil</value>
     </data>
     <data name="Channel_Dev">
-        <value>Ontwikkelaarseditie</value>
+        <value>Entwicklerversion</value>
     </data>
     <data name="Settings_Language">
-        <value>Taal</value>
+        <value>Sprache</value>
     </data>
     <data name="Settings_Theme">
-        <value>Thema</value>
+        <value>Theme</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>Themastijl</value>
+        <value>Theme-Stil</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Licht/Donker</value>
+        <value>Hell/Dunkel</value>
     </data>
     <data name="Settings_Font">
-        <value>Lettertype</value>
+        <value>Schriftart</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Lettergrootte (pt)</value>
+        <value>Schriftgroesse (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automatisch optimale lettertype voor taal selecteren</value>
+        <value>Automatische optimale Schriftart fuer Sprache waehlen</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Vergrendelen als standaardlettertype</value>
+        <value>Als Standardschriftart sperren</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI-schaal</value>
+        <value>UI-Skalierung</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Hash-waarden maskeren (Beveiliging)</value>
+        <value>Hash-Werte maskieren (Sicherheit)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Thema resetten</value>
+        <value>Theme zuruecksetzen</value>
     </data>
     <data name="Settings_Other">
-        <value>Privacy &amp; Beveiliging</value>
+        <value>Privatsphaere &amp; Sicherheit</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Instellen als standaard</value>
+        <value>Als Standard festlegen</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Aangepaste tekstkleur</value>
+        <value>Benutzerdefinierte Textfarbe</value>
     </data>
     <data name="Settings_Advanced">
-        <value>Geavanceerd</value>
+        <value>Erweitert</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Als administrator uitvoeren</value>
+        <value>Als Administrator ausfuehren</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Herstart vereist. Geeft toegang tot beveiligde bestanden.</value>
+        <value>Neustart erforderlich. Erlaubt Zugriff auf geschuetzte Dateien.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Limiet invoerbestandsgrootte</value>
+        <value>Eingabedateigroessenlimit</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maximale grootte voor te verwerken bestanden.</value>
+        <value>Maximale Groesse fuer zu verarbeitende Dateien.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Timeout geforceerd afsluiten</value>
+        <value>Erzwungener Beendigungs-Timeout</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Tijd (seconden) voordat app als vastgelopen wordt beschouwd.</value>
+        <value>Zeit (Sekunden) bevor die App als eingefroren gilt.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Timeout bestandsverwerking</value>
+        <value>Dateiverarbeitungs-Timeout</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Annuleren als één bestand te lang duurt.</value>
+        <value>Abbrechen, wenn eine Datei zu lange braucht.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Noodactie</value>
+        <value>Notfallaktion</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>App geforceerd afsluiten en alle taken onmiddellijk annuleren.</value>
+        <value>App zwangsweise beenden und alle Aufgaben sofort abbrechen.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Geforceerd afsluiten &amp; Alles annuleren</value>
+        <value>Zwangsbeendigung &amp; Alles abbrechen</value>
     </data>
     <data name="Settings_Configuration">
-        <value>Configuratie</value>
+        <value>Konfiguration</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Instellingen vergrendelen (Opslaan als standaard)</value>
+        <value>Einstellungen sperren (Als Standard speichern)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Voorkom onbedoelde wijzigingen. Alleen hash-maskering blijft aanpasbaar.</value>
+        <value>Zufaellige Aenderungen verhindern. Nur Hash-Maskierung bleibt einstellbar.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Alle instellingen resetten</value>
+        <value>Alle Einstellungen zuruecksetzen</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Terugzetten naar fabrieksinstellingen.</value>
+        <value>Auf Werkseinstellungen zuruecksetzen.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Configuratiebestandspad</value>
+        <value>Konfigurationsdateipfad</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Volledig pad tonen en kopiëren naar klembord.</value>
+        <value>Vollstaendigen Pfad anzeigen und in Zwischenablage kopieren.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Pad tonen</value>
+        <value>Pfad anzeigen</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Instellingen worden automatisch opgeslagen in config.json</value>
+        <value>Einstellungen werden automatisch in config.json gespeichert</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Ontwikkelaarsmodus</value>
+        <value>Entwicklermodus</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Geavanceerde logging en debugtools inschakelen.</value>
+        <value>Erweiterte Protokollierung und Debugging-Tools aktivieren.</value>
     </data>
     <data name="Dev_Console">
-        <value>Ontwikkelaarsconsole</value>
+        <value>Entwicklerkonsole</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Opname</value>
+        <value>Aufnahme</value>
     </data>
     <data name="Dev_Paused">
-        <value>Gepauzeerd</value>
+        <value>Pausiert</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>Opslaan in bestand</value>
+        <value>In Datei speichern</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Niet opslaan</value>
+        <value>Nicht speichern</value>
     </data>
     <data name="Dev_Clear">
-        <value>Console wissen</value>
+        <value>Konsole leeren</value>
     </data>
     <data name="Dev_Copy">
-        <value>Alles kopiëren</value>
+        <value>Alles kopieren</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Logmap openen</value>
+        <value>Log-Ordner oeffnen</value>
     </data>
     <data name="About_Author">
-        <value>Auteur</value>
+        <value>Autor</value>
     </data>
     <data name="About_Software">
         <value>Software</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Derde partij bibliotheken</value>
+        <value>Drittanbieter-Bibliotheken</value>
     </data>
     <data name="About_Copyright">
-        <value>Auteursrecht</value>
+        <value>Urheberrecht</value>
     </data>
     <data name="About_Desc">
-        <value>Krachtig hulpmiddel voor het genereren, controleren en comprimeren van bestandshashes. Of dat denk ik
-            tenminste :)
+        <value>Leistungsstarkes Tool zum Erstellen, Pruefen und Komprimieren von Datei-Hashes. Oder zumindest denke ich
+            das :)
         </value>
     </data>
     <data name="About_License">
-        <value>Uitgegeven onder MIT-licentie.</value>
+        <value>Unter MIT-Lizenz veroeffentlicht.</value>
     </data>
     <data name="About_Tech">
         <value>Technologie</value>
     </data>
     <data name="About_TechContent">
-        <value>Gebouwd met C# en .NET 10.0.102.</value>
+        <value>Mit C# und .NET 10.0.102 erstellt.</value>
     </data>
     <data name="About_AI">
-        <value>AI-ondersteuning</value>
+        <value>KI-Unterstuetzung</value>
     </data>
     <data name="About_AIContent">
-        <value>Deze software is ontwikkeld met hulp van AI (Gemini 3 Pro en Grok 4.1).</value>
+        <value>Diese Software wurde mit KI-Unterstuetzung entwickelt (Gemini 3 Pro und Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
-        <value>Verwerken ({0})...</value>
+        <value>Verarbeitet ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>Voltooid</value>
+        <value>Fertig</value>
     </data>
     <data name="Status_Error">
-        <value>Fout: {0}</value>
+        <value>Fehler: {0}</value>
     </data>
     <data name="Status_Cancelled">
-        <value>Geannuleerd</value>
+        <value>Abgebrochen</value>
     </data>
     <data name="Status_Saved">
-        <value>Opgeslagen!</value>
+        <value>Gespeichert!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Gecomprimeerd!</value>
+        <value>Komprimiert!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Wachten op hash/invoer...</value>
+        <value>Wartet auf Hash/Eingabe...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Origineel bestand ontbreekt!</value>
+        <value>Originaldatei fehlt!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash-waarde ontbreekt (Voer in of laad hashbestand)</value>
+        <value>Hash-Wert fehlt (Eingeben oder Hash-Datei laden)</value>
     </data>
     <data name="Status_Valid">
-        <value>GELDIG</value>
+        <value>GUELTIG</value>
     </data>
     <data name="Status_Invalid">
-        <value>ONGELDIG!</value>
+        <value>UNGUELTIG!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Hashbestand geladen</value>
+        <value>Hash-Datei geladen</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hashbestandsnaam komt niet overeen!</value>
+        <value>Hash-Dateiname stimmt nicht ueberein!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Bestand bevat geen hash!</value>
+        <value>Datei enthaelt keinen Hash!</value>
     </data>
     <data name="Status_Checking">
-        <value>Controleren op updates...</value>
+        <value>Suche nach Updates...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Nieuwe versie gedetecteerd!</value>
+        <value>Neue Version entdeckt!</value>
     </data>
     <data name="Status_Latest">
-        <value>Je gebruikt de nieuwste versie.</value>
+        <value>Sie verwenden die neueste Version.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Updatecontrolefout: {0}</value>
+        <value>Update-Pruefungsfehler: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Downloaden en installeren...</value>
+        <value>Herunterladen und Installieren...</value>
     </data>
     <data name="Status_InstallError">
-        <value>Installatiefout: {0}</value>
+        <value>Installationsfehler: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Klaar (Van .hash-bestand)</value>
+        <value>Bereit (Aus .hash-Datei)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Origineel bestand verloren!</value>
+        <value>Originaldatei verloren!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hashbestandsnaam komt niet overeen!</value>
+        <value>Hash-Dateiname stimmt nicht ueberein!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hashbestand succesvol gedropt</value>
+        <value>Hash-Datei erfolgreich abgelegt</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Bestand bevat geen hash!</value>
+        <value>Datei enthaelt keinen Hash!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Bestandleesfout</value>
+        <value>Dateilesefehler</value>
     </data>
     <data name="Msg_Result_Title">
-        <value>Resultaat</value>
+        <value>Ergebnis</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Verwerking voltooid!
-            ✅ Succes: {0}
-            ❌ Mislukt: {1}
+        <value>Verarbeitung abgeschlossen!
+            ✅ Erfolg: {0}
+            ❌ Fehlgeschlagen: {1}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>{0} bestanden gecontroleerd.
-            ✅ Overeenkomst: {1}
-            ❌ Geen overeenkomst/Fout: {2}
-            ⛔ Geannuleerd: {3}
+        <value>{0} Dateien geprueft.
+            ✅ Ueberstimmung: {1}
+            ❌ Keine Ueberstimmung/Fehler: {2}
+            ⛔ Abgebrochen: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>Verkeerd bestand!</value>
+        <value>Falsche Datei!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hashbestand komt niet overeen!
+        <value>Hash-Datei stimmt nicht ueberein!
 
-            Origineel bestand: {0}
-            Geselecteerd bestand: {1}
+            Originaldatei: {0}
+            Ausgewaehlte Datei: {1}
 
-            Selecteer het juiste bijgevoegde hashbestand.
+            Bitte waehlen Sie die richtige beigefuegte Hash-Datei aus.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Nieuwe update</value>
+        <value>Neues Update</value>
     </data>
     <data name="Msg_UpdateContent">
-        <value>Versie: {0}
+        <value>Version: {0}
 
-            Wijzigingen:
+            Aenderungen:
             {1}
 
-            Klik 'Nu bijwerken' om te downloaden.
+            Klicken Sie 'Jetzt aktualisieren' zum Herunterladen.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Geen nieuwere updates gevonden.</value>
+        <value>Keine neueren Updates gefunden.</value>
     </data>
     <data name="Msg_Error">
-        <value>Fout</value>
+        <value>Fehler</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Kan dit hashbestand niet lezen.</value>
+        <value>Kann diese Hash-Datei nicht lesen.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Configuratiecontrole</value>
+        <value>Konfigurationspruefung</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Bestand bestaat op:
+        <value>Datei existiert unter:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Bestand bestaat niet!</value>
+        <value>Datei existiert nicht!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Bestand succesvol aangemaakt!</value>
+        <value>Datei erfolgreich erstellt!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Configuratiepad gekopieerd.</value>
+        <value>Konfigurationspfad kopiert.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Beheerdersmodus</value>
+        <value>Administratormodus</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Herstart de toepassing om wijzigingen toe te passen.</value>
+        <value>Bitte starten Sie die Anwendung neu, damit die Aenderungen wirksam werden.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Kan map niet openen: {0}</value>
+        <value>Ordner kann nicht geoeffnet werden: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ WAARSCHUWING ONTWIKKELAARSVERSIE</value>
+        <value>⚠️ ENTWICKLERVERSION WARNUNG</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Je staat op het punt over te schakelen naar het ontwikkelaarsupdatekanaal (prerelease).
+        <value>Sie wechseln zum Entwickler-Update-Kanal (Vorabversion).
 
-            Deze versie kan bugs bevatten, instabiel zijn en gegevensverlies veroorzaken.
+            Diese Version kann Fehler enthalten, instabil sein und Datenverlust verursachen.
 
-            Ik ben niet verantwoordelijk voor problemen die ontstaan door het gebruik van deze versie.
+            Ich bin nicht verantwortlich fuer Probleme durch die Nutzung dieser Version.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Ik heb gelezen en ga akkoord. Ik neem volledige verantwoordelijkheid.</value>
+        <value>Ich habe gelesen und akzeptiere. Ich uebernehme volle Verantwortung.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Hashbestand opslaan</value>
+        <value>Hash-Datei speichern</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Gecomprimeerd bestand opslaan</value>
+        <value>Komprimierte Datei speichern</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Bestanden selecteren voor hash</value>
+        <value>Dateien fuer Hash auswaehlen</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Hashbestand selecteren voor: {0}</value>
+        <value>Hash-Datei fuer: {0} auswaehlen</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Bestanden selecteren (Origineel of .hash-bestand)</value>
+        <value>Dateien auswaehlen (Original oder .hash-Datei)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Geavanceerd: Terugval naar oudere versie</value>
+        <value>Erweitert: Zurueck zur aelteren Version</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Deze functie staat toe een specifieke versie te installeren als de nieuwe problemen heeft.</value>
+        <value>Diese Funktion ermoeglicht die Installation einer bestimmten Version, falls die neue Probleme hat.
+        </value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Plak/Drop hier...</value>
+        <value>Hier einfuegen/ablegen...</value>
     </data>
     <data name="Unit_Seconds">
-        <value>Seconden</value>
+        <value>Sekunden</value>
     </data>
     <data name="Tip_Verify">
-        <value>Verifiëren</value>
+        <value>Pruefen</value>
     </data>
     <data name="Tip_Stop">
-        <value>Stoppen</value>
+        <value>Stopp</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>Bestand verwijderen</value>
+        <value>Datei entfernen</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Hash kopiëren</value>
+        <value>Hash kopieren</value>
     </data>
     <data name="Tip_Compute">
-        <value>Berekenen</value>
+        <value>Berechnen</value>
     </data>
     <data name="Tip_BrowseHash">
-        <value>Hash doorbladeren</value>
+        <value>Hash durchsuchen</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>Donker</value>
+        <value>Dunkel</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>Licht</value>
+        <value>Hell</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>Systeem</value>
+        <value>System</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>Taak gestopt</value>
+        <value>Aufgabe gestoppt</value>
     </data>
     <data name="Msg_FileSizeLimitExceeded">
-        <value>Bestand {0} overschrijdt limiet {1} {2}.</value>
+        <value>Datei {0} ueberschreitet das Limit {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
         <value>Ja</value>
@@ -514,45 +513,45 @@
         <value>OK</value>
     </data>
     <data name="Btn_No">
-        <value>Nee</value>
+        <value>Nein</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip-archief</value>
+        <value>Zip-Archiv</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Afsluiten bevestigen</value>
+        <value>Beenden bestaetigen</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Afsluiten annuleert alle lopende taken. Weet je het zeker?</value>
+        <value>Beenden bricht alle laufenden Aufgaben ab. Sind Sie sicher?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Taak gestopt vanwege timeout.</value>
+        <value>Aufgabe wegen Timeout gestoppt.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Debuglog opslaan op schijf.</value>
+        <value>Debug-Log auf Festplatte speichern.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Realtime logging pauzeren.</value>
+        <value>Echtzeit-Logging pausieren.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Hash tonen</value>
+        <value>Hash anzeigen</value>
     </data>
     <data name="Tip_HideHash">
         <value>Hash verbergen</value>
     </data>
     <data name="Tip_CopyPath">
-        <value>Pad kopiëren</value>
+        <value>Pfad kopieren</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Je schijf is vol. Kies een andere locatie makker :)</value>
+        <value>Deine Festplatte ist voll. Waehle einen anderen Ort Kumpel :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Hash-zichtbaarheid</value>
+        <value>Hash-Sichtbarkeit</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Geen bestanden. Klik 'Bestanden toevoegen' om te beginnen.</value>
+        <value>Keine Dateien. Klicken Sie 'Dateien hinzufuegen' zum Starten.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Dit thema vergrendelen als standaard</value>
+        <value>Dieses Theme als Standard sperren</value>
     </data>
 </root>

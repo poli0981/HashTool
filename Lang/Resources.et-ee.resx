@@ -19,540 +19,538 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Hash genereren</value>
+        <value>Loo hash</value>
     </data>
     <data name="Menu_Check">
-        <value>Hash controleren</value>
+        <value>Kontrolli hash</value>
     </data>
     <data name="Menu_Settings">
-        <value>Instellingen</value>
+        <value>Seaded</value>
     </data>
     <data name="Menu_Update">
-        <value>Update</value>
+        <value>Uuenda</value>
     </data>
     <data name="Menu_Theme">
-        <value>Thema</value>
+        <value>Teema</value>
     </data>
     <data name="Menu_About">
-        <value>Over</value>
+        <value>Teave</value>
     </data>
     <data name="Menu_Developer">
-        <value>Ontwikkelaar</value>
+        <value>Arendaja</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>Bestanden toevoegen...</value>
+        <value>Lisa faile...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Lijst wissen</value>
+        <value>Tühjenda nimekiri</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>ALLES BEREKENEN</value>
+        <value>ARVUTA KÕIK</value>
     </data>
     <data name="Btn_Compress">
-        <value>Comprimeren (.Zip)</value>
+        <value>Tihenda (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ALLES CONTROLEREN</value>
+        <value>KONTROLLI KÕIK</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Nu controleren</value>
+        <value>Kontrolli kohe</value>
     </data>
     <data name="Btn_Install">
-        <value>Installeren</value>
+        <value>Paigalda</value>
     </data>
     <data name="Btn_Accept">
-        <value>Accepteren</value>
+        <value>Nõustu</value>
     </data>
     <data name="Btn_Decline">
-        <value>Weigeren</value>
+        <value>Keeldu</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Hash genereren &amp; comprimeren</value>
+        <value>Loo hash &amp; tihenda</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Batchcontrole</value>
+        <value>Partii kontroll</value>
     </data>
     <data name="Title_Update">
-        <value>Controleren op updates</value>
+        <value>Kontrolli uuendusi</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Waarschuwing ontwikkelaarsversie</value>
+        <value>Arendaja versiooni hoiatus</value>
     </data>
     <data name="Title_About">
-        <value>Over</value>
+        <value>Teave</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tip: Shift+C om alles te berekenen, Shift+Z om te comprimeren, Ctrl+F om bestanden toe te voegen.</value>
+        <value>Vihje: Shift+C arvuta kõik, Shift+Z tihenda, Ctrl+F lisa faile.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A om alles te controleren, Ctrl+F om bestanden toe te voegen, Ctrl+Shift+H om lijst te
-            wissen.
-        </value>
+        <value>Vihje: Shift+A kontrolli kõik, Ctrl+F lisa faile, Ctrl+Shift+H tühjenda nimekiri.</value>
     </data>
     <data name="Lbl_Status_Ready">
-        <value>Klaar</value>
+        <value>Valmis</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Voorbeeld:</value>
+        <value>Näidis:</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>Huidige versie: {0}</value>
+        <value>Praegune versioon: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Releasekanaal:</value>
+        <value>Väljaandekanal:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Totaal bestanden: {0}</value>
+        <value>Faile kokku: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabiel</value>
+        <value>Stabiilne</value>
     </data>
     <data name="Channel_Dev">
-        <value>Ontwikkelaarseditie</value>
+        <value>Arendaja versioon</value>
     </data>
     <data name="Settings_Language">
-        <value>Taal</value>
+        <value>Keel</value>
     </data>
     <data name="Settings_Theme">
-        <value>Thema</value>
+        <value>Teema</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>Themastijl</value>
+        <value>Teema stiil</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Licht/Donker</value>
+        <value>Hele/Tume</value>
     </data>
     <data name="Settings_Font">
-        <value>Lettertype</value>
+        <value>Font</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Lettergrootte (pt)</value>
+        <value>Fondi suurus (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automatisch optimale lettertype voor taal selecteren</value>
+        <value>Automaatne optimaalse fondi valik keele jaoks</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Vergrendelen als standaardlettertype</value>
+        <value>Lukusta vaikefondiks</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI-schaal</value>
+        <value>UI skaala</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Hash-waarden maskeren (Beveiliging)</value>
+        <value>Varja hash väärtused (Turvalisus)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Thema resetten</value>
+        <value>Lähtesta teema</value>
     </data>
     <data name="Settings_Other">
-        <value>Privacy &amp; Beveiliging</value>
+        <value>Privaatsus &amp; turvalisus</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Instellen als standaard</value>
+        <value>Määra vaikimisi</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Aangepaste tekstkleur</value>
+        <value>Kohandatud teksti värv</value>
     </data>
     <data name="Settings_Advanced">
-        <value>Geavanceerd</value>
+        <value>Täpsem</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Als administrator uitvoeren</value>
+        <value>Käita administraatorina</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Herstart vereist. Geeft toegang tot beveiligde bestanden.</value>
+        <value>Nõuab taaskäivitust. Lubab juurdepääsu kaitstud failidele.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Limiet invoerbestandsgrootte</value>
+        <value>Sisendfaili suuruse piirang</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maximale grootte voor te verwerken bestanden.</value>
+        <value>Maksimaalne suurus töödeldavate failide jaoks.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Timeout geforceerd afsluiten</value>
+        <value>Sunniviisilise sulgemise ajalõpp</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Tijd (seconden) voordat app als vastgelopen wordt beschouwd.</value>
+        <value>Aeg (sekundites) enne rakenduse külmumise tuvastamist.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Timeout bestandsverwerking</value>
+        <value>Faili töötlemise ajalõpp</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Annuleren als één bestand te lang duurt.</value>
+        <value>Tühista, kui üks fail võtab liiga kaua aega.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Noodactie</value>
+        <value>Hädaolukorra tegevus</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>App geforceerd afsluiten en alle taken onmiddellijk annuleren.</value>
+        <value>Sunniviisiline rakenduse sulgemine ja kõigi ülesannete viivitamatu tühistamine.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Geforceerd afsluiten &amp; Alles annuleren</value>
+        <value>Sunniviisiline sulgemine &amp; tühista kõik</value>
     </data>
     <data name="Settings_Configuration">
-        <value>Configuratie</value>
+        <value>Konfiguratsioon</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Instellingen vergrendelen (Opslaan als standaard)</value>
+        <value>Lukusta seaded (Salvesta vaikimisi)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Voorkom onbedoelde wijzigingen. Alleen hash-maskering blijft aanpasbaar.</value>
+        <value>Enneta juhuslikke muudatusi. Ainult hash maskimine jääb reguleeritavaks.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Alle instellingen resetten</value>
+        <value>Lähtesta kõik seaded</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Terugzetten naar fabrieksinstellingen.</value>
+        <value>Taasta tehase vaikeseaded.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Configuratiebestandspad</value>
+        <value>Konfiguratsioonifaili tee</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Volledig pad tonen en kopiëren naar klembord.</value>
+        <value>Näita täielikku teed ja kopeeri lõikelauale.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Pad tonen</value>
+        <value>Näita teed</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Instellingen worden automatisch opgeslagen in config.json</value>
+        <value>Seaded salvestatakse automaatselt config.json faili</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Ontwikkelaarsmodus</value>
+        <value>Arendaja režiim</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Geavanceerde logging en debugtools inschakelen.</value>
+        <value>Luba täpsem logimine ja silumise tööriistad.</value>
     </data>
     <data name="Dev_Console">
-        <value>Ontwikkelaarsconsole</value>
+        <value>Arendaja konsool</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Opname</value>
+        <value>Salvestamine</value>
     </data>
     <data name="Dev_Paused">
-        <value>Gepauzeerd</value>
+        <value>Peatatud</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>Opslaan in bestand</value>
+        <value>Salvesta faili</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Niet opslaan</value>
+        <value>Ära salvesta</value>
     </data>
     <data name="Dev_Clear">
-        <value>Console wissen</value>
+        <value>Tühjenda konsool</value>
     </data>
     <data name="Dev_Copy">
-        <value>Alles kopiëren</value>
+        <value>Kopeeri kõik</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Logmap openen</value>
+        <value>Ava logikaust</value>
     </data>
     <data name="About_Author">
-        <value>Auteur</value>
+        <value>Autor</value>
     </data>
     <data name="About_Software">
-        <value>Software</value>
+        <value>Tarkvara</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Derde partij bibliotheken</value>
+        <value>Kolmanda osapoole teegid</value>
     </data>
     <data name="About_Copyright">
-        <value>Auteursrecht</value>
+        <value>Autoriõigus</value>
     </data>
     <data name="About_Desc">
-        <value>Krachtig hulpmiddel voor het genereren, controleren en comprimeren van bestandshashes. Of dat denk ik
-            tenminste :)
+        <value>Võimas tööriist failide hashide loomiseks, kontrollimiseks ja tihendamiseks. Või vähemalt ma arvan nii
+            :)
         </value>
     </data>
     <data name="About_License">
-        <value>Uitgegeven onder MIT-licentie.</value>
+        <value>Välja antud MIT litsentsi all.</value>
     </data>
     <data name="About_Tech">
-        <value>Technologie</value>
+        <value>Tehnoloogia</value>
     </data>
     <data name="About_TechContent">
-        <value>Gebouwd met C# en .NET 10.0.102.</value>
+        <value>Ehitatud C# ja .NET 10.0.102 abil.</value>
     </data>
     <data name="About_AI">
-        <value>AI-ondersteuning</value>
+        <value>AI abi</value>
     </data>
     <data name="About_AIContent">
-        <value>Deze software is ontwikkeld met hulp van AI (Gemini 3 Pro en Grok 4.1).</value>
+        <value>See tarkvara on arendatud AI abiga (Gemini 3 Pro ja Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
-        <value>Verwerken ({0})...</value>
+        <value>Töötlemine ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>Voltooid</value>
+        <value>Valmis</value>
     </data>
     <data name="Status_Error">
-        <value>Fout: {0}</value>
+        <value>Viga: {0}</value>
     </data>
     <data name="Status_Cancelled">
-        <value>Geannuleerd</value>
+        <value>Tühistatud</value>
     </data>
     <data name="Status_Saved">
-        <value>Opgeslagen!</value>
+        <value>Salvestatud!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Gecomprimeerd!</value>
+        <value>Tihendatud!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Wachten op hash/invoer...</value>
+        <value>Ootab hash/sisendit...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Origineel bestand ontbreekt!</value>
+        <value>Algfail puudub!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash-waarde ontbreekt (Voer in of laad hashbestand)</value>
+        <value>Hash väärtus puudub (Sisesta või laadi hash fail)</value>
     </data>
     <data name="Status_Valid">
-        <value>GELDIG</value>
+        <value>KEHTIV</value>
     </data>
     <data name="Status_Invalid">
-        <value>ONGELDIG!</value>
+        <value>KEHTETU!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Hashbestand geladen</value>
+        <value>Hash fail laetud</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hashbestandsnaam komt niet overeen!</value>
+        <value>Hash faili nimi ei klapi!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Bestand bevat geen hash!</value>
+        <value>Failis pole hashi!</value>
     </data>
     <data name="Status_Checking">
-        <value>Controleren op updates...</value>
+        <value>Kontrollin uuendusi...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Nieuwe versie gedetecteerd!</value>
+        <value>Uus versioon avastatud!</value>
     </data>
     <data name="Status_Latest">
-        <value>Je gebruikt de nieuwste versie.</value>
+        <value>Kasutate uusimat versiooni.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Updatecontrolefout: {0}</value>
+        <value>Uuenduste kontrolli viga: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Downloaden en installeren...</value>
+        <value>Allalaadimine ja paigaldamine...</value>
     </data>
     <data name="Status_InstallError">
-        <value>Installatiefout: {0}</value>
+        <value>Paigaldusviga: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Klaar (Van .hash-bestand)</value>
+        <value>Valmis (.hash failist)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Origineel bestand verloren!</value>
+        <value>Algfail kadunud!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hashbestandsnaam komt niet overeen!</value>
+        <value>Hash faili nimi ei klapi!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hashbestand succesvol gedropt</value>
+        <value>Hash fail edukalt kukutatud</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Bestand bevat geen hash!</value>
+        <value>Failis pole hashi!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Bestandleesfout</value>
+        <value>Faili lugemise viga</value>
     </data>
     <data name="Msg_Result_Title">
-        <value>Resultaat</value>
+        <value>Tulemus</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Verwerking voltooid!
-            ✅ Succes: {0}
-            ❌ Mislukt: {1}
+        <value>Töötlemine valmis!
+            ✅ Edu: {0}
+            ❌ Ebaõnnestumine: {1}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>{0} bestanden gecontroleerd.
-            ✅ Overeenkomst: {1}
-            ❌ Geen overeenkomst/Fout: {2}
-            ⛔ Geannuleerd: {3}
+        <value>Kontrollitud {0} faili.
+            ✅ Sobib: {1}
+            ❌ Ei sobi/Viga: {2}
+            ⛔ Tühistatud: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>Verkeerd bestand!</value>
+        <value>Vale fail!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hashbestand komt niet overeen!
+        <value>Hash fail ei sobi!
 
-            Origineel bestand: {0}
-            Geselecteerd bestand: {1}
+            Algfail: {0}
+            Valitud fail: {1}
 
-            Selecteer het juiste bijgevoegde hashbestand.
+            Palun valige õige kaasasolev hash fail.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Nieuwe update</value>
+        <value>Uus uuendus</value>
     </data>
     <data name="Msg_UpdateContent">
-        <value>Versie: {0}
+        <value>Versioon: {0}
 
-            Wijzigingen:
+            Muudatused:
             {1}
 
-            Klik 'Nu bijwerken' om te downloaden.
+            Klõpsake 'Uuenda kohe' allalaadimiseks.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Geen nieuwere updates gevonden.</value>
+        <value>Uuemaid uuendusi ei leitud.</value>
     </data>
     <data name="Msg_Error">
-        <value>Fout</value>
+        <value>Viga</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Kan dit hashbestand niet lezen.</value>
+        <value>Ei saa seda hash faili lugeda.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Configuratiecontrole</value>
+        <value>Konfiguratsiooni kontroll</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Bestand bestaat op:
+        <value>Fail on olemas:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Bestand bestaat niet!</value>
+        <value>Fail puudub!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Bestand succesvol aangemaakt!</value>
+        <value>Fail loodud edukalt!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Configuratiepad gekopieerd.</value>
+        <value>Konfiguratsiooni tee kopeeritud.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Beheerdersmodus</value>
+        <value>Administraatori režiim</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Herstart de toepassing om wijzigingen toe te passen.</value>
+        <value>Palun taaskäivitage rakendus muudatuste rakendamiseks.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Kan map niet openen: {0}</value>
+        <value>Ei saa kausta avada: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ WAARSCHUWING ONTWIKKELAARSVERSIE</value>
+        <value>⚠️ ARENDAJA VERSIOONI HOIATUS</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Je staat op het punt over te schakelen naar het ontwikkelaarsupdatekanaal (prerelease).
+        <value>Olete vahetamas arendaja kanalile (eelväljaanne).
 
-            Deze versie kan bugs bevatten, instabiel zijn en gegevensverlies veroorzaken.
+            See versioon võib sisaldada vigu, olla ebastabiilne ja põhjustada andmekadu.
 
-            Ik ben niet verantwoordelijk voor problemen die ontstaan door het gebruik van deze versie.
+            Ma ei vastuta selle versiooni kasutamisest tulenevate probleemide eest.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Ik heb gelezen en ga akkoord. Ik neem volledige verantwoordelijkheid.</value>
+        <value>Olen lugenud ja nõustun. Võtan täieliku vastutuse.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Hashbestand opslaan</value>
+        <value>Salvesta hash fail</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Gecomprimeerd bestand opslaan</value>
+        <value>Salvesta tihendatud fail</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Bestanden selecteren voor hash</value>
+        <value>Vali failid hashiks</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Hashbestand selecteren voor: {0}</value>
+        <value>Vali hash fail: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Bestanden selecteren (Origineel of .hash-bestand)</value>
+        <value>Vali failid (Originaal või .hash fail)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Geavanceerd: Terugval naar oudere versie</value>
+        <value>Täpsem: Tagasi vanemale versioonile</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Deze functie staat toe een specifieke versie te installeren als de nieuwe problemen heeft.</value>
+        <value>See funktsioon võimaldab paigaldada kindla versiooni, kui uus versioon tekitab probleeme.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Plak/Drop hier...</value>
+        <value>Kleebi/Lase siia...</value>
     </data>
     <data name="Unit_Seconds">
-        <value>Seconden</value>
+        <value>Sekundit</value>
     </data>
     <data name="Tip_Verify">
-        <value>Verifiëren</value>
+        <value>Kinnita</value>
     </data>
     <data name="Tip_Stop">
-        <value>Stoppen</value>
+        <value>Peata</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>Bestand verwijderen</value>
+        <value>Eemalda fail</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Hash kopiëren</value>
+        <value>Kopeeri hash</value>
     </data>
     <data name="Tip_Compute">
-        <value>Berekenen</value>
+        <value>Arvuta</value>
     </data>
     <data name="Tip_BrowseHash">
-        <value>Hash doorbladeren</value>
+        <value>Sirvi hash</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>Donker</value>
+        <value>Tume</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>Licht</value>
+        <value>Hele</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>Systeem</value>
+        <value>Süsteem</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>Taak gestopt</value>
+        <value>Ülesanne peatatud</value>
     </data>
     <data name="Msg_FileSizeLimitExceeded">
-        <value>Bestand {0} overschrijdt limiet {1} {2}.</value>
+        <value>Fail {0} ületab limiidi {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
-        <value>Ja</value>
+        <value>Jah</value>
     </data>
     <data name="Btn_OK">
         <value>OK</value>
     </data>
     <data name="Btn_No">
-        <value>Nee</value>
+        <value>Ei</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip-archief</value>
+        <value>Zip arhiiv</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Afsluiten bevestigen</value>
+        <value>Kinnita väljumine</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Afsluiten annuleert alle lopende taken. Weet je het zeker?</value>
+        <value>Väljumine tühistab kõik käimasolevad ülesanded. Oled kindel?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Taak gestopt vanwege timeout.</value>
+        <value>Ülesanne peatatud ajalõpu tõttu.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Debuglog opslaan op schijf.</value>
+        <value>Salvesta silumislogi kettale.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Realtime logging pauzeren.</value>
+        <value>Peata reaalajas logimine.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Hash tonen</value>
+        <value>Näita hash</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Hash verbergen</value>
+        <value>Peida hash</value>
     </data>
     <data name="Tip_CopyPath">
-        <value>Pad kopiëren</value>
+        <value>Kopeeri tee</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Je schijf is vol. Kies een andere locatie makker :)</value>
+        <value>Sinu ketas on täis. Vali teine asukoht vend :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Hash-zichtbaarheid</value>
+        <value>Hash nähtavus</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Geen bestanden. Klik 'Bestanden toevoegen' om te beginnen.</value>
+        <value>Faile pole. Alustamiseks klõpsa 'Lisa faile'.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Dit thema vergrendelen als standaard</value>
+        <value>Lukusta see teema vaikimisi</value>
     </data>
 </root>

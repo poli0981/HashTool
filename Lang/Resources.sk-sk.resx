@@ -19,538 +19,538 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Hash erstellen</value>
+        <value>Vytvoriť Hash</value>
     </data>
     <data name="Menu_Check">
-        <value>Hash prüfen</value>
+        <value>Overiť Hash</value>
     </data>
     <data name="Menu_Settings">
-        <value>Einstellungen</value>
+        <value>Nastavenia</value>
     </data>
     <data name="Menu_Update">
-        <value>Update</value>
+        <value>Aktualizovať</value>
     </data>
     <data name="Menu_Theme">
-        <value>Theme</value>
+        <value>Téma</value>
     </data>
     <data name="Menu_About">
-        <value>Über</value>
+        <value>O programe</value>
     </data>
     <data name="Menu_Developer">
-        <value>Entwickler</value>
+        <value>Vývojár</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>Dateien hinzufügen...</value>
+        <value>Pridať súbory...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Liste leeren</value>
+        <value>Vymazať zoznam</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>ALLES BERECHNEN</value>
+        <value>VYPÍSAŤ VŠETKO</value>
     </data>
     <data name="Btn_Compress">
-        <value>Komprimieren (.Zip)</value>
+        <value>Komprimovať (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ALLES PRÜFEN</value>
+        <value>OVERIŤ VŠETKO</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Jetzt prüfen</value>
+        <value>Overiť teraz</value>
     </data>
     <data name="Btn_Install">
-        <value>Installieren</value>
+        <value>Inštalovať</value>
     </data>
     <data name="Btn_Accept">
-        <value>Akzeptieren</value>
+        <value>Prijať</value>
     </data>
     <data name="Btn_Decline">
-        <value>Ablehnen</value>
+        <value>Odmietnuť</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Hash erstellen &amp; komprimieren</value>
+        <value>Vytvoriť Hash &amp; Komprimovať</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Stapelprüfung</value>
+        <value>Hromadné overenie</value>
     </data>
     <data name="Title_Update">
-        <value>Nach Updates suchen</value>
+        <value>Skontrolovať aktualizácie</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Entwicklerversion Warnung</value>
+        <value>Upozornenie verzie vývojára</value>
     </data>
     <data name="Title_About">
-        <value>Über</value>
+        <value>O programe</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tipp: Shift+C alles berechnen, Shift+Z komprimieren, Ctrl+F Dateien hinzufügen.</value>
+        <value>Tip: Shift+C pre Vypísať všetko, Shift+Z pre Komprimovať, Ctrl+F pre Pridať súbory.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tipp: Shift+A alles prüfen, Ctrl+F Dateien hinzufügen, Ctrl+Shift+H Liste leeren.</value>
+        <value>Tip: Shift+A pre Overiť všetko, Ctrl+F pre Pridať súbory, Ctrl+Shift+H pre Vymazať zoznam.</value>
     </data>
     <data name="Lbl_Status_Ready">
-        <value>Bereit</value>
+        <value>Pripravené</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Beispiel:</value>
+        <value>Príklad:</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>Aktuelle Version: {0}</value>
+        <value>Aktuálna verzia: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Veröffentlichungskanal:</value>
+        <value>Kanál vydania:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Gesamtdateien: {0}</value>
+        <value>Celkom súborov: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabil</value>
+        <value>Stabilná</value>
     </data>
     <data name="Channel_Dev">
-        <value>Entwicklerversion</value>
+        <value>Vývojárska edícia</value>
     </data>
     <data name="Settings_Language">
-        <value>Sprache</value>
+        <value>Jazyk</value>
     </data>
     <data name="Settings_Theme">
-        <value>Theme</value>
+        <value>Téma</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>Theme-Stil</value>
+        <value>Štýl témy</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Hell/Dunkel</value>
+        <value>Svetlá/Tmavá</value>
     </data>
     <data name="Settings_Font">
-        <value>Schriftart</value>
+        <value>Písmo</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Schriftgröße (pt)</value>
+        <value>Veľkosť písma (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automatische optimale Schriftart für Sprache wählen</value>
+        <value>Automaticky vybrať optimálne písmo pre jazyk</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Als Standardschriftart sperren</value>
+        <value>Zamknúť ako predvolené písmo</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI-Skalierung</value>
+        <value>Mierka UI</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Hash-Werte maskieren (Sicherheit)</value>
+        <value>Maskovať hodnoty Hash (Bezpečnosť)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Theme zurücksetzen</value>
+        <value>Resetovať tému</value>
     </data>
     <data name="Settings_Other">
-        <value>Privatsphäre &amp; Sicherheit</value>
+        <value>Súkromie &amp; Bezpečnosť</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Als Standard festlegen</value>
+        <value>Nastaviť ako predvolené</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Benutzerdefinierte Textfarbe</value>
+        <value>Vlastná farba textu</value>
     </data>
     <data name="Settings_Advanced">
-        <value>Erweitert</value>
+        <value>Pokročilé</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Als Administrator ausführen</value>
+        <value>Spustiť ako administrátor</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Neustart erforderlich. Erlaubt Zugriff auf geschützte Dateien.</value>
+        <value>Vyžaduje reštart. Umožňuje prístup k chráneným súborom.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Eingabedateigrößenlimit</value>
+        <value>Limit veľkosti vstupného súboru</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maximale Größe für zu verarbeitende Dateien.</value>
+        <value>Maximálna veľkosť pre súbory na spracovanie.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Erzwungener Beendigungs-Timeout</value>
+        <value>Časový limit núteného ukončenia</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Zeit (Sekunden) bevor die App als eingefroren gilt.</value>
+        <value>Čas (sekundy) pred považovaním aplikácie za zamrznutú.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Dateiverarbeitungs-Timeout</value>
+        <value>Časový limit spracovania súboru</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Abbrechen, wenn eine Datei zu lange braucht.</value>
+        <value>Zrušiť, ak jeden súbor trvá príliš dlho.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Notfallaktion</value>
+        <value>Núdzová akcia</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>App zwangsweise beenden und alle Aufgaben sofort abbrechen.</value>
+        <value>Nútené ukončenie aplikácie a okamžité zrušenie všetkých úloh.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Zwangsbeendigung &amp; Alles abbrechen</value>
+        <value>Nútené ukončenie &amp; Zrušiť všetko</value>
     </data>
     <data name="Settings_Configuration">
-        <value>Konfiguration</value>
+        <value>Konfigurácia</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Einstellungen sperren (Als Standard speichern)</value>
+        <value>Zamknúť nastavenia (Uložiť ako predvolené)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Zufällige Änderungen verhindern. Nur Hash-Maskierung bleibt einstellbar.</value>
+        <value>Zabránenie náhodným zmenám. Len maskovanie Hash zostáva nastaviteľné.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Alle Einstellungen zurücksetzen</value>
+        <value>Resetovať všetky nastavenia</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Auf Werkseinstellungen zurücksetzen.</value>
+        <value>Obnoviť továrenské nastavenia.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Konfigurationsdateipfad</value>
+        <value>Cesta ku konfiguračnému súboru</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Vollständigen Pfad anzeigen und in Zwischenablage kopieren.</value>
+        <value>Zobraziť úplnú cestu a skopírovať do schránky.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Pfad anzeigen</value>
+        <value>Zobraziť cestu</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Einstellungen werden automatisch in config.json gespeichert</value>
+        <value>Nastavenia sa automaticky ukladajú do config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Entwicklermodus</value>
+        <value>Režim vývojára</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Erweiterte Protokollierung und Debugging-Tools aktivieren.</value>
+        <value>Povoliť pokročilé logovanie a nástroje na ladenie.</value>
     </data>
     <data name="Dev_Console">
-        <value>Entwicklerkonsole</value>
+        <value>Konzola vývojára</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Aufnahme</value>
+        <value>Nahrávanie</value>
     </data>
     <data name="Dev_Paused">
-        <value>Pausiert</value>
+        <value>Pozastavené</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>In Datei speichern</value>
+        <value>Uložiť do súboru</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Nicht speichern</value>
+        <value>Neukladať</value>
     </data>
     <data name="Dev_Clear">
-        <value>Konsole leeren</value>
+        <value>Vyčistiť konzolu</value>
     </data>
     <data name="Dev_Copy">
-        <value>Alles kopieren</value>
+        <value>Kopírovať všetko</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Log-Ordner öffnen</value>
+        <value>Otvoriť priečinok s logmi</value>
     </data>
     <data name="About_Author">
         <value>Autor</value>
     </data>
     <data name="About_Software">
-        <value>Software</value>
+        <value>Softvér</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Drittanbieter-Bibliotheken</value>
+        <value>Knižnice tretích strán</value>
     </data>
     <data name="About_Copyright">
-        <value>Urheberrecht</value>
+        <value>Autorské práva</value>
     </data>
     <data name="About_Desc">
-        <value>Leistungsstarkes Tool zum Erstellen, Prüfen und Komprimieren von Datei-Hashes. Oder zumindest denke ich
-            das :)
+        <value>Výkonný nástroj na vytváranie, overovanie a komprimovanie hash hodnôt súborov. Alebo aspoň si to myslím
+            :)
         </value>
     </data>
     <data name="About_License">
-        <value>Unter MIT-Lizenz veröffentlicht.</value>
+        <value>Vydané pod licenciou MIT.</value>
     </data>
     <data name="About_Tech">
-        <value>Technologie</value>
+        <value>Technológia</value>
     </data>
     <data name="About_TechContent">
-        <value>Mit C# und .NET 10.0.102 erstellt.</value>
+        <value>Vytvorené s C# a .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>KI-Unterstützung</value>
+        <value>Pomoc AI</value>
     </data>
     <data name="About_AIContent">
-        <value>Diese Software wurde mit KI-Unterstützung entwickelt (Gemini 3 Pro und Grok 4.1).</value>
+        <value>Tento softvér bol vyvinutý s pomocou AI (Gemini 3 Pro a Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
-        <value>Verarbeitet ({0})...</value>
+        <value>Spracúva sa ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>Fertig</value>
+        <value>Hotovo</value>
     </data>
     <data name="Status_Error">
-        <value>Fehler: {0}</value>
+        <value>Chyba: {0}</value>
     </data>
     <data name="Status_Cancelled">
-        <value>Abgebrochen</value>
+        <value>Zrušené</value>
     </data>
     <data name="Status_Saved">
-        <value>Gespeichert!</value>
+        <value>Uložené!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Komprimiert!</value>
+        <value>Komprimované!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Wartet auf Hash/Eingabe...</value>
+        <value>Čaká sa na hash/vstup...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Originaldatei fehlt!</value>
+        <value>Chýba originálny súbor!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash-Wert fehlt (Eingeben oder Hash-Datei laden)</value>
+        <value>Chýba hodnota hash (Zadajte alebo načítajte hash súbor)</value>
     </data>
     <data name="Status_Valid">
-        <value>GÜLTIG</value>
+        <value>PLATNÉ</value>
     </data>
     <data name="Status_Invalid">
-        <value>UNGÜLTIG!</value>
+        <value>NEPLATNÉ!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Hash-Datei geladen</value>
+        <value>Hash súbor načítaný</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hash-Dateiname stimmt nicht überein!</value>
+        <value>Názov hash súboru sa nezhoduje!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Datei enthält keinen Hash!</value>
+        <value>Súbor neobsahuje hash!</value>
     </data>
     <data name="Status_Checking">
-        <value>Suche nach Updates...</value>
+        <value>Kontrolujú sa aktualizácie...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Neue Version entdeckt!</value>
+        <value>Objavená nová verzia!</value>
     </data>
     <data name="Status_Latest">
-        <value>Sie verwenden die neueste Version.</value>
+        <value>Používate najnovšiu verziu.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Update-Prüfungsfehler: {0}</value>
+        <value>Chyba kontroly aktualizácií: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Herunterladen und Installieren...</value>
+        <value>Sťahuje sa a inštaluje...</value>
     </data>
     <data name="Status_InstallError">
-        <value>Installationsfehler: {0}</value>
+        <value>Chyba inštalácie: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Bereit (Aus .hash-Datei)</value>
+        <value>Pripravené (Z .hash súboru)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Originaldatei verloren!</value>
+        <value>Originálny súbor stratený!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hash-Dateiname stimmt nicht überein!</value>
+        <value>Názov hash súboru sa nezhoduje!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hash-Datei erfolgreich abgelegt</value>
+        <value>Hash súbor úspešne pustený</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Datei enthält keinen Hash!</value>
+        <value>Súbor neobsahuje hash!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Dateilesefehler</value>
+        <value>Chyba čítania súboru</value>
     </data>
     <data name="Msg_Result_Title">
-        <value>Ergebnis</value>
+        <value>Výsledok</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Verarbeitung abgeschlossen!
-            ✅ Erfolg: {0}
-            ❌ Fehlgeschlagen: {1}
+        <value>Spracovanie dokončené!
+            ✅ Úspech: {0}
+            ❌ Neúspech: {1}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>{0} Dateien geprüft.
-            ✅ Übereinstimmung: {1}
-            ❌ Keine Übereinstimmung/Fehler: {2}
-            ⛔ Abgebrochen: {3}
+        <value>Skontrolovaných {0} súborov.
+            ✅ Zhoda: {1}
+            ❌ Nezhoda/Chyba: {2}
+            ⛔ Zrušené: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>Falsche Datei!</value>
+        <value>Zlá súbor!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hash-Datei stimmt nicht überein!
+        <value>Hash súbor sa nezhoduje!
 
-            Originaldatei: {0}
-            Ausgewählte Datei: {1}
+            Originálny súbor: {0}
+            Vybraný súbor: {1}
 
-            Bitte wählen Sie die richtige beigefügte Hash-Datei aus.
+            Prosím, vyberte správny priložený hash súbor.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Neues Update</value>
+        <value>Nová aktualizácia</value>
     </data>
     <data name="Msg_UpdateContent">
-        <value>Version: {0}
+        <value>Verzia: {0}
 
-            Änderungen:
+            Zmeny:
             {1}
 
-            Klicken Sie 'Jetzt aktualisieren' zum Herunterladen.
+            Kliknite 'Aktualizovať teraz' na stiahnutie.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Keine neueren Updates gefunden.</value>
+        <value>Žiadne novšie aktualizácie nenájdené.</value>
     </data>
     <data name="Msg_Error">
-        <value>Fehler</value>
+        <value>Chyba</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Kann diese Hash-Datei nicht lesen.</value>
+        <value>Nemôžem prečítať tento hash súbor.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Konfigurationsprüfung</value>
+        <value>Kontrola konfigurácie</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Datei existiert unter:
+        <value>Súbor existuje na:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Datei existiert nicht!</value>
+        <value>Súbor neexistuje!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Datei erfolgreich erstellt!</value>
+        <value>Súbor úspešne vytvorený!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Konfigurationspfad kopiert.</value>
+        <value>Cesta konfigurácie skopírovaná.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Administratormodus</value>
+        <value>Režim administrátora</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Bitte starten Sie die Anwendung neu, damit die Änderungen wirksam werden.</value>
+        <value>Prosím, reštartujte aplikáciu, aby sa zmeny prejavili.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Ordner kann nicht geöffnet werden: {0}</value>
+        <value>Nemôžem otvoriť priečinok: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ENTWICKLERVERSION WARNUNG</value>
+        <value>⚠️ UPOZORNENIE VERZIE VÝVOJÁRA</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Sie wechseln zum Entwickler-Update-Kanal (Vorabversion).
+        <value>Prechádzate na kanál aktualizácií Vývojár (predbežná verzia).
 
-            Diese Version kann Fehler enthalten, instabil sein und Datenverlust verursachen.
+            Táto verzia môže obsahovať chyby, byť nestabilná a spôsobiť stratu dát.
 
-            Ich bin nicht verantwortlich für Probleme durch die Nutzung dieser Version.
+            Nie som zodpovedný za problémy vyplývajúce z používania tejto verzie.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Ich habe gelesen und akzeptiere. Ich übernehme volle Verantwortung.</value>
+        <value>Prečítal som a súhlasím. Beriem plnú zodpovednosť.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Hash-Datei speichern</value>
+        <value>Uložiť hash súbor</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Komprimierte Datei speichern</value>
+        <value>Uložiť komprimovaný súbor</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Dateien für Hash auswählen</value>
+        <value>Vybrať súbory pre hash</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Hash-Datei für: {0} auswählen</value>
+        <value>Vybrať hash súbor pre: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Dateien auswählen (Original oder .hash-Datei)</value>
+        <value>Vybrať súbory (Originálny alebo .hash súbor)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Erweitert: Zurück zur älteren Version</value>
+        <value>Pokročilé: Návrat na staršiu verziu</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Diese Funktion ermöglicht die Installation einer bestimmten Version, falls die neue Probleme hat.</value>
+        <value>Táto funkcia umožňuje inštaláciu konkrétnej verzie, ak nová má problémy.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Hier einfügen/ablegen...</value>
+        <value>Vložte/Pustite tu...</value>
     </data>
     <data name="Unit_Seconds">
-        <value>Sekunden</value>
+        <value>Sekundy</value>
     </data>
     <data name="Tip_Verify">
-        <value>Prüfen</value>
+        <value>Overiť</value>
     </data>
     <data name="Tip_Stop">
-        <value>Stopp</value>
+        <value>Zastaviť</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>Datei entfernen</value>
+        <value>Odstrániť súbor</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Hash kopieren</value>
+        <value>Kopírovať hash</value>
     </data>
     <data name="Tip_Compute">
-        <value>Berechnen</value>
+        <value>Vypočítať</value>
     </data>
     <data name="Tip_BrowseHash">
-        <value>Hash durchsuchen</value>
+        <value>Prehliadať hash</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>Dunkel</value>
+        <value>Tmavá</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>Hell</value>
+        <value>Svetlá</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>System</value>
+        <value>Systémová</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>Aufgabe gestoppt</value>
+        <value>Úloha zastavená</value>
     </data>
     <data name="Msg_FileSizeLimitExceeded">
-        <value>Datei {0} überschreitet das Limit {1} {2}.</value>
+        <value>Súbor {0} presahuje limit {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
-        <value>Ja</value>
+        <value>Áno</value>
     </data>
     <data name="Btn_OK">
         <value>OK</value>
     </data>
     <data name="Btn_No">
-        <value>Nein</value>
+        <value>Nie</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip-Archiv</value>
+        <value>Zip archív</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Beenden bestätigen</value>
+        <value>Potvrďte ukončenie</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Beenden bricht alle laufenden Aufgaben ab. Sind Sie sicher?</value>
+        <value>Ukončenie zruší všetky prebiehajúce úlohy. Ste si istý?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Aufgabe wegen Timeout gestoppt.</value>
+        <value>Úloha zastavená kvôli timeoutu.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Debug-Log auf Festplatte speichern.</value>
+        <value>Uložiť debug log na disk.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Echtzeit-Logging pausieren.</value>
+        <value>Pauzovať logovanie v reálnom čase.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Hash anzeigen</value>
+        <value>Zobraziť hash</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Hash verbergen</value>
+        <value>Skryť hash</value>
     </data>
     <data name="Tip_CopyPath">
-        <value>Pfad kopieren</value>
+        <value>Kopírovať cestu</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Deine Festplatte ist voll. Wähle einen anderen Ort Kumpel :)</value>
+        <value>Tvoj disk je plný. Vyber iné miesto kamoš :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Hash-Sichtbarkeit</value>
+        <value>Viditeľnosť hash</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Keine Dateien. Klicken Sie 'Dateien hinzufügen' zum Starten.</value>
+        <value>Žiadne súbory. Klikni 'Pridať súbory' na začiatok.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Dieses Theme als Standard sperren</value>
+        <value>Zamknúť túto tému ako predvolenú</value>
     </data>
 </root>

@@ -28,7 +28,7 @@
         <value>การตั้งค่า</value>
     </data>
     <data name="Menu_Update">
-        <value>ตรวจสอบการอัปเดต</value>
+        <value>อัปเดต</value>
     </data>
     <data name="Menu_Theme">
         <value>ธีม</value>
@@ -55,7 +55,7 @@
         <value>ตรวจสอบทั้งหมด</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>ตรวจสอบทันที</value>
+        <value>ตรวจสอบเดี๋ยวนี้</value>
     </data>
     <data name="Btn_Install">
         <value>ติดตั้ง</value>
@@ -67,13 +67,13 @@
         <value>ยกเลิก</value>
     </data>
     <data name="Title_CreateHash">
-        <value>สร้างแฮช &amp; บีบอัด</value>
+        <value>สร้างแฮชและบีบอัด</value>
     </data>
     <data name="Title_CheckHash">
         <value>ตรวจสอบเป็นชุด</value>
     </data>
     <data name="Title_Update">
-        <value>ตรวจสอบการอัปเดต</value>
+        <value>ตรวจสอบอัปเดต</value>
     </data>
     <data name="Title_Disclaimer">
         <value>คำเตือนเวอร์ชันนักพัฒนา</value>
@@ -82,10 +82,10 @@
         <value>เกี่ยวกับ</value>
     </data>
     <data name="Help_CreateHash">
-        <value>เคล็ดลับ: Shift+C เพื่อคำนวณทั้งหมด, Shift+Z เพื่อบีบอัด, Ctrl+F เพื่อเพิ่มไฟล์</value>
+        <value>เคล็ดลับ: Shift+C คำนวณทั้งหมด, Shift+Z บีบอัด, Ctrl+F เพิ่มไฟล์</value>
     </data>
     <data name="Help_CheckHash">
-        <value>เคล็ดลับ: Shift+A เพื่อตรวจสอบทั้งหมด, Ctrl+F เพื่อเพิ่มไฟล์, Ctrl+Shift+H เพื่อล้างรายการ</value>
+        <value>เคล็ดลับ: Shift+A ตรวจสอบทั้งหมด, Ctrl+F เพิ่มไฟล์, Ctrl+Shift+H ล้างรายการ</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>พร้อม</value>
@@ -97,16 +97,16 @@
         <value>เวอร์ชันปัจจุบัน: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>ช่องทางการเผยแพร่:</value>
+        <value>ช่องทางการอัปเดต:</value>
     </data>
     <data name="Lbl_TotalFiles">
         <value>จำนวนไฟล์ทั้งหมด: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stable (เสถียร)</value>
+        <value>เสถียร</value>
     </data>
     <data name="Channel_Dev">
-        <value>Dev (นักพัฒนา)</value>
+        <value>เวอร์ชันนักพัฒนา</value>
     </data>
     <data name="Settings_Language">
         <value>ภาษา</value>
@@ -127,31 +127,28 @@
         <value>ขนาดตัวอักษร (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>เลือกแบบอักษรที่เหมาะสมอัตโนมัติสำหรับภาษา</value>
+        <value>เลือกแบบอักษรที่เหมาะกับภาษาอัตโนมัติ</value>
     </data>
     <data name="Settings_LockFont">
-        <value>ใช้เป็นแบบอักษรเริ่มต้น (ล็อกการเปลี่ยนแปลง)</value>
+        <value>ล็อกเป็นแบบอักษรเริ่มต้น</value>
     </data>
     <data name="Settings_Scale">
         <value>ขนาด UI</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>ซ่อนแฮช (ความปลอดภัย)</value>
+        <value>ซ่อนค่าแฮช (ความปลอดภัย)</value>
     </data>
     <data name="Settings_Reset">
         <value>รีเซ็ตธีม</value>
     </data>
     <data name="Settings_Other">
-        <value>ความเป็นส่วนตัว &amp; ความปลอดภัย</value>
+        <value>ความเป็นส่วนตัวและความปลอดภัย</value>
     </data>
     <data name="Settings_SetDefault">
         <value>ตั้งเป็นค่าเริ่มต้น</value>
     </data>
     <data name="Settings_CustomColor">
         <value>สีข้อความกำหนดเอง</value>
-    </data>
-    <data name="Settings_TextTest">
-        <value>จิ้งจอกสีน้ำตาลตัวเร็วกระโดดข้ามสุนัขขี้เกียจ</value>
     </data>
     <data name="Settings_Advanced">
         <value>ขั้นสูง</value>
@@ -160,34 +157,34 @@
         <value>รันในฐานะผู้ดูแลระบบ</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>ต้องรีสตาร์ท อนุญาตให้เข้าถึงไฟล์ที่ได้รับการป้องกัน</value>
+        <value>ต้องรีสตาร์ท อนุญาตให้เข้าถึงไฟล์ที่ถูกป้องกัน</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>จำกัดขนาดไฟล์อินพุต</value>
+        <value>จำกัดขนาดไฟล์เข้า</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>จำกัดขนาดสูงสุดสำหรับไฟล์ที่จะประมวลผล</value>
+        <value>ขนาดสูงสุดของไฟล์ที่ต้องการประมวลผล</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
         <value>หมดเวลาบังคับออก</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>เวลา (วินาที) ก่อนถือว่าแอปค้าง</value>
+        <value>เวลารอ (วินาที) ก่อนถือว่าแอปค้าง</value>
     </data>
     <data name="Settings_FileTimeout">
         <value>หมดเวลาประมวลผลไฟล์</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>บังคับยกเลิกหากไฟล์ใช้เวลานานเกินไป</value>
+        <value>ยกเลิกหากไฟล์เดียวใช้เวลานานเกินไป</value>
     </data>
     <data name="Settings_Emergency">
-        <value>การดำเนินการฉุกเฉิน</value>
+        <value>การกระทำฉุกเฉิน</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>บังคับออกแอปและยกเลิกงานทั้งหมดทันที</value>
+        <value>บังคับปิดแอปและยกเลิกทุกงานทันที</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>บังคับออก &amp; ยกเลิกทั้งหมด</value>
+        <value>บังคับออกและยกเลิกทั้งหมด</value>
     </data>
     <data name="Settings_Configuration">
         <value>การกำหนดค่า</value>
@@ -196,19 +193,19 @@
         <value>ล็อกการตั้งค่า (บันทึกเป็นค่าเริ่มต้น)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>ป้องกันการเปลี่ยนแปลงโดยไม่ตั้งใจ มีเพียงการซ่อนแฮชที่ยังทำงาน</value>
+        <value>ป้องกันการเปลี่ยนโดยไม่ตั้งใจ ยังปรับซ่อนแฮชได้</value>
     </data>
     <data name="Settings_ResetAll">
         <value>รีเซ็ตการตั้งค่าทั้งหมด</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>คืนค่าเริ่มต้นเดิม</value>
+        <value>คืนค่าโรงงาน</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>เส้นทางไฟล์การกำหนดค่า</value>
+        <value>เส้นทางไฟล์กำหนดค่า</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>แสดงเส้นทางเต็มและคัดลอกไปยังคลิปบอร์ด</value>
+        <value>แสดงเส้นทางเต็มและคัดลอกไปคลิปบอร์ด</value>
     </data>
     <data name="Settings_ShowPath">
         <value>แสดงเส้นทาง</value>
@@ -220,7 +217,7 @@
         <value>โหมดนักพัฒนา</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>เปิดใช้งานเครื่องมือล็อกและดีบักระดับสูง</value>
+        <value>เปิดใช้งานเครื่องมือล็อกและดีบักขั้นสูง</value>
     </data>
     <data name="Dev_Console">
         <value>คอนโซลนักพัฒนา</value>
@@ -262,7 +259,7 @@
         <value>ลิขสิทธิ์</value>
     </data>
     <data name="About_Desc">
-        <value>เครื่องมือทรงพลังสำหรับสร้างและตรวจสอบแฮชไฟล์</value>
+        <value>เครื่องมือทรงพลังสำหรับสร้าง ตรวจสอบ และบีบอัดแฮชไฟล์ หรืออย่างน้อยฉันก็คิดอย่างนั้น :)</value>
     </data>
     <data name="About_License">
         <value>เผยแพร่ภายใต้ใบอนุญาต MIT</value>
@@ -298,13 +295,13 @@
         <value>บีบอัดแล้ว!</value>
     </data>
     <data name="Status_Waiting">
-        <value>รอแฮช/อินพุต...</value>
+        <value>รอแฮช/ข้อมูลเข้า...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>ไฟล์ต้นฉบับหาย!</value>
+        <value>ไม่พบไฟล์ต้นฉบับ!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>แฮชหาย (ป้อนหรือต้องการไฟล์แฮช)</value>
+        <value>ไม่มีค่าแฮช (ป้อนหรือโหลดไฟล์แฮช)</value>
     </data>
     <data name="Status_Valid">
         <value>ถูกต้อง</value>
@@ -322,53 +319,52 @@
         <value>ไฟล์ไม่มีแฮช!</value>
     </data>
     <data name="Status_Checking">
-        <value>กำลังตรวจสอบการอัปเดต...</value>
+        <value>กำลังตรวจสอบอัปเดต...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>ตรวจพบเวอร์ชันใหม่!</value>
+        <value>พบเวอร์ชันใหม่!</value>
     </data>
     <data name="Status_Latest">
         <value>คุณใช้เวอร์ชันล่าสุดอยู่</value>
     </data>
     <data name="Status_CheckError">
-        <value>ข้อผิดพลาดในการตรวจสอบ: {0}</value>
+        <value>ข้อผิดพลาดการตรวจสอบ: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>กำลังดาวน์โหลดและติดตั้ง...</value>
     </data>
     <data name="Status_InstallError">
-        <value>ข้อผิดพลาดในการติดตั้ง: {0}</value>
+        <value>ข้อผิดพลาดการติดตั้ง: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
         <value>พร้อม (จากไฟล์ .hash)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>ไฟล์ต้นฉบับหาย!</value>
+        <value>สูญเสียไฟล์ต้นฉบับ!</value>
     </data>
     <data name="Status_DropHashMismatch">
         <value>ชื่อไฟล์แฮชไม่ตรงกัน!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>ดรอปไฟล์แฮชแล้ว</value>
+        <value>ดรอปไฟล์แฮชสำเร็จ</value>
     </data>
     <data name="Status_DropNoHash">
         <value>ไฟล์ไม่มีแฮช!</value>
     </data>
     <data name="Status_ReadError">
-        <value>ข้อผิดพลาดในการอ่านไฟล์</value>
+        <value>ข้อผิดพลาดการอ่านไฟล์</value>
     </data>
     <data name="Msg_Result_Title">
         <value>ผลลัพธ์</value>
     </data>
     <data name="Msg_Result_Content">
         <value>ประมวลผลเสร็จสิ้น!
-
             ✅ สำเร็จ: {0}
             ❌ ล้มเหลว: {1}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>ตรวจสอบ {0} ไฟล์แล้ว
+        <value>ตรวจสอบไฟล์ {0} ไฟล์แล้ว
             ✅ ตรงกัน: {1}
             ❌ ไม่ตรง/ข้อผิดพลาด: {2}
             ⛔ ยกเลิก: {3}
@@ -383,7 +379,7 @@
             ไฟล์ต้นฉบับ: {0}
             ไฟล์ที่เลือก: {1}
 
-            โปรดเลือกไฟล์แฮชที่ถูกต้อง
+            กรุณาเลือกไฟล์แฮชที่ถูกต้อง
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -395,11 +391,11 @@
             การเปลี่ยนแปลง:
             {1}
 
-            คลิก 'อัปเดตทันที' เพื่อดาวน์โหลด
+            คลิก 'อัปเดตเดี๋ยวนี้' เพื่อดาวน์โหลด
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>ไม่พบอัปเดตใหม่กว่า</value>
+        <value>ไม่พบอัปเดตใหม่</value>
     </data>
     <data name="Msg_Error">
         <value>ข้อผิดพลาด</value>
@@ -416,19 +412,19 @@
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>ไฟล์ไม่มี!</value>
+        <value>ไม่พบไฟล์!</value>
     </data>
     <data name="Msg_ConfigCreated">
         <value>สร้างไฟล์สำเร็จ!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>คัดลอกเส้นทางการกำหนดค่าแล้ว</value>
+        <value>คัดลอกเส้นทางกำหนดค่าแล้ว</value>
     </data>
     <data name="Msg_AdminMode">
         <value>โหมดผู้ดูแลระบบ</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>โปรดรีสตาร์ทแอปเพื่อให้การเปลี่ยนแปลงมีผล</value>
+        <value>กรุณารีสตาร์ทแอปเพื่อให้การเปลี่ยนแปลงมีผล</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>ไม่สามารถเปิดโฟลเดอร์: {0}</value>
@@ -437,15 +433,15 @@
         <value>⚠️ คำเตือนเวอร์ชันนักพัฒนา</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>คุณกำลังจะเปลี่ยนไปใช้ช่องทางการอัปเดต Developer (Pre-release)
+        <value>คุณกำลังจะเปลี่ยนไปใช้ช่องอัปเดตนักพัฒนา (Pre-release)
 
             เวอร์ชันนี้อาจมีบั๊ก ไม่เสถียร และอาจทำให้ข้อมูลสูญหาย
 
-            ฉันไม่รับผิดชอบต่อปัญหาใด ๆ ที่เกิดจากการใช้วเวอร์ชันนี้
+            ฉันไม่รับผิดชอบต่อปัญหาใดๆ ที่เกิดจากการใช้วเวอร์ชันนี้
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>ฉันได้อ่านและยอมรับ ฉันรับผิดชอบเองทั้งหมด</value>
+        <value>ฉันได้อ่านและยอมรับ ฉันจะรับผิดชอบเองทั้งหมด</value>
     </data>
     <data name="Dialog_SaveHash">
         <value>บันทึกไฟล์แฮช</value>
@@ -463,12 +459,96 @@
         <value>เลือกไฟล์ (ต้นฉบับหรือไฟล์ .hash)</value>
     </data>
     <data name="Header_Fallback">
-        <value>ขั้นสูง: กลับไปเวอร์ชันเก่า (Fallback)</value>
+        <value>ขั้นสูง: กลับไปเวอร์ชันเก่า</value>
     </data>
     <data name="Desc_Fallback">
-        <value>ฟีเจอร์นี้ช่วยให้ติดตั้งเวอร์ชันเฉพาะหากเวอร์ชันใหม่มีปัญหา</value>
+        <value>ฟีเจอร์นี้ช่วยให้คุณติดตั้งเวอร์ชันเฉพาะหากเวอร์ชันใหม่มีปัญหา</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>วาง/ดรอป...</value>
+        <value>วาง/ดรอปที่นี่...</value>
+    </data>
+    <data name="Unit_Seconds">
+        <value>วินาที</value>
+    </data>
+    <data name="Tip_Verify">
+        <value>ตรวจสอบ</value>
+    </data>
+    <data name="Tip_Stop">
+        <value>หยุด</value>
+    </data>
+    <data name="Tip_RemoveFile">
+        <value>ลบไฟล์</value>
+    </data>
+    <data name="Tip_CopyHash">
+        <value>คัดลอกแฮช</value>
+    </data>
+    <data name="Tip_Compute">
+        <value>คำนวณ</value>
+    </data>
+    <data name="Tip_BrowseHash">
+        <value>ดูแฮช</value>
+    </data>
+    <data name="Settings_ThemeDark">
+        <value>มืด</value>
+    </data>
+    <data name="Settings_ThemeLight">
+        <value>สว่าง</value>
+    </data>
+    <data name="Settings_ThemeSystem">
+        <value>ระบบ</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title">
+        <value>งานถูกหยุด</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded">
+        <value>ไฟล์ {0} เกินขีดจำกัด {1} {2}</value>
+    </data>
+    <data name="Btn_Yes">
+        <value>ใช่</value>
+    </data>
+    <data name="Btn_OK">
+        <value>ตกลง</value>
+    </data>
+    <data name="Btn_No">
+        <value>ไม่</value>
+    </data>
+    <data name="Dialog_FileType_Zip">
+        <value>ไฟล์บีบอัด .zip</value>
+    </data>
+    <data name="Msg_ConfirmExit_Title">
+        <value>ยืนยันการออก</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content">
+        <value>การออกจะยกเลิกทุกงานที่กำลังดำเนินการ แน่ใจหรือไม่?</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content">
+        <value>งานถูกหยุดเนื่องจากหมดเวลา</value>
+    </data>
+    <data name="Dev_ToolTip_Save">
+        <value>บันทึกล็อกดีบักลงดิสก์</value>
+    </data>
+    <data name="Dev_ToolTip_Pause">
+        <value>หยุดการล็อกแบบเรียลไทม์ชั่วคราว</value>
+    </data>
+    <data name="Tip_ShowHash">
+        <value>แสดงแฮช</value>
+    </data>
+    <data name="Tip_HideHash">
+        <value>ซ่อนแฮช</value>
+    </data>
+    <data name="Tip_CopyPath">
+        <value>คัดลอกเส้นทาง</value>
+    </data>
+    <data name="Msg_DiskFull">
+        <value>ดิสก์ของคุณเต็มแล้ว เลือกใหม่นะ :)</value>
+    </data>
+    <data name="Tip_HashVisibility">
+        <value>การมองเห็นแฮช</value>
+    </data>
+    <data name="EmptyState_DropFiles">
+        <value>ไม่มีไฟล์ คลิก 'เพิ่มไฟล์' เพื่อเริ่ม</value>
+    </data>
+    <data name="Settings_LockTheme">
+        <value>ล็อกธีมนี้เป็นค่าเริ่มต้น</value>
     </data>
 </root>

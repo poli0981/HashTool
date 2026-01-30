@@ -19,7 +19,7 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>建立雜湊</value>
+        <value>產生雜湊</value>
     </data>
     <data name="Menu_Check">
         <value>驗證雜湊</value>
@@ -28,7 +28,7 @@
         <value>設定</value>
     </data>
     <data name="Menu_Update">
-        <value>檢查更新</value>
+        <value>更新</value>
     </data>
     <data name="Menu_Theme">
         <value>主題</value>
@@ -43,7 +43,7 @@
         <value>加入檔案...</value>
     </data>
     <data name="Btn_Clear">
-        <value>清空清單</value>
+        <value>清除清單</value>
     </data>
     <data name="Btn_CalcAll">
         <value>全部計算</value>
@@ -67,7 +67,7 @@
         <value>取消</value>
     </data>
     <data name="Title_CreateHash">
-        <value>建立雜湊 &amp; 壓縮</value>
+        <value>產生雜湊與壓縮</value>
     </data>
     <data name="Title_CheckHash">
         <value>批次驗證</value>
@@ -76,16 +76,16 @@
         <value>檢查更新</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>開發者版本警告</value>
+        <value>開發版警告</value>
     </data>
     <data name="Title_About">
         <value>關於</value>
     </data>
     <data name="Help_CreateHash">
-        <value>提示：Shift+C 計算全部，Shift+Z 壓縮，Ctrl+F 加入檔案。</value>
+        <value>提示：Shift+C 全部計算，Shift+Z 壓縮，Ctrl+F 加入檔案。</value>
     </data>
     <data name="Help_CheckHash">
-        <value>提示：Shift+A 驗證全部，Ctrl+F 加入檔案，Ctrl+Shift+H 清空清單。</value>
+        <value>提示：Shift+A 全部驗證，Ctrl+F 加入檔案，Ctrl+Shift+H 清除清單。</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>就緒</value>
@@ -103,10 +103,10 @@
         <value>總檔案數：{0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stable (穩定版)</value>
+        <value>穩定版</value>
     </data>
     <data name="Channel_Dev">
-        <value>Dev (開發者版)</value>
+        <value>開發版</value>
     </data>
     <data name="Settings_Language">
         <value>語言</value>
@@ -127,19 +127,19 @@
         <value>字型大小 (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>自動選擇語言最佳字型</value>
+        <value>自動選擇最適語言字型</value>
     </data>
     <data name="Settings_LockFont">
-        <value>設為預設字型 (鎖定變更)</value>
+        <value>鎖定為預設字型</value>
     </data>
     <data name="Settings_Scale">
-        <value>介面縮放</value>
+        <value>UI 縮放</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>遮罩雜湊 (安全性)</value>
+        <value>遮蔽雜湊值 (安全性)</value>
     </data>
     <data name="Settings_Reset">
-        <value>重設主題</value>
+        <value>重置主題</value>
     </data>
     <data name="Settings_Other">
         <value>隱私與安全性</value>
@@ -150,62 +150,59 @@
     <data name="Settings_CustomColor">
         <value>自訂文字顏色</value>
     </data>
-    <data name="Settings_TextTest">
-        <value>The quick brown fox jumps over the lazy dog.</value>
-    </data>
     <data name="Settings_Advanced">
         <value>進階</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>以系統管理員身分執行</value>
+        <value>以管理員執行</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>需要重新啟動。允許存取受保護的檔案。</value>
+        <value>需重新啟動。允許存取受保護檔案。</value>
     </data>
     <data name="Settings_FileSizeLimit">
         <value>輸入檔案大小限制</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>處理檔案的最大大小限制。</value>
+        <value>處理檔案的最大尺寸。</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
         <value>強制結束逾時</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>應用程式被視為凍結前的等待時間 (秒)。</value>
+        <value>視為程式凍結前的等待時間 (秒)。</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>檔案處理逾時</value>
+        <value>單一檔案處理逾時</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>單一檔案處理過久時強制取消。</value>
+        <value>單一檔案處理過久則取消。</value>
     </data>
     <data name="Settings_Emergency">
-        <value>緊急操作</value>
+        <value>緊急動作</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>強制結束應用程式並立即取消所有任務。</value>
+        <value>立即強制結束程式並取消所有任務。</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>強制結束 &amp; 取消全部</value>
+        <value>強制結束並取消全部</value>
     </data>
     <data name="Settings_Configuration">
-        <value>組態</value>
+        <value>設定</value>
     </data>
     <data name="Settings_LockSettings">
         <value>鎖定設定 (儲存為預設)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>防止意外變更。只有雜湊遮罩仍有效。</value>
+        <value>防止誤改。只有雜湊遮蔽仍可調整。</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>重設所有設定</value>
+        <value>重置所有設定</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>恢復初始預設值。</value>
+        <value>恢復出廠預設值。</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>組態檔案路徑</value>
+        <value>設定檔路徑</value>
     </data>
     <data name="Settings_ConfigDesc">
         <value>顯示完整路徑並複製到剪貼簿。</value>
@@ -214,7 +211,7 @@
         <value>顯示路徑</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>設定自動儲存至 config.json</value>
+        <value>設定會自動儲存至 config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
         <value>開發者模式</value>
@@ -223,7 +220,7 @@
         <value>啟用進階記錄與除錯工具。</value>
     </data>
     <data name="Dev_Console">
-        <value>開發者主控台</value>
+        <value>開發者控制台</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
@@ -235,13 +232,13 @@
         <value>已暫停</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>儲存至檔案</value>
+        <value>儲存到檔案</value>
     </data>
     <data name="Dev_NoSave">
         <value>不儲存</value>
     </data>
     <data name="Dev_Clear">
-        <value>清空主控台</value>
+        <value>清除控制台</value>
     </data>
     <data name="Dev_Copy">
         <value>複製全部</value>
@@ -262,10 +259,10 @@
         <value>版權</value>
     </data>
     <data name="About_Desc">
-        <value>強大工具，用於產生與驗證檔案雜湊。</value>
+        <value>強大的檔案雜湊產生、驗證與壓縮工具。至少我是這麼想的 :)</value>
     </data>
     <data name="About_License">
-        <value>採用 MIT 授權發行。</value>
+        <value>以 MIT 授權發行。</value>
     </data>
     <data name="About_Tech">
         <value>技術</value>
@@ -274,10 +271,10 @@
         <value>使用 C# 與 .NET 10.0.102 建置。</value>
     </data>
     <data name="About_AI">
-        <value>AI 輔助</value>
+        <value>AI 協助</value>
     </data>
     <data name="About_AIContent">
-        <value>本軟體開發過程中獲得了 AI 輔助 (Gemini 3 Pro 與 Grok 4.1)。</value>
+        <value>本軟體開發過程中獲得 AI 協助 (Gemini 3 Pro 與 Grok 4.1)。</value>
     </data>
     <data name="Status_Processing">
         <value>處理中 ({0})...</value>
@@ -301,10 +298,10 @@
         <value>等待雜湊/輸入...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>缺少原檔案！</value>
+        <value>缺少原始檔案！</value>
     </data>
     <data name="Status_MissingHash">
-        <value>缺少雜湊 (需輸入或雜湊檔案)</value>
+        <value>缺少雜湊值 (輸入或載入雜湊檔)</value>
     </data>
     <data name="Status_Valid">
         <value>有效</value>
@@ -313,13 +310,13 @@
         <value>不符！</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>已載入雜湊檔案</value>
+        <value>已載入雜湊檔</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>雜湊檔案名稱不符！</value>
+        <value>雜湊檔名稱不符！</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>檔案中未找到雜湊！</value>
+        <value>檔案不包含雜湊！</value>
     </data>
     <data name="Status_Checking">
         <value>檢查更新中...</value>
@@ -328,7 +325,7 @@
         <value>偵測到新版本！</value>
     </data>
     <data name="Status_Latest">
-        <value>您使用的是最新版本。</value>
+        <value>已是最新版本。</value>
     </data>
     <data name="Status_CheckError">
         <value>更新檢查錯誤：{0}</value>
@@ -340,19 +337,19 @@
         <value>安裝錯誤：{0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>就緒 (來自 .hash 檔案)</value>
+        <value>就緒 (來自 .hash 檔)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>原檔案遺失！</value>
+        <value>原始檔案遺失！</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>雜湊檔案名稱不符！</value>
+        <value>雜湊檔名稱不符！</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>已拖放雜湊檔案</value>
+        <value>已成功拖放雜湊檔</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>檔案中未包含雜湊！</value>
+        <value>檔案不包含雜湊！</value>
     </data>
     <data name="Status_ReadError">
         <value>檔案讀取錯誤</value>
@@ -362,28 +359,27 @@
     </data>
     <data name="Msg_Result_Content">
         <value>處理完成！
-
             ✅ 成功：{0}
             ❌ 失敗：{1}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>已驗證 {0} 個檔案。
-            ✅ 符合：{1}
+        <value>已檢查 {0} 個檔案。
+            ✅ 相符：{1}
             ❌ 不符/錯誤：{2}
             ⛔ 已取消：{3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>檔案錯誤！</value>
+        <value>錯誤檔案！</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>雜湊檔案不符！
+        <value>雜湊檔不符！
 
-            原檔案：{0}
-            選擇的檔案：{1}
+            原始檔案：{0}
+            選擇檔案：{1}
 
-            請選擇正確的配套雜湊檔案。
+            請選擇正確的配套雜湊檔。
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -395,7 +391,7 @@
             變更：
             {1}
 
-            點擊「立即更新」下載。
+            按「立即更新」以下載。
         </value>
     </data>
     <data name="Msg_NoUpdate">
@@ -405,10 +401,10 @@
         <value>錯誤</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>無法讀取此雜湊檔案。</value>
+        <value>無法讀取此雜湊檔。</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>組態檢查</value>
+        <value>設定檢查</value>
     </data>
     <data name="Msg_ConfigExists">
         <value>檔案存在於：
@@ -422,53 +418,137 @@
         <value>檔案建立成功！</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>已複製組態路徑。</value>
+        <value>已複製設定路徑。</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>系統管理員模式</value>
+        <value>管理員模式</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>請重新啟動應用程式以使變更生效。</value>
+        <value>請重新啟動應用程式以套用變更。</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>無法開啟資料夾：{0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ 開發者版本警告</value>
+        <value>⚠️ 開發版警告</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>您即將切換到開發者 (預發布) 更新頻道。
+        <value>您即將切換至開發者 (預發行) 更新頻道。
 
-            此版本可能包含錯誤、不穩定並可能導致資料遺失。
+            此版本可能含有錯誤、不穩定，並可能導致資料遺失。
 
-            我對使用此版本所產生的任何問題不負責任。
+            使用此版本所產生之任何問題，本人概不負責。
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>我已閱讀並同意。我將自行承擔全部責任。</value>
+        <value>我已閱讀並同意。我願自行承擔全部責任。</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>儲存雜湊檔案</value>
+        <value>儲存雜湊檔</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>儲存壓縮檔案</value>
+        <value>儲存壓縮檔</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>選擇要雜湊的檔案</value>
+        <value>選擇要計算雜湊的檔案</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>為 {0} 選擇雜湊檔案</value>
+        <value>選擇 {0} 的雜湊檔</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>選擇檔案 (原檔案或 .hash 檔案)</value>
+        <value>選擇檔案 (原始檔或 .hash 檔)</value>
     </data>
     <data name="Header_Fallback">
-        <value>進階：回退到舊版本 (Fallback)</value>
+        <value>進階：回退到舊版本</value>
     </data>
     <data name="Desc_Fallback">
-        <value>此功能允許在新版本出現問題時安裝特定版本。</value>
+        <value>此功能允許在新版本出問題時安裝特定版本。</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>貼上/拖放...</value>
+        <value>貼上/拖放至此...</value>
+    </data>
+    <data name="Unit_Seconds">
+        <value>秒</value>
+    </data>
+    <data name="Tip_Verify">
+        <value>驗證</value>
+    </data>
+    <data name="Tip_Stop">
+        <value>停止</value>
+    </data>
+    <data name="Tip_RemoveFile">
+        <value>移除檔案</value>
+    </data>
+    <data name="Tip_CopyHash">
+        <value>複製雜湊</value>
+    </data>
+    <data name="Tip_Compute">
+        <value>計算</value>
+    </data>
+    <data name="Tip_BrowseHash">
+        <value>瀏覽雜湊</value>
+    </data>
+    <data name="Settings_ThemeDark">
+        <value>暗色</value>
+    </data>
+    <data name="Settings_ThemeLight">
+        <value>亮色</value>
+    </data>
+    <data name="Settings_ThemeSystem">
+        <value>系統</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title">
+        <value>任務已停止</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded">
+        <value>檔案 {0} 超過限制 {1} {2}。</value>
+    </data>
+    <data name="Btn_Yes">
+        <value>是</value>
+    </data>
+    <data name="Btn_OK">
+        <value>確定</value>
+    </data>
+    <data name="Btn_No">
+        <value>否</value>
+    </data>
+    <data name="Dialog_FileType_Zip">
+        <value>Zip 壓縮檔</value>
+    </data>
+    <data name="Msg_ConfirmExit_Title">
+        <value>確認離開</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content">
+        <value>離開將取消所有進行中任務。確定嗎？</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content">
+        <value>因逾時而停止任務。</value>
+    </data>
+    <data name="Dev_ToolTip_Save">
+        <value>將除錯記錄儲存到磁碟。</value>
+    </data>
+    <data name="Dev_ToolTip_Pause">
+        <value>暫停即時記錄。</value>
+    </data>
+    <data name="Tip_ShowHash">
+        <value>顯示雜湊</value>
+    </data>
+    <data name="Tip_HideHash">
+        <value>隱藏雜湊</value>
+    </data>
+    <data name="Tip_CopyPath">
+        <value>複製路徑</value>
+    </data>
+    <data name="Msg_DiskFull">
+        <value>您的磁碟空間不足。請重新選擇位置 :)</value>
+    </data>
+    <data name="Tip_HashVisibility">
+        <value>雜湊可見度</value>
+    </data>
+    <data name="EmptyState_DropFiles">
+        <value>沒有檔案。點擊「加入檔案」開始。</value>
+    </data>
+    <data name="Settings_LockTheme">
+        <value>鎖定此主題為預設</value>
     </data>
 </root>

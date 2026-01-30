@@ -19,7 +19,7 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Hash genereren</value>
+        <value>Hash aanmaken</value>
     </data>
     <data name="Menu_Check">
         <value>Hash controleren</value>
@@ -43,7 +43,7 @@
         <value>Bestanden toevoegen...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Lijst wissen</value>
+        <value>Lijst leegmaken</value>
     </data>
     <data name="Btn_CalcAll">
         <value>ALLES BEREKENEN</value>
@@ -67,7 +67,7 @@
         <value>Weigeren</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Hash genereren &amp; comprimeren</value>
+        <value>Hash aanmaken &amp; comprimeren</value>
     </data>
     <data name="Title_CheckHash">
         <value>Batchcontrole</value>
@@ -85,8 +85,8 @@
         <value>Tip: Shift+C om alles te berekenen, Shift+Z om te comprimeren, Ctrl+F om bestanden toe te voegen.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A om alles te controleren, Ctrl+F om bestanden toe te voegen, Ctrl+Shift+H om lijst te
-            wissen.
+        <value>Tip: Shift+A om alles te controleren, Ctrl+F om bestanden toe te voegen, Ctrl+Shift+H om lijst leeg te
+            maken.
         </value>
     </data>
     <data name="Lbl_Status_Ready">
@@ -108,7 +108,7 @@
         <value>Stabiel</value>
     </data>
     <data name="Channel_Dev">
-        <value>Ontwikkelaarseditie</value>
+        <value>Ontwikkelaarsversie</value>
     </data>
     <data name="Settings_Language">
         <value>Taal</value>
@@ -138,13 +138,13 @@
         <value>UI-schaal</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Hash-waarden maskeren (Beveiliging)</value>
+        <value>Hash-waarden maskeren (Veiligheid)</value>
     </data>
     <data name="Settings_Reset">
         <value>Thema resetten</value>
     </data>
     <data name="Settings_Other">
-        <value>Privacy &amp; Beveiliging</value>
+        <value>Privacy &amp; Veiligheid</value>
     </data>
     <data name="Settings_SetDefault">
         <value>Instellen als standaard</value>
@@ -183,7 +183,7 @@
         <value>Noodactie</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>App geforceerd afsluiten en alle taken onmiddellijk annuleren.</value>
+        <value>Geforceerd afsluiten van app en annuleren van alle taken onmiddellijk.</value>
     </data>
     <data name="Settings_BtnForceQuit">
         <value>Geforceerd afsluiten &amp; Alles annuleren</value>

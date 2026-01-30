@@ -1,0 +1,554 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="AppTitle">
+        <value>Hash Tool</value>
+    </data>
+    <data name="Menu_Create">
+        <value>Креирај хеш</value>
+    </data>
+    <data name="Menu_Check">
+        <value>Провери хеш</value>
+    </data>
+    <data name="Menu_Settings">
+        <value>Подешавања</value>
+    </data>
+    <data name="Menu_Update">
+        <value>Ажурирај</value>
+    </data>
+    <data name="Menu_Theme">
+        <value>Тема</value>
+    </data>
+    <data name="Menu_About">
+        <value>О програму</value>
+    </data>
+    <data name="Menu_Developer">
+        <value>Програмер</value>
+    </data>
+    <data name="Btn_AddFiles">
+        <value>Додај датотеке...</value>
+    </data>
+    <data name="Btn_Clear">
+        <value>Очисти листу</value>
+    </data>
+    <data name="Btn_CalcAll">
+        <value>ИЗРАЧУНАЈ СВЕ</value>
+    </data>
+    <data name="Btn_Compress">
+        <value>Компресуј (.Zip)</value>
+    </data>
+    <data name="Btn_CheckAll">
+        <value>ПРОВЕРИ СВЕ</value>
+    </data>
+    <data name="Btn_CheckNow">
+        <value>Провери сада</value>
+    </data>
+    <data name="Btn_Install">
+        <value>Инсталирај</value>
+    </data>
+    <data name="Btn_Accept">
+        <value>Прихвати</value>
+    </data>
+    <data name="Btn_Decline">
+        <value>Одбиј</value>
+    </data>
+    <data name="Title_CreateHash">
+        <value>Креирај хеш &amp; компресуј</value>
+    </data>
+    <data name="Title_CheckHash">
+        <value>Групна провера</value>
+    </data>
+    <data name="Title_Update">
+        <value>Провери ажурирања</value>
+    </data>
+    <data name="Title_Disclaimer">
+        <value>Упозорење верзије програмера</value>
+    </data>
+    <data name="Title_About">
+        <value>О програму</value>
+    </data>
+    <data name="Help_CreateHash">
+        <value>Савет: Shift+C за израчунај све, Shift+Z за компресуј, Ctrl+F за додај датотеке.</value>
+    </data>
+    <data name="Help_CheckHash">
+        <value>Савет: Shift+A за провери све, Ctrl+F за додај датотеке, Ctrl+Shift+H за очисти листу.</value>
+    </data>
+    <data name="Lbl_Status_Ready">
+        <value>Спреман</value>
+    </data>
+    <data name="Lbl_Sample">
+        <value>Пример:</value>
+    </data>
+    <data name="Lbl_CurrentVersion">
+        <value>Тренутна верзија: {0}</value>
+    </data>
+    <data name="Lbl_Channel">
+        <value>Канал издања:</value>
+    </data>
+    <data name="Lbl_TotalFiles">
+        <value>Укупно датотека: {0}</value>
+    </data>
+    <data name="Channel_Stable">
+        <value>Стабилна</value>
+    </data>
+    <data name="Channel_Dev">
+        <value>Верзија програмера</value>
+    </data>
+    <data name="Settings_Language">
+        <value>Језик</value>
+    </data>
+    <data name="Settings_Theme">
+        <value>Тема</value>
+    </data>
+    <data name="Settings_ThemeStyle">
+        <value>Стил теме</value>
+    </data>
+    <data name="Settings_ThemeVariant">
+        <value>Светла/Тамна</value>
+    </data>
+    <data name="Settings_Font">
+        <value>Фонт</value>
+    </data>
+    <data name="Settings_FontSize">
+        <value>Величина фонта (pt)</value>
+    </data>
+    <data name="Settings_AutoFont">
+        <value>Аутоматски избор оптималног фонта за језик</value>
+    </data>
+    <data name="Settings_LockFont">
+        <value>Закључај као подразумевани фонт</value>
+    </data>
+    <data name="Settings_Scale">
+        <value>Скала интерфејса</value>
+    </data>
+    <data name="Settings_MaskHash">
+        <value>Маскирај вредности хеша (Безбедност)</value>
+    </data>
+    <data name="Settings_Reset">
+        <value>Ресетуј тему</value>
+    </data>
+    <data name="Settings_Other">
+        <value>Приватност &amp; Безбедност</value>
+    </data>
+    <data name="Settings_SetDefault">
+        <value>Постави као подразумевано</value>
+    </data>
+    <data name="Settings_CustomColor">
+        <value>Прилагођена боја текста</value>
+    </data>
+    <data name="Settings_Advanced">
+        <value>Напредно</value>
+    </data>
+    <data name="Settings_AdminMode">
+        <value>Покрени као администратор</value>
+    </data>
+    <data name="Settings_AdminDesc">
+        <value>Захтева поновно покретање. Дозвољава приступ заштићеним датотекама.</value>
+    </data>
+    <data name="Settings_FileSizeLimit">
+        <value>Ограничење величине улазне датотеке</value>
+    </data>
+    <data name="Settings_FileSizeDesc">
+        <value>Максимална величина за датотеке за обраду.</value>
+    </data>
+    <data name="Settings_ForceQuitTimeout">
+        <value>Тајмаут присилног изласка</value>
+    </data>
+    <data name="Settings_ForceQuitDesc">
+        <value>Време (секунде) пре него што се апликација сматра замрзнутом.</value>
+    </data>
+    <data name="Settings_FileTimeout">
+        <value>Тајмаут обраде датотеке</value>
+    </data>
+    <data name="Settings_FileTimeoutDesc">
+        <value>Откажи ако једна датотека траје предуго.</value>
+    </data>
+    <data name="Settings_Emergency">
+        <value>Хитна акција</value>
+    </data>
+    <data name="Settings_EmergencyDesc">
+        <value>Присилно затварање апликације и тренутно отказивање свих задатака.</value>
+    </data>
+    <data name="Settings_BtnForceQuit">
+        <value>Присилни излаз &amp; Откажи све</value>
+    </data>
+    <data name="Settings_Configuration">
+        <value>Конфигурација</value>
+    </data>
+    <data name="Settings_LockSettings">
+        <value>Закључај подешавања (Сачувај као подразумевано)</value>
+    </data>
+    <data name="Settings_LockDesc">
+        <value>Спречи случајне промене. Само маскирање хеша остаје подесиво.</value>
+    </data>
+    <data name="Settings_ResetAll">
+        <value>Ресетуј сва подешавања</value>
+    </data>
+    <data name="Settings_ResetDesc">
+        <value>Врати на фабричка подешавања.</value>
+    </data>
+    <data name="Settings_ConfigPath">
+        <value>Путања конфигурационе датотеке</value>
+    </data>
+    <data name="Settings_ConfigDesc">
+        <value>Прикажи пуну путању и копирај у клипборд.</value>
+    </data>
+    <data name="Settings_ShowPath">
+        <value>Прикажи путању</value>
+    </data>
+    <data name="Settings_AutoSave">
+        <value>Подешавања се аутоматски чувају у config.json</value>
+    </data>
+    <data name="Settings_DeveloperMode">
+        <value>Режим програмера</value>
+    </data>
+    <data name="Settings_DeveloperDesc">
+        <value>Омогући напредно логовање и алате за отклањање грешака.</value>
+    </data>
+    <data name="Dev_Console">
+        <value>Конзола програмера</value>
+    </data>
+    <data name="Dev_Beta">
+        <value>BETA</value>
+    </data>
+    <data name="Dev_Recording">
+        <value>Снимање</value>
+    </data>
+    <data name="Dev_Paused">
+        <value>Паузирано</value>
+    </data>
+    <data name="Dev_SaveToFile">
+        <value>Сачувај у датотеку</value>
+    </data>
+    <data name="Dev_NoSave">
+        <value>Не чувај</value>
+    </data>
+    <data name="Dev_Clear">
+        <value>Очисти конзолу</value>
+    </data>
+    <data name="Dev_Copy">
+        <value>Копирај све</value>
+    </data>
+    <data name="Dev_OpenFolder">
+        <value>Отвори фолдер логова</value>
+    </data>
+    <data name="About_Author">
+        <value>Аутор</value>
+    </data>
+    <data name="About_Software">
+        <value>Софтвер</value>
+    </data>
+    <data name="About_ThirdParty">
+        <value>Библиотеке трећих страна</value>
+    </data>
+    <data name="About_Copyright">
+        <value>Ауторска права</value>
+    </data>
+    <data name="About_Desc">
+        <value>Моћан алат за креирање, проверу и компримовање хеш вредности датотека. Или бар тако мислим :)</value>
+    </data>
+    <data name="About_License">
+        <value>Објављено под MIT лиценцом.</value>
+    </data>
+    <data name="About_Tech">
+        <value>Технологија</value>
+    </data>
+    <data name="About_TechContent">
+        <value>Направљено са C# и .NET 10.0.102.</value>
+    </data>
+    <data name="About_AI">
+        <value>Помоћ ИИ</value>
+    </data>
+    <data name="About_AIContent">
+        <value>Овај софтвер је развијен уз помоћ ИИ (Gemini 3 Pro и Grok 4.1).</value>
+    </data>
+    <data name="Status_Processing">
+        <value>Обрада ({0})...</value>
+    </data>
+    <data name="Status_Done">
+        <value>Завршено</value>
+    </data>
+    <data name="Status_Error">
+        <value>Грешка: {0}</value>
+    </data>
+    <data name="Status_Cancelled">
+        <value>Отказано</value>
+    </data>
+    <data name="Status_Saved">
+        <value>Сачувано!</value>
+    </data>
+    <data name="Status_Compressed">
+        <value>Компресовано!</value>
+    </data>
+    <data name="Status_Waiting">
+        <value>Чекање на хеш/улаз...</value>
+    </data>
+    <data name="Status_MissingOriginal">
+        <value>Недостаје оригинална датотека!</value>
+    </data>
+    <data name="Status_MissingHash">
+        <value>Недостаје вредност хеша (Унесите или учитајте хеш датотеку)</value>
+    </data>
+    <data name="Status_Valid">
+        <value>ВАЖЕЋЕ</value>
+    </data>
+    <data name="Status_Invalid">
+        <value>НЕВАЖЕЋЕ!</value>
+    </data>
+    <data name="Status_HashFileLoaded">
+        <value>Хеш датотека учитана</value>
+    </data>
+    <data name="Status_HashFileMismatch">
+        <value>Име хеш датотеке се не поклапа!</value>
+    </data>
+    <data name="Status_NoHashFound">
+        <value>Датотека не садржи хеш!</value>
+    </data>
+    <data name="Status_Checking">
+        <value>Провера ажурирања...</value>
+    </data>
+    <data name="Status_NewVersion">
+        <value>Откривена нова верзија!</value>
+    </data>
+    <data name="Status_Latest">
+        <value>Користите најновију верзију.</value>
+    </data>
+    <data name="Status_CheckError">
+        <value>Грешка при провери ажурирања: {0}</value>
+    </data>
+    <data name="Status_Installing">
+        <value>Преузимање и инсталација...</value>
+    </data>
+    <data name="Status_InstallError">
+        <value>Грешка при инсталацији: {0}</value>
+    </data>
+    <data name="Status_ReadyFromHash">
+        <value>Спремно (Из .hash датотеке)</value>
+    </data>
+    <data name="Status_LostOriginal">
+        <value>Оригинална датотека изгубљена!</value>
+    </data>
+    <data name="Status_DropHashMismatch">
+        <value>Име хеш датотеке се не поклапа!</value>
+    </data>
+    <data name="Status_DropHashSuccess">
+        <value>Хеш датотека успешно бачена</value>
+    </data>
+    <data name="Status_DropNoHash">
+        <value>Датотека не садржи хеш!</value>
+    </data>
+    <data name="Status_ReadError">
+        <value>Грешка при читању датотеке</value>
+    </data>
+    <data name="Msg_Result_Title">
+        <value>Резултат</value>
+    </data>
+    <data name="Msg_Result_Content">
+        <value>Обрада завршена!
+            ✅ Успех: {0}
+            ❌ Неуспех: {1}
+        </value>
+    </data>
+    <data name="Msg_CheckResult">
+        <value>Проверено {0} датотека.
+            ✅ Поклапа се: {1}
+            ❌ Не поклапа се/Грешка: {2}
+            ⛔ Отказано: {3}
+        </value>
+    </data>
+    <data name="Msg_WrongHashFile">
+        <value>Погрешна датотека!</value>
+    </data>
+    <data name="Msg_WrongHashFileContent">
+        <value>Хеш датотека се не поклапа!
+
+            Оригинална датотека: {0}
+            Изабрана датотека: {1}
+
+            Молимо изаберите исправну приложену хеш датотеку.
+        </value>
+    </data>
+    <data name="Msg_UpdateTitle">
+        <value>Ново ажурирање</value>
+    </data>
+    <data name="Msg_UpdateContent">
+        <value>Верзија: {0}
+
+            Промене:
+            {1
+
+            Кликните 'Ажурирај сада' за преузимање.
+        </value>
+    </data>
+    <data name="Msg_NoUpdate">
+        <value>Нема новијих ажурирања.</value>
+    </data>
+    <data name="Msg_Error">
+        <value>Грешка</value>
+    </data>
+    <data name="Msg_ReadHashError">
+        <value>Не могу да прочитам ову хеш датотеку.</value>
+    </data>
+    <data name="Msg_ConfigCheck">
+        <value>Провера конфигурације</value>
+    </data>
+    <data name="Msg_ConfigExists">
+        <value>Датотека постоји на:
+            {0}
+        </value>
+    </data>
+    <data name="Msg_ConfigMissing">
+        <value>Датотека не постоји!</value>
+    </data>
+    <data name="Msg_ConfigCreated">
+        <value>Датотека успешно креирана!</value>
+    </data>
+    <data name="Msg_ConfigCopied">
+        <value>Путања конфигурације копирана.</value>
+    </data>
+    <data name="Msg_AdminMode">
+        <value>Администраторски режим</value>
+    </data>
+    <data name="Msg_AdminRestart">
+        <value>Молимо поново покрените апликацију да би промене ступиле на снагу.</value>
+    </data>
+    <data name="Msg_OpenFolderError">
+        <value>Не могу да отворим фасциклу: {0}</value>
+    </data>
+    <data name="Msg_DisclaimerTitle">
+        <value>⚠️ УПОЗОРЕЊЕ ВЕРЗИЈЕ ПРОГРАМЕРА</value>
+    </data>
+    <data name="Msg_DisclaimerContent">
+        <value>Променићете на канал ажурирања Програмера (пре издања).
+
+            Ова верзија може садржати грешке, бити нестабилна и изазвати губитак података.
+
+            Нисам одговоран за проблеме настале коришћењем ове верзије.
+        </value>
+    </data>
+    <data name="Msg_DisclaimerAgree">
+        <value>Прочитао сам и прихватам. Прихватам пуну одговорност.</value>
+    </data>
+    <data name="Dialog_SaveHash">
+        <value>Сачувај хеш датотеку</value>
+    </data>
+    <data name="Dialog_SaveZip">
+        <value>Сачувај компресовану датотеку</value>
+    </data>
+    <data name="Dialog_SelectFiles">
+        <value>Изабери датотеке за хеш</value>
+    </data>
+    <data name="Dialog_SelectHashFile">
+        <value>Изабери хеш датотеку за: {0}</value>
+    </data>
+    <data name="Dialog_SelectCheckFiles">
+        <value>Изабери датотеке (Оригинална или .hash датотека)</value>
+    </data>
+    <data name="Header_Fallback">
+        <value>Напредно: Повратак на старију верзију</value>
+    </data>
+    <data name="Desc_Fallback">
+        <value>Ова функција омогућава инсталацију одређене верзије ако нова има проблеме.</value>
+    </data>
+    <data name="Watermark_PasteDrop">
+        <value>Овде налепи/испусти...</value>
+    </data>
+    <data name="Unit_Seconds">
+        <value>Секунде</value>
+    </data>
+    <data name="Tip_Verify">
+        <value>Провери</value>
+    </data>
+    <data name="Tip_Stop">
+        <value>Заустави</value>
+    </data>
+    <data name="Tip_RemoveFile">
+        <value>Уклони датотеку</value>
+    </data>
+    <data name="Tip_CopyHash">
+        <value>Копирај хеш</value>
+    </data>
+    <data name="Tip_Compute">
+        <value>Израчунај</value>
+    </data>
+    <data name="Tip_BrowseHash">
+        <value>Прегледај хеш</value>
+    </data>
+    <data name="Settings_ThemeDark">
+        <value>Тамна</value>
+    </data>
+    <data name="Settings_ThemeLight">
+        <value>Светла</value>
+    </data>
+    <data name="Settings_ThemeSystem">
+        <value>Системска</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title">
+        <value>Задатак заустављен</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded">
+        <value>Датотека {0} премашује ограничење {1} {2}.</value>
+    </data>
+    <data name="Btn_Yes">
+        <value>Да</value>
+    </data>
+    <data name="Btn_OK">
+        <value>ОК</value>
+    </data>
+    <data name="Btn_No">
+        <value>Не</value>
+    </data>
+    <data name="Dialog_FileType_Zip">
+        <value>Zip архива</value>
+    </data>
+    <data name="Msg_ConfirmExit_Title">
+        <value>Потврди излаз</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content">
+        <value>Излаз ће отказати све текуће задатке. Јесте ли сигурни?</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content">
+        <value>Задатак заустављен због тајмаута.</value>
+    </data>
+    <data name="Dev_ToolTip_Save">
+        <value>Сачувај лог отклањања грешака на диск.</value>
+    </data>
+    <data name="Dev_ToolTip_Pause">
+        <value>Паузирај логовање у реалном времену.</value>
+    </data>
+    <data name="Tip_ShowHash">
+        <value>Прикажи хеш</value>
+    </data>
+    <data name="Tip_HideHash">
+        <value>Сакриј хеш</value>
+    </data>
+    <data name="Tip_CopyPath">
+        <value>Копирај путању</value>
+    </data>
+    <data name="Msg_DiskFull">
+        <value>Твој диск је пун. Изабери друго место братан :)</value>
+    </data>
+    <data name="Tip_HashVisibility">
+        <value>Видљивост хеша</value>
+    </data>
+    <data name="EmptyState_DropFiles">
+        <value>Нема датотека. Кликните 'Додај датотеке' да почнете.</value>
+    </data>
+    <data name="Settings_LockTheme">
+        <value>Закључај ову тему као подразумевану</value>
+    </data>
+</root>

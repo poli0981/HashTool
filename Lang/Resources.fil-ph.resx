@@ -28,13 +28,13 @@
         <value>Mga Setting</value>
     </data>
     <data name="Menu_Update">
-        <value>Suriin ang Update</value>
+        <value>I-update</value>
     </data>
     <data name="Menu_Theme">
         <value>Tema</value>
     </data>
     <data name="Menu_About">
-        <value>Tungkol sa</value>
+        <value>Tungkol Sa</value>
     </data>
     <data name="Menu_Developer">
         <value>Developer</value>
@@ -43,7 +43,7 @@
         <value>Magdagdag ng Files...</value>
     </data>
     <data name="Btn_Clear">
-        <value>I-clear ang Listahan</value>
+        <value>Burahin ang Listahan</value>
     </data>
     <data name="Btn_CalcAll">
         <value>KALKULAHIN LAHAT</value>
@@ -67,10 +67,10 @@
         <value>Tanggihan</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Gumawa ng Hash &amp; I-compress</value>
+        <value>Gumawa ng Hash at I-compress</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Batch Verification</value>
+        <value>Batch Check</value>
     </data>
     <data name="Title_Update">
         <value>Suriin ang Update</value>
@@ -79,13 +79,13 @@
         <value>Babala sa Developer Version</value>
     </data>
     <data name="Title_About">
-        <value>Tungkol sa</value>
+        <value>Tungkol Sa</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tip: Shift+C para kalkulahin lahat, Shift+Z para i-compress, Ctrl+F para magdagdag ng files.</value>
+        <value>Tip: Shift+C para Kalkulahin Lahat, Shift+Z para I-compress, Ctrl+F para Magdagdag ng File.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A para suriin lahat, Ctrl+F para magdagdag ng files, Ctrl+Shift+H para i-clear ang listahan.
+        <value>Tip: Shift+A para Suriin Lahat, Ctrl+F para Magdagdag ng File, Ctrl+Shift+H para Burahin ang Listahan.
         </value>
     </data>
     <data name="Lbl_Status_Ready">
@@ -104,10 +104,10 @@
         <value>Kabuuang files: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stable (Matatag)</value>
+        <value>Stable</value>
     </data>
     <data name="Channel_Dev">
-        <value>Dev (Developer)</value>
+        <value>Dev Edition</value>
     </data>
     <data name="Settings_Language">
         <value>Wika</value>
@@ -131,28 +131,25 @@
         <value>Awtomatikong pumili ng pinakamainam na font para sa wika</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Gamitin bilang default font (I-lock ang pagbabago)</value>
+        <value>I-lock bilang default na font</value>
     </data>
     <data name="Settings_Scale">
         <value>Scale ng UI</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Itago ang Hash (Seguridad)</value>
+        <value>Itago ang Hash Value (Seguridad)</value>
     </data>
     <data name="Settings_Reset">
-        <value>I-reset ang tema</value>
+        <value>I-reset ang Tema</value>
     </data>
     <data name="Settings_Other">
-        <value>Privacy &amp; Seguridad</value>
+        <value>Privacy at Seguridad</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Itakda bilang default</value>
+        <value>Gawing Default</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Custom na kulay ng text</value>
-    </data>
-    <data name="Settings_TextTest">
-        <value>The quick brown fox jumps over the lazy dog.</value>
+        <value>Custom na Kulay ng Teksto</value>
     </data>
     <data name="Settings_Advanced">
         <value>Advanced</value>
@@ -164,61 +161,61 @@
         <value>Kailangan i-restart. Pinapayagan ang access sa protected files.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Limitasyon sa laki ng input file</value>
+        <value>Limit sa Laki ng Input File</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maximum size limit para sa mga file na ipoproseso.</value>
+        <value>Maximum size para sa mga file na ipoproseso.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Force Quit timeout</value>
+        <value>Force Quit Timeout</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Oras (segundo) bago ituring na frozen ang app.</value>
+        <value>Oras (segundo) bago ituring na nakahang ang app.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Timeout sa pagproseso ng file</value>
+        <value>Timeout sa Pagproseso ng File</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Force cancel kung matagal ang isang file.</value>
+        <value>Kanselahin kung masyadong matagal ang isang file.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Emergency action</value>
+        <value>Emergency Action</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Force quit ang app at cancel lahat ng tasks agad.</value>
+        <value>Pilit na isara ang app at kanselahin lahat ng task agad.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Force Quit &amp; Cancel Lahat</value>
+        <value>Force Quit at Kanselahin Lahat</value>
     </data>
     <data name="Settings_Configuration">
         <value>Configuration</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>I-lock ang settings (I-save bilang default)</value>
+        <value>I-lock ang Mga Setting (I-save bilang Default)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Pigilan ang aksidenteng pagbabago. Hash Masking lang ang active.</value>
+        <value>Pigilan ang aksidenteng pagbabago. Hash Masking lang ang maa-adjust pa.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>I-reset lahat ng settings</value>
+        <value>I-reset Lahat ng Setting</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Ibalik sa initial defaults.</value>
+        <value>Ibalik sa factory defaults.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Path ng configuration file</value>
+        <value>Path ng Configuration File</value>
     </data>
     <data name="Settings_ConfigDesc">
         <value>Ipakita ang buong path at i-copy sa clipboard.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Ipakita ang path</value>
+        <value>Ipakita ang Path</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Awtomatikong sine-save ang settings sa config.json</value>
+        <value>Awtomatikong ise-save ang mga setting sa config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Developer mode</value>
+        <value>Developer Mode</value>
     </data>
     <data name="Settings_DeveloperDesc">
         <value>I-enable ang advanced logging at debugging tools.</value>
@@ -236,19 +233,19 @@
         <value>Naka-pause</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>I-save sa file</value>
+        <value>I-save sa File</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Huwag i-save</value>
+        <value>Huwag I-save</value>
     </data>
     <data name="Dev_Clear">
-        <value>I-clear ang Console</value>
+        <value>Burahin ang Console</value>
     </data>
     <data name="Dev_Copy">
-        <value>Kopyahin lahat</value>
+        <value>Kopyahin Lahat</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Buksan ang Log folder</value>
+        <value>Buksan ang Log Folder</value>
     </data>
     <data name="About_Author">
         <value>May-akda</value>
@@ -257,16 +254,16 @@
         <value>Software</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Third-party libraries</value>
+        <value>Third-party Libraries</value>
     </data>
     <data name="About_Copyright">
         <value>Copyright</value>
     </data>
     <data name="About_Desc">
-        <value>Makapangyarihang tool para gumawa at suriin ang file hashes.</value>
+        <value>Makapangyarihang tool para gumawa, suriin, at i-compress ang file hash. O sa tingin ko ganun :)</value>
     </data>
     <data name="About_License">
-        <value>Inilabas sa ilalim ng MIT license.</value>
+        <value>Inilabas sa ilalim ng MIT License.</value>
     </data>
     <data name="About_Tech">
         <value>Teknolohiya</value>
@@ -275,10 +272,10 @@
         <value>Ginawa gamit ang C# at .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>Tulong ng AI</value>
+        <value>Tulong mula sa AI</value>
     </data>
     <data name="About_AIContent">
-        <value>Ang software na ito ay binuo gamit ang tulong ng AI (Gemini 3 Pro at Grok 4.1).</value>
+        <value>Ang software na ito ay binuo sa tulong ng AI (Gemini 3 Pro at Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
         <value>Pinoproseso ({0})...</value>
@@ -296,16 +293,16 @@
         <value>Na-save!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Na-compress!</value>
+        <value>Na-compress na!</value>
     </data>
     <data name="Status_Waiting">
         <value>Naghihintay ng hash/input...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Nawawala ang original file!</value>
+        <value>Nawawala ang orihinal na file!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Nawawala ang Hash (Ilagay o kailangan hash file)</value>
+        <value>Nawawala ang hash value (I-enter o mag-load ng hash file)</value>
     </data>
     <data name="Status_Valid">
         <value>VALID</value>
@@ -326,13 +323,13 @@
         <value>Sinusuri ang update...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Natuklasan ang bagong bersyon!</value>
+        <value>May bagong bersyon!</value>
     </data>
     <data name="Status_Latest">
-        <value>Gumagamit ka ng pinakabagong bersyon.</value>
+        <value>Gumagamit ka na ng pinakabago.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Error sa pag-check ng update: {0}</value>
+        <value>Error sa pag-check: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>Dinadownload at ini-install...</value>
@@ -341,16 +338,16 @@
         <value>Error sa pag-install: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Handa (Mula sa .hash file)</value>
+        <value>Handa na (Mula sa .hash file)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Nawala ang original file!</value>
+        <value>Nawala ang orihinal na file!</value>
     </data>
     <data name="Status_DropHashMismatch">
         <value>Hindi tugma ang pangalan ng hash file!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Na-drop ang hash file</value>
+        <value>Matagumpay na na-drop ang hash file</value>
     </data>
     <data name="Status_DropNoHash">
         <value>Walang hash sa file!</value>
@@ -362,16 +359,15 @@
         <value>Resulta</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Tapos na ang proseso!
-
+        <value>Tapos na ang pagproseso!
             ✅ Tagumpay: {0}
-            ❌ Kabiguan: {1}
+            ❌ Nabigo: {1}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Sinuri ang {0} file.
             ✅ Tugma: {1}
-            ❌ Hindi tugma/Error: {2}
+            ❌ Hindi Tugma/Error: {2}
             ⛔ Kinansela: {3}
         </value>
     </data>
@@ -381,10 +377,10 @@
     <data name="Msg_WrongHashFileContent">
         <value>Hindi tugma ang hash file!
 
-            Original file: {0}
-            Pinili na file: {1}
+            Orihinal na file: {0}
+            Napiling file: {1}
 
-            Pumili ng tamang kasamang hash file.
+            Pumili ng tamang hash file.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -400,7 +396,7 @@
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Walang mas bagong update na natagpuan.</value>
+        <value>Walang mas bagong update.</value>
     </data>
     <data name="Msg_Error">
         <value>Error</value>
@@ -420,13 +416,13 @@
         <value>Walang file!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Matagumpay na na-create ang file!</value>
+        <value>Matagumpay na nagawa ang file!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Na-copy ang path ng configuration.</value>
+        <value>Nakopya na ang path ng configuration.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Admin Mode</value>
+        <value>Administrator Mode</value>
     </data>
     <data name="Msg_AdminRestart">
         <value>I-restart ang app para maging epektibo ang pagbabago.</value>
@@ -440,13 +436,13 @@
     <data name="Msg_DisclaimerContent">
         <value>Papalit ka sa Developer (Pre-release) update channel.
 
-            Ang bersyon na ito ay maaaring may bugs, hindi stable, at maaaring magdulot ng data loss.
+            Maaaring may bug ang bersyong ito, hindi stable, at maaaring mawala ang data.
 
             Hindi ako mananagot sa anumang problema mula sa paggamit nito.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Nabasa ko at sumasang-ayon. Akin ang buong responsibilidad.</value>
+        <value>Nabasa ko na at sumasang-ayon. Ako ang mananagot lahat.</value>
     </data>
     <data name="Dialog_SaveHash">
         <value>I-save ang Hash File</value>
@@ -455,22 +451,105 @@
         <value>I-save ang Compressed File</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Pumili ng files para i-hash</value>
+        <value>Pumili ng Files para sa Hash</value>
     </data>
     <data name="Dialog_SelectHashFile">
         <value>Pumili ng hash file para sa: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Pumili ng files (Original o .hash file)</value>
+        <value>Pumili ng Files (Orihinal o .hash File)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Advanced: Bumalik sa lumang bersyon (Fallback)</value>
+        <value>Advanced: Bumalik sa Lumang Bersyon</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Ang feature na ito ay nagpapahintulot na mag-install ng specific version kung may problema ang bago.
-        </value>
+        <value>Pinapayagan nitong mag-install ng partikular na bersyon kung may problema ang bago.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>I-paste/I-drop...</value>
+        <value>I-paste/I-drop dito...</value>
+    </data>
+    <data name="Unit_Seconds">
+        <value>Segundo</value>
+    </data>
+    <data name="Tip_Verify">
+        <value>Suriin</value>
+    </data>
+    <data name="Tip_Stop">
+        <value>Itigil</value>
+    </data>
+    <data name="Tip_RemoveFile">
+        <value>Alisin ang File</value>
+    </data>
+    <data name="Tip_CopyHash">
+        <value>Kopyahin ang Hash</value>
+    </data>
+    <data name="Tip_Compute">
+        <value>Kalkulahin</value>
+    </data>
+    <data name="Tip_BrowseHash">
+        <value>Tingnan ang Hash</value>
+    </data>
+    <data name="Settings_ThemeDark">
+        <value>Madilim</value>
+    </data>
+    <data name="Settings_ThemeLight">
+        <value>Maliwanag</value>
+    </data>
+    <data name="Settings_ThemeSystem">
+        <value>System</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title">
+        <value>Hininto ang Task</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded">
+        <value>Ang file {0} ay lumampas sa limit na {1} {2}.</value>
+    </data>
+    <data name="Btn_Yes">
+        <value>Oo</value>
+    </data>
+    <data name="Btn_OK">
+        <value>OK</value>
+    </data>
+    <data name="Btn_No">
+        <value>Hindi</value>
+    </data>
+    <data name="Dialog_FileType_Zip">
+        <value>Zip Archive</value>
+    </data>
+    <data name="Msg_ConfirmExit_Title">
+        <value>Kumpirmahin ang Paglabas</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content">
+        <value>Ang paglabas ay magkakansela ng lahat ng ongoing tasks. Sigurado ka ba?</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content">
+        <value>Hininto ang task dahil sa timeout.</value>
+    </data>
+    <data name="Dev_ToolTip_Save">
+        <value>I-save ang debug log sa disk.</value>
+    </data>
+    <data name="Dev_ToolTip_Pause">
+        <value>I-pause ang real-time logging.</value>
+    </data>
+    <data name="Tip_ShowHash">
+        <value>Ipakita ang Hash</value>
+    </data>
+    <data name="Tip_HideHash">
+        <value>Itago ang Hash</value>
+    </data>
+    <data name="Tip_CopyPath">
+        <value>Kopyahin ang Path</value>
+    </data>
+    <data name="Msg_DiskFull">
+        <value>Puno na ang drive mo. Pumili ng iba bro :)</value>
+    </data>
+    <data name="Tip_HashVisibility">
+        <value>Hash Visibility</value>
+    </data>
+    <data name="EmptyState_DropFiles">
+        <value>Walang file. I-click ang 'Magdagdag ng Files' para magsimula.</value>
+    </data>
+    <data name="Settings_LockTheme">
+        <value>I-lock ang temang ito bilang default</value>
     </data>
 </root>

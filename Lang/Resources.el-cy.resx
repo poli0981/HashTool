@@ -157,7 +157,7 @@
     <data name="Settings_AdminMode">
         <value>Εκτέλεση ως Διαχειριστής</value>
     </data>
-    <data name="Settings_AdminDesc">
+    <data name="Settings_Admin Έκδοση">
         <value>Απαιτεί επανεκκίνηση. Επιτρέπει πρόσβαση σε προστατευμένα αρχεία.</value>
     </data>
     <data name="Settings_FileSizeLimit">

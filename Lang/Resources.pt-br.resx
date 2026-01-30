@@ -19,7 +19,7 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Criar Hash</value>
+        <value>Gerar Hash</value>
     </data>
     <data name="Menu_Check">
         <value>Verificar Hash</value>
@@ -28,7 +28,7 @@
         <value>Configurações</value>
     </data>
     <data name="Menu_Update">
-        <value>Verificar Atualizações</value>
+        <value>Atualizar</value>
     </data>
     <data name="Menu_Theme">
         <value>Tema</value>
@@ -46,13 +46,13 @@
         <value>Limpar Lista</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>CALCULAR TODOS</value>
+        <value>CALCULAR TUDO</value>
     </data>
     <data name="Btn_Compress">
-        <value>Compactar (.Zip)</value>
+        <value>Comprimir (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>VERIFICAR TODOS</value>
+        <value>VERIFICAR TUDO</value>
     </data>
     <data name="Btn_CheckNow">
         <value>Verificar Agora</value>
@@ -64,10 +64,10 @@
         <value>Aceitar</value>
     </data>
     <data name="Btn_Decline">
-        <value>Cancelar</value>
+        <value>Recusar</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Criar Hash &amp; Compactar</value>
+        <value>Gerar Hash &amp; Comprimir</value>
     </data>
     <data name="Title_CheckHash">
         <value>Verificação em Lote</value>
@@ -76,16 +76,16 @@
         <value>Verificar Atualizações</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Aviso da Versão Developer</value>
+        <value>Aviso Versão Desenvolvedor</value>
     </data>
     <data name="Title_About">
         <value>Sobre</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Dica: Shift+C para calcular todos, Shift+Z para compactar, Ctrl+F para adicionar arquivos.</value>
+        <value>Dica: Shift+C para Calcular Tudo, Shift+Z para Comprimir, Ctrl+F para Adicionar Arquivos.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Dica: Shift+A para verificar todos, Ctrl+F para adicionar arquivos, Ctrl+Shift+H para limpar lista.
+        <value>Dica: Shift+A para Verificar Tudo, Ctrl+F para Adicionar Arquivos, Ctrl+Shift+H para Limpar Lista.
         </value>
     </data>
     <data name="Lbl_Status_Ready">
@@ -95,19 +95,19 @@
         <value>Exemplo:</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>Versão atual: {0}</value>
+        <value>Versão Atual: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Canal de lançamento:</value>
+        <value>Canal de Lançamento:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Total de arquivos: {0}</value>
+        <value>Total Arquivos: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stable (Estável)</value>
+        <value>Estável</value>
     </data>
     <data name="Channel_Dev">
-        <value>Dev (Desenvolvedor)</value>
+        <value>Edição Desenvolvedor</value>
     </data>
     <data name="Settings_Language">
         <value>Idioma</value>
@@ -116,7 +116,7 @@
         <value>Tema</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>Estilo do tema</value>
+        <value>Estilo de Tema</value>
     </data>
     <data name="Settings_ThemeVariant">
         <value>Claro/Escuro</value>
@@ -125,34 +125,31 @@
         <value>Fonte</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Tamanho da fonte (pt)</value>
+        <value>Tamanho da Fonte (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Selecionar automaticamente fonte ideal para o idioma</value>
+        <value>Selecionar automaticamente fonte ótima para o idioma</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Usar como fonte padrão (Bloquear alterações)</value>
+        <value>Bloquear como fonte padrão</value>
     </data>
     <data name="Settings_Scale">
         <value>Escala da Interface</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Mascarar Hash (Segurança)</value>
+        <value>Mascarar Valores Hash (Segurança)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Redefinir tema</value>
+        <value>Redefinir Tema</value>
     </data>
     <data name="Settings_Other">
         <value>Privacidade &amp; Segurança</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Definir como padrão</value>
+        <value>Definir como Padrão</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Cor de texto personalizada</value>
-    </data>
-    <data name="Settings_TextTest">
-        <value>A rápida raposa marrom pula sobre o cachorro preguiçoso.</value>
+        <value>Cor de Texto Personalizada</value>
     </data>
     <data name="Settings_Advanced">
         <value>Avançado</value>
@@ -164,67 +161,67 @@
         <value>Requer reinício. Permite acesso a arquivos protegidos.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Limite de tamanho de arquivo de entrada</value>
+        <value>Limite de Tamanho de Arquivo de Entrada</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Limite máximo de tamanho para arquivos a serem processados.</value>
+        <value>Tamanho máximo para arquivos a processar.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Tempo limite para Forçar Saída</value>
+        <value>Tempo Limite de Saída Forçada</value>
     </data>
     <data name="Settings_ForceQuitDesc">
         <value>Tempo (segundos) antes de considerar o app congelado.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Tempo limite de processamento de arquivo</value>
+        <value>Tempo Limite de Processamento de Arquivo</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Cancelar forçado se um arquivo demorar demais.</value>
+        <value>Cancelar se um arquivo demorar demais.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Ação de emergência</value>
+        <value>Ação de Emergência</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Forçar saída do app e cancelar todas as tarefas imediatamente.</value>
+        <value>Forçar fechamento do app e cancelar todas as tarefas imediatamente.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Forçar Saída &amp; Cancelar Tudo</value>
+        <value>Saída Forçada &amp; Cancelar Tudo</value>
     </data>
     <data name="Settings_Configuration">
         <value>Configuração</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Bloquear configurações (Salvar como padrão)</value>
+        <value>Bloquear Configurações (Salvar como Padrão)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Evita alterações acidentais. Apenas mascaramento de hash permanece ativo.</value>
+        <value>Prevenir mudanças acidentais. Apenas o mascaramento de Hash permanece ajustável.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Redefinir todas as configurações</value>
+        <value>Redefinir Todas as Configurações</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Restaurar para os padrões iniciais.</value>
+        <value>Restaurar configurações de fábrica.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Caminho do arquivo de configuração</value>
+        <value>Caminho do Arquivo de Configuração</value>
     </data>
     <data name="Settings_ConfigDesc">
         <value>Mostrar caminho completo e copiar para área de transferência.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Mostrar caminho</value>
+        <value>Mostrar Caminho</value>
     </data>
     <data name="Settings_AutoSave">
         <value>Configurações são salvas automaticamente em config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Modo desenvolvedor</value>
+        <value>Modo Desenvolvedor</value>
     </data>
     <data name="Settings_DeveloperDesc">
         <value>Ativar ferramentas avançadas de log e depuração.</value>
     </data>
     <data name="Dev_Console">
-        <value>Console do Desenvolvedor</value>
+        <value>Console Desenvolvedor</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
@@ -236,19 +233,19 @@
         <value>Pausado</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>Salvar em arquivo</value>
+        <value>Salvar em Arquivo</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Não salvar</value>
+        <value>Não Salvar</value>
     </data>
     <data name="Dev_Clear">
         <value>Limpar Console</value>
     </data>
     <data name="Dev_Copy">
-        <value>Copiar tudo</value>
+        <value>Copiar Tudo</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Abrir pasta de Logs</value>
+        <value>Abrir Pasta de Logs</value>
     </data>
     <data name="About_Author">
         <value>Autor</value>
@@ -257,16 +254,17 @@
         <value>Software</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Bibliotecas de terceiros</value>
+        <value>Bibliotecas de Terceiros</value>
     </data>
     <data name="About_Copyright">
-        <value>Direitos autorais</value>
+        <value>Copyright</value>
     </data>
     <data name="About_Desc">
-        <value>Ferramenta poderosa para gerar e verificar hashes de arquivos.</value>
+        <value>Uma ferramenta poderosa para gerar, verificar e comprimir hashes de arquivos. Ou pelo menos eu acho :)
+        </value>
     </data>
     <data name="About_License">
-        <value>Lançado sob licença MIT.</value>
+        <value>Publicado sob licença MIT.</value>
     </data>
     <data name="About_Tech">
         <value>Tecnologia</value>
@@ -275,7 +273,7 @@
         <value>Construído com C# e .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>Suporte de IA</value>
+        <value>Assistência IA</value>
     </data>
     <data name="About_AIContent">
         <value>Este software foi desenvolvido com assistência de IA (Gemini 3 Pro e Grok 4.1).</value>
@@ -296,22 +294,22 @@
         <value>Salvo!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Compactado!</value>
+        <value>Comprimido!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Aguardando hash/entrada...</value>
+        <value>Esperando hash/entrada...</value>
     </data>
     <data name="Status_MissingOriginal">
         <value>Arquivo original ausente!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash ausente (Inserir ou arquivo hash necessário)</value>
+        <value>Valor hash ausente (Digite ou carregue arquivo hash)</value>
     </data>
     <data name="Status_Valid">
         <value>VÁLIDO</value>
     </data>
     <data name="Status_Invalid">
-        <value>DIFERENÇA!</value>
+        <value>INVÁLIDO!</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>Arquivo hash carregado</value>
@@ -350,7 +348,7 @@
         <value>Nome do arquivo hash não corresponde!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Arquivo hash solto</value>
+        <value>Arquivo hash solto com sucesso</value>
     </data>
     <data name="Status_DropNoHash">
         <value>Arquivo não contém hash!</value>
@@ -363,16 +361,15 @@
     </data>
     <data name="Msg_Result_Content">
         <value>Processamento concluído!
-
-            ✅ Sucessos: {0}
-            ❌ Falhas: {1}
+            ✅ Sucesso: {0}
+            ❌ Falha: {1}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Verificados {0} arquivos.
-            ✅ Correspondências: {1}
-            ❌ Diferenças/Erros: {2}
-            ⛔ Cancelados: {3}
+            ✅ Corresponde: {1}
+            ❌ Não corresponde/Erro: {2}
+            ⛔ Cancelado: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
@@ -384,11 +381,11 @@
             Arquivo original: {0}
             Arquivo selecionado: {1}
 
-            Por favor, selecione o arquivo hash correto acompanhante.
+            Por favor, selecione o arquivo hash correto.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Nova Atualização</value>
+        <value>Nova atualização</value>
     </data>
     <data name="Msg_UpdateContent">
         <value>Versão: {0}
@@ -396,7 +393,7 @@
             Mudanças:
             {1}
 
-            Clique em 'Atualizar agora' para baixar.
+            Clique 'Atualizar agora' para baixar.
         </value>
     </data>
     <data name="Msg_NoUpdate">
@@ -409,7 +406,7 @@
         <value>Não foi possível ler este arquivo hash.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Verificação de Configuração</value>
+        <value>Verificação de configuração</value>
     </data>
     <data name="Msg_ConfigExists">
         <value>Arquivo existe em:
@@ -426,33 +423,33 @@
         <value>Caminho de configuração copiado.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Modo Administrador</value>
+        <value>Modo administrador</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Reinicie o aplicativo para que as alterações entrem em vigor.</value>
+        <value>Por favor, reinicie o aplicativo para que as mudanças tenham efeito.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Não foi possível abrir a pasta: {0}</value>
+        <value>Não foi possível abrir pasta: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ AVISO DA VERSÃO DESENVOLVEDOR</value>
+        <value>⚠️ AVISO VERSÃO DESENVOLVEDOR</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Você está prestes a mudar para o canal de atualizações Developer (Pré-lançamento).
+        <value>Você está prestes a mudar para o canal de atualização Desenvolvedor (pré-lançamento).
 
             Esta versão pode conter bugs, ser instável e causar perda de dados.
 
-            Não me responsabilizo por quaisquer problemas decorrentes do uso desta versão.
+            Não sou responsável por problemas decorrentes do uso desta versão.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Li e concordo. Assumo total responsabilidade.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Salvar Arquivo Hash</value>
+        <value>Salvar arquivo hash</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Salvar Arquivo Compactado</value>
+        <value>Salvar arquivo comprimido</value>
     </data>
     <data name="Dialog_SelectFiles">
         <value>Selecionar arquivos para hash</value>
@@ -464,12 +461,96 @@
         <value>Selecionar arquivos (Original ou arquivo .hash)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Avançado: Reverter para versão anterior (Fallback)</value>
+        <value>Avançado: Voltar à versão anterior</value>
     </data>
     <data name="Desc_Fallback">
         <value>Esta função permite instalar uma versão específica se a nova tiver problemas.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Colar/Soltar...</value>
+        <value>Colar/Soltar aqui...</value>
+    </data>
+    <data name="Unit_Seconds">
+        <value>Segundos</value>
+    </data>
+    <data name="Tip_Verify">
+        <value>Verificar</value>
+    </data>
+    <data name="Tip_Stop">
+        <value>Parar</value>
+    </data>
+    <data name="Tip_RemoveFile">
+        <value>Remover arquivo</value>
+    </data>
+    <data name="Tip_CopyHash">
+        <value>Copiar hash</value>
+    </data>
+    <data name="Tip_Compute">
+        <value>Calcular</value>
+    </data>
+    <data name="Tip_BrowseHash">
+        <value>Navegar hash</value>
+    </data>
+    <data name="Settings_ThemeDark">
+        <value>Escuro</value>
+    </data>
+    <data name="Settings_ThemeLight">
+        <value>Claro</value>
+    </data>
+    <data name="Settings_ThemeSystem">
+        <value>Sistema</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title">
+        <value>Tarefa parada</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded">
+        <value>Arquivo {0} excede o limite {1} {2}.</value>
+    </data>
+    <data name="Btn_Yes">
+        <value>Sim</value>
+    </data>
+    <data name="Btn_OK">
+        <value>OK</value>
+    </data>
+    <data name="Btn_No">
+        <value>Não</value>
+    </data>
+    <data name="Dialog_FileType_Zip">
+        <value>Arquivo Zip</value>
+    </data>
+    <data name="Msg_ConfirmExit_Title">
+        <value>Confirmar saída</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content">
+        <value>Sair cancelará todas as tarefas em andamento. Tem certeza?</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content">
+        <value>Tarefa parada por timeout.</value>
+    </data>
+    <data name="Dev_ToolTip_Save">
+        <value>Salvar log de depuração no disco.</value>
+    </data>
+    <data name="Dev_ToolTip_Pause">
+        <value>Pausar registro em tempo real.</value>
+    </data>
+    <data name="Tip_ShowHash">
+        <value>Mostrar hash</value>
+    </data>
+    <data name="Tip_HideHash">
+        <value>Ocultar hash</value>
+    </data>
+    <data name="Tip_CopyPath">
+        <value>Copiar caminho</value>
+    </data>
+    <data name="Msg_DiskFull">
+        <value>Seu disco está cheio. Escolha outro local irmão :)</value>
+    </data>
+    <data name="Tip_HashVisibility">
+        <value>Visibilidade hash</value>
+    </data>
+    <data name="EmptyState_DropFiles">
+        <value>Nenhum arquivo. Clique 'Adicionar Arquivos' para começar.</value>
+    </data>
+    <data name="Settings_LockTheme">
+        <value>Bloquear este tema como padrão</value>
     </data>
 </root>

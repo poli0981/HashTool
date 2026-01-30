@@ -19,7 +19,7 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>ハッシュ作成</value>
+        <value>ハッシュ生成</value>
     </data>
     <data name="Menu_Check">
         <value>ハッシュ検証</value>
@@ -28,10 +28,10 @@
         <value>設定</value>
     </data>
     <data name="Menu_Update">
-        <value>アップデート確認</value>
+        <value>更新</value>
     </data>
     <data name="Menu_Theme">
-        <value>テーマ変更</value>
+        <value>テーマ</value>
     </data>
     <data name="Menu_About">
         <value>について</value>
@@ -40,10 +40,10 @@
         <value>開発者</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>ファイルを追加...</value>
+        <value>ファイル追加...</value>
     </data>
     <data name="Btn_Clear">
-        <value>リストをクリア</value>
+        <value>リストクリア</value>
     </data>
     <data name="Btn_CalcAll">
         <value>すべて計算</value>
@@ -67,13 +67,13 @@
         <value>キャンセル</value>
     </data>
     <data name="Title_CreateHash">
-        <value>ハッシュ作成＆圧縮</value>
+        <value>ハッシュ生成と圧縮</value>
     </data>
     <data name="Title_CheckHash">
         <value>一括検証</value>
     </data>
     <data name="Title_Update">
-        <value>アップデート確認</value>
+        <value>更新確認</value>
     </data>
     <data name="Title_Disclaimer">
         <value>開発版警告</value>
@@ -91,7 +91,7 @@
         <value>準備完了</value>
     </data>
     <data name="Lbl_Sample">
-        <value>サンプル:</value>
+        <value>例:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>現在のバージョン: {0}</value>
@@ -103,10 +103,10 @@
         <value>合計ファイル数: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stable (安定版)</value>
+        <value>安定版</value>
     </data>
     <data name="Channel_Dev">
-        <value>Dev (開発版)</value>
+        <value>開発版</value>
     </data>
     <data name="Settings_Language">
         <value>言語</value>
@@ -130,88 +130,85 @@
         <value>言語に最適なフォントを自動選択</value>
     </data>
     <data name="Settings_LockFont">
-        <value>デフォルトフォントとして使用 (変更ロック)</value>
+        <value>デフォルトフォントとしてロック</value>
     </data>
     <data name="Settings_Scale">
-        <value>UIスケール</value>
+        <value>UI スケール</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>ハッシュをマスク (セキュリティ)</value>
+        <value>ハッシュ値をマスク (セキュリティ)</value>
     </data>
     <data name="Settings_Reset">
-        <value>テーマをリセット</value>
+        <value>テーマリセット</value>
     </data>
     <data name="Settings_Other">
-        <value>プライバシー＆セキュリティ</value>
+        <value>プライバシーとセキュリティ</value>
     </data>
     <data name="Settings_SetDefault">
         <value>デフォルトに設定</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>カスタム文字色</value>
-    </data>
-    <data name="Settings_TextTest">
-        <value>The quick brown fox jumps over the lazy dog.</value>
+        <value>カスタムテキスト色</value>
     </data>
     <data name="Settings_Advanced">
         <value>詳細設定</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>管理者権限で実行</value>
+        <value>管理者として実行</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>再起動が必要です。保護されたファイルへのアクセスを許可します。</value>
+        <value>再起動が必要です。保護されたファイルへのアクセスを許可。</value>
     </data>
     <data name="Settings_FileSizeLimit">
         <value>入力ファイルサイズ制限</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>処理するファイルの最大サイズ制限。</value>
+        <value>処理するファイルの最大サイズ。</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
         <value>強制終了タイムアウト</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>アプリがフリーズしたと判断するまでの時間 (秒)。</value>
+        <value>アプリがフリーズしたと判断するまでの待機時間 (秒)。</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>ファイル処理タイムアウト</value>
+        <value>単一ファイル処理タイムアウト</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>ファイル処理が長すぎる場合に強制キャンセル。</value>
+        <value>単一ファイルが長すぎる場合キャンセル。</value>
     </data>
     <data name="Settings_Emergency">
         <value>緊急アクション</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>アプリを強制終了し、全てのタスクを即座にキャンセル。</value>
+        <value>即座にアプリを強制終了し全タスクをキャンセル。</value>
     </data>
     <data name="Settings_BtnForceQuit">
         <value>強制終了＆すべてキャンセル</value>
     </data>
     <data name="Settings_Configuration">
-        <value>設定</value>
+        <value>構成</value>
     </data>
     <data name="Settings_LockSettings">
         <value>設定をロック (デフォルト保存)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>意図しない変更を防止。ハッシュマスクのみ有効。</value>
+        <value>誤操作防止。ハッシュマスクのみ調整可能。</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>全ての設定をリセット</value>
+        <value>全設定リセット</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>初期状態に戻す。</value>
+        <value>工場出荷時のデフォルトに戻す。</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>設定ファイルパス</value>
+        <value>構成ファイルパス</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>フルパスを表示し、クリップボードにコピー。</value>
+        <value>フルパスを表示しクリップボードにコピー。</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>パスを表示</value>
+        <value>パス表示</value>
     </data>
     <data name="Settings_AutoSave">
         <value>設定は config.json に自動保存されます</value>
@@ -241,7 +238,7 @@
         <value>保存しない</value>
     </data>
     <data name="Dev_Clear">
-        <value>コンソールをクリア</value>
+        <value>コンソールクリア</value>
     </data>
     <data name="Dev_Copy">
         <value>すべてコピー</value>
@@ -262,10 +259,10 @@
         <value>著作権</value>
     </data>
     <data name="About_Desc">
-        <value>ファイルのハッシュ生成と検証のための強力なツール。</value>
+        <value>ファイルハッシュの生成・検証・圧縮のための強力なツール。少なくとも私はそう思ってる :)</value>
     </data>
     <data name="About_License">
-        <value>MITライセンスで公開。</value>
+        <value>MIT ライセンスで公開。</value>
     </data>
     <data name="About_Tech">
         <value>技術</value>
@@ -274,10 +271,10 @@
         <value>C# と .NET 10.0.102 で構築。</value>
     </data>
     <data name="About_AI">
-        <value>AI支援</value>
+        <value>AI 支援</value>
     </data>
     <data name="About_AIContent">
-        <value>本ソフトウェアはAIの支援を受けて開発されました (Gemini 3 Pro および Grok 4.1)。</value>
+        <value>このソフトウェアは開発中に AI の支援を受けました (Gemini 3 Pro および Grok 4.1)。</value>
     </data>
     <data name="Status_Processing">
         <value>処理中 ({0})...</value>
@@ -301,10 +298,10 @@
         <value>ハッシュ/入力待ち...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>元のファイルが見つかりません！</value>
+        <value>元ファイルが見つかりません！</value>
     </data>
     <data name="Status_MissingHash">
-        <value>ハッシュが不足 (入力またはハッシュファイルが必要)</value>
+        <value>ハッシュ値がありません (入力またはハッシュファイル読み込み)</value>
     </data>
     <data name="Status_Valid">
         <value>有効</value>
@@ -313,7 +310,7 @@
         <value>不一致！</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>ハッシュファイルを読み込みました</value>
+        <value>ハッシュファイル読み込み済み</value>
     </data>
     <data name="Status_HashFileMismatch">
         <value>ハッシュファイル名が一致しません！</value>
@@ -322,16 +319,16 @@
         <value>ファイルにハッシュが含まれていません！</value>
     </data>
     <data name="Status_Checking">
-        <value>アップデートを確認中...</value>
+        <value>更新を確認中...</value>
     </data>
     <data name="Status_NewVersion">
         <value>新しいバージョンが見つかりました！</value>
     </data>
     <data name="Status_Latest">
-        <value>最新バージョンを使用中です。</value>
+        <value>最新バージョンです。</value>
     </data>
     <data name="Status_CheckError">
-        <value>アップデート確認エラー: {0}</value>
+        <value>更新確認エラー: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>ダウンロードとインストール中...</value>
@@ -340,10 +337,10 @@
         <value>インストールエラー: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>準備完了 (.hashファイルから)</value>
+        <value>準備完了 (.hash ファイルから)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>元のファイルが失われました！</value>
+        <value>元ファイルが失われました！</value>
     </data>
     <data name="Status_DropHashMismatch">
         <value>ハッシュファイル名が一致しません！</value>
@@ -379,14 +376,14 @@
     <data name="Msg_WrongHashFileContent">
         <value>ハッシュファイルが一致しません！
 
-            元のファイル: {0}
-            選択したファイル: {1}
+            元ファイル: {0}
+            選択ファイル: {1}
 
             正しいハッシュファイルを指定してください。
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>新しいアップデート</value>
+        <value>新しい更新</value>
     </data>
     <data name="Msg_UpdateContent">
         <value>バージョン: {0}
@@ -394,11 +391,11 @@
             変更点:
             {1}
 
-            「今すぐアップデート」をクリックしてダウンロード。
+            「今すぐ更新」をクリックしてダウンロード。
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>新しいアップデートが見つかりませんでした。</value>
+        <value>新しい更新はありません。</value>
     </data>
     <data name="Msg_Error">
         <value>エラー</value>
@@ -407,19 +404,21 @@
         <value>このハッシュファイルを読み込めません。</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>設定確認</value>
+        <value>構成確認</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>ファイルが存在します: {0}</value>
+        <value>ファイルの場所:
+            {0}
+        </value>
     </data>
     <data name="Msg_ConfigMissing">
         <value>ファイルが存在しません！</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>ファイルを作成しました！</value>
+        <value>ファイル作成成功！</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>設定パスをコピーしました。</value>
+        <value>構成パスをコピーしました。</value>
     </data>
     <data name="Msg_AdminMode">
         <value>管理者モード</value>
@@ -434,24 +433,24 @@
         <value>⚠️ 開発版警告</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>開発者 (プレリリース) アップデートチャンネルに切り替えようとしています。
+        <value>開発者 (プレリリース) 更新チャンネルに切り替えようとしています。
 
-            このバージョンにはバグが含まれる可能性があり、不安定でデータ損失を引き起こす可能性があります。
+            このバージョンにはバグが含まれる可能性があり、不安定でデータ損失が発生する可能性があります。
 
-            このバージョン使用によるいかなる問題についても責任を負いません。
+            このバージョン使用によるいかなる問題も責任を負いません。
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>読み、同意しました。全ての責任を負います。</value>
+        <value>読み、同意しました。すべての責任を負います。</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>ハッシュファイルを保存</value>
+        <value>ハッシュファイル保存</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>圧縮ファイルを保存</value>
+        <value>圧縮ファイル保存</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>ハッシュ対象ファイルを選択</value>
+        <value>ハッシュ計算するファイルを選択</value>
     </data>
     <data name="Dialog_SelectHashFile">
         <value>{0} のハッシュファイルを選択</value>
@@ -460,12 +459,96 @@
         <value>ファイルを選択 (元ファイルまたは .hash ファイル)</value>
     </data>
     <data name="Header_Fallback">
-        <value>詳細: 以前のバージョンに戻す (フォールバック)</value>
+        <value>詳細: 旧バージョンにフォールバック</value>
     </data>
     <data name="Desc_Fallback">
-        <value>この機能は、新しいバージョンに問題がある場合に特定のバージョンをインストールできます。</value>
+        <value>新しいバージョンに問題がある場合に特定のバージョンをインストールできます。</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>貼り付け/ドロップ...</value>
+        <value>ここに貼り付け/ドロップ...</value>
+    </data>
+    <data name="Unit_Seconds">
+        <value>秒</value>
+    </data>
+    <data name="Tip_Verify">
+        <value>検証</value>
+    </data>
+    <data name="Tip_Stop">
+        <value>停止</value>
+    </data>
+    <data name="Tip_RemoveFile">
+        <value>ファイル削除</value>
+    </data>
+    <data name="Tip_CopyHash">
+        <value>ハッシュコピー</value>
+    </data>
+    <data name="Tip_Compute">
+        <value>計算</value>
+    </data>
+    <data name="Tip_BrowseHash">
+        <value>ハッシュ参照</value>
+    </data>
+    <data name="Settings_ThemeDark">
+        <value>ダーク</value>
+    </data>
+    <data name="Settings_ThemeLight">
+        <value>ライト</value>
+    </data>
+    <data name="Settings_ThemeSystem">
+        <value>システム</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title">
+        <value>タスク停止</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded">
+        <value>ファイル {0} が制限 {1} {2} を超えています。</value>
+    </data>
+    <data name="Btn_Yes">
+        <value>はい</value>
+    </data>
+    <data name="Btn_OK">
+        <value>OK</value>
+    </data>
+    <data name="Btn_No">
+        <value>いいえ</value>
+    </data>
+    <data name="Dialog_FileType_Zip">
+        <value>Zip 圧縮ファイル</value>
+    </data>
+    <data name="Msg_ConfirmExit_Title">
+        <value>終了確認</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content">
+        <value>終了すると進行中の全タスクがキャンセルされます。本当に終了しますか？</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content">
+        <value>タイムアウトによりタスクが停止されました。</value>
+    </data>
+    <data name="Dev_ToolTip_Save">
+        <value>デバッグログをディスクに保存。</value>
+    </data>
+    <data name="Dev_ToolTip_Pause">
+        <value>リアルタイムロギングを一時停止。</value>
+    </data>
+    <data name="Tip_ShowHash">
+        <value>ハッシュ表示</value>
+    </data>
+    <data name="Tip_HideHash">
+        <value>ハッシュ非表示</value>
+    </data>
+    <data name="Tip_CopyPath">
+        <value>パスをコピー</value>
+    </data>
+    <data name="Msg_DiskFull">
+        <value>ディスク容量が不足しています。別の場所を選択してください :)</value>
+    </data>
+    <data name="Tip_HashVisibility">
+        <value>ハッシュ表示</value>
+    </data>
+    <data name="EmptyState_DropFiles">
+        <value>ファイルがありません。「ファイル追加」をクリックして開始。</value>
+    </data>
+    <data name="Settings_LockTheme">
+        <value>このテーマをデフォルトとしてロック</value>
     </data>
 </root>

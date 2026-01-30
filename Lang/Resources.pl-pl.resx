@@ -19,7 +19,7 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Utwórz Hash</value>
+        <value>Generuj Hash</value>
     </data>
     <data name="Menu_Check">
         <value>Sprawdź Hash</value>
@@ -28,7 +28,7 @@
         <value>Ustawienia</value>
     </data>
     <data name="Menu_Update">
-        <value>Sprawdź aktualizacje</value>
+        <value>Aktualizuj</value>
     </data>
     <data name="Menu_Theme">
         <value>Motyw</value>
@@ -49,7 +49,7 @@
         <value>OBLICZ WSZYSTKO</value>
     </data>
     <data name="Btn_Compress">
-        <value>Skompresuj (.Zip)</value>
+        <value>Kompresuj (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
         <value>SPRAWDŹ WSZYSTKO</value>
@@ -64,29 +64,28 @@
         <value>Akceptuj</value>
     </data>
     <data name="Btn_Decline">
-        <value>Anuluj</value>
+        <value>Odrzuć</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Utwórz Hash i skompresuj</value>
+        <value>Generuj Hash i Kompresuj</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Sprawdzenie zbiorcze</value>
+        <value>Masowa weryfikacja</value>
     </data>
     <data name="Title_Update">
         <value>Sprawdź aktualizacje</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Ostrzeżenie wersji Developer</value>
+        <value>Ostrzeżenie wersji deweloperskiej</value>
     </data>
     <data name="Title_About">
         <value>O programie</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Wskazówka: Shift+C aby obliczyć wszystko, Shift+Z aby skompresować, Ctrl+F aby dodać pliki.</value>
+        <value>Wskazówka: Shift+C aby Oblicz wszystko, Shift+Z aby Kompresuj, Ctrl+F aby Dodaj pliki.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Wskazówka: Shift+A aby sprawdzić wszystko, Ctrl+F aby dodać pliki, Ctrl+Shift+H aby wyczyścić listę.
-        </value>
+        <value>Wskazówka: Shift+A aby Sprawdź wszystko, Ctrl+F aby Dodaj pliki, Ctrl+Shift+H aby Wyczyść listę.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Gotowy</value>
@@ -95,19 +94,19 @@
         <value>Przykład:</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>Aktualna wersja: {0}</value>
+        <value>Bieżąca wersja: {0}</value>
     </data>
     <data name="Lbl_Channel">
         <value>Kanał wydania:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Łącznie plików: {0}</value>
+        <value>Wszystkie pliki: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stable (Stabilna)</value>
+        <value>Stabilna</value>
     </data>
     <data name="Channel_Dev">
-        <value>Dev (Programista)</value>
+        <value>Wersja deweloperska</value>
     </data>
     <data name="Settings_Language">
         <value>Język</value>
@@ -131,19 +130,19 @@
         <value>Automatyczny wybór optymalnej czcionki dla języka</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Użyj jako domyślnej czcionki (Blokada zmian)</value>
+        <value>Zablokuj jako domyślną czcionkę</value>
     </data>
     <data name="Settings_Scale">
         <value>Skala interfejsu</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Maskuj Hash (Bezpieczeństwo)</value>
+        <value>Maskuj wartości Hash (Bezpieczeństwo)</value>
     </data>
     <data name="Settings_Reset">
         <value>Resetuj motyw</value>
     </data>
     <data name="Settings_Other">
-        <value>Prywatność i Bezpieczeństwo</value>
+        <value>Prywatność &amp; Bezpieczeństwo</value>
     </data>
     <data name="Settings_SetDefault">
         <value>Ustaw jako domyślne</value>
@@ -151,26 +150,23 @@
     <data name="Settings_CustomColor">
         <value>Niestandardowy kolor tekstu</value>
     </data>
-    <data name="Settings_TextTest">
-        <value>Szybki brązowy lis przeskakuje nad leniwym psem.</value>
-    </data>
     <data name="Settings_Advanced">
         <value>Zaawansowane</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Uruchom jako Administrator</value>
+        <value>Uruchom jako administrator</value>
     </data>
     <data name="Settings_AdminDesc">
         <value>Wymaga restartu. Umożliwia dostęp do chronionych plików.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Limit rozmiaru plików wejściowych</value>
+        <value>Limit rozmiaru pliku wejściowego</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maksymalny limit rozmiaru dla przetwarzanych plików.</value>
+        <value>Maksymalny rozmiar dla plików do przetworzenia.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Limit czasu wymuszonego zamknięcia</value>
+        <value>Limit czasu wymuszonego wyjścia</value>
     </data>
     <data name="Settings_ForceQuitDesc">
         <value>Czas (sekundy) przed uznaniem aplikacji za zawieszoną.</value>
@@ -179,16 +175,16 @@
         <value>Limit czasu przetwarzania pliku</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Wymuszone anulowanie, jeśli plik trwa zbyt długo.</value>
+        <value>Anuluj, jeśli jeden plik trwa zbyt długo.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Działanie awaryjne</value>
+        <value>Akcja awaryjna</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Wymuszone zamknięcie aplikacji i anulowanie wszystkich zadań natychmiast.</value>
+        <value>Wymuszone zamknięcie aplikacji i natychmiastowe anulowanie wszystkich zadań.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Wymuszone zamknięcie i Anuluj wszystko</value>
+        <value>Wymuszone wyjście &amp; Anuluj wszystko</value>
     </data>
     <data name="Settings_Configuration">
         <value>Konfiguracja</value>
@@ -197,16 +193,16 @@
         <value>Zablokuj ustawienia (Zapisz jako domyślne)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Zapobiega przypadkowym zmianom. Tylko maskowanie hasha pozostaje aktywne.</value>
+        <value>Zapobiega przypadkowym zmianom. Tylko maskowanie Hash pozostaje regulowane.</value>
     </data>
     <data name="Settings_ResetAll">
         <value>Resetuj wszystkie ustawienia</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Przywróć do początkowych wartości domyślnych.</value>
+        <value>Przywróć ustawienia fabryczne.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Ścieżka pliku konfiguracji</value>
+        <value>Ścieżka pliku konfiguracyjnego</value>
     </data>
     <data name="Settings_ConfigDesc">
         <value>Pokaż pełną ścieżkę i skopiuj do schowka.</value>
@@ -218,13 +214,13 @@
         <value>Ustawienia są automatycznie zapisywane w config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Tryb programisty</value>
+        <value>Tryb deweloperski</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Włącz zaawansowane narzędzia logowania i debugowania.</value>
+        <value>Włącz zaawansowane logowanie i narzędzia debugowania.</value>
     </data>
     <data name="Dev_Console">
-        <value>Konsola programisty</value>
+        <value>Konsola deweloperska</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
@@ -257,13 +253,15 @@
         <value>Oprogramowanie</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Biblioteki zewnętrzne</value>
+        <value>Biblioteki stron trzecich</value>
     </data>
     <data name="About_Copyright">
         <value>Prawa autorskie</value>
     </data>
     <data name="About_Desc">
-        <value>Potężne narzędzie do tworzenia i sprawdzania hashów plików.</value>
+        <value>Potężne narzędzie do generowania, sprawdzania i kompresowania hashów plików. Albo przynajmniej tak myślę
+            :)
+        </value>
     </data>
     <data name="About_License">
         <value>Wydane na licencji MIT.</value>
@@ -272,19 +270,19 @@
         <value>Technologia</value>
     </data>
     <data name="About_TechContent">
-        <value>Zbudowane w C# i .NET 10.0.102.</value>
+        <value>Zbudowane z C# i .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>Wsparcie AI</value>
+        <value>Pomoc AI</value>
     </data>
     <data name="About_AIContent">
-        <value>To oprogramowanie zostało opracowane przy pomocy AI (Gemini 3 Pro i Grok 4.1).</value>
+        <value>To oprogramowanie zostało opracowane z pomocą AI (Gemini 3 Pro i Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
         <value>Przetwarzanie ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>Zakończono</value>
+        <value>Ukończono</value>
     </data>
     <data name="Status_Error">
         <value>Błąd: {0}</value>
@@ -305,22 +303,22 @@
         <value>Brak oryginalnego pliku!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Brak hasha (Wprowadź lub potrzebny plik hasha)</value>
+        <value>Brak wartości hash (Wprowadź lub załaduj plik hash)</value>
     </data>
     <data name="Status_Valid">
-        <value>PRAWIDŁOWY</value>
+        <value>WAŻNY</value>
     </data>
     <data name="Status_Invalid">
-        <value>NIEZGODNY!</value>
+        <value>NIEWAŻNY!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Plik hasha załadowany</value>
+        <value>Plik hash załadowany</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Nazwa pliku hasha nie pasuje!</value>
+        <value>Nazwa pliku hash nie pasuje!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Plik nie zawiera hasha!</value>
+        <value>Plik nie zawiera hash!</value>
     </data>
     <data name="Status_Checking">
         <value>Sprawdzanie aktualizacji...</value>
@@ -347,13 +345,13 @@
         <value>Oryginalny plik utracony!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Nazwa pliku hasha nie pasuje!</value>
+        <value>Nazwa pliku hash nie pasuje!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Plik hasha upuszczony</value>
+        <value>Plik hash pomyślnie upuszczony</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Plik nie zawiera hasha!</value>
+        <value>Plik nie zawiera hash!</value>
     </data>
     <data name="Status_ReadError">
         <value>Błąd odczytu pliku</value>
@@ -362,29 +360,28 @@
         <value>Wynik</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Przetwarzanie zakończone!
-
-            ✅ Sukcesy: {0}
-            ❌ Błędy: {1}
+        <value>Przetwarzanie ukończone!
+            ✅ Sukces: {0}
+            ❌ Niepowodzenie: {1}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Sprawdzono {0} plików.
-            ✅ Zgodne: {1}
-            ❌ Niezgodne/Błędy: {2}
-            ⛔ Anulowane: {3}
+            ✅ Pasuje: {1}
+            ❌ Nie pasuje/Błąd: {2}
+            ⛔ Anulowano: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Zły plik!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Plik hasha nie pasuje!
+        <value>Plik hash nie pasuje!
 
             Oryginalny plik: {0}
             Wybrany plik: {1}
 
-            Proszę wybrać prawidłowy plik hasha towarzyszący.
+            Wybierz prawidłowy dołączony plik hash.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -396,20 +393,20 @@
             Zmiany:
             {1}
 
-            Kliknij 'Zaktualizuj teraz', aby pobrać.
+            Kliknij 'Aktualizuj teraz' aby pobrać.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Nie znaleziono nowszej aktualizacji.</value>
+        <value>Nie znaleziono nowszych aktualizacji.</value>
     </data>
     <data name="Msg_Error">
         <value>Błąd</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Nie można odczytać tego pliku hasha.</value>
+        <value>Nie można odczytać tego pliku hash.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Sprawdzenie konfiguracji</value>
+        <value>Sprawdzanie konfiguracji</value>
     </data>
     <data name="Msg_ConfigExists">
         <value>Plik istnieje w:
@@ -426,21 +423,21 @@
         <value>Ścieżka konfiguracji skopiowana.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Tryb Administratora</value>
+        <value>Tryb administratora</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Uruchom ponownie aplikację, aby zmiany odniosły efekt.</value>
+        <value>Uruchom ponownie aplikację, aby zmiany zostały zastosowane.</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>Nie można otworzyć folderu: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ OSTRZEŻENIE WERSJI PROGRAMISTY</value>
+        <value>⚠️ OSTRZEŻENIE WERSJI DEWELOPERSKIEJ</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Zamierzasz przejść na kanał aktualizacji Developer (Pre-release).
+        <value>Przechodzisz na kanał aktualizacji Deweloperski (przedpremierowy).
 
-            Ta wersja może zawierać błędy, być niestabilna i spowodować utratę danych.
+            Ta wersja może zawierać błędy, być niestabilna i powodować utratę danych.
 
             Nie ponoszę odpowiedzialności za problemy wynikające z używania tej wersji.
         </value>
@@ -449,13 +446,13 @@
         <value>Przeczytałem i zgadzam się. Przyjmuję pełną odpowiedzialność.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Zapisz plik Hash</value>
+        <value>Zapisz plik hash</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Zapisz plik skompresowany</value>
+        <value>Zapisz skompresowany plik</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Wybierz pliki do hashowania</value>
+        <value>Wybierz pliki do hash</value>
     </data>
     <data name="Dialog_SelectHashFile">
         <value>Wybierz plik hash dla: {0}</value>
@@ -464,12 +461,96 @@
         <value>Wybierz pliki (Oryginalny lub plik .hash)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Zaawansowane: Powrót do starszej wersji (Fallback)</value>
+        <value>Zaawansowane: Powrót do starszej wersji</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Ta funkcja pozwala zainstalować konkretną wersję, jeśli nowa ma problemy.</value>
+        <value>Ta funkcja pozwala zainstalować określoną wersję, jeśli nowa ma problemy.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Wklej/Upuść...</value>
+        <value>Wklej/Upuść tutaj...</value>
+    </data>
+    <data name="Unit_Seconds">
+        <value>Sekundy</value>
+    </data>
+    <data name="Tip_Verify">
+        <value>Weryfikuj</value>
+    </data>
+    <data name="Tip_Stop">
+        <value>Zatrzymaj</value>
+    </data>
+    <data name="Tip_RemoveFile">
+        <value>Usuń plik</value>
+    </data>
+    <data name="Tip_CopyHash">
+        <value>Kopiuj hash</value>
+    </data>
+    <data name="Tip_Compute">
+        <value>Oblicz</value>
+    </data>
+    <data name="Tip_BrowseHash">
+        <value>Przeglądaj hash</value>
+    </data>
+    <data name="Settings_ThemeDark">
+        <value>Ciemny</value>
+    </data>
+    <data name="Settings_ThemeLight">
+        <value>Jasny</value>
+    </data>
+    <data name="Settings_ThemeSystem">
+        <value>Systemowy</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title">
+        <value>Zadanie zatrzymane</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded">
+        <value>Plik {0} przekracza limit {1} {2}.</value>
+    </data>
+    <data name="Btn_Yes">
+        <value>Tak</value>
+    </data>
+    <data name="Btn_OK">
+        <value>OK</value>
+    </data>
+    <data name="Btn_No">
+        <value>Nie</value>
+    </data>
+    <data name="Dialog_FileType_Zip">
+        <value>Archiwum Zip</value>
+    </data>
+    <data name="Msg_ConfirmExit_Title">
+        <value>Potwierdź wyjście</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content">
+        <value>Wyjście anuluje wszystkie bieżące zadania. Na pewno?</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content">
+        <value>Zadanie zatrzymane z powodu timeout.</value>
+    </data>
+    <data name="Dev_ToolTip_Save">
+        <value>Zapisz log debugowania na dysku.</value>
+    </data>
+    <data name="Dev_ToolTip_Pause">
+        <value>Pauzuj logowanie w czasie rzeczywistym.</value>
+    </data>
+    <data name="Tip_ShowHash">
+        <value>Pokaż hash</value>
+    </data>
+    <data name="Tip_HideHash">
+        <value>Ukryj hash</value>
+    </data>
+    <data name="Tip_CopyPath">
+        <value>Kopiuj ścieżkę</value>
+    </data>
+    <data name="Msg_DiskFull">
+        <value>Twój dysk jest pełny. Wybierz inną lokalizację stary :)</value>
+    </data>
+    <data name="Tip_HashVisibility">
+        <value>Widoczność hash</value>
+    </data>
+    <data name="EmptyState_DropFiles">
+        <value>Brak plików. Kliknij 'Dodaj pliki' aby zacząć.</value>
+    </data>
+    <data name="Settings_LockTheme">
+        <value>Zablokuj ten motyw jako domyślny</value>
     </data>
 </root>

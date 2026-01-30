@@ -19,16 +19,16 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Creare Hash</value>
+        <value>Generează Hash</value>
     </data>
     <data name="Menu_Check">
-        <value>Verificare Hash</value>
+        <value>Verifică Hash</value>
     </data>
     <data name="Menu_Settings">
         <value>Setări</value>
     </data>
     <data name="Menu_Update">
-        <value>Verificare Actualizări</value>
+        <value>Actualizează</value>
     </data>
     <data name="Menu_Theme">
         <value>Temă</value>
@@ -40,57 +40,56 @@
         <value>Dezvoltator</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>Adăugare Fișiere...</value>
+        <value>Adaugă fișiere...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Șterge Lista</value>
+        <value>Șterge lista</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>CALCULEAZĂ TOT</value>
+        <value>CALCULEAZĂ TOATE</value>
     </data>
     <data name="Btn_Compress">
         <value>Comprimă (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>VERIFICĂ TOT</value>
+        <value>VERIFICĂ TOATE</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Verifică Acum</value>
+        <value>Verifică acum</value>
     </data>
     <data name="Btn_Install">
-        <value>Instalare</value>
+        <value>Instalează</value>
     </data>
     <data name="Btn_Accept">
-        <value>Accept</value>
+        <value>Acceptă</value>
     </data>
     <data name="Btn_Decline">
         <value>Refuză</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Creare Hash &amp; Comprimare</value>
+        <value>Generează Hash &amp; Comprimă</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Verificare în Masă</value>
+        <value>Verificare în lot</value>
     </data>
     <data name="Title_Update">
-        <value>Verificare Actualizări</value>
+        <value>Verifică actualizări</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Avertisment Versiune Developer</value>
+        <value>Avertisment versiune dezvoltator</value>
     </data>
     <data name="Title_About">
         <value>Despre</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Sfat: Shift+C pentru calcul totul, Shift+Z pentru comprimare, Ctrl+F pentru adăugare fișiere.</value>
+        <value>Sfat: Shift+C pentru Calculează toate, Shift+Z pentru Comprimă, Ctrl+F pentru Adaugă fișiere.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Sfat: Shift+A pentru verificare totul, Ctrl+F pentru adăugare fișiere, Ctrl+Shift+H pentru ștergere
-            listă.
+        <value>Sfat: Shift+A pentru Verifică toate, Ctrl+F pentru Adaugă fișiere, Ctrl+Shift+H pentru Șterge lista.
         </value>
     </data>
     <data name="Lbl_Status_Ready">
-        <value>Gata</value>
+        <value>Pregătit</value>
     </data>
     <data name="Lbl_Sample">
         <value>Exemplu:</value>
@@ -105,10 +104,10 @@
         <value>Total fișiere: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stable (Stabilă)</value>
+        <value>Stabilă</value>
     </data>
     <data name="Channel_Dev">
-        <value>Dev (Dezvoltator)</value>
+        <value>Ediție Dezvoltator</value>
     </data>
     <data name="Settings_Language">
         <value>Limbă</value>
@@ -120,7 +119,7 @@
         <value>Stil temă</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Deschis/Întunecat</value>
+        <value>Luminos/Întunecat</value>
     </data>
     <data name="Settings_Font">
         <value>Font</value>
@@ -129,16 +128,16 @@
         <value>Dimensiune font (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Selectare automată font optim pentru limbă</value>
+        <value>Selectează automat font optim pentru limbă</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Folosește ca font implicit (Blochează modificări)</value>
+        <value>Blochează ca font implicit</value>
     </data>
     <data name="Settings_Scale">
-        <value>Scală Interfață</value>
+        <value>Scală UI</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Mascare Hash (Securitate)</value>
+        <value>Maschează valorile Hash (Securitate)</value>
     </data>
     <data name="Settings_Reset">
         <value>Resetează tema</value>
@@ -152,14 +151,11 @@
     <data name="Settings_CustomColor">
         <value>Culoare text personalizată</value>
     </data>
-    <data name="Settings_TextTest">
-        <value>Vulpea maro rapidă sare peste câinele leneș.</value>
-    </data>
     <data name="Settings_Advanced">
-        <value>Avansate</value>
+        <value>Avansat</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Rulează ca Administrator</value>
+        <value>Rulează ca administrator</value>
     </data>
     <data name="Settings_AdminDesc">
         <value>Necesită repornire. Permite acces la fișiere protejate.</value>
@@ -168,28 +164,28 @@
         <value>Limită dimensiune fișier intrare</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Limită maximă dimensiune pentru fișiere procesate.</value>
+        <value>Dimensiune maximă pentru fișiere de procesat.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Timeout închidere forțată</value>
+        <value>Timeout ieșire forțată</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Timp (secunde) înainte de a considera aplicația blocată.</value>
+        <value>Timp (secunde) înainte de a considera aplicația înghețată.</value>
     </data>
     <data name="Settings_FileTimeout">
         <value>Timeout procesare fișier</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Anulare forțată dacă un fișier durează prea mult.</value>
+        <value>Anulează dacă un fișier durează prea mult.</value>
     </data>
     <data name="Settings_Emergency">
         <value>Acțiune de urgență</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Închidere forțată aplicație și anulare toate sarcinile imediat.</value>
+        <value>Închidere forțată a aplicației și anulare imediată a tuturor sarcinilor.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Închidere Forțată &amp; Anulează Tot</value>
+        <value>Ieșire forțată &amp; Anulează tot</value>
     </data>
     <data name="Settings_Configuration">
         <value>Configurație</value>
@@ -198,13 +194,13 @@
         <value>Blochează setări (Salvează ca implicit)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Previne modificări accidentale. Doar mascarea hash rămâne activă.</value>
+        <value>Previne modificări accidentale. Doar mascarea Hash rămâne ajustabilă.</value>
     </data>
     <data name="Settings_ResetAll">
         <value>Resetează toate setările</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Restaurează valorile implicite inițiale.</value>
+        <value>Restaurează setările din fabrică.</value>
     </data>
     <data name="Settings_ConfigPath">
         <value>Cale fișier configurație</value>
@@ -222,10 +218,10 @@
         <value>Mod dezvoltator</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Activează instrumente avansate de log și debug.</value>
+        <value>Activează logare avansată și instrumente de depanare.</value>
     </data>
     <data name="Dev_Console">
-        <value>Consolă Dezvoltator</value>
+        <value>Consolă dezvoltator</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
@@ -243,13 +239,13 @@
         <value>Nu salva</value>
     </data>
     <data name="Dev_Clear">
-        <value>Șterge Consola</value>
+        <value>Curăță consola</value>
     </data>
     <data name="Dev_Copy">
         <value>Copiază tot</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Deschide folder Log</value>
+        <value>Deschide folder loguri</value>
     </data>
     <data name="About_Author">
         <value>Autor</value>
@@ -264,10 +260,12 @@
         <value>Drepturi de autor</value>
     </data>
     <data name="About_Desc">
-        <value>Instrument puternic pentru generarea și verificarea hash-urilor fișierelor.</value>
+        <value>Instrument puternic pentru generarea, verificarea și comprimarea hash-urilor de fișiere. Sau cel puțin
+            așa cred :)
+        </value>
     </data>
     <data name="About_License">
-        <value>Lansat sub licența MIT.</value>
+        <value>Publicat sub licență MIT.</value>
     </data>
     <data name="About_Tech">
         <value>Tehnologie</value>
@@ -282,7 +280,7 @@
         <value>Acest software a fost dezvoltat cu asistență AI (Gemini 3 Pro și Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
-        <value>Se procesează ({0})...</value>
+        <value>Procesare ({0})...</value>
     </data>
     <data name="Status_Done">
         <value>Finalizat</value>
@@ -306,19 +304,19 @@
         <value>Fișier original lipsă!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash lipsă (Introduceți sau fișier hash necesar)</value>
+        <value>Valoare hash lipsă (Introduceți sau încărcați fișier hash)</value>
     </data>
     <data name="Status_Valid">
         <value>VALID</value>
     </data>
     <data name="Status_Invalid">
-        <value>NEPOTRIVIRE!</value>
+        <value>NEVALID!</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>Fișier hash încărcat</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Nume fișier hash nepotrivit!</value>
+        <value>Nume fișier hash nu se potrivește!</value>
     </data>
     <data name="Status_NoHashFound">
         <value>Fișierul nu conține hash!</value>
@@ -333,7 +331,7 @@
         <value>Folosești cea mai recentă versiune.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Eroare verificare actualizări: {0}</value>
+        <value>Eroare verificare actualizare: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>Descărcare și instalare...</value>
@@ -342,16 +340,16 @@
         <value>Eroare instalare: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Gata (Din fișier .hash)</value>
+        <value>Pregătit (Din fișier .hash)</value>
     </data>
     <data name="Status_LostOriginal">
         <value>Fișier original pierdut!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Nume fișier hash nepotrivit!</value>
+        <value>Nume fișier hash nu se potrivește!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Fișier hash aruncat</value>
+        <value>Fișier hash aruncat cu succes</value>
     </data>
     <data name="Status_DropNoHash">
         <value>Fișierul nu conține hash!</value>
@@ -364,32 +362,31 @@
     </data>
     <data name="Msg_Result_Content">
         <value>Procesare finalizată!
-
             ✅ Succes: {0}
             ❌ Eșec: {1}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Verificate {0} fișiere.
-            ✅ Potriviri: {1}
-            ❌ Nepotriviri/Eroare: {2}
-            ⛔ Anulate: {3}
+            ✅ Potrivire: {1}
+            ❌ Nepotrivire/Eroare: {2}
+            ⛔ Anulat: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Fișier greșit!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Fișier hash nepotrivit!
+        <value>Fișier hash nu se potrivește!
 
             Fișier original: {0}
             Fișier selectat: {1}
 
-            Selectați fișierul hash corect asociat.
+            Vă rugăm să selectați fișierul hash corect atașat.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Actualizare Nouă</value>
+        <value>Actualizare nouă</value>
     </data>
     <data name="Msg_UpdateContent">
         <value>Versiune: {0}
@@ -397,28 +394,28 @@
             Modificări:
             {1}
 
-            Apasă 'Actualizează acum' pentru descărcare.
+            Faceți clic pe 'Actualizează acum' pentru descărcare.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Nu s-a găsit actualizare mai nouă.</value>
+        <value>Nu s-au găsit actualizări mai noi.</value>
     </data>
     <data name="Msg_Error">
         <value>Eroare</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Nu s-a putut citi acest fișier hash.</value>
+        <value>Nu se poate citi acest fișier hash.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Verificare Configurație</value>
+        <value>Verificare configurație</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Fișierul există la:
+        <value>Fișier există la:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Fișierul nu există!</value>
+        <value>Fișier inexistent!</value>
     </data>
     <data name="Msg_ConfigCreated">
         <value>Fișier creat cu succes!</value>
@@ -427,10 +424,10 @@
         <value>Calea configurației copiată.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Mod Administrator</value>
+        <value>Mod administrator</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Reporniți aplicația pentru ca modificările să aibă efect.</value>
+        <value>Vă rugăm să reporniți aplicația pentru ca modificările să aibă efect.</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>Nu se poate deschide folderul: {0}</value>
@@ -439,21 +436,21 @@
         <value>⚠️ AVERTISMENT VERSIUNE DEZVOLTATOR</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Ești pe cale să treci la canalul de actualizări Developer (Pre-release).
+        <value>Sunteți pe cale să treceți la canalul de actualizări Dezvoltator (prerelease).
 
-            Această versiune poate conține erori, fi instabilă și provoca pierdere de date.
+            Această versiune poate conține bug-uri, poate fi instabilă și poate cauza pierderea datelor.
 
-            Nu sunt responsabil pentru problemele apărute din utilizarea acestei versiuni.
+            Nu sunt responsabil pentru problemele rezultate din utilizarea acestei versiuni.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Am citit și accept. Îmi asum întreaga responsabilitate.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Salvează Fișier Hash</value>
+        <value>Salvează fișier hash</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Salvează Fișier Comprimat</value>
+        <value>Salvează fișier comprimat</value>
     </data>
     <data name="Dialog_SelectFiles">
         <value>Selectează fișiere pentru hash</value>
@@ -465,12 +462,96 @@
         <value>Selectează fișiere (Original sau fișier .hash)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Avansate: Revenire la versiune veche (Fallback)</value>
+        <value>Avansat: Revenire la versiune mai veche</value>
     </data>
     <data name="Desc_Fallback">
         <value>Această funcție permite instalarea unei versiuni specifice dacă cea nouă are probleme.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Lipire/Aruncare...</value>
+        <value>Lipește/Aruncă aici...</value>
+    </data>
+    <data name="Unit_Seconds">
+        <value>Secunde</value>
+    </data>
+    <data name="Tip_Verify">
+        <value>Verifică</value>
+    </data>
+    <data name="Tip_Stop">
+        <value>Oprește</value>
+    </data>
+    <data name="Tip_RemoveFile">
+        <value>Elimină fișier</value>
+    </data>
+    <data name="Tip_CopyHash">
+        <value>Copiază hash</value>
+    </data>
+    <data name="Tip_Compute">
+        <value>Calculează</value>
+    </data>
+    <data name="Tip_BrowseHash">
+        <value>Navighează hash</value>
+    </data>
+    <data name="Settings_ThemeDark">
+        <value>Întunecat</value>
+    </data>
+    <data name="Settings_ThemeLight">
+        <value>Luminos</value>
+    </data>
+    <data name="Settings_ThemeSystem">
+        <value>Sistem</value>
+    </data>
+    <data name="Msg_TaskCancelled_Title">
+        <value>Sarcină oprită</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded">
+        <value>Fișier {0} depășește limita {1} {2}.</value>
+    </data>
+    <data name="Btn_Yes">
+        <value>Da</value>
+    </data>
+    <data name="Btn_OK">
+        <value>OK</value>
+    </data>
+    <data name="Btn_No">
+        <value>Nu</value>
+    </data>
+    <data name="Dialog_FileType_Zip">
+        <value>Arhivă Zip</value>
+    </data>
+    <data name="Msg_ConfirmExit_Title">
+        <value>Confirmă ieșirea</value>
+    </data>
+    <data name="Msg_ConfirmExit_Content">
+        <value>Ieșirea va anula toate sarcinile în curs. Ești sigur?</value>
+    </data>
+    <data name="Msg_TaskCancelled_Content">
+        <value>Sarcină oprită din cauza timeout-ului.</value>
+    </data>
+    <data name="Dev_ToolTip_Save">
+        <value>Salvează log debug pe disc.</value>
+    </data>
+    <data name="Dev_ToolTip_Pause">
+        <value>Pauză logare în timp real.</value>
+    </data>
+    <data name="Tip_ShowHash">
+        <value>Arată hash</value>
+    </data>
+    <data name="Tip_HideHash">
+        <value>Ascunde hash</value>
+    </data>
+    <data name="Tip_CopyPath">
+        <value>Copiază calea</value>
+    </data>
+    <data name="Msg_DiskFull">
+        <value>Discul tău e plin. Alege altă locație frate :)</value>
+    </data>
+    <data name="Tip_HashVisibility">
+        <value>Vizibilitate hash</value>
+    </data>
+    <data name="EmptyState_DropFiles">
+        <value>Niciun fișier. Dă clic 'Adaugă fișiere' pentru a începe.</value>
+    </data>
+    <data name="Settings_LockTheme">
+        <value>Blochează această temă ca implicită</value>
     </data>
 </root>

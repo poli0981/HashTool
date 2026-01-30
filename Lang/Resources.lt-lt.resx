@@ -19,538 +19,536 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Opprett hash</value>
+        <value>Kurti hash</value>
     </data>
     <data name="Menu_Check">
-        <value>Verifiser hash</value>
+        <value>Tikrinti hash</value>
     </data>
     <data name="Menu_Settings">
-        <value>Innstillinger</value>
+        <value>Nustatymai</value>
     </data>
     <data name="Menu_Update">
-        <value>Oppdater</value>
+        <value>Atnaujinti</value>
     </data>
     <data name="Menu_Theme">
         <value>Tema</value>
     </data>
     <data name="Menu_About">
-        <value>Om</value>
+        <value>Apie</value>
     </data>
     <data name="Menu_Developer">
-        <value>Utvikler</value>
+        <value>Kūrėjas</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>Legg til filer...</value>
+        <value>Pridėti failus...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Tøm listen</value>
+        <value>Išvalyti sąrašą</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>BEREGN ALLE</value>
+        <value>SKAIČIUOTI VISUS</value>
     </data>
     <data name="Btn_Compress">
-        <value>Komprimer (.Zip)</value>
+        <value>Suspausti (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>VERIFISER ALLE</value>
+        <value>TIKRINTI VISUS</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Verifiser nå</value>
+        <value>Tikrinti dabar</value>
     </data>
     <data name="Btn_Install">
-        <value>Installer</value>
+        <value>Įdiegti</value>
     </data>
     <data name="Btn_Accept">
-        <value>Godta</value>
+        <value>Priimti</value>
     </data>
     <data name="Btn_Decline">
-        <value>Avvis</value>
+        <value>Atmesti</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Opprett hash &amp; komprimer</value>
+        <value>Kurti hash ir suspausti</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Masseverifisering</value>
+        <value>Masinis tikrinimas</value>
     </data>
     <data name="Title_Update">
-        <value>Søk etter oppdateringer</value>
+        <value>Tikrinti atnaujinimus</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Advarsel for utviklerversjon</value>
+        <value>Kūrėjo versijos įspėjimas</value>
     </data>
     <data name="Title_About">
-        <value>Om</value>
+        <value>Apie</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tips: Shift+C for å beregne alle, Shift+Z for å komprimere, Ctrl+F for å legge til filer.</value>
+        <value>Patarimas: Shift+C skaičiuoti visus, Shift+Z suspausti, Ctrl+F pridėti failus.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tips: Shift+A for å verifisere alle, Ctrl+F for å legge til filer, Ctrl+Shift+H for å tømme listen.
-        </value>
+        <value>Patarimas: Shift+A tikrinti visus, Ctrl+F pridėti failus, Ctrl+Shift+H išvalyti sąrašą.</value>
     </data>
     <data name="Lbl_Status_Ready">
-        <value>Klar</value>
+        <value>Paruošta</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Eksempel:</value>
+        <value>Pavyzdys:</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>Gjeldende versjon: {0}</value>
+        <value>Dabartinė versija: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Utgivelseskanal:</value>
+        <value>Leidimo kanalas:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Totalt filer: {0}</value>
+        <value>Iš viso failų: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabil</value>
+        <value>Stabili</value>
     </data>
     <data name="Channel_Dev">
-        <value>Utviklerversjon</value>
+        <value>Kūrėjo versija</value>
     </data>
     <data name="Settings_Language">
-        <value>Språk</value>
+        <value>Kalba</value>
     </data>
     <data name="Settings_Theme">
         <value>Tema</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>Temastil</value>
+        <value>Temos stilius</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Lys/Mørk</value>
+        <value>Šviesi/Tamsi</value>
     </data>
     <data name="Settings_Font">
-        <value>Skrift</value>
+        <value>Šriftas</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Skriftstørrelse (pt)</value>
+        <value>Šrifto dydis (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automatisk velg optimal skrift for språk</value>
+        <value>Automatiškai parinkti optimalų šriftą kalbai</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Lås som standardskrift</value>
+        <value>Užrakinti kaip numatytąjį šriftą</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI-skala</value>
+        <value>UI mastelis</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Masker hashverdier (Sikkerhet)</value>
+        <value>Maskuoti hash reikšmes (Saugumas)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Tilbakestill tema</value>
+        <value>Atstatyti temą</value>
     </data>
     <data name="Settings_Other">
-        <value>Personvern &amp; sikkerhet</value>
+        <value>Privatumas ir saugumas</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Angi som standard</value>
+        <value>Nustatyti kaip numatytąjį</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Egendefinert tekstfarge</value>
+        <value>Pasirinktinė teksto spalva</value>
     </data>
     <data name="Settings_Advanced">
-        <value>Avansert</value>
+        <value>Išplėstiniai</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Kjør som administrator</value>
+        <value>Vykdyti kaip administratoriui</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Krever omstart. Gir tilgang til beskyttede filer.</value>
+        <value>Reikia paleisti iš naujo. Leidžia prieigą prie apsaugotų failų.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Inndatafilstørrelsesgrense</value>
+        <value>Įvesties failo dydžio riba</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maksimal størrelse for filer som skal behandles.</value>
+        <value>Maksimalus dydis apdorojamiems failams.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Tidsavbrudd for tvungen avslutning</value>
+        <value>Priverstinio išjungimo laikmatis</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Tid (sekunder) før appen regnes som fryst.</value>
+        <value>Laikas (sekundėmis) prieš laikant programą užstrigusią.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Tidsavbrudd for filbehandling</value>
+        <value>Failo apdorojimo laikmatis</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Avbryt hvis en enkelt fil tar for lang tid.</value>
+        <value>Atšaukti, jei vienas failas užtrunka per ilgai.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Nødhandling</value>
+        <value>Skubi veiksmas</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Tvunget avslutning av appen og avbryt alle oppgaver umiddelbart.</value>
+        <value>Priverstinai uždaryti programą ir nedelsiant atšaukti visas užduotis.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Tvungen avslutning &amp; avbryt alle</value>
+        <value>Priverstinis išjungimas ir atšaukti viską</value>
     </data>
     <data name="Settings_Configuration">
-        <value>Konfigurasjon</value>
+        <value>Konfigūracija</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Lås innstillinger (Lagre som standard)</value>
+        <value>Užrakinti nustatymus (Išsaugoti kaip numatytuosius)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Forhindre utilsiktede endringer. Bare hash-maskering kan justeres.</value>
+        <value>Užkirsti kelią atsitiktiniams pakeitimams. Tik hash maskavimas lieka reguliuojamas.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Tilbakestill alle innstillinger</value>
+        <value>Atstatyti visus nustatymus</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Gjenopprett fabrikkinnstillinger.</value>
+        <value>Atkurti gamyklinius nustatymus.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Konfigurasjonsfilsti</value>
+        <value>Konfigūracijos failo kelias</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Vis full sti og kopier til utklippstavle.</value>
+        <value>Rodyti visą kelią ir kopijuoti į iškarpinę.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Vis sti</value>
+        <value>Rodyti kelią</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Innstillinger lagres automatisk i config.json</value>
+        <value>Nustatymai automatiškai išsaugomi config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Utviklermodus</value>
+        <value>Kūrėjo režimas</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Aktiver avansert logging og feilsøkingsverktøy.</value>
+        <value>Įjungti išplėstinius žurnalo ir derinimo įrankius.</value>
     </data>
     <data name="Dev_Console">
-        <value>Utviklerkonsoll</value>
+        <value>Kūrėjo konsolė</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Spiller inn</value>
+        <value>Įrašoma</value>
     </data>
     <data name="Dev_Paused">
-        <value>Pauset</value>
+        <value>Pauzė</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>Lagre til fil</value>
+        <value>Išsaugoti faile</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Ingen lagring</value>
+        <value>Neišsaugoti</value>
     </data>
     <data name="Dev_Clear">
-        <value>Tøm konsollen</value>
+        <value>Išvalyti konsolę</value>
     </data>
     <data name="Dev_Copy">
-        <value>Kopier alt</value>
+        <value>Kopijuoti viską</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Åpne loggmappe</value>
+        <value>Atidaryti žurnalo aplanką</value>
     </data>
     <data name="About_Author">
-        <value>Forfatter</value>
+        <value>Autorius</value>
     </data>
     <data name="About_Software">
-        <value>Programvare</value>
+        <value>Programinė įranga</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Tredjepartsbiblioteker</value>
+        <value>Trečiųjų šalių bibliotekos</value>
     </data>
     <data name="About_Copyright">
-        <value>Opphavsrett</value>
+        <value>Autorių teisės</value>
     </data>
     <data name="About_Desc">
-        <value>Et kraftig verktøy for å opprette, verifisere og komprimere filhash. Eller det tror jeg i alle fall :)
-        </value>
+        <value>Galingas įrankis failų hash kūrimui, tikrinimui ir glaudinimui. Ar bent jau aš taip manau :)</value>
     </data>
     <data name="About_License">
-        <value>Utgitt under MIT-lisensen.</value>
+        <value>Išleista pagal MIT licenciją.</value>
     </data>
     <data name="About_Tech">
-        <value>Teknologi</value>
+        <value>Technologija</value>
     </data>
     <data name="About_TechContent">
-        <value>Bygget med C# og .NET 10.0.102.</value>
+        <value>Sukurta naudojant C# ir .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>AI-hjelp</value>
+        <value>AI pagalba</value>
     </data>
     <data name="About_AIContent">
-        <value>Denne programvaren ble utviklet med hjelp fra AI (Gemini 3 Pro og Grok 4.1).</value>
+        <value>Ši programinė įranga sukurta su AI pagalba (Gemini 3 Pro ir Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
-        <value>Behandler ({0})...</value>
+        <value>Apdorojama ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>Fullført</value>
+        <value>Baigta</value>
     </data>
     <data name="Status_Error">
-        <value>Feil: {0}</value>
+        <value>Klaida: {0}</value>
     </data>
     <data name="Status_Cancelled">
-        <value>Avbrutt</value>
+        <value>Atšaukta</value>
     </data>
     <data name="Status_Saved">
-        <value>Lagret!</value>
+        <value>Išsaugota!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Komprimert!</value>
+        <value>Suglaudinta!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Venter på hash/inndata...</value>
+        <value>Laukiama hash/įvesties...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Originalfil mangler!</value>
+        <value>Trūksta originalaus failo!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hashverdi mangler (Skriv inn eller last inn hashfil)</value>
+        <value>Trūksta hash reikšmės (Įveskite arba įkelkite hash failą)</value>
     </data>
     <data name="Status_Valid">
-        <value>GYLDIG</value>
+        <value>GALIOJANTI</value>
     </data>
     <data name="Status_Invalid">
-        <value>UGYLDIG!</value>
+        <value>NEGALIOJANTI!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Hashfil lastet</value>
+        <value>Hash failas įkeltas</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hashfilnavn stemmer ikke!</value>
+        <value>Hash failo pavadinimas neatitinka!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Filen inneholder ingen hash!</value>
+        <value>Faile nerasta hash!</value>
     </data>
     <data name="Status_Checking">
-        <value>Søker etter oppdateringer...</value>
+        <value>Tikrinami atnaujinimai...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Ny versjon oppdaget!</value>
+        <value>Aptikta nauja versija!</value>
     </data>
     <data name="Status_Latest">
-        <value>Du bruker den nyeste versjonen.</value>
+        <value>Naudojate naujausią versiją.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Feil ved oppdateringssjekk: {0}</value>
+        <value>Atnaujinimų tikrinimo klaida: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Laster ned og installerer...</value>
+        <value>Atsisiunčiama ir diegiama...</value>
     </data>
     <data name="Status_InstallError">
-        <value>Installasjonsfeil: {0}</value>
+        <value>Diegimo klaida: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Klar (Fra .hash-fil)</value>
+        <value>Paruošta (Iš .hash failo)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Originalfil tapt!</value>
+        <value>Prarastas originalus failas!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hashfilnavn stemmer ikke!</value>
+        <value>Hash failo pavadinimas neatitinka!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hashfil sluppet vellykket</value>
+        <value>Hash failas sėkmingai numestas</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Filen inneholder ingen hash!</value>
+        <value>Faile nėra hash!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Fil lesefeil</value>
+        <value>Failo skaitymo klaida</value>
     </data>
     <data name="Msg_Result_Title">
-        <value>Resultat</value>
+        <value>Rezultatas</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Behandling fullført!
-            ✅ Suksess: {0}
-            ❌ Feil: {1}
+        <value>Apdorojimas baigtas!
+            ✅ Sėkmingai: {0}
+            ❌ Nepavyko: {1}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>Kontrollerte {0} filer.
-            ✅ Match: {1}
-            ❌ Ingen match/Feil: {2}
-            ⛔ Avbrutt: {3}
+        <value>Patikrinta {0} failų.
+            ✅ Atitinka: {1}
+            ❌ Neatitinka/Klaida: {2}
+            ⛔ Atšaukta: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>Feil fil!</value>
+        <value>Netinkamas failas!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hashfil stemmer ikke!
+        <value>Hash failas neatitinka!
 
-            Originalfil: {0}
-            Valgt fil: {1}
+            Originalus failas: {0}
+            Pasirinktas failas: {1}
 
-            Velg riktig medfølgende hashfil.
+            Pasirinkite teisingą pridėtą hash failą.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Ny oppdatering</value>
+        <value>Naujas atnaujinimas</value>
     </data>
     <data name="Msg_UpdateContent">
-        <value>Versjon: {0}
+        <value>Versija: {0}
 
-            Endringer:
+            Pakeitimai:
             {1}
 
-            Klikk 'Oppdater nå' for å laste ned.
+            Spustelėkite 'Atnaujinti dabar' atsisiųsti.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Ingen nyere oppdateringer funnet.</value>
+        <value>Nėra naujesnių atnaujinimų.</value>
     </data>
     <data name="Msg_Error">
-        <value>Feil</value>
+        <value>Klaida</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Kan ikke lese denne hashfilen.</value>
+        <value>Negalima perskaityti šio hash failo.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Konfigurasjonskontroll</value>
+        <value>Konfigūracijos tikrinimas</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Fil finnes på:
+        <value>Failas yra:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Fil mangler!</value>
+        <value>Failas nerastas!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Fil opprettet vellykket!</value>
+        <value>Failas sėkmingai sukurtas!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Konfigurasjonssti kopiert.</value>
+        <value>Konfigūracijos kelias nukopijuotas.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Administratormodus</value>
+        <value>Administratoriaus režimas</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Start appen på nytt for at endringene skal tre i kraft.</value>
+        <value>Paleiskite programą iš naujo, kad pakeitimai įsigaliotų.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Kan ikke åpne mappe: {0}</value>
+        <value>Negalima atidaryti aplanko: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ADVARSEL FOR UTVIKLERVERSJON</value>
+        <value>⚠️ KŪRĖJO VERSIJOS ĮSPĖJIMAS</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Du er i ferd med å bytte til utviklerkanalen (forhåndsversjon).
+        <value>Jūs ketinate pereiti prie kūrėjo (priešleidiminės) atnaujinimo kanalo.
 
-            Denne versjonen kan inneholde feil, være ustabil og forårsake datatap.
+            Ši versija gali turėti klaidų, būti nestabili ir sukelti duomenų praradimą.
 
-            Jeg er ikke ansvarlig for problemer som oppstår ved bruk av denne versjonen.
+            Nesu atsakingas už problemas, kylančias naudojant šią versiją.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Jeg har lest og godtar. Jeg tar fullt ansvar.</value>
+        <value>Perskaičiau ir sutinku. Prisiimu visą atsakomybę.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Lagre hashfil</value>
+        <value>Išsaugoti hash failą</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Lagre komprimert fil</value>
+        <value>Išsaugoti suglaudintą failą</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Velg filer for hash</value>
+        <value>Pasirinkti failus hash</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Velg hashfil for: {0}</value>
+        <value>Pasirinkti hash failą: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Velg filer (Original eller .hash-fil)</value>
+        <value>Pasirinkti failus (Originalus arba .hash failą)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Avansert: Tilbake til eldre versjon</value>
+        <value>Išplėstiniai: Grįžti prie senesnės versijos</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Denne funksjonen lar deg installere en spesifikk versjon hvis den nye har problemer.</value>
+        <value>Ši funkcija leidžia įdiegti konkrečią versiją, jei nauja turi problemų.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Lim inn/Slipp her...</value>
+        <value>Įklijuoti/Mesti čia...</value>
     </data>
     <data name="Unit_Seconds">
-        <value>Sekunder</value>
+        <value>Sekundės</value>
     </data>
     <data name="Tip_Verify">
-        <value>Verifiser</value>
+        <value>Patikrinti</value>
     </data>
     <data name="Tip_Stop">
-        <value>Stopp</value>
+        <value>Sustabdyti</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>Fjern fil</value>
+        <value>Pašalinti failą</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Kopier hash</value>
+        <value>Kopijuoti hash</value>
     </data>
     <data name="Tip_Compute">
-        <value>Beregn</value>
+        <value>Skaičiuoti</value>
     </data>
     <data name="Tip_BrowseHash">
-        <value>Bla gjennom hash</value>
+        <value>Naršyti hash</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>Mørk</value>
+        <value>Tamsi</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>Lys</value>
+        <value>Šviesi</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>System</value>
+        <value>Sistema</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>Oppgave stoppet</value>
+        <value>Užduotis sustabdyta</value>
     </data>
     <data name="Msg_FileSizeLimitExceeded">
-        <value>Fil {0} overskrider grensen {1} {2}.</value>
+        <value>Failas {0} viršija ribą {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
-        <value>Ja</value>
+        <value>Taip</value>
     </data>
     <data name="Btn_OK">
-        <value>OK</value>
+        <value>Gerai</value>
     </data>
     <data name="Btn_No">
-        <value>Nei</value>
+        <value>Ne</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip-arkiv</value>
+        <value>Zip archyvas</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Bekreft avslutning</value>
+        <value>Patvirtinti išėjimą</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Avslutning avbryter alle pågående oppgaver. Er du sikker?</value>
+        <value>Išėjimas atšauks visas vykdomas užduotis. Ar tikrai?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Oppgave stoppet på grunn av tidsavbrudd.</value>
+        <value>Užduotis sustabdyta dėl laiko limito.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Lagre debuglogg til disk.</value>
+        <value>Išsaugoti derinimo žurnalą diske.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Pause sanntidslogging.</value>
+        <value>Pauzė realaus laiko žurnalo.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Vis hash</value>
+        <value>Rodyti hash</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Skjul hash</value>
+        <value>Slėpti hash</value>
     </data>
     <data name="Tip_CopyPath">
-        <value>Kopier sti</value>
+        <value>Kopijuoti kelią</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Disken din er full. Velg annen plassering kompis :)</value>
+        <value>Jūsų diskas pilnas. Pasirinkite kitą vietą bro :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Hash-synlighet</value>
+        <value>Hash matomumas</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Ingen filer. Klikk 'Legg til filer' for å starte.</value>
+        <value>Nėra failų. Spustelėkite 'Pridėti failus' pradėti.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Lås dette temaet som standard</value>
+        <value>Užrakinti šią temą kaip numatytąją</value>
     </data>
 </root>

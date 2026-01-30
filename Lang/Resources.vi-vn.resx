@@ -193,7 +193,7 @@
         <value>Khóa cài đặt (Lưu làm mặc định)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Ngăn thay đổi vô tình. Chỉ có Che mã Hash vẫn hoạt động.</value>
+        <value>Bạn không muốn "lỡ" chọn nhầm?. Chỉ có Che mã Hash vẫn hoạt động.</value>
     </data>
     <data name="Settings_ResetAll">
         <value>Đặt lại tất cả cài đặt</value>
@@ -271,7 +271,7 @@
         <value>Được xây dựng bằng C# và .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>Hỗ trợ AI</value>
+        <value>Hỗ trợ của AI</value>
     </data>
     <data name="About_AIContent">
         <value>Phần mềm này có sự hỗ trợ của AI trong quá trình phát triển (Gemini 3 Pro và Grok 4.1).</value>
@@ -360,7 +360,8 @@
     <data name="Msg_Result_Content">
         <value>Đã xử lý xong!
             ✅ Thành công: {0}
-            ❌ Thất bại: {1}</value>
+            ❌ Thất bại: {1}
+        </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Đã kiểm tra {0} file.
@@ -528,5 +529,26 @@
     </data>
     <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Dừng tạm thời lưu log thời gian thực.</value>
+    </data>
+    <data name="Tip_ShowHash" xml:space="preserve">
+        <value>Hiện mã hash</value>
+    </data>
+    <data name="Tip_HideHash" xml:space="preserve">
+        <value>Ẩn hash</value>
+    </data>
+    <data name="Tip_CopyPath" xml:space="preserve">
+        <value>Sao chép đường dẫn</value>
+    </data>
+    <data name="Msg_DiskFull" xml:space="preserve">
+        <value>Ổ cứng HDD/SSD của bạn không đủ dung lượng. Chọn lại nhé :)</value>
+    </data>
+    <data name="Tip_HashVisibility" xml:space="preserve">
+        <value>Hash Visibility</value>
+    </data>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Không có file. Nhấn 'Thêm File' để bắt đầu.</value>
+    </data>
+    <data name="Settings_LockTheme" xml:space="preserve">
+        <value>Khoá giao diện làm mặc định</value>
     </data>
 </root>

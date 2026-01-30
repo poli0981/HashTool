@@ -19,540 +19,536 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Hash genereren</value>
+        <value>生成哈希</value>
     </data>
     <data name="Menu_Check">
-        <value>Hash controleren</value>
+        <value>验证哈希</value>
     </data>
     <data name="Menu_Settings">
-        <value>Instellingen</value>
+        <value>设置</value>
     </data>
     <data name="Menu_Update">
-        <value>Update</value>
+        <value>更新</value>
     </data>
     <data name="Menu_Theme">
-        <value>Thema</value>
+        <value>主题</value>
     </data>
     <data name="Menu_About">
-        <value>Over</value>
+        <value>关于</value>
     </data>
     <data name="Menu_Developer">
-        <value>Ontwikkelaar</value>
+        <value>开发者</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>Bestanden toevoegen...</value>
+        <value>添加文件...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Lijst wissen</value>
+        <value>清除列表</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>ALLES BEREKENEN</value>
+        <value>全部计算</value>
     </data>
     <data name="Btn_Compress">
-        <value>Comprimeren (.Zip)</value>
+        <value>压缩 (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ALLES CONTROLEREN</value>
+        <value>全部验证</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Nu controleren</value>
+        <value>立即验证</value>
     </data>
     <data name="Btn_Install">
-        <value>Installeren</value>
+        <value>安装</value>
     </data>
     <data name="Btn_Accept">
-        <value>Accepteren</value>
+        <value>接受</value>
     </data>
     <data name="Btn_Decline">
-        <value>Weigeren</value>
+        <value>取消</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Hash genereren &amp; comprimeren</value>
+        <value>生成哈希与压缩</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Batchcontrole</value>
+        <value>批量验证</value>
     </data>
     <data name="Title_Update">
-        <value>Controleren op updates</value>
+        <value>检查更新</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Waarschuwing ontwikkelaarsversie</value>
+        <value>开发版警告</value>
     </data>
     <data name="Title_About">
-        <value>Over</value>
+        <value>关于</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tip: Shift+C om alles te berekenen, Shift+Z om te comprimeren, Ctrl+F om bestanden toe te voegen.</value>
+        <value>提示：Shift+C 全部计算，Shift+Z 压缩，Ctrl+F 添加文件。</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A om alles te controleren, Ctrl+F om bestanden toe te voegen, Ctrl+Shift+H om lijst te
-            wissen.
-        </value>
+        <value>提示：Shift+A 全部验证，Ctrl+F 添加文件，Ctrl+Shift+H 清除列表。</value>
     </data>
     <data name="Lbl_Status_Ready">
-        <value>Klaar</value>
+        <value>就绪</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Voorbeeld:</value>
+        <value>示例：</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>Huidige versie: {0}</value>
+        <value>当前版本：{0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Releasekanaal:</value>
+        <value>发行频道：</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Totaal bestanden: {0}</value>
+        <value>总文件数：{0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabiel</value>
+        <value>稳定版</value>
     </data>
     <data name="Channel_Dev">
-        <value>Ontwikkelaarseditie</value>
+        <value>开发版</value>
     </data>
     <data name="Settings_Language">
-        <value>Taal</value>
+        <value>语言</value>
     </data>
     <data name="Settings_Theme">
-        <value>Thema</value>
+        <value>主题</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>Themastijl</value>
+        <value>主题样式</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Licht/Donker</value>
+        <value>亮/暗</value>
     </data>
     <data name="Settings_Font">
-        <value>Lettertype</value>
+        <value>字体</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Lettergrootte (pt)</value>
+        <value>字体大小 (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automatisch optimale lettertype voor taal selecteren</value>
+        <value>自动选择最优语言字体</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Vergrendelen als standaardlettertype</value>
+        <value>锁定为默认字体</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI-schaal</value>
+        <value>UI 缩放</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Hash-waarden maskeren (Beveiliging)</value>
+        <value>遮蔽哈希值 (安全性)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Thema resetten</value>
+        <value>重置主题</value>
     </data>
     <data name="Settings_Other">
-        <value>Privacy &amp; Beveiliging</value>
+        <value>隐私与安全性</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Instellen als standaard</value>
+        <value>设为默认</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Aangepaste tekstkleur</value>
+        <value>自定义文字颜色</value>
     </data>
     <data name="Settings_Advanced">
-        <value>Geavanceerd</value>
+        <value>高级</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Als administrator uitvoeren</value>
+        <value>以管理员运行</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Herstart vereist. Geeft toegang tot beveiligde bestanden.</value>
+        <value>需重启。允许访问受保护文件。</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Limiet invoerbestandsgrootte</value>
+        <value>输入文件大小限制</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maximale grootte voor te verwerken bestanden.</value>
+        <value>处理文件的最大尺寸。</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Timeout geforceerd afsluiten</value>
+        <value>强制结束超时</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Tijd (seconden) voordat app als vastgelopen wordt beschouwd.</value>
+        <value>视为程序冻结前的等待时间 (秒)。</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Timeout bestandsverwerking</value>
+        <value>单一文件处理超时</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Annuleren als één bestand te lang duurt.</value>
+        <value>单一文件处理过久则取消。</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Noodactie</value>
+        <value>紧急操作</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>App geforceerd afsluiten en alle taken onmiddellijk annuleren.</value>
+        <value>立即强制结束程序并取消所有任务。</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Geforceerd afsluiten &amp; Alles annuleren</value>
+        <value>强制结束并取消全部</value>
     </data>
     <data name="Settings_Configuration">
-        <value>Configuratie</value>
+        <value>配置</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Instellingen vergrendelen (Opslaan als standaard)</value>
+        <value>锁定设置 (保存为默认)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Voorkom onbedoelde wijzigingen. Alleen hash-maskering blijft aanpasbaar.</value>
+        <value>防止误改。只有哈希遮蔽仍可调整。</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Alle instellingen resetten</value>
+        <value>重置所有设置</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Terugzetten naar fabrieksinstellingen.</value>
+        <value>恢复出厂默认值。</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Configuratiebestandspad</value>
+        <value>配置文件路径</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Volledig pad tonen en kopiëren naar klembord.</value>
+        <value>显示完整路径并复制到剪贴板。</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Pad tonen</value>
+        <value>显示路径</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Instellingen worden automatisch opgeslagen in config.json</value>
+        <value>设置会自动保存至 config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Ontwikkelaarsmodus</value>
+        <value>开发者模式</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Geavanceerde logging en debugtools inschakelen.</value>
+        <value>启用高级日志与调试工具。</value>
     </data>
     <data name="Dev_Console">
-        <value>Ontwikkelaarsconsole</value>
+        <value>开发者控制台</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Opname</value>
+        <value>录制中</value>
     </data>
     <data name="Dev_Paused">
-        <value>Gepauzeerd</value>
+        <value>已暂停</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>Opslaan in bestand</value>
+        <value>保存到文件</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Niet opslaan</value>
+        <value>不保存</value>
     </data>
     <data name="Dev_Clear">
-        <value>Console wissen</value>
+        <value>清除控制台</value>
     </data>
     <data name="Dev_Copy">
-        <value>Alles kopiëren</value>
+        <value>复制全部</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Logmap openen</value>
+        <value>打开日志文件夹</value>
     </data>
     <data name="About_Author">
-        <value>Auteur</value>
+        <value>作者</value>
     </data>
     <data name="About_Software">
-        <value>Software</value>
+        <value>软件</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Derde partij bibliotheken</value>
+        <value>第三方程序库</value>
     </data>
     <data name="About_Copyright">
-        <value>Auteursrecht</value>
+        <value>版权</value>
     </data>
     <data name="About_Desc">
-        <value>Krachtig hulpmiddel voor het genereren, controleren en comprimeren van bestandshashes. Of dat denk ik
-            tenminste :)
-        </value>
+        <value>强大的文件哈希生成、验证与压缩工具。至少我是这么想的 lah :)</value>
     </data>
     <data name="About_License">
-        <value>Uitgegeven onder MIT-licentie.</value>
+        <value>以 MIT 许可发布。</value>
     </data>
     <data name="About_Tech">
-        <value>Technologie</value>
+        <value>技术</value>
     </data>
     <data name="About_TechContent">
-        <value>Gebouwd met C# en .NET 10.0.102.</value>
+        <value>使用 C# 与 .NET 10.0.102 构建。</value>
     </data>
     <data name="About_AI">
-        <value>AI-ondersteuning</value>
+        <value>AI 协助</value>
     </data>
     <data name="About_AIContent">
-        <value>Deze software is ontwikkeld met hulp van AI (Gemini 3 Pro en Grok 4.1).</value>
+        <value>本软件开发过程中获得 AI 协助 (Gemini 3 Pro 与 Grok 4.1)。</value>
     </data>
     <data name="Status_Processing">
-        <value>Verwerken ({0})...</value>
+        <value>处理中 ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>Voltooid</value>
+        <value>完成</value>
     </data>
     <data name="Status_Error">
-        <value>Fout: {0}</value>
+        <value>错误：{0}</value>
     </data>
     <data name="Status_Cancelled">
-        <value>Geannuleerd</value>
+        <value>已取消</value>
     </data>
     <data name="Status_Saved">
-        <value>Opgeslagen!</value>
+        <value>已保存！</value>
     </data>
     <data name="Status_Compressed">
-        <value>Gecomprimeerd!</value>
+        <value>已压缩！</value>
     </data>
     <data name="Status_Waiting">
-        <value>Wachten op hash/invoer...</value>
+        <value>等待哈希/输入...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Origineel bestand ontbreekt!</value>
+        <value>缺少原始文件！</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash-waarde ontbreekt (Voer in of laad hashbestand)</value>
+        <value>缺少哈希值 (输入或加载哈希文件)</value>
     </data>
     <data name="Status_Valid">
-        <value>GELDIG</value>
+        <value>有效</value>
     </data>
     <data name="Status_Invalid">
-        <value>ONGELDIG!</value>
+        <value>不符！</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Hashbestand geladen</value>
+        <value>已加载哈希文件</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hashbestandsnaam komt niet overeen!</value>
+        <value>哈希文件名称不符！</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Bestand bevat geen hash!</value>
+        <value>文件不包含哈希！</value>
     </data>
     <data name="Status_Checking">
-        <value>Controleren op updates...</value>
+        <value>检查更新中...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Nieuwe versie gedetecteerd!</value>
+        <value>检测到新版本！</value>
     </data>
     <data name="Status_Latest">
-        <value>Je gebruikt de nieuwste versie.</value>
+        <value>已是最新版本。</value>
     </data>
     <data name="Status_CheckError">
-        <value>Updatecontrolefout: {0}</value>
+        <value>更新检查错误：{0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Downloaden en installeren...</value>
+        <value>下载并安装中...</value>
     </data>
     <data name="Status_InstallError">
-        <value>Installatiefout: {0}</value>
+        <value>安装错误：{0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Klaar (Van .hash-bestand)</value>
+        <value>就绪 (来自 .hash 文件)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Origineel bestand verloren!</value>
+        <value>原始文件丢失！</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hashbestandsnaam komt niet overeen!</value>
+        <value>哈希文件名称不符！</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hashbestand succesvol gedropt</value>
+        <value>已成功拖放哈希文件</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Bestand bevat geen hash!</value>
+        <value>文件不包含哈希！</value>
     </data>
     <data name="Status_ReadError">
-        <value>Bestandleesfout</value>
+        <value>文件读取错误</value>
     </data>
     <data name="Msg_Result_Title">
-        <value>Resultaat</value>
+        <value>结果</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Verwerking voltooid!
-            ✅ Succes: {0}
-            ❌ Mislukt: {1}
+        <value>处理完成！
+            ✅ 成功：{0}
+            ❌ 失败：{1}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>{0} bestanden gecontroleerd.
-            ✅ Overeenkomst: {1}
-            ❌ Geen overeenkomst/Fout: {2}
-            ⛔ Geannuleerd: {3}
+        <value>已检查 {0} 个文件。
+            ✅ 相符：{1}
+            ❌ 不符/错误：{2}
+            ⛔ 已取消：{3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>Verkeerd bestand!</value>
+        <value>错误文件！</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hashbestand komt niet overeen!
+        <value>哈希文件不符！
 
-            Origineel bestand: {0}
-            Geselecteerd bestand: {1}
+            原始文件：{0}
+            选择文件：{1}
 
-            Selecteer het juiste bijgevoegde hashbestand.
+            请选取正确的配套哈希文件。
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Nieuwe update</value>
+        <value>新更新</value>
     </data>
     <data name="Msg_UpdateContent">
-        <value>Versie: {0}
+        <value>版本：{0}
 
-            Wijzigingen:
+            变更：
             {1}
 
-            Klik 'Nu bijwerken' om te downloaden.
+            点击「立即更新」以下载。
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Geen nieuwere updates gevonden.</value>
+        <value>未找到更新的版本。</value>
     </data>
     <data name="Msg_Error">
-        <value>Fout</value>
+        <value>错误</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Kan dit hashbestand niet lezen.</value>
+        <value>无法读取此哈希文件。</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Configuratiecontrole</value>
+        <value>配置检查</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Bestand bestaat op:
+        <value>文件存在于：
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Bestand bestaat niet!</value>
+        <value>文件不存在！</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Bestand succesvol aangemaakt!</value>
+        <value>文件创建成功！</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Configuratiepad gekopieerd.</value>
+        <value>已复制配置路径。</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Beheerdersmodus</value>
+        <value>管理员模式</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Herstart de toepassing om wijzigingen toe te passen.</value>
+        <value>请重新启动应用程序以应用更改。</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Kan map niet openen: {0}</value>
+        <value>无法打开文件夹：{0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ WAARSCHUWING ONTWIKKELAARSVERSIE</value>
+        <value>⚠️ 开发版警告</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Je staat op het punt over te schakelen naar het ontwikkelaarsupdatekanaal (prerelease).
+        <value>您即将切换至开发者 (预发布) 更新频道。
 
-            Deze versie kan bugs bevatten, instabiel zijn en gegevensverlies veroorzaken.
+            此版本可能含有错误、不稳定，并可能导致数据丢失。
 
-            Ik ben niet verantwoordelijk voor problemen die ontstaan door het gebruik van deze versie.
+            使用此版本所产生之任何问题，本人不负责。
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Ik heb gelezen en ga akkoord. Ik neem volledige verantwoordelijkheid.</value>
+        <value>我已阅读并同意。我愿自行承担全部责任。</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Hashbestand opslaan</value>
+        <value>保存哈希文件</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Gecomprimeerd bestand opslaan</value>
+        <value>保存压缩文件</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Bestanden selecteren voor hash</value>
+        <value>选择要计算哈希的文件</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Hashbestand selecteren voor: {0}</value>
+        <value>选择 {0} 的哈希文件</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Bestanden selecteren (Origineel of .hash-bestand)</value>
+        <value>选择文件 (原始文件或 .hash 文件)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Geavanceerd: Terugval naar oudere versie</value>
+        <value>高级：回退到旧版本</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Deze functie staat toe een specifieke versie te installeren als de nieuwe problemen heeft.</value>
+        <value>此功能允许在新版本出问题时安装特定版本。</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Plak/Drop hier...</value>
+        <value>粘贴/拖放到此...</value>
     </data>
     <data name="Unit_Seconds">
-        <value>Seconden</value>
+        <value>秒</value>
     </data>
     <data name="Tip_Verify">
-        <value>Verifiëren</value>
+        <value>验证</value>
     </data>
     <data name="Tip_Stop">
-        <value>Stoppen</value>
+        <value>停止</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>Bestand verwijderen</value>
+        <value>移除文件</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Hash kopiëren</value>
+        <value>复制哈希</value>
     </data>
     <data name="Tip_Compute">
-        <value>Berekenen</value>
+        <value>计算</value>
     </data>
     <data name="Tip_BrowseHash">
-        <value>Hash doorbladeren</value>
+        <value>浏览哈希</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>Donker</value>
+        <value>暗色</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>Licht</value>
+        <value>亮色</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>Systeem</value>
+        <value>系统</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>Taak gestopt</value>
+        <value>任务已停止</value>
     </data>
     <data name="Msg_FileSizeLimitExceeded">
-        <value>Bestand {0} overschrijdt limiet {1} {2}.</value>
+        <value>文件 {0} 超过限制 {1} {2}。</value>
     </data>
     <data name="Btn_Yes">
-        <value>Ja</value>
+        <value>是</value>
     </data>
     <data name="Btn_OK">
-        <value>OK</value>
+        <value>确定</value>
     </data>
     <data name="Btn_No">
-        <value>Nee</value>
+        <value>否</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip-archief</value>
+        <value>Zip 压缩文件</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Afsluiten bevestigen</value>
+        <value>确认退出</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Afsluiten annuleert alle lopende taken. Weet je het zeker?</value>
+        <value>退出将取消所有进行中任务。确定吗？</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Taak gestopt vanwege timeout.</value>
+        <value>因超时而停止任务。</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Debuglog opslaan op schijf.</value>
+        <value>将调试日志保存到磁盘。</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Realtime logging pauzeren.</value>
+        <value>暂停实时记录。</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Hash tonen</value>
+        <value>显示哈希</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Hash verbergen</value>
+        <value>隐藏哈希</value>
     </data>
     <data name="Tip_CopyPath">
-        <value>Pad kopiëren</value>
+        <value>复制路径</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Je schijf is vol. Kies een andere locatie makker :)</value>
+        <value>您的磁盘空间不足。请重新选择位置 lah :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Hash-zichtbaarheid</value>
+        <value>哈希可见度</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Geen bestanden. Klik 'Bestanden toevoegen' om te beginnen.</value>
+        <value>没有文件。点击「添加文件」开始。</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Dit thema vergrendelen als standaard</value>
+        <value>锁定此主题为默认</value>
     </data>
 </root>
