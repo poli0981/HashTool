@@ -1,3 +1,4 @@
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json.Nodes;
@@ -11,11 +12,9 @@ public class UpdateService
 {
     // URL GitHub Repo
     private const string RepoUrl = "https://github.com/poli0981/CheckHash-Multiflatform";
-    
-    private UpdateManager? _manager;
     private readonly HttpClient _httpClient;
 
-    public string CurrentVersion => _manager?.CurrentVersion?.ToString() ?? "0.0.0 (Debug)";
+    private UpdateManager? _manager;
 
     public UpdateService()
     {
@@ -23,28 +22,26 @@ public class UpdateService
         // GitHub API requires a User-Agent header
         _httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("CheckHash", "1.0"));
 
-        try 
+        try
         {
             _manager = new UpdateManager(new GithubSource(RepoUrl, null, false));
         }
-        catch 
-        { 
+        catch
+        {
             // Ignore initialization errors
         }
     }
+
+    public string CurrentVersion => _manager?.CurrentVersion?.ToString() ?? "0.0.0 (Debug)";
 
     public async Task<UpdateInfo?> CheckForUpdatesAsync(bool allowPrerelease)
     {
         if (_manager == null) return null;
 
         if (allowPrerelease)
-        {
-             _manager = new UpdateManager(new GithubSource(RepoUrl, null, true));
-        }
+            _manager = new UpdateManager(new GithubSource(RepoUrl, null, true));
         else
-        {
-             _manager = new UpdateManager(new GithubSource(RepoUrl, null, false));
-        }
+            _manager = new UpdateManager(new GithubSource(RepoUrl, null, false));
 
         return await _manager.CheckForUpdatesAsync();
     }
@@ -65,16 +62,16 @@ public class UpdateService
             // Build GitHub API URL of the release by tag name
             // From https://github.com/user/repo
             // To https://api.github.com/repos/user/repo/releases/tags/{version}
-            
+
             var apiUrlBase = RepoUrl.Replace("https://github.com/", "https://api.github.com/repos/");
-            
+
             // Try without 'v' prefix (e.g: 1.0.1)
             var url = $"{apiUrlBase}/releases/tags/{version}";
-            
+
             var response = await _httpClient.GetAsync(url);
-            
+
             // If url not found, try with 'v' prefix (e.g: v1.0.1)
-            if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+            if (response.StatusCode == HttpStatusCode.NotFound)
             {
                 url = $"{apiUrlBase}/releases/tags/v{version}";
                 response = await _httpClient.GetAsync(url);

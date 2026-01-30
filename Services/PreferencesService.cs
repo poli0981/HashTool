@@ -6,20 +6,20 @@ namespace CheckHash.Services;
 
 public partial class PreferencesService : ObservableObject
 {
-    public static PreferencesService Instance { get; } = new();
-
-    [ObservableProperty] private bool _isHashMaskingEnabled = false;
-    
-    // Limit file size
-    [ObservableProperty] private bool _isFileSizeLimitEnabled = false;
-    [ObservableProperty] private double _fileSizeLimitValue = 10;
     [ObservableProperty] private FileSizeUnit _fileSizeLimitUnit = FileSizeUnit.GB;
-
-    // File Timeout
-    [ObservableProperty] private bool _isFileTimeoutEnabled = false;
+    [ObservableProperty] private double _fileSizeLimitValue = 10;
     [ObservableProperty] private int _fileTimeoutSeconds = 60;
 
-    // Sự kiện Force Cancel
+    // Limit file size
+    [ObservableProperty] private bool _isFileSizeLimitEnabled;
+
+    // File Timeout
+    [ObservableProperty] private bool _isFileTimeoutEnabled;
+
+    [ObservableProperty] private bool _isHashMaskingEnabled;
+    public static PreferencesService Instance { get; } = new();
+
+    // Force Cancel Event
     public event EventHandler? ForceCancelRequested;
 
     public void RequestForceCancel()

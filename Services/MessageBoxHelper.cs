@@ -1,9 +1,9 @@
+using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Layout;
 using Avalonia.Media;
-using Avalonia.Controls.ApplicationLifetimes;
-using System.Threading.Tasks;
 
 namespace CheckHash.Services;
 
@@ -14,36 +14,36 @@ public static class MessageBoxHelper
         var window = new Window
         {
             Title = title,
-            Width = 300,
+            Width = 400,
             SizeToContent = SizeToContent.Height,
             WindowStartupLocation = WindowStartupLocation.CenterOwner,
             CanResize = false
         };
-        
-        if (Application.Current != null && Application.Current.TryFindResource("PaneBackgroundBrush", null, out var bg) && bg is IBrush brush)
-        {
+
+        if (Application.Current != null &&
+            Application.Current.TryFindResource("PaneBackgroundBrush", null, out var bg) && bg is IBrush brush)
             window.Background = brush;
-        }
 
         var textBlock = new TextBlock
         {
             Text = message,
             TextWrapping = TextWrapping.Wrap,
             HorizontalAlignment = HorizontalAlignment.Center,
-            VerticalAlignment = VerticalAlignment.Center,
-            Margin = new Thickness(10),
-            TextAlignment = TextAlignment.Center
+            // VerticalAlignment = VerticalAlignment.Center,
+            Margin = new Thickness(3),
+            TextAlignment = TextAlignment.Left
         };
         //* Ok button *//
         var button = new Button
         {
             Content = LocalizationService.Instance["Btn_OK"],
             HorizontalAlignment = HorizontalAlignment.Center,
+            HorizontalContentAlignment = HorizontalAlignment.Center,
             Width = 100,
             Margin = new Thickness(0, 0, 0, 20)
         };
-        
-        
+
+
         // Close the window when the button is clicked
         button.Click += (_, _) => window.Close();
 
@@ -55,13 +55,13 @@ public static class MessageBoxHelper
 
         window.Content = stackPanel;
 
-        if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop && desktop.MainWindow != null)
-        {
+        if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop &&
+            desktop.MainWindow != null)
             await window.ShowDialog(desktop.MainWindow);
-        }
     }
 
-    public static async Task<bool> ShowConfirmationAsync(string title, string message, string yesText = "Yes", string noText = "No")
+    public static async Task<bool> ShowConfirmationAsync(string title, string message, string yesText = "Yes",
+        string noText = "No")
     {
         var window = new Window
         {
@@ -72,10 +72,9 @@ public static class MessageBoxHelper
             CanResize = false
         };
 
-        if (Application.Current != null && Application.Current.TryFindResource("PaneBackgroundBrush", null, out var bg) && bg is IBrush brush)
-        {
+        if (Application.Current != null &&
+            Application.Current.TryFindResource("PaneBackgroundBrush", null, out var bg) && bg is IBrush brush)
             window.Background = brush;
-        }
 
         var textBlock = new TextBlock
         {
@@ -91,6 +90,7 @@ public static class MessageBoxHelper
         {
             Content = yesText,
             HorizontalAlignment = HorizontalAlignment.Center,
+            HorizontalContentAlignment = HorizontalAlignment.Center,
             Width = 80,
             Margin = new Thickness(5)
         };
@@ -99,11 +99,12 @@ public static class MessageBoxHelper
         {
             Content = noText,
             HorizontalAlignment = HorizontalAlignment.Center,
+            HorizontalContentAlignment = HorizontalAlignment.Center,
             Width = 80,
             Margin = new Thickness(5)
         };
 
-        bool result = false;
+        var result = false;
 
         btnYes.Click += (_, _) =>
         {
@@ -133,10 +134,9 @@ public static class MessageBoxHelper
 
         window.Content = stackPanel;
 
-        if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop && desktop.MainWindow != null)
-        {
-             await window.ShowDialog(desktop.MainWindow);
-        }
+        if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop &&
+            desktop.MainWindow != null)
+            await window.ShowDialog(desktop.MainWindow);
 
         return result;
     }

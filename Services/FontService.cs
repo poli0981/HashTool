@@ -1,12 +1,12 @@
-using Avalonia.Media;
-using CommunityToolkit.Mvvm.ComponentModel;
 using System;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Threading.Tasks;
-using Avalonia.Threading;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
+using System.Threading.Tasks;
+using Avalonia.Media;
+using Avalonia.Threading;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace CheckHash.Services;
 
@@ -15,29 +15,26 @@ public class FontSettingsData
     public string? FontName { get; set; }
     public double UiScale { get; set; } = 1.0;
     public bool IsAutoFont { get; set; } = true;
-    public bool IsLockedFont { get; set; } = false;
+    public bool IsLockedFont { get; set; }
     public double BaseFontSize { get; set; } = 14.0;
 }
 
 public partial class FontService : ObservableObject
 {
-    public static FontService Instance { get; } = new();
     private const string SettingsFile = "font_settings.json";
     private const string LogDir = "log/fontlog";
     private const string LogFile = "log/fontlog/default_font.log";
 
-    public ObservableCollection<FontFamily> InstalledFonts { get; } = new();
+    [ObservableProperty] private double _baseFontSize = 14.0;
+
+    [ObservableProperty] private bool _isAutoFont = true;
+
+    private bool _isLoading = true;
+
+    [ObservableProperty] private bool _isLockedFont;
 
     [ObservableProperty] private FontFamily _selectedFont;
     [ObservableProperty] private double _uiScale = 1.0;
-    
-    [ObservableProperty] private bool _isAutoFont = true;
-
-    [ObservableProperty] private bool _isLockedFont = false;
-    
-    [ObservableProperty] private double _baseFontSize = 14.0;
-
-    private bool _isLoading = true;
 
     public FontService()
     {
@@ -45,22 +42,30 @@ public partial class FontService : ObservableObject
         _ = LoadSystemFontsAsync();
     }
 
-    partial void OnSelectedFontChanged(FontFamily value) 
+    public static FontService Instance { get; } = new();
+
+    public ObservableCollection<FontFamily> InstalledFonts { get; } = new();
+
+    partial void OnSelectedFontChanged(FontFamily value)
     {
         if (IsLockedFont) SaveLog(value.Name);
         SaveSettings();
     }
-    
-    partial void OnUiScaleChanged(double value) => SaveSettings();
-    
+
+    partial void OnUiScaleChanged(double value)
+    {
+        SaveSettings();
+    }
+
     partial void OnIsAutoFontChanged(bool value)
     {
         if (value)
         {
-            IsLockedFont = false; // Auto bật thì Lock tắt
+            IsLockedFont = false; // Disable locked font if auto font is enabled
             var currentLang = LocalizationService.Instance.SelectedLanguage.Code;
             SetFontForLanguage(currentLang);
         }
+
         SaveSettings();
     }
 
@@ -71,10 +76,14 @@ public partial class FontService : ObservableObject
             IsAutoFont = false;
             SaveLog(SelectedFont.Name);
         }
+
         SaveSettings();
     }
-    
-    partial void OnBaseFontSizeChanged(double value) => SaveSettings();
+
+    partial void OnBaseFontSizeChanged(double value)
+    {
+        SaveSettings();
+    }
 
     private void SaveLog(string fontName)
     {
@@ -84,7 +93,9 @@ public partial class FontService : ObservableObject
             if (!Directory.Exists(LogDir)) Directory.CreateDirectory(LogDir);
             File.WriteAllText(LogFile, $"Default Font Set: {fontName} at {DateTime.Now}");
         }
-        catch { }
+        catch
+        {
+        }
     }
 
     private void SaveSettings()
@@ -105,7 +116,9 @@ public partial class FontService : ObservableObject
             var json = JsonSerializer.Serialize(data);
             File.WriteAllText(SettingsFile, json);
         }
-        catch { }
+        catch
+        {
+        }
     }
 
     private void LoadSettings()
@@ -123,9 +136,9 @@ public partial class FontService : ObservableObject
                     IsAutoFont = data.IsAutoFont;
                     IsLockedFont = data.IsLockedFont;
                     BaseFontSize = data.BaseFontSize;
-                    
-                    string targetFontName = data.FontName ?? FontFamily.Default.Name;
-                    
+
+                    var targetFontName = data.FontName ?? FontFamily.Default.Name;
+
                     if (!IsAutoFont && !string.IsNullOrEmpty(targetFontName))
                     {
                         var existing = InstalledFonts.FirstOrDefault(f => f.Name == targetFontName);
@@ -134,7 +147,9 @@ public partial class FontService : ObservableObject
                 }
             }
         }
-        catch { }
+        catch
+        {
+        }
         finally
         {
             _isLoading = false;
@@ -177,25 +192,17 @@ public partial class FontService : ObservableObject
     {
         if (!IsAutoFont && !IsLockedFont) return;
         if (IsLockedFont) return;
-        
+
         string[] targetFonts;
 
         if (langCode.StartsWith("ja"))
-        {
             targetFonts = new[] { "Meiryo UI", "Yu Gothic UI", "MS UI Gothic" };
-        }
         else if (langCode.StartsWith("ko"))
-        {
             targetFonts = new[] { "Malgun Gothic", "Batang" };
-        }
         else if (langCode.StartsWith("ar") || langCode.StartsWith("fa"))
-        {
             targetFonts = new[] { "Segoe UI", "Arial", "Tahoma" };
-        }
         else
-        {
             targetFonts = new[] { "Inter", "Segoe UI", "Arial", "Roboto" };
-        }
 
         FontFamily? foundFont = null;
         foreach (var target in targetFonts)
@@ -203,7 +210,7 @@ public partial class FontService : ObservableObject
             foundFont = InstalledFonts.FirstOrDefault(f => f.Name.Contains(target, StringComparison.OrdinalIgnoreCase));
             if (foundFont != null) break;
         }
-        
+
         if (foundFont != null) SelectedFont = foundFont;
         else SelectedFont = FontFamily.Default;
     }

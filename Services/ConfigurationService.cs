@@ -7,31 +7,27 @@ namespace CheckHash.Services;
 
 public class ConfigurationService
 {
-    public static ConfigurationService Instance { get; } = new();
-
-    private readonly string _configPath;
     private readonly string _configDir;
-
-    public string ConfigPath => _configPath;
 
     public ConfigurationService()
     {
         var appData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         _configDir = Path.Combine(appData, "CheckHash", "log", "settings");
-        _configPath = Path.Combine(_configDir, "config.json");
+        ConfigPath = Path.Combine(_configDir, "config.json");
     }
+
+    public static ConfigurationService Instance { get; } = new();
+
+    public string ConfigPath { get; }
 
     public void Save(AppConfig config)
     {
         try
         {
-            if (!Directory.Exists(_configDir))
-            {
-                Directory.CreateDirectory(_configDir);
-            }
+            if (!Directory.Exists(_configDir)) Directory.CreateDirectory(_configDir);
 
             var json = JsonSerializer.Serialize(config, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(_configPath, json);
+            File.WriteAllText(ConfigPath, json);
         }
         catch (Exception ex)
         {
@@ -43,9 +39,9 @@ public class ConfigurationService
     {
         try
         {
-            if (File.Exists(_configPath))
+            if (File.Exists(ConfigPath))
             {
-                var json = File.ReadAllText(_configPath);
+                var json = File.ReadAllText(ConfigPath);
                 var config = JsonSerializer.Deserialize<AppConfig>(json);
                 return config ?? new AppConfig();
             }
@@ -55,14 +51,11 @@ public class ConfigurationService
             LoggerService.Instance.Log($"Failed to load config: {ex.Message}", LogLevel.Error);
         }
 
-        return new AppConfig(); 
+        return new AppConfig();
     }
 
     public void EnsureConfigFileExists()
     {
-        if (!File.Exists(_configPath))
-        {
-            Save(new AppConfig());
-        }
+        if (!File.Exists(ConfigPath)) Save(new AppConfig());
     }
 }

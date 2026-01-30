@@ -6,22 +6,26 @@ using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace CheckHash.Services;
 
-public enum LogLevel { Info, Warning, Error, Success }
+public enum LogLevel
+{
+    Info,
+    Warning,
+    Error,
+    Success
+}
 
 public partial class LoggerService : ObservableObject
 {
-    public static LoggerService Instance { get; } = new();
+    private readonly string _debugLogDir;
+    private readonly string _errorLogDir;
+
+    private readonly object _fileLock = new();
 
     private readonly string _logBaseDir;
-    private readonly string _errorLogDir;
-    private readonly string _debugLogDir;
 
-    // UI Data
-    public ObservableCollection<string> Logs { get; } = new();
-    
     // Settings
     [ObservableProperty] private bool _isRecording = true; // Write logs to UI by default
-    [ObservableProperty] private bool _isSavingDebugLog = false; // Save debug logs to files by default
+    [ObservableProperty] private bool _isSavingDebugLog; // Save debug logs to files by default
 
     public LoggerService()
     {
@@ -32,6 +36,11 @@ public partial class LoggerService : ObservableObject
 
         EnsureDirectories();
     }
+
+    public static LoggerService Instance { get; } = new();
+
+    // UI Data
+    public ObservableCollection<string> Logs { get; } = new();
 
     private void EnsureDirectories()
     {
@@ -46,26 +55,20 @@ public partial class LoggerService : ObservableObject
 
         // 1. Write in UI (Real-time)
         if (IsRecording)
-        {
             Dispatcher.UIThread.Post(() =>
             {
                 Logs.Add(logEntry);
                 // Limit the number of logs to prevent memory issues (keep last 1000 logs)
                 if (Logs.Count > 1000) Logs.RemoveAt(0);
             });
-        }
 
         // 2. Save to files
         if (level == LogLevel.Error)
-        {
             // Error log always saved
             WriteToFile(_errorLogDir, "error_log.txt", logEntry);
-        }
         else if (IsSavingDebugLog)
-        {
             // Debug log saved only if enabled
             WriteToFile(_debugLogDir, $"debug_log_{DateTime.Now:yyyyMMdd}.txt", logEntry);
-        }
     }
 
     public void ClearLogs()
@@ -73,7 +76,6 @@ public partial class LoggerService : ObservableObject
         Dispatcher.UIThread.Post(() => Logs.Clear());
     }
 
-    private object _fileLock = new();
     private void WriteToFile(string dir, string filename, string content)
     {
         lock (_fileLock)

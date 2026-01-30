@@ -8,7 +8,15 @@ using Blake3;
 
 namespace CheckHash.Services;
 
-public enum HashType { MD5, SHA1, SHA256, SHA384, SHA512, BLAKE3 }
+public enum HashType
+{
+    MD5,
+    SHA1,
+    SHA256,
+    SHA384,
+    SHA512,
+    BLAKE3
+}
 
 public class HashService
 {
@@ -23,10 +31,10 @@ public class HashService
                 FileMode.Open,
                 FileAccess.Read,
                 FileShare.Read,
-                bufferSize: BufferSize,
-                options: FileOptions.Asynchronous | FileOptions.SequentialScan);
+                BufferSize,
+                FileOptions.Asynchronous | FileOptions.SequentialScan);
 
-            byte[] hashBytes = type switch
+            var hashBytes = type switch
             {
                 HashType.MD5 => await MD5.HashDataAsync(stream, token),
                 HashType.SHA1 => await SHA1.HashDataAsync(stream, token),
@@ -41,7 +49,7 @@ public class HashService
         }
         catch (FileNotFoundException)
         {
-             throw new FileNotFoundException("File corrupted or deleted.");
+            throw new FileNotFoundException("File corrupted or deleted.");
         }
         catch (UnauthorizedAccessException)
         {
@@ -49,27 +57,22 @@ public class HashService
         }
         catch (IOException ex)
         {
-             // Check if it's a sharing violation (HRESULT 0x80070020)
-             int hr = Marshal.GetHRForException(ex);
-             if ((hr & 0xFFFF) == 32)
-             {
-                 throw new IOException("File is being used by another process.");
-             }
+            // Check if it's a sharing violation (HRESULT 0x80070020)
+            var hr = Marshal.GetHRForException(ex);
+            if ((hr & 0xFFFF) == 32) throw new IOException("File is being used by another process.");
 
-             throw new IOException($"IO Error: {ex.Message}", ex);
+            throw new IOException($"IO Error: {ex.Message}", ex);
         }
     }
 
     private async Task<byte[]> ComputeBlake3Async(Stream stream, CancellationToken token)
     {
         using var hasher = Hasher.New();
-        byte[] buffer = new byte[BufferSize];
+        var buffer = new byte[BufferSize];
         int bytesRead;
 
         while ((bytesRead = await stream.ReadAsync(buffer, token)) > 0)
-        {
             hasher.Update(new ReadOnlySpan<byte>(buffer, 0, bytesRead));
-        }
 
         return hasher.Finalize().AsSpan().ToArray();
     }
