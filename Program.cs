@@ -1,16 +1,15 @@
-using Avalonia;
 using System;
-using Velopack;
 using System.Diagnostics;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.Principal;
-using System.Linq;
+using Avalonia;
 using CheckHash.Services;
-using CheckHash.Models;
+using Velopack;
 
 namespace CheckHash;
 
-sealed class Program
+internal sealed class Program
 {
     // Initialization code. Don't use any Avalonia, third-party APIs or any
     // SynchronizationContext-reliant code before AppMain is called: things aren't initialized
@@ -26,7 +25,6 @@ sealed class Program
         {
             var config = ConfigurationService.Instance.Load();
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-            {
                 if (config.IsAdminModeEnabled && !IsRunAsAdmin())
                 {
                     var moduleName = Process.GetCurrentProcess().MainModule?.FileName;
@@ -51,7 +49,6 @@ sealed class Program
                         }
                     }
                 }
-            }
         }
         catch (Exception)
         {
@@ -61,15 +58,12 @@ sealed class Program
         BuildAvaloniaApp()
             .StartWithClassicDesktopLifetime(args);
     }
-        
+
     private static bool IsRunAsAdmin()
     {
         try
         {
-            if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-            {
-                 return false;
-            }
+            if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) return false;
 
             using var identity = WindowsIdentity.GetCurrent();
             var principal = new WindowsPrincipal(identity);
@@ -83,8 +77,10 @@ sealed class Program
 
     // Avalonia configuration, don't remove; also used by visual designer.
     public static AppBuilder BuildAvaloniaApp()
-        => AppBuilder.Configure<App>()
+    {
+        return AppBuilder.Configure<App>()
             .UsePlatformDetect()
             .WithInterFont()
             .LogToTrace();
+    }
 }

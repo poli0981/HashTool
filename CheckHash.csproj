@@ -15,9 +15,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Compile Remove="tests\**" />
-        <EmbeddedResource Remove="tests\**" />
-        <None Remove="tests\**" />
+        <Compile Remove="tests\**"/>
+        <EmbeddedResource Remove="tests\**"/>
+        <None Remove="tests\**"/>
     </ItemGroup>
 
     <ItemGroup>
@@ -31,7 +31,7 @@
             <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
             <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
         </PackageReference>
-        <PackageReference Include="Blake3" Version="2.2.0" />
+        <PackageReference Include="Blake3" Version="2.2.0"/>
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1"/>
         <PackageReference Include="Material.Icons.Avalonia" Version="2.4.1"/>
         <PackageReference Include="Velopack" Version="0.0.1298"/>

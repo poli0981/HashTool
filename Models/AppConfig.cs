@@ -5,7 +5,8 @@ public class AppConfig
     public string LanguageCode { get; set; } = "auto";
     public AppThemeStyle ThemeStyle { get; set; } = AppThemeStyle.Fluent;
     public AppThemeVariant ThemeVariant { get; set; } = AppThemeVariant.System;
-    
+    public bool IsThemeLocked { get; set; } = false;
+
     public string? FontFamily { get; set; }
     public double BaseFontSize { get; set; } = 14;
     public double UiScale { get; set; } = 1.0;
@@ -13,10 +14,10 @@ public class AppConfig
     public bool IsAutoFont { get; set; } = true;
 
     public bool IsHashMaskingEnabled { get; set; } = false;
-    
+
     // Lock Settings
     public bool IsSettingsLocked { get; set; } = false;
-    
+
     // Developer Mode
     public bool IsDeveloperModeEnabled { get; set; } = false;
 
@@ -29,7 +30,7 @@ public class AppConfig
     public bool IsAdminModeEnabled { get; set; } = false;
 
     // Force Quit Timeout (App Freeze)
-    public int ForceQuitTimeout { get; set; } = 5; 
+    public int ForceQuitTimeout { get; set; } = 5;
 
     // File Processing Timeout
     public bool IsFileTimeoutEnabled { get; set; } = false;

@@ -1,6 +1,6 @@
 using System;
-using System.Globalization;
 using System.Collections.Generic;
+using System.Globalization;
 using Avalonia.Data.Converters;
 
 namespace CheckHash.Converters;
@@ -23,9 +23,9 @@ public class HashMaskConverter : IMultiValueConverter
         // Logic use for CheckHashView when user choose "Show Only Masked" option
         if (parameter as string == "MaskOnly")
         {
-             if (string.IsNullOrEmpty(hash)) return "";
-             if (hash.Length <= 8) return new string('*', hash.Length);
-             return $"{hash[..4]}{new string('*', hash.Length - 8)}{hash[^4..]}";
+            if (string.IsNullOrEmpty(hash)) return "";
+            if (hash.Length <= 8) return new string('*', hash.Length);
+            return $"{hash[..4]}{new string('*', hash.Length - 8)}{hash[^4..]}";
         }
 
         if (string.IsNullOrEmpty(hash)) return "";
@@ -38,7 +38,7 @@ public class HashMaskConverter : IMultiValueConverter
 
         // Otherwise, show masked hash of format: "abcd****wxyz"
         if (hash.Length <= 8) return new string('*', hash.Length);
-        
+
         return $"{hash[..4]}{new string('*', hash.Length - 8)}{hash[^4..]}";
     }
 }
