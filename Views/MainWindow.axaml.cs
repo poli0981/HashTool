@@ -1,24 +1,24 @@
 using System;
-using Avalonia.Controls;
-using Avalonia.Input;
-using CheckHash.ViewModels;
+using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using System.IO;
+using Avalonia.Controls;
+using Avalonia.Input;
 using CheckHash.Services;
+using CheckHash.ViewModels;
 
 namespace CheckHash.Views;
 
 public partial class MainWindow : Window
 {
-    private LocalizationService L => LocalizationService.Instance;
+    private bool _canClose;
 
     public MainWindow()
     {
         InitializeComponent();
     }
 
-    private bool _canClose = false;
+    private LocalizationService L => LocalizationService.Instance;
 
     protected override async void OnClosing(WindowClosingEventArgs e)
     {
@@ -27,7 +27,6 @@ public partial class MainWindow : Window
         if (_canClose) return;
 
         if (DataContext is MainWindowViewModel vm)
-        {
             if (vm.CheckHashVM.IsChecking || vm.CreateHashVM.IsComputing)
             {
                 e.Cancel = true;
@@ -46,7 +45,6 @@ public partial class MainWindow : Window
                     Close();
                 }
             }
-        }
     }
 
     private async void OnHashFileDrop(object? sender, DragEventArgs e)
@@ -59,11 +57,11 @@ public partial class MainWindow : Window
             if (files != null && files.Count > 0)
             {
                 var filePath = files[0].Path.LocalPath;
-            
+
                 // 2. TextBox, DataContext (FileItem)
                 if (sender is TextBox textBox && textBox.DataContext is FileItem item)
                 {
-                    var hashFileName = System.IO.Path.GetFileName(filePath);
+                    var hashFileName = Path.GetFileName(filePath);
                     if (!hashFileName.Contains(item.FileName, StringComparison.OrdinalIgnoreCase))
                     {
                         item.Status = L["Status_DropHashMismatch"];
@@ -76,11 +74,11 @@ public partial class MainWindow : Window
                         string content;
                         using (var reader = new StreamReader(filePath))
                         {
-                            char[] buffer = new char[5120]; // 5KB
-                            int readCount = await reader.ReadAsync(buffer, 0, buffer.Length);
+                            var buffer = new char[5120]; // 5KB
+                            var readCount = await reader.ReadAsync(buffer, 0, buffer.Length);
                             content = new string(buffer, 0, readCount);
                         }
-                    
+
                         // 4. Lọc lấy mã Hash
                         var match = Regex.Match(content, @"[a-fA-F0-9]{32,128}");
                         if (match.Success)

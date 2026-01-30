@@ -8,23 +8,25 @@
         WindowStartupLocation="CenterOwner"
         CanResize="False"
         SystemDecorations="BorderOnly">
-    
+
     <Border BorderBrush="Red" BorderThickness="2" Padding="20" Background="{DynamicResource PaneBackgroundBrush}">
         <StackPanel Spacing="15">
-            <TextBlock Text="{Binding [Msg_DisclaimerTitle]}" FontSize="20" FontWeight="Bold" Foreground="Red" HorizontalAlignment="Center"/>
-            
-            <TextBlock TextWrapping="Wrap" 
-                       Text="{Binding [Msg_DisclaimerContent]}"/>
-            
-            <CheckBox x:Name="AgreeCheckBox" 
-                      Content="{Binding [Msg_DisclaimerAgree]}"/>
+            <TextBlock Text="{Binding [Msg_DisclaimerTitle]}" FontSize="20" FontWeight="Bold" Foreground="Red"
+                       HorizontalAlignment="Center" />
+
+            <TextBlock TextWrapping="Wrap"
+                       Text="{Binding [Msg_DisclaimerContent]}" />
+
+            <CheckBox x:Name="AgreeCheckBox"
+                      Content="{Binding [Msg_DisclaimerAgree]}" />
 
             <StackPanel Orientation="Horizontal" Spacing="20" HorizontalAlignment="Center" Margin="0,10,0,0">
-                <Button Content="{Binding [Btn_Decline]}" Click="Cancel_Click" Width="100" HorizontalContentAlignment="Center"/>
+                <Button Content="{Binding [Btn_Decline]}" Click="Cancel_Click" Width="100"
+                        HorizontalContentAlignment="Center" />
                 <Button Content="{Binding [Btn_Accept]}"
-                        Click="Confirm_Click" 
+                        Click="Confirm_Click"
                         IsEnabled="{Binding #AgreeCheckBox.IsChecked}"
-                        Width="100" HorizontalContentAlignment="Center"/>
+                        Width="100" HorizontalContentAlignment="Center" />
             </StackPanel>
         </StackPanel>
     </Border>

@@ -21,6 +21,7 @@
 
     <Window.Resources>
         <conv:HashMaskConverter x:Key="HashMaskConverter" />
+        <conv:CountToVisibilityConverter x:Key="CountToVisibilityConverter" />
     </Window.Resources>
 
     <!-- Key Bindings -->
@@ -121,7 +122,16 @@
                             ToolTip.Tip="Shift+C" />
                 </StackPanel>
 
-                <ListBox Grid.Row="2" ItemsSource="{Binding Files}" Background="Transparent">
+                <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            IsVisible="{Binding Files.Count, Converter={StaticResource CountToVisibilityConverter}}"
+                            Opacity="0.5" Spacing="10">
+                    <icons:MaterialIcon Kind="FilePlusOutline" Width="64" Height="64" />
+                    <TextBlock Text="{Binding Localization[EmptyState_DropFiles]}"
+                               FontSize="16" HorizontalAlignment="Center" />
+                </StackPanel>
+
+                <ListBox Grid.Row="2" ItemsSource="{Binding Files}" Background="Transparent"
+                         IsVisible="{Binding Files.Count}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Border BorderBrush="#30808080" BorderThickness="0,0,0,1" Padding="5">
@@ -295,7 +305,16 @@
                 <ProgressBar Grid.Row="2" Minimum="0" Maximum="{Binding ProgressMax}" Value="{Binding ProgressValue}"
                              IsVisible="{Binding IsChecking}" Height="4" Margin="0,0,0,10" />
 
-                <ListBox Grid.Row="3" ItemsSource="{Binding Files}" Background="Transparent">
+                <StackPanel Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            IsVisible="{Binding Files.Count, Converter={StaticResource CountToVisibilityConverter}}"
+                            Opacity="0.5" Spacing="10">
+                    <icons:MaterialIcon Kind="FilePlusOutline" Width="64" Height="64" />
+                    <TextBlock Text="{Binding Localization[EmptyState_DropFiles]}"
+                               FontSize="16" HorizontalAlignment="Center" />
+                </StackPanel>
+
+                <ListBox Grid.Row="3" ItemsSource="{Binding Files}" Background="Transparent"
+                         IsVisible="{Binding Files.Count}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Border BorderBrush="#30808080" BorderThickness="0,0,0,1" Padding="5">
@@ -390,8 +409,7 @@
 
                                     <TextBlock Grid.Column="3" Text="{Binding Status}"
                                                FontWeight="Bold" VerticalAlignment="Center" TextWrapping="Wrap"
-                                               FontSize="12">
-                                    </TextBlock>
+                                               FontSize="12" />
 
                                     <StackPanel Grid.Column="4" Orientation="Horizontal" Spacing="5"
                                                 HorizontalAlignment="Right">
@@ -540,7 +558,8 @@
                         </ScrollViewer>
 
                         <Button Grid.Row="2" Command="{Binding ToggleThemeCommand}"
-                                IsEnabled="{Binding !SettingsVM.IsSettingsLocked}"
+                                IsEnabled="{Binding SettingsVM.CanChangeTheme}"
+
                                 Classes="MenuBtn">
                             <Grid ColumnDefinitions="60, *">
                                 <icons:MaterialIcon Grid.Column="0" Kind="ThemeLightDark" Width="24" Height="24"

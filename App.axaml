@@ -9,28 +9,28 @@
     <Application.DataTemplates>
         <local:ViewLocator />
     </Application.DataTemplates>
-    
+
     <Application.Styles>
         <FluentTheme />
         <avalonia:MaterialIconStyles />
         <Style Selector="Window">
             <Setter Property="Transitions">
                 <Transitions>
-                    <BrushTransition Property="Background" Duration="0:0:0.55"/>
+                    <BrushTransition Property="Background" Duration="0:0:0.55" />
                 </Transitions>
             </Setter>
         </Style>
-        
+
         <Style Selector="TextBlock">
             <Setter Property="Transitions">
                 <Transitions>
-                    <BrushTransition Property="Foreground" Duration="0:0:0.01"/>
+                    <BrushTransition Property="Foreground" Duration="0:0:0.01" />
                 </Transitions>
             </Setter>
         </Style>
 
     </Application.Styles>
-    
+
 
     <Application.Resources>
         <ResourceDictionary>

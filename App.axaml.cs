@@ -1,17 +1,17 @@
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core.Plugins;
-using System.Linq;
 using Avalonia.Markup.Xaml;
 using CheckHash.Services;
 using CheckHash.ViewModels;
 using CheckHash.Views;
-using System;
-using System.Threading.Tasks;
 
 namespace CheckHash;
 
-public partial class App : Application
+public class App : Application
 {
     public override void Initialize()
     {
@@ -24,7 +24,8 @@ public partial class App : Application
         AppDomain.CurrentDomain.UnhandledException += (sender, args) =>
         {
             var ex = args.ExceptionObject as Exception;
-            LoggerService.Instance.Log($"Unhandled Exception: {ex?.Message}\nStackTrace: {ex?.StackTrace}", LogLevel.Error);
+            LoggerService.Instance.Log($"Unhandled Exception: {ex?.Message}\nStackTrace: {ex?.StackTrace}",
+                LogLevel.Error);
         };
 
         TaskScheduler.UnobservedTaskException += (sender, args) =>
@@ -41,7 +42,7 @@ public partial class App : Application
             DisableAvaloniaDataAnnotationValidation();
             desktop.MainWindow = new MainWindow
             {
-                DataContext = new MainWindowViewModel(),
+                DataContext = new MainWindowViewModel()
             };
         }
 
@@ -53,9 +54,6 @@ public partial class App : Application
         var dataValidationPluginsToRemove =
             BindingPlugins.DataValidators.OfType<DataAnnotationsValidationPlugin>().ToArray();
 
-        foreach (var plugin in dataValidationPluginsToRemove)
-        {
-            BindingPlugins.DataValidators.Remove(plugin);
-        }
+        foreach (var plugin in dataValidationPluginsToRemove) BindingPlugins.DataValidators.Remove(plugin);
     }
 }

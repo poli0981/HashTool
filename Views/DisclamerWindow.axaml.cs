@@ -6,13 +6,13 @@ namespace CheckHash.Views;
 
 public partial class DisclaimerWindow : Window
 {
-    public bool IsAccepted { get; private set; } = false;
-
     public DisclaimerWindow()
     {
         InitializeComponent();
         DataContext = LocalizationService.Instance;
     }
+
+    public bool IsAccepted { get; private set; }
 
     private void Confirm_Click(object? sender, RoutedEventArgs e)
     {

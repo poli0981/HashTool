@@ -4,17 +4,18 @@
              xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
              x:Class="CheckHash.Views.UpdateView"
              x:DataType="vm:UpdateViewModel">
-    
+
     <StackPanel Spacing="20">
-        <TextBlock Text="{Binding Localization[Title_Update]}" FontSize="20" FontWeight="Bold"/>
+        <TextBlock Text="{Binding Localization[Title_Update]}" FontSize="20" FontWeight="Bold" />
 
         <StackPanel Orientation="Horizontal" Spacing="10">
-            <icons:MaterialIcon Kind="InformationCircle" Width="24" Height="24" Foreground="#00bfff"/>
-            <TextBlock Text="{Binding CurrentVersionText}" VerticalAlignment="Center" FontSize="16"/>
+            <icons:MaterialIcon Kind="InformationCircle" Width="24" Height="24" Foreground="#00bfff" />
+            <TextBlock Text="{Binding CurrentVersionText}" VerticalAlignment="Center" FontSize="16" />
         </StackPanel>
 
         <Grid ColumnDefinitions="Auto, 150">
-            <TextBlock Grid.Column="0" Text="{Binding Localization[Lbl_Channel]}" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBlock Grid.Column="0" Text="{Binding Localization[Lbl_Channel]}" VerticalAlignment="Center"
+                       Margin="0,0,10,0" />
             <ComboBox Grid.Column="1" SelectedIndex="{Binding SelectedChannelIndex}">
                 <ComboBoxItem Content="{Binding Localization[Channel_Stable]}" />
                 <ComboBoxItem Content="{Binding Localization[Channel_Dev]}" />
@@ -22,26 +23,27 @@
         </Grid>
 
         <StackPanel Orientation="Horizontal" Spacing="10">
-            <Button Command="{Binding CheckUpdateCommand}" 
+            <Button Command="{Binding CheckUpdateCommand}"
                     IsEnabled="{Binding !IsChecking}"
                     Padding="15,8">
                 <StackPanel Orientation="Horizontal" Spacing="10">
-                    <icons:MaterialIcon Kind="CloudSync" IsVisible="{Binding !IsChecking}"/>
-                    <ProgressBar IsIndeterminate="True" Width="20" Height="20" IsVisible="{Binding IsChecking}"/>
-                    <TextBlock Text="{Binding Localization[Btn_CheckNow]}"/>
+                    <icons:MaterialIcon Kind="CloudSync" IsVisible="{Binding !IsChecking}" />
+                    <ProgressBar IsIndeterminate="True" Width="20" Height="20" IsVisible="{Binding IsChecking}" />
+                    <TextBlock Text="{Binding Localization[Btn_CheckNow]}" />
                 </StackPanel>
             </Button>
         </StackPanel>
 
-        <TextBlock Text="{Binding StatusMessage}" 
-                   Foreground="Gray" FontStyle="Italic" TextWrapping="Wrap"/>
-        
+        <TextBlock Text="{Binding StatusMessage}"
+                   Foreground="Gray" FontStyle="Italic" TextWrapping="Wrap" />
+
         <Expander Header="{Binding Localization[Header_Fallback]}">
             <StackPanel Spacing="10">
-                <TextBlock Text="{Binding Localization[Desc_Fallback]}" FontSize="12" Opacity="0.8"/>
+                <TextBlock Text="{Binding Localization[Desc_Fallback]}" FontSize="12" Opacity="0.8" />
                 <Grid ColumnDefinitions="*, Auto">
-                    <TextBox Watermark="1.0.0" IsEnabled="False"/> 
-                    <Button Grid.Column="1" Content="{Binding Localization[Btn_Install]}" IsEnabled="False" Margin="10,0,0,0"/>
+                    <TextBox Watermark="1.0.0" IsEnabled="False" />
+                    <Button Grid.Column="1" Content="{Binding Localization[Btn_Install]}" IsEnabled="False"
+                            Margin="10,0,0,0" />
                 </Grid>
             </StackPanel>
         </Expander>
