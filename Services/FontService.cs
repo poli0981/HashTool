@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,8 @@ public partial class FontService : ObservableObject
     private const string SettingsFile = "font_settings.json";
     private const string LogDir = "log/fontlog";
     private const string LogFile = "log/fontlog/default_font.log";
+
+    private readonly Dictionary<string, FontFamily> _fontCache = new(StringComparer.OrdinalIgnoreCase);
 
     [ObservableProperty] private double _baseFontSize = 14.0;
 
@@ -177,7 +180,7 @@ public partial class FontService : ObservableObject
 
                     if (!IsAutoFont && !string.IsNullOrEmpty(targetFontName))
                     {
-                        var existing = InstalledFonts.FirstOrDefault(f => f.Name == targetFontName);
+                        _fontCache.TryGetValue(targetFontName, out var existing);
                         SelectedFont = existing ?? new FontFamily(targetFontName);
                     }
                 }
@@ -208,8 +211,21 @@ public partial class FontService : ObservableObject
                 Dispatcher.UIThread.Invoke(() =>
                 {
                     InstalledFonts.Clear();
-                    InstalledFonts.Add(FontFamily.Default);
-                    foreach (var name in fontNames) InstalledFonts.Add(new FontFamily(name));
+                    _fontCache.Clear();
+
+                    var defaultFont = FontFamily.Default;
+                    InstalledFonts.Add(defaultFont);
+                    if (!string.IsNullOrEmpty(defaultFont.Name))
+                    {
+                        _fontCache[defaultFont.Name] = defaultFont;
+                    }
+
+                    foreach (var name in fontNames)
+                    {
+                        var font = new FontFamily(name);
+                        InstalledFonts.Add(font);
+                        _fontCache[name] = font;
+                    }
                     LoadSettings();
                 });
             });
@@ -243,8 +259,7 @@ public partial class FontService : ObservableObject
         FontFamily? foundFont = null;
         foreach (var target in targetFonts)
         {
-            foundFont = InstalledFonts.FirstOrDefault(f => f.Name.Contains(target, StringComparison.OrdinalIgnoreCase));
-            if (foundFont != null) break;
+            if (_fontCache.TryGetValue(target, out foundFont)) break;
         }
 
         if (foundFont != null) SelectedFont = foundFont;

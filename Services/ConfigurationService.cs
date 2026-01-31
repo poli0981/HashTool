@@ -5,9 +5,12 @@ using CheckHash.Models;
 
 namespace CheckHash.Services;
 
+using System.Threading;
+
 public class ConfigurationService
 {
     private readonly string _configDir;
+    private readonly SemaphoreSlim _saveLock = new(1, 1);
 
     public ConfigurationService()
     {
@@ -22,6 +25,7 @@ public class ConfigurationService
 
     public void Save(AppConfig config)
     {
+        _saveLock.Wait();
         try
         {
             if (!Directory.Exists(_configDir)) Directory.CreateDirectory(_configDir);
@@ -32,6 +36,30 @@ public class ConfigurationService
         catch (Exception ex)
         {
             LoggerService.Instance.Log($"Failed to save config: {ex.Message}", LogLevel.Error);
+        }
+        finally
+        {
+            _saveLock.Release();
+        }
+    }
+
+    public async System.Threading.Tasks.Task SaveAsync(AppConfig config)
+    {
+        await _saveLock.WaitAsync();
+        try
+        {
+            if (!Directory.Exists(_configDir)) Directory.CreateDirectory(_configDir);
+
+            var json = JsonSerializer.Serialize(config, new JsonSerializerOptions { WriteIndented = true });
+            await File.WriteAllTextAsync(ConfigPath, json);
+        }
+        catch (Exception ex)
+        {
+            LoggerService.Instance.Log($"Failed to save config: {ex.Message}", LogLevel.Error);
+        }
+        finally
+        {
+            _saveLock.Release();
         }
     }
 

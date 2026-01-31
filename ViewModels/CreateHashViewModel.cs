@@ -381,7 +381,7 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
     private void RemoveFile(FileItem item)
     {
         item.Cts?.Cancel();
-        item.Cts?.Dispose(); // Fix memory leak
+        item.Cts?.Dispose();
         item.IsDeleted = true;
         if (Files.Contains(item))
         {

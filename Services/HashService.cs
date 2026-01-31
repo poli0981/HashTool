@@ -1,4 +1,5 @@
 using System;
+using System.Buffers;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
@@ -68,12 +69,19 @@ public class HashService
     private async Task<byte[]> ComputeBlake3Async(Stream stream, CancellationToken token)
     {
         using var hasher = Hasher.New();
-        var buffer = new byte[BufferSize];
-        int bytesRead;
+        var buffer = ArrayPool<byte>.Shared.Rent(BufferSize);
+        try
+        {
+            int bytesRead;
 
-        while ((bytesRead = await stream.ReadAsync(buffer, token)) > 0)
-            hasher.Update(new ReadOnlySpan<byte>(buffer, 0, bytesRead));
+            while ((bytesRead = await stream.ReadAsync(buffer, token)) > 0)
+                hasher.Update(new ReadOnlySpan<byte>(buffer, 0, bytesRead));
 
-        return hasher.Finalize().AsSpan().ToArray();
+            return hasher.Finalize().AsSpan().ToArray();
+        }
+        finally
+        {
+            ArrayPool<byte>.Shared.Return(buffer);
+        }
     }
 }

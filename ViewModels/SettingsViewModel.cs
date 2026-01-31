@@ -51,7 +51,7 @@ public partial class SettingsViewModel : ObservableObject
             else if (e.PropertyName == nameof(Theme.IsThemeLocked))
             {
                 OnPropertyChanged(nameof(CanChangeTheme));
-                SaveSettings();
+                _ = SaveSettingsAsync();
                 Logger.Log($"Theme lock changed: {Theme.IsThemeLocked}");
             }
         };
@@ -78,7 +78,7 @@ public partial class SettingsViewModel : ObservableObject
         {
             if (!IsSettingsLocked)
             {
-                SaveSettings();
+                _ = SaveSettingsAsync();
                 Logger.Log($"Preference changed: {e.PropertyName}");
             }
         };
@@ -110,7 +110,7 @@ public partial class SettingsViewModel : ObservableObject
     }
 
     [RelayCommand]
-    private void ResetAppearance()
+    private async Task ResetAppearance()
     {
         if (IsSettingsLocked) return;
 
@@ -122,7 +122,7 @@ public partial class SettingsViewModel : ObservableObject
         Localization.SelectedLanguage = Localization.AvailableLanguages.FirstOrDefault(x => x.Code == "auto") ??
                                         Localization.AvailableLanguages[0];
 
-        SaveSettings();
+        await SaveSettingsAsync();
         Logger.Log("Reset appearance settings to default.", LogLevel.Warning);
     }
 
@@ -145,11 +145,11 @@ public partial class SettingsViewModel : ObservableObject
     }
 
     [RelayCommand]
-    private void ToggleLockSettings()
+    private async Task ToggleLockSettings()
     {
         if (IsSettingsLocked)
         {
-            SaveSettings();
+            await SaveSettingsAsync();
             Logger.Log("Settings locked.");
         }
         else
@@ -159,22 +159,22 @@ public partial class SettingsViewModel : ObservableObject
     }
 
     [RelayCommand]
-    private void ToggleDeveloperMode()
+    private async Task ToggleDeveloperMode()
     {
-        SaveSettings();
+        await SaveSettingsAsync();
         Logger.Log($"Developer Mode: {IsDeveloperModeEnabled}");
     }
 
     [RelayCommand]
-    private void SetCurrentLanguageAsDefault()
+    private async Task SetCurrentLanguageAsDefault()
     {
         if (IsSettingsLocked) return;
-        SaveSettings();
+        await SaveSettingsAsync();
         Logger.Log("Language saved as default.");
     }
 
     [RelayCommand]
-    private async void CheckConfigFile()
+    private async Task CheckConfigFile()
     {
         var path = ConfigService.ConfigPath;
         if (File.Exists(path))
@@ -212,19 +212,19 @@ public partial class SettingsViewModel : ObservableObject
     [RelayCommand]
     private async Task ToggleAdminMode()
     {
-        SaveSettings();
+        await SaveSettingsAsync();
         Logger.Log($"Admin Mode toggled: {IsAdminModeEnabled}");
         if (IsAdminModeEnabled) await MessageBoxHelper.ShowAsync(L["Msg_AdminMode"], L["Msg_AdminRestart"]);
     }
 
     partial void OnForceQuitTimeoutChanged(int value)
     {
-        SaveSettings();
+        _ = SaveSettingsAsync();
     }
 
     partial void OnIsAdminModeEnabledChanged(bool value)
     {
-        SaveSettings();
+        _ = SaveSettingsAsync();
     }
 
     public void LoadSettings()
@@ -267,7 +267,7 @@ public partial class SettingsViewModel : ObservableObject
         Logger.Log("Settings loaded from config.");
     }
 
-    public void SaveSettings()
+    public async Task SaveSettingsAsync()
     {
         var config = new AppConfig
         {
@@ -296,7 +296,7 @@ public partial class SettingsViewModel : ObservableObject
             ForceQuitTimeout = ForceQuitTimeout
         };
 
-        ConfigService.Save(config);
+        await ConfigService.SaveAsync(config);
         Logger.Log("Settings saved.");
     }
 }
