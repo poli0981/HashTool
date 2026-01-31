@@ -129,7 +129,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
             await Parallel.ForEachAsync(queue, new ParallelOptions
             {
                 // Limit concurrency to avoid excessive I/O contention, especially on high-core machines.
-                MaxDegreeOfParallelism = Math.Clamp(Environment.ProcessorCount, 1, 4)
+                MaxDegreeOfParallelism = Environment.ProcessorCount
             }, async (file, ct) =>
             {
                 await VerifyItemLogic(file);
@@ -212,15 +212,80 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
                 long limitBytes = 0;
                 if (config.IsFileSizeLimitEnabled) limitBytes = Prefs.GetMaxSizeBytes();
 
+                var pathList = filePaths.ToList();
+                var results = new FilePreparationResult[pathList.Count];
+
+                await Parallel.ForEachAsync(Enumerable.Range(0, pathList.Count), new ParallelOptions
+                {
+                    MaxDegreeOfParallelism = Environment.ProcessorCount
+                }, async (i, ct) =>
+                {
+                    var path = pathList[i];
+                    var result = new FilePreparationResult { Path = path };
+
+                    try
+                    {
+                        var info = new FileInfo(path);
+                        result.Info = info;
+
+                        if (config.IsFileSizeLimitEnabled && info.Length > limitBytes)
+                        {
+                            result.Status = FilePreparationStatus.FileTooLarge;
+                            results[i] = result;
+                            return;
+                        }
+
+                        var ext = Path.GetExtension(path).TrimStart('.').ToUpper();
+                        var isHashFile = Enum.TryParse<HashType>(ext, true, out var detectedAlgo);
+
+                        result.IsHashFile = isHashFile;
+                        result.DetectedAlgo = detectedAlgo;
+
+                        if (isHashFile)
+                        {
+                            var dir = Path.GetDirectoryName(path);
+                            if (dir != null)
+                            {
+                                var sourcePath = Path.Combine(dir, Path.GetFileNameWithoutExtension(path));
+                                result.SourcePath = sourcePath;
+
+                                if (File.Exists(sourcePath))
+                                {
+                                    result.SourceExists = true;
+                                    var sourceInfo = new FileInfo(sourcePath);
+                                    result.SourceInfo = sourceInfo;
+
+                                    if (config.IsFileSizeLimitEnabled && sourceInfo.Length > limitBytes)
+                                    {
+                                        result.Status = FilePreparationStatus.SourceTooLarge;
+                                        results[i] = result;
+                                        return;
+                                    }
+                                }
+
+                                result.HashContent = await ReadHashFromFile(path);
+                            }
+                        }
+                    }
+                    catch
+                    {
+                        // Ignore errors during preparation
+                    }
+
+                    results[i] = result;
+                });
+
                 var newItems = new List<FileItem>();
                 var skippedFiles = new List<string>();
 
-                foreach (var path in filePaths)
+                foreach (var result in results)
                 {
-                    var info = new FileInfo(path);
+                    if (result == null) continue;
+
+                    var path = result.Path;
                     var fileName = Path.GetFileName(path);
 
-                    if (config.IsFileSizeLimitEnabled && info.Length > limitBytes)
+                    if (result.Status == FilePreparationStatus.FileTooLarge)
                     {
                         var msg = string.Format(L["Msg_FileSizeLimitExceeded"], fileName, config.FileSizeLimitValue,
                             config.FileSizeLimitUnit);
@@ -229,43 +294,32 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
                         continue;
                     }
 
-                    var ext = Path.GetExtension(path).TrimStart('.').ToUpper();
-
-                    var isHashFile = Enum.TryParse<HashType>(ext, true, out var detectedAlgo);
-
-                    if (isHashFile)
+                    if (result.Status == FilePreparationStatus.SourceTooLarge)
                     {
-                        var dir = Path.GetDirectoryName(path);
-                        if (dir == null) continue;
+                        var sourceName = Path.GetFileName(result.SourcePath);
+                        var msg = string.Format(L["Msg_FileSizeLimitExceeded"], sourceName,
+                            config.FileSizeLimitValue, config.FileSizeLimitUnit);
+                        Logger.Log(msg, LogLevel.Warning);
+                        skippedFiles.Add(sourceName);
+                        continue;
+                    }
 
-                        var sourcePath = Path.Combine(dir, Path.GetFileNameWithoutExtension(path));
-
-                        if (File.Exists(sourcePath))
-                        {
-                            var sourceInfo = new FileInfo(sourcePath);
-                            if (config.IsFileSizeLimitEnabled && sourceInfo.Length > limitBytes)
-                            {
-                                var msg = string.Format(L["Msg_FileSizeLimitExceeded"], Path.GetFileName(sourcePath),
-                                    config.FileSizeLimitValue, config.FileSizeLimitUnit);
-                                Logger.Log(msg, LogLevel.Warning);
-                                skippedFiles.Add(Path.GetFileName(sourcePath));
-                                continue;
-                            }
-                        }
+                    if (result.IsHashFile)
+                    {
+                        if (string.IsNullOrEmpty(result.SourcePath)) continue;
 
                         var item = new FileItem
                         {
-                            FileName = Path.GetFileName(sourcePath),
-                            FilePath = sourcePath,
-                            ExpectedHash = await ReadHashFromFile(path),
-                            Status = File.Exists(sourcePath) ? L["Status_ReadyFromHash"] : L["Status_MissingOriginal"],
-                            SelectedAlgorithm = detectedAlgo
+                            FileName = Path.GetFileName(result.SourcePath),
+                            FilePath = result.SourcePath,
+                            ExpectedHash = result.HashContent,
+                            Status = result.SourceExists ? L["Status_ReadyFromHash"] : L["Status_MissingOriginal"],
+                            SelectedAlgorithm = result.DetectedAlgo
                         };
 
-                        if (File.Exists(sourcePath))
+                        if (result.SourceExists && result.SourceInfo != null)
                         {
-                            var sourceInfo = new FileInfo(sourcePath);
-                            item.FileSize = FileItem.FormatSize(sourceInfo.Length);
+                            item.FileSize = FileItem.FormatSize(result.SourceInfo.Length);
                         }
                         else
                         {
@@ -278,13 +332,13 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
                     }
                     else
                     {
-                        if (!existingPaths.Contains(path))
+                        if (!existingPaths.Contains(path) && result.Info != null)
                         {
                             var item = new FileItem
                             {
                                 FileName = fileName,
                                 FilePath = path,
-                                FileSize = FileItem.FormatSize(info.Length),
+                                FileSize = FileItem.FormatSize(result.Info.Length),
                                 Status = L["Status_Waiting"],
                                 ExpectedHash = ""
                             };
@@ -358,10 +412,20 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
                 Logger.Log($"Hash file too large (>{MaxHashFileSize / 1024}KB): {path}", LogLevel.Warning);
                 return "";
             }
+            using var reader = new StreamReader(path);
+            var sb = new System.Text.StringBuilder();
+            string? line;
+            var regex = HashRegex();
 
-            var content = await File.ReadAllTextAsync(path);
-            var match = HashRegex().Match(content);
-            return match.Success ? match.Value : content.Trim();
+            while ((line = await reader.ReadLineAsync()) != null)
+            {
+                var match = regex.Match(line);
+                if (match.Success) return match.Value;
+
+                sb.AppendLine(line);
+            }
+
+            return sb.ToString().Trim();
         }
         catch
         {
@@ -510,6 +574,26 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
             file.Cts?.Dispose();
             file.Cts = null;
         }
+    }
+
+    private enum FilePreparationStatus
+    {
+        Success,
+        FileTooLarge,
+        SourceTooLarge
+    }
+
+    private sealed class FilePreparationResult
+    {
+        public required string Path { get; init; }
+        public FilePreparationStatus Status { get; set; } = FilePreparationStatus.Success;
+        public FileInfo? Info { get; set; }
+        public bool IsHashFile { get; set; }
+        public HashType DetectedAlgo { get; set; }
+        public string SourcePath { get; set; } = "";
+        public bool SourceExists { get; set; }
+        public FileInfo? SourceInfo { get; set; }
+        public string HashContent { get; set; } = "";
     }
 
     [RelayCommand]

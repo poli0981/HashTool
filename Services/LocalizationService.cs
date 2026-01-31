@@ -20,6 +20,8 @@ public partial class LocalizationService : ObservableObject
 
     [ObservableProperty] private LanguageItem _selectedLanguage;
 
+    private static readonly string[] _rtlLanguages = { "ar", "he", "fa", "ur", "yi", "ps", "dv", "ug", "ku", "sd" };
+
     public LocalizationService()
     {
         _systemUICulture = CultureInfo.CurrentUICulture;
@@ -198,11 +200,10 @@ public partial class LocalizationService : ObservableObject
 
     private void UpdateFlowDirection(string languageCode)
     {
-        var rtlLanguages = new[] { "ar", "he", "fa", "ur", "yi", "ps", "dv", "ug", "ku", "sd" };
         var parts = languageCode.Split('-');
         var twoLetterCode = parts.Length > 0 ? parts[0].ToLower() : languageCode.ToLower();
 
-        if (rtlLanguages.Contains(twoLetterCode))
+        if (_rtlLanguages.Contains(twoLetterCode))
             FlowDirection = FlowDirection.RightToLeft;
         else
             FlowDirection = FlowDirection.LeftToRight;

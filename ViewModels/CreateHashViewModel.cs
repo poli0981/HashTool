@@ -243,7 +243,7 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
 
         await Parallel.ForEachAsync(queue, new ParallelOptions
         {
-            MaxDegreeOfParallelism = Math.Clamp(Environment.ProcessorCount, 1, 4)
+            MaxDegreeOfParallelism = Environment.ProcessorCount
         }, async (file, ct) =>
         {
             if (file.IsDeleted) return;
