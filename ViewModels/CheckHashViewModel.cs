@@ -103,7 +103,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
         ProgressMax = Files.Count;
         ProgressValue = 0;
         var queue = Files.ToList();
-        var counters = new int[2]; // 0: processed, 1: cancelled
+        var counters = new int[2];
 
         using var cts = new CancellationTokenSource();
         var progressTask = Task.Run(async () =>
@@ -400,13 +400,11 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
         }
     }
 
-    private async Task<string?> ReadHashFromFile(string path)
+    private async Task<string> ReadHashFromFile(string path)
     {
         try
         {
             var info = new FileInfo(path);
-            if (!info.Exists) return null;
-
             if (info.Length > MaxHashFileSize)
             {
                 Logger.Log($"Hash file too large (>{MaxHashFileSize / 1024}KB): {path}", LogLevel.Warning);
@@ -421,10 +419,11 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
         }
         catch
         {
-            return null;
+            return "";
         }
 
-        [GeneratedRegex(@"[a-fA-F0-9]{32,128}")]
+    }
+    [GeneratedRegex(@"[a-fA-F0-9]{32,128}")]
     private static partial Regex HashRegex();
 
 
@@ -497,6 +496,7 @@ private async Task VerifyItemLogic(FileItem file)
         var sw = Stopwatch.StartNew();
         var result = new VerificationResult
         {
+            // Default failure state in case of exception
             Status = L["Status_Invalid"],
             IsMatch = false
         };

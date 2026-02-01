@@ -178,7 +178,7 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
     }
 
     [RelayCommand(CanExecute = nameof(CanCompress))]
-rivate async Task CompressFiles(Window window)
+    private async Task CompressFiles(Window window)
     {
         if (Files.Count == 0) return;
 
