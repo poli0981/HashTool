@@ -74,7 +74,7 @@ public class HashService
         {
             int bytesRead;
 
-            while ((bytesRead = await stream.ReadAsync(buffer, token)) > 0)
+            while ((bytesRead = await stream.ReadAsync(buffer.AsMemory(), token)) > 0)
                 hasher.Update(new ReadOnlySpan<byte>(buffer, 0, bytesRead));
 
             return hasher.Finalize().AsSpan().ToArray();

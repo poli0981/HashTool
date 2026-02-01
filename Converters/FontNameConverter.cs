@@ -11,8 +11,6 @@ public class FontNameConverter : IValueConverter
     {
         if (value is FontFamily font)
         {
-            // Fix for "$Default" display issue
-            // Check for various ways the default font might be represented or named
             if (font == FontFamily.Default ||
                 (font.Name != null && (font.Name == FontFamily.Default.Name || font.Name == "$Default" || font.Name == "#Default")))
             {

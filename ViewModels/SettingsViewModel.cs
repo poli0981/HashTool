@@ -90,7 +90,7 @@ public partial class SettingsViewModel : ObservableObject
         };
 
         ConfigFilePath = ConfigService.ConfigPath;
-        LoadSettings();
+        _ = LoadSettingsAsync();
     }
 
     private LocalizationService L => LocalizationService.Instance;
@@ -233,12 +233,12 @@ public partial class SettingsViewModel : ObservableObject
         if (!_isInitializing) _ = SaveSettingsAsync();
     }
 
-    public void LoadSettings()
+    public async Task LoadSettingsAsync()
     {
         _isInitializing = true;
         try
         {
-            var config = ConfigService.Load();
+            var config = await ConfigService.LoadAsync();
 
             IsSettingsLocked = config.IsSettingsLocked;
             IsDeveloperModeEnabled = config.IsDeveloperModeEnabled;
@@ -274,6 +274,10 @@ public partial class SettingsViewModel : ObservableObject
             ForceQuitTimeout = config.ForceQuitTimeout;
 
             Logger.Log("Settings loaded from config.");
+        }
+        catch (Exception ex)
+        {
+            Logger.Log($"Error loading settings: {ex.Message}", LogLevel.Error);
         }
         finally
         {

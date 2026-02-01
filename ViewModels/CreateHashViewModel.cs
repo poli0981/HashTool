@@ -92,7 +92,7 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
 
     public async Task AddFilesFromPaths(IEnumerable<string> filePaths)
     {
-        var config = ConfigService.Load();
+        var config = await ConfigService.LoadAsync();
         long limitBytes = 0;
         if (config.IsFileSizeLimitEnabled) limitBytes = Prefs.GetMaxSizeBytes();
 

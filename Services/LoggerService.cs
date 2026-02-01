@@ -27,11 +27,11 @@ public partial class LoggerService : ObservableObject
 
     private readonly string _logBaseDir;
     private readonly Channel<LogWriteRequest> _logChannel;
-    private readonly System.Collections.Concurrent.ConcurrentQueue<string> _uiLogQueue = new();
+    private readonly Channel<string> _uiLogChannel = Channel.CreateUnbounded<string>();
 
     // Settings
-    [ObservableProperty] private bool _isRecording = true; // Write logs to UI by default
-    [ObservableProperty] private bool _isSavingDebugLog; // Save debug logs to files by default
+    [ObservableProperty] private bool _isRecording = true;
+    [ObservableProperty] private bool _isSavingDebugLog;
 
     private record struct LogWriteRequest(string Directory, string Filename, string Content);
 
@@ -65,16 +65,12 @@ public partial class LoggerService : ObservableObject
         var timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         var logEntry = $"[{timestamp}] [{level.ToString().ToUpper()}] {message}";
 
-        // 1. Queue for UI (Real-time)
         if (IsRecording)
-            _uiLogQueue.Enqueue(logEntry);
+            _uiLogChannel.Writer.TryWrite(logEntry);
 
-        // 2. Save to files
         if (level == LogLevel.Error)
-            // Error log always saved
             WriteToFile(_errorLogDir, "error_log.txt", logEntry);
         else if (IsSavingDebugLog)
-            // Debug log saved only if enabled
             WriteToFile(_debugLogDir, $"debug_log_{DateTime.Now:yyyyMMdd}.txt", logEntry);
     }
 
@@ -91,19 +87,13 @@ public partial class LoggerService : ObservableObject
 
     private async Task ProcessUiLogQueueAsync()
     {
-        while (true)
+        while (await _uiLogChannel.Reader.WaitToReadAsync())
         {
-            if (_uiLogQueue.IsEmpty)
-            {
-                await Task.Delay(100);
-                continue;
-            }
-
             var batch = new List<string>();
-            while (_uiLogQueue.TryDequeue(out var msg))
+            while (_uiLogChannel.Reader.TryRead(out var msg))
             {
                 batch.Add(msg);
-                if (batch.Count >= 200) break; // Limit batch size for UI responsiveness
+                if (batch.Count >= 200) break;
             }
 
             if (batch.Count > 0)
@@ -116,9 +106,9 @@ public partial class LoggerService : ObservableObject
                         Logs.RemoveRange(0, Logs.Count - 1000);
                     }
                 }, DispatcherPriority.Background);
-            }
 
-            await Task.Delay(100); // Throttle updates
+                await Task.Delay(100); // Throttle updates
+            }
         }
     }
 
