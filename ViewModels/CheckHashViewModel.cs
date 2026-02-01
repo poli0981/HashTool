@@ -105,7 +105,6 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
         var queue = Files.ToList();
         var counters = new int[2]; // 0: processed, 1: cancelled
 
-        // Start progress updater
         using var cts = new CancellationTokenSource();
         var progressTask = Task.Run(async () =>
         {
@@ -128,7 +127,6 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
         {
             await Parallel.ForEachAsync(queue, new ParallelOptions
             {
-                // Limit concurrency to avoid excessive I/O contention, especially on high-core machines.
                 MaxDegreeOfParallelism = Environment.ProcessorCount
             }, async (file, ct) =>
             {
@@ -462,113 +460,128 @@ private async Task VerifyItemLogic(FileItem file)
             file.IsProcessing = true;
             file.IsMatch = null;
             file.ProcessDuration = "";
+            file.Status = L["Status_Waiting"];
         });
 
         file.Cts = new CancellationTokenSource();
-
         if (Prefs.IsFileTimeoutEnabled) file.Cts.CancelAfter(TimeSpan.FromSeconds(Prefs.FileTimeoutSeconds));
 
         await Task.Run(async () =>
         {
-            var sw = Stopwatch.StartNew();
-            Logger.Log($"Verifying {file.FileName}...");
+            var result = await VerifyFileInternalAsync(file, file.Cts.Token);
 
-            try
+            await Dispatcher.UIThread.InvokeAsync(() =>
             {
-                if (!File.Exists(file.FilePath))
-                {
-                    await Dispatcher.UIThread.InvokeAsync(() =>
-                    {
-                        file.Status = L["Status_LostOriginal"];
-                        file.IsMatch = false;
-                    });
-                    Logger.Log($"Original file missing: {file.FileName}", LogLevel.Error);
-                    return;
-                }
+                if (result.NewExpectedHash != null) file.ExpectedHash = result.NewExpectedHash;
 
-                if (string.IsNullOrWhiteSpace(file.ExpectedHash))
-                {
-                    var globalExt = GlobalAlgorithm.ToString().ToLower();
-                    var sidecarPath = $"{file.FilePath}.{globalExt}";
+                file.Status = result.Status;
+                file.IsMatch = result.IsMatch;
+                file.ProcessDuration = result.Duration;
+                file.IsProcessing = false;
+                file.Cts?.Dispose();
+                file.Cts = null;
+            });
+        });
+    }
 
-                    if (File.Exists(sidecarPath))
+    private record struct VerificationResult(
+        string Status,
+        bool? IsMatch,
+        string Duration,
+        string? NewExpectedHash = null
+    );
+
+    private async Task<VerificationResult> VerifyFileInternalAsync(FileItem file, CancellationToken ct)
+    {
+        var sw = Stopwatch.StartNew();
+        var result = new VerificationResult
+        {
+            Status = L["Status_Invalid"],
+            IsMatch = false
+        };
+
+        Logger.Log($"Verifying {file.FileName}...");
+
+        try
+        {
+            if (!File.Exists(file.FilePath))
+            {
+                result.Status = L["Status_LostOriginal"];
+                result.IsMatch = false;
+                Logger.Log($"Original file missing: {file.FileName}", LogLevel.Error);
+                return result;
+            }
+
+            var expectedHash = file.ExpectedHash;
+
+            if (string.IsNullOrWhiteSpace(expectedHash))
+            {
+                var globalExt = GlobalAlgorithm.ToString().ToLower();
+                var sidecarPath = $"{file.FilePath}.{globalExt}";
+
+                if (File.Exists(sidecarPath))
+                {
+                    var hash = await ReadHashFromFile(sidecarPath);
+                    if (!string.IsNullOrWhiteSpace(hash))
                     {
-                        var hash = await ReadHashFromFile(sidecarPath);
-                        await Dispatcher.UIThread.InvokeAsync(() => file.ExpectedHash = hash);
+                        expectedHash = hash;
+                        result.NewExpectedHash = hash;
                         Logger.Log($"Found sidecar hash for {file.FileName}");
                     }
                 }
+            }
 
-                if (string.IsNullOrWhiteSpace(file.ExpectedHash))
+            if (string.IsNullOrWhiteSpace(expectedHash))
+            {
+                result.Status = L["Status_MissingHash"];
+                result.IsMatch = false;
+                Logger.Log($"Missing expected hash for {file.FileName}", LogLevel.Warning);
+            }
+            else
+            {
+                var algoToCheck = GlobalAlgorithm;
+                var actualHash = await _hashService.ComputeHashAsync(file.FilePath, algoToCheck, ct);
+
+                if (string.Equals(actualHash, expectedHash.Trim(), StringComparison.OrdinalIgnoreCase))
                 {
-                    await Dispatcher.UIThread.InvokeAsync(() =>
-                    {
-                        file.Status = L["Status_MissingHash"];
-                        file.IsMatch = false;
-                    });
-                    Logger.Log($"Missing expected hash for {file.FileName}", LogLevel.Warning);
+                    result.Status = L["Status_Valid"];
+                    result.IsMatch = true;
+                    Logger.Log($"Verification VALID: {file.FileName}", LogLevel.Success);
                 }
                 else
                 {
-                    await Dispatcher.UIThread.InvokeAsync(() => file.Status = L["Status_Waiting"]);
-
-                    var algoToCheck = GlobalAlgorithm;
-
-                    var actualHash = await _hashService.ComputeHashAsync(file.FilePath, algoToCheck, file.Cts.Token);
-
-                    await Dispatcher.UIThread.InvokeAsync(() =>
-                    {
-                        if (string.Equals(actualHash, file.ExpectedHash.Trim(), StringComparison.OrdinalIgnoreCase))
-                        {
-                            file.Status = L["Status_Valid"];
-                            file.IsMatch = true;
-                        }
-                        else
-                        {
-                            file.Status = L["Status_Invalid"];
-                            file.IsMatch = false;
-                        }
-                    });
-
-                    if (file.IsMatch == true)
-                        Logger.Log($"Verification VALID: {file.FileName}", LogLevel.Success);
-                    else
-                        Logger.Log(
-                            $"Verification INVALID: {file.FileName}. Expected: {file.ExpectedHash}, Actual: {actualHash}",
-                            LogLevel.Error);
+                    result.Status = L["Status_Invalid"];
+                    result.IsMatch = false;
+                    Logger.Log(
+                        $"Verification INVALID: {file.FileName}. Expected: {expectedHash}, Actual: {actualHash}",
+                        LogLevel.Error);
                 }
             }
-            catch (OperationCanceledException)
-            {
-                await Dispatcher.UIThread.InvokeAsync(() =>
-                {
-                    file.Status = L["Status_Cancelled"];
-                    file.IsMatch = null;
-                });
-                Logger.Log($"Verification cancelled: {file.FileName}", LogLevel.Warning);
-            }
-            catch (Exception ex)
-            {
-                await Dispatcher.UIThread.InvokeAsync(() => file.Status = ex.Message);
-                Logger.Log($"Verification error {file.FileName}: {ex.Message}", LogLevel.Error);
-            }
-            finally
-            {
-                sw.Stop();
-                var duration = sw.Elapsed.TotalSeconds < 1
-                    ? $"{sw.ElapsedMilliseconds}ms"
-                    : $"{sw.Elapsed.TotalSeconds:F2}s";
+        }
+        catch (OperationCanceledException)
+        {
+            result.Status = L["Status_Cancelled"];
+            result.IsMatch = null;
+            Logger.Log($"Verification cancelled: {file.FileName}", LogLevel.Warning);
+        }
+        catch (Exception ex)
+        {
+            result.Status = ex.Message;
+            result.IsMatch = false;
+            Logger.Log($"Verification error {file.FileName}: {ex.Message}", LogLevel.Error);
+        }
+        finally
+        {
+            sw.Stop();
+            var duration = sw.Elapsed.TotalSeconds < 1
+                ? $"{sw.ElapsedMilliseconds}ms"
+                : $"{sw.Elapsed.TotalSeconds:F2}s";
+            result.Duration = duration;
+        }
 
-                await Dispatcher.UIThread.InvokeAsync(() =>
-                {
-                    file.ProcessDuration = duration;
-                    file.IsProcessing = false;
-                    file.Cts?.Dispose();
-                    file.Cts = null;
-                });
-            }
-        });
+        return result;
     }
+
     private enum FilePreparationStatus
     {
         Success,
