@@ -312,7 +312,8 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
                             FilePath = result.SourcePath,
                             ExpectedHash = result.HashContent,
                             Status = result.SourceExists ? L["Status_ReadyFromHash"] : L["Status_MissingOriginal"],
-                            SelectedAlgorithm = result.DetectedAlgo
+                            SelectedAlgorithm = result.DetectedAlgo,
+                            HasSpecificAlgorithm = true
                         };
 
                         if (result.SourceExists && result.SourceInfo != null)
@@ -540,7 +541,7 @@ private async Task VerifyItemLogic(FileItem file)
             }
             else
             {
-                var algoToCheck = GlobalAlgorithm;
+                var algoToCheck = file.HasSpecificAlgorithm ? file.SelectedAlgorithm : GlobalAlgorithm;
                 var actualHash = await _hashService.ComputeHashAsync(file.FilePath, algoToCheck, ct);
 
                 if (string.Equals(actualHash, expectedHash.Trim(), StringComparison.OrdinalIgnoreCase))

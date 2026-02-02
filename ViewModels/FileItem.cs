@@ -22,6 +22,7 @@ public partial class FileItem : ObservableObject
 
     // Algorithm Select
     [ObservableProperty] private HashType _selectedAlgorithm = HashType.SHA256;
+    [ObservableProperty] private bool _hasSpecificAlgorithm;
     [ObservableProperty] private string _status;
 
     public FileItem()
