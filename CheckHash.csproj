@@ -60,6 +60,9 @@
     <!-- Icon on macOS -->
     <PropertyGroup Condition="'$(RuntimeIdentifier)' == 'osx-x64' or '$(RuntimeIdentifier)' == 'osx-arm64'">
         <CFBundleIconFile>icons.icns</CFBundleIconFile>
+        <CFBundleName>Hash Tool</CFBundleName>
+        <CFBundleDisplayName>Hash Tool</CFBundleDisplayName>
+        <CFBundleIdentifier>com.poli0981.CheckHash</CFBundleIdentifier>
     </PropertyGroup>
 
     <ItemGroup Condition="'$(RuntimeIdentifier)' == 'osx-x64' or '$(RuntimeIdentifier)' == 'osx-arm64'">
@@ -68,5 +71,9 @@
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
             <PublishState>Included</PublishState>
         </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include=".github\" />
     </ItemGroup>
 </Project>
