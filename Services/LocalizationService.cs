@@ -22,7 +22,7 @@ public partial class LocalizationService : ObservableObject
 
     [ObservableProperty] private LanguageItem _selectedLanguage;
 
-    private static readonly string[] _rtlLanguages = { "ar", "he", "fa", "ur", "yi", "ps", "dv", "ug", "ku", "sd" };
+    private static readonly HashSet<string> _rtlLanguages = new() { "ar", "he", "fa", "ur", "yi", "ps", "dv", "ug", "ku", "sd" };
 
     public LocalizationService()
     {

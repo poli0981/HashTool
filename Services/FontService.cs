@@ -223,14 +223,14 @@ public partial class FontService : ObservableObject
             await Task.Run(async () =>
             {
                 var fontManager = FontManager.Current;
-                var fontNames = fontManager.SystemFonts
-                    .Select(f => f.Name)
-                    .Distinct()
-                    .OrderBy(x => x)
+                var systemFonts = fontManager.SystemFonts
+                    .GroupBy(f => f.Name)
+                    .Select(g => g.First())
+                    .OrderBy(f => f.Name)
                     .ToList();
 
                 // Pre-create fonts off-thread
-                var newFonts = new List<FontFamily>(fontNames.Count + 1);
+                var newFonts = new List<FontFamily>(systemFonts.Count + 1);
                 var newCache = new Dictionary<string, FontFamily>(StringComparer.OrdinalIgnoreCase);
 
                 var defaultFont = FontFamily.Default;
@@ -240,11 +240,10 @@ public partial class FontService : ObservableObject
                     newCache[defaultFont.Name] = defaultFont;
                 }
 
-                foreach (var name in fontNames)
+                foreach (var font in systemFonts)
                 {
-                    var font = new FontFamily(name);
                     newFonts.Add(font);
-                    newCache[name] = font;
+                    newCache[font.Name] = font;
                 }
 
                 // Load settings data off-thread

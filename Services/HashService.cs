@@ -46,7 +46,7 @@ public class HashService
                 HashType.SHA384 => await SHA384.HashDataAsync(stream, token),
                 HashType.SHA512 => await SHA512.HashDataAsync(stream, token),
                 HashType.BLAKE3 => await ComputeBlake3Async(stream, token, bufferSize),
-                _ => throw new NotImplementedException()
+                _ => throw new ArgumentOutOfRangeException(nameof(type), type, "Unknown HashType")
             };
 
             return Convert.ToHexString(hashBytes);
