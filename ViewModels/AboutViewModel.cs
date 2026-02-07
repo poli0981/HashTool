@@ -29,8 +29,17 @@ public partial class AboutViewModel : ObservableObject
     public ObservableCollection<LibraryItem> Libraries { get; } = new()
     {
         new LibraryItem("Avalonia UI version 11.3.11", "MIT License", "https://avaloniaui.net/"),
+        new LibraryItem("Avalonia.Controls.ColorPicker version 11.3.11", "MIT License",
+            "https://github.com/AvaloniaUI/Avalonia"),
+        new LibraryItem("Avalonia.Controls.DataGrid version 11.3.11", "MIT License",
+            "https://github.com/AvaloniaUI/Avalonia"),
+        new LibraryItem("Avalonia.Desktop version 11.3.11", "MIT License", "https://github.com/AvaloniaUI/Avalonia"),
+        new LibraryItem("Avalonia.Fonts.Inter version 11.3.11", "MIT License / SIL OFL 1.1",
+            "https://github.com/AvaloniaUI/Avalonia"),
+        new LibraryItem("Avalonia.Themes.Fluent version 11.3.11", "MIT License",
+            "https://github.com/AvaloniaUI/Avalonia"),
         new LibraryItem("Blake3.NET version 2.2.0",
-            "Copyright (c) Alexandre Mutel. All rights reserved.\nLicensed under the BSD " +
+            "Copyright (c) Alexandre Mutel. All rights reserved.\nLicensed under the BSD-" +
             "2-Clause License.", "https://github.com/xoofx/Blake3.NET"),
         new LibraryItem("CommunityToolkit.Mvvm Ver 8.2.1", "MIT License", "https://github.com/CommunityToolkit/dotnet"),
         new LibraryItem("Material.Icons.Avalonia Ver 2.4.1", "MIT License",
