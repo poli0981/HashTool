@@ -157,8 +157,13 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
 
         var cancelled = counters[1];
 
-        var match = Files.Count(f => f.IsMatch == true);
-        var failCount = Files.Count(f => f.IsMatch == false);
+        var match = 0;
+        var failCount = 0;
+        foreach (var f in Files)
+        {
+            if (f.IsMatch == true) match++;
+            else if (f.IsMatch == false) failCount++;
+        }
 
         Logger.Log($"Batch verification finished. Match: {match}, Mismatch/Error: {failCount}, Cancelled: {cancelled}");
 
@@ -247,10 +252,10 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
                                 var sourcePath = Path.Combine(dir, Path.GetFileNameWithoutExtension(path));
                                 result.SourcePath = sourcePath;
 
-                                if (File.Exists(sourcePath))
+                                var sourceInfo = new FileInfo(sourcePath);
+                                if (sourceInfo.Exists)
                                 {
                                     result.SourceExists = true;
-                                    var sourceInfo = new FileInfo(sourcePath);
                                     result.SourceInfo = sourceInfo;
 
                                     if (config.IsFileSizeLimitEnabled && sourceInfo.Length > limitBytes)
@@ -264,6 +269,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
                                 result.HashContent = await ReadHashFromFile(path);
                             }
                         }
+
                     }
                     catch
                     {

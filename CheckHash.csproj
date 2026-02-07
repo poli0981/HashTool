@@ -6,6 +6,13 @@
         <ApplicationManifest>app.manifest</ApplicationManifest>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
 
+        <Version>1.1.0</Version>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <InformationalVersion>1.1.0</InformationalVersion>
+
+        <!-- Application metadata -->
+        <Title>Hash Tool</Title>
+
         <Authors>poli0981</Authors>
         <Company>poli0981</Company>
         <Product>Hash Tool</Product>
@@ -71,9 +78,5 @@
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
             <PublishState>Included</PublishState>
         </Content>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include=".github\" />
     </ItemGroup>
 </Project>

@@ -41,6 +41,7 @@ public partial class FontService : ObservableObject
     [ObservableProperty] private FontFamily _selectedFont;
     [ObservableProperty] private double _uiScale = 1.0;
 
+    private bool _hasCheckedSettingsDir;
     private CancellationTokenSource? _saveSettingsCts;
     private CancellationTokenSource? _saveLogCts;
 
@@ -161,8 +162,12 @@ public partial class FontService : ObservableObject
 
             var json = JsonSerializer.Serialize(data);
 
-            var dir = Path.GetDirectoryName(_settingsFile);
-            if (dir != null && !Directory.Exists(dir)) Directory.CreateDirectory(dir);
+            if (!_hasCheckedSettingsDir)
+            {
+                var dir = Path.GetDirectoryName(_settingsFile);
+                if (dir != null && !Directory.Exists(dir)) Directory.CreateDirectory(dir);
+                _hasCheckedSettingsDir = true;
+            }
 
             await File.WriteAllTextAsync(_settingsFile, json);
         }

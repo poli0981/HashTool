@@ -11,6 +11,7 @@ public class ConfigurationService
 {
     private readonly string _configDir;
     private readonly SemaphoreSlim _saveLock = new(1, 1);
+    private bool _hasCheckedConfigDir;
 
     public ConfigurationService()
     {
@@ -28,7 +29,11 @@ public class ConfigurationService
         await _saveLock.WaitAsync();
         try
         {
-            if (!Directory.Exists(_configDir)) Directory.CreateDirectory(_configDir);
+            if (!_hasCheckedConfigDir)
+            {
+                if (!Directory.Exists(_configDir)) Directory.CreateDirectory(_configDir);
+                _hasCheckedConfigDir = true;
+            }
 
             var json = JsonSerializer.Serialize(config, new JsonSerializerOptions { WriteIndented = true });
             await File.WriteAllTextAsync(ConfigPath, json);
@@ -48,7 +53,11 @@ public class ConfigurationService
         await _saveLock.WaitAsync();
         try
         {
-            if (!Directory.Exists(_configDir)) Directory.CreateDirectory(_configDir);
+            if (!_hasCheckedConfigDir)
+            {
+                if (!Directory.Exists(_configDir)) Directory.CreateDirectory(_configDir);
+                _hasCheckedConfigDir = true;
+            }
 
             var json = JsonSerializer.Serialize(config, new JsonSerializerOptions { WriteIndented = true });
             await File.WriteAllTextAsync(ConfigPath, json);
@@ -67,12 +76,17 @@ public class ConfigurationService
     {
         try
         {
-            if (File.Exists(ConfigPath))
-            {
-                var json = File.ReadAllText(ConfigPath);
-                var config = JsonSerializer.Deserialize<AppConfig>(json);
-                return config ?? new AppConfig();
-            }
+            var json = File.ReadAllText(ConfigPath);
+            var config = JsonSerializer.Deserialize<AppConfig>(json);
+            return config ?? new AppConfig();
+        }
+        catch (FileNotFoundException)
+        {
+            return new AppConfig();
+        }
+        catch (DirectoryNotFoundException)
+        {
+            return new AppConfig();
         }
         catch (Exception ex)
         {
@@ -81,17 +95,21 @@ public class ConfigurationService
 
         return new AppConfig();
     }
-
     public async System.Threading.Tasks.Task<AppConfig> LoadAsync()
     {
         try
         {
-            if (File.Exists(ConfigPath))
-            {
-                var json = await File.ReadAllTextAsync(ConfigPath);
-                var config = JsonSerializer.Deserialize<AppConfig>(json);
-                return config ?? new AppConfig();
-            }
+            var json = await File.ReadAllTextAsync(ConfigPath);
+            var config = JsonSerializer.Deserialize<AppConfig>(json);
+            return config ?? new AppConfig();
+        }
+        catch (FileNotFoundException)
+        {
+            return new AppConfig();
+        }
+        catch (DirectoryNotFoundException)
+        {
+            return new AppConfig();
         }
         catch (Exception ex)
         {
@@ -100,7 +118,6 @@ public class ConfigurationService
 
         return new AppConfig();
     }
-
     public async System.Threading.Tasks.Task EnsureConfigFileExistsAsync()
     {
         if (!File.Exists(ConfigPath)) await Save(new AppConfig());
