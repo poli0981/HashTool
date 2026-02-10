@@ -1,0 +1,270 @@
+[
+  {
+    "Name" : "Auto (System)" ,
+    "Code" : "auto"
+  } ,
+  {
+    "Name" : "English (US)" ,
+    "Code" : "en-US"
+  } ,
+  {
+    "Name" : "العربية (Arabic)" ,
+    "Code" : "ar"
+  } ,
+  {
+    "Name" : "Tiếng Việt" ,
+    "Code" : "vi-VN"
+  } ,
+  {
+    "Name" : "Bahasa Indonesia" ,
+    "Code" : "id-ID"
+  } ,
+  {
+    "Name" : "ภาษาไทย (Thai)" ,
+    "Code" : "th-TH"
+  } ,
+  {
+    "Name" : "Filipino (Tagalog)" ,
+    "Code" : "fil-PH"
+  } ,
+  {
+    "Name" : "Bahasa Melayu (Malaysia)" ,
+    "Code" : "ms-MY"
+  } ,
+  {
+    "Name" : "English (Singapore)" ,
+    "Code" : "en-sg"
+  } ,
+  {
+    "Name" : "简体中文 (Singapore)" ,
+    "Code" : "zh-hans-sg"
+  } ,
+  {
+    "Name" : "မြန်မာ (Burmese)" ,
+    "Code" : "my-MM"
+  } ,
+  {
+    "Name" : "ខ្មែរ (Khmer)" ,
+    "Code" : "km-KH"
+  } ,
+  {
+    "Name" : "ລາວ (Laos)" ,
+    "Code" : "lo-LA"
+  } ,
+  {
+    "Name" : "فارسی (Persian)" ,
+    "Code" : "fa-IR"
+  } ,
+  {
+    "Name" : "עברית (Hebrew)" ,
+    "Code" : "he-IL"
+  } ,
+  {
+    "Name" : "Türkçe (Turkish)" ,
+    "Code" : "tr-TR"
+  } ,
+  {
+    "Name" : "Ελληνικά" ,
+    "Code" : "el-CY"
+  } ,
+  {
+    "Name" : "हिन्दी (Hindi)" ,
+    "Code" : "hi-IN"
+  } ,
+  {
+    "Name" : "English (India)" ,
+    "Code" : "en-IN"
+  } ,
+  {
+    "Name" : "বাংলা (Bengali)" ,
+    "Code" : "bn-BD"
+  } ,
+  {
+    "Name" : "සිංහල (Sinhala)" ,
+    "Code" : "si-LK"
+  } ,
+  {
+    "Name" : "རྫོང་ཁ (Dzongkha)" ,
+    "Code" : "dz-BT"
+  } ,
+  {
+    "Name" : "नेपाली (Nepali)" ,
+    "Code" : "ne-NP"
+  } ,
+  {
+    "Name" : "ދިވެހި (Divehi)" ,
+    "Code" : "dv-MV"
+  } ,
+  {
+    "Name" : "پښتو (Pashto)" ,
+    "Code" : "ps-AF"
+  } ,
+  {
+    "Name" : "繁體中文 (Chinese Traditional)" ,
+    "Code" : "zh-hant"
+  } ,
+  {
+    "Name" : "简体中文 (Chinese Simplified)" ,
+    "Code" : "zh-hans-cn"
+  } ,
+  {
+    "Name" : "日本語 (Japanese)" ,
+    "Code" : "ja-jp"
+  } ,
+  {
+    "Name" : "한국어 (Korean)" ,
+    "Code" : "ko-KR"
+  } ,
+  {
+    "Name" : "Монгол (Mongolian)" ,
+    "Code" : "mn-MN"
+  } ,
+  {
+    "Name" : "Қазақша (Kazakh)" ,
+    "Code" : "kk-KZ"
+  } ,
+  {
+    "Name" : "Кыргызча (Kyrgyz)" ,
+    "Code" : "ky-KG"
+  } ,
+  {
+    "Name" : "Тоҷикӣ (Tajik)" ,
+    "Code" : "tg-TJ"
+  } ,
+  {
+    "Name" : "Türkmençe (Turkmen)" ,
+    "Code" : "tk-TM"
+  } ,
+  {
+    "Name" : "Español (Spanish)" ,
+    "Code" : "es-ES"
+  } ,
+  {
+    "Name" : "Español (Latam)" ,
+    "Code" : "es-419"
+  } ,
+  {
+    "Name" : "Français (French)" ,
+    "Code" : "fr-FR"
+  } ,
+  {
+    "Name" : "Deutsch (German)" ,
+    "Code" : "de-DE"
+  } ,
+  {
+    "Name" : "Svenska (Swedish)" ,
+    "Code" : "sv-SE"
+  } ,
+  {
+    "Name" : "Bosanski (Bosnian Latin)" ,
+    "Code" : "bs-latn-ba"
+  } ,
+  {
+    "Name" : "Polski (Polish)" ,
+    "Code" : "pl-PL"
+  } ,
+  {
+    "Name" : "Русский (Russian)" ,
+    "Code" : "ru-RU"
+  } ,
+  {
+    "Name" : "Deutsch (Austria)" ,
+    "Code" : "de-AT"
+  } ,
+  {
+    "Name" : "Deutsch (Switzerland)" ,
+    "Code" : "de-CH"
+  } ,
+  {
+    "Name" : "Shqip (Albanian)" ,
+    "Code" : "sq-AL"
+  } ,
+  {
+    "Name" : "Македонски (Macedonian)" ,
+    "Code" : "mk-MK"
+  } ,
+  {
+    "Name" : "Română (Romanian)" ,
+    "Code" : "ro-RO"
+  } ,
+  {
+    "Name" : "Slovenčina (Slovak)" ,
+    "Code" : "sk-SK"
+  } ,
+  {
+    "Name" : "Українська (Ukrainian)" ,
+    "Code" : "uk-UA"
+  } ,
+  {
+    "Name" : "Hrvatski (Croatian)" ,
+    "Code" : "hr-HR"
+  } ,
+  {
+    "Name" : "Čeština (Czech)" ,
+    "Code" : "cs-CZ"
+  } ,
+  {
+    "Name" : "Italiano (Italian)" ,
+    "Code" : "it-IT"
+  } ,
+  {
+    "Name" : "Српски (Serbian Cyrillic)" ,
+    "Code" : "sr-cyrl-rs"
+  } ,
+  {
+    "Name" : "Български (Bulgarian)" ,
+    "Code" : "bg-BG"
+  } ,
+  {
+    "Name" : "Dansk (Danish)" ,
+    "Code" : "da-DK"
+  } ,
+  {
+    "Name" : "Ελληνικά (Greek)" ,
+    "Code" : "el-GR"
+  } ,
+  {
+    "Name" : "Suomeksi (Finnish)" ,
+    "Code" : "fi-FI"
+  } ,
+  {
+    "Name" : "Magyar (Hungarian)" ,
+    "Code" : "hu-HU"
+  } ,
+  {
+    "Name" : "Norsk (Norwegian)" ,
+    "Code" : "nb-NO"
+  } ,
+  {
+    "Name" : "Nederlands (Dutch)" ,
+    "Code" : "nl-NL"
+  } ,
+  {
+    "Name" : "Nederlands (Belgium)" ,
+    "Code" : "nl-BE"
+  } ,
+  {
+    "Name" : "Íslenska (Icelandic)" ,
+    "Code" : "is-IS"
+  } ,
+  {
+    "Name" : "Slovenščina (Slovenian)" ,
+    "Code" : "sl-SI"
+  } ,
+  {
+    "Name" : "Eesti (Estonian)" ,
+    "Code" : "et-EE"
+  } ,
+  {
+    "Name" : "Latviešu (Latvian)" ,
+    "Code" : "lv-LV"
+  } ,
+  {
+    "Name" : "Lietuvių (Lithuanian)" ,
+    "Code" : "lt-LT"
+  } ,
+  {
+    "Name" : "Português (Brasil)" ,
+    "Code" : "pt-BR"
+  }
+]

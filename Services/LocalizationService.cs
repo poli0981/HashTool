@@ -2,17 +2,20 @@ using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Resources;
+using System.Text.Json;
 using System.Threading;
 using Avalonia.Media;
+using CheckHash.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace CheckHash.Services;
 
 public partial class LocalizationService : ObservableObject
 {
-    // ResourceManager -> CheckHash.Lang.Resources
     private readonly ResourceManager _resourceManager;
     private readonly ConcurrentDictionary<string, string> _cache = new();
     private readonly CultureInfo _systemCulture;
@@ -37,95 +40,45 @@ public partial class LocalizationService : ObservableObject
 
     public static LocalizationService Instance { get; } = new();
 
-    public List<LanguageItem> AvailableLanguages { get; } = new()
+    public List<LanguageItem> AvailableLanguages { get; } = LoadLanguages();
+
+    private static List<LanguageItem> LoadLanguages()
     {
-        // AUTO DETECT LANGUAGE
-        //---------------------------------------//
-        new LanguageItem("Auto (System)", "auto"),
-        // DEFAULT LANGUAGE (IF NO MATCH FOUND)
-        //---------------------------------------//
-        new LanguageItem("English (US)", "en-US"),
-        // ARAB LANGUAGE (Use ar for all arab countries)
-        new LanguageItem("العربية (Arabic)", "ar"),
+        try
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            var resourceName = "CheckHash.Lang.Languages.json";
 
-        // SOUTHEAST ASIA LANGUAGES
-        new LanguageItem("Tiếng Việt", "vi-VN"),
-        new LanguageItem("Bahasa Indonesia", "id-ID"),
-        new LanguageItem("ภาษาไทย (Thai)", "th-TH"),
-        new LanguageItem("Filipino (Tagalog)", "fil-PH"),
-        new LanguageItem("Bahasa Melayu (Malaysia)", "ms-MY"),
-        new LanguageItem("English (Singapore)", "en-sg"),
-        new LanguageItem("简体中文 (Singapore)", "zh-hans-sg"),
-        new LanguageItem("မြန်မာ (Burmese)", "my-MM"),
-        new LanguageItem("ខ្មែរ (Khmer)", "km-KH"),
-        new LanguageItem("ລາວ (Laos)", "lo-LA"),
+            using var stream = assembly.GetManifestResourceStream(resourceName);
+            if (stream == null)
+            {
+                // Fallback if resource not found
+                return GetDefaultLanguages();
+            }
 
-        // MIDDLE EAST/ WEST ASIA LANGUAGES
-        new LanguageItem("فارسی (Persian)", "fa-IR"),
-        new LanguageItem("עברית (Hebrew)", "he-IL"),
-        new LanguageItem("Türkçe (Turkish)", "tr-TR"),
-        new LanguageItem("Ελληνικά", "el-CY"),
+            using var reader = new StreamReader(stream);
+            var json = reader.ReadToEnd();
+            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+            var languages = JsonSerializer.Deserialize<List<LanguageItem>>(json, options);
 
-        //---------------------------------------//
-        // SOUTH ASIA LANGUAGES
-        new LanguageItem("हिन्दी (Hindi)", "hi-IN"),
-        new LanguageItem("English (India)", "en-IN"),
-        new LanguageItem("বাংলা (Bengali)", "bn-BD"),
-        new LanguageItem("සිංහල (Sinhala)", "si-LK"),
-        new LanguageItem("རྫོང་ཁ (Dzongkha)", "dz-BT"),
-        new LanguageItem("नेपाली (Nepali)", "ne-NP"),
-        new LanguageItem("ދިވެހި (Divehi)", "dv-MV"),
-        new LanguageItem("پښتو (Pashto)", "ps-AF"),
-        //--------------------------------------//
-        // EAST ASIA LANGUAGES
-        new LanguageItem("繁體中文 (Chinese Traditional)", "zh-hant"),
-        new LanguageItem("简体中文 (Chinese Simplified)", "zh-hans-cn"),
-        new LanguageItem("日本語 (Japanese)", "ja-jp"),
-        new LanguageItem("한국어 (Korean)", "ko-KR"),
-        new LanguageItem("Монгол (Mongolian)", "mn-MN"),
+            return languages ?? GetDefaultLanguages();
+        }
+        catch (Exception ex)
+        {
+            LoggerService.Instance.Log("Failed to load languages: " + ex.Message, LogLevel.Error);
+            return GetDefaultLanguages();
+        }
+    }
 
-        new LanguageItem("Қазақша (Kazakh)", "kk-KZ"),
-        new LanguageItem("Кыргызча (Kyrgyz)", "ky-KG"),
-        new LanguageItem("Тоҷикӣ (Tajik)", "tg-TJ"),
-        new LanguageItem("Türkmençe (Turkmen)", "tk-TM"),
+    private static List<LanguageItem> GetDefaultLanguages()
+    {
+        return new List<LanguageItem>
+        {
+            new("Auto (System)", "auto"),
+            new("English (US)", "en-US")
+        };
+    }
 
-        // EUROPE LANGUAGES
-        new LanguageItem("Español (Spanish)", "es-ES"),
-        new LanguageItem("Español (Latam)", "es-419"),
-        new LanguageItem("Français (French)", "fr-FR"),
-        new LanguageItem("Deutsch (German)", "de-DE"),
-        new LanguageItem("Svenska (Swedish)", "sv-SE"),
-        new LanguageItem("Bosanski (Bosnian Latin)", "bs-latn-ba"),
-        new LanguageItem("Polski (Polish)", "pl-PL"),
-        new LanguageItem("Русский (Russian)", "ru-RU"),
-        new LanguageItem("Deutsch (Austria)", "de-AT"),
-        new LanguageItem("Deutsch (Switzerland)", "de-CH"),
-        new LanguageItem("Shqip (Albanian)", "sq-AL"),
-        new LanguageItem("Македонски (Macedonian)", "mk-MK"),
-        new LanguageItem("Română (Romanian)", "ro-RO"),
-        new LanguageItem("Slovenčina (Slovak)", "sk-SK"),
-        new LanguageItem("Українська (Ukrainian)", "uk-UA"),
-        new LanguageItem("Hrvatski (Croatian)", "hr-HR"),
-        new LanguageItem("Čeština (Czech)", "cs-CZ"),
-        new LanguageItem("Italiano (Italian)", "it-IT"),
-        new LanguageItem("Српски (Serbian Cyrillic)", "sr-cyrl-rs"),
-        new LanguageItem("Български (Bulgarian)", "bg-BG"),
-        new LanguageItem("Dansk (Danish)", "da-DK"),
-        new LanguageItem("Ελληνικά (Greek)", "el-GR"),
-        new LanguageItem("Suomeksi (Finnish)", "fi-FI"),
-        new LanguageItem("Magyar (Hungarian)", "hu-HU"),
-        new LanguageItem("Norsk (Norwegian)", "nb-NO"),
-        new LanguageItem("Nederlands (Dutch)", "nl-NL"),
-        new LanguageItem("Nederlands (Belgium)", "nl-BE"),
-        new LanguageItem("Íslenska (Icelandic)", "is-IS"),
-        new LanguageItem("Slovenščina (Slovenian)", "sl-SI"),
-        new LanguageItem("Eesti (Estonian)", "et-EE"),
-        new LanguageItem("Latviešu (Latvian)", "lv-LV"),
-        new LanguageItem("Lietuvių (Lithuanian)", "lt-LT"),
-        new LanguageItem("Português (Brasil)", "pt-BR")
-    };
-
-    // Indexer
     public string this[string key]
     {
         get
@@ -176,6 +129,7 @@ public partial class LocalizationService : ObservableObject
         }
         catch
         {
+            // Ignore and use fallback
         }
 
         return fallbackCode;
@@ -188,13 +142,11 @@ public partial class LocalizationService : ObservableObject
             _currentCulture = new CultureInfo(languageCode);
             _cache.Clear();
 
-            // Update Thread Culture
             Thread.CurrentThread.CurrentCulture = _currentCulture;
             Thread.CurrentThread.CurrentUICulture = _currentCulture;
 
             UpdateFlowDirection(languageCode);
 
-            // Update UI bindings
             OnPropertyChanged("Item[]");
         }
         catch

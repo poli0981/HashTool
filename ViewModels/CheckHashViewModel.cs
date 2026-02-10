@@ -13,6 +13,7 @@ using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Platform.Storage;
 using Avalonia.Threading;
+using CheckHash.Models;
 using CheckHash.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -21,7 +22,7 @@ namespace CheckHash.ViewModels;
 
 public partial class CheckHashViewModel : ObservableObject, IDisposable
 {
-    private const long MaxHashFileSize = 1024 * 1024; // 1MB
+    private const long MaxHashFileSize = AppConstants.OneMB; // 1MB
     private readonly HashService _hashService = new();
     [ObservableProperty] private HashType _globalAlgorithm = HashType.SHA256;
 
@@ -95,8 +96,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
     }
 
     [RelayCommand(CanExecute = nameof(CanVerify))]
-
-    private async Task VerifyAll()
+       private async Task VerifyAllAsync()
     {
         Logger.Log("Starting batch verification...");
         IsChecking = true;
@@ -130,7 +130,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
                 MaxDegreeOfParallelism = Environment.ProcessorCount
             }, async (file, ct) =>
             {
-                await VerifyItemLogic(file);
+                await VerifyItemLogicAsync(file);
 
                 Interlocked.Increment(ref counters[0]);
                 if (file.Status == statusCancelled)
@@ -181,7 +181,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
     }
 
     [RelayCommand(CanExecute = nameof(CanModifyList))]
-    private async Task AddFilesToCheck(Window window)
+    private async Task AddFilesToCheckAsync(Window window)
     {
         try
         {
@@ -266,7 +266,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
                                     }
                                 }
 
-                                result.HashContent = await ReadHashFromFile(path);
+                                result.HashContent = await ReadHashFromFileAsync(path);
                             }
                         }
 
@@ -407,7 +407,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
         }
     }
 
-    private async Task<string> ReadHashFromFile(string path)
+    private async Task<string> ReadHashFromFileAsync(string path)
     {
         try
         {
@@ -449,7 +449,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
     }
 
     [RelayCommand]
-    private async Task VerifySingle(FileItem item)
+    private async Task VerifySingleAsync(FileItem item)
     {
         if (item.IsProcessing)
         {
@@ -457,10 +457,10 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
             return;
         }
 
-        await VerifyItemLogic(item);
+        await VerifyItemLogicAsync(item);
     }
 
-private async Task VerifyItemLogic(FileItem file)
+private async Task VerifyItemLogicAsync(FileItem file)
     {
         await Dispatcher.UIThread.InvokeAsync(() =>
         {
@@ -529,7 +529,7 @@ private async Task VerifyItemLogic(FileItem file)
 
                 if (File.Exists(sidecarPath))
                 {
-                    var hash = await ReadHashFromFile(sidecarPath);
+                    var hash = await ReadHashFromFileAsync(sidecarPath);
                     if (!string.IsNullOrWhiteSpace(hash))
                     {
                         expectedHash = hash;
@@ -611,7 +611,7 @@ private async Task VerifyItemLogic(FileItem file)
     }
 
     [RelayCommand]
-    private async Task BrowseHashFile(FileItem item)
+    private async Task BrowseHashFileAsync(FileItem item)
     {
         var window =
             Application.Current?.ApplicationLifetime is
@@ -640,7 +640,7 @@ private async Task VerifyItemLogic(FileItem file)
 
             try
             {
-                item.ExpectedHash = await ReadHashFromFile(hashFilePath);
+                item.ExpectedHash = await ReadHashFromFileAsync(hashFilePath);
                 item.Status = L["Status_HashFileLoaded"];
                 Logger.Log($"Loaded hash file for {item.FileName}");
             }

@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
 using Blake3;
+using CheckHash.Models;
 
 namespace CheckHash.Services;
 
@@ -21,8 +22,8 @@ public enum HashType
 
 public class HashService
 {
-    private const int DefaultBufferSize = 81920; // 80KB for Blake3 (optimal)
-    private const int LargeBufferSize = 1024 * 1024; // 1MB for others (reduces syscalls)
+    private const int DefaultBufferSize = 80 * AppConstants.OneKB;
+    private const int LargeBufferSize = AppConstants.OneMB;
 
     public async Task<string> ComputeHashAsync(string filePath, HashType type, CancellationToken token)
     {

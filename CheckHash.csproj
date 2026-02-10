@@ -7,13 +7,11 @@
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
 
         <Version>1.1.0</Version>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <InformationalVersion>1.1.0</InformationalVersion>
+        <InformationalVersion>1.1.0-beta</InformationalVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
 
-        <!-- Application metadata -->
-        <Title>Hash Tool</Title>
+        <AssemblyTitle>Hash Tool</AssemblyTitle>
 
-        <Authors>poli0981</Authors>
         <Company>poli0981</Company>
         <Product>Hash Tool</Product>
         <Description>A powerful tool for generating, verifying, and compressing file hashes. Or so I think :)</Description>
@@ -61,6 +59,10 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="Lang\Languages.json" />
     </ItemGroup>
 
 

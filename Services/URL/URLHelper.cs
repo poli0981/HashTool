@@ -45,19 +45,45 @@ public static class UrlHelper
             if (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps)
                 return true;
 
-        // Check for Directory
-        // We only allow absolute paths to existing directories to prevent command injection via arguments
+        return false;
+    }
+    public static void OpenLocalFolder(string path)
+    {
+        if (string.IsNullOrWhiteSpace(path)) return;
+
         try
         {
-            // Ensure it's not a relative path that could be interpreted as a flag
-            if (Path.IsPathRooted(url) && Directory.Exists(url)) return true;
+            if (!Path.IsPathRooted(path) || !Directory.Exists(path)) return;
+
+            var appData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            var fullPath = Path.GetFullPath(path);
+            var safePath = Path.GetFullPath(Path.Combine(appData, "HashTool"));
+            if (!fullPath.Equals(safePath, StringComparison.OrdinalIgnoreCase) &&
+                !fullPath.StartsWith(safePath + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase))
+            {
+                return;
+            }
+
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                Process.Start(new ProcessStartInfo(path) { UseShellExecute = true });
+            }
+            else
+            {
+                var fileName = RuntimeInformation.IsOSPlatform(OSPlatform.OSX) ? "open" : "xdg-open";
+                var startInfo = new ProcessStartInfo
+                {
+                    FileName = fileName,
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+                startInfo.ArgumentList.Add(path);
+                Process.Start(startInfo);
+            }
         }
         catch
         {
-            // Invalid path characters or other errors
-            return false;
+            // Ignore errors
         }
-
-        return false;
     }
 }

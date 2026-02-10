@@ -1,4 +1,5 @@
 using System.Threading;
+using CheckHash.Models;
 using CheckHash.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 
@@ -40,10 +41,10 @@ public partial class FileItem : ObservableObject
         string[] sizes = { "B", "KB", "MB", "GB", "TB" };
         double len = bytes;
         var order = 0;
-        while (len >= 1024 && order < sizes.Length - 1)
+        while (len >= AppConstants.OneKB && order < sizes.Length - 1)
         {
             order++;
-            len /= 1024;
+            len /= AppConstants.OneKB;
         }
 
         return $"{len:0.##} {sizes[order]}";

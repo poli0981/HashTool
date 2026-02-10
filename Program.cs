@@ -48,9 +48,10 @@ internal sealed class Program
                     }
                 }
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            // Ignore startup errors to ensure app still tries to launch
+            // Ignore startup errors to ensure app still tries to launch, but log them
+            LoggerService.Instance.Log($"Startup error: {ex.Message}", LogLevel.Error);
         }
 
         BuildAvaloniaApp()

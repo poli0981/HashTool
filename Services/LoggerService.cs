@@ -62,6 +62,7 @@ public partial class LoggerService : ObservableObject
 
     public void Log(string message, LogLevel level = LogLevel.Info)
     {
+        message = SanitizeMessage(message);
         var timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         var logEntry = $"[{timestamp}] [{level.ToString().ToUpper()}] {message}";
 
@@ -77,6 +78,38 @@ public partial class LoggerService : ObservableObject
     public void ClearLogs()
     {
         Dispatcher.UIThread.Post(() => Logs.Clear());
+    }
+
+    private string SanitizeMessage(string message)
+    {
+        if (string.IsNullOrEmpty(message)) return message;
+
+        var userProfile = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+        var tempPath = Path.GetTempPath();
+
+        var replacements = new List<(string Path, string Placeholder)>();
+
+        if (!string.IsNullOrEmpty(userProfile) && userProfile != Path.DirectorySeparatorChar.ToString())
+        {
+            replacements.Add((userProfile, "[USER_PROFILE]"));
+        }
+
+        if (!string.IsNullOrEmpty(tempPath) && tempPath != Path.DirectorySeparatorChar.ToString())
+        {
+            var trimmedTemp = tempPath.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+            if (!string.IsNullOrEmpty(trimmedTemp))
+            {
+                replacements.Add((trimmedTemp, "[TEMP]"));
+            }
+        }
+
+        // Sort by length descending to replace most specific paths first
+        foreach (var (path, placeholder) in replacements.OrderByDescending(x => x.Path.Length))
+        {
+            message = message.Replace(path, placeholder, StringComparison.OrdinalIgnoreCase);
+        }
+
+        return message;
     }
 
     private void WriteToFile(string dir, string filename, string content)
