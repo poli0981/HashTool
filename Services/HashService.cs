@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
+using System.IO.Hashing;
 using Blake3;
 using CheckHash.Models;
 
@@ -17,7 +18,12 @@ public enum HashType
     SHA256,
     SHA384,
     SHA512,
-    BLAKE3
+    BLAKE3,
+    XxHash32,
+    XxHash64,
+    XxHash3,
+    XxHash128,
+    CRC32
 }
 
 public class HashService
@@ -47,6 +53,11 @@ public class HashService
                 HashType.SHA384 => await SHA384.HashDataAsync(stream, token),
                 HashType.SHA512 => await SHA512.HashDataAsync(stream, token),
                 HashType.BLAKE3 => await ComputeBlake3Async(stream, token, bufferSize),
+                HashType.XxHash32 => await ComputeXxHash32Async(stream, token),
+                HashType.XxHash64 => await ComputeXxHash64Async(stream, token),
+                HashType.XxHash3 => await ComputeXxHash3Async(stream, token),
+                HashType.XxHash128 => await ComputeXxHash128Async(stream, token),
+                HashType.CRC32 => await ComputeCrc32Async(stream, token),
                 _ => throw new ArgumentOutOfRangeException(nameof(type), type, "Unknown HashType")
             };
 
@@ -87,5 +98,50 @@ public class HashService
         {
             ArrayPool<byte>.Shared.Return(buffer);
         }
+    }
+
+    private async Task<byte[]> ComputeXxHash32Async(Stream stream, CancellationToken token)
+    {
+        var alg = new XxHash32();
+        await alg.AppendAsync(stream, token);
+        var buffer = new byte[4];
+        alg.GetCurrentHash(buffer);
+        return buffer;
+    }
+
+    private async Task<byte[]> ComputeXxHash64Async(Stream stream, CancellationToken token)
+    {
+        var alg = new XxHash64();
+        await alg.AppendAsync(stream, token);
+        var buffer = new byte[8];
+        alg.GetCurrentHash(buffer);
+        return buffer;
+    }
+
+    private async Task<byte[]> ComputeXxHash3Async(Stream stream, CancellationToken token)
+    {
+        var alg = new XxHash3();
+        await alg.AppendAsync(stream, token);
+        var buffer = new byte[8];
+        alg.GetCurrentHash(buffer);
+        return buffer;
+    }
+
+    private async Task<byte[]> ComputeXxHash128Async(Stream stream, CancellationToken token)
+    {
+        var alg = new XxHash128();
+        await alg.AppendAsync(stream, token);
+        var buffer = new byte[16];
+        alg.GetCurrentHash(buffer);
+        return buffer;
+    }
+
+    private async Task<byte[]> ComputeCrc32Async(Stream stream, CancellationToken token)
+    {
+        var alg = new Crc32();
+        await alg.AppendAsync(stream, token);
+        var buffer = new byte[4];
+        alg.GetCurrentHash(buffer);
+        return buffer;
     }
 }

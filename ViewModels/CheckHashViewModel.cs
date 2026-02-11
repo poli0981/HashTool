@@ -430,7 +430,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
         }
 
     }
-    [GeneratedRegex(@"[a-fA-F0-9]{32,128}")]
+    [GeneratedRegex(@"[a-fA-F0-9]{8,128}")]
     private static partial Regex HashRegex();
 
 
