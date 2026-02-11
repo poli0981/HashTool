@@ -577,4 +577,27 @@
     <data name="Msg_DontShowAgain">
         <value>Don't show this alert again</value>
     </data>
+    <data name="Error_Network">
+        <value>Network connection error. Please check your internet connection.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Server error (5xx). Please try again later.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Client error (4xx). Please check the request.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>GitHub API rate limit exceeded. Please try again later.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>No pre-release version found. Keeping current version.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Pre-release version {0} is available.
+
+            {1}
+
+            This version may be unstable. Do you want to download?
+        </value>
+    </data>
 </root>

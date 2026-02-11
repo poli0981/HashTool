@@ -13,9 +13,6 @@
                 <StackPanel Orientation="Horizontal" Spacing="10">
                     <TextBlock Text="{Binding Localization[Dev_Console]}" FontSize="20" FontWeight="Bold"
                                VerticalAlignment="Center" />
-                    <Border Background="#30808080" CornerRadius="4" Padding="5,2">
-                        <TextBlock Text="{Binding Localization[Dev_Beta]}" FontSize="10" FontWeight="Bold" />
-                    </Border>
                 </StackPanel>
 
                 <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="10">
@@ -53,7 +50,7 @@
                         <DataTemplate>
                             <TextBlock Text="{Binding}"
                                        FontFamily="Consolas, Monospace"
-                                       FontSize="12"
+                                       FontSize="14"
                                        Foreground="#00FF00"
                                        TextWrapping="Wrap" />
                         </DataTemplate>

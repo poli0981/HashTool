@@ -1094,5 +1094,41 @@ namespace CheckHash.Lang {
                 return ResourceManager.GetString("Msg_DontShowAgain", resourceCulture);
             }
         }
+        
+        public static string Error_Network {
+            get {
+                return ResourceManager.GetString("Error_Network", resourceCulture);
+            }
+        }
+        
+        public static string Error_Server {
+            get {
+                return ResourceManager.GetString("Error_Server", resourceCulture);
+            }
+        }
+        
+        public static string Error_Client {
+            get {
+                return ResourceManager.GetString("Error_Client", resourceCulture);
+            }
+        }
+        
+        public static string Error_ApiLimit {
+            get {
+                return ResourceManager.GetString("Error_ApiLimit", resourceCulture);
+            }
+        }
+        
+        public static string Msg_NoPreRelease {
+            get {
+                return ResourceManager.GetString("Msg_NoPreRelease", resourceCulture);
+            }
+        }
+        
+        public static string Msg_PreReleaseWarning {
+            get {
+                return ResourceManager.GetString("Msg_PreReleaseWarning", resourceCulture);
+            }
+        }
     }
 }

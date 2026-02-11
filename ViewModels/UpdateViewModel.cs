@@ -87,32 +87,91 @@ public partial class UpdateViewModel : ObservableObject
 
         try
         {
+            var netStatus = await _updateService.CheckConnectivityAsync();
+
+            if (netStatus != NetworkStatus.Connected)
+            {
+                var errorKey = netStatus switch
+                {
+                    NetworkStatus.NoConnection => "Error_Network",
+                    NetworkStatus.ServerError => "Error_Server",
+                    NetworkStatus.ClientError => "Error_Client",
+                    NetworkStatus.ApiLimitExceeded => "Error_ApiLimit",
+                    _ => "Msg_Error"
+                };
+
+                var msg = L[errorKey];
+                Logger.Log($"Network check failed: {netStatus}", LogLevel.Error);
+                StatusMessage = string.Format(L["Status_CheckError"], msg);
+                await MessageBoxHelper.ShowAsync(L["Msg_Error"], msg);
+                return;
+            }
+
             var isDev = SelectedChannelIndex == 1;
             var updateInfo = await _updateService.CheckForUpdatesAsync(isDev);
 
             if (updateInfo != null)
             {
+                var version = updateInfo.TargetFullRelease.Version;
+                var versionString = version.ToString();
+                var isPreRelease = versionString.Contains('-'); // Simple check for pre-release tag
+
+                if (isDev)
+                {
+                    if (!isPreRelease)
+                    {
+                        Logger.Log($"Dev Mode: Update found {versionString} is not a pre-release. Keeping current version.");
+                        StatusMessage = L["Msg_NoPreRelease"];
+                        await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], L["Msg_NoPreRelease"]);
+                        return;
+                    }
+
+                    // Pre-release available
+                    IsUpdateAvailable = true;
+                    StatusMessage = L["Status_NewVersion"];
+                    Logger.Log($"New pre-release found: {versionString}", LogLevel.Warning);
+
+                    var notes = await _updateService.GetReleaseNotesAsync(versionString);
+                    var result = await MessageBoxHelper.ShowConfirmationAsync(L["Title_Disclaimer"],
+                        string.Format(L["Msg_PreReleaseWarning"], versionString, notes), L["Btn_Install"], L["Btn_No"]);
+
+                    if (result)
+                    {
+                        await InstallUpdate(updateInfo);
+                    }
+                    return;
+                }
+
+                // Stable Channel
                 IsUpdateAvailable = true;
                 StatusMessage = L["Status_NewVersion"];
 
-                var version = updateInfo.TargetFullRelease.Version.ToString();
-                Logger.Log($"New version found: {version}", LogLevel.Success);
+                Logger.Log($"New version found: {versionString}", LogLevel.Success);
 
-                var notes = await _updateService.GetReleaseNotesAsync(version);
+                var notesStable = await _updateService.GetReleaseNotesAsync(versionString);
 
-                var result = await MessageBoxHelper.ShowConfirmationAsync(L["Msg_UpdateTitle"],
-                    string.Format(L["Msg_UpdateContent"], version, notes), L["Btn_Install"], L["Btn_No"]);
+                var resultStable = await MessageBoxHelper.ShowConfirmationAsync(L["Msg_UpdateTitle"],
+                    string.Format(L["Msg_UpdateContent"], versionString, notesStable), L["Btn_Install"], L["Btn_No"]);
 
-                if (result)
+                if (resultStable)
                 {
                     await InstallUpdate(updateInfo);
                 }
             }
             else
             {
-                StatusMessage = L["Status_Latest"];
-                Logger.Log("Application is up to date.");
-                await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], L["Msg_NoUpdate"]);
+                if (isDev)
+                {
+                    StatusMessage = L["Msg_NoPreRelease"];
+                    Logger.Log("Dev Mode: No pre-release found.");
+                    await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], L["Msg_NoPreRelease"]);
+                }
+                else
+                {
+                    StatusMessage = L["Status_Latest"];
+                    Logger.Log("Application is up to date.");
+                    await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], L["Msg_NoUpdate"]);
+                }
             }
         }
         catch (Exception ex)
