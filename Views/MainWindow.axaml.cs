@@ -104,16 +104,9 @@ public partial class MainWindow : Window
             var files = e.Data.GetFiles()?.Select(x => x.Path.LocalPath).ToList();
             if (files == null || files.Count == 0) return;
 
-            if (sender is Control control)
+            if (sender is Control control && control.DataContext is FileListViewModelBase vm)
             {
-                if (control.DataContext is CreateHashViewModel createVm)
-                {
-                    await createVm.AddFilesFromPaths(files);
-                }
-                else if (control.DataContext is CheckHashViewModel checkVm)
-                {
-                    await checkVm.AddFilesAsync(files);
-                }
+                await vm.AddFilesFromPaths(files);
             }
         }
     }

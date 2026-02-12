@@ -20,7 +20,7 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace CheckHash.ViewModels;
 
-public partial class CheckHashViewModel : ObservableObject, IDisposable
+public partial class CheckHashViewModel : FileListViewModelBase
 {
     private const long MaxHashFileSize = AppConstants.OneMB; // 1MB
     private readonly HashService _hashService = new();
@@ -28,227 +28,35 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
     [ObservableProperty] private HashType _globalAlgorithm = HashType.SHA256;
 
     [ObservableProperty]
-    [NotifyCanExecuteChangedFor(nameof(VerifyAllCommand))]
-    [NotifyCanExecuteChangedFor(nameof(AddFilesToCheckCommand))]
-    [NotifyCanExecuteChangedFor(nameof(ClearListCommand))]
-    [NotifyCanExecuteChangedFor(nameof(RemoveFileCommand))]
     private bool _isChecking;
 
-    [ObservableProperty] private LocalizationProxy _localization = new(LocalizationService.Instance);
-    [ObservableProperty] private double _progressMax = 100;
-
-    [ObservableProperty] private double _progressValue;
-    [ObservableProperty] private string _remainingTime = "";
-
-    public CheckHashViewModel()
-    {
-        Prefs.ForceCancelRequested += OnForceCancelRequested;
-
-        LocalizationService.Instance.PropertyChanged += (s, e) =>
-        {
-            if (e.PropertyName == "Item[]")
-            {
-                Localization = new LocalizationProxy(LocalizationService.Instance);
-                OnPropertyChanged(nameof(TotalFilesText));
-            }
-        };
-    }
-
-    private LocalizationService L => LocalizationService.Instance;
-    private ConfigurationService ConfigService => ConfigurationService.Instance;
-    private PreferencesService Prefs => PreferencesService.Instance;
-    private LoggerService Logger => LoggerService.Instance;
-
-    public AvaloniaList<FileItem> Files { get; } = new();
-
-    public ObservableCollection<HashType> AlgorithmList { get; } = new(Enum.GetValues<HashType>());
-
-    public string TotalFilesText => string.Format(L["Lbl_TotalFiles"], Files.Count);
-
-    private bool CanModifyList => !IsChecking;
+    protected override bool IsGlobalBusy => IsChecking;
 
     private bool CanVerify => Files.Count > 0 && !IsChecking;
 
-    public void Dispose()
+    partial void OnIsCheckingChanged(bool value)
     {
-        Prefs.ForceCancelRequested -= OnForceCancelRequested;
-        foreach (var file in Files) file.Cts?.Dispose();
+        NotifyCommands();
     }
 
-    private void OnForceCancelRequested(object? sender, EventArgs e)
+    protected override void NotifyCommands()
     {
-        Logger.Log("Force Cancel requested by user (Check Hash).", LogLevel.Warning);
-        foreach (var file in Files) file.Cts?.Cancel();
-    }
-
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    private void ClearList()
-    {
-        foreach (var file in Files)
-        {
-            file.Cts?.Cancel();
-            file.Cts?.Dispose();
-        }
-
-        Files.Clear();
-        ProgressValue = 0;
-        RemainingTime = "";
-        OnPropertyChanged(nameof(TotalFilesText));
         VerifyAllCommand.NotifyCanExecuteChanged();
-        Logger.Log("Cleared check list.");
+
+        // Base commands
+        AddFilesCommand.NotifyCanExecuteChanged();
+        AddFolderCommand.NotifyCanExecuteChanged();
+        ClearListCommand.NotifyCanExecuteChanged();
+        RemoveFileCommand.NotifyCanExecuteChanged();
+        ClearFailedCommand.NotifyCanExecuteChanged();
     }
 
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    private async Task ClearFailedAsync()
+    protected override IEnumerable<FileItem> GetFailedItems()
     {
-        var failedItems = Files.Where(f => f.IsMatch != true).ToList();
-        if (failedItems.Count == 0) return;
-
-        foreach (var item in failedItems)
-        {
-            item.Cts?.Cancel();
-            item.Cts?.Dispose();
-            item.IsDeleted = true;
-            Files.Remove(item);
-        }
-
-        OnPropertyChanged(nameof(TotalFilesText));
-        VerifyAllCommand.NotifyCanExecuteChanged();
-        Logger.Log($"Cleared {failedItems.Count} failed/cancelled items.");
-
-        await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
-            string.Format(L["Msg_ClearedFailed"], failedItems.Count));
+        return Files.Where(f => f.IsMatch != true);
     }
 
-    [RelayCommand(CanExecute = nameof(CanVerify))]
-    private async Task VerifyAllAsync()
-    {
-        Logger.Log("Starting batch verification...");
-        IsChecking = true;
-        ProgressMax = Files.Count;
-        ProgressValue = 0;
-        RemainingTime = L["Msg_TimeUnknown"];
-
-        var queue = Files.ToList();
-        var counters = new int[2];
-        var startTime = DateTime.UtcNow;
-
-        using var cts = new CancellationTokenSource();
-        var progressTask = Task.Run(async () =>
-        {
-            try
-            {
-                while (!cts.Token.IsCancellationRequested)
-                {
-                    await Task.Delay(250, cts.Token);
-                    var current = counters[0];
-
-                    var elapsed = (DateTime.UtcNow - startTime).TotalSeconds;
-                    var rate = current / elapsed;
-                    var remainingCount = queue.Count - current;
-                    var eta = rate > 0 ? TimeSpan.FromSeconds(remainingCount / rate) : TimeSpan.Zero;
-                    var etaStr = current > 0 && current < queue.Count
-                        ? string.Format(L["Msg_EstimatedTime"], $"{eta.Minutes:D2}:{eta.Seconds:D2}")
-                        : L["Msg_TimeUnknown"];
-
-                    await Dispatcher.UIThread.InvokeAsync(() =>
-                    {
-                        ProgressValue = current;
-                        RemainingTime = etaStr;
-                    });
-
-                    if (current >= queue.Count) break;
-                }
-            }
-            catch (OperationCanceledException)
-            {
-            }
-        });
-
-        var statusCancelled = L["Status_Cancelled"];
-
-        try
-        {
-            await Parallel.ForEachAsync(queue, new ParallelOptions
-            {
-                MaxDegreeOfParallelism = Environment.ProcessorCount
-            }, async (file, ct) =>
-            {
-                await VerifyItemLogicAsync(file);
-
-                Interlocked.Increment(ref counters[0]);
-                if (file.Status == statusCancelled)
-                {
-                    Interlocked.Increment(ref counters[1]);
-                }
-            });
-        }
-        finally
-        {
-            cts.Cancel();
-        }
-
-        try
-        {
-            await progressTask;
-        }
-        catch
-        {
-            // Ignore cancellation/tasks errors
-        }
-
-        ProgressValue = counters[0];
-        RemainingTime = "";
-        IsChecking = false;
-
-        var cancelled = counters[1];
-
-        var match = 0;
-        var failCount = 0;
-        foreach (var f in Files)
-        {
-            if (f.IsMatch == true) match++;
-            else if (f.IsMatch == false) failCount++;
-        }
-
-        Logger.Log($"Batch verification finished. Match: {match}, Mismatch/Error: {failCount}, Cancelled: {cancelled}");
-
-        if (cancelled > 0)
-        {
-            var msg = L["Msg_TaskCancelled_Content"];
-            Logger.Log(msg, LogLevel.Warning);
-            await MessageBoxHelper.ShowAsync(L["Msg_TaskCancelled_Title"], msg);
-        }
-        else
-        {
-            await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
-                string.Format(L["Msg_CheckResult"], Files.Count, match, failCount, cancelled));
-        }
-    }
-
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    private async Task AddFilesToCheckAsync(Window window)
-    {
-        try
-        {
-            Logger.Log("Opening file picker for Check Hash...");
-            var result = await window.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
-            {
-                AllowMultiple = true,
-                Title = L["Dialog_SelectCheckFiles"]
-            });
-
-            var paths = result.Select(x => x.Path.LocalPath);
-            await AddFilesAsync(paths);
-        }
-        catch (Exception ex)
-        {
-            Logger.Log($"Error adding files: {ex.Message}", LogLevel.Error);
-            await MessageBoxHelper.ShowAsync(L["Msg_Error"], ex.Message);
-        }
-    }
-
-    public async Task AddFilesAsync(IEnumerable<string> filePaths)
+    public override async Task AddFilesFromPaths(IEnumerable<string> filePaths)
     {
         IsChecking = true;
         try
@@ -434,21 +242,110 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
         }
     }
 
-    private async Task RunOnUIAsync(Func<Task> action)
+
+    [RelayCommand(CanExecute = nameof(CanVerify))]
+    private async Task VerifyAllAsync()
     {
-        if (Application.Current == null)
+        Logger.Log("Starting batch verification...");
+        IsChecking = true;
+        ProgressMax = Files.Count;
+        ProgressValue = 0;
+        RemainingTime = L["Msg_TimeUnknown"];
+
+        var queue = Files.ToList();
+        var counters = new int[2];
+        var startTime = DateTime.UtcNow;
+
+        using var cts = new CancellationTokenSource();
+        var progressTask = Task.Run(async () =>
         {
-            await action();
-            return;
+            try
+            {
+                while (!cts.Token.IsCancellationRequested)
+                {
+                    await Task.Delay(250, cts.Token);
+                    var current = counters[0];
+
+                    var elapsed = (DateTime.UtcNow - startTime).TotalSeconds;
+                    var rate = current / elapsed;
+                    var remainingCount = queue.Count - current;
+                    var eta = rate > 0 ? TimeSpan.FromSeconds(remainingCount / rate) : TimeSpan.Zero;
+                    var etaStr = current > 0 && current < queue.Count
+                        ? string.Format(L["Msg_EstimatedTime"], $"{eta.Minutes:D2}:{eta.Seconds:D2}")
+                        : L["Msg_TimeUnknown"];
+
+                    await Dispatcher.UIThread.InvokeAsync(() =>
+                    {
+                        ProgressValue = current;
+                        RemainingTime = etaStr;
+                    });
+
+                    if (current >= queue.Count) break;
+                }
+            }
+            catch (OperationCanceledException)
+            {
+            }
+        });
+
+        var statusCancelled = L["Status_Cancelled"];
+
+        try
+        {
+            await Parallel.ForEachAsync(queue, new ParallelOptions
+            {
+                MaxDegreeOfParallelism = Environment.ProcessorCount
+            }, async (file, ct) =>
+            {
+                await VerifyItemLogicAsync(file);
+
+                Interlocked.Increment(ref counters[0]);
+                if (file.Status == statusCancelled)
+                {
+                    Interlocked.Increment(ref counters[1]);
+                }
+            });
+        }
+        finally
+        {
+            cts.Cancel();
         }
 
         try
         {
-            await Dispatcher.UIThread.InvokeAsync(action);
+            await progressTask;
         }
         catch
         {
-            await action();
+            // Ignore cancellation/tasks errors
+        }
+
+        ProgressValue = counters[0];
+        RemainingTime = "";
+        IsChecking = false;
+
+        var cancelled = counters[1];
+
+        var match = 0;
+        var failCount = 0;
+        foreach (var f in Files)
+        {
+            if (f.IsMatch == true) match++;
+            else if (f.IsMatch == false) failCount++;
+        }
+
+        Logger.Log($"Batch verification finished. Match: {match}, Mismatch/Error: {failCount}, Cancelled: {cancelled}");
+
+        if (cancelled > 0)
+        {
+            var msg = L["Msg_TaskCancelled_Content"];
+            Logger.Log(msg, LogLevel.Warning);
+            await MessageBoxHelper.ShowAsync(L["Msg_TaskCancelled_Title"], msg);
+        }
+        else
+        {
+            await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
+                string.Format(L["Msg_CheckResult"], Files.Count, match, failCount, cancelled));
         }
     }
 
@@ -479,22 +376,6 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
     [GeneratedRegex(@"[a-fA-F0-9]{8,128}")]
     private static partial Regex HashRegex();
 
-
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    private void RemoveFile(FileItem item)
-    {
-        if (item.IsProcessing) return;
-
-        item.Cts?.Cancel();
-        if (Files.Contains(item))
-        {
-            Files.Remove(item);
-            item.IsDeleted = true;
-            OnPropertyChanged(nameof(TotalFilesText));
-            VerifyAllCommand.NotifyCanExecuteChanged();
-            Logger.Log($"Removed check item: {item.FileName}");
-        }
-    }
 
     [RelayCommand]
     private async Task VerifySingleAsync(FileItem item)

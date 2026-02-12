@@ -310,9 +310,11 @@
                 <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="10" Margin="0,0,0,10"
                             IsEnabled="{Binding !IsChecking}">
                     <Button Content="{Binding Localization[Btn_AddFiles]}"
-                            Command="{Binding AddFilesToCheckCommand}"
+                            Command="{Binding AddFilesCommand}"
                             CommandParameter="{Binding $parent[Window]}"
                             ToolTip.Tip="Ctrl+F / Cmd+F" />
+                    <Button Content="{Binding Localization[Btn_AddFolder]}" Command="{Binding AddFolderCommand}"
+                            CommandParameter="{Binding $parent[Window]}" />
                     <Button Content="{Binding Localization[Btn_Clear]}" Command="{Binding ClearListCommand}"
                             ToolTip.Tip="Ctrl+Shift+H" />
                     <Button Content="{Binding Localization[Btn_ClearFailed]}" Command="{Binding ClearFailedCommand}"

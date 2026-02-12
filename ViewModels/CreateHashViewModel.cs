@@ -17,120 +17,48 @@ using Avalonia.Threading;
 using CheckHash.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using CheckHash.Models;
 
 namespace CheckHash.ViewModels;
 
-public partial class CreateHashViewModel : ObservableObject, IDisposable
+public partial class CreateHashViewModel : FileListViewModelBase
 {
     private readonly HashService _hashService = new();
-    private CancellationTokenSource? _cancellationTokenSource;
-
 
     [ObservableProperty]
-    [NotifyCanExecuteChangedFor(nameof(ComputeAllCommand))]
-    [NotifyCanExecuteChangedFor(nameof(AddFilesCommand))]
-    [NotifyCanExecuteChangedFor(nameof(ClearListCommand))]
-    [NotifyCanExecuteChangedFor(nameof(CompressFilesCommand))]
-
     private bool _isComputing;
 
     [ObservableProperty] private HashType _selectedAlgorithm = HashType.SHA256;
 
-    [ObservableProperty] private LocalizationProxy _localization = new(LocalizationService.Instance);
-    [ObservableProperty] private double _progressMax = 100;
-    [ObservableProperty] private double _progressValue;
-    [ObservableProperty] private string _remainingTime = "";
-
-    public CreateHashViewModel()
-    {
-        Prefs.ForceCancelRequested += OnForceCancelRequested;
-
-        LocalizationService.Instance.PropertyChanged += (s, e) =>
-        {
-            if (e.PropertyName == "Item[]")
-            {
-                Localization = new LocalizationProxy(LocalizationService.Instance);
-                OnPropertyChanged(nameof(TotalFilesText));
-            }
-        };
-    }
-
-    private LocalizationService L => LocalizationService.Instance;
-    private ConfigurationService ConfigService => ConfigurationService.Instance;
-    private PreferencesService Prefs => PreferencesService.Instance;
-    private LoggerService Logger => LoggerService.Instance;
-
-    public string TotalFilesText => string.Format(L["Lbl_TotalFiles"], Files.Count);
-
-    public AvaloniaList<FileItem> Files { get; } = new();
-
-    public ObservableCollection<HashType> AlgorithmList { get; } = new(Enum.GetValues<HashType>());
+    protected override bool IsGlobalBusy => IsComputing;
 
     private bool CanComputeAll => Files.Count > 0 && !IsComputing;
-    private bool CanModifyList => !IsComputing;
     private bool CanCompress => Files.Count > 0 && !IsComputing;
 
-    public void Dispose()
+    partial void OnIsComputingChanged(bool value)
     {
-        Prefs.ForceCancelRequested -= OnForceCancelRequested;
-        foreach (var file in Files) file.Cts?.Dispose();
+        NotifyCommands();
     }
 
-    private void OnForceCancelRequested(object? sender, EventArgs e)
+    protected override void NotifyCommands()
     {
-        Logger.Log("Force Cancel requested by user.", LogLevel.Warning);
-        foreach (var file in Files) file.Cts?.Cancel();
+        ComputeAllCommand.NotifyCanExecuteChanged();
+        CompressFilesCommand.NotifyCanExecuteChanged();
+
+        // Base commands
+        AddFilesCommand.NotifyCanExecuteChanged();
+        AddFolderCommand.NotifyCanExecuteChanged();
+        ClearListCommand.NotifyCanExecuteChanged();
+        RemoveFileCommand.NotifyCanExecuteChanged();
+        ClearFailedCommand.NotifyCanExecuteChanged();
     }
 
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    private async Task AddFiles(Window window)
+    protected override IEnumerable<FileItem> GetFailedItems()
     {
-        Logger.Log("Opening file picker for Create Hash...");
-        var files = await window.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
-        {
-            AllowMultiple = true,
-            Title = L["Dialog_SelectFiles"]
-        });
-
-        if (files.Count == 0) return;
-
-        var paths = files.Select(x => x.Path.LocalPath);
-        await AddFilesFromPaths(paths);
+        return Files.Where(f => string.IsNullOrEmpty(f.ResultHash));
     }
 
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    private async Task AddFolder(Window window)
-    {
-        try
-        {
-            Logger.Log("Opening folder picker for Create Hash...");
-            var folders = await window.StorageProvider.OpenFolderPickerAsync(new FolderPickerOpenOptions
-            {
-                AllowMultiple = false,
-                Title = L["Dialog_SelectFolder"]
-            });
-
-            if (folders.Count == 0) return;
-
-            var folderPath = folders[0].Path.LocalPath;
-            var files = Directory.GetFiles(folderPath, "*", SearchOption.AllDirectories);
-
-            if (files.Length == 0)
-            {
-                await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_EmptyFolder"]);
-                Logger.Log($"Selected folder is empty: {folderPath}", LogLevel.Warning);
-                return;
-            }
-
-            await AddFilesFromPaths(files);
-        }
-        catch (Exception ex)
-        {
-            Logger.Log($"Error adding folder: {ex.Message}", LogLevel.Error);
-            await MessageBoxHelper.ShowAsync(L["Msg_Error"], string.Format(L["Msg_OpenFolderError"], ex.Message));
-        }
-    }
-    public async Task AddFilesFromPaths(IEnumerable<string> filePaths)
+    public override async Task AddFilesFromPaths(IEnumerable<string> filePaths)
     {
         var config = await ConfigService.LoadAsync();
         long limitBytes = 0;
@@ -269,46 +197,6 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
             {
                 Logger.Log($"Compression failed: {ex.Message}", LogLevel.Error);
             }
-    }
-
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    private void ClearList()
-    {
-        foreach (var file in Files)
-        {
-            file.Cts?.Cancel();
-            file.Cts?.Dispose();
-            file.IsDeleted = true;
-        }
-
-        Files.Clear();
-        ProgressValue = 0;
-        RemainingTime = "";
-        OnPropertyChanged(nameof(TotalFilesText));
-        ComputeAllCommand.NotifyCanExecuteChanged();
-        Logger.Log("Cleared file list.");
-    }
-
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    private async Task ClearFailedAsync()
-    {
-        var failedItems = Files.Where(f => string.IsNullOrEmpty(f.ResultHash)).ToList();
-        if (failedItems.Count == 0) return;
-
-        foreach (var item in failedItems)
-        {
-            item.Cts?.Cancel();
-            item.Cts?.Dispose();
-            item.IsDeleted = true;
-            Files.Remove(item);
-        }
-
-        OnPropertyChanged(nameof(TotalFilesText));
-        ComputeAllCommand.NotifyCanExecuteChanged();
-        Logger.Log($"Cleared {failedItems.Count} failed/cancelled items.");
-
-        await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
-            string.Format(L["Msg_ClearedFailed"], failedItems.Count));
     }
 
     [RelayCommand(CanExecute = nameof(CanComputeAll))]
@@ -532,23 +420,6 @@ public partial class CreateHashViewModel : ObservableObject, IDisposable
         finally
         {
             IsComputing = false;
-        }
-    }
-
-    [RelayCommand]
-    private void RemoveFile(FileItem item)
-    {
-        if (item.IsProcessing) return;
-
-        item.Cts?.Cancel();
-        item.Cts?.Dispose();
-        item.IsDeleted = true;
-        if (Files.Contains(item))
-        {
-            Files.Remove(item);
-            OnPropertyChanged(nameof(TotalFilesText));
-            ComputeAllCommand.NotifyCanExecuteChanged();
-            Logger.Log($"Removed file: {item.FileName}");
         }
     }
 }

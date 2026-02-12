@@ -183,7 +183,7 @@ public partial class MainWindowViewModel : ObservableObject
 
         if (CurrentPage == CreateHashVM)
             await CreateHashVM.AddFilesCommand.ExecuteAsync(window);
-        else if (CurrentPage == CheckHashVM) await CheckHashVM.AddFilesToCheckCommand.ExecuteAsync(window);
+        else if (CurrentPage == CheckHashVM) await CheckHashVM.AddFilesCommand.ExecuteAsync(window);
     }
 
     [RelayCommand]
