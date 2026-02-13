@@ -150,7 +150,82 @@
                 </StackPanel>
             </Border>
 
-            <!-- 4. ADVANCED SETTINGS -->
+            <!-- 4. PROCESSING LIMITS -->
+            <Border Background="{DynamicResource PaneBackgroundBrush}" CornerRadius="8" Padding="20"
+                    BorderBrush="{DynamicResource GlassBorderBrush}" BorderThickness="1">
+                <StackPanel Spacing="15">
+                    <StackPanel Orientation="Horizontal" Spacing="10">
+                        <icons:MaterialIcon Kind="Speedometer" Width="24" Height="24"
+                                            Foreground="{DynamicResource SystemAccentColor}" />
+                        <TextBlock Text="{Binding Localization[Settings_Limits]}" FontSize="18" FontWeight="SemiBold" />
+                    </StackPanel>
+
+                    <Grid ColumnDefinitions="*, Auto"
+                          RowDefinitions="Auto, 15, Auto, 15, Auto, 15, Auto">
+
+                        <!-- File Size Limit -->
+                        <StackPanel Grid.Row="0" Grid.Column="0">
+                            <TextBlock Text="{Binding Localization[Settings_FileSizeLimit]}" FontWeight="Bold" />
+                            <TextBlock Text="{Binding Localization[Settings_FileSizeDesc]}" FontSize="12" Opacity="0.7" />
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Spacing="10"
+                                    IsEnabled="{Binding !IsSettingsLocked}">
+                            <ToggleSwitch IsChecked="{Binding Prefs.IsFileSizeLimitEnabled}" />
+                            <NumericUpDown Value="{Binding Prefs.FileSizeLimitValue}" Minimum="1" Width="100"
+                                           IsEnabled="{Binding Prefs.IsFileSizeLimitEnabled}" />
+                            <ComboBox ItemsSource="{Binding FileSizeUnits}"
+                                      SelectedItem="{Binding Prefs.FileSizeLimitUnit}"
+                                      IsEnabled="{Binding Prefs.IsFileSizeLimitEnabled}"
+                                      Width="80" />
+                        </StackPanel>
+
+                        <!-- File Processing Timeout -->
+                        <StackPanel Grid.Row="2" Grid.Column="0">
+                            <TextBlock Text="{Binding Localization[Settings_FileTimeout]}" FontWeight="Bold" />
+                            <TextBlock Text="{Binding Localization[Settings_FileTimeoutDesc]}" FontSize="12"
+                                       Opacity="0.7" />
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Spacing="10"
+                                    IsEnabled="{Binding !IsSettingsLocked}">
+                            <ToggleSwitch IsChecked="{Binding Prefs.IsFileTimeoutEnabled}" />
+                            <NumericUpDown Value="{Binding Prefs.FileTimeoutSeconds}" Minimum="10" Maximum="3600"
+                                           Width="100"
+                                           IsEnabled="{Binding Prefs.IsFileTimeoutEnabled}" />
+                            <TextBlock Text="{Binding Localization[Unit_Seconds]}" VerticalAlignment="Center" />
+                        </StackPanel>
+
+                        <!-- Max Files per Folder Scan -->
+                        <StackPanel Grid.Row="4" Grid.Column="0">
+                            <TextBlock Text="{Binding Localization[Settings_MaxFileCount]}" FontWeight="Bold" />
+                            <TextBlock Text="{Binding Localization[Settings_MaxFileCountDesc]}" FontSize="12"
+                                       Opacity="0.7" />
+                        </StackPanel>
+                        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" Spacing="10"
+                                    IsEnabled="{Binding !IsSettingsLocked}">
+                            <ToggleSwitch IsChecked="{Binding Prefs.IsMaxFileCountEnabled}" />
+                            <NumericUpDown Value="{Binding Prefs.MaxFileCount}" Minimum="1" Maximum="100000"
+                                           Width="100"
+                                           IsEnabled="{Binding Prefs.IsMaxFileCountEnabled}" />
+                        </StackPanel>
+
+                        <!-- Max Folders per Click -->
+                        <StackPanel Grid.Row="6" Grid.Column="0">
+                            <TextBlock Text="{Binding Localization[Settings_MaxFolderCount]}" FontWeight="Bold" />
+                            <TextBlock Text="{Binding Localization[Settings_MaxFolderCountDesc]}" FontSize="12"
+                                       Opacity="0.7" />
+                        </StackPanel>
+                        <StackPanel Grid.Row="6" Grid.Column="1" Orientation="Horizontal" Spacing="10"
+                                    IsEnabled="{Binding !IsSettingsLocked}">
+                            <ToggleSwitch IsChecked="{Binding Prefs.IsMaxFolderCountEnabled}" />
+                            <NumericUpDown Value="{Binding Prefs.MaxFolderCount}" Minimum="1" Maximum="100"
+                                           Width="100"
+                                           IsEnabled="{Binding Prefs.IsMaxFolderCountEnabled}" />
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Border>
+
+            <!-- 5. ADVANCED SETTINGS -->
             <Border Background="{DynamicResource PaneBackgroundBrush}" CornerRadius="8" Padding="20"
                     BorderBrush="{DynamicResource GlassBorderBrush}" BorderThickness="1">
                 <StackPanel Spacing="15">
@@ -161,7 +236,7 @@
                     </StackPanel>
 
                     <Grid ColumnDefinitions="*, Auto"
-                          RowDefinitions="Auto, 15, Auto, 15, Auto, 15, Auto, 15, Auto, 15, Auto">
+                          RowDefinitions="Auto, 15, Auto, 15, Auto, 15, Auto">
 
                         <!-- Developer Mode -->
                         <StackPanel Grid.Row="0" Grid.Column="0">
@@ -184,57 +259,26 @@
                                       Command="{Binding ToggleAdminModeCommand}"
                                       IsEnabled="{Binding IsAdminModeSupported}" />
 
-                        <!-- File Size Limit -->
-                        <StackPanel Grid.Row="4" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_FileSizeLimit]}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Localization[Settings_FileSizeDesc]}" FontSize="12" Opacity="0.7" />
-                        </StackPanel>
-                        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" Spacing="10"
-                                    IsEnabled="{Binding !IsSettingsLocked}">
-                            <ToggleSwitch IsChecked="{Binding Prefs.IsFileSizeLimitEnabled}" />
-                            <NumericUpDown Value="{Binding Prefs.FileSizeLimitValue}" Minimum="1" Width="100"
-                                           IsEnabled="{Binding Prefs.IsFileSizeLimitEnabled}" />
-                            <ComboBox ItemsSource="{Binding FileSizeUnits}"
-                                      SelectedItem="{Binding Prefs.FileSizeLimitUnit}"
-                                      IsEnabled="{Binding Prefs.IsFileSizeLimitEnabled}"
-                                      Width="80" />
-                        </StackPanel>
-
                         <!-- Force Quit Timeout -->
-                        <StackPanel Grid.Row="6" Grid.Column="0">
+                        <StackPanel Grid.Row="4" Grid.Column="0">
                             <TextBlock Text="{Binding Localization[Settings_ForceQuitTimeout]}" FontWeight="Bold" />
                             <TextBlock Text="{Binding Localization[Settings_ForceQuitDesc]}" FontSize="12"
                                        Opacity="0.7" />
                         </StackPanel>
-                        <StackPanel Grid.Row="6" Grid.Column="1" Orientation="Horizontal" Spacing="10"
+                        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" Spacing="10"
                                     IsEnabled="{Binding !IsSettingsLocked}">
                             <NumericUpDown Value="{Binding ForceQuitTimeout}" Minimum="1" Maximum="60" Width="100" />
                             <TextBlock Text="{Binding Localization[Unit_Seconds]}" VerticalAlignment="Center" />
                         </StackPanel>
 
-                        <!-- File Processing Timeout -->
-                        <StackPanel Grid.Row="8" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_FileTimeout]}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Localization[Settings_FileTimeoutDesc]}" FontSize="12"
-                                       Opacity="0.7" />
-                        </StackPanel>
-                        <StackPanel Grid.Row="8" Grid.Column="1" Orientation="Horizontal" Spacing="10"
-                                    IsEnabled="{Binding !IsSettingsLocked}">
-                            <ToggleSwitch IsChecked="{Binding Prefs.IsFileTimeoutEnabled}" />
-                            <NumericUpDown Value="{Binding Prefs.FileTimeoutSeconds}" Minimum="10" Maximum="3600"
-                                           Width="100"
-                                           IsEnabled="{Binding Prefs.IsFileTimeoutEnabled}" />
-                            <TextBlock Text="{Binding Localization[Unit_Seconds]}" VerticalAlignment="Center" />
-                        </StackPanel>
-
                         <!-- Force Quit Button -->
-                        <StackPanel Grid.Row="10" Grid.Column="0">
+                        <StackPanel Grid.Row="6" Grid.Column="0">
                             <TextBlock Text="{Binding Localization[Settings_Emergency]}" FontWeight="Bold"
                                        Foreground="Red" />
                             <TextBlock Text="{Binding Localization[Settings_EmergencyDesc]}" FontSize="12"
                                        Opacity="0.7" />
                         </StackPanel>
-                        <Button Grid.Row="10" Grid.Column="1"
+                        <Button Grid.Row="6" Grid.Column="1"
                                 Content="{Binding Localization[Settings_BtnForceQuit]}"
                                 Command="{Binding ForceQuitAndCancelAllCommand}"
                                 Background="#FF4444" Foreground="White" />

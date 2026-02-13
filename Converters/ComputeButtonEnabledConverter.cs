@@ -19,6 +19,6 @@ public class ComputeButtonEnabledConverter : IMultiValueConverter
             return false;
         }
 
-        return !isCancelled && (isProcessing || !isGlobalBusy);
+        return isProcessing || !isGlobalBusy;
     }
 }

@@ -42,6 +42,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
     protected override void NotifyCommands()
     {
         VerifyAllCommand.NotifyCanExecuteChanged();
+        CancelAllCommand.NotifyCanExecuteChanged();
 
         // Base commands
         AddFilesCommand.NotifyCanExecuteChanged();
@@ -49,6 +50,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
         ClearListCommand.NotifyCanExecuteChanged();
         RemoveFileCommand.NotifyCanExecuteChanged();
         ClearFailedCommand.NotifyCanExecuteChanged();
+        BrowseHashFileCommand.NotifyCanExecuteChanged();
     }
 
     protected override IEnumerable<FileItem> GetFailedItems()
@@ -178,6 +180,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
                         if (result.SourceExists && result.SourceInfo != null)
                         {
                             item.FileSize = FileItem.FormatSize(result.SourceInfo.Length);
+                            item.RawSizeBytes = result.SourceInfo.Length;
                         }
                         else
                         {
@@ -196,6 +199,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
                             {
                                 FileName = fileName,
                                 FilePath = path,
+                                RawSizeBytes = result.Info.Length,
                                 FileSize = FileItem.FormatSize(result.Info.Length),
                                 Status = L["Status_Waiting"],
                                 ExpectedHash = ""
@@ -256,14 +260,24 @@ public partial class CheckHashViewModel : FileListViewModelBase
         var counters = new int[2];
         var startTime = DateTime.UtcNow;
 
-        using var cts = new CancellationTokenSource();
+        // Reset items
+        foreach (var item in queue)
+        {
+            item.Status = L["Status_Waiting"];
+            item.IsMatch = null;
+            item.IsCancelled = false;
+            item.ProcessDuration = "";
+        }
+
+        _batchCts = new CancellationTokenSource();
+        using var progressCts = new CancellationTokenSource();
         var progressTask = Task.Run(async () =>
         {
             try
             {
-                while (!cts.Token.IsCancellationRequested)
+                while (!progressCts.Token.IsCancellationRequested)
                 {
-                    await Task.Delay(250, cts.Token);
+                    await Task.Delay(250, progressCts.Token);
                     var current = counters[0];
 
                     var elapsed = (DateTime.UtcNow - startTime).TotalSeconds;
@@ -292,12 +306,18 @@ public partial class CheckHashViewModel : FileListViewModelBase
 
         try
         {
+            var strategyService = new ProcessingStrategyService();
+            var options = strategyService.GetProcessingOptions(queue.Select(f => f.RawSizeBytes));
+            Logger.Log($"Using strategy: MaxDOP={options.MaxDegreeOfParallelism}, Buffer={options.BufferSize ?? 0}B");
+
             await Parallel.ForEachAsync(queue, new ParallelOptions
             {
-                MaxDegreeOfParallelism = Environment.ProcessorCount
+                MaxDegreeOfParallelism = options.MaxDegreeOfParallelism,
+                CancellationToken = _batchCts.Token
             }, async (file, ct) =>
             {
-                await VerifyItemLogicAsync(file);
+                await VerifyItemLogicAsync(file, options.BufferSize);
+
 
                 Interlocked.Increment(ref counters[0]);
                 if (file.Status == statusCancelled)
@@ -306,9 +326,15 @@ public partial class CheckHashViewModel : FileListViewModelBase
                 }
             });
         }
+        catch (OperationCanceledException)
+        {
+            Logger.Log("Batch verification cancelled.");
+        }
         finally
         {
-            cts.Cancel();
+            progressCts.Cancel();
+            _batchCts?.Dispose();
+            _batchCts = null;
         }
 
         try
@@ -380,8 +406,6 @@ public partial class CheckHashViewModel : FileListViewModelBase
     [RelayCommand]
     private async Task VerifySingleAsync(FileItem item)
     {
-        if (item.IsCancelled) return;
-
         if (IsChecking && !item.IsProcessing) return;
 
         if (item.IsProcessing)
@@ -393,6 +417,9 @@ public partial class CheckHashViewModel : FileListViewModelBase
         try
         {
             IsChecking = true;
+            item.Status = L["Status_Waiting"];
+            item.IsMatch = null;
+            item.IsCancelled = false;
             await VerifyItemLogicAsync(item);
         }
         finally
@@ -401,7 +428,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
         }
     }
 
-    private async Task VerifyItemLogicAsync(FileItem file)
+    private async Task VerifyItemLogicAsync(FileItem file, int? bufferSize = null)
     {
         await Dispatcher.UIThread.InvokeAsync(() =>
         {
@@ -438,7 +465,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
         string Duration,
         string? NewExpectedHash = null
     );
-    private async Task<VerificationResult> VerifyFileInternalAsync(FileItem file, CancellationToken ct)
+    private async Task<VerificationResult> VerifyFileInternalAsync(FileItem file, CancellationToken ct, int? bufferSize = null)
     {
         var sw = Stopwatch.StartNew();
         var result = new VerificationResult
@@ -488,7 +515,11 @@ public partial class CheckHashViewModel : FileListViewModelBase
             else
             {
                 var algoToCheck = file.HasSpecificAlgorithm ? file.SelectedAlgorithm : GlobalAlgorithm;
-                var actualHash = await _hashService.ComputeHashAsync(file.FilePath, algoToCheck, ct);
+                if (algoToCheck.IsInsecure())
+                {
+                    LoggerService.Instance.Log($"Weak algorithm used for verification: {algoToCheck}", LogLevel.Warning);
+                }
+                var actualHash = await _hashService.ComputeHashAsync(file.FilePath, algoToCheck, ct, bufferSize);
 
                 if (string.Equals(actualHash, expectedHash.Trim(), StringComparison.OrdinalIgnoreCase))
                 {
@@ -551,7 +582,12 @@ public partial class CheckHashViewModel : FileListViewModelBase
         public string HashContent { get; set; } = "";
     }
 
-    [RelayCommand]
+    private bool CanBrowseHashFile(FileItem item)
+    {
+        return !IsChecking;
+    }
+
+    [RelayCommand(CanExecute = nameof(CanBrowseHashFile))]
     private async Task BrowseHashFileAsync(FileItem item)
     {
         var window =

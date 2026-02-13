@@ -20,7 +20,7 @@ public partial class LocalizationService : ObservableObject
     private readonly ConcurrentDictionary<string, string> _cache = new();
     private readonly CultureInfo _systemCulture;
     private readonly CultureInfo _systemUICulture;
-    private CultureInfo _currentCulture;
+    private CultureInfo _currentCulture = CultureInfo.InvariantCulture;
     [ObservableProperty] private FlowDirection _flowDirection = FlowDirection.LeftToRight;
 
     [ObservableProperty] private LanguageItem _selectedLanguage;

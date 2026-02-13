@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Http;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Reflection;
 using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using Velopack;
@@ -22,9 +23,11 @@ public enum NetworkStatus
 public class UpdateService
 {
     private static UpdateService? _instance;
+
     public static UpdateService Instance => _instance ??= new UpdateService();
+
     // URL GitHub Repo
-    private const string RepoUrl = "https://github.com/poli0981/CheckHash-Multiflatform";
+    private const string RepoUrl = "https://github.com/poli0981/HashTool";
     private readonly HttpClient _httpClient;
 
     private UpdateManager? _manager;
@@ -32,8 +35,10 @@ public class UpdateService
     public UpdateService()
     {
         _httpClient = new HttpClient();
+        _httpClient.Timeout = TimeSpan.FromSeconds(30);
         // GitHub API requires a User-Agent header
-        _httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("CheckHash", "1.0"));
+        var version = Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "1.0.0";
+        _httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("HashTool", version));
 
         try
         {
@@ -115,18 +120,12 @@ public class UpdateService
     {
         try
         {
-            // Build GitHub API URL of the release by tag name
-            // From https://github.com/user/repo
-            // To https://api.github.com/repos/user/repo/releases/tags/{version}
-
             var apiUrlBase = RepoUrl.Replace("https://github.com/", "https://api.github.com/repos/");
 
-            // Try without 'v' prefix (e.g: 1.0.1)
             var url = $"{apiUrlBase}/releases/tags/{version}";
 
             var response = await _httpClient.GetAsync(url);
 
-            // If url not found, try with 'v' prefix (e.g: v1.0.1)
             if (response.StatusCode == HttpStatusCode.NotFound)
             {
                 url = $"{apiUrlBase}/releases/tags/v{version}";

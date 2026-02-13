@@ -625,4 +625,25 @@
     <data name="Btn_Cancel">
         <value>Cancel</value>
     </data>
+    <data name="Settings_Limits">
+        <value>Processing Limits</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Max Files per Folder Scan</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Limit the number of files added from a folder to prevent performance issues.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Max Folders per Click</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Limit the number of folders selected at once.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>You can only select up to {0} folders at a time.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Added {0} files. Skipped {1} files due to limit.</value>
+    </data>
 </root>

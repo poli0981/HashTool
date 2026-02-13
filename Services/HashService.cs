@@ -31,9 +31,9 @@ public class HashService
     private const int DefaultBufferSize = 80 * AppConstants.OneKB;
     private const int LargeBufferSize = AppConstants.OneMB;
 
-    public async Task<string> ComputeHashAsync(string filePath, HashType type, CancellationToken token)
+    public async Task<string> ComputeHashAsync(string filePath, HashType type, CancellationToken token, int? bufferSize = null)
     {
-        int bufferSize = type == HashType.BLAKE3 ? DefaultBufferSize : LargeBufferSize;
+        int actualBufferSize = bufferSize ?? (type == HashType.BLAKE3 ? DefaultBufferSize : LargeBufferSize);
 
         try
         {
@@ -42,7 +42,7 @@ public class HashService
                 FileMode.Open,
                 FileAccess.Read,
                 FileShare.Read,
-                bufferSize,
+                actualBufferSize,
                 FileOptions.Asynchronous | FileOptions.SequentialScan);
 
             var hashBytes = type switch
@@ -52,7 +52,7 @@ public class HashService
                 HashType.SHA256 => await SHA256.HashDataAsync(stream, token),
                 HashType.SHA384 => await SHA384.HashDataAsync(stream, token),
                 HashType.SHA512 => await SHA512.HashDataAsync(stream, token),
-                HashType.BLAKE3 => await ComputeBlake3Async(stream, token, bufferSize),
+                HashType.BLAKE3 => await ComputeBlake3Async(stream, token, actualBufferSize),
                 HashType.XxHash32 => await ComputeXxHash32Async(stream, token),
                 HashType.XxHash64 => await ComputeXxHash64Async(stream, token),
                 HashType.XxHash3 => await ComputeXxHash3Async(stream, token),

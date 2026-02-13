@@ -8,7 +8,7 @@
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/icon/favicon.ico"
         Title="{Binding AppTitleText}"
-        Width="1280" Height="720"
+        Width="1600" Height="900"
         WindowStartupLocation="CenterScreen"
         Background="{DynamicResource AppBackgroundBrush}"
         SystemDecorations="Full"
@@ -38,6 +38,25 @@
     </Window.KeyBindings>
 
     <Window.Styles>
+        <Style Selector="StackPanel.DragOver">
+            <Setter Property="Background">
+                <SolidColorBrush Color="{DynamicResource SystemAccentColor}" Opacity="0.2" />
+            </Setter>
+            <Setter Property="Opacity" Value="1.0" />
+        </Style>
+
+        <Style Selector="ListBox.DragOver">
+            <Setter Property="Background">
+                <SolidColorBrush Color="{DynamicResource SystemAccentColor}" Opacity="0.2" />
+            </Setter>
+        </Style>
+
+        <Style Selector="TextBox.DragOver">
+            <Setter Property="Background">
+                <SolidColorBrush Color="{DynamicResource SystemAccentColor}" Opacity="0.2" />
+            </Setter>
+        </Style>
+
         <Style Selector="Button.MenuBtn">
             <Setter Property="Background" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0" />
@@ -106,26 +125,38 @@
                     <TextBlock Grid.Column="1" Text="{Binding TotalFilesText}" VerticalAlignment="Center" Opacity="0.7" />
                 </Grid>
 
-                <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="10" Margin="0,0,0,15"
-                            IsEnabled="{Binding !IsComputing}">
-                    <Button Content="{Binding Localization[Btn_AddFiles]}" Command="{Binding AddFilesCommand}"
-                            CommandParameter="{Binding $parent[Window]}"
-                            ToolTip.Tip="Ctrl+F / Cmd+F" />
-                    <Button Content="{Binding Localization[Btn_AddFolder]}" Command="{Binding AddFolderCommand}"
-                            CommandParameter="{Binding $parent[Window]}" />
-                    <Button Content="{Binding Localization[Btn_Clear]}" Command="{Binding ClearListCommand}"
-                            ToolTip.Tip="Ctrl+Shift+H" />
-                    <Button Content="{Binding Localization[Btn_ClearFailed]}" Command="{Binding ClearFailedCommand}"
-                            IsVisible="{Binding Files.Count}" />
-                    <Button Content="{Binding Localization[Btn_Compress]}"
-                            Command="{Binding CompressFilesCommand}"
-                            CommandParameter="{Binding $parent[Window]}"
-                            IsEnabled="{Binding Files.Count}"
-                            ToolTip.Tip="Shift+Z" />
-                    <Button Content="{Binding Localization[Btn_CalcAll]}"
-                            Background="{DynamicResource SystemAccentColor}" Foreground="White"
-                            Command="{Binding ComputeAllCommand}"
-                            ToolTip.Tip="Shift+C" />
+                <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="10" Margin="0,0,0,15">
+                    <StackPanel Orientation="Horizontal" Spacing="10" IsEnabled="{Binding !IsComputing}">
+                        <Button Content="{Binding Localization[Btn_AddFiles]}" Command="{Binding AddFilesCommand}"
+                                CommandParameter="{Binding $parent[Window]}"
+                                ToolTip.Tip="Ctrl+F / Cmd+F" />
+                        <Button Content="{Binding Localization[Btn_AddFolder]}" Command="{Binding AddFolderCommand}"
+                                CommandParameter="{Binding $parent[Window]}" />
+                        <Button Content="{Binding Localization[Btn_Clear]}" Command="{Binding ClearListCommand}"
+                                ToolTip.Tip="Ctrl+Shift+H" />
+                        <Button Content="{Binding Localization[Btn_ClearFailed]}"
+                                Command="{Binding ClearFailedCommand}"
+                                IsVisible="{Binding Files.Count}" />
+                        <Button Content="{Binding Localization[Btn_Compress]}"
+                                Command="{Binding CompressFilesCommand}"
+                                CommandParameter="{Binding $parent[Window]}"
+                                IsEnabled="{Binding Files.Count}"
+                                ToolTip.Tip="Shift+Z" />
+                    </StackPanel>
+
+                    <Panel>
+                        <Button Content="{Binding Localization[Btn_CalcAll]}"
+                                Background="{DynamicResource SystemAccentColor}" Foreground="White"
+                                Command="{Binding ComputeAllCommand}"
+                                IsVisible="{Binding !IsComputing}"
+                                ToolTip.Tip="Shift+C" />
+                        <Button Content="{Binding Localization[Btn_Cancel]}"
+                                Background="#FF6060" Foreground="White"
+                                Command="{Binding CancelAllCommand}"
+                                IsVisible="{Binding IsComputing}"
+                                ToolTip.Tip="Esc" />
+                    </Panel>
+
                     <TextBlock Text="{Binding RemainingTime}" VerticalAlignment="Center" Margin="10,0,0,0"
                                IsVisible="{Binding IsComputing}" FontWeight="SemiBold" />
                 </StackPanel>
@@ -136,7 +167,9 @@
                 <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"
                             IsVisible="{Binding Files.Count, Converter={StaticResource CountToVisibilityConverter}}"
                             Opacity="0.5" Spacing="10"
-                            DragDrop.AllowDrop="True" DragDrop.Drop="OnMainDrop" Background="Transparent">
+                            DragDrop.AllowDrop="True" DragDrop.Drop="OnMainDrop"
+                            DragDrop.DragEnter="OnDragEnter" DragDrop.DragLeave="OnDragLeave"
+                            Background="Transparent">
                     <icons:MaterialIcon Kind="FilePlusOutline" Width="64" Height="64" />
                     <TextBlock Text="{Binding Localization[EmptyState_DropFiles]}"
                                FontSize="16" HorizontalAlignment="Center" />
@@ -144,7 +177,8 @@
 
                 <ListBox Grid.Row="2" ItemsSource="{Binding Files}" Background="Transparent"
                          IsVisible="{Binding Files.Count}"
-                         DragDrop.AllowDrop="True" DragDrop.Drop="OnMainDrop">
+                         DragDrop.AllowDrop="True" DragDrop.Drop="OnMainDrop"
+                         DragDrop.DragEnter="OnDragEnter" DragDrop.DragLeave="OnDragLeave">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Border BorderBrush="#30808080" BorderThickness="0,0,0,1" Padding="5">
@@ -237,8 +271,7 @@
                                                 AutomationProperties.Name="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).Localization[Dialog_SaveHash]}"
                                                 Background="Transparent"
                                                 Command="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).SaveHashFileCommand}"
-                                                CommandParameter="{Binding .}"
-                                                IsEnabled="{Binding ResultHash, Converter={x:Static StringConverters.IsNotNullOrEmpty}}">
+                                                CommandParameter="{Binding .}">
                                             <icons:MaterialIcon Kind="ContentSave" Width="18" Height="18" />
                                         </Button>
 
@@ -280,8 +313,7 @@
                                                 AutomationProperties.Name="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).Localization[Tip_RemoveFile]}"
                                                 Background="Transparent"
                                                 Command="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).RemoveFileCommand}"
-                                                CommandParameter="{Binding .}"
-                                                IsEnabled="{Binding !IsProcessing}">
+                                                CommandParameter="{Binding .}">
                                             <icons:MaterialIcon Kind="TrashCanOutline" Width="18" Height="18"
                                                                 Foreground="#FF6060" />
                                         </Button>
@@ -307,27 +339,38 @@
                     <TextBlock Grid.Column="1" Text="{Binding TotalFilesText}" VerticalAlignment="Center" Opacity="0.7" />
                 </Grid>
 
-                <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="10" Margin="0,0,0,10"
-                            IsEnabled="{Binding !IsChecking}">
-                    <Button Content="{Binding Localization[Btn_AddFiles]}"
-                            Command="{Binding AddFilesCommand}"
-                            CommandParameter="{Binding $parent[Window]}"
-                            ToolTip.Tip="Ctrl+F / Cmd+F" />
-                    <Button Content="{Binding Localization[Btn_AddFolder]}" Command="{Binding AddFolderCommand}"
-                            CommandParameter="{Binding $parent[Window]}" />
-                    <Button Content="{Binding Localization[Btn_Clear]}" Command="{Binding ClearListCommand}"
-                            ToolTip.Tip="Ctrl+Shift+H" />
-                    <Button Content="{Binding Localization[Btn_ClearFailed]}" Command="{Binding ClearFailedCommand}"
-                            IsVisible="{Binding Files.Count}" />
+                <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="10" Margin="0,0,0,10">
+                    <StackPanel Orientation="Horizontal" Spacing="10" IsEnabled="{Binding !IsChecking}">
+                        <Button Content="{Binding Localization[Btn_AddFiles]}"
+                                Command="{Binding AddFilesCommand}"
+                                CommandParameter="{Binding $parent[Window]}"
+                                ToolTip.Tip="Ctrl+F / Cmd+F" />
+                        <Button Content="{Binding Localization[Btn_AddFolder]}" Command="{Binding AddFolderCommand}"
+                                CommandParameter="{Binding $parent[Window]}" />
+                        <Button Content="{Binding Localization[Btn_Clear]}" Command="{Binding ClearListCommand}"
+                                ToolTip.Tip="Ctrl+Shift+H" />
+                        <Button Content="{Binding Localization[Btn_ClearFailed]}"
+                                Command="{Binding ClearFailedCommand}"
+                                IsVisible="{Binding Files.Count}" />
 
-                    <TextBlock Text="{Binding Localization[Lbl_Sample]}" VerticalAlignment="Center" />
-                    <ComboBox ItemsSource="{Binding AlgorithmList}" SelectedItem="{Binding GlobalAlgorithm}"
-                              Width="150" VerticalAlignment="Center" />
+                        <TextBlock Text="{Binding Localization[Lbl_Sample]}" VerticalAlignment="Center" />
+                        <ComboBox ItemsSource="{Binding AlgorithmList}" SelectedItem="{Binding GlobalAlgorithm}"
+                                  Width="150" VerticalAlignment="Center" />
+                    </StackPanel>
 
-                    <Button Content="{Binding Localization[Btn_CheckAll]}"
-                            Background="{DynamicResource SystemAccentColor}" Foreground="White"
-                            Command="{Binding VerifyAllCommand}"
-                            ToolTip.Tip="Shift+A" />
+                    <Panel>
+                        <Button Content="{Binding Localization[Btn_CheckAll]}"
+                                Background="{DynamicResource SystemAccentColor}" Foreground="White"
+                                Command="{Binding VerifyAllCommand}"
+                                IsVisible="{Binding !IsChecking}"
+                                ToolTip.Tip="Shift+A" />
+                        <Button Content="{Binding Localization[Btn_Cancel]}"
+                                Background="#FF6060" Foreground="White"
+                                Command="{Binding CancelAllCommand}"
+                                IsVisible="{Binding IsChecking}"
+                                ToolTip.Tip="Esc" />
+                    </Panel>
+
                     <TextBlock Text="{Binding RemainingTime}" VerticalAlignment="Center" Margin="10,0,0,0"
                                IsVisible="{Binding IsChecking}" FontWeight="SemiBold" />
                 </StackPanel>
@@ -338,7 +381,9 @@
                 <StackPanel Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"
                             IsVisible="{Binding Files.Count, Converter={StaticResource CountToVisibilityConverter}}"
                             Opacity="0.5" Spacing="10"
-                            DragDrop.AllowDrop="True" DragDrop.Drop="OnMainDrop" Background="Transparent">
+                            DragDrop.AllowDrop="True" DragDrop.Drop="OnMainDrop"
+                            DragDrop.DragEnter="OnDragEnter" DragDrop.DragLeave="OnDragLeave"
+                            Background="Transparent">
                     <icons:MaterialIcon Kind="FilePlusOutline" Width="64" Height="64" />
                     <TextBlock Text="{Binding Localization[EmptyState_DropFiles]}"
                                FontSize="16" HorizontalAlignment="Center" />
@@ -346,7 +391,8 @@
 
                 <ListBox Grid.Row="3" ItemsSource="{Binding Files}" Background="Transparent"
                          IsVisible="{Binding Files.Count}"
-                         DragDrop.AllowDrop="True" DragDrop.Drop="OnMainDrop">
+                         DragDrop.AllowDrop="True" DragDrop.Drop="OnMainDrop"
+                         DragDrop.DragEnter="OnDragEnter" DragDrop.DragLeave="OnDragLeave">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Border BorderBrush="#30808080" BorderThickness="0,0,0,1" Padding="5">
@@ -395,8 +441,8 @@
                                                      Watermark="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Watermark_PasteDrop]}"
                                                      VerticalAlignment="Center" FontFamily="Consolas, Monospace"
                                                      FontSize="11"
-                                                     DragDrop.AllowDrop="True" DragDrop.Drop="OnHashFileDrop">
-                                                <TextBox.IsVisible>
+                                                     DragDrop.AllowDrop="True" DragDrop.Drop="OnHashFileDrop"
+                                                     DragDrop.DragEnter="OnDragEnter" DragDrop.DragLeave="OnDragLeave">                                                <TextBox.IsVisible>
                                                     <MultiBinding Converter="{x:Static BoolConverters.Or}">
                                                         <Binding
                                                             Path="!$parent[Window].((vm:MainWindowViewModel)DataContext).Prefs.IsHashMaskingEnabled" />
@@ -483,8 +529,7 @@
                                                 AutomationProperties.Name="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_RemoveFile]}"
                                                 Background="Transparent"
                                                 Command="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).RemoveFileCommand}"
-                                                CommandParameter="{Binding .}"
-                                                IsEnabled="{Binding !IsProcessing}">
+                                                CommandParameter="{Binding .}">
                                             <icons:MaterialIcon Kind="TrashCanOutline" Width="18" Height="18"
                                                                 Foreground="#FF6060" />
                                         </Button>

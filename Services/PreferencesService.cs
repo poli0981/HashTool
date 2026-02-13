@@ -12,6 +12,10 @@ public partial class PreferencesService : ObservableObject
     [ObservableProperty] private bool _isFileSizeLimitEnabled;
     [ObservableProperty] private bool _isFileTimeoutEnabled;
     [ObservableProperty] private bool _isHashMaskingEnabled;
+    [ObservableProperty] private bool _isMaxFileCountEnabled = true;
+    [ObservableProperty] private int _maxFileCount = 1000;
+    [ObservableProperty] private bool _isMaxFolderCountEnabled = true;
+    [ObservableProperty] private int _maxFolderCount = 3;
     public static PreferencesService Instance { get; } = new();
     public event EventHandler? ForceCancelRequested;
 
