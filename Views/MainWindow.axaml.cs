@@ -47,8 +47,29 @@ public partial class MainWindow : Window
             }
     }
 
+    private void OnDragEnter(object? sender, DragEventArgs e)
+    {
+        if (e.Data.Contains(DataFormats.Files) && sender is Control control)
+        {
+            control.Classes.Add("DragOver");
+        }
+    }
+
+    private void OnDragLeave(object? sender, DragEventArgs e)
+    {
+        if (sender is Control control)
+        {
+            control.Classes.Remove("DragOver");
+        }
+    }
+
     private async void OnHashFileDrop(object? sender, DragEventArgs e)
     {
+        if (sender is Control control)
+        {
+            control.Classes.Remove("DragOver");
+        }
+
 #pragma warning disable CS0618 // Type or member is obsolete
         if (e.Data.Contains(DataFormats.Files))
         {
@@ -99,12 +120,17 @@ public partial class MainWindow : Window
 
     private async void OnMainDrop(object? sender, DragEventArgs e)
     {
+        if (sender is Control control)
+        {
+            control.Classes.Remove("DragOver");
+        }
+
         if (e.Data.Contains(DataFormats.Files))
         {
             var files = e.Data.GetFiles()?.Select(x => x.Path.LocalPath).ToList();
             if (files == null || files.Count == 0) return;
 
-            if (sender is Control control && control.DataContext is FileListViewModelBase vm)
+            if (sender is Control ctrl && ctrl.DataContext is FileListViewModelBase vm)
             {
                 await vm.AddFilesFromPaths(files);
             }

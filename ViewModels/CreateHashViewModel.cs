@@ -43,6 +43,7 @@ public partial class CreateHashViewModel : FileListViewModelBase
     protected override void NotifyCommands()
     {
         ComputeAllCommand.NotifyCanExecuteChanged();
+        CancelAllCommand.NotifyCanExecuteChanged();
         CompressFilesCommand.NotifyCanExecuteChanged();
 
         // Base commands
@@ -51,6 +52,8 @@ public partial class CreateHashViewModel : FileListViewModelBase
         ClearListCommand.NotifyCanExecuteChanged();
         RemoveFileCommand.NotifyCanExecuteChanged();
         ClearFailedCommand.NotifyCanExecuteChanged();
+        CopyToClipboardCommand.NotifyCanExecuteChanged();
+        SaveHashFileCommand.NotifyCanExecuteChanged();
     }
 
     protected override IEnumerable<FileItem> GetFailedItems()
@@ -108,6 +111,7 @@ public partial class CreateHashViewModel : FileListViewModelBase
                             FileName = fileName,
                             FilePath = path,
                             FileSize = FileItem.FormatSize(len),
+                            RawSizeBytes = len,
                             SelectedAlgorithm = selectedAlgo
                         };
                         results[i] = item;
@@ -218,14 +222,25 @@ public partial class CreateHashViewModel : FileListViewModelBase
         var statusDone = L["Status_Done"];
         var statusCancelled = L["Status_Cancelled"];
 
-        using var cts = new CancellationTokenSource();
+        // Reset items
+        foreach (var item in queue)
+        {
+            item.ResultHash = "";
+            item.Status = L["Status_Waiting"];
+            item.IsMatch = null;
+            item.IsCancelled = false;
+            item.ProcessDuration = "";
+        }
+
+        _batchCts = new CancellationTokenSource();
+        using var progressCts = new CancellationTokenSource();
         var progressTask = Task.Run(async () =>
         {
             try
             {
-                while (!cts.Token.IsCancellationRequested)
+                while (!progressCts.Token.IsCancellationRequested)
                 {
-                    await Task.Delay(250, cts.Token);
+                    await Task.Delay(250, progressCts.Token);
                     var current = processedCount;
 
                     var elapsed = (DateTime.UtcNow - startTime).TotalSeconds;
@@ -252,9 +267,13 @@ public partial class CreateHashViewModel : FileListViewModelBase
 
         try
         {
+            var strategyService = new ProcessingStrategyService();
+            var options = strategyService.GetProcessingOptions(queue.Select(f => f.RawSizeBytes));
+            Logger.Log($"Using strategy: MaxDOP={options.MaxDegreeOfParallelism}, Buffer={options.BufferSize ?? 0}B");
             await Parallel.ForEachAsync(queue, new ParallelOptions
             {
-                MaxDegreeOfParallelism = Environment.ProcessorCount
+                MaxDegreeOfParallelism = options.MaxDegreeOfParallelism,
+                CancellationToken = _batchCts.Token
             }, async (file, ct) =>
             {
                 if (file.IsDeleted)
@@ -263,7 +282,7 @@ public partial class CreateHashViewModel : FileListViewModelBase
                     return;
                 }
 
-                await ProcessItemAsync(file);
+                await ProcessItemAsync(file, options.BufferSize);
 
                 Interlocked.Increment(ref processedCount);
 
@@ -272,9 +291,15 @@ public partial class CreateHashViewModel : FileListViewModelBase
                 else Interlocked.Increment(ref fail);
             });
         }
+        catch (OperationCanceledException)
+        {
+            Logger.Log("Batch computation cancelled.");
+        }
         finally
         {
-            cts.Cancel();
+            progressCts.Cancel();
+            _batchCts?.Dispose();
+            _batchCts = null;
         }
 
         try
@@ -295,7 +320,12 @@ public partial class CreateHashViewModel : FileListViewModelBase
             string.Format(L["Msg_Result_Content"], success, fail, cancelled));
     }
 
-    [RelayCommand]
+    private bool CanSaveHashFile(FileItem? item)
+    {
+        return !IsComputing && item != null && !string.IsNullOrEmpty(item.ResultHash);
+    }
+
+    [RelayCommand(CanExecute = nameof(CanSaveHashFile))]
     private async Task SaveHashFile(FileItem item)
     {
         if (string.IsNullOrEmpty(item.ResultHash)) return;
@@ -326,8 +356,12 @@ public partial class CreateHashViewModel : FileListViewModelBase
         }
     }
 
-    [RelayCommand]
-    private async Task CopyToClipboard(string hash)
+    private bool CanCopyToClipboard(string? hash)
+    {
+        return !IsComputing && !string.IsNullOrEmpty(hash);
+    }
+    [RelayCommand(CanExecute = nameof(CanCopyToClipboard))]
+    private async Task CopyToClipboard(string? hash)
     {
         if (string.IsNullOrEmpty(hash)) return;
 
@@ -345,7 +379,7 @@ public partial class CreateHashViewModel : FileListViewModelBase
         }
     }
 
-    private async Task ProcessItemAsync(FileItem item)
+    private async Task ProcessItemAsync(FileItem item, int? bufferSize = null)
     {
         await Dispatcher.UIThread.InvokeAsync(() =>
         {
@@ -360,13 +394,16 @@ public partial class CreateHashViewModel : FileListViewModelBase
 
         var stopwatch = Stopwatch.StartNew();
         Logger.Log($"Computing hash for {item.FileName} ({item.SelectedAlgorithm})...");
-
+        if (item.SelectedAlgorithm.IsInsecure())
+        {
+            LoggerService.Instance.Log($"Weak algorithm selected: {item.SelectedAlgorithm}", LogLevel.Warning);
+        }
         string? resultHash = null;
         string status = "";
 
         try
         {
-            resultHash = await _hashService.ComputeHashAsync(item.FilePath, item.SelectedAlgorithm, item.Cts.Token);
+            resultHash = await _hashService.ComputeHashAsync(item.FilePath, item.SelectedAlgorithm, item.Cts.Token, bufferSize);
             status = L["Status_Done"];
             Logger.Log($"Computed {item.FileName}: {resultHash}", LogLevel.Success);
         }
@@ -404,7 +441,6 @@ public partial class CreateHashViewModel : FileListViewModelBase
     [RelayCommand]
     private async Task ComputeSingle(FileItem item)
     {
-        if (item.IsCancelled) return;
         if (IsComputing && !item.IsProcessing) return;
         if (item.IsProcessing)
         {
@@ -415,6 +451,9 @@ public partial class CreateHashViewModel : FileListViewModelBase
         try
         {
             IsComputing = true;
+            item.ResultHash = "";
+            item.Status = L["Status_Waiting"];
+            item.IsCancelled = false;
             await ProcessItemAsync(item);
         }
         finally

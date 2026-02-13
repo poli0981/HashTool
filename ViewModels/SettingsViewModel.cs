@@ -19,7 +19,7 @@ public partial class SettingsViewModel : ObservableObject
     // Config Path
     [ObservableProperty] private string _configFilePath;
 
-    [ObservableProperty] private List<AppThemeStyle> _filteredThemeStyles;
+    [ObservableProperty] private List<AppThemeStyle> _filteredThemeStyles = new();
     [ObservableProperty] private int _forceQuitTimeout;
 
     [ObservableProperty] private bool _isAdminModeEnabled;
@@ -364,6 +364,12 @@ public partial class SettingsViewModel : ObservableObject
             Prefs.IsFileTimeoutEnabled = config.IsFileTimeoutEnabled;
             Prefs.FileTimeoutSeconds = config.FileTimeoutSeconds;
 
+            Prefs.IsMaxFileCountEnabled = config.IsMaxFileCountEnabled;
+            Prefs.MaxFileCount = config.MaxFileCount;
+
+            Prefs.IsMaxFolderCountEnabled = config.IsMaxFolderCountEnabled;
+            Prefs.MaxFolderCount = config.MaxFolderCount;
+
             IsAdminModeEnabled = config.IsAdminModeEnabled;
             ForceQuitTimeout = config.ForceQuitTimeout;
             _showLanguageChangeWarning = config.ShowLanguageChangeWarning;
@@ -390,21 +396,21 @@ public partial class SettingsViewModel : ObservableObject
             ThemeStyle = Theme.CurrentThemeStyle,
             ThemeVariant = Theme.CurrentThemeVariant,
             IsThemeLocked = Theme.IsThemeLocked,
-
             FontFamily = Font.SelectedFont?.Name,
             BaseFontSize = Font.BaseFontSize,
             UiScale = Font.UiScale,
             IsFontLocked = Font.IsLockedFont,
             IsAutoFont = Font.IsAutoFont,
             IsHashMaskingEnabled = Prefs.IsHashMaskingEnabled,
-
             IsFileSizeLimitEnabled = Prefs.IsFileSizeLimitEnabled,
             FileSizeLimitValue = Prefs.FileSizeLimitValue,
             FileSizeLimitUnit = Prefs.FileSizeLimitUnit,
-
             IsFileTimeoutEnabled = Prefs.IsFileTimeoutEnabled,
             FileTimeoutSeconds = Prefs.FileTimeoutSeconds,
-
+            IsMaxFileCountEnabled = Prefs.IsMaxFileCountEnabled,
+            MaxFileCount = Prefs.MaxFileCount,
+            IsMaxFolderCountEnabled = Prefs.IsMaxFolderCountEnabled,
+            MaxFolderCount = Prefs.MaxFolderCount,
             IsAdminModeEnabled = IsAdminModeEnabled,
             ForceQuitTimeout = ForceQuitTimeout,
 

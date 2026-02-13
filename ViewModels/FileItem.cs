@@ -13,6 +13,7 @@ public partial class FileItem : ObservableObject
     [ObservableProperty] private string _fileName = "";
     [ObservableProperty] private string _filePath = "";
     [ObservableProperty] private string _fileSize = "";
+    [ObservableProperty] private long _rawSizeBytes;
     [ObservableProperty] private bool? _isMatch;
     [ObservableProperty] private bool _isProcessing;
     [ObservableProperty] private bool _isCancelled;

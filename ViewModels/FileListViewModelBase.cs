@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Collections;
@@ -83,10 +84,9 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
     protected virtual string GetClearLogMessage() => "Cleared file list.";
 
     [RelayCommand(CanExecute = nameof(CanModifyList))]
-    protected virtual void RemoveFile(FileItem item)
+    protected virtual void RemoveFile(FileItem? item)
     {
-        if (item.IsProcessing) return;
-
+        if (item == null || item.IsProcessing) return;
         item.Cts?.Cancel();
         item.Cts?.Dispose();
         item.IsDeleted = true;
@@ -104,6 +104,19 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
 
     // Abstract methods to hook into subclass specific logic
     protected abstract void NotifyCommands();
+
+    protected CancellationTokenSource? _batchCts;
+
+    [RelayCommand(CanExecute = nameof(IsGlobalBusy))]
+    protected virtual void CancelAll()
+    {
+        Logger.Log("Cancel all requested.");
+        _batchCts?.Cancel();
+        foreach (var file in Files)
+        {
+            if (file.IsProcessing) file.Cts?.Cancel();
+        }
+    }
 
     [RelayCommand(CanExecute = nameof(CanModifyList))]
     protected virtual async Task AddFiles(Window window)
@@ -130,30 +143,65 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
     }
 
     [RelayCommand(CanExecute = nameof(CanModifyList))]
-    protected virtual async Task AddFolder(Window window)
+  protected virtual async Task AddFolder(Window window)
     {
         try
         {
             Logger.Log($"Opening folder picker for {GetType().Name}...");
             var folders = await window.StorageProvider.OpenFolderPickerAsync(new FolderPickerOpenOptions
             {
-                AllowMultiple = false,
+                AllowMultiple = true,
                 Title = L["Dialog_SelectFolder"]
             });
 
             if (folders.Count == 0) return;
 
-            var folderPath = folders[0].Path.LocalPath;
-            var files = Directory.GetFiles(folderPath, "*", SearchOption.AllDirectories);
-
-            if (files.Length == 0)
+            if (Prefs.IsMaxFolderCountEnabled && folders.Count > Prefs.MaxFolderCount)
             {
-                await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_EmptyFolder"]);
-                Logger.Log($"Selected folder is empty: {folderPath}", LogLevel.Warning);
+                await MessageBoxHelper.ShowAsync(L["Msg_Error"],
+                    string.Format(L["Msg_FolderLimit"], Prefs.MaxFolderCount));
                 return;
             }
 
-            await AddFilesFromPaths(files);
+            var allFiles = new List<string>();
+
+            foreach (var folder in folders)
+            {
+                try
+                {
+                    var folderPath = folder.Path.LocalPath;
+                    var files = Directory.GetFiles(folderPath, "*", SearchOption.AllDirectories);
+                    allFiles.AddRange(files);
+                }
+                catch (Exception ex)
+                {
+                    Logger.Log($"Error reading folder {folder.Path.LocalPath}: {ex.Message}", LogLevel.Error);
+                }
+            }
+
+            if (allFiles.Count == 0)
+            {
+                await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_EmptyFolder"]);
+                Logger.Log("Selected folder(s) are empty.", LogLevel.Warning);
+                return;
+            }
+
+            if (Prefs.IsMaxFileCountEnabled && allFiles.Count > Prefs.MaxFileCount)
+            {
+                var skippedCount = allFiles.Count - Prefs.MaxFileCount;
+                var filesToAdd = allFiles.Take(Prefs.MaxFileCount).ToList();
+
+                await AddFilesFromPaths(filesToAdd);
+
+                await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
+                    string.Format(L["Msg_FileLimit"], filesToAdd.Count, skippedCount));
+
+                Logger.Log($"Added {filesToAdd.Count} files, skipped {skippedCount} due to limit.");
+            }
+            else
+            {
+                await AddFilesFromPaths(allFiles);
+            }
         }
         catch (Exception ex)
         {

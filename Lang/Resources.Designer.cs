@@ -1178,5 +1178,47 @@ namespace CheckHash.Lang {
                 return ResourceManager.GetString("Btn_Cancel", resourceCulture);
             }
         }
+        
+        public static string Settings_Limits {
+            get {
+                return ResourceManager.GetString("Settings_Limits", resourceCulture);
+            }
+        }
+        
+        public static string Settings_MaxFileCount {
+            get {
+                return ResourceManager.GetString("Settings_MaxFileCount", resourceCulture);
+            }
+        }
+        
+        public static string Settings_MaxFileCountDesc {
+            get {
+                return ResourceManager.GetString("Settings_MaxFileCountDesc", resourceCulture);
+            }
+        }
+        
+        public static string Settings_MaxFolderCount {
+            get {
+                return ResourceManager.GetString("Settings_MaxFolderCount", resourceCulture);
+            }
+        }
+        
+        public static string Settings_MaxFolderCountDesc {
+            get {
+                return ResourceManager.GetString("Settings_MaxFolderCountDesc", resourceCulture);
+            }
+        }
+        
+        public static string Msg_FolderLimit {
+            get {
+                return ResourceManager.GetString("Msg_FolderLimit", resourceCulture);
+            }
+        }
+        
+        public static string Msg_FileLimit {
+            get {
+                return ResourceManager.GetString("Msg_FileLimit", resourceCulture);
+            }
+        }
     }
 }
