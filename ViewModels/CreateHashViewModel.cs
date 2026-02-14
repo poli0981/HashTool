@@ -1,8 +1,6 @@
 using System;
-using System.Collections.Generic;
 using System.Collections.Concurrent;
-using System.Collections.ObjectModel;
-using Avalonia.Collections;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
@@ -14,10 +12,10 @@ using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Platform.Storage;
 using Avalonia.Threading;
+using CheckHash.Models;
 using CheckHash.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using CheckHash.Models;
 
 namespace CheckHash.ViewModels;
 
@@ -25,8 +23,7 @@ public partial class CreateHashViewModel : FileListViewModelBase
 {
     private readonly HashService _hashService = new();
 
-    [ObservableProperty]
-    private bool _isComputing;
+    [ObservableProperty] private bool _isComputing;
 
     [ObservableProperty] private HashType _selectedAlgorithm = HashType.SHA256;
 
@@ -125,7 +122,7 @@ public partial class CreateHashViewModel : FileListViewModelBase
                 }
 
                 if (newItems.Count > 0)
-                    await Dispatcher.UIThread.InvokeAsync(() => { Files.AddRange(newItems); });
+                    await Dispatcher.UIThread.InvokeAsync(() => { AddItemsToAll(newItems); });
 
                 if (!skippedFiles.IsEmpty)
                 {
@@ -243,6 +240,7 @@ public partial class CreateHashViewModel : FileListViewModelBase
         {
             item.ResultHash = "";
             item.Status = L["Status_Waiting"];
+            item.ProcessingState = FileStatus.Ready;
             item.IsMatch = null;
             item.IsCancelled = false;
             item.ProcessDuration = "";
@@ -284,7 +282,8 @@ public partial class CreateHashViewModel : FileListViewModelBase
                             var readBytesPerSec = diffRead / timeDiff;
                             var writeBytesPerSec = diffWrite / timeDiff;
 
-                            await Dispatcher.UIThread.InvokeAsync(() => UpdateSpeedText(readBytesPerSec, writeBytesPerSec));
+                            await Dispatcher.UIThread.InvokeAsync(() =>
+                                UpdateSpeedText(readBytesPerSec, writeBytesPerSec));
 
                             lastBytesRead = currentTotalRead;
                             lastBytesWritten = currentTotalWrite;
@@ -422,6 +421,7 @@ public partial class CreateHashViewModel : FileListViewModelBase
     {
         return !IsComputing && !string.IsNullOrEmpty(hash);
     }
+
     [RelayCommand(CanExecute = nameof(CanCopyToClipboard))]
     private async Task CopyToClipboard(string? hash)
     {
@@ -446,6 +446,7 @@ public partial class CreateHashViewModel : FileListViewModelBase
         await Dispatcher.UIThread.InvokeAsync(() =>
         {
             item.IsProcessing = true;
+            item.ProcessingState = FileStatus.Processing;
             item.Status = string.Format(L["Status_Processing"], item.SelectedAlgorithm);
             item.ProcessDuration = "";
         });
@@ -460,24 +461,32 @@ public partial class CreateHashViewModel : FileListViewModelBase
         {
             LoggerService.Instance.Log($"Weak algorithm selected: {item.SelectedAlgorithm}", LogLevel.Warning);
         }
+
         string? resultHash = null;
         string status = "";
 
         try
         {
-            resultHash = await _hashService.ComputeHashAsync(item.FilePath, item.SelectedAlgorithm, item.Cts.Token, bufferSize, progressCallback);
+            resultHash = await _hashService.ComputeHashAsync(item.FilePath, item.SelectedAlgorithm, item.Cts.Token,
+                bufferSize, progressCallback);
             status = L["Status_Done"];
+            await Dispatcher.UIThread.InvokeAsync(() => item.ProcessingState = FileStatus.Success);
             Logger.Log($"Computed {item.FileName}: {resultHash}", LogLevel.Success);
         }
         catch (OperationCanceledException)
         {
             status = L["Status_Cancelled"];
-            await Dispatcher.UIThread.InvokeAsync(() => item.IsCancelled = true);
+            await Dispatcher.UIThread.InvokeAsync(() =>
+            {
+                item.IsCancelled = true;
+                item.ProcessingState = FileStatus.Cancelled;
+            });
             Logger.Log($"Cancelled computation for {item.FileName}", LogLevel.Warning);
         }
         catch (Exception ex)
         {
             status = string.Format(L["Status_Error"], ex.Message);
+            await Dispatcher.UIThread.InvokeAsync(() => item.ProcessingState = FileStatus.Failure);
             Logger.Log($"Error computing {item.FileName}: {ex.Message}", LogLevel.Error);
         }
         finally
@@ -515,6 +524,7 @@ public partial class CreateHashViewModel : FileListViewModelBase
             IsComputing = true;
             item.ResultHash = "";
             item.Status = L["Status_Waiting"];
+            item.ProcessingState = FileStatus.Ready;
             item.IsCancelled = false;
             await ProcessItemAsync(item);
         }

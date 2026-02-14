@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using Avalonia.Collections;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -9,7 +7,6 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using Avalonia;
-using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Platform.Storage;
 using Avalonia.Threading;
@@ -27,8 +24,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
 
     [ObservableProperty] private HashType _globalAlgorithm = HashType.SHA256;
 
-    [ObservableProperty]
-    private bool _isChecking;
+    [ObservableProperty] private bool _isChecking;
 
     protected override bool IsGlobalBusy => IsChecking;
 
@@ -216,7 +212,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
                 {
                     await RunOnUIAsync(() =>
                     {
-                        Files.AddRange(newItems);
+                        AddItemsToAll(newItems);
                         return Task.CompletedTask;
                     });
                 }
@@ -283,6 +279,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
         foreach (var item in queue)
         {
             item.Status = L["Status_Waiting"];
+            item.ProcessingState = FileStatus.Ready;
             item.IsMatch = null;
             item.IsCancelled = false;
             item.ProcessDuration = "";
@@ -324,7 +321,8 @@ public partial class CheckHashViewModel : FileListViewModelBase
                             var readBytesPerSec = diffRead / timeDiff;
                             var writeBytesPerSec = diffWrite / timeDiff;
 
-                            await Dispatcher.UIThread.InvokeAsync(() => UpdateSpeedText(readBytesPerSec, writeBytesPerSec));
+                            await Dispatcher.UIThread.InvokeAsync(() =>
+                                UpdateSpeedText(readBytesPerSec, writeBytesPerSec));
 
                             lastBytesRead = currentTotalRead;
                             lastBytesWritten = currentTotalWrite;
@@ -484,11 +482,13 @@ public partial class CheckHashViewModel : FileListViewModelBase
         }
     }
 
-    private async Task VerifyItemLogicAsync(FileItem file, int? bufferSize = null, Action<long>? progressCallback = null)
+    private async Task VerifyItemLogicAsync(FileItem file, int? bufferSize = null,
+        Action<long>? progressCallback = null)
     {
         await Dispatcher.UIThread.InvokeAsync(() =>
         {
             file.IsProcessing = true;
+            file.ProcessingState = FileStatus.Processing;
             file.IsMatch = null;
             file.ProcessDuration = "";
             file.Status = L["Status_Waiting"];
@@ -509,19 +509,22 @@ public partial class CheckHashViewModel : FileListViewModelBase
                 file.IsMatch = result.IsMatch;
                 file.ProcessDuration = result.Duration;
                 file.IsProcessing = false;
+
+                if (file.IsCancelled)
+                    file.ProcessingState = FileStatus.Cancelled;
+                else if (result.IsMatch == true)
+                    file.ProcessingState = FileStatus.Success;
+                else
+                    file.ProcessingState = FileStatus.Failure;
+
                 file.Cts?.Dispose();
                 file.Cts = null;
             });
         });
     }
 
-    private record struct VerificationResult(
-        string Status,
-        bool? IsMatch,
-        string Duration,
-        string? NewExpectedHash = null
-    );
-    private async Task<VerificationResult> VerifyFileInternalAsync(FileItem file, CancellationToken ct, int? bufferSize = null, Action<long>? progressCallback = null)
+    private async Task<VerificationResult> VerifyFileInternalAsync(FileItem file, CancellationToken ct,
+        int? bufferSize = null, Action<long>? progressCallback = null)
     {
         var sw = Stopwatch.StartNew();
         var result = new VerificationResult
@@ -573,9 +576,12 @@ public partial class CheckHashViewModel : FileListViewModelBase
                 var algoToCheck = file.HasSpecificAlgorithm ? file.SelectedAlgorithm : GlobalAlgorithm;
                 if (algoToCheck.IsInsecure())
                 {
-                    LoggerService.Instance.Log($"Weak algorithm used for verification: {algoToCheck}", LogLevel.Warning);
+                    LoggerService.Instance.Log($"Weak algorithm used for verification: {algoToCheck}",
+                        LogLevel.Warning);
                 }
-                var actualHash = await _hashService.ComputeHashAsync(file.FilePath, algoToCheck, ct, bufferSize, progressCallback);
+
+                var actualHash =
+                    await _hashService.ComputeHashAsync(file.FilePath, algoToCheck, ct, bufferSize, progressCallback);
 
                 if (string.Equals(actualHash, expectedHash.Trim(), StringComparison.OrdinalIgnoreCase))
                 {
@@ -616,26 +622,6 @@ public partial class CheckHashViewModel : FileListViewModelBase
         }
 
         return result;
-    }
-
-    private enum FilePreparationStatus
-    {
-        Success,
-        FileTooLarge,
-        SourceTooLarge
-    }
-
-    private sealed class FilePreparationResult
-    {
-        public required string Path { get; init; }
-        public FilePreparationStatus Status { get; set; } = FilePreparationStatus.Success;
-        public FileInfo? Info { get; set; }
-        public bool IsHashFile { get; set; }
-        public HashType DetectedAlgo { get; set; }
-        public string SourcePath { get; set; } = "";
-        public bool SourceExists { get; set; }
-        public FileInfo? SourceInfo { get; set; }
-        public string HashContent { get; set; } = "";
     }
 
     private bool CanBrowseHashFile(FileItem item)
@@ -683,5 +669,32 @@ public partial class CheckHashViewModel : FileListViewModelBase
                 Logger.Log($"Error reading hash file: {ex.Message}", LogLevel.Error);
             }
         }
+    }
+
+    private record struct VerificationResult(
+        string Status,
+        bool? IsMatch,
+        string Duration,
+        string? NewExpectedHash = null
+    );
+
+    private enum FilePreparationStatus
+    {
+        Success,
+        FileTooLarge,
+        SourceTooLarge
+    }
+
+    private sealed class FilePreparationResult
+    {
+        public required string Path { get; init; }
+        public FilePreparationStatus Status { get; set; } = FilePreparationStatus.Success;
+        public FileInfo? Info { get; set; }
+        public bool IsHashFile { get; set; }
+        public HashType DetectedAlgo { get; set; }
+        public string SourcePath { get; set; } = "";
+        public bool SourceExists { get; set; }
+        public FileInfo? SourceInfo { get; set; }
+        public string HashContent { get; set; } = "";
     }
 }
