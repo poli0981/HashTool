@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -13,25 +15,32 @@ using CheckHash.Models;
 using CheckHash.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using System.IO;
 
 namespace CheckHash.ViewModels;
 
 public abstract partial class FileListViewModelBase : ObservableObject, IDisposable
 {
+    protected CancellationTokenSource? _batchCts;
+    [ObservableProperty] private int _cancelledCount;
+    [ObservableProperty] private string _detailedStatsText = "";
+    [ObservableProperty] private int _failCount;
+
+    private CancellationTokenSource? _filterCts;
     [ObservableProperty] private LocalizationProxy _localization = new(LocalizationService.Instance);
+
+    [ObservableProperty] private int _processedCount;
     [ObservableProperty] private double _progressMax = 100;
+
+    [ObservableProperty] private string _progressStatsText = "";
     [ObservableProperty] private double _progressValue;
     [ObservableProperty] private string _remainingTime = "";
 
-    [ObservableProperty] private int _processedCount;
-    [ObservableProperty] private int _successCount;
-    [ObservableProperty] private int _failCount;
-    [ObservableProperty] private int _cancelledCount;
-
-    [ObservableProperty] private string _progressStatsText = "";
-    [ObservableProperty] private string _detailedStatsText = "";
+    [ObservableProperty] private string _searchText = "";
+    [ObservableProperty] private FileStatus? _selectedFilterStatus = null;
     [ObservableProperty] private string _speedText = "";
+    [ObservableProperty] private int _successCount;
+
+    protected ImmutableList<FileItem> AllFiles = ImmutableList<FileItem>.Empty;
 
     protected FileListViewModelBase()
     {
@@ -51,10 +60,21 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
     protected ConfigurationService ConfigService => ConfigurationService.Instance;
     protected PreferencesService Prefs => PreferencesService.Instance;
     protected LoggerService Logger => LoggerService.Instance;
+    public bool HasFiles => AllFiles.Count > 0;
 
     public AvaloniaList<FileItem> Files { get; } = new();
 
     public ObservableCollection<HashType> AlgorithmList { get; } = new(Enum.GetValues<HashType>());
+
+    public List<FileStatus?> FilterStatusOptions { get; } = new()
+    {
+        null,
+        FileStatus.Ready,
+        FileStatus.Processing,
+        FileStatus.Success,
+        FileStatus.Failure,
+        FileStatus.Cancelled
+    };
 
     public virtual string TotalFilesText => string.Format(L["Lbl_TotalFiles"], Files.Count);
 
@@ -68,6 +88,76 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
         foreach (var file in Files) file.Cts?.Dispose();
     }
 
+    partial void OnSearchTextChanged(string value) => ApplyFilter(true);
+    partial void OnSelectedFilterStatusChanged(FileStatus? value) => ApplyFilter(true);
+
+    protected async void ApplyFilter(bool debounce = false)
+    {
+        _filterCts?.Cancel();
+        _filterCts = new CancellationTokenSource();
+        var token = _filterCts.Token;
+
+        if (debounce)
+        {
+            try
+            {
+                await Task.Delay(300, token); // Debounce
+            }
+            catch (OperationCanceledException)
+            {
+                return;
+            }
+        }
+
+        if (token.IsCancellationRequested) return;
+
+        // Snapshot (atomic read of immutable list)
+        var snapshot = AllFiles;
+        var text = SearchText;
+        var status = SelectedFilterStatus;
+
+        await Task.Run(async () =>
+        {
+            if (token.IsCancellationRequested) return;
+
+            var filtered = snapshot.AsEnumerable();
+
+            if (!string.IsNullOrWhiteSpace(text))
+            {
+                filtered = filtered.Where(f => f.FileName.Contains(text, StringComparison.OrdinalIgnoreCase));
+            }
+
+            if (status.HasValue)
+            {
+                filtered = filtered.Where(f => f.ProcessingState == status.Value);
+            }
+
+            var result = filtered.ToList();
+
+            if (token.IsCancellationRequested) return;
+
+            await RunOnUIAsync(() =>
+            {
+                if (token.IsCancellationRequested) return Task.CompletedTask;
+
+                Files.Clear();
+                Files.AddRange(result);
+                OnPropertyChanged(nameof(TotalFilesText));
+                NotifyCommands();
+                return Task.CompletedTask;
+            });
+        }, token);
+    }
+
+    protected void AddItemsToAll(IEnumerable<FileItem> items)
+    {
+        var list = items.ToList();
+        if (list.Count == 0) return;
+        AllFiles = AllFiles.AddRange(list);
+        OnPropertyChanged(nameof(HasFiles));
+        ApplyFilter(false);
+    }
+
     private void OnForceCancelRequested(object? sender, EventArgs e)
     {
         Logger.Log($"Force Cancel requested by user ({GetType().Name}).", LogLevel.Warning);
@@ -77,13 +167,15 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
     [RelayCommand(CanExecute = nameof(CanModifyList))]
     protected virtual void ClearList()
     {
-        foreach (var file in Files)
+        foreach (var file in AllFiles)
         {
             file.Cts?.Cancel();
             file.Cts?.Dispose();
         }
 
+        AllFiles = ImmutableList<FileItem>.Empty;
         Files.Clear();
+        OnPropertyChanged(nameof(HasFiles));
         ProgressValue = 0;
         RemainingTime = "";
         OnPropertyChanged(nameof(TotalFilesText));
@@ -100,6 +192,9 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
         item.Cts?.Cancel();
         item.Cts?.Dispose();
         item.IsDeleted = true;
+
+        AllFiles = AllFiles.Remove(item);
+        OnPropertyChanged(nameof(HasFiles));
 
         if (Files.Contains(item))
         {
@@ -138,8 +233,6 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
     // Abstract methods to hook into subclass specific logic
     protected abstract void NotifyCommands();
 
-    protected CancellationTokenSource? _batchCts;
-
     [RelayCommand(CanExecute = nameof(IsGlobalBusy))]
     protected virtual void CancelAll()
     {
@@ -176,7 +269,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
     }
 
     [RelayCommand(CanExecute = nameof(CanModifyList))]
-  protected virtual async Task AddFolder(Window window)
+    protected virtual async Task AddFolder(Window window)
     {
         try
         {
@@ -262,6 +355,9 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
             Files.Remove(item);
         }
 
+        AllFiles = AllFiles.RemoveRange(failedItems);
+
+        OnPropertyChanged(nameof(HasFiles));
         OnPropertyChanged(nameof(TotalFilesText));
         NotifyCommands();
         Logger.Log(GetClearFailedLogMessage(failedItems.Count));

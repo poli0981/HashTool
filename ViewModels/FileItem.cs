@@ -13,19 +13,20 @@ public partial class FileItem : ObservableObject
     [ObservableProperty] private string _fileName = "";
     [ObservableProperty] private string _filePath = "";
     [ObservableProperty] private string _fileSize = "";
-    [ObservableProperty] private long _rawSizeBytes;
+    [ObservableProperty] private bool _hasSpecificAlgorithm;
+    [ObservableProperty] private bool _isCancelled;
     [ObservableProperty] private bool? _isMatch;
     [ObservableProperty] private bool _isProcessing;
-    [ObservableProperty] private bool _isCancelled;
 
     // Reveal/Hide Expected Hash
     [ObservableProperty] private bool _isRevealed;
     [ObservableProperty] private string _processDuration = "";
+    [ObservableProperty] private FileStatus _processingState = FileStatus.Ready;
+    [ObservableProperty] private long _rawSizeBytes;
     [ObservableProperty] private string _resultHash = "";
 
     // Algorithm Select
     [ObservableProperty] private HashType _selectedAlgorithm = HashType.SHA256;
-    [ObservableProperty] private bool _hasSpecificAlgorithm;
     [ObservableProperty] private string _status;
 
     public FileItem()
