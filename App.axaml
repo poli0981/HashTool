@@ -40,12 +40,14 @@
                     <Color x:Key="PaneBackgroundColor">#FFFFFF</Color>
                     <SolidColorBrush x:Key="AppBackgroundBrush" Color="{StaticResource AppBackgroundColor}" />
                     <SolidColorBrush x:Key="PaneBackgroundBrush" Color="{StaticResource PaneBackgroundColor}" />
+                    <SolidColorBrush x:Key="HighlightBrush" Color="#0066CC" />
                 </ResourceDictionary>
                 <ResourceDictionary x:Key="Dark">
                     <Color x:Key="AppBackgroundColor"> #121212</Color>
                     <Color x:Key="PaneBackgroundColor">#212529</Color>
                     <SolidColorBrush x:Key="AppBackgroundBrush" Color="{StaticResource AppBackgroundColor}" />
                     <SolidColorBrush x:Key="PaneBackgroundBrush" Color="{StaticResource PaneBackgroundColor}" />
+                    <SolidColorBrush x:Key="HighlightBrush" Color="#FFD700" />
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
         </ResourceDictionary>
