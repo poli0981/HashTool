@@ -24,6 +24,7 @@
         <conv:CountToVisibilityConverter x:Key="CountToVisibilityConverter" />
         <conv:ComputeButtonEnabledConverter x:Key="ComputeButtonEnabledConverter" />
         <conv:FileStatusConverter x:Key="FileStatusConverter" />
+        <conv:FileSizeFilterConverter x:Key="FileSizeFilterConverter" />
 
     </Window.Resources>
 
@@ -186,6 +187,16 @@
                         <ComboBox.ItemTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Converter={StaticResource FileStatusConverter}}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+
+                    <ComboBox ItemsSource="{Binding SizeFilterOptions}"
+                              SelectedItem="{Binding SelectedSizeFilter, Mode=TwoWay}"
+                              Width="180" PlaceholderText="Size">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Converter={StaticResource FileSizeFilterConverter}}" />
                             </DataTemplate>
                         </ComboBox.ItemTemplate>
                     </ComboBox>
@@ -428,6 +439,16 @@
                         <ComboBox.ItemTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Converter={StaticResource FileStatusConverter}}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+
+                    <ComboBox ItemsSource="{Binding SizeFilterOptions}"
+                              SelectedItem="{Binding SelectedSizeFilter, Mode=TwoWay}"
+                              Width="180" PlaceholderText="Size">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Converter={StaticResource FileSizeFilterConverter}}" />
                             </DataTemplate>
                         </ComboBox.ItemTemplate>
                     </ComboBox>

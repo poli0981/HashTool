@@ -37,6 +37,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
 
     [ObservableProperty] private string _searchText = "";
     [ObservableProperty] private FileStatus? _selectedFilterStatus = null;
+    [ObservableProperty] private FileSizeFilter _selectedSizeFilter = FileSizeFilter.All;
     [ObservableProperty] private string _speedText = "";
     [ObservableProperty] private int _successCount;
 
@@ -76,6 +77,8 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
         FileStatus.Cancelled
     };
 
+    public List<FileSizeFilter> SizeFilterOptions { get; } = Enum.GetValues<FileSizeFilter>().ToList();
+
     public virtual string TotalFilesText => string.Format(L["Lbl_TotalFiles"], Files.Count);
 
     protected abstract bool IsGlobalBusy { get; }
@@ -90,6 +93,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
 
     partial void OnSearchTextChanged(string value) => ApplyFilter(true);
     partial void OnSelectedFilterStatusChanged(FileStatus? value) => ApplyFilter(true);
+    partial void OnSelectedSizeFilterChanged(FileSizeFilter value) => ApplyFilter(true);
 
     protected async void ApplyFilter(bool debounce = false)
     {
@@ -115,6 +119,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
         var snapshot = AllFiles;
         var text = SearchText;
         var status = SelectedFilterStatus;
+        var sizeFilter = SelectedSizeFilter;
 
         await Task.Run(async () =>
         {
@@ -130,6 +135,26 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
             if (status.HasValue)
             {
                 filtered = filtered.Where(f => f.ProcessingState == status.Value);
+            }
+
+            if (sizeFilter != FileSizeFilter.All)
+            {
+                long oneMB = AppConstants.OneMB;
+                long oneHundredMB = 100L * AppConstants.OneMB;
+                long oneGB = AppConstants.OneGB;
+
+                filtered = filtered.Where(f =>
+                {
+                    var size = f.RawSizeBytes;
+                    return sizeFilter switch
+                    {
+                        FileSizeFilter.Small => size < oneMB,
+                        FileSizeFilter.Medium => size >= oneMB && size < oneHundredMB,
+                        FileSizeFilter.Large => size >= oneHundredMB && size < oneGB,
+                        FileSizeFilter.ExtraLarge => size >= oneGB,
+                        _ => true
+                    };
+                });
             }
 
             var result = filtered.ToList();
