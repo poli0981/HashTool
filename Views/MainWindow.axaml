@@ -2,6 +2,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:CheckHash.ViewModels"
         xmlns:views="using:CheckHash.Views"
+        xmlns:controls="using:CheckHash.Views.Controls"
         xmlns:conv="using:CheckHash.Converters"
         xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
         x:Class="CheckHash.Views.MainWindow"
@@ -181,7 +182,7 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="10" Margin="0,0,0,10"
-                            IsVisible="{Binding HasFiles}">
+                            IsVisible="{Binding HasFiles}" IsEnabled="{Binding !IsComputing}">
                     <TextBox Text="{Binding SearchText, Mode=TwoWay}" Watermark="Search by name..." Width="200"
                              Classes="DragOver" />
                     <ComboBox ItemsSource="{Binding FilterStatusOptions}"
@@ -230,8 +231,11 @@
 
                                     <!-- 0: File Name -->
                                     <StackPanel Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0">
-                                        <TextBlock Text="{Binding FileName}" FontWeight="Bold"
-                                                   TextTrimming="CharacterEllipsis" />
+                                        <controls:HighlightTextBlock Text="{Binding FileName}"
+                                                                     HighlightText="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).SearchText}"
+                                                                     HighlightBrush="{DynamicResource SystemAccentColor}"
+                                                                     TextTrimming="CharacterEllipsis"
+                                                                     FontWeight="Bold" />
                                         <TextBlock Text="{Binding FilePath}" FontSize="10" Opacity="0.6"
                                                    TextTrimming="CharacterEllipsis" />
                                     </StackPanel>
@@ -446,7 +450,7 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="10" Margin="0,0,0,10"
-                            IsVisible="{Binding HasFiles}">
+                            IsVisible="{Binding HasFiles}" IsEnabled="{Binding !IsChecking}">
                     <TextBox Text="{Binding SearchText, Mode=TwoWay}" Watermark="Search by name..." Width="200"
                              Classes="DragOver" />
                     <ComboBox ItemsSource="{Binding FilterStatusOptions}"
@@ -494,8 +498,11 @@
                                 <Grid ColumnDefinitions="*, 100, 250, 100, 80">
 
                                     <StackPanel Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0">
-                                        <TextBlock Text="{Binding FileName}" FontWeight="Bold"
-                                                   TextTrimming="CharacterEllipsis" />
+                                        <controls:HighlightTextBlock Text="{Binding FileName}"
+                                                                     HighlightText="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).SearchText}"
+                                                                     HighlightBrush="{DynamicResource SystemAccentColor}"
+                                                                     TextTrimming="CharacterEllipsis"
+                                                                     FontWeight="Bold" />
                                         <TextBlock Text="{Binding FilePath}" FontSize="10" Opacity="0.6"
                                                    TextTrimming="CharacterEllipsis" />
                                     </StackPanel>
