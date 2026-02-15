@@ -239,7 +239,7 @@ public partial class CreateHashViewModel : FileListViewModelBase
         foreach (var item in queue)
         {
             item.ResultHash = "";
-            item.Status = L["Status_Waiting"];
+            item.Status = L["Status_Computing"];
             item.ProcessingState = FileStatus.Ready;
             item.IsMatch = null;
             item.IsCancelled = false;
@@ -347,6 +347,22 @@ public partial class CreateHashViewModel : FileListViewModelBase
         catch (OperationCanceledException)
         {
             Logger.Log("Batch computation cancelled.");
+
+            var cancelledStatus = L["Status_Cancelled"];
+            await Dispatcher.UIThread.InvokeAsync(() =>
+            {
+                foreach (var item in queue)
+                {
+                    if (item.ProcessingState == FileStatus.Ready)
+                    {
+                        item.Status = cancelledStatus;
+                        item.ProcessingState = FileStatus.Cancelled;
+                        item.IsCancelled = true;
+                        cancelled++;
+                        processedCounter++;
+                    }
+                }
+            });
         }
         finally
         {
@@ -523,7 +539,7 @@ public partial class CreateHashViewModel : FileListViewModelBase
         {
             IsComputing = true;
             item.ResultHash = "";
-            item.Status = L["Status_Waiting"];
+            item.Status = L["Status_Computing"];
             item.ProcessingState = FileStatus.Ready;
             item.IsCancelled = false;
             await ProcessItemAsync(item);

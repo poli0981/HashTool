@@ -661,4 +661,7 @@
     <data name="Settings_ShowSpeedDesc">
         <value>Display real-time transfer speed during hash operations.</value>
     </data>
+    <data name="Status_Computing">
+        <value>Hash Computing...</value>
+    </data>
 </root>
