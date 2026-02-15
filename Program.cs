@@ -21,6 +21,7 @@ internal sealed class Program
 
         try
         {
+            ConfigurationService.Instance.EnsureConfigFileExists();
             var config = ConfigurationService.Instance.Load();
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
                 if (config.IsAdminModeEnabled && !IsRunAsAdmin())

@@ -110,8 +110,26 @@ public class ConfigurationService
 
         return new AppConfig();
     }
-    public async System.Threading.Tasks.Task EnsureConfigFileExistsAsync()
+    public void EnsureConfigFileExists()
     {
-        if (!File.Exists(ConfigPath)) await Save(new AppConfig());
+        try
+        {
+            if (!_hasCheckedConfigDir)
+            {
+                if (!Directory.Exists(_configDir)) Directory.CreateDirectory(_configDir);
+                _hasCheckedConfigDir = true;
+            }
+
+            if (!File.Exists(ConfigPath))
+            {
+                var config = new AppConfig();
+                var json = JsonSerializer.Serialize(config, new JsonSerializerOptions { WriteIndented = true });
+                File.WriteAllText(ConfigPath, json);
+            }
+        }
+        catch (Exception ex)
+        {
+            LoggerService.Instance.Log($"Failed to ensure config file: {ex.Message}", LogLevel.Error);
+        }
     }
 }

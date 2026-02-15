@@ -70,23 +70,9 @@ public partial class SettingsViewModel : ObservableObject
                         }
                     }
 
-                    // Also show system language warning if needed, or if user confirmed above
-                    var result = await MessageBoxHelper.ShowConfirmationAsync(
-                        L["Msg_SystemLanguage"],
-                        L["Msg_SystemLanguageWarning"],
-                        L["Btn_Yes"],
-                        L["Btn_No"]);
-
-                    if (result)
-                    {
-                        Localization.SelectedLanguage = value;
-                        OnPropertyChanged(nameof(CanSetLanguageDefault));
-                        await SaveSettingsAsync();
-                    }
-                    else
-                    {
-                        OnPropertyChanged(nameof(SelectedLanguage));
-                    }
+                    Localization.SelectedLanguage = value;
+                    OnPropertyChanged(nameof(CanSetLanguageDefault));
+                    await SaveSettingsAsync();
                 });
             }
             else
