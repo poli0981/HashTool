@@ -232,15 +232,26 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
 
     protected virtual string GetRemoveLogPrefix() => "Removed file";
 
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
+    protected bool CanClearHash(FileItem? item)
+    {
+        return CanModifyList && item != null && item.ProcessingState != FileStatus.Ready;
+    }
+
+    [RelayCommand(CanExecute = nameof(CanClearHash))]
     protected virtual void ClearHash(FileItem? item)
     {
         if (item == null || item.IsProcessing) return;
         ResetItem(item);
         Logger.Log($"Cleared hash for {item.FileName}");
+        NotifyCommands();
     }
 
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
+    protected bool CanClearAllHashes()
+    {
+        return CanModifyList && Files.Any(f => f.ProcessingState != FileStatus.Ready);
+    }
+
+    [RelayCommand(CanExecute = nameof(CanClearAllHashes))]
     protected virtual void ClearAllHashes()
     {
         var count = 0;
