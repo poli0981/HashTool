@@ -1516,6 +1516,51 @@ namespace CheckHash.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All Sizes.
+        /// </summary>
+        public static string Size_All {
+            get {
+                return ResourceManager.GetString("Size_All", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Extra Large (&gt; 1GB).
+        /// </summary>
+        public static string Size_ExtraLarge {
+            get {
+                return ResourceManager.GetString("Size_ExtraLarge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Large (100MB - 1GB).
+        /// </summary>
+        public static string Size_Large {
+            get {
+                return ResourceManager.GetString("Size_Large", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Medium (1MB - 100MB).
+        /// </summary>
+        public static string Size_Medium {
+            get {
+                return ResourceManager.GetString("Size_Medium", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Small (&lt; 1MB).
+        /// </summary>
+        public static string Size_Small {
+            get {
+                return ResourceManager.GetString("Size_Small", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancelled.
         /// </summary>
         public static string Status_Cancelled {

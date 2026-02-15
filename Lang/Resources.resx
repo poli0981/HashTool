@@ -664,4 +664,19 @@
     <data name="Status_Computing">
         <value>Hash Computing...</value>
     </data>
+    <data name="Size_All">
+        <value>All Sizes</value>
+    </data>
+    <data name="Size_Small">
+        <value>Small (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Medium (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Large (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Extra Large (&gt; 1GB)</value>
+    </data>
 </root>
