@@ -56,7 +56,8 @@ public partial class SettingsViewModel : ObservableObject
                             L["Msg_LanguageChangeConfirmation"],
                             L["Msg_DontShowAgain"],
                             L["Btn_Yes"],
-                            L["Btn_No"]);
+                            L["Btn_No"],
+                            MessageBoxIcon.Question);
 
                         if (!confirmed)
                         {
@@ -272,7 +273,8 @@ public partial class SettingsViewModel : ObservableObject
                 L["Msg_LanguageChangeConfirmation"],
                 L["Msg_DontShowAgain"],
                 L["Btn_Yes"],
-                L["Btn_No"]);
+                L["Btn_No"],
+                MessageBoxIcon.Question);
 
             if (!confirmed) return;
 
@@ -291,9 +293,9 @@ public partial class SettingsViewModel : ObservableObject
     {
         var path = ConfigService.ConfigPath;
         if (File.Exists(path))
-            await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigExists"].Replace("{0}", path));
+            await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigExists"].Replace("{0}", path), MessageBoxIcon.Information);
         else
-            await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigMissing"]);
+            await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigMissing"], MessageBoxIcon.Warning);
     }
 
     [RelayCommand]
@@ -308,7 +310,7 @@ public partial class SettingsViewModel : ObservableObject
             if (clipboard != null)
             {
                 await clipboard.SetTextAsync(ConfigFilePath);
-                await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigCopied"]);
+                await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigCopied"], MessageBoxIcon.Success);
                 Logger.Log("Config path copied to clipboard.");
             }
         }
@@ -327,7 +329,7 @@ public partial class SettingsViewModel : ObservableObject
     {
         await SaveSettingsAsync();
         Logger.Log($"Admin Mode toggled: {IsAdminModeEnabled}");
-        if (IsAdminModeEnabled) await MessageBoxHelper.ShowAsync(L["Msg_AdminMode"], L["Msg_AdminRestart"]);
+        if (IsAdminModeEnabled) await MessageBoxHelper.ShowAsync(L["Msg_AdminMode"], L["Msg_AdminRestart"], MessageBoxIcon.Warning);
     }
 
     partial void OnForceQuitTimeoutChanged(int value)

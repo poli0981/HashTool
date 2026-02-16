@@ -17,15 +17,14 @@ public class FileStatusConverter : IValueConverter
             return status switch
             {
                 FileStatus.Ready => L["Lbl_Status_Ready"],
-                FileStatus.Processing => "Processing", // L["Status_Processing"] has {0}
+                FileStatus.Processing => L["Status_Processing_Filter"],
                 FileStatus.Success => L["Status_Done"],
-                FileStatus.Failure => "Failed", // L["Status_Error"] has {0}
+                FileStatus.Failure => L["Status_Failure"],
                 FileStatus.Cancelled => L["Status_Cancelled"],
                 _ => status.ToString()
             };
         }
 
-        // Handle null (All)
         if (value == null)
         {
             return "All";

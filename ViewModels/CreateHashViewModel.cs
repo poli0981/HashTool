@@ -135,7 +135,7 @@ public partial class CreateHashViewModel : FileListViewModelBase
                         config.FileSizeLimitValue, config.FileSizeLimitUnit, fileList);
 
                     await Dispatcher.UIThread.InvokeAsync(async () =>
-                        await MessageBoxHelper.ShowAsync(L["Msg_Error"], summaryMsg));
+                        await MessageBoxHelper.ShowAsync(L["Msg_Error"], summaryMsg, MessageBoxIcon.Error));
                 }
             });
         }
@@ -395,8 +395,9 @@ public partial class CreateHashViewModel : FileListViewModelBase
 
         Logger.Log($"Batch finished. Success: {success}, Failed: {fail}, Cancelled: {cancelled}");
 
+        var icon = (fail > 0 || cancelled > 0) ? MessageBoxIcon.Warning : MessageBoxIcon.Success;
         await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
-            string.Format(L["Msg_Result_Content"], success, fail, cancelled));
+            string.Format(L["Msg_Result_Content"], success, fail, cancelled), icon);
     }
 
     private bool CanSaveHashFile(FileItem? item)

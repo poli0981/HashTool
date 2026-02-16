@@ -35,7 +35,8 @@ public partial class MainWindow : Window
                     L["Msg_ConfirmExit_Title"],
                     L["Msg_ConfirmExit_Content"],
                     L["Btn_Yes"],
-                    L["Btn_No"]);
+                    L["Btn_No"],
+                    MessageBoxIcon.Warning);
 
                 if (result)
                 {
@@ -117,7 +118,7 @@ public partial class MainWindow : Window
         }
 #pragma warning restore CS0618 // Type or member is obsolete
     }
-
+#pragma warning disable CS0618 // Type or member is obsolete
     private async void OnMainDrop(object? sender, DragEventArgs e)
     {
         if (sender is Control control)
@@ -136,4 +137,5 @@ public partial class MainWindow : Window
             }
         }
     }
+#pragma warning disable CS0618 // Type or member is obsolete
 }

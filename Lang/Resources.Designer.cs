@@ -1732,6 +1732,15 @@ namespace CheckHash.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Failed.
+        /// </summary>
+        public static string Status_Failure {
+            get {
+                return ResourceManager.GetString("Status_Failure", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hash file loaded.
         /// </summary>
         public static string Status_HashFileLoaded {
@@ -1836,6 +1845,15 @@ namespace CheckHash.Lang {
         public static string Status_Processing {
             get {
                 return ResourceManager.GetString("Status_Processing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Processing.
+        /// </summary>
+        public static string Status_Processing_Filter {
+            get {
+                return ResourceManager.GetString("Status_Processing_Filter", resourceCulture);
             }
         }
         
