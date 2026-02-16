@@ -103,7 +103,7 @@ public partial class UpdateViewModel : ObservableObject
                 var msg = L[errorKey];
                 Logger.Log($"Network check failed: {netStatus}", LogLevel.Error);
                 StatusMessage = string.Format(L["Status_CheckError"], msg);
-                await MessageBoxHelper.ShowAsync(L["Msg_Error"], msg);
+                await MessageBoxHelper.ShowAsync(L["Msg_Error"], msg, MessageBoxIcon.Error);
                 return;
             }
 
@@ -122,7 +122,7 @@ public partial class UpdateViewModel : ObservableObject
                     {
                         Logger.Log($"Dev Mode: Update found {versionString} is not a pre-release. Keeping current version.");
                         StatusMessage = L["Msg_NoPreRelease"];
-                        await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], L["Msg_NoPreRelease"]);
+                        await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], L["Msg_NoPreRelease"], MessageBoxIcon.Information);
                         return;
                     }
 
@@ -133,7 +133,7 @@ public partial class UpdateViewModel : ObservableObject
 
                     var notes = await _updateService.GetReleaseNotesAsync(versionString);
                     var result = await MessageBoxHelper.ShowConfirmationAsync(L["Title_Disclaimer"],
-                        string.Format(L["Msg_PreReleaseWarning"], versionString, notes), L["Btn_Install"], L["Btn_No"]);
+                        string.Format(L["Msg_PreReleaseWarning"], versionString, notes), L["Btn_Install"], L["Btn_No"], MessageBoxIcon.Warning);
 
                     if (result)
                     {
@@ -151,7 +151,7 @@ public partial class UpdateViewModel : ObservableObject
                 var notesStable = await _updateService.GetReleaseNotesAsync(versionString);
 
                 var resultStable = await MessageBoxHelper.ShowConfirmationAsync(L["Msg_UpdateTitle"],
-                    string.Format(L["Msg_UpdateContent"], versionString, notesStable), L["Btn_Install"], L["Btn_No"]);
+                    string.Format(L["Msg_UpdateContent"], versionString, notesStable), L["Btn_Install"], L["Btn_No"], MessageBoxIcon.Question);
 
                 if (resultStable)
                 {
@@ -164,13 +164,13 @@ public partial class UpdateViewModel : ObservableObject
                 {
                     StatusMessage = L["Msg_NoPreRelease"];
                     Logger.Log("Dev Mode: No pre-release found.");
-                    await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], L["Msg_NoPreRelease"]);
+                    await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], L["Msg_NoPreRelease"], MessageBoxIcon.Information);
                 }
                 else
                 {
                     StatusMessage = L["Status_Latest"];
                     Logger.Log("Application is up to date.");
-                    await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], L["Msg_NoUpdate"]);
+                    await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], L["Msg_NoUpdate"], MessageBoxIcon.Information);
                 }
             }
         }

@@ -709,4 +709,10 @@
     <data name="Doc_Credit">
         <value>Acknowledgements</value>
     </data>
+    <data name="Status_Processing_Filter">
+        <value>Processing</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Failed</value>
+    </data>
 </root>

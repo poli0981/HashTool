@@ -337,7 +337,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
         catch (Exception ex)
         {
             Logger.Log($"Error adding files: {ex.Message}", LogLevel.Error);
-            await MessageBoxHelper.ShowAsync(L["Msg_Error"], ex.Message);
+            await MessageBoxHelper.ShowAsync(L["Msg_Error"], ex.Message, MessageBoxIcon.Error);
         }
     }
 
@@ -358,7 +358,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
             if (Prefs.IsMaxFolderCountEnabled && folders.Count > Prefs.MaxFolderCount)
             {
                 await MessageBoxHelper.ShowAsync(L["Msg_Error"],
-                    string.Format(L["Msg_FolderLimit"], Prefs.MaxFolderCount));
+                    string.Format(L["Msg_FolderLimit"], Prefs.MaxFolderCount), MessageBoxIcon.Error);
                 return;
             }
 
@@ -380,7 +380,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
 
             if (allFiles.Count == 0)
             {
-                await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_EmptyFolder"]);
+                await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_EmptyFolder"], MessageBoxIcon.Warning);
                 Logger.Log("Selected folder(s) are empty.", LogLevel.Warning);
                 return;
             }
@@ -393,7 +393,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
                 await AddFilesFromPaths(filesToAdd);
 
                 await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
-                    string.Format(L["Msg_FileLimit"], filesToAdd.Count, skippedCount));
+                    string.Format(L["Msg_FileLimit"], filesToAdd.Count, skippedCount), MessageBoxIcon.Warning);
 
                 Logger.Log($"Added {filesToAdd.Count} files, skipped {skippedCount} due to limit.");
             }
@@ -405,7 +405,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
         catch (Exception ex)
         {
             Logger.Log($"Error adding folder: {ex.Message}", LogLevel.Error);
-            await MessageBoxHelper.ShowAsync(L["Msg_Error"], string.Format(L["Msg_OpenFolderError"], ex.Message));
+            await MessageBoxHelper.ShowAsync(L["Msg_Error"], string.Format(L["Msg_OpenFolderError"], ex.Message), MessageBoxIcon.Error);
         }
     }
 
@@ -436,7 +436,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
         Logger.Log(GetClearFailedLogMessage(failedItems.Count));
 
         await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
-            string.Format(L["Msg_ClearedFailed"], failedItems.Count));
+            string.Format(L["Msg_ClearedFailed"], failedItems.Count), MessageBoxIcon.Information);
     }
 
     protected async Task RunOnUIAsync(Func<Task> action)

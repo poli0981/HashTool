@@ -225,7 +225,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
                     var summaryMsg = string.Format(L["Msg_FileSizeLimitExceeded_Summary"], skippedFiles.Count,
                         config.FileSizeLimitValue, config.FileSizeLimitUnit, fileList);
 
-                    await RunOnUIAsync(async () => await MessageBoxHelper.ShowAsync(L["Msg_Error"], summaryMsg));
+                    await RunOnUIAsync(async () => await MessageBoxHelper.ShowAsync(L["Msg_Error"], summaryMsg, MessageBoxIcon.Error));
                 }
             });
 
@@ -420,12 +420,13 @@ public partial class CheckHashViewModel : FileListViewModelBase
         {
             var msg = L["Msg_TaskCancelled_Content"];
             Logger.Log(msg, LogLevel.Warning);
-            await MessageBoxHelper.ShowAsync(L["Msg_TaskCancelled_Title"], msg);
+            await MessageBoxHelper.ShowAsync(L["Msg_TaskCancelled_Title"], msg, MessageBoxIcon.Warning);
         }
         else
         {
+            var icon = mismatch > 0 ? MessageBoxIcon.Warning : MessageBoxIcon.Success;
             await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
-                string.Format(L["Msg_CheckResult"], Files.Count, match, mismatch, cancelled));
+                string.Format(L["Msg_CheckResult"], Files.Count, match, mismatch, cancelled), icon);
         }
     }
 
@@ -653,7 +654,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
             if (!hashFileName.Contains(item.FileName, StringComparison.OrdinalIgnoreCase))
             {
                 await MessageBoxHelper.ShowAsync(L["Msg_WrongHashFile"],
-                    string.Format(L["Msg_WrongHashFileContent"], item.FileName, hashFileName));
+                    string.Format(L["Msg_WrongHashFileContent"], item.FileName, hashFileName), MessageBoxIcon.Warning);
                 return;
             }
 
@@ -665,7 +666,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
             }
             catch (Exception ex)
             {
-                await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_ReadHashError"]);
+                await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_ReadHashError"], MessageBoxIcon.Error);
                 Logger.Log($"Error reading hash file: {ex.Message}", LogLevel.Error);
             }
         }
