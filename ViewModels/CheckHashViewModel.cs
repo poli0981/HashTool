@@ -406,6 +406,22 @@ public partial class CheckHashViewModel : FileListViewModelBase
             _batchCts = null;
         }
 
+        var cancelledStatus = L["Status_Cancelled"];
+        await Dispatcher.UIThread.InvokeAsync(() =>
+        {
+            foreach (var item in queue)
+            {
+                if (item.ProcessingState == FileStatus.Ready)
+                {
+                    item.Status = cancelledStatus;
+                    item.ProcessingState = FileStatus.Cancelled;
+                    item.IsCancelled = true;
+                    cancelled++;
+                    processedCounter++;
+                }
+            }
+        });
+
         try
         {
             await progressTask;
