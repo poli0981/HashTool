@@ -355,8 +355,8 @@ public partial class CheckHashViewModel : FileListViewModelBase
         try
         {
             var strategyService = new ProcessingStrategyService();
-            var options = strategyService.GetProcessingOptions(queue.Select(f => (f.RawSizeBytes, f.HasSpecificAlgorithm ? f.SelectedAlgorithm : GlobalAlgorithm)));
-            Logger.Log($"Using strategy: MaxDOP={options.MaxDegreeOfParallelism}, Buffer={options.BufferSize ?? 0}B");
+            var batches = strategyService.GetProcessingBatches(queue, f => f.RawSizeBytes);
+            Logger.Log($"Starting processing with 3 streams. Small: {batches[0].Count}, Medium: {batches[1].Count}, Large: {batches[2].Count}");
 
             Action<long>? progressCallback = null;
             if (showSpeed)
@@ -364,24 +364,36 @@ public partial class CheckHashViewModel : FileListViewModelBase
                 progressCallback = (bytes) => Interlocked.Add(ref totalBytesRead, bytes);
             }
 
-            await Parallel.ForEachAsync(queue, new ParallelOptions
+            var tasks = new List<Task>();
+
+            foreach (var batch in batches)
             {
-                MaxDegreeOfParallelism = options.MaxDegreeOfParallelism,
-                CancellationToken = _batchCts.Token
-            }, async (file, ct) =>
-            {
-                await VerifyItemLogicAsync(file, options.BufferSize, progressCallback);
+                if (batch.Count == 0) continue;
 
-                Interlocked.Increment(ref processedCounter);
-
-                if (file.IsMatch == true) Interlocked.Increment(ref match);
-                else if (file.IsMatch == false) Interlocked.Increment(ref mismatch);
-
-                if (file.Status == statusCancelled)
+                tasks.Add(Task.Run(async () =>
                 {
-                    Interlocked.Increment(ref cancelled);
-                }
-            });
+                    foreach (var file in batch)
+                    {
+                        if (_batchCts?.Token.IsCancellationRequested == true) break;
+
+                        var algo = file.HasSpecificAlgorithm ? file.SelectedAlgorithm : GlobalAlgorithm;
+                        var bufferSize = strategyService.GetBufferSize(file.RawSizeBytes, algo);
+                        await VerifyItemLogicAsync(file, bufferSize, progressCallback);
+
+                        Interlocked.Increment(ref processedCounter);
+
+                        if (file.IsMatch == true) Interlocked.Increment(ref match);
+                        else if (file.IsMatch == false) Interlocked.Increment(ref mismatch);
+
+                        if (file.Status == statusCancelled)
+                        {
+                            Interlocked.Increment(ref cancelled);
+                        }
+                    }
+                }, _batchCts?.Token ?? CancellationToken.None));
+            }
+
+            await Task.WhenAll(tasks);
         }
         catch (OperationCanceledException)
         {

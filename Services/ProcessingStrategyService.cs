@@ -1,56 +1,58 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using CheckHash.Models;
 
 namespace CheckHash.Services;
 
-public record ProcessingOptions(int MaxDegreeOfParallelism, int? BufferSize);
-
 public class ProcessingStrategyService
 {
+    private const long OneGB = 1024L * 1024 * 1024;
     private const long HeavyFileThreshold = 5L * 1024 * 1024 * 1024; // 5GB
+
     private const int OneMB = 1024 * 1024;
-    private const int FourMB = 4 * 1024 * 1024;
     private const int TwoMB = 2 * 1024 * 1024;
+    private const int FourMB = 4 * 1024 * 1024;
+    private const int Blake3BufferSize = 80 * 1024; // 80KB
 
-    public ProcessingOptions GetProcessingOptions(IEnumerable<(long Size, HashType Algorithm)> files)
+    public List<List<T>> GetProcessingBatches<T>(IEnumerable<T> items, Func<T, long> sizeSelector)
     {
-        var items = files as IReadOnlyList<(long Size, HashType Algorithm)> ?? files.ToList();
-        var count = items.Count;
+        var result = new List<List<T>> { new(), new(), new() };
 
-        if (count == 0)
+        foreach (var item in items)
         {
-            return new ProcessingOptions(Environment.ProcessorCount, null);
+            var size = sizeSelector(item);
+            if (size < OneGB)
+            {
+                result[0].Add(item);
+            }
+            else if (size < HeavyFileThreshold)
+            {
+                result[1].Add(item);
+            }
+            else
+            {
+                result[2].Add(item);
+            }
+        }
+        return result;
+    }
+    public int GetBufferSize(long size, HashType algorithm)
+    {
+        if (algorithm == HashType.BLAKE3)
+        {
+            return Blake3BufferSize;
         }
 
-        var heavyCount = items.Count(x => x.Size > HeavyFileThreshold);
-        var lightCount = count - heavyCount;
-        var hasBlake3 = items.Any(x => x.Algorithm == HashType.BLAKE3);
-
-        int concurrency;
-        int? bufferSize;
-
-        if (heavyCount == count)
+        if (size < OneGB)
         {
-            concurrency = Math.Max(1, Math.Min(Environment.ProcessorCount, 2));
-            bufferSize = FourMB;
-        }
-        else if (lightCount == count)
-        {
-            concurrency = Environment.ProcessorCount;
-            bufferSize = OneMB;
-        }
-        else
-        {
-            concurrency = Math.Max(1, Environment.ProcessorCount / 2);
-            bufferSize = TwoMB;
+            return OneMB;
         }
 
-        if (hasBlake3)
+        if (size < HeavyFileThreshold)
         {
-            bufferSize = null;
+            return TwoMB;
         }
 
-        return new ProcessingOptions(concurrency, bufferSize);
+        return FourMB;
     }
 }

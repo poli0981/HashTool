@@ -316,8 +316,8 @@ public partial class CreateHashViewModel : FileListViewModelBase
         try
         {
             var strategyService = new ProcessingStrategyService();
-            var options = strategyService.GetProcessingOptions(queue.Select(f => (f.RawSizeBytes, f.SelectedAlgorithm)));
-            Logger.Log($"Using strategy: MaxDOP={options.MaxDegreeOfParallelism}, Buffer={options.BufferSize ?? 0}B");
+            var batches = strategyService.GetProcessingBatches(queue, f => f.RawSizeBytes);
+            Logger.Log($"Starting processing with 3 streams. Small: {batches[0].Count}, Medium: {batches[1].Count}, Large: {batches[2].Count}");
 
             Action<long>? progressCallback = null;
             if (showSpeed)
@@ -325,26 +325,37 @@ public partial class CreateHashViewModel : FileListViewModelBase
                 progressCallback = (bytes) => Interlocked.Add(ref totalBytesRead, bytes);
             }
 
-            await Parallel.ForEachAsync(queue, new ParallelOptions
+            var tasks = new List<Task>();
+
+            foreach (var batch in batches)
             {
-                MaxDegreeOfParallelism = options.MaxDegreeOfParallelism,
-                CancellationToken = _batchCts.Token
-            }, async (file, ct) =>
-            {
-                if (file.IsDeleted)
+                if (batch.Count == 0) continue;
+
+                tasks.Add(Task.Run(async () =>
                 {
-                    Interlocked.Increment(ref processedCounter);
-                    return;
-                }
+                    foreach (var file in batch)
+                    {
+                        if (_batchCts?.Token.IsCancellationRequested == true) break;
 
-                await ProcessItemAsync(file, options.BufferSize, progressCallback);
+                        if (file.IsDeleted)
+                        {
+                            Interlocked.Increment(ref processedCounter);
+                            continue;
+                        }
 
-                Interlocked.Increment(ref processedCounter);
+                        var bufferSize = strategyService.GetBufferSize(file.RawSizeBytes, file.SelectedAlgorithm);
+                        await ProcessItemAsync(file, bufferSize, progressCallback);
 
-                if (file.Status == statusDone) Interlocked.Increment(ref success);
-                else if (file.Status == statusCancelled) Interlocked.Increment(ref cancelled);
-                else Interlocked.Increment(ref fail);
-            });
+                        Interlocked.Increment(ref processedCounter);
+
+                        if (file.Status == statusDone) Interlocked.Increment(ref success);
+                        else if (file.Status == statusCancelled) Interlocked.Increment(ref cancelled);
+                        else Interlocked.Increment(ref fail);
+                    }
+                }, _batchCts?.Token ?? CancellationToken.None));
+            }
+
+            await Task.WhenAll(tasks);
         }
         catch (OperationCanceledException)
         {
