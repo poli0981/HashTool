@@ -24,6 +24,7 @@
         <conv:HashMaskConverter x:Key="HashMaskConverter" />
         <conv:CountToVisibilityConverter x:Key="CountToVisibilityConverter" />
         <conv:ComputeButtonEnabledConverter x:Key="ComputeButtonEnabledConverter" />
+        <conv:AlgorithmEnabledConverter x:Key="AlgorithmEnabledConverter" />
         <conv:FileStatusConverter x:Key="FileStatusConverter" />
         <conv:FileSizeFilterConverter x:Key="FileSizeFilterConverter" />
 
@@ -253,8 +254,14 @@
                                     <ComboBox Grid.Column="2"
                                               ItemsSource="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).AlgorithmList}"
                                               SelectedItem="{Binding SelectedAlgorithm}"
-                                              IsEnabled="{Binding !IsProcessing}"
-                                              VerticalAlignment="Center" Margin="0,0,5,0" Width="110" />
+                                              VerticalAlignment="Center" Margin="0,0,5,0" Width="110">
+                                        <ComboBox.IsEnabled>
+                                            <MultiBinding Converter="{StaticResource AlgorithmEnabledConverter}">
+                                                <Binding Path="ProcessingState" />
+                                                <Binding Path="$parent[ListBox].((vm:CreateHashViewModel)DataContext).IsComputing" />
+                                            </MultiBinding>
+                                        </ComboBox.IsEnabled>
+                                    </ComboBox>
 
                                     <!-- 3: Hash Result (Eye to Hide/Reveal) -->
                                     <Grid Grid.Column="3" ColumnDefinitions="*, Auto">
