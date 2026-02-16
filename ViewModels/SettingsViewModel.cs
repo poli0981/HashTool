@@ -175,20 +175,50 @@ public partial class SettingsViewModel : ObservableObject
     }
 
     [RelayCommand]
-    private async Task ResetAppearance()
+    private async Task ResetSettings()
     {
         if (IsSettingsLocked) return;
 
-        Font.ResetSettings();
-        Theme.CurrentThemeStyle = AppThemeStyle.Fluent;
-        Theme.CurrentThemeVariant = AppThemeVariant.System;
-        Theme.IsThemeLocked = false;
+        var defaultConfig = new AppConfig();
 
-        Localization.SelectedLanguage = Localization.AvailableLanguages.FirstOrDefault(x => x.Code == "auto") ??
-                                        Localization.AvailableLanguages[0];
+        // Reset Appearance
+        Font.ResetSettings();
+        Theme.CurrentThemeStyle = defaultConfig.ThemeStyle;
+        Theme.CurrentThemeVariant = defaultConfig.ThemeVariant;
+        Theme.IsThemeLocked = defaultConfig.IsThemeLocked;
+
+        // Reset Language
+        Localization.SelectedLanguage =
+            Localization.AvailableLanguages.FirstOrDefault(x => x.Code == defaultConfig.LanguageCode) ??
+            Localization.AvailableLanguages[0];
+        _showLanguageChangeWarning = defaultConfig.ShowLanguageChangeWarning;
+
+        // Reset Developer & Admin Mode
+        IsDeveloperModeEnabled = defaultConfig.IsDeveloperModeEnabled;
+        IsAdminModeEnabled = defaultConfig.IsAdminModeEnabled;
+
+        // Reset Timeouts & Monitor
+        ForceQuitTimeout = defaultConfig.ForceQuitTimeout;
+        ShowReadWriteSpeed = defaultConfig.ShowReadWriteSpeed;
+
+        // Reset Preferences
+        Prefs.IsHashMaskingEnabled = defaultConfig.IsHashMaskingEnabled;
+
+        Prefs.IsFileSizeLimitEnabled = defaultConfig.IsFileSizeLimitEnabled;
+        Prefs.FileSizeLimitValue = defaultConfig.FileSizeLimitValue;
+        Prefs.FileSizeLimitUnit = defaultConfig.FileSizeLimitUnit;
+
+        Prefs.IsFileTimeoutEnabled = defaultConfig.IsFileTimeoutEnabled;
+        Prefs.FileTimeoutSeconds = defaultConfig.FileTimeoutSeconds;
+
+        Prefs.IsMaxFileCountEnabled = defaultConfig.IsMaxFileCountEnabled;
+        Prefs.MaxFileCount = defaultConfig.MaxFileCount;
+
+        Prefs.IsMaxFolderCountEnabled = defaultConfig.IsMaxFolderCountEnabled;
+        Prefs.MaxFolderCount = defaultConfig.MaxFolderCount;
 
         await SaveSettingsAsync();
-        Logger.Log("Reset appearance settings to default.", LogLevel.Warning);
+        Logger.Log("All settings reset to default.", LogLevel.Warning);
     }
 
     [RelayCommand]

@@ -340,7 +340,7 @@
                             <TextBlock Text="{Binding Localization[Settings_ResetDesc]}" FontSize="12" Opacity="0.7" />
                         </StackPanel>
                         <Button Grid.Row="2" Grid.Column="1"
-                                Command="{Binding ResetAppearanceCommand}"
+                                Command="{Binding ResetSettingsCommand}"
                                 Content="{Binding Localization[Settings_Reset]}"
                                 IsEnabled="{Binding !IsSettingsLocked}" />
 

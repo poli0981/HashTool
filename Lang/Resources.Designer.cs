@@ -1399,7 +1399,7 @@ namespace CheckHash.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Reset Theme.
+        ///   Looks up a localized string similar to Reset Settings.
         /// </summary>
         public static string Settings_Reset {
             get {
