@@ -301,7 +301,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
                     var remainingCount = queue.Count - current;
                     var eta = rate > 0 ? TimeSpan.FromSeconds(remainingCount / rate) : TimeSpan.Zero;
                     var etaStr = current > 0 && current < queue.Count
-                        ? string.Format(L["Msg_EstimatedTime"], $"{eta.Minutes:D2}:{eta.Seconds:D2}")
+                        ? string.Format(L["Msg_EstimatedTime"], $"{(int)eta.TotalHours}:{eta.Minutes:D2}:{eta.Seconds:D2}")
                         : L["Msg_TimeUnknown"];
 
                     // Speed Calculation
@@ -442,19 +442,23 @@ public partial class CheckHashViewModel : FileListViewModelBase
         UpdateStatsText();
         SpeedText = "";
 
-        Logger.Log($"Batch verification finished. Match: {match}, Mismatch/Error: {mismatch}, Cancelled: {cancelled}");
+        var totalDuration = DateTime.UtcNow - startTime;
+        var durationStr = $"{(int)totalDuration.TotalHours}:{totalDuration.Minutes:D2}:{totalDuration.Seconds:D2}";
+        Logger.Log($"Batch verification finished in {durationStr}. Match: {match}, Mismatch/Error: {mismatch}, Cancelled: {cancelled}");
 
         if (cancelled > 0)
         {
             var msg = L["Msg_TaskCancelled_Content"];
+            msg += $"\n{string.Format(L["Msg_TaskDuration"], durationStr)}";
             Logger.Log(msg, LogLevel.Warning);
             await MessageBoxHelper.ShowAsync(L["Msg_TaskCancelled_Title"], msg, MessageBoxIcon.Warning);
         }
         else
         {
             var icon = mismatch > 0 ? MessageBoxIcon.Warning : MessageBoxIcon.Success;
-            await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
-                string.Format(L["Msg_CheckResult"], Files.Count, match, mismatch, cancelled), icon);
+            var resultMsg = string.Format(L["Msg_CheckResult"], Files.Count, match, mismatch, cancelled);
+            resultMsg += $"\n{string.Format(L["Msg_TaskDuration"], durationStr)}";
+            await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], resultMsg, icon);
         }
     }
 

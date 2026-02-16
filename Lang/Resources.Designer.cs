@@ -1108,6 +1108,15 @@ namespace CheckHash.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Task Duration: {0}.
+        /// </summary>
+        public static string Msg_TaskDuration {
+            get {
+                return ResourceManager.GetString("Msg_TaskDuration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Calculating....
         /// </summary>
         public static string Msg_TimeUnknown {

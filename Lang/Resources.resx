@@ -616,6 +616,9 @@
     <data name="Msg_EstimatedTime">
         <value>Time Remaining: {0}</value>
     </data>
+    <data name="Msg_TaskDuration">
+        <value>Task Duration: {0}</value>
+    </data>
     <data name="Msg_TimeUnknown">
         <value>Calculating...</value>
     </data>

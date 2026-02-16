@@ -264,7 +264,7 @@ public partial class CreateHashViewModel : FileListViewModelBase
                     var remainingCount = queue.Count - current;
                     var eta = rate > 0 ? TimeSpan.FromSeconds(remainingCount / rate) : TimeSpan.Zero;
                     var etaStr = current > 0 && current < queue.Count
-                        ? string.Format(L["Msg_EstimatedTime"], $"{eta.Minutes:D2}:{eta.Seconds:D2}")
+                        ? string.Format(L["Msg_EstimatedTime"], $"{(int)eta.TotalHours}:{eta.Minutes:D2}:{eta.Seconds:D2}")
                         : L["Msg_TimeUnknown"];
 
                     // Speed Calculation
@@ -404,11 +404,15 @@ public partial class CreateHashViewModel : FileListViewModelBase
         UpdateStatsText();
         SpeedText = "";
 
-        Logger.Log($"Batch finished. Success: {success}, Failed: {fail}, Cancelled: {cancelled}");
+        var totalDuration = DateTime.UtcNow - startTime;
+        var durationStr = $"{(int)totalDuration.TotalHours}:{totalDuration.Minutes:D2}:{totalDuration.Seconds:D2}";
+        Logger.Log($"Batch finished in {durationStr}. Success: {success}, Failed: {fail}, Cancelled: {cancelled}");
 
         var icon = (fail > 0 || cancelled > 0) ? MessageBoxIcon.Warning : MessageBoxIcon.Success;
-        await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
-            string.Format(L["Msg_Result_Content"], success, fail, cancelled), icon);
+        var resultMsg = string.Format(L["Msg_Result_Content"], success, fail, cancelled);
+        resultMsg += $"\n{string.Format(L["Msg_TaskDuration"], durationStr)}";
+
+        await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], resultMsg, icon);
     }
 
     private bool CanSaveHashFile(FileItem? item)
