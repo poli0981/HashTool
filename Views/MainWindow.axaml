@@ -183,7 +183,7 @@
 
                 <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="10" Margin="0,0,0,10"
                             IsVisible="{Binding HasFiles}" IsEnabled="{Binding !IsComputing}">
-                    <TextBox Text="{Binding SearchText, Mode=TwoWay}" Watermark="Search by name..." Width="200"
+                    <TextBox Text="{Binding SearchText, Mode=TwoWay}" Watermark="Search by name..." Width="400"
                              Classes="DragOver" BorderThickness="0,0,0,1" CornerRadius="0" />
                     <ComboBox ItemsSource="{Binding FilterStatusOptions}"
                               SelectedItem="{Binding SelectedFilterStatus, Mode=TwoWay}"
@@ -227,10 +227,11 @@
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Border BorderBrush="#30808080" BorderThickness="0,0,0,1" Padding="5">
-                                <Grid ColumnDefinitions="*, 90, 110, 200, 40, 80, 100">
+                                <Grid ColumnDefinitions="400, 90, 110, *, 40, 80, 100">
 
                                     <!-- 0: File Name -->
-                                    <StackPanel Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0">
+                                    <StackPanel Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0"
+                                                ToolTip.Tip="{Binding FilePath}">
                                         <controls:HighlightTextBlock Text="{Binding FileName}"
                                                                      HighlightText="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).SearchText}"
                                                                      HighlightBrush="{DynamicResource SystemAccentColor}"
@@ -451,7 +452,7 @@
 
                 <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="10" Margin="0,0,0,10"
                             IsVisible="{Binding HasFiles}" IsEnabled="{Binding !IsChecking}">
-                    <TextBox Text="{Binding SearchText, Mode=TwoWay}" Watermark="Search by name..." Width="200"
+                    <TextBox Text="{Binding SearchText, Mode=TwoWay}" Watermark="Search by name..." Width="400"
                              Classes="DragOver" BorderThickness="0,0,0,1" CornerRadius="0" />
                     <ComboBox ItemsSource="{Binding FilterStatusOptions}"
                               SelectedItem="{Binding SelectedFilterStatus, Mode=TwoWay}"
@@ -495,9 +496,10 @@
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Border BorderBrush="#30808080" BorderThickness="0,0,0,1" Padding="5">
-                                <Grid ColumnDefinitions="*, 100, 250, 100, 80">
+                                <Grid ColumnDefinitions="400, 100, *, 100, 80">
 
-                                    <StackPanel Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0">
+                                    <StackPanel Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0"
+                                                ToolTip.Tip="{Binding FilePath}">
                                         <controls:HighlightTextBlock Text="{Binding FileName}"
                                                                      HighlightText="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).SearchText}"
                                                                      HighlightBrush="{DynamicResource SystemAccentColor}"
