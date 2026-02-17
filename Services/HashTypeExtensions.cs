@@ -1,5 +1,3 @@
-using System;
-
 namespace CheckHash.Services;
 
 public static class HashTypeExtensions

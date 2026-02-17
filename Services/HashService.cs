@@ -52,21 +52,30 @@ public class HashService
 
             await using (stream)
             {
-                var hashBytes = type switch
+                byte[] hashBytes;
+
+                switch (type)
                 {
-                    HashType.MD5 => await MD5.HashDataAsync(stream, token),
-                    HashType.SHA1 => await SHA1.HashDataAsync(stream, token),
-                    HashType.SHA256 => await SHA256.HashDataAsync(stream, token),
-                    HashType.SHA384 => await SHA384.HashDataAsync(stream, token),
-                    HashType.SHA512 => await SHA512.HashDataAsync(stream, token),
-                    HashType.BLAKE3 => await ComputeBlake3Async(stream, token, actualBufferSize),
-                    HashType.XxHash32 => await ComputeXxHash32Async(stream, token),
-                    HashType.XxHash64 => await ComputeXxHash64Async(stream, token),
-                    HashType.XxHash3 => await ComputeXxHash3Async(stream, token),
-                    HashType.XxHash128 => await ComputeXxHash128Async(stream, token),
-                    HashType.CRC32 => await ComputeCrc32Async(stream, token),
-                    _ => throw new ArgumentOutOfRangeException(nameof(type), type, "Unknown HashType")
-                };
+                    case HashType.MD5:
+                    case HashType.SHA1:
+                    case HashType.SHA256:
+                    case HashType.SHA384:
+                    case HashType.SHA512:
+                        hashBytes = await ComputeIncrementalHashAsync(stream, type, token, actualBufferSize);
+                        break;
+                    case HashType.BLAKE3:
+                        hashBytes = await ComputeBlake3Async(stream, token, actualBufferSize);
+                        break;
+                    case HashType.XxHash32:
+                    case HashType.XxHash64:
+                    case HashType.XxHash3:
+                    case HashType.XxHash128:
+                    case HashType.CRC32:
+                        hashBytes = await ComputeNonCryptoHashAsync(stream, type, token, actualBufferSize);
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException(nameof(type), type, "Unknown HashType");
+                }
 
                 return Convert.ToHexString(hashBytes);
             }
@@ -89,6 +98,35 @@ public class HashService
         }
     }
 
+    private async Task<byte[]> ComputeIncrementalHashAsync(Stream stream, HashType type, CancellationToken token, int bufferSize)
+    {
+        var algName = type switch
+        {
+            HashType.MD5 => HashAlgorithmName.MD5,
+            HashType.SHA1 => HashAlgorithmName.SHA1,
+            HashType.SHA256 => HashAlgorithmName.SHA256,
+            HashType.SHA384 => HashAlgorithmName.SHA384,
+            HashType.SHA512 => HashAlgorithmName.SHA512,
+            _ => throw new ArgumentException("Invalid hash type for IncrementalHash", nameof(type))
+        };
+
+        using var hasher = IncrementalHash.CreateHash(algName);
+        var buffer = ArrayPool<byte>.Shared.Rent(bufferSize);
+        try
+        {
+            int bytesRead;
+            while ((bytesRead = await stream.ReadAsync(buffer.AsMemory(), token)) > 0)
+            {
+                hasher.AppendData(new ReadOnlySpan<byte>(buffer, 0, bytesRead));
+            }
+            return hasher.GetCurrentHash();
+        }
+        finally
+        {
+            ArrayPool<byte>.Shared.Return(buffer);
+        }
+    }
+
     private async Task<byte[]> ComputeBlake3Async(Stream stream, CancellationToken token, int bufferSize)
     {
         using var hasher = Hasher.New();
@@ -96,10 +134,10 @@ public class HashService
         try
         {
             int bytesRead;
-
             while ((bytesRead = await stream.ReadAsync(buffer.AsMemory(), token)) > 0)
+            {
                 hasher.Update(new ReadOnlySpan<byte>(buffer, 0, bytesRead));
-
+            }
             return hasher.Finalize().AsSpan().ToArray();
         }
         finally
@@ -108,48 +146,35 @@ public class HashService
         }
     }
 
-    private async Task<byte[]> ComputeXxHash32Async(Stream stream, CancellationToken token)
+    private async Task<byte[]> ComputeNonCryptoHashAsync(Stream stream, HashType type, CancellationToken token, int bufferSize)
     {
-        var alg = new XxHash32();
-        await alg.AppendAsync(stream, token);
-        var buffer = new byte[4];
-        alg.GetCurrentHash(buffer);
-        return buffer;
-    }
+        NonCryptographicHashAlgorithm hasher = type switch
+        {
+            HashType.XxHash32 => new XxHash32(),
+            HashType.XxHash64 => new XxHash64(),
+            HashType.XxHash3 => new XxHash3(),
+            HashType.XxHash128 => new XxHash128(),
+            HashType.CRC32 => new Crc32(),
+            _ => throw new ArgumentException("Invalid hash type for NonCryptographicHashAlgorithm", nameof(type))
+        };
 
-    private async Task<byte[]> ComputeXxHash64Async(Stream stream, CancellationToken token)
-    {
-        var alg = new XxHash64();
-        await alg.AppendAsync(stream, token);
-        var buffer = new byte[8];
-        alg.GetCurrentHash(buffer);
-        return buffer;
-    }
+        var buffer = ArrayPool<byte>.Shared.Rent(bufferSize);
+        try
+        {
+            int bytesRead;
+            while ((bytesRead = await stream.ReadAsync(buffer.AsMemory(), token)) > 0)
+            {
+                hasher.Append(new ReadOnlySpan<byte>(buffer, 0, bytesRead));
+            }
 
-    private async Task<byte[]> ComputeXxHash3Async(Stream stream, CancellationToken token)
-    {
-        var alg = new XxHash3();
-        await alg.AppendAsync(stream, token);
-        var buffer = new byte[8];
-        alg.GetCurrentHash(buffer);
-        return buffer;
-    }
-
-    private async Task<byte[]> ComputeXxHash128Async(Stream stream, CancellationToken token)
-    {
-        var alg = new XxHash128();
-        await alg.AppendAsync(stream, token);
-        var buffer = new byte[16];
-        alg.GetCurrentHash(buffer);
-        return buffer;
-    }
-
-    private async Task<byte[]> ComputeCrc32Async(Stream stream, CancellationToken token)
-    {
-        var alg = new Crc32();
-        await alg.AppendAsync(stream, token);
-        var buffer = new byte[4];
-        alg.GetCurrentHash(buffer);
-        return buffer;
+            // Allocate exact size for result
+            var result = new byte[hasher.HashLengthInBytes];
+            hasher.GetCurrentHash(result);
+            return result;
+        }
+        finally
+        {
+            ArrayPool<byte>.Shared.Return(buffer);
+        }
     }
 }
