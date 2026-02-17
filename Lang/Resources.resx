@@ -718,4 +718,16 @@
     <data name="Status_Failure">
         <value>Failed</value>
     </data>
+    <data name="Watermark_Search">
+        <value>Search by name...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Size</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub Profile</value>
+    </data>
+    <data name="Filter_All">
+        <value>All</value>
+    </data>
 </root>

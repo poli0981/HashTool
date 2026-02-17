@@ -91,7 +91,7 @@
                     <StackPanel Orientation="Horizontal" Spacing="15" Margin="34,0,0,0">
                         <Button Command="{Binding OpenUrlCommand}" CommandParameter="{Binding GitHubProfile}"
                                 Background="Transparent" Padding="5" CornerRadius="8"
-                                ToolTip.Tip="GitHub Profile">
+                                ToolTip.Tip="{Binding Localization[Tip_GitHubProfile]}">
                             <StackPanel Orientation="Horizontal" Spacing="10">
                                 <icons:MaterialIcon Kind="Github" Width="24" Height="24" />
                                 <TextBlock Text="{Binding AuthorName}" VerticalAlignment="Center" FontWeight="Bold" />

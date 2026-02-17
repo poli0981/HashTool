@@ -609,6 +609,15 @@ namespace CheckHash.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All.
+        /// </summary>
+        public static string Filter_All {
+            get {
+                return ResourceManager.GetString("Filter_All", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Advanced: Fallback to Older Version.
         /// </summary>
         public static string Header_Fallback {
@@ -1170,6 +1179,15 @@ namespace CheckHash.Lang {
         public static string Msg_WrongHashFileContent {
             get {
                 return ResourceManager.GetString("Msg_WrongHashFileContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Size.
+        /// </summary>
+        public static string Placeholder_Size {
+            get {
+                return ResourceManager.GetString("Placeholder_Size", resourceCulture);
             }
         }
         
@@ -1957,6 +1975,15 @@ namespace CheckHash.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GitHub Profile.
+        /// </summary>
+        public static string Tip_GitHubProfile {
+            get {
+                return ResourceManager.GetString("Tip_GitHubProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hash Visibility.
         /// </summary>
         public static string Tip_HashVisibility {
@@ -2070,6 +2097,15 @@ namespace CheckHash.Lang {
         public static string Watermark_PasteDrop {
             get {
                 return ResourceManager.GetString("Watermark_PasteDrop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search by name....
+        /// </summary>
+        public static string Watermark_Search {
+            get {
+                return ResourceManager.GetString("Watermark_Search", resourceCulture);
             }
         }
     }

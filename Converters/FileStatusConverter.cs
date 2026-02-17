@@ -27,7 +27,7 @@ public class FileStatusConverter : IValueConverter
 
         if (value == null)
         {
-            return "All";
+            return L["Filter_All"];
         }
 
         return value?.ToString();
