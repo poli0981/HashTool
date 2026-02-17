@@ -190,7 +190,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
     }
 
     [RelayCommand(CanExecute = nameof(CanModifyList))]
-    protected virtual void ClearList()
+    protected virtual async Task ClearList()
     {
         foreach (var file in AllFiles)
         {
@@ -206,6 +206,12 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
         OnPropertyChanged(nameof(TotalFilesText));
         NotifyCommands();
         Logger.Log(GetClearLogMessage());
+
+        await Task.Run(() =>
+        {
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+        });
     }
 
     protected virtual string GetClearLogMessage() => "Cleared file list.";
@@ -434,6 +440,12 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
         OnPropertyChanged(nameof(TotalFilesText));
         NotifyCommands();
         Logger.Log(GetClearFailedLogMessage(failedItems.Count));
+
+        await Task.Run(() =>
+        {
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+        });
 
         await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
             string.Format(L["Msg_ClearedFailed"], failedItems.Count), MessageBoxIcon.Information);

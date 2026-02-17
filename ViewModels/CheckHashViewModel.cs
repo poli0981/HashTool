@@ -442,6 +442,12 @@ public partial class CheckHashViewModel : FileListViewModelBase
         UpdateStatsText();
         SpeedText = "";
 
+        await Task.Run(() =>
+        {
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+        });
+
         var totalDuration = DateTime.UtcNow - startTime;
         var durationStr = $"{(int)totalDuration.TotalHours}:{totalDuration.Minutes:D2}:{totalDuration.Seconds:D2}";
         Logger.Log($"Batch verification finished in {durationStr}. Match: {match}, Mismatch/Error: {mismatch}, Cancelled: {cancelled}");
