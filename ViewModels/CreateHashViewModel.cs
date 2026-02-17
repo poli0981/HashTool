@@ -404,6 +404,12 @@ public partial class CreateHashViewModel : FileListViewModelBase
         UpdateStatsText();
         SpeedText = "";
 
+        await Task.Run(() =>
+        {
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+        });
+
         var totalDuration = DateTime.UtcNow - startTime;
         var durationStr = $"{(int)totalDuration.TotalHours}:{totalDuration.Minutes:D2}:{totalDuration.Seconds:D2}";
         Logger.Log($"Batch finished in {durationStr}. Success: {success}, Failed: {fail}, Cancelled: {cancelled}");
