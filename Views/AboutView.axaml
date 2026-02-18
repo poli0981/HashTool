@@ -5,7 +5,8 @@
              x:Class="CheckHash.Views.AboutView"
              x:DataType="vm:AboutViewModel">
 
-    <ScrollViewer Padding="0,0,20,0">
+    <ScrollViewer Padding="0,0,20,0"
+                  VerticalScrollBarVisibility="Hidden">
         <StackPanel Spacing="25">
             <TextBlock Text="{Binding Localization[Title_About]}" FontSize="28" FontWeight="Bold" Margin="0,0,0,10" />
 
@@ -24,6 +25,35 @@
                         <TextBlock Text="{Binding Localization[About_License]}" FontStyle="Italic" Opacity="0.6" />
                     </StackPanel>
                 </Grid>
+            </Border>
+
+            <!-- 1.5. DOCUMENTS -->
+            <Border Background="{DynamicResource PaneBackgroundBrush}" CornerRadius="12" Padding="20"
+                    BorderBrush="{DynamicResource GlassBorderBrush}" BorderThickness="1">
+                <StackPanel Spacing="15">
+                    <StackPanel Orientation="Horizontal" Spacing="10">
+                        <icons:MaterialIcon Kind="FileDocument" Width="24" Height="24"
+                                            Foreground="{DynamicResource SystemAccentColor}" />
+                        <TextBlock Text="{Binding Localization[About_Documents]}" FontSize="18" FontWeight="SemiBold" />
+                    </StackPanel>
+
+                    <ItemsControl ItemsSource="{Binding Documents}" Margin="34,0,0,0">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid ColumnDefinitions="*, Auto" Margin="0,0,0,8">
+                                    <TextBlock Text="{Binding Name}" VerticalAlignment="Center" FontWeight="SemiBold" />
+
+                                    <Button Grid.Column="1"
+                                            Command="{Binding $parent[UserControl].((vm:AboutViewModel)DataContext).OpenUrlCommand}"
+                                            CommandParameter="{Binding Url}"
+                                            Background="Transparent" Padding="5">
+                                        <icons:MaterialIcon Kind="OpenInNew" Width="16" Height="16" Opacity="0.5" />
+                                    </Button>
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
             </Border>
 
             <!-- 2. TECHNOLOGY & AI -->
@@ -61,7 +91,7 @@
                     <StackPanel Orientation="Horizontal" Spacing="15" Margin="34,0,0,0">
                         <Button Command="{Binding OpenUrlCommand}" CommandParameter="{Binding GitHubProfile}"
                                 Background="Transparent" Padding="5" CornerRadius="8"
-                                ToolTip.Tip="GitHub Profile">
+                                ToolTip.Tip="{Binding Localization[Tip_GitHubProfile]}">
                             <StackPanel Orientation="Horizontal" Spacing="10">
                                 <icons:MaterialIcon Kind="Github" Width="24" Height="24" />
                                 <TextBlock Text="{Binding AuthorName}" VerticalAlignment="Center" FontWeight="Bold" />

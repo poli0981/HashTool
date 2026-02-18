@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using Avalonia.Collections;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -9,206 +7,59 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using Avalonia;
-using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Platform.Storage;
 using Avalonia.Threading;
+using CheckHash.Models;
 using CheckHash.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
 namespace CheckHash.ViewModels;
 
-public partial class CheckHashViewModel : ObservableObject, IDisposable
+public partial class CheckHashViewModel : FileListViewModelBase
 {
-    private const long MaxHashFileSize = 1024 * 1024; // 1MB
+    private const long MaxHashFileSize = AppConstants.OneMB; // 1MB
     private readonly HashService _hashService = new();
+
     [ObservableProperty] private HashType _globalAlgorithm = HashType.SHA256;
 
-    [ObservableProperty]
-    [NotifyCanExecuteChangedFor(nameof(VerifyAllCommand))]
-    [NotifyCanExecuteChangedFor(nameof(AddFilesToCheckCommand))]
-    [NotifyCanExecuteChangedFor(nameof(ClearListCommand))]
-    [NotifyCanExecuteChangedFor(nameof(RemoveFileCommand))]
-    private bool _isChecking;
+    [ObservableProperty] private bool _isChecking;
 
-    [ObservableProperty] private LocalizationProxy _localization = new(LocalizationService.Instance);
-    [ObservableProperty] private double _progressMax = 100;
-
-    [ObservableProperty] private double _progressValue;
-
-    public CheckHashViewModel()
-    {
-        Prefs.ForceCancelRequested += OnForceCancelRequested;
-
-        LocalizationService.Instance.PropertyChanged += (s, e) =>
-        {
-            if (e.PropertyName == "Item[]")
-            {
-                Localization = new LocalizationProxy(LocalizationService.Instance);
-                OnPropertyChanged(nameof(TotalFilesText));
-            }
-        };
-    }
-
-    private LocalizationService L => LocalizationService.Instance;
-    private ConfigurationService ConfigService => ConfigurationService.Instance;
-    private PreferencesService Prefs => PreferencesService.Instance;
-    private LoggerService Logger => LoggerService.Instance;
-
-    public AvaloniaList<FileItem> Files { get; } = new();
-
-    public ObservableCollection<HashType> AlgorithmList { get; } = new(Enum.GetValues<HashType>());
-
-    public string TotalFilesText => string.Format(L["Lbl_TotalFiles"], Files.Count);
-
-    private bool CanModifyList => !IsChecking;
+    protected override bool IsGlobalBusy => IsChecking;
 
     private bool CanVerify => Files.Count > 0 && !IsChecking;
 
-    public void Dispose()
+    partial void OnIsCheckingChanged(bool value)
     {
-        Prefs.ForceCancelRequested -= OnForceCancelRequested;
-        foreach (var file in Files) file.Cts?.Dispose();
+        NotifyCommands();
     }
 
-    private void OnForceCancelRequested(object? sender, EventArgs e)
+    protected override void NotifyCommands()
     {
-        Logger.Log("Force Cancel requested by user (Check Hash).", LogLevel.Warning);
-        foreach (var file in Files) file.Cts?.Cancel();
-    }
-
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    private void ClearList()
-    {
-        foreach (var file in Files)
-        {
-            file.Cts?.Cancel();
-            file.Cts?.Dispose();
-        }
-
-        Files.Clear();
-        ProgressValue = 0;
-        OnPropertyChanged(nameof(TotalFilesText));
         VerifyAllCommand.NotifyCanExecuteChanged();
-        Logger.Log("Cleared check list.");
+        CancelAllCommand.NotifyCanExecuteChanged();
+
+        // Base commands
+        AddFilesCommand.NotifyCanExecuteChanged();
+        AddFolderCommand.NotifyCanExecuteChanged();
+        ClearListCommand.NotifyCanExecuteChanged();
+        RemoveFileCommand.NotifyCanExecuteChanged();
+        ClearFailedCommand.NotifyCanExecuteChanged();
+        BrowseHashFileCommand.NotifyCanExecuteChanged();
     }
 
-    [RelayCommand(CanExecute = nameof(CanVerify))]
-
-    private async Task VerifyAll()
+    protected override IEnumerable<FileItem> GetFailedItems()
     {
-        Logger.Log("Starting batch verification...");
-        IsChecking = true;
-        ProgressMax = Files.Count;
-        ProgressValue = 0;
-        var queue = Files.ToList();
-        var counters = new int[2];
-
-        using var cts = new CancellationTokenSource();
-        var progressTask = Task.Run(async () =>
-        {
-            try
-            {
-                while (!cts.Token.IsCancellationRequested)
-                {
-                    await Task.Delay(100, cts.Token);
-                    var current = counters[0];
-                    await Dispatcher.UIThread.InvokeAsync(() => ProgressValue = current);
-                    if (current >= queue.Count) break;
-                }
-            }
-            catch (OperationCanceledException) { }
-        });
-
-        var statusCancelled = L["Status_Cancelled"];
-
-        try
-        {
-            await Parallel.ForEachAsync(queue, new ParallelOptions
-            {
-                MaxDegreeOfParallelism = Environment.ProcessorCount
-            }, async (file, ct) =>
-            {
-                await VerifyItemLogic(file);
-
-                Interlocked.Increment(ref counters[0]);
-                if (file.Status == statusCancelled)
-                {
-                    Interlocked.Increment(ref counters[1]);
-                }
-            });
-        }
-        finally
-        {
-            cts.Cancel();
-        }
-        try
-        {
-            await progressTask;
-        }
-        catch
-        {
-            // Ignore cancellation/tasks errors
-        }
-
-        ProgressValue = counters[0];
-        IsChecking = false;
-
-        var cancelled = counters[1];
-
-        var match = 0;
-        var failCount = 0;
-        foreach (var f in Files)
-        {
-            if (f.IsMatch == true) match++;
-            else if (f.IsMatch == false) failCount++;
-        }
-
-        Logger.Log($"Batch verification finished. Match: {match}, Mismatch/Error: {failCount}, Cancelled: {cancelled}");
-
-        if (cancelled > 0)
-        {
-            var msg = L["Msg_TaskCancelled_Content"];
-            Logger.Log(msg, LogLevel.Warning);
-            await MessageBoxHelper.ShowAsync(L["Msg_TaskCancelled_Title"], msg);
-        }
-        else
-        {
-            await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
-                string.Format(L["Msg_CheckResult"], Files.Count, match, failCount, cancelled));
-        }
+        return Files.Where(f => f.IsMatch != true);
     }
 
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    private async Task AddFilesToCheck(Window window)
+    public override async Task AddFilesFromPaths(IEnumerable<string> filePaths)
     {
-        try
-        {
-            Logger.Log("Opening file picker for Check Hash...");
-            var result = await window.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
-            {
-                AllowMultiple = true,
-                Title = L["Dialog_SelectCheckFiles"]
-            });
-
-            var paths = result.Select(x => x.Path.LocalPath);
-            await AddFilesAsync(paths);
-        }
-        catch (Exception ex)
-        {
-            Logger.Log($"Error adding files: {ex.Message}", LogLevel.Error);
-            await MessageBoxHelper.ShowAsync(L["Msg_Error"], ex.Message);
-        }
-    }
-
-    public async Task AddFilesAsync(IEnumerable<string> filePaths)
-    {
+        if (IsChecking) return;
         IsChecking = true;
         try
         {
-            var existingPaths = new HashSet<string>(Files.Select(f => f.FilePath));
-
             await Task.Run(async () =>
             {
                 var config = await ConfigService.LoadAsync();
@@ -266,10 +117,9 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
                                     }
                                 }
 
-                                result.HashContent = await ReadHashFromFile(path);
+                                result.HashContent = await ReadHashFromFileAsync(path);
                             }
                         }
-
                     }
                     catch
                     {
@@ -281,6 +131,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
 
                 var newItems = new List<FileItem>();
                 var skippedFiles = new List<string>();
+                var batchSeen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
                 foreach (var result in results)
                 {
@@ -325,31 +176,35 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
                         if (result.SourceExists && result.SourceInfo != null)
                         {
                             item.FileSize = FileItem.FormatSize(result.SourceInfo.Length);
+                            item.RawSizeBytes = result.SourceInfo.Length;
                         }
                         else
                         {
                             item.IsMatch = false;
                         }
 
+                        if (ExistingPaths.Contains(item.FilePath)) continue;
+                        if (!batchSeen.Add(item.FilePath)) continue;
                         newItems.Add(item);
-                        existingPaths.Add(item.FilePath);
                         Logger.Log($"Added check item (from hash file): {item.FileName}");
                     }
                     else
                     {
-                        if (!existingPaths.Contains(path) && result.Info != null)
+                        if (!ExistingPaths.Contains(path) && result.Info != null)
                         {
+                            if (!batchSeen.Add(path)) continue;
+
                             var item = new FileItem
                             {
                                 FileName = fileName,
                                 FilePath = path,
+                                RawSizeBytes = result.Info.Length,
                                 FileSize = FileItem.FormatSize(result.Info.Length),
                                 Status = L["Status_Waiting"],
                                 ExpectedHash = ""
                             };
 
                             newItems.Add(item);
-                            existingPaths.Add(path);
                             Logger.Log($"Added check item: {fileName}");
                         }
                     }
@@ -359,7 +214,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
                 {
                     await RunOnUIAsync(() =>
                     {
-                        Files.AddRange(newItems);
+                        AddItemsToAll(newItems);
                         return Task.CompletedTask;
                     });
                 }
@@ -372,7 +227,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
                     var summaryMsg = string.Format(L["Msg_FileSizeLimitExceeded_Summary"], skippedFiles.Count,
                         config.FileSizeLimitValue, config.FileSizeLimitUnit, fileList);
 
-                    await RunOnUIAsync(async () => await MessageBoxHelper.ShowAsync(L["Msg_Error"], summaryMsg));
+                    await RunOnUIAsync(async () => await MessageBoxHelper.ShowAsync(L["Msg_Error"], summaryMsg, MessageBoxIcon.Error));
                 }
             });
 
@@ -389,25 +244,227 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
         }
     }
 
-    private async Task RunOnUIAsync(Func<Task> action)
+
+    [RelayCommand(CanExecute = nameof(CanVerify))]
+    private async Task VerifyAllAsync()
     {
-        if (Application.Current == null)
+        Logger.Log("Starting batch verification...");
+        IsChecking = true;
+        ProgressMax = Files.Count;
+        ProgressValue = 0;
+        RemainingTime = L["Msg_TimeUnknown"];
+
+        // Reset Stats
+        ProcessedCount = 0;
+        SuccessCount = 0;
+        FailCount = 0;
+        CancelledCount = 0;
+        SpeedText = "";
+        UpdateStatsText();
+
+        var queue = Files.ToList();
+        var processedCounter = 0;
+        var cancelled = 0;
+        var match = 0;
+        var mismatch = 0;
+
+        long totalBytesRead = 0;
+        long totalBytesWritten = 0;
+        long lastBytesRead = 0;
+        long lastBytesWritten = 0;
+        var lastSpeedUpdate = DateTime.UtcNow;
+        var showSpeed = (await ConfigService.LoadAsync()).ShowReadWriteSpeed;
+
+        var startTime = DateTime.UtcNow;
+
+        // Reset items
+        foreach (var item in queue)
         {
-            await action();
-            return;
+            item.Status = L["Status_Waiting"];
+            item.ProcessingState = FileStatus.Ready;
+            item.IsMatch = null;
+            item.IsCancelled = false;
+            item.ProcessDuration = "";
         }
+
+        _batchCts = new CancellationTokenSource();
+        using var progressCts = new CancellationTokenSource();
+        var progressTask = Task.Run(async () =>
+        {
+            try
+            {
+                while (!progressCts.Token.IsCancellationRequested)
+                {
+                    await Task.Delay(250, progressCts.Token);
+                    var current = processedCounter;
+
+                    var elapsed = (DateTime.UtcNow - startTime).TotalSeconds;
+                    var rate = current / elapsed;
+                    var remainingCount = queue.Count - current;
+                    var eta = rate > 0 ? TimeSpan.FromSeconds(remainingCount / rate) : TimeSpan.Zero;
+                    var etaStr = current > 0 && current < queue.Count
+                        ? string.Format(L["Msg_EstimatedTime"], $"{(int)eta.TotalHours}:{eta.Minutes:D2}:{eta.Seconds:D2}")
+                        : L["Msg_TimeUnknown"];
+
+                    // Speed Calculation
+                    if (showSpeed)
+                    {
+                        var now = DateTime.UtcNow;
+                        var currentTotalRead = Interlocked.Read(ref totalBytesRead);
+                        var currentTotalWrite = Interlocked.Read(ref totalBytesWritten);
+
+                        var diffRead = currentTotalRead - lastBytesRead;
+                        var diffWrite = currentTotalWrite - lastBytesWritten;
+
+                        var timeDiff = (now - lastSpeedUpdate).TotalSeconds;
+
+                        if (timeDiff > 0.5) // Update every 0.5s
+                        {
+                            var readBytesPerSec = diffRead / timeDiff;
+                            var writeBytesPerSec = diffWrite / timeDiff;
+
+                            await Dispatcher.UIThread.InvokeAsync(() =>
+                                UpdateSpeedText(readBytesPerSec, writeBytesPerSec), DispatcherPriority.Background);
+
+                            lastBytesRead = currentTotalRead;
+                            lastBytesWritten = currentTotalWrite;
+                            lastSpeedUpdate = now;
+                        }
+                    }
+
+                    await Dispatcher.UIThread.InvokeAsync(() =>
+                    {
+                        ProgressValue = current;
+                        RemainingTime = etaStr;
+
+                        ProcessedCount = current;
+                        SuccessCount = match;
+                        FailCount = mismatch;
+                        CancelledCount = cancelled;
+                        UpdateStatsText();
+                    }, DispatcherPriority.Background);
+
+                    if (current >= queue.Count) break;
+                }
+            }
+            catch (OperationCanceledException)
+            {
+            }
+        });
+
+        var statusCancelled = L["Status_Cancelled"];
 
         try
         {
-            await Dispatcher.UIThread.InvokeAsync(action);
+            var strategyService = new ProcessingStrategyService();
+            var batches = strategyService.GetProcessingBatches(queue, f => f.RawSizeBytes);
+            Logger.Log($"Starting processing with 3 streams. Small: {batches[0].Count}, Medium: {batches[1].Count}, Large: {batches[2].Count}");
+
+            Action<long>? progressCallback = null;
+            if (showSpeed)
+            {
+                progressCallback = (bytes) => Interlocked.Add(ref totalBytesRead, bytes);
+            }
+
+            var tasks = new List<Task>();
+
+            foreach (var batch in batches)
+            {
+                if (batch.Count == 0) continue;
+
+                tasks.Add(Task.Run(async () =>
+                {
+                    foreach (var file in batch)
+                    {
+                        if (_batchCts?.Token.IsCancellationRequested == true) break;
+
+                        var algo = file.HasSpecificAlgorithm ? file.SelectedAlgorithm : GlobalAlgorithm;
+                        var bufferSize = strategyService.GetBufferSize(file.RawSizeBytes, algo);
+                        await VerifyItemLogicAsync(file, bufferSize, progressCallback);
+
+                        Interlocked.Increment(ref processedCounter);
+
+                        if (file.IsMatch == true) Interlocked.Increment(ref match);
+                        else if (file.IsMatch == false) Interlocked.Increment(ref mismatch);
+
+                        if (file.Status == statusCancelled)
+                        {
+                            Interlocked.Increment(ref cancelled);
+                        }
+                    }
+                }, _batchCts?.Token ?? CancellationToken.None));
+            }
+
+            await Task.WhenAll(tasks);
+        }
+        catch (OperationCanceledException)
+        {
+            Logger.Log("Batch verification cancelled.");
+        }
+        finally
+        {
+            progressCts.Cancel();
+            _batchCts?.Dispose();
+            _batchCts = null;
+        }
+
+        var cancelledStatus = L["Status_Cancelled"];
+        await Dispatcher.UIThread.InvokeAsync(() =>
+        {
+            foreach (var item in queue)
+            {
+                if (item.ProcessingState == FileStatus.Ready)
+                {
+                    item.Status = cancelledStatus;
+                    item.ProcessingState = FileStatus.Cancelled;
+                    item.IsCancelled = true;
+                    cancelled++;
+                    processedCounter++;
+                }
+            }
+        }, DispatcherPriority.Background);
+
+        try
+        {
+            await progressTask;
         }
         catch
         {
-            await action();
+            // Ignore cancellation/tasks errors
+        }
+
+        ProgressValue = processedCounter;
+        RemainingTime = "";
+        IsChecking = false;
+
+        ProcessedCount = processedCounter;
+        SuccessCount = match;
+        FailCount = mismatch;
+        CancelledCount = cancelled;
+        UpdateStatsText();
+        SpeedText = "";
+
+        var totalDuration = DateTime.UtcNow - startTime;
+        var durationStr = $"{(int)totalDuration.TotalHours}:{totalDuration.Minutes:D2}:{totalDuration.Seconds:D2}";
+        Logger.Log($"Batch verification finished in {durationStr}. Match: {match}, Mismatch/Error: {mismatch}, Cancelled: {cancelled}");
+
+        if (cancelled > 0)
+        {
+            var msg = L["Msg_TaskCancelled_Content"];
+            msg += $"\n{string.Format(L["Msg_TaskDuration"], durationStr)}";
+            Logger.Log(msg, LogLevel.Warning);
+            await MessageBoxHelper.ShowAsync(L["Msg_TaskCancelled_Title"], msg, MessageBoxIcon.Warning);
+        }
+        else
+        {
+            var icon = mismatch > 0 ? MessageBoxIcon.Warning : MessageBoxIcon.Success;
+            var resultMsg = string.Format(L["Msg_CheckResult"], Files.Count, match, mismatch, cancelled);
+            resultMsg += $"\n{string.Format(L["Msg_TaskDuration"], durationStr)}";
+            await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], resultMsg, icon);
         }
     }
 
-    private async Task<string> ReadHashFromFile(string path)
+    private async Task<string> ReadHashFromFileAsync(string path)
     {
         try
         {
@@ -417,6 +474,7 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
                 Logger.Log($"Hash file too large (>{MaxHashFileSize / 1024}KB): {path}", LogLevel.Warning);
                 return "";
             }
+
             var regex = HashRegex();
 
             var content = await File.ReadAllTextAsync(path);
@@ -428,54 +486,55 @@ public partial class CheckHashViewModel : ObservableObject, IDisposable
         {
             return "";
         }
-
     }
-    [GeneratedRegex(@"[a-fA-F0-9]{32,128}")]
+
+    [GeneratedRegex(@"[a-fA-F0-9]{8,128}")]
     private static partial Regex HashRegex();
 
 
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    private void RemoveFile(FileItem item)
-    {
-        item.Cts?.Cancel();
-        if (Files.Contains(item))
-        {
-            Files.Remove(item);
-            item.IsDeleted = true;
-            OnPropertyChanged(nameof(TotalFilesText));
-            VerifyAllCommand.NotifyCanExecuteChanged();
-            Logger.Log($"Removed check item: {item.FileName}");
-        }
-    }
-
     [RelayCommand]
-    private async Task VerifySingle(FileItem item)
+    private async Task VerifySingleAsync(FileItem item)
     {
+        if (IsChecking && !item.IsProcessing) return;
+
         if (item.IsProcessing)
         {
             item.Cts?.Cancel();
             return;
         }
 
-        await VerifyItemLogic(item);
+        try
+        {
+            IsChecking = true;
+            item.Status = L["Status_Waiting"];
+            item.IsMatch = null;
+            item.IsCancelled = false;
+            await VerifyItemLogicAsync(item);
+        }
+        finally
+        {
+            IsChecking = false;
+        }
     }
 
-private async Task VerifyItemLogic(FileItem file)
+    private async Task VerifyItemLogicAsync(FileItem file, int? bufferSize = null,
+        Action<long>? progressCallback = null)
     {
         await Dispatcher.UIThread.InvokeAsync(() =>
         {
             file.IsProcessing = true;
+            file.ProcessingState = FileStatus.Processing;
             file.IsMatch = null;
             file.ProcessDuration = "";
             file.Status = L["Status_Waiting"];
-        });
+        }, DispatcherPriority.Background);
 
         file.Cts = new CancellationTokenSource();
         if (Prefs.IsFileTimeoutEnabled) file.Cts.CancelAfter(TimeSpan.FromSeconds(Prefs.FileTimeoutSeconds));
 
         await Task.Run(async () =>
         {
-            var result = await VerifyFileInternalAsync(file, file.Cts.Token);
+            var result = await VerifyFileInternalAsync(file, file.Cts.Token, bufferSize, progressCallback);
 
             await Dispatcher.UIThread.InvokeAsync(() =>
             {
@@ -485,20 +544,22 @@ private async Task VerifyItemLogic(FileItem file)
                 file.IsMatch = result.IsMatch;
                 file.ProcessDuration = result.Duration;
                 file.IsProcessing = false;
+
+                if (file.IsCancelled)
+                    file.ProcessingState = FileStatus.Cancelled;
+                else if (result.IsMatch == true)
+                    file.ProcessingState = FileStatus.Success;
+                else
+                    file.ProcessingState = FileStatus.Failure;
+
                 file.Cts?.Dispose();
                 file.Cts = null;
-            });
+            }, DispatcherPriority.Background);
         });
     }
 
-    private record struct VerificationResult(
-        string Status,
-        bool? IsMatch,
-        string Duration,
-        string? NewExpectedHash = null
-    );
-
-    private async Task<VerificationResult> VerifyFileInternalAsync(FileItem file, CancellationToken ct)
+    private async Task<VerificationResult> VerifyFileInternalAsync(FileItem file, CancellationToken ct,
+        int? bufferSize = null, Action<long>? progressCallback = null)
     {
         var sw = Stopwatch.StartNew();
         var result = new VerificationResult
@@ -508,7 +569,7 @@ private async Task VerifyItemLogic(FileItem file)
             IsMatch = false
         };
 
-        Logger.Log($"Verifying {file.FileName}...");
+        // Logger.Log($"Verifying {file.FileName}...");
 
         try
         {
@@ -529,7 +590,7 @@ private async Task VerifyItemLogic(FileItem file)
 
                 if (File.Exists(sidecarPath))
                 {
-                    var hash = await ReadHashFromFile(sidecarPath);
+                    var hash = await ReadHashFromFileAsync(sidecarPath);
                     if (!string.IsNullOrWhiteSpace(hash))
                     {
                         expectedHash = hash;
@@ -548,7 +609,14 @@ private async Task VerifyItemLogic(FileItem file)
             else
             {
                 var algoToCheck = file.HasSpecificAlgorithm ? file.SelectedAlgorithm : GlobalAlgorithm;
-                var actualHash = await _hashService.ComputeHashAsync(file.FilePath, algoToCheck, ct);
+                if (algoToCheck.IsInsecure())
+                {
+                    LoggerService.Instance.Log($"Weak algorithm used for verification: {algoToCheck}",
+                        LogLevel.Warning);
+                }
+
+                var actualHash =
+                    await _hashService.ComputeHashAsync(file.FilePath, algoToCheck, ct, bufferSize, progressCallback);
 
                 if (string.Equals(actualHash, expectedHash.Trim(), StringComparison.OrdinalIgnoreCase))
                 {
@@ -570,6 +638,7 @@ private async Task VerifyItemLogic(FileItem file)
         {
             result.Status = L["Status_Cancelled"];
             result.IsMatch = null;
+            await Dispatcher.UIThread.InvokeAsync(() => file.IsCancelled = true, DispatcherPriority.Background);
             Logger.Log($"Verification cancelled: {file.FileName}", LogLevel.Warning);
         }
         catch (Exception ex)
@@ -590,28 +659,13 @@ private async Task VerifyItemLogic(FileItem file)
         return result;
     }
 
-    private enum FilePreparationStatus
+    private bool CanBrowseHashFile(FileItem item)
     {
-        Success,
-        FileTooLarge,
-        SourceTooLarge
+        return !IsChecking;
     }
 
-    private sealed class FilePreparationResult
-    {
-        public required string Path { get; init; }
-        public FilePreparationStatus Status { get; set; } = FilePreparationStatus.Success;
-        public FileInfo? Info { get; set; }
-        public bool IsHashFile { get; set; }
-        public HashType DetectedAlgo { get; set; }
-        public string SourcePath { get; set; } = "";
-        public bool SourceExists { get; set; }
-        public FileInfo? SourceInfo { get; set; }
-        public string HashContent { get; set; } = "";
-    }
-
-    [RelayCommand]
-    private async Task BrowseHashFile(FileItem item)
+    [RelayCommand(CanExecute = nameof(CanBrowseHashFile))]
+    private async Task BrowseHashFileAsync(FileItem item)
     {
         var window =
             Application.Current?.ApplicationLifetime is
@@ -634,21 +688,48 @@ private async Task VerifyItemLogic(FileItem file)
             if (!hashFileName.Contains(item.FileName, StringComparison.OrdinalIgnoreCase))
             {
                 await MessageBoxHelper.ShowAsync(L["Msg_WrongHashFile"],
-                    string.Format(L["Msg_WrongHashFileContent"], item.FileName, hashFileName));
+                    string.Format(L["Msg_WrongHashFileContent"], item.FileName, hashFileName), MessageBoxIcon.Warning);
                 return;
             }
 
             try
             {
-                item.ExpectedHash = await ReadHashFromFile(hashFilePath);
+                item.ExpectedHash = await ReadHashFromFileAsync(hashFilePath);
                 item.Status = L["Status_HashFileLoaded"];
                 Logger.Log($"Loaded hash file for {item.FileName}");
             }
             catch (Exception ex)
             {
-                await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_ReadHashError"]);
+                await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_ReadHashError"], MessageBoxIcon.Error);
                 Logger.Log($"Error reading hash file: {ex.Message}", LogLevel.Error);
             }
         }
+    }
+
+    private record struct VerificationResult(
+        string Status,
+        bool? IsMatch,
+        string Duration,
+        string? NewExpectedHash = null
+    );
+
+    private enum FilePreparationStatus
+    {
+        Success,
+        FileTooLarge,
+        SourceTooLarge
+    }
+
+    private sealed class FilePreparationResult
+    {
+        public required string Path { get; init; }
+        public FilePreparationStatus Status { get; set; } = FilePreparationStatus.Success;
+        public FileInfo? Info { get; set; }
+        public bool IsHashFile { get; set; }
+        public HashType DetectedAlgo { get; set; }
+        public string SourcePath { get; set; } = "";
+        public bool SourceExists { get; set; }
+        public FileInfo? SourceInfo { get; set; }
+        public string HashContent { get; set; } = "";
     }
 }

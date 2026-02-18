@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
+using Avalonia.Threading;
 using CheckHash.Models;
 using CheckHash.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -15,10 +17,16 @@ namespace CheckHash.ViewModels;
 
 public partial class SettingsViewModel : ObservableObject
 {
+    [DllImport("kernel32.dll")]
+    private static extern bool SetProcessWorkingSetSize(IntPtr proc, int min, int max);
+
+    [DllImport("/usr/lib/libSystem.dylib")]
+    private static extern void malloc_zone_pressure_relief(IntPtr zone, ulong goal);
+
     // Config Path
     [ObservableProperty] private string _configFilePath;
 
-    [ObservableProperty] private List<AppThemeStyle> _filteredThemeStyles;
+    [ObservableProperty] private List<AppThemeStyle> _filteredThemeStyles = new();
     [ObservableProperty] private int _forceQuitTimeout;
 
     [ObservableProperty] private bool _isAdminModeEnabled;
@@ -33,6 +41,56 @@ public partial class SettingsViewModel : ObservableObject
     [ObservableProperty] private LocalizationProxy _localization = new(LocalizationService.Instance);
     [ObservableProperty] private bool _showConfigPath;
 
+    [ObservableProperty] private bool _showReadWriteSpeed;
+
+    private bool _showLanguageChangeWarning = true;
+
+    public LanguageItem SelectedLanguage
+    {
+        get => Localization.SelectedLanguage;
+        set
+        {
+            if (value == null || value == Localization.SelectedLanguage) return;
+
+            if (value.Code == "auto")
+            {
+                Dispatcher.UIThread.InvokeAsync(async () =>
+                {
+                    if (_showLanguageChangeWarning)
+                    {
+                        var (confirmed, isChecked) = await MessageBoxHelper.ShowConfirmationWithCheckboxAsync(
+                            L["Msg_LanguageChangeTitle"],
+                            L["Msg_LanguageChangeConfirmation"],
+                            L["Msg_DontShowAgain"],
+                            L["Btn_Yes"],
+                            L["Btn_No"],
+                            MessageBoxIcon.Question);
+
+                        if (!confirmed)
+                        {
+                            OnPropertyChanged(nameof(SelectedLanguage));
+                            return;
+                        }
+
+                        if (isChecked)
+                        {
+                            _showLanguageChangeWarning = false;
+                        }
+                    }
+
+                    Localization.SelectedLanguage = value;
+                    OnPropertyChanged(nameof(CanSetLanguageDefault));
+                    await SaveSettingsAsync();
+                });
+            }
+            else
+            {
+                Localization.SelectedLanguage = value;
+                OnPropertyChanged(nameof(CanSetLanguageDefault));
+            }
+        }
+    }
+
     private bool _isInitializing;
 
     public SettingsViewModel()
@@ -41,11 +99,19 @@ public partial class SettingsViewModel : ObservableObject
 
         Theme.PropertyChanged += (s, e) =>
         {
+            if (e.PropertyName == nameof(Theme.CurrentThemeVariant))
+            {
+                UpdateFilteredThemes();
+            }
+            else if (e.PropertyName == nameof(Theme.IsThemeLocked))
+            {
+                OnPropertyChanged(nameof(CanChangeTheme));
+            }
+
             if (_isInitializing) return;
 
             if (e.PropertyName == nameof(Theme.CurrentThemeVariant))
             {
-                UpdateFilteredThemes();
                 Logger.Log($"Theme variant changed to {Theme.CurrentThemeVariant}");
             }
             else if (e.PropertyName == nameof(Theme.CurrentThemeStyle))
@@ -54,7 +120,6 @@ public partial class SettingsViewModel : ObservableObject
             }
             else if (e.PropertyName == nameof(Theme.IsThemeLocked))
             {
-                OnPropertyChanged(nameof(CanChangeTheme));
                 _ = SaveSettingsAsync();
                 Logger.Log($"Theme lock changed: {Theme.IsThemeLocked}");
             }
@@ -70,7 +135,9 @@ public partial class SettingsViewModel : ObservableObject
             if (e.PropertyName == nameof(LocalizationService.Instance.SelectedLanguage))
             {
                 OnPropertyChanged(nameof(CanSetLanguageDefault));
-                if (!_isInitializing) Logger.Log($"Language changed to {LocalizationService.Instance.SelectedLanguage.Code}");
+                OnPropertyChanged(nameof(SelectedLanguage));
+                if (!_isInitializing)
+                    Logger.Log($"Language changed to {LocalizationService.Instance.SelectedLanguage.Code}");
             }
             else if (e.PropertyName == "Item[]")
             {
@@ -116,20 +183,50 @@ public partial class SettingsViewModel : ObservableObject
     }
 
     [RelayCommand]
-    private async Task ResetAppearance()
+    private async Task ResetSettings()
     {
         if (IsSettingsLocked) return;
 
-        Font.ResetSettings();
-        Theme.CurrentThemeStyle = AppThemeStyle.Fluent;
-        Theme.CurrentThemeVariant = AppThemeVariant.System;
-        Theme.IsThemeLocked = false;
+        var defaultConfig = new AppConfig();
 
-        Localization.SelectedLanguage = Localization.AvailableLanguages.FirstOrDefault(x => x.Code == "auto") ??
-                                        Localization.AvailableLanguages[0];
+        // Reset Appearance
+        Font.ResetSettings();
+        Theme.CurrentThemeStyle = defaultConfig.ThemeStyle;
+        Theme.CurrentThemeVariant = defaultConfig.ThemeVariant;
+        Theme.IsThemeLocked = defaultConfig.IsThemeLocked;
+
+        // Reset Language
+        Localization.SelectedLanguage =
+            Localization.AvailableLanguages.FirstOrDefault(x => x.Code == defaultConfig.LanguageCode) ??
+            Localization.AvailableLanguages[0];
+        _showLanguageChangeWarning = defaultConfig.ShowLanguageChangeWarning;
+
+        // Reset Developer & Admin Mode
+        IsDeveloperModeEnabled = defaultConfig.IsDeveloperModeEnabled;
+        IsAdminModeEnabled = defaultConfig.IsAdminModeEnabled;
+
+        // Reset Timeouts & Monitor
+        ForceQuitTimeout = defaultConfig.ForceQuitTimeout;
+        ShowReadWriteSpeed = defaultConfig.ShowReadWriteSpeed;
+
+        // Reset Preferences
+        Prefs.IsHashMaskingEnabled = defaultConfig.IsHashMaskingEnabled;
+
+        Prefs.IsFileSizeLimitEnabled = defaultConfig.IsFileSizeLimitEnabled;
+        Prefs.FileSizeLimitValue = defaultConfig.FileSizeLimitValue;
+        Prefs.FileSizeLimitUnit = defaultConfig.FileSizeLimitUnit;
+
+        Prefs.IsFileTimeoutEnabled = defaultConfig.IsFileTimeoutEnabled;
+        Prefs.FileTimeoutSeconds = defaultConfig.FileTimeoutSeconds;
+
+        Prefs.IsMaxFileCountEnabled = defaultConfig.IsMaxFileCountEnabled;
+        Prefs.MaxFileCount = defaultConfig.MaxFileCount;
+
+        Prefs.IsMaxFolderCountEnabled = defaultConfig.IsMaxFolderCountEnabled;
+        Prefs.MaxFolderCount = defaultConfig.MaxFolderCount;
 
         await SaveSettingsAsync();
-        Logger.Log("Reset appearance settings to default.", LogLevel.Warning);
+        Logger.Log("All settings reset to default.", LogLevel.Warning);
     }
 
     [RelayCommand]
@@ -175,6 +272,25 @@ public partial class SettingsViewModel : ObservableObject
     private async Task SetCurrentLanguageAsDefault()
     {
         if (IsSettingsLocked) return;
+
+        if (_showLanguageChangeWarning)
+        {
+            var (confirmed, isChecked) = await MessageBoxHelper.ShowConfirmationWithCheckboxAsync(
+                L["Msg_LanguageChangeTitle"],
+                L["Msg_LanguageChangeConfirmation"],
+                L["Msg_DontShowAgain"],
+                L["Btn_Yes"],
+                L["Btn_No"],
+                MessageBoxIcon.Question);
+
+            if (!confirmed) return;
+
+            if (isChecked)
+            {
+                _showLanguageChangeWarning = false;
+            }
+        }
+
         await SaveSettingsAsync();
         Logger.Log("Language saved as default.");
     }
@@ -184,9 +300,9 @@ public partial class SettingsViewModel : ObservableObject
     {
         var path = ConfigService.ConfigPath;
         if (File.Exists(path))
-            await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigExists"].Replace("{0}", path));
+            await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigExists"].Replace("{0}", path), MessageBoxIcon.Information);
         else
-            await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigMissing"]);
+            await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigMissing"], MessageBoxIcon.Warning);
     }
 
     [RelayCommand]
@@ -201,7 +317,7 @@ public partial class SettingsViewModel : ObservableObject
             if (clipboard != null)
             {
                 await clipboard.SetTextAsync(ConfigFilePath);
-                await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigCopied"]);
+                await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigCopied"], MessageBoxIcon.Success);
                 Logger.Log("Config path copied to clipboard.");
             }
         }
@@ -220,10 +336,50 @@ public partial class SettingsViewModel : ObservableObject
     {
         await SaveSettingsAsync();
         Logger.Log($"Admin Mode toggled: {IsAdminModeEnabled}");
-        if (IsAdminModeEnabled) await MessageBoxHelper.ShowAsync(L["Msg_AdminMode"], L["Msg_AdminRestart"]);
+        if (IsAdminModeEnabled) await MessageBoxHelper.ShowAsync(L["Msg_AdminMode"], L["Msg_AdminRestart"], MessageBoxIcon.Warning);
+    }
+
+    [RelayCommand]
+    private void FreeMemory()
+    {
+        System.Runtime.GCSettings.LargeObjectHeapCompactionMode = System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce;
+        GC.Collect(GC.MaxGeneration, GCCollectionMode.Forced, true);
+        GC.WaitForPendingFinalizers();
+        GC.Collect(GC.MaxGeneration, GCCollectionMode.Forced, true);
+
+        if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+        {
+            try
+            {
+                using var proc = Process.GetCurrentProcess();
+                SetProcessWorkingSetSize(proc.Handle, -1, -1);
+            }
+            catch
+            {
+                // Ignore errors during working set trimming
+            }
+        }
+        else if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+        {
+            try
+            {
+                malloc_zone_pressure_relief(IntPtr.Zero, 0);
+            }
+            catch
+            {
+                // Ignore errors
+            }
+        }
+
+        Logger.Log(L["Msg_MemoryFreed"], LogLevel.Success);
     }
 
     partial void OnForceQuitTimeoutChanged(int value)
+    {
+        if (!_isInitializing) _ = SaveSettingsAsync();
+    }
+
+    partial void OnShowReadWriteSpeedChanged(bool value)
     {
         if (!_isInitializing) _ = SaveSettingsAsync();
     }
@@ -244,7 +400,12 @@ public partial class SettingsViewModel : ObservableObject
             IsDeveloperModeEnabled = config.IsDeveloperModeEnabled;
 
             var lang = Localization.AvailableLanguages.FirstOrDefault(x => x.Code == config.LanguageCode);
-            if (lang != null) Localization.SelectedLanguage = lang;
+            if (lang != null)
+            {
+                Localization.SelectedLanguage = lang;
+                OnPropertyChanged(nameof(SelectedLanguage));
+                OnPropertyChanged(nameof(CanSetLanguageDefault));
+            }
 
             Theme.CurrentThemeStyle = config.ThemeStyle;
             Theme.CurrentThemeVariant = config.ThemeVariant;
@@ -270,8 +431,16 @@ public partial class SettingsViewModel : ObservableObject
             Prefs.IsFileTimeoutEnabled = config.IsFileTimeoutEnabled;
             Prefs.FileTimeoutSeconds = config.FileTimeoutSeconds;
 
+            Prefs.IsMaxFileCountEnabled = config.IsMaxFileCountEnabled;
+            Prefs.MaxFileCount = config.MaxFileCount;
+
+            Prefs.IsMaxFolderCountEnabled = config.IsMaxFolderCountEnabled;
+            Prefs.MaxFolderCount = config.MaxFolderCount;
+
             IsAdminModeEnabled = config.IsAdminModeEnabled;
             ForceQuitTimeout = config.ForceQuitTimeout;
+            _showLanguageChangeWarning = config.ShowLanguageChangeWarning;
+            ShowReadWriteSpeed = config.ShowReadWriteSpeed;
 
             Logger.Log("Settings loaded from config.");
         }
@@ -295,23 +464,26 @@ public partial class SettingsViewModel : ObservableObject
             ThemeStyle = Theme.CurrentThemeStyle,
             ThemeVariant = Theme.CurrentThemeVariant,
             IsThemeLocked = Theme.IsThemeLocked,
-
             FontFamily = Font.SelectedFont?.Name,
             BaseFontSize = Font.BaseFontSize,
             UiScale = Font.UiScale,
             IsFontLocked = Font.IsLockedFont,
             IsAutoFont = Font.IsAutoFont,
             IsHashMaskingEnabled = Prefs.IsHashMaskingEnabled,
-
             IsFileSizeLimitEnabled = Prefs.IsFileSizeLimitEnabled,
             FileSizeLimitValue = Prefs.FileSizeLimitValue,
             FileSizeLimitUnit = Prefs.FileSizeLimitUnit,
-
             IsFileTimeoutEnabled = Prefs.IsFileTimeoutEnabled,
             FileTimeoutSeconds = Prefs.FileTimeoutSeconds,
-
+            IsMaxFileCountEnabled = Prefs.IsMaxFileCountEnabled,
+            MaxFileCount = Prefs.MaxFileCount,
+            IsMaxFolderCountEnabled = Prefs.IsMaxFolderCountEnabled,
+            MaxFolderCount = Prefs.MaxFolderCount,
             IsAdminModeEnabled = IsAdminModeEnabled,
-            ForceQuitTimeout = ForceQuitTimeout
+            ForceQuitTimeout = ForceQuitTimeout,
+
+            ShowLanguageChangeWarning = _showLanguageChangeWarning,
+            ShowReadWriteSpeed = ShowReadWriteSpeed
         };
 
         await ConfigService.SaveAsync(config);

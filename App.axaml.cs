@@ -34,8 +34,6 @@ public class App : Application
             args.SetObserved();
         };
 
-        _ = ConfigurationService.Instance.EnsureConfigFileExistsAsync();
-
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
             DisableAvaloniaDataAnnotationValidation();

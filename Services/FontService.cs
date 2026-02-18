@@ -117,9 +117,9 @@ public partial class FontService : ObservableObject
                 if (!Directory.Exists(_logDir)) Directory.CreateDirectory(_logDir);
                 await File.WriteAllTextAsync(_logFile, $"Default Font Set: {fontName} at {DateTime.Now}");
             }
-            catch
+            catch (Exception ex)
             {
-                // Ignore errors
+                LoggerService.Instance.Log($"Failed to save font log: {ex.Message}", LogLevel.Error);
             }
         }, TaskScheduler.Default);
     }
@@ -171,9 +171,9 @@ public partial class FontService : ObservableObject
 
             await File.WriteAllTextAsync(_settingsFile, json);
         }
-        catch
+        catch (Exception ex)
         {
-            // Ignore errors
+            LoggerService.Instance.Log($"Failed to save font settings: {ex.Message}", LogLevel.Error);
         }
     }
 
@@ -187,9 +187,9 @@ public partial class FontService : ObservableObject
                 return JsonSerializer.Deserialize<FontSettingsData>(json);
             }
         }
-        catch
+        catch (Exception ex)
         {
-            // Ignore errors
+            LoggerService.Instance.Log($"Failed to load font settings: {ex.Message}", LogLevel.Error);
         }
 
         return null;
@@ -251,7 +251,6 @@ public partial class FontService : ObservableObject
                     newCache[font.Name] = font;
                 }
 
-                // Load settings data off-thread
                 var settingsData = await LoadSettingsDataAsync();
 
                 Dispatcher.UIThread.Invoke(() =>
@@ -259,10 +258,8 @@ public partial class FontService : ObservableObject
                     InstalledFonts.Clear();
                     _fontCache.Clear();
 
-                    // Bulk add using AvaloniaList.AddRange
                     InstalledFonts.AddRange(newFonts);
 
-                    // Bulk cache update
                     foreach (var kvp in newCache)
                     {
                         _fontCache[kvp.Key] = kvp.Value;
@@ -272,8 +269,9 @@ public partial class FontService : ObservableObject
                 });
             });
         }
-        catch (Exception)
+        catch (Exception ex)
         {
+            LoggerService.Instance.Log($"Failed to load system fonts: {ex.Message}", LogLevel.Error);
             var settingsData = await LoadSettingsDataAsync();
             Dispatcher.UIThread.Invoke(() =>
             {

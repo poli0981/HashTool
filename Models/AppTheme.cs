@@ -3,10 +3,13 @@ namespace CheckHash.Models;
 public enum AppThemeStyle
 {
     Fluent,
-    MicaCustom,
     Google,
     HighContrast,
-    Colorblind
+    Colorblind,
+    Retro,
+    Glassmorphism,
+    Cyberpunk,
+    Pastel
 }
 
 public enum AppThemeVariant

@@ -16,7 +16,7 @@ public class ConfigurationService
     public ConfigurationService()
     {
         var appData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-        _configDir = Path.Combine(appData, "HashTool", "log", "settings");
+        _configDir = Path.Combine(appData, "HashTool", "settings");
         ConfigPath = Path.Combine(_configDir, "config.json");
     }
 
@@ -76,12 +76,9 @@ public class ConfigurationService
     {
         try
         {
-            if (File.Exists(ConfigPath))
-            {
-                var json = File.ReadAllText(ConfigPath);
-                var config = JsonSerializer.Deserialize<AppConfig>(json);
-                return config ?? new AppConfig();
-            }
+            var json = File.ReadAllText(ConfigPath);
+            var config = JsonSerializer.Deserialize<AppConfig>(json);
+            return config ?? new AppConfig();
         }
         catch (Exception ex)
         {
@@ -109,9 +106,26 @@ public class ConfigurationService
 
         return new AppConfig();
     }
-
-    public async System.Threading.Tasks.Task EnsureConfigFileExistsAsync()
+    public void EnsureConfigFileExists()
     {
-        if (!File.Exists(ConfigPath)) await Save(new AppConfig());
+        try
+        {
+            if (!_hasCheckedConfigDir)
+            {
+                if (!Directory.Exists(_configDir)) Directory.CreateDirectory(_configDir);
+                _hasCheckedConfigDir = true;
+            }
+
+            if (!File.Exists(ConfigPath))
+            {
+                var config = new AppConfig();
+                var json = JsonSerializer.Serialize(config, new JsonSerializerOptions { WriteIndented = true });
+                File.WriteAllText(ConfigPath, json);
+            }
+        }
+        catch (Exception ex)
+        {
+            LoggerService.Instance.Log($"Failed to ensure config file: {ex.Message}", LogLevel.Error);
+        }
     }
 }

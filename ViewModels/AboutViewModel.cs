@@ -12,10 +12,29 @@ public partial class AboutViewModel : ObservableObject
 
     public AboutViewModel()
     {
+        UpdateDocuments();
         LocalizationService.Instance.PropertyChanged += (s, e) =>
         {
-            if (e.PropertyName == "Item[]") Localization = new LocalizationProxy(LocalizationService.Instance);
+            if (e.PropertyName == "Item[]")
+            {
+                Localization = new LocalizationProxy(LocalizationService.Instance);
+                UpdateDocuments();
+            }
         };
+    }
+
+    private void UpdateDocuments()
+    {
+        Documents.Clear();
+        const string baseUrl = "https://github.com/poli0981/HashTool/blob/main";
+
+        Documents.Add(new DocumentItem(Localization["Doc_PrivacyPolicy"], $"{baseUrl}/docs/PrivacyPolicy.md"));
+        Documents.Add(new DocumentItem(Localization["Doc_ToS"], $"{baseUrl}/docs/ToS.md"));
+        Documents.Add(new DocumentItem(Localization["Doc_EULA"], $"{baseUrl}/docs/EULA.md"));
+        Documents.Add(new DocumentItem(Localization["Doc_Disclaimer"], $"{baseUrl}/docs/DISCLAIMER.md"));
+        Documents.Add(new DocumentItem(Localization["Doc_Readme"], $"{baseUrl}/README.md"));
+        Documents.Add(new DocumentItem(Localization["Doc_Changelog"], $"{baseUrl}/CHANGELOG.md"));
+        Documents.Add(new DocumentItem(Localization["Doc_Credit"], $"{baseUrl}/ACKNOWLEDGEMENTS.md"));
     }
 
     // Basic Info
@@ -24,6 +43,9 @@ public partial class AboutViewModel : ObservableObject
     public string AuthorName => "Poli0981"; // My name :D
     public string GitHubProfile => "https://github.com/poli0981";
     public string Copyright => $"© 2026 {AuthorName}. All rights reserved.";
+
+    // Documents
+    public ObservableCollection<DocumentItem> Documents { get; } = new();
 
     // Credits 3rd party libraries
     public ObservableCollection<LibraryItem> Libraries { get; } = new()
@@ -57,3 +79,4 @@ public partial class AboutViewModel : ObservableObject
 }
 
 public record LibraryItem(string Name, string License, string Url);
+public record DocumentItem(string Name, string Url);

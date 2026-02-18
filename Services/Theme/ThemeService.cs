@@ -70,29 +70,26 @@ public partial class ThemeService : ObservableObject
         var palette = ThemePalettes.GetPalette(CurrentThemeStyle, effectiveVariant);
 
         // 4. Apply Palette
-        foreach (var kvp in palette) app.Resources[kvp.Key] = kvp.Value;
+        // Note: Explicitly remove before adding to ensure change notification propagates immediately,
+        // specifically for switching between Light/Dark variants of the same theme (e.g. Glassmorphism).
+        foreach (var kvp in palette)
+        {
+            if (app.Resources.ContainsKey(kvp.Key))
+            {
+                app.Resources.Remove(kvp.Key);
+            }
+            app.Resources[kvp.Key] = kvp.Value;
+        }
 
         // 5. Apply Window Effects
-        if (CurrentThemeStyle == AppThemeStyle.MicaCustom)
-            LiquidGlassEffect.ApplyToMainWindow();
+        if (CurrentThemeStyle == AppThemeStyle.Fluent || CurrentThemeStyle == AppThemeStyle.Glassmorphism)
+            WindowEffect.ApplyToMainWindow();
         else
-            LiquidGlassEffect.DisableForMainWindow();
+            WindowEffect.DisableForMainWindow();
     }
 
     public List<AppThemeStyle> GetAvailableThemesForVariant(AppThemeVariant variant)
     {
-        var all = Enum.GetValues(typeof(AppThemeStyle)).Cast<AppThemeStyle>().ToList();
-
-        var isDark = variant == AppThemeVariant.Dark;
-
-        if (variant == AppThemeVariant.System)
-        {
-            var systemVariant = Application.Current?.PlatformSettings?.GetColorValues().ThemeVariant;
-            isDark = systemVariant == PlatformThemeVariant.Dark;
-        }
-
-        if (!isDark) return all.Where(t => t != AppThemeStyle.MicaCustom).ToList();
-
-        return all;
+        return Enum.GetValues(typeof(AppThemeStyle)).Cast<AppThemeStyle>().ToList();
     }
 }

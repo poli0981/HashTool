@@ -35,4 +35,16 @@ public class AppConfig
     // File Processing Timeout
     public bool IsFileTimeoutEnabled { get; set; } = false;
     public int FileTimeoutSeconds { get; set; } = 60;
+
+    // Advanced Limits
+    public bool IsMaxFileCountEnabled { get; set; } = true;
+    public int MaxFileCount { get; set; } = 1000;
+
+    public bool IsMaxFolderCountEnabled { get; set; } = true;
+    public int MaxFolderCount { get; set; } = 3;
+    // Show Language Change Warning
+    public bool ShowLanguageChangeWarning { get; set; } = true;
+
+    // Monitoring
+    public bool ShowReadWriteSpeed { get; set; } = false;
 }

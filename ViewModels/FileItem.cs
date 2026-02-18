@@ -1,4 +1,5 @@
 using System.Threading;
+using CheckHash.Models;
 using CheckHash.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 
@@ -12,17 +13,20 @@ public partial class FileItem : ObservableObject
     [ObservableProperty] private string _fileName = "";
     [ObservableProperty] private string _filePath = "";
     [ObservableProperty] private string _fileSize = "";
+    [ObservableProperty] private bool _hasSpecificAlgorithm;
+    [ObservableProperty] private bool _isCancelled;
     [ObservableProperty] private bool? _isMatch;
     [ObservableProperty] private bool _isProcessing;
 
     // Reveal/Hide Expected Hash
     [ObservableProperty] private bool _isRevealed;
     [ObservableProperty] private string _processDuration = "";
+    [ObservableProperty] private FileStatus _processingState = FileStatus.Ready;
+    [ObservableProperty] private long _rawSizeBytes;
     [ObservableProperty] private string _resultHash = "";
 
     // Algorithm Select
     [ObservableProperty] private HashType _selectedAlgorithm = HashType.SHA256;
-    [ObservableProperty] private bool _hasSpecificAlgorithm;
     [ObservableProperty] private string _status;
 
     public FileItem()
@@ -40,10 +44,10 @@ public partial class FileItem : ObservableObject
         string[] sizes = { "B", "KB", "MB", "GB", "TB" };
         double len = bytes;
         var order = 0;
-        while (len >= 1024 && order < sizes.Length - 1)
+        while (len >= AppConstants.OneKB && order < sizes.Length - 1)
         {
             order++;
-            len /= 1024;
+            len /= AppConstants.OneKB;
         }
 
         return $"{len:0.##} {sizes[order]}";
