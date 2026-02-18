@@ -1009,6 +1009,15 @@ namespace CheckHash.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Memory cleanup triggered..
+        /// </summary>
+        public static string Msg_MemoryFreed {
+            get {
+                return ResourceManager.GetString("Msg_MemoryFreed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to No pre-release version found. Keeping current version..
         /// </summary>
         public static string Msg_NoPreRelease {
@@ -1246,6 +1255,15 @@ namespace CheckHash.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Free Memory.
+        /// </summary>
+        public static string Settings_BtnFreeMemory {
+            get {
+                return ResourceManager.GetString("Settings_BtnFreeMemory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Show full path and copy to clipboard..
         /// </summary>
         public static string Settings_ConfigDesc {
@@ -1386,6 +1404,24 @@ namespace CheckHash.Lang {
         public static string Settings_ForceQuitTimeout {
             get {
                 return ResourceManager.GetString("Settings_ForceQuitTimeout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Free Memory.
+        /// </summary>
+        public static string Settings_FreeMemory {
+            get {
+                return ResourceManager.GetString("Settings_FreeMemory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Force a garbage collection to free up memory..
+        /// </summary>
+        public static string Settings_FreeMemoryDesc {
+            get {
+                return ResourceManager.GetString("Settings_FreeMemoryDesc", resourceCulture);
             }
         }
         

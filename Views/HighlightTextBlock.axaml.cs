@@ -1,8 +1,9 @@
-using System;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.Documents;
+using Avalonia.Markup.Xaml;
 using Avalonia.Media;
+using System;
 
 namespace CheckHash.Views.Controls;
 
@@ -49,6 +50,11 @@ public partial class HighlightTextBlock : UserControl
     public HighlightTextBlock()
     {
         InitializeComponent();
+    }
+
+    private void InitializeComponent()
+    {
+        AvaloniaXamlLoader.Load(this);
         _textBlock = this.FindControl<TextBlock>("PART_TextBlock");
         UpdateText();
     }
@@ -87,27 +93,35 @@ public partial class HighlightTextBlock : UserControl
         int index = 0;
         while (index < text.Length)
         {
-             int matchIndex = text.IndexOf(highlight, index, StringComparison.OrdinalIgnoreCase);
-             if (matchIndex == -1)
-             {
-                 _textBlock.Inlines?.Add(new Run { Text = text.Substring(index) });
-                 break;
-             }
+            int matchIndex = text.IndexOf(highlight, index, StringComparison.OrdinalIgnoreCase);
+            if (matchIndex == -1)
+            {
+                if (index < text.Length)
+                {
+                    _textBlock.Inlines?.Add(new Run { Text = text.Substring(index) });
+                }
+                break;
+            }
 
-             if (matchIndex > index)
-             {
-                 _textBlock.Inlines?.Add(new Run { Text = text.Substring(index, matchIndex - index) });
-             }
+            if (matchIndex > index)
+            {
+                _textBlock.Inlines?.Add(new Run { Text = text.Substring(index, matchIndex - index) });
+            }
 
-             var matchText = text.Substring(matchIndex, highlight.Length);
-             _textBlock.Inlines?.Add(new Run
-             {
-                 Text = matchText,
-                 Foreground = HighlightBrush,
-                 FontWeight = FontWeight.Bold // Ensure highlighted text is bold
-             });
+            var matchText = text.Substring(matchIndex, highlight.Length);
+            _textBlock.Inlines?.Add(new Run
+            {
+                Text = matchText,
+                Foreground = HighlightBrush,
+                FontWeight = FontWeight.Bold
+            });
 
-             index = matchIndex + highlight.Length;
+            index = matchIndex + highlight.Length;
+        }
+        
+        if (index < text.Length)
+        {
+             _textBlock.Inlines?.Add(new Run { Text = text.Substring(index) });
         }
     }
 }

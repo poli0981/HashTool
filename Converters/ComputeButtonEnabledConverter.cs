@@ -9,7 +9,7 @@ public class ComputeButtonEnabledConverter : IMultiValueConverter
 {
     public object? Convert(IList<object?> values, Type targetType, object? parameter, CultureInfo culture)
     {
-        if (values.Count != 3)
+        if (values == null || values.Count != 3)
             return false;
 
         if (values[0] is not bool isCancelled ||

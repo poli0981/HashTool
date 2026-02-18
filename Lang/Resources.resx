@@ -730,4 +730,16 @@
     <data name="Filter_All">
         <value>All</value>
     </data>
+    <data name="Settings_FreeMemory">
+        <value>Free Memory</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Force a garbage collection to free up memory.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Free Memory</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Memory cleanup triggered.</value>
+    </data>
 </root>

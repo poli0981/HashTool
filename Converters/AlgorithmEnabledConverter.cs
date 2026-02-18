@@ -10,7 +10,7 @@ public class AlgorithmEnabledConverter : IMultiValueConverter
 {
     public object? Convert(IList<object?> values, Type targetType, object? parameter, CultureInfo culture)
     {
-        if (values.Count != 2)
+        if (values == null || values.Count != 2)
             return false;
 
         if (values[0] is not FileStatus status ||

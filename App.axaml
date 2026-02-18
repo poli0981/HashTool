@@ -2,6 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="CheckHash.App"
              xmlns:local="using:CheckHash"
+             xmlns:conv="using:CheckHash.Converters"
              xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
              Name="Hash Tool"
              RequestedThemeVariant="Dark">
@@ -34,6 +35,13 @@
 
     <Application.Resources>
         <ResourceDictionary>
+            <conv:HashMaskConverter x:Key="HashMaskConverter" />
+            <conv:CountToVisibilityConverter x:Key="CountToVisibilityConverter" />
+            <conv:ComputeButtonEnabledConverter x:Key="ComputeButtonEnabledConverter" />
+            <conv:AlgorithmEnabledConverter x:Key="AlgorithmEnabledConverter" />
+            <conv:FileStatusConverter x:Key="FileStatusConverter" />
+            <conv:FileSizeFilterConverter x:Key="FileSizeFilterConverter" />
+
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Light">
                     <Color x:Key="AppBackgroundColor">#F8F9FA</Color>

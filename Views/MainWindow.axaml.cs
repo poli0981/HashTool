@@ -14,39 +14,13 @@ namespace CheckHash.Views;
 public partial class MainWindow : Window
 {
     private bool _canClose;
-    private DateTime _lastMemoryCleanup = DateTime.MinValue;
 
     public MainWindow()
     {
         InitializeComponent();
-        Deactivated += (s, e) => FreeMemory();
     }
 
     private LocalizationService L => LocalizationService.Instance;
-
-    protected override void OnPropertyChanged(AvaloniaPropertyChangedEventArgs change)
-    {
-        base.OnPropertyChanged(change);
-
-        if (change.Property == WindowStateProperty && change.NewValue is WindowState.Minimized)
-        {
-            FreeMemory();
-        }
-    }
-
-    private void FreeMemory()
-    {
-        var now = DateTime.UtcNow;
-        if ((now - _lastMemoryCleanup).TotalSeconds < 5) return;
-        _lastMemoryCleanup = now;
-
-        Task.Run(() =>
-        {
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-            LoggerService.Instance.Log("Memory cleanup triggered by UI inactivity.", LogLevel.Info);
-        });
-    }
 
     protected override async void OnClosing(WindowClosingEventArgs e)
     {
@@ -75,95 +49,4 @@ public partial class MainWindow : Window
                 }
             }
     }
-
-    private void OnDragEnter(object? sender, DragEventArgs e)
-    {
-        if (e.Data.Contains(DataFormats.Files) && sender is Control control)
-        {
-            control.Classes.Add("DragOver");
-        }
-    }
-
-    private void OnDragLeave(object? sender, DragEventArgs e)
-    {
-        if (sender is Control control)
-        {
-            control.Classes.Remove("DragOver");
-        }
-    }
-
-    private async void OnHashFileDrop(object? sender, DragEventArgs e)
-    {
-        if (sender is Control control)
-        {
-            control.Classes.Remove("DragOver");
-        }
-
-#pragma warning disable CS0618 // Type or member is obsolete
-        if (e.Data.Contains(DataFormats.Files))
-        {
-            var files = e.Data.GetFiles()?.ToList();
-            if (files != null && files.Count > 0)
-            {
-                var filePath = files[0].Path.LocalPath;
-
-                if (sender is TextBox textBox && textBox.DataContext is FileItem item)
-                {
-                    var hashFileName = Path.GetFileName(filePath);
-                    if (!hashFileName.Contains(item.FileName, StringComparison.OrdinalIgnoreCase))
-                    {
-                        item.Status = L["Status_DropHashMismatch"];
-                        return;
-                    }
-
-                    try
-                    {
-                        string content;
-                        using (var reader = new StreamReader(filePath))
-                        {
-                            var buffer = new char[5120]; // 5KB
-                            var readCount = await reader.ReadAsync(buffer, 0, buffer.Length);
-                            content = new string(buffer, 0, readCount);
-                        }
-
-                        var match = Regex.Match(content, @"[a-fA-F0-9]{32,128}");
-                        if (match.Success)
-                        {
-                            item.ExpectedHash = match.Value;
-                            item.Status = L["Status_DropHashSuccess"];
-                        }
-                        else
-                        {
-                            item.Status = L["Status_DropNoHash"];
-                        }
-                    }
-                    catch
-                    {
-                        item.Status = L["Status_ReadError"];
-                    }
-                }
-            }
-        }
-#pragma warning restore CS0618 // Type or member is obsolete
-    }
-#pragma warning disable CS0618 // Type or member is obsolete
-    private async void OnMainDrop(object? sender, DragEventArgs e)
-    {
-        if (sender is Control control)
-        {
-            control.Classes.Remove("DragOver");
-        }
-
-        if (e.Data.Contains(DataFormats.Files))
-        {
-            var files = e.Data.GetFiles()?.Select(x => x.Path.LocalPath).ToList();
-            if (files == null || files.Count == 0) return;
-
-            if (sender is Control ctrl && ctrl.DataContext is FileListViewModelBase vm)
-            {
-                await vm.AddFilesFromPaths(files);
-            }
-        }
-    }
-#pragma warning disable CS0618 // Type or member is obsolete
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -16,6 +17,12 @@ namespace CheckHash.ViewModels;
 
 public partial class SettingsViewModel : ObservableObject
 {
+    [DllImport("kernel32.dll")]
+    private static extern bool SetProcessWorkingSetSize(IntPtr proc, int min, int max);
+
+    [DllImport("/usr/lib/libSystem.dylib")]
+    private static extern void malloc_zone_pressure_relief(IntPtr zone, ulong goal);
+
     // Config Path
     [ObservableProperty] private string _configFilePath;
 
@@ -330,6 +337,41 @@ public partial class SettingsViewModel : ObservableObject
         await SaveSettingsAsync();
         Logger.Log($"Admin Mode toggled: {IsAdminModeEnabled}");
         if (IsAdminModeEnabled) await MessageBoxHelper.ShowAsync(L["Msg_AdminMode"], L["Msg_AdminRestart"], MessageBoxIcon.Warning);
+    }
+
+    [RelayCommand]
+    private void FreeMemory()
+    {
+        System.Runtime.GCSettings.LargeObjectHeapCompactionMode = System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce;
+        GC.Collect(GC.MaxGeneration, GCCollectionMode.Forced, true);
+        GC.WaitForPendingFinalizers();
+        GC.Collect(GC.MaxGeneration, GCCollectionMode.Forced, true);
+
+        if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+        {
+            try
+            {
+                using var proc = Process.GetCurrentProcess();
+                SetProcessWorkingSetSize(proc.Handle, -1, -1);
+            }
+            catch
+            {
+                // Ignore errors during working set trimming
+            }
+        }
+        else if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+        {
+            try
+            {
+                malloc_zone_pressure_relief(IntPtr.Zero, 0);
+            }
+            catch
+            {
+                // Ignore errors
+            }
+        }
+
+        Logger.Log(L["Msg_MemoryFreed"], LogLevel.Success);
     }
 
     partial void OnForceQuitTimeoutChanged(int value)

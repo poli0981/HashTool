@@ -237,7 +237,7 @@
                     </StackPanel>
 
                     <Grid ColumnDefinitions="*, Auto"
-                          RowDefinitions="Auto, 15, Auto, 15, Auto, 15, Auto, 15, Auto">
+                          RowDefinitions="Auto, 15, Auto, 15, Auto, 15, Auto, 15, Auto, 15, Auto">
 
                         <!-- Show Speed -->
                         <StackPanel Grid.Row="0" Grid.Column="0">
@@ -282,14 +282,24 @@
                             <TextBlock Text="{Binding Localization[Unit_Seconds]}" VerticalAlignment="Center" />
                         </StackPanel>
 
-                        <!-- Force Quit Button -->
+                        <!-- Free Memory -->
                         <StackPanel Grid.Row="8" Grid.Column="0">
+                            <TextBlock Text="{Binding Localization[Settings_FreeMemory]}" FontWeight="Bold" />
+                            <TextBlock Text="{Binding Localization[Settings_FreeMemoryDesc]}" FontSize="12"
+                                       Opacity="0.7" />
+                        </StackPanel>
+                        <Button Grid.Row="8" Grid.Column="1"
+                                Content="{Binding Localization[Settings_BtnFreeMemory]}"
+                                Command="{Binding FreeMemoryCommand}" />
+
+                        <!-- Force Quit Button -->
+                        <StackPanel Grid.Row="10" Grid.Column="0">
                             <TextBlock Text="{Binding Localization[Settings_Emergency]}" FontWeight="Bold"
                                        Foreground="Red" />
                             <TextBlock Text="{Binding Localization[Settings_EmergencyDesc]}" FontSize="12"
                                        Opacity="0.7" />
                         </StackPanel>
-                        <Button Grid.Row="8" Grid.Column="1"
+                        <Button Grid.Row="10" Grid.Column="1"
                                 Content="{Binding Localization[Settings_BtnForceQuit]}"
                                 Command="{Binding ForceQuitAndCancelAllCommand}"
                                 Background="#FF4444" Foreground="White" />

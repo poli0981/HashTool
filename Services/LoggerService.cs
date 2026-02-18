@@ -28,6 +28,7 @@ public partial class LoggerService : ObservableObject
     private readonly string _logBaseDir;
     private readonly Channel<LogWriteRequest> _logChannel;
     private readonly Channel<string> _uiLogChannel = Channel.CreateUnbounded<string>();
+    private readonly List<(string Path, string Placeholder)> _replacements;
 
     // Settings
     [ObservableProperty] private bool _isRecording = true;
@@ -47,6 +48,27 @@ public partial class LoggerService : ObservableObject
         _logChannel = Channel.CreateUnbounded<LogWriteRequest>();
         _ = ProcessLogQueueAsync();
         _ = ProcessUiLogQueueAsync();
+
+        // Initialize replacements for SanitizeMessage
+        _replacements = new List<(string Path, string Placeholder)>();
+        var userProfile = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+        var tempPath = Path.GetTempPath();
+
+        if (!string.IsNullOrEmpty(userProfile) && userProfile != Path.DirectorySeparatorChar.ToString())
+        {
+            _replacements.Add((userProfile, "[USER_PROFILE]"));
+        }
+
+        if (!string.IsNullOrEmpty(tempPath) && tempPath != Path.DirectorySeparatorChar.ToString())
+        {
+            var trimmedTemp = tempPath.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+            if (!string.IsNullOrEmpty(trimmedTemp))
+            {
+                _replacements.Add((trimmedTemp, "[TEMP]"));
+            }
+        }
+
+        _replacements = _replacements.OrderByDescending(x => x.Path.Length).ToList();
     }
 
     public static LoggerService Instance { get; } = new();
@@ -84,27 +106,7 @@ public partial class LoggerService : ObservableObject
     {
         if (string.IsNullOrEmpty(message)) return message;
 
-        var userProfile = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-        var tempPath = Path.GetTempPath();
-
-        var replacements = new List<(string Path, string Placeholder)>();
-
-        if (!string.IsNullOrEmpty(userProfile) && userProfile != Path.DirectorySeparatorChar.ToString())
-        {
-            replacements.Add((userProfile, "[USER_PROFILE]"));
-        }
-
-        if (!string.IsNullOrEmpty(tempPath) && tempPath != Path.DirectorySeparatorChar.ToString())
-        {
-            var trimmedTemp = tempPath.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
-            if (!string.IsNullOrEmpty(trimmedTemp))
-            {
-                replacements.Add((trimmedTemp, "[TEMP]"));
-            }
-        }
-
-        // Sort by length descending to replace most specific paths first
-        foreach (var (path, placeholder) in replacements.OrderByDescending(x => x.Path.Length))
+        foreach (var (path, placeholder) in _replacements)
         {
             message = message.Replace(path, placeholder, StringComparison.OrdinalIgnoreCase);
         }
@@ -120,9 +122,10 @@ public partial class LoggerService : ObservableObject
 
     private async Task ProcessUiLogQueueAsync()
     {
+        var batch = new List<string>();
         while (await _uiLogChannel.Reader.WaitToReadAsync())
         {
-            var batch = new List<string>();
+            batch.Clear();
             while (_uiLogChannel.Reader.TryRead(out var msg))
             {
                 batch.Add(msg);
@@ -131,35 +134,34 @@ public partial class LoggerService : ObservableObject
 
             if (batch.Count > 0)
             {
+                var itemsToAdd = batch.ToList();
                 await Dispatcher.UIThread.InvokeAsync(() =>
                 {
-                    Logs.AddRange(batch);
+                    Logs.AddRange(itemsToAdd);
                     if (Logs.Count > 1000)
                     {
                         Logs.RemoveRange(0, Logs.Count - 1000);
                     }
                 }, DispatcherPriority.Background);
 
-                await Task.Delay(100); // Throttle updates
+                await Task.Delay(50);
             }
         }
     }
 
     private async Task ProcessLogQueueAsync()
     {
+        var batch = new List<LogWriteRequest>();
         while (await _logChannel.Reader.WaitToReadAsync())
         {
-            var batch = new List<LogWriteRequest>();
+            batch.Clear();
             while (_logChannel.Reader.TryRead(out var msg))
             {
                 batch.Add(msg);
-                // Limit batch size to avoid holding too much memory or delaying writes too long
                 if (batch.Count >= 1000) break;
             }
-
             if (batch.Count == 0) continue;
 
-            // Group by file path to minimize file open/close operations
             var fileGroups = batch.GroupBy(x => Path.Combine(x.Directory, x.Filename));
 
             foreach (var group in fileGroups)
@@ -171,9 +173,6 @@ public partial class LoggerService : ObservableObject
                     {
                         sb.AppendLine(item.Content);
                     }
-
-                    // Use AppendAllTextAsync which opens and closes the file.
-                    // Since we batched messages, this is much more efficient than one open/close per message.
                     await File.AppendAllTextAsync(group.Key, sb.ToString());
                 }
                 catch

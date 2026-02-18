@@ -42,6 +42,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
     [ObservableProperty] private int _successCount;
 
     protected ImmutableList<FileItem> AllFiles = ImmutableList<FileItem>.Empty;
+    protected readonly HashSet<string> ExistingPaths = new(StringComparer.OrdinalIgnoreCase);
 
     protected FileListViewModelBase()
     {
@@ -179,6 +180,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
         var list = items.ToList();
         if (list.Count == 0) return;
         AllFiles = AllFiles.AddRange(list);
+        foreach (var item in list) ExistingPaths.Add(item.FilePath);
         OnPropertyChanged(nameof(HasFiles));
         ApplyFilter(false);
     }
@@ -199,6 +201,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
         }
 
         AllFiles = ImmutableList<FileItem>.Empty;
+        ExistingPaths.Clear();
         Files.Clear();
         OnPropertyChanged(nameof(HasFiles));
         ProgressValue = 0;
@@ -206,12 +209,6 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
         OnPropertyChanged(nameof(TotalFilesText));
         NotifyCommands();
         Logger.Log(GetClearLogMessage());
-
-        await Task.Run(() =>
-        {
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-        });
     }
 
     protected virtual string GetClearLogMessage() => "Cleared file list.";
@@ -225,6 +222,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
         item.IsDeleted = true;
 
         AllFiles = AllFiles.Remove(item);
+        ExistingPaths.Remove(item.FilePath);
         OnPropertyChanged(nameof(HasFiles));
 
         if (Files.Contains(item))
@@ -432,6 +430,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
             item.Cts?.Dispose();
             item.IsDeleted = true;
             Files.Remove(item);
+            ExistingPaths.Remove(item.FilePath);
         }
 
         AllFiles = AllFiles.RemoveRange(failedItems);
@@ -440,12 +439,6 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
         OnPropertyChanged(nameof(TotalFilesText));
         NotifyCommands();
         Logger.Log(GetClearFailedLogMessage(failedItems.Count));
-
-        await Task.Run(() =>
-        {
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-        });
 
         await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
             string.Format(L["Msg_ClearedFailed"], failedItems.Count), MessageBoxIcon.Information);
@@ -467,7 +460,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
             }
             else
             {
-                await Dispatcher.UIThread.InvokeAsync(action);
+                await Dispatcher.UIThread.InvokeAsync(action, DispatcherPriority.Background);
             }
         }
         catch

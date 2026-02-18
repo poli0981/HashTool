@@ -56,11 +56,10 @@ public partial class CheckHashViewModel : FileListViewModelBase
 
     public override async Task AddFilesFromPaths(IEnumerable<string> filePaths)
     {
+        if (IsChecking) return;
         IsChecking = true;
         try
         {
-            var existingPaths = new HashSet<string>(Files.Select(f => f.FilePath));
-
             await Task.Run(async () =>
             {
                 var config = await ConfigService.LoadAsync();
@@ -132,6 +131,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
 
                 var newItems = new List<FileItem>();
                 var skippedFiles = new List<string>();
+                var batchSeen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
                 foreach (var result in results)
                 {
@@ -183,14 +183,17 @@ public partial class CheckHashViewModel : FileListViewModelBase
                             item.IsMatch = false;
                         }
 
+                        if (ExistingPaths.Contains(item.FilePath)) continue;
+                        if (!batchSeen.Add(item.FilePath)) continue;
                         newItems.Add(item);
-                        existingPaths.Add(item.FilePath);
                         Logger.Log($"Added check item (from hash file): {item.FileName}");
                     }
                     else
                     {
-                        if (!existingPaths.Contains(path) && result.Info != null)
+                        if (!ExistingPaths.Contains(path) && result.Info != null)
                         {
+                            if (!batchSeen.Add(path)) continue;
+
                             var item = new FileItem
                             {
                                 FileName = fileName,
@@ -202,7 +205,6 @@ public partial class CheckHashViewModel : FileListViewModelBase
                             };
 
                             newItems.Add(item);
-                            existingPaths.Add(path);
                             Logger.Log($"Added check item: {fileName}");
                         }
                     }
@@ -322,7 +324,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
                             var writeBytesPerSec = diffWrite / timeDiff;
 
                             await Dispatcher.UIThread.InvokeAsync(() =>
-                                UpdateSpeedText(readBytesPerSec, writeBytesPerSec));
+                                UpdateSpeedText(readBytesPerSec, writeBytesPerSec), DispatcherPriority.Background);
 
                             lastBytesRead = currentTotalRead;
                             lastBytesWritten = currentTotalWrite;
@@ -340,7 +342,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
                         FailCount = mismatch;
                         CancelledCount = cancelled;
                         UpdateStatsText();
-                    });
+                    }, DispatcherPriority.Background);
 
                     if (current >= queue.Count) break;
                 }
@@ -420,7 +422,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
                     processedCounter++;
                 }
             }
-        });
+        }, DispatcherPriority.Background);
 
         try
         {
@@ -441,12 +443,6 @@ public partial class CheckHashViewModel : FileListViewModelBase
         CancelledCount = cancelled;
         UpdateStatsText();
         SpeedText = "";
-
-        await Task.Run(() =>
-        {
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-        });
 
         var totalDuration = DateTime.UtcNow - startTime;
         var durationStr = $"{(int)totalDuration.TotalHours}:{totalDuration.Minutes:D2}:{totalDuration.Seconds:D2}";
@@ -531,7 +527,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
             file.IsMatch = null;
             file.ProcessDuration = "";
             file.Status = L["Status_Waiting"];
-        });
+        }, DispatcherPriority.Background);
 
         file.Cts = new CancellationTokenSource();
         if (Prefs.IsFileTimeoutEnabled) file.Cts.CancelAfter(TimeSpan.FromSeconds(Prefs.FileTimeoutSeconds));
@@ -558,7 +554,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
 
                 file.Cts?.Dispose();
                 file.Cts = null;
-            });
+            }, DispatcherPriority.Background);
         });
     }
 
@@ -573,7 +569,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
             IsMatch = false
         };
 
-        Logger.Log($"Verifying {file.FileName}...");
+        // Logger.Log($"Verifying {file.FileName}...");
 
         try
         {
@@ -642,7 +638,7 @@ public partial class CheckHashViewModel : FileListViewModelBase
         {
             result.Status = L["Status_Cancelled"];
             result.IsMatch = null;
-            await Dispatcher.UIThread.InvokeAsync(() => file.IsCancelled = true);
+            await Dispatcher.UIThread.InvokeAsync(() => file.IsCancelled = true, DispatcherPriority.Background);
             Logger.Log($"Verification cancelled: {file.FileName}", LogLevel.Warning);
         }
         catch (Exception ex)

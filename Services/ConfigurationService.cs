@@ -16,7 +16,7 @@ public class ConfigurationService
     public ConfigurationService()
     {
         var appData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-        _configDir = Path.Combine(appData, "HashTool", "log", "settings");
+        _configDir = Path.Combine(appData, "HashTool", "settings");
         ConfigPath = Path.Combine(_configDir, "config.json");
     }
 
