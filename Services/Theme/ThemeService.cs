@@ -70,8 +70,6 @@ public partial class ThemeService : ObservableObject
         var palette = ThemePalettes.GetPalette(CurrentThemeStyle, effectiveVariant);
 
         // 4. Apply Palette
-        // Note: Explicitly remove before adding to ensure change notification propagates immediately,
-        // specifically for switching between Light/Dark variants of the same theme (e.g. Glassmorphism).
         foreach (var kvp in palette)
         {
             if (app.Resources.ContainsKey(kvp.Key))

@@ -294,11 +294,7 @@ public static class MessageBoxHelper
             HorizontalAlignment = HorizontalAlignment.Left,
             Margin = new Thickness(0, 0, 0, 20)
         };
-        // Indent checkbox to align with text if icon exists?
-        // If icon exists (32 + 15 = 47), we might want to indent.
-        // But simplified, just putting it below is fine.
-        // If we want it aligned with text, we should put it in the Grid?
-        // Let's keep it simple: below the message grid.
+
         contentPanel.Children.Add(checkBox);
 
         // Buttons
