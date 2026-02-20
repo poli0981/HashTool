@@ -4,9 +4,9 @@
     "Code" : "auto"
   } ,
   {
-    "Name" : "English (US)" ,
-    "Code" : "en-US"
-  } ,
+    "name": "English (UK)",
+    "code": "en-GB"
+  },
   {
     "Name" : "العربية (Arabic)" ,
     "Code" : "ar"

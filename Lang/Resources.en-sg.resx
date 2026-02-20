@@ -500,9 +500,6 @@
     <data name="Msg_TaskCancelled_Title">
         <value>Task Stopped</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>File {0} exceeds the limit of {1} {2}.</value>
-    </data>
     <data name="Btn_Yes">
         <value>Yes</value>
     </data>
@@ -554,5 +551,178 @@
     <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>Skipped {0} files exceeding limit ({1} {2}):
             {3}</value>
+    </data>
+    <data name="Btn_ClearFailed" xml:space="preserve">
+        <value>Clear Failed</value>
+    </data>
+    <data name="Btn_ClearHashes" xml:space="preserve">
+        <value>Clear Hashes</value>
+    </data>
+    <data name="Doc_Changelog" xml:space="preserve">
+        <value>Changelog</value>
+    </data>
+    <data name="Dialog_SelectFolder" xml:space="preserve">
+        <value>Select Folder to Scan</value>
+    </data>
+    <data name="Doc_Credit" xml:space="preserve">
+        <value>Acknowledgements</value>
+    </data>
+    <data name="Doc_Disclaimer" xml:space="preserve">
+        <value>Disclaimer</value>
+    </data>
+    <data name="Doc_EULA" xml:space="preserve">
+        <value>End User License Agreement</value>
+    </data>
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
+        <value>Privacy Policy</value>
+    </data>
+    <data name="Doc_Readme" xml:space="preserve">
+        <value>README</value>
+    </data>
+    <data name="Doc_ToS" xml:space="preserve">
+        <value>Terms of Service</value>
+    </data>
+    <data name="Watermark_Search" xml:space="preserve">
+        <value>Search by name...</value>
+    </data>
+    <data name="Tip_ClearHash" xml:space="preserve">
+        <value>Clear Hash</value>
+    </data>
+    <data name="Status_Processing_Filter" xml:space="preserve">
+        <value>Processing</value>
+    </data>
+    <data name="Status_Failure" xml:space="preserve">
+        <value>Failed</value>
+    </data>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Show Read/Write Speed</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
+        <value>Display real-time transfer speed during hash operations.</value>
+    </data>
+    <data name="Size_ExtraLarge" xml:space="preserve">
+        <value>Extra Large (&gt; 1GB)</value>
+    </data>
+    <data name="Size_Large" xml:space="preserve">
+        <value>Large (100MB - 1GB)</value>
+    </data>
+    <data name="Size_Medium" xml:space="preserve">
+        <value>Medium (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Small" xml:space="preserve">
+        <value>Small (&lt; 1MB)</value>
+    </data>
+    <data name="Size_All" xml:space="preserve">
+        <value>All Sizes</value>
+    </data>
+    <data name="Settings_Limits" xml:space="preserve">
+        <value>Processing Limits</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc" xml:space="preserve">
+        <value>Force a garbage collection to free up memory.</value>
+    </data>
+    <data name="Settings_FreeMemory" xml:space="preserve">
+        <value>Free Memory</value>
+    </data>
+    <data name="Settings_MaxFileCount" xml:space="preserve">
+        <value>Max Files per Folder Scan</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
+        <value>Limit the number of files added from a folder to prevent performance issues.</value>
+    </data>
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
+        <value>Max Folders per Click</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
+        <value>Limit the number of folders selected at once.</value>
+    </data>
+    <data name="Placeholder_Size" xml:space="preserve">
+        <value>Size</value>
+    </data>
+    <data name="Msg_SystemLanguage" xml:space="preserve">
+        <value>System Language</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning" xml:space="preserve">
+        <value>Returning to 'Auto' setting requires a restart to fully take effect. Do you want to continue?</value>
+    </data>
+    <data name="Msg_TimeUnknown" xml:space="preserve">
+        <value>Calculating...</value>
+    </data>
+    <data name="Msg_TaskDuration" xml:space="preserve">
+        <value>Task Duration: {0}</value>
+    </data>
+    <data name="Btn_AddFolder" xml:space="preserve">
+        <value>Add Folder...</value>
+    </data>
+    <data name="Btn_Cancel" xml:space="preserve">
+        <value>Cancel</value>
+    </data>
+    <data name="Error_ApiLimit" xml:space="preserve">
+        <value>GitHub API rate limit exceeded. Please try again later.</value>
+    </data>
+    <data name="Error_Client" xml:space="preserve">
+        <value>Client error (4xx). Please check the request.</value>
+    </data>
+    <data name="Error_Server" xml:space="preserve">
+        <value>Server error (5xx). Please try again later.</value>
+    </data>
+    <data name="Error_Network" xml:space="preserve">
+        <value>Network connection error. Please check your internet connection.</value>
+    </data>
+    <data name="Lbl_DetailedStats" xml:space="preserve">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_ProgressStats" xml:space="preserve">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed" xml:space="preserve">
+        <value>Read: {0}/s | Write: {1}/s</value>
+    </data>
+    <data name="Msg_ClearedFailed" xml:space="preserve">
+        <value>Removed {0} items.</value>
+    </data>
+    <data name="Msg_DontShowAgain" xml:space="preserve">
+        <value>Don't show this alert again</value>
+    </data>
+    <data name="Msg_EmptyFolder" xml:space="preserve">
+        <value>The selected folder is empty.</value>
+    </data>
+    <data name="Msg_FileLimit" xml:space="preserve">
+        <value>Added {0} files. Skipped {1} files due to limit.</value>
+    </data>
+    <data name="Msg_EstimatedTime" xml:space="preserve">
+        <value>Time Remaining: {0}</value>
+    </data>
+    <data name="Msg_FolderLimit" xml:space="preserve">
+        <value>You can only select up to {0} folders at a time.</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation" xml:space="preserve">
+        <value>Are you sure about that?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle" xml:space="preserve">
+        <value>Language Change</value>
+    </data>
+    <data name="Msg_MemoryFreed" xml:space="preserve">
+        <value>Memory cleanup triggered.</value>
+    </data>
+    <data name="Msg_NoPreRelease" xml:space="preserve">
+        <value>No pre-release version found. Keeping current version.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning" xml:space="preserve">
+        <value>Pre-release version {0} is available.
+
+            {1}
+
+            This version may be unstable. Do you want to download?
+        </value>
+    </data>
+    <data name="About_Documents" xml:space="preserve">
+        <value>Documents</value>
+    </data>
+    <data name="Status_Computing" xml:space="preserve">
+        <value>Hash Computing...</value>
+    </data>
+    <data name="Tip_GitHubProfile" xml:space="preserve">
+        <value>GitHub Profile</value>
     </data>
 </root>

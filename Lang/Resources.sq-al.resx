@@ -16,10 +16,10 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Mjeti Hash</value>
     </data>
     <data name="Menu_Create">
-        <value>Krijo Hash</value>
+        <value>Gjenero Hash</value>
     </data>
     <data name="Menu_Check">
         <value>Verifiko Hash</value>
@@ -37,7 +37,7 @@
         <value>Rreth</value>
     </data>
     <data name="Menu_Developer">
-        <value>Zhvillues</value>
+        <value>Zhvilluesi</value>
     </data>
     <data name="Btn_AddFiles">
         <value>Shto Skedarë...</value>
@@ -45,11 +45,14 @@
     <data name="Btn_Clear">
         <value>Pastro Listën</value>
     </data>
+    <data name="Btn_ClearHashes">
+        <value>Pastro Hashes</value>
+    </data>
     <data name="Btn_CalcAll">
         <value>LLOGARIT TË GJITHA</value>
     </data>
     <data name="Btn_Compress">
-        <value>Kompreso (.Zip)</value>
+        <value>Ngjesh (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
         <value>VERIFIKO TË GJITHA</value>
@@ -67,47 +70,46 @@
         <value>Refuzo</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Krijo Hash &amp; Kompreso</value>
+        <value>Gjenero Hash &amp; Ngjesh</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Verifikim Grumbull</value>
+        <value>Verifikim në Grup</value>
     </data>
     <data name="Title_Update">
-        <value>Kontrollo Përditësimet</value>
+        <value>Kontrollo për Përditësime</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Paralajmërim Version Zhvilluesi</value>
+        <value>Paralajmërim për Versionin e Zhvilluesit</value>
     </data>
     <data name="Title_About">
-        <value>Rreth</value>
+        <value>Rreth Programit</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Këshillë: Shift+C për Llogarit të Gjitha, Shift+Z për Kompreso, Ctrl+F për Shto Skedarë.</value>
+        <value>Këshillë: Shift+C për të Llogaritur, Shift+Z për të Ngjeshur, Ctrl+F për të Shtuar.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Këshillë: Shift+A për Verifiko të Gjitha, Ctrl+F për Shto Skedarë, Ctrl+Shift+H për Pastro Listën.
-        </value>
+        <value>Këshillë: Shift+A për të Verifikuar, Ctrl+F për të Shtuar, Ctrl+Shift+H për të Pastruar.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Gati</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Shembull:</value>
+        <value>Mostër:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>Versioni aktual: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Kanali i publikimit:</value>
+        <value>Kanali i lëshimit:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Total skedarë: {0}</value>
+        <value>Skedarët në total: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabil</value>
+        <value>I qëndrueshëm (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Version Zhvilluesi</value>
+        <value>Zhvilluesi (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Gjuha</value>
@@ -119,222 +121,220 @@
         <value>Stili i temës</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>E ndritshme/E errët</value>
+        <value>Dritë/Errësirë</value>
     </data>
     <data name="Settings_Font">
-        <value>Shkronja</value>
+        <value>Fonti</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Madhësia shkronjave (pt)</value>
+        <value>Madhësia e fontit (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Zgjidh automatikisht shkronjën optimale për gjuhën</value>
+        <value>Zgjidh automatikisht fontin optimal</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Blloko si shkronjë default</value>
+        <value>Kyç si font të paracaktuar</value>
     </data>
     <data name="Settings_Scale">
         <value>Shkalla UI</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Masko Vlerat Hash (Siguri)</value>
+        <value>Fshih Vlerat e Hash (Siguria)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Rivendos temën</value>
+        <value>Rivendos Cilësimet</value>
     </data>
     <data name="Settings_Other">
-        <value>Privatësi &amp; Siguri</value>
+        <value>Privatësia &amp; Siguria</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Vendos si default</value>
+        <value>Cakto si të Paracaktuar</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Ngjyrë teksti e personalizuar</value>
+        <value>Ngjyrë e Personalizuar e Tekstit</value>
     </data>
     <data name="Settings_Advanced">
-        <value>Avancuar</value>
+        <value>E avancuar</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Ekzekuto si administrator</value>
+        <value>Ekzekuto si Administrator</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Kërkon rinisje. Lejon qasje në skedarë të mbrojtur.</value>
+        <value>Kërkon rinisje. Lejon qasjen në skedarët e mbrojtur.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Kufizim madhësie skedari hyrës</value>
+        <value>Kufiri i Madhësisë së Skedarit të Hyrjes</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Madhësia maksimale për skedarët për përpunim.</value>
+        <value>Madhësia maksimale e skedarëve për t'u përpunuar.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Kohë dalje e detyruar</value>
+        <value>Koha e Mbylljes së Detyruar</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Kohë (sekonda) para se app të konsiderohet e ngrirë.</value>
+        <value>Koha (sekonda) para se aplikacioni të konsiderohet i ngrirë.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Kohë përpunimi skedari</value>
+        <value>Koha e Përpunimit të Skedarit</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Anulo nëse një skedar merr shumë kohë.</value>
+        <value>Anulo nëse një skedar i vetëm kërkon shumë kohë.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Veprim urgjent</value>
+        <value>Veprim Emergjence</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Mbyllje e detyruar e app dhe anulim i menjëhershëm i të gjitha detyrave.</value>
+        <value>Mbyll me forcë aplikacionin dhe anulo të gjitha detyrat menjëherë.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Dalje e detyruar &amp; Anulo të gjitha</value>
+        <value>Mbyll me Forcë &amp; Anulo të Gjitha</value>
     </data>
     <data name="Settings_Configuration">
         <value>Konfigurimi</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Blloko cilësimet (Ruaj si default)</value>
+        <value>Kyç Cilësimet (Ruaj si të paracaktuar)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Parandalon ndryshime aksidentale. Vetëm maskimi Hash mbetet i rregullueshëm.</value>
+        <value>Parandalon ndryshimet aksidentale. Vetëm 'Fshih Hash' mbetet e rregullueshme.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Rivendos të gjitha cilësimet</value>
+        <value>Rivendos të Gjitha Cilësimet</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Rikthe në cilësimet e fabrikës.</value>
+        <value>Kthe në standardet e fabrikës.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Rruga skedarit konfigurimi</value>
+        <value>Rruga e Skedarit të Konfigurimit</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Shfaq rrugën e plotë dhe kopjo në clipboard.</value>
+        <value>Trego rrugën e plotë dhe kopjo në kujtesë.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Shfaq rrugën</value>
+        <value>Trego Rrugën</value>
     </data>
     <data name="Settings_AutoSave">
         <value>Cilësimet ruhen automatikisht në config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Modalitet zhvilluesi</value>
+        <value>Modaliteti i Zhvilluesit</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Aktivizo regjistrim të avancuar dhe vegla debug.</value>
+        <value>Aktivizo detajet e avancuara të logimit dhe mjetet e korrigjimit.</value>
     </data>
     <data name="Dev_Console">
-        <value>Konsolë zhvilluesi</value>
+        <value>Konsola e Zhvilluesit</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Regjistrim</value>
+        <value>Duke regjistruar</value>
     </data>
     <data name="Dev_Paused">
         <value>Në pauzë</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>Ruaj në skedar</value>
+        <value>Ruaj në Skedar</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Mos ruaj</value>
+        <value>Mos Ruaj</value>
     </data>
     <data name="Dev_Clear">
-        <value>Pastro konsolën</value>
+        <value>Pastro Konsolën</value>
     </data>
     <data name="Dev_Copy">
-        <value>Kopjo të gjitha</value>
+        <value>Kopjo të Gjitha</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Hap dosjen e logeve</value>
+        <value>Hap Dosjen e Log-ut</value>
     </data>
     <data name="About_Author">
-        <value>Autor</value>
+        <value>Autori</value>
     </data>
     <data name="About_Software">
-        <value>Softuer</value>
+        <value>Softueri</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Librari të palëve të treta</value>
+        <value>Libraritë e palëve të treta</value>
     </data>
     <data name="About_Copyright">
-        <value>Të drejta autori</value>
+        <value>E Drejta e Autorit</value>
     </data>
     <data name="About_Desc">
-        <value>Vegël e fuqishme për të krijuar, verifikuar dhe kompresuar hash skedarësh. Ose të paktën kështu mendoj
-            :)
-        </value>
+        <value>Një mjet i fuqishëm për të gjeneruar, verifikuar dhe ngjeshur hashet e skedarëve. Ose të paktën kështu mendoj :)</value>
     </data>
     <data name="About_License">
-        <value>Lëshuar nën licencën MIT.</value>
+        <value>Lëshuar nën Licencën MIT.</value>
     </data>
     <data name="About_Tech">
-        <value>Teknologji</value>
+        <value>Teknologjia</value>
     </data>
     <data name="About_TechContent">
         <value>Ndërtuar me C# dhe .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>Ndihmë AI</value>
+        <value>Asistencë e AI</value>
     </data>
     <data name="About_AIContent">
         <value>Ky softuer u zhvillua me ndihmën e AI (Gemini 3 Pro dhe Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
-        <value>Përpunim ({0})...</value>
+        <value>Duke përpunuar ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>Përfunduar</value>
+        <value>U krye</value>
     </data>
     <data name="Status_Error">
         <value>Gabim: {0}</value>
     </data>
     <data name="Status_Cancelled">
-        <value>Anuluar</value>
+        <value>U anulua</value>
     </data>
     <data name="Status_Saved">
-        <value>Ruajtur!</value>
+        <value>U ruajt!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Kompresuar!</value>
+        <value>U ngjesh!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Në pritje të hash/hyrjes...</value>
+        <value>Në pritje për hash/hyrje...</value>
     </data>
     <data name="Status_MissingOriginal">
         <value>Mungon skedari origjinal!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Mungon vlera hash (Shkruani ose ngarkoni skedar hash)</value>
+        <value>Mungon vlera e hash-it (Fut ose ngarko skedarin)</value>
     </data>
     <data name="Status_Valid">
-        <value>VALIDE</value>
+        <value>E VLEFSHME</value>
     </data>
     <data name="Status_Invalid">
-        <value>E PAVLEFSHME!</value>
+        <value>NUK PËRPUTHET!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Skedari hash u ngarkua</value>
+        <value>Skedari Hash u ngarkua</value>
     </data>
     <data name="Status_HashFileMismatch">
         <value>Emri i skedarit hash nuk përputhet!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Skedari nuk përmban hash!</value>
+        <value>Skedari nuk përmban një hash!</value>
     </data>
     <data name="Status_Checking">
-        <value>Kontrollim përditësimesh...</value>
+        <value>Duke kontrolluar për përditësime...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Zbuluar version i ri!</value>
+        <value>U zbulua një version i ri!</value>
     </data>
     <data name="Status_Latest">
         <value>Po përdorni versionin më të fundit.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Gabim kontrolli përditësimi: {0}</value>
+        <value>Gabim në kontrollin e përditësimit: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Shkarkim dhe instalim...</value>
+        <value>Duke shkarkuar dhe instaluar...</value>
     </data>
     <data name="Status_InstallError">
         <value>Gabim instalimi: {0}</value>
@@ -343,19 +343,19 @@
         <value>Gati (Nga skedari .hash)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Skedari origjinal humbur!</value>
+        <value>Skedari origjinal ka humbur!</value>
     </data>
     <data name="Status_DropHashMismatch">
         <value>Emri i skedarit hash nuk përputhet!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Skedari hash u hodh me sukses</value>
+        <value>Skedari hash u vendos me sukses</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Skedari nuk përmban hash!</value>
+        <value>Skedari nuk përmban një hash!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Gabim leximi skedari</value>
+        <value>Gabim në leximin e skedarit</value>
     </data>
     <data name="Msg_Result_Title">
         <value>Rezultati</value>
@@ -363,26 +363,27 @@
     <data name="Msg_Result_Content">
         <value>Përpunimi përfundoi!
             ✅ Sukses: {0}
-            ❌ Dështim: {1}
+            ❌ Dështoi: {1}
+            ⛔ U Anulua: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>Kontrolluar {0} skedarë.
-            ✅ Përputhet: {1}
-            ❌ Nuk përputhet/Gabim: {2}
-            ⛔ Anuluar: {3}
+        <value>U kontrolluan {0} skedarë.
+            ✅ Përputhje: {1}
+            ❌ Mospërputhje/Gabim: {2}
+            ⛔ U Anulua: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Skedar i gabuar!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Skedari hash nuk përputhet!
+        <value>Mospërputhje e skedarit hash!
 
             Skedari origjinal: {0}
             Skedari i zgjedhur: {1}
 
-            Ju lutem zgjidhni skedarin hash të saktë të bashkangjitur.
+            Ju lutemi zgjidhni skedarin e saktë shoqërues të hash-it.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -394,11 +395,11 @@
             Ndryshimet:
             {1}
 
-            Klikoni 'Përditëso tani' për të shkarkuar.
+            Kliko 'Përditëso Tani' për ta shkarkuar.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Nuk u gjetën përditësime më të reja.</value>
+        <value>Nuk u gjetën përditësime të reja.</value>
     </data>
     <data name="Msg_Error">
         <value>Gabim</value>
@@ -407,7 +408,7 @@
         <value>Nuk mund të lexohet ky skedar hash.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Kontroll konfigurimi</value>
+        <value>Kontrolli i Konfigurimit</value>
     </data>
     <data name="Msg_ConfigExists">
         <value>Skedari ekziston në:
@@ -421,54 +422,54 @@
         <value>Skedari u krijua me sukses!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Rruga konfigurimi u kopjua.</value>
+        <value>Rruga e konfigurimit u kopjua.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Modalitet administrator</value>
+        <value>Modaliteti i Administratorit</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Ju lutem rinisni aplikacionin që ndryshimet të hyjnë në fuqi.</value>
+        <value>Ju lutemi rinisni aplikacionin që ndryshimet të hyjnë në fuqi.</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>Nuk mund të hapet dosja: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ PARALAJMËRIM VERSION ZHVILLUESI</value>
+        <value>⚠️ PARALAJMËRIM PËR VERSIONIN E ZHVILLUESIT</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Ju jeni duke kaluar në kanalin e përditësimeve Zhvillues (para-version).
+        <value>Jeni gati të kaloni në kanalin e përditësimit të Zhvilluesit (Pre-release).
 
-            Kjo version mund të përmbajë gabime, të jetë e paqëndrueshme dhe të shkaktojë humbje të dhënash.
+            Ky version mund të përmbajë gabime, të jetë i paqëndrueshëm dhe të shkaktojë humbje të të dhënave.
 
-            Unë nuk jam përgjegjës për problemet që rrjedhin nga përdorimi i kësaj versioni.
+            Unë nuk mbaj përgjegjësi për asnjë problem që lind nga përdorimi i këtij versioni.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Kam lexuar dhe pranoj. Marr përgjegjësinë e plotë.</value>
+        <value>E kam lexuar dhe pajtohem. Marr përgjegjësi të plotë.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Ruaj skedarin hash</value>
+        <value>Ruaj Skedarin Hash</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Ruaj skedarin e kompresuar</value>
+        <value>Ruaj Skedarin e Ngjeshur</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Zgjidh skedarë për hash</value>
+        <value>Zgjidh Skedarët për Hash</value>
     </data>
     <data name="Dialog_SelectHashFile">
         <value>Zgjidh skedarin hash për: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Zgjidh skedarë (Origjinal ose skedar .hash)</value>
+        <value>Zgjidh Skedarët (Origjinal ose skedarin .hash)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Avancuar: Kthehu në versionin e vjetër</value>
+        <value>E avancuar: Kthehu në një version më të vjetër</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Kjo veçori lejon instalimin e një versioni specifik nëse versioni i ri ka probleme.</value>
+        <value>Ky funksion ju lejon të instaloni një version specifik nëse i riu ka probleme.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Ngjite/Hidhe këtu...</value>
+        <value>Ngjit ose Lësho këtu...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Sekonda</value>
@@ -477,40 +478,40 @@
         <value>Verifiko</value>
     </data>
     <data name="Tip_Stop">
-        <value>Ndalo</value>
+        <value>Ndal</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>Hiq skedarin</value>
+        <value>Hiq Skedarin</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Kopjo hash</value>
+        <value>Kopjo Hash</value>
     </data>
     <data name="Tip_Compute">
         <value>Llogarit</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Pastro Hash</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Shfleto hash</value>
+        <value>Shfleto Hash</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>E errët</value>
+        <value>E Errët</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>E ndritshme</value>
+        <value>E Ndritshme</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>Sistem</value>
+        <value>Sistemi</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>Detyra u ndal</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Skedari {0} tejkalon limitin {1} {2}.</value>
+        <value>Detyra u Ndal</value>
     </data>
     <data name="Btn_Yes">
         <value>Po</value>
     </data>
     <data name="Btn_OK">
-        <value>OK</value>
+        <value>Në rregull</value>
     </data>
     <data name="Btn_No">
         <value>Jo</value>
@@ -519,39 +520,217 @@
         <value>Arkiv Zip</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Konfirmo daljen</value>
+        <value>Konfirmo Daljen</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Dalja do të anulojë të gjitha detyrat në vazhdim. Je i sigurt?</value>
+        <value>Dalja do të anulojë të gjitha detyrat në vazhdim. Jeni të sigurt?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Detyra u ndal për shkak të timeout.</value>
+        <value>Detyra u ndal për shkak të kalimit të kohës (timeout).</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Ruaj log debug në disk.</value>
+        <value>Ruaj log-un e debug në disk.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Pauzo regjistrimin në kohë reale.</value>
+        <value>Pauzë logimin në kohë reale.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Shfaq hash</value>
+        <value>Trego Hash</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Fshih hash</value>
+        <value>Fshih Hash</value>
     </data>
     <data name="Tip_CopyPath">
-        <value>Kopjo rrugën</value>
+        <value>Kopjo Rrugën</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Disku yt është plot. Zgjidh vend tjetër shok :)</value>
+        <value>Disku juaj është plot. Ju lutemi zgjidhni një vendndodhje tjetër :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Dukshmëria e hash</value>
+        <value>Dukshmëria e Hash-it</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Nuk ka skedarë. Kliko 'Shto Skedarë' për të filluar.</value>
+        <value>Nuk ka skedarë. Klikoni 'Shto Skedarë' për të filluar.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Blloko këtë temë si default</value>
+        <value>Kyç këtë temë si të paracaktuar</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>U kapërcyen {0} skedarë që tejkalojnë kufirin ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Gjuha e Sistemit</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Kthimi te cilësimi 'Automatike' kërkon një rinisje që të hyjë plotësisht në fuqi. Dëshironi të vazhdoni?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Ndryshimi i Gjuhës</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Jeni të sigurt për këtë?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Mos e shfaq më këtë paralajmërim</value>
+    </data>
+    <data name="Error_Network">
+        <value>Gabim në lidhjen e rrjetit. Ju lutemi kontrolloni internetin tuaj.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Gabim në server (5xx). Ju lutemi provoni përsëri më vonë.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Gabim i klientit (4xx). Ju lutemi kontrolloni kërkesën.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>U tejkalua kufiri i API-së së GitHub. Ju lutemi provoni përsëri më vonë.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Nuk u gjet asnjë version pre-release. Po ruhet versioni aktual.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Versioni pre-release {0} është në dispozicion.
+
+            {1}
+
+            Ky version mund të jetë i paqëndrueshëm. Dëshironi ta shkarkoni?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Pastro të Dështuarat</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>U hoqën {0} elementë.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Koha e mbetur: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Kohëzgjatja e detyrës: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Duke llogaritur...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Shto Dosje...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Dosja e zgjedhur është e zbrazët.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Zgjidh Dosjen për Skanim</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Anulo</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Kufijtë e Përpunimit</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Skedarët Maksimalë për Skanim Dosjeje</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Kufizoni numrin e skedarëve të shtuar nga një dosje për të parandaluar problemet e performancës.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Dosjet Maksimale në të njëjtën Kohë</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Kufizoni numrin e dosjeve të zgjedhura në të njëjtën kohë.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Ju mund të zgjidhni vetëm deri në {0} dosje njëherësh.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>U shtuan {0} skedarë. U kapërcyen {1} skedarë për shkak të kufirit.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Lexim: {0}/s | Shkrim: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Trego Shpejtësinë e Leximit/Shkrimit</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Shfaq shpejtësinë e transferimit në kohë reale gjatë operacioneve të hash-it.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Duke llogaritur Hash-in...</value>
+    </data>
+    <data name="Size_All">
+        <value>Të gjitha Madhësitë</value>
+    </data>
+    <data name="Size_Small">
+        <value>E vogël (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>E mesme (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>E madhe (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Shumë e madhe (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Dokumentet</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Politika e Privatësisë</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Kushtet e Shërbimit</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Marrëveshja e Licencës EULA</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Mohim Përgjegjësie</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>MË_LEXO (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Logu i Ndryshimeve</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Mirënjohje</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Duke përpunuar</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Dështoi</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Kërko nga emri...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Madhësia</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>Profili GitHub</value>
+    </data>
+    <data name="Filter_All">
+        <value>Të gjitha</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Liro Kujtesën</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Detyro Mbledhjen e Mbeturinave (GC) për të liruar RAM-in.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Pastro Kujtesën</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Filloi pastrimi i kujtesës.</value>
     </data>
 </root>

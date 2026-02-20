@@ -16,13 +16,13 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>हैश टूल (Hash Tool)</value>
     </data>
     <data name="Menu_Create">
-        <value>हैश बनाएँ</value>
+        <value>हैश जनरेट करें</value>
     </data>
     <data name="Menu_Check">
-        <value>हैश जाँचें</value>
+        <value>हैश सत्यापित करें</value>
     </data>
     <data name="Menu_Settings">
         <value>सेटिंग्स</value>
@@ -34,28 +34,31 @@
         <value>थीम</value>
     </data>
     <data name="Menu_About">
-        <value>परिचय</value>
+        <value>के बारे में</value>
     </data>
     <data name="Menu_Developer">
         <value>डेवलपर</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>फ़ाइलें जोड़ें...</value>
+        <value>फाइलें जोड़ें...</value>
     </data>
     <data name="Btn_Clear">
-        <value>सूची साफ़ करें</value>
+        <value>सूची साफ करें</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>हैश हटाएं</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>सभी की गणना करें</value>
+        <value>सभी गणना करें</value>
     </data>
     <data name="Btn_Compress">
-        <value>संपीड़ित करें (.Zip)</value>
+        <value>कम्प्रेस (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>सभी जाँचें</value>
+        <value>सभी सत्यापित करें</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>अभी जाँचें</value>
+        <value>अभी सत्यापित करें</value>
     </data>
     <data name="Btn_Install">
         <value>इंस्टॉल करें</value>
@@ -67,25 +70,25 @@
         <value>अस्वीकार करें</value>
     </data>
     <data name="Title_CreateHash">
-        <value>हैश बनाएँ और संपीड़ित करें</value>
+        <value>हैश जनरेट और कम्प्रेस करें</value>
     </data>
     <data name="Title_CheckHash">
-        <value>बैच जाँच</value>
+        <value>बैच सत्यापन</value>
     </data>
     <data name="Title_Update">
-        <value>अपडेट जाँचें</value>
+        <value>अपडेट की जाँच करें</value>
     </data>
     <data name="Title_Disclaimer">
         <value>डेवलपर संस्करण चेतावनी</value>
     </data>
     <data name="Title_About">
-        <value>परिचय</value>
+        <value>के बारे में</value>
     </data>
     <data name="Help_CreateHash">
-        <value>टिप: Shift+C सभी गणना, Shift+Z संपीड़ित, Ctrl+F फ़ाइलें जोड़ें।</value>
+        <value>सुझाव: गणना के लिए Shift+C, कम्प्रेस के लिए Shift+Z, जोड़ने के लिए Ctrl+F।</value>
     </data>
     <data name="Help_CheckHash">
-        <value>टिप: Shift+A सभी जाँच, Ctrl+F फ़ाइलें जोड़ें, Ctrl+Shift+H सूची साफ़ करें।</value>
+        <value>सुझाव: सत्यापन के लिए Shift+A, जोड़ने के लिए Ctrl+F, साफ करने के लिए Ctrl+Shift+H।</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>तैयार</value>
@@ -100,13 +103,13 @@
         <value>रिलीज़ चैनल:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>कुल फ़ाइलें: {0}</value>
+        <value>कुल फाइलें: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>स्थिर</value>
+        <value>स्थिर (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>डेव संस्करण</value>
+        <value>डेवलपर (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>भाषा</value>
@@ -121,70 +124,70 @@
         <value>लाइट/डार्क</value>
     </data>
     <data name="Settings_Font">
-        <value>फ़ॉन्ट</value>
+        <value>फॉन्ट</value>
     </data>
     <data name="Settings_FontSize">
-        <value>फ़ॉन्ट आकार (pt)</value>
+        <value>फॉन्ट का आकार (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>भाषा के लिए सर्वोत्तम फ़ॉन्ट स्वचालित चुनें</value>
+        <value>भाषा के लिए इष्टतम फॉन्ट ऑटो-सेलेक्ट करें</value>
     </data>
     <data name="Settings_LockFont">
-        <value>डिफ़ॉल्ट फ़ॉन्ट के रूप में लॉक करें</value>
+        <value>डिफ़ॉल्ट फॉन्ट के रूप में लॉक करें</value>
     </data>
     <data name="Settings_Scale">
         <value>UI स्केल</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>हैश मान छिपाएँ (सुरक्षा)</value>
+        <value>हैश मान छिपाएं (सुरक्षा)</value>
     </data>
     <data name="Settings_Reset">
-        <value>थीम रीसेट करें</value>
+        <value>सेटिंग्स रीसेट करें</value>
     </data>
     <data name="Settings_Other">
         <value>गोपनीयता और सुरक्षा</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>डिफ़ॉल्ट सेट करें</value>
+        <value>डिफ़ॉल्ट के रूप में सेट करें</value>
     </data>
     <data name="Settings_CustomColor">
         <value>कस्टम टेक्स्ट रंग</value>
     </data>
     <data name="Settings_Advanced">
-        <value>उन्नत</value>
+        <value>उन्नत (Advanced)</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>एडमिनिस्ट्रेटर के रूप में चलाएँ</value>
+        <value>एडमिनिस्ट्रेटर के रूप में चलाएं</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>रीस्टार्ट आवश्यक। संरक्षित फ़ाइलों तक पहुँच अनुमति देता है।</value>
+        <value>रिमस्टार्ट आवश्यक है। सुरक्षित फाइलों तक पहुंच की अनुमति देता है।</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>इनपुट फ़ाइल आकार सीमा</value>
+        <value>इनपुट फाइल आकार सीमा</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>प्रोसेस करने के लिए अधिकतम आकार।</value>
+        <value>प्रोसेस करने के लिए अधिकतम फाइल आकार।</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>फ़ोर्स क्विट टाइमआउट</value>
+        <value>फोर्स क्विट टाइमआउट</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>ऐप फ़्रीज़ मानने से पहले समय (सेकंड)।</value>
+        <value>ऐप को फ्रोज़न मानने से पहले का समय (सेकंड)।</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>फ़ाइल प्रोसेसिंग टाइमआउट</value>
+        <value>फाइल प्रोसेसिंग टाइमआउट</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>यदि एक फ़ाइल बहुत समय ले तो रद्द करें।</value>
+        <value>यदि कोई फाइल बहुत अधिक समय लेती है तो रद्द करें।</value>
     </data>
     <data name="Settings_Emergency">
         <value>आपातकालीन कार्रवाई</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>ऐप फ़ोर्स क्विट करें और सभी टास्क तुरंत रद्द करें।</value>
+        <value>ऐप को जबरदस्ती बंद करें और सभी कार्यों को तुरंत रद्द करें।</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>फ़ोर्स क्विट और सभी रद्द करें</value>
+        <value>फोर्स क्विट और सभी रद्द करें</value>
     </data>
     <data name="Settings_Configuration">
         <value>कॉन्फ़िगरेशन</value>
@@ -193,25 +196,25 @@
         <value>सेटिंग्स लॉक करें (डिफ़ॉल्ट के रूप में सहेजें)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>गलती से बदलाव रोकें। केवल हैश मास्किंग समायोज्य रहेगा।</value>
+        <value>आकस्मिक परिवर्तनों को रोकें। केवल 'हैश मास्किंग' समायोज्य रहता है।</value>
     </data>
     <data name="Settings_ResetAll">
         <value>सभी सेटिंग्स रीसेट करें</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>फ़ैक्टरी डिफ़ॉल्ट पर वापस लाएँ।</value>
+        <value>फैक्टरी डिफॉल्ट्स पर पुनर्स्थापित करें।</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>कॉन्फ़िगरेशन फ़ाइल पथ</value>
+        <value>कॉन्फ़िगरेशन फाइल पथ</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>पूर्ण पथ दिखाएँ और क्लिपबोर्ड पर कॉपी करें।</value>
+        <value>पूरा पथ दिखाएं और क्लिपबोर्ड पर कॉपी करें।</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>पथ दिखाएँ</value>
+        <value>पथ दिखाएं</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>सेटिंग्स config.json में स्वचालित सहेजी जाती हैं</value>
+        <value>सेटिंग्स config.json में स्वतः सहेजी जाती हैं</value>
     </data>
     <data name="Settings_DeveloperMode">
         <value>डेवलपर मोड</value>
@@ -223,7 +226,7 @@
         <value>डेवलपर कंसोल</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>बीटा (BETA)</value>
     </data>
     <data name="Dev_Recording">
         <value>रिकॉर्डिंग</value>
@@ -232,13 +235,13 @@
         <value>रोका गया</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>फ़ाइल में सहेजें</value>
+        <value>फाइल में सहेजें</value>
     </data>
     <data name="Dev_NoSave">
         <value>सहेजें नहीं</value>
     </data>
     <data name="Dev_Clear">
-        <value>कंसोल साफ़ करें</value>
+        <value>कंसोल साफ करें</value>
     </data>
     <data name="Dev_Copy">
         <value>सभी कॉपी करें</value>
@@ -253,13 +256,13 @@
         <value>सॉफ़्टवेयर</value>
     </data>
     <data name="About_ThirdParty">
-        <value>तृतीय-पक्ष लाइब्रेरी</value>
+        <value>थर्ड-पार्टी लाइब्रेरीज़</value>
     </data>
     <data name="About_Copyright">
         <value>कॉपीराइट</value>
     </data>
     <data name="About_Desc">
-        <value>फ़ाइल हैश बनाने, जाँचने और संपीड़ित करने का शक्तिशाली टूल। या यूं कहें कि मुझे ऐसा लगता है :)</value>
+        <value>फाइल हैश जनरेट, सत्यापित और कम्प्रेस करने के लिए एक शक्तिशाली उपकरण। या ऐसा मुझे लगता है :)</value>
     </data>
     <data name="About_License">
         <value>MIT लाइसेंस के तहत जारी।</value>
@@ -268,16 +271,16 @@
         <value>तकनीक</value>
     </data>
     <data name="About_TechContent">
-        <value>C# और .NET 10.0.102 से निर्मित।</value>
+        <value>C# और .NET 10.0.102 के साथ निर्मित।</value>
     </data>
     <data name="About_AI">
         <value>AI सहायता</value>
     </data>
     <data name="About_AIContent">
-        <value>इस सॉफ़्टवेयर को विकसित करने में AI की सहायता ली गई (Gemini 3 Pro और Grok 4.1)।</value>
+        <value>यह सॉफ़्टवेयर AI (Gemini 3 Pro और Grok 4.1) की सहायता से विकसित किया गया था।</value>
     </data>
     <data name="Status_Processing">
-        <value>प्रोसेसिंग ({0})...</value>
+        <value>प्रोसेस हो रहा है ({0})...</value>
     </data>
     <data name="Status_Done">
         <value>पूर्ण</value>
@@ -292,34 +295,34 @@
         <value>सहेजा गया!</value>
     </data>
     <data name="Status_Compressed">
-        <value>संपीड़ित!</value>
+        <value>कम्प्रेस हो गया!</value>
     </data>
     <data name="Status_Waiting">
-        <value>हैश/इनपुट की प्रतीक्षा...</value>
+        <value>हैश/इनपुट की प्रतीक्षा में...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>मूल फ़ाइल गुम!</value>
+        <value>मूल फाइल गायब है!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>हैश मान गुम (दर्ज करें या हैश फ़ाइल लोड करें)</value>
+        <value>हैश मान गायब है (दर्ज करें या फाइल लोड करें)</value>
     </data>
     <data name="Status_Valid">
-        <value>वैध</value>
+        <value>वैध (VALID)</value>
     </data>
     <data name="Status_Invalid">
-        <value>असंगत!</value>
+        <value>मेल नहीं खाता (MISMATCH!)</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>हैश फ़ाइल लोड की गई</value>
+        <value>हैश फाइल लोड हो गई</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>हैश फ़ाइल नाम असंगत!</value>
+        <value>हैश फाइल का नाम मेल नहीं खाता!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>फ़ाइल में हैश नहीं मिला!</value>
+        <value>फाइल में हैश नहीं है!</value>
     </data>
     <data name="Status_Checking">
-        <value>अपडेट जाँच रहे हैं...</value>
+        <value>अपडेट की जाँच हो रही है...</value>
     </data>
     <data name="Status_NewVersion">
         <value>नया संस्करण मिला!</value>
@@ -331,55 +334,56 @@
         <value>अपडेट जाँच त्रुटि: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>डाउनलोड और इंस्टॉल कर रहे हैं...</value>
+        <value>डाउनलोड और इंस्टॉल हो रहा है...</value>
     </data>
     <data name="Status_InstallError">
         <value>इंस्टॉलेशन त्रुटि: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>तैयार (.hash फ़ाइल से)</value>
+        <value>तैयार (.hash फाइल से)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>मूल फ़ाइल गुम!</value>
+        <value>मूल फाइल खो गई!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>हैश फ़ाइल नाम असंगत!</value>
+        <value>हैश फाइल का नाम मेल नहीं खाता!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>हैश फ़ाइल ड्रॉप सफल</value>
+        <value>हैश फाइल सफलतापूर्वक ड्रॉप की गई</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>फ़ाइल में हैश नहीं!</value>
+        <value>फाइल में हैश नहीं है!</value>
     </data>
     <data name="Status_ReadError">
-        <value>फ़ाइल पढ़ने में त्रुटि</value>
+        <value>फाइल पढ़ने में त्रुटि</value>
     </data>
     <data name="Msg_Result_Title">
         <value>परिणाम</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>प्रोसेसिंग पूरी!
+        <value>प्रोसेसिंग पूर्ण!
             ✅ सफल: {0}
-            ❌ असफल: {1}
+            ❌ विफल: {1}
+            ⛔ रद्द: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>{0} फ़ाइलें जाँची गईं।
-            ✅ मेल: {1}
-            ❌ असंगत/त्रुटि: {2}
+        <value>{0} फाइलों की जाँच की गई।
+            ✅ मेल खाता है: {1}
+            ❌ बेमेल/त्रुटि: {2}
             ⛔ रद्द: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>गलत फ़ाइल!</value>
+        <value>गलत फाइल!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>हैश फ़ाइल असंगत!
+        <value>हैश फाइल मेल नहीं खाती!
 
-            मूल फ़ाइल: {0}
-            चुनी गई फ़ाइल: {1}
+            मूल फाइल: {0}
+            चयनित फाइल: {1}
 
-            सही हैश फ़ाइल चुनें।
+            कृपया सही संबंधित हैश फाइल चुनें।
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -391,7 +395,7 @@
             बदलाव:
             {1}
 
-            'अभी अपडेट करें' क्लिक करके डाउनलोड करें।
+            डाउनलोड करने के लिए 'अभी अपडेट करें' पर क्लिक करें।
         </value>
     </data>
     <data name="Msg_NoUpdate">
@@ -401,21 +405,21 @@
         <value>त्रुटि</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>इस हैश फ़ाइल को पढ़ नहीं सकते।</value>
+        <value>इस हैश फाइल को पढ़ने में असमर्थ।</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>कॉन्फ़िगरेशन जाँच</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>फ़ाइल यहाँ है:
+        <value>फाइल यहाँ मौजूद है:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>फ़ाइल मौजूद नहीं!</value>
+        <value>फाइल मौजूद नहीं है!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>फ़ाइल सफलतापूर्वक बनाई गई!</value>
+        <value>फाइल सफलतापूर्वक बनाई गई!</value>
     </data>
     <data name="Msg_ConfigCopied">
         <value>कॉन्फ़िगरेशन पथ कॉपी किया गया।</value>
@@ -424,7 +428,7 @@
         <value>एडमिनिस्ट्रेटर मोड</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>परिवर्तन लागू करने के लिए ऐप रीस्टार्ट करें।</value>
+        <value>परिवर्तनों को प्रभावी करने के लिए कृपया एप्लिकेशन को पुनरारंभ करें।</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>फ़ोल्डर नहीं खोल सकते: {0}</value>
@@ -435,55 +439,59 @@
     <data name="Msg_DisclaimerContent">
         <value>आप डेवलपर (प्री-रिलीज़) अपडेट चैनल पर स्विच करने वाले हैं।
 
-            इस संस्करण में बग हो सकते हैं, अस्थिर हो सकता है और डेटा हानि हो सकती है।
+            इस संस्करण में बग हो सकते हैं, यह अस्थिर हो सकता है और डेटा हानि का कारण बन सकता है।
 
-            इस संस्करण के उपयोग से होने वाली किसी भी समस्या के लिए मैं जिम्मेदार नहीं हूँ।
+            मैं इस संस्करण का उपयोग करने से उत्पन्न होने वाली किसी भी समस्या के लिए जिम्मेदार नहीं हूं।
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>मैंने पढ़ लिया है और सहमत हूँ। मैं पूर्ण जिम्मेदारी लेता हूँ।</value>
+        <value>मैंने पढ़ लिया है और सहमत हूँ। मैं पूरी जिम्मेदारी लेता हूँ।</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>हैश फ़ाइल सहेजें</value>
+        <value>हैश फाइल सहेजें</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>संपीड़ित फ़ाइल सहेजें</value>
+        <value>कम्प्रेस्ड फाइल सहेजें</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>हैश करने के लिए फ़ाइलें चुनें</value>
+        <value>हैश के लिए फाइलें चुनें</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>{0} के लिए हैश फ़ाइल चुनें</value>
+        <value>{0} के लिए हैश फाइल चुनें</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>फ़ाइलें चुनें (मूल या .hash फ़ाइल)</value>
+        <value>फाइलें चुनें (मूल या .hash फाइल)</value>
     </data>
     <data name="Header_Fallback">
-        <value>उन्नत: पुराने संस्करण पर वापस जाएँ</value>
+        <value>उन्नत: पुराने संस्करण पर वापस जाएं</value>
     </data>
     <data name="Desc_Fallback">
-        <value>यह सुविधा नए संस्करण में समस्या होने पर विशिष्ट संस्करण इंस्टॉल करने की अनुमति देती है।</value>
+        <value>यदि नए संस्करण में समस्याएं हैं तो यह सुविधा आपको एक विशिष्ट संस्करण इंस्टॉल करने की अनुमति देती है।
+        </value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>यहाँ पेस्ट/ड्रॉप करें...</value>
+        <value>यहाँ पेस्ट या ड्रॉप करें...</value>
     </data>
     <data name="Unit_Seconds">
         <value>सेकंड</value>
     </data>
     <data name="Tip_Verify">
-        <value>जाँचें</value>
+        <value>सत्यापित करें</value>
     </data>
     <data name="Tip_Stop">
-        <value>रुकें</value>
+        <value>रोकें</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>फ़ाइल हटाएँ</value>
+        <value>फाइल हटाएं</value>
     </data>
     <data name="Tip_CopyHash">
         <value>हैश कॉपी करें</value>
     </data>
     <data name="Tip_Compute">
         <value>गणना करें</value>
+    </data>
+    <data name="Tip_ClearHash">
+        <value>हैश साफ करें</value>
     </data>
     <data name="Tip_BrowseHash">
         <value>हैश ब्राउज़ करें</value>
@@ -498,57 +506,234 @@
         <value>सिस्टम</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>टास्क रुका</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>फ़ाइल {0} सीमा {1} {2} से अधिक है।</value>
+        <value>कार्य रोका गया</value>
     </data>
     <data name="Btn_Yes">
         <value>हाँ</value>
     </data>
     <data name="Btn_OK">
-        <value>ओके</value>
+        <value>ठीक है</value>
     </data>
     <data name="Btn_No">
         <value>नहीं</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip संपीड़ित फ़ाइल</value>
+        <value>ज़िप आर्काइव</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>बाहर निकलने की पुष्टि करें</value>
+        <value>निकास की पुष्टि करें</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>बाहर निकलने से सभी चल रहे टास्क रद्द हो जाएँगे। पक्का?</value>
+        <value>बाहर निकलने से सभी चल रहे कार्य रद्द हो जाएंगे। क्या आप सुनिश्चित हैं?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>टाइमआउट के कारण टास्क रुका।</value>
+        <value>टाइमआउट के कारण कार्य रोक दिया गया था।</value>
     </data>
     <data name="Dev_ToolTip_Save">
         <value>डिबग लॉग डिस्क पर सहेजें।</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>रियल-टाइम लॉगिंग रोके।</value>
+        <value>रीयल-टाइम लॉगिंग रोकें।</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>हैश दिखाएँ</value>
+        <value>हैश दिखाएं</value>
     </data>
     <data name="Tip_HideHash">
-        <value>हैश छिपाएँ</value>
+        <value>हैश छिपाएं</value>
     </data>
     <data name="Tip_CopyPath">
         <value>पथ कॉपी करें</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>आपकी ड्राइव फ़ुल है। दूसरा स्थान चुनें भाई :)</value>
+        <value>आपकी ड्राइव भर गई है। कृपया कोई अन्य स्थान चुनें :)</value>
     </data>
     <data name="Tip_HashVisibility">
         <value>हैश दृश्यता</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>कोई फ़ाइल नहीं। शुरू करने के लिए 'फ़ाइलें जोड़ें' क्लिक करें।</value>
+        <value>कोई फाइल नहीं। शुरू करने के लिए 'फाइलें जोड़ें' पर क्लिक करें।</value>
     </data>
     <data name="Settings_LockTheme">
         <value>इस थीम को डिफ़ॉल्ट के रूप में लॉक करें</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>सीमा ({1} {2}) से अधिक {0} फाइलों को छोड़ दिया गया:
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>सिस्टम भाषा</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>'ऑटो' सेटिंग पर लौटने के लिए पूरी तरह से प्रभावी होने के लिए पुनरारंभ करना आवश्यक है। क्या आप जारी रखना
+            चाहते हैं?
+        </value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>भाषा परिवर्तन</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>क्या आप इसके बारे में निश्चित हैं?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>यह चेतावनी दोबारा न दिखाएं</value>
+    </data>
+    <data name="Error_Network">
+        <value>नेटवर्क कनेक्शन त्रुटि। कृपया अपना इंटरनेट जांचें।</value>
+    </data>
+    <data name="Error_Server">
+        <value>सर्वर त्रुटि (5xx)। कृपया बाद में पुनः प्रयास करें।</value>
+    </data>
+    <data name="Error_Client">
+        <value>क्लाइंट त्रुटि (4xx)। कृपया अनुरोध की जाँच करें।</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>GitHub API दर सीमा पार हो गई। कृपया बाद में पुनः प्रयास करें।</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>कोई प्री-रिलीज़ संस्करण नहीं मिला। वर्तमान संस्करण को बनाए रख रहा है।</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>प्री-रिलीज़ संस्करण {0} उपलब्ध है।
+
+            {1}
+
+            यह संस्करण अस्थिर हो सकता है। क्या आप डाउनलोड करना चाहते हैं?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>विफल को साफ करें</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>{0} आइटम हटा दिए गए।</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>शेष समय: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>कार्य अवधि: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>गणना हो रही है...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>फ़ोल्डर जोड़ें...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>चयनित फ़ोल्डर खाली है।</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>स्कैन करने के लिए फ़ोल्डर चुनें</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>रद्द करें</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>प्रोसेसिंग सीमाएँ</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>अधिकतम फाइलें प्रति फ़ोल्डर स्कैन</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>प्रदर्शन समस्याओं को रोकने के लिए फ़ोल्डर से जोड़ी जाने वाली फाइलों की संख्या को सीमित करें।</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>एक बार में अधिकतम फ़ोल्डर</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>एक बार में चुने गए फ़ोल्डरों की संख्या को सीमित करें।</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>आप एक बार में केवल {0} फ़ोल्डर तक ही चुन सकते हैं।</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>{0} फाइलें जोड़ी गईं। सीमा के कारण {1} फाइलें छोड़ दी गईं।</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>पढ़ें: {0}/s | लिखें: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>पढ़ने/लिखने की गति दिखाएं</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>हैश ऑपरेशन के दौरान रीयल-टाइम ट्रांसफर स्पीड प्रदर्शित करें।</value>
+    </data>
+    <data name="Status_Computing">
+        <value>हैश गणना हो रही है...</value>
+    </data>
+    <data name="Size_All">
+        <value>सभी आकार</value>
+    </data>
+    <data name="Size_Small">
+        <value>छोटा (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>मध्यम (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>बड़ा (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>बहुत बड़ा (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>दस्तावेज़</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>गोपनीयता नीति</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>सेवा की शर्तें</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>अंतिम उपयोगकर्ता लाइसेंस समझौता (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>अस्वीकरण</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>README</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>चेंजलॉग</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>आभार</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>प्रोसेसिंग</value>
+    </data>
+    <data name="Status_Failure">
+        <value>विफल</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>नाम से खोजें...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>आकार</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub प्रोफ़ाइल</value>
+    </data>
+    <data name="Filter_All">
+        <value>सभी</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>मेमोरी खाली करें</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>RAM खाली करने के लिए गार्बेज कलेक्शन (GC) को फोर्स करें।</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>मेमोरी साफ करें</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>मेमोरी सफाई शुरू हो गई।</value>
     </data>
 </root>

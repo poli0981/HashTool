@@ -16,16 +16,16 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Хэш куралы</value>
     </data>
     <data name="Menu_Create">
         <value>Хэш түзүү</value>
     </data>
     <data name="Menu_Check">
-        <value>Хэш текшерүү</value>
+        <value>Хэшти текшерүү</value>
     </data>
     <data name="Menu_Settings">
-        <value>Орнотуулар</value>
+        <value>Жөндөөлөр</value>
     </data>
     <data name="Menu_Update">
         <value>Жаңыртуу</value>
@@ -45,14 +45,17 @@
     <data name="Btn_Clear">
         <value>Тизмени тазалоо</value>
     </data>
+    <data name="Btn_ClearHashes">
+        <value>Хэштерди тазалоо</value>
+    </data>
     <data name="Btn_CalcAll">
-        <value>БААРЫН ЭСЕПТӨӨ</value>
+        <value>БАРДЫГЫН ЭСЕПТӨӨ</value>
     </data>
     <data name="Btn_Compress">
         <value>Кысуу (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>БААРЫН ТЕКШЕРҮҮ</value>
+        <value>БАРДЫГЫН ТЕКШЕРҮҮ</value>
     </data>
     <data name="Btn_CheckNow">
         <value>Азыр текшерүү</value>
@@ -67,31 +70,31 @@
         <value>Баш тартуу</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Хэш түзүү жана кысуу</value>
+        <value>Хэш түзүү жана Кысуу</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Топтук текшерүү</value>
+        <value>Пакеттик текшерүү</value>
     </data>
     <data name="Title_Update">
         <value>Жаңыртууларды текшерүү</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Иштеп чыгуучу версиясынын эскертүүсү</value>
+        <value>Иштеп чыгуучу версиясы боюнча эскертүү</value>
     </data>
     <data name="Title_About">
-        <value>Жөнүндө</value>
+        <value>Программа жөнүндө</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Кеңеш: Shift+C баарын эсептөө, Shift+Z кысуу, Ctrl+F файлдарды кошуу.</value>
+        <value>Кеңеш: Эсептөө үчүн Shift+C, Кысуу үчүн Shift+Z, Кошуу үчүн Ctrl+F.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Кеңеш: Shift+A баарын текшерүү, Ctrl+F файлдарды кошуу, Ctrl+Shift+H тизмени тазалоо.</value>
+        <value>Кеңеш: Текшерүү үчүн Shift+A, Кошуу үчүн Ctrl+F, Тазалоо үчүн Ctrl+Shift+H.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Даяр</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Мисал:</value>
+        <value>Үлгү:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>Учурдагы версия: {0}</value>
@@ -103,10 +106,10 @@
         <value>Жалпы файлдар: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Туруктуу</value>
+        <value>Туруктуу (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Иштеп чыгуучу версиясы</value>
+        <value>Иштеп чыгуучу (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Тил</value>
@@ -115,40 +118,40 @@
         <value>Тема</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>Тема стили</value>
+        <value>Теманын стили</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Ачык/Караңгы</value>
+        <value>Жарык/Караңгы</value>
     </data>
     <data name="Settings_Font">
         <value>Шрифт</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Шрифт өлчөмү (pt)</value>
+        <value>Шрифттин өлчөмү (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Тил үчүн оптималдуу шрифтти автоматтык тандоо</value>
+        <value>Тил үчүн оптималдуу шрифтти автоматтык түрдө тандоо</value>
     </data>
     <data name="Settings_LockFont">
         <value>Демейки шрифт катары кулпулоо</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI масштаб</value>
+        <value>Интерфейс масштабы</value>
     </data>
     <data name="Settings_MaskHash">
         <value>Хэш маанилерин жашыруу (Коопсуздук)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Теманы кайра коюу</value>
+        <value>Жөндөөлөрдү баштапкы абалга келтирүү</value>
     </data>
     <data name="Settings_Other">
-        <value>Купуялуулук жана коопсуздук</value>
+        <value>Купуялык жана Коопсуздук</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Демейки кылып коюу</value>
+        <value>Демейки катары коюу</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Өзгөчө текст түсү</value>
+        <value>Тексттин ыңгайлаштырылган түсү</value>
     </data>
     <data name="Settings_Advanced">
         <value>Өркүндөтүлгөн</value>
@@ -157,85 +160,85 @@
         <value>Администратор катары иштетүү</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Кайра жүктөө талап кылынат. Корголгон файлдарга жетүүгө уруксат берет.</value>
+        <value>Кайра баштоону талап кылат. Корголгон файлдарга кирүүгө уруксат берет.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Киргизүү файл өлчөмү чектөөсү</value>
+        <value>Киргизүү файлынын өлчөмүнүн чеги</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Иштетүү үчүн максималдуу өлчөм.</value>
+        <value>Иштетилүүчү файлдардын максималдуу өлчөмү.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Мажбурлап чыгуу убакыт чектөөсү</value>
+        <value>Мажбурлап жабуу күтүү убактысы</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Колдонмо тоңгон деп эсептөөдөн мурун убакыт (секунд).</value>
+        <value>Тиркеме тоңуп калды деп эсептелгенге чейинки убакыт (секунд).</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Файл иштетүү убакыт чектөөсү</value>
+        <value>Файлды иштетүү күтүү убактысы</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Бир файл өтө узак убакыт алса токтотуу.</value>
+        <value>Эгерде бир файл өтө көп убакытты талап кылса, жокко чыгаруу.</value>
     </data>
     <data name="Settings_Emergency">
         <value>Шашылыш аракет</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Колдонмону мажбурлап жабуу жана бардык тапшырмаларды дароо токтотуу.</value>
+        <value>Тиркемени мажбурлап жабуу жана бардык тапшырмаларды дароо жокко чыгаруу.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Мажбурлап чыгуу жана баарын токтотуу</value>
+        <value>Мажбурлап чыгуу жана Баарын жокко чыгаруу</value>
     </data>
     <data name="Settings_Configuration">
         <value>Конфигурация</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Орнотууларды кулпулоо (Демейки катары сактоо)</value>
+        <value>Жөндөөлөрдү кулпулоо (Демейки катары сактоо)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Кокус өзгөртүүлөрдү алдын алуу. Хэш жашыруу гана жөнгө салынуучу бойдон калат.</value>
+        <value>Кокусунан өзгөртүүлөрдү алдын алуу. Жөн гана 'Хэшти жашыруу' өзгөртүлүшү мүмкүн.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Бардык орнотууларды кайра коюу</value>
+        <value>Бардык жөндөөлөрдү баштапкы абалга келтирүү</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Заводдук демейкиге кайтаруу.</value>
+        <value>Заводдук жөндөөлөргө кайтаруу.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Конфигурация файл жолу</value>
+        <value>Конфигурация файлынын жолу</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Толук жолду көрсөтүү жана буферге көчүрүү,</value>
+        <value>Толук жолду көрсөтүү жана алмашуу буферине көчүрүү.</value>
     </data>
     <data name="Settings_ShowPath">
         <value>Жолду көрсөтүү</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Орнотуулар config.json'го автоматтык сакталат</value>
+        <value>Жөндөөлөр config.json файлында автоматтык түрдө сакталат</value>
     </data>
     <data name="Settings_DeveloperMode">
         <value>Иштеп чыгуучу режими</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Өркүндөтүлгөн журнал жана катаны оңдоо куралдарын иштетүү.</value>
+        <value>Кеңейтилген журналга жазууну жана оңдоо куралдарын иштетүү.</value>
     </data>
     <data name="Dev_Console">
-        <value>Иштеп чыгуучу консолу</value>
+        <value>Иштеп чыгуучунун консолу</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>БЕТА</value>
     </data>
     <data name="Dev_Recording">
         <value>Жазылууда</value>
     </data>
     <data name="Dev_Paused">
-        <value>Токтотулган</value>
+        <value>Тыныгууда</value>
     </data>
     <data name="Dev_SaveToFile">
         <value>Файлга сактоо</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Сактаба</value>
+        <value>Сактабоо</value>
     </data>
     <data name="Dev_Clear">
         <value>Консолду тазалоо</value>
@@ -244,40 +247,40 @@
         <value>Баарын көчүрүү</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Лог папкасын ачуу</value>
+        <value>Журнал папкасын ачуу</value>
     </data>
     <data name="About_Author">
         <value>Автор</value>
     </data>
     <data name="About_Software">
-        <value>Программа</value>
+        <value>Программалык камсыздоо</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Үчүнчү тарап китепканалары</value>
+        <value>Үчүнчү тараптын китепканалары</value>
     </data>
     <data name="About_Copyright">
         <value>Автордук укук</value>
     </data>
     <data name="About_Desc">
-        <value>Файл хэштерин түзүү, текшерүү жана кысуу үчүн күчтүү курал. Же мен ошондой ойлойм :)</value>
+        <value>Файл хэштерин түзүү, текшерүү жана кысуу үчүн күчтүү курал.</value>
     </data>
     <data name="About_License">
-        <value>MIT лицензиясынын алдында чыгарылган.</value>
+        <value>MIT лицензиясы астында чыгарылган.</value>
     </data>
     <data name="About_Tech">
         <value>Технология</value>
     </data>
     <data name="About_TechContent">
-        <value>C# жана .NET 10.0.102 менен курулган.</value>
+        <value>C# жана .NET 10.0.102 колдонуу менен түзүлгөн.</value>
     </data>
     <data name="About_AI">
         <value>AI жардамы</value>
     </data>
     <data name="About_AIContent">
-        <value>Бул программа AI жардамы менен иштелип чыккан (Gemini 3 Pro жана Grok 4.1).</value>
+        <value>Бул программа AI (Gemini 3 Pro жана Grok 4.1) жардамы менен иштелип чыккан.</value>
     </data>
     <data name="Status_Processing">
-        <value>Иштетилүүдө ({0})...</value>
+        <value>Иштелүүдө ({0})...</value>
     </data>
     <data name="Status_Done">
         <value>Аяктады</value>
@@ -286,7 +289,7 @@
         <value>Ката: {0}</value>
     </data>
     <data name="Status_Cancelled">
-        <value>Токтотулду</value>
+        <value>Жокко чыгарылды</value>
     </data>
     <data name="Status_Saved">
         <value>Сакталды!</value>
@@ -295,43 +298,43 @@
         <value>Кысылды!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Хэш/киргизүү күтүүдө...</value>
+        <value>Хэшти/киргизүүнү күтүүдө...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Баштапкы файл жок!</value>
+        <value>Түпнуска файл жок!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Хэш мааниси жок (Киргизиңиз же хэш файлын жүктөңүз)</value>
+        <value>Хэш мааниси жок (Киргизиңиз же файлды жүктөңүз)</value>
     </data>
     <data name="Status_Valid">
         <value>ЖАРАМДУУ</value>
     </data>
     <data name="Status_Invalid">
-        <value>Шайкеш эмес!</value>
+        <value>Дал КЕЛБЕЙТ!</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>Хэш файлы жүктөлдү</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Хэш файл аты шайкеш эмес!</value>
+        <value>Хэш файлынын аталышы дал келбейт!</value>
     </data>
     <data name="Status_NoHashFound">
         <value>Файлда хэш жок!</value>
     </data>
     <data name="Status_Checking">
-        <value>Жаңыртууларды текшерүүдө...</value>
+        <value>Жаңыртуулар текшерилүүдө...</value>
     </data>
     <data name="Status_NewVersion">
         <value>Жаңы версия табылды!</value>
     </data>
     <data name="Status_Latest">
-        <value>Сизде акыркы версия бар.</value>
+        <value>Сиз эң акыркы версияны колдонуп жатасыз.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Жаңыртуу текшерүү катасы: {0}</value>
+        <value>Жаңыртууну текшерүү катасы: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Жүктөө жана орнотуу...</value>
+        <value>Жүктөлүп жана орнотулууда...</value>
     </data>
     <data name="Status_InstallError">
         <value>Орнотуу катасы: {0}</value>
@@ -340,13 +343,13 @@
         <value>Даяр (.hash файлынан)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Баштапкы файл жоголду!</value>
+        <value>Түпнуска файл жоголду!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Хэш файл аты шайкеш эмес!</value>
+        <value>Хэш файлынын аталышы дал келбейт!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Хэш файлы ийгиликтүү ташталды</value>
+        <value>Хэш файлы ийгиликтүү кошулду</value>
     </data>
     <data name="Status_DropNoHash">
         <value>Файлда хэш жок!</value>
@@ -355,31 +358,32 @@
         <value>Файлды окуу катасы</value>
     </data>
     <data name="Msg_Result_Title">
-        <value>Натыйжа</value>
+        <value>Жыйынтык</value>
     </data>
     <data name="Msg_Result_Content">
         <value>Иштетүү аяктады!
-            ✅ Ийгилик: {0}
+            ✅ Ийгиликтүү: {0}
             ❌ Ийгиликсиз: {1}
+            ⛔ Жокко чыгарылган: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>{0} файл текшерилди.
-            ✅ Шайкеш: {1}
-            ❌ Шайкеш эмес/Ката: {2}
-            ⛔ Токтотулду: {3}
+            ✅ Дал келген: {1}
+            ❌ Дал келбеген/Ката: {2}
+            ⛔ Жокко чыгарылган: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Туура эмес файл!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Хэш файлы шайкеш эмес!
+        <value>Хэш файлы дал келбейт!
 
-            Баштапкы файл: {0}
+            Түпнуска файл: {0}
             Тандалган файл: {1}
 
-            Туура хэш файлын тандаңыз.
+            Сураныч, туура коштоочу хэш файлын тандаңыз.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -391,23 +395,23 @@
             Өзгөртүүлөр:
             {1}
 
-            Жүктөө үчүн 'Азыр жаңыртуу' баскычын басыңыз.
+            Жүктөп алуу үчүн 'Азыр жаңыртуу' баскычын басыңыз.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Жаңы жаңыртуу жок.</value>
+        <value>Жаңы жаңыртуулар табылган жок.</value>
     </data>
     <data name="Msg_Error">
         <value>Ката</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Бул хэш файлын окуй албай жатат.</value>
+        <value>Бул хэш файлын окуу мүмкүн эмес.</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>Конфигурацияны текшерүү</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Файл бул жерде:
+        <value>Файл бул жерде бар:
             {0}
         </value>
     </data>
@@ -424,24 +428,24 @@
         <value>Администратор режими</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Өзгөртүүлөр күчүнө кириши үчүн колдонмону кайра жүктөңүз.</value>
+        <value>Өзгөртүүлөр күчүнө кириши үчүн тиркемени кайра иштетиңиз.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Папканы ача албай жатат: {0}</value>
+        <value>Папканы ачуу мүмкүн эмес: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ИШТЕП ЧЫГУУЧУ ВЕРСИЯСЫНЫН ЭСКЕРТҮҮСҮ</value>
+        <value>⚠️ ИШТЕП ЧЫГУУЧУ ВЕРСИЯСЫ БОЮНЧА ЭСКЕРТҮҮ</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Сиз иштеп чыгуучу (алдын ала чыгаруу) жаңыртуу каналын которуудасыз.
+        <value>Сиз Иштеп чыгуучу (Pre-release) жаңартуу каналына өткөнү жатасыз.
 
-            Бул версияда ката болушу мүмкүн, туруксуз болушу мүмкүн жана маалымат жоготууга алып келиши мүмкүн.
+            Бул версияда каталар болушу мүмкүн, туруксуз болушу жана маалыматтардын жоголушуна алып келиши мүмкүн.
 
-            Бул версияны колдонуудан келип чыккан кандайдыр бир маселелер үчүн жоопкерчилик албайм.
+            Мен бул версияны колдонуудан келип чыккан көйгөйлөр үчүн жооптуу эмесмин.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Мен окудум жана макулмун. Толук жоопкерчиликти өзүмө алам.</value>
+        <value>Мен окуп, макулмун. Толук жоопкерчиликти алам.</value>
     </data>
     <data name="Dialog_SaveHash">
         <value>Хэш файлын сактоо</value>
@@ -450,22 +454,22 @@
         <value>Кысылган файлды сактоо</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Хэш үчүн файлдарды тандоо</value>
+        <value>Хэштөө үчүн файлдарды тандаңыз</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>{0} үчүн хэш файлын тандоо</value>
+        <value>{0} үчүн хэш файлын тандаңыз</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Файлдарды тандоо (Баштапкы же .hash файл)</value>
+        <value>Файлдарды тандаңыз (Түпнуска же .hash файлы)</value>
     </data>
     <data name="Header_Fallback">
         <value>Өркүндөтүлгөн: Эски версияга кайтуу</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Жаңы версияда маселе болсо белгилүү версияны орнотууга мүмкүнчүлүк берет.</value>
+        <value>Бул өзгөчөлүк жаңы версияда көйгөйлөр болсо, белгилүү бир версияны орнотууга мүмкүндүк берет.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Бул жерге чаптаңыз/таштаңыз...</value>
+        <value>Бул жерге чаптаңыз же таштаңыз...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Секунд</value>
@@ -480,75 +484,253 @@
         <value>Файлды алып салуу</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Хэш көчүрүү</value>
+        <value>Хэшти көчүрүү</value>
     </data>
     <data name="Tip_Compute">
         <value>Эсептөө</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Хэшти тазалоо</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Хэш карап чыгуу</value>
+        <value>Хэшти издөө</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>Караңгы</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>Ачык</value>
+        <value>Жарык</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>Система</value>
+        <value>Системалык</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
         <value>Тапшырма токтотулду</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Файл {0} чектен {1} {2} ашты.</value>
     </data>
     <data name="Btn_Yes">
         <value>Ооба</value>
     </data>
     <data name="Btn_OK">
-        <value>Макул</value>
+        <value>ОК</value>
     </data>
     <data name="Btn_No">
         <value>Жок</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip архив</value>
+        <value>Zip архиви</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
         <value>Чыгууну ырастоо</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Чыгуу бардык аткарылып жаткан тапшырмаларды токтотот. Ишенесизби?</value>
+        <value>Чыгуу бардык учурдагы тапшырмаларды жокко чыгарат. Ишенимдүүсүзбү?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Убакыт чектөөсүнөн улам тапшырма токтотулду.</value>
+        <value>Тапшырма күтүү убактысынын бүткөндүгүнө байланыштуу токтотулду.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Ката оңдоо журналын дискке сактоо.</value>
+        <value>Мүчүлүштүктөрдү оңдоо журналын дискке сактоо.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Реалдуу убакыт журналын токтотуу.</value>
+        <value>Реалдуу убакыт журналын тындыруу.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Хэш көрсөтүү</value>
+        <value>Хэшти көрсөтүү</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Хэш жашыруу</value>
+        <value>Хэшти жашыруу</value>
     </data>
     <data name="Tip_CopyPath">
         <value>Жолду көчүрүү</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Дискиңиз толду. Башка жер тандаңыз :)</value>
+        <value>Дискиңиз толуп калды. Башка орынды тандаңыз :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Хэш көрүнүшү</value>
+        <value>Хэштин көрүнүшү</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Файл жок. Баштоо үчүн 'Файлдарды кошуу' баскычын басыңыз.</value>
+        <value>Файлдар жок. Баштоо үчүн 'Файлдарды кошуу' баскычын басыңыз.</value>
     </data>
     <data name="Settings_LockTheme">
         <value>Бул теманы демейки катары кулпулоо</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Чектен ашкан ({1} {2}) {0} файл өткөрүп жиберилди:
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Система тили</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>'Автоматтык' жөндөөсүнө кайтуу толук күчүнө кириши үчүн кайра иштетүүнү талап кылат. Улантасызбы?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Тилди өзгөртүү</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Буга ишенимдүүсүзбү?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Бул эскертүүнү кайра көрсөтпөө</value>
+    </data>
+    <data name="Error_Network">
+        <value>Тармакка туташуу катасы. Интернет туташууңузду текшериңиз.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Сервер катасы (5xx). Сураныч, кийинчерээк кайра аракет кылыңыз.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Кардар катасы (4xx). Сурамды текшериңиз.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>GitHub API чегинен ашты. Сураныч, кийинчерээк кайра аракет кылыңыз.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Алдын ала чыгарылган версия табылган жок. Учурдагы версия сакталууда.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Алдын ала чыгарылган версия {0} жеткиликтүү.
+
+            {1}
+
+            Бул версия туруксуз болушу мүмкүн. Жүктөп алгыңыз келеби?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Каталарды тазалоо</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>{0} нерсе өчүрүлдү.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Калган убакыт: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Тапшырманын узактыгы: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Эсептелүүдө...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Папканы кошуу...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Тандалган папка бош.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Скандоо үчүн папканы тандаңыз</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Жокко чыгаруу</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Иштетүү чектөөлөрү</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Папканы сканерлөө үчүн максималдуу файлдар</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Иштөө маселелерин алдын алуу үчүн папкадан кошулган файлдардын санын чектөө.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Бир убактагы максималдуу папкалар</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Бир убакта тандалган папкалардын санын чектөө.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Сиз бир эле учурда эң көп {0} папканы гана тандай аласыз.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>{0} файл кошулду. Чектөөгө байланыштуу {1} файл өткөрүп жиберилди.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Окуу: {0}/с | Жазуу: {1}/с</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Окуу/Жазуу ылдамдыгын көрсөтүү</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Хэштөө учурунда реалдуу убакытта өткөрүү ылдамдыгын көрсөтүү.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Хэш эсептелүүдө...</value>
+    </data>
+    <data name="Size_All">
+        <value>Бардык өлчөмдөр</value>
+    </data>
+    <data name="Size_Small">
+        <value>Кичинекей (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Орточо (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Чоң (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Абдан чоң (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Документтер</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Купуялык саясаты</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Тейлөө шарттары</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Колдонуучунун лицензиялык келишими (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Жоопкерчиликтен баш тартуу</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>ОКУҢУЗ (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Өзгөртүүлөр тарыхы</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Ыраазычылыктар</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Иштелүүдө</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Ийгиликсиз</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Аты боюнча издөө...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Өлчөмү</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub профили</value>
+    </data>
+    <data name="Filter_All">
+        <value>Баардыгы</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Эстутумду бошотуу</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>ТЭЖ (RAM) бошотуу үчүн таштанды чогултууну (GC) мажбурлоо.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Эстутумду тазалоо</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Эстутумду тазалоо башталды.</value>
     </data>
 </root>

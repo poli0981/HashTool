@@ -16,13 +16,13 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>ឧបករណ៍ Hash</value>
     </data>
     <data name="Menu_Create">
         <value>បង្កើត Hash</value>
     </data>
     <data name="Menu_Check">
-        <value>ពិនិត្យ Hash</value>
+        <value>ផ្ទៀងផ្ទាត់ Hash</value>
     </data>
     <data name="Menu_Settings">
         <value>ការកំណត់</value>
@@ -31,7 +31,7 @@
         <value>ធ្វើបច្ចុប្បន្នភាព</value>
     </data>
     <data name="Menu_Theme">
-        <value>ស្បែក</value>
+        <value>រចនាប័ទ្ម</value>
     </data>
     <data name="Menu_About">
         <value>អំពី</value>
@@ -43,19 +43,22 @@
         <value>បន្ថែមឯកសារ...</value>
     </data>
     <data name="Btn_Clear">
-        <value>លុបបញ្ជី</value>
+        <value>សម្អាតបញ្ជី</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>សម្អាត Hash</value>
     </data>
     <data name="Btn_CalcAll">
         <value>គណនាទាំងអស់</value>
     </data>
     <data name="Btn_Compress">
-        <value>បង្ហាប់ (.Zip)</value>
+        <value>បង្រួម (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ពិនិត្យទាំងអស់</value>
+        <value>ផ្ទៀងផ្ទាត់ទាំងអស់</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>ពិនិត្យឥឡូវ</value>
+        <value>ផ្ទៀងផ្ទាត់ឥឡូវនេះ</value>
     </data>
     <data name="Btn_Install">
         <value>ដំឡើង</value>
@@ -67,55 +70,55 @@
         <value>បដិសេធ</value>
     </data>
     <data name="Title_CreateHash">
-        <value>បង្កើត Hash និងបង្ហាប់</value>
+        <value>បង្កើត Hash &amp; បង្រួម</value>
     </data>
     <data name="Title_CheckHash">
-        <value>ពិនិត្យជាក្រុម</value>
+        <value>ការផ្ទៀងផ្ទាត់ជាបាច់</value>
     </data>
     <data name="Title_Update">
-        <value>ពិនិត្យធ្វើបច្ចុប្បន្នភាព</value>
+        <value>ពិនិត្យមើលការធ្វើបច្ចុប្បន្នភាព</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>ការព្រមានសម្រាប់ជំនាន់អភិវឌ្ឍន៍</value>
+        <value>ការព្រមានអំពីកំណែអ្នកអភិវឌ្ឍន៍</value>
     </data>
     <data name="Title_About">
-        <value>អំពី</value>
+        <value>អំពីកម្មវិធី</value>
     </data>
     <data name="Help_CreateHash">
-        <value>ជំនួយ: Shift+C ដើម្បីគណនាទាំងអស់, Shift+Z ដើម្បីបង្ហាប់, Ctrl+F ដើម្បីបន្ថែមឯកសារ។</value>
+        <value>គន្លឹះ៖ Shift+C ដើម្បីគណនា, Shift+Z ដើម្បីបង្រួម, Ctrl+F ដើម្បីបន្ថែមឯកសារ។</value>
     </data>
     <data name="Help_CheckHash">
-        <value>ជំនួយ: Shift+A ដើម្បីពិនិត្យទាំងអស់, Ctrl+F ដើម្បីបន្ថែមឯកសារ, Ctrl+Shift+H ដើម្បីលុបបញ្ជី។</value>
+        <value>គន្លឹះ៖ Shift+A ដើម្បីផ្ទៀងផ្ទាត់, Ctrl+F ដើម្បីបន្ថែម, Ctrl+Shift+H ដើម្បីសម្អាតបញ្ជី។</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>រួចរាល់</value>
     </data>
     <data name="Lbl_Sample">
-        <value>ឧទាហរណ៍:</value>
+        <value>គំរូ៖</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>ជំនាន់បច្ចុប្បន្ន: {0}</value>
+        <value>កំណែបច្ចុប្បន្ន៖ {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>ឆានែលចេញផ្សាយ:</value>
+        <value>ឆានែលចេញផ្សាយ៖</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>ចំនួនឯកសារសរុប: {0}</value>
+        <value>ឯកសារសរុប៖ {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>ស្ថិរភាព</value>
+        <value>ស្ថិរភាព (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>ជំនាន់អភិវឌ្ឍន៍</value>
+        <value>អ្នកអភិវឌ្ឍន៍ (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>ភាសា</value>
     </data>
     <data name="Settings_Theme">
-        <value>ស្បែក</value>
+        <value>រចនាប័ទ្ម</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>រចនាបថស្បែក</value>
+        <value>ប្រភេទរចនាប័ទ្ម</value>
     </data>
     <data name="Settings_ThemeVariant">
         <value>ភ្លឺ/ងងឹត</value>
@@ -127,19 +130,19 @@
         <value>ទំហំពុម្ពអក្សរ (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>ជ្រើសរើសពុម្ពអក្សរល្អបំផុតដោយស្វ័យប្រវត្តិសម្រាប់ភាសា</value>
+        <value>ជ្រើសរើសពុម្ពអក្សរល្អបំផុតដោយស្វ័យប្រវត្តិ</value>
     </data>
     <data name="Settings_LockFont">
-        <value>ចាក់សោជាពុម្ពអក្សរលំនាំដើម</value>
+        <value>ចាក់សោរជាពុម្ពអក្សរលំនាំដើម</value>
     </data>
     <data name="Settings_Scale">
-        <value>មាត្រដ្ឋាន UI</value>
+        <value>ទំហំចំណុចប្រទាក់ (UI)</value>
     </data>
     <data name="Settings_MaskHash">
         <value>លាក់តម្លៃ Hash (សុវត្ថិភាព)</value>
     </data>
     <data name="Settings_Reset">
-        <value>កំណត់ស្បែកឡើងវិញ</value>
+        <value>កំណត់ការកំណត់ឡើងវិញ</value>
     </data>
     <data name="Settings_Other">
         <value>ឯកជនភាព និងសុវត្ថិភាព</value>
@@ -148,88 +151,88 @@
         <value>កំណត់ជាលំនាំដើម</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>ពណ៌អក្សរផ្ទាល់ខ្លួន</value>
+        <value>ពណ៌អត្ថបទប្ដូរតាមបំណង</value>
     </data>
     <data name="Settings_Advanced">
         <value>កម្រិតខ្ពស់</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>រត់ជាអ្នកគ្រប់គ្រង</value>
+        <value>ដំណើរការជាអ្នកគ្រប់គ្រង (Admin)</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>ត្រូវការចាប់ផ្ដើមឡើងវិញ។ អនុញ្ញាតឱ្យចូលប្រើឯកសារការពារ។</value>
+        <value>ទាមទារការចាប់ផ្ដើមឡើងវិញ។ អនុញ្ញាតឱ្យចូលប្រើឯកសារដែលបានការពារ។</value>
     </data>
     <data name="Settings_FileSizeLimit">
         <value>ដែនកំណត់ទំហំឯកសារបញ្ចូល</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>ទំហំអតិបរមាសម្រាប់ឯកសារដំណើរការ។</value>
+        <value>ទំហំអតិបរមាសម្រាប់ឯកសារដែលត្រូវដំណើរការ។</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>ដែនកំណត់ពេលបង្ខំចាកចេញ</value>
+        <value>ពេលវេលាផុតកំណត់សម្រាប់ការបិទដោយបង្ខំ</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>ពេលវេលា (វិនាទី) មុនពេលចាត់ទុកថាកម្មវិធីកក។</value>
+        <value>ពេលវេលា (វិនាទី) មុនពេលចាត់ទុកថាកម្មវិធីគាំង។</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>ដែនកំណត់ពេលដំណើរការឯកសារ</value>
+        <value>ពេលវេលាផុតកំណត់ដំណើរការឯកសារ</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>បោះបង់បើឯកសារមួយចំណាយពេលយូរពេក។</value>
+        <value>បោះបង់ប្រសិនបើឯកសារមួយចំណាយពេលយូរពេក។</value>
     </data>
     <data name="Settings_Emergency">
         <value>សកម្មភាពបន្ទាន់</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>បង្ខំចាកចេញកម្មវិធី និងបោះបង់កិច្ចការទាំងអស់ភ្លាមៗ។</value>
+        <value>បិទកម្មវិធីដោយបង្ខំ និងបោះបង់កិច្ចការទាំងអស់ភ្លាមៗ។</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>បង្ខំចាកចេញ និងបោះបង់ទាំងអស់</value>
+        <value>បិទដោយបង្ខំ &amp; បោះបង់ទាំងអស់</value>
     </data>
     <data name="Settings_Configuration">
         <value>ការកំណត់រចនាសម្ព័ន្ធ</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>ចាក់សោការកំណត់ (រក្សាទុកជាលំនាំដើម)</value>
+        <value>ចាក់សោរការកំណត់ (រក្សាទុកជាលំនាំដើម)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>ការពារការផ្លាស់ប្តូរដោយចៃដន្យ។ មានតែការលាក់ Hash នៅតែអាចកែបាន។</value>
+        <value>ការពារការផ្លាស់ប្តូរដោយចៃដន្យ។ មានតែ 'លាក់ Hash' ប៉ុណ្ណោះដែលអាចកែតម្រូវបាន។</value>
     </data>
     <data name="Settings_ResetAll">
         <value>កំណត់ការកំណត់ទាំងអស់ឡើងវិញ</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>ស្តារទៅលំនាំដើមរោងចក្រ។</value>
+        <value>ស្ដារទៅលំនាំដើមពីរោងចក្រ។</value>
     </data>
     <data name="Settings_ConfigPath">
         <value>ផ្លូវឯកសារកំណត់រចនាសម្ព័ន្ធ</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>បង្ហាញផ្លូវពេញលេញ និងចម្លងទៅ clipboard។</value>
+        <value>បង្ហាញផ្លូវពេញលេញ និងចម្លងទៅក្ដារតម្បៀតខ្ទាស់។</value>
     </data>
     <data name="Settings_ShowPath">
         <value>បង្ហាញផ្លូវ</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>ការកំណត់នឹងរក្សាទុកដោយស្វ័យប្រវត្តិទៅ config.json</value>
+        <value>ការកំណត់ត្រូវបានរក្សាទុកដោយស្វ័យប្រវត្តិទៅ config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
         <value>របៀបអ្នកអភិវឌ្ឍន៍</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>បើកដំណើរការកំណត់ហេតុ និងឧបករណ៍នយោបាយកម្រិតខ្ពស់។</value>
+        <value>បើកការកត់ត្រាកម្រិតខ្ពស់ និងឧបករណ៍បំបាត់កំហុស។</value>
     </data>
     <data name="Dev_Console">
         <value>កុងសូលអ្នកអភិវឌ្ឍន៍</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>បេតា (BETA)</value>
     </data>
     <data name="Dev_Recording">
         <value>កំពុងថត</value>
     </data>
     <data name="Dev_Paused">
-        <value>ផ្អាក</value>
+        <value>បានផ្អាក</value>
     </data>
     <data name="Dev_SaveToFile">
         <value>រក្សាទុកទៅឯកសារ</value>
@@ -238,7 +241,7 @@
         <value>មិនរក្សាទុក</value>
     </data>
     <data name="Dev_Clear">
-        <value>លុបកុងសូល</value>
+        <value>សម្អាតកុងសូល</value>
     </data>
     <data name="Dev_Copy">
         <value>ចម្លងទាំងអស់</value>
@@ -259,22 +262,22 @@
         <value>រក្សាសិទ្ធិ</value>
     </data>
     <data name="About_Desc">
-        <value>ឧបករណ៍ដ៏មានឥទ្ធិពលសម្រាប់បង្កើត ពិនិត្យ និងបង្ហាប់ hash ឯកសារ។ យ៉ាងហោចណាស់ខ្ញុំគិតបែបនោះ :)</value>
+        <value>ឧបករណ៍ដ៏មានអានុភាពសម្រាប់ការបង្កើត ផ្ទៀងផ្ទាត់ និងបង្រួម hash ឯកសារ។</value>
     </data>
     <data name="About_License">
-        <value>ចេញផ្សាយក្រោមអជ្ញាប័ណ្ណ MIT។</value>
+        <value>ចេញផ្សាយក្រោមអាជ្ញាប័ណ្ណ MIT ។</value>
     </data>
     <data name="About_Tech">
         <value>បច្ចេកវិទ្យា</value>
     </data>
     <data name="About_TechContent">
-        <value>បង្កើតដោយប្រើ C# និង .NET 10.0.102។</value>
+        <value>បង្កើតឡើងដោយ C# និង .NET 10.0.102 ។</value>
     </data>
     <data name="About_AI">
-        <value>ជំនួយពី AI</value>
+        <value>ជំនួយ AI</value>
     </data>
     <data name="About_AIContent">
-        <value>កម្មវិធីនេះត្រូវបានអភិវឌ្ឍដោយមានជំនួយពី AI (Gemini 3 Pro និង Grok 4.1)។</value>
+        <value>កម្មវិធីនេះត្រូវបានបង្កើតឡើងដោយមានជំនួយពី AI (Gemini 3 Pro និង Grok 4.1)។</value>
     </data>
     <data name="Status_Processing">
         <value>កំពុងដំណើរការ ({0})...</value>
@@ -283,7 +286,7 @@
         <value>បានបញ្ចប់</value>
     </data>
     <data name="Status_Error">
-        <value>កំហុស: {0}</value>
+        <value>កំហុស៖ {0}</value>
     </data>
     <data name="Status_Cancelled">
         <value>បានបោះបង់</value>
@@ -292,110 +295,111 @@
         <value>បានរក្សាទុក!</value>
     </data>
     <data name="Status_Compressed">
-        <value>បានបង្ហាប់!</value>
+        <value>បានបង្រួម!</value>
     </data>
     <data name="Status_Waiting">
-        <value>កំពុងរង់ចាំ hash/បញ្ចូល...</value>
+        <value>កំពុងរង់ចាំ Hash/ការបញ្ចូល...</value>
     </data>
     <data name="Status_MissingOriginal">
         <value>បាត់ឯកសារដើម!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>បាត់តម្លៃ hash (បញ្ចូល ឬផ្ទុកឯកសារ hash)</value>
+        <value>បាត់តម្លៃ Hash (បញ្ចូល ឬផ្ទុកឯកសារ)</value>
     </data>
     <data name="Status_Valid">
         <value>ត្រឹមត្រូវ</value>
     </data>
     <data name="Status_Invalid">
-        <value>មិនត្រូវគ្នា!</value>
+        <value>មិនត្រូវគ្នាទេ!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>បានផ្ទុកឯកសារ hash</value>
+        <value>ឯកសារ Hash ត្រូវបានផ្ទុក</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>ឈ្មោះឯកសារ hash មិនត្រូវគ្នា!</value>
+        <value>ឈ្មោះឯកសារ Hash មិនត្រូវគ្នាទេ!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>ឯកសារមិនមាន hash!</value>
+        <value>ឯកសារមិនមាន Hash ទេ!</value>
     </data>
     <data name="Status_Checking">
-        <value>កំពុងពិនិត្យធ្វើបច្ចុប្បន្នភាព...</value>
+        <value>កំពុងពិនិត្យមើលការធ្វើបច្ចុប្បន្នភាព...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>រកឃើញជំនាន់ថ្មី!</value>
+        <value>បានរកឃើញកំណែថ្មី!</value>
     </data>
     <data name="Status_Latest">
-        <value>អ្នកកំពុងប្រើជំនាន់ថ្មីបំផុត។</value>
+        <value>អ្នកកំពុងប្រើប្រាស់កំណែចុងក្រោយបំផុត។</value>
     </data>
     <data name="Status_CheckError">
-        <value>កំហុសពិនិត្យ: {0}</value>
+        <value>កំហុសក្នុងការពិនិត្យមើលការធ្វើបច្ចុប្បន្នភាព៖ {0}</value>
     </data>
     <data name="Status_Installing">
         <value>កំពុងទាញយក និងដំឡើង...</value>
     </data>
     <data name="Status_InstallError">
-        <value>កំហុសដំឡើង: {0}</value>
+        <value>កំហុសក្នុងការដំឡើង៖ {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
         <value>រួចរាល់ (ពីឯកសារ .hash)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>បាត់ឯកសារដើម!</value>
+        <value>បាត់បង់ឯកសារដើម!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>ឈ្មោះឯកសារ hash មិនត្រូវគ្នា!</value>
+        <value>ឈ្មោះឯកសារ Hash មិនត្រូវគ្នាទេ!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>បានទម្លាក់ឯកសារ hash ជោគជ័យ</value>
+        <value>បានទម្លាក់ឯកសារ Hash ដោយជោគជ័យ</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>ឯកសារមិនមាន hash!</value>
+        <value>ឯកសារមិនមាន Hash ទេ!</value>
     </data>
     <data name="Status_ReadError">
-        <value>កំហុសអានឯកសារ</value>
+        <value>កំហុសក្នុងការអានឯកសារ</value>
     </data>
     <data name="Msg_Result_Title">
         <value>លទ្ធផល</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>បានបញ្ចប់ដំណើរការ!
-            ✅ ជោគជ័យ: {0}
-            ❌ បរាជ័យ: {1}
+        <value>ដំណើរការបានបញ្ចប់!
+            ✅ ជោគជ័យ៖ {0}
+            ❌ បរាជ័យ៖ {1}
+            ⛔ បានបោះបង់៖ {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>បានពិនិត្យឯកសារ {0} ឯកសារ។
-            ✅ ត្រូវគ្នា: {1}
-            ❌ មិនត្រូវគ្នា/កំហុស: {2}
-            ⛔ បានបោះបង់: {3}
+        <value>បានពិនិត្យឯកសារ {0} ។
+            ✅ ត្រូវគ្នា៖ {1}
+            ❌ មិនត្រូវគ្នា/កំហុស៖ {2}
+            ⛔ បានបោះបង់៖ {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>ឯកសារខុស!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>ឯកសារ hash មិនត្រូវគ្នា!
+        <value>ឯកសារ Hash មិនត្រូវគ្នាទេ!
 
-            ឯកសារដើម: {0}
-            ឯកសារដែលជ្រើស: {1}
+            ឯកសារដើម៖ {0}
+            ឯកសារដែលបានជ្រើសរើស៖ {1}
 
-            សូមជ្រើសឯកសារ hash ត្រឹមត្រូវ។
+            សូមជ្រើសរើសឯកសារ hash អមដែលត្រឹមត្រូវ។
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>ធ្វើបច្ចុប្បន្នភាពថ្មី</value>
+        <value>ការធ្វើបច្ចុប្បន្នភាពថ្មី</value>
     </data>
     <data name="Msg_UpdateContent">
-        <value>ជំនាន់: {0}
+        <value>កំណែ៖ {0}
 
-            ការផ្លាស់ប្តូរ:
+            ការផ្លាស់ប្តូរ៖
             {1}
 
-            ចុច 'ធ្វើបច្ចុប្បន្នភាពឥឡូវ' ដើម្បីទាញយក។
+            ចុច 'ធ្វើបច្ចុប្បន្នភាពឥឡូវនេះ' ដើម្បីទាញយក។
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>មិនមានធ្វើបច្ចុប្បន្នភាពថ្មីជាងនេះទេ។</value>
+        <value>រកមិនឃើញការធ្វើបច្ចុប្បន្នភាពថ្មីទេ។</value>
     </data>
     <data name="Msg_Error">
         <value>កំហុស</value>
@@ -404,40 +408,40 @@
         <value>មិនអាចអានឯកសារ hash នេះបានទេ។</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>ពិនិត្យការកំណត់រចនាសម្ព័ន្ធ</value>
+        <value>ការពិនិត្យការកំណត់រចនាសម្ព័ន្ធ</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>ឯកសារមាននៅ:
+        <value>ឯកសារមាននៅ៖
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>មិនមានឯកសារ!</value>
+        <value>ឯកសារមិនមានទេ!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>បានបង្កើតឯកសារជោគជ័យ!</value>
+        <value>ឯកសារត្រូវបានបង្កើតដោយជោគជ័យ!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>បានចម្លងផ្លូវកំណត់រចនាសម្ព័ន្ធ។</value>
+        <value>ផ្លូវការកំណត់រចនាសម្ព័ន្ធត្រូវបានចម្លង។</value>
     </data>
     <data name="Msg_AdminMode">
         <value>របៀបអ្នកគ្រប់គ្រង</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>សូមចាប់ផ្ដើមកម្មវិធីឡើងវិញដើម្បីឱ្យការផ្លាស់ប្តូរមានប្រសិទ្ធភាព។</value>
+        <value>សូមចាប់ផ្ដើមកម្មវិធីឡើងវិញ ដើម្បីអនុវត្តការផ្លាស់ប្តូរ។</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>មិនអាចបើកថតបាន: {0}</value>
+        <value>មិនអាចបើកថតឯកសារ៖ {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ការព្រមានជំនាន់អភិវឌ្ឍន៍</value>
+        <value>⚠️ ការព្រមានអំពីកំណែអ្នកអភិវឌ្ឍន៍</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>អ្នកកំពុងតែប្តូរទៅឆានែលធ្វើបច្ចុប្បន្នភាពអភិវឌ្ឍន៍ (Pre-release)។
+        <value>អ្នកហៀបនឹងប្តូរទៅឆានែលធ្វើបច្ចុប្បន្នភាពអ្នកអភិវឌ្ឍន៍ (មុនចេញផ្សាយ)។
 
-            ជំនាន់នេះអាចមានកំហុស មិនស្ថិរភាព និងអាចបាត់បង់ទិន្នន័យ។
+            កំណែនេះអាចមានកំហុស មិនស្ថិតស្ថេរ និងអាចបណ្តាលឱ្យបាត់បង់ទិន្នន័យ។
 
-            ខ្ញុំមិនទទួលខុសត្រូវចំពោះបញ្ហាណាមួយដែលកើតឡើងពីការប្រើជំនាន់នេះទេ។
+            ខ្ញុំមិនទទួលខុសត្រូវចំពោះបញ្ហាណាមួយដែលកើតឡើងពីការប្រើប្រាស់កំណែនេះទេ។
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
@@ -447,37 +451,37 @@
         <value>រក្សាទុកឯកសារ Hash</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>រក្សាទុកឯកសារបង្ហាប់</value>
+        <value>រក្សាទុកឯកសារដែលបានបង្រួម</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>ជ្រើសឯកសារសម្រាប់ Hash</value>
+        <value>ជ្រើសរើសឯកសារដើម្បី Hash</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>ជ្រើសឯកសារ hash សម្រាប់: {0}</value>
+        <value>ជ្រើសរើសឯកសារ Hash សម្រាប់៖ {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>ជ្រើសឯកសារ (ដើម ឬឯកសារ .hash)</value>
+        <value>ជ្រើសរើសឯកសារ (ឯកសារដើម ឬឯកសារ .hash)</value>
     </data>
     <data name="Header_Fallback">
-        <value>កម្រិតខ្ពស់: ត្រឡប់ទៅជំនាន់ចាស់</value>
+        <value>កម្រិតខ្ពស់៖ ត្រលប់ទៅកំណែចាស់</value>
     </data>
     <data name="Desc_Fallback">
-        <value>មុខងារនេះអនុញ្ញាតឱ្យដំឡើងជំនាន់ជាក់លាក់បើជំនាន់ថ្មីមានបញ្ហា។</value>
+        <value>មុខងារនេះអនុញ្ញាតឱ្យអ្នកដំឡើងកំណែជាក់លាក់ប្រសិនបើកំណែថ្មីមានបញ្ហា។</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>បិទ/ទម្លាក់នៅទីនេះ...</value>
+        <value>បិទភ្ជាប់ ឬទម្លាក់ទីនេះ...</value>
     </data>
     <data name="Unit_Seconds">
         <value>វិនាទី</value>
     </data>
     <data name="Tip_Verify">
-        <value>ពិនិត្យ</value>
+        <value>ផ្ទៀងផ្ទាត់</value>
     </data>
     <data name="Tip_Stop">
         <value>បញ្ឈប់</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>លុបឯកសារ</value>
+        <value>លុបឯកសារចេញ</value>
     </data>
     <data name="Tip_CopyHash">
         <value>ចម្លង Hash</value>
@@ -485,8 +489,11 @@
     <data name="Tip_Compute">
         <value>គណនា</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>សម្អាត Hash</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>មើល Hash</value>
+        <value>រកមើល Hash</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>ងងឹត</value>
@@ -500,9 +507,6 @@
     <data name="Msg_TaskCancelled_Title">
         <value>កិច្ចការត្រូវបានបញ្ឈប់</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>ឯកសារ {0} លើសដែនកំណត់ {1} {2}។</value>
-    </data>
     <data name="Btn_Yes">
         <value>បាទ/ចាស</value>
     </data>
@@ -513,22 +517,22 @@
         <value>ទេ</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>ឯកសារបង្ហាប់ .zip</value>
+        <value>ប័ណ្ណសារ Zip</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
         <value>បញ្ជាក់ការចាកចេញ</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>ការចាកចេញនឹងបោះបង់កិច្ចការកំពុងដំណើរការទាំងអស់។ ប្រាកដជាចង់ចាកចេញមែនទេ?</value>
+        <value>ការចាកចេញនឹងបោះបង់កិច្ចការដែលកំពុងដំណើរការទាំងអស់។ តើអ្នកប្រាកដទេ?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>កិច្ចការត្រូវបានបញ្ឈប់ដោយសារផុតពេល។</value>
+        <value>កិច្ចការត្រូវបានបញ្ឈប់ដោយសារផុតកំណត់ពេលវេលា។</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>រក្សាទុកកំណត់ហេតុនយោបាយទៅថាស។</value>
+        <value>រក្សាទុកកំណត់ហេតុកែកំហុសទៅថាស។</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>ផ្អាកការកត់ត្រាពេលវេលាពិត។</value>
+        <value>ផ្អាកការកត់ត្រាពេលវេលាពិតប្រាកដ។</value>
     </data>
     <data name="Tip_ShowHash">
         <value>បង្ហាញ Hash</value>
@@ -540,15 +544,193 @@
         <value>ចម្លងផ្លូវ</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>ថាសរបស់អ្នកពេញហើយ។ សូមជ្រើសទីតាំងផ្សេង :)</value>
+        <value>ដ្រាយវ៍របស់អ្នកពេញហើយ។ សូមជ្រើសរើសទីតាំងផ្សេង :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>ការមើលឃើញ Hash</value>
+        <value>ភាពមើលឃើញ Hash</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>គ្មានឯកសារ។ ចុច 'បន្ថែមឯកសារ' ដើម្បីចាប់ផ្តើម។</value>
+        <value>មិនមានឯកសារទេ។ ចុច 'បន្ថែមឯកសារ' ដើម្បីចាប់ផ្តើម។</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>ចាក់សោស្បែកនេះជាលំនាំដើម</value>
+        <value>ចាក់សោររចនាប័ទ្មនេះជាលំនាំដើម</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>បានរំលងឯកសារ {0} ដែលលើសពីដែនកំណត់ ({1} {2})៖
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>ភាសាប្រព័ន្ធ</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>ការត្រឡប់ទៅការកំណត់ 'ស្វ័យប្រវត្តិ' ទាមទារការចាប់ផ្ដើមឡើងវិញដើម្បីឱ្យមានប្រសិទ្ធភាពពេញលេញ។ តើអ្នកចង់បន្តទេ?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>ការផ្លាស់ប្តូរភាសា</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>តើអ្នកប្រាកដអំពីវាទេ?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>កុំបង្ហាញការជូនដំណឹងនេះម្តងទៀត</value>
+    </data>
+    <data name="Error_Network">
+        <value>កំហុសការតភ្ជាប់បណ្តាញ។ សូមពិនិត្យមើលអ៊ីនធឺណិតរបស់អ្នក។</value>
+    </data>
+    <data name="Error_Server">
+        <value>កំហុសម៉ាស៊ីនមេ (5xx)។ សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ។</value>
+    </data>
+    <data name="Error_Client">
+        <value>កំហុសម៉ាស៊ីនភ្ញៀវ (4xx)។ សូមពិនិត្យមើលសំណើ។</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>លើសដែនកំណត់អត្រា GitHub API ។ សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ។</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>រកមិនឃើញកំណែមុនចេញផ្សាយទេ។ រក្សាកំណែបច្ចុប្បន្ន។</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>កំណែមុនចេញផ្សាយ {0} មានហើយ។
+
+            {1}
+
+            កំណែនេះប្រហែលជាមិនស្ថិតស្ថេរទេ។ តើអ្នកចង់ទាញយកទេ?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>សម្អាតការបរាជ័យ</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>បានដកចេញ {0} ធាតុ។</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>ពេលវេលានៅសល់៖ {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>រយៈពេលកិច្ចការ៖ {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>កំពុងគណនា...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>បន្ថែមថតឯកសារ...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>ថតឯកសារដែលបានជ្រើសរើសគឺទទេ។</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>ជ្រើសរើសថតឯកសារដើម្បីស្កេន</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>បោះបង់</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>ដែនកំណត់ដំណើរការ</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>ឯកសារអតិបរមាក្នុងមួយការស្កេនថត</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>កំណត់ចំនួនឯកសារដែលបានបន្ថែមពីថត ដើម្បីការពារបញ្ហាដំណើរការ។</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>ថតអតិបរមាក្នុងមួយពេល</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>កំណត់ចំនួនថតដែលបានជ្រើសរើសក្នុងពេលតែមួយ។</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>អ្នកអាចជ្រើសរើសបានត្រឹមតែ {0} ថតក្នុងពេលតែមួយ។</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>បានបន្ថែមឯកសារ {0} ។ បានរំលងឯកសារ {1} ដោយសារដែនកំណត់។</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>អាន៖ {0}/s | សរសេរ៖ {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>បង្ហាញល្បឿនអាន/សរសេរ</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>បង្ហាញល្បឿនផ្ទេរទិន្នន័យជាក់ស្តែងកំឡុងពេលប្រតិបត្តិការ hash ។</value>
+    </data>
+    <data name="Status_Computing">
+        <value>កំពុងគណនា Hash...</value>
+    </data>
+    <data name="Size_All">
+        <value>ទំហំទាំងអស់</value>
+    </data>
+    <data name="Size_Small">
+        <value>តូច (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>មធ្យម (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>ធំ (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>ធំបំផុត (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>ឯកសារ</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>គោលការណ៍ឯកជនភាព</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>លក្ខខណ្ឌនៃសេវាកម្ម</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>កិច្ចព្រមព្រៀងអាជ្ញាប័ណ្ណអ្នកប្រើប្រាស់ (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>ការបដិសេធការទទួលខុសត្រូវ</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>សូមអាន (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>កំណត់ហេតុផ្លាស់ប្តូរ</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>ការទទួលស្គាល់</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>កំពុងដំណើរការ</value>
+    </data>
+    <data name="Status_Failure">
+        <value>បរាជ័យ</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>ស្វែងរកតាមឈ្មោះ...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>ទំហំ</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>ប្រវត្តិរូប GitHub</value>
+    </data>
+    <data name="Filter_All">
+        <value>ទាំងអស់</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>បង្កើនទំហំអង្គចងចាំ</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>បង្ខំឱ្យសម្អាតទិន្នន័យឥតបានការ (GC) ដើម្បីបង្កើន RAM ។</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>សម្អាតអង្គចងចាំ</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>ការសម្អាតអង្គចងចាំត្រូវបានចាប់ផ្តើម។</value>
     </data>
 </root>

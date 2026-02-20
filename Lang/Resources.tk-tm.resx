@@ -16,49 +16,52 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Heş guraly</value>
     </data>
     <data name="Menu_Create">
-        <value>Hash döret</value>
+        <value>Heş döret</value>
     </data>
     <data name="Menu_Check">
-        <value>Hash barla</value>
+        <value>Heşi barlamak</value>
     </data>
     <data name="Menu_Settings">
         <value>Sazlamalar</value>
     </data>
     <data name="Menu_Update">
-        <value>Täzelenme</value>
+        <value>Täzelemek</value>
     </data>
     <data name="Menu_Theme">
         <value>Tema</value>
     </data>
     <data name="Menu_About">
-        <value>Hakda</value>
+        <value>Barada</value>
     </data>
     <data name="Menu_Developer">
-        <value>Öndüriji</value>
+        <value>Dörediji</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>Faýllar goş...</value>
+        <value>Faýllary goş...</value>
     </data>
     <data name="Btn_Clear">
         <value>Sanawy arassala</value>
     </data>
+    <data name="Btn_ClearHashes">
+        <value>Heşleri arassala</value>
+    </data>
     <data name="Btn_CalcAll">
-        <value>ÄHLISINI HASAPLA</value>
+        <value>HEMMESINI HASAPLA</value>
     </data>
     <data name="Btn_Compress">
         <value>Gysmak (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ÄHLISINI BARLA</value>
+        <value>HEMMESINI BARLA</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Şu wagt barla</value>
+        <value>Häzir barla</value>
     </data>
     <data name="Btn_Install">
-        <value>Gurmak</value>
+        <value>Gurna</value>
     </data>
     <data name="Btn_Accept">
         <value>Kabul et</value>
@@ -67,46 +70,46 @@
         <value>Ret et</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Hash döret &amp; gysmak</value>
+        <value>Heş döret we gys</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Topar barlag</value>
+        <value>Toparlaýyn barlag</value>
     </data>
     <data name="Title_Update">
-        <value>Täzelenmeleri barla</value>
+        <value>Täzelemeleri barla</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Öndüriji wersiýasy duýduryşy</value>
+        <value>Dörediji wersiýasy duýduryşy</value>
     </data>
     <data name="Title_About">
-        <value>Hakda</value>
+        <value>Barada</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Maslahat: Shift+C ählisini hasapla, Shift+Z gysmak, Ctrl+F faýllar goş.</value>
+        <value>Maslahat: Hasaplamak üçin Shift+C, Gysmak üçin Shift+Z, Goşmak üçin Ctrl+F.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Maslahat: Shift+A ählisini barla, Ctrl+F faýllar goş, Ctrl+Shift+H sanawy arassala.</value>
+        <value>Maslahat: Barlamak üçin Shift+A, Goşmak üçin Ctrl+F, Arassalamak üçin Ctrl+Shift+H.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Taýýar</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Mysal:</value>
+        <value>Nusga:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>Häzirki wersiýa: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Çykan kanal:</value>
+        <value>Çykarylyş ýoly:</value>
     </data>
     <data name="Lbl_TotalFiles">
         <value>Jemi faýllar: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Ygtybarly</value>
+        <value>Durnukly (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Öndüriji wersiýasy</value>
+        <value>Dörediji (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Dil</value>
@@ -118,7 +121,7 @@
         <value>Tema stili</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Ýagty/ Garangy</value>
+        <value>Ýagty/Garaňky</value>
     </data>
     <data name="Settings_Font">
         <value>Şrift</value>
@@ -127,158 +130,157 @@
         <value>Şrift ölçegi (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Dil üçin iň gowy şrifti awtomat saýla</value>
+        <value>Dil üçin iň gowy şrifti awtomatik saýla</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Gaýybana şrift hökmünde gulpla</value>
+        <value>Standart şrift hökmünde gulpla</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI ölçeği</value>
+        <value>Interfeýs ölçegi</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Hash bahalaryny maskala (Howpsuzlyk)</value>
+        <value>Heş bahalaryny gizle (Howpsuzlyk)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Temany täzele</value>
+        <value>Sazlamalary nol et</value>
     </data>
     <data name="Settings_Other">
-        <value>Gizlinlik we howpsuzlyk</value>
+        <value>Gizlinlik we Howpsuzlyk</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Gaýybana et</value>
+        <value>Standart edip belle</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Özbaşdak tekst reňki</value>
+        <value>Ýörite tekst reňki</value>
     </data>
     <data name="Settings_Advanced">
-        <value>Giňeldilen</value>
+        <value>Giňişleýin</value>
     </data>
     <data name="Settings_AdminMode">
         <value>Administrator hökmünde işlet</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Gaýtadan başlamak gerek. Goragly faýllara elýeterlilik berýär.</value>
+        <value>Täzeden başlatmagy talap edýär. Goragly faýllara girmäge rugsat berýär.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Giriş faýl ölçeg chek</value>
+        <value>Giriş faýlynyň ölçeg çägi</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Işlemek üçin maksimum ölçeg.</value>
+        <value>Gaýtadan işlenjek faýllaryň iň uly ölçegi.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Zor bilen çykmak wagty chek</value>
+        <value>Mejbury çykmak wagty</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Programma dondugy hasaplanmazdan öň wagt (sekunt).</value>
+        <value>Programma doňdy diýlip hasaplanmazdan öňki wagt (sekunt).</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Faýl işlemek wagty chek</value>
+        <value>Faýly gaýtadan işlemek wagty</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Bir faýl gaty uzak wagt alsa ýatyr.</value>
+        <value>Bir faýl gaty köp wagt alsa ýatyr.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Gyssagly hereket</value>
+        <value>Tiz kömek hereketi</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Programmany zor bilen ýap we ähli işleri derrew ýatyr.</value>
+        <value>Programmany mejbury ýap we ähli tabşyryklary haýal etmän ýatyr.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Zor bilen çyk we ählisini ýatyr</value>
+        <value>Mejbury çyk we ählisini ýatyr</value>
     </data>
     <data name="Settings_Configuration">
         <value>Konfigurasiýa</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Sazlamalary gulpla (Gaýybana hökmünde sakla)</value>
+        <value>Sazlamalary gulpla (Standart hökmünde sakla)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Tötänleýin üýtgeşmeleriň öňüni al. Diňe hash maskalamak sazlanyp biler.</value>
+        <value>Töwekgel üýtgeşmeleriň öňüni al. Diňe 'Heşi gizle' üýtgedilip bilner.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Ähli sazlamalary täzele</value>
+        <value>Ähli sazlamalary nol et</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Fabrika gaýybana ýagdaýyna gaýt.</value>
+        <value>Zawod sazlamalaryna gaýtar.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Konfigurasiýa faýl ýoly</value>
+        <value>Konfigurasiýa faýlynyň ýoly</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Doly ýoly görkez we bufera göçür.</value>
+        <value>Doly ýoly görkez we çalşygyň tagtasyna (clipboard) göçür.</value>
     </data>
     <data name="Settings_ShowPath">
         <value>Ýoly görkez</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Sazlamalar config.json-a awtomat saklanýar</value>
+        <value>Sazlamalar config.json faýlyna awtomatik ýazylýar</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Öndüriji rejimi</value>
+        <value>Dörediji tertibi</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Giňeldilen log we debug gurallaryny işjeňleşdir.</value>
+        <value>Kämilleşdirilen hasaba alyş (log) we düzediş (debug) gurallaryny aç.</value>
     </data>
     <data name="Dev_Console">
-        <value>Öndüriji konsoly</value>
+        <value>Dörediji konsoly</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Ýazgy edilýär</value>
+        <value>Ýazga alynýar</value>
     </data>
     <data name="Dev_Paused">
-        <value>Durkezildi</value>
+        <value>Säkindi</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>Faýla sakla</value>
+        <value>Faýla ýazdyr</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Saklama</value>
+        <value>Ýazdyrma</value>
     </data>
     <data name="Dev_Clear">
         <value>Konsoly arassala</value>
     </data>
     <data name="Dev_Copy">
-        <value>Ählisini göçür</value>
+        <value>Hemmesini göçür</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Log papkasy aç</value>
+        <value>Log bukjasyny aç</value>
     </data>
     <data name="About_Author">
-        <value>Ýazyjy</value>
+        <value>Awtor</value>
     </data>
     <data name="About_Software">
-        <value>Programma</value>
+        <value>Programma üpjünçiligi</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Üçünji tarap kitaphanalar</value>
+        <value>Üçünji tarap kitaphanalary</value>
     </data>
     <data name="About_Copyright">
         <value>Awtorlyk hukugy</value>
     </data>
     <data name="About_Desc">
-        <value>Faýl hashlaryny döretmek, barlamak we gysmak üçin güýçli gurallık. Ýa-da men şeýle pikir edýärin :)
-        </value>
+        <value>Faýl heşlerini döretmek, barlamak we gysmak üçin güýçli gural. Ýa-da iň bolmanda men şeýle pikir edýärin :)</value>
     </data>
     <data name="About_License">
-        <value>MIT lisenziýasy astynda çykaryldy.</value>
+        <value>MIT lisenziýasy esasynda çykaryldy.</value>
     </data>
     <data name="About_Tech">
         <value>Tehnologiýa</value>
     </data>
     <data name="About_TechContent">
-        <value>C# we .NET 10.0.102 bilen guruldy.</value>
+        <value>C# we .NET 10.0.102 ulanylyp guruldy.</value>
     </data>
     <data name="About_AI">
-        <value>AI kömegi</value>
+        <value>Emeli aň (AI) kömegi</value>
     </data>
     <data name="About_AIContent">
-        <value>Bu programma AI kömegi bilen öndürildi (Gemini 3 Pro we Grok 4.1).</value>
+        <value>Bu programma emeli aňyň (Gemini 3 Pro we Grok 4.1) kömegi bilen işlenip düzüldi.</value>
     </data>
     <data name="Status_Processing">
-        <value>Işlenýär ({0})...</value>
+        <value>Gaýtadan işlenýär ({0})...</value>
     </data>
     <data name="Status_Done">
         <value>Tamamlandy</value>
@@ -290,52 +292,52 @@
         <value>Ýatyryldy</value>
     </data>
     <data name="Status_Saved">
-        <value>Saklandy!</value>
+        <value>Ýazdyryldy!</value>
     </data>
     <data name="Status_Compressed">
         <value>Gysyldy!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Hash/giriş garaşýar...</value>
+        <value>Heş/giriş garaşylýar...</value>
     </data>
     <data name="Status_MissingOriginal">
         <value>Asyl faýl ýok!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash bahasy ýok (Giriziň ýa-da hash faýlyny ýükläň)</value>
+        <value>Heş bahasy ýok (Faýly giriziň ýa-da ýükläň)</value>
     </data>
     <data name="Status_Valid">
         <value>DOGRY</value>
     </data>
     <data name="Status_Invalid">
-        <value>UÝTGÄNMEZ!</value>
+        <value>GABAT GELMEÝÄR!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Hash faýly ýüklendi</value>
+        <value>Heş faýly ýüklendi</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hash faýl ady uýtgeşmezlik!</value>
+        <value>Heş faýlynyň ady gabat gelmeýär!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Faýlda hash ýok!</value>
+        <value>Faýlda heş ýok!</value>
     </data>
     <data name="Status_Checking">
-        <value>Täzelenmeleri barlaýar...</value>
+        <value>Täzelemeler barlanýar...</value>
     </data>
     <data name="Status_NewVersion">
         <value>Täze wersiýa tapyldy!</value>
     </data>
     <data name="Status_Latest">
-        <value>Iň soňky wersiýany ulanýarsyňyz.</value>
+        <value>Iň täze wersiýany ulanýarsyňyz.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Täzelenme barlag ýalňyşlygy: {0}</value>
+        <value>Täzeleme barlagynda ýalňyşlyk: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Ýüklenýär we gurulýar...</value>
+        <value>Ýüklenýär we gurnalýar...</value>
     </data>
     <data name="Status_InstallError">
-        <value>Gurulma ýalňyşlygy: {0}</value>
+        <value>Gurnama ýalňyşlygy: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
         <value>Taýýar (.hash faýlyndan)</value>
@@ -344,30 +346,31 @@
         <value>Asyl faýl ýitdi!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hash faýl ady uýtgeşmezlik!</value>
+        <value>Heş faýlynyň ady gabat gelmeýär!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hash faýly üstünlikli taşlandy</value>
+        <value>Heş faýly üstünlikli taşlandy</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Faýlda hash ýok!</value>
+        <value>Faýlda heş ýok!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Faýl okamak ýalňyşlygy</value>
+        <value>Faýly okamakda ýalňyşlyk</value>
     </data>
     <data name="Msg_Result_Title">
         <value>Netije</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Işleniş tamamlandy!
-            ✅ Üstünlik: {0}
+        <value>Gaýtadan işlemek tamamlandy!
+            ✅ Üstünlikli: {0}
             ❌ Şowsuz: {1}
+            ⛔ Ýatyryldy: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>{0} faýl barlandy.
-            ✅ Gabat gelýär: {1}
-            ❌ Gabat gelmeýär/Ýalňyşlyk: {2}
+            ✅ Gabat geldi: {1}
+            ❌ Gabat gelmedi/Ýalňyşlyk: {2}
             ⛔ Ýatyryldy: {3}
         </value>
     </data>
@@ -375,16 +378,16 @@
         <value>Nädogry faýl!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hash faýly gabat gelmeýär!
+        <value>Heş faýly gabat gelmeýär!
 
             Asyl faýl: {0}
             Saýlanan faýl: {1}
 
-            Dogry hash faýlyny saýlaň.
+            Dogry degişli heş faýlyny saýlaň.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Täze täzelenme</value>
+        <value>Täze täzeleme</value>
     </data>
     <data name="Msg_UpdateContent">
         <value>Wersiýa: {0}
@@ -392,23 +395,23 @@
             Üýtgeşmeler:
             {1}
 
-            Ýüklemek üçin 'Şu wagt täzele' basyň.
+            Ýüklemek üçin 'Häzir täzele' düwmesine basyň.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Has täze täzelenme tapylmady.</value>
+        <value>Täze täzeleme tapylmady.</value>
     </data>
     <data name="Msg_Error">
         <value>Ýalňyşlyk</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Bu hash faýlyny okaýmaýär.</value>
+        <value>Bu heş faýlyny okap bolanok.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Konfigurasiýa barlag</value>
+        <value>Konfigurasiýa barlagy</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Faýl şu ýerde:
+        <value>Faýl şu ýerde bar:
             {0}
         </value>
     </data>
@@ -422,51 +425,51 @@
         <value>Konfigurasiýa ýoly göçürildi.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Administrator rejimi</value>
+        <value>Administrator tertibi</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Üýtgeşmeleriň güýjüne girmegi üçin programmany gaýtadan başlatyň.</value>
+        <value>Üýtgeşmeleriň güýje girmegi üçin programmany täzeden başladyň.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Papkany açyp bilmeýäris: {0}</value>
+        <value>Bukjany açyp bolmady: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ÖNDÜRIJI WERSIÝASY DUÝDURYŞY</value>
+        <value>⚠️ DÖREDIJI WERSIÝASY DUÝDURYŞY</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Öndüriji (öňünden çykan) täzelenme kanalyna geçmekçi.
+        <value>Dörediji (Pre-release) täzeleme kanalyna geçmekçi bolýarsyňyz.
 
-            Bu wersiýada näsazlyklar bolup biler, durnuksyz bolup biler we maglumatlary ýitirip biler.
+            Bu wersiýada näsazlyklar bolup biler, durnuksyz bolup biler we maglumatlaryň ýitmegine sebäp bolup biler.
 
-            Bu wersiýany ulanmakdan gelip çykýan islendik mesele üçin jogapkär däl.
+            Bu wersiýanyň ulanylmagyndan gelip çykýan islendik mesele üçin men jogapkär däl.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Men okadym we razy. Doly jogapkärçiligi öz üstüme alýaryn.</value>
+        <value>Men okadym we kabul edýärin. Doly jogapkärçiligi öz üstüme alýaryn.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Hash faýlyny sakla</value>
+        <value>Heş faýlyny ýazdyr</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Gysylan faýly sakla</value>
+        <value>Gysylan faýly ýazdyr</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Hash üçin faýllary saýla</value>
+        <value>Heşlemek üçin faýllary saýlaň</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>{0} üçin hash faýlyny saýla</value>
+        <value>{0} üçin heş faýlyny saýlaň</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Faýllary saýla (Asyl ýa-da .hash faýly)</value>
+        <value>Faýllary saýlaň (Asyl ýa-da .hash faýly)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Giňeldilen: Eskisi wersiýa gaýt</value>
+        <value>Giňişleýin: Köne wersiýa gaýdyp gel</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Täze wersiýada mesele bar bolsa belli wersiýany gurmak mümkinçiligini berýär.</value>
+        <value>Täze wersiýada mesele bar bolsa, bu aýratynlyk belli bir wersiýany gurnamaga mümkinçilik berýär.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Bu ýere ýelme/taşla...</value>
+        <value>Şu ýere ýelmeň ýa-da taşlaň...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Sekunt</value>
@@ -475,34 +478,34 @@
         <value>Barla</value>
     </data>
     <data name="Tip_Stop">
-        <value>Dur</value>
+        <value>Sakla</value>
     </data>
     <data name="Tip_RemoveFile">
         <value>Faýly aýyr</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Hash göçür</value>
+        <value>Heşi göçür</value>
     </data>
     <data name="Tip_Compute">
         <value>Hasapla</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Heşi arassala</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Hash göz aýla</value>
+        <value>Heşi gözden geçir</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>Garangy</value>
+        <value>Garaňky</value>
     </data>
     <data name="Settings_ThemeLight">
         <value>Ýagty</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>Sistema</value>
+        <value>Ulgam</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>Iş durdy</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Faýl {0} {1} {2} çäkden geçdi.</value>
+        <value>Tabşyryk saklandy</value>
     </data>
     <data name="Btn_Yes">
         <value>Hawa</value>
@@ -514,42 +517,220 @@
         <value>Ýok</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip arhiv</value>
+        <value>Zip arhiwi</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Çykyş tassyklama</value>
+        <value>Çykmagy tassyklaň</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Çykyş ähli dowam edýän işleri ýatyrar. Ynamlymy?</value>
+        <value>Çykmak dowam edýän ähli tabşyryklary ýatyrar. Ynamyňyz kämilmi?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Wagt çäkden dolay iş durdy.</value>
+        <value>Tabşyryk wagt çägi sebäpli saklandy.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Debug log-y diske sakla.</value>
+        <value>Düzediş (debug) logyny diske ýazdyr.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Hakyky wagt log-y dur.</value>
+        <value>Hakyky wagt loglamany sägindir.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Hash görkez</value>
+        <value>Heşi görkez</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Hash ýaşyr</value>
+        <value>Heşi gizle</value>
     </data>
     <data name="Tip_CopyPath">
         <value>Ýoly göçür</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Diskiň doludy. Başga ýer saýlaň :)</value>
+        <value>Diskiňiz doly. Başga ýer saýlaň :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Hash görünmekligi</value>
+        <value>Heşin görnüşi</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Faýl ýok. Başlamak üçin 'Faýllar goş' basyň.</value>
+        <value>Faýl ýok. Başlamak üçin 'Faýllary goş' basyň.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Bu temany gaýybana hökmünde gulpla</value>
+        <value>Bu temany standart hökmünde gulpla</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Çäkden ({1} {2}) geçýän {0} faýl böküldi:
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Ulgam dili</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>'Awtomatik' sazlamasyna gaýtmak üçin täzeden başlatmak gerek. Dowam etmek isleýärsiňizmi?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Dili üýtgetmek</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Şoňa ynamyňyz kämilmi?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Bu duýduryşy gaýtadan görkezme</value>
+    </data>
+    <data name="Error_Network">
+        <value>Tor birikmesi ýalňyşlygy. Internetiňizi barlaň.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Serwer ýalňyşlygy (5xx). Soňurak gaýtadan synanyşyň.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Müşderi ýalňyşlygy (4xx). Haýyşy barlaň.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>GitHub API çäginden geçildi. Soňurak gaýtadan synanyşyň.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Pre-release wersiýasy tapylmady. Häzirki wersiýa saklanýar.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Pre-release wersiýasy {0} elýeterli.
+
+            {1}
+
+            Bu wersiýa durnuksyz bolup biler. Ýükläp almak isleýärsiňizmi?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Şowsuz bolanlary arassala</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>{0} element aýyryldy.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Galan wagt: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Tabşyryk wagty: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Hasaplanýar...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Bukja goş...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Saýlanan bukja boş.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Skanirlemek üçin bukja saýlaň</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Ýatyr</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Gaýtadan işlemek çäkleri</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Bukja skanirlemesi üçin iň köp faýl</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Öndürijilik meselesiniň öňüni almak üçin bukjadan goşulan faýllaryň sanyny çäklendiriň.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Bir wagtda iň köp bukja</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Bir wagtda saýlanan bukjalar sanyny çäklendiriň.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Bir wagtda diňe {0} bukja saýlap bilersiňiz.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>{0} faýl goşuldy. Çäk sebäpli {1} faýl böküldi.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Oka: {0}/s | Ýaz: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Okamak/Ýazmak tizligini görkez</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Heş amallary mahalynda hakyky wagt geçiriş tizligini görkeziň.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Heş hasaplanýar...</value>
+    </data>
+    <data name="Size_All">
+        <value>Ähli ölçegler</value>
+    </data>
+    <data name="Size_Small">
+        <value>Kiçi (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Orta (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Uly (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Gaty uly (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Resminamalar</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Gizlinlik syýasaty</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Hyzmat şertleri</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Ulanyjy ygtyýarnamasy ylalaşygy (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Jogapkärçilikden ýüz öwürme</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>README</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Üýtgeşmeler žurnaly</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Minnetdarlyk</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Gaýtadan işlenýär</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Şowsuz</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Ady boýunça gözle...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Ölçeg</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub Profili</value>
+    </data>
+    <data name="Filter_All">
+        <value>Ählisi</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Ýady boşat</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>RAM-y boşatmak üçin zibil ýygnamagy (GC) mejbur et.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Ýady arassala</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Ýat arassalanmagy başlady.</value>
     </data>
 </root>

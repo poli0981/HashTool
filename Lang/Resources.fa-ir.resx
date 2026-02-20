@@ -16,7 +16,7 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>ابزار هش</value>
     </data>
     <data name="Menu_Create">
         <value>تولید هش</value>
@@ -28,10 +28,10 @@
         <value>تنظیمات</value>
     </data>
     <data name="Menu_Update">
-        <value>به‌روزرسانی</value>
+        <value>بروزرسانی</value>
     </data>
     <data name="Menu_Theme">
-        <value>تم</value>
+        <value>پوسته</value>
     </data>
     <data name="Menu_About">
         <value>درباره</value>
@@ -43,7 +43,10 @@
         <value>افزودن فایل‌ها...</value>
     </data>
     <data name="Btn_Clear">
-        <value>پاک کردن لیست</value>
+        <value>پاک‌کردن لیست</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>پاک‌کردن هش‌ها</value>
     </data>
     <data name="Btn_CalcAll">
         <value>محاسبه همه</value>
@@ -55,37 +58,37 @@
         <value>بررسی همه</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>بررسی اکنون</value>
+        <value>بررسی کن</value>
     </data>
     <data name="Btn_Install">
         <value>نصب</value>
     </data>
     <data name="Btn_Accept">
-        <value>پذیرش</value>
+        <value>پذیرفتن</value>
     </data>
     <data name="Btn_Decline">
-        <value>رد</value>
+        <value>رد کردن</value>
     </data>
     <data name="Title_CreateHash">
         <value>تولید هش و فشرده‌سازی</value>
     </data>
     <data name="Title_CheckHash">
-        <value>بررسی دسته‌ای</value>
+        <value>بررسی گروهی</value>
     </data>
     <data name="Title_Update">
-        <value>بررسی به‌روزرسانی</value>
+        <value>بررسی بروزرسانی‌ها</value>
     </data>
     <data name="Title_Disclaimer">
         <value>هشدار نسخه توسعه‌دهنده</value>
     </data>
     <data name="Title_About">
-        <value>درباره</value>
+        <value>درباره نرم‌افزار</value>
     </data>
     <data name="Help_CreateHash">
-        <value>نکته: Shift+C برای محاسبه همه، Shift+Z برای فشرده‌سازی، Ctrl+F برای افزودن فایل.</value>
+        <value>نکته: Shift+C برای محاسبه، Shift+Z برای فشرده‌سازی، Ctrl+F برای افزودن فایل.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>نکته: Shift+A برای بررسی همه، Ctrl+F برای افزودن فایل، Ctrl+Shift+H برای پاک کردن لیست.</value>
+        <value>نکته: Shift+A برای بررسی، Ctrl+F برای افزودن، Ctrl+Shift+H برای پاک‌کردن.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>آماده</value>
@@ -100,46 +103,46 @@
         <value>کانال انتشار:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>تعداد فایل‌ها: {0}</value>
+        <value>کل فایل‌ها: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>پایدار</value>
+        <value>پایدار (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>نسخه توسعه‌دهنده</value>
+        <value>توسعه‌دهنده (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>زبان</value>
     </data>
     <data name="Settings_Theme">
-        <value>تم</value>
+        <value>پوسته</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>سبک تم</value>
+        <value>سبک پوسته</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>روشن/تیره</value>
+        <value>روشن/تاریک</value>
     </data>
     <data name="Settings_Font">
-        <value>فونت</value>
+        <value>قلم (Font)</value>
     </data>
     <data name="Settings_FontSize">
-        <value>اندازه فونت (pt)</value>
+        <value>اندازه قلم (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>انتخاب خودکار فونت بهینه برای زبان</value>
+        <value>انتخاب خودکار قلم مناسب برای زبان</value>
     </data>
     <data name="Settings_LockFont">
-        <value>قفل به عنوان فونت پیش‌فرض</value>
+        <value>قفل کردن به عنوان قلم پیش‌فرض</value>
     </data>
     <data name="Settings_Scale">
         <value>مقیاس رابط کاربری</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>ماسک کردن مقادیر هش (امنیت)</value>
+        <value>مخفی کردن مقادیر هش (امنیتی)</value>
     </data>
     <data name="Settings_Reset">
-        <value>بازنشانی تم</value>
+        <value>بازنشانی تنظیمات</value>
     </data>
     <data name="Settings_Other">
         <value>حریم خصوصی و امنیت</value>
@@ -154,34 +157,34 @@
         <value>پیشرفته</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>اجرای به عنوان مدیر</value>
+        <value>اجرا به عنوان مدیر (Admin)</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>نیاز به راه‌اندازی مجدد دارد. اجازه دسترسی به فایل‌های محافظت‌شده.</value>
+        <value>نیاز به راه‌اندازی مجدد. اجازه دسترسی به فایل‌های محافظت‌شده.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>حد اندازه فایل ورودی</value>
+        <value>محدودیت حجم فایل ورودی</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>حداکثر اندازه برای فایل‌های پردازشی.</value>
+        <value>حداکثر حجم فایل‌ها برای پردازش.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>تایم‌اوت خروج اجباری</value>
+        <value>مهلت خروج اجباری</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>زمان (ثانیه) قبل از در نظر گرفتن اپلیکیشن هنگ کرده.</value>
+        <value>زمان (ثانیه) قبل از اینکه برنامه متوقف‌شده (Frozen) در نظر گرفته شود.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>تایم‌اوت پردازش فایل</value>
+        <value>مهلت پردازش فایل</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>اگر یک فایل بیش از حد طول بکشد، لغو کنید.</value>
+        <value>لغو عملیات اگر پردازش یک فایل بیش از حد طول بکشد.</value>
     </data>
     <data name="Settings_Emergency">
         <value>اقدام اضطراری</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>خروج اجباری اپلیکیشن و لغو همه وظایف فوراً.</value>
+        <value>بستن اجباری برنامه و لغو فوری همه وظایف.</value>
     </data>
     <data name="Settings_BtnForceQuit">
         <value>خروج اجباری و لغو همه</value>
@@ -193,19 +196,19 @@
         <value>قفل تنظیمات (ذخیره به عنوان پیش‌فرض)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>جلوگیری از تغییرات تصادفی. فقط ماسک هش قابل تنظیم باقی می‌ماند.</value>
+        <value>جلوگیری از تغییرات تصادفی. فقط 'مخفی کردن هش' قابل تغییر می‌ماند.</value>
     </data>
     <data name="Settings_ResetAll">
         <value>بازنشانی همه تنظیمات</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>بازگردانی به تنظیمات کارخانه.</value>
+        <value>بازگشت به تنظیمات کارخانه.</value>
     </data>
     <data name="Settings_ConfigPath">
         <value>مسیر فایل پیکربندی</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>نمایش مسیر کامل و کپی به کلیپ‌بورد.</value>
+        <value>نمایش مسیر کامل و کپی در کلیپ‌بورد.</value>
     </data>
     <data name="Settings_ShowPath">
         <value>نمایش مسیر</value>
@@ -217,13 +220,13 @@
         <value>حالت توسعه‌دهنده</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>فعال کردن ابزارهای لاگ‌گیری و دیباگ پیشرفته.</value>
+        <value>فعال‌سازی لاگ‌گیری پیشرفته و ابزارهای دیباگ.</value>
     </data>
     <data name="Dev_Console">
         <value>کنسول توسعه‌دهنده</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>بتا (BETA)</value>
     </data>
     <data name="Dev_Recording">
         <value>در حال ضبط</value>
@@ -235,10 +238,10 @@
         <value>ذخیره در فایل</value>
     </data>
     <data name="Dev_NoSave">
-        <value>بدون ذخیره</value>
+        <value>ذخیره نکن</value>
     </data>
     <data name="Dev_Clear">
-        <value>پاک کردن کنسول</value>
+        <value>پاک‌کردن کنسول</value>
     </data>
     <data name="Dev_Copy">
         <value>کپی همه</value>
@@ -247,7 +250,7 @@
         <value>باز کردن پوشه لاگ</value>
     </data>
     <data name="About_Author">
-        <value>نویسنده</value>
+        <value>سازنده</value>
     </data>
     <data name="About_Software">
         <value>نرم‌افزار</value>
@@ -256,31 +259,31 @@
         <value>کتابخانه‌های شخص ثالث</value>
     </data>
     <data name="About_Copyright">
-        <value>حقوق کپی</value>
+        <value>حق کپی‌رایت</value>
     </data>
     <data name="About_Desc">
-        <value>ابزار قدرتمند برای تولید، بررسی و فشرده‌سازی هش فایل‌ها. یا حداقل من اینطور فکر می‌کنم :)</value>
+        <value>ابزاری قدرتمند برای تولید، بررسی و فشرده‌سازی هش فایل‌ها. یا حداقل من اینطور فکر می‌کنم :)</value>
     </data>
     <data name="About_License">
-        <value>تحت مجوز MIT منتشر شده.</value>
+        <value>منتشر شده تحت مجوز MIT.</value>
     </data>
     <data name="About_Tech">
-        <value>فناوری</value>
+        <value>تکنولوژی</value>
     </data>
     <data name="About_TechContent">
         <value>ساخته شده با C# و .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>کمک هوش مصنوعی</value>
+        <value>دستیار هوش مصنوعی</value>
     </data>
     <data name="About_AIContent">
-        <value>این نرم‌افزار با کمک هوش مصنوعی توسعه یافته (Gemini 3 Pro و Grok 4.1).</value>
+        <value>این نرم‌افزار با کمک هوش مصنوعی (Gemini 3 Pro و Grok 4.1) توسعه یافته است.</value>
     </data>
     <data name="Status_Processing">
         <value>در حال پردازش ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>کامل شد</value>
+        <value>تکمیل شد</value>
     </data>
     <data name="Status_Error">
         <value>خطا: {0}</value>
@@ -295,19 +298,19 @@
         <value>فشرده شد!</value>
     </data>
     <data name="Status_Waiting">
-        <value>در انتظار هش/ورودی...</value>
+        <value>منتظر هش/ورودی...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>فایل اصلی گم شده!</value>
+        <value>فایل اصلی موجود نیست!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>مقدار هش گم شده (وارد کنید یا فایل هش بارگذاری کنید)</value>
+        <value>مقدار هش موجود نیست (وارد کنید یا فایل را بارگذاری کنید)</value>
     </data>
     <data name="Status_Valid">
         <value>معتبر</value>
     </data>
     <data name="Status_Invalid">
-        <value>نامعتبر!</value>
+        <value>نامعتبر (عدم تطابق!)</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>فایل هش بارگذاری شد</value>
@@ -319,16 +322,16 @@
         <value>فایل حاوی هش نیست!</value>
     </data>
     <data name="Status_Checking">
-        <value>در حال بررسی به‌روزرسانی...</value>
+        <value>در حال بررسی بروزرسانی...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>نسخه جدید کشف شد!</value>
+        <value>نسخه جدید شناسایی شد!</value>
     </data>
     <data name="Status_Latest">
         <value>شما از آخرین نسخه استفاده می‌کنید.</value>
     </data>
     <data name="Status_CheckError">
-        <value>خطای بررسی به‌روزرسانی: {0}</value>
+        <value>خطا در بررسی بروزرسانی: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>در حال دانلود و نصب...</value>
@@ -340,13 +343,13 @@
         <value>آماده (از فایل .hash)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>فایل اصلی گم شده!</value>
+        <value>فایل اصلی گم شده است!</value>
     </data>
     <data name="Status_DropHashMismatch">
         <value>نام فایل هش مطابقت ندارد!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>فایل هش با موفقیت دراپ شد</value>
+        <value>فایل هش با موفقیت دریافت شد</value>
     </data>
     <data name="Status_DropNoHash">
         <value>فایل حاوی هش نیست!</value>
@@ -358,32 +361,33 @@
         <value>نتیجه</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>پردازش کامل شد!
-            ✅ موفقیت: {0}
-            ❌ شکست: {1}
+        <value>پردازش تکمیل شد!
+            ✅ موفق: {0}
+            ❌ ناموفق: {1}
+            ⛔ لغو شده: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>{0} فایل بررسی شد.
-            ✅ مطابقت: {1}
-            ❌ نامطابقت/خطا: {2}
-            ⛔ لغو: {3}
+            ✅ تطابق: {1}
+            ❌ عدم تطابق/خطا: {2}
+            ⛔ لغو شده: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>فایل اشتباه!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>فایل هش نامطابقت!
+        <value>عدم تطابق فایل هش!
 
             فایل اصلی: {0}
             فایل انتخاب شده: {1}
 
-            لطفاً فایل هش صحیح را انتخاب کنید.
+            لطفاً فایل هش صحیح و مرتبط را انتخاب کنید.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>به‌روزرسانی جدید</value>
+        <value>بروزرسانی جدید</value>
     </data>
     <data name="Msg_UpdateContent">
         <value>نسخه: {0}
@@ -391,28 +395,28 @@
             تغییرات:
             {1}
 
-            برای دانلود 'به‌روزرسانی اکنون' را کلیک کنید.
+            برای دانلود روی 'بروزرسانی کن' کلیک کنید.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>به‌روزرسانی جدیدتری یافت نشد.</value>
+        <value>بروزرسانی جدیدی پیدا نشد.</value>
     </data>
     <data name="Msg_Error">
         <value>خطا</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>قادر به خواندن این فایل هش نیست.</value>
+        <value>امکان خواندن این فایل هش وجود ندارد.</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>بررسی پیکربندی</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>فایل موجود است در:
+        <value>فایل در مسیر زیر وجود دارد:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>فایل موجود نیست!</value>
+        <value>فایل وجود ندارد!</value>
     </data>
     <data name="Msg_ConfigCreated">
         <value>فایل با موفقیت ایجاد شد!</value>
@@ -421,23 +425,23 @@
         <value>مسیر پیکربندی کپی شد.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>حالت مدیر</value>
+        <value>حالت مدیر (Admin)</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>لطفاً اپلیکیشن را مجدداً راه‌اندازی کنید تا تغییرات اعمال شود.</value>
+        <value>لطفاً برای اعمال تغییرات، برنامه را دوباره راه‌اندازی کنید.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>قادر به باز کردن پوشه نیست: {0}</value>
+        <value>امکان باز کردن پوشه نیست: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
         <value>⚠️ هشدار نسخه توسعه‌دهنده</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>شما در حال تغییر به کانال به‌روزرسانی توسعه‌دهنده (پیش‌نسخه) هستید.
+        <value>شما در حال تغییر به کانال بروزرسانی توسعه‌دهنده (پیش‌انتشار) هستید.
 
-            این نسخه ممکن است حاوی باگ باشد، ناپایدار باشد و باعث از دست رفتن داده شود.
+            این نسخه ممکن است دارای باگ باشد، ناپایدار باشد و باعث از دست رفتن اطلاعات شود.
 
-            من مسئول هیچ مشکلی ناشی از استفاده از این نسخه نیستم.
+            من مسئولیتی در قبال مشکلات ناشی از استفاده از این نسخه ندارم.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
@@ -450,7 +454,7 @@
         <value>ذخیره فایل فشرده</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>انتخاب فایل‌ها برای هاش</value>
+        <value>انتخاب فایل‌ها برای هش</value>
     </data>
     <data name="Dialog_SelectHashFile">
         <value>انتخاب فایل هش برای: {0}</value>
@@ -462,10 +466,10 @@
         <value>پیشرفته: بازگشت به نسخه قدیمی</value>
     </data>
     <data name="Desc_Fallback">
-        <value>این ویژگی اجازه نصب نسخه خاص را در صورت مشکل در نسخه جدید می‌دهد.</value>
+        <value>این ویژگی به شما امکان می‌دهد در صورت وجود مشکل در نسخه جدید، نسخه خاصی را نصب کنید.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>اینجا پیست/دراپ کنید...</value>
+        <value>اینجا جایگذاری یا رها کنید...</value>
     </data>
     <data name="Unit_Seconds">
         <value>ثانیه</value>
@@ -485,11 +489,14 @@
     <data name="Tip_Compute">
         <value>محاسبه</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>پاک‌کردن هش</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>مرور هش</value>
+        <value>جستجوی هش</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>تیره</value>
+        <value>تاریک</value>
     </data>
     <data name="Settings_ThemeLight">
         <value>روشن</value>
@@ -500,14 +507,11 @@
     <data name="Msg_TaskCancelled_Title">
         <value>وظیفه متوقف شد</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>فایل {0} از حد {1} {2} فراتر رفت.</value>
-    </data>
     <data name="Btn_Yes">
         <value>بله</value>
     </data>
     <data name="Btn_OK">
-        <value>تأیید</value>
+        <value>تایید</value>
     </data>
     <data name="Btn_No">
         <value>خیر</value>
@@ -516,39 +520,217 @@
         <value>آرشیو Zip</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>تأیید خروج</value>
+        <value>تایید خروج</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>خروج همه وظایف در حال اجرا را لغو می‌کند. مطمئن هستید؟</value>
+        <value>خروج باعث لغو تمام وظایف جاری می‌شود. مطمئن هستید؟</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>وظیفه به دلیل تایم‌اوت متوقف شد.</value>
+        <value>وظیفه به دلیل اتمام مهلت زمانی متوقف شد.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>لاگ دیباگ را روی دیسک ذخیره کنید.</value>
+        <value>ذخیره لاگ دیباگ در دیسک.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>لاگ‌گیری واقعی را متوقف کنید.</value>
+        <value>توقف لاگ‌گیری لحظه‌ای.</value>
     </data>
     <data name="Tip_ShowHash">
         <value>نمایش هش</value>
     </data>
     <data name="Tip_HideHash">
-        <value>پنهان کردن هش</value>
+        <value>مخفی کردن هش</value>
     </data>
     <data name="Tip_CopyPath">
         <value>کپی مسیر</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>درایو شما پر است. مکان دیگری انتخاب کنید داداش :)</value>
+        <value>درایو شما پر است. لطفاً مکان دیگری را انتخاب کنید :)</value>
     </data>
     <data name="Tip_HashVisibility">
         <value>قابلیت مشاهده هش</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>هیچ فایلی نیست. برای شروع 'افزودن فایل‌ها' را کلیک کنید.</value>
+        <value>فایلی نیست. برای شروع روی 'افزودن فایل‌ها' کلیک کنید.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>این تم را به عنوان پیش‌فرض قفل کنید</value>
+        <value>قفل کردن این پوسته به عنوان پیش‌فرض</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>{0} فایل که از محدودیت ({1} {2}) فراتر بودند نادیده گرفته شدند:
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>زبان سیستم</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>بازگشت به تنظیم 'خودکار' نیاز به راه‌اندازی مجدد دارد. آیا ادامه می‌دهید؟</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>تغییر زبان</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>آیا از این کار مطمئن هستید؟</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>این هشدار را دوباره نشان نده</value>
+    </data>
+    <data name="Error_Network">
+        <value>خطای اتصال شبکه. لطفاً اینترنت خود را بررسی کنید.</value>
+    </data>
+    <data name="Error_Server">
+        <value>خطای سرور (5xx). لطفاً بعداً دوباره تلاش کنید.</value>
+    </data>
+    <data name="Error_Client">
+        <value>خطای کلاینت (4xx). لطفاً درخواست را بررسی کنید.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>محدودیت نرخ API گیت‌هاب تمام شده است. لطفاً بعداً تلاش کنید.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>نسخه پیش‌انتشاری پیدا نشد. نسخه فعلی حفظ می‌شود.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>نسخه پیش‌انتشار {0} در دسترس است.
+
+            {1}
+
+            این نسخه ممکن است ناپایدار باشد. آیا می‌خواهید دانلود کنید؟
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>پاک‌کردن ناموفق‌ها</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>{0} مورد حذف شد.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>زمان باقی‌مانده: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>مدت زمان: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>در حال محاسبه...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>افزودن پوشه...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>پوشه انتخاب شده خالی است.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>انتخاب پوشه برای اسکن</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>لغو</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>محدودیت‌های پردازش</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>حداکثر فایل در هر اسکن پوشه</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>محدود کردن تعداد فایل‌های افزوده شده از پوشه برای جلوگیری از مشکلات عملکرد.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>حداکثر پوشه همزمان</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>محدود کردن تعداد پوشه‌هایی که همزمان انتخاب می‌شوند.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>شما فقط می‌توانید تا {0} پوشه را همزمان انتخاب کنید.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>{0} فایل افزوده شد. {1} فایل به دلیل محدودیت نادیده گرفته شد.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>خوان: {0}/s | نوش: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>نمایش سرعت خواندن/نوشتن</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>نمایش سرعت انتقال لحظه‌ای در حین عملیات هش.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>محاسبه هش...</value>
+    </data>
+    <data name="Size_All">
+        <value>همه اندازه‌ها</value>
+    </data>
+    <data name="Size_Small">
+        <value>کوچک (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>متوسط (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>بزرگ (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>خیلی بزرگ (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>مستندات</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>سیاست حفظ حریم خصوصی</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>شرایط استفاده</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>توافق‌نامه مجوز کاربر نهایی (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>سلب مسئولیت</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>README</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>لیست تغییرات</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>تشکر و قدردانی</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>پردازش</value>
+    </data>
+    <data name="Status_Failure">
+        <value>ناموفق</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>جستجو با نام...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>اندازه</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>پروفایل گیت‌هاب</value>
+    </data>
+    <data name="Filter_All">
+        <value>همه</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>آزادسازی حافظه</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>اجرای اجباری زباله‌روب (GC) برای آزادسازی رم.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>پاکسازی حافظه</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>پاکسازی حافظه آغاز شد.</value>
     </data>
 </root>

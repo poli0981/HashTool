@@ -16,13 +16,13 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Hash Įrankis</value>
     </data>
     <data name="Menu_Create">
-        <value>Kurti hash</value>
+        <value>Generuoti Hash</value>
     </data>
     <data name="Menu_Check">
-        <value>Tikrinti hash</value>
+        <value>Tikrinti Hash</value>
     </data>
     <data name="Menu_Settings">
         <value>Nustatymai</value>
@@ -45,14 +45,17 @@
     <data name="Btn_Clear">
         <value>Išvalyti sąrašą</value>
     </data>
+    <data name="Btn_ClearHashes">
+        <value>Išvalyti Hash</value>
+    </data>
     <data name="Btn_CalcAll">
-        <value>SKAIČIUOTI VISUS</value>
+        <value>SKAIČIUOTI VISKĄ</value>
     </data>
     <data name="Btn_Compress">
         <value>Suspausti (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>TIKRINTI VISUS</value>
+        <value>TIKRINTI VISKĄ</value>
     </data>
     <data name="Btn_CheckNow">
         <value>Tikrinti dabar</value>
@@ -61,19 +64,19 @@
         <value>Įdiegti</value>
     </data>
     <data name="Btn_Accept">
-        <value>Priimti</value>
+        <value>Sutikti</value>
     </data>
     <data name="Btn_Decline">
         <value>Atmesti</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Kurti hash ir suspausti</value>
+        <value>Generuoti Hash ir Suspausti</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Masinis tikrinimas</value>
+        <value>Grupinis tikrinimas</value>
     </data>
     <data name="Title_Update">
-        <value>Tikrinti atnaujinimus</value>
+        <value>Ieškoti atnaujinimų</value>
     </data>
     <data name="Title_Disclaimer">
         <value>Kūrėjo versijos įspėjimas</value>
@@ -82,10 +85,10 @@
         <value>Apie</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Patarimas: Shift+C skaičiuoti visus, Shift+Z suspausti, Ctrl+F pridėti failus.</value>
+        <value>Patarimas: Shift+C – skaičiuoti, Shift+Z – suspausti, Ctrl+F – pridėti failų.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Patarimas: Shift+A tikrinti visus, Ctrl+F pridėti failus, Ctrl+Shift+H išvalyti sąrašą.</value>
+        <value>Patarimas: Shift+A – tikrinti, Ctrl+F – pridėti failų, Ctrl+Shift+H – išvalyti sąrašą.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Paruošta</value>
@@ -97,16 +100,16 @@
         <value>Dabartinė versija: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Leidimo kanalas:</value>
+        <value>Išleidimo kanalas:</value>
     </data>
     <data name="Lbl_TotalFiles">
         <value>Iš viso failų: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabili</value>
+        <value>Stabili (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Kūrėjo versija</value>
+        <value>Kūrėjo (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Kalba</value>
@@ -136,10 +139,10 @@
         <value>UI mastelis</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Maskuoti hash reikšmes (Saugumas)</value>
+        <value>Slėpti Hash reikšmes (Saugumas)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Atstatyti temą</value>
+        <value>Atstatyti nustatymus</value>
     </data>
     <data name="Settings_Other">
         <value>Privatumas ir saugumas</value>
@@ -154,37 +157,37 @@
         <value>Išplėstiniai</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Vykdyti kaip administratoriui</value>
+        <value>Paleisti kaip administratoriui</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Reikia paleisti iš naujo. Leidžia prieigą prie apsaugotų failų.</value>
+        <value>Reikalingas perkrovimas. Leidžia pasiekti apsaugotus failus.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Įvesties failo dydžio riba</value>
+        <value>Įvesties failo dydžio limitas</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maksimalus dydis apdorojamiems failams.</value>
+        <value>Maksimalus failų, kuriuos galima apdoroti, dydis.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Priverstinio išjungimo laikmatis</value>
+        <value>Priverstinio uždarymo laikas</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Laikas (sekundėmis) prieš laikant programą užstrigusią.</value>
+        <value>Laikas (sekundėmis), po kurio programa laikoma užstrigusia.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Failo apdorojimo laikmatis</value>
+        <value>Failo apdorojimo laikas</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Atšaukti, jei vienas failas užtrunka per ilgai.</value>
+        <value>Atšaukti, jei vieno failo apdorojimas trunka per ilgai.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Skubi veiksmas</value>
+        <value>Skubus veiksmas</value>
     </data>
     <data name="Settings_EmergencyDesc">
         <value>Priverstinai uždaryti programą ir nedelsiant atšaukti visas užduotis.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Priverstinis išjungimas ir atšaukti viską</value>
+        <value>Priverstinai uždaryti ir atšaukti viską</value>
     </data>
     <data name="Settings_Configuration">
         <value>Konfigūracija</value>
@@ -193,13 +196,13 @@
         <value>Užrakinti nustatymus (Išsaugoti kaip numatytuosius)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Užkirsti kelią atsitiktiniams pakeitimams. Tik hash maskavimas lieka reguliuojamas.</value>
+        <value>Užkirsti kelią atsitiktiniams pakeitimams. Tik 'Slėpti Hash' lieka keičiamas.</value>
     </data>
     <data name="Settings_ResetAll">
         <value>Atstatyti visus nustatymus</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Atkurti gamyklinius nustatymus.</value>
+        <value>Grąžinti į gamyklinius nustatymus.</value>
     </data>
     <data name="Settings_ConfigPath">
         <value>Konfigūracijos failo kelias</value>
@@ -211,13 +214,13 @@
         <value>Rodyti kelią</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Nustatymai automatiškai išsaugomi config.json</value>
+        <value>Nustatymai automatiškai išsaugomi į config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
         <value>Kūrėjo režimas</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Įjungti išplėstinius žurnalo ir derinimo įrankius.</value>
+        <value>Įgalinti išplėstinį žurnalų rašymą ir derinimo įrankius.</value>
     </data>
     <data name="Dev_Console">
         <value>Kūrėjo konsolė</value>
@@ -229,10 +232,10 @@
         <value>Įrašoma</value>
     </data>
     <data name="Dev_Paused">
-        <value>Pauzė</value>
+        <value>Pristabdyta</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>Išsaugoti faile</value>
+        <value>Išsaugoti į failą</value>
     </data>
     <data name="Dev_NoSave">
         <value>Neišsaugoti</value>
@@ -244,7 +247,7 @@
         <value>Kopijuoti viską</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Atidaryti žurnalo aplanką</value>
+        <value>Atidaryti žurnalų aplanką</value>
     </data>
     <data name="About_Author">
         <value>Autorius</value>
@@ -259,7 +262,7 @@
         <value>Autorių teisės</value>
     </data>
     <data name="About_Desc">
-        <value>Galingas įrankis failų hash kūrimui, tikrinimui ir glaudinimui. Ar bent jau aš taip manau :)</value>
+        <value>Galingas įrankis failų hash generavimui, tikrinimui ir suspaudimui. Arba taip aš manau :)</value>
     </data>
     <data name="About_License">
         <value>Išleista pagal MIT licenciją.</value>
@@ -271,10 +274,10 @@
         <value>Sukurta naudojant C# ir .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>AI pagalba</value>
+        <value>AI Pagalba</value>
     </data>
     <data name="About_AIContent">
-        <value>Ši programinė įranga sukurta su AI pagalba (Gemini 3 Pro ir Grok 4.1).</value>
+        <value>Ši programinė įranga sukurta padedant dirbtiniam intelektui (Gemini 3 Pro ir Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
         <value>Apdorojama ({0})...</value>
@@ -292,34 +295,34 @@
         <value>Išsaugota!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Suglaudinta!</value>
+        <value>Suspausta!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Laukiama hash/įvesties...</value>
+        <value>Laukiama Hash/įvesties...</value>
     </data>
     <data name="Status_MissingOriginal">
         <value>Trūksta originalaus failo!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Trūksta hash reikšmės (Įveskite arba įkelkite hash failą)</value>
+        <value>Trūksta Hash reikšmės (Įveskite arba įkelkite failą)</value>
     </data>
     <data name="Status_Valid">
-        <value>GALIOJANTI</value>
+        <value>GALIOJA</value>
     </data>
     <data name="Status_Invalid">
-        <value>NEGALIOJANTI!</value>
+        <value>NESUTAPIMAS!</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>Hash failas įkeltas</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hash failo pavadinimas neatitinka!</value>
+        <value>Hash failo pavadinimas nesutampa!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Faile nerasta hash!</value>
+        <value>Faile nėra Hash!</value>
     </data>
     <data name="Status_Checking">
-        <value>Tikrinami atnaujinimai...</value>
+        <value>Ieškoma atnaujinimų...</value>
     </data>
     <data name="Status_NewVersion">
         <value>Aptikta nauja versija!</value>
@@ -331,7 +334,7 @@
         <value>Atnaujinimų tikrinimo klaida: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Atsisiunčiama ir diegiama...</value>
+        <value>Atsiunčiama ir diegiama...</value>
     </data>
     <data name="Status_InstallError">
         <value>Diegimo klaida: {0}</value>
@@ -340,16 +343,16 @@
         <value>Paruošta (Iš .hash failo)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Prarastas originalus failas!</value>
+        <value>Originalus failas prarastas!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hash failo pavadinimas neatitinka!</value>
+        <value>Hash failo pavadinimas nesutampa!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hash failas sėkmingai numestas</value>
+        <value>Hash failas sėkmingai įkeltas</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Faile nėra hash!</value>
+        <value>Faile nėra Hash!</value>
     </data>
     <data name="Status_ReadError">
         <value>Failo skaitymo klaida</value>
@@ -361,25 +364,26 @@
         <value>Apdorojimas baigtas!
             ✅ Sėkmingai: {0}
             ❌ Nepavyko: {1}
+            ⛔ Atšaukta: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Patikrinta {0} failų.
-            ✅ Atitinka: {1}
-            ❌ Neatitinka/Klaida: {2}
+            ✅ Sutampa: {1}
+            ❌ Nesutampa/Klaida: {2}
             ⛔ Atšaukta: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>Netinkamas failas!</value>
+        <value>Neteisingas failas!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hash failas neatitinka!
+        <value>Hash failas nesutampa!
 
             Originalus failas: {0}
             Pasirinktas failas: {1}
 
-            Pasirinkite teisingą pridėtą hash failą.
+            Pasirinkite teisingą pridedamą hash failą.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -391,28 +395,28 @@
             Pakeitimai:
             {1}
 
-            Spustelėkite 'Atnaujinti dabar' atsisiųsti.
+            Spustelėkite 'Atnaujinti dabar', kad atsisiųstumėte.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Nėra naujesnių atnaujinimų.</value>
+        <value>Naujesnių atnaujinimų nerasta.</value>
     </data>
     <data name="Msg_Error">
         <value>Klaida</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Negalima perskaityti šio hash failo.</value>
+        <value>Nepavyko perskaityti šio hash failo.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Konfigūracijos tikrinimas</value>
+        <value>Konfigūracijos patikrinimas</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Failas yra:
+        <value>Failas egzistuoja:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Failas nerastas!</value>
+        <value>Failas neegzistuoja!</value>
     </data>
     <data name="Msg_ConfigCreated">
         <value>Failas sėkmingai sukurtas!</value>
@@ -424,69 +428,72 @@
         <value>Administratoriaus režimas</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Paleiskite programą iš naujo, kad pakeitimai įsigaliotų.</value>
+        <value>Iš naujo paleiskite programą, kad pakeitimai įsigaliotų.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Negalima atidaryti aplanko: {0}</value>
+        <value>Nepavyko atidaryti aplanko: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
         <value>⚠️ KŪRĖJO VERSIJOS ĮSPĖJIMAS</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Jūs ketinate pereiti prie kūrėjo (priešleidiminės) atnaujinimo kanalo.
+        <value>Ketinate pereiti prie Kūrėjo (Pre-release) atnaujinimų kanalo.
 
-            Ši versija gali turėti klaidų, būti nestabili ir sukelti duomenų praradimą.
+            Šioje versijoje gali būti klaidų, ji gali būti nestabili ir sukelti duomenų praradimą.
 
-            Nesu atsakingas už problemas, kylančias naudojant šią versiją.
+            Aš neprisiimu atsakomybės už jokias problemas, kilusias naudojant šią versiją.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Perskaičiau ir sutinku. Prisiimu visą atsakomybę.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Išsaugoti hash failą</value>
+        <value>Išsaugoti Hash failą</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Išsaugoti suglaudintą failą</value>
+        <value>Išsaugoti suspaustą failą</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Pasirinkti failus hash</value>
+        <value>Pasirinkite failus</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Pasirinkti hash failą: {0}</value>
+        <value>Pasirinkite hash failą: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Pasirinkti failus (Originalus arba .hash failą)</value>
+        <value>Pasirinkite failus (Originalų arba .hash failą)</value>
     </data>
     <data name="Header_Fallback">
         <value>Išplėstiniai: Grįžti prie senesnės versijos</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Ši funkcija leidžia įdiegti konkrečią versiją, jei nauja turi problemų.</value>
+        <value>Ši funkcija leidžia įdiegti konkrečią versiją, jei naujoji turi problemų.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Įklijuoti/Mesti čia...</value>
+        <value>Įklijuokite arba vilkite čia...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Sekundės</value>
     </data>
     <data name="Tip_Verify">
-        <value>Patikrinti</value>
+        <value>Tikrinti</value>
     </data>
     <data name="Tip_Stop">
-        <value>Sustabdyti</value>
+        <value>Stabdyti</value>
     </data>
     <data name="Tip_RemoveFile">
         <value>Pašalinti failą</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Kopijuoti hash</value>
+        <value>Kopijuoti Hash</value>
     </data>
     <data name="Tip_Compute">
         <value>Skaičiuoti</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Išvalyti Hash</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Naršyti hash</value>
+        <value>Naršyti Hash</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>Tamsi</value>
@@ -495,13 +502,10 @@
         <value>Šviesi</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>Sistema</value>
+        <value>Sistemos</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
         <value>Užduotis sustabdyta</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Failas {0} viršija ribą {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
         <value>Taip</value>
@@ -519,36 +523,214 @@
         <value>Patvirtinti išėjimą</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Išėjimas atšauks visas vykdomas užduotis. Ar tikrai?</value>
+        <value>Išėjus bus atšauktos visos vykdomos užduotys. Ar tikrai norite išeiti?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Užduotis sustabdyta dėl laiko limito.</value>
+        <value>Užduotis buvo sustabdyta dėl laiko limito.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Išsaugoti derinimo žurnalą diske.</value>
+        <value>Išsaugoti derinimo žurnalą į diską.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Pauzė realaus laiko žurnalo.</value>
+        <value>Pristabdyti realaus laiko žurnalą.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Rodyti hash</value>
+        <value>Rodyti Hash</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Slėpti hash</value>
+        <value>Slėpti Hash</value>
     </data>
     <data name="Tip_CopyPath">
         <value>Kopijuoti kelią</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Jūsų diskas pilnas. Pasirinkite kitą vietą bro :)</value>
+        <value>Jūsų diskas pilnas. Pasirinkite kitą vietą :)</value>
     </data>
     <data name="Tip_HashVisibility">
         <value>Hash matomumas</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Nėra failų. Spustelėkite 'Pridėti failus' pradėti.</value>
+        <value>Nėra failų. Spustelėkite 'Pridėti failus', kad pradėtumėte.</value>
     </data>
     <data name="Settings_LockTheme">
         <value>Užrakinti šią temą kaip numatytąją</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Praleista {0} failų, viršijančių limitą ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Sistemos kalba</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Norint grįžti prie 'Automatinio' nustatymo, reikia perkrauti programą. Ar norite tęsti?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Kalbos keitimas</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Ar esate tuo tikras?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Daugiau nerodyti šio įspėjimo</value>
+    </data>
+    <data name="Error_Network">
+        <value>Tinklo ryšio klaida. Patikrinkite interneto ryšį.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Serverio klaida (5xx). Bandykite dar kartą vėliau.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Kliento klaida (4xx). Patikrinkite užklausą.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>Viršytas GitHub API užklausų limitas. Bandykite dar kartą vėliau.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Pre-release versija nerasta. Paliekama dabartinė versija.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Yra pre-release versija {0}.
+
+            {1}
+
+            Ši versija gali būti nestabili. Ar norite atsisiųsti?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Išvalyti nepavykusius</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>Pašalinta {0} elementų.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Liko laiko: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Užduoties trukmė: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Skaičiuojama...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Pridėti aplanką...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Pasirinktas aplankas yra tuščias.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Pasirinkite aplanką skenavimui</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Atšaukti</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Apdorojimo limitai</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Maks. failų skaičius aplanko skenavimui</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Apribokite failų, pridedamų iš aplanko, skaičių, kad išvengtumėte našumo problemų.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Maks. aplankų vienu metu</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Apribokite vienu metu pasirenkamų aplankų skaičių.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Vienu metu galite pasirinkti tik iki {0} aplankų.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Pridėta {0} failų. Praleista {1} failų dėl limito.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Skaitymas: {0}/s | Rašymas: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Rodyti skaitymo / rašymo greitį</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Rodyti perdavimo greitį realiuoju laiku hash operacijų metu.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Skaičiuojamas Hash...</value>
+    </data>
+    <data name="Size_All">
+        <value>Visi dydžiai</value>
+    </data>
+    <data name="Size_Small">
+        <value>Mažas (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Vidutinis (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Didelis (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Labai didelis (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Dokumentai</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Privatumo politika</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Paslaugų teikimo sąlygos</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Galutinio vartotojo licencijos sutartis (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Atsakomybės atsisakymas</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>SKAITYK MANE (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Pakeitimų žurnalas</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Padėkos</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Apdorojama</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Nepavyko</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Ieškoti pagal pavadinimą...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Dydis</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub profilis</value>
+    </data>
+    <data name="Filter_All">
+        <value>Visi</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Atlaisvinti atmintį</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Priverstinai iškviesti šiukšlių surinkėją (GC), kad atlaisvintumėte RAM.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Išvalyti atmintį</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Atminties valymas pradėtas.</value>
     </data>
 </root>

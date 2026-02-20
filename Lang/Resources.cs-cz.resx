@@ -16,25 +16,25 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Nástroj Hash</value>
     </data>
     <data name="Menu_Create">
-        <value>Vytvořit Hash</value>
+        <value>Generovat hash</value>
     </data>
     <data name="Menu_Check">
-        <value>Ověřit Hash</value>
+        <value>Ověřit hash</value>
     </data>
     <data name="Menu_Settings">
         <value>Nastavení</value>
     </data>
     <data name="Menu_Update">
-        <value>Aktualizovat</value>
+        <value>Aktualizace</value>
     </data>
     <data name="Menu_Theme">
         <value>Motiv</value>
     </data>
     <data name="Menu_About">
-        <value>O programu</value>
+        <value>O aplikaci</value>
     </data>
     <data name="Menu_Developer">
         <value>Vývojář</value>
@@ -43,7 +43,10 @@
         <value>Přidat soubory...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Vyčistit seznam</value>
+        <value>Vymazat seznam</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>Vymazat hashe</value>
     </data>
     <data name="Btn_CalcAll">
         <value>SPOČÍTAT VŠE</value>
@@ -67,10 +70,10 @@
         <value>Odmítnout</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Vytvořit Hash &amp; Komprimovat</value>
+        <value>Generovat hash a komprimovat</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Dávkové ověření</value>
+        <value>Hromadné ověření</value>
     </data>
     <data name="Title_Update">
         <value>Zkontrolovat aktualizace</value>
@@ -79,34 +82,34 @@
         <value>Upozornění vývojářské verze</value>
     </data>
     <data name="Title_About">
-        <value>O programu</value>
+        <value>O aplikaci</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tip: Shift+C pro Spočítat vše, Shift+Z pro Komprimovat, Ctrl+F pro Přidat soubory.</value>
+        <value>Tip: Shift+C pro výpočet, Shift+Z pro kompresi, Ctrl+F pro přidání souborů.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A pro Ověřit vše, Ctrl+F pro Přidat soubory, Ctrl+Shift+H pro Vyčistit seznam.</value>
+        <value>Tip: Shift+A pro ověření, Ctrl+F pro přidání souborů, Ctrl+Shift+H pro vymazání seznamu.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Připraveno</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Příklad:</value>
+        <value>Vzorek:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>Aktuální verze: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Kanál vydání:</value>
+        <value>Distribuční kanál:</value>
     </data>
     <data name="Lbl_TotalFiles">
         <value>Celkem souborů: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabilní</value>
+        <value>Stabilní (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Vývojářská edice</value>
+        <value>Vývojářská (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Jazyk</value>
@@ -127,22 +130,22 @@
         <value>Velikost písma (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automaticky vybrat optimální písmo pro jazyk</value>
+        <value>Automaticky vybrat písmo pro jazyk</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Zamknout jako výchozí písmo</value>
+        <value>Uzamknout jako výchozí písmo</value>
     </data>
     <data name="Settings_Scale">
         <value>Měřítko UI</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Maskovat hodnoty Hash (Bezpečnost)</value>
+        <value>Skrýt hodnoty hashe (Bezpečnost)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Resetovat motiv</value>
+        <value>Obnovit nastavení</value>
     </data>
     <data name="Settings_Other">
-        <value>Soukromí &amp; Bezpečnost</value>
+        <value>Soukromí a zabezpečení</value>
     </data>
     <data name="Settings_SetDefault">
         <value>Nastavit jako výchozí</value>
@@ -157,16 +160,16 @@
         <value>Spustit jako správce</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Vyžaduje restart. Povolí přístup k chráněným souborům.</value>
+        <value>Vyžaduje restart. Umožňuje přístup k chráněným souborům.</value>
     </data>
     <data name="Settings_FileSizeLimit">
         <value>Limit velikosti vstupního souboru</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maximální velikost pro soubory k zpracování.</value>
+        <value>Maximální velikost souborů pro zpracování.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Časový limit nuceného ukončení</value>
+        <value>Časový limit pro vynucené ukončení</value>
     </data>
     <data name="Settings_ForceQuitDesc">
         <value>Čas (sekundy) před považováním aplikace za zamrzlou.</value>
@@ -175,37 +178,37 @@
         <value>Časový limit zpracování souboru</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Zrušit, pokud jeden soubor trvá příliš dlouho.</value>
+        <value>Zrušit, pokud soubor trvá příliš dlouho.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Nouze akce</value>
+        <value>Nouzová akce</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Nucené ukončení aplikace a okamžité zrušení všech úloh.</value>
+        <value>Vynutit ukončení aplikace a okamžitě zrušit všechny úlohy.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Nucené ukončení &amp; Zrušit vše</value>
+        <value>Vynutit ukončení a zrušit vše</value>
     </data>
     <data name="Settings_Configuration">
         <value>Konfigurace</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Zamknout nastavení (Uložit jako výchozí)</value>
+        <value>Uzamknout nastavení (Uložit jako výchozí)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Zabránit náhodným změnám. Pouze maskování Hash zůstává nastavitelné.</value>
+        <value>Zabránit náhodným změnám. Pouze 'Skrývání hashe' zůstane nastavitelné.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Resetovat všechna nastavení</value>
+        <value>Obnovit všechna nastavení</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Obnovit tovární nastavení.</value>
+        <value>Obnovit do továrního nastavení.</value>
     </data>
     <data name="Settings_ConfigPath">
         <value>Cesta ke konfiguračnímu souboru</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Zobrazit úplnou cestu a kopírovat do schránky.</value>
+        <value>Zobrazit celou cestu a zkopírovat do schránky.</value>
     </data>
     <data name="Settings_ShowPath">
         <value>Zobrazit cestu</value>
@@ -214,13 +217,13 @@
         <value>Nastavení se automaticky ukládají do config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Režim vývojáře</value>
+        <value>Vývojářský režim</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Povolit pokročilé logování a nástroje ladění.</value>
+        <value>Povolit pokročilé logování a ladicí nástroje.</value>
     </data>
     <data name="Dev_Console">
-        <value>Konzole vývojáře</value>
+        <value>Vývojářská konzole</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
@@ -238,7 +241,7 @@
         <value>Neukládat</value>
     </data>
     <data name="Dev_Clear">
-        <value>Vyčistit konzoli</value>
+        <value>Vymazat konzoli</value>
     </data>
     <data name="Dev_Copy">
         <value>Kopírovat vše</value>
@@ -259,8 +262,7 @@
         <value>Autorská práva</value>
     </data>
     <data name="About_Desc">
-        <value>Výkonný nástroj pro vytváření, ověřování a komprimování hash hodnot souborů. Nebo si to aspoň myslím :)
-        </value>
+        <value>Mocný nástroj pro generování, ověřování a kompresi hashů souborů. Nebo si to alespoň myslím :)</value>
     </data>
     <data name="About_License">
         <value>Vydáno pod licencí MIT.</value>
@@ -269,16 +271,16 @@
         <value>Technologie</value>
     </data>
     <data name="About_TechContent">
-        <value>Vytvořeno pomocí C# a .NET 10.0.102.</value>
+        <value>Vytvořeno v C# a .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>Pomoc AI</value>
+        <value>AI Asistence</value>
     </data>
     <data name="About_AIContent">
         <value>Tento software byl vyvinut s pomocí AI (Gemini 3 Pro a Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
-        <value>Zpracovává se ({0})...</value>
+        <value>Zpracování ({0})...</value>
     </data>
     <data name="Status_Done">
         <value>Dokončeno</value>
@@ -293,28 +295,28 @@
         <value>Uloženo!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Komprimováno!</value>
+        <value>Zkomprimováno!</value>
     </data>
     <data name="Status_Waiting">
         <value>Čekání na hash/vstup...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Chybí originální soubor!</value>
+        <value>Chybí původní soubor!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Chybí hodnota hash (Zadejte nebo načtěte hash soubor)</value>
+        <value>Chybí hodnota hashe (Zadejte nebo načtěte soubor)</value>
     </data>
     <data name="Status_Valid">
-        <value>PLATNÉ</value>
+        <value>PLATNÝ</value>
     </data>
     <data name="Status_Invalid">
-        <value>NEPLATNÉ!</value>
+        <value>NESHODA!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Hash soubor načten</value>
+        <value>Soubor hashe načten</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Název hash souboru neodpovídá!</value>
+        <value>Neshoda názvu souboru hashe!</value>
     </data>
     <data name="Status_NoHashFound">
         <value>Soubor neobsahuje hash!</value>
@@ -323,13 +325,13 @@
         <value>Kontrola aktualizací...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Objevena nová verze!</value>
+        <value>Zjištěna nová verze!</value>
     </data>
     <data name="Status_Latest">
         <value>Používáte nejnovější verzi.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Chyba kontroly aktualizací: {0}</value>
+        <value>Chyba kontroly aktualizace: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>Stahování a instalace...</value>
@@ -341,13 +343,13 @@
         <value>Připraveno (Z .hash souboru)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Originální soubor ztracen!</value>
+        <value>Původní soubor ztracen!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Název hash souboru neodpovídá!</value>
+        <value>Neshoda názvu souboru hashe!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hash soubor úspěšně puštěn</value>
+        <value>Soubor hashe úspěšně vložen</value>
     </data>
     <data name="Status_DropNoHash">
         <value>Soubor neobsahuje hash!</value>
@@ -361,7 +363,8 @@
     <data name="Msg_Result_Content">
         <value>Zpracování dokončeno!
             ✅ Úspěch: {0}
-            ❌ Neúspěch: {1}
+            ❌ Selhání: {1}
+            ⛔ Zrušeno: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
@@ -375,12 +378,12 @@
         <value>Špatný soubor!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hash soubor neodpovídá!
+        <value>Neshoda souboru hashe!
 
-            Originální soubor: {0}
+            Původní soubor: {0}
             Vybraný soubor: {1}
 
-            Prosím, vyberte správný přiložený hash soubor.
+            Vyberte prosím správný doprovodný soubor hashe.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -392,23 +395,23 @@
             Změny:
             {1}
 
-            Klikněte 'Aktualizovat nyní' pro stažení.
+            Klikněte na 'Aktualizovat nyní' pro stažení.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Žádné novější aktualizace nenalezeny.</value>
+        <value>Nebyly nalezeny žádné novější aktualizace.</value>
     </data>
     <data name="Msg_Error">
         <value>Chyba</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Nelze přečíst tento hash soubor.</value>
+        <value>Nelze přečíst tento soubor hashe.</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>Kontrola konfigurace</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Soubor existuje na:
+        <value>Soubor existuje v:
             {0}
         </value>
     </data>
@@ -425,7 +428,7 @@
         <value>Režim správce</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Prosím, restartujte aplikaci, aby se změny projevily.</value>
+        <value>Pro provedení změn restartujte aplikaci.</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>Nelze otevřít složku: {0}</value>
@@ -434,39 +437,39 @@
         <value>⚠️ UPOZORNĚNÍ VÝVOJÁŘSKÉ VERZE</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Přepínáte na kanál aktualizací Vývojář (předběžná verze).
+        <value>Chystáte se přepnout na vývojářský (Pre-release) aktualizační kanál.
 
             Tato verze může obsahovat chyby, být nestabilní a způsobit ztrátu dat.
 
-            Nejsem zodpovědný za problémy vzniklé použitím této verze.
+            Nenesu odpovědnost za žádné problémy vzniklé používáním této verze.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Přečetl jsem a souhlasím. Přebírám plnou odpovědnost.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Uložit hash soubor</value>
+        <value>Uložit soubor hashe</value>
     </data>
     <data name="Dialog_SaveZip">
         <value>Uložit komprimovaný soubor</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Vybrat soubory pro hash</value>
+        <value>Vybrat soubory pro hashování</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Vybrat hash soubor pro: {0}</value>
+        <value>Vybrat soubor hashe pro: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Vybrat soubory (Originální nebo .hash soubor)</value>
+        <value>Vybrat soubory (Původní nebo .hash)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Pokročilé: Návrat na starší verzi</value>
+        <value>Pokročilé: Návrat ke starší verzi</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Tato funkce umožňuje instalaci konkrétní verze, pokud nová má problémy.</value>
+        <value>Tato funkce umožňuje nainstalovat konkrétní verzi, pokud má nová problémy.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Vložit/Pustit zde...</value>
+        <value>Vložit nebo přetáhnout sem...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Sekundy</value>
@@ -478,13 +481,16 @@
         <value>Zastavit</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>Odstranit soubor</value>
+        <value>Odebrat soubor</value>
     </data>
     <data name="Tip_CopyHash">
         <value>Kopírovat hash</value>
     </data>
     <data name="Tip_Compute">
-        <value>Vypočítat</value>
+        <value>Spočítat</value>
+    </data>
+    <data name="Tip_ClearHash">
+        <value>Vymazat hash</value>
     </data>
     <data name="Tip_BrowseHash">
         <value>Procházet hash</value>
@@ -501,9 +507,6 @@
     <data name="Msg_TaskCancelled_Title">
         <value>Úloha zastavena</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Soubor {0} překračuje limit {1} {2}.</value>
-    </data>
     <data name="Btn_Yes">
         <value>Ano</value>
     </data>
@@ -514,22 +517,22 @@
         <value>Ne</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip archiv</value>
+        <value>Archiv Zip</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Potvrdit ukončení</value>
+        <value>Potvrzení ukončení</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Ukončení zruší všechny probíhající úlohy. Jste si jistý?</value>
+        <value>Ukončení zruší všechny probíhající úlohy. Jste si jistí?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Úloha zastavena kvůli timeoutu.</value>
+        <value>Úloha byla zastavena z důvodu časového limitu.</value>
     </data>
     <data name="Dev_ToolTip_Save">
         <value>Uložit debug log na disk.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Pauzovat logování v reálném čase.</value>
+        <value>Pozastavit logování v reálném čase.</value>
     </data>
     <data name="Tip_ShowHash">
         <value>Zobrazit hash</value>
@@ -541,15 +544,193 @@
         <value>Kopírovat cestu</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Tvůj disk je plný. Vyber jiné místo kámo :)</value>
+        <value>Váš disk je plný. Vyberte prosím jiné umístění :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Viditelnost hash</value>
+        <value>Viditelnost hashe</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Žádné soubory. Klikni 'Přidat soubory' pro začátek.</value>
+        <value>Žádné soubory. Klikněte na 'Přidat soubory' pro začátek.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Zamknout tento motiv jako výchozí</value>
+        <value>Uzamknout tento motiv jako výchozí</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Přeskočeno {0} souborů překračujících limit ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Jazyk systému</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Návrat k nastavení 'Automaticky' vyžaduje restart pro plný účinek. Chcete pokračovat?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Změna jazyka</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Jste si tím jistí?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Toto upozornění již nezobrazovat</value>
+    </data>
+    <data name="Error_Network">
+        <value>Chyba síťového připojení. Zkontrolujte prosím internet.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Chyba serveru (5xx). Zkuste to prosím později.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Chyba klienta (4xx). Zkontrolujte prosím požadavek.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>Překročen limit GitHub API. Zkuste to prosím později.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Nebyla nalezena žádná pre-release verze. Ponechání aktuální verze.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Pre-release verze {0} je k dispozici.
+
+            {1}
+
+            Tato verze může být nestabilní. Chcete ji stáhnout?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Vymazat neúspěšné</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>Odebráno {0} položek.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Zbývající čas: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Trvání úlohy: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Výpočet...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Přidat složku...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Vybraná složka je prázdná.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Vybrat složku pro skenování</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Zrušit</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Limity zpracování</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Max. souborů na sken složky</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Omezit počet souborů přidaných ze složky pro prevenci problémů s výkonem.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Max. složek najednou</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Omezit počet složek vybraných najednou.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Můžete vybrat maximálně {0} složek najednou.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Přidáno {0} souborů. Přeskočeno {1} souborů kvůli limitu.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Čtení: {0}/s | Zápis: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Zobrazit rychlost Čtení/Zápisu</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Zobrazovat rychlost přenosu v reálném čase během operací hashe.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Výpočet hashe...</value>
+    </data>
+    <data name="Size_All">
+        <value>Všechny velikosti</value>
+    </data>
+    <data name="Size_Small">
+        <value>Malé (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Střední (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Velké (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Extra velké (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Dokumenty</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Zásady ochrany osobních údajů</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Podmínky služby</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Licenční smlouva (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Vyloučení odpovědnosti</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>ČTĚTE MĚ (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Seznam změn</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Poděkování</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Zpracování</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Selhání</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Hledat podle názvu...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Velikost</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub Profil</value>
+    </data>
+    <data name="Filter_All">
+        <value>Vše</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Uvolnit paměť</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Vynutit úklid paměti (GC) pro uvolnění RAM.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Vyčistit paměť</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Čištění paměti spuštěno.</value>
     </data>
 </root>

@@ -19,16 +19,16 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Hash genereren</value>
+        <value>Hash Genereren</value>
     </data>
     <data name="Menu_Check">
-        <value>Hash controleren</value>
+        <value>Hash Verifiëren</value>
     </data>
     <data name="Menu_Settings">
         <value>Instellingen</value>
     </data>
     <data name="Menu_Update">
-        <value>Update</value>
+        <value>Updaten</value>
     </data>
     <data name="Menu_Theme">
         <value>Thema</value>
@@ -45,6 +45,9 @@
     <data name="Btn_Clear">
         <value>Lijst wissen</value>
     </data>
+    <data name="Btn_ClearHashes">
+        <value>Hashes wissen</value>
+    </data>
     <data name="Btn_CalcAll">
         <value>ALLES BEREKENEN</value>
     </data>
@@ -52,10 +55,10 @@
         <value>Comprimeren (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ALLES CONTROLEREN</value>
+        <value>ALLES VERIFIËREN</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Nu controleren</value>
+        <value>Nu verifiëren</value>
     </data>
     <data name="Btn_Install">
         <value>Installeren</value>
@@ -67,27 +70,25 @@
         <value>Weigeren</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Hash genereren &amp; comprimeren</value>
+        <value>Hash Genereren &amp; Comprimeren</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Batchcontrole</value>
+        <value>Batchverificatie</value>
     </data>
     <data name="Title_Update">
         <value>Controleren op updates</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Waarschuwing ontwikkelaarsversie</value>
+        <value>Waarschuwing Ontwikkelaarsversie</value>
     </data>
     <data name="Title_About">
         <value>Over</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tip: Shift+C om alles te berekenen, Shift+Z om te comprimeren, Ctrl+F om bestanden toe te voegen.</value>
+        <value>Tip: Shift+C om te berekenen, Shift+Z om te comprimeren, Ctrl+F om bestanden toe te voegen.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A om alles te controleren, Ctrl+F om bestanden toe te voegen, Ctrl+Shift+H om lijst te
-            wissen.
-        </value>
+        <value>Tip: Shift+A om te verifiëren, Ctrl+F om bestanden toe te voegen, Ctrl+Shift+H om de lijst te wissen.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Klaar</value>
@@ -102,13 +103,13 @@
         <value>Releasekanaal:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Totaal bestanden: {0}</value>
+        <value>Totaal aantal bestanden: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabiel</value>
+        <value>Stabiel (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Ontwikkelaarseditie</value>
+        <value>Ontwikkelaar (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Taal</value>
@@ -129,19 +130,19 @@
         <value>Lettergrootte (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automatisch optimale lettertype voor taal selecteren</value>
+        <value>Kies automatisch het optimale lettertype</value>
     </data>
     <data name="Settings_LockFont">
         <value>Vergrendelen als standaardlettertype</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI-schaal</value>
+        <value>UI Schaal</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Hash-waarden maskeren (Beveiliging)</value>
+        <value>Hashwaarden verbergen (Beveiliging)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Thema resetten</value>
+        <value>Instellingen resetten</value>
     </data>
     <data name="Settings_Other">
         <value>Privacy &amp; Beveiliging</value>
@@ -159,31 +160,31 @@
         <value>Als administrator uitvoeren</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Herstart vereist. Geeft toegang tot beveiligde bestanden.</value>
+        <value>Vereist een herstart. Geeft toegang tot beveiligde bestanden.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Limiet invoerbestandsgrootte</value>
+        <value>Limiet bestandsgrootte invoer</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maximale grootte voor te verwerken bestanden.</value>
+        <value>Maximale grootte van te verwerken bestanden.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Timeout geforceerd afsluiten</value>
+        <value>Time-out geforceerd afsluiten</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Tijd (seconden) voordat app als vastgelopen wordt beschouwd.</value>
+        <value>Tijd (seconden) voordat de app als vastgelopen wordt beschouwd.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Timeout bestandsverwerking</value>
+        <value>Time-out bestandsverwerking</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Annuleren als één bestand te lang duurt.</value>
+        <value>Annuleren als een enkel bestand te veel tijd in beslag neemt.</value>
     </data>
     <data name="Settings_Emergency">
         <value>Noodactie</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>App geforceerd afsluiten en alle taken onmiddellijk annuleren.</value>
+        <value>Sluit de app geforceerd af en annuleer onmiddellijk alle taken.</value>
     </data>
     <data name="Settings_BtnForceQuit">
         <value>Geforceerd afsluiten &amp; Alles annuleren</value>
@@ -195,7 +196,7 @@
         <value>Instellingen vergrendelen (Opslaan als standaard)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Voorkom onbedoelde wijzigingen. Alleen hash-maskering blijft aanpasbaar.</value>
+        <value>Voorkom onbedoelde wijzigingen. Alleen 'Hash verbergen' blijft aanpasbaar.</value>
     </data>
     <data name="Settings_ResetAll">
         <value>Alle instellingen resetten</value>
@@ -204,10 +205,10 @@
         <value>Terugzetten naar fabrieksinstellingen.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Configuratiebestandspad</value>
+        <value>Pad naar configuratiebestand</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Volledig pad tonen en kopiëren naar klembord.</value>
+        <value>Toon volledig pad en kopieer naar klembord.</value>
     </data>
     <data name="Settings_ShowPath">
         <value>Pad tonen</value>
@@ -219,16 +220,16 @@
         <value>Ontwikkelaarsmodus</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Geavanceerde logging en debugtools inschakelen.</value>
+        <value>Schakel geavanceerde logboekregistratie en debugging-tools in.</value>
     </data>
     <data name="Dev_Console">
         <value>Ontwikkelaarsconsole</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>BÈTA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Opname</value>
+        <value>Aan het opnemen</value>
     </data>
     <data name="Dev_Paused">
         <value>Gepauzeerd</value>
@@ -255,18 +256,16 @@
         <value>Software</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Derde partij bibliotheken</value>
+        <value>Bibliotheken van derden</value>
     </data>
     <data name="About_Copyright">
         <value>Auteursrecht</value>
     </data>
     <data name="About_Desc">
-        <value>Krachtig hulpmiddel voor het genereren, controleren en comprimeren van bestandshashes. Of dat denk ik
-            tenminste :)
-        </value>
+        <value>Een krachtige tool voor het genereren, verifiëren en comprimeren van bestands-hashes. Of dat denk ik tenminste :)</value>
     </data>
     <data name="About_License">
-        <value>Uitgegeven onder MIT-licentie.</value>
+        <value>Uitgebracht onder de MIT-licentie.</value>
     </data>
     <data name="About_Tech">
         <value>Technologie</value>
@@ -275,13 +274,13 @@
         <value>Gebouwd met C# en .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>AI-ondersteuning</value>
+        <value>AI-Assistentie</value>
     </data>
     <data name="About_AIContent">
-        <value>Deze software is ontwikkeld met hulp van AI (Gemini 3 Pro en Grok 4.1).</value>
+        <value>Deze software is ontwikkeld met behulp van AI (Gemini 3 Pro en Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
-        <value>Verwerken ({0})...</value>
+        <value>Bezig met verwerken ({0})...</value>
     </data>
     <data name="Status_Done">
         <value>Voltooid</value>
@@ -305,19 +304,19 @@
         <value>Origineel bestand ontbreekt!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash-waarde ontbreekt (Voer in of laad hashbestand)</value>
+        <value>Hashwaarde ontbreekt (Typ in of laad bestand)</value>
     </data>
     <data name="Status_Valid">
         <value>GELDIG</value>
     </data>
     <data name="Status_Invalid">
-        <value>ONGELDIG!</value>
+        <value>KOMT NIET OVEREEN!</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>Hashbestand geladen</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hashbestandsnaam komt niet overeen!</value>
+        <value>Naam hashbestand komt niet overeen!</value>
     </data>
     <data name="Status_NoHashFound">
         <value>Bestand bevat geen hash!</value>
@@ -326,13 +325,13 @@
         <value>Controleren op updates...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Nieuwe versie gedetecteerd!</value>
+        <value>Nieuwe versie gevonden!</value>
     </data>
     <data name="Status_Latest">
         <value>Je gebruikt de nieuwste versie.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Updatecontrolefout: {0}</value>
+        <value>Fout bij updatecontrole: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>Downloaden en installeren...</value>
@@ -341,36 +340,37 @@
         <value>Installatiefout: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Klaar (Van .hash-bestand)</value>
+        <value>Klaar (Vanuit .hash bestand)</value>
     </data>
     <data name="Status_LostOriginal">
         <value>Origineel bestand verloren!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hashbestandsnaam komt niet overeen!</value>
+        <value>Naam hashbestand komt niet overeen!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hashbestand succesvol gedropt</value>
+        <value>Hashbestand succesvol toegevoegd</value>
     </data>
     <data name="Status_DropNoHash">
         <value>Bestand bevat geen hash!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Bestandleesfout</value>
+        <value>Fout bij lezen van bestand</value>
     </data>
     <data name="Msg_Result_Title">
         <value>Resultaat</value>
     </data>
     <data name="Msg_Result_Content">
         <value>Verwerking voltooid!
-            ✅ Succes: {0}
+            ✅ Gelukt: {0}
             ❌ Mislukt: {1}
+            ⛔ Geannuleerd: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>{0} bestanden gecontroleerd.
-            ✅ Overeenkomst: {1}
-            ❌ Geen overeenkomst/Fout: {2}
+            ✅ Komt overeen: {1}
+            ❌ Fout/Komt niet overeen: {2}
             ⛔ Geannuleerd: {3}
         </value>
     </data>
@@ -383,11 +383,11 @@
             Origineel bestand: {0}
             Geselecteerd bestand: {1}
 
-            Selecteer het juiste bijgevoegde hashbestand.
+            Selecteer het juiste bijbehorende hashbestand.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Nieuwe update</value>
+        <value>Nieuwe Update</value>
     </data>
     <data name="Msg_UpdateContent">
         <value>Versie: {0}
@@ -395,7 +395,7 @@
             Wijzigingen:
             {1}
 
-            Klik 'Nu bijwerken' om te downloaden.
+            Klik op 'Nu updaten' om te downloaden.
         </value>
     </data>
     <data name="Msg_NoUpdate">
@@ -428,7 +428,7 @@
         <value>Beheerdersmodus</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Herstart de toepassing om wijzigingen toe te passen.</value>
+        <value>Start de app opnieuw op om de wijzigingen door te voeren.</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>Kan map niet openen: {0}</value>
@@ -437,15 +437,15 @@
         <value>⚠️ WAARSCHUWING ONTWIKKELAARSVERSIE</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Je staat op het punt over te schakelen naar het ontwikkelaarsupdatekanaal (prerelease).
+        <value>Je staat op het punt over te schakelen naar het updatekanaal voor Ontwikkelaars (Pre-release).
 
-            Deze versie kan bugs bevatten, instabiel zijn en gegevensverlies veroorzaken.
+            Deze versie kan fouten bevatten, instabiel zijn en gegevensverlies veroorzaken.
 
-            Ik ben niet verantwoordelijk voor problemen die ontstaan door het gebruik van deze versie.
+            Ik ben niet verantwoordelijk voor eventuele problemen die voortvloeien uit het gebruik van deze versie.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Ik heb gelezen en ga akkoord. Ik neem volledige verantwoordelijkheid.</value>
+        <value>Ik heb dit gelezen en ga akkoord. Ik neem de volledige verantwoordelijkheid.</value>
     </data>
     <data name="Dialog_SaveHash">
         <value>Hashbestand opslaan</value>
@@ -454,22 +454,22 @@
         <value>Gecomprimeerd bestand opslaan</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Bestanden selecteren voor hash</value>
+        <value>Selecteer bestanden om te hashen</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Hashbestand selecteren voor: {0}</value>
+        <value>Selecteer hashbestand voor: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Bestanden selecteren (Origineel of .hash-bestand)</value>
+        <value>Selecteer bestanden (Origineel of .hash bestand)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Geavanceerd: Terugval naar oudere versie</value>
+        <value>Geavanceerd: Terugkeren naar oudere versie</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Deze functie staat toe een specifieke versie te installeren als de nieuwe problemen heeft.</value>
+        <value>Met deze functie kun je een specifieke versie installeren als de nieuwe problemen geeft.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Plak/Drop hier...</value>
+        <value>Plakken of hierheen slepen...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Seconden</value>
@@ -489,8 +489,11 @@
     <data name="Tip_Compute">
         <value>Berekenen</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Hash wissen</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Hash doorbladeren</value>
+        <value>Hash bladeren</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>Donker</value>
@@ -503,9 +506,6 @@
     </data>
     <data name="Msg_TaskCancelled_Title">
         <value>Taak gestopt</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Bestand {0} overschrijdt limiet {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
         <value>Ja</value>
@@ -523,16 +523,16 @@
         <value>Afsluiten bevestigen</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Afsluiten annuleert alle lopende taken. Weet je het zeker?</value>
+        <value>Als je afsluit, worden alle lopende taken geannuleerd. Weet je het zeker?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Taak gestopt vanwege timeout.</value>
+        <value>Taak is gestopt vanwege een time-out.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Debuglog opslaan op schijf.</value>
+        <value>Bewaar debug-logboek op schijf.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Realtime logging pauzeren.</value>
+        <value>Pauzeer realtime logboekregistratie.</value>
     </data>
     <data name="Tip_ShowHash">
         <value>Hash tonen</value>
@@ -544,15 +544,193 @@
         <value>Pad kopiëren</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Je schijf is vol. Kies een andere locatie makker :)</value>
+        <value>Je schijf is vol. Kies een andere locatie :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Hash-zichtbaarheid</value>
+        <value>Zichtbaarheid van hash</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Geen bestanden. Klik 'Bestanden toevoegen' om te beginnen.</value>
+        <value>Geen bestanden. Klik op 'Bestanden toevoegen' om te beginnen.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Dit thema vergrendelen als standaard</value>
+        <value>Vergrendel dit thema als standaard</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>{0} bestanden die de limiet ({1} {2}) overschrijden, zijn overgeslagen:
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Systeemtaal</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Terugkeren naar de 'Auto' instelling vereist een herstart om volledig effect te hebben. Wil je doorgaan?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Taal wijzigen</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Weet je dit zeker?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Toon deze waarschuwing niet meer</value>
+    </data>
+    <data name="Error_Network">
+        <value>Fout met netwerkverbinding. Controleer je internet.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Serverfout (5xx). Probeer het later opnieuw.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Clientfout (4xx). Controleer je verzoek.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>GitHub API-limiet overschreden. Probeer het later opnieuw.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Geen pre-release versie gevonden. Huidige versie blijft behouden.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Pre-release versie {0} is beschikbaar.
+
+            {1}
+
+            Deze versie kan instabiel zijn. Wil je deze downloaden?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Mislukte wissen</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>{0} items verwijderd.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Resterende tijd: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Duur van taak: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Aan het berekenen...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Map toevoegen...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>De geselecteerde map is leeg.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Selecteer map om te scannen</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Annuleren</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Verwerkingslimieten</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Max. bestanden per mapscan</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Beperk het aantal bestanden dat uit een map wordt toegevoegd om prestatieproblemen te voorkomen.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Max. mappen tegelijk</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Beperk het aantal mappen dat in één keer wordt geselecteerd.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Je kunt maximaal {0} mappen tegelijk selecteren.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>{0} bestanden toegevoegd. {1} bestanden overgeslagen vanwege de limiet.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Lezen: {0}/s | Schrijven: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Toon Lees/Schrijfsnelheid</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Toon de real-time overdrachtssnelheid tijdens hash-operaties.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Hash berekenen...</value>
+    </data>
+    <data name="Size_All">
+        <value>Alle groottes</value>
+    </data>
+    <data name="Size_Small">
+        <value>Klein (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Gemiddeld (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Groot (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Zeer groot (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Documenten</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Privacybeleid</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Servicevoorwaarden</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Licentieovereenkomst voor eindgebruikers (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Vrijwaring</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>LEESMIJ (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Wijzigingslogboek</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Dankbetuigingen</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Verwerken</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Mislukt</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Zoeken op naam...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Grootte</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub Profiel</value>
+    </data>
+    <data name="Filter_All">
+        <value>Alles</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Geheugen vrijmaken</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Forceer geheugenopruiming (GC) om RAM vrij te maken.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Geheugen opschonen</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Geheugenopruiming geactiveerd.</value>
     </data>
 </root>

@@ -19,10 +19,10 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Tạo Hash</value>
+        <value>Tạo mã băm</value>
     </data>
     <data name="Menu_Check">
-        <value>Kiểm tra Hash</value>
+        <value>Kiểm tra mã băm</value>
     </data>
     <data name="Menu_Settings">
         <value>Cài đặt</value>
@@ -31,7 +31,7 @@
         <value>Cập nhật</value>
     </data>
     <data name="Menu_Theme">
-        <value>Đổi giao diện</value>
+        <value>Giao diện</value>
     </data>
     <data name="Menu_About">
         <value>Giới thiệu</value>
@@ -40,10 +40,13 @@
         <value>Nhà phát triển</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>Thêm Files...</value>
+        <value>Thêm tệp...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Xóa DS</value>
+        <value>Xóa danh sách</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>Xóa mã băm</value>
     </data>
     <data name="Btn_CalcAll">
         <value>TÍNH TẤT CẢ</value>
@@ -52,7 +55,7 @@
         <value>Nén (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>CHECK ALL</value>
+        <value>KIỂM TRA TẤT CẢ</value>
     </data>
     <data name="Btn_CheckNow">
         <value>Kiểm tra ngay</value>
@@ -61,31 +64,31 @@
         <value>Cài đặt</value>
     </data>
     <data name="Btn_Accept">
-        <value>Xác nhận</value>
+        <value>Chấp nhận</value>
     </data>
     <data name="Btn_Decline">
-        <value>Hủy bỏ</value>
+        <value>Từ chối</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Tạo Hash &amp; Nén</value>
+        <value>Tạo mã băm &amp; Nén</value>
     </data>
     <data name="Title_CheckHash">
         <value>Kiểm tra hàng loạt</value>
     </data>
     <data name="Title_Update">
-        <value>Kiểm tra Cập nhật</value>
+        <value>Kiểm tra cập nhật</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Cảnh báo phiên bản Developer</value>
+        <value>Cảnh báo phiên bản Dev</value>
     </data>
     <data name="Title_About">
         <value>Giới thiệu</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Mẹo: Shift+C để Tính tất cả, Shift+Z để Nén, Ctrl+F để Thêm file.</value>
+        <value>Mẹo: Shift+C để Tính tất cả, Shift+Z để Nén, Ctrl+F để Thêm tệp.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Mẹo: Shift+A để Kiểm tra tất cả, Ctrl+F để Thêm file, Ctrl+Shift+H để Xóa DS.</value>
+        <value>Mẹo: Shift+A để Kiểm tra tất cả, Ctrl+F để Thêm tệp, Ctrl+Shift+H để Xóa danh sách.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Sẵn sàng</value>
@@ -100,19 +103,19 @@
         <value>Kênh phát hành:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Tổng số file: {0}</value>
+        <value>Tổng số tệp: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stable (Ổn định)</value>
+        <value>Ổn định (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Dev Edition</value>
+        <value>Bản phát triển (Dev)</value>
     </data>
     <data name="Settings_Language">
         <value>Ngôn ngữ</value>
     </data>
     <data name="Settings_Theme">
-        <value>Giao diện</value>
+        <value>Chủ đề</value>
     </data>
     <data name="Settings_ThemeStyle">
         <value>Kiểu giao diện</value>
@@ -124,22 +127,22 @@
         <value>Phông chữ</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Kích thước chữ (pt)</value>
+        <value>Cỡ chữ (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Tự động chọn font tối ưu cho ngôn ngữ</value>
+        <value>Tự động chọn phông chữ tối ưu cho ngôn ngữ</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Sử dụng làm font mặc định (Khóa thay đổi)</value>
+        <value>Khóa làm phông mặc định</value>
     </data>
     <data name="Settings_Scale">
-        <value>Kích thước UI</value>
+        <value>Tỉ lệ giao diện (UI Scale)</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Che mã Hash (Bảo mật)</value>
+        <value>Che giá trị băm (Bảo mật)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Đặt lại giao diện</value>
+        <value>Đặt lại cài đặt</value>
     </data>
     <data name="Settings_Other">
         <value>Quyền riêng tư &amp; Bảo mật</value>
@@ -148,7 +151,7 @@
         <value>Đặt làm mặc định</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Màu chữ tùy chỉnh</value>
+        <value>Màu văn bản tùy chỉnh</value>
     </data>
     <data name="Settings_Advanced">
         <value>Nâng cao</value>
@@ -157,25 +160,25 @@
         <value>Chạy dưới quyền Admin</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Cần khởi động lại. Cho phép truy cập các file được bảo vệ.</value>
+        <value>Cần khởi động lại. Cho phép truy cập các tệp được bảo vệ.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Giới hạn dung lượng file đầu vào</value>
+        <value>Giới hạn kích thước tệp đầu vào</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Giới hạn kích thước tối đa cho file cần kiểm tra.</value>
+        <value>Kích thước tối đa cho các tệp cần xử lý.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Thời gian chờ Force Quit</value>
+        <value>Thời gian chờ buộc thoát</value>
     </data>
     <data name="Settings_ForceQuitDesc">
         <value>Thời gian (giây) trước khi coi ứng dụng bị treo.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Thời gian chờ xử lý file</value>
+        <value>Thời gian chờ xử lý tệp</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Buộc hủy nếu một file xử lý quá lâu.</value>
+        <value>Hủy nếu một tệp mất quá nhiều thời gian.</value>
     </data>
     <data name="Settings_Emergency">
         <value>Hành động khẩn cấp</value>
@@ -184,7 +187,7 @@
         <value>Buộc thoát ứng dụng và hủy mọi tác vụ ngay lập tức.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Force Quit &amp; Hủy tất cả</value>
+        <value>Buộc thoát &amp; Hủy tất cả</value>
     </data>
     <data name="Settings_Configuration">
         <value>Cấu hình</value>
@@ -193,34 +196,34 @@
         <value>Khóa cài đặt (Lưu làm mặc định)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Bạn không muốn "lỡ" chọn nhầm?. Chỉ có Che mã Hash vẫn hoạt động.</value>
+        <value>Ngăn thay đổi ngẫu nhiên. Chỉ cho phép chỉnh 'Che giá trị băm'.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Đặt lại tất cả cài đặt</value>
+        <value>Đặt lại toàn bộ cài đặt</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Khôi phục về mặc định ban đầu.</value>
+        <value>Khôi phục về mặc định gốc.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Đường dẫn file cấu hình</value>
+        <value>Đường dẫn tệp cấu hình</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Hiện đường dẫn đầy đủ và copy vào clipboard.</value>
+        <value>Hiện đường dẫn đầy đủ và sao chép vào clipboard.</value>
     </data>
     <data name="Settings_ShowPath">
         <value>Hiện đường dẫn</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Cài đặt được lưu tự động vào config.json</value>
+        <value>Cài đặt tự động lưu vào config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
         <value>Chế độ nhà phát triển</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Bật các công cụ ghi log và gỡ lỗi nâng cao.</value>
+        <value>Bật ghi log nâng cao và công cụ gỡ lỗi.</value>
     </data>
     <data name="Dev_Console">
-        <value>Developer Console</value>
+        <value>Bảng điều khiển (Console)</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
@@ -229,10 +232,10 @@
         <value>Đang ghi</value>
     </data>
     <data name="Dev_Paused">
-        <value>Tạm dừng</value>
+        <value>Đã tạm dừng</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>Lưu ra file</value>
+        <value>Lưu ra tệp</value>
     </data>
     <data name="Dev_NoSave">
         <value>Không lưu</value>
@@ -253,31 +256,31 @@
         <value>Phần mềm</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Thư viện bên thứ 3</value>
+        <value>Thư viện bên thứ ba</value>
     </data>
     <data name="About_Copyright">
         <value>Bản quyền</value>
     </data>
     <data name="About_Desc">
-        <value>Công cụ mạnh mẽ để kiểm tra và tạo mã hash cho tập tin.</value>
+        <value>Một công cụ mạnh mẽ để tạo, kiểm tra và nén mã băm tệp tin. Hoặc theo tôi nghĩ là vậy :)</value>
     </data>
     <data name="About_License">
-        <value>Được phát hành dưới giấy phép MIT.</value>
+        <value>Phát hành dưới Giấy phép MIT.</value>
     </data>
     <data name="About_Tech">
         <value>Công nghệ</value>
     </data>
     <data name="About_TechContent">
-        <value>Được xây dựng bằng C# và .NET 10.0.102.</value>
+        <value>Xây dựng bằng C# và .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>Hỗ trợ của AI</value>
+        <value>Hỗ trợ bởi AI</value>
     </data>
     <data name="About_AIContent">
-        <value>Phần mềm này có sự hỗ trợ của AI trong quá trình phát triển (Gemini 3 Pro và Grok 4.1).</value>
+        <value>Phần mềm này được phát triển với sự hỗ trợ từ AI (Gemini 3 Pro và Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
-        <value>Đang tính ({0})...</value>
+        <value>Đang xử lý ({0})...</value>
     </data>
     <data name="Status_Done">
         <value>Hoàn tất</value>
@@ -292,31 +295,31 @@
         <value>Đã lưu!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Đã nén xong!</value>
+        <value>Đã nén!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Chờ hash/nhập mã...</value>
+        <value>Đang chờ mã băm/đầu vào...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Thiếu file gốc!</value>
+        <value>Thiếu tệp gốc!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Thiếu mã Hash (Nhập hoặc cần file hash)</value>
+        <value>Thiếu giá trị băm (Nhập hoặc tải tệp .hash)</value>
     </data>
     <data name="Status_Valid">
         <value>HỢP LỆ</value>
     </data>
     <data name="Status_Invalid">
-        <value>SAI LỆCH!</value>
+        <value>KHÔNG KHỚP!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Đã nạp file hash</value>
+        <value>Đã tải tệp mã băm</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>File hash không khớp tên!</value>
+        <value>Tên tệp mã băm không khớp!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>File không chứa mã hash!</value>
+        <value>Tệp không chứa mã băm!</value>
     </data>
     <data name="Status_Checking">
         <value>Đang kiểm tra cập nhật...</value>
@@ -328,58 +331,59 @@
         <value>Bạn đang dùng phiên bản mới nhất.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Lỗi kiểm tra: {0}</value>
+        <value>Lỗi kiểm tra cập nhật: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Đang tải xuống và cài đặt...</value>
+        <value>Đang tải và cài đặt...</value>
     </data>
     <data name="Status_InstallError">
         <value>Lỗi cài đặt: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Sẵn sàng (Từ file .hash)</value>
+        <value>Sẵn sàng (Từ tệp .hash)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Mất file gốc!</value>
+        <value>Đã mất tệp gốc!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>File hash không khớp tên!</value>
+        <value>Tên tệp mã băm không khớp!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Đã Drop file hash</value>
+        <value>Thả tệp mã băm thành công</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>File không chứa mã hash!</value>
+        <value>Tệp không chứa mã băm!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Lỗi đọc file</value>
+        <value>Lỗi đọc tệp</value>
     </data>
     <data name="Msg_Result_Title">
         <value>Kết quả</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Đã xử lý xong!
+        <value>Xử lý hoàn tất!
             ✅ Thành công: {0}
             ❌ Thất bại: {1}
+            ⛔ Đã hủy: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>Đã kiểm tra {0} file.
+        <value>Đã kiểm tra {0} tệp.
             ✅ Khớp: {1}
-            ❌ Lệch/Lỗi: {2}
+            ❌ Không khớp/Lỗi: {2}
             ⛔ Đã hủy: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>Sai file!</value>
+        <value>Sai tệp!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>File hash không khớp!
+        <value>Tệp mã băm không khớp!
 
-            File gốc: {0}
-            File chọn: {1}
+            Tệp gốc: {0}
+            Tệp đã chọn: {1}
 
-            Vui lòng chọn đúng file hash đi kèm.
+            Vui lòng chọn đúng tệp mã băm đi kèm.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -395,33 +399,33 @@
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Không tìm thấy bản cập nhật nào mới hơn.</value>
+        <value>Không tìm thấy cập nhật mới hơn.</value>
     </data>
     <data name="Msg_Error">
         <value>Lỗi</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Không đọc được file hash này.</value>
+        <value>Không thể đọc tệp mã băm này.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Kiểm tra Cấu hình</value>
+        <value>Kiểm tra cấu hình</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>File tồn tại tại:
+        <value>Tệp tồn tại tại:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>File không tồn tại!</value>
+        <value>Tệp không tồn tại!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Đã tạo file thành công!</value>
+        <value>Tạo tệp thành công!</value>
     </data>
     <data name="Msg_ConfigCopied">
         <value>Đã sao chép đường dẫn cấu hình.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Chế độ Admin</value>
+        <value>Chế độ Quản trị viên</value>
     </data>
     <data name="Msg_AdminRestart">
         <value>Vui lòng khởi động lại ứng dụng để thay đổi có hiệu lực.</value>
@@ -430,128 +434,303 @@
         <value>Không thể mở thư mục: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ CẢNH BÁO NHÀ PHÁT TRIỂN</value>
+        <value>⚠️ CẢNH BÁO PHIÊN BẢN DEV</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Bạn đang chuẩn bị chuyển sang kênh cập nhật Developer (Pre-release).
+        <value>Bạn sắp chuyển sang kênh cập nhật Nhà phát triển (Pre-release).
 
-            Phiên bản này có thể chứa lỗi, chưa ổn định và có thể gây mất dữ liệu.
+            Phiên bản này có thể chứa lỗi, không ổn định và có thể gây mất dữ liệu.
 
-            Tôi không chịu trách nhiệm về bất kỳ lỗi phát sinh nào khi sử dụng phiên bản này.
+            Tôi không chịu trách nhiệm cho bất kỳ vấn đề nào phát sinh khi sử dụng phiên bản này.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Tôi đã đọc và đồng ý. Tôi sẽ tự chịu trách nhiệm.</value>
+        <value>Tôi đã đọc và đồng ý. Tôi chịu hoàn toàn trách nhiệm.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Lưu file Hash</value>
+        <value>Lưu tệp mã băm</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Lưu file nén</value>
+        <value>Lưu tệp nén</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Chọn các file cần Hash</value>
+        <value>Chọn tệp để băm</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Chọn file hash cho: {0}</value>
+        <value>Chọn tệp mã băm cho: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Chọn file (Gốc hoặc File .hash)</value>
+        <value>Chọn tệp (Tệp gốc hoặc tệp .hash)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Nâng cao: Quay về phiên bản cũ (Fallback)</value>
+        <value>Nâng cao: Quay về phiên bản cũ</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Tính năng này cho phép bạn cài đặt một phiên bản cụ thể nếu bản mới bị lỗi.</value>
+        <value>Tính năng này cho phép cài đặt một phiên bản cụ thể nếu bản mới bị lỗi.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Dán/Thả vào đây...</value>
+        <value>Dán hoặc Thả vào đây...</value>
     </data>
-    <data name="Unit_Seconds" xml:space="preserve">
+    <data name="Unit_Seconds">
         <value>Giây</value>
     </data>
-    <data name="Tip_Verify" xml:space="preserve">
-        <value>Xác nhận</value>
+    <data name="Tip_Verify">
+        <value>Kiểm tra</value>
     </data>
-    <data name="Tip_Stop" xml:space="preserve">
+    <data name="Tip_Stop">
         <value>Dừng</value>
     </data>
-    <data name="Tip_RemoveFile" xml:space="preserve">
-        <value>Xoá file</value>
+    <data name="Tip_RemoveFile">
+        <value>Xóa tệp</value>
     </data>
-    <data name="Tip_CopyHash" xml:space="preserve">
-        <value>Sao chép Hash</value>
+    <data name="Tip_CopyHash">
+        <value>Sao chép mã băm</value>
     </data>
-    <data name="Tip_Compute" xml:space="preserve">
+    <data name="Tip_Compute">
         <value>Tính toán</value>
     </data>
-    <data name="Tip_BrowseHash" xml:space="preserve">
-        <value>Truy cập Hash</value>
+    <data name="Tip_ClearHash">
+        <value>Xóa mã băm</value>
     </data>
-    <data name="Settings_ThemeDark" xml:space="preserve">
+    <data name="Tip_BrowseHash">
+        <value>Duyệt mã băm</value>
+    </data>
+    <data name="Settings_ThemeDark">
         <value>Tối</value>
     </data>
-    <data name="Settings_ThemeLight" xml:space="preserve">
+    <data name="Settings_ThemeLight">
         <value>Sáng</value>
     </data>
-    <data name="Settings_ThemeSystem" xml:space="preserve">
+    <data name="Settings_ThemeSystem">
         <value>Hệ thống</value>
     </data>
-    <data name="Msg_TaskCancelled_Title" xml:space="preserve">
-        <value>Tiến trình đã dừng lại</value>
+    <data name="Msg_TaskCancelled_Title">
+        <value>Tác vụ đã dừng</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded" xml:space="preserve">
-        <value>Tệp {0} vượt quá giới hạn {1} {2}.</value>
-    </data>
-    <data name="Btn_Yes" xml:space="preserve">
+    <data name="Btn_Yes">
         <value>Có</value>
     </data>
-    <data name="Btn_OK" xml:space="preserve">
-        <value>Okê</value>
+    <data name="Btn_OK">
+        <value>OK</value>
     </data>
-    <data name="Btn_No" xml:space="preserve">
+    <data name="Btn_No">
         <value>Không</value>
     </data>
-    <data name="Dialog_FileType_Zip" xml:space="preserve">
-        <value>File nén .zip</value>
+    <data name="Dialog_FileType_Zip">
+        <value>Tệp nén Zip</value>
     </data>
-    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
+    <data name="Msg_ConfirmExit_Title">
         <value>Xác nhận thoát</value>
     </data>
-    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
-        <value>Nếu thoát ứng dụng, mọi tiến trình sẽ bị huỷ. Bạn có chắc không?</value>
+    <data name="Msg_ConfirmExit_Content">
+        <value>Thoát sẽ hủy tất cả các tác vụ đang chạy. Bạn có chắc không?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content" xml:space="preserve">
-        <value>Tiến trình đã bị dừng lại do quá giới hạn thời gian.</value>
+    <data name="Msg_TaskCancelled_Content">
+        <value>Tác vụ đã bị dừng do quá thời gian.</value>
     </data>
-    <data name="Dev_ToolTip_Save" xml:space="preserve">
-        <value>Lưu debug log vào ổ đĩa.</value>
+    <data name="Dev_ToolTip_Save">
+        <value>Lưu log debug ra đĩa.</value>
     </data>
-    <data name="Dev_ToolTip_Pause" xml:space="preserve">
-        <value>Dừng tạm thời lưu log thời gian thực.</value>
+    <data name="Dev_ToolTip_Pause">
+        <value>Tạm dừng log thời gian thực.</value>
     </data>
-    <data name="Tip_ShowHash" xml:space="preserve">
-        <value>Hiện mã hash</value>
+    <data name="Tip_ShowHash">
+        <value>Hiện mã băm</value>
     </data>
-    <data name="Tip_HideHash" xml:space="preserve">
-        <value>Ẩn hash</value>
+    <data name="Tip_HideHash">
+        <value>Ẩn mã băm</value>
     </data>
-    <data name="Tip_CopyPath" xml:space="preserve">
+    <data name="Tip_CopyPath">
         <value>Sao chép đường dẫn</value>
     </data>
-    <data name="Msg_DiskFull" xml:space="preserve">
-        <value>Ổ cứng HDD/SSD của bạn không đủ dung lượng. Chọn lại nhé :)</value>
+    <data name="Msg_DiskFull">
+        <value>Ổ cứng của bạn đã đầy. Vui lòng chọn ổ đĩa khác :)</value>
     </data>
-    <data name="Tip_HashVisibility" xml:space="preserve">
-        <value>Hash Visibility</value>
+    <data name="Tip_HashVisibility">
+        <value>Hiển thị mã băm</value>
     </data>
-    <data name="EmptyState_DropFiles" xml:space="preserve">
-        <value>Không có file. Nhấn 'Thêm File' để bắt đầu.</value>
+    <data name="EmptyState_DropFiles">
+        <value>Chưa có tệp. Nhấn 'Thêm tệp' để bắt đầu.</value>
     </data>
-    <data name="Settings_LockTheme" xml:space="preserve">
-        <value>Khoá giao diện làm mặc định</value>
+    <data name="Settings_LockTheme">
+        <value>Khóa chủ đề này làm mặc định</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
-        <value>Đã bỏ qua {0} tập tin vượt quá giới hạn ({1} {2}): {3}</value>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Đã bỏ qua {0} tệp vượt quá giới hạn ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Ngôn ngữ hệ thống</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Quay lại cài đặt 'Tự động' cần khởi động lại để có hiệu lực đầy đủ. Bạn muốn tiếp tục không?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Thay đổi ngôn ngữ</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Bạn có chắc chắn về điều này không?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Không hiển thị lại cảnh báo này</value>
+    </data>
+    <data name="Error_Network">
+        <value>Lỗi kết nối mạng. Vui lòng kiểm tra internet của bạn.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Lỗi máy chủ (5xx). Vui lòng thử lại sau.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Lỗi client (4xx). Vui lòng kiểm tra yêu cầu.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>Vượt quá giới hạn API GitHub. Vui lòng thử lại sau.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Không tìm thấy phiên bản pre-release. Giữ nguyên phiên bản hiện tại.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Phiên bản pre-release {0} đã có sẵn.
+
+            {1}
+
+            Bản này có thể không ổn định. Bạn có muốn tải về không?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Xóa tệp lỗi</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>Đã xóa {0} mục.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Thời gian còn lại: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Thời gian thực hiện: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Đang tính...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Thêm thư mục...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Thư mục đã chọn bị rỗng.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Chọn thư mục để quét</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Hủy bỏ</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Giới hạn xử lý</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Tối đa tệp mỗi lần quét thư mục</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Giới hạn số lượng tệp thêm từ thư mục để tránh vấn đề hiệu năng.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Tối đa thư mục mỗi lần chọn</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Giới hạn số lượng thư mục được chọn cùng lúc.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Bạn chỉ có thể chọn tối đa {0} thư mục cùng lúc.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Đã thêm {0} tệp. Bỏ qua {1} tệp do giới hạn.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Đọc: {0}/s | Ghi: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Hiện tốc độ Đọc/Ghi</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Hiển thị tốc độ truyền tải thời gian thực trong khi băm.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Đang tính toán...</value>
+    </data>
+    <data name="Size_All">
+        <value>Mọi kích thước</value>
+    </data>
+    <data name="Size_Small">
+        <value>Nhỏ (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Trung bình (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Lớn (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Rất lớn (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Tài liệu</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Chính sách quyền riêng tư</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Điều khoản dịch vụ</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Thỏa thuận cấp phép (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Tuyên bố miễn trừ trách nhiệm</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>README</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Nhật ký thay đổi</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Lời cảm ơn</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Đang xử lý</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Thất bại</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Tìm theo tên...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Kích thước</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>Hồ sơ GitHub</value>
+    </data>
+    <data name="Filter_All">
+        <value>Tất cả</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Giải phóng bộ nhớ</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Buộc thu gom rác (GC) để giải phóng RAM.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Dọn bộ nhớ</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Đã kích hoạt dọn dẹp bộ nhớ.</value>
     </data>
 </root>

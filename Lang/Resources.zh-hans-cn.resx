@@ -15,11 +15,14 @@
             PublicKeyToken=b77a5c561934e089
         </value>
     </resheader>
+    <data name="AppTitle">
+        <value>哈希工具</value>
+    </data>
     <data name="Menu_Create">
         <value>生成哈希</value>
     </data>
     <data name="Menu_Check">
-        <value>验证哈希</value>
+        <value>校验哈希</value>
     </data>
     <data name="Menu_Settings">
         <value>设置</value>
@@ -40,19 +43,22 @@
         <value>添加文件...</value>
     </data>
     <data name="Btn_Clear">
-        <value>清除列表</value>
+        <value>清空列表</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>清除哈希</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>全部计算</value>
+        <value>计算全部</value>
     </data>
     <data name="Btn_Compress">
         <value>压缩 (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>全部验证</value>
+        <value>校验全部</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>立即验证</value>
+        <value>立即校验</value>
     </data>
     <data name="Btn_Install">
         <value>安装</value>
@@ -61,28 +67,28 @@
         <value>接受</value>
     </data>
     <data name="Btn_Decline">
-        <value>取消</value>
+        <value>拒绝</value>
     </data>
     <data name="Title_CreateHash">
         <value>生成哈希与压缩</value>
     </data>
     <data name="Title_CheckHash">
-        <value>批量验证</value>
+        <value>批量校验</value>
     </data>
     <data name="Title_Update">
         <value>检查更新</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>开发版警告</value>
+        <value>开发者版本警告</value>
     </data>
     <data name="Title_About">
         <value>关于</value>
     </data>
     <data name="Help_CreateHash">
-        <value>提示：Shift+C 全部计算，Shift+Z 压缩，Ctrl+F 添加文件。</value>
+        <value>提示：按 Shift+C 计算，Shift+Z 压缩，Ctrl+F 添加文件。</value>
     </data>
     <data name="Help_CheckHash">
-        <value>提示：Shift+A 全部验证，Ctrl+F 添加文件，Ctrl+Shift+H 清除列表。</value>
+        <value>提示：按 Shift+A 校验，Ctrl+F 添加文件，Ctrl+Shift+H 清空列表。</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>就绪</value>
@@ -94,16 +100,16 @@
         <value>当前版本：{0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>发行频道：</value>
+        <value>发布渠道：</value>
     </data>
     <data name="Lbl_TotalFiles">
         <value>总文件数：{0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>稳定版</value>
+        <value>正式版 (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>开发版</value>
+        <value>开发者版 (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>语言</value>
@@ -112,10 +118,10 @@
         <value>主题</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>主题样式</value>
+        <value>主题风格</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>亮/暗</value>
+        <value>浅色/深色</value>
     </data>
     <data name="Settings_Font">
         <value>字体</value>
@@ -124,79 +130,79 @@
         <value>字体大小 (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>自动选择最优语言字体</value>
+        <value>自动选择最适合该语言的字体</value>
     </data>
     <data name="Settings_LockFont">
         <value>锁定为默认字体</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI 缩放</value>
+        <value>界面缩放</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>遮蔽哈希值 (安全性)</value>
+        <value>隐藏哈希值（安全）</value>
     </data>
     <data name="Settings_Reset">
-        <value>重置主题</value>
+        <value>重置设置</value>
     </data>
     <data name="Settings_Other">
-        <value>隐私与安全性</value>
+        <value>隐私与安全</value>
     </data>
     <data name="Settings_SetDefault">
         <value>设为默认</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>自定义文字颜色</value>
+        <value>自定义文本颜色</value>
     </data>
     <data name="Settings_Advanced">
         <value>高级</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>以管理员运行</value>
+        <value>以管理员身份运行</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>需重启。允许访问受保护文件。</value>
+        <value>需要重启。允许访问受保护的文件。</value>
     </data>
     <data name="Settings_FileSizeLimit">
         <value>输入文件大小限制</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>处理文件的最大尺寸。</value>
+        <value>允许处理的最大文件大小。</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>强制结束超时</value>
+        <value>强制退出超时时间</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>视为程序冻结前的等待时间 (秒)。</value>
+        <value>判定应用程序卡死前的等待时间（秒）。</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>单一文件处理超时</value>
+        <value>文件处理超时时间</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>单一文件处理过久则取消。</value>
+        <value>如果单个文件处理时间过长，则取消操作。</value>
     </data>
     <data name="Settings_Emergency">
         <value>紧急操作</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>立即强制结束程序并取消所有任务。</value>
+        <value>强制关闭应用程序并立即取消所有任务。</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>强制结束并取消全部</value>
+        <value>强制退出并取消全部</value>
     </data>
     <data name="Settings_Configuration">
         <value>配置</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>锁定设置 (保存为默认)</value>
+        <value>锁定设置（保存为默认）</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>防止误改。只有哈希遮蔽仍可调整。</value>
+        <value>防止意外更改。只有“隐藏哈希”可以调整。</value>
     </data>
     <data name="Settings_ResetAll">
         <value>重置所有设置</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>恢复出厂默认值。</value>
+        <value>恢复为出厂默认设置。</value>
     </data>
     <data name="Settings_ConfigPath">
         <value>配置文件路径</value>
@@ -208,22 +214,22 @@
         <value>显示路径</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>设置会自动保存至 config.json</value>
+        <value>设置已自动保存至 config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
         <value>开发者模式</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>启用高级日志与调试工具。</value>
+        <value>启用高级日志记录和调试工具。</value>
     </data>
     <data name="Dev_Console">
         <value>开发者控制台</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>测试版</value>
     </data>
     <data name="Dev_Recording">
-        <value>录制中</value>
+        <value>记录中</value>
     </data>
     <data name="Dev_Paused">
         <value>已暂停</value>
@@ -235,7 +241,7 @@
         <value>不保存</value>
     </data>
     <data name="Dev_Clear">
-        <value>清除控制台</value>
+        <value>清空控制台</value>
     </data>
     <data name="Dev_Copy">
         <value>复制全部</value>
@@ -250,34 +256,34 @@
         <value>软件</value>
     </data>
     <data name="About_ThirdParty">
-        <value>第三方程序库</value>
+        <value>第三方库</value>
     </data>
     <data name="About_Copyright">
         <value>版权</value>
     </data>
     <data name="About_Desc">
-        <value>强大的文件哈希生成、验证与压缩工具。至少我是这么想的 :)</value>
+        <value>一款用于生成、校验和压缩文件哈希的强大工具。至少我是这么认为的 :)</value>
     </data>
     <data name="About_License">
-        <value>以 MIT 许可发布。</value>
+        <value>基于 MIT 许可证发布。</value>
     </data>
     <data name="About_Tech">
         <value>技术</value>
     </data>
     <data name="About_TechContent">
-        <value>使用 C# 与 .NET 10.0.102 构建。</value>
+        <value>基于 C# 和 .NET 10.0.102 构建。</value>
     </data>
     <data name="About_AI">
-        <value>AI 协助</value>
+        <value>AI 辅助</value>
     </data>
     <data name="About_AIContent">
-        <value>本软件开发过程中获得 AI 协助 (Gemini 3 Pro 与 Grok 4.1)。</value>
+        <value>本软件在 AI（Gemini 3 Pro 和 Grok 4.1）的辅助下开发。</value>
     </data>
     <data name="Status_Processing">
-        <value>处理中 ({0})...</value>
+        <value>正在处理 ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>完成</value>
+        <value>已完成</value>
     </data>
     <data name="Status_Error">
         <value>错误：{0}</value>
@@ -295,104 +301,105 @@
         <value>等待哈希/输入...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>缺少原始文件！</value>
+        <value>原文件丢失！</value>
     </data>
     <data name="Status_MissingHash">
-        <value>缺少哈希值 (输入或加载哈希文件)</value>
+        <value>缺少哈希值（请输入或加载文件）</value>
     </data>
     <data name="Status_Valid">
-        <value>有效</value>
+        <value>校验通过</value>
     </data>
     <data name="Status_Invalid">
-        <value>不符！</value>
+        <value>不匹配！</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>已加载哈希文件</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>哈希文件名称不符！</value>
+        <value>哈希文件名不匹配！</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>文件不包含哈希！</value>
+        <value>该文件不包含哈希值！</value>
     </data>
     <data name="Status_Checking">
-        <value>检查更新中...</value>
+        <value>正在检查更新...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>检测到新版本！</value>
+        <value>发现新版本！</value>
     </data>
     <data name="Status_Latest">
-        <value>已是最新版本。</value>
+        <value>您使用的是最新版本。</value>
     </data>
     <data name="Status_CheckError">
-        <value>更新检查错误：{0}</value>
+        <value>检查更新出错：{0}</value>
     </data>
     <data name="Status_Installing">
-        <value>下载并安装中...</value>
+        <value>正在下载并安装...</value>
     </data>
     <data name="Status_InstallError">
         <value>安装错误：{0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>就绪 (来自 .hash 文件)</value>
+        <value>就绪（来自 .hash 文件）</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>原始文件丢失！</value>
+        <value>原文件已丢失！</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>哈希文件名称不符！</value>
+        <value>哈希文件名不匹配！</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>已成功拖放哈希文件</value>
+        <value>成功拖入哈希文件</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>文件不包含哈希！</value>
+        <value>该文件不包含哈希值！</value>
     </data>
     <data name="Status_ReadError">
         <value>文件读取错误</value>
     </data>
     <data name="Msg_Result_Title">
-        <value>结果</value>
+        <value>处理结果</value>
     </data>
     <data name="Msg_Result_Content">
         <value>处理完成！
             ✅ 成功：{0}
             ❌ 失败：{1}
+            ⛔ 已取消：{2}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>已检查 {0} 个文件。
-            ✅ 相符：{1}
-            ❌ 不符/错误：{2}
+        <value>共校验了 {0} 个文件。
+            ✅ 匹配：{1}
+            ❌ 不匹配/错误：{2}
             ⛔ 已取消：{3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>错误文件！</value>
+        <value>文件错误！</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>哈希文件不符！
+        <value>哈希文件不匹配！
 
             原始文件：{0}
-            选择文件：{1}
+            所选文件：{1}
 
-            请选取正确的配套哈希文件。
+            请选择正确的随附哈希文件。
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>新更新</value>
+        <value>发现新版本</value>
     </data>
     <data name="Msg_UpdateContent">
-        <value>版本：{0}
+        <value>版本号：{0}
 
-            变更：
+            更新内容：
             {1}
 
-            点击「立即更新」以下载。
+            点击“立即更新”进行下载。
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>未找到更新的版本。</value>
+        <value>未发现新版本。</value>
     </data>
     <data name="Msg_Error">
         <value>错误</value>
@@ -421,24 +428,24 @@
         <value>管理员模式</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>请重新启动应用程序以应用更改。</value>
+        <value>请重启应用程序以使更改生效。</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>无法打开文件夹：{0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ 开发版警告</value>
+        <value>⚠️ 开发者版本警告</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>您即将切换至开发者 (预发布) 更新频道。
+        <value>您即将切换到开发者（预发布）更新渠道。
 
-            此版本可能含有错误、不稳定，并可能导致数据丢失。
+            该版本可能存在漏洞、运行不稳定并可能导致数据丢失。
 
-            使用此版本所产生之任何问题，本人不负责。
+            对于使用此版本引起的任何问题，我概不负责。
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>我已阅读并同意。我愿自行承担全部责任。</value>
+        <value>我已阅读并同意。我将承担全部责任。</value>
     </data>
     <data name="Dialog_SaveHash">
         <value>保存哈希文件</value>
@@ -447,28 +454,28 @@
         <value>保存压缩文件</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>选择要计算哈希的文件</value>
+        <value>选择要哈希的文件</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>选择 {0} 的哈希文件</value>
+        <value>为 {0} 选择哈希文件</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>选择文件 (原始文件或 .hash 文件)</value>
+        <value>选择文件（原始文件或 .hash 文件）</value>
     </data>
     <data name="Header_Fallback">
         <value>高级：回退到旧版本</value>
     </data>
     <data name="Desc_Fallback">
-        <value>此功能允许在新版本出问题时安装特定版本。</value>
+        <value>如果新版本存在问题，此功能允许您安装特定的旧版本。</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>粘贴/拖放到此...</value>
+        <value>在此处粘贴或拖放...</value>
     </data>
     <data name="Unit_Seconds">
         <value>秒</value>
     </data>
     <data name="Tip_Verify">
-        <value>验证</value>
+        <value>校验</value>
     </data>
     <data name="Tip_Stop">
         <value>停止</value>
@@ -482,23 +489,23 @@
     <data name="Tip_Compute">
         <value>计算</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>清除哈希</value>
+    </data>
     <data name="Tip_BrowseHash">
         <value>浏览哈希</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>暗色</value>
+        <value>深色</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>亮色</value>
+        <value>浅色</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>系统</value>
+        <value>跟随系统</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
         <value>任务已停止</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>文件 {0} 超过限制 {1} {2}。</value>
     </data>
     <data name="Btn_Yes">
         <value>是</value>
@@ -510,22 +517,22 @@
         <value>否</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip 压缩文件</value>
+        <value>Zip 压缩包</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
         <value>确认退出</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>退出将取消所有进行中任务。确定吗？</value>
+        <value>退出将取消所有正在进行的任务。确定要退出吗？</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>因超时而停止任务。</value>
+        <value>任务因超时而停止。</value>
     </data>
     <data name="Dev_ToolTip_Save">
         <value>将调试日志保存到磁盘。</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>暂停实时记录。</value>
+        <value>暂停实时日志记录。</value>
     </data>
     <data name="Tip_ShowHash">
         <value>显示哈希</value>
@@ -537,15 +544,193 @@
         <value>复制路径</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>您的磁盘空间不足。请重新选择位置 :)</value>
+        <value>您的磁盘已满。请选择其他位置 :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>哈希可见度</value>
+        <value>哈希可见性</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>没有文件。点击「添加文件」开始。</value>
+        <value>暂无文件。点击“添加文件”开始。</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>锁定此主题为默认</value>
+        <value>将此主题锁定为默认</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>跳过了 {0} 个超出大小限制 ({1} {2}) 的文件：
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>系统语言</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>恢复为“自动”设置需要重启才能完全生效。是否继续？</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>更改语言</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>您确定要更改吗？</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>不再显示此警告</value>
+    </data>
+    <data name="Error_Network">
+        <value>网络连接错误。请检查您的网络设置。</value>
+    </data>
+    <data name="Error_Server">
+        <value>服务器错误 (5xx)。请稍后再试。</value>
+    </data>
+    <data name="Error_Client">
+        <value>客户端错误 (4xx)。请检查请求。</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>超出了 GitHub API 的速率限制。请稍后再试。</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>未找到预发布版本。保留当前版本。</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>发现预发布版本 {0}。
+
+            {1}
+
+            此版本可能不稳定。您要下载吗？
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>清除失败项</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>已移除 {0} 个项目。</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>剩余时间：{0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>任务耗时：{0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>正在计算...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>添加文件夹...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>所选文件夹为空。</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>选择要扫描的文件夹</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>取消</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>处理限制</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>单次文件夹扫描最大文件数</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>限制从文件夹添加的文件数量，以防出现性能问题。</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>同时处理的最大文件夹数</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>限制一次可选择的文件夹数量。</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>您一次最多只能选择 {0} 个文件夹。</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>已添加 {0} 个文件。因超出限制，跳过了 {1} 个文件。</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>读取：{0}/s | 写入：{1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>显示读写速度</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>在哈希操作期间显示实时传输速度。</value>
+    </data>
+    <data name="Status_Computing">
+        <value>正在计算哈希...</value>
+    </data>
+    <data name="Size_All">
+        <value>所有大小</value>
+    </data>
+    <data name="Size_Small">
+        <value>小 (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>中 (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>大 (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>超大 (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>文档</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>隐私政策</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>服务条款</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>最终用户许可协议 (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>免责声明</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>自述文件 (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>更新日志</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>鸣谢</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>正在处理</value>
+    </data>
+    <data name="Status_Failure">
+        <value>失败</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>按名称搜索...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>大小</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub 主页</value>
+    </data>
+    <data name="Filter_All">
+        <value>全部</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>释放内存</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>强制执行垃圾回收 (GC) 以释放内存 (RAM)。</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>清理内存</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>已触发内存清理。</value>
     </data>
 </root>

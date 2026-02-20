@@ -16,13 +16,13 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>ހޭޝް ޓޫލް</value>
     </data>
     <data name="Menu_Create">
-        <value>ހޭޝް ޖެނަރޭޓް</value>
+        <value>ހޭޝް އުފައްދާ</value>
     </data>
     <data name="Menu_Check">
-        <value>ހޭޝް ޗެކް</value>
+        <value>ހޭޝް ޗެކްކުރޭ</value>
     </data>
     <data name="Menu_Settings">
         <value>ސެޓިންގްސް</value>
@@ -34,67 +34,70 @@
         <value>ތީމް</value>
     </data>
     <data name="Menu_About">
-        <value>އަބައުޓް</value>
+        <value>މައުލޫމާތު</value>
     </data>
     <data name="Menu_Developer">
-        <value>ޑެވެލޮޕަރ</value>
+        <value>ޑިވެލޮޕަރ</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>ފައިލްތައް އަށް ލާ...</value>
+        <value>ފައިލް އިތުރުކުރޭ...</value>
     </data>
     <data name="Btn_Clear">
-        <value>ލިސްޓް ފިލާ</value>
+        <value>ލިސްޓް ހުސްކުރޭ</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>ހޭޝްތައް ފުހެލާ</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>ހުރިހާ ކަލްކުލޭޓް</value>
+        <value>ހުރިހާ އެއްޗެއް ހިސާބުކުރޭ</value>
     </data>
     <data name="Btn_Compress">
         <value>ކޮމްޕްރެސް (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ހުރިހާ ޗެކް</value>
+        <value>ހުރިހާ އެއްޗެއް ޗެކްކުރޭ</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>މިހާރު ޗެކް</value>
+        <value>މިހާރު ޗެކްކުރޭ</value>
     </data>
     <data name="Btn_Install">
         <value>އިންސްޓޯލް</value>
     </data>
     <data name="Btn_Accept">
-        <value>ޤަބޫލު</value>
+        <value>ޤަބޫލުކުރޭ</value>
     </data>
     <data name="Btn_Decline">
-        <value>ދުވަހަށް ދޫ</value>
+        <value>ޤަބޫލުނުކުރޭ</value>
     </data>
     <data name="Title_CreateHash">
-        <value>ހޭޝް ޖެނަރޭޓް އާއި ކޮމްޕްރެސް</value>
+        <value>ހޭޝް އުފައްދާ &amp; ކޮމްޕްރެސް</value>
     </data>
     <data name="Title_CheckHash">
-        <value>ބޭޗް ވެރިފައި</value>
+        <value>ބެޗް ވެރިފިކޭޝަން</value>
     </data>
     <data name="Title_Update">
-        <value>އަޕްޑޭޓް ޗެކް</value>
+        <value>އަޕްޑޭޓް ޗެކްކުރޭ</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>ޑެވެލޮޕަރ ވަރޝަން ވޯރނިންގ</value>
+        <value>ޑިވެލޮޕަރ ވާޝަން އިންޒާރު</value>
     </data>
     <data name="Title_About">
-        <value>އަބައުޓް</value>
+        <value>މައުލޫމާތު</value>
     </data>
     <data name="Help_CreateHash">
-        <value>ޓިޕް: Shift+C ހުރިހާ ކަލްކުލޭޓް, Shift+Z ކޮމްޕްރެސް, Ctrl+F ފައިލް ލާ.</value>
+        <value>ޓިޕް: Shift+C ހިސާބުކުރުމަށް، Shift+Z ކޮމްޕްރެސްކުރުމަށް، Ctrl+F ފައިލް އިތުރުކުރުމަށް.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>ޓިޕް: Shift+A ހުރިހާ ޗެކް, Ctrl+F ފައިލް ލާ, Ctrl+Shift+H ލިސްޓް ފިލާ.</value>
+        <value>ޓިޕް: Shift+A ޗެކްކުރުމަށް، Ctrl+F ފައިލް އިތުރުކުރުމަށް، Ctrl+Shift+H ލިސްޓް ފުހެލުމަށް.</value>
     </data>
     <data name="Lbl_Status_Ready">
-        <value>ރެޑީ</value>
+        <value>ތައްޔާރު</value>
     </data>
     <data name="Lbl_Sample">
-        <value>ސަމްޕަލް:</value>
+        <value>ސާމްޕަލް:</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>މިހާރުގެ ވަރޝަން: {0}</value>
+        <value>މިހާރުގެ ވާޝަން: {0}</value>
     </data>
     <data name="Lbl_Channel">
         <value>ރިލީޒް ޗެނަލް:</value>
@@ -103,10 +106,10 @@
         <value>ޖުމްލަ ފައިލް: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>ސްޓޭބަލް</value>
+        <value>ސްޓޭބަލް (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>ޑެވް އެޑިޝަން</value>
+        <value>ޑިވެލޮޕަރ (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>ބަސް</value>
@@ -118,7 +121,7 @@
         <value>ތީމް ސްޓައިލް</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>ލައިޓް/ޑާރކް</value>
+        <value>ލައިޓް/ޑާކް</value>
     </data>
     <data name="Settings_Font">
         <value>ފޮންޓް</value>
@@ -127,369 +130,373 @@
         <value>ފޮންޓް ސައިޒް (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>ބަސްކަމުގެ އެންމެ ރަނގަޅު ފޮންޓް އޮޓޯ ޗުން</value>
+        <value>ބަހަށް އެންމެ އެކަށީގެންވާ ފޮންޓް އޮޓޮއިން ނަގާ</value>
     </data>
     <data name="Settings_LockFont">
-        <value>ޑީފޯލްޓް ފޮންޓް ކަމުގައި ލޮކް</value>
+        <value>ޑިފޯލްޓް ފޮންޓްގެ ގޮތުގައި ލޮކްކުރޭ</value>
     </data>
     <data name="Settings_Scale">
         <value>UI ސްކޭލް</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>ހޭޝް ވެލިއުތައް މާސްކް (ސިކްޔުރިޓީ)</value>
+        <value>ހޭޝް ވެލިއުތައް ފޮރުވާ (ސެކިއުރިޓީ)</value>
     </data>
     <data name="Settings_Reset">
-        <value>ތީމް ރީސެޓް</value>
+        <value>ސެޓިންގްސް ރިސެޓްކުރޭ</value>
     </data>
     <data name="Settings_Other">
-        <value>ޕްރައިވެސީ އާއި ސިކްޔުރިޓީ</value>
+        <value>ޕްރައިވެސީ &amp; ސެކިއުރިޓީ</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>ޑީފޯލްޓް ކަމުގައި ސެޓް</value>
+        <value>ޑިފޯލްޓްކޮށް ސެޓްކުރޭ</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>ކަސްޓަމް ޓެކްސްޓް ކަލަރ</value>
+        <value>ކަސްޓަމް ޓެކްސްޓް ކުލަ</value>
     </data>
     <data name="Settings_Advanced">
         <value>އެޑްވާންސްޑް</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>އެޑްމިން ކަމުގައި ރަން</value>
+        <value>އެޑްމިނިސްޓްރޭޓަރގެ ގޮތުގައި ހުޅުވާ</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>ރީސްޓާޓް ބޭނުން. ޕްރޮޓެކްޓްޑް ފައިލްތަކަށް އެކްސެސް ދެނީ.</value>
+        <value>ރީސްޓާޓް ބޭނުންވޭ. ޕްރޮޓެކްޓެޑް ފައިލްތަކަށް ވަދެވޭނެ.</value>
     </data>
     <data name="Settings_FileSizeLimit">
         <value>އިންޕުޓް ފައިލް ސައިޒް ލިމިޓް</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>ޕްރޮސެސް ކުރަން ޖެހޭ މަކްސިމަމް ސައިޒް.</value>
+        <value>ޕްރޮސެސް ކުރެވޭނެ އެންމެ ބޮޑު ފައިލް ސައިޒް.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
         <value>ފޯސް ކުއިޓް ޓައިމްއައުޓް</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>އެޕް ފްރީޒް ކަމުގައި ބަލަން ކުރެވޭ ކުރި ތައްޔާރު ވަގުތު (ސެކަންޑު).</value>
+        <value>އެޕް ހުއްޓިއްޖެކަމަށް ބަލާނެ ވަގުތު (ސިކުންތުން).</value>
     </data>
     <data name="Settings_FileTimeout">
         <value>ފައިލް ޕްރޮސެސިންގ ޓައިމްއައުޓް</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>ފައިލް އެކަކަށް ވަރު ގިނަ ވަގުތު ބޭނުންކުރެއްވީ ކެންސަލް.</value>
+        <value>ފައިލްއެއް މާ ގިނައިރު ވަންޏާ ކެންސަލްކުރޭ.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>އެމާޖެންސީ އެކްޝަން</value>
+        <value>އިމަޖެންސީ އެކްޝަން</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>އެޕް ފޯސް ކުއިޓް ކޮށްފައި ހުރިހާ ޓާސްކްތައް ކުއިކުލްކޮށްލާ.</value>
+        <value>އެޕް ގަދަކަމުން ބަންދުކޮށް ހުރިހާ މަސައްކަތެއް ވަގުތުން ހުއްޓާލާ.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>ފޯސް ކުއިޓް އާއި ހުރިހާ ކެންސަލް</value>
+        <value>ފޯސް ކުއިޓް &amp; ހުރިހާކަމެއް ކެންސަލް</value>
     </data>
     <data name="Settings_Configuration">
         <value>ކޮންފިގަރޭޝަން</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>ސެޓިންގްސް ލޮކް (ޑީފޯލްޓް ކަމުގައި ސޭވް)</value>
+        <value>ސެޓިންގްސް ލޮކްކުރޭ (ޑިފޯލްޓްކޮށް ސޭވްކުރޭ)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>ނޮންވިލީންގ ބަދަލުގެން ހައްޔަރު ކުރުން. ހޭޝް މާސްކިންގ އަކުންވެސް އަލާން ބަދަލުކުރެވޭނެ.</value>
+        <value>އޮޅިގެން ބަދަލުވިޔަ ނުދީ ހިފަހައްޓާ. ހަމައެކަނި 'ހޭޝް ފޮރުވުން' ބަދަލުކުރެވޭނެ.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>ހުރިހާ ސެޓިންގްސް ރީސެޓް</value>
+        <value>ހުރިހާ ސެޓިންގްސް ރިސެޓްކުރޭ</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>ފެކްޓަރީ ޑީފޯލްޓްތަކަށް ބަދަލުކުރުން.</value>
+        <value>ފެކްޓަރީ ޑިފޯލްޓަށް ބަދަލުކުރޭ.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>ކޮންފިގަރޭޝަން ފައިލް ޕާތް</value>
+        <value>ކޮންފިގަރޭޝަން ފައިލް ޕާތު</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>ފުޅު ޕާތް ދައްކާފައި ކްލިޕްބޯޑަށް ކޮޕީ.</value>
+        <value>ފުލް ޕާތު ދައްކާ އަދި ކޮޕީކުރޭ.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>ޕާތް ދައްކާ</value>
+        <value>ޕާތު ދައްކާ</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>ސެޓިންގްސް config.json އަށް އޮޓޯސޭވް</value>
+        <value>ސެޓިންގްސް އަމިއްލައަށް config.json އަށް ސޭވްވާނެ</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>ޑެވެލޮޕަރ މޯޑް</value>
+        <value>ޑިވެލޮޕަރ މޯޑް</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>އެޑްވާންސްޑް ލޮގިންގ އާއި ޑިބަގިންގ ޓޫލްސް އެނޭބަލް</value>
+        <value>އެޑްވާންސްޑް ލޮގިންގ އަދި ޑިބަގިންގ ޓޫލްސް އޮންކުރޭ.</value>
     </data>
     <data name="Dev_Console">
-        <value>ޑެވެލޮޕަރ ކޮންސޯލް</value>
+        <value>ޑިވެލޮޕަރ ކޮންސޯލް</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>ބީޓާ (BETA)</value>
     </data>
     <data name="Dev_Recording">
         <value>ރެކޯޑިންގ</value>
     </data>
     <data name="Dev_Paused">
-        <value>ޕޯޒްކުރެވިފަ</value>
+        <value>ޕޯސްކުރެވިފައި</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>ފައިލަށް ސޭވް</value>
+        <value>ފައިލްއަށް ސޭވްކުރޭ</value>
     </data>
     <data name="Dev_NoSave">
-        <value>ސޭވް ނުކުރަން</value>
+        <value>ސޭވް ނުކުރޭ</value>
     </data>
     <data name="Dev_Clear">
-        <value>ކޮންސޯލް ފިލާ</value>
+        <value>ކޮންސޯލް ސާފުކުރޭ</value>
     </data>
     <data name="Dev_Copy">
-        <value>ހުރިހާ ކޮޕީ</value>
+        <value>ހުރިހާ އެއްޗެއް ކޮޕީކުރޭ</value>
     </data>
     <data name="Dev_OpenFolder">
         <value>ލޮގް ފޯލްޑަރ ހުޅުވާ</value>
     </data>
     <data name="About_Author">
-        <value>ލިޔުންކުރީ</value>
+        <value>އުފެއްދި ފަރާތް</value>
     </data>
     <data name="About_Software">
-        <value>ސޮފްޓްވެއާ</value>
+        <value>ސޮފްޓްވެއަރ</value>
     </data>
     <data name="About_ThirdParty">
-        <value>ތިންވަނަ ޕާޓީ ލައިބްރަރީތައް</value>
+        <value>ތާޑް ޕާޓީ ލައިބްރަރީތައް</value>
     </data>
     <data name="About_Copyright">
         <value>ކޮޕީރައިޓް</value>
     </data>
     <data name="About_Desc">
-        <value>ފައިލް ހޭޝް ޖެނަރޭޓް، ޗެކް އާއި ކޮމްޕްރެސް ކުރުމަށް ބޮޑު ޓޫލް. ނުވަތަ މިލައި ހީވާނެ :)</value>
+        <value>ފައިލް ހޭޝް އުފެއްދުމަށާއި، ޗެކްކުރުމަށް އަދި ކޮމްޕްރެސް ކުރުމަށް ވަރުގަދަ ޓޫލްއެއް. :)</value>
     </data>
     <data name="About_License">
-        <value>MIT ލައިސަންސް ދަށުން ރިލީސް ކުރެވިފައި.</value>
+        <value>MIT ލައިސަންސްގެ ދަށުން ދޫކުރެވިފައި.</value>
     </data>
     <data name="About_Tech">
         <value>ޓެކްނޮލޮޖީ</value>
     </data>
     <data name="About_TechContent">
-        <value>C# އާއި .NET 10.0.102 ބޭނުން ބިނާކުރެވިފައި.</value>
+        <value>C# އަދި .NET 10.0.102 އިން ހަދާފައި.</value>
     </data>
     <data name="About_AI">
-        <value>AI އެހީ</value>
+        <value>AI އެހީތެރިކަން</value>
     </data>
     <data name="About_AIContent">
-        <value>މި ސޮފްޓްވެއާ ޑެވެލޮޕް ކުރުމުގައި AI އެހީ ލިބިފައި (Gemini 3 Pro އާއި Grok 4.1).</value>
+        <value>މި ސޮފްޓްވެއަރ ހެދުމުގައި AI (Gemini 3 Pro އަދި Grok 4.1) ގެ އެހީތެރިކަން ހޯދާފައިވޭ.</value>
     </data>
     <data name="Status_Processing">
-        <value>ޕްރޮސެސް ({0})...</value>
+        <value>ޕްރޮސެސް ކުރަނީ ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>ނިމުނު</value>
+        <value>ނިމިއްޖެ</value>
     </data>
     <data name="Status_Error">
-        <value>އެރަރ: {0}</value>
+        <value>މައްސަލައެއް: {0}</value>
     </data>
     <data name="Status_Cancelled">
-        <value>ކެންސަލް</value>
+        <value>ކެންސަލްކޮށްފި</value>
     </data>
     <data name="Status_Saved">
-        <value>ސޭވް!</value>
+        <value>ސޭވްކޮށްފި!</value>
     </data>
     <data name="Status_Compressed">
-        <value>ކޮމްޕްރެސް!</value>
+        <value>ކޮމްޕްރެސްކޮށްފި!</value>
     </data>
     <data name="Status_Waiting">
-        <value>ހޭޝް/އިންޕުޓް ދެން...</value>
+        <value>ހޭޝް/އިންޕުޓް އަށް އިންތިޒާރުކުރަނީ...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>އޮރިޖިނަލް ފައިލް ނެތް!</value>
+        <value>އަސްލު ފައިލް ނެތް!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>ހޭޝް ވެލިއު ނެތް (އިންޕުޓް ނުވަތަ ހޭޝް ފައިލް ލޯޑް)</value>
+        <value>ހޭޝް ވެލިއު ނެތް (ލިޔޭ ނުވަތަ ފައިލް ލޯޑްކުރޭ)</value>
     </data>
     <data name="Status_Valid">
-        <value>ވާލިޑް</value>
+        <value>ރަނގަޅު (VALID)</value>
     </data>
     <data name="Status_Invalid">
-        <value>މިސްމާޗް!</value>
+        <value>ދިމައެއްނުވޭ! (MISMATCH!)</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>ހޭޝް ފައިލް ލޯޑް</value>
+        <value>ހޭޝް ފައިލް ލޯޑްކޮށްފި</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>ހޭޝް ފައިލް ނަމުގެ މިސްމާޗް!</value>
+        <value>ހޭޝް ފައިލްގެ ނަން ދިމައެއްނުވޭ!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>ފައިލްގައި ހޭޝް ނެތް!</value>
+        <value>ފައިލްގައި ހޭޝްއެއް ނެތް!</value>
     </data>
     <data name="Status_Checking">
-        <value>އަޕްޑޭޓް ޗެކް...</value>
+        <value>އަޕްޑޭޓް ޗެކްކުރަނީ...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>އާ ވަރޝަން ފެންނަން!</value>
+        <value>އާ ވާޝަންއެއް ފެނިއްޖެ!</value>
     </data>
     <data name="Status_Latest">
-        <value>ތިބާ ލޭޓެސްޓް ވަރޝަން ބޭނުންކުރަނީ.</value>
+        <value>ތި ބޭނުންކުރަނީ އެންމެ ފަހުގެ ވާޝަން.</value>
     </data>
     <data name="Status_CheckError">
-        <value>އަޕްޑޭޓް ޗެކް އެރަރ: {0}</value>
+        <value>އަޕްޑޭޓް ޗެކްކުރުމުގައި މައްސަލައެއް: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>ޑައުންލޯޑް އާއި އިންސްޓޯލް...</value>
+        <value>ޑައުންލޯޑްކޮށް އިންސްޓޯލްކުރަނީ...</value>
     </data>
     <data name="Status_InstallError">
-        <value>އިންސްޓޯލް އެރަރ: {0}</value>
+        <value>އިންސްޓޯލް މައްސަލައެއް: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>ރެޑީ (.hash ފައިލްން)</value>
+        <value>ތައްޔާރު (.hash ފައިލް އިން)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>އޮރިޖިނަލް ފައިލް ލޯސްޓް!</value>
+        <value>އަސްލު ފައިލް ގެއްލިއްޖެ!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>ހޭޝް ފައިލް ނަމުގެ މިސްމާޗް!</value>
+        <value>ހޭޝް ފައިލްގެ ނަން ދިމައެއްނުވޭ!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>ހޭޝް ފައިލް ޑްރޮޕް ސަފަޅު</value>
+        <value>ހޭޝް ފައިލް ލާފި</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>ފައިލްގައި ހޭޝް ނެތް!</value>
+        <value>ފައިލްގައި ހޭޝްއެއް ނެތް!</value>
     </data>
     <data name="Status_ReadError">
-        <value>ފައިލް ރީޑް އެރަރ</value>
+        <value>ފައިލް ކިޔުމުގައި މައްސަލައެއް</value>
     </data>
     <data name="Msg_Result_Title">
-        <value>ރިޒަލްޓް</value>
+        <value>ނަތީޖާ</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>ޕްރޮސެސް ކޮންޕްލީޓް!
-            ✅ ސަފަޅު: {0}
-            ❌ ފެއިލް: {1}
+        <value>ޕްރޮސެސިންގ ނިމިއްޖެ!
+            ✅ ކާމިޔާބު: {0}
+            ❌ ފެއިލްވީ: {1}
+            ⛔ ކެންސަލްވީ: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>{0} ފައިލް ޗެކް.
-            ✅ މެޗް: {1}
-            ❌ މިސްމާޗް/އެރަރ: {2}
-            ⛔ ކެންސަލް: {3}
+        <value>{0} ފައިލް ޗެކްކޮށްފި.
+            ✅ ދިމާވީ: {1}
+            ❌ ދިމާނުވީ/މައްސަލަ: {2}
+            ⛔ ކެންސަލްވީ: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>ވްރޯންގ ފައިލް!</value>
+        <value>ނުބައި ފައިލްއެއް!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>ހޭޝް ފައިލް މިސްމާޗް!
+        <value>ހޭޝް ފައިލް ދިމައެއްނުވޭ!
 
-            އޮރިޖިނަލް ފައިލް: {0}
-            ސިލެކްޓްޑް ފައިލް: {1}
+            އަސްލު ފައިލް: {0}
+            ނެގި ފައިލް: {1}
 
-            ރަނގަޅު ހޭޝް ފައިލް ޗުން.
+            ހެޔޮކޮށް ރަނގަޅު ހޭޝް ފައިލް ނަގާ.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
         <value>އާ އަޕްޑޭޓް</value>
     </data>
     <data name="Msg_UpdateContent">
-        <value>ވަރޝަން: {0}
+        <value>ވާޝަން: {0}
 
             ބަދަލުތައް:
             {1}
 
-            'އަޕްޑޭޓް ނައު' ކްލިކް ކޮށްފައި ޑައުންލޯޑް.
+            ޑައުންލޯޑްކުރުމަށް 'މިހާރު އަޕްޑޭޓްކުރޭ' އަށް ފިއްތާލާ.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>އާ އަޕްޑޭޓް ނެތް.</value>
+        <value>އާ އަޕްޑޭޓެއް ނެތް.</value>
     </data>
     <data name="Msg_Error">
-        <value>އެރަރ</value>
+        <value>މައްސަލައެއް</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>މި ހޭޝް ފައިލް ރީޑް ނުކުރެވޭ.</value>
+        <value>މި ހޭޝް ފައިލް ކިޔޭގޮތެއް ނުވި.</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>ކޮންފިގަރޭޝަން ޗެކް</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>ފައިލް އެތާނެއްގައި އެވެ:
+        <value>ފައިލް އެބައިން:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>ފައިލް ނެތް!</value>
+        <value>ފައިލްއެއް ނެތް!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>ފައިލް ސަފަޅުކޮށް ޖެނަރޭޓް!</value>
+        <value>ފައިލް ހަދައިފި!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>ކޮންފިގަރޭޝަން ޕާތް ކޮޕީ.</value>
+        <value>ކޮންފިގަރޭޝަން ޕާތު ކޮޕީކޮށްފި.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>އެޑްމިން މޯޑް</value>
+        <value>އެޑްމިނިސްޓްރޭޓަރ މޯޑް</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>ބަދަލުތައް ފުޅާކުރުމަށް އެޕް ރީސްޓާޓް ކުރަންވާށެވެ.</value>
+        <value>ބަދަލުތައް ފެންނާނީ އެޕް ރީސްޓާޓް ކުރުމުން.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>ފޯލްޑަރ ހުޅުވާނެ ނުފެންނަން: {0}</value>
+        <value>ފޯލްޑަރ ހުޅުވޭގޮތެއް ނުވި: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ޑެވެލޮޕަރ ވަރޝަން ވޯރނިންގ</value>
+        <value>⚠️ ޑިވެލޮޕަރ ވާޝަން އިންޒާރު</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>ތިޔަބައި ޑެވެލޮޕަރ (ޕްރީ-ރިލީޒް) އަޕްޑޭޓް ޗެނަލަށް ބަދަލުކުރަނީ.
+        <value>ތި ބަދަލުކުރަނީ ޑިވެލޮޕަރ (ޕްރީ-ރިލީޒް) އަޕްޑޭޓް ޗެނަލްއަށް.
 
-            މި ވަރޝަންގައި ބަގްތައް ވާށެވެ، ސްޓޭބަލް ނޫން، ޑޭޓާ ލޯސް ވާށެވެ.
+            މި ވާޝަންގައި މައްސަލަ ހުރެދާނެ، އަދި ޑޭޓާ ގެއްލިދާނެ.
 
-            މި ވަރޝަން ބޭނުންކުރުމުން ފެންނަ ކޮންމެ މައްސަލައަށް އަޅުގަނޑު ވަކިވަނީ ނޫނެވެ.
+            މި ވާޝަން ބޭނުންކޮށްގެން ދިމާވާ އެއްވެސް ކަމަކަށް އަހަރެން ޒިންމާއެއް ނުނަގާނަން.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>އަޅުގަނޑު ކިޔަވައި އެކުވެރިވެއްޖެ. އަޅުގަނޑު ފުޅާފުޅު ވަކިވަނީ.</value>
+        <value>ކިޔައިފިން އަދި އެއްބަސްވަން. ފުރިހަމަ ޒިންމާ ނަގަން.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>ހޭޝް ފައިލް ސޭވް</value>
+        <value>ހޭޝް ފައިލް ސޭވްކުރޭ</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>ކޮމްޕްރެސްޑް ފައިލް ސޭވް</value>
+        <value>ކޮމްޕްރެސް ފައިލް ސޭވްކުރޭ</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>ހޭޝް ކުރަން ޖެހޭ ފައިލްތައް ޗުން</value>
+        <value>ހޭޝްކުރަން ފައިލް ނަގާ</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>{0} ގެ ހޭޝް ފައިލް ޗުން</value>
+        <value>{0} އަށް ހޭޝް ފައިލް ނަގާ</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>ފައިލްތައް ޗުން (އޮރިޖިނަލް ނުވަތަ .hash ފައިލް)</value>
+        <value>ފައިލް ނަގާ (އަސްލު ނުވަތަ .hash ފައިލް)</value>
     </data>
     <data name="Header_Fallback">
-        <value>އެޑްވާންސްޑް: ފަހުގެ ވަރޝަނަށް ފެންނަން</value>
+        <value>އެޑްވާންސްޑް: ކުރީގެ ވާޝަންއަކަށް ބަދަލުކުރޭ</value>
     </data>
     <data name="Desc_Fallback">
-        <value>އާ ވަރޝަންގައި މައްސަލަ އަޅާނީނަމަ ބޭނުންވާ ވަރޝަން އިންސްޓޯލް ކުރެވޭނެ.</value>
+        <value>އާ ވާޝަންގައި މައްސަލައެއް އުޅޭނަމަ ވަކި ވާޝަންއެއް އިންސްޓޯލް ކުރެވޭނެ.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>މިތާ ޕޭސްޓް/ޑްރޮޕް...</value>
+        <value>މިތަނަށް ޕޭސްޓް ނުވަތަ ޑްރޮޕްކުރޭ...</value>
     </data>
     <data name="Unit_Seconds">
-        <value>ސެކަންޑު</value>
+        <value>ސިކުންތު</value>
     </data>
     <data name="Tip_Verify">
         <value>ވެރިފައި</value>
     </data>
     <data name="Tip_Stop">
-        <value>ސްޓޮޕް</value>
+        <value>ހުއްޓާލާ</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>ފައިލް ފޮހެލާ</value>
+        <value>ފައިލް ނަގާ</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>ހޭޝް ކޮޕީ</value>
+        <value>ހޭޝް ކޮޕީކުރޭ</value>
     </data>
     <data name="Tip_Compute">
-        <value>ކަލްކުލޭޓް</value>
+        <value>ހިސާބުކުރޭ</value>
+    </data>
+    <data name="Tip_ClearHash">
+        <value>ހޭޝް ފުހެލާ</value>
     </data>
     <data name="Tip_BrowseHash">
-        <value>ހޭޝް ބްރައުޒް</value>
+        <value>ހޭޝް ހޯދާ</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>ޑާރކް</value>
+        <value>ޑާކް</value>
     </data>
     <data name="Settings_ThemeLight">
         <value>ލައިޓް</value>
@@ -498,10 +505,7 @@
         <value>ސިސްޓަމް</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>ޓާސްކް ސްޓޮޕް</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>ފައިލް {0} ލިމިޓް {1} {2} މަތިން.</value>
+        <value>މަސައްކަތް ހުއްޓިއްޖެ</value>
     </data>
     <data name="Btn_Yes">
         <value>އާނ</value>
@@ -516,39 +520,217 @@
         <value>Zip ފައިލް</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>އޮޓްކުރުން ކޮންފަރމް</value>
+        <value>ބަންދުކުރުން ޔަޤީންކުރޭ</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>އޮޓްކުރުމުން ހުރިހާ ޓާސްކްތައް ކެންސަލްވާނެ. ޔަޤީންތަން؟</value>
+        <value>ބަންދުކޮށްފިނަމަ ކުރަމުންދާ ހުރިހާކަމެއް ހުއްޓޭނެ. ޔަޤީންތަ؟</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>ޓައިމްއައުޓް ކަމުން ޓާސްކް ސްޓޮޕް.</value>
+        <value>ވަގުތު ހަމަވެގެން މަސައްކަތް ހުއްޓިއްޖެ.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>ޑިބަގް ލޮގް ޑިސްކަށް ސޭވް.</value>
+        <value>ޑިބަގް ލޮގް ޑިސްކަށް ސޭވްކުރޭ.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>ރީއަލްޓައިމް ލޮގިންގ ޕޯޒް.</value>
+        <value>ރިއަލް-ޓައިމް ލޮގިންގ މެދުކަނޑާލާ.</value>
     </data>
     <data name="Tip_ShowHash">
         <value>ހޭޝް ދައްކާ</value>
     </data>
     <data name="Tip_HideHash">
-        <value>ހޭޝް ސައިލާ</value>
+        <value>ހޭޝް ފޮރުވާ</value>
     </data>
     <data name="Tip_CopyPath">
-        <value>ޕާތް ކޮޕީ</value>
+        <value>ޕާތު ކޮޕީކުރޭ</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>ތިޔަ ޑްރައިވް ފުޅާފައި. އަނެއް ލޮކޭޝަން ޗުން :)</value>
+        <value>ޑިސްކް ފުރިއްޖެ. އެހެން ތަނެއް ނަގާ :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>ހޭޝް ވިޒިބިލިޓީ</value>
+        <value>ހޭޝް ފެންނަގޮތް</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>ފައިލް ނެތް. 'ފައިލްތައް ލާ' ކްލިކް ކޮށްފައި ފެށުމަށް.</value>
+        <value>ފައިލްއެއް ނެތް. ފަށަން 'ފައިލް އިތުރުކުރޭ' އަށް ފިއްތާ.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>މި ތީމް ޑީފޯލްޓް ކަމުގައި ލޮކް</value>
+        <value>މި ތީމް ޑިފޯލްޓްކޮށް ލޮކްކުރޭ</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>ލިމިޓަށްވުރެ ބޮޑު {0} ފައިލް ދޫކޮށްލައިފި ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>ސިސްޓަމް ލޭންގުއޭޖް</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>'އޮޓޯ' އަށް ބަދަލުކޮށްފިނަމަ އެކަން ވާނީ ރީސްޓާޓް ކުރުމުން. ކުރިއަށް ގެންދަންވީ؟</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>ބަސް ބަދަލުކުރުން</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>ޔަޤީންތަ؟</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>މި އިންޒާރު ދެން ނުދައްކާ</value>
+    </data>
+    <data name="Error_Network">
+        <value>ނެޓްވޯކް މައްސަލައެއް. އިންޓަނެޓް ޗެކްކުރޭ.</value>
+    </data>
+    <data name="Error_Server">
+        <value>ސާވަރ މައްސަލައެއް (5xx). ފަހުން ޓްރައިކުރޭ.</value>
+    </data>
+    <data name="Error_Client">
+        <value>ކްލައިންޓް މައްސަލައެއް (4xx). ރިކުއެސްޓް ޗެކްކުރޭ.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>GitHub API ލިމިޓް ހަމަވެއްޖެ. ފަހުން ޓްރައިކުރޭ.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>ޕްރީ-ރިލީޒް ވާޝަންއެއް ނެތް. މިހާރު ހުރި ވާޝަން ބަހައްޓަނީ.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>ޕްރީ-ރިލީޒް ވާޝަން {0} އެބައިން.
+
+            {1}
+
+            މިއީ ސްޓޭބަލް ވާޝަންއެއް ނޫން. ޑައުންލޯޑްކުރަންވީ؟
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>ފެއިލްވީ އެއްޗެހި ފުހެލާ</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>{0} އެތި ފުހެލައިފި.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>ބާކީ އޮތް ވަގުތު: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>ނެގި ވަގުތު: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>ހިސާބުކުރަނީ...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>ފޯލްޑަރ އިތުރުކުރޭ...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>ނެގި ފޯލްޑަރ ހުސް.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>ސްކޭންކުރަން ފޯލްޑަރ ނަގާ</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>ކެންސަލް</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>ޕްރޮސެސިންގ ލިމިޓްތައް</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>ފޯލްޑަރަކުން ނެގޭނެ އެންމެ ގިނަ ފައިލް</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>ޕާފޯމަންސް ދަށްވިޔަ ނުދިނުމަށް، ފޯލްޑަރަކުން ނެގޭނެ ފައިލްގެ އަދަދު ލިމިޓްކުރޭ.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>އެއްފަހަރާ ނެގޭނެ އެންމެ ގިނަ ފޯލްޑަރ</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>އެއްފަހަރާ ސިލެކްޓްކުރެވޭނެ ފޯލްޑަރގެ އަދަދު ލިމިޓްކުރޭ.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>އެއްފަހަރާ ނެގޭނީ {0} ފޯލްޑަރ.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>{0} ފައިލް އިތުރުކޮށްފި. ލިމިޓް ހަމަވާތީ {1} ފައިލް ދޫކޮށްލައިފި.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>ކިޔަނީ: {0}/s | ލިޔަނީ: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>ލިޔާ/ކިޔާ ސްޕީޑް ދައްކާ</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>ހޭޝް ކުރަމުންދާއިރު ޓްރާންސްފަރ ސްޕީޑް ދައްކާ.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>ހޭޝް ހިސާބުކުރަނީ...</value>
+    </data>
+    <data name="Size_All">
+        <value>ހުރިހާ ސައިޒެއް</value>
+    </data>
+    <data name="Size_Small">
+        <value>ކުދި (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>މެދުމިނުގެ (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>ބޮޑެތި (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>ވަރަށް ބޮޑެތި (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>ލިޔެކިޔުންތައް</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>ޕްރައިވެސީ ޕޮލިސީ</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>ޚިދުމަތުގެ ޝަރުތުތައް</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>ލައިސަންސް އެއްބަސްވުން (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>ޑިސްކްލެއިމަރ</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>ރީޑްމީ (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>ޗޭންޖްލޮގް</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>ޝުކުރުއަދާކުރުން</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>ޕްރޮސެސް ކުރަނީ</value>
+    </data>
+    <data name="Status_Failure">
+        <value>ފެއިލްވީ</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>ނަމުން ހޯދާ...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>ސައިޒް</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub ޕްރޮފައިލް</value>
+    </data>
+    <data name="Filter_All">
+        <value>ހުރިހާ</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>މެމޮރީ ހުސްކުރޭ</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>ރެމް (RAM) ހުސްކުރުމަށް ގާބޭޖް ކަލެކްޝަން (GC) ހިންގާ.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>މެމޮރީ ސާފުކުރޭ</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>މެމޮރީ ސާފުކުރަން ފަށައިފި.</value>
     </data>
 </root>

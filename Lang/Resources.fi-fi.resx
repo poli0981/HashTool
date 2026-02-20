@@ -19,16 +19,16 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Luo hash</value>
+        <value>Luo tiiviste</value>
     </data>
     <data name="Menu_Check">
-        <value>Tarkista hash</value>
+        <value>Tarkista tiiviste</value>
     </data>
     <data name="Menu_Settings">
         <value>Asetukset</value>
     </data>
     <data name="Menu_Update">
-        <value>Päivitä</value>
+        <value>Päivitys</value>
     </data>
     <data name="Menu_Theme">
         <value>Teema</value>
@@ -43,10 +43,13 @@
         <value>Lisää tiedostoja...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Tyhjennä lista</value>
+        <value>Tyhjennä luettelo</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>Tyhjennä tiivisteet</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>LASKe KAIKKI</value>
+        <value>LASKE KAIKKI</value>
     </data>
     <data name="Btn_Compress">
         <value>Pakkaa (.Zip)</value>
@@ -67,7 +70,7 @@
         <value>Hylkää</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Luo hash &amp; pakkaa</value>
+        <value>Luo tiiviste &amp; pakkaa</value>
     </data>
     <data name="Title_CheckHash">
         <value>Erätarkistus</value>
@@ -82,16 +85,16 @@
         <value>Tietoja</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Vinkki: Shift+C laske kaikki, Shift+Z pakkaa, Ctrl+F lisää tiedostoja.</value>
+        <value>Vinkki: Shift+C laskeaksesi, Shift+Z pakataksesi, Ctrl+F lisätäksesi.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Vinkki: Shift+A tarkista kaikki, Ctrl+F lisää tiedostoja, Ctrl+Shift+H tyhjennä lista.</value>
+        <value>Vinkki: Shift+A tarkistaaksesi, Ctrl+F lisätäksesi, Ctrl+Shift+H tyhjentääksesi.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Valmis</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Esimerkki:</value>
+        <value>Näyte:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>Nykyinen versio: {0}</value>
@@ -103,10 +106,10 @@
         <value>Tiedostoja yhteensä: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Vakaa</value>
+        <value>Vakaa (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Kehittäjäversio</value>
+        <value>Kehittäjä (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Kieli</value>
@@ -127,7 +130,7 @@
         <value>Fonttikoko (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automaattinen optimaalisen fontin valinta kielelle</value>
+        <value>Valitse kielelle optimaalinen fontti automaattisesti</value>
     </data>
     <data name="Settings_LockFont">
         <value>Lukitse oletusfontiksi</value>
@@ -136,13 +139,13 @@
         <value>Käyttöliittymän skaalaus</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Peitä hash-arvot (Turvallisuus)</value>
+        <value>Piilota tiivistearvot (Tietoturva)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Nollaa teema</value>
+        <value>Palauta asetukset</value>
     </data>
     <data name="Settings_Other">
-        <value>Yksityisyys &amp; turvallisuus</value>
+        <value>Yksityisyys ja turvallisuus</value>
     </data>
     <data name="Settings_SetDefault">
         <value>Aseta oletukseksi</value>
@@ -163,49 +166,49 @@
         <value>Syötetiedoston kokorajoitus</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maksimikoko käsiteltäville tiedostoille.</value>
+        <value>Käsiteltävien tiedostojen enimmäiskoko.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
         <value>Pakotetun lopetuksen aikakatkaisu</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Aika (sekuntia) ennen kuin sovellus katsotaan jumiutuneeksi.</value>
+        <value>Aika (sekuntia) ennen kuin sovelluksen katsotaan jumiutuneen.</value>
     </data>
     <data name="Settings_FileTimeout">
         <value>Tiedoston käsittelyn aikakatkaisu</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Peruuta, jos yksi tiedosto kestää liian kauan.</value>
+        <value>Peruuta, jos yksittäinen tiedosto kestää liian kauan.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Hätätoimenpide</value>
+        <value>Hätätoiminto</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Pakotettu sulkeminen ja kaikkien tehtävien välitön peruutus.</value>
+        <value>Pakota sovelluksen sulkeminen ja peruuta kaikki tehtävät välittömästi.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Pakotettu lopetus &amp; peruuta kaikki</value>
+        <value>Pakota lopetus &amp; peruuta kaikki</value>
     </data>
     <data name="Settings_Configuration">
-        <value>Määritykset</value>
+        <value>Konfiguraatio</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Lukitse asetukset (Tallenna oletuksena)</value>
+        <value>Lukitse asetukset (Tallenna oletukseksi)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Estä vahingossa tapahtuvat muutokset. Vain hash-peitto on säädettävissä.</value>
+        <value>Estä tahattomat muutokset. Vain 'Tiivisteen piilotus' pysyy säädettävänä.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Nollaa kaikki asetukset</value>
+        <value>Palauta kaikki asetukset</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Palauta tehdasasetukset.</value>
+        <value>Palauta tehdasasetuksiin.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Määritystiedoston polku</value>
+        <value>Konfiguraatiotiedoston polku</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Näytä täysi polku ja kopioi leikepöydälle.</value>
+        <value>Näytä koko polku ja kopioi leikepöydälle.</value>
     </data>
     <data name="Settings_ShowPath">
         <value>Näytä polku</value>
@@ -217,7 +220,7 @@
         <value>Kehittäjätila</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Ota käyttöön edistyneet lokitustyökalut ja virheenkorjaus.</value>
+        <value>Ota käyttöön edistynyt lokikirjaus ja virheenkorjaustyökalut.</value>
     </data>
     <data name="Dev_Console">
         <value>Kehittäjäkonsoli</value>
@@ -226,7 +229,7 @@
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Nauhoitetaan</value>
+        <value>Tallennetaan</value>
     </data>
     <data name="Dev_Paused">
         <value>Keskeytetty</value>
@@ -235,7 +238,7 @@
         <value>Tallenna tiedostoon</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Ei tallennusta</value>
+        <value>Älä tallenna</value>
     </data>
     <data name="Dev_Clear">
         <value>Tyhjennä konsoli</value>
@@ -256,11 +259,10 @@
         <value>Kolmannen osapuolen kirjastot</value>
     </data>
     <data name="About_Copyright">
-        <value>Tekijänoikeudet</value>
+        <value>Tekijänoikeus</value>
     </data>
     <data name="About_Desc">
-        <value>Tehokas työkalu tiedostojen hash-arvojen luomiseen, tarkistamiseen ja pakkaamiseen. Tai niin minä ainakin
-            luulen :)
+        <value>Tehokas työkalu tiedostojen tiivisteiden luomiseen, tarkistamiseen ja pakkaamiseen. Tai niin luulen :)
         </value>
     </data>
     <data name="About_License">
@@ -270,13 +272,13 @@
         <value>Teknologia</value>
     </data>
     <data name="About_TechContent">
-        <value>Rakennettu C#:llä ja .NET 10.0.102:lla.</value>
+        <value>Rakennettu C#:lla ja .NET 10.0.102:lla.</value>
     </data>
     <data name="About_AI">
-        <value>AI-avustus</value>
+        <value>Tekoälyavustus</value>
     </data>
     <data name="About_AIContent">
-        <value>Tämä ohjelmisto kehitettiin AI-avustuksella (Gemini 3 Pro ja Grok 4.1).</value>
+        <value>Tämä ohjelmisto kehitettiin tekoälyn (Gemini 3 Pro ja Grok 4.1) avustuksella.</value>
     </data>
     <data name="Status_Processing">
         <value>Käsitellään ({0})...</value>
@@ -297,28 +299,28 @@
         <value>Pakattu!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Odotetaan hash/syötettä...</value>
+        <value>Odotetaan tiivistettä/syötettä...</value>
     </data>
     <data name="Status_MissingOriginal">
         <value>Alkuperäinen tiedosto puuttuu!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash-arvo puuttuu (Syötä tai lataa hash-tiedosto)</value>
+        <value>Tiivistearvo puuttuu (Syötä tai lataa tiedosto)</value>
     </data>
     <data name="Status_Valid">
-        <value>KELPAA</value>
+        <value>PÄTEVÄ</value>
     </data>
     <data name="Status_Invalid">
-        <value>EI KELPAA!</value>
+        <value>EI TÄSMÄÄ!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Hash-tiedosto ladattu</value>
+        <value>Tiivistetiedosto ladattu</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hash-tiedoston nimi ei täsmää!</value>
+        <value>Tiivistetiedoston nimi ei täsmää!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Tiedosto ei sisällä hashia!</value>
+        <value>Tiedosto ei sisällä tiivistettä!</value>
     </data>
     <data name="Status_Checking">
         <value>Tarkistetaan päivityksiä...</value>
@@ -330,7 +332,7 @@
         <value>Käytät uusinta versiota.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Päivitystarkistusvirhe: {0}</value>
+        <value>Päivityksen tarkistusvirhe: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>Ladataan ja asennetaan...</value>
@@ -345,13 +347,13 @@
         <value>Alkuperäinen tiedosto kadonnut!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hash-tiedoston nimi ei täsmää!</value>
+        <value>Tiivistetiedoston nimi ei täsmää!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hash-tiedosto pudotettu onnistuneesti</value>
+        <value>Tiivistetiedosto pudotettu onnistuneesti</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Tiedosto ei sisällä hashia!</value>
+        <value>Tiedosto ei sisällä tiivistettä!</value>
     </data>
     <data name="Status_ReadError">
         <value>Tiedoston lukuvirhe</value>
@@ -363,25 +365,26 @@
         <value>Käsittely valmis!
             ✅ Onnistui: {0}
             ❌ Epäonnistui: {1}
+            ⛔ Peruutettu: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Tarkistettu {0} tiedostoa.
             ✅ Täsmää: {1}
             ❌ Ei täsmää/Virhe: {2}
-            ⛔ Peruttu: {3}
+            ⛔ Peruutettu: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Väärä tiedosto!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hash-tiedosto ei täsmää!
+        <value>Tiivistetiedosto ei täsmää!
 
             Alkuperäinen tiedosto: {0}
             Valittu tiedosto: {1}
 
-            Valitse oikea liitteenä oleva hash-tiedosto.
+            Valitse oikea vastaava tiivistetiedosto.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -393,40 +396,40 @@
             Muutokset:
             {1}
 
-            Lataa klikkaamalla 'Päivitä nyt'.
+            Napsauta 'Päivitä nyt' ladataksesi.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Ei uudempia päivityksiä.</value>
+        <value>Uudempia päivityksiä ei löytynyt.</value>
     </data>
     <data name="Msg_Error">
         <value>Virhe</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Ei voida lukea tätä hash-tiedostoa.</value>
+        <value>Tätä tiivistetiedostoa ei voi lukea.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Määritystarkistus</value>
+        <value>Konfiguraation tarkistus</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Tiedosto olemassa:
+        <value>Tiedosto on olemassa:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Tiedosto puuttuu!</value>
+        <value>Tiedostoa ei ole olemassa!</value>
     </data>
     <data name="Msg_ConfigCreated">
         <value>Tiedosto luotu onnistuneesti!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Määrityspolku kopioitu.</value>
+        <value>Konfiguraatiopolku kopioitu.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Järjestelmänvalvojatila</value>
+        <value>Järjestelmänvalvojan tila</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Käynnistä sovellus uudelleen muutosten voimaan saamiseksi.</value>
+        <value>Käynnistä sovellus uudelleen ottaaksesi muutokset käyttöön.</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>Kansiota ei voi avata: {0}</value>
@@ -435,39 +438,39 @@
         <value>⚠️ KEHITTÄJÄVERSION VAROITUS</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Olet vaihtamassa kehittäjäkanavaan (esijulkaisu).
+        <value>Olet vaihtamassa kehittäjä (Pre-release) -päivityskanavaan.
 
-            Tämä versio voi sisältää bugeja, olla epävakaa ja aiheuttaa tietojen menetyksen.
+            Tämä versio voi sisältää virheitä, olla epävakaa ja aiheuttaa tietojen katoamisen.
 
-            En ole vastuussa tämän version käytöstä aiheutuvista ongelmista.
+            En ole vastuussa mistään ongelmista, jotka johtuvat tämän version käytöstä.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Olen lukenut ja hyväksyn. Otin täyden vastuun.</value>
+        <value>Olen lukenut ja hyväksyn. Otan täyden vastuun.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Tallenna hash-tiedosto</value>
+        <value>Tallenna tiivistetiedosto</value>
     </data>
     <data name="Dialog_SaveZip">
         <value>Tallenna pakattu tiedosto</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Valitse tiedostot hashia varten</value>
+        <value>Valitse tiedostot tiivistettäväksi</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Valitse hash-tiedosto kohteelle: {0}</value>
+        <value>Valitse tiivistetiedosto kohteelle: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Valitse tiedostot (Alkuperäinen tai .hash-tiedosto)</value>
+        <value>Valitse tiedostot (Alkuperäinen tai .hash)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Lisäasetukset: Palaa vanhempaan versioon</value>
+        <value>Edistynyt: Palaa vanhempaan versioon</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Tämä ominaisuus sallii tietyn version asennuksen, jos uusi versio aiheuttaa ongelmia.</value>
+        <value>Tämän toiminnon avulla voit asentaa tietyn version, jos uudessa on ongelmia.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Liitä/Pudota tähän...</value>
+        <value>Liitä tai pudota tähän...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Sekuntia</value>
@@ -482,13 +485,16 @@
         <value>Poista tiedosto</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Kopioi hash</value>
+        <value>Kopioi tiiviste</value>
     </data>
     <data name="Tip_Compute">
         <value>Laske</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Tyhjennä tiiviste</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Selaa hash</value>
+        <value>Selaa tiivistettä</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>Tumma</value>
@@ -500,10 +506,7 @@
         <value>Järjestelmä</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>Tehtävä keskeytetty</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Tiedosto {0} ylittää rajan {1} {2}.</value>
+        <value>Tehtävä pysäytetty</value>
     </data>
     <data name="Btn_Yes">
         <value>Kyllä</value>
@@ -521,36 +524,214 @@
         <value>Vahvista lopetus</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Lopetus peruuttaa kaikki käynnissä olevat tehtävät. Oletko varma?</value>
+        <value>Lopettaminen peruuttaa kaikki käynnissä olevat tehtävät. Oletko varma?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Tehtävä keskeytetty aikakatkaisun vuoksi.</value>
+        <value>Tehtävä pysäytettiin aikakatkaisun vuoksi.</value>
     </data>
     <data name="Dev_ToolTip_Save">
         <value>Tallenna virheenkorjausloki levylle.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Keskeytä reaaliaikainen lokitus.</value>
+        <value>Keskeytä reaaliaikainen lokikirjaus.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Näytä hash</value>
+        <value>Näytä tiiviste</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Piilota hash</value>
+        <value>Piilota tiiviste</value>
     </data>
     <data name="Tip_CopyPath">
         <value>Kopioi polku</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Levy on täynnä. Valitse toinen sijainti kaveri :)</value>
+        <value>Levysi on täynnä. Valitse toinen sijainti :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Hash-näkyvyys</value>
+        <value>Tiivisteen näkyvyys</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Ei tiedostoja. Aloita klikkaamalla 'Lisää tiedostoja'.</value>
+        <value>Ei tiedostoja. Aloita napsauttamalla 'Lisää tiedostoja'.</value>
     </data>
     <data name="Settings_LockTheme">
         <value>Lukitse tämä teema oletukseksi</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Ohitettiin {0} tiedostoa, jotka ylittävät rajan ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Järjestelmän kieli</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>'Automaattinen'-asetukseen palaaminen vaatii uudelleenkäynnistyksen. Haluatko jatkaa?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Kielen vaihto</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Oletko varma?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Älä näytä tätä varoitusta uudelleen</value>
+    </data>
+    <data name="Error_Network">
+        <value>Verkkoyhteysvirhe. Tarkista internetyhteytesi.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Palvelinvirhe (5xx). Yritä myöhemmin uudelleen.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Asiakasvirhe (4xx). Tarkista pyyntö.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>GitHub API -raja ylitetty. Yritä myöhemmin uudelleen.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Esiversiota ei löytynyt. Pidetään nykyinen versio.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Esiversio {0} on saatavilla.
+
+            {1}
+
+            Tämä versio voi olla epävakaa. Haluatko ladata?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Tyhjennä epäonnistuneet</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>Poistettiin {0} kohdetta.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Aikaa jäljellä: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Tehtävän kesto: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Lasketaan...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Lisää kansio...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Valittu kansio on tyhjä.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Valitse skannattava kansio</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Peruuta</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Käsittelyrajat</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Tiedostojen enimmäismäärä kansioskannauksessa</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Rajoita kansiosta lisättävien tiedostojen määrää suorituskykyongelmien estämiseksi.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Kansioiden enimmäismäärä kerralla</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Rajoita kerralla valittavien kansioiden määrää.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Voit valita enintään {0} kansiota kerralla.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Lisättiin {0} tiedostoa. Ohitettiin {1} tiedostoa rajoituksen vuoksi.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Luku: {0}/s | Kirjoitus: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Näytä luku-/kirjoitusnopeus</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Näytä reaaliaikainen siirtonopeus tiivistyksen aikana.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Tiivisteen laskenta...</value>
+    </data>
+    <data name="Size_All">
+        <value>Kaikki koot</value>
+    </data>
+    <data name="Size_Small">
+        <value>Pieni (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Keskikokoinen (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Suuri (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Erittäin suuri (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Dokumentit</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Tietosuojakäytäntö</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Käyttöehdot</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Loppukäyttäjän lisenssisopimus (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Vastuuvapauslauseke</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>LUEMINUT (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Muutosloki</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Kiitokset</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Käsitellään</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Epäonnistui</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Hae nimellä...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Koko</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub-profiili</value>
+    </data>
+    <data name="Filter_All">
+        <value>Kaikki</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Vapauta muistia</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Pakota roskienkeruu (GC) vapauttaaksesi RAM-muistia.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Puhdista muisti</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Muistin puhdistus käynnistetty.</value>
     </data>
 </root>

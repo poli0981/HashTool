@@ -16,25 +16,25 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Alat Hash</value>
     </data>
     <data name="Menu_Create">
         <value>Jana Hash</value>
     </data>
     <data name="Menu_Check">
-        <value>Semak Hash</value>
+        <value>Sahkan Hash</value>
     </data>
     <data name="Menu_Settings">
         <value>Tetapan</value>
     </data>
     <data name="Menu_Update">
-        <value>Kemas Kini</value>
+        <value>Kemas kini</value>
     </data>
     <data name="Menu_Theme">
         <value>Tema</value>
     </data>
     <data name="Menu_About">
-        <value>Perihal</value>
+        <value>Mengenai</value>
     </data>
     <data name="Menu_Developer">
         <value>Pembangun</value>
@@ -45,17 +45,20 @@
     <data name="Btn_Clear">
         <value>Kosongkan Senarai</value>
     </data>
+    <data name="Btn_ClearHashes">
+        <value>Kosongkan Hash</value>
+    </data>
     <data name="Btn_CalcAll">
-        <value>HITUNG SEMUA</value>
+        <value>KIRA SEMUA</value>
     </data>
     <data name="Btn_Compress">
         <value>Mampat (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>SEMAK SEMUA</value>
+        <value>SAHKAN SEMUA</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Semak Sekarang</value>
+        <value>Sahkan Sekarang</value>
     </data>
     <data name="Btn_Install">
         <value>Pasang</value>
@@ -70,7 +73,7 @@
         <value>Jana Hash &amp; Mampat</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Semakan Berkelompok</value>
+        <value>Pengesahan Kelompok</value>
     </data>
     <data name="Title_Update">
         <value>Semak Kemas Kini</value>
@@ -79,34 +82,34 @@
         <value>Amaran Versi Pembangun</value>
     </data>
     <data name="Title_About">
-        <value>Perihal</value>
+        <value>Mengenai</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Petua: Shift+C untuk Hitung Semua, Shift+Z untuk Mampat, Ctrl+F untuk Tambah Fail.</value>
+        <value>Petua: Shift+C untuk Kira, Shift+Z untuk Mampat, Ctrl+F untuk Tambah.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Petua: Shift+A untuk Semak Semua, Ctrl+F untuk Tambah Fail, Ctrl+Shift+H untuk Kosongkan Senarai.</value>
+        <value>Petua: Shift+A untuk Sahkan, Ctrl+F untuk Tambah, Ctrl+Shift+H untuk Kosongkan.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Sedia</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Contoh:</value>
+        <value>Sampel:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>Versi semasa: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Saluran keluaran:</value>
+        <value>Saluran pelepasan:</value>
     </data>
     <data name="Lbl_TotalFiles">
         <value>Jumlah fail: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabil</value>
+        <value>Stabil (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Edisi Pembangun</value>
+        <value>Pembangun (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Bahasa</value>
@@ -118,7 +121,7 @@
         <value>Gaya tema</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Terang/Gelap</value>
+        <value>Cerah/Gelap</value>
     </data>
     <data name="Settings_Font">
         <value>Fon</value>
@@ -127,7 +130,7 @@
         <value>Saiz fon (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Pilih fon optimum secara automatik untuk bahasa</value>
+        <value>Pilih fon optimum untuk bahasa secara automatik</value>
     </data>
     <data name="Settings_LockFont">
         <value>Kunci sebagai fon lalai</value>
@@ -136,16 +139,16 @@
         <value>Skala UI</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Sorok Nilai Hash (Keselamatan)</value>
+        <value>Sembunyikan Nilai Hash (Keselamatan)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Set Semula Tema</value>
+        <value>Tetapkan Semula</value>
     </data>
     <data name="Settings_Other">
         <value>Privasi &amp; Keselamatan</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Jadikan Lalai</value>
+        <value>Tetapkan sebagai Lalai</value>
     </data>
     <data name="Settings_CustomColor">
         <value>Warna Teks Tersuai</value>
@@ -157,34 +160,34 @@
         <value>Jalankan sebagai Pentadbir</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Perlukan mula semula. Benarkan akses ke fail dilindungi.</value>
+        <value>Perlu dimulakan semula. Membenarkan akses kepada fail yang dilindungi.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Had Saiz Fail Masukan</value>
+        <value>Had Saiz Fail Input</value>
     </data>
     <data name="Settings_FileSizeDesc">
         <value>Saiz maksimum fail untuk diproses.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Had Masa Paksa Keluar</value>
+        <value>Masa Tamat Berhenti Paksa</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Masa (saat) sebelum menganggap app tersekat.</value>
+        <value>Masa (saat) sebelum apl dianggap tergendala.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Had Masa Pemprosesan Fail</value>
+        <value>Masa Tamat Pemprosesan Fail</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Batalkan jika satu fail terlalu lama.</value>
+        <value>Batal jika satu fail mengambil masa terlalu lama.</value>
     </data>
     <data name="Settings_Emergency">
         <value>Tindakan Kecemasan</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Paksa keluar app dan batalkan semua tugas serta-merta.</value>
+        <value>Berhentikan apl secara paksa dan batalkan semua tugas serta-merta.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Paksa Keluar &amp; Batalkan Semua</value>
+        <value>Berhenti Paksa &amp; Batal Semua</value>
     </data>
     <data name="Settings_Configuration">
         <value>Konfigurasi</value>
@@ -193,22 +196,22 @@
         <value>Kunci Tetapan (Simpan sebagai Lalai)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Cegah perubahan tidak sengaja. Hanya Penyorokan Hash boleh diubah.</value>
+        <value>Elakkan perubahan yang tidak disengajakan. Hanya 'Topeng Hash' kekal boleh dilaras.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Set Semula Semua Tetapan</value>
+        <value>Tetapkan Semula Semua</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Pulihkan ke lalai kilang.</value>
+        <value>Kembalikan kepada tetapan kilang.</value>
     </data>
     <data name="Settings_ConfigPath">
         <value>Laluan Fail Konfigurasi</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Paparkan laluan penuh dan salin ke papan keratan.</value>
+        <value>Tunjukkan laluan penuh dan salin ke papan keratan.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Paparkan Laluan</value>
+        <value>Tunjukkan Laluan</value>
     </data>
     <data name="Settings_AutoSave">
         <value>Tetapan disimpan secara automatik ke config.json</value>
@@ -217,7 +220,7 @@
         <value>Mod Pembangun</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Aktifkan pengelogan dan alat penyahpepijatan lanjutan.</value>
+        <value>Dayakan pembalakan lanjutan dan alat penyahpepijatan.</value>
     </data>
     <data name="Dev_Console">
         <value>Konsol Pembangun</value>
@@ -226,7 +229,7 @@
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Sedang Rakam</value>
+        <value>Merakam</value>
     </data>
     <data name="Dev_Paused">
         <value>Dijeda</value>
@@ -235,7 +238,7 @@
         <value>Simpan ke Fail</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Tidak Simpan</value>
+        <value>Jangan Simpan</value>
     </data>
     <data name="Dev_Clear">
         <value>Kosongkan Konsol</value>
@@ -259,12 +262,10 @@
         <value>Hak Cipta</value>
     </data>
     <data name="About_Desc">
-        <value>Alat hebat untuk menjana, menyemak, dan memampat hash fail. Atau sekurang-kurangnya saya fikir begitu lah
-            :)
-        </value>
+        <value>Alat yang berkuasa untuk menjana, mengesahkan, dan memampatkan hash fail. Atau sekurang-kurangnya saya fikir begitu :)</value>
     </data>
     <data name="About_License">
-        <value>Dikeluarkan di bawah lesen MIT.</value>
+        <value>Dikeluarkan di bawah Lesen MIT.</value>
     </data>
     <data name="About_Tech">
         <value>Teknologi</value>
@@ -300,22 +301,22 @@
         <value>Menunggu hash/input...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Fail asal hilang!</value>
+        <value>Fail asal tiada!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Nilai hash hilang (Masukkan atau muat fail hash)</value>
+        <value>Nilai hash tiada (Masukkan atau muat fail)</value>
     </data>
     <data name="Status_Valid">
-        <value>SAHIH</value>
+        <value>SAH</value>
     </data>
     <data name="Status_Invalid">
-        <value>TIDAK PADAN!</value>
+        <value>TIDAK SEPADAN!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Fail hash dimuat</value>
+        <value>Fail hash dimuatkan</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Nama fail hash tidak padan!</value>
+        <value>Nama fail hash tidak sepadan!</value>
     </data>
     <data name="Status_NoHashFound">
         <value>Fail tidak mengandungi hash!</value>
@@ -324,13 +325,13 @@
         <value>Menyemak kemas kini...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Versi baru dikesan!</value>
+        <value>Versi baharu dikesan!</value>
     </data>
     <data name="Status_Latest">
-        <value>Anda menggunakan versi terbaru.</value>
+        <value>Anda menggunakan versi terkini.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Ralat semakan: {0}</value>
+        <value>Ralat semakan kemas kini: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>Memuat turun dan memasang...</value>
@@ -339,36 +340,37 @@
         <value>Ralat pemasangan: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Sedia (Daripada fail .hash)</value>
+        <value>Sedia (Dari fail .hash)</value>
     </data>
     <data name="Status_LostOriginal">
         <value>Fail asal hilang!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Nama fail hash tidak padan!</value>
+        <value>Nama fail hash tidak sepadan!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Fail hash berjaya di-drop</value>
+        <value>Fail hash berjaya dilepaskan</value>
     </data>
     <data name="Status_DropNoHash">
         <value>Fail tidak mengandungi hash!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Ralat baca fail</value>
+        <value>Ralat membaca fail</value>
     </data>
     <data name="Msg_Result_Title">
-        <value>Hasil</value>
+        <value>Keputusan</value>
     </data>
     <data name="Msg_Result_Content">
         <value>Pemprosesan selesai!
             ✅ Berjaya: {0}
             ❌ Gagal: {1}
+            ⛔ Dibatalkan: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Menyemak {0} fail.
-            ✅ Padan: {1}
-            ❌ Tidak Padan/Ralat: {2}
+            ✅ Sepadan: {1}
+            ❌ Tidak Sepadan/Ralat: {2}
             ⛔ Dibatalkan: {3}
         </value>
     </data>
@@ -376,16 +378,16 @@
         <value>Fail salah!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Fail hash tidak padan!
+        <value>Fail hash tidak sepadan!
 
             Fail asal: {0}
-            Fail dipilih: {1}
+            Fail yang dipilih: {1}
 
-            Sila pilih fail hash yang betul.
+            Sila pilih fail hash iringan yang betul.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Kemas Kini Baru</value>
+        <value>Kemas Kini Baharu</value>
     </data>
     <data name="Msg_UpdateContent">
         <value>Versi: {0}
@@ -393,20 +395,20 @@
             Perubahan:
             {1}
 
-            Klik 'Kemas Kini Sekarang' untuk muat turun.
+            Klik 'Kemas Kini Sekarang' untuk memuat turun.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Tiada kemas kini lebih baru.</value>
+        <value>Tiada kemas kini baharu ditemui.</value>
     </data>
     <data name="Msg_Error">
         <value>Ralat</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Tidak dapat baca fail hash ini.</value>
+        <value>Tidak dapat membaca fail hash ini.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Semak Konfigurasi</value>
+        <value>Semakan Konfigurasi</value>
     </data>
     <data name="Msg_ConfigExists">
         <value>Fail wujud di:
@@ -426,84 +428,84 @@
         <value>Mod Pentadbir</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Sila mulakan semula aplikasi untuk perubahan berkuat kuasa.</value>
+        <value>Sila mulakan semula aplikasi untuk menguatkuasakan perubahan.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Tidak dapat buka folder: {0}</value>
+        <value>Tidak dapat membuka folder: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
         <value>⚠️ AMARAN VERSI PEMBANGUN</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Anda akan bertukar ke saluran kemas kini Pembangun (Pre-release).
+        <value>Anda akan bertukar ke saluran kemas kini Pembangun (Pralelepasan).
 
             Versi ini mungkin mengandungi pepijat, tidak stabil, dan boleh menyebabkan kehilangan data.
 
-            Saya tidak bertanggungjawab atas sebarang masalah daripada penggunaan versi ini.
+            Saya tidak bertanggungjawab ke atas sebarang masalah yang timbul daripada menggunakan versi ini.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Saya telah baca dan setuju. Saya tanggung jawab penuh.</value>
+        <value>Saya telah membaca dan bersetuju. Saya memikul tanggungjawab penuh.</value>
     </data>
     <data name="Dialog_SaveHash">
         <value>Simpan Fail Hash</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Simpan Fail Dimampatkan</value>
+        <value>Simpan Fail Mampat</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Pilih Fail untuk Hash</value>
+        <value>Pilih Fail untuk di-Hash</value>
     </data>
     <data name="Dialog_SelectHashFile">
         <value>Pilih fail hash untuk: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Pilih Fail (Asal atau Fail .hash)</value>
+        <value>Pilih Fail (Asal atau fail .hash)</value>
     </data>
     <data name="Header_Fallback">
         <value>Lanjutan: Kembali ke Versi Lama</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Ciri ini membenarkan pemasangan versi tertentu jika versi baru bermasalah.</value>
+        <value>Ciri ini membolehkan anda memasang versi tertentu jika versi baharu mempunyai masalah.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Tampal/Drop di sini...</value>
+        <value>Tampal atau Lepaskan di sini...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Saat</value>
     </data>
     <data name="Tip_Verify">
-        <value>Semak</value>
+        <value>Sahkan</value>
     </data>
     <data name="Tip_Stop">
-        <value>Henti</value>
+        <value>Berhenti</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>Buang Fail</value>
+        <value>Keluarkan Fail</value>
     </data>
     <data name="Tip_CopyHash">
         <value>Salin Hash</value>
     </data>
     <data name="Tip_Compute">
-        <value>Hitung</value>
+        <value>Kira</value>
+    </data>
+    <data name="Tip_ClearHash">
+        <value>Kosongkan Hash</value>
     </data>
     <data name="Tip_BrowseHash">
-        <value>Lihat Hash</value>
+        <value>Semak Imbas Hash</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>Gelap</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>Terang</value>
+        <value>Cerah</value>
     </data>
     <data name="Settings_ThemeSystem">
         <value>Sistem</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
         <value>Tugas Dihentikan</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Fail {0} melebihi had {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
         <value>Ya</value>
@@ -521,28 +523,28 @@
         <value>Sahkan Keluar</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Keluar akan membatalkan semua tugas sedang berjalan. Yakin?</value>
+        <value>Keluar akan membatalkan semua tugas yang sedang berjalan. Adakah anda pasti?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Tugas dihentikan kerana tamat masa.</value>
+        <value>Tugas telah dihentikan kerana masa tamat.</value>
     </data>
     <data name="Dev_ToolTip_Save">
         <value>Simpan log nyahpepijat ke cakera.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Jeda pengelogan masa nyata.</value>
+        <value>Jeda pembalakan masa nyata.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Tunjuk Hash</value>
+        <value>Tunjukkan Hash</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Sorok Hash</value>
+        <value>Sembunyikan Hash</value>
     </data>
     <data name="Tip_CopyPath">
         <value>Salin Laluan</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Cakera anda penuh. Pilih lokasi lain lah :)</value>
+        <value>Cakera anda penuh. Sila pilih lokasi lain :)</value>
     </data>
     <data name="Tip_HashVisibility">
         <value>Keterlihatan Hash</value>
@@ -552,5 +554,183 @@
     </data>
     <data name="Settings_LockTheme">
         <value>Kunci tema ini sebagai lalai</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Melangkau {0} fail yang melebihi had ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Bahasa Sistem</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Kembali ke tetapan 'Auto' memerlukan mula semula untuk berkuat kuasa sepenuhnya. Adakah anda mahu meneruskan?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Tukar Bahasa</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Adakah anda pasti tentang perkara itu?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Jangan tunjukkan amaran ini lagi</value>
+    </data>
+    <data name="Error_Network">
+        <value>Ralat sambungan rangkaian. Sila periksa internet anda.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Ralat pelayan (5xx). Sila cuba lagi nanti.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Ralat klien (4xx). Sila periksa permintaan.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>Had kadar API GitHub dicapai. Sila cuba lagi nanti.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Tiada versi pralelepasan ditemui. Mengekalkan versi semasa.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Versi pralelepasan {0} tersedia.
+
+            {1}
+
+            Versi ini mungkin tidak stabil. Adakah anda mahu memuat turun?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Kosongkan Gagal</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>Mengeluarkan {0} item.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Masa Tinggal: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Tempoh Tugas: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Mengira...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Tambah Folder...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Folder yang dipilih kosong.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Pilih Folder untuk Diimbas</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Batal</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Had Pemprosesan</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Fail Maksimum setiap Imbasan Folder</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Hadkan jumlah fail yang ditambah dari folder untuk mengelakkan masalah prestasi.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Folder Maksimum Serentak</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Hadkan jumlah folder yang dipilih serentak.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Anda hanya boleh memilih sehingga {0} folder serentak.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Menambah {0} fail. Melangkau {1} fail kerana had.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Baca: {0}/s | Tulis: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Tunjukkan Kelajuan Baca/Tulis</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Tunjukkan kelajuan pemindahan masa nyata semasa operasi hash.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Mengira Hash...</value>
+    </data>
+    <data name="Size_All">
+        <value>Semua Saiz</value>
+    </data>
+    <data name="Size_Small">
+        <value>Kecil (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Sederhana (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Besar (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Sangat Besar (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Dokumen</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Dasar Privasi</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Syarat Perkhidmatan</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Perjanjian Lesen Pengguna Akhir</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Penafian</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>README</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Log Perubahan</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Penghargaan</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Memproses</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Gagal</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Cari mengikut nama...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Saiz</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>Profil GitHub</value>
+    </data>
+    <data name="Filter_All">
+        <value>Semua</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Kosongkan Memori</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Paksa kutipan sampah (GC) untuk mengosongkan RAM.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Bersihkan Memori</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Pembersihan memori dicetuskan.</value>
     </data>
 </root>

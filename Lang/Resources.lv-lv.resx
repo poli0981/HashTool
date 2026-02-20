@@ -16,13 +16,13 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Hash rīks</value>
     </data>
     <data name="Menu_Create">
-        <value>Izveidot jaucējvērtību</value>
+        <value>Ģenerēt Hash</value>
     </data>
     <data name="Menu_Check">
-        <value>Pārbaudīt jaucējvērtību</value>
+        <value>Pārbaudīt Hash</value>
     </data>
     <data name="Menu_Settings">
         <value>Iestatījumi</value>
@@ -31,7 +31,7 @@
         <value>Atjaunināt</value>
     </data>
     <data name="Menu_Theme">
-        <value>Tēma</value>
+        <value>Dizaina tēma</value>
     </data>
     <data name="Menu_About">
         <value>Par</value>
@@ -44,6 +44,9 @@
     </data>
     <data name="Btn_Clear">
         <value>Notīrīt sarakstu</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>Notīrīt Hash</value>
     </data>
     <data name="Btn_CalcAll">
         <value>APRĒĶINĀT VISU</value>
@@ -61,16 +64,16 @@
         <value>Instalēt</value>
     </data>
     <data name="Btn_Accept">
-        <value>Pieņemt</value>
+        <value>Piekrist</value>
     </data>
     <data name="Btn_Decline">
         <value>Noraidīt</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Izveidot jaucējvērtību un saspiest</value>
+        <value>Ģenerēt Hash un saspiest</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Masveida pārbaude</value>
+        <value>Pakešpārbaude</value>
     </data>
     <data name="Title_Update">
         <value>Pārbaudīt atjauninājumus</value>
@@ -82,10 +85,10 @@
         <value>Par</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Padoms: Shift+C aprēķināt visu, Shift+Z saspiest, Ctrl+F pievienot failus.</value>
+        <value>Padoms: Shift+C, lai aprēķinātu, Shift+Z, lai saspiestu, Ctrl+F, lai pievienotu failus.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Padoms: Shift+A pārbaudīt visu, Ctrl+F pievienot failus, Ctrl+Shift+H notīrīt sarakstu.</value>
+        <value>Padoms: Shift+A, lai pārbaudītu, Ctrl+F, lai pievienotu failus, Ctrl+Shift+H, lai notīrītu sarakstu.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Gatavs</value>
@@ -97,28 +100,28 @@
         <value>Pašreizējā versija: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Izlaiduma kanāls:</value>
+        <value>Laidiena kanāls:</value>
     </data>
     <data name="Lbl_TotalFiles">
         <value>Kopā faili: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabila</value>
+        <value>Stabila (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Izstrādātāja versija</value>
+        <value>Izstrādātāja (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Valoda</value>
     </data>
     <data name="Settings_Theme">
-        <value>Tēma</value>
+        <value>Dizaina tēma</value>
     </data>
     <data name="Settings_ThemeStyle">
         <value>Tēmas stils</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Gaišs/Tumšs</value>
+        <value>Gaiša/Tumša</value>
     </data>
     <data name="Settings_Font">
         <value>Fonts</value>
@@ -127,7 +130,7 @@
         <value>Fonta izmērs (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automātiski izvēlēties optimālo fontu valodai</value>
+        <value>Automātiski izvēlēties optimālu fontu valodai</value>
     </data>
     <data name="Settings_LockFont">
         <value>Bloķēt kā noklusējuma fontu</value>
@@ -136,10 +139,10 @@
         <value>UI mērogs</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Maskēt jaucējvērtības (Drošība)</value>
+        <value>Slēpt Hash vērtības (Drošība)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Atiestatīt tēmu</value>
+        <value>Atiestatīt iestatījumus</value>
     </data>
     <data name="Settings_Other">
         <value>Privātums un drošība</value>
@@ -151,40 +154,40 @@
         <value>Pielāgota teksta krāsa</value>
     </data>
     <data name="Settings_Advanced">
-        <value>Paplašināti</value>
+        <value>Papildu</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Palaist kā administrators</value>
+        <value>Palaist kā administratoram</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Nepieciešama pārstartēšana. Ļauj piekļūt aizsargātiem failiem.</value>
+        <value>Nepieciešama restartēšana. Ļauj piekļūt aizsargātiem failiem.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Ievades faila izmēra ierobežojums</value>
+        <value>Ievades faila lieluma ierobežojums</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maksimālais izmērs apstrādājamajiem failiem.</value>
+        <value>Maksimālais failu lielums apstrādei.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Piespiedu iziešanas taimauts</value>
+        <value>Piespiedu aizvēršanas taimauts</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Laiks (sekundēs) pirms aplikācijas tiek uzskatīta par iesaldētu.</value>
+        <value>Laiks (sekundēs), pirms lietotne tiek uzskatīta par iestrēgušu.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Faila apstrādes taimauts</value>
+        <value>Failu apstrādes taimauts</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Atcelt, ja viens fails aizņem pārāk ilgu laiku.</value>
+        <value>Atcelt, ja viena faila apstrāde aizņem pārāk daudz laika.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Ārkārtas darbība</value>
+        <value>Ārkārtas rīcība</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Piespiedu aplikācijas aizvēršana un visu uzdevumu tūlītēja atcelšana.</value>
+        <value>Piespiedu kārtā aizvērt lietotni un nekavējoties atcelt visus uzdevumus.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Piespiedu iziešana &amp; atcelt visu</value>
+        <value>Piespiedu aizvēršana un atcelt visu</value>
     </data>
     <data name="Settings_Configuration">
         <value>Konfigurācija</value>
@@ -193,13 +196,13 @@
         <value>Bloķēt iestatījumus (Saglabāt kā noklusējumu)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Novērst nejaušas izmaiņas. Tikai jaucējvērtības maskēšana paliek regulējama.</value>
+        <value>Novērst nejaušas izmaiņas. Tikai 'Slēpt Hash' paliek regulējams.</value>
     </data>
     <data name="Settings_ResetAll">
         <value>Atiestatīt visus iestatījumus</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Atjaunot rūpnīcas noklusējumus.</value>
+        <value>Atjaunot uz rūpnīcas noklusējumiem.</value>
     </data>
     <data name="Settings_ConfigPath">
         <value>Konfigurācijas faila ceļš</value>
@@ -211,13 +214,13 @@
         <value>Parādīt ceļu</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Iestatījumi automātiski saglabājas config.json</value>
+        <value>Iestatījumi tiek automātiski saglabāti config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
         <value>Izstrādātāja režīms</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Iespējot paplašinātu reģistrēšanu un atkļūdošanas rīkus.</value>
+        <value>Iespējot papildu reģistrēšanu un atkļūdošanas rīkus.</value>
     </data>
     <data name="Dev_Console">
         <value>Izstrādātāja konsole</value>
@@ -229,7 +232,7 @@
         <value>Ieraksta</value>
     </data>
     <data name="Dev_Paused">
-        <value>Pauzēts</value>
+        <value>Apturēts</value>
     </data>
     <data name="Dev_SaveToFile">
         <value>Saglabāt failā</value>
@@ -244,7 +247,7 @@
         <value>Kopēt visu</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Atvērt žurnāla mapi</value>
+        <value>Atvērt žurnālu mapi</value>
     </data>
     <data name="About_Author">
         <value>Autors</value>
@@ -259,11 +262,10 @@
         <value>Autortiesības</value>
     </data>
     <data name="About_Desc">
-        <value>Spēcīgs rīks failu jaucējvērtību ģenerēšanai, pārbaudei un saspiešanai. Vai vismaz tā es domāju :)
-        </value>
+        <value>Jaudīgs rīks failu hash ģenerēšanai, pārbaudei un saspiešanai. Vai vismaz es tā domāju :)</value>
     </data>
     <data name="About_License">
-        <value>Izlaists ar MIT licenci.</value>
+        <value>Izlaists saskaņā ar MIT licenci.</value>
     </data>
     <data name="About_Tech">
         <value>Tehnoloģija</value>
@@ -272,10 +274,10 @@
         <value>Izveidots ar C# un .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>AI palīdzība</value>
+        <value>AI atbalsts</value>
     </data>
     <data name="About_AIContent">
-        <value>Šī programmatūra izstrādāta ar AI palīdzību (Gemini 3 Pro un Grok 4.1).</value>
+        <value>Šī programmatūra tika izstrādāta ar AI palīdzību (Gemini 3 Pro un Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
         <value>Apstrādā ({0})...</value>
@@ -302,34 +304,34 @@
         <value>Trūkst oriģinālā faila!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Trūkst hash vērtības (Ievadiet vai ielādējiet hash failu)</value>
+        <value>Trūkst hash vērtības (Ievadiet vai ielādējiet failu)</value>
     </data>
     <data name="Status_Valid">
         <value>DERĪGS</value>
     </data>
     <data name="Status_Invalid">
-        <value>NEDERĪGS!</value>
+        <value>NESAKRĪT!</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>Hash fails ielādēts</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hash faila nosaukums nesakrīt!</value>
+        <value>Hash faila nosaukuma nesakritība!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Failā nav hash!</value>
+        <value>Fails nesatur hash!</value>
     </data>
     <data name="Status_Checking">
         <value>Pārbauda atjauninājumus...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Atklāta jauna versija!</value>
+        <value>Atrasta jauna versija!</value>
     </data>
     <data name="Status_Latest">
         <value>Jūs izmantojat jaunāko versiju.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Atjauninājumu pārbaudes kļūda: {0}</value>
+        <value>Atjaunināšanas pārbaudes kļūda: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>Lejupielādē un instalē...</value>
@@ -344,13 +346,13 @@
         <value>Oriģinālais fails pazaudēts!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hash faila nosaukums nesakrīt!</value>
+        <value>Hash faila nosaukuma nesakritība!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hash fails veiksmīgi nomests</value>
+        <value>Hash fails veiksmīgi pievienots</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Failā nav hash!</value>
+        <value>Fails nesatur hash!</value>
     </data>
     <data name="Status_ReadError">
         <value>Faila lasīšanas kļūda</value>
@@ -362,25 +364,26 @@
         <value>Apstrāde pabeigta!
             ✅ Veiksmīgi: {0}
             ❌ Neveiksmīgi: {1}
+            ⛔ Atcelti: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Pārbaudīti {0} faili.
             ✅ Sakrīt: {1}
             ❌ Nesakrīt/Kļūda: {2}
-            ⛔ Atcelts: {3}
+            ⛔ Atcelti: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Nepareizs fails!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hash fails nesakrīt!
+        <value>Hash faila nesakritība!
 
             Oriģinālais fails: {0}
             Izvēlētais fails: {1}
 
-            Lūdzu, izvēlieties pareizo pievienoto hash failu.
+            Lūdzu, izvēlieties pareizo pavadošo hash failu.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -392,11 +395,11 @@
             Izmaiņas:
             {1}
 
-            Klikšķiniet 'Atjaunināt tagad', lai lejupielādētu.
+            Noklikšķiniet uz 'Atjaunināt tagad', lai lejupielādētu.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Nav jaunāku atjauninājumu.</value>
+        <value>Jaunāki atjauninājumi nav atrasti.</value>
     </data>
     <data name="Msg_Error">
         <value>Kļūda</value>
@@ -408,12 +411,12 @@
         <value>Konfigurācijas pārbaude</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Fails pastāv:
+        <value>Fails eksistē šeit:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Fails nepastāv!</value>
+        <value>Fails neeksistē!</value>
     </data>
     <data name="Msg_ConfigCreated">
         <value>Fails veiksmīgi izveidots!</value>
@@ -425,7 +428,7 @@
         <value>Administratora režīms</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Lūdzu, restartējiet lietojumprogrammu, lai izmaiņas stātos spēkā.</value>
+        <value>Lūdzu, restartējiet programmu, lai izmaiņas stātos spēkā.</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>Nevar atvērt mapi: {0}</value>
@@ -434,45 +437,45 @@
         <value>⚠️ IZSTRĀDĀTĀJA VERSIJAS BRĪDINĀJUMS</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Jūs gatavojaties pārslēgties uz izstrādātāja (priekšizlaiduma) atjauninājumu kanālu.
+        <value>Jūs gatavojaties pārslēgties uz Izstrādātāja (Pre-release) atjaunināšanas kanālu.
 
-            Šī versija var saturēt kļūdas, būt nestabila un izraisīt datu zudumu.
+            Šajā versijā var būt kļūdas, tā var būt nestabila un izraisīt datu zudumu.
 
-            Es neesmu atbildīgs par jebkādām problēmām, kas radušās no šīs versijas izmantošanas.
+            Es neesmu atbildīgs par jebkādām problēmām, kas radušās, izmantojot šo versiju.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
         <value>Esmu izlasījis un piekrītu. Es uzņemos pilnu atbildību.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Saglabāt hash failu</value>
+        <value>Saglabāt Hash failu</value>
     </data>
     <data name="Dialog_SaveZip">
         <value>Saglabāt saspiesto failu</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Izvēlēties failus hash</value>
+        <value>Atlasiet failus hash aprēķinam</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Izvēlēties hash failu priekš: {0}</value>
+        <value>Atlasiet hash failu priekš: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Izvēlēties failus (Oriģināls vai .hash fails)</value>
+        <value>Atlasiet failus (Oriģinālais vai .hash fails)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Paplašināti: Atgriezties pie vecākas versijas</value>
+        <value>Papildu: Atgriezties pie vecākas versijas</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Šī funkcija ļauj instalēt konkrētu versiju, ja jaunā rada problēmas.</value>
+        <value>Šī funkcija ļauj instalēt konkrētu versiju, ja jaunajai ir problēmas.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Ielīmēt/Nomet šeit...</value>
+        <value>Ielīmējiet vai Nometiet šeit...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Sekundes</value>
     </data>
     <data name="Tip_Verify">
-        <value>Verificēt</value>
+        <value>Pārbaudīt</value>
     </data>
     <data name="Tip_Stop">
         <value>Apturēt</value>
@@ -481,34 +484,34 @@
         <value>Noņemt failu</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Kopēt hash</value>
+        <value>Kopēt Hash</value>
     </data>
     <data name="Tip_Compute">
         <value>Aprēķināt</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Notīrīt Hash</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Pārlūkot hash</value>
+        <value>Pārlūkot Hash</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>Tumšs</value>
+        <value>Tumša</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>Gaišs</value>
+        <value>Gaiša</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>Sistēma</value>
+        <value>Sistēmas</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
         <value>Uzdevums apturēts</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Fails {0} pārsniedz ierobežojumu {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
         <value>Jā</value>
     </data>
     <data name="Btn_OK">
-        <value>OK</value>
+        <value>Labi</value>
     </data>
     <data name="Btn_No">
         <value>Nē</value>
@@ -520,36 +523,214 @@
         <value>Apstiprināt iziešanu</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Iziešana atcels visus pašlaik darbojošos uzdevumus. Vai esat pārliecināts?</value>
+        <value>Iziešana atcels visus pašlaik notiekošos uzdevumus. Vai esat pārliecināts?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Uzdevums apturēts laika ierobežojuma dēļ.</value>
+        <value>Uzdevums tika apturēts taimauta dēļ.</value>
     </data>
     <data name="Dev_ToolTip_Save">
         <value>Saglabāt atkļūdošanas žurnālu diskā.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Apturēt reālā laika žurnālrakstīšanu.</value>
+        <value>Pauzēt reāllaika reģistrēšanu.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Rādīt hash</value>
+        <value>Rādīt Hash</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Slēpt hash</value>
+        <value>Slēpt Hash</value>
     </data>
     <data name="Tip_CopyPath">
         <value>Kopēt ceļu</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Jūsu disks ir pilns. Izvēlieties citu vietu brāl :)</value>
+        <value>Jūsu disks ir pilns. Lūdzu, izvēlieties citu vietu :)</value>
     </data>
     <data name="Tip_HashVisibility">
         <value>Hash redzamība</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Nav failu. Sāciet, noklikšķinot uz 'Pievienot failus'.</value>
+        <value>Nav failu. Noklikšķiniet uz 'Pievienot failus', lai sāktu.</value>
     </data>
     <data name="Settings_LockTheme">
         <value>Bloķēt šo tēmu kā noklusējumu</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Izlaisti {0} faili, kas pārsniedz ierobežojumu ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Sistēmas valoda</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Lai atgrieztos pie iestatījuma 'Automātiski', ir nepieciešama restartēšana. Vai vēlaties turpināt?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Valodas maiņa</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Vai esat pārliecināts par to?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Vairs nerādīt šo brīdinājumu</value>
+    </data>
+    <data name="Error_Network">
+        <value>Tīkla savienojuma kļūda. Lūdzu, pārbaudiet interneta savienojumu.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Servera kļūda (5xx). Lūdzu, mēģiniet vēlreiz vēlāk.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Klienta kļūda (4xx). Lūdzu, pārbaudiet pieprasījumu.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>Pārsniegts GitHub API ātruma ierobežojums. Lūdzu, mēģiniet vēlreiz vēlāk.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Pirmsizlaides versija netika atrasta. Saglabāta pašreizējā versija.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Ir pieejama pirmsizlaides versija {0}.
+
+            {1}
+
+            Šī versija var būt nestabila. Vai vēlaties lejupielādēt?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Notīrīt neizdevušos</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>Noņemti {0} vienumi.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Atlikušais laiks: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Uzdevuma ilgums: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Aprēķina...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Pievienot mapi...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Atlasītā mape ir tukša.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Atlasiet mapi skenēšanai</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Atcelt</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Apstrādes ierobežojumi</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Maks. failu skaits mapes skenēšanā</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Ierobežot failu skaitu, kas pievienoti no mapes, lai novērstu veiktspējas problēmas.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Maks. mapju skaits vienlaikus</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Ierobežot vienlaikus atlasīto mapju skaitu.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Vienlaikus varat atlasīt līdz {0} mapēm.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Pievienoti {0} faili. Izlaisti {1} faili ierobežojuma dēļ.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Lasīt: {0}/s | Rakstīt: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Rādīt lasīšanas/rakstīšanas ātrumu</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Rādīt reāllaika pārsūtīšanas ātrumu hash operāciju laikā.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Aprēķina Hash...</value>
+    </data>
+    <data name="Size_All">
+        <value>Visi izmēri</value>
+    </data>
+    <data name="Size_Small">
+        <value>Mazi (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Vidēji (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Lieli (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Ļoti lieli (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Dokumenti</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Privātuma politika</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Pakalpojumu sniegšanas noteikumi</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Lietotāja licences līgums (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Atruna</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>LASĪT MANI (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Izmaiņu žurnāls</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Pateicības</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Apstrādā</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Neizdevās</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Meklēt pēc nosaukuma...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Izmērs</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub profils</value>
+    </data>
+    <data name="Filter_All">
+        <value>Visi</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Atbrīvot atmiņu</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Piespiest atkritumu savākšanu (GC), lai atbrīvotu RAM.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Notīrīt atmiņu</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Atmiņas tīrīšana aktivizēta.</value>
     </data>
 </root>

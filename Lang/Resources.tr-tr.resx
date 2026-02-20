@@ -16,7 +16,7 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Hash Aracı</value>
     </data>
     <data name="Menu_Create">
         <value>Hash Oluştur</value>
@@ -45,6 +45,9 @@
     <data name="Btn_Clear">
         <value>Listeyi Temizle</value>
     </data>
+    <data name="Btn_ClearHashes">
+        <value>Hash'leri Temizle</value>
+    </data>
     <data name="Btn_CalcAll">
         <value>TÜMÜNÜ HESAPLA</value>
     </data>
@@ -67,25 +70,25 @@
         <value>Reddet</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Hash Oluştur &amp; Sıkıştır</value>
+        <value>Hash Oluştur ve Sıkıştır</value>
     </data>
     <data name="Title_CheckHash">
         <value>Toplu Doğrulama</value>
     </data>
     <data name="Title_Update">
-        <value>Güncellemeleri Kontrol Et</value>
+        <value>Güncellemeleri Denetle</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Geliştirici Sürüm Uyarısı</value>
+        <value>Geliştirici Sürümü Uyarısı</value>
     </data>
     <data name="Title_About">
         <value>Hakkında</value>
     </data>
     <data name="Help_CreateHash">
-        <value>İpucu: Shift+C Tümünü Hesapla, Shift+Z Sıkıştır, Ctrl+F Dosya Ekle.</value>
+        <value>İpucu: Hesaplamak için Shift+C, Sıkıştırmak için Shift+Z, Eklemek için Ctrl+F.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>İpucu: Shift+A Tümünü Doğrula, Ctrl+F Dosya Ekle, Ctrl+Shift+H Listeyi Temizle.</value>
+        <value>İpucu: Doğrulamak için Shift+A, Eklemek için Ctrl+F, Temizlemek için Ctrl+Shift+H.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Hazır</value>
@@ -97,16 +100,16 @@
         <value>Geçerli sürüm: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Yayın kanalı:</value>
+        <value>Sürüm kanalı:</value>
     </data>
     <data name="Lbl_TotalFiles">
         <value>Toplam dosya: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Kararlı</value>
+        <value>Kararlı (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Geliştirici Sürümü</value>
+        <value>Geliştirici (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Dil</value>
@@ -115,7 +118,7 @@
         <value>Tema</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>Tema stili</value>
+        <value>Tema Stili</value>
     </data>
     <data name="Settings_ThemeVariant">
         <value>Açık/Koyu</value>
@@ -124,28 +127,28 @@
         <value>Yazı Tipi</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Yazı Boyutu (pt)</value>
+        <value>Yazı Tipi Boyutu (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Dil için en iyi yazı tipini otomatik seç</value>
+        <value>Dil için en uygun yazı tipini otomatik seç</value>
     </data>
     <data name="Settings_LockFont">
         <value>Varsayılan yazı tipi olarak kilitle</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI Ölçeği</value>
+        <value>Arayüz Ölçeği</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Hash Değerlerini Maskele (Güvenlik)</value>
+        <value>Hash Değerlerini Gizle (Güvenlik)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Temayı Sıfırla</value>
+        <value>Ayarları Sıfırla</value>
     </data>
     <data name="Settings_Other">
-        <value>Gizlilik &amp; Güvenlik</value>
+        <value>Gizlilik ve Güvenlik</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Varsayılan Yap</value>
+        <value>Varsayılan Olarak Ayarla</value>
     </data>
     <data name="Settings_CustomColor">
         <value>Özel Metin Rengi</value>
@@ -157,52 +160,52 @@
         <value>Yönetici Olarak Çalıştır</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Yeniden başlatma gerektirir. Korumalı dosyalara erişim izni verir.</value>
+        <value>Yeniden başlatma gerektirir. Korumalı dosyalara erişim sağlar.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Giriş Dosya Boyutu Sınırı</value>
+        <value>Girdi Dosyası Boyut Sınırı</value>
     </data>
     <data name="Settings_FileSizeDesc">
         <value>İşlenecek dosyalar için maksimum boyut.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Zorla Çıkış Zaman Aşımı</value>
+        <value>Zorla Kapatma Zaman Aşımı</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Uygulama donmuş kabul edilmeden önceki süre (saniye).</value>
+        <value>Uygulamanın donmuş sayılmasından önceki süre (saniye).</value>
     </data>
     <data name="Settings_FileTimeout">
         <value>Dosya İşleme Zaman Aşımı</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Tek dosya çok uzun sürerse iptal et.</value>
+        <value>Tek bir dosya çok uzun sürerse iptal et.</value>
     </data>
     <data name="Settings_Emergency">
         <value>Acil Durum Eylemi</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Uygulamayı zorla kapat ve tüm görevleri hemen iptal et.</value>
+        <value>Uygulamayı zorla kapat ve tüm görevleri anında iptal et.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Zorla Çıkış &amp; Tümünü İptal Et</value>
+        <value>Zorla Kapat ve Tümünü İptal Et</value>
     </data>
     <data name="Settings_Configuration">
         <value>Yapılandırma</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Ayarları Kilitle (Varsayılan Olarak Kaydet)</value>
+        <value>Ayarları Kilitle (Varsayılan olarak kaydet)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Kazara değişiklikleri önle. Sadece Hash Maskeleme ayarlanabilir kalır.</value>
+        <value>Yanlışlıkla yapılan değişiklikleri önler. Sadece 'Hash Gizle' değiştirilebilir.</value>
     </data>
     <data name="Settings_ResetAll">
         <value>Tüm Ayarları Sıfırla</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Fabrika varsayılanlarına geri dön.</value>
+        <value>Fabrika ayarlarına geri dön.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Yapılandırma Dosya Yolu</value>
+        <value>Yapılandırma Dosyası Yolu</value>
     </data>
     <data name="Settings_ConfigDesc">
         <value>Tam yolu göster ve panoya kopyala.</value>
@@ -211,13 +214,13 @@
         <value>Yolu Göster</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Ayarlar config.json'a otomatik kaydedilir</value>
+        <value>Ayarlar otomatik olarak config.json dosyasına kaydedilir</value>
     </data>
     <data name="Settings_DeveloperMode">
         <value>Geliştirici Modu</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Gelişmiş günlüğe kaydetme ve hata ayıklama araçlarını etkinleştir.</value>
+        <value>Gelişmiş günlük kaydı ve hata ayıklama araçlarını etkinleştir.</value>
     </data>
     <data name="Dev_Console">
         <value>Geliştirici Konsolu</value>
@@ -253,29 +256,28 @@
         <value>Yazılım</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Üçüncü Taraf Kütüphaneler</value>
+        <value>Üçüncü Taraf Kütüphaneleri</value>
     </data>
     <data name="About_Copyright">
         <value>Telif Hakkı</value>
     </data>
     <data name="About_Desc">
-        <value>Dosya hash'lerini oluşturma, doğrulama ve sıkıştırma için güçlü araç. Ya da ben öyle düşünüyorum :)
-        </value>
+        <value>Dosya hash'lerini oluşturmak, doğrulamak ve sıkıştırmak için güçlü bir araç. Veya en azından ben öyle düşünüyorum :)</value>
     </data>
     <data name="About_License">
-        <value>MIT Lisansı altında yayınlandı.</value>
+        <value>MIT Lisansı altında yayınlanmıştır.</value>
     </data>
     <data name="About_Tech">
         <value>Teknoloji</value>
     </data>
     <data name="About_TechContent">
-        <value>C# ve .NET 10.0.102 ile inşa edildi.</value>
+        <value>C# ve .NET 10.0.102 ile oluşturulmuştur.</value>
     </data>
     <data name="About_AI">
-        <value>AI Yardımı</value>
+        <value>Yapay Zeka (AI) Yardımı</value>
     </data>
     <data name="About_AIContent">
-        <value>Bu yazılım AI yardımıyla geliştirildi (Gemini 3 Pro ve Grok 4.1).</value>
+        <value>Bu yazılım AI (Gemini 3 Pro ve Grok 4.1) yardımıyla geliştirilmiştir.</value>
     </data>
     <data name="Status_Processing">
         <value>İşleniyor ({0})...</value>
@@ -302,13 +304,13 @@
         <value>Orijinal dosya eksik!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash değeri eksik (Gir veya hash dosyası yükle)</value>
+        <value>Hash değeri eksik (Girin veya dosyayı yükleyin)</value>
     </data>
     <data name="Status_Valid">
         <value>GEÇERLİ</value>
     </data>
     <data name="Status_Invalid">
-        <value>EŞLEŞMEZ!</value>
+        <value>EŞLEŞMİYOR!</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>Hash dosyası yüklendi</value>
@@ -320,7 +322,7 @@
         <value>Dosya hash içermiyor!</value>
     </data>
     <data name="Status_Checking">
-        <value>Güncellemeler kontrol ediliyor...</value>
+        <value>Güncellemeler denetleniyor...</value>
     </data>
     <data name="Status_NewVersion">
         <value>Yeni sürüm tespit edildi!</value>
@@ -329,7 +331,7 @@
         <value>En son sürümü kullanıyorsunuz.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Güncelleme kontrol hatası: {0}</value>
+        <value>Güncelleme denetimi hatası: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>İndiriliyor ve yükleniyor...</value>
@@ -362,12 +364,13 @@
         <value>İşlem tamamlandı!
             ✅ Başarılı: {0}
             ❌ Başarısız: {1}
+            ⛔ İptal: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>{0} dosya kontrol edildi.
-            ✅ Eşleşti: {1}
-            ❌ Eşleşmedi/Hata: {2}
+            ✅ Eşleşen: {1}
+            ❌ Eşleşmeyen/Hata: {2}
             ⛔ İptal: {3}
         </value>
     </data>
@@ -375,7 +378,7 @@
         <value>Yanlış dosya!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hash dosyası eşleşmiyor!
+        <value>Hash dosyası uyuşmazlığı!
 
             Orijinal dosya: {0}
             Seçilen dosya: {1}
@@ -392,28 +395,28 @@
             Değişiklikler:
             {1}
 
-            İndirmek için 'Şimdi Güncelle' tıklayın.
+            İndirmek için 'Şimdi Güncelle'ye tıklayın.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Daha yeni güncelleme bulunamadı.</value>
+        <value>Daha yeni bir güncelleme bulunamadı.</value>
     </data>
     <data name="Msg_Error">
         <value>Hata</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Bu hash dosyasını okuyamıyor.</value>
+        <value>Bu hash dosyası okunamıyor.</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>Yapılandırma Kontrolü</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Dosya burada:
+        <value>Dosya şu konumda mevcut:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Dosya yok!</value>
+        <value>Dosya mevcut değil!</value>
     </data>
     <data name="Msg_ConfigCreated">
         <value>Dosya başarıyla oluşturuldu!</value>
@@ -425,24 +428,24 @@
         <value>Yönetici Modu</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Değişikliklerin etkili olması için uygulamayı yeniden başlatın.</value>
+        <value>Değişikliklerin geçerli olması için lütfen uygulamayı yeniden başlatın.</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>Klasör açılamıyor: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ GELİŞTİRİCİ SÜRÜM UYARISI</value>
+        <value>⚠️ GELİŞTİRİCİ SÜRÜMÜ UYARISI</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Geliştirici (Ön sürüm) güncelleme kanalına geçmek üzeresiniz.
+        <value>Geliştirici (Pre-release) güncelleme kanalına geçmek üzeresiniz.
 
             Bu sürüm hatalar içerebilir, kararsız olabilir ve veri kaybına neden olabilir.
 
-            Bu sürümü kullanmaktan kaynaklanan herhangi bir sorundan sorumlu değilim.
+            Bu sürümün kullanılmasından kaynaklanan hiçbir sorundan sorumlu değilim.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Okudum ve kabul ediyorum. Tam sorumluluğu kabul ediyorum.</value>
+        <value>Okudum ve kabul ediyorum. Tüm sorumluluğu üstleniyorum.</value>
     </data>
     <data name="Dialog_SaveHash">
         <value>Hash Dosyasını Kaydet</value>
@@ -451,22 +454,22 @@
         <value>Sıkıştırılmış Dosyayı Kaydet</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Hash İçin Dosya Seç</value>
+        <value>Hashlenecek Dosyaları Seçin</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>{0} için hash dosyası seç</value>
+        <value>{0} için hash dosyası seçin</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Dosya Seç (Orijinal veya .hash Dosyası)</value>
+        <value>Dosyaları Seçin (Orijinal veya .hash dosyası)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Gelişmiş: Eski Sürüme Dön</value>
+        <value>Gelişmiş: Eski sürüme geri dön</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Yeni sürümde sorun varsa belirli sürümü yüklemenize izin verir.</value>
+        <value>Bu özellik, yenisinde sorun varsa belirli bir sürümü yüklemenizi sağlar.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Buraya Yapıştır/Bırak...</value>
+        <value>Buraya Yapıştırın veya Bırakın...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Saniye</value>
@@ -486,8 +489,11 @@
     <data name="Tip_Compute">
         <value>Hesapla</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Hash Temizle</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Hash'e Göz At</value>
+        <value>Hash'e Gözat</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>Koyu</value>
@@ -500,9 +506,6 @@
     </data>
     <data name="Msg_TaskCancelled_Title">
         <value>Görev Durduruldu</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Dosya {0} {1} {2} sınırını aşıyor.</value>
     </data>
     <data name="Btn_Yes">
         <value>Evet</value>
@@ -520,7 +523,7 @@
         <value>Çıkışı Onayla</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Çıkış tüm devam eden görevleri iptal eder. Emin misiniz?</value>
+        <value>Çıkmak, devam eden tüm görevleri iptal edecektir. Emin misiniz?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
         <value>Zaman aşımı nedeniyle görev durduruldu.</value>
@@ -529,31 +532,205 @@
         <value>Hata ayıklama günlüğünü diske kaydet.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Gerçek zamanlı günlüğe kaydetmeyi duraklat.</value>
+        <value>Gerçek zamanlı günlük kaydını duraklat.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Hash'i Göster</value>
+        <value>Hash Göster</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Hash'i Gizle</value>
+        <value>Hash Gizle</value>
     </data>
     <data name="Tip_CopyPath">
         <value>Yolu Kopyala</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Sürücünüz dolu. Başka konum seçin ya :)</value>
+        <value>Diskiniz dolu. Lütfen başka bir konum seçin :)</value>
     </data>
     <data name="Tip_HashVisibility">
         <value>Hash Görünürlüğü</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Dosya yok. Başlamak için 'Dosya Ekle' tıklayın.</value>
+        <value>Dosya yok. Başlamak için 'Dosya Ekle'ye tıklayın.</value>
     </data>
     <data name="Settings_LockTheme">
         <value>Bu temayı varsayılan olarak kilitle</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
-        <value>Skipped {0} files exceeding limit ({1} {2}):
-            {3}</value>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Sınırı ({1} {2}) aşan {0} dosya atlandı:
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Sistem Dili</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>'Otomatik' ayarına geri dönmek, tam olarak etkili olması için yeniden başlatma gerektirir. Devam etmek istiyor musunuz?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Dil Değişikliği</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Bunu yapmak istediğinizden emin misiniz?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Bu uyarıyı bir daha gösterme</value>
+    </data>
+    <data name="Error_Network">
+        <value>Ağ bağlantısı hatası. Lütfen internetinizi kontrol edin.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Sunucu hatası (5xx). Lütfen daha sonra tekrar deneyin.</value>
+    </data>
+    <data name="Error_Client">
+        <value>İstemci hatası (4xx). Lütfen isteği kontrol edin.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>GitHub API hız sınırı aşıldı. Lütfen daha sonra tekrar deneyin.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Ön sürüm (Pre-release) bulunamadı. Mevcut sürüm korunuyor.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Ön sürüm (Pre-release) {0} mevcut.
+
+            {1}
+
+            Bu sürüm kararsız olabilir. İndirmek istiyor musunuz?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Başarısız Olanları Temizle</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>{0} öğe kaldırıldı.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Kalan Süre: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Görev Süresi: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Hesaplanıyor...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Klasör Ekle...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Seçilen klasör boş.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Taranacak Klasörü Seçin</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>İptal</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>İşlem Sınırları</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Klasör Taraması Başına Maksimum Dosya</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Performans sorunlarını önlemek için bir klasörden eklenen dosya sayısını sınırlayın.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Aynı Anda Maksimum Klasör</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Tek seferde seçilebilecek klasör sayısını sınırlayın.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Aynı anda en fazla {0} klasör seçebilirsiniz.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>{0} dosya eklendi. Sınır nedeniyle {1} dosya atlandı.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Okuma: {0}/s | Yazma: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Okuma/Yazma Hızını Göster</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Hash işlemleri sırasında gerçek zamanlı aktarım hızını görüntüleyin.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Hash Hesaplanıyor...</value>
+    </data>
+    <data name="Size_All">
+        <value>Tüm Boyutlar</value>
+    </data>
+    <data name="Size_Small">
+        <value>Küçük (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Orta (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Büyük (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Çok Büyük (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Belgeler</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Gizlilik Politikası</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Hizmet Şartları</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Son Kullanıcı Lisans Sözleşmesi (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Sorumluluk Reddi</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>BENİOKU (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Değişiklik Günlüğü</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Teşekkürler</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>İşleniyor</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Başarısız</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>İsme göre ara...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Boyut</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub Profili</value>
+    </data>
+    <data name="Filter_All">
+        <value>Tümü</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Belleği Boşalt</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>RAM'i boşaltmak için Çöp Toplamayı (GC) zorla çalıştır.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Belleği Temizle</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Bellek temizliği tetiklendi.</value>
     </data>
 </root>

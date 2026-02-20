@@ -16,10 +16,10 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Nástroj Hash</value>
     </data>
     <data name="Menu_Create">
-        <value>Vytvoriť Hash</value>
+        <value>Generovať Hash</value>
     </data>
     <data name="Menu_Check">
         <value>Overiť Hash</value>
@@ -28,10 +28,10 @@
         <value>Nastavenia</value>
     </data>
     <data name="Menu_Update">
-        <value>Aktualizovať</value>
+        <value>Aktualizácia</value>
     </data>
     <data name="Menu_Theme">
-        <value>Téma</value>
+        <value>Motív</value>
     </data>
     <data name="Menu_About">
         <value>O programe</value>
@@ -45,8 +45,11 @@
     <data name="Btn_Clear">
         <value>Vymazať zoznam</value>
     </data>
+    <data name="Btn_ClearHashes">
+        <value>Vymazať hashe</value>
+    </data>
     <data name="Btn_CalcAll">
-        <value>VYPÍSAŤ VŠETKO</value>
+        <value>VYPOČÍTAŤ VŠETKO</value>
     </data>
     <data name="Btn_Compress">
         <value>Komprimovať (.Zip)</value>
@@ -67,7 +70,7 @@
         <value>Odmietnuť</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Vytvoriť Hash &amp; Komprimovať</value>
+        <value>Generovať Hash a Komprimovať</value>
     </data>
     <data name="Title_CheckHash">
         <value>Hromadné overenie</value>
@@ -76,49 +79,49 @@
         <value>Skontrolovať aktualizácie</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Upozornenie verzie vývojára</value>
+        <value>Upozornenie vývojárskej verzie</value>
     </data>
     <data name="Title_About">
         <value>O programe</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tip: Shift+C pre Vypísať všetko, Shift+Z pre Komprimovať, Ctrl+F pre Pridať súbory.</value>
+        <value>Tip: Shift+C pre Výpočet, Shift+Z pre Kompresiu, Ctrl+F pre Pridanie.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tip: Shift+A pre Overiť všetko, Ctrl+F pre Pridať súbory, Ctrl+Shift+H pre Vymazať zoznam.</value>
+        <value>Tip: Shift+A pre Overenie, Ctrl+F pre Pridanie, Ctrl+Shift+H pre Vymazanie.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Pripravené</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Príklad:</value>
+        <value>Vzorka:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>Aktuálna verzia: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Kanál vydania:</value>
+        <value>Distribučný kanál:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Celkom súborov: {0}</value>
+        <value>Celkovo súborov: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabilná</value>
+        <value>Stabilná (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Vývojárska edícia</value>
+        <value>Vývojárska (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Jazyk</value>
     </data>
     <data name="Settings_Theme">
-        <value>Téma</value>
+        <value>Motív</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>Štýl témy</value>
+        <value>Štýl motívu</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Svetlá/Tmavá</value>
+        <value>Svetlý/Tmavý</value>
     </data>
     <data name="Settings_Font">
         <value>Písmo</value>
@@ -127,22 +130,22 @@
         <value>Veľkosť písma (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automaticky vybrať optimálne písmo pre jazyk</value>
+        <value>Automaticky zvoliť optimálne písmo</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Zamknúť ako predvolené písmo</value>
+        <value>Uzamknúť ako predvolené písmo</value>
     </data>
     <data name="Settings_Scale">
         <value>Mierka UI</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Maskovať hodnoty Hash (Bezpečnosť)</value>
+        <value>Skryť hodnoty Hash (Bezpečnosť)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Resetovať tému</value>
+        <value>Obnoviť nastavenia</value>
     </data>
     <data name="Settings_Other">
-        <value>Súkromie &amp; Bezpečnosť</value>
+        <value>Súkromie a Bezpečnosť</value>
     </data>
     <data name="Settings_SetDefault">
         <value>Nastaviť ako predvolené</value>
@@ -154,7 +157,7 @@
         <value>Pokročilé</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Spustiť ako administrátor</value>
+        <value>Spustiť ako Správca</value>
     </data>
     <data name="Settings_AdminDesc">
         <value>Vyžaduje reštart. Umožňuje prístup k chráneným súborom.</value>
@@ -163,49 +166,49 @@
         <value>Limit veľkosti vstupného súboru</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maximálna veľkosť pre súbory na spracovanie.</value>
+        <value>Maximálna veľkosť súborov na spracovanie.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Časový limit núteného ukončenia</value>
+        <value>Časový limit vynúteného ukončenia</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Čas (sekundy) pred považovaním aplikácie za zamrznutú.</value>
+        <value>Čas (v sekundách), kým sa aplikácia považuje za zamrznutú.</value>
     </data>
     <data name="Settings_FileTimeout">
         <value>Časový limit spracovania súboru</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Zrušiť, ak jeden súbor trvá príliš dlho.</value>
+        <value>Zrušiť, ak súbor trvá príliš dlho.</value>
     </data>
     <data name="Settings_Emergency">
         <value>Núdzová akcia</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Nútené ukončenie aplikácie a okamžité zrušenie všetkých úloh.</value>
+        <value>Vynútiť ukončenie aplikácie a okamžite zrušiť všetky úlohy.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Nútené ukončenie &amp; Zrušiť všetko</value>
+        <value>Vynútiť ukončenie a Zrušiť všetko</value>
     </data>
     <data name="Settings_Configuration">
         <value>Konfigurácia</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Zamknúť nastavenia (Uložiť ako predvolené)</value>
+        <value>Uzamknúť nastavenia (Uložiť ako predvolené)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Zabránenie náhodným zmenám. Len maskovanie Hash zostáva nastaviteľné.</value>
+        <value>Zabrániť náhodným zmenám. Upraviteľné zostane iba 'Skryť Hash'.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Resetovať všetky nastavenia</value>
+        <value>Obnoviť všetky nastavenia</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Obnoviť továrenské nastavenia.</value>
+        <value>Obnoviť na výrobné nastavenia.</value>
     </data>
     <data name="Settings_ConfigPath">
         <value>Cesta ku konfiguračnému súboru</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Zobraziť úplnú cestu a skopírovať do schránky.</value>
+        <value>Zobraziť celú cestu a skopírovať ju do schránky.</value>
     </data>
     <data name="Settings_ShowPath">
         <value>Zobraziť cestu</value>
@@ -214,19 +217,19 @@
         <value>Nastavenia sa automaticky ukladajú do config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Režim vývojára</value>
+        <value>Vývojársky režim</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Povoliť pokročilé logovanie a nástroje na ladenie.</value>
+        <value>Povoliť rozšírené protokolovanie a ladiace nástroje.</value>
     </data>
     <data name="Dev_Console">
-        <value>Konzola vývojára</value>
+        <value>Vývojárska konzola</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Nahrávanie</value>
+        <value>Zaznamenáva sa</value>
     </data>
     <data name="Dev_Paused">
         <value>Pozastavené</value>
@@ -238,13 +241,13 @@
         <value>Neukladať</value>
     </data>
     <data name="Dev_Clear">
-        <value>Vyčistiť konzolu</value>
+        <value>Vymazať konzolu</value>
     </data>
     <data name="Dev_Copy">
         <value>Kopírovať všetko</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Otvoriť priečinok s logmi</value>
+        <value>Otvoriť priečinok s denníkmi</value>
     </data>
     <data name="About_Author">
         <value>Autor</value>
@@ -259,27 +262,25 @@
         <value>Autorské práva</value>
     </data>
     <data name="About_Desc">
-        <value>Výkonný nástroj na vytváranie, overovanie a komprimovanie hash hodnôt súborov. Alebo aspoň si to myslím
-            :)
-        </value>
+        <value>Výkonný nástroj na generovanie, overovanie a kompresiu hashov súborov. Alebo si to aspoň myslím :)</value>
     </data>
     <data name="About_License">
         <value>Vydané pod licenciou MIT.</value>
     </data>
     <data name="About_Tech">
-        <value>Technológia</value>
+        <value>Technológie</value>
     </data>
     <data name="About_TechContent">
-        <value>Vytvorené s C# a .NET 10.0.102.</value>
+        <value>Vytvorené pomocou C# a .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>Pomoc AI</value>
+        <value>Podpora UI</value>
     </data>
     <data name="About_AIContent">
-        <value>Tento softvér bol vyvinutý s pomocou AI (Gemini 3 Pro a Grok 4.1).</value>
+        <value>Tento softvér bol vyvinutý s pomocou UI (Gemini 3 Pro a Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
-        <value>Spracúva sa ({0})...</value>
+        <value>Spracováva sa ({0})...</value>
     </data>
     <data name="Status_Done">
         <value>Hotovo</value>
@@ -294,22 +295,22 @@
         <value>Uložené!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Komprimované!</value>
+        <value>Skomprimované!</value>
     </data>
     <data name="Status_Waiting">
         <value>Čaká sa na hash/vstup...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Chýba originálny súbor!</value>
+        <value>Chýba pôvodný súbor!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Chýba hodnota hash (Zadajte alebo načítajte hash súbor)</value>
+        <value>Chýba hodnota hash (Zadajte alebo načítajte súbor)</value>
     </data>
     <data name="Status_Valid">
-        <value>PLATNÉ</value>
+        <value>PLATNÝ</value>
     </data>
     <data name="Status_Invalid">
-        <value>NEPLATNÉ!</value>
+        <value>NEZHODUJE SA!</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>Hash súbor načítaný</value>
@@ -321,40 +322,40 @@
         <value>Súbor neobsahuje hash!</value>
     </data>
     <data name="Status_Checking">
-        <value>Kontrolujú sa aktualizácie...</value>
+        <value>Kontrola aktualizácií...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Objavená nová verzia!</value>
+        <value>Zistená nová verzia!</value>
     </data>
     <data name="Status_Latest">
         <value>Používate najnovšiu verziu.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Chyba kontroly aktualizácií: {0}</value>
+        <value>Chyba kontroly aktualizácie: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Sťahuje sa a inštaluje...</value>
+        <value>Sťahovanie a inštalácia...</value>
     </data>
     <data name="Status_InstallError">
         <value>Chyba inštalácie: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Pripravené (Z .hash súboru)</value>
+        <value>Pripravené (Zo súboru .hash)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Originálny súbor stratený!</value>
+        <value>Pôvodný súbor sa stratil!</value>
     </data>
     <data name="Status_DropHashMismatch">
         <value>Názov hash súboru sa nezhoduje!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hash súbor úspešne pustený</value>
+        <value>Hash súbor úspešne pridaný</value>
     </data>
     <data name="Status_DropNoHash">
         <value>Súbor neobsahuje hash!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Chyba čítania súboru</value>
+        <value>Chyba pri čítaní súboru</value>
     </data>
     <data name="Msg_Result_Title">
         <value>Výsledok</value>
@@ -362,7 +363,8 @@
     <data name="Msg_Result_Content">
         <value>Spracovanie dokončené!
             ✅ Úspech: {0}
-            ❌ Neúspech: {1}
+            ❌ Zlyhanie: {1}
+            ⛔ Zrušené: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
@@ -373,19 +375,19 @@
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>Zlá súbor!</value>
+        <value>Nesprávny súbor!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
         <value>Hash súbor sa nezhoduje!
 
-            Originálny súbor: {0}
+            Pôvodný súbor: {0}
             Vybraný súbor: {1}
 
-            Prosím, vyberte správny priložený hash súbor.
+            Prosím, vyberte správny sprievodný hash súbor.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Nová aktualizácia</value>
+        <value>Nová Aktualizácia</value>
     </data>
     <data name="Msg_UpdateContent">
         <value>Verzia: {0}
@@ -393,17 +395,17 @@
             Zmeny:
             {1}
 
-            Kliknite 'Aktualizovať teraz' na stiahnutie.
+            Kliknite na 'Aktualizovať teraz' pre stiahnutie.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Žiadne novšie aktualizácie nenájdené.</value>
+        <value>Nenašli sa žiadne novšie aktualizácie.</value>
     </data>
     <data name="Msg_Error">
         <value>Chyba</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Nemôžem prečítať tento hash súbor.</value>
+        <value>Tento hash súbor nie je možné načítať.</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>Kontrola konfigurácie</value>
@@ -420,7 +422,7 @@
         <value>Súbor úspešne vytvorený!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Cesta konfigurácie skopírovaná.</value>
+        <value>Cesta konfigurácie bola skopírovaná.</value>
     </data>
     <data name="Msg_AdminMode">
         <value>Režim administrátora</value>
@@ -429,45 +431,45 @@
         <value>Prosím, reštartujte aplikáciu, aby sa zmeny prejavili.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Nemôžem otvoriť priečinok: {0}</value>
+        <value>Priečinok nie je možné otvoriť: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ UPOZORNENIE VERZIE VÝVOJÁRA</value>
+        <value>⚠️ UPOZORNENIE VÝVOJÁRSKEJ VERZIE</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Prechádzate na kanál aktualizácií Vývojár (predbežná verzia).
+        <value>Chystáte sa prepnúť na vývojársky (Pre-release) aktualizačný kanál.
 
             Táto verzia môže obsahovať chyby, byť nestabilná a spôsobiť stratu dát.
 
-            Nie som zodpovedný za problémy vyplývajúce z používania tejto verzie.
+            Nenesiem zodpovednosť za žiadne problémy vyplývajúce z používania tejto verzie.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Prečítal som a súhlasím. Beriem plnú zodpovednosť.</value>
+        <value>Čítal som a súhlasím. Preberám plnú zodpovednosť.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Uložiť hash súbor</value>
+        <value>Uložiť Hash Súbor</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Uložiť komprimovaný súbor</value>
+        <value>Uložiť Komprimovaný Súbor</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Vybrať súbory pre hash</value>
+        <value>Vyberte súbory na hashovanie</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Vybrať hash súbor pre: {0}</value>
+        <value>Vyberte hash súbor pre: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Vybrať súbory (Originálny alebo .hash súbor)</value>
+        <value>Vyberte súbory (Pôvodný alebo .hash súbor)</value>
     </data>
     <data name="Header_Fallback">
         <value>Pokročilé: Návrat na staršiu verziu</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Táto funkcia umožňuje inštaláciu konkrétnej verzie, ak nová má problémy.</value>
+        <value>Táto funkcia vám umožňuje nainštalovať konkrétnu verziu, ak má nová problémy.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Vložte/Pustite tu...</value>
+        <value>Sem vložte alebo pustite...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Sekundy</value>
@@ -482,28 +484,28 @@
         <value>Odstrániť súbor</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Kopírovať hash</value>
+        <value>Kopírovať Hash</value>
     </data>
     <data name="Tip_Compute">
         <value>Vypočítať</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Vymazať Hash</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Prehliadať hash</value>
+        <value>Prehľadávať Hash</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>Tmavá</value>
+        <value>Tmavý</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>Svetlá</value>
+        <value>Svetlý</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>Systémová</value>
+        <value>Systémový</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
         <value>Úloha zastavená</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Súbor {0} presahuje limit {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
         <value>Áno</value>
@@ -518,39 +520,217 @@
         <value>Zip archív</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Potvrďte ukončenie</value>
+        <value>Potvrdiť ukončenie</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
         <value>Ukončenie zruší všetky prebiehajúce úlohy. Ste si istý?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Úloha zastavená kvôli timeoutu.</value>
+        <value>Úloha bola zastavená z dôvodu časového limitu.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Uložiť debug log na disk.</value>
+        <value>Uložiť protokol ladenia na disk.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Pauzovať logovanie v reálnom čase.</value>
+        <value>Pozastaviť protokolovanie v reálnom čase.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Zobraziť hash</value>
+        <value>Zobraziť Hash</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Skryť hash</value>
+        <value>Skryť Hash</value>
     </data>
     <data name="Tip_CopyPath">
         <value>Kopírovať cestu</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Tvoj disk je plný. Vyber iné miesto kamoš :)</value>
+        <value>Váš disk je plný. Prosím, vyberte iné umiestnenie :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Viditeľnosť hash</value>
+        <value>Viditeľnosť Hashu</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Žiadne súbory. Klikni 'Pridať súbory' na začiatok.</value>
+        <value>Žiadne súbory. Kliknite na 'Pridať súbory' pre začiatok.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Zamknúť túto tému ako predvolenú</value>
+        <value>Uzamknúť tento motív ako predvolený</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Preskočených {0} súborov presahujúcich limit ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Jazyk systému</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Návrat k nastaveniu 'Automaticky' vyžaduje reštart, aby sa prejavil naplno. Chcete pokračovať?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Zmena jazyka</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Ste si tým istý?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Toto upozornenie už nezobrazovať</value>
+    </data>
+    <data name="Error_Network">
+        <value>Chyba sieťového pripojenia. Prosím, skontrolujte svoj internet.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Chyba servera (5xx). Prosím, skúste to znova neskôr.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Chyba klienta (4xx). Prosím, skontrolujte požiadavku.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>Prekročený limit požiadaviek GitHub API. Skúste to znova neskôr.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Nenašla sa žiadna pre-release verzia. Ponecháva sa aktuálna.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Pre-release verzia {0} je dostupná.
+
+            {1}
+
+            Táto verzia môže byť nestabilná. Chcete si ju stiahnuť?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Vymazať zlyhané</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>Odstránených {0} položiek.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Zostávajúci čas: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Trvanie úlohy: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Počíta sa...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Pridať priečinok...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Vybraný priečinok je prázdny.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Vyberte priečinok na skenovanie</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Zrušiť</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Limity spracovania</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Max. súborov na skenovanie priečinka</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Obmedzte počet súborov pridaných z priečinka, aby ste predišli problémom s výkonom.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Max. priečinkov naraz</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Obmedzte počet naraz vybraných priečinkov.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Môžete vybrať maximálne {0} priečinkov naraz.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Pridaných {0} súborov. Preskočených {1} súborov kvôli limitu.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Čítanie: {0}/s | Zápis: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Zobraziť rýchlosť Čítania/Zápisu</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Zobraziť rýchlosť prenosu v reálnom čase počas hash operácií.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Počíta sa Hash...</value>
+    </data>
+    <data name="Size_All">
+        <value>Všetky veľkosti</value>
+    </data>
+    <data name="Size_Small">
+        <value>Malé (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Stredné (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Veľké (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Extra veľké (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Dokumenty</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Zásady ochrany osobných údajov</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Podmienky služby</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Licenčná zmluva s koncovým používateľom (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Zrieknutie sa zodpovednosti</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>ČÍTAJMA (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Zoznam zmien</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Poďakovanie</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Spracováva sa</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Zlyhanie</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Hľadať podľa mena...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Veľkosť</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub Profil</value>
+    </data>
+    <data name="Filter_All">
+        <value>Všetky</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Uvoľniť pamäť</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Vynútiť zber odpadu (GC) pre uvoľnenie RAM.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Vyčistiť pamäť</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Čistenie pamäte spustené.</value>
     </data>
 </root>

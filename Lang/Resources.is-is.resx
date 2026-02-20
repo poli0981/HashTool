@@ -16,19 +16,19 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Hash Tól</value>
     </data>
     <data name="Menu_Create">
-        <value>Búa til hash</value>
+        <value>Búa til Hash</value>
     </data>
     <data name="Menu_Check">
-        <value>Athuga hash</value>
+        <value>Staðfesta Hash</value>
     </data>
     <data name="Menu_Settings">
         <value>Stillingar</value>
     </data>
     <data name="Menu_Update">
-        <value>Uppfæra</value>
+        <value>Uppfærsla</value>
     </data>
     <data name="Menu_Theme">
         <value>Þema</value>
@@ -45,6 +45,9 @@
     <data name="Btn_Clear">
         <value>Hreinsa lista</value>
     </data>
+    <data name="Btn_ClearHashes">
+        <value>Hreinsa hash</value>
+    </data>
     <data name="Btn_CalcAll">
         <value>REIKNA ALLT</value>
     </data>
@@ -52,10 +55,10 @@
         <value>Þjappa (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ATHUGA ALLT</value>
+        <value>STAÐFESTA ALLT</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Athuga núna</value>
+        <value>Staðfesta núna</value>
     </data>
     <data name="Btn_Install">
         <value>Setja upp</value>
@@ -67,32 +70,31 @@
         <value>Hafna</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Búa til hash &amp; þjappa</value>
+        <value>Búa til Hash &amp; Þjappa</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Hópathugun</value>
+        <value>Magnstaðfesting</value>
     </data>
     <data name="Title_Update">
-        <value>Athuga uppfærslur</value>
+        <value>Leita að uppfærslum</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Viðvörun fyrir þróunarútgáfu</value>
+        <value>Aðvörun þróunarútgáfu</value>
     </data>
     <data name="Title_About">
-        <value>Um</value>
+        <value>Um forritið</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Ábending: Shift+C til að reikna allt, Shift+Z til að þjappa, Ctrl+F til að bæta við skrám.</value>
+        <value>Ábending: Shift+C til að Reikna, Shift+Z til að Þjappa, Ctrl+F til að Bæta við.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Ábending: Shift+A til að athuga allt, Ctrl+F til að bæta við skrám, Ctrl+Shift+H til að hreinsa lista.
-        </value>
+        <value>Ábending: Shift+A til að Staðfesta, Ctrl+F til að Bæta við, Ctrl+Shift+H til að Hreinsa.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Tilbúið</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Dæmi:</value>
+        <value>Sýnishorn:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>Núverandi útgáfa: {0}</value>
@@ -101,13 +103,13 @@
         <value>Útgáfurás:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Alls: {0}</value>
+        <value>Heildarfjöldi skráa: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stöðug</value>
+        <value>Stöðug (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Þróunarútgáfa</value>
+        <value>Þróunarútgáfa (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Tungumál</value>
@@ -116,34 +118,34 @@
         <value>Þema</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>Þemastíll</value>
+        <value>Stíll þema</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Ljós/Dökkt</value>
+        <value>Ljóst/Dökkt</value>
     </data>
     <data name="Settings_Font">
-        <value>Letur</value>
+        <value>Leturgerð</value>
     </data>
     <data name="Settings_FontSize">
         <value>Leturstærð (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Sjálfvirk val á besta letri fyrir tungumál</value>
+        <value>Velja sjálfkrafa bestu leturgerð fyrir tungumál</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Læsa sem sjálfgefið letur</value>
+        <value>Læsa sem sjálfgefna leturgerð</value>
     </data>
     <data name="Settings_Scale">
-        <value>Skölun UI</value>
+        <value>Kvarði viðmóts</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Fela hash-gildi (Öryggi)</value>
+        <value>Fela hash gildi (Öryggi)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Endurstilla þema</value>
+        <value>Endurstilla stillingar</value>
     </data>
     <data name="Settings_Other">
-        <value>Persónuvernd &amp; öryggi</value>
+        <value>Persónuvernd og öryggi</value>
     </data>
     <data name="Settings_SetDefault">
         <value>Setja sem sjálfgefið</value>
@@ -158,22 +160,22 @@
         <value>Keyra sem stjórnandi</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Krefst endurræsingar. Leyfir aðgang að vernduðum skrám.</value>
+        <value>Krefst endurræsingar. Leyfir aðgang að vörðum skrám.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Inntaksskrárstærðarmörk</value>
+        <value>Stærðartakmark inntaksskrár</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Hámarksstærð fyrir skrár til vinnslu.</value>
+        <value>Hámarksstærð skráa til vinnslu.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Tímamörk fyrir þvingaða lokun</value>
+        <value>Tímamörk þvingaðrar lokunar</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Tími (sekúndur) áður en forritið er talið fast.</value>
+        <value>Tími (sek) áður en litið er á forritið sem frosið.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Tímamörk fyrir skráarvinnslu</value>
+        <value>Tímamörk skráarvinnslu</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
         <value>Hætta við ef ein skrá tekur of langan tíma.</value>
@@ -182,22 +184,22 @@
         <value>Neyðaraðgerð</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Þvinguð lokun forrits og hætta við allar verkefni strax.</value>
+        <value>Þvinga lokun forrits og hætta við öll verk strax.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Þvinguð lokun &amp; hætta við allt</value>
+        <value>Þvinga lokun &amp; Hætta við allt</value>
     </data>
     <data name="Settings_Configuration">
-        <value>Stillingar</value>
+        <value>Uppsetning (Configuration)</value>
     </data>
     <data name="Settings_LockSettings">
         <value>Læsa stillingum (Vista sem sjálfgefið)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Koma í veg fyrir óviljandi breytingar. Aðeins felulag hash er enn stillanlegt.</value>
+        <value>Koma í veg fyrir óviljandi breytingar. Aðeins 'Fela Hash' er breytanlegt.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Endurstilla allar stillingar</value>
+        <value>Endurstilla allt</value>
     </data>
     <data name="Settings_ResetDesc">
         <value>Endurheimta verksmiðjustillingar.</value>
@@ -206,7 +208,7 @@
         <value>Slóð stillingaskrár</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Sýna fulla slóð og afrita í klippispjald.</value>
+        <value>Sýna fulla slóð og afrita.</value>
     </data>
     <data name="Settings_ShowPath">
         <value>Sýna slóð</value>
@@ -215,10 +217,10 @@
         <value>Stillingar vistast sjálfkrafa í config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Þróunaraðgerð</value>
+        <value>Þróunarhamur</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Virkja háþróaða skráningu og villuleitarverkfæri.</value>
+        <value>Virkja ítarlega skráningu og villuleitarverkfæri.</value>
     </data>
     <data name="Dev_Console">
         <value>Þróunarkonsóll</value>
@@ -227,7 +229,7 @@
         <value>BETA</value>
     </data>
     <data name="Dev_Recording">
-        <value>Upptaka</value>
+        <value>Tekur upp</value>
     </data>
     <data name="Dev_Paused">
         <value>Í bið</value>
@@ -236,16 +238,16 @@
         <value>Vista í skrá</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Engin vistun</value>
+        <value>Ekki vista</value>
     </data>
     <data name="Dev_Clear">
-        <value>Hreinsa konsóll</value>
+        <value>Hreinsa konsól</value>
     </data>
     <data name="Dev_Copy">
         <value>Afrita allt</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Opna loggmöppu</value>
+        <value>Opna log-möppu</value>
     </data>
     <data name="About_Author">
         <value>Höfundur</value>
@@ -254,16 +256,16 @@
         <value>Hugbúnaður</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Þriðju aðila bókasöfn</value>
+        <value>Söfn þriðja aðila</value>
     </data>
     <data name="About_Copyright">
         <value>Höfundarréttur</value>
     </data>
     <data name="About_Desc">
-        <value>Öflugt tól til að búa til, athuga og þjappa hash skrám. Eða ég held það allavega :)</value>
+        <value>Öflugt tól til að búa til, staðfesta og þjappa skráar-hash. Eða það held ég allavega :)</value>
     </data>
     <data name="About_License">
-        <value>Gefið út undir MIT leyfi.</value>
+        <value>Gefiði út undir MIT leyfi.</value>
     </data>
     <data name="About_Tech">
         <value>Tækni</value>
@@ -272,13 +274,13 @@
         <value>Byggt með C# og .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>AI aðstoð</value>
+        <value>Gervigreindaraðstoð</value>
     </data>
     <data name="About_AIContent">
-        <value>Þessi hugbúnaður var þróaður með aðstoð AI (Gemini 3 Pro og Grok 4.1).</value>
+        <value>Þessi hugbúnaður var þróaður með aðstoð gervigreindar (Gemini 3 Pro og Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
-        <value>Vinnsla ({0})...</value>
+        <value>Vinnur ({0})...</value>
     </data>
     <data name="Status_Done">
         <value>Lokið</value>
@@ -299,28 +301,28 @@
         <value>Bíður eftir hash/inntaki...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Upprunaleg skrá vantar!</value>
+        <value>Upprunalega skrá vantar!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash gildi vantar (Sláðu inn eða hlaða inn hash skrá)</value>
+        <value>Hash gildi vantar (Sláðu inn eða hlaða skrá)</value>
     </data>
     <data name="Status_Valid">
         <value>GILT</value>
     </data>
     <data name="Status_Invalid">
-        <value>ÓGILT!</value>
+        <value>PASSAR EKKI!</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>Hash skrá hlaðin</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Nafn hash skrár passar ekki!</value>
+        <value>Nafn hash skráar passar ekki!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Skráin inniheldur ekkert hash!</value>
+        <value>Skráin inniheldur ekki hash!</value>
     </data>
     <data name="Status_Checking">
-        <value>Athuga uppfærslur...</value>
+        <value>Leitar að uppfærslum...</value>
     </data>
     <data name="Status_NewVersion">
         <value>Ný útgáfa fannst!</value>
@@ -329,39 +331,40 @@
         <value>Þú ert að nota nýjustu útgáfuna.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Villa við að athuga uppfærslur: {0}</value>
+        <value>Villa við uppfærsluleit: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Sæki og set upp...</value>
+        <value>Hleður niður og setur upp...</value>
     </data>
     <data name="Status_InstallError">
         <value>Uppsetningarvilla: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Tilbúið (Frá .hash skrá)</value>
+        <value>Tilbúið (Úr .hash skrá)</value>
     </data>
     <data name="Status_LostOriginal">
         <value>Upprunaleg skrá týnd!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Nafn hash skrár passar ekki!</value>
+        <value>Nafn hash skráar passar ekki!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hash skrá sleppt með góðum árangri</value>
+        <value>Hash skrá sleppt</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Skráin inniheldur ekkert hash!</value>
+        <value>Skráin inniheldur ekki hash!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Villa við að lesa skrá</value>
+        <value>Villa við lestur skráar</value>
     </data>
     <data name="Msg_Result_Title">
         <value>Niðurstaða</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Vinnsla lokið!
-            ✅ Árangur: {0}
-            ❌ Bilun: {1}
+        <value>Vinnslu lokið!
+            ✅ Tókst: {0}
+            ❌ Mistókst: {1}
+            ⛔ Hætt við: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
@@ -392,7 +395,7 @@
             Breytingar:
             {1}
 
-            Smelltu á 'Uppfæra núna' til að sækja.
+            Smelltu á 'Uppfæra núna' til að hlaða niður.
         </value>
     </data>
     <data name="Msg_NoUpdate">
@@ -408,65 +411,65 @@
         <value>Stillingaathugun</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Skrá er til staðar á:
+        <value>Skrá er til í:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Skrá vantar!</value>
+        <value>Skrá er ekki til!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Skrá búin til með góðum árangri!</value>
+        <value>Skrá búin til!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Stillingaslóð afrituð.</value>
+        <value>Slóð stillinga afrituð.</value>
     </data>
     <data name="Msg_AdminMode">
         <value>Stjórnandahamur</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Endurræstu forritið til að breytingar taki gildi.</value>
+        <value>Vinsamlegast endurræstu forritið til að breytingar taki gildi.</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>Get ekki opnað möppu: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ VIÐVÖRUN FYRIR ÞRÓUNARÚTGÁFU</value>
+        <value>⚠️ AÐVÖRUN ÞRÓUNARÚTGÁFU</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Þú ert að skipta yfir í þróunarrás (forútgáfa).
+        <value>Þú ert að fara að skipta yfir í þróunaruppfærslurás (Pre-release).
 
-            Þessi útgáfa getur innihaldið villur, verið óstöðug og valdið gagnatapi.
+            Þessi útgáfa gæti innihaldið villur, verið óstöðug og valdið gagnatapi.
 
-            Ég ber ekki ábyrgð á vandamálum sem stafa af notkun þessarar útgáfu.
+            Ég ber enga ábyrgð á vandamálum sem koma upp við notkun þessarar útgáfu.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Ég hef lesið og samþykki. Ég tek á mig fulla ábyrgð.</value>
+        <value>Ég hef lesið og samþykki. Ég tek fulla ábyrgð.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Vista hash skrá</value>
+        <value>Vista Hash skrá</value>
     </data>
     <data name="Dialog_SaveZip">
         <value>Vista þjappaða skrá</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Veldu skrár til hash</value>
+        <value>Veldu skrár til að hasha</value>
     </data>
     <data name="Dialog_SelectHashFile">
         <value>Veldu hash skrá fyrir: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Veldu skrár (Upprunaleg eða .hash skrá)</value>
+        <value>Veldu skrár (Upprunalega eða .hash skrá)</value>
     </data>
     <data name="Header_Fallback">
         <value>Ítarlegt: Fara aftur í eldri útgáfu</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Þessi eiginleiki leyfir uppsetningu á tiltekinni útgáfu ef nýja er með vandamál.</value>
+        <value>Þessi eiginleiki gerir þér kleift að setja upp ákveðna útgáfu ef sú nýja er með vandamál.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Límdu/Slepptu hér...</value>
+        <value>Líma eða sleppa hér...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Sekúndur</value>
@@ -475,19 +478,22 @@
         <value>Staðfesta</value>
     </data>
     <data name="Tip_Stop">
-        <value>Stöðva</value>
+        <value>Stoppa</value>
     </data>
     <data name="Tip_RemoveFile">
         <value>Fjarlægja skrá</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Afrita hash</value>
+        <value>Afrita Hash</value>
     </data>
     <data name="Tip_Compute">
         <value>Reikna</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Hreinsa Hash</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Skoða hash</value>
+        <value>Fletta Hash</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>Dökkt</value>
@@ -499,16 +505,13 @@
         <value>Kerfi</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>Verkefni stöðvað</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Skrá {0} fer yfir mörk {1} {2}.</value>
+        <value>Verk stöðvað</value>
     </data>
     <data name="Btn_Yes">
         <value>Já</value>
     </data>
     <data name="Btn_OK">
-        <value>OK</value>
+        <value>Í lagi</value>
     </data>
     <data name="Btn_No">
         <value>Nei</value>
@@ -517,39 +520,217 @@
         <value>Zip safn</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Staðfesta brottför</value>
+        <value>Staðfesta lokun</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Brotför hættir við öllum verkefnum í gangi. Ertu viss?</value>
+        <value>Lokun mun hætta við öll verk í gangi. Ertu viss?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Verkefni stöðvað vegna tímamarka.</value>
+        <value>Verki var hætt vegna tímamarka.</value>
     </data>
     <data name="Dev_ToolTip_Save">
         <value>Vista villuleitarskrá á disk.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Pausa rauntíma skráningu.</value>
+        <value>Gera hlé á rauntímaskráningu.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Sýna hash</value>
+        <value>Sýna Hash</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Fela hash</value>
+        <value>Fela Hash</value>
     </data>
     <data name="Tip_CopyPath">
         <value>Afrita slóð</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Diskurinn þinn er fullur. Veldu annan stað vinur :)</value>
+        <value>Diskurinn þinn er fullur. Vinsamlegast veldu annan stað :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Hash sýnileiki</value>
+        <value>Sýnileiki Hash</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Engar skrár. Smelltu 'Bæta við skrám' til að byrja.</value>
+        <value>Engar skrár. Smelltu á 'Bæta við skrám' til að byrja.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Læsa þema sem sjálfgefið</value>
+        <value>Læsa þessu þema sem sjálfgefnu</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Sleppti {0} skrám sem fara yfir mörkin ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Kerfistungumál</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Að fara aftur í 'Sjálfvirkt' krefst endurræsingar til að virka að fullu. Viltu halda áfram?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Breyta tungumáli</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Ertu viss um það?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Ekki sýna þessa viðvörun aftur</value>
+    </data>
+    <data name="Error_Network">
+        <value>Netvillla. Vinsamlegast athugaðu nettenginguna þína.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Miðlaravilla (5xx). Vinsamlegast reyndu aftur síðar.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Biðlaravilla (4xx). Vinsamlegast athugaðu beiðnina.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>GitHub API takmörkum náð. Vinsamlegast reyndu aftur síðar.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Engin forútgáfa fannst. Heldur núverandi útgáfu.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Forútgáfa {0} er fáanleg.
+
+            {1}
+
+            Þessi útgáfa gæti verið óstöðug. Viltu hlaða niður?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Hreinsa misheppnað</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>Fjarlægði {0} atriði.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Tími eftir: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Tímalengd verks: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Reiknar...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Bæta við möppu...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Valin mappa er tóm.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Veldu möppu til að skanna</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Hætta við</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Vinnslutakmörk</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Hámarksfjöldi skráa í möppuskönnun</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Takmarka fjölda skráa úr möppu til að koma í veg fyrir afkastavandamál.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Hámarksfjöldi mappa í einu</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Takmarka fjölda mappa sem valdar eru í einu.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Þú getur aðeins valið allt að {0} möppur í einu.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Bætti við {0} skrám. Sleppti {1} skrám vegna takmarkana.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Lesa: {0}/s | Skrifa: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Sýna Les/Skrif hraða</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Sýna flutningshraða í rauntíma meðan á hash vinnslu stendur.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Reiknar Hash...</value>
+    </data>
+    <data name="Size_All">
+        <value>Allar stærðir</value>
+    </data>
+    <data name="Size_Small">
+        <value>Lítil (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Miðlungs (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Stór (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Mjög stór (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Skjöl</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Persónuverndarstefna</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Þjónustuskilmálar</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Leyfissamningur notanda (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Fyrirvari</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>LESTUMIG (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Breytingaskrá</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Þakkir</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Vinnur</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Mistókst</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Leita eftir nafni...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Stærð</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub Prófíll</value>
+    </data>
+    <data name="Filter_All">
+        <value>Allt</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Losna við minni</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Þvinga sorpsöfnun (GC) til að losa vinnsluminni (RAM).</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Hreinsa minni</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Minni hreinsun hafin.</value>
     </data>
 </root>

@@ -16,10 +16,10 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Hash Alat</value>
     </data>
     <data name="Menu_Create">
-        <value>Stvori Hash</value>
+        <value>Generiraj Hash</value>
     </data>
     <data name="Menu_Check">
         <value>Provjeri Hash</value>
@@ -28,7 +28,7 @@
         <value>Postavke</value>
     </data>
     <data name="Menu_Update">
-        <value>Ažuriraj</value>
+        <value>Ažuriranje</value>
     </data>
     <data name="Menu_Theme">
         <value>Tema</value>
@@ -43,19 +43,22 @@
         <value>Dodaj datoteke...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Očisti listu</value>
+        <value>Očisti popis</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>Očisti hashove</value>
     </data>
     <data name="Btn_CalcAll">
         <value>IZRAČUNAJ SVE</value>
     </data>
     <data name="Btn_Compress">
-        <value>Komprimiraj (.Zip)</value>
+        <value>Sažmi (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
         <value>PROVJERI SVE</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Provjeri sada</value>
+        <value>Provjeri sad</value>
     </data>
     <data name="Btn_Install">
         <value>Instaliraj</value>
@@ -67,7 +70,7 @@
         <value>Odbij</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Stvori Hash &amp; Komprimiraj</value>
+        <value>Generiraj Hash i Sažmi</value>
     </data>
     <data name="Title_CheckHash">
         <value>Grupna provjera</value>
@@ -76,22 +79,22 @@
         <value>Provjeri ažuriranja</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Upozorenje verzije razvojnog programera</value>
+        <value>Upozorenje za razvojnu verziju</value>
     </data>
     <data name="Title_About">
         <value>O programu</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Savjet: Shift+C za Izračunaj sve, Shift+Z za Komprimiraj, Ctrl+F za Dodaj datoteke.</value>
+        <value>Savjet: Shift+C za izračun, Shift+Z za sažimanje, Ctrl+F za dodavanje.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Savjet: Shift+A za Provjeri sve, Ctrl+F za Dodaj datoteke, Ctrl+Shift+H za Očisti listu.</value>
+        <value>Savjet: Shift+A za provjeru, Ctrl+F za dodavanje, Ctrl+Shift+H za brisanje popisa.</value>
     </data>
     <data name="Lbl_Status_Ready">
-        <value>Spreman</value>
+        <value>Spremno</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Primjer:</value>
+        <value>Uzorak:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>Trenutna verzija: {0}</value>
@@ -103,10 +106,10 @@
         <value>Ukupno datoteka: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabilna</value>
+        <value>Stabilna (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Razvojna verzija</value>
+        <value>Razvojna (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Jezik</value>
@@ -127,22 +130,22 @@
         <value>Veličina fonta (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automatski odaberi optimalni font za jezik</value>
+        <value>Automatski odaberi font za jezik</value>
     </data>
     <data name="Settings_LockFont">
         <value>Zaključaj kao zadani font</value>
     </data>
     <data name="Settings_Scale">
-        <value>Skala sučelja</value>
+        <value>Skaliranje sučelja</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Maskiraj Hash vrijednosti (Sigurnost)</value>
+        <value>Sakrij hash vrijednosti (Sigurnost)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Resetiraj temu</value>
+        <value>Vrati izvorne postavke</value>
     </data>
     <data name="Settings_Other">
-        <value>Privatnost &amp; Sigurnost</value>
+        <value>Privatnost i sigurnost</value>
     </data>
     <data name="Settings_SetDefault">
         <value>Postavi kao zadano</value>
@@ -163,16 +166,16 @@
         <value>Ograničenje veličine ulazne datoteke</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maksimalna veličina za datoteke koje se obrađuju.</value>
+        <value>Maksimalna veličina datoteka za obradu.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Vremensko ograničenje prisilnog izlaza</value>
+        <value>Vrijeme do prisilnog prekida</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Vrijeme (sekunde) prije nego što se aplikacija smatra zamrznutom.</value>
+        <value>Vrijeme (sekunde) prije nego se aplikacija smatra smrznutom.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Vremensko ograničenje obrade datoteke</value>
+        <value>Vrijeme obrade datoteke</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
         <value>Otkaži ako jedna datoteka traje predugo.</value>
@@ -181,10 +184,10 @@
         <value>Hitna akcija</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Prisilno zatvaranje aplikacije i trenutno otkazivanje svih zadataka.</value>
+        <value>Prisilno zatvori aplikaciju i odmah otkaži sve zadatke.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Prisilni izlaz &amp; Otkaži sve</value>
+        <value>Prisilni izlaz i otkaži sve</value>
     </data>
     <data name="Settings_Configuration">
         <value>Konfiguracija</value>
@@ -193,10 +196,10 @@
         <value>Zaključaj postavke (Spremi kao zadano)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Sprječava slučajne promjene. Samo maskiranje Hash ostaje podesivo.</value>
+        <value>Spriječi slučajne promjene. Samo 'Sakrij Hash' ostaje dostupno.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Resetiraj sve postavke</value>
+        <value>Vrati sve postavke</value>
     </data>
     <data name="Settings_ResetDesc">
         <value>Vrati na tvorničke postavke.</value>
@@ -214,13 +217,13 @@
         <value>Postavke se automatski spremaju u config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Razvojni način</value>
+        <value>Razvojni način rada</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Omogući napredno logiranje i alate za otklanjanje grešaka.</value>
+        <value>Omogući napredno bilježenje i alate za otklanjanje pogrešaka.</value>
     </data>
     <data name="Dev_Console">
-        <value>Konzola razvojnog programera</value>
+        <value>Razvojna konzola</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
@@ -244,7 +247,7 @@
         <value>Kopiraj sve</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Otvori mapu logova</value>
+        <value>Otvori mapu dnevnika</value>
     </data>
     <data name="About_Author">
         <value>Autor</value>
@@ -259,8 +262,7 @@
         <value>Autorska prava</value>
     </data>
     <data name="About_Desc">
-        <value>Moćan alat za stvaranje, provjeru i komprimiranje hash vrijednosti datoteka. Ili barem tako mislim :)
-        </value>
+        <value>Moćan alat za generiranje, provjeru i sažimanje hashova datoteka. Ili barem ja tako mislim :)</value>
     </data>
     <data name="About_License">
         <value>Objavljeno pod MIT licencom.</value>
@@ -269,13 +271,13 @@
         <value>Tehnologija</value>
     </data>
     <data name="About_TechContent">
-        <value>Izgrađeno s C# i .NET 10.0.102.</value>
+        <value>Izrađeno u C# i .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>Pomoć AI</value>
+        <value>AI Pomoć</value>
     </data>
     <data name="About_AIContent">
-        <value>Ovaj softver razvijen je uz pomoć AI (Gemini 3 Pro i Grok 4.1).</value>
+        <value>Ovaj softver je razvijen uz pomoć AI (Gemini 3 Pro i Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
         <value>Obrada ({0})...</value>
@@ -284,7 +286,7 @@
         <value>Završeno</value>
     </data>
     <data name="Status_Error">
-        <value>Greška: {0}</value>
+        <value>Pogreška: {0}</value>
     </data>
     <data name="Status_Cancelled">
         <value>Otkazano</value>
@@ -293,28 +295,28 @@
         <value>Spremljeno!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Komprimirano!</value>
+        <value>Sažeto!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Čekanje na hash/ulaz...</value>
+        <value>Čekanje hasha/unosa...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Nedostaje originalna datoteka!</value>
+        <value>Izvorna datoteka nedostaje!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Nedostaje hash vrijednost (Upišite ili učitajte hash datoteku)</value>
+        <value>Nedostaje hash vrijednost (Unesi ili učitaj datoteku)</value>
     </data>
     <data name="Status_Valid">
-        <value>VALJANO</value>
+        <value>ISPRAVNO (VALID)</value>
     </data>
     <data name="Status_Invalid">
-        <value>NEVALJANO!</value>
+        <value>NE PODUDARA SE (MISMATCH!)</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>Hash datoteka učitana</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Naziv hash datoteke ne odgovara!</value>
+        <value>Naziv hash datoteke se ne podudara!</value>
     </data>
     <data name="Status_NoHashFound">
         <value>Datoteka ne sadrži hash!</value>
@@ -329,31 +331,31 @@
         <value>Koristite najnoviju verziju.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Greška provjere ažuriranja: {0}</value>
+        <value>Pogreška pri provjeri ažuriranja: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>Preuzimanje i instalacija...</value>
     </data>
     <data name="Status_InstallError">
-        <value>Greška instalacije: {0}</value>
+        <value>Pogreška pri instalaciji: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Spreman (Iz .hash datoteke)</value>
+        <value>Spremno (Iz .hash datoteke)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Originalna datoteka izgubljena!</value>
+        <value>Izvorna datoteka izgubljena!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Naziv hash datoteke ne odgovara!</value>
+        <value>Naziv hash datoteke se ne podudara!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hash datoteka uspješno bačena</value>
+        <value>Hash datoteka uspješno ispuštena</value>
     </data>
     <data name="Status_DropNoHash">
         <value>Datoteka ne sadrži hash!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Greška čitanja datoteke</value>
+        <value>Pogreška pri čitanju datoteke</value>
     </data>
     <data name="Msg_Result_Title">
         <value>Rezultat</value>
@@ -362,12 +364,13 @@
         <value>Obrada završena!
             ✅ Uspjeh: {0}
             ❌ Neuspjeh: {1}
+            ⛔ Otkazano: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Provjereno {0} datoteka.
-            ✅ Podudara se: {1}
-            ❌ Ne podudara/Greška: {2}
+            ✅ Podudaranje: {1}
+            ❌ Nepodudaranje/Pogreška: {2}
             ⛔ Otkazano: {3}
         </value>
     </data>
@@ -375,12 +378,12 @@
         <value>Pogrešna datoteka!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hash datoteka ne podudara se!
+        <value>Nepodudaranje hash datoteke!
 
-            Originalna datoteka: {0}
+            Izvorna datoteka: {0}
             Odabrana datoteka: {1}
 
-            Odaberite ispravnu priloženu hash datoteku.
+            Molimo odaberite ispravnu prateću hash datoteku.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -392,17 +395,17 @@
             Promjene:
             {1}
 
-            Kliknite 'Ažuriraj sada' za preuzimanje.
+            Kliknite 'Ažuriraj sad' za preuzimanje.
         </value>
     </data>
     <data name="Msg_NoUpdate">
         <value>Nema novijih ažuriranja.</value>
     </data>
     <data name="Msg_Error">
-        <value>Greška</value>
+        <value>Pogreška</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Ne mogu pročitati ovu hash datoteku.</value>
+        <value>Nije moguće pročitati ovu hash datoteku.</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>Provjera konfiguracije</value>
@@ -416,29 +419,29 @@
         <value>Datoteka ne postoji!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Datoteka uspješno stvorena!</value>
+        <value>Datoteka uspješno kreirana!</value>
     </data>
     <data name="Msg_ConfigCopied">
         <value>Putanja konfiguracije kopirana.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Administratorski način</value>
+        <value>Način administratora</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Molimo ponovno pokrenite aplikaciju da promjene stupe na snagu.</value>
+        <value>Molimo ponovno pokrenite aplikaciju da bi promjene stupile na snagu.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Ne mogu otvoriti mapu: {0}</value>
+        <value>Nije moguće otvoriti mapu: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ UPOZORENJE VERZIJE RAZVOJNOG PROGRAMERA</value>
+        <value>⚠️ UPOZORENJE ZA RAZVOJNU VERZIJU</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Mijenjate na kanal ažuriranja Razvojni programer (prerelease).
+        <value>Upravo prelazite na razvojni (Pre-release) kanal ažuriranja.
 
-            Ova verzija može sadržavati greške, biti nestabilna i uzrokovati gubitak podataka.
+            Ova verzija može sadržavati pogreške, biti nestabilna i uzrokovati gubitak podataka.
 
-            Nisam odgovoran za probleme nastale korištenjem ove verzije.
+            Ne snosim odgovornost za bilo kakve probleme nastale korištenjem ove verzije.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
@@ -448,34 +451,34 @@
         <value>Spremi hash datoteku</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Spremi komprimiranu datoteku</value>
+        <value>Spremi sažetu datoteku</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Odaberi datoteke za hash</value>
+        <value>Odaberi datoteke za hashiranje</value>
     </data>
     <data name="Dialog_SelectHashFile">
         <value>Odaberi hash datoteku za: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Odaberi datoteke (Originalna ili .hash datoteka)</value>
+        <value>Odaberi datoteke (Izvorna ili .hash)</value>
     </data>
     <data name="Header_Fallback">
         <value>Napredno: Povratak na stariju verziju</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Ova funkcija omogućuje instalaciju specifične verzije ako nova ima probleme.</value>
+        <value>Ova značajka omogućuje instalaciju specifične verzije ako nova ima problema.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Zalijepi/Baci ovdje...</value>
+        <value>Zalijepi ili ispusti ovdje...</value>
     </data>
     <data name="Unit_Seconds">
-        <value>Sekunde</value>
+        <value>Sekundi</value>
     </data>
     <data name="Tip_Verify">
         <value>Provjeri</value>
     </data>
     <data name="Tip_Stop">
-        <value>Zaustavi</value>
+        <value>Stop</value>
     </data>
     <data name="Tip_RemoveFile">
         <value>Ukloni datoteku</value>
@@ -486,8 +489,11 @@
     <data name="Tip_Compute">
         <value>Izračunaj</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Očisti hash</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Pregledaj hash</value>
+        <value>Pretraži hash</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>Tamna</value>
@@ -501,14 +507,11 @@
     <data name="Msg_TaskCancelled_Title">
         <value>Zadatak zaustavljen</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Datoteka {0} premašuje limit {1} {2}.</value>
-    </data>
     <data name="Btn_Yes">
         <value>Da</value>
     </data>
     <data name="Btn_OK">
-        <value>OK</value>
+        <value>U redu</value>
     </data>
     <data name="Btn_No">
         <value>Ne</value>
@@ -517,19 +520,19 @@
         <value>Zip arhiva</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Potvrdi izlaz</value>
+        <value>Potvrda izlaza</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Izlaz će otkazati sve trenutne zadatke. Jeste li sigurni?</value>
+        <value>Izlaz će otkazati sve tekuće zadatke. Jeste li sigurni?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Zadatak zaustavljen zbog timeouta.</value>
+        <value>Zadatak je zaustavljen zbog isteka vremena.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Spremi debug log na disk.</value>
+        <value>Spremi zapisnik ispravljanja pogrešaka na disk.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Pauziraj real-time logging.</value>
+        <value>Pauziraj zapisivanje u stvarnom vremenu.</value>
     </data>
     <data name="Tip_ShowHash">
         <value>Prikaži hash</value>
@@ -541,15 +544,193 @@
         <value>Kopiraj putanju</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Tvoj disk je pun. Odaberi drugu lokaciju brate :)</value>
+        <value>Vaš disk je pun. Molimo odaberite drugu lokaciju :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Vidljivost hash</value>
+        <value>Vidljivost hasha</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Nema datoteka. Klikni 'Dodaj datoteke' za početak.</value>
+        <value>Nema datoteka. Kliknite 'Dodaj datoteke' za početak.</value>
     </data>
     <data name="Settings_LockTheme">
         <value>Zaključaj ovu temu kao zadanu</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Preskočeno {0} datoteka iznad ograničenja ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Jezik sustava</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Povratak na postavku 'Automatski' zahtijeva ponovno pokretanje. Želite li nastaviti?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Promjena jezika</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Jeste li sigurni u to?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Ne prikazuj ovo upozorenje ponovo</value>
+    </data>
+    <data name="Error_Network">
+        <value>Pogreška mrežne veze. Molimo provjerite internet.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Pogreška poslužitelja (5xx). Molimo pokušajte kasnije.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Pogreška klijenta (4xx). Molimo provjerite zahtjev.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>Prekoračeno ograničenje GitHub API-ja. Molimo pokušajte kasnije.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Nije pronađena pre-release verzija. Zadržavanje trenutne.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Dostupna je pre-release verzija {0}.
+
+            {1}
+
+            Ova verzija može biti nestabilna. Želite li je preuzeti?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Očisti neuspjele</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>Uklonjeno {0} stavki.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Preostalo vrijeme: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Trajanje zadatka: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Računanje...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Dodaj mapu...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Odabrana mapa je prazna.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Odaberi mapu za skeniranje</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Odustani</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Ograničenja obrade</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Maksimalno datoteka po mapi</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Ograniči broj datoteka dodanih iz mape radi performansi.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Maksimalno mapa odjednom</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Ograniči broj mapa odabranih odjednom.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Možete odabrati najviše {0} mapa odjednom.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Dodano {0} datoteka. Preskočeno {1} zbog ograničenja.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Čitanje: {0}/s | Pisanje: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Prikaži brzinu Čitanja/Pisanja</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Prikaži brzinu prijenosa u stvarnom vremenu tijekom hashiranja.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Računanje hasha...</value>
+    </data>
+    <data name="Size_All">
+        <value>Sve veličine</value>
+    </data>
+    <data name="Size_Small">
+        <value>Male (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Srednje (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Velike (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Vrlo velike (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Dokumenti</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Pravila privatnosti</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Uvjeti korištenja</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Licencni ugovor (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Odricanje odgovornosti</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>README</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Zapisnik promjena</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Zahvale</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Obrada</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Neuspjeh</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Traži po imenu...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Veličina</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub Profil</value>
+    </data>
+    <data name="Filter_All">
+        <value>Sve</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Oslobodi memoriju</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Prisilno pokreni Garbage Collection (GC) za oslobađanje memorije.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Očisti memoriju</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Čišćenje memorije je pokrenuto.</value>
     </data>
 </root>

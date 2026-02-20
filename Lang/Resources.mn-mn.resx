@@ -16,19 +16,19 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Хэш хэрэгсэл</value>
     </data>
     <data name="Menu_Create">
-        <value>Хаш үүсгэх</value>
+        <value>Хэш үүсгэх</value>
     </data>
     <data name="Menu_Check">
-        <value>Хаш шалгах</value>
+        <value>Хэш шалгах</value>
     </data>
     <data name="Menu_Settings">
         <value>Тохиргоо</value>
     </data>
     <data name="Menu_Update">
-        <value>Шинэчлэлт</value>
+        <value>Шинэчлэх</value>
     </data>
     <data name="Menu_Theme">
         <value>Загвар</value>
@@ -43,7 +43,10 @@
         <value>Файл нэмэх...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Жагсаалтыг цэвэрлэх</value>
+        <value>Жагсаалт цэвэрлэх</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>Хэшүүдийг цэвэрлэх</value>
     </data>
     <data name="Btn_CalcAll">
         <value>БҮГДИЙГ ТООЦООЛОХ</value>
@@ -67,10 +70,10 @@
         <value>Татгалзах</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Хаш үүсгэх ба шахах</value>
+        <value>Хэш үүсгэх болон Шахах</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Багц шалгалт</value>
+        <value>Багцаар шалгах</value>
     </data>
     <data name="Title_Update">
         <value>Шинэчлэлт шалгах</value>
@@ -82,31 +85,31 @@
         <value>Тухай</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Зөвлөгөө: Shift+C бүгдийг тооцоолох, Shift+Z шахах, Ctrl+F файл нэмэх.</value>
+        <value>Зөвлөгөө: Shift+C Тооцоолох, Shift+Z Шахах, Ctrl+F Файл нэмэх.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Зөвлөгөө: Shift+A бүгдийг шалгах, Ctrl+F файл нэмэх, Ctrl+Shift+H жагсаалтыг цэвэрлэх.</value>
+        <value>Зөвлөгөө: Shift+A Шалгах, Ctrl+F Файл нэмэх, Ctrl+Shift+H Жагсаалт цэвэрлэх.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Бэлэн</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Жишээ:</value>
+        <value>Загвар:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>Одоогийн хувилбар: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Түгээх суваг:</value>
+        <value>Гаргах суваг:</value>
     </data>
     <data name="Lbl_TotalFiles">
         <value>Нийт файл: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Тогтвортой</value>
+        <value>Тогтвортой (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Хөгжүүлэгчийн хувилбар</value>
+        <value>Хөгжүүлэгч (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Хэл</value>
@@ -118,115 +121,115 @@
         <value>Загварын хэв маяг</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Гэрэлт/Харанхуй</value>
+        <value>Цайвар/Бараан</value>
     </data>
     <data name="Settings_Font">
-        <value>Үсгийн хэлбэр</value>
+        <value>Фонт</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Үсгийн хэмжээ (pt)</value>
+        <value>Фонтын хэмжээ (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Хэлд тохиромжтой үсгийн хэлбэрийг автоматаар сонгох</value>
+        <value>Хэлэнд тохирох фонтыг автоматаар сонгох</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Үндсэн үсгийн хэлбэр болгох (Түгжих)</value>
+        <value>Үндсэн фонтоор түгжих</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI хэмжээ</value>
+        <value>Дэлгэцийн хэмжээс</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Хаш утгыг нуух (Аюулгүй байдал)</value>
+        <value>Хэшийн утгыг нуух (Аюулгүй байдал)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Загварыг дахин тохируулах</value>
+        <value>Тохиргоог дахин тохируулах</value>
     </data>
     <data name="Settings_Other">
-        <value>Нууцлал ба Аюулгүй байдал</value>
+        <value>Нууцлал болон Аюулгүй байдал</value>
     </data>
     <data name="Settings_SetDefault">
         <value>Үндсэн болгох</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Өнгөөр тохируулах</value>
+        <value>Текстний өнгө</value>
     </data>
     <data name="Settings_Advanced">
         <value>Нарийвчилсан</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Админаар ажиллуулах</value>
+        <value>Администратороор ажиллуулах</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Дахин эхлүүлэх шаардлагатай. Хамгаалагдсан файлд хандах боломжтой.</value>
+        <value>Дахин эхлүүлэх шаардлагатай. Хамгаалагдсан файлд хандахыг зөвшөөрнө.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Орох файлын хэмжээний хязгаар</value>
+        <value>Оруулах файлын хэмжээний хязгаар</value>
     </data>
     <data name="Settings_FileSizeDesc">
         <value>Боловсруулах файлын дээд хэмжээ.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Албадан хаах хугацаа</value>
+        <value>Хүчээр гарах хугацаа</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Програм гацсан гэж үзэхээс өмнөх хүлээх хугацаа (секунд).</value>
+        <value>Апп гацсан гэж үзэх хүртэлх хугацаа (секунд).</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Нэг файлын боловсруулалтын хугацаа</value>
+        <value>Файл боловсруулах хугацаа</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Нэг файл удаан бол цуцлах.</value>
+        <value>Нэг файл хэт их хугацаа шаардвал цуцлах.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Яаралтай арга хэмжээ</value>
+        <value>Яаралтай үйлдэл</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Програмыг албадан хааж, бүх ажлыг цуцлах.</value>
+        <value>Аппыг хүчээр хааж, бүх үйлдлийг нэн даруй цуцлах.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Албадан хаах ба Бүгдийг цуцлах</value>
+        <value>Хүчээр гарах &amp; Бүгдийг цуцлах</value>
     </data>
     <data name="Settings_Configuration">
         <value>Тохиргоо</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Тохиргоог түгжих (Үндсэн болгох)</value>
+        <value>Тохиргоог түгжих (Үндсэн болгож хадгалах)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Санамсаргүй өөрчлөлтөөс хамгаалах. Зөвхөн хаш нуух л ажиллана.</value>
+        <value>Санамсаргүй өөрчлөлтөөс сэргийлэх. Зөвхөн 'Хэш нуух' өөрчлөгдөнө.</value>
     </data>
     <data name="Settings_ResetAll">
         <value>Бүх тохиргоог дахин тохируулах</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Анхны байдал руу буцах.</value>
+        <value>Үйлдвэрийн тохиргоонд буцаах.</value>
     </data>
     <data name="Settings_ConfigPath">
         <value>Тохиргооны файлын зам</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Бүтэн замыг харуулж, клипборд руу хуулах.</value>
+        <value>Бүрэн замыг харуулж, санах ойд хуулах.</value>
     </data>
     <data name="Settings_ShowPath">
         <value>Зам харуулах</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Тохиргоог config.json-д автоматаар хадгалах</value>
+        <value>Тохиргоог config.json-д автоматаар хадгална</value>
     </data>
     <data name="Settings_DeveloperMode">
         <value>Хөгжүүлэгчийн горим</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Нарийвчилсан лог ба дебаг хэрэгсэл идэвхжүүлэх.</value>
+        <value>Нарийвчилсан бүртгэл болон дибаг хийх хэрэгслүүдийг идэвхжүүлэх.</value>
     </data>
     <data name="Dev_Console">
         <value>Хөгжүүлэгчийн консол</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>БЕТА</value>
     </data>
     <data name="Dev_Recording">
-        <value>Бичлэг хийж байна</value>
+        <value>Бичиж байна</value>
     </data>
     <data name="Dev_Paused">
         <value>Түр зогссон</value>
@@ -241,7 +244,7 @@
         <value>Консол цэвэрлэх</value>
     </data>
     <data name="Dev_Copy">
-        <value>Бүгдийг хулах</value>
+        <value>Бүгдийг хуулах</value>
     </data>
     <data name="Dev_OpenFolder">
         <value>Лог хавтас нээх</value>
@@ -250,31 +253,31 @@
         <value>Зохиогч</value>
     </data>
     <data name="About_Software">
-        <value>Програм</value>
+        <value>Програм хангамж</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Гуравдагч талын сан</value>
+        <value>Гуравдагч талын сангууд</value>
     </data>
     <data name="About_Copyright">
         <value>Зохиогчийн эрх</value>
     </data>
     <data name="About_Desc">
-        <value>Файлын хаш үүсгэх, шалгах, шахах хүчирхэг хэрэгсэл. Яастлаа би тэгж бодож байна :)</value>
+        <value>Файлын хэш үүсгэх, шалгах, шахах хүчирхэг хэрэгсэл. Эсвэл би тэгж бодож байна :)</value>
     </data>
     <data name="About_License">
-        <value>MIT лицензээр олгогдсон.</value>
+        <value>MIT лицензийн дагуу гаргасан.</value>
     </data>
     <data name="About_Tech">
         <value>Технологи</value>
     </data>
     <data name="About_TechContent">
-        <value>C# болон .NET 10.0.102 ашиглан бүтээгдсэн.</value>
+        <value>C# болон .NET 10.0.102 ашиглан бүтээсэн.</value>
     </data>
     <data name="About_AI">
-        <value>AI-ийн тусламж</value>
+        <value>AI тусламж</value>
     </data>
     <data name="About_AIContent">
-        <value>Энэ программ хөгжүүлэхэд AI-ийн тусламж авсан (Gemini 3 Pro болон Grok 4.1).</value>
+        <value>Энэхүү программыг AI (Gemini 3 Pro болон Grok 4.1) тусламжтайгаар хөгжүүлсэн.</value>
     </data>
     <data name="Status_Processing">
         <value>Боловсруулж байна ({0})...</value>
@@ -289,67 +292,67 @@
         <value>Цуцлагдсан</value>
     </data>
     <data name="Status_Saved">
-        <value>Хадгалсан!</value>
+        <value>Хадгалагдсан!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Шахсан!</value>
+        <value>Шахагдсан!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Хаш/оролт хүлээж байна...</value>
+        <value>Хэш/Оролтыг хүлээж байна...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Эх файл алга!</value>
+        <value>Эх файл алга байна!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Хаш утга алга (Оруулах эсвэл хаш файл ачаалах)</value>
+        <value>Хэшийн утга алга (Оруулах эсвэл файл ачаална уу)</value>
     </data>
     <data name="Status_Valid">
-        <value>ЗӨВ</value>
+        <value>ХҮЧИНТЭЙ</value>
     </data>
     <data name="Status_Invalid">
-        <value>ТААРЦГҮЙ!</value>
+        <value>ТААРАХГҮЙ БАЙНА!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Хаш файл ачааллагдсан</value>
+        <value>Хэш файл ачаалагдсан</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Хаш файлын нэр таарахгүй!</value>
+        <value>Хэш файлын нэр таарахгүй байна!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Файлд хаш байхгүй!</value>
+        <value>Файлд хэш алга!</value>
     </data>
     <data name="Status_Checking">
-        <value>Шинэчлэлт шалгаж байна...</value>
+        <value>Шинэчлэлтүүдийг шалгаж байна...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Шинэ хувилбар илэрлээ!</value>
+        <value>Шинэ хувилбар олдлоо!</value>
     </data>
     <data name="Status_Latest">
-        <value>Хамгийн сүүлийн хувилбар байна.</value>
+        <value>Та хамгийн сүүлийн хувилбарыг ашиглаж байна.</value>
     </data>
     <data name="Status_CheckError">
         <value>Шинэчлэлт шалгах алдаа: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Татаж суулгаж байна...</value>
+        <value>Татаж аваад суулгаж байна...</value>
     </data>
     <data name="Status_InstallError">
         <value>Суулгах алдаа: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Бэлэн ( .hash файлаас )</value>
+        <value>Бэлэн (.hash файлаас)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Эх файл алдагдсан!</value>
+        <value>Эх файл устсан байна!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Хаш файлын нэр таарахгүй!</value>
+        <value>Хэш файлын нэр таарахгүй байна!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Хаш файлыг амжилттай чирлээ</value>
+        <value>Хэш файл амжилттай орлоо</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Файлд хаш байхгүй!</value>
+        <value>Файлд хэш алга!</value>
     </data>
     <data name="Status_ReadError">
         <value>Файл унших алдаа</value>
@@ -358,13 +361,14 @@
         <value>Үр дүн</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Боловсруулалт дууссан!
+        <value>Боловсруулалт дууслаа!
             ✅ Амжилттай: {0}
             ❌ Амжилтгүй: {1}
+            ⛔ Цуцлагдсан: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>{0} файл шалгасан.
+        <value>{0} файл шалгагдсан.
             ✅ Таарсан: {1}
             ❌ Таараагүй/Алдаа: {2}
             ⛔ Цуцлагдсан: {3}
@@ -374,12 +378,12 @@
         <value>Буруу файл!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Хаш файл таарахгүй!
+        <value>Хэш файл таарахгүй байна!
 
             Эх файл: {0}
             Сонгосон файл: {1}
 
-            Зөв хаш файлыг сонгоно уу.
+            Тохирох хэш файлыг сонгоно уу.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -388,84 +392,84 @@
     <data name="Msg_UpdateContent">
         <value>Хувилбар: {0}
 
-            Өөрчлөлт:
+            Өөрчлөлтүүд:
             {1}
 
-            'Одоо шинэчлэх' товчийг дарж татаарай.
+            Татаж авахын тулд 'Одоо шинэчлэх'-ийг дарна уу.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Шинэ шинэчлэлт байхгүй.</value>
+        <value>Шинэ хувилбар олдсонгүй.</value>
     </data>
     <data name="Msg_Error">
         <value>Алдаа</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Энэ хаш файлыг уншиж чадсангүй.</value>
+        <value>Энэ хэш файлыг унших боломжгүй байна.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Тохиргоо шалгах</value>
+        <value>Тохиргоог шалгах</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Файл байрлал:
+        <value>Файл энд байна:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Файл байхгүй!</value>
+        <value>Файл алга байна!</value>
     </data>
     <data name="Msg_ConfigCreated">
         <value>Файл амжилттай үүсгэгдлээ!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Тохиргооны замыг хуулав.</value>
+        <value>Тохиргооны зам хуулагдлаа.</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>Админ горим</value>
+        <value>Администраторын горим</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Өөрчлөлтийг хүчинтэй болгохын тулд програмыг дахин эхлүүлнэ үү.</value>
+        <value>Өөрчлөлтүүдийг хэрэгжүүлэхийн тулд аппыг дахин эхлүүлнэ үү.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Хавтас нээж чадсангүй: {0}</value>
+        <value>Хавтас нээх боломжгүй: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
         <value>⚠️ ХӨГЖҮҮЛЭГЧИЙН ХУВИЛБАРЫН АНХААРУУЛГА</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Та хөгжүүлэгчийн (pre-release) шинэчлэлт сувгийг сонгох гэж байна.
+        <value>Та Хөгжүүлэгчийн (Pre-release) шинэчлэлтийн суваг руу шилжих гэж байна.
 
-            Энэ хувилбар алдаатай, тогтворгүй байж болох ба өгөгдөл алдах эрсдэлтэй.
+            Энэ хувилбар алдаатай, тогтворгүй байж болох бөгөөд өгөгдөл алдагдахад хүргэж болзошгүй.
 
-            Энэ хувилбарыг ашигласнаас үүссэн аливаа асуудлыг би хариуцахгүй.
+            Энэ хувилбарыг ашигласнаас үүдэн гарах аливаа асуудалд би хариуцлага хүлээхгүй.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Би уншиж ойлгосон ба зөвшөөрч байна. Бүх хариуцлагыг би хүлээнэ.</value>
+        <value>Би уншиж танилцсан бөгөөд зөвшөөрч байна. Би бүрэн хариуцлага хүлээнэ.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Хаш файл хадгалах</value>
+        <value>Хэш файл хадгалах</value>
     </data>
     <data name="Dialog_SaveZip">
         <value>Шахсан файл хадгалах</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Хаш тооцоолох файл сонгох</value>
+        <value>Хэш хийх файлуудаа сонгоно уу</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>{0}-д зориулсан хаш файл сонгох</value>
+        <value>Хэш файл сонгох: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Файл сонгох (Эх эсвэл .hash файл)</value>
+        <value>Файл сонгох (Эх файл эсвэл .hash)</value>
     </data>
     <data name="Header_Fallback">
         <value>Нарийвчилсан: Хуучин хувилбар руу буцах</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Шинэ хувилбарт асуудал гарвал тодорхой хувилбарыг суулгах боломжтой.</value>
+        <value>Шинэ хувилбарт асуудал гарвал энэ функц нь тодорхой хувилбарыг суулгах боломжийг олгоно.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Энд нааж эсвэл чирж оруул...</value>
+        <value>Энд буулгах эсвэл чирж авчрах...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Секунд</value>
@@ -477,31 +481,31 @@
         <value>Зогсоох</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>Файл устгах</value>
+        <value>Файл хасах</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Хаш хуулах</value>
+        <value>Хэш хуулах</value>
     </data>
     <data name="Tip_Compute">
         <value>Тооцоолох</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Хэш цэвэрлэх</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Хаш үзэх</value>
+        <value>Хэш хайх</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>Харанхуй</value>
+        <value>Бараан</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>Гэрэлт</value>
+        <value>Цайвар</value>
     </data>
     <data name="Settings_ThemeSystem">
         <value>Систем</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>Ажил зогссон</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Файл {0} нь хязгаар {1} {2}-ээс хэтэрлээ.</value>
+        <value>Үйлдэл зогссон</value>
     </data>
     <data name="Btn_Yes">
         <value>Тийм</value>
@@ -513,42 +517,220 @@
         <value>Үгүй</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip шахсан файл</value>
+        <value>Zip архив</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
         <value>Гарахыг баталгаажуулах</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Гарахад бүх ажил цуцлагдана. Үнэхээр гарах уу?</value>
+        <value>Гарах нь одоо хийгдэж буй бүх үйлдлийг цуцлах болно. Та итгэлтэй байна уу?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Хугацаа хэтэрсэн тул ажил зогссон.</value>
+        <value>Хугацаа дууссан тул үйлдэл зогссон.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Дебаг логийг диск рүү хадгалах.</value>
+        <value>Дибаг логийг дискэнд хадгалах.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Бодит цагийн логийг түр зогсоох.</value>
+        <value>Бодит хугацааны бүртгэлийг түр зогсоох.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Хаш харуулах</value>
+        <value>Хэш харуулах</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Хаш нуух</value>
+        <value>Хэш нуух</value>
     </data>
     <data name="Tip_CopyPath">
         <value>Зам хуулах</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Таны диск дүүрчээ. Өөр байрлал сонгоно уу :)</value>
+        <value>Таны диск дүүрсэн байна. Өөр газар сонгоно уу :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Хаш харагдац</value>
+        <value>Хэш харагдац</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Файл алга. 'Файл нэмэх' товч дарж эхэл.</value>
+        <value>Файл алга. Эхлэхийн тулд 'Файл нэмэх'-ийг дарна уу.</value>
     </data>
     <data name="Settings_LockTheme">
         <value>Энэ загварыг үндсэн болгож түгжих</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Хязгаараас хэтэрсэн ({1} {2}) {0} файлыг алгаслаа:
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Системийн хэл</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>'Автомат' тохиргоо руу буцахад бүрэн хэрэгжихийн тулд дахин эхлүүлэх шаардлагатай. Үргэлжлүүлэх үү?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Хэл солих</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Та үүнд итгэлтэй байна уу?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Энэ анхааруулгыг дахин харуулахгүй</value>
+    </data>
+    <data name="Error_Network">
+        <value>Сүлжээний холболтын алдаа. Интернэтээ шалгана уу.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Серверийн алдаа (5xx). Дараа дахин оролдоно уу.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Үйлчлүүлэгчийн алдаа (4xx). Хүсэлтээ шалгана уу.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>GitHub API хязгаар хэтэрсэн. Дараа дахин оролдоно уу.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Pre-release хувилбар олдсонгүй. Одоогийн хувилбарыг хадгалж байна.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Pre-release хувилбар {0} бэлэн байна.
+
+            {1}
+
+            Энэ хувилбар тогтворгүй байж болзошгүй. Та татаж авахыг хүсэж байна уу?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Амжилтгүй болсонг цэвэрлэх</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>{0} зүйлийг устгалаа.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Үлдсэн хугацаа: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Үйлдлийн хугацаа: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Тооцоолж байна...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Хавтас нэмэх...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Сонгосон хавтас хоосон байна.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Скан хийх хавтас сонгох</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Цуцлах</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Боловсруулах хязгаарлалт</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Хавтас скан хийх хамгийн их файл</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Гүйцэтгэлийн асуудлаас урьдчилан сэргийлэхийн тулд хавтаснаас нэмэх файлын тоог хязгаарлах.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Нэг удаад сонгох хавтас</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Нэгэн зэрэг сонгох хавтсуудын тоог хязгаарлах.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Та нэг дор хамгийн ихдээ {0} хавтас сонгох боломжтой.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>{0} файл нэмэгдлээ. Хязгаарлалтын улмаас {1} файлыг алгаслаа.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Унших: {0}/s | Бичих: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Унших/Бичих хурд харуулах</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Хэш хийх үед дамжуулах хурдыг бодит цагт харуулах.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Хэш тооцоолж байна...</value>
+    </data>
+    <data name="Size_All">
+        <value>Бүх хэмжээ</value>
+    </data>
+    <data name="Size_Small">
+        <value>Жижиг (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Дунд (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Том (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Маш том (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Баримт бичиг</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Нууцлалын бодлого</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Үйлчилгээний нөхцөл</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Эцсийн хэрэглэгчийн лицензийн гэрээ (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Хариуцлагаас татгалзах</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>README</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Өөрчлөлтийн бүртгэл</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Талархал</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Боловсруулж байна</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Амжилтгүй</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Нэрээр хайх...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Хэмжээ</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub Профайл</value>
+    </data>
+    <data name="Filter_All">
+        <value>Бүгд</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Санах ой суллах</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>RAM-г суллахын тулд Хог цуглуулагчийг (GC) хүчээр ажиллуулах.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Санах ой цэвэрлэх</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Санах ойг цэвэрлэх үйл явц эхэллээ.</value>
     </data>
 </root>

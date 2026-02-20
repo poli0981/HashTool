@@ -19,7 +19,7 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>إنشاء هاش</value>
+        <value>توليد الهاش</value>
     </data>
     <data name="Menu_Check">
         <value>التحقق من الهاش</value>
@@ -28,10 +28,10 @@
         <value>الإعدادات</value>
     </data>
     <data name="Menu_Update">
-        <value>التحديث</value>
+        <value>تحديث</value>
     </data>
     <data name="Menu_Theme">
-        <value>الثيم</value>
+        <value>المظهر</value>
     </data>
     <data name="Menu_About">
         <value>حول</value>
@@ -45,6 +45,9 @@
     <data name="Btn_Clear">
         <value>مسح القائمة</value>
     </data>
+    <data name="Btn_ClearHashes">
+        <value>مسح الهاش</value>
+    </data>
     <data name="Btn_CalcAll">
         <value>حساب الكل</value>
     </data>
@@ -52,10 +55,10 @@
         <value>ضغط (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>التحقق من الكل</value>
+        <value>تحقق من الكل</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>التحقق الآن</value>
+        <value>تحقق الآن</value>
     </data>
     <data name="Btn_Install">
         <value>تثبيت</value>
@@ -67,19 +70,19 @@
         <value>رفض</value>
     </data>
     <data name="Title_CreateHash">
-        <value>إنشاء هاش وضغط</value>
+        <value>توليد الهاش وضغط الملفات</value>
     </data>
     <data name="Title_CheckHash">
-        <value>التحقق الجماعي</value>
+        <value>التحقق المجمع</value>
     </data>
     <data name="Title_Update">
-        <value>فحص التحديثات</value>
+        <value>التحقق من وجود تحديثات</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>تحذير إصدار المطور</value>
+        <value>تحذير نسخة المطورين</value>
     </data>
     <data name="Title_About">
-        <value>حول</value>
+        <value>حول البرنامج</value>
     </data>
     <data name="Help_CreateHash">
         <value>تلميح: Shift+C لحساب الكل، Shift+Z للضغط، Ctrl+F لإضافة ملفات.</value>
@@ -91,7 +94,7 @@
         <value>جاهز</value>
     </data>
     <data name="Lbl_Sample">
-        <value>مثال:</value>
+        <value>عينة:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>الإصدار الحالي: {0}</value>
@@ -103,19 +106,19 @@
         <value>إجمالي الملفات: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>مستقر</value>
+        <value>مستقر (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>إصدار المطور</value>
+        <value>نسخة المطورين (Dev)</value>
     </data>
     <data name="Settings_Language">
-        <value>اللغة</value>
+        <value>الغة</value>
     </data>
     <data name="Settings_Theme">
-        <value>الثيم</value>
+        <value>السمة</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>نمط الثيم</value>
+        <value>نمط المظهر</value>
     </data>
     <data name="Settings_ThemeVariant">
         <value>فاتح/داكن</value>
@@ -127,19 +130,19 @@
         <value>حجم الخط (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>اختيار خط مثالي تلقائيًا للغة</value>
+        <value>اختيار الخط الأمثل للغة تلقائياً</value>
     </data>
     <data name="Settings_LockFont">
-        <value>قفل كخط افتراضي</value>
+        <value>تثبيت كخط افتراضي</value>
     </data>
     <data name="Settings_Scale">
-        <value>مقياس الواجهة</value>
+        <value>مقياس واجهة المستخدم</value>
     </data>
     <data name="Settings_MaskHash">
         <value>إخفاء قيم الهاش (أمان)</value>
     </data>
     <data name="Settings_Reset">
-        <value>إعادة تعيين الثيم</value>
+        <value>إعادة تعيين الإعدادات</value>
     </data>
     <data name="Settings_Other">
         <value>الخصوصية والأمان</value>
@@ -157,88 +160,88 @@
         <value>تشغيل كمسؤول</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>يتطلب إعادة تشغيل. يسمح بالوصول إلى الملفات المحمية.</value>
+        <value>يتطلب إعادة التشغيل. يسمح بالوصول إلى الملفات المحمية.</value>
     </data>
     <data name="Settings_FileSizeLimit">
         <value>حد حجم ملف الإدخال</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>الحد الأقصى لحجم الملفات المعالجة.</value>
+        <value>الحد الأقصى لحجم الملفات المراد معالجتها.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>مهلة الإنهاء القسري</value>
+        <value>مهلة الإنهاء الإجباري</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>الوقت (ثواني) قبل اعتبار التطبيق معلقًا.</value>
+        <value>الوقت (بالثواني) قبل اعتبار التطبيق متجمداً.</value>
     </data>
     <data name="Settings_FileTimeout">
         <value>مهلة معالجة الملف</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>إلغاء إذا استغرق ملف واحد وقتًا طويلاً.</value>
+        <value>إلغاء الأمر إذا استغرق ملف واحد وقتًا طويلاً.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>إجراء طارئ</value>
+        <value>إجراء طوارئ</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>إنهاء التطبيق قسريًا وإلغاء جميع المهام فورًا.</value>
+        <value>إجبار التطبيق على الإغلاق وإلغاء جميع المهام فوراً.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>إنهاء قسري وإلغاء الكل</value>
+        <value>إغلاق إجباري وإلغاء الكل</value>
     </data>
     <data name="Settings_Configuration">
-        <value>التكوين</value>
+        <value>التكوين (Configuration)</value>
     </data>
     <data name="Settings_LockSettings">
         <value>قفل الإعدادات (حفظ كافتراضي)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>منع التغييرات العرضية. إخفاء الهاش فقط قابل للتعديل.</value>
+        <value>منع التغييرات العرضية. يمكن تعديل 'إخفاء الهاش' فقط.</value>
     </data>
     <data name="Settings_ResetAll">
         <value>إعادة تعيين جميع الإعدادات</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>استعادة إعدادات المصنع.</value>
+        <value>استعادة إعدادات المصنع الافتراضية.</value>
     </data>
     <data name="Settings_ConfigPath">
         <value>مسار ملف التكوين</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>عرض المسار الكامل ونسخ إلى الحافظة.</value>
+        <value>إظهار المسار الكامل والنسخ إلى الحافظة.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>عرض المسار</value>
+        <value>إظهار المسار</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>يتم حفظ الإعدادات تلقائيًا في config.json</value>
+        <value>يتم حفظ الإعدادات تلقائياً في config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
         <value>وضع المطور</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>تمكين أدوات التسجيل والتصحيح المتقدمة.</value>
+        <value>تفعيل التسجيل المتقدم وأدوات التصحيح.</value>
     </data>
     <data name="Dev_Console">
-        <value>كونسول المطور</value>
+        <value>وحدة تحكم المطور</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>بيتا</value>
     </data>
     <data name="Dev_Recording">
-        <value>تسجيل</value>
+        <value>جاري التسجيل</value>
     </data>
     <data name="Dev_Paused">
-        <value>متوقف مؤقتًا</value>
+        <value>متوقف مؤقتاً</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>حفظ في ملف</value>
+        <value>حفظ إلى ملف</value>
     </data>
     <data name="Dev_NoSave">
-        <value>لا حفظ</value>
+        <value>لا تحفظ</value>
     </data>
     <data name="Dev_Clear">
-        <value>مسح الكونسول</value>
+        <value>مسح وحدة التحكم</value>
     </data>
     <data name="Dev_Copy">
         <value>نسخ الكل</value>
@@ -250,7 +253,7 @@
         <value>المؤلف</value>
     </data>
     <data name="About_Software">
-        <value>البرمجية</value>
+        <value>البرنامج</value>
     </data>
     <data name="About_ThirdParty">
         <value>مكتبات الطرف الثالث</value>
@@ -259,16 +262,16 @@
         <value>حقوق النشر</value>
     </data>
     <data name="About_Desc">
-        <value>أداة قوية لإنشاء والتحقق من وضغط هاش الملفات. أو هكذا أعتقد :)</value>
+        <value>أداة قوية لتوليد، التحقق من، وضغط هاش الملفات. أو هكذا أعتقد :)</value>
     </data>
     <data name="About_License">
-        <value>مُصدر تحت رخصة MIT.</value>
+        <value>تم الإصدار بموجب ترخيص MIT.</value>
     </data>
     <data name="About_Tech">
         <value>التقنية</value>
     </data>
     <data name="About_TechContent">
-        <value>مبني باستخدام C# و.NET 10.0.102.</value>
+        <value>مبني باستخدام C# و .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
         <value>مساعدة الذكاء الاصطناعي</value>
@@ -280,13 +283,13 @@
         <value>جاري المعالجة ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>مكتمل</value>
+        <value>اكتمل</value>
     </data>
     <data name="Status_Error">
         <value>خطأ: {0}</value>
     </data>
     <data name="Status_Cancelled">
-        <value>ملغى</value>
+        <value>تم الإلغاء</value>
     </data>
     <data name="Status_Saved">
         <value>تم الحفظ!</value>
@@ -295,31 +298,31 @@
         <value>تم الضغط!</value>
     </data>
     <data name="Status_Waiting">
-        <value>في انتظار الهاش/الإدخال...</value>
+        <value>في انتظار الهاش/المدخلات...</value>
     </data>
     <data name="Status_MissingOriginal">
         <value>الملف الأصلي مفقود!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>قيمة الهاش مفقودة (أدخل أو حمّل ملف هاش)</value>
+        <value>قيمة الهاش مفقودة (أدخل أو حمل ملف .hash)</value>
     </data>
     <data name="Status_Valid">
-        <value>صالح</value>
+        <value>صحيح (VALID)</value>
     </data>
     <data name="Status_Invalid">
-        <value>غير مطابق!</value>
+        <value>غير متطابق (MISMATCH!)</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>تم تحميل ملف الهاش</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>اسم ملف الهاش غير مطابق!</value>
+        <value>اسم ملف الهاش غير متطابق!</value>
     </data>
     <data name="Status_NoHashFound">
         <value>الملف لا يحتوي على هاش!</value>
     </data>
     <data name="Status_Checking">
-        <value>جاري فحص التحديثات...</value>
+        <value>جاري التحقق من التحديثات...</value>
     </data>
     <data name="Status_NewVersion">
         <value>تم اكتشاف إصدار جديد!</value>
@@ -328,31 +331,31 @@
         <value>أنت تستخدم أحدث إصدار.</value>
     </data>
     <data name="Status_CheckError">
-        <value>خطأ فحص التحديث: {0}</value>
+        <value>خطأ في التحقق من التحديث: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>جاري التنزيل والتثبيت...</value>
     </data>
     <data name="Status_InstallError">
-        <value>خطأ التثبيت: {0}</value>
+        <value>خطأ في التثبيت: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
         <value>جاهز (من ملف .hash)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>الملف الأصلي مفقود!</value>
+        <value>فُقد الملف الأصلي!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>اسم ملف الهاش غير مطابق!</value>
+        <value>اسم ملف الهاش غير متطابق!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>تم إسقاط ملف الهاش بنجاح</value>
+        <value>تم إفلات ملف الهاش بنجاح</value>
     </data>
     <data name="Status_DropNoHash">
         <value>الملف لا يحتوي على هاش!</value>
     </data>
     <data name="Status_ReadError">
-        <value>خطأ قراءة الملف</value>
+        <value>خطأ في قراءة الملف</value>
     </data>
     <data name="Msg_Result_Title">
         <value>النتيجة</value>
@@ -361,25 +364,26 @@
         <value>اكتملت المعالجة!
             ✅ نجاح: {0}
             ❌ فشل: {1}
+            ⛔ إلغاء: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>تم التحقق من {0} ملف.
-            ✅ مطابق: {1}
-            ❌ غير مطابق/خطأ: {2}
-            ⛔ ملغى: {3}
+        <value>تم فحص {0} ملفات.
+            ✅ تطابق: {1}
+            ❌ عدم تطابق/خطأ: {2}
+            ⛔ إلغاء: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>ملف خاطئ!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>ملف الهاش غير مطابق!
+        <value>عدم تطابق ملف الهاش!
 
             الملف الأصلي: {0}
-            الملف المختار: {1}
+            الملف المحدد: {1}
 
-            يرجى اختيار ملف الهاش الصحيح.
+            يرجى تحديد ملف الهاش الصحيح المصاحب.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -391,11 +395,11 @@
             التغييرات:
             {1}
 
-            اضغط 'تحديث الآن' للتنزيل.
+            انقر فوق 'تحديث الآن' للتنزيل.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>لا توجد تحديثات أحدث.</value>
+        <value>لم يتم العثور على تحديثات جديدة.</value>
     </data>
     <data name="Msg_Error">
         <value>خطأ</value>
@@ -424,24 +428,24 @@
         <value>وضع المسؤول</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>يرجى إعادة تشغيل التطبيق لتفعيل التغييرات.</value>
+        <value>يرجى إعادة تشغيل التطبيق لتطبيق التغييرات.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>غير قادر على فتح المجلد: {0}</value>
+        <value>لا يمكن فتح المجلد: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ تحذير إصدار المطور</value>
+        <value>⚠️ تحذير نسخة المطورين</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>أنت على وشك التبديل إلى قناة تحديث المطور (ما قبل الإصدار).
+        <value>أنت على وشك التبديل إلى قناة تحديث المطورين (ما قبل الإصدار).
 
-            قد يحتوي هذا الإصدار على أخطاء، غير مستقر، وقد يسبب فقدان البيانات.
+            قد يحتوي هذا الإصدار على أخطاء، ويكون غير مستقر، وقد يتسبب في فقدان البيانات.
 
-            أنا غير مسؤول عن أي مشاكل ناتجة عن استخدام هذا الإصدار.
+            أنا لست مسؤولاً عن أي مشاكل تنشأ عن استخدام هذا الإصدار.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>لقد قرأت وأوافق. أتحمل المسؤولية الكاملة.</value>
+        <value>لقد قرأت وأوافق. أتحمل كامل المسؤولية.</value>
     </data>
     <data name="Dialog_SaveHash">
         <value>حفظ ملف الهاش</value>
@@ -450,22 +454,22 @@
         <value>حفظ الملف المضغوط</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>اختر الملفات للهاش</value>
+        <value>اختر ملفات للهاش</value>
     </data>
     <data name="Dialog_SelectHashFile">
         <value>اختر ملف هاش لـ: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>اختر الملفات (الأصلي أو ملف .hash)</value>
+        <value>اختر الملفات (الأصلية أو ملف .hash)</value>
     </data>
     <data name="Header_Fallback">
         <value>متقدم: العودة إلى إصدار أقدم</value>
     </data>
     <data name="Desc_Fallback">
-        <value>هذه الميزة تتيح تثبيت إصدار معين إذا كان الجديد به مشاكل.</value>
+        <value>تتيح لك هذه الميزة تثبيت إصدار معين إذا كان الإصدار الجديد به مشاكل.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>الصق/أسقط هنا...</value>
+        <value>الصق أو أفلت هنا...</value>
     </data>
     <data name="Unit_Seconds">
         <value>ثواني</value>
@@ -474,7 +478,7 @@
         <value>تحقق</value>
     </data>
     <data name="Tip_Stop">
-        <value>إيقاف</value>
+        <value>توقف</value>
     </data>
     <data name="Tip_RemoveFile">
         <value>إزالة الملف</value>
@@ -485,8 +489,11 @@
     <data name="Tip_Compute">
         <value>حساب</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>مسح الهاش</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>استعراض الهاش</value>
+        <value>تصفح الهاش</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>داكن</value>
@@ -499,9 +506,6 @@
     </data>
     <data name="Msg_TaskCancelled_Title">
         <value>تم إيقاف المهمة</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>الملف {0} يتجاوز الحد {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
         <value>نعم</value>
@@ -519,16 +523,16 @@
         <value>تأكيد الخروج</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>الخروج سيؤدي إلى إلغاء جميع المهام الجارية. هل أنت متأكد؟</value>
+        <value>الخروج سيلغي جميع المهام الجارية. هل أنت متأكد؟</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>تم إيقاف المهمة بسبب انتهاء المهلة.</value>
+        <value>تم إيقاف المهمة بسبب المهلة.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>حفظ سجل التصحيح على القرص.</value>
+        <value>حفظ سجل التصحيح إلى القرص.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>إيقاف التسجيل في الوقت الفعلي مؤقتًا.</value>
+        <value>إيقاف التسجيل في الوقت الحقيقي مؤقتاً.</value>
     </data>
     <data name="Tip_ShowHash">
         <value>إظهار الهاش</value>
@@ -540,20 +544,193 @@
         <value>نسخ المسار</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>القرص ممتلئ. اختر مكانًا آخر يا صاحبي :)</value>
+        <value>محرك الأقراص ممتلئ. يرجى اختيار موقع آخر :)</value>
     </data>
     <data name="Tip_HashVisibility">
         <value>رؤية الهاش</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>لا ملفات. اضغط 'إضافة ملفات' للبدء.</value>
+        <value>لا توجد ملفات. انقر فوق 'إضافة ملفات' للبدء.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>قفل هذا الثيم كافتراضي</value>
+        <value>قفل هذا المظهر كافتراضي</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
-        <value>تم تخطي {0} ملفًا تجاوزت الحد المسموح به ({1} {2}):
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>تم تخطي {0} ملفات تتجاوز الحد ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>لغة النظام</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>العودة إلى الإعداد 'تلقائي' تتطلب إعادة التشغيل لتأخذ مفعولها الكامل. هل تريد الاستمرار؟</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>تغيير اللغة</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>هل أنت متأكد من ذلك؟</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>لا تظهر هذا التنبيه مرة أخرى</value>
+    </data>
+    <data name="Error_Network">
+        <value>خطأ في الاتصال بالشبكة. يرجى التحقق من اتصال الإنترنت الخاص بك.</value>
+    </data>
+    <data name="Error_Server">
+        <value>خطأ في الخادم (5xx). يرجى المحاولة مرة أخرى لاحقاً.</value>
+    </data>
+    <data name="Error_Client">
+        <value>خطأ العميل (4xx). يرجى التحقق من الطلب.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>تم تجاوز حد معدل GitHub API. يرجى المحاولة مرة أخرى لاحقاً.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>لم يتم العثور على نسخة ما قبل الإصدار. الإبقاء على الإصدار الحالي.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>نسخة ما قبل الإصدار {0} متوفرة.
 
-{3}</value>
+            {1}
+
+            قد تكون هذه النسخة غير مستقرة. هل تريد التنزيل؟
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>مسح الفاشلة</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>تمت إزالة {0} عنصر.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>الوقت المتبقي: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>مدة المهمة: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>جاري الحساب...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>إضافة مجلد...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>المجلد المحدد فارغ.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>حدد مجلداً للمسح</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>إلغاء</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>حدود المعالجة</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>أقصى عدد ملفات لكل فحص مجلد</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>تحديد عدد الملفات المضافة من مجلد لمنع مشاكل الأداء.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>أقصى عدد مجلدات لكل نقرة</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>تحديد عدد المجلدات المحددة في وقت واحد.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>يمكنك تحديد ما يصل إلى {0} مجلدات فقط في المرة الواحدة.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>تمت إضافة {0} ملفات. تم تخطي {1} ملفات بسبب الحد.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>قراءة: {0}/s | كتابة: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>إظهار سرعة القراءة/الكتابة</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>عرض سرعة النقل في الوقت الفعلي أثناء عمليات الهاش.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>جاري حساب الهاش...</value>
+    </data>
+    <data name="Size_All">
+        <value>كل الأحجام</value>
+    </data>
+    <data name="Size_Small">
+        <value>صغير (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>متوسط (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>كبير (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>كبير جداً (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>وثائق</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>سياسة الخصوصية</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>شروط الخدمة</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>اتفاقية ترخيص المستخدم النهائي</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>إخلاء المسؤولية</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>اقرأني (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>سجل التغييرات</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>شكر وتقدير</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>يعالج</value>
+    </data>
+    <data name="Status_Failure">
+        <value>فشل</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>بحث بالاسم...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>الحجم</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>ملف GitHub الشخصي</value>
+    </data>
+    <data name="Filter_All">
+        <value>الكل</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>تحرير الذاكرة</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>فرض جمع البيانات المهملة (GC) لتحرير الذاكرة.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>تنظيف الذاكرة</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>تم بدء تنظيف الذاكرة.</value>
     </data>
 </root>

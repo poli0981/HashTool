@@ -22,7 +22,7 @@
         <value>Δημιουργία Hash</value>
     </data>
     <data name="Menu_Check">
-        <value>Έλεγχος Hash</value>
+        <value>Επαλήθευση Hash</value>
     </data>
     <data name="Menu_Settings">
         <value>Ρυθμίσεις</value>
@@ -40,22 +40,25 @@
         <value>Προγραμματιστής</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>Προσθήκη Αρχείων...</value>
+        <value>Προσθήκη αρχείων...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Εκκαθάριση Λίστας</value>
+        <value>Καθαρισμός λίστας</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>Καθαρισμός Hash</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>ΥΠΟΛΟΓΙΣΜΟΣ ΌΛΩΝ</value>
+        <value>ΥΠΟΛΟΓΙΣΜΟΣ ΟΛΩΝ</value>
     </data>
     <data name="Btn_Compress">
         <value>Συμπίεση (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ΕΛΕΓΧΟΣ ΌΛΩΝ</value>
+        <value>ΕΠΑΛΗΘΕΥΣΗ ΟΛΩΝ</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Έλεγχος Τώρα</value>
+        <value>Επαλήθευση Τώρα</value>
     </data>
     <data name="Btn_Install">
         <value>Εγκατάσταση</value>
@@ -70,44 +73,43 @@
         <value>Δημιουργία Hash &amp; Συμπίεση</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Μαζικός Έλεγχος</value>
+        <value>Μαζική Επαλήθευση</value>
     </data>
     <data name="Title_Update">
-        <value>Έλεγχος Ενημερώσεων</value>
+        <value>Έλεγχος ενημερώσεων</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Προειδοποίηση Έκδοσης Προγραμματιστή</value>
+        <value>Προειδοποίηση Έκδοσης Dev</value>
     </data>
     <data name="Title_About">
         <value>Σχετικά</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Συμβουλή: Shift+C για Υπολογισμό Όλων, Shift+Z για Συμπίεση, Ctrl+F για Προσθήκη Αρχείων.</value>
+        <value>Συμβουλή: Shift+C για Υπολογισμό, Shift+Z για Συμπίεση, Ctrl+F για Προσθήκη.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Συμβουλή: Shift+A για Έλεγχο Όλων, Ctrl+F για Προσθήκη Αρχείων, Ctrl+Shift+H για Εκκαθάριση Λίστας.
-        </value>
+        <value>Συμβουλή: Shift+A για Επαλήθευση, Ctrl+F για Προσθήκη, Ctrl+Shift+H για Καθαρισμό.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Έτοιμο</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Παράδειγμα:</value>
+        <value>Δείγμα:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>Τρέχουσα έκδοση: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Κανάλι έκδοσης:</value>
+        <value>Κανάλι κυκλοφορίας:</value>
     </data>
     <data name="Lbl_TotalFiles">
         <value>Σύνολο αρχείων: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Σταθερή</value>
+        <value>Σταθερή (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Έκδοση Προγραμματιστή</value>
+        <value>Προγραμματιστή (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Γλώσσα</value>
@@ -128,88 +130,88 @@
         <value>Μέγεθος γραμματοσειράς (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Αυτόματη επιλογή βέλτιστης γραμματοσειράς για τη γλώσσα</value>
+        <value>Αυτόματη επιλογή για τη γλώσσα</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Κλείδωμα ως προεπιλεγμένη γραμματοσειρά</value>
+        <value>Κλείδωμα ως προεπιλογή</value>
     </data>
     <data name="Settings_Scale">
         <value>Κλίμακα UI</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Απόκρυψη Τιμών Hash (Ασφάλεια)</value>
+        <value>Απόκρυψη τιμών Hash (Ασφάλεια)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Επαναφορά Θέματος</value>
+        <value>Επαναφορά ρυθμίσεων</value>
     </data>
     <data name="Settings_Other">
         <value>Απόρρητο &amp; Ασφάλεια</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Ορισμός ως Προεπιλογή</value>
+        <value>Ορισμός ως προεπιλογή</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Προσαρμοσμένο Χρώμα Κειμένου</value>
+        <value>Προσαρμοσμένο χρώμα κειμένου</value>
     </data>
     <data name="Settings_Advanced">
-        <value>Προχωρημένο</value>
+        <value>Για προχωρημένους</value>
     </data>
     <data name="Settings_AdminMode">
         <value>Εκτέλεση ως Διαχειριστής</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Απαιτεί επανεκκίνηση. Επιτρέπει πρόσβαση σε προστατευμένα αρχεία.</value>
+        <value>Απαιτεί επανεκκίνηση. Επιτρέπει την πρόσβαση σε προστατευμένα αρχεία.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Όριο Μεγέθους Αρχείου Εισόδου</value>
+        <value>Όριο μεγέθους αρχείου εισόδου</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Μέγιστο μέγεθος για αρχεία προς επεξεργασία.</value>
+        <value>Μέγιστο μέγεθος αρχείων για επεξεργασία.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Χρόνος Αναγκαστικής Εξόδου</value>
+        <value>Χρονικό όριο αναγκαστικού τερματισμού</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Χρόνος (δευτερόλεπτα) πριν θεωρηθεί η εφαρμογή παγωμένη.</value>
+        <value>Χρόνος (δευτ.) πριν θεωρηθεί ότι η εφαρμογή κόλλησε.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Χρόνος Επεξεργασίας Αρχείου</value>
+        <value>Χρονικό όριο επεξεργασίας αρχείου</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Ακύρωση αν ένα αρχείο διαρκέσει υπερβολικά.</value>
+        <value>Ακύρωση εάν ένα αρχείο καθυστερεί πολύ.</value>
     </data>
     <data name="Settings_Emergency">
         <value>Ενέργεια Έκτακτης Ανάγκης</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Αναγκαστική έξοδος της εφαρμογής και ακύρωση όλων των εργασιών αμέσως.</value>
+        <value>Αναγκαστικός τερματισμός και ακύρωση όλων άμεσα.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Αναγκαστική Έξοδος &amp; Ακύρωση Όλων</value>
+        <value>Τερματισμός &amp; Ακύρωση Όλων</value>
     </data>
     <data name="Settings_Configuration">
-        <value>Διαμόρφωση</value>
+        <value>Διαμόρφωση (Configuration)</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Κλείδωμα Ρυθμίσεων (Αποθήκευση ως Προεπιλογή)</value>
+        <value>Κλείδωμα ρυθμίσεων (Αποθήκευση ως προεπιλογή)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Πρόληψη τυχαίων αλλαγών. Μόνο η Απόκρυψη Hash παραμένει ρυθμιζόμενη.</value>
+        <value>Αποτροπή τυχαίων αλλαγών. Μόνο η 'Απόκρυψη Hash' παραμένει ρυθμιζόμενη.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Επαναφορά Όλων των Ρυθμίσεων</value>
+        <value>Επαναφορά όλων των ρυθμίσεων</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Επαναφορά στις εργοστασιακές προεπιλογές.</value>
+        <value>Επαναφορά στις εργοστασιακές ρυθμίσεις.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Διαδρομή Αρχείου Διαμόρφωσης</value>
+        <value>Διαδρομή αρχείου ρυθμίσεων</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Εμφάνιση πλήρους διαδρομής και αντιγραφή στο πρόχειρο.</value>
+        <value>Εμφάνιση πλήρους διαδρομής και αντιγραφή.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Εμφάνιση Διαδρομής</value>
+        <value>Εμφάνιση διαδρομής</value>
     </data>
     <data name="Settings_AutoSave">
         <value>Οι ρυθμίσεις αποθηκεύονται αυτόματα στο config.json</value>
@@ -218,7 +220,7 @@
         <value>Λειτουργία Προγραμματιστή</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Ενεργοποίηση προχωρημένων εργαλείων καταγραφής και αποσφαλμάτωσης.</value>
+        <value>Ενεργοποίηση καταγραφής και εργαλείων αποσφαλμάτωσης.</value>
     </data>
     <data name="Dev_Console">
         <value>Κονσόλα Προγραμματιστή</value>
@@ -230,22 +232,22 @@
         <value>Εγγραφή</value>
     </data>
     <data name="Dev_Paused">
-        <value>Παύση</value>
+        <value>Σε παύση</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>Αποθήκευση σε Αρχείο</value>
+        <value>Αποθήκευση σε αρχείο</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Χωρίς Αποθήκευση</value>
+        <value>Χωρίς αποθήκευση</value>
     </data>
     <data name="Dev_Clear">
-        <value>Εκκαθάριση Κονσόλας</value>
+        <value>Καθαρισμός κονσόλας</value>
     </data>
     <data name="Dev_Copy">
-        <value>Αντιγραφή Όλων</value>
+        <value>Αντιγραφή όλων</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Άνοιγμα Φακέλου Καταγραφών</value>
+        <value>Άνοιγμα φακέλου καταγραφής</value>
     </data>
     <data name="About_Author">
         <value>Δημιουργός</value>
@@ -254,28 +256,28 @@
         <value>Λογισμικό</value>
     </data>
     <data name="About_ThirdParty">
-        <value>Βιβλιοθήκες Τρίτων</value>
+        <value>Βιβλιοθήκες τρίτων</value>
     </data>
     <data name="About_Copyright">
-        <value>Πνευματικά Δικαιώματα</value>
+        <value>Πνευματικά δικαιώματα</value>
     </data>
     <data name="About_Desc">
-        <value>Ισχυρό εργαλείο για δημιουργία, έλεγχο και συμπίεση hash αρχείων. Ή τουλάχιστον έτσι νομίζω :)</value>
+        <value>Ένα ισχυρό εργαλείο για δημιουργία, επαλήθευση και συμπίεση hash αρχείων. Ή έτσι νομίζω :)</value>
     </data>
     <data name="About_License">
-        <value>Κυκλοφόρησε υπό άδεια MIT.</value>
+        <value>Κυκλοφορεί υπό την άδεια MIT.</value>
     </data>
     <data name="About_Tech">
         <value>Τεχνολογία</value>
     </data>
     <data name="About_TechContent">
-        <value>Κατασκευάστηκε με C# και .NET 10.0.102.</value>
+        <value>Δημιουργήθηκε με C# και .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
         <value>Βοήθεια AI</value>
     </data>
     <data name="About_AIContent">
-        <value>Αυτό το λογισμικό αναπτύχθηκε με βοήθεια AI (Gemini 3 Pro και Grok 4.1).</value>
+        <value>Αυτό το λογισμικό αναπτύχθηκε με τη βοήθεια AI (Gemini 3 Pro και Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
         <value>Επεξεργασία ({0})...</value>
@@ -302,25 +304,25 @@
         <value>Λείπει το αρχικό αρχείο!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Λείπει τιμή hash (Εισαγάγετε ή φορτώστε αρχείο hash)</value>
+        <value>Λείπει η τιμή Hash (Εισάγετε ή φορτώστε αρχείο)</value>
     </data>
     <data name="Status_Valid">
-        <value>ΈΓΚΥΡΟ</value>
+        <value>ΕΓΚΥΡΟ</value>
     </data>
     <data name="Status_Invalid">
-        <value>ΑΣΥΜΒΑΤΟ!</value>
+        <value>ΑΣΥΜΦΩΝΙΑ!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Φορτώθηκε αρχείο hash</value>
+        <value>Το αρχείο Hash φορτώθηκε</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Αναντιστοιχία ονόματος αρχείου hash!</value>
+        <value>Ασυμφωνία ονόματος αρχείου Hash!</value>
     </data>
     <data name="Status_NoHashFound">
         <value>Το αρχείο δεν περιέχει hash!</value>
     </data>
     <data name="Status_Checking">
-        <value>Έλεγχος ενημερώσεων...</value>
+        <value>Έλεγχος για ενημερώσεις...</value>
     </data>
     <data name="Status_NewVersion">
         <value>Εντοπίστηκε νέα έκδοση!</value>
@@ -341,13 +343,13 @@
         <value>Έτοιμο (Από αρχείο .hash)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Χάθηκε το αρχικό αρχείο!</value>
+        <value>Το αρχικό αρχείο χάθηκε!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Αναντιστοιχία ονόματος αρχείου hash!</value>
+        <value>Ασυμφωνία ονόματος αρχείου Hash!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Επιτυχής απόθεση αρχείου hash</value>
+        <value>Το αρχείο Hash μεταφέρθηκε επιτυχώς</value>
     </data>
     <data name="Status_DropNoHash">
         <value>Το αρχείο δεν περιέχει hash!</value>
@@ -362,12 +364,13 @@
         <value>Η επεξεργασία ολοκληρώθηκε!
             ✅ Επιτυχία: {0}
             ❌ Αποτυχία: {1}
+            ⛔ Ακυρώθηκε: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Ελέγχθηκαν {0} αρχεία.
-            ✅ Ταιριάζει: {1}
-            ❌ Δεν ταιριάζει/Σφάλμα: {2}
+            ✅ Ταίριασμα: {1}
+            ❌ Ασυμφωνία/Σφάλμα: {2}
             ⛔ Ακυρώθηκε: {3}
         </value>
     </data>
@@ -375,7 +378,7 @@
         <value>Λάθος αρχείο!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Αναντιστοιχία αρχείου hash!
+        <value>Ασυμφωνία αρχείου Hash!
 
             Αρχικό αρχείο: {0}
             Επιλεγμένο αρχείο: {1}
@@ -392,7 +395,7 @@
             Αλλαγές:
             {1}
 
-            Κάντε κλικ 'Ενημέρωση Τώρα' για λήψη.
+            Κάντε κλικ στο 'Ενημέρωση Τώρα' για λήψη.
         </value>
     </data>
     <data name="Msg_NoUpdate">
@@ -402,7 +405,7 @@
         <value>Σφάλμα</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Δεν είναι δυνατή η ανάγνωση αυτού του αρχείου hash.</value>
+        <value>Αδυναμία ανάγνωσης αυτού του αρχείου hash.</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>Έλεγχος Διαμόρφωσης</value>
@@ -419,30 +422,30 @@
         <value>Το αρχείο δημιουργήθηκε επιτυχώς!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Η διαδρομή διαμόρφωσης αντιγράφηκε.</value>
+        <value>Η διαδρομή αντιγράφηκε.</value>
     </data>
     <data name="Msg_AdminMode">
         <value>Λειτουργία Διαχειριστή</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Παρακαλώ επανεκκινήστε την εφαρμογή για να εφαρμοστούν οι αλλαγές.</value>
+        <value>Παρακαλώ επανεκκινήστε την εφαρμογή για να ισχύσουν οι αλλαγές.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Δεν είναι δυνατό το άνοιγμα φακέλου: {0}</value>
+        <value>Αδυναμία ανοίγματος φακέλου: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΕΚΔΟΣΗΣ ΠΡΟΓΡΑΜΜΑΤΙΣΤΗ</value>
+        <value>⚠️ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΕΚΔΟΣΗΣ DEV</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Πρόκειται να μεταβείτε στο κανάλι ενημερώσεων Προγραμματιστή (Προ-έκδοση).
+        <value>Πρόκειται να μεταβείτε στο κανάλι ενημερώσεων Προγραμματιστή (Pre-release).
 
             Αυτή η έκδοση μπορεί να περιέχει σφάλματα, να είναι ασταθής και να προκαλέσει απώλεια δεδομένων.
 
-            Δεν είμαι υπεύθυνος για τυχόν προβλήματα που προκύψουν από τη χρήση αυτής της έκδοσης.
+            Δεν φέρω ευθύνη για τυχόν προβλήματα που προκύψουν από τη χρήση αυτής της έκδοσης.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Διάβασα και συμφωνώ. Αναλαμβάνω πλήρη ευθύνη.</value>
+        <value>Διάβασα και συμφωνώ. Αναλαμβάνω την πλήρη ευθύνη.</value>
     </data>
     <data name="Dialog_SaveHash">
         <value>Αποθήκευση Αρχείου Hash</value>
@@ -457,16 +460,17 @@
         <value>Επιλογή αρχείου hash για: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Επιλογή Αρχείων (Αρχικό ή Αρχείο .hash)</value>
+        <value>Επιλογή Αρχείων (Αρχικό ή .hash)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Προχωρημένο: Επιστροφή σε Παλαιότερη Έκδοση</value>
+        <value>Για προχωρημένους: Επιστροφή σε παλαιότερη έκδοση</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Αυτή η λειτουργία επιτρέπει την εγκατάσταση συγκεκριμένης έκδοσης αν η νέα έχει προβλήματα.</value>
+        <value>Αυτή η λειτουργία σάς επιτρέπει να εγκαταστήσετε μια συγκεκριμένη έκδοση εάν η νέα έχει προβλήματα.
+        </value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Επικόλληση/Απόθεση εδώ...</value>
+        <value>Επικόλληση ή Απόθεση εδώ...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Δευτερόλεπτα</value>
@@ -486,8 +490,11 @@
     <data name="Tip_Compute">
         <value>Υπολογισμός</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Καθαρισμός Hash</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Περιήγηση Hash</value>
+        <value>Αναζήτηση Hash</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>Σκοτεινό</value>
@@ -496,13 +503,10 @@
         <value>Φωτεινό</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>Σύστημα</value>
+        <value>Συστήματος</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>Η Εργασία Διακόπηκε</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Το αρχείο {0} υπερβαίνει το όριο {1} {2}.</value>
+        <value>Η εργασία διακόπηκε</value>
     </data>
     <data name="Btn_Yes">
         <value>Ναι</value>
@@ -517,7 +521,7 @@
         <value>Αρχείο Zip</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Επιβεβαίωση Εξόδου</value>
+        <value>Επιβεβαίωση εξόδου</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
         <value>Η έξοδος θα ακυρώσει όλες τις τρέχουσες εργασίες. Είστε σίγουροι;</value>
@@ -526,7 +530,7 @@
         <value>Η εργασία διακόπηκε λόγω χρονικού ορίου.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Αποθήκευση αρχείου καταγραφής αποσφαλμάτωσης σε δίσκο.</value>
+        <value>Αποθήκευση αρχείου καταγραφής στο δίσκο.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
         <value>Παύση καταγραφής σε πραγματικό χρόνο.</value>
@@ -541,15 +545,193 @@
         <value>Αντιγραφή Διαδρομής</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Ο δίσκος σου είναι γεμάτος. Διάλεξε άλλο μέρος ρε φίλε :)</value>
+        <value>Ο δίσκος σας είναι γεμάτος. Παρακαλώ επιλέξτε άλλη τοποθεσία :)</value>
     </data>
     <data name="Tip_HashVisibility">
         <value>Ορατότητα Hash</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Κανένα αρχείο. Κάντε κλικ 'Προσθήκη Αρχείων' για έναρξη.</value>
+        <value>Δεν υπάρχουν αρχεία. Κάντε κλικ στο 'Προσθήκη αρχείων'.</value>
     </data>
     <data name="Settings_LockTheme">
         <value>Κλείδωμα αυτού του θέματος ως προεπιλογή</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Παραλείφθηκαν {0} αρχεία που υπερβαίνουν το όριο ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Γλώσσα Συστήματος</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Η επιστροφή στη ρύθμιση 'Αυτόματα' απαιτεί επανεκκίνηση. Θέλετε να συνεχίσετε;</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Αλλαγή Γλώσσας</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Είστε σίγουροι;</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Να μην εμφανιστεί ξανά</value>
+    </data>
+    <data name="Error_Network">
+        <value>Σφάλμα σύνδεσης δικτύου. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Σφάλμα διακομιστή (5xx). Δοκιμάστε ξανά αργότερα.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Σφάλμα πελάτη (4xx). Ελέγξτε το αίτημα.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>Υπέρβαση ορίου GitHub API. Δοκιμάστε ξανά αργότερα.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Δεν βρέθηκε έκδοση pre-release. Διατήρηση τρέχουσας.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Η έκδοση pre-release {0} είναι διαθέσιμη.
+
+            {1}
+
+            Αυτή η έκδοση μπορεί να είναι ασταθής. Θέλετε να την κατεβάσετε;
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Καθαρισμός Αποτυχημένων</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>Αφαιρέθηκαν {0} αντικείμενα.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Υπολειπόμενος χρόνος: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Διάρκεια εργασίας: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Υπολογισμός...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Προσθήκη Φακέλου...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Ο επιλεγμένος φάκελος είναι άδειος.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Επιλογή φακέλου για σάρωση</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Ακύρωση</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Όρια Επεξεργασίας</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Μέγιστος αριθμός αρχείων ανά φάκελο</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Περιορισμός αριθμού αρχείων από φάκελο για αποφυγή προβλημάτων απόδοσης.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Μέγιστος αριθμός φακέλων ταυτόχρονα</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Περιορισμός αριθμού επιλεγμένων φακέλων.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Μπορείτε να επιλέξετε μέχρι {0} φακέλους ταυτόχρονα.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Προστέθηκαν {0} αρχεία. Παραλείφθηκαν {1} λόγω ορίου.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Ανάγνωση: {0}/s | Εγγραφή: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Εμφάνιση ταχύτητας Ανάγνωσης/Εγγραφής</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Εμφάνιση ταχύτητας μεταφοράς σε πραγματικό χρόνο.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Υπολογισμός Hash...</value>
+    </data>
+    <data name="Size_All">
+        <value>Όλα τα μεγέθη</value>
+    </data>
+    <data name="Size_Small">
+        <value>Μικρό (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Μεσαίο (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Μεγάλο (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Πολύ μεγάλο (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Έγγραφα</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Πολιτική Απορρήτου</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Όροι Χρήσης</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Άδεια Χρήσης (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Αποποίηση Ευθύνης</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>README</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Ιστορικό αλλαγών</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Ευχαριστίες</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Επεξεργασία</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Αποτυχία</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Αναζήτηση με όνομα...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Μέγεθος</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>Προφίλ GitHub</value>
+    </data>
+    <data name="Filter_All">
+        <value>Όλα</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Ελευθέρωση Μνήμης</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Αναγκαστική εκκαθάριση μνήμης (GC) για ελευθέρωση RAM.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Εκκαθάριση Μνήμης</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Ενεργοποιήθηκε η εκκαθάριση μνήμης.</value>
     </data>
 </root>

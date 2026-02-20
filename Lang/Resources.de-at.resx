@@ -19,10 +19,10 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Hash erstellen</value>
+        <value>Hash generieren</value>
     </data>
     <data name="Menu_Check">
-        <value>Hash prüfen</value>
+        <value>Hash überprüfen</value>
     </data>
     <data name="Menu_Settings">
         <value>Einstellungen</value>
@@ -31,7 +31,7 @@
         <value>Update</value>
     </data>
     <data name="Menu_Theme">
-        <value>Theme</value>
+        <value>Design</value>
     </data>
     <data name="Menu_About">
         <value>Über</value>
@@ -45,14 +45,17 @@
     <data name="Btn_Clear">
         <value>Liste leeren</value>
     </data>
+    <data name="Btn_ClearHashes">
+        <value>Hashes löschen</value>
+    </data>
     <data name="Btn_CalcAll">
-        <value>ALLES BERECHNEN</value>
+        <value>ALLE BERECHNEN</value>
     </data>
     <data name="Btn_Compress">
         <value>Komprimieren (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ALLES PRÜFEN</value>
+        <value>ALLE PRÜFEN</value>
     </data>
     <data name="Btn_CheckNow">
         <value>Jetzt prüfen</value>
@@ -67,25 +70,25 @@
         <value>Ablehnen</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Hash erstellen &amp; komprimieren</value>
+        <value>Hash generieren &amp; Komprimieren</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Stapelprüfung</value>
+        <value>Stapelverifizierung</value>
     </data>
     <data name="Title_Update">
         <value>Nach Updates suchen</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Entwicklerversion Warnung</value>
+        <value>Entwicklerversion-Warnung</value>
     </data>
     <data name="Title_About">
-        <value>Über</value>
+        <value>Über die App</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tipp: Shift+C alles berechnen, Shift+Z komprimieren, Ctrl+F Dateien hinzufügen.</value>
+        <value>Tipp: Shift+C zum Berechnen, Shift+Z zum Komprimieren, Ctrl+F zum Hinzufügen.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tipp: Shift+A alles prüfen, Ctrl+F Dateien hinzufügen, Ctrl+Shift+H Liste leeren.</value>
+        <value>Tipp: Shift+A zum Prüfen, Ctrl+F zum Hinzufügen, Ctrl+Shift+H zum Leeren.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Bereit</value>
@@ -97,25 +100,25 @@
         <value>Aktuelle Version: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Veröffentlichungskanal:</value>
+        <value>Release-Kanal:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Gesamtdateien: {0}</value>
+        <value>Dateien gesamt: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabil</value>
+        <value>Stabil (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Entwicklerversion</value>
+        <value>Entwickler (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Sprache</value>
     </data>
     <data name="Settings_Theme">
-        <value>Theme</value>
+        <value>Thema</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>Theme-Stil</value>
+        <value>Themenstil</value>
     </data>
     <data name="Settings_ThemeVariant">
         <value>Hell/Dunkel</value>
@@ -127,10 +130,10 @@
         <value>Schriftgröße (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automatische optimale Schriftart für Sprache wählen</value>
+        <value>Optimale Schriftart für Sprache wählen</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Als Standardschriftart sperren</value>
+        <value>Als Standardschrift sperren</value>
     </data>
     <data name="Settings_Scale">
         <value>UI-Skalierung</value>
@@ -139,10 +142,10 @@
         <value>Hash-Werte maskieren (Sicherheit)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Theme zurücksetzen</value>
+        <value>Einstellungen zurücksetzen</value>
     </data>
     <data name="Settings_Other">
-        <value>Privatsphäre &amp; Sicherheit</value>
+        <value>Datenschutz &amp; Sicherheit</value>
     </data>
     <data name="Settings_SetDefault">
         <value>Als Standard festlegen</value>
@@ -160,22 +163,22 @@
         <value>Neustart erforderlich. Erlaubt Zugriff auf geschützte Dateien.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Eingabedateigrößenlimit</value>
+        <value>Limit für Eingabedateigröße</value>
     </data>
     <data name="Settings_FileSizeDesc">
         <value>Maximale Größe für zu verarbeitende Dateien.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Erzwungener Beendigungs-Timeout</value>
+        <value>Timeout für Erzwingen des Beendens</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Zeit (Sekunden) bevor die App als eingefroren gilt.</value>
+        <value>Zeit (Sekunden), bevor die App als eingefroren gilt.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Dateiverarbeitungs-Timeout</value>
+        <value>Timeout für Dateiverarbeitung</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Abbrechen, wenn eine Datei zu lange braucht.</value>
+        <value>Abbrechen, wenn eine Datei zu lange dauert.</value>
     </data>
     <data name="Settings_Emergency">
         <value>Notfallaktion</value>
@@ -184,16 +187,16 @@
         <value>App zwangsweise beenden und alle Aufgaben sofort abbrechen.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Zwangsbeendigung &amp; Alles abbrechen</value>
+        <value>Beenden erzwingen &amp; Alles abbrechen</value>
     </data>
     <data name="Settings_Configuration">
         <value>Konfiguration</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Einstellungen sperren (Als Standard speichern)</value>
+        <value>Einstellungen sperren (Als Standard)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Zufällige Änderungen verhindern. Nur Hash-Maskierung bleibt einstellbar.</value>
+        <value>Verhindert versehentliche Änderungen. Nur 'Hash-Maskierung' bleibt anpassbar.</value>
     </data>
     <data name="Settings_ResetAll">
         <value>Alle Einstellungen zurücksetzen</value>
@@ -202,7 +205,7 @@
         <value>Auf Werkseinstellungen zurücksetzen.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Konfigurationsdateipfad</value>
+        <value>Pfad der Konfigurationsdatei</value>
     </data>
     <data name="Settings_ConfigDesc">
         <value>Vollständigen Pfad anzeigen und in Zwischenablage kopieren.</value>
@@ -217,7 +220,7 @@
         <value>Entwicklermodus</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Erweiterte Protokollierung und Debugging-Tools aktivieren.</value>
+        <value>Erweitertes Logging und Debugging-Tools aktivieren.</value>
     </data>
     <data name="Dev_Console">
         <value>Entwicklerkonsole</value>
@@ -256,33 +259,31 @@
         <value>Drittanbieter-Bibliotheken</value>
     </data>
     <data name="About_Copyright">
-        <value>Urheberrecht</value>
+        <value>Copyright</value>
     </data>
     <data name="About_Desc">
-        <value>Leistungsstarkes Tool zum Erstellen, Prüfen und Komprimieren von Datei-Hashes. Oder zumindest denke ich
-            das :)
-        </value>
+        <value>Ein mächtiges Tool zum Generieren, Prüfen und Komprimieren von Dateihashes. Zumindest glaube ich das :)</value>
     </data>
     <data name="About_License">
-        <value>Unter MIT-Lizenz veröffentlicht.</value>
+        <value>Veröffentlicht unter der MIT-Lizenz.</value>
     </data>
     <data name="About_Tech">
         <value>Technologie</value>
     </data>
     <data name="About_TechContent">
-        <value>Mit C# und .NET 10.0.102 erstellt.</value>
+        <value>Erstellt mit C# und .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
         <value>KI-Unterstützung</value>
     </data>
     <data name="About_AIContent">
-        <value>Diese Software wurde mit KI-Unterstützung entwickelt (Gemini 3 Pro und Grok 4.1).</value>
+        <value>Diese Software wurde mit Unterstützung von KI (Gemini 3 Pro und Grok 4.1) entwickelt.</value>
     </data>
     <data name="Status_Processing">
-        <value>Verarbeitet ({0})...</value>
+        <value>Verarbeite ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>Fertig</value>
+        <value>Abgeschlossen</value>
     </data>
     <data name="Status_Error">
         <value>Fehler: {0}</value>
@@ -297,13 +298,13 @@
         <value>Komprimiert!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Wartet auf Hash/Eingabe...</value>
+        <value>Warte auf Hash/Eingabe...</value>
     </data>
     <data name="Status_MissingOriginal">
         <value>Originaldatei fehlt!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash-Wert fehlt (Eingeben oder Hash-Datei laden)</value>
+        <value>Hash-Wert fehlt (Eingeben oder laden)</value>
     </data>
     <data name="Status_Valid">
         <value>GÜLTIG</value>
@@ -324,16 +325,16 @@
         <value>Suche nach Updates...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Neue Version entdeckt!</value>
+        <value>Neue Version gefunden!</value>
     </data>
     <data name="Status_Latest">
         <value>Sie verwenden die neueste Version.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Update-Prüfungsfehler: {0}</value>
+        <value>Fehler bei Update-Prüfung: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Herunterladen und Installieren...</value>
+        <value>Download und Installation...</value>
     </data>
     <data name="Status_InstallError">
         <value>Installationsfehler: {0}</value>
@@ -354,7 +355,7 @@
         <value>Datei enthält keinen Hash!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Dateilesefehler</value>
+        <value>Lesefehler</value>
     </data>
     <data name="Msg_Result_Title">
         <value>Ergebnis</value>
@@ -363,12 +364,13 @@
         <value>Verarbeitung abgeschlossen!
             ✅ Erfolg: {0}
             ❌ Fehlgeschlagen: {1}
+            ⛔ Abgebrochen: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>{0} Dateien geprüft.
-            ✅ Übereinstimmung: {1}
-            ❌ Keine Übereinstimmung/Fehler: {2}
+            ✅ Treffer: {1}
+            ❌ Ungültig/Fehler: {2}
             ⛔ Abgebrochen: {3}
         </value>
     </data>
@@ -376,12 +378,12 @@
         <value>Falsche Datei!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hash-Datei stimmt nicht überein!
+        <value>Hash-Datei passt nicht!
 
             Originaldatei: {0}
-            Ausgewählte Datei: {1}
+            Gewählte Datei: {1}
 
-            Bitte wählen Sie die richtige beigefügte Hash-Datei aus.
+            Bitte wählen Sie die korrekte zugehörige Hash-Datei.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -393,7 +395,7 @@
             Änderungen:
             {1}
 
-            Klicken Sie 'Jetzt aktualisieren' zum Herunterladen.
+            Klicken Sie auf 'Jetzt aktualisieren' zum Laden.
         </value>
     </data>
     <data name="Msg_NoUpdate">
@@ -409,7 +411,7 @@
         <value>Konfigurationsprüfung</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Datei existiert unter:
+        <value>Datei existiert in:
             {0}
         </value>
     </data>
@@ -432,18 +434,18 @@
         <value>Ordner kann nicht geöffnet werden: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ENTWICKLERVERSION WARNUNG</value>
+        <value>⚠️ ENTWICKLERVERSION-WARNUNG</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Sie wechseln zum Entwickler-Update-Kanal (Vorabversion).
+        <value>Sie wechseln zum Entwickler-Update-Kanal (Pre-release).
 
             Diese Version kann Fehler enthalten, instabil sein und Datenverlust verursachen.
 
-            Ich bin nicht verantwortlich für Probleme durch die Nutzung dieser Version.
+            Ich übernehme keine Verantwortung für Probleme, die durch diese Version entstehen.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Ich habe gelesen und akzeptiere. Ich übernehme volle Verantwortung.</value>
+        <value>Gelesen und akzeptiert. Ich übernehme die volle Verantwortung.</value>
     </data>
     <data name="Dialog_SaveHash">
         <value>Hash-Datei speichern</value>
@@ -452,22 +454,22 @@
         <value>Komprimierte Datei speichern</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Dateien für Hash auswählen</value>
+        <value>Dateien zum Hashen auswählen</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Hash-Datei für: {0} auswählen</value>
+        <value>Hash-Datei wählen für: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Dateien auswählen (Original oder .hash-Datei)</value>
+        <value>Dateien wählen (Original oder .hash)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Erweitert: Zurück zur älteren Version</value>
+        <value>Erweitert: Auf ältere Version zurücksetzen</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Diese Funktion ermöglicht die Installation einer bestimmten Version, falls die neue Probleme hat.</value>
+        <value>Diese Funktion erlaubt die Installation einer bestimmten Version, falls die neue Probleme macht.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Hier einfügen/ablegen...</value>
+        <value>Hier einfügen oder ablegen...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Sekunden</value>
@@ -479,13 +481,16 @@
         <value>Stopp</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>Datei entfernen</value>
+        <value>Entfernen</value>
     </data>
     <data name="Tip_CopyHash">
         <value>Hash kopieren</value>
     </data>
     <data name="Tip_Compute">
         <value>Berechnen</value>
+    </data>
+    <data name="Tip_ClearHash">
+        <value>Hash leeren</value>
     </data>
     <data name="Tip_BrowseHash">
         <value>Hash durchsuchen</value>
@@ -501,9 +506,6 @@
     </data>
     <data name="Msg_TaskCancelled_Title">
         <value>Aufgabe gestoppt</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Datei {0} überschreitet das Limit {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
         <value>Ja</value>
@@ -521,13 +523,13 @@
         <value>Beenden bestätigen</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Beenden bricht alle laufenden Aufgaben ab. Sind Sie sicher?</value>
+        <value>Das Beenden bricht alle laufenden Aufgaben ab. Sind Sie sicher?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Aufgabe wegen Timeout gestoppt.</value>
+        <value>Aufgabe wurde wegen Zeitüberschreitung gestoppt.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Debug-Log auf Festplatte speichern.</value>
+        <value>Debug-Log auf Datenträger speichern.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
         <value>Echtzeit-Logging pausieren.</value>
@@ -542,15 +544,193 @@
         <value>Pfad kopieren</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Deine Festplatte ist voll. Wähle einen anderen Ort Kumpel :)</value>
+        <value>Ihr Laufwerk ist voll. Bitte wählen Sie einen anderen Ort :)</value>
     </data>
     <data name="Tip_HashVisibility">
         <value>Hash-Sichtbarkeit</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Keine Dateien. Klicken Sie 'Dateien hinzufügen' zum Starten.</value>
+        <value>Keine Dateien. Klicken Sie auf 'Dateien hinzufügen'.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Dieses Theme als Standard sperren</value>
+        <value>Dieses Thema als Standard sperren</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>{0} Dateien übersprungen, die das Limit ({1} {2}) überschreiten:
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Systemsprache</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Die Rückkehr zu 'Automatisch' erfordert einen Neustart. Möchten Sie fortfahren?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Sprache ändern</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Sind Sie sicher?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Diese Warnung nicht mehr anzeigen</value>
+    </data>
+    <data name="Error_Network">
+        <value>Netzwerkfehler. Bitte prüfen Sie Ihre Internetverbindung.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Serverfehler (5xx). Bitte versuchen Sie es später erneut.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Clientfehler (4xx). Bitte prüfen Sie die Anfrage.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>GitHub API-Rate-Limit überschritten. Bitte warten Sie etwas.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Keine Pre-release Version gefunden. Behalte aktuelle Version.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Pre-release Version {0} ist verfügbar.
+
+            {1}
+
+            Diese Version kann instabil sein. Herunterladen?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Fehlerhafte leeren</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>{0} Elemente entfernt.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Verbleibende Zeit: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Dauer: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Berechne...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Ordner hinzufügen...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Der gewählte Ordner ist leer.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Ordner zum Scannen wählen</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Abbrechen</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Verarbeitungslimits</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Max. Dateien pro Ordner-Scan</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Begrenzt die Anzahl der Dateien aus einem Ordner (Performance).</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Max. Ordner gleichzeitig</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Begrenzt die Anzahl der gleichzeitig ausgewählten Ordner.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Sie können maximal {0} Ordner gleichzeitig auswählen.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>{0} Dateien hinzugefügt. {1} wegen Limit übersprungen.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Lese: {0}/s | Schreibe: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Lese-/Schreibgeschwindigkeit anzeigen</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Zeigt die Übertragungsrate in Echtzeit während der Hash-Vorgänge.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Hash-Berechnung...</value>
+    </data>
+    <data name="Size_All">
+        <value>Alle Größen</value>
+    </data>
+    <data name="Size_Small">
+        <value>Klein (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Mittel (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Groß (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Sehr groß (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Dokumente</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Datenschutzerklärung</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Nutzungsbedingungen</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Lizenzvereinbarung (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Haftungsausschluss</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>README</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Änderungsprotokoll</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Danksagung</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Verarbeite</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Fehlgeschlagen</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Nach Namen suchen...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Größe</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub Profil</value>
+    </data>
+    <data name="Filter_All">
+        <value>Alle</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Speicher freigeben</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Garbage Collection (GC) erzwingen, um RAM freizugeben.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Speicher bereinigen</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Speicherbereinigung ausgelöst.</value>
     </data>
 </root>

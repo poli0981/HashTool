@@ -16,7 +16,7 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Hash ကိရိယာ</value>
     </data>
     <data name="Menu_Create">
         <value>Hash ဖန်တီးရန်</value>
@@ -28,7 +28,7 @@
         <value>ဆက်တင်များ</value>
     </data>
     <data name="Menu_Update">
-        <value>အဆင့်မြှင့်တင်ရန်</value>
+        <value>အပ်ဒိတ်</value>
     </data>
     <data name="Menu_Theme">
         <value>အပြင်အဆင်</value>
@@ -37,43 +37,46 @@
         <value>အကြောင်း</value>
     </data>
     <data name="Menu_Developer">
-        <value>ဆော့ဖ်ဝဲရေးသားသူ</value>
+        <value>ရေးသားသူ</value>
     </data>
     <data name="Btn_AddFiles">
         <value>ဖိုင်များ ထည့်ရန်...</value>
     </data>
     <data name="Btn_Clear">
-        <value>စာရင်း ရှင်းရန်</value>
+        <value>စာရင်းရှင်းရန်</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>Hash များ ရှင်းရန်</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>အားလုံး တွက်ချက်ရန်</value>
+        <value>အားလုံးကို တွက်ချက်ရန်</value>
     </data>
     <data name="Btn_Compress">
         <value>ဖိသိပ်ရန် (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>အားလုံး စစ်ဆေးရန်</value>
+        <value>အားလုံးကို စစ်ဆေးရန်</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>အခုပဲ စစ်ဆေးရန်</value>
+        <value>ယခု စစ်ဆေးရန်</value>
     </data>
     <data name="Btn_Install">
         <value>ထည့်သွင်းရန်</value>
     </data>
     <data name="Btn_Accept">
-        <value>လက်ခံရန်</value>
+        <value>လက်ခံသည်</value>
     </data>
     <data name="Btn_Decline">
-        <value>ငြင်းပယ်ရန်</value>
+        <value>ငြင်းပယ်သည်</value>
     </data>
     <data name="Title_CreateHash">
         <value>Hash ဖန်တီးပြီး ဖိသိပ်ရန်</value>
     </data>
     <data name="Title_CheckHash">
-        <value>အစုလိုက် စစ်ဆေးရန်</value>
+        <value>အစုလိုက် စစ်ဆေးခြင်း</value>
     </data>
     <data name="Title_Update">
-        <value>အဆင့်မြှင့်တင်မှု စစ်ဆေးရန်</value>
+        <value>အပ်ဒိတ်များ စစ်ဆေးရန်</value>
     </data>
     <data name="Title_Disclaimer">
         <value>Developer ဗားရှင်း သတိပေးချက်</value>
@@ -81,32 +84,32 @@
     <data name="Title_About">
         <value>အကြောင်း</value>
     </data>
-    <data name="Help_CreateHash.spell">
-        <value>အကြံပြုချက်: Shift+C အားလုံး တွက်ချက်ရန်၊ Shift+Z ဖိသိပ်ရန်၊ Ctrl+F ဖိုင်ထည့်ရန်။</value>
+    <data name="Help_CreateHash">
+        <value>အကြံပြုချက်: တွက်ချက်ရန် Shift+C၊ ဖိသိပ်ရန် Shift+Z၊ ဖိုင်ထည့်ရန် Ctrl+F။</value>
     </data>
     <data name="Help_CheckHash">
-        <value>အကြံပြုချက်: Shift+A အားလုံး စစ်ဆေးရန်၊ Ctrl+F ဖိုင်ထည့်ရန်၊ Ctrl+Shift+H စာရင်းရှင်းရန်။</value>
+        <value>အကြံပြုချက်: စစ်ဆေးရန် Shift+A၊ ဖိုင်ထည့်ရန် Ctrl+F၊ စာရင်းရှင်းရန် Ctrl+Shift+H။</value>
     </data>
     <data name="Lbl_Status_Ready">
-        <value>အသင့်ဖြစ်ပြီ</value>
+        <value>အဆင်သင့်ဖြစ်ပါပြီ</value>
     </data>
     <data name="Lbl_Sample">
-        <value>နမူနာ:</value>
+        <value>နမူနာ-</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>လက်ရှိ ဗားရှင်း: {0}</value>
+        <value>လက်ရှိဗားရှင်း: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>ထုတ်ပြန်ချန်နယ်:</value>
+        <value>ဖြန့်ချိရေး ချန်နယ်-</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>ဖိုင်စုစုပေါင်း: {0}</value>
+        <value>စုစုပေါင်း ဖိုင်များ: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>တည်ငြိမ်သော</value>
+        <value>တည်ငြိမ်သော (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Developer ဗားရှင်း</value>
+        <value>ရေးသားသူ (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>ဘာသာစကား</value>
@@ -118,109 +121,109 @@
         <value>အပြင်အဆင် ပုံစံ</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>အလင်းရောင်/အမှောင်</value>
+        <value>အလင်း/အမှောင်</value>
     </data>
     <data name="Settings_Font">
         <value>ဖောင့်</value>
     </data>
     <data name="Settings_FontSize">
-        <value>ဖောင့်အရွယ်အစား (pt)</value>
+        <value>ဖောင့် အရွယ်အစား (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>ဘာသာစကားအတွက် အကောင်းဆုံး ဖောင့်ကို အလိုအလျောက် ရွေးချယ်ရန်</value>
+        <value>ဘာသာစကားအတွက် အကောင်းဆုံးဖောင့်ကို အလိုအလျောက် ရွေးချယ်ရန်</value>
     </data>
     <data name="Settings_LockFont">
-        <value>မူလဖောင့်အဖြစ် လော့ခ်ချရန်</value>
+        <value>ပုံသေဖောင့်အဖြစ် သော့ခတ်ထားရန်</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI အတိုင်းအတာ</value>
+        <value>UI အရွယ်အစား</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Hash တန်ဖိုးများကို ဖုံးကွယ်ရန် (လုံခြုံရေး)</value>
+        <value>Hash တန်ဖိုးများကို ဖျောက်ထားရန် (လုံခြုံရေး)</value>
     </data>
     <data name="Settings_Reset">
-        <value>အပြင်အဆင် ပြန်သတ်မှတ်ရန်</value>
+        <value>ဆက်တင်များကို မူလအတိုင်း ပြန်ထားရန်</value>
     </data>
     <data name="Settings_Other">
-        <value>ကိုယ်ရေးအချက်အလက်နှင့် လုံခြုံရေး</value>
+        <value>ကိုယ်ရေးကိုယ်တာနှင့် လုံခြုံရေး</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>မူလအဖြစ် သတ်မှတ်ရန်</value>
+        <value>ပုံသေအဖြစ် သတ်မှတ်ရန်</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>စာသားအရောင် စိတ်ကြိုက်ပြုလုပ်ရန်</value>
+        <value>စိတ်ကြိုက် စာသားအရောင်</value>
     </data>
     <data name="Settings_Advanced">
         <value>အဆင့်မြင့်</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>အုပ်ချုပ်ရေးမှူးအဖြစ် လည်ပတ်ရန်</value>
+        <value>Admin အဖြစ် ဖွင့်ရန်</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>ပြန်စတင်ရန် လိုအပ်သည်။ ကာကွယ်ထားသော ဖိုင်များကို ဝင်ရောက်ခွင့်ပြုသည်။</value>
+        <value>App ကို ပြန်လည်စတင်ရန် လိုအပ်သည်။ ကာကွယ်ထားသော ဖိုင်များကို အသုံးပြုခွင့်ပေးသည်။</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>ထည့်သွင်းဖိုင်အရွယ်အစား ကန့်သတ်ချက်</value>
+        <value>ထည့်သွင်းမည့် ဖိုင်အရွယ်အစား ကန့်သတ်ချက်</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>လုပ်ဆောင်ရန် ဖိုင်များ၏ အများဆုံး အရွယ်အစား။</value>
+        <value>လုပ်ဆောင်မည့် ဖိုင်များ၏ အများဆုံး အရွယ်အစား။</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>အတင်းအဓမ္မ ထွက်ခွာရန် အချိန်ကန့်သတ်ချက်</value>
+        <value>အလျင်အမြန် ပိတ်ရန် အချိန်ကုန်ဆုံးမှု</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>အက်ပ်ကို ကျပ်တင်းသည်ဟု ယူဆမီ စောင့်ဆိုင်းချိန် (စက္ကန့်)။</value>
+        <value>App ရပ်တန့်သွားသည်ဟု မယူဆမီ အချိန် (စက္ကန့်)။</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>ဖိုင်တစ်ခု လုပ်ဆောင်ရန် အချိန်ကန့်သတ်ချက်</value>
+        <value>ဖိုင်လုပ်ဆောင်မှု အချိန်ကုန်ဆုံးမှု</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>ဖိုင်တစ်ခု အချိန်ကြာလွန်းပါက ပယ်ဖျက်ရန်။</value>
+        <value>ဖိုင်တစ်ခုက အချိန်အရမ်းကြာနေပါက ပယ်ဖျက်ရန်။</value>
     </data>
     <data name="Settings_Emergency">
         <value>အရေးပေါ် လုပ်ဆောင်ချက်</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>အက်ပ်ကို အတင်းအဓမ္မ ထွက်ခွာပြီး အားလုံး အလုပ်များကို ချက်ချင်း ပယ်ဖျက်ရန်။</value>
+        <value>App ကို အတင်းအကျပ် ပိတ်ပြီး လုပ်ငန်းစဉ်အားလုံးကို ချက်ချင်း ပယ်ဖျက်ရန်။</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>အတင်းအဓမ္မ ထွက်ခွာပြီး အားလုံး ပယ်ဖျက်ရန်</value>
+        <value>အတင်းအကျပ် ပိတ်ပြီး အားလုံးကို ပယ်ဖျက်ရန်</value>
     </data>
     <data name="Settings_Configuration">
         <value>ဖွဲ့စည်းပုံ</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>ဆက်တင်များကို လော့ခ်ချရန် (မူလအဖြစ် သိမ်းရန်)</value>
+        <value>ဆက်တင်များကို သော့ခတ်ရန် (ပုံသေအဖြစ် သိမ်းဆည်းရန်)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>မတော်တဆ ပြောင်းလဲမှုများကို ကာကွယ်ရန်။ Hash ဖုံးကွယ်ရန်သာ ချိန်ညှိနိုင်သည်။</value>
+        <value>မတော်တဆ ပြောင်းလဲမှုများကို တားဆီးရန်။ 'Hash ဖျောက်ထားခြင်း' ကိုသာ ပြင်ဆင်နိုင်သည်။</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>ဆက်တင်အားလုံးကို ပြန်သတ်မှတ်ရန်</value>
+        <value>ဆက်တင်အားလုံးကို မူလအတိုင်း ပြန်ထားရန်</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>စက်ရုံထုတ် မူလအတိုင်း ပြန်ထားရန်။</value>
+        <value>မူလ စက်ရုံဆက်တင်များသို့ ပြန်လည်သတ်မှတ်ရန်။</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>ဖွဲ့စည်းပုံ ဖိုင်လမ်းကြောင်း</value>
+        <value>ဖွဲ့စည်းပုံဖိုင် လမ်းကြောင်း</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>အပြည့်အစုံ လမ်းကြောင်းကို ပြပြီး clipboard သို့ ကူးယူရန်။</value>
+        <value>လမ်းကြောင်းအပြည့်အစုံကို ပြသပြီး ကော်ပီကူးရန်။</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>လမ်းကြောင်း ပြရန်</value>
+        <value>လမ်းကြောင်း ပြသရန်</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>ဆက်တင်များကို config.json သို့ အလိုအလျောက် သိမ်းရန်</value>
+        <value>ဆက်တင်များကို config.json သို့ အလိုအလျောက် သိမ်းဆည်းပါသည်</value>
     </data>
     <data name="Settings_DeveloperMode">
         <value>Developer မုဒ်</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>အဆင့်မြင့် လော့ဂ်နှင့် ဒီဘတ်ကိရိယာများ ဖွင့်ရန်။</value>
+        <value>အဆင့်မြင့် မှတ်တမ်းတင်ခြင်းနှင့် အမှားရှာဖွေရေး ကိရိယာများကို ဖွင့်ရန်။</value>
     </data>
     <data name="Dev_Console">
-        <value>Developer ကွန်ဆိုး</value>
+        <value>Developer ကွန်ဆိုးလ်</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
@@ -232,39 +235,37 @@
         <value>ခေတ္တရပ်ထားသည်</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>ဖိုင်သို့ သိမ်းရန်</value>
+        <value>ဖိုင်သို့ သိမ်းဆည်းရန်</value>
     </data>
     <data name="Dev_NoSave">
-        <value>မသိမ်းရန်</value>
+        <value>မသိမ်းဆည်းပါ</value>
     </data>
     <data name="Dev_Clear">
-        <value>ကွန်ဆိုး ရှင်းရန်</value>
+        <value>ကွန်ဆိုးလ်ကို ရှင်းရန်</value>
     </data>
     <data name="Dev_Copy">
-        <value>အားလုံး ကူးယူရန်</value>
+        <value>အားလုံးကို ကူးယူရန်</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>လော့ ဖိုလ်ဒါ ဖွင့်ရန်</value>
+        <value>မှတ်တမ်း ဖိုင်တွဲကို ဖွင့်ရန်</value>
     </data>
     <data name="About_Author">
         <value>ရေးသားသူ</value>
     </data>
     <data name="About_Software">
-        <value>ဆော့ဖ်ဝဲ</value>
+        <value>ဆော့ဖ်ဝဲလ်</value>
     </data>
     <data name="About_ThirdParty">
-        <value>တတိယပါတီ လိုက်ဘရေးရီများ</value>
+        <value>ပြင်ပစာကြည့်တိုက်များ (Libraries)</value>
     </data>
     <data name="About_Copyright">
         <value>မူပိုင်ခွင့်</value>
     </data>
     <data name="About_Desc">
-        <value>ဖိုင် hash များ ဖန်တီး၊ စစ်ဆေးပြီး ဖိသိပ်ရန် အစွမ်းထက်သော ကိရိယာ။ အနည်းဆုံး ကျွန်တော်ကတော့ အဲ့လိုထင်တယ်
-            :)
-        </value>
+        <value>ဖိုင် Hash များ ဖန်တီးရန်၊ စစ်ဆေးရန်နှင့် ဖိသိပ်ရန် စွမ်းအားပြည့် ကိရိယာတစ်ခု။</value>
     </data>
     <data name="About_License">
-        <value>MIT လိုင်စင်အောက်တွင် ထုတ်ပြန်ထားသည်။</value>
+        <value>MIT လိုင်စင်အောက်တွင် ဖြန့်ချိထားသည်။</value>
     </data>
     <data name="About_Tech">
         <value>နည်းပညာ</value>
@@ -276,116 +277,117 @@
         <value>AI အကူအညီ</value>
     </data>
     <data name="About_AIContent">
-        <value>ဤဆော့ဖ်ဝဲကို ဖန်တီးရာတွင် AI အကူအညီ ရယူခဲ့သည် (Gemini 3 Pro နှင့် Grok 4.1)။</value>
+        <value>ဤဆော့ဖ်ဝဲလ်ကို AI (Gemini 3 Pro နှင့် Grok 4.1) ၏ အကူအညီဖြင့် ရေးသားထားသည်။</value>
     </data>
     <data name="Status_Processing">
-        <value>လုပ်ဆောင်နေသည် ({0})...</value>
+        <value>လုပ်ဆောင်နေပါသည် ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>ပြီးဆုံး</value>
+        <value>ပြီးစီးပါပြီ</value>
     </data>
     <data name="Status_Error">
         <value>အမှား: {0}</value>
     </data>
     <data name="Status_Cancelled">
-        <value>ပယ်ဖျက်ပြီး</value>
+        <value>ပယ်ဖျက်လိုက်ပါပြီ</value>
     </data>
     <data name="Status_Saved">
-        <value>သိမ်းပြီး!</value>
+        <value>သိမ်းဆည်းပြီးပါပြီ!</value>
     </data>
     <data name="Status_Compressed">
-        <value>ဖိသိပ်ပြီး!</value>
+        <value>ဖိသိပ်ပြီးပါပြီ!</value>
     </data>
     <data name="Status_Waiting">
-        <value>hash/ထည့်သွင်းမှု စောင့်ဆိုင်းနေသည်...</value>
+        <value>Hash/ထည့်သွင်းမှုကို စောင့်နေပါသည်...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>မူရင်းဖိုင် ပျောက်ဆုံး!</value>
+        <value>မူရင်းဖိုင် ပျောက်ဆုံးနေပါသည်!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>hash တန်ဖိုး ပျောက်ဆုံး (ထည့်သွင်းပါ သို့မဟုတ် hash ဖိုင်ကို ဖွင့်ပါ)</value>
+        <value>Hash တန်ဖိုး ပျောက်ဆုံးနေပါသည် (ထည့်သွင်းပါ သို့မဟုတ် ဖိုင်ကို ဖွင့်ပါ)</value>
     </data>
     <data name="Status_Valid">
-        <value>တရားဝင်</value>
+        <value>မှန်ကန်သည်</value>
     </data>
     <data name="Status_Invalid">
         <value>မကိုက်ညီပါ!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>hash ဖိုင်ကို ဖွင့်ပြီး</value>
+        <value>Hash ဖိုင်ကို ဖွင့်ပြီးပါပြီ</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>hash ဖိုင်အမည် မကိုက်ညီပါ!</value>
+        <value>Hash ဖိုင်အမည် မကိုက်ညီပါ!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>ဖိုင်တွင် hash မပါဝင်ပါ!</value>
+        <value>ဖိုင်တွင် Hash မပါဝင်ပါ!</value>
     </data>
     <data name="Status_Checking">
-        <value>အဆင့်မြှင့်တင်မှု စစ်ဆေးနေသည်...</value>
+        <value>အပ်ဒိတ်များကို စစ်ဆေးနေပါသည်...</value>
     </data>
     <data name="Status_NewVersion">
         <value>ဗားရှင်းအသစ် တွေ့ရှိပါသည်!</value>
     </data>
     <data name="Status_Latest">
-        <value>သင်သည် နောက်ဆုံးဗားရှင်းကို အသုံးပြုနေပါသည်။</value>
+        <value>သင်သည် နောက်ဆုံးထွက် ဗားရှင်းကို အသုံးပြုနေပါသည်။</value>
     </data>
     <data name="Status_CheckError">
-        <value>စစ်ဆေးမှု အမှား: {0}</value>
+        <value>အပ်ဒိတ် စစ်ဆေးမှု အမှား: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>ဒေါင်းလုဒ်လုပ်ပြီး ထည့်သွင်းနေသည်...</value>
+        <value>ဒေါင်းလုဒ်ဆွဲပြီး ထည့်သွင်းနေပါသည်...</value>
     </data>
     <data name="Status_InstallError">
         <value>ထည့်သွင်းမှု အမှား: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>အသင့်ဖြစ်ပြီ (.hash ဖိုင်မှ)</value>
+        <value>အဆင်သင့်ဖြစ်ပါပြီ (.hash ဖိုင်မှ)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>မူရင်းဖိုင် ပျောက်ဆုံး!</value>
+        <value>မူရင်းဖိုင် ပျောက်ဆုံးသွားပါပြီ!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>hash ဖိုင်အမည် မကိုက်ညီပါ!</value>
+        <value>Hash ဖိုင်အမည် မကိုက်ညီပါ!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>hash ဖိုင်ကို ဒရော့ပ်အောင်မြင်ပါသည်</value>
+        <value>Hash ဖိုင် ထည့်သွင်းခြင်း အောင်မြင်ပါသည်</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>ဖိုင်တွင် hash မပါဝင်ပါ!</value>
+        <value>ဖိုင်တွင် Hash မပါဝင်ပါ!</value>
     </data>
     <data name="Status_ReadError">
-        <value>ဖိုင်ဖတ်ရန် အမှား</value>
+        <value>ဖိုင်ဖတ်ရှုမှု အမှား</value>
     </data>
     <data name="Msg_Result_Title">
         <value>ရလဒ်</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>လုပ်ဆောင်မှု ပြီးဆုံးပါပြီ!
+        <value>လုပ်ဆောင်မှု ပြီးစီးပါပြီ!
             ✅ အောင်မြင်: {0}
             ❌ မအောင်မြင်: {1}
+            ⛔ ပယ်ဖျက်ခဲ့သည်: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>{0} ဖိုင်များ စစ်ဆေးပြီးပါပြီ။
-            ✅ ကိုက်ညီမှု: {1}
-            ❌ မကိုက်ညီမှု/အမှား: {2}
+        <value>ဖိုင် {0} ခုကို စစ်ဆေးပြီးပါပြီ။
+            ✅ ကိုက်ညီသည်: {1}
+            ❌ မကိုက်ညီ/အမှား: {2}
             ⛔ ပယ်ဖျက်ခဲ့သည်: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>ဖိုင်မှားနေသည်!</value>
+        <value>ဖိုင်မှားယွင်းနေပါသည်!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>hash ဖိုင် မကိုက်ညီပါ!
+        <value>Hash ဖိုင် မကိုက်ညီပါ!
 
             မူရင်းဖိုင်: {0}
             ရွေးချယ်ထားသော ဖိုင်: {1}
 
-            မှန်ကန်သော hash ဖိုင်ကို ရွေးချယ်ပါ။
+            ကျေးဇူးပြု၍ မှန်ကန်သော Hash ဖိုင်ကို ရွေးချယ်ပါ။
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>အဆင့်မြှင့်တင်မှု အသစ်</value>
+        <value>အပ်ဒိတ် အသစ်</value>
     </data>
     <data name="Msg_UpdateContent">
         <value>ဗားရှင်း: {0}
@@ -393,81 +395,81 @@
             ပြောင်းလဲမှုများ:
             {1}
 
-            'အခုပဲ အဆင့်မြှင့်တင်ရန်' ကို နှိပ်ပြီး ဒေါင်းလုဒ်လုပ်ပါ။
+            ဒေါင်းလုဒ်ဆွဲရန် 'ယခု အပ်ဒိတ်လုပ်ရန်' ကို နှိပ်ပါ။
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>ပိုမိုနောက်ဆုံး အဆင့်မြှင့်တင်မှု မတွေ့ပါ။</value>
+        <value>အပ်ဒိတ်အသစ် မတွေ့ရှိပါ။</value>
     </data>
     <data name="Msg_Error">
         <value>အမှား</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>ဤ hash ဖိုင်ကို ဖတ်မရပါ။</value>
+        <value>ဤ Hash ဖိုင်ကို ဖတ်၍မရပါ။</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>ဖွဲ့စည်းပုံ စစ်ဆေးရန်</value>
+        <value>ဖွဲ့စည်းပုံ စစ်ဆေးခြင်း</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>ဖိုင်ရှိသည်:
+        <value>ဖိုင်ကို ဤနေရာတွင် တွေ့ရှိရသည်-
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>ဖိုင်မတွေ့ပါ!</value>
+        <value>ဖိုင် မရှိပါ!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>ဖိုင် ဖန်တီးမှု အောင်မြင်ပါသည်!</value>
+        <value>ဖိုင်ကို အောင်မြင်စွာ ဖန်တီးပြီးပါပြီ!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>ဖွဲ့စည်းပုံ လမ်းကြောင်း ကူးယူပြီး။</value>
+        <value>ဖွဲ့စည်းပုံ လမ်းကြောင်းကို ကူးယူပြီးပါပြီ။</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>အုပ်ချုပ်ရေးမှူး မုဒ်</value>
+        <value>Admin မုဒ်</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>ပြောင်းလဲမှုများ အကျိုးသက်ရောက်ရန် အက်ပ်ကို ပြန်စတင်ပါ။</value>
+        <value>ပြောင်းလဲမှုများ သက်ဝင်စေရန် ကျေးဇူးပြု၍ App ကို ပြန်လည်စတင်ပါ။</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>ဖိုလ်ဒါ ဖွင့်၍မရပါ: {0}</value>
+        <value>ဖိုင်တွဲကို ဖွင့်၍မရပါ- {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
         <value>⚠️ DEVELOPER ဗားရှင်း သတိပေးချက်</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>သင်သည် Developer (Pre-release) အဆင့်မြှင့်တင်ချန်နယ်သို့ ပြောင်းလဲတော့မည်။
+        <value>သင်သည် Developer (Pre-release) အပ်ဒိတ် ချန်နယ်သို့ ပြောင်းလဲတော့မည်။
 
-            ဤဗားရှင်းတွင် ဘတ်များ ပါနိုင်ပြီး မတည်မငြိမ်ဖြစ်နိုင်ကာ ဒေတာ ဆုံးရှုံးနိုင်သည်။
+            ဤဗားရှင်းတွင် အမှားများ ပါဝင်နိုင်ပြီး၊ မတည်ငြိမ်မှုများနှင့် ဒေတာပျောက်ဆုံးမှုများ ဖြစ်စေနိုင်သည်။
 
-            ဤဗားရှင်းအသုံးပြုမှုမှ ဖြစ်ပေါ်လာသော ပြဿနာများအတွက် ကျွန်ုပ် တာဝန်မယူပါ။
+            ဤဗားရှင်းကို အသုံးပြုခြင်းကြောင့် ဖြစ်ပေါ်လာသော ပြဿနာများအတွက် ကျွန်ုပ်တွင် တာဝန်မရှိပါ။
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>ကျွန်ုပ် ဖတ်ပြီး သဘောတူပါသည်။ ကျွန်ုပ်ကိုယ်တိုင် အပြည့်အဝ တာဝန်ယူပါသည်။</value>
+        <value>ကျွန်ုပ် ဖတ်ရှုပြီး သဘောတူပါသည်။ တာဝန်အပြည့်အဝ ယူပါသည်။</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Hash ဖိုင် သိမ်းရန်</value>
+        <value>Hash ဖိုင်ကို သိမ်းဆည်းရန်</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>ဖိသိပ်ထားသော ဖိုင် သိမ်းရန်</value>
+        <value>ဖိသိပ်ထားသော ဖိုင်ကို သိမ်းဆည်းရန်</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Hash တွက်ချက်ရန် ဖိုင်များ ရွေးရန်</value>
+        <value>Hash ပြုလုပ်ရန် ဖိုင်များကို ရွေးချယ်ပါ</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>{0} အတွက် hash ဖိုင် ရွေးရန်</value>
+        <value>{0} အတွက် Hash ဖိုင်ကို ရွေးချယ်ပါ</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>ဖိုင်များ ရွေးရန် (မူရင်း သို့မဟုတ် .hash ဖိုင်)</value>
+        <value>ဖိုင်များကို ရွေးချယ်ပါ (မူရင်း သို့မဟုတ် .hash ဖိုင်)</value>
     </data>
     <data name="Header_Fallback">
-        <value>အဆင့်မြင့်: အဟောင်းဗားရှင်းသို့ ပြန်ရန်</value>
+        <value>အဆင့်မြင့်: ဗားရှင်းဟောင်းသို့ ပြန်သွားရန်</value>
     </data>
     <data name="Desc_Fallback">
-        <value>ဤအင်္ဂါရပ်သည် ဗားရှင်းအသစ်တွင် ပြဿနာရှိပါက သတ်မှတ်ဗားရှင်းကို ထည့်သွင်းနိုင်စေသည်။</value>
+        <value>ဗားရှင်းအသစ်တွင် ပြဿနာရှိပါက သီးခြားဗားရှင်းတစ်ခုကို ထည့်သွင်းရန် ဤလုပ်ဆောင်ချက်က ကူညီပေးသည်။</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>ဒီမှာ ပွတ်တိုက်/ဒရော့ပ်...</value>
+        <value>ဤနေရာတွင် Paste လုပ်ပါ သို့မဟုတ် ဆွဲထည့်ပါ...</value>
     </data>
     <data name="Unit_Seconds">
         <value>စက္ကန့်</value>
@@ -476,81 +478,259 @@
         <value>စစ်ဆေးရန်</value>
     </data>
     <data name="Tip_Stop">
-        <value>ရပ်ရန်</value>
+        <value>ရပ်တန့်ရန်</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>ဖိုင်ဖယ်ရှားရန်</value>
+        <value>ဖိုင်ကို ဖယ်ရှားရန်</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Hash ကူးယူရန်</value>
+        <value>Hash ကို ကူးယူရန်</value>
     </data>
     <data name="Tip_Compute">
         <value>တွက်ချက်ရန်</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Hash ကို ရှင်းရန်</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Hash ကြည့်ရန်</value>
+        <value>Hash ကို ရှာဖွေရန်</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>အမှောင်</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>အလင်းရောင်</value>
+        <value>အလင်း</value>
     </data>
     <data name="Settings_ThemeSystem">
         <value>စနစ်</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>အလုပ် ရပ်ထားပြီး</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>ဖိုင် {0} သည် ကန့်သတ်ချက် {1} {2} ကျော်လွန်နေသည်။</value>
+        <value>လုပ်ငန်းစဉ် ရပ်တန့်သွားပါသည်</value>
     </data>
     <data name="Btn_Yes">
         <value>ဟုတ်ကဲ့</value>
     </data>
     <data name="Btn_OK">
-        <value>OK</value>
+        <value>အိုကေ</value>
     </data>
     <data name="Btn_No">
-        <value>မဟုတ်ပါ</value>
+        <value>ဟင့်အင်း</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip ဖိသိပ်ဖိုင်</value>
+        <value>Zip ဖိုင်</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>ထွက်ခွာမှု အတည်ပြုရန်</value>
+        <value>ထွက်ခွာရန် အတည်ပြုပါ</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>ထွက်ခွာခြင်းသည် လုပ်ဆောင်နေသော အလုပ်အားလုံးကို ပယ်ဖျက်မည်။ သေချာပါသလား?</value>
+        <value>ထွက်ခွာခြင်းက လုပ်ဆောင်နေသော အရာအားလုံးကို ပယ်ဖျက်ပါမည်။ သေချာပါသလား?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>အချိန်ကုန်သွားခြင်းကြောင့် အလုပ်ကို ရပ်ထားသည်။</value>
+        <value>အချိန်ကုန်သွားသောကြောင့် လုပ်ငန်းစဉ်ကို ရပ်တန့်လိုက်ပါသည်။</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>ဒီဘတ်လော့ကို ဒစ်စချ သိမ်းရန်။</value>
+        <value>အမှားရှာမှတ်တမ်းကို ဒစ်စ်တွင် သိမ်းဆည်းရန်။</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>အချိန်နှင့်တပြေးညီ လော့ဂ်ကို ခေတ္တရပ်ရန်။</value>
+        <value>အချိန်နှင့်တပြေးညီ မှတ်တမ်းတင်ခြင်းကို ခေတ္တရပ်ရန်။</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Hash ပြရန်</value>
+        <value>Hash ကို ပြသရန်</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Hash ဖုံးရန်</value>
+        <value>Hash ကို ဖျောက်ထားရန်</value>
     </data>
     <data name="Tip_CopyPath">
-        <value>လမ်းကြောင်း ကူးယူရန်</value>
+        <value>လမ်းကြောင်းကို ကူးယူရန်</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>သင့်ဒစ်စ်ချ နေရာမရှိတော့ပါ။ အခြားနေရာကို ရွေးပါ lah :)</value>
+        <value>သင့်ဒစ်စ် ပြည့်နေပါသည်။ ကျေးဇူးပြု၍ အခြားနေရာကို ရွေးချယ်ပါ :)</value>
     </data>
     <data name="Tip_HashVisibility">
         <value>Hash မြင်နိုင်မှု</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>ဖိုင်မရှိပါ။ 'ဖိုင်များ ထည့်ရန်' ကို နှိပ်ပြီး စတင်ပါ။</value>
+        <value>ဖိုင်များ မရှိပါ။ စတင်ရန် 'ဖိုင်များ ထည့်ရန်' ကို နှိပ်ပါ။</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>ဤအပြင်အဆင်ကို မူလအဖြစ် လော့ခ်ချရန်</value>
+        <value>ဤအပြင်အဆင်ကို ပုံသေအဖြစ် သော့ခတ်ထားရန်</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>ကန့်သတ်ချက် ({1} {2}) ထက်ကျော်လွန်သော ဖိုင် {0} ခုကို ကျော်သွားပါသည်-
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>စနစ် ဘာသာစကား</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>'အလိုအလျောက်' ဆက်တင်သို့ ပြန်သွားပါက အပြည့်အဝ အသက်ဝင်ရန် App ကို ပြန်လည်စတင်ရန် လိုအပ်ပါသည်။ ဆက်လုပ်လိုပါသလား?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>ဘာသာစကား ပြောင်းလဲခြင်း</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>သေချာပါသလား?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>ဤသတိပေးချက်ကို ထပ်မပြပါနှင့်</value>
+    </data>
+    <data name="Error_Network">
+        <value>ကွန်ရက် ချိတ်ဆက်မှု အမှား။ သင်၏ အင်တာနက်ကို စစ်ဆေးပါ။</value>
+    </data>
+    <data name="Error_Server">
+        <value>ဆာဗာ အမှား (5xx)။ ကျေးဇူးပြု၍ ခဏအကြာတွင် ထပ်မံကြိုးစားပါ။</value>
+    </data>
+    <data name="Error_Client">
+        <value>ကလိုင်းယင့် အမှား (4xx)။ ကျေးဇူးပြု၍ တောင်းဆိုချက်ကို စစ်ဆေးပါ။</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>GitHub API ကန့်သတ်ချက် ကျော်လွန်သွားပါပြီ။ ကျေးဇူးပြု၍ ခဏအကြာတွင် ထပ်မံကြိုးစားပါ။</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Pre-release ဗားရှင်း မတွေ့ရှိပါ။ လက်ရှိဗားရှင်းကိုသာ ဆက်လက်အသုံးပြုမည်။</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Pre-release ဗားရှင်း {0} ရရှိနိုင်ပါပြီ။
+
+            {1}
+
+            ဤဗားရှင်းသည် မတည်ငြိမ်မှုများ ရှိနိုင်သည်။ ဒေါင်းလုဒ်ဆွဲလိုပါသလား?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>မအောင်မြင်သည်များကို ရှင်းရန်</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>အရာ {0} ခုကို ဖယ်ရှားပြီးပါပြီ။</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>ကျန်ရှိမည့် အချိန်: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>လုပ်ငန်းစဉ် ကြာချိန်: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>တွက်ချက်နေပါသည်...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>ဖိုင်တွဲ ထည့်ရန်...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>ရွေးချယ်ထားသော ဖိုင်တွဲသည် အလွတ်ဖြစ်နေပါသည်။</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>စကင်န်ဖတ်ရန် ဖိုင်တွဲကို ရွေးချယ်ပါ</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>ပယ်ဖျက်ရန်</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>လုပ်ဆောင်မှု ကန့်သတ်ချက်များ</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>ဖိုင်တွဲစကင်န်တစ်ခုလျှင် အများဆုံး ဖိုင်အရေအတွက်</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>စွမ်းဆောင်ရည် ပြဿနာများကို ကာကွယ်ရန် ဖိုင်တွဲတစ်ခုမှ ထည့်သွင်းမည့် ဖိုင်အရေအတွက်ကို ကန့်သတ်ပါ။</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>တစ်ကြိမ်လျှင် အများဆုံး ဖိုင်တွဲအရေအတွက်</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>တစ်ပြိုင်နက် ရွေးချယ်နိုင်သော ဖိုင်တွဲအရေအတွက်ကို ကန့်သတ်ပါ။</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>တစ်ကြိမ်လျှင် ဖိုင်တွဲ {0} ခုအထိသာ ရွေးချယ်နိုင်ပါသည်။</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>ဖိုင် {0} ခု ထည့်သွင်းပြီးပါပြီ။ ကန့်သတ်ချက်ကြောင့် ဖိုင် {1} ခုကို ကျော်သွားပါသည်။</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>ဖတ်- {0}/s | ရေး- {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>ဖတ်/ရေး အမြန်နှုန်းကို ပြသရန်</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Hash လုပ်ဆောင်နေစဉ်အတွင်း အချိန်နှင့်တပြေးညီ ကူးပြောင်းမှု အမြန်နှုန်းကို ပြသရန်။</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Hash တွက်ချက်နေပါသည်...</value>
+    </data>
+    <data name="Size_All">
+        <value>အရွယ်အစား အားလုံး</value>
+    </data>
+    <data name="Size_Small">
+        <value>သေးငယ်သော (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>အလယ်အလတ် (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>ကြီးမားသော (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>အလွန်ကြီးမားသော (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>စာရွက်စာတမ်းများ</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>ကိုယ်ရေးကိုယ်တာ မူဝါဒ</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>ဝန်ဆောင်မှု စည်းမျဉ်းများ</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>အသုံးပြုသူ လိုင်စင် သဘောတူညီချက် (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>တာဝန်ကင်းလွတ်ခွင့်</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>README</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>ပြောင်းလဲမှု မှတ်တမ်း</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>ကျေးဇူးတင်လွှာ</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>လုပ်ဆောင်နေပါသည်</value>
+    </data>
+    <data name="Status_Failure">
+        <value>မအောင်မြင်ပါ</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>အမည်ဖြင့် ရှာဖွေပါ...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>အရွယ်အစား</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub ပရိုဖိုင်</value>
+    </data>
+    <data name="Filter_All">
+        <value>အားလုံး</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>မှတ်ဉာဏ်ကို ရှင်းလင်းရန်</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>RAM ကို လွတ်စေရန် အမှိုက်ရှင်းလင်းခြင်း (GC) ကို အတင်းအကျပ် လုပ်ဆောင်ရန်။</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>မှတ်ဉာဏ် ရှင်းရန်</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>မှတ်ဉာဏ် ရှင်းလင်းခြင်း စတင်နေပြီ။</value>
     </data>
 </root>

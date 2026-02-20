@@ -16,7 +16,7 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Хэш-инструмент</value>
     </data>
     <data name="Menu_Create">
         <value>Создать хэш</value>
@@ -45,14 +45,17 @@
     <data name="Btn_Clear">
         <value>Очистить список</value>
     </data>
+    <data name="Btn_ClearHashes">
+        <value>Очистить хэши</value>
+    </data>
     <data name="Btn_CalcAll">
-        <value>ВЫЧИСЛИТЬ ВСЁ</value>
+        <value>ВЫЧИСЛИТЬ ВСЕ</value>
     </data>
     <data name="Btn_Compress">
         <value>Сжать (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ПРОВЕРИТЬ ВСЁ</value>
+        <value>ПРОВЕРИТЬ ВСЕ</value>
     </data>
     <data name="Btn_CheckNow">
         <value>Проверить сейчас</value>
@@ -73,19 +76,19 @@
         <value>Пакетная проверка</value>
     </data>
     <data name="Title_Update">
-        <value>Проверить обновления</value>
+        <value>Проверка обновлений</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Предупреждение версии разработчика</value>
+        <value>Предупреждение версии для разработчиков</value>
     </data>
     <data name="Title_About">
         <value>О программе</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Подсказка: Shift+C — вычислить всё, Shift+Z — сжать, Ctrl+F — добавить файлы.</value>
+        <value>Подсказка: Shift+C — Вычислить, Shift+Z — Сжать, Ctrl+F — Добавить файлы.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Подсказка: Shift+A — проверить всё, Ctrl+F — добавить файлы, Ctrl+Shift+H — очистить список.</value>
+        <value>Подсказка: Shift+A — Проверить, Ctrl+F — Добавить файлы, Ctrl+Shift+H — Очистить.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Готово</value>
@@ -97,16 +100,16 @@
         <value>Текущая версия: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Канал выпуска:</value>
+        <value>Канал обновлений:</value>
     </data>
     <data name="Lbl_TotalFiles">
         <value>Всего файлов: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Стабильная</value>
+        <value>Стабильная (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Версия разработчика</value>
+        <value>Для разработчиков (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Язык</value>
@@ -118,7 +121,7 @@
         <value>Стиль темы</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Светлая/Тёмная</value>
+        <value>Светлая/Темная</value>
     </data>
     <data name="Settings_Font">
         <value>Шрифт</value>
@@ -130,16 +133,16 @@
         <value>Автовыбор оптимального шрифта для языка</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Заблокировать как шрифт по умолчанию</value>
+        <value>Зафиксировать как шрифт по умолчанию</value>
     </data>
     <data name="Settings_Scale">
         <value>Масштаб интерфейса</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Маскировать значения хэша (Безопасность)</value>
+        <value>Скрывать значения хэша (Безопасность)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Сброс темы</value>
+        <value>Сбросить настройки</value>
     </data>
     <data name="Settings_Other">
         <value>Конфиденциальность и безопасность</value>
@@ -154,46 +157,46 @@
         <value>Дополнительно</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Запуск от администратора</value>
+        <value>Запуск от имени администратора</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Требует перезапуска. Разрешает доступ к защищённым файлам.</value>
+        <value>Требует перезапуска. Дает доступ к защищенным файлам.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Ограничение размера входного файла</value>
+        <value>Лимит размера входного файла</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Максимальный размер для обработки файлов.</value>
+        <value>Максимальный размер файлов для обработки.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Тайм-аут принудительного выхода</value>
+        <value>Таймаут принудительного закрытия</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Время (секунд) до признания приложения зависшим.</value>
+        <value>Время (сек.), прежде чем приложение будет считаться зависшим.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Тайм-аут обработки файла</value>
+        <value>Таймаут обработки файла</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Отмена, если один файл занимает слишком много времени.</value>
+        <value>Отменить, если один файл обрабатывается слишком долго.</value>
     </data>
     <data name="Settings_Emergency">
         <value>Экстренное действие</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Принудительно закрыть приложение и отменить все задачи немедленно.</value>
+        <value>Принудительно закрыть приложение и немедленно отменить все задачи.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Принудительный выход и отмена всего</value>
+        <value>Принудительно закрыть и отменить все</value>
     </data>
     <data name="Settings_Configuration">
         <value>Конфигурация</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Заблокировать настройки (Сохранить по умолчанию)</value>
+        <value>Заблокировать настройки (Сохранить как по умолчанию)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Предотвратить случайные изменения. Только маскировка хэша остаётся регулируемой.</value>
+        <value>Предотвращает случайные изменения. Можно менять только 'Скрытие хэша'.</value>
     </data>
     <data name="Settings_ResetAll">
         <value>Сбросить все настройки</value>
@@ -217,19 +220,19 @@
         <value>Режим разработчика</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Включить расширенные инструменты логирования и отладки.</value>
+        <value>Включить расширенное логирование и инструменты отладки.</value>
     </data>
     <data name="Dev_Console">
         <value>Консоль разработчика</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>БЕТА</value>
     </data>
     <data name="Dev_Recording">
         <value>Запись</value>
     </data>
     <data name="Dev_Paused">
-        <value>Приостановлено</value>
+        <value>Пауза</value>
     </data>
     <data name="Dev_SaveToFile">
         <value>Сохранить в файл</value>
@@ -241,10 +244,10 @@
         <value>Очистить консоль</value>
     </data>
     <data name="Dev_Copy">
-        <value>Копировать всё</value>
+        <value>Скопировать все</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Открыть папку логов</value>
+        <value>Открыть папку журналов</value>
     </data>
     <data name="About_Author">
         <value>Автор</value>
@@ -259,22 +262,22 @@
         <value>Авторские права</value>
     </data>
     <data name="About_Desc">
-        <value>Мощный инструмент для создания, проверки и сжатия хэшей файлов. Или мне так кажется :)</value>
+        <value>Мощный инструмент для создания, проверки и сжатия хэшей файлов. Или я так думаю :)</value>
     </data>
     <data name="About_License">
         <value>Выпущено под лицензией MIT.</value>
     </data>
     <data name="About_Tech">
-        <value>Технология</value>
+        <value>Технологии</value>
     </data>
     <data name="About_TechContent">
-        <value>Создано на C# и .NET 10.0.102.</value>
+        <value>Создано с использованием C# и .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
         <value>Помощь ИИ</value>
     </data>
     <data name="About_AIContent">
-        <value>Это ПО разработано с помощью ИИ (Gemini 3 Pro и Grok 4.1).</value>
+        <value>Это ПО было разработано при содействии ИИ (Gemini 3 Pro и Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
         <value>Обработка ({0})...</value>
@@ -301,13 +304,13 @@
         <value>Исходный файл отсутствует!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Значение хэша отсутствует (Введите или загрузите файл хэша)</value>
+        <value>Значение хэша отсутствует (Введите или загрузите файл)</value>
     </data>
     <data name="Status_Valid">
-        <value>ВАЛИДНО</value>
+        <value>ДЕЙСТВИТЕЛЬНО</value>
     </data>
     <data name="Status_Invalid">
-        <value>НЕСООТВЕТСТВИЕ!</value>
+        <value>НЕ СОВПАДАЕТ!</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>Файл хэша загружен</value>
@@ -325,10 +328,10 @@
         <value>Обнаружена новая версия!</value>
     </data>
     <data name="Status_Latest">
-        <value>У вас последняя версия.</value>
+        <value>Вы используете последнюю версию.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Ошибка проверки обновления: {0}</value>
+        <value>Ошибка проверки обновлений: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>Загрузка и установка...</value>
@@ -340,13 +343,13 @@
         <value>Готово (Из файла .hash)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Исходный файл потерян!</value>
+        <value>Исходный файл утерян!</value>
     </data>
     <data name="Status_DropHashMismatch">
         <value>Имя файла хэша не совпадает!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Файл хэша успешно сброшен</value>
+        <value>Файл хэша успешно добавлен</value>
     </data>
     <data name="Status_DropNoHash">
         <value>Файл не содержит хэш!</value>
@@ -359,19 +362,20 @@
     </data>
     <data name="Msg_Result_Content">
         <value>Обработка завершена!
-            ✅ Успех: {0}
-            ❌ Неудача: {1}
+            ✅ Успешно: {0}
+            ❌ Ошибка: {1}
+            ⛔ Отменено: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>Проверено {0} файлов.
+        <value>Проверено файлов: {0}.
             ✅ Совпадение: {1}
-            ❌ Несовпадение/Ошибка: {2}
+            ❌ Не совпадает/Ошибка: {2}
             ⛔ Отменено: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>Неверный файл!</value>
+        <value>Неправильный файл!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
         <value>Файл хэша не совпадает!
@@ -379,7 +383,7 @@
             Исходный файл: {0}
             Выбранный файл: {1}
 
-            Пожалуйста, выберите правильный сопутствующий файл хэша.
+            Пожалуйста, выберите правильный сопровождающий файл хэша.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -395,19 +399,19 @@
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Более новых обновлений не найдено.</value>
+        <value>Новых обновлений не найдено.</value>
     </data>
     <data name="Msg_Error">
         <value>Ошибка</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Не удаётся прочитать этот файл хэша.</value>
+        <value>Невозможно прочитать этот файл хэша.</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>Проверка конфигурации</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Файл существует в:
+        <value>Файл существует по пути:
             {0}
         </value>
     </data>
@@ -424,24 +428,24 @@
         <value>Режим администратора</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Пожалуйста, перезапустите приложение для применения изменений.</value>
+        <value>Пожалуйста, перезапустите приложение, чтобы изменения вступили в силу.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Не удаётся открыть папку: {0}</value>
+        <value>Не удалось открыть папку: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ПРЕДУПРЕЖДЕНИЕ ВЕРСИИ РАЗРАБОТЧИКА</value>
+        <value>⚠️ ПРЕДУПРЕЖДЕНИЕ ВЕРСИИ ДЛЯ РАЗРАБОТЧИКОВ</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Вы собираетесь переключить на канал разработки (пре-релиз).
+        <value>Вы собираетесь переключиться на канал обновлений для Разработчиков (Pre-release).
 
-            Эта версия может содержать баги, быть нестабильной и привести к потере данных.
+            Эта версия может содержать ошибки, быть нестабильной и привести к потере данных.
 
-            Я не несу ответственности за любые проблемы, возникшие от использования этой версии.
+            Я не несу ответственности за любые проблемы, возникшие при использовании этой версии.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Я прочитал и согласен. Я принимаю полную ответственность.</value>
+        <value>Я прочитал и согласен. Беру на себя полную ответственность.</value>
     </data>
     <data name="Dialog_SaveHash">
         <value>Сохранить файл хэша</value>
@@ -450,22 +454,22 @@
         <value>Сохранить сжатый файл</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Выбрать файлы для хэша</value>
+        <value>Выберите файлы для хэширования</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Выбрать файл хэша для: {0}</value>
+        <value>Выберите файл хэша для: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Выбрать файлы (Исходный или файл .hash)</value>
+        <value>Выберите файлы (Исходный или файл .hash)</value>
     </data>
     <data name="Header_Fallback">
         <value>Дополнительно: Возврат к старой версии</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Эта функция позволяет установить конкретную версию, если новая имеет проблемы.</value>
+        <value>Эта функция позволяет установить определенную версию, если в новой есть проблемы.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Вставить/Бросить сюда...</value>
+        <value>Вставьте или перетащите сюда...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Секунд</value>
@@ -474,7 +478,7 @@
         <value>Проверить</value>
     </data>
     <data name="Tip_Stop">
-        <value>Стоп</value>
+        <value>Остановить</value>
     </data>
     <data name="Tip_RemoveFile">
         <value>Удалить файл</value>
@@ -485,11 +489,14 @@
     <data name="Tip_Compute">
         <value>Вычислить</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Очистить хэш</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Просмотреть хэш</value>
+        <value>Обзор хэша</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>Тёмная</value>
+        <value>Темная</value>
     </data>
     <data name="Settings_ThemeLight">
         <value>Светлая</value>
@@ -499,9 +506,6 @@
     </data>
     <data name="Msg_TaskCancelled_Title">
         <value>Задача остановлена</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Файл {0} превышает лимит {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
         <value>Да</value>
@@ -513,22 +517,22 @@
         <value>Нет</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Архив Zip</value>
+        <value>Zip-архив</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
         <value>Подтверждение выхода</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Выход отменит все текущие задачи. Вы уверены?</value>
+        <value>Выход приведет к отмене всех текущих задач. Вы уверены?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Задача остановлена из-за тайм-аута.</value>
+        <value>Задача была остановлена по таймауту.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Сохранить лог отладки на диск.</value>
+        <value>Сохранить журнал отладки на диск.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>Приостановить реальное время логирования.</value>
+        <value>Приостановить ведение журнала в реальном времени.</value>
     </data>
     <data name="Tip_ShowHash">
         <value>Показать хэш</value>
@@ -540,15 +544,193 @@
         <value>Копировать путь</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Ваш диск заполнен. Выберите другое место братан :)</value>
+        <value>Ваш диск заполнен. Пожалуйста, выберите другое место :)</value>
     </data>
     <data name="Tip_HashVisibility">
         <value>Видимость хэша</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Нет файлов. Нажмите 'Добавить файлы' для начала.</value>
+        <value>Нет файлов. Нажмите 'Добавить файлы', чтобы начать.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Заблокировать эту тему по умолчанию</value>
+        <value>Зафиксировать эту тему по умолчанию</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Пропущено файлов, превышающих лимит ({1} {2}): {0}
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Язык системы</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Для возврата к настройке 'Автоматически' потребуется перезапуск. Хотите продолжить?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Изменение языка</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Вы уверены?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Больше не показывать это предупреждение</value>
+    </data>
+    <data name="Error_Network">
+        <value>Ошибка сетевого подключения. Пожалуйста, проверьте ваш интернет.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Ошибка сервера (5xx). Пожалуйста, повторите попытку позже.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Ошибка клиента (4xx). Пожалуйста, проверьте запрос.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>Превышен лимит запросов GitHub API. Пожалуйста, повторите попытку позже.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Предварительная версия не найдена. Сохранение текущей версии.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Доступна предварительная версия {0}.
+
+            {1}
+
+            Эта версия может быть нестабильной. Хотите скачать?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Очистить неудачные</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>Удалено элементов: {0}.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Осталось времени: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Длительность задачи: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Вычисление...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Добавить папку...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Выбранная папка пуста.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Выберите папку для сканирования</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Отмена</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Лимиты обработки</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Макс. файлов при сканировании папки</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Ограничьте количество добавляемых файлов из папки для предотвращения проблем с производительностью.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Макс. папок одновременно</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Ограничьте количество одновременно выбираемых папок.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Вы можете выбрать не более {0} папок одновременно.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Добавлено файлов: {0}. Пропущено из-за лимита: {1}.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Чтение: {0}/с | Запись: {1}/с</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Показывать скорость чтения/записи</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Отображать скорость передачи данных в реальном времени во время операций хэширования.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Вычисление хэша...</value>
+    </data>
+    <data name="Size_All">
+        <value>Все размеры</value>
+    </data>
+    <data name="Size_Small">
+        <value>Маленькие (&lt; 1 МБ)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Средние (1 МБ - 100 МБ)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Большие (100 МБ - 1 ГБ)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Очень большие (&gt; 1 ГБ)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Документы</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Политика конфиденциальности</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Условия использования</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Лицензионное соглашение (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Отказ от ответственности</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>ЧИТАЙМЕНЯ (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>История изменений</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Благодарности</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Обработка</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Ошибка</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Поиск по имени...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Размер</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>Профиль GitHub</value>
+    </data>
+    <data name="Filter_All">
+        <value>Все</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Освободить память</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Принудительно запустить сборщик мусора (GC) для освобождения ОЗУ.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Очистить память</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Запущена очистка памяти.</value>
     </data>
 </root>

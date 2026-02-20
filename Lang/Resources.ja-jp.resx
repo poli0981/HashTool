@@ -16,7 +16,7 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>ハッシュツール (Hash Tool)</value>
     </data>
     <data name="Menu_Create">
         <value>ハッシュ生成</value>
@@ -34,16 +34,19 @@
         <value>テーマ</value>
     </data>
     <data name="Menu_About">
-        <value>について</value>
+        <value>情報</value>
     </data>
     <data name="Menu_Developer">
         <value>開発者</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>ファイル追加...</value>
+        <value>ファイルを追加...</value>
     </data>
     <data name="Btn_Clear">
-        <value>リストクリア</value>
+        <value>リストをクリア</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>ハッシュをクリア</value>
     </data>
     <data name="Btn_CalcAll">
         <value>すべて計算</value>
@@ -61,37 +64,37 @@
         <value>インストール</value>
     </data>
     <data name="Btn_Accept">
-        <value>同意</value>
+        <value>同意する</value>
     </data>
     <data name="Btn_Decline">
-        <value>キャンセル</value>
+        <value>拒否する</value>
     </data>
     <data name="Title_CreateHash">
-        <value>ハッシュ生成と圧縮</value>
+        <value>ハッシュ生成 &amp; 圧縮</value>
     </data>
     <data name="Title_CheckHash">
         <value>一括検証</value>
     </data>
     <data name="Title_Update">
-        <value>更新確認</value>
+        <value>更新を確認</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>開発版警告</value>
+        <value>開発版の警告</value>
     </data>
     <data name="Title_About">
-        <value>について</value>
+        <value>アプリについて</value>
     </data>
     <data name="Help_CreateHash">
-        <value>ヒント: Shift+C で全て計算、Shift+Z で圧縮、Ctrl+F でファイル追加。</value>
+        <value>ヒント: Shift+C で計算、Shift+Z で圧縮、Ctrl+F でファイル追加。</value>
     </data>
     <data name="Help_CheckHash">
-        <value>ヒント: Shift+A で全て検証、Ctrl+F でファイル追加、Ctrl+Shift+H でリストクリア。</value>
+        <value>ヒント: Shift+A で検証、Ctrl+F でファイル追加、Ctrl+Shift+H でリスト消去。</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>準備完了</value>
     </data>
     <data name="Lbl_Sample">
-        <value>例:</value>
+        <value>サンプル:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>現在のバージョン: {0}</value>
@@ -100,13 +103,13 @@
         <value>リリースチャンネル:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>合計ファイル数: {0}</value>
+        <value>総ファイル数: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>安定版</value>
+        <value>安定版 (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>開発版</value>
+        <value>開発版 (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>言語</value>
@@ -133,16 +136,16 @@
         <value>デフォルトフォントとしてロック</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI スケール</value>
+        <value>UIスケール</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>ハッシュ値をマスク (セキュリティ)</value>
+        <value>ハッシュ値を隠す (セキュリティ)</value>
     </data>
     <data name="Settings_Reset">
-        <value>テーマリセット</value>
+        <value>設定をリセット</value>
     </data>
     <data name="Settings_Other">
-        <value>プライバシーとセキュリティ</value>
+        <value>プライバシー &amp; セキュリティ</value>
     </data>
     <data name="Settings_SetDefault">
         <value>デフォルトに設定</value>
@@ -157,7 +160,7 @@
         <value>管理者として実行</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>再起動が必要です。保護されたファイルへのアクセスを許可。</value>
+        <value>再起動が必要です。保護されたファイルへのアクセスを許可します。</value>
     </data>
     <data name="Settings_FileSizeLimit">
         <value>入力ファイルサイズ制限</value>
@@ -169,46 +172,46 @@
         <value>強制終了タイムアウト</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>アプリがフリーズしたと判断するまでの待機時間 (秒)。</value>
+        <value>アプリがフリーズしたとみなすまでの時間（秒）。</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>単一ファイル処理タイムアウト</value>
+        <value>ファイル処理タイムアウト</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>単一ファイルが長すぎる場合キャンセル。</value>
+        <value>単一ファイルの処理が長すぎる場合にキャンセルします。</value>
     </data>
     <data name="Settings_Emergency">
         <value>緊急アクション</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>即座にアプリを強制終了し全タスクをキャンセル。</value>
+        <value>アプリを強制終了し、すべてのタスクを直ちにキャンセルします。</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>強制終了＆すべてキャンセル</value>
+        <value>強制終了 &amp; 全キャンセル</value>
     </data>
     <data name="Settings_Configuration">
-        <value>構成</value>
+        <value>構成 (Configuration)</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>設定をロック (デフォルト保存)</value>
+        <value>設定をロック (デフォルトとして保存)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>誤操作防止。ハッシュマスクのみ調整可能。</value>
+        <value>誤操作を防止します。「ハッシュ値を隠す」のみ変更可能です。</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>全設定リセット</value>
+        <value>すべての設定をリセット</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>工場出荷時のデフォルトに戻す。</value>
+        <value>工場出荷時の状態に戻します。</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>構成ファイルパス</value>
+        <value>設定ファイルのパス</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>フルパスを表示しクリップボードにコピー。</value>
+        <value>フルパスを表示し、クリップボードにコピーします。</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>パス表示</value>
+        <value>パスを表示</value>
     </data>
     <data name="Settings_AutoSave">
         <value>設定は config.json に自動保存されます</value>
@@ -217,16 +220,16 @@
         <value>開発者モード</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>高度なログとデバッグツールを有効化。</value>
+        <value>高度なログ記録とデバッグツールを有効にします。</value>
     </data>
     <data name="Dev_Console">
-        <value>開発者コンソール</value>
+        <value>開発コンソール</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>ベータ</value>
     </data>
     <data name="Dev_Recording">
-        <value>録画中</value>
+        <value>記録中</value>
     </data>
     <data name="Dev_Paused">
         <value>一時停止</value>
@@ -238,7 +241,7 @@
         <value>保存しない</value>
     </data>
     <data name="Dev_Clear">
-        <value>コンソールクリア</value>
+        <value>コンソールをクリア</value>
     </data>
     <data name="Dev_Copy">
         <value>すべてコピー</value>
@@ -253,28 +256,28 @@
         <value>ソフトウェア</value>
     </data>
     <data name="About_ThirdParty">
-        <value>サードパーティライブラリ</value>
+        <value>サードパーティ製ライブラリ</value>
     </data>
     <data name="About_Copyright">
         <value>著作権</value>
     </data>
     <data name="About_Desc">
-        <value>ファイルハッシュの生成・検証・圧縮のための強力なツール。少なくとも私はそう思ってる :)</value>
+        <value>ファイルハッシュの生成、検証、圧縮を行う強力なツールです。たぶんね :)</value>
     </data>
     <data name="About_License">
-        <value>MIT ライセンスで公開。</value>
+        <value>MITライセンスの下でリリースされています。</value>
     </data>
     <data name="About_Tech">
         <value>技術</value>
     </data>
     <data name="About_TechContent">
-        <value>C# と .NET 10.0.102 で構築。</value>
+        <value>C# および .NET 10.0.102 で構築されています。</value>
     </data>
     <data name="About_AI">
-        <value>AI 支援</value>
+        <value>AI アシスタンス</value>
     </data>
     <data name="About_AIContent">
-        <value>このソフトウェアは開発中に AI の支援を受けました (Gemini 3 Pro および Grok 4.1)。</value>
+        <value>このソフトウェアは AI (Gemini 3 Pro および Grok 4.1) の支援を受けて開発されました。</value>
     </data>
     <data name="Status_Processing">
         <value>処理中 ({0})...</value>
@@ -286,31 +289,31 @@
         <value>エラー: {0}</value>
     </data>
     <data name="Status_Cancelled">
-        <value>キャンセル</value>
+        <value>キャンセルされました</value>
     </data>
     <data name="Status_Saved">
         <value>保存しました！</value>
     </data>
     <data name="Status_Compressed">
-        <value>圧縮完了！</value>
+        <value>圧縮しました！</value>
     </data>
     <data name="Status_Waiting">
         <value>ハッシュ/入力待ち...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>元ファイルが見つかりません！</value>
+        <value>元のファイルが見つかりません！</value>
     </data>
     <data name="Status_MissingHash">
-        <value>ハッシュ値がありません (入力またはハッシュファイル読み込み)</value>
+        <value>ハッシュ値がありません (入力するかハッシュファイルを読み込んでください)</value>
     </data>
     <data name="Status_Valid">
-        <value>有効</value>
+        <value>有効 (VALID)</value>
     </data>
     <data name="Status_Invalid">
-        <value>不一致！</value>
+        <value>不一致 (MISMATCH!)</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>ハッシュファイル読み込み済み</value>
+        <value>ハッシュファイルを読み込みました</value>
     </data>
     <data name="Status_HashFileMismatch">
         <value>ハッシュファイル名が一致しません！</value>
@@ -325,28 +328,28 @@
         <value>新しいバージョンが見つかりました！</value>
     </data>
     <data name="Status_Latest">
-        <value>最新バージョンです。</value>
+        <value>最新バージョンを使用しています。</value>
     </data>
     <data name="Status_CheckError">
         <value>更新確認エラー: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>ダウンロードとインストール中...</value>
+        <value>ダウンロードしてインストール中...</value>
     </data>
     <data name="Status_InstallError">
         <value>インストールエラー: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>準備完了 (.hash ファイルから)</value>
+        <value>準備完了 (.hashファイルから)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>元ファイルが失われました！</value>
+        <value>元のファイルが失われました！</value>
     </data>
     <data name="Status_DropHashMismatch">
         <value>ハッシュファイル名が一致しません！</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>ハッシュファイルをドロップしました</value>
+        <value>ハッシュファイルがドロップされました</value>
     </data>
     <data name="Status_DropNoHash">
         <value>ファイルにハッシュが含まれていません！</value>
@@ -361,6 +364,7 @@
         <value>処理が完了しました！
             ✅ 成功: {0}
             ❌ 失敗: {1}
+            ⛔ キャンセル: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
@@ -371,19 +375,19 @@
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>間違ったファイル！</value>
+        <value>ファイルが違います！</value>
     </data>
     <data name="Msg_WrongHashFileContent">
         <value>ハッシュファイルが一致しません！
 
-            元ファイル: {0}
-            選択ファイル: {1}
+            元のファイル: {0}
+            選択されたファイル: {1}
 
-            正しいハッシュファイルを指定してください。
+            正しい対応するハッシュファイルを選択してください。
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>新しい更新</value>
+        <value>新しいアップデート</value>
     </data>
     <data name="Msg_UpdateContent">
         <value>バージョン: {0}
@@ -391,11 +395,11 @@
             変更点:
             {1}
 
-            「今すぐ更新」をクリックしてダウンロード。
+            「今すぐ更新」をクリックしてダウンロードしてください。
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>新しい更新はありません。</value>
+        <value>新しいアップデートは見つかりませんでした。</value>
     </data>
     <data name="Msg_Error">
         <value>エラー</value>
@@ -404,10 +408,10 @@
         <value>このハッシュファイルを読み込めません。</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>構成確認</value>
+        <value>設定チェック</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>ファイルの場所:
+        <value>ファイルは以下に存在します:
             {0}
         </value>
     </data>
@@ -415,42 +419,42 @@
         <value>ファイルが存在しません！</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>ファイル作成成功！</value>
+        <value>ファイルが正常に作成されました！</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>構成パスをコピーしました。</value>
+        <value>設定パスをコピーしました。</value>
     </data>
     <data name="Msg_AdminMode">
         <value>管理者モード</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>変更を適用するにはアプリを再起動してください。</value>
+        <value>変更を適用するには、アプリケーションを再起動してください。</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>フォルダを開けません: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ 開発版警告</value>
+        <value>⚠️ 開発版の警告</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>開発者 (プレリリース) 更新チャンネルに切り替えようとしています。
+        <value>開発者（プレリリース）更新チャンネルに切り替えようとしています。
 
-            このバージョンにはバグが含まれる可能性があり、不安定でデータ損失が発生する可能性があります。
+            このバージョンにはバグが含まれている可能性があり、不安定で、データ損失を引き起こす可能性があります。
 
-            このバージョン使用によるいかなる問題も責任を負いません。
+            このバージョンの使用に起因する問題について、私は一切の責任を負いません。
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>読み、同意しました。すべての責任を負います。</value>
+        <value>読みました。同意して、すべての責任を負います。</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>ハッシュファイル保存</value>
+        <value>ハッシュファイルを保存</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>圧縮ファイル保存</value>
+        <value>圧縮ファイルを保存</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>ハッシュ計算するファイルを選択</value>
+        <value>ハッシュ化するファイルを選択</value>
     </data>
     <data name="Dialog_SelectHashFile">
         <value>{0} のハッシュファイルを選択</value>
@@ -459,10 +463,10 @@
         <value>ファイルを選択 (元ファイルまたは .hash ファイル)</value>
     </data>
     <data name="Header_Fallback">
-        <value>詳細: 旧バージョンにフォールバック</value>
+        <value>詳細: 旧バージョンへのフォールバック</value>
     </data>
     <data name="Desc_Fallback">
-        <value>新しいバージョンに問題がある場合に特定のバージョンをインストールできます。</value>
+        <value>新しいバージョンに問題がある場合、特定のバージョンをインストールできます。</value>
     </data>
     <data name="Watermark_PasteDrop">
         <value>ここに貼り付け/ドロップ...</value>
@@ -477,16 +481,19 @@
         <value>停止</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>ファイル削除</value>
+        <value>ファイルを削除</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>ハッシュコピー</value>
+        <value>ハッシュをコピー</value>
     </data>
     <data name="Tip_Compute">
         <value>計算</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>ハッシュを消去</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>ハッシュ参照</value>
+        <value>ハッシュを参照</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>ダーク</value>
@@ -500,9 +507,6 @@
     <data name="Msg_TaskCancelled_Title">
         <value>タスク停止</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>ファイル {0} が制限 {1} {2} を超えています。</value>
-    </data>
     <data name="Btn_Yes">
         <value>はい</value>
     </data>
@@ -513,42 +517,220 @@
         <value>いいえ</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip 圧縮ファイル</value>
+        <value>Zipアーカイブ</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
         <value>終了確認</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>終了すると進行中の全タスクがキャンセルされます。本当に終了しますか？</value>
+        <value>終了すると、進行中のすべてのタスクがキャンセルされます。よろしいですか？</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>タイムアウトによりタスクが停止されました。</value>
+        <value>タイムアウトのため、タスクが停止されました。</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>デバッグログをディスクに保存。</value>
+        <value>デバッグログをディスクに保存します。</value>
     </data>
     <data name="Dev_ToolTip_Pause">
-        <value>リアルタイムロギングを一時停止。</value>
+        <value>リアルタイムログを一時停止します。</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>ハッシュ表示</value>
+        <value>ハッシュを表示</value>
     </data>
     <data name="Tip_HideHash">
-        <value>ハッシュ非表示</value>
+        <value>ハッシュを隠す</value>
     </data>
     <data name="Tip_CopyPath">
         <value>パスをコピー</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>ディスク容量が不足しています。別の場所を選択してください :)</value>
+        <value>ドライブの空き容量が不足しています。別の場所を選択してください :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>ハッシュ表示</value>
+        <value>ハッシュの表示設定</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>ファイルがありません。「ファイル追加」をクリックして開始。</value>
+        <value>ファイルがありません。「ファイルを追加」をクリックして開始してください。</value>
     </data>
     <data name="Settings_LockTheme">
         <value>このテーマをデフォルトとしてロック</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>制限 ({1} {2}) を超えるため、{0} 個のファイルをスキップしました:
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>システム言語</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>「自動」設定に戻すには、完全に反映させるために再起動が必要です。続行しますか？</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>言語の変更</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>本当に変更しますか？</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>この警告を再度表示しない</value>
+    </data>
+    <data name="Error_Network">
+        <value>ネットワーク接続エラー。インターネット接続を確認してください。</value>
+    </data>
+    <data name="Error_Server">
+        <value>サーバーエラー (5xx)。後でもう一度お試しください。</value>
+    </data>
+    <data name="Error_Client">
+        <value>クライアントエラー (4xx)。リクエストを確認してください。</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>GitHub APIレート制限を超えました。後でもう一度お試しください。</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>プレリリースバージョンが見つかりません。現在のバージョンを維持します。</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>プレリリースバージョン {0} が利用可能です。
+
+            {1}
+
+            このバージョンは不安定な可能性があります。ダウンロードしますか？
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>失敗項目を消去</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>{0} 項目を削除しました。</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>残り時間: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>所要時間: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>計算中...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>フォルダを追加...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>選択したフォルダは空です。</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>スキャンするフォルダを選択</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>キャンセル</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>処理制限</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>フォルダスキャンごとの最大ファイル数</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>パフォーマンスの問題を防ぐため、フォルダから追加するファイル数を制限します。</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>一度に選択できる最大フォルダ数</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>一度に選択されるフォルダの数を制限します。</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>一度に選択できるのは {0} フォルダまでです。</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>{0} ファイルを追加しました。制限のため {1} ファイルをスキップしました。</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>読込: {0}/s | 書込: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>読み書き速度を表示</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>ハッシュ操作中にリアルタイムの転送速度を表示します。</value>
+    </data>
+    <data name="Status_Computing">
+        <value>ハッシュ計算中...</value>
+    </data>
+    <data name="Size_All">
+        <value>すべてのサイズ</value>
+    </data>
+    <data name="Size_Small">
+        <value>小 (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>中 (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>大 (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>特大 (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>ドキュメント</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>プライバシーポリシー</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>利用規約</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>エンドユーザー使用許諾契約 (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>免責事項</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>README</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>変更履歴</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>謝辞</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>処理中</value>
+    </data>
+    <data name="Status_Failure">
+        <value>失敗</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>名前で検索...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>サイズ</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub プロフィール</value>
+    </data>
+    <data name="Filter_All">
+        <value>すべて</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>メモリ解放</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>ガベージコレクションを強制実行してメモリを解放します。</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>メモリをクリア</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>メモリのクリーンアップがトリガーされました。</value>
     </data>
 </root>

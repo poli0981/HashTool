@@ -16,10 +16,10 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>雜湊工具 (Hash Tool)</value>
     </data>
     <data name="Menu_Create">
-        <value>產生雜湊</value>
+        <value>建立雜湊</value>
     </data>
     <data name="Menu_Check">
         <value>驗證雜湊</value>
@@ -37,13 +37,16 @@
         <value>關於</value>
     </data>
     <data name="Menu_Developer">
-        <value>開發者</value>
+        <value>開發人員</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>加入檔案...</value>
+        <value>新增檔案...</value>
     </data>
     <data name="Btn_Clear">
         <value>清除清單</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>清除雜湊</value>
     </data>
     <data name="Btn_CalcAll">
         <value>全部計算</value>
@@ -64,10 +67,10 @@
         <value>接受</value>
     </data>
     <data name="Btn_Decline">
-        <value>取消</value>
+        <value>拒絕</value>
     </data>
     <data name="Title_CreateHash">
-        <value>產生雜湊與壓縮</value>
+        <value>建立雜湊與壓縮</value>
     </data>
     <data name="Title_CheckHash">
         <value>批次驗證</value>
@@ -76,16 +79,16 @@
         <value>檢查更新</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>開發版警告</value>
+        <value>開發人員版本警告</value>
     </data>
     <data name="Title_About">
         <value>關於</value>
     </data>
     <data name="Help_CreateHash">
-        <value>提示：Shift+C 全部計算，Shift+Z 壓縮，Ctrl+F 加入檔案。</value>
+        <value>提示：按 Shift+C 計算，Shift+Z 壓縮，Ctrl+F 新增檔案。</value>
     </data>
     <data name="Help_CheckHash">
-        <value>提示：Shift+A 全部驗證，Ctrl+F 加入檔案，Ctrl+Shift+H 清除清單。</value>
+        <value>提示：按 Shift+A 驗證，Ctrl+F 新增檔案，Ctrl+Shift+H 清除清單。</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>就緒</value>
@@ -97,16 +100,16 @@
         <value>目前版本：{0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>發行頻道：</value>
+        <value>發布管道：</value>
     </data>
     <data name="Lbl_TotalFiles">
         <value>總檔案數：{0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>穩定版</value>
+        <value>正式版 (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>開發版</value>
+        <value>開發人員版 (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>語言</value>
@@ -115,10 +118,10 @@
         <value>主題</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>主題樣式</value>
+        <value>主題風格</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>亮/暗</value>
+        <value>淺色/深色</value>
     </data>
     <data name="Settings_Font">
         <value>字型</value>
@@ -127,19 +130,19 @@
         <value>字型大小 (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>自動選擇最適語言字型</value>
+        <value>自動選擇最適合該語言的字型</value>
     </data>
     <data name="Settings_LockFont">
         <value>鎖定為預設字型</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI 縮放</value>
+        <value>介面縮放</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>遮蔽雜湊值 (安全性)</value>
+        <value>隱藏雜湊值 (安全性)</value>
     </data>
     <data name="Settings_Reset">
-        <value>重置主題</value>
+        <value>重設設定</value>
     </data>
     <data name="Settings_Other">
         <value>隱私與安全性</value>
@@ -154,52 +157,52 @@
         <value>進階</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>以管理員執行</value>
+        <value>以系統管理員身分執行</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>需重新啟動。允許存取受保護檔案。</value>
+        <value>需要重新啟動。允許存取受保護的檔案。</value>
     </data>
     <data name="Settings_FileSizeLimit">
         <value>輸入檔案大小限制</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>處理檔案的最大尺寸。</value>
+        <value>允許處理的最大檔案大小。</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>強制結束逾時</value>
+        <value>強制退出逾時時間</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>視為程式凍結前的等待時間 (秒)。</value>
+        <value>判定應用程式沒有回應前的等待時間 (秒)。</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>單一檔案處理逾時</value>
+        <value>檔案處理逾時時間</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>單一檔案處理過久則取消。</value>
+        <value>如果單一檔案處理時間過長則取消。</value>
     </data>
     <data name="Settings_Emergency">
         <value>緊急動作</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>立即強制結束程式並取消所有任務。</value>
+        <value>強制關閉應用程式並立即取消所有工作。</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>強制結束並取消全部</value>
+        <value>強制退出並取消全部</value>
     </data>
     <data name="Settings_Configuration">
-        <value>設定</value>
+        <value>設定檔</value>
     </data>
     <data name="Settings_LockSettings">
         <value>鎖定設定 (儲存為預設)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>防止誤改。只有雜湊遮蔽仍可調整。</value>
+        <value>防止意外變更。只有「隱藏雜湊」可以調整。</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>重置所有設定</value>
+        <value>重設所有設定</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>恢復出廠預設值。</value>
+        <value>還原為原廠預設值。</value>
     </data>
     <data name="Settings_ConfigPath">
         <value>設定檔路徑</value>
@@ -211,37 +214,37 @@
         <value>顯示路徑</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>設定會自動儲存至 config.json</value>
+        <value>設定已自動儲存至 config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>開發者模式</value>
+        <value>開發人員模式</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>啟用進階記錄與除錯工具。</value>
+        <value>啟用進階記錄與偵錯工具。</value>
     </data>
     <data name="Dev_Console">
-        <value>開發者控制台</value>
+        <value>開發人員主控台</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>測試版</value>
     </data>
     <data name="Dev_Recording">
-        <value>錄製中</value>
+        <value>記錄中</value>
     </data>
     <data name="Dev_Paused">
         <value>已暫停</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>儲存到檔案</value>
+        <value>儲存至檔案</value>
     </data>
     <data name="Dev_NoSave">
         <value>不儲存</value>
     </data>
     <data name="Dev_Clear">
-        <value>清除控制台</value>
+        <value>清除主控台</value>
     </data>
     <data name="Dev_Copy">
-        <value>複製全部</value>
+        <value>全部複製</value>
     </data>
     <data name="Dev_OpenFolder">
         <value>開啟記錄資料夾</value>
@@ -253,16 +256,16 @@
         <value>軟體</value>
     </data>
     <data name="About_ThirdParty">
-        <value>第三方程式庫</value>
+        <value>第三方函式庫</value>
     </data>
     <data name="About_Copyright">
-        <value>版權</value>
+        <value>版權所有</value>
     </data>
     <data name="About_Desc">
-        <value>強大的檔案雜湊產生、驗證與壓縮工具。至少我是這麼想的 :)</value>
+        <value>一款用於建立、驗證和壓縮檔案雜湊的強大工具。至少我是這麼認為的 :)</value>
     </data>
     <data name="About_License">
-        <value>以 MIT 授權發行。</value>
+        <value>根據 MIT 授權條款發布。</value>
     </data>
     <data name="About_Tech">
         <value>技術</value>
@@ -274,13 +277,13 @@
         <value>AI 協助</value>
     </data>
     <data name="About_AIContent">
-        <value>本軟體開發過程中獲得 AI 協助 (Gemini 3 Pro 與 Grok 4.1)。</value>
+        <value>本軟體在 AI (Gemini 3 Pro 與 Grok 4.1) 的協助下開發。</value>
     </data>
     <data name="Status_Processing">
         <value>處理中 ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>完成</value>
+        <value>已完成</value>
     </data>
     <data name="Status_Error">
         <value>錯誤：{0}</value>
@@ -298,104 +301,105 @@
         <value>等待雜湊/輸入...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>缺少原始檔案！</value>
+        <value>遺失原始檔案！</value>
     </data>
     <data name="Status_MissingHash">
-        <value>缺少雜湊值 (輸入或載入雜湊檔)</value>
+        <value>缺少雜湊值 (請輸入或載入檔案)</value>
     </data>
     <data name="Status_Valid">
-        <value>有效</value>
+        <value>驗證成功</value>
     </data>
     <data name="Status_Invalid">
-        <value>不符！</value>
+        <value>不相符！</value>
     </data>
     <data name="Status_HashFileLoaded">
         <value>已載入雜湊檔</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>雜湊檔名稱不符！</value>
+        <value>雜湊檔案名稱不相符！</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>檔案不包含雜湊！</value>
+        <value>該檔案不包含雜湊值！</value>
     </data>
     <data name="Status_Checking">
-        <value>檢查更新中...</value>
+        <value>正在檢查更新...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>偵測到新版本！</value>
+        <value>發現新版本！</value>
     </data>
     <data name="Status_Latest">
-        <value>已是最新版本。</value>
+        <value>您使用的是最新版本。</value>
     </data>
     <data name="Status_CheckError">
-        <value>更新檢查錯誤：{0}</value>
+        <value>檢查更新錯誤：{0}</value>
     </data>
     <data name="Status_Installing">
-        <value>下載並安裝中...</value>
+        <value>正在下載並安裝...</value>
     </data>
     <data name="Status_InstallError">
         <value>安裝錯誤：{0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>就緒 (來自 .hash 檔)</value>
+        <value>就緒 (來自 .hash 檔案)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>原始檔案遺失！</value>
+        <value>原始檔案已遺失！</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>雜湊檔名稱不符！</value>
+        <value>雜湊檔案名稱不相符！</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>已成功拖放雜湊檔</value>
+        <value>成功拖入雜湊檔</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>檔案不包含雜湊！</value>
+        <value>該檔案不包含雜湊值！</value>
     </data>
     <data name="Status_ReadError">
         <value>檔案讀取錯誤</value>
     </data>
     <data name="Msg_Result_Title">
-        <value>結果</value>
+        <value>處理結果</value>
     </data>
     <data name="Msg_Result_Content">
         <value>處理完成！
             ✅ 成功：{0}
             ❌ 失敗：{1}
+            ⛔ 已取消：{2}
         </value>
     </data>
     <data name="Msg_CheckResult">
-        <value>已檢查 {0} 個檔案。
+        <value>共驗證了 {0} 個檔案。
             ✅ 相符：{1}
-            ❌ 不符/錯誤：{2}
+            ❌ 不相符/錯誤：{2}
             ⛔ 已取消：{3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
-        <value>錯誤檔案！</value>
+        <value>檔案錯誤！</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>雜湊檔不符！
+        <value>雜湊檔案不相符！
 
             原始檔案：{0}
-            選擇檔案：{1}
+            所選檔案：{1}
 
-            請選擇正確的配套雜湊檔。
+            請選擇正確的隨附雜湊檔。
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>新更新</value>
+        <value>發現新版本</value>
     </data>
     <data name="Msg_UpdateContent">
         <value>版本：{0}
 
-            變更：
+            更新內容：
             {1}
 
-            按「立即更新」以下載。
+            點擊「立即更新」進行下載。
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>未找到更新的版本。</value>
+        <value>未發現新版本。</value>
     </data>
     <data name="Msg_Error">
         <value>錯誤</value>
@@ -404,7 +408,7 @@
         <value>無法讀取此雜湊檔。</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>設定檢查</value>
+        <value>設定檔檢查</value>
     </data>
     <data name="Msg_ConfigExists">
         <value>檔案存在於：
@@ -418,30 +422,30 @@
         <value>檔案建立成功！</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>已複製設定路徑。</value>
+        <value>已複製設定檔路徑。</value>
     </data>
     <data name="Msg_AdminMode">
-        <value>管理員模式</value>
+        <value>系統管理員模式</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>請重新啟動應用程式以套用變更。</value>
+        <value>請重新啟動應用程式以使變更生效。</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>無法開啟資料夾：{0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ 開發版警告</value>
+        <value>⚠️ 開發人員版本警告</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>您即將切換至開發者 (預發行) 更新頻道。
+        <value>您即將切換到開發人員 (預先發行) 更新管道。
 
-            此版本可能含有錯誤、不穩定，並可能導致資料遺失。
+            該版本可能存在錯誤、運作不穩定並可能導致資料遺失。
 
-            使用此版本所產生之任何問題，本人概不負責。
+            對於使用此版本引起的任何問題，本人概不負責。
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>我已閱讀並同意。我願自行承擔全部責任。</value>
+        <value>我已閱讀並同意。我將承擔全部責任。</value>
     </data>
     <data name="Dialog_SaveHash">
         <value>儲存雜湊檔</value>
@@ -450,22 +454,22 @@
         <value>儲存壓縮檔</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>選擇要計算雜湊的檔案</value>
+        <value>選擇要進行雜湊的檔案</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>選擇 {0} 的雜湊檔</value>
+        <value>為 {0} 選擇雜湊檔</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>選擇檔案 (原始檔或 .hash 檔)</value>
+        <value>選擇檔案 (原始檔案或 .hash 檔案)</value>
     </data>
     <data name="Header_Fallback">
-        <value>進階：回退到舊版本</value>
+        <value>進階：回復到舊版本</value>
     </data>
     <data name="Desc_Fallback">
-        <value>此功能允許在新版本出問題時安裝特定版本。</value>
+        <value>如果新版本發生問題，此功能允許您安裝特定的舊版本。</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>貼上/拖放至此...</value>
+        <value>在此貼上或拖放...</value>
     </data>
     <data name="Unit_Seconds">
         <value>秒</value>
@@ -485,23 +489,23 @@
     <data name="Tip_Compute">
         <value>計算</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>清除雜湊</value>
+    </data>
     <data name="Tip_BrowseHash">
         <value>瀏覽雜湊</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>暗色</value>
+        <value>深色</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>亮色</value>
+        <value>淺色</value>
     </data>
     <data name="Settings_ThemeSystem">
-        <value>系統</value>
+        <value>跟隨系統</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>任務已停止</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>檔案 {0} 超過限制 {1} {2}。</value>
+        <value>工作已停止</value>
     </data>
     <data name="Btn_Yes">
         <value>是</value>
@@ -516,16 +520,16 @@
         <value>Zip 壓縮檔</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>確認離開</value>
+        <value>確認退出</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>離開將取消所有進行中任務。確定嗎？</value>
+        <value>退出將取消所有正在進行的工作。確定要退出嗎？</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>因逾時而停止任務。</value>
+        <value>工作因逾時而停止。</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>將除錯記錄儲存到磁碟。</value>
+        <value>將偵錯記錄儲存到磁碟。</value>
     </data>
     <data name="Dev_ToolTip_Pause">
         <value>暫停即時記錄。</value>
@@ -540,15 +544,193 @@
         <value>複製路徑</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>您的磁碟空間不足。請重新選擇位置 :)</value>
+        <value>您的磁碟已滿。請選擇其他位置 :)</value>
     </data>
     <data name="Tip_HashVisibility">
         <value>雜湊可見度</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>沒有檔案。點擊「加入檔案」開始。</value>
+        <value>暫無檔案。點擊「新增檔案」開始。</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>鎖定此主題為預設</value>
+        <value>將此主題鎖定為預設</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>略過了 {0} 個超出大小限制 ({1} {2}) 的檔案：
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>系統語言</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>恢復為「自動」設定需要重新啟動才能完全生效。是否繼續？</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>變更語言</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>您確定要變更嗎？</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>不再顯示此警告</value>
+    </data>
+    <data name="Error_Network">
+        <value>網路連線錯誤。請檢查您的網路設定。</value>
+    </data>
+    <data name="Error_Server">
+        <value>伺服器錯誤 (5xx)。請稍後再試。</value>
+    </data>
+    <data name="Error_Client">
+        <value>用戶端錯誤 (4xx)。請檢查請求。</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>超出了 GitHub API 的速率限制。請稍後再試。</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>未找到預先發行版本。保留目前版本。</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>發現預先發行版本 {0}。
+
+            {1}
+
+            此版本可能不穩定。您要下載嗎？
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>清除失敗項目</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>已移除 {0} 個項目。</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>剩餘時間：{0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>工作耗時：{0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>計算中...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>新增資料夾...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>所選資料夾為空。</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>選擇要掃描的資料夾</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>取消</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>處理限制</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>單次資料夾掃描最大檔案數</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>限制從資料夾新增的檔案數量，以防出現效能問題。</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>同時處理的最大資料夾數</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>限制一次可選擇的資料夾數量。</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>您一次最多只能選擇 {0} 個資料夾。</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>已新增 {0} 個檔案。因超出限制，略過了 {1} 個檔案。</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>讀取：{0}/s | 寫入：{1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>顯示讀寫速度</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>在雜湊作業期間顯示即時傳輸速度。</value>
+    </data>
+    <data name="Status_Computing">
+        <value>正在計算雜湊...</value>
+    </data>
+    <data name="Size_All">
+        <value>所有大小</value>
+    </data>
+    <data name="Size_Small">
+        <value>小 (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>中 (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>大 (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>超大 (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>文件</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>隱私權政策</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>服務條款</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>使用者授權合約 (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>免責聲明</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>讀我檔案 (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>更新日誌</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>鳴謝</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>處理中</value>
+    </data>
+    <data name="Status_Failure">
+        <value>失敗</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>依名稱搜尋...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>大小</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub 個人檔案</value>
+    </data>
+    <data name="Filter_All">
+        <value>全部</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>釋放記憶體</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>強制執行垃圾回收 (GC) 以釋放記憶體 (RAM)。</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>清理記憶體</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>已觸發記憶體清理。</value>
     </data>
 </root>

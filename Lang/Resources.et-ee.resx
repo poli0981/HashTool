@@ -16,19 +16,19 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Räsi Tööriist</value>
     </data>
     <data name="Menu_Create">
-        <value>Loo hash</value>
+        <value>Genereeri räsi</value>
     </data>
     <data name="Menu_Check">
-        <value>Kontrolli hash</value>
+        <value>Kontrolli räsi</value>
     </data>
     <data name="Menu_Settings">
-        <value>Seaded</value>
+        <value>Sätted</value>
     </data>
     <data name="Menu_Update">
-        <value>Uuenda</value>
+        <value>Värskenda</value>
     </data>
     <data name="Menu_Theme">
         <value>Teema</value>
@@ -43,49 +43,52 @@
         <value>Lisa faile...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Tühjenda nimekiri</value>
+        <value>Tühjenda loend</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>Kustuta räsid</value>
     </data>
     <data name="Btn_CalcAll">
         <value>ARVUTA KÕIK</value>
     </data>
     <data name="Btn_Compress">
-        <value>Tihenda (.Zip)</value>
+        <value>Paki (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>KONTROLLI KÕIK</value>
+        <value>KONTROLLI KÕIKI</value>
     </data>
     <data name="Btn_CheckNow">
         <value>Kontrolli kohe</value>
     </data>
     <data name="Btn_Install">
-        <value>Paigalda</value>
+        <value>Installi</value>
     </data>
     <data name="Btn_Accept">
-        <value>Nõustu</value>
+        <value>Nõustun</value>
     </data>
     <data name="Btn_Decline">
-        <value>Keeldu</value>
+        <value>Keeldun</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Loo hash &amp; tihenda</value>
+        <value>Genereeri räsi ja paki</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Partii kontroll</value>
+        <value>Hulgi kontrollimine</value>
     </data>
     <data name="Title_Update">
-        <value>Kontrolli uuendusi</value>
+        <value>Kontrolli värskendusi</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Arendaja versiooni hoiatus</value>
+        <value>Arendajaversiooni hoiatus</value>
     </data>
     <data name="Title_About">
         <value>Teave</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Vihje: Shift+C arvuta kõik, Shift+Z tihenda, Ctrl+F lisa faile.</value>
+        <value>Vihje: Shift+C arvutamiseks, Shift+Z pakkimiseks, Ctrl+F lisamiseks.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Vihje: Shift+A kontrolli kõik, Ctrl+F lisa faile, Ctrl+Shift+H tühjenda nimekiri.</value>
+        <value>Vihje: Shift+A kontrollimiseks, Ctrl+F lisamiseks, Ctrl+Shift+H tühjendamiseks.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Valmis</value>
@@ -97,16 +100,16 @@
         <value>Praegune versioon: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Väljaandekanal:</value>
+        <value>Väljalaskekanal:</value>
     </data>
     <data name="Lbl_TotalFiles">
         <value>Faile kokku: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabiilne</value>
+        <value>Stabiilne (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Arendaja versioon</value>
+        <value>Arendus (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Keel</value>
@@ -127,103 +130,103 @@
         <value>Fondi suurus (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automaatne optimaalse fondi valik keele jaoks</value>
+        <value>Vali automaatselt keele jaoks sobiv font</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Lukusta vaikefondiks</value>
+        <value>Lukusta vaikimisi fondina</value>
     </data>
     <data name="Settings_Scale">
         <value>UI skaala</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Varja hash väärtused (Turvalisus)</value>
+        <value>Peida räsiväärtused (Turvalisus)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Lähtesta teema</value>
+        <value>Lähtesta sätted</value>
     </data>
     <data name="Settings_Other">
-        <value>Privaatsus &amp; turvalisus</value>
+        <value>Privaatsus ja turvalisus</value>
     </data>
     <data name="Settings_SetDefault">
         <value>Määra vaikimisi</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Kohandatud teksti värv</value>
+        <value>Kohandatud tekstivärv</value>
     </data>
     <data name="Settings_Advanced">
         <value>Täpsem</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>Käita administraatorina</value>
+        <value>Käivita administraatorina</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Nõuab taaskäivitust. Lubab juurdepääsu kaitstud failidele.</value>
+        <value>Vajalik taaskäivitus. Lubab juurdepääsu kaitstud failidele.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Sisendfaili suuruse piirang</value>
+        <value>Sisendfaili suuruse limiit</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maksimaalne suurus töödeldavate failide jaoks.</value>
+        <value>Maksimaalne failisuurus töötlemiseks.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Sunniviisilise sulgemise ajalõpp</value>
+        <value>Sunnitud sulgemise ajalõpp</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Aeg (sekundites) enne rakenduse külmumise tuvastamist.</value>
+        <value>Aeg (sekundites) enne rakenduse külmunuks lugemist.</value>
     </data>
     <data name="Settings_FileTimeout">
         <value>Faili töötlemise ajalõpp</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Tühista, kui üks fail võtab liiga kaua aega.</value>
+        <value>Tühista, kui failiga läheb liiga kaua.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Hädaolukorra tegevus</value>
+        <value>Hädaabi tegevus</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Sunniviisiline rakenduse sulgemine ja kõigi ülesannete viivitamatu tühistamine.</value>
+        <value>Sulge rakendus sunniviisiliselt ja tühista kõik ülesanded kohe.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Sunniviisiline sulgemine &amp; tühista kõik</value>
+        <value>Sunni sulgemist ja tühista kõik</value>
     </data>
     <data name="Settings_Configuration">
         <value>Konfiguratsioon</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Lukusta seaded (Salvesta vaikimisi)</value>
+        <value>Lukusta sätted (Salvesta vaikimisi)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Enneta juhuslikke muudatusi. Ainult hash maskimine jääb reguleeritavaks.</value>
+        <value>Väldi juhuslikke muudatusi. Ainult 'Räsi peitmine' jääb muudetavaks.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Lähtesta kõik seaded</value>
+        <value>Lähtesta kõik sätted</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Taasta tehase vaikeseaded.</value>
+        <value>Taasta tehasesätted.</value>
     </data>
     <data name="Settings_ConfigPath">
         <value>Konfiguratsioonifaili tee</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Näita täielikku teed ja kopeeri lõikelauale.</value>
+        <value>Kuva täistee ja kopeeri lõikelauale.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Näita teed</value>
+        <value>Kuva tee</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Seaded salvestatakse automaatselt config.json faili</value>
+        <value>Sätted salvestatakse automaatselt faili config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Arendaja režiim</value>
+        <value>Arendajarežiim</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Luba täpsem logimine ja silumise tööriistad.</value>
+        <value>Luba täpsem logimine ja silumistööriistad.</value>
     </data>
     <data name="Dev_Console">
         <value>Arendaja konsool</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>BEETA</value>
     </data>
     <data name="Dev_Recording">
         <value>Salvestamine</value>
@@ -259,7 +262,7 @@
         <value>Autoriõigus</value>
     </data>
     <data name="About_Desc">
-        <value>Võimas tööriist failide hashide loomiseks, kontrollimiseks ja tihendamiseks. Või vähemalt ma arvan nii
+        <value>Võimas tööriist failiräside genereerimiseks, kontrollimiseks ja pakkimiseks. Või vähemalt ma arvan nii
             :)
         </value>
     </data>
@@ -270,13 +273,13 @@
         <value>Tehnoloogia</value>
     </data>
     <data name="About_TechContent">
-        <value>Ehitatud C# ja .NET 10.0.102 abil.</value>
+        <value>Loodud C# ja .NET 10.0.102 abil.</value>
     </data>
     <data name="About_AI">
         <value>AI abi</value>
     </data>
     <data name="About_AIContent">
-        <value>See tarkvara on arendatud AI abiga (Gemini 3 Pro ja Grok 4.1).</value>
+        <value>See tarkvara arendati AI (Gemini 3 Pro ja Grok 4.1) abiga.</value>
     </data>
     <data name="Status_Processing">
         <value>Töötlemine ({0})...</value>
@@ -294,64 +297,64 @@
         <value>Salvestatud!</value>
     </data>
     <data name="Status_Compressed">
-        <value>Tihendatud!</value>
+        <value>Pakitud!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Ootab hash/sisendit...</value>
+        <value>Ootan räsi/sisendit...</value>
     </data>
     <data name="Status_MissingOriginal">
-        <value>Algfail puudub!</value>
+        <value>Algne fail puudub!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hash väärtus puudub (Sisesta või laadi hash fail)</value>
+        <value>Räsiväärtus puudub (Sisesta või laadi fail)</value>
     </data>
     <data name="Status_Valid">
-        <value>KEHTIV</value>
+        <value>SOBIB</value>
     </data>
     <data name="Status_Invalid">
-        <value>KEHTETU!</value>
+        <value>EI SOBI!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Hash fail laetud</value>
+        <value>Räsifail laaditud</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hash faili nimi ei klapi!</value>
+        <value>Räsifaili nime ebakõla!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>Failis pole hashi!</value>
+        <value>Fail ei sisalda räsi!</value>
     </data>
     <data name="Status_Checking">
-        <value>Kontrollin uuendusi...</value>
+        <value>Värskenduste kontrollimine...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Uus versioon avastatud!</value>
+        <value>Uus versioon tuvastatud!</value>
     </data>
     <data name="Status_Latest">
         <value>Kasutate uusimat versiooni.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Uuenduste kontrolli viga: {0}</value>
+        <value>Värskenduse kontrolli viga: {0}</value>
     </data>
     <data name="Status_Installing">
-        <value>Allalaadimine ja paigaldamine...</value>
+        <value>Allalaadimine ja installimine...</value>
     </data>
     <data name="Status_InstallError">
-        <value>Paigaldusviga: {0}</value>
+        <value>Installimise viga: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
         <value>Valmis (.hash failist)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Algfail kadunud!</value>
+        <value>Algne fail kadunud!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hash faili nimi ei klapi!</value>
+        <value>Räsifaili nime ebakõla!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hash fail edukalt kukutatud</value>
+        <value>Räsifail edukalt lisatud</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>Failis pole hashi!</value>
+        <value>Fail ei sisalda räsi!</value>
     </data>
     <data name="Status_ReadError">
         <value>Faili lugemise viga</value>
@@ -361,14 +364,15 @@
     </data>
     <data name="Msg_Result_Content">
         <value>Töötlemine valmis!
-            ✅ Edu: {0}
-            ❌ Ebaõnnestumine: {1}
+            ✅ Edukas: {0}
+            ❌ Ebaõnnestus: {1}
+            ⛔ Tühistatud: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Kontrollitud {0} faili.
-            ✅ Sobib: {1}
-            ❌ Ei sobi/Viga: {2}
+            ✅ Klappis: {1}
+            ❌ Ei klappinud/Viga: {2}
             ⛔ Tühistatud: {3}
         </value>
     </data>
@@ -376,16 +380,16 @@
         <value>Vale fail!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hash fail ei sobi!
+        <value>Räsifaili ebakõla!
 
-            Algfail: {0}
+            Algne fail: {0}
             Valitud fail: {1}
 
-            Palun valige õige kaasasolev hash fail.
+            Palun vali õige kaasnev räsifail.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
-        <value>Uus uuendus</value>
+        <value>Uus värskendus</value>
     </data>
     <data name="Msg_UpdateContent">
         <value>Versioon: {0}
@@ -393,31 +397,31 @@
             Muudatused:
             {1}
 
-            Klõpsake 'Uuenda kohe' allalaadimiseks.
+            Klõpsa allalaadimiseks 'Värskenda kohe'.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Uuemaid uuendusi ei leitud.</value>
+        <value>Uuemaid värskendusi ei leitud.</value>
     </data>
     <data name="Msg_Error">
         <value>Viga</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Ei saa seda hash faili lugeda.</value>
+        <value>Seda räsifaili ei saa lugeda.</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>Konfiguratsiooni kontroll</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Fail on olemas:
+        <value>Fail olemas asukohas:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Fail puudub!</value>
+        <value>Faili ei eksisteeri!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Fail loodud edukalt!</value>
+        <value>Fail edukalt loodud!</value>
     </data>
     <data name="Msg_ConfigCopied">
         <value>Konfiguratsiooni tee kopeeritud.</value>
@@ -426,16 +430,16 @@
         <value>Administraatori režiim</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Palun taaskäivitage rakendus muudatuste rakendamiseks.</value>
+        <value>Muudatuste rakendumiseks taaskäivitage rakendus.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Ei saa kausta avada: {0}</value>
+        <value>Kausta ei saa avada: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ARENDAJA VERSIOONI HOIATUS</value>
+        <value>⚠️ ARENDAJAVERSIOONI HOIATUS</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Olete vahetamas arendaja kanalile (eelväljaanne).
+        <value>Olete lülitumas arendaja (Pre-release) värskenduskanalile.
 
             See versioon võib sisaldada vigu, olla ebastabiilne ja põhjustada andmekadu.
 
@@ -446,49 +450,52 @@
         <value>Olen lugenud ja nõustun. Võtan täieliku vastutuse.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Salvesta hash fail</value>
+        <value>Salvesta räsifail</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Salvesta tihendatud fail</value>
+        <value>Salvesta pakitud fail</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Vali failid hashiks</value>
+        <value>Vali failid räsimiseks</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Vali hash fail: {0}</value>
+        <value>Vali räsifail: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Vali failid (Originaal või .hash fail)</value>
+        <value>Vali failid (Algne või .hash fail)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Täpsem: Tagasi vanemale versioonile</value>
+        <value>Täpsem: Pöördu tagasi vanemale versioonile</value>
     </data>
     <data name="Desc_Fallback">
-        <value>See funktsioon võimaldab paigaldada kindla versiooni, kui uus versioon tekitab probleeme.</value>
+        <value>See funktsioon võimaldab installida kindla versiooni, kui uuel on probleeme.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Kleebi/Lase siia...</value>
+        <value>Kleebi või lohista siia...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Sekundit</value>
     </data>
     <data name="Tip_Verify">
-        <value>Kinnita</value>
+        <value>Kontrolli</value>
     </data>
     <data name="Tip_Stop">
-        <value>Peata</value>
+        <value>Stopp</value>
     </data>
     <data name="Tip_RemoveFile">
         <value>Eemalda fail</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>Kopeeri hash</value>
+        <value>Kopeeri räsi</value>
     </data>
     <data name="Tip_Compute">
         <value>Arvuta</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Tühjenda räsi</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Sirvi hash</value>
+        <value>Sirvi räsi</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>Tume</value>
@@ -502,9 +509,6 @@
     <data name="Msg_TaskCancelled_Title">
         <value>Ülesanne peatatud</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Fail {0} ületab limiidi {1} {2}.</value>
-    </data>
     <data name="Btn_Yes">
         <value>Jah</value>
     </data>
@@ -515,16 +519,16 @@
         <value>Ei</value>
     </data>
     <data name="Dialog_FileType_Zip">
-        <value>Zip arhiiv</value>
+        <value>Zip-arhiiv</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
         <value>Kinnita väljumine</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Väljumine tühistab kõik käimasolevad ülesanded. Oled kindel?</value>
+        <value>Väljumine tühistab kõik pooleliolevad ülesanded. Kas oled kindel?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Ülesanne peatatud ajalõpu tõttu.</value>
+        <value>Ülesanne peatati ajalõpu tõttu.</value>
     </data>
     <data name="Dev_ToolTip_Save">
         <value>Salvesta silumislogi kettale.</value>
@@ -533,24 +537,202 @@
         <value>Peata reaalajas logimine.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>Näita hash</value>
+        <value>Kuva räsi</value>
     </data>
     <data name="Tip_HideHash">
-        <value>Peida hash</value>
+        <value>Peida räsi</value>
     </data>
     <data name="Tip_CopyPath">
         <value>Kopeeri tee</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Sinu ketas on täis. Vali teine asukoht vend :)</value>
+        <value>Ketas on täis. Palun vali teine asukoht :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Hash nähtavus</value>
+        <value>Räsi nähtavus</value>
     </data>
     <data name="EmptyState_DropFiles">
         <value>Faile pole. Alustamiseks klõpsa 'Lisa faile'.</value>
     </data>
     <data name="Settings_LockTheme">
         <value>Lukusta see teema vaikimisi</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Vahele jäetud {0} faili, mis ületasid limiidi ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Süsteemi keel</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>'Automaatse' sätte taastamine nõuab taaskäivitust. Kas soovid jätkata?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Keele vahetamine</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Oled sa selles kindel?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Ära seda hoiatust enam kuva</value>
+    </data>
+    <data name="Error_Network">
+        <value>Võrguühenduse viga. Palun kontrolli internetiühendust.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Serveri viga (5xx). Palun proovi hiljem uuesti.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Kliendi viga (4xx). Palun kontrolli päringut.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>GitHub API limiit ületatud. Palun proovi hiljem uuesti.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Pre-release versiooni ei leitud. Jätkan praegusega.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Pre-release versioon {0} on saadaval.
+
+            {1}
+
+            See versioon võib olla ebastabiilne. Kas soovid alla laadida?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Tühjenda ebaõnnestunud</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>Eemaldatud {0} üksust.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Aega jäänud: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Ülesande kestus: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Arvutan...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Lisa kaust...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Valitud kaust on tühi.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Vali kaust skannimiseks</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Tühista</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Töötlemise limiidid</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Max failid kausta skannimisel</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Piira kaustast lisatavate failide arvu jõudlusprobleemide vältimiseks.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Max kaustad korraga</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Piira korraga valitavate kaustade arvu.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Saad korraga valida kuni {0} kausta.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Lisatud {0} faili. Vahele jäetud {1} faili limiidi tõttu.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Lugemine: {0}/s | Kirjutamine: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Kuva lugemise/kirjutamise kiirus</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Kuva reaalajas edastuskiirus räsimise ajal.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Räsi arvutamine...</value>
+    </data>
+    <data name="Size_All">
+        <value>Kõik suurused</value>
+    </data>
+    <data name="Size_Small">
+        <value>Väike (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Keskmine (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Suur (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Väga suur (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Dokumendid</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Privaatsuspoliitika</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Kasutustingimused</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Lõppkasutaja litsentsileping (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Lahtiütlus</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>LOEMIND (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Muudatuste logi</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Tänusõnad</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Töötlemine</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Ebaõnnestus</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Otsi nime järgi...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Suurus</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHubi profiil</value>
+    </data>
+    <data name="Filter_All">
+        <value>Kõik</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Vabasta mälu</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Sunni prügikoristus (GC) RAM-i vabastamiseks.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Puhasta mälu</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Mälu puhastamine käivitatud.</value>
     </data>
 </root>

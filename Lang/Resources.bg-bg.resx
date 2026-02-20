@@ -19,16 +19,16 @@
         <value>Hash Tool</value>
     </data>
     <data name="Menu_Create">
-        <value>Създай Хеш</value>
+        <value>Генериране на хеш</value>
     </data>
     <data name="Menu_Check">
-        <value>Провери Хеш</value>
+        <value>Проверка на хеш</value>
     </data>
     <data name="Menu_Settings">
         <value>Настройки</value>
     </data>
     <data name="Menu_Update">
-        <value>Обнови</value>
+        <value>Актуализация</value>
     </data>
     <data name="Menu_Theme">
         <value>Тема</value>
@@ -40,73 +40,76 @@
         <value>Разработчик</value>
     </data>
     <data name="Btn_AddFiles">
-        <value>Добави Файлове...</value>
+        <value>Добавяне на файлове...</value>
     </data>
     <data name="Btn_Clear">
-        <value>Изчисти Списъка</value>
+        <value>Изчистване на списъка</value>
+    </data>
+    <data name="Btn_ClearHashes">
+        <value>Изчистване на хешове</value>
     </data>
     <data name="Btn_CalcAll">
-        <value>ИЗЧИСЛИ ВСИЧКО</value>
+        <value>ИЗЧИСЛИ ВСИЧКИ</value>
     </data>
     <data name="Btn_Compress">
-        <value>Компресирай (.Zip)</value>
+        <value>Компресиране (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>ПРОВЕРИ ВСИЧКО</value>
+        <value>ПРОВЕРИ ВСИЧКИ</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>Провери Сега</value>
+        <value>Провери сега</value>
     </data>
     <data name="Btn_Install">
-        <value>Инсталирай</value>
+        <value>Инсталиране</value>
     </data>
     <data name="Btn_Accept">
-        <value>Приеми</value>
+        <value>Приемам</value>
     </data>
     <data name="Btn_Decline">
-        <value>Откажи</value>
+        <value>Отказвам</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Създай Хеш &amp; Компресирай</value>
+        <value>Генериране на хеш и компресиране</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Групова Проверка</value>
+        <value>Масова проверка</value>
     </data>
     <data name="Title_Update">
-        <value>Провери за Обновления</value>
+        <value>Проверка за актуализации</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Предупреждение за Разработчикова Версия</value>
+        <value>Предупреждение за версия Dev</value>
     </data>
     <data name="Title_About">
         <value>За програмата</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Съвет: Shift+C за Изчисли Всичко, Shift+Z за Компресирай, Ctrl+F за Добави Файлове.</value>
+        <value>Съвет: Shift+C за изчисление, Shift+Z за компресиране, Ctrl+F за добавяне.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Съвет: Shift+A за Провери Всичко, Ctrl+F за Добави Файлове, Ctrl+Shift+H за Изчисти Списъка.</value>
+        <value>Съвет: Shift+A за проверка, Ctrl+F за добавяне, Ctrl+Shift+H за изчистване.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Готов</value>
     </data>
     <data name="Lbl_Sample">
-        <value>Пример:</value>
+        <value>Проба:</value>
     </data>
     <data name="Lbl_CurrentVersion">
         <value>Текуща версия: {0}</value>
     </data>
     <data name="Lbl_Channel">
-        <value>Канал за издаване:</value>
+        <value>Канал за актуализации:</value>
     </data>
     <data name="Lbl_TotalFiles">
         <value>Общо файлове: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Стабилна</value>
+        <value>Стабилен (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Разработчикова версия</value>
+        <value>Разработка (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Език</value>
@@ -127,28 +130,28 @@
         <value>Размер на шрифта (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Автоматично избери оптимален шрифт за езика</value>
+        <value>Автоматичен шрифт според езика</value>
     </data>
     <data name="Settings_LockFont">
-        <value>Заключи като стандартен шрифт</value>
+        <value>Заключи като шрифт по подразбиране</value>
     </data>
     <data name="Settings_Scale">
         <value>Мащаб на интерфейса</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Маскирай стойностите на Хеш (Сигурност)</value>
+        <value>Скриване на хеш стойности (Сигурност)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Нулирай темата</value>
+        <value>Нулиране на настройки</value>
     </data>
     <data name="Settings_Other">
-        <value>Поверителност &amp; Сигурност</value>
+        <value>Поверителност и сигурност</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Задай като стандартно</value>
+        <value>Задай по подразбиране</value>
     </data>
     <data name="Settings_CustomColor">
-        <value>Персонализиран цвят на текста</value>
+        <value>Цвят на текста</value>
     </data>
     <data name="Settings_Advanced">
         <value>Разширени</value>
@@ -157,85 +160,85 @@
         <value>Изпълни като администратор</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Изисква рестартиране. Позволява достъп до защитени файлове.</value>
+        <value>Изисква рестарт. Позволява достъп до защитени файлове.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Ограничение на размера на входния файл</value>
+        <value>Лимит на размера на файла</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Максимален размер за обработваните файлове.</value>
+        <value>Максимален размер за обработка на файлове.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Таймаут за принудително излизане</value>
+        <value>Тайм-аут за принудителен изход</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Време (секунди) преди приложението да се счита за замръзнало.</value>
+        <value>Време (секунди) преди приложението да се счита за блокирало.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Таймаут за обработка на файл</value>
+        <value>Тайм-аут за обработка на файл</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>Отказ, ако един файл отнема твърде много време.</value>
+        <value>Отказ, ако файл се обработва твърде дълго.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>Спешно действие</value>
+        <value>Аварийно действие</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Принудително затваряне на приложението и незабавно отмяна на всички задачи.</value>
+        <value>Принудително затваряне и отмяна на всички задачи.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Принудително излизане &amp; Отмяна на всичко</value>
+        <value>Принудителен изход и отмяна</value>
     </data>
     <data name="Settings_Configuration">
         <value>Конфигурация</value>
     </data>
     <data name="Settings_LockSettings">
-        <value>Заключи настройки (Запази като стандартно)</value>
+        <value>Заключи настройките (Запиши по подразбиране)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Предотвратява случайни промени. Само маскирането на Хеш остава регулируемо.</value>
+        <value>Предотвратява случайни промени. Само 'Скриване на хеш' остава активно.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>Нулирай всички настройки</value>
+        <value>Нулиране на всичко</value>
     </data>
     <data name="Settings_ResetDesc">
-        <value>Възстанови фабричните настройки.</value>
+        <value>Възстановяване на фабричните настройки.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Път до конфигурационен файл</value>
+        <value>Път до конфигурационния файл</value>
     </data>
     <data name="Settings_ConfigDesc">
         <value>Покажи пълния път и копирай в клипборда.</value>
     </data>
     <data name="Settings_ShowPath">
-        <value>Покажи път</value>
+        <value>Покажи пътя</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>Настройките се запазват автоматично в config.json</value>
+        <value>Настройките се запазват в config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
-        <value>Режим на разработчика</value>
+        <value>Режим за разработчици</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>Активирай разширено логване и инструменти за отстраняване на грешки.</value>
+        <value>Включва разширени логове и инструменти за дебъгване.</value>
     </data>
     <data name="Dev_Console">
-        <value>Конзола на разработчика</value>
+        <value>Конзола</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>БЕТА</value>
     </data>
     <data name="Dev_Recording">
-        <value>Запис</value>
+        <value>Записва се</value>
     </data>
     <data name="Dev_Paused">
-        <value>Паузирано</value>
+        <value>На пауза</value>
     </data>
     <data name="Dev_SaveToFile">
-        <value>Запази във файл</value>
+        <value>Запиши във файл</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Без запазване</value>
+        <value>Без запис</value>
     </data>
     <data name="Dev_Clear">
         <value>Изчисти конзолата</value>
@@ -244,7 +247,7 @@
         <value>Копирай всичко</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>Отвори папка с логове</value>
+        <value>Отвори папката с логове</value>
     </data>
     <data name="About_Author">
         <value>Автор</value>
@@ -256,33 +259,31 @@
         <value>Библиотеки на трети страни</value>
     </data>
     <data name="About_Copyright">
-        <value>Авторски права</value>
+        <value>Авторско право</value>
     </data>
     <data name="About_Desc">
-        <value>Мощен инструмент за генериране, проверка и компресиране на хеш стойности на файлове. Или поне така мисля
-            :)
-        </value>
+        <value>Мощен инструмент за генериране, проверка и компресиране на хешове. Или поне аз така мисля :)</value>
     </data>
     <data name="About_License">
-        <value>Публикувано под лиценз MIT.</value>
+        <value>Разпространява се под MIT лиценз.</value>
     </data>
     <data name="About_Tech">
         <value>Технология</value>
     </data>
     <data name="About_TechContent">
-        <value>Създадено с C# и .NET 10.0.102.</value>
+        <value>Създаден с C# и .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>Помощ от ИИ</value>
+        <value>AI Асистенция</value>
     </data>
     <data name="About_AIContent">
-        <value>Този софтуер е разработен с помощта на ИИ (Gemini 3 Pro и Grok 4.1).</value>
+        <value>Този софтуер е разработен с помощта на AI (Gemini 3 Pro и Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
         <value>Обработка ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>Завършено</value>
+        <value>Приключено</value>
     </data>
     <data name="Status_Error">
         <value>Грешка: {0}</value>
@@ -297,25 +298,25 @@
         <value>Компресирано!</value>
     </data>
     <data name="Status_Waiting">
-        <value>Изчакване на хеш/въвеждане...</value>
+        <value>Чака се хеш/вход...</value>
     </data>
     <data name="Status_MissingOriginal">
         <value>Липсва оригинален файл!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Липсва стойност на хеш (Въведете или заредете хеш файл)</value>
+        <value>Липсва хеш стойност (Въведете или заредете файл)</value>
     </data>
     <data name="Status_Valid">
-        <value>ВАЛИДНО</value>
+        <value>ВАЛИДЕН</value>
     </data>
     <data name="Status_Invalid">
-        <value>НЕВАЛИДНО!</value>
+        <value>НЕСЪОТВЕТСТВИЕ!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Хеш файл зареден</value>
+        <value>Хеш файлът е зареден</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Името на хеш файла не съвпада!</value>
+        <value>Несъответствие в името на хеш файла!</value>
     </data>
     <data name="Status_NoHashFound">
         <value>Файлът не съдържа хеш!</value>
@@ -324,31 +325,31 @@
         <value>Проверка за актуализации...</value>
     </data>
     <data name="Status_NewVersion">
-        <value>Открита нова версия!</value>
+        <value>Открита е нова версия!</value>
     </data>
     <data name="Status_Latest">
-        <value>Използвате най-новата версия.</value>
+        <value>Използвате последната версия.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Грешка при проверка на актуализации: {0}</value>
+        <value>Грешка при проверка: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>Изтегляне и инсталиране...</value>
     </data>
     <data name="Status_InstallError">
-        <value>Грешка при инсталация: {0}</value>
+        <value>Грешка при инсталиране: {0}</value>
     </data>
     <data name="Status_ReadyFromHash">
-        <value>Готово (От .hash файл)</value>
+        <value>Готов (От .hash файл)</value>
     </data>
     <data name="Status_LostOriginal">
-        <value>Оригинален файл загубен!</value>
+        <value>Оригиналният файл е загубен!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Името на хеш файла не съвпада!</value>
+        <value>Несъответствие в името на хеш файла!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Хеш файл успешно пуснат</value>
+        <value>Хеш файлът е пуснат успешно</value>
     </data>
     <data name="Status_DropNoHash">
         <value>Файлът не съдържа хеш!</value>
@@ -360,28 +361,29 @@
         <value>Резултат</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Обработка завършена!
+        <value>Обработката приключи!
             ✅ Успех: {0}
             ❌ Неуспех: {1}
+            ⛔ Отменени: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Проверени {0} файла.
             ✅ Съвпадение: {1}
-            ❌ Несъвпадение/Грешка: {2}
-            ⛔ Отменено: {3}
+            ❌ Несъответствие/Грешка: {2}
+            ⛔ Отменени: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Грешен файл!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Хеш файлът не съвпада!
+        <value>Несъответствие на хеш файл!
 
             Оригинален файл: {0}
             Избран файл: {1}
 
-            Моля, изберете правилния приложен хеш файл.
+            Моля, изберете правилния придружаващ хеш файл.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -393,23 +395,23 @@
             Промени:
             {1}
 
-            Кликнете 'Актуализирай сега' за изтегляне.
+            Кликнете 'Актуализирай сега', за да изтеглите.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>Няма по-нови актуализации.</value>
+        <value>Няма намерени по-нови актуализации.</value>
     </data>
     <data name="Msg_Error">
         <value>Грешка</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Не мога да прочета този хеш файл.</value>
+        <value>Не може да се прочете този хеш файл.</value>
     </data>
     <data name="Msg_ConfigCheck">
-        <value>Проверка на конфигурацията</value>
+        <value>Проверка на конфигурация</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Файлът съществува на:
+        <value>Файлът съществува в:
             {0}
         </value>
     </data>
@@ -420,7 +422,7 @@
         <value>Файлът е създаден успешно!</value>
     </data>
     <data name="Msg_ConfigCopied">
-        <value>Пътят на конфигурацията е копиран.</value>
+        <value>Пътят е копиран.</value>
     </data>
     <data name="Msg_AdminMode">
         <value>Администраторски режим</value>
@@ -429,42 +431,42 @@
         <value>Моля, рестартирайте приложението, за да влязат промените в сила.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Не мога да отворя папката: {0}</value>
+        <value>Не може да се отвори папка: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ПРЕДУПРЕЖДЕНИЕ ЗА РАЗРАБОТЧИКОВА ВЕРСИЯ</value>
+        <value>⚠️ ПРЕДУПРЕЖДЕНИЕ ЗА ВЕРСИЯ DEV</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Ще преминете към канала за актуализации на разработчика (предварително издание).
+        <value>На път сте да превключите към канал за разработчици (Pre-release).
 
-            Тази версия може да съдържа грешки, да е нестабилна и да причини загуба на данни.
+            Тази версия може да съдържа бъгове, да е нестабилна и да причини загуба на данни.
 
             Не нося отговорност за проблеми, възникнали от използването на тази версия.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Прочетох и приемам. Поемам пълна отговорност.</value>
+        <value>Прочетох и съм съгласен. Поемам пълна отговорност.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Запази хеш файл</value>
+        <value>Запазване на хеш файл</value>
     </data>
     <data name="Dialog_SaveZip">
-        <value>Запази компресиран файл</value>
+        <value>Запазване на архив</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Избери файлове за хеш</value>
+        <value>Избор на файлове за хеширане</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Избери хеш файл за: {0}</value>
+        <value>Избор на хеш файл за: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
-        <value>Избери файлове (Оригинален или .hash файл)</value>
+        <value>Избор на файлове (Оригинал или .hash)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Разширено: Връщане към по-стара версия</value>
+        <value>Разширени: Връщане към по-стара версия</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Тази функция позволява инсталиране на конкретна версия, ако новата има проблеми.</value>
+        <value>Тази функция позволява инсталиране на конкретна версия при проблеми.</value>
     </data>
     <data name="Watermark_PasteDrop">
         <value>Постави/Пусни тук...</value>
@@ -476,10 +478,10 @@
         <value>Провери</value>
     </data>
     <data name="Tip_Stop">
-        <value>Спри</value>
+        <value>Стоп</value>
     </data>
     <data name="Tip_RemoveFile">
-        <value>Премахни файл</value>
+        <value>Премахни</value>
     </data>
     <data name="Tip_CopyHash">
         <value>Копирай хеш</value>
@@ -487,8 +489,11 @@
     <data name="Tip_Compute">
         <value>Изчисли</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Изчисти хеш</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>Прегледай хеш</value>
+        <value>Търси хеш</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>Тъмна</value>
@@ -501,9 +506,6 @@
     </data>
     <data name="Msg_TaskCancelled_Title">
         <value>Задачата е спряна</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Файл {0} надвишава лимита {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
         <value>Да</value>
@@ -518,16 +520,16 @@
         <value>Zip архив</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>Потвърди излизане</value>
+        <value>Потвърждение за изход</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Излизането ще отмени всички текущи задачи. Сигурен ли си?</value>
+        <value>Излизането ще отмени всички текущи задачи. Сигурни ли сте?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Задачата е спряна поради таймаут.</value>
+        <value>Задачата беше спряна поради изтичане на времето.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Запази лог за грешки на диск.</value>
+        <value>Запази дебъг лог на диска.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
         <value>Пауза на логването в реално време.</value>
@@ -539,22 +541,196 @@
         <value>Скрий хеш</value>
     </data>
     <data name="Tip_CopyPath">
-        <value>Копирай път</value>
+        <value>Копирай пътя</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Дискът ти е пълен. Избери друго място братле :)</value>
+        <value>Дискът е пълен. Моля, изберете друго място :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>Видимост на хеш</value>
+        <value>Видимост на хеша</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Няма файлове. Кликни 'Добави Файлове' за начало.</value>
+        <value>Няма файлове. Кликнете 'Добавяне', за да започнете.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>Заключи тази тема като стандартна</value>
+        <value>Заключи тази тема като подразбиране</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
-        <value>Пропуснати {0} файла, надвишаващи лимита ({1} {2}):
-{3}</value>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Пропуснати {0} файла над лимита ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Системен език</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Връщането към 'Автоматично' изисква рестарт. Искате ли да продължите?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Смяна на езика</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Сигурни ли сте?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Не показвай повече</value>
+    </data>
+    <data name="Error_Network">
+        <value>Грешка в мрежата. Моля, проверете връзката си.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Сървърна грешка (5xx). Опитайте по-късно.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Клиентска грешка (4xx). Проверете заявката.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>Надвишен лимит на GitHub API. Опитайте по-късно.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Няма намерена pre-release версия. Запазване на текущата.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Налична е pre-release версия {0}.
+
+            {1}
+
+            Тази версия може да е нестабилна. Искате ли да я изтеглите?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Изчисти грешните</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>Премахнати {0} елемента.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Оставащо време: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Продължителност: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Изчисляване...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Добави папка...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Избраната папка е празна.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Избор на папка за сканиране</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Отказ</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Лимити на обработка</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Макс. файлове при сканиране на папка</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Ограничава броя файлове от папка за защита на производителността.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Макс. папки наведнъж</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Ограничава броя на едновременно избраните папки.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Можете да изберете до {0} папки едновременно.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Добавени {0} файла. Пропуснати {1} поради лимит.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Четене: {0}/s | Запис: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Показвай скорост на Четене/Запис</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Показва моментната скорост на трансфер по време на хеширане.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Изчисляване на хеш...</value>
+    </data>
+    <data name="Size_All">
+        <value>Всички размери</value>
+    </data>
+    <data name="Size_Small">
+        <value>Малки (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Средни (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Големи (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Много големи (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Документи</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Политика за поверителност</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Условия за ползване</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Лицензионно споразумение (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Отказ от отговорност</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>README</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>История на промените</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Благодарности</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Обработка</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Неуспех</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Търсене по име...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Размер</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub Профил</value>
+    </data>
+    <data name="Filter_All">
+        <value>Всички</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Освобождаване на памет</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Принудително Garbage Collection (GC) за освобождаване на RAM.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Изчисти паметта</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Почистването на паметта е стартирано.</value>
     </data>
 </root>

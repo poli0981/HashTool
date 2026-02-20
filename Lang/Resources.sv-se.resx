@@ -16,10 +16,10 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>Hash-verktyg</value>
     </data>
     <data name="Menu_Create">
-        <value>Skapa hash</value>
+        <value>Generera hash</value>
     </data>
     <data name="Menu_Check">
         <value>Verifiera hash</value>
@@ -45,6 +45,9 @@
     <data name="Btn_Clear">
         <value>Rensa lista</value>
     </data>
+    <data name="Btn_ClearHashes">
+        <value>Rensa hashar</value>
+    </data>
     <data name="Btn_CalcAll">
         <value>BERÄKNA ALLA</value>
     </data>
@@ -64,30 +67,28 @@
         <value>Acceptera</value>
     </data>
     <data name="Btn_Decline">
-        <value>Avvisa</value>
+        <value>Avböj</value>
     </data>
     <data name="Title_CreateHash">
-        <value>Skapa hash &amp; komprimera</value>
+        <value>Generera hash &amp; Komprimera</value>
     </data>
     <data name="Title_CheckHash">
-        <value>Batchverifiering</value>
+        <value>Batch-verifiering</value>
     </data>
     <data name="Title_Update">
         <value>Sök efter uppdateringar</value>
     </data>
     <data name="Title_Disclaimer">
-        <value>Varning för utvecklingsversion</value>
+        <value>Varning för utvecklarversion</value>
     </data>
     <data name="Title_About">
-        <value>Om</value>
+        <value>Om programmet</value>
     </data>
     <data name="Help_CreateHash">
-        <value>Tips: Shift+C för att beräkna alla, Shift+Z för att komprimera, Ctrl+F för att lägga till filer.</value>
+        <value>Tips: Shift+C för att beräkna, Shift+Z för att komprimera, Ctrl+F för att lägga till.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>Tips: Shift+A för att verifiera alla, Ctrl+F för att lägga till filer, Ctrl+Shift+H för att rensa
-            lista.
-        </value>
+        <value>Tips: Shift+A för att verifiera, Ctrl+F för att lägga till, Ctrl+Shift+H för att rensa.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>Klar</value>
@@ -96,19 +97,19 @@
         <value>Exempel:</value>
     </data>
     <data name="Lbl_CurrentVersion">
-        <value>Nuvarande version: {0}</value>
+        <value>Aktuell version: {0}</value>
     </data>
     <data name="Lbl_Channel">
         <value>Utgivningskanal:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>Totalt filer: {0}</value>
+        <value>Totalt antal filer: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>Stabil</value>
+        <value>Stabil (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>Utvecklingsversion</value>
+        <value>Utvecklare (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>Språk</value>
@@ -120,34 +121,34 @@
         <value>Temastil</value>
     </data>
     <data name="Settings_ThemeVariant">
-        <value>Ljus/Mörk</value>
+        <value>Ljust/Mörkt</value>
     </data>
     <data name="Settings_Font">
         <value>Typsnitt</value>
     </data>
     <data name="Settings_FontSize">
-        <value>Typsnittsstorlek (pt)</value>
+        <value>Teckenstorlek (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>Automatiskt välj optimalt typsnitt för språk</value>
+        <value>Välj automatiskt optimalt typsnitt för språket</value>
     </data>
     <data name="Settings_LockFont">
         <value>Lås som standardtypsnitt</value>
     </data>
     <data name="Settings_Scale">
-        <value>UI-skala</value>
+        <value>UI-skalning</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>Maskera hashvärden (Säkerhet)</value>
+        <value>Dölj hashvärden (Säkerhet)</value>
     </data>
     <data name="Settings_Reset">
-        <value>Återställ tema</value>
+        <value>Återställ inställningar</value>
     </data>
     <data name="Settings_Other">
-        <value>Sekretess &amp; säkerhet</value>
+        <value>Integritet &amp; Säkerhet</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>Ange som standard</value>
+        <value>Sätt som standard</value>
     </data>
     <data name="Settings_CustomColor">
         <value>Anpassad textfärg</value>
@@ -159,22 +160,22 @@
         <value>Kör som administratör</value>
     </data>
     <data name="Settings_AdminDesc">
-        <value>Kräver omstart. Tillåter åtkomst till skyddade filer.</value>
+        <value>Kräver omstart. Ger åtkomst till skyddade filer.</value>
     </data>
     <data name="Settings_FileSizeLimit">
-        <value>Inmatningsfilstorleksgräns</value>
+        <value>Storleksgräns för inmatningsfil</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>Maxstorlek för filer att bearbeta.</value>
+        <value>Maximal storlek för filer som ska bearbetas.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>Tvingad avstängningstimeout</value>
+        <value>Tidsgräns för framtvingad avslutning</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>Tid (sekunder) innan appen anses fryst.</value>
+        <value>Tid (sekunder) innan appen anses ha hängt sig.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>Filbearbetningstimeout</value>
+        <value>Tidsgräns för filbearbetning</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
         <value>Avbryt om en enskild fil tar för lång tid.</value>
@@ -183,10 +184,10 @@
         <value>Nödåtgärd</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>Tvinga stäng appen och avbryt alla uppgifter omedelbart.</value>
+        <value>Stäng appen med tvång och avbryt alla uppgifter omedelbart.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>Tvingad avstängning &amp; avbryt alla</value>
+        <value>Tvinga avslut &amp; Avbryt allt</value>
     </data>
     <data name="Settings_Configuration">
         <value>Konfiguration</value>
@@ -195,7 +196,7 @@
         <value>Lås inställningar (Spara som standard)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>Förhindra oavsiktliga ändringar. Endast hash-maskering förblir justerbar.</value>
+        <value>Förhindrar oavsiktliga ändringar. Endast 'Dölj hash' förblir justerbar.</value>
     </data>
     <data name="Settings_ResetAll">
         <value>Återställ alla inställningar</value>
@@ -204,10 +205,10 @@
         <value>Återställ till fabriksinställningar.</value>
     </data>
     <data name="Settings_ConfigPath">
-        <value>Konfigurationsfilens sökväg</value>
+        <value>Sökväg till konfigurationsfil</value>
     </data>
     <data name="Settings_ConfigDesc">
-        <value>Visa full sökväg och kopiera till urklipp.</value>
+        <value>Visa hela sökvägen och kopiera till urklipp.</value>
     </data>
     <data name="Settings_ShowPath">
         <value>Visa sökväg</value>
@@ -222,7 +223,7 @@
         <value>Aktivera avancerad loggning och felsökningsverktyg.</value>
     </data>
     <data name="Dev_Console">
-        <value>Utvecklar konsol</value>
+        <value>Utvecklarkonsol</value>
     </data>
     <data name="Dev_Beta">
         <value>BETA</value>
@@ -237,10 +238,10 @@
         <value>Spara till fil</value>
     </data>
     <data name="Dev_NoSave">
-        <value>Ingen sparning</value>
+        <value>Spara inte</value>
     </data>
     <data name="Dev_Clear">
-        <value>Rensa konsolen</value>
+        <value>Rensa konsol</value>
     </data>
     <data name="Dev_Copy">
         <value>Kopiera allt</value>
@@ -261,9 +262,7 @@
         <value>Upphovsrätt</value>
     </data>
     <data name="About_Desc">
-        <value>Ett kraftfullt verktyg för att skapa, verifiera och komprimera filhashar. Eller så tror jag i alla fall
-            :)
-        </value>
+        <value>Ett kraftfullt verktyg för att generera, verifiera och komprimera filhashar. Eller det tror jag åtminstone :)</value>
     </data>
     <data name="About_License">
         <value>Utgiven under MIT-licensen.</value>
@@ -275,7 +274,7 @@
         <value>Byggd med C# och .NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>AI-hjälp</value>
+        <value>AI-assistans</value>
     </data>
     <data name="About_AIContent">
         <value>Denna programvara utvecklades med hjälp av AI (Gemini 3 Pro och Grok 4.1).</value>
@@ -284,7 +283,7 @@
         <value>Bearbetar ({0})...</value>
     </data>
     <data name="Status_Done">
-        <value>Färdig</value>
+        <value>Klar</value>
     </data>
     <data name="Status_Error">
         <value>Fel: {0}</value>
@@ -305,25 +304,25 @@
         <value>Originalfil saknas!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>Hashvärde saknas (Ange eller ladda hashfil)</value>
+        <value>Hashvärde saknas (Ange eller ladda fil)</value>
     </data>
     <data name="Status_Valid">
         <value>GILTIG</value>
     </data>
     <data name="Status_Invalid">
-        <value>OGILTIG!</value>
+        <value>MATCHAR INTE!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>Hashfil laddad</value>
+        <value>Hash-fil inläst</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>Hashfilnamn matchar inte!</value>
+        <value>Namnet på hash-filen matchar inte!</value>
     </data>
     <data name="Status_NoHashFound">
         <value>Filen innehåller ingen hash!</value>
     </data>
     <data name="Status_Checking">
-        <value>Söker uppdateringar...</value>
+        <value>Söker efter uppdateringar...</value>
     </data>
     <data name="Status_NewVersion">
         <value>Ny version upptäckt!</value>
@@ -332,7 +331,7 @@
         <value>Du använder den senaste versionen.</value>
     </data>
     <data name="Status_CheckError">
-        <value>Uppdateringskontrollfel: {0}</value>
+        <value>Fel vid uppdateringskontroll: {0}</value>
     </data>
     <data name="Status_Installing">
         <value>Laddar ner och installerar...</value>
@@ -347,43 +346,44 @@
         <value>Originalfil förlorad!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>Hashfilnamn matchar inte!</value>
+        <value>Namnet på hash-filen matchar inte!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>Hashfil släppt framgångsrikt</value>
+        <value>Hash-fil har släppts</value>
     </data>
     <data name="Status_DropNoHash">
         <value>Filen innehåller ingen hash!</value>
     </data>
     <data name="Status_ReadError">
-        <value>Filläsningsfel</value>
+        <value>Filsläsningsfel</value>
     </data>
     <data name="Msg_Result_Title">
         <value>Resultat</value>
     </data>
     <data name="Msg_Result_Content">
-        <value>Bearbetning klar!
-            ✅ Framgång: {0}
-            ❌ Misslyckande: {1}
+        <value>Bearbetning slutförd!
+            ✅ Lyckades: {0}
+            ❌ Misslyckades: {1}
+            ⛔ Avbrutna: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>Kontrollerade {0} filer.
             ✅ Matchar: {1}
             ❌ Matchar inte/Fel: {2}
-            ⛔ Avbruten: {3}
+            ⛔ Avbrutna: {3}
         </value>
     </data>
     <data name="Msg_WrongHashFile">
         <value>Fel fil!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>Hashfil matchar inte!
+        <value>Hash-filen matchar inte!
 
             Originalfil: {0}
             Vald fil: {1}
 
-            Välj rätt medföljande hashfil.
+            Vänligen välj rätt tillhörande hash-fil.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -395,7 +395,7 @@
             Ändringar:
             {1}
 
-            Klicka 'Uppdatera nu' för att ladda ner.
+            Klicka på 'Uppdatera nu' för att ladda ner.
         </value>
     </data>
     <data name="Msg_NoUpdate">
@@ -405,21 +405,21 @@
         <value>Fel</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>Kan inte läsa denna hashfil.</value>
+        <value>Kan inte läsa denna hash-fil.</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>Konfigurationskontroll</value>
     </data>
     <data name="Msg_ConfigExists">
-        <value>Fil finns på:
+        <value>Filen finns på:
             {0}
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>Fil saknas!</value>
+        <value>Filen existerar inte!</value>
     </data>
     <data name="Msg_ConfigCreated">
-        <value>Fil skapad framgångsrikt!</value>
+        <value>Filen skapades framgångsrikt!</value>
     </data>
     <data name="Msg_ConfigCopied">
         <value>Konfigurationssökväg kopierad.</value>
@@ -428,48 +428,48 @@
         <value>Administratörsläge</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>Starta om appen för att ändringarna ska träda i kraft.</value>
+        <value>Starta om programmet för att ändringarna ska träda i kraft.</value>
     </data>
     <data name="Msg_OpenFolderError">
-        <value>Kan inte öppna mapp: {0}</value>
+        <value>Kan inte öppna mappen: {0}</value>
     </data>
     <data name="Msg_DisclaimerTitle">
         <value>⚠️ VARNING FÖR UTVECKLARVERSION</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>Du är på väg att byta till utvecklarkanalen (förhandsversion).
+        <value>Du håller på att byta till utvecklarens (Pre-release) uppdateringskanal.
 
             Denna version kan innehålla buggar, vara instabil och orsaka dataförlust.
 
-            Jag ansvarar inte för problem som uppstår vid användning av denna version.
+            Jag ansvarar inte för några problem som uppstår vid användning av denna version.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>Jag har läst och godkänner. Jag tar fullt ansvar.</value>
+        <value>Jag har läst och accepterar. Jag tar fullt ansvar.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>Spara hashfil</value>
+        <value>Spara hash-fil</value>
     </data>
     <data name="Dialog_SaveZip">
         <value>Spara komprimerad fil</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>Välj filer för hash</value>
+        <value>Välj filer för hashning</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>Välj hashfil för: {0}</value>
+        <value>Välj hash-fil för: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
         <value>Välj filer (Original eller .hash-fil)</value>
     </data>
     <data name="Header_Fallback">
-        <value>Avancerat: Återgång till äldre version</value>
+        <value>Avancerat: Återgå till äldre version</value>
     </data>
     <data name="Desc_Fallback">
-        <value>Denna funktion tillåter installation av specifik version om den nya har problem.</value>
+        <value>Denna funktion låter dig installera en specifik version om den nya har problem.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>Klistra in/Släpp här...</value>
+        <value>Klistra in eller släpp här...</value>
     </data>
     <data name="Unit_Seconds">
         <value>Sekunder</value>
@@ -489,23 +489,23 @@
     <data name="Tip_Compute">
         <value>Beräkna</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>Rensa hash</value>
+    </data>
     <data name="Tip_BrowseHash">
         <value>Bläddra hash</value>
     </data>
     <data name="Settings_ThemeDark">
-        <value>Mörk</value>
+        <value>Mörkt</value>
     </data>
     <data name="Settings_ThemeLight">
-        <value>Ljus</value>
+        <value>Ljust</value>
     </data>
     <data name="Settings_ThemeSystem">
         <value>System</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
         <value>Uppgift stoppad</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>Fil {0} överskrider gränsen {1} {2}.</value>
     </data>
     <data name="Btn_Yes">
         <value>Ja</value>
@@ -523,13 +523,13 @@
         <value>Bekräfta avslut</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>Avslut avbryter alla pågående uppgifter. Är du säker?</value>
+        <value>Att avsluta kommer att avbryta alla pågående uppgifter. Är du säker?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>Uppgift stoppades på grund av timeout.</value>
+        <value>Uppgiften stoppades på grund av tidsgräns.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>Spara debuglogg till disk.</value>
+        <value>Spara felsökningslogg till disk.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
         <value>Pausa realtidsloggning.</value>
@@ -544,15 +544,193 @@
         <value>Kopiera sökväg</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>Din disk är full. Välj annan plats kompis :)</value>
+        <value>Din enhet är full. Välj en annan plats :)</value>
     </data>
     <data name="Tip_HashVisibility">
         <value>Hash-synlighet</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>Inga filer. Klicka 'Lägg till filer' för att börja.</value>
+        <value>Inga filer. Klicka på 'Lägg till filer' för att börja.</value>
     </data>
     <data name="Settings_LockTheme">
         <value>Lås detta tema som standard</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>Hoppade över {0} filer som överskrider gränsen ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>Systemspråk</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>Att återgå till 'Automatisk' inställning kräver en omstart för att få full effekt. Vill du fortsätta?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>Byt språk</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>Är du säker på det?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>Visa inte denna varning igen</value>
+    </data>
+    <data name="Error_Network">
+        <value>Nätverksanslutningsfel. Kontrollera ditt internet.</value>
+    </data>
+    <data name="Error_Server">
+        <value>Serverfel (5xx). Försök igen senare.</value>
+    </data>
+    <data name="Error_Client">
+        <value>Klientfel (4xx). Kontrollera begäran.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>Gränsen för GitHub API överskreds. Försök igen senare.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>Ingen förhandsversion hittades. Behåller aktuell version.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>Förhandsversion {0} är tillgänglig.
+
+            {1}
+
+            Denna version kan vara instabil. Vill du ladda ner den?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>Rensa misslyckade</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>Tog bort {0} objekt.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>Återstående tid: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>Uppgiftens varaktighet: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>Beräknar...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>Lägg till mapp...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>Den valda mappen är tom.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>Välj mapp för skanning</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>Avbryt</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>Bearbetningsgränser</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>Max filer per mappskanning</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>Begränsa antalet filer som läggs till från en mapp för att förhindra prestandaproblem.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>Max mappar samtidigt</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>Begränsa antalet mappar som väljs på en gång.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>Du kan bara välja upp till {0} mappar åt gången.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>Lade till {0} filer. Hoppade över {1} filer på grund av gränsen.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>Läs: {0}/s | Skriv: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>Visa Läs/Skriv-hastighet</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>Visa överföringshastighet i realtid under hash-operationer.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>Beräknar hash...</value>
+    </data>
+    <data name="Size_All">
+        <value>Alla storlekar</value>
+    </data>
+    <data name="Size_Small">
+        <value>Liten (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>Mellan (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>Stor (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>Extra stor (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>Dokument</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>Integritetspolicy</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>Användarvillkor</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>Slutanvändaravtal (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>Friskrivning</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>LÄSMIG (README)</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>Ändringslogg</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>Erkännanden</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>Bearbetar</value>
+    </data>
+    <data name="Status_Failure">
+        <value>Misslyckades</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>Sök på namn...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>Storlek</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>GitHub-profil</value>
+    </data>
+    <data name="Filter_All">
+        <value>Alla</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>Frigör minne</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>Tvinga skräpsamling (GC) för att frigöra RAM-minne.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>Rensa minne</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>Minnesrensning utlöst.</value>
     </data>
 </root>

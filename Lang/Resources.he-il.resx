@@ -16,13 +16,13 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>Hash Tool</value>
+        <value>כלי Hash</value>
     </data>
     <data name="Menu_Create">
-        <value>צור האש</value>
+        <value>צור Hash</value>
     </data>
     <data name="Menu_Check">
-        <value>בדוק האש</value>
+        <value>אמת Hash</value>
     </data>
     <data name="Menu_Settings">
         <value>הגדרות</value>
@@ -45,6 +45,9 @@
     <data name="Btn_Clear">
         <value>נקה רשימה</value>
     </data>
+    <data name="Btn_ClearHashes">
+        <value>נקה ערכי Hash</value>
+    </data>
     <data name="Btn_CalcAll">
         <value>חשב הכל</value>
     </data>
@@ -52,10 +55,10 @@
         <value>דחוס (.Zip)</value>
     </data>
     <data name="Btn_CheckAll">
-        <value>בדוק הכל</value>
+        <value>אמת הכל</value>
     </data>
     <data name="Btn_CheckNow">
-        <value>בדוק עכשיו</value>
+        <value>אמת כעת</value>
     </data>
     <data name="Btn_Install">
         <value>התקן</value>
@@ -67,10 +70,10 @@
         <value>דחה</value>
     </data>
     <data name="Title_CreateHash">
-        <value>צור האש ודחוס</value>
+        <value>צור Hash ודחוס</value>
     </data>
     <data name="Title_CheckHash">
-        <value>בדיקה קבוצתית</value>
+        <value>אימות קבוצתי</value>
     </data>
     <data name="Title_Update">
         <value>בדוק עדכונים</value>
@@ -81,11 +84,11 @@
     <data name="Title_About">
         <value>אודות</value>
     </data>
-    <data name="Help_creationHash">
-        <value>טיפ: Shift+C לחשב הכל, Shift+Z לדחוס, Ctrl+F להוסיף קבצים.</value>
+    <data name="Help_CreateHash">
+        <value>טיפ: Shift+C לחישוב, Shift+Z לדחיסה, Ctrl+F להוספה.</value>
     </data>
     <data name="Help_CheckHash">
-        <value>טיפ: Shift+A לבדוק הכל, Ctrl+F להוסיף קבצים, Ctrl+Shift+H לנקות רשימה.</value>
+        <value>טיפ: Shift+A לאימות, Ctrl+F להוספה, Ctrl+Shift+H לניקוי.</value>
     </data>
     <data name="Lbl_Status_Ready">
         <value>מוכן</value>
@@ -100,13 +103,13 @@
         <value>ערוץ שחרור:</value>
     </data>
     <data name="Lbl_TotalFiles">
-        <value>סך הקבצים: {0}</value>
+        <value>סה"כ קבצים: {0}</value>
     </data>
     <data name="Channel_Stable">
-        <value>יציב</value>
+        <value>יציב (Stable)</value>
     </data>
     <data name="Channel_Dev">
-        <value>גרסת מפתח</value>
+        <value>מפתח (Dev Edition)</value>
     </data>
     <data name="Settings_Language">
         <value>שפה</value>
@@ -115,7 +118,7 @@
         <value>ערכת נושא</value>
     </data>
     <data name="Settings_ThemeStyle">
-        <value>סגנון ערכה</value>
+        <value>סגנון ערכת נושא</value>
     </data>
     <data name="Settings_ThemeVariant">
         <value>בהיר/כהה</value>
@@ -127,25 +130,25 @@
         <value>גודל גופן (pt)</value>
     </data>
     <data name="Settings_AutoFont">
-        <value>בחר גופן אופטימלי אוטומטית לשפה</value>
+        <value>בחר גופן אופטימלי לשפה אוטומטית</value>
     </data>
     <data name="Settings_LockFont">
         <value>נעל כגופן ברירת מחדל</value>
     </data>
     <data name="Settings_Scale">
-        <value>קנה מידה של ממשק</value>
+        <value>קנה מידה של הממשק</value>
     </data>
     <data name="Settings_MaskHash">
-        <value>הסתר ערכי האש (אבטחה)</value>
+        <value>הסתר ערכי Hash (אבטחה)</value>
     </data>
     <data name="Settings_Reset">
-        <value>אפס ערכת נושא</value>
+        <value>אפס הגדרות</value>
     </data>
     <data name="Settings_Other">
         <value>פרטיות ואבטחה</value>
     </data>
     <data name="Settings_SetDefault">
-        <value>הגדר כברירת מחדל</value>
+        <value>קבע כברירת מחדל</value>
     </data>
     <data name="Settings_CustomColor">
         <value>צבע טקסט מותאם אישית</value>
@@ -154,7 +157,7 @@
         <value>מתקדם</value>
     </data>
     <data name="Settings_AdminMode">
-        <value>הפעל כמנהל</value>
+        <value>הפעל כמנהל מערכת</value>
     </data>
     <data name="Settings_AdminDesc">
         <value>דורש הפעלה מחדש. מאפשר גישה לקבצים מוגנים.</value>
@@ -163,28 +166,28 @@
         <value>מגבלת גודל קובץ קלט</value>
     </data>
     <data name="Settings_FileSizeDesc">
-        <value>גודל מרבי לקבצים לעיבוד.</value>
+        <value>גודל מקסימלי לקבצים לעיבוד.</value>
     </data>
     <data name="Settings_ForceQuitTimeout">
-        <value>זמן המתנה לכיבוי כפוי</value>
+        <value>פסק זמן לסגירה מאולצת</value>
     </data>
     <data name="Settings_ForceQuitDesc">
-        <value>זמן (שניות) לפני שמחשיבים את האפליקציה כקפואה.</value>
+        <value>זמן (שניות) לפני שהיישום נחשב כקפוא.</value>
     </data>
     <data name="Settings_FileTimeout">
-        <value>זמן המתנה לעיבוד קובץ</value>
+        <value>פסק זמן לעיבוד קובץ</value>
     </data>
     <data name="Settings_FileTimeoutDesc">
-        <value>בטל אם קובץ אחד לוקח יותר מדי זמן.</value>
+        <value>בטל אם קובץ יחיד לוקח יותר מדי זמן.</value>
     </data>
     <data name="Settings_Emergency">
-        <value>פעולה חירום</value>
+        <value>פעולת חירום</value>
     </data>
     <data name="Settings_EmergencyDesc">
-        <value>כיבוי כפוי של האפליקציה וביטול כל המשימות מיד.</value>
+        <value>סגור את היישום בכוח ובטל את כל המשימות מיד.</value>
     </data>
     <data name="Settings_BtnForceQuit">
-        <value>כיבוי כפוי וביטול הכל</value>
+        <value>סגירה מאולצת וביטול הכל</value>
     </data>
     <data name="Settings_Configuration">
         <value>תצורה</value>
@@ -193,10 +196,10 @@
         <value>נעל הגדרות (שמור כברירת מחדל)</value>
     </data>
     <data name="Settings_LockDesc">
-        <value>מנע שינויים מקריים. רק הסתרת האש ניתנת להתאמה.</value>
+        <value>מנע שינויים מקריים. רק 'הסתרת Hash' נשארת ניתנת לשינוי.</value>
     </data>
     <data name="Settings_ResetAll">
-        <value>אפס כל ההגדרות</value>
+        <value>אפס את כל ההגדרות</value>
     </data>
     <data name="Settings_ResetDesc">
         <value>שחזר להגדרות יצרן.</value>
@@ -211,22 +214,22 @@
         <value>הצג נתיב</value>
     </data>
     <data name="Settings_AutoSave">
-        <value>ההגדרות נשמרות אוטומטית ב-config.json</value>
+        <value>ההגדרות נשמרות אוטומטית ל-config.json</value>
     </data>
     <data name="Settings_DeveloperMode">
         <value>מצב מפתח</value>
     </data>
     <data name="Settings_DeveloperDesc">
-        <value>הפעל כלי רישום והצגת באגים מתקדמים.</value>
+        <value>אפשר רישום מתקדם וכלי ניפוי באגים.</value>
     </data>
     <data name="Dev_Console">
-        <value>קונסול מפתח</value>
+        <value>מסוף מפתחים</value>
     </data>
     <data name="Dev_Beta">
-        <value>BETA</value>
+        <value>בטא</value>
     </data>
     <data name="Dev_Recording">
-        <value>בהקלטה</value>
+        <value>מקליט</value>
     </data>
     <data name="Dev_Paused">
         <value>מושהה</value>
@@ -235,19 +238,19 @@
         <value>שמור לקובץ</value>
     </data>
     <data name="Dev_NoSave">
-        <value>לא לשמור</value>
+        <value>אל תשמור</value>
     </data>
     <data name="Dev_Clear">
-        <value>נקה קונסול</value>
+        <value>נקה מסוף</value>
     </data>
     <data name="Dev_Copy">
         <value>העתק הכל</value>
     </data>
     <data name="Dev_OpenFolder">
-        <value>פתח תיקיית לוג</value>
+        <value>פתח תיקיית לוגים</value>
     </data>
     <data name="About_Author">
-        <value>יוצר</value>
+        <value>מחבר</value>
     </data>
     <data name="About_Software">
         <value>תוכנה</value>
@@ -259,10 +262,10 @@
         <value>זכויות יוצרים</value>
     </data>
     <data name="About_Desc">
-        <value>כלי חזק ליצירה, בדיקה ודחיסה של האש קבצים. או לפחות אני חושב ככה :)</value>
+        <value>כלי חזק ליצירה, אימות ודחיסה של Hash קבצים. או לפחות כך אני חושב :)</value>
     </data>
     <data name="About_License">
-        <value>פורסם תחת רישיון MIT.</value>
+        <value>שוחרר תחת רישיון MIT.</value>
     </data>
     <data name="About_Tech">
         <value>טכנולוגיה</value>
@@ -271,10 +274,10 @@
         <value>נבנה עם C# ו-.NET 10.0.102.</value>
     </data>
     <data name="About_AI">
-        <value>סיוע AI</value>
+        <value>סיוע בינה מלאכותית</value>
     </data>
     <data name="About_AIContent">
-        <value>תוכנה זו פותחה בסיוע AI (Gemini 3 Pro ו-Grok 4.1).</value>
+        <value>תוכנה זו פותחה בסיוע בינה מלאכותית (Gemini 3 Pro ו-Grok 4.1).</value>
     </data>
     <data name="Status_Processing">
         <value>מעבד ({0})...</value>
@@ -292,31 +295,31 @@
         <value>נשמר!</value>
     </data>
     <data name="Status_Compressed">
-        <value>דחוס!</value>
+        <value>נדחס!</value>
     </data>
     <data name="Status_Waiting">
-        <value>ממתין להאש/קלט...</value>
+        <value>ממתין ל-Hash/קלט...</value>
     </data>
     <data name="Status_MissingOriginal">
         <value>קובץ מקורי חסר!</value>
     </data>
     <data name="Status_MissingHash">
-        <value>ערך האש חסר (הזן או טען קובץ האש)</value>
+        <value>ערך Hash חסר (הכנס או טען קובץ)</value>
     </data>
     <data name="Status_Valid">
         <value>תקין</value>
     </data>
     <data name="Status_Invalid">
-        <value>לא תואם!</value>
+        <value>אי התאמה!</value>
     </data>
     <data name="Status_HashFileLoaded">
-        <value>קובץ האש נטען</value>
+        <value>קובץ Hash נטען</value>
     </data>
     <data name="Status_HashFileMismatch">
-        <value>שם קובץ האש לא תואם!</value>
+        <value>שם קובץ Hash אינו תואם!</value>
     </data>
     <data name="Status_NoHashFound">
-        <value>הקובץ אינו מכיל האש!</value>
+        <value>הקובץ אינו מכיל Hash!</value>
     </data>
     <data name="Status_Checking">
         <value>בודק עדכונים...</value>
@@ -325,7 +328,7 @@
         <value>גרסה חדשה זוהתה!</value>
     </data>
     <data name="Status_Latest">
-        <value>אתה משתמש בגרסה העדכנית ביותר.</value>
+        <value>אתה משתמש בגרסה האחרונה.</value>
     </data>
     <data name="Status_CheckError">
         <value>שגיאת בדיקת עדכון: {0}</value>
@@ -343,13 +346,13 @@
         <value>קובץ מקורי אבד!</value>
     </data>
     <data name="Status_DropHashMismatch">
-        <value>שם קובץ האש לא תואם!</value>
+        <value>שם קובץ Hash אינו תואם!</value>
     </data>
     <data name="Status_DropHashSuccess">
-        <value>קובץ האש הושלך בהצלחה</value>
+        <value>קובץ Hash נגרר בהצלחה</value>
     </data>
     <data name="Status_DropNoHash">
-        <value>הקובץ אינו מכיל האש!</value>
+        <value>הקובץ אינו מכיל Hash!</value>
     </data>
     <data name="Status_ReadError">
         <value>שגיאת קריאת קובץ</value>
@@ -360,13 +363,14 @@
     <data name="Msg_Result_Content">
         <value>העיבוד הושלם!
             ✅ הצלחה: {0}
-            ❌ כשל: {1}
+            ❌ נכשל: {1}
+            ⛔ בוטל: {2}
         </value>
     </data>
     <data name="Msg_CheckResult">
         <value>נבדקו {0} קבצים.
-            ✅ תואם: {1}
-            ❌ לא תואם/שגיאה: {2}
+            ✅ התאמה: {1}
+            ❌ אי התאמה/שגיאה: {2}
             ⛔ בוטל: {3}
         </value>
     </data>
@@ -374,12 +378,12 @@
         <value>קובץ שגוי!</value>
     </data>
     <data name="Msg_WrongHashFileContent">
-        <value>קובץ האש לא תואם!
+        <value>אי התאמה בקובץ Hash!
 
             קובץ מקורי: {0}
             קובץ נבחר: {1}
 
-            אנא בחר את קובץ ההאש הנכון.
+            אנא בחר את קובץ ה-Hash המתאים הנכון.
         </value>
     </data>
     <data name="Msg_UpdateTitle">
@@ -391,17 +395,17 @@
             שינויים:
             {1}
 
-            לחץ 'עדכן עכשיו' להורדה.
+            לחץ על 'עדכן כעת' להורדה.
         </value>
     </data>
     <data name="Msg_NoUpdate">
-        <value>לא נמצאו עדכונים חדשים יותר.</value>
+        <value>לא נמצאו עדכונים חדשים.</value>
     </data>
     <data name="Msg_Error">
         <value>שגיאה</value>
     </data>
     <data name="Msg_ReadHashError">
-        <value>לא ניתן לקרוא קובץ האש זה.</value>
+        <value>לא ניתן לקרוא קובץ Hash זה.</value>
     </data>
     <data name="Msg_ConfigCheck">
         <value>בדיקת תצורה</value>
@@ -412,7 +416,7 @@
         </value>
     </data>
     <data name="Msg_ConfigMissing">
-        <value>הקובץ לא קיים!</value>
+        <value>הקובץ אינו קיים!</value>
     </data>
     <data name="Msg_ConfigCreated">
         <value>הקובץ נוצר בהצלחה!</value>
@@ -424,7 +428,7 @@
         <value>מצב מנהל</value>
     </data>
     <data name="Msg_AdminRestart">
-        <value>אנא הפעל מחדש את האפליקציה כדי שהשינויים ייכנסו לתוקף.</value>
+        <value>אנא הפעל מחדש את היישום כדי שהשינויים ייכנסו לתוקף.</value>
     </data>
     <data name="Msg_OpenFolderError">
         <value>לא ניתן לפתוח תיקייה: {0}</value>
@@ -433,39 +437,39 @@
         <value>⚠️ אזהרת גרסת מפתח</value>
     </data>
     <data name="Msg_DisclaimerContent">
-        <value>אתה עומד לעבור לערוץ עדכוני מפתח (פרי-ריליז).
+        <value>אתה עומד לעבור לערוץ עדכון מפתחים (טרום-שחרור).
 
-            גרסה זו עלולה להכיל באגים, להיות לא יציבה ולגרום לאובדן נתונים.
+            גרסה זו עשויה להכיל באגים, להיות לא יציבה ולגרום לאובדן נתונים.
 
-            אני לא אחראי לכל בעיה שתיגרם משימוש בגרסה זו.
+            איני אחראי לכל בעיה הנובעת משימוש בגרסה זו.
         </value>
     </data>
     <data name="Msg_DisclaimerAgree">
-        <value>קראתי והסכמתי. אני לוקח אחריות מלאה.</value>
+        <value>קראתי ואני מסכים. אני לוקח אחריות מלאה.</value>
     </data>
     <data name="Dialog_SaveHash">
-        <value>שמור קובץ האש</value>
+        <value>שמור קובץ Hash</value>
     </data>
     <data name="Dialog_SaveZip">
         <value>שמור קובץ דחוס</value>
     </data>
     <data name="Dialog_SelectFiles">
-        <value>בחר קבצים להאש</value>
+        <value>בחר קבצים ל-Hash</value>
     </data>
     <data name="Dialog_SelectHashFile">
-        <value>בחר קובץ האש עבור: {0}</value>
+        <value>בחר קובץ Hash עבור: {0}</value>
     </data>
     <data name="Dialog_SelectCheckFiles">
         <value>בחר קבצים (מקורי או קובץ .hash)</value>
     </data>
     <data name="Header_Fallback">
-        <value>מתקדם: חזרה לגרסה ישנה יותר</value>
+        <value>מתקדם: חזור לגרסה ישנה יותר</value>
     </data>
     <data name="Desc_Fallback">
-        <value>תכונה זו מאפשרת התקנת גרסה ספציפית אם החדשה בעייתית.</value>
+        <value>תכונה זו מאפשרת לך להתקין גרסה ספציפית אם בחדשה יש בעיות.</value>
     </data>
     <data name="Watermark_PasteDrop">
-        <value>הדבק/שחרר כאן...</value>
+        <value>הדבק או גרור לכאן...</value>
     </data>
     <data name="Unit_Seconds">
         <value>שניות</value>
@@ -480,13 +484,16 @@
         <value>הסר קובץ</value>
     </data>
     <data name="Tip_CopyHash">
-        <value>העתק האש</value>
+        <value>העתק Hash</value>
     </data>
     <data name="Tip_Compute">
         <value>חשב</value>
     </data>
+    <data name="Tip_ClearHash">
+        <value>נקה Hash</value>
+    </data>
     <data name="Tip_BrowseHash">
-        <value>עיין בהאש</value>
+        <value>דפדף Hash</value>
     </data>
     <data name="Settings_ThemeDark">
         <value>כהה</value>
@@ -498,10 +505,7 @@
         <value>מערכת</value>
     </data>
     <data name="Msg_TaskCancelled_Title">
-        <value>משימה בוטלה</value>
-    </data>
-    <data name="Msg_FileSizeLimitExceeded">
-        <value>קובץ {0} חורג מהמגבלה {1} {2}.</value>
+        <value>המשימה הופסקה</value>
     </data>
     <data name="Btn_Yes">
         <value>כן</value>
@@ -516,39 +520,217 @@
         <value>ארכיון Zip</value>
     </data>
     <data name="Msg_ConfirmExit_Title">
-        <value>אשר יציאה</value>
+        <value>אישור יציאה</value>
     </data>
     <data name="Msg_ConfirmExit_Content">
-        <value>יציאה תבטל את כל המשימות הפעילות. בטוח?</value>
+        <value>יציאה תבטל את כל המשימות הפעילות. האם אתה בטוח?</value>
     </data>
     <data name="Msg_TaskCancelled_Content">
-        <value>המשימה בוטלה עקב פסק זמן.</value>
+        <value>המשימה הופסקה עקב פסק זמן.</value>
     </data>
     <data name="Dev_ToolTip_Save">
-        <value>שמור לוג דיבאג לדיסק.</value>
+        <value>שמור יומן דיבאג לדיסק.</value>
     </data>
     <data name="Dev_ToolTip_Pause">
         <value>השהה רישום בזמן אמת.</value>
     </data>
     <data name="Tip_ShowHash">
-        <value>הצג האש</value>
+        <value>הצג Hash</value>
     </data>
     <data name="Tip_HideHash">
-        <value>הסתר האש</value>
+        <value>הסתר Hash</value>
     </data>
     <data name="Tip_CopyPath">
         <value>העתק נתיב</value>
     </data>
     <data name="Msg_DiskFull">
-        <value>הכונן שלך מלא. בחר מיקום אחר אחי :)</value>
+        <value>הכונן שלך מלא. אנא בחר מיקום אחר :)</value>
     </data>
     <data name="Tip_HashVisibility">
-        <value>נראות האש</value>
+        <value>נראות Hash</value>
     </data>
     <data name="EmptyState_DropFiles">
-        <value>אין קבצים. לחץ 'הוסף קבצים' להתחלה.</value>
+        <value>אין קבצים. לחץ על 'הוסף קבצים' כדי להתחיל.</value>
     </data>
     <data name="Settings_LockTheme">
-        <value>נעל ערכה זו כברירת מחדל</value>
+        <value>נעל ערכת נושא זו כברירת מחדל</value>
+    </data>
+    <data name="Msg_FileSizeLimitExceeded_Summary">
+        <value>דולגו {0} קבצים החורגים מהמגבלה ({1} {2}):
+            {3}
+        </value>
+    </data>
+    <data name="Msg_SystemLanguage">
+        <value>שפת מערכת</value>
+    </data>
+    <data name="Msg_SystemLanguageWarning">
+        <value>חזרה להגדרה 'אוטומטי' דורשת הפעלה מחדש. האם ברצונך להמשיך?</value>
+    </data>
+    <data name="Msg_LanguageChangeTitle">
+        <value>שינוי שפה</value>
+    </data>
+    <data name="Msg_LanguageChangeConfirmation">
+        <value>האם אתה בטוח בכך?</value>
+    </data>
+    <data name="Msg_DontShowAgain">
+        <value>אל תציג התראה זו שוב</value>
+    </data>
+    <data name="Error_Network">
+        <value>שגיאת חיבור רשת. אנא בדוק את האינטרנט שלך.</value>
+    </data>
+    <data name="Error_Server">
+        <value>שגיאת שרת (5xx). אנא נסה שוב מאוחר יותר.</value>
+    </data>
+    <data name="Error_Client">
+        <value>שגיאת לקוח (4xx). אנא בדוק את הבקשה.</value>
+    </data>
+    <data name="Error_ApiLimit">
+        <value>חריגה ממגבלת ה-API של GitHub. אנא נסה שוב מאוחר יותר.</value>
+    </data>
+    <data name="Msg_NoPreRelease">
+        <value>לא נמצאה גרסת טרום-שחרור. שומר על הגרסה הנוכחית.</value>
+    </data>
+    <data name="Msg_PreReleaseWarning">
+        <value>גרסת טרום-שחרור {0} זמינה.
+
+            {1}
+
+            גרסה זו עשויה להיות לא יציבה. האם ברצונך להוריד?
+        </value>
+    </data>
+    <data name="Btn_ClearFailed">
+        <value>נקה נכשלים</value>
+    </data>
+    <data name="Msg_ClearedFailed">
+        <value>הוסרו {0} פריטים.</value>
+    </data>
+    <data name="Msg_EstimatedTime">
+        <value>זמן נותר: {0}</value>
+    </data>
+    <data name="Msg_TaskDuration">
+        <value>משך משימה: {0}</value>
+    </data>
+    <data name="Msg_TimeUnknown">
+        <value>מחשב...</value>
+    </data>
+    <data name="Btn_AddFolder">
+        <value>הוסף תיקייה...</value>
+    </data>
+    <data name="Msg_EmptyFolder">
+        <value>התיקייה שנבחרה ריקה.</value>
+    </data>
+    <data name="Dialog_SelectFolder">
+        <value>בחר תיקייה לסריקה</value>
+    </data>
+    <data name="Btn_Cancel">
+        <value>ביטול</value>
+    </data>
+    <data name="Settings_Limits">
+        <value>מגבלות עיבוד</value>
+    </data>
+    <data name="Settings_MaxFileCount">
+        <value>מקסימום קבצים לסריקת תיקייה</value>
+    </data>
+    <data name="Settings_MaxFileCountDesc">
+        <value>הגבל את מספר הקבצים המתווספים מתיקייה למניעת בעיות ביצועים.</value>
+    </data>
+    <data name="Settings_MaxFolderCount">
+        <value>מקסימום תיקיות בבת אחת</value>
+    </data>
+    <data name="Settings_MaxFolderCountDesc">
+        <value>הגבל את מספר התיקיות שנבחרו בבת אחת.</value>
+    </data>
+    <data name="Msg_FolderLimit">
+        <value>ניתן לבחור עד {0} תיקיות בבת אחת.</value>
+    </data>
+    <data name="Msg_FileLimit">
+        <value>נוספו {0} קבצים. דולגו {1} קבצים עקב המגבלה.</value>
+    </data>
+    <data name="Lbl_ProgressStats">
+        <value>{0}/{1} ({2:F2}%)</value>
+    </data>
+    <data name="Lbl_DetailedStats">
+        <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
+    </data>
+    <data name="Lbl_Speed">
+        <value>קריאה: {0}/s | כתיבה: {1}/s</value>
+    </data>
+    <data name="Settings_ShowSpeed">
+        <value>הצג מהירות קריאה/כתיבה</value>
+    </data>
+    <data name="Settings_ShowSpeedDesc">
+        <value>הצג קצב העברה בזמן אמת במהלך פעולות Hash.</value>
+    </data>
+    <data name="Status_Computing">
+        <value>חישוב Hash...</value>
+    </data>
+    <data name="Size_All">
+        <value>כל הגדלים</value>
+    </data>
+    <data name="Size_Small">
+        <value>קטן (&lt; 1MB)</value>
+    </data>
+    <data name="Size_Medium">
+        <value>בינוני (1MB - 100MB)</value>
+    </data>
+    <data name="Size_Large">
+        <value>גדול (100MB - 1GB)</value>
+    </data>
+    <data name="Size_ExtraLarge">
+        <value>גדול מאוד (&gt; 1GB)</value>
+    </data>
+    <data name="About_Documents">
+        <value>מסמכים</value>
+    </data>
+    <data name="Doc_PrivacyPolicy">
+        <value>מדיניות פרטיות</value>
+    </data>
+    <data name="Doc_ToS">
+        <value>תנאי שימוש</value>
+    </data>
+    <data name="Doc_EULA">
+        <value>הסכם רישיון למשתמש קצה (EULA)</value>
+    </data>
+    <data name="Doc_Disclaimer">
+        <value>הסרת אחריות</value>
+    </data>
+    <data name="Doc_Readme">
+        <value>README</value>
+    </data>
+    <data name="Doc_Changelog">
+        <value>יומן שינויים</value>
+    </data>
+    <data name="Doc_Credit">
+        <value>תודות</value>
+    </data>
+    <data name="Status_Processing_Filter">
+        <value>מעבד</value>
+    </data>
+    <data name="Status_Failure">
+        <value>נכשל</value>
+    </data>
+    <data name="Watermark_Search">
+        <value>חפש לפי שם...</value>
+    </data>
+    <data name="Placeholder_Size">
+        <value>גודל</value>
+    </data>
+    <data name="Tip_GitHubProfile">
+        <value>פרופיל GitHub</value>
+    </data>
+    <data name="Filter_All">
+        <value>הכל</value>
+    </data>
+    <data name="Settings_FreeMemory">
+        <value>שחרר זיכרון</value>
+    </data>
+    <data name="Settings_FreeMemoryDesc">
+        <value>כפה איסוף זבל (GC) לשחרור RAM.</value>
+    </data>
+    <data name="Settings_BtnFreeMemory">
+        <value>נקה זיכרון</value>
+    </data>
+    <data name="Msg_MemoryFreed">
+        <value>ניקוי זיכרון הופעל.</value>
     </data>
 </root>
