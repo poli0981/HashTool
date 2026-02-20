@@ -2,6 +2,55 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2026-02-20
+
+### Added
+**New Hash Algorithms**
+- xxHash32, xxHash64, xxHash3, xxHash128
+- CRC32
+
+**New Features**
+- Cancel button to abort the entire hashing process
+- "Add Folder" – add all files from one or more folders at once
+- Advanced search (by Name, Status, and File Size)
+- "Clear Hash" button + individual clear icon for each file
+- "Clear Failed" button to remove unprocessed/failed/cancelled items
+- "Free up Memory" button in Settings
+- Configurable input file limit (default: 1000, toggleable)
+- Configurable input folder limit (default: 3, toggleable)
+- Real-time disk read/write speed display
+- New UI themes: Retro, Glassmorphism, Cyberpunk
+- "Documents" section in the About page
+- More detailed progress counter (e.g. 15/100 files processed)
+- Missing third-party libraries added to Acknowledgements (sorry for the earlier miss 😅)
+- Donate section
+
+**Performance**
+- Multi-threading: now runs up to 3 hashing threads simultaneously for faster processing
+- Optimized dev-mode logging
+
+### Changed / UI/UX Improvements
+- Added tooltips in many places
+- Improved MessageBox notifications
+- Better individual file item UI in the list
+- Language change now shows confirmation dialog (plus a few more confirmation boxes)
+- Removed MicaCustom theme
+
+### Fixed
+- Dark/Light mode switching logic
+- Hash creation & verification logic issues
+- Incomplete translations in some languages
+- Language loading, switching and default setting bugs
+- Application update checking logic
+- "Reset Theme" button renamed to "Reset Settings"
+- Miscellaneous small bugs
+
+### Other
+- Thank you for **26 downloads** on v1.0.0.
+- Hope you enjoy this update. Have a nice day.
+
+---
+
 ## [1.0.0] - 2026-02-03 GMT + 7 (Initial Release)
 
 ### Features
