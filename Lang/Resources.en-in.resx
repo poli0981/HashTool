@@ -51,9 +51,6 @@
     <data name="Btn_Compress">
         <value>Compress (.Zip)</value>
     </data>
-    <data name="Btn_Clear">
-        <value>Clear List</value>
-    </data>
     <data name="Btn_ClearHashes">
         <value>Clear Hashes</value>
     </data>
