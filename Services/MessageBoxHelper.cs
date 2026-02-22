@@ -10,6 +10,7 @@ using Avalonia.Layout;
 using Avalonia.Media;
 using Material.Icons;
 using Material.Icons.Avalonia;
+using Markdown.Avalonia;
 
 namespace CheckHash.Services;
 
@@ -64,30 +65,23 @@ public static class MessageBoxHelper
             Width = 32,
             Height = 32,
             Foreground = color,
-            VerticalAlignment = VerticalAlignment.Center,
+            VerticalAlignment = VerticalAlignment.Top,
             Margin = new Thickness(0, 0, 15, 0)
         };
     }
 
-    private static (Window window, StackPanel contentPanel) CreateBaseWindow(string title, MessageBoxIcon icon)
+    private static (Window window, StackPanel contentPanel) CreateBaseWindow(string title, MessageBoxIcon icon, double width = 450)
     {
         var window = new Window
         {
             SystemDecorations = SystemDecorations.None,
-            Width = 450,
+            Width = width,
             SizeToContent = SizeToContent.Height,
             WindowStartupLocation = WindowStartupLocation.CenterOwner,
             CanResize = false,
             TransparencyLevelHint = new[] { WindowTransparencyLevel.Transparent, WindowTransparencyLevel.None },
             Background = Brushes.Transparent
         };
-
-        // Main Container (DockPanel)
-        // Top: Title Bar
-        // Center: Content (Icon + Text) + Buttons (Bottom of center?)
-        // Actually, let's use a Grid for the whole window content
-        // Row 0: Title Bar
-        // Row 1: Content
 
         var rootGrid = new Grid();
         rootGrid.RowDefinitions.Add(new RowDefinition(GridLength.Auto)); // Title
@@ -162,7 +156,7 @@ public static class MessageBoxHelper
         return (window, contentStack);
     }
 
-    private static Grid CreateMessageContent(string message, MessageBoxIcon icon)
+    private static Grid CreateMessageContent(string message, MessageBoxIcon icon, bool isMarkdown = false)
     {
         var grid = new Grid();
         grid.ColumnDefinitions.Add(new ColumnDefinition(GridLength.Auto));
@@ -175,17 +169,38 @@ public static class MessageBoxHelper
             grid.Children.Add(iconControl);
         }
 
-        var textBlock = new TextBlock
-        {
-            Text = message,
-            TextWrapping = TextWrapping.Wrap,
-            VerticalAlignment = VerticalAlignment.Center,
-            HorizontalAlignment = HorizontalAlignment.Left,
-            TextAlignment = TextAlignment.Left
-        };
+        Control contentControl;
 
-        Grid.SetColumn(textBlock, 1);
-        grid.Children.Add(textBlock);
+        if (isMarkdown)
+        {
+            var markdownScrollViewer = new ScrollViewer
+            {
+                MaxHeight = 300, // Limit height to allow scrolling for long notes
+                VerticalScrollBarVisibility = ScrollBarVisibility.Auto
+            };
+
+            var markdownViewer = new MarkdownScrollViewer
+            {
+                Markdown = message
+            };
+            
+            markdownScrollViewer.Content = markdownViewer;
+            contentControl = markdownScrollViewer;
+        }
+        else
+        {
+            contentControl = new TextBlock
+            {
+                Text = message,
+                TextWrapping = TextWrapping.Wrap,
+                VerticalAlignment = VerticalAlignment.Center,
+                HorizontalAlignment = HorizontalAlignment.Left,
+                TextAlignment = TextAlignment.Left
+            };
+        }
+
+        Grid.SetColumn(contentControl, 1);
+        grid.Children.Add(contentControl);
 
         return grid;
     }
@@ -223,12 +238,13 @@ public static class MessageBoxHelper
     }
 
     public static async Task<bool> ShowConfirmationAsync(string title, string message, string yesText = "Yes",
-        string noText = "No", MessageBoxIcon icon = MessageBoxIcon.Question)
+        string noText = "No", MessageBoxIcon icon = MessageBoxIcon.Question, bool isMarkdown = false)
     {
-        var (window, contentPanel) = CreateBaseWindow(title, icon);
+        var width = isMarkdown ? 600 : 450;
+        var (window, contentPanel) = CreateBaseWindow(title, icon, width);
 
         // Content
-        var messageGrid = CreateMessageContent(message, icon);
+        var messageGrid = CreateMessageContent(message, icon, isMarkdown);
         messageGrid.Margin = new Thickness(0, 0, 0, 20);
         contentPanel.Children.Add(messageGrid);
 

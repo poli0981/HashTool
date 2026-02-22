@@ -63,7 +63,10 @@ public partial class UpdateViewModel : ObservableObject
             AvailableVersions.Clear();
             foreach (var v in versions)
             {
-                AvailableVersions.Add(v);
+                if (v != _updateService.CurrentVersion.ToString())
+                {
+                    AvailableVersions.Add(v);
+                }
             }
         }
         catch
@@ -173,7 +176,7 @@ public partial class UpdateViewModel : ObservableObject
                     var notes = await _updateService.GetReleaseNotesAsync(versionString);
                     var result = await MessageBoxHelper.ShowConfirmationAsync(L["Title_Disclaimer"],
                         string.Format(L["Msg_PreReleaseWarning"], versionString, notes), L["Btn_Install"], L["Btn_No"],
-                        MessageBoxIcon.Warning);
+                        MessageBoxIcon.Warning, true);
 
                     if (result)
                     {
@@ -193,7 +196,7 @@ public partial class UpdateViewModel : ObservableObject
 
                 var resultStable = await MessageBoxHelper.ShowConfirmationAsync(L["Msg_UpdateTitle"],
                     string.Format(L["Msg_UpdateContent"], versionString, notesStable), L["Btn_Install"], L["Btn_No"],
-                    MessageBoxIcon.Question);
+                    MessageBoxIcon.Question, true);
 
                 if (resultStable)
                 {
@@ -264,8 +267,12 @@ public partial class UpdateViewModel : ObservableObject
                     await _updateService.DownloadAndRunInstallerAsync(url,
                         progress => { DownloadProgress = progress; });
 
-                    StatusMessage = "Installer launched.";
+                    StatusMessage = L["Status_InstallerLaunched"];
                     Logger.Log("Installer launched for rollback.");
+                }
+                else
+                {
+                    Logger.Log("Rollback is cancelled.");
                 }
             }
             else
@@ -298,7 +305,7 @@ public partial class UpdateViewModel : ObservableObject
         {
             await _updateService.DownloadUpdatesAsync(info, progress => { DownloadProgress = progress; });
 
-            StatusMessage = "Update downloaded. Restarting...";
+            StatusMessage = L["Status_UpdateRestarting"];
             _updateService.ApplyUpdatesAndRestart(info);
         }
         catch (Exception ex)

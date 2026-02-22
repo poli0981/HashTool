@@ -176,38 +176,75 @@ public class UpdateService
         var fileName = Path.GetFileName(new Uri(url).LocalPath);
         var tempPath = Path.Combine(Path.GetTempPath(), fileName);
 
-        using var response = await _httpClient.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
-        response.EnsureSuccessStatusCode();
-
-        var totalBytes = response.Content.Headers.ContentLength ?? -1L;
-        var canReportProgress = totalBytes != -1 && progress != null;
-
-        await using var contentStream = await response.Content.ReadAsStreamAsync();
-        await using var fileStream =
-            new FileStream(tempPath, FileMode.Create, FileAccess.Write, FileShare.None, 8192, true);
-
-        var buffer = new byte[8192];
-        long totalRead = 0;
-        int bytesRead;
-
-        while ((bytesRead = await contentStream.ReadAsync(buffer, 0, buffer.Length)) > 0)
+        try
         {
-            await fileStream.WriteAsync(buffer, 0, bytesRead);
-            totalRead += bytesRead;
+            using var response = await _httpClient.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
+            response.EnsureSuccessStatusCode();
 
-            if (canReportProgress)
+            var totalBytes = response.Content.Headers.ContentLength ?? -1L;
+            var canReportProgress = totalBytes != -1 && progress != null;
+
+            await using var contentStream = await response.Content.ReadAsStreamAsync();
+            await using var fileStream =
+                new FileStream(tempPath, FileMode.Create, FileAccess.Write, FileShare.None, 8192, true);
+
+            var buffer = new byte[8192];
+            long totalRead = 0;
+            int bytesRead;
+
+            while ((bytesRead = await contentStream.ReadAsync(buffer, 0, buffer.Length)) > 0)
             {
-                progress?.Invoke((int)((double)totalRead / totalBytes * 100));
+                await fileStream.WriteAsync(buffer, 0, bytesRead);
+                totalRead += bytesRead;
+
+                if (canReportProgress)
+                {
+                    progress?.Invoke((int)((double)totalRead / totalBytes * 100));
+                }
+            }
+
+            if (OperatingSystem.IsWindows())
+            {
+                var process = Process.Start(new ProcessStartInfo(tempPath) { UseShellExecute = true });
+                if (process != null)
+                {
+                    // Wait for the installer to start properly
+                    await Task.Delay(2000);
+
+                    // Fire and forget task to delete the installer after it exits
+                    _ = Task.Run(async () =>
+                    {
+                        try
+                        {
+                            await process.WaitForExitAsync();
+                            if (File.Exists(tempPath))
+                            {
+                                File.Delete(tempPath);
+                            }
+                        }
+                        catch
+                        {
+                            // Best effort deletion
+                        }
+                    });
+
+                    // Exit the application to allow the installer to overwrite files
+                    Environment.Exit(0);
+                }
+            }
+            else if (OperatingSystem.IsMacOS())
+            {
+                Process.Start("open", $"\"{tempPath}\"");
             }
         }
-
-        if (OperatingSystem.IsWindows())
+        catch
         {
-            Process.Start(new ProcessStartInfo(tempPath) { UseShellExecute = true });
-        }
-        else if (OperatingSystem.IsMacOS())
-        {
-            Process.Start("open", $"\"{tempPath}\"");
+            // Ensure cleanup on error
+            if (File.Exists(tempPath))
+            {
+                try { File.Delete(tempPath); } catch { }
+            }
+            throw;
         }
     }
 

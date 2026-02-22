@@ -991,6 +991,15 @@ namespace CheckHash.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please select a valid version..
+        /// </summary>
+        public static string Msg_InvalidVersion {
+            get {
+                return ResourceManager.GetString("Msg_InvalidVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Are you sure about that?.
         /// </summary>
         public static string Msg_LanguageChangeConfirmation {
@@ -1090,6 +1099,15 @@ namespace CheckHash.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to rollback to version {0}?.
+        /// </summary>
+        public static string Msg_RollbackConfirm {
+            get {
+                return ResourceManager.GetString("Msg_RollbackConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to System Language.
         /// </summary>
         public static string Msg_SystemLanguage {
@@ -1164,6 +1182,15 @@ namespace CheckHash.Lang {
         public static string Msg_UpdateTitle {
             get {
                 return ResourceManager.GetString("Msg_UpdateTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No release found..
+        /// </summary>
+        public static string Msg_VersionNotFound {
+            get {
+                return ResourceManager.GetString("Msg_VersionNotFound", resourceCulture);
             }
         }
         
@@ -1822,6 +1849,15 @@ namespace CheckHash.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Installer launched..
+        /// </summary>
+        public static string Status_InstallerLaunched {
+            get {
+                return ResourceManager.GetString("Status_InstallerLaunched", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Installation error: {0}.
         /// </summary>
         public static string Status_InstallError {
@@ -1944,6 +1980,15 @@ namespace CheckHash.Lang {
         public static string Status_Saved {
             get {
                 return ResourceManager.GetString("Status_Saved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update downloaded. Restarting....
+        /// </summary>
+        public static string Status_UpdateRestarting {
+            get {
+                return ResourceManager.GetString("Status_UpdateRestarting", resourceCulture);
             }
         }
         
@@ -2106,6 +2151,15 @@ namespace CheckHash.Lang {
         public static string Title_Disclaimer {
             get {
                 return ResourceManager.GetString("Title_Disclaimer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm Rollback.
+        /// </summary>
+        public static string Title_Rollback {
+            get {
+                return ResourceManager.GetString("Title_Rollback", resourceCulture);
             }
         }
         
