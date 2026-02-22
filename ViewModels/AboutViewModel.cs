@@ -66,7 +66,8 @@ public partial class AboutViewModel : ObservableObject
         new LibraryItem("CommunityToolkit.Mvvm Ver 8.2.1", "MIT License", "https://github.com/CommunityToolkit/dotnet"),
         new LibraryItem("Material.Icons.Avalonia Ver 2.4.1", "MIT License",
             "https://github.com/AvaloniaUtils/Material.Icons.Avalonia"),
-        new LibraryItem("Velopack version 0.0.1298", "MIT License", "https://github.com/velopack/velopack")
+        new LibraryItem("Velopack version 0.0.1298", "MIT License", "https://github.com/velopack/velopack"),
+        new LibraryItem("Markdown.Avalonia version 11.0.3-a1", "MIT License", "https://github.com/whistyun/Markdown.Avalonia")
     };
 
     // Open URL in default browser of user
