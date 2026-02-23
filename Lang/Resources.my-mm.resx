@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>ဖိုင်များကို ရွေးချယ်ပါ (မူရင်း သို့မဟုတ် .hash ဖိုင်)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>အဆင့်မြင့်: ဗားရှင်းဟောင်းသို့ ပြန်သွားရန်</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>ဗားရှင်းအသစ်တွင် ပြဿနာရှိပါက သီးခြားဗားရှင်းတစ်ခုကို ထည့်သွင်းရန် ဤလုပ်ဆောင်ချက်က ကူညီပေးသည်။</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>ဤနေရာတွင် Paste လုပ်ပါ သို့မဟုတ် ဆွဲထည့်ပါ...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>မှတ်ဉာဏ် ရှင်းလင်းခြင်း စတင်နေပြီ။</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>ထုတ်ပြန်မှု မတွေ့ပါ။</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>ထည့်သွင်းသူ စတင်လိုက်ပါပြီ။</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>အပ်ဒိတ်ကို ဒေါင်းလုဒ်လုပ်ပြီးပါပြီ။ ပြန်လည်စတင်နေပါပြီ...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>တရားဝင်ဗားရှင်းကို ရွေးချယ်ပါ။</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>ပြန်လည်စတင်ရန် အတည်ပြုပါ</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>ဗားရှင်း {0} သို့ ပြန်လည်စတင်လိုကြောင်း သေချာပါသလား။</value>
     </data>
 </root>

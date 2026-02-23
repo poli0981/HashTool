@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Velg filer (Original eller .hash-fil)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Avansert: Gå tilbake til eldre versjon</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Denne funksjonen lar deg installere en spesifikk versjon hvis den nye har problemer.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Lim inn eller slipp her...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Minneopprydding utløst.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Ingen versjon funnet.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Installer startet.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Oppdatering lastet ned. Starter på nytt...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Velg en gyldig versjon.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Bekreft tilbakerulling</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Er du sikker på at du vil rulle tilbake til versjon {0}?</value>
     </data>
 </root>

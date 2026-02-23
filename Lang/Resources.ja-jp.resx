@@ -16,7 +16,7 @@
         </value>
     </resheader>
     <data name="AppTitle">
-        <value>ハッシュツール (Hash Tool)</value>
+        <value>ハッシュツール</value>
     </data>
     <data name="Menu_Create">
         <value>ハッシュ生成</value>
@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>ファイルを選択 (元ファイルまたは .hash ファイル)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>詳細: 旧バージョンへのフォールバック</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>新しいバージョンに問題がある場合、特定のバージョンをインストールできます。</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>ここに貼り付け/ドロップ...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>メモリのクリーンアップがトリガーされました。</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>リリースが見つかりません。</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>インストーラを起動しました。</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>アップデートをダウンロードしました。再起動しています…</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>有効なバージョンを選択してください。</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>ロールバックの確認</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>バージョン {0} にロールバックしてもよろしいですか？</value>
     </data>
 </root>

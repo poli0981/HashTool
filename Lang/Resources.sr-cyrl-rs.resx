@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Изаберите датотеке (Оригинална или .hash датотека)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Напредно: Врати се на старију верзију</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Ова функција вам омогућава да инсталирате одређену верзију ако нова има проблема.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Налепите или превуците овде...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Чишћење меморије је покренуто.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Није пронађено издање.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Инсталатер је покренут.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Ажурирање је преузето. Поновно покретање...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Изаберите важећу верзију.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Потврди враћање на претходну верзију</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Да ли сте сигурни да желите да се вратите на верзију {0}?</value>
     </data>
 </root>

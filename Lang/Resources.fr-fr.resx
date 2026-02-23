@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Sélectionner fichiers (Original ou .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Avancé : Revenir à une version antérieure</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Permet d'installer une version spécifique si la nouvelle a des problèmes.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Coller ou Déposer ici...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Nettoyage mémoire déclenché.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Aucune version trouvée.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Installation lancée.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Mise à jour téléchargée. Redémarrage en cours...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Veuillez sélectionner une version valide.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Confirmer la restauration</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Êtes-vous sûr de vouloir restaurer la version {0}?</value>
     </data>
 </root>

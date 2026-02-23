@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>انتخاب فایل‌ها (اصلی یا فایل .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>پیشرفته: بازگشت به نسخه قدیمی</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>این ویژگی به شما امکان می‌دهد در صورت وجود مشکل در نسخه جدید، نسخه خاصی را نصب کنید.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>اینجا جایگذاری یا رها کنید...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>پاکسازی حافظه آغاز شد.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>نسخه‌ای یافت نشد.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>نصب‌کننده راه‌اندازی شد.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>به‌روزرسانی دانلود شد. در حال راه‌اندازی مجدد...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>لطفاً یک نسخه معتبر انتخاب کنید.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>تأیید لغو نصب</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>آیا مطمئن هستید که می‌خواهید به نسخه {0} برگردید؟</value>
     </data>
 </root>

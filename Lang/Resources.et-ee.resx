@@ -464,12 +464,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Vali failid (Algne või .hash fail)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Täpsem: Pöördu tagasi vanemale versioonile</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>See funktsioon võimaldab installida kindla versiooni, kui uuel on probleeme.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Kleebi või lohista siia...</value>
     </data>
@@ -735,22 +729,7 @@
     <data name="Msg_MemoryFreed">
         <value>Mälu puhastamine käivitatud.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Ühtegi versiooni ei leitud.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Installer käivitatud.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Uuendus alla laaditud. Taaskäivitamine...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Palun vali kehtiv versioon.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Kinnita tagasipöördumine</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Kas oled kindel, et soovid versioonile {0} tagasi pöörduda?</value>
     </data>
 </root>

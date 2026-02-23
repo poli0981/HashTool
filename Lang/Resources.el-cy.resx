@@ -460,12 +460,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Επιλογή Αρχείων (Αρχικό ή .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Για προχωρημένους: Επιστροφή σε παλαιότερη έκδοση</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Αυτή η λειτουργία σάς επιτρέπει να εγκαταστήσετε μια συγκεκριμένη έκδοση εάν η νέα έχει προβλήματα.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Επικόλληση ή Απόθεση εδώ...</value>
     </data>
@@ -731,22 +725,10 @@
     <data name="Msg_MemoryFreed">
         <value>Ενεργοποιήθηκε η εκκαθάριση μνήμης.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Δεν βρέθηκε έκδοση.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Έγινε εκκίνηση του προγράμματος εγκατάστασης.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Λήψη ενημέρωσης. Επανεκκίνηση...</value>
     </data>
-    <data name="Msg_InvalidVersion">
-        <value>Επιλέξτε μια έγκυρη έκδοση.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Επιβεβαίωση επαναφοράς</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Είστε βέβαιοι ότι θέλετε να επαναφέρετε την έκδοση {0};</value>
+    <data name="Btn_ClearHashes">
+        <value>Εκκαθάριση κατακερματισμών</value>
     </data>
 </root>

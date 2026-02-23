@@ -462,13 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>फाइलें चुनें (मूल या .hash फाइल)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>उन्नत: पुराने संस्करण पर वापस जाएं</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>यदि नए संस्करण में समस्याएं हैं तो यह सुविधा आपको एक विशिष्ट संस्करण इंस्टॉल करने की अनुमति देती है।
-        </value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>यहाँ पेस्ट या ड्रॉप करें...</value>
     </data>
@@ -736,22 +729,7 @@
     <data name="Msg_MemoryFreed">
         <value>मेमोरी सफाई शुरू हो गई।</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>कोई रिलीज़ नहीं मिली।</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>इंस्टॉलर लॉन्च हो गया।</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>अपडेट डाउनलोड हो गया। रीस्टार्ट हो रहा है...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>कृपया एक वैलिड वर्शन चुनें।</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>रोलबैक कन्फ़र्म करें</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>क्या आप वाकई वर्शन {0} पर रोलबैक करना चाहते हैं?</value>
     </data>
 </root>

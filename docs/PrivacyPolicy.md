@@ -1,6 +1,6 @@
 # Privacy Policy for HashTool
 
-**Version 1.1.1**  
+**Version 1.1.2**  
 **Last updated: February 2026**
 
 HashTool is a free, open-source desktop application distributed under the MIT License (see LICENSE file).

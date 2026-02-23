@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Selectează fișiere (Original sau fișier .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Avansat: Reveniți la o versiune mai veche</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Această caracteristică vă permite să instalați o anumită versiune dacă cea nouă are probleme.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Lipește sau trage aici...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Curățarea memoriei a fost declanșată.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Nu a fost găsită nicio versiune.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Programul de instalare a fost lansat.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Actualizare descărcată. Se repornește...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Vă rugăm să selectați o versiune validă.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Confirmați revenirea la versiunea precedentă</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Sigur doriți să reveniți la versiunea {0}?</value>
     </data>
 </root>

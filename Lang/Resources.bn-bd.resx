@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>ফাইল নির্বাচন করুন (আসল বা .hash ফাইল)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>অ্যাডভান্সড: পুরনো সংস্করণে ফিরে যান</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>নতুন সংস্করণে সমস্যা থাকলে এই ফিচারের মাধ্যমে আপনি নির্দিষ্ট সংস্করণ ইনস্টল করতে পারবেন।</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>এখানে পেস্ট বা ড্রপ করুন...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>মেমোরি ক্লিনআপ ট্রিগার করা হয়েছে।</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>কোনও রিলিজ পাওয়া যায়নি।</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>ইনস্টলার চালু হয়েছে।</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>আপডেট ডাউনলোড করা হয়েছে। পুনরারম্ভ হচ্ছে...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>দয়া করে একটি বৈধ সংস্করণ নির্বাচন করুন।</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>রোলব্যাক নিশ্চিত করুন</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>আপনি কি নিশ্চিত যে আপনি {0} সংস্করণে রোলব্যাক করতে চান?</value>
     </data>
 </root>

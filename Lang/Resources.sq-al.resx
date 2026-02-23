@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Zgjidh Skedarët (Origjinal ose skedarin .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>E avancuar: Kthehu në një version më të vjetër</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Ky funksion ju lejon të instaloni një version specifik nëse i riu ka probleme.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Ngjit ose Lësho këtu...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Filloi pastrimi i kujtesës.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Nuk u gjet asnjë version.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Instaluesi u nis.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Përditësimi u shkarkua. Duke u rinisur...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Ju lutemi zgjidhni një version të vlefshëm.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Konfirmo rikthimin</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Jeni i sigurt që doni të riktheheni në versionin {0}?</value>
     </data>
 </root>

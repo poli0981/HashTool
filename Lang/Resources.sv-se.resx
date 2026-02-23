@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Välj filer (Original eller .hash-fil)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Avancerat: Återgå till äldre version</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Denna funktion låter dig installera en specifik version om den nya har problem.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Klistra in eller släpp här...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Minnesrensning utlöst.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Ingen version hittades.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Installationsprogrammet startat.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Uppdatering nedladdad. Startar om...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Välj en giltig version.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Bekräfta återställning</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Är du säker på att du vill återställa till version {0}?</value>
     </data>
 </root>

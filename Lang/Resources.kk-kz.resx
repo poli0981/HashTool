@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Файлдарды таңдаңыз (Түпнұсқа немесе .hash файлы)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Қосымша: Ескі нұсқаға оралу</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Бұл мүмкіндік жаңа нұсқада ақаулар болған жағдайда белгілі бір нұсқаны орнатуға мүмкіндік береді.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Осында қойыңыз немесе тастаңыз...</value>
     </data>
@@ -735,22 +729,7 @@
     <data name="Msg_MemoryFreed">
         <value>Жадты тазалау іске қосылды.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Шығарылым табылмады.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Орнатқыш іске қосылды.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Жаңарту жүктелді. Қайта іске қосылуда...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Жарамды нұсқаны таңдаңыз.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Қайтаруды растау</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Шынымен {0} нұсқасына қайтарғыңыз келе ме?</value>
     </data>
 </root>

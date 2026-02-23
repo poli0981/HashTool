@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Файл сонгох (Эх файл эсвэл .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Нарийвчилсан: Хуучин хувилбар руу буцах</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Шинэ хувилбарт асуудал гарвал энэ функц нь тодорхой хувилбарыг суулгах боломжийг олгоно.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Энд буулгах эсвэл чирж авчрах...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Санах ойг цэвэрлэх үйл явц эхэллээ.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Хувилбар олдсонгүй.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Суулгагчийг ажиллууллаа.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Шинэчлэлтийг татаж авлаа. Дахин эхлүүлж байна...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Хүчинтэй хувилбарыг сонгоно уу.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Буцаалтыг баталгаажуулах</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Та {0} хувилбар руу буцаахыг хүсэж байна уу?</value>
     </data>
 </root>

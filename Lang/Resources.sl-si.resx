@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Izberite datoteke (Izvirna ali .hash datoteka)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Napredno: Vrnitev na starejšo različico</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Ta funkcija omogoča namestitev določene različice, če ima nova težave.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Prilepite ali spustite sem...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Čiščenje pomnilnika sproženo.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Ni najdene izdaje.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Namestitveni program zagnan.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Posodobitev prenesena. Ponovni zagon...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Izberite veljavno različico.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Potrdi povrnitev na prejšnjo različico</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Ali ste prepričani, da želite povrniti različico {0}?</value>
     </data>
 </root>

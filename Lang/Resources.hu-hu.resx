@@ -464,12 +464,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Fájlok kiválasztása (Eredeti vagy .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Haladó: Visszatérés régebbi verzióra</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Ez a funkció lehetővé teszi egy adott verzió telepítését, ha az újjal problémák vannak.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Beillesztés vagy Húzás ide...</value>
     </data>
@@ -735,22 +729,7 @@
     <data name="Msg_MemoryFreed">
         <value>Memóriatisztítás elindítva.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Nem található kiadás.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>A telepítő elindult.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Frissítés letöltve. Újraindítás...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Kérjük, válasszon érvényes verziót.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Visszaállítás megerősítése</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Biztosan visszaállítja a(z) {0} verziót?</value>
     </data>
 </root>

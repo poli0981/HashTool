@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Pilih Fail (Asal atau fail .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Lanjutan: Kembali ke Versi Lama</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Ciri ini membolehkan anda memasang versi tertentu jika versi baharu mempunyai masalah.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Tampal atau Lepaskan di sini...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Pembersihan memori dicetuskan.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Tiada keluaran ditemui.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Pemasang dilancarkan.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Kemas kini dimuat turun. Mulakan semula...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Sila pilih versi yang sah.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Sahkan Pengembalian</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Adakah anda pasti mahu kembali ke versi {0}?</value>
     </data>
 </root>

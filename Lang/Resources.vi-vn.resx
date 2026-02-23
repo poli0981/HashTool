@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Chọn tệp (Tệp gốc hoặc tệp .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Nâng cao: Quay về phiên bản cũ</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Tính năng này cho phép cài đặt một phiên bản cụ thể nếu bản mới bị lỗi.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Dán hoặc Thả vào đây...</value>
     </data>
@@ -733,23 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Đã kích hoạt dọn dẹp bộ nhớ.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Không tìm thấy :D</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Trình cài đặt đã được khởi chạy.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Bản cập nhật đã được tải xuống. Đang khởi động lại...</value>
-    </data>
-
-    <data name="Msg_InvalidVersion">
-        <value>Vui lòng chọn một phiên bản hợp lệ.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Xác nhận khôi phục</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Bạn có chắc chắn muốn khôi phục về phiên bản {0} không?</value>
     </data>
 </root>

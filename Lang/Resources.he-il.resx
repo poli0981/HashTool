@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>בחר קבצים (מקורי או קובץ .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>מתקדם: חזור לגרסה ישנה יותר</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>תכונה זו מאפשרת לך להתקין גרסה ספציפית אם בחדשה יש בעיות.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>הדבק או גרור לכאן...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>ניקוי זיכרון הופעל.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>לא נמצאה גרסה.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>המתקין הושק.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>העדכון הורד. מופעל מחדש...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>אנא בחר גרסה חוקית.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>אשר חזרה לגרסה הקודמת</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>האם אתה בטוח שברצונך לחזור לגרסה {0}?</value>
     </data>
 </root>

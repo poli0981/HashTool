@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Файлдарды тандаңыз (Түпнуска же .hash файлы)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Өркүндөтүлгөн: Эски версияга кайтуу</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Бул өзгөчөлүк жаңы версияда көйгөйлөр болсо, белгилүү бир версияны орнотууга мүмкүндүк берет.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Бул жерге чаптаңыз же таштаңыз...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Эстутумду тазалоо башталды.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Чыгарылыш табылган жок.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Орноткуч ишке киргизилди.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Жаңыртуу жүктөлүп алынды. Кайра иштетилүүдө...</value>
     </data>
-    <data name="Msg_InvalidVersion">
-        <value>Жарактуу версияны тандаңыз.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Кайтарууну ырастоо</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Чын эле {0} версиясына кайтаргыңыз келеби?</value>
-    </data>ka
 </root>

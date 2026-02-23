@@ -41,19 +41,5 @@
         <TextBlock Text="{Binding StatusMessage}"
                    Foreground="Gray" FontStyle="Italic" TextWrapping="Wrap" />
 
-        <Expander Header="{Binding Localization[Header_Fallback]}">
-            <StackPanel Spacing="10">
-                <TextBlock Text="{Binding Localization[Desc_Fallback]}" FontSize="12" Opacity="0.8" />
-                <Grid ColumnDefinitions="*, Auto">
-                    <ComboBox ItemsSource="{Binding AvailableVersions}"
-                              SelectedItem="{Binding SelectedRollbackVersion}"
-                              IsEnabled="{Binding !IsChecking}" HorizontalAlignment="Stretch" />
-                    <Button Grid.Column="1" Content="{Binding Localization[Btn_Install]}"
-                            Command="{Binding RollbackCommand}" IsEnabled="{Binding !IsChecking}"
-                            Margin="10,0,0,0" />
-                </Grid>
-            </StackPanel>
-        </Expander>
-
     </StackPanel>
 </UserControl>

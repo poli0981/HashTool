@@ -734,22 +734,7 @@
     <data name="Msg_MemoryFreed">
         <value>Pulizia della memoria avviata.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Nessuna versione trovata.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Programma di installazione avviato.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Aggiornamento scaricato. Riavvio in corso...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Seleziona una versione valida.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Conferma rollback</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Sei sicuro di voler eseguire il rollback alla versione {0}?</value>
     </data>
 </root>
