@@ -1,6 +1,7 @@
 # HashTool 🛠️
 
-[![Version](https://img.shields.io/badge/version-1.1.1-blue.svg)](https://github.com/poli0981/HashTool/releases/tag/1.1.1) [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![Downloads](https://img.shields.io/github/downloads/poli0981/HashTool/total.svg)](https://github.com/poli0981/HashTool/releases)
+[![Version](https://img.shields.io/badge/version-1.1.2-blue.svg)](https://github.com/poli0981/HashTool/releases/tag/1.1.2) [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) 
+[![Downloads](https://img.shields.io/github/downloads/poli0981/HashTool/total.svg)](https://github.com/poli0981/HashTool/releases)
 
 **A user-friendly, cross-platform desktop app (Windows & macOS) for generating, verifying, and managing file hashes — no terminal commands required.**
 

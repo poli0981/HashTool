@@ -40,7 +40,7 @@ public partial class AboutViewModel : ObservableObject
     // Basic Info
     public string AppName => "Hash Tool";
     public string Version => UpdateService.Instance.CurrentVersion;
-    public string AuthorName => "Poli0981"; // My name :D
+    public string AuthorName => "Poli0981";
     public string GitHubProfile => "https://github.com/poli0981";
     public string Copyright => $"© 2026 {AuthorName}. All rights reserved.";
 

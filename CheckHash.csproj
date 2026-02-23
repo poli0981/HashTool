@@ -6,9 +6,9 @@
         <ApplicationManifest>app.manifest</ApplicationManifest>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
 
-        <Version>1.1.1</Version>
-        <InformationalVersion>1.1.1</InformationalVersion>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <Version>1.1.2</Version>
+        <InformationalVersion>1.1.2</InformationalVersion>
+        <AssemblyVersion>1.1.2.0</AssemblyVersion>
 
         <AssemblyTitle>Hash Tool</AssemblyTitle>
 

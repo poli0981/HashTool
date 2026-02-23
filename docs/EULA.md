@@ -1,6 +1,6 @@
 # End User License Agreement (EULA) for Hash Tool
 
-**Version 1.1.1**  
+**Version 1.1.2**  
 **Last updated: February 2026**
 
 HashTool is a free, open-source desktop application licensed under the MIT License (see [LICENSE](LICENSE) file).
