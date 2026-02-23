@@ -1,6 +1,6 @@
 # Terms of Service (ToS) for HashTool
 
-**Version 1.1.2**  
+**Version 1.1.3**  
 **Last updated: February 2026**
 
 HashTool is free, open-source desktop software distributed under the **MIT License** (see LICENSE file for full text).
