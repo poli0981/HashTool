@@ -10,7 +10,6 @@ using Avalonia.Layout;
 using Avalonia.Media;
 using Material.Icons;
 using Material.Icons.Avalonia;
-using Markdown.Avalonia;
 
 namespace CheckHash.Services;
 
@@ -179,12 +178,8 @@ public static class MessageBoxHelper
                 VerticalScrollBarVisibility = ScrollBarVisibility.Auto
             };
 
-            var markdownViewer = new MarkdownScrollViewer
-            {
-                Markdown = message
-            };
-            
-            markdownScrollViewer.Content = markdownViewer;
+            var md = new Markdown.Avalonia.Markdown();
+            markdownScrollViewer.Content = md.Transform(message);
             contentControl = markdownScrollViewer;
         }
         else
