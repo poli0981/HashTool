@@ -464,12 +464,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Pilih Berkas (Asli atau .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Lanjutan: Kembali ke Versi Lama</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Fitur ini memungkinkan Anda memasang versi tertentu jika versi baru bermasalah.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Tempel atau Lepas di sini...</value>
     </data>
@@ -735,22 +729,7 @@
     <data name="Msg_MemoryFreed">
         <value>Pembersihan memori dipicu.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Tidak ditemukan rilis.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Installer diluncurkan.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Pembaruan diunduh. Memulai ulang...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Silakan pilih versi yang valid.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Konfirmasi Rollback</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Apakah Anda yakin ingin melakukan rollback ke versi {0}?</value>
     </data>
 </root>

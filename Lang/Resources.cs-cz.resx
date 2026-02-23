@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Vybrat soubory (Původní nebo .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Pokročilé: Návrat ke starší verzi</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Tato funkce umožňuje nainstalovat konkrétní verzi, pokud má nová problémy.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Vložit nebo přetáhnout sem...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Čištění paměti spuštěno.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Nenalezena žádná verze.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Instalační program spuštěn.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Aktualizace stažena. Restartování...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Vyberte platnou verzi.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Potvrdit vrácení zpět</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Jste si jisti, že chcete vrátit zpět verzi {0}?</value>
     </data>
 </root>

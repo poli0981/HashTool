@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>ជ្រើសរើសឯកសារ (ឯកសារដើម ឬឯកសារ .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>កម្រិតខ្ពស់៖ ត្រលប់ទៅកំណែចាស់</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>មុខងារនេះអនុញ្ញាតឱ្យអ្នកដំឡើងកំណែជាក់លាក់ប្រសិនបើកំណែថ្មីមានបញ្ហា។</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>បិទភ្ជាប់ ឬទម្លាក់ទីនេះ...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>ការសម្អាតអង្គចងចាំត្រូវបានចាប់ផ្តើម។</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>រកមិនឃើញការចេញផ្សាយទេ។</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>កម្មវិធីដំឡើងត្រូវបានដាក់ឱ្យដំណើរការ។</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>ការអាប់ដេតត្រូវបានទាញយក។ កំពុងចាប់ផ្តើមឡើងវិញ...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>សូមជ្រើសរើសកំណែដែលមានសុពលភាព។</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>បញ្ជាក់ការវិលត្រឡប់មកវិញ</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>តើអ្នកប្រាកដថាអ្នកចង់វិលត្រឡប់មកវិញទៅកំណែ {0} ដែរឬទេ?</value>
     </data>
 </root>

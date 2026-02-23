@@ -463,12 +463,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Valitse tiedostot (Alkuperäinen tai .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Edistynyt: Palaa vanhempaan versioon</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Tämän toiminnon avulla voit asentaa tietyn version, jos uudessa on ongelmia.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Liitä tai pudota tähän...</value>
     </data>
@@ -734,22 +728,7 @@
     <data name="Msg_MemoryFreed">
         <value>Muistin puhdistus käynnistetty.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Julkaisua ei löytynyt.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Asennusohjelma käynnistetty.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Päivitys ladattu. Käynnistetään uudelleen...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Valitse kelvollinen versio.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Vahvista palautus</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Haluatko varmasti palauttaa version {0}?</value>
     </data>
 </root>

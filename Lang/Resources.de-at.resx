@@ -733,22 +733,7 @@
     <data name="Msg_MemoryFreed">
         <value>Speicherbereinigung ausgelöst.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Keine Version gefunden.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Installationsprogramm gestartet.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Update heruntergeladen. Neustart...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Bitte wählen Sie eine gültige Version.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Rollback bestätigen</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Möchten Sie wirklich auf Version {0} zurücksetzen?</value>
     </data>
 </root>

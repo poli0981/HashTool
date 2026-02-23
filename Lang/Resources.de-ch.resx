@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Dateien wählen (Original oder .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Erweitert: Auf ältere Version zurücksetzen</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Diese Funktion erlaubt die Installation einer bestimmten Version, falls die neue Probleme macht.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Hier einfügen oder ablegen...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Speicherbereinigung ausgelöst.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Keine Version gefunden.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Installationsprogramm gestartet.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Update heruntergeladen. Neustart...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Bitte wählen Sie eine gültige Version.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Rollback bestätigen</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Möchten Sie wirklich auf Version {0} zurücksetzen?</value>
     </data>
 </root>

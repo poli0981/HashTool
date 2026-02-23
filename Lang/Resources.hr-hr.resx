@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Odaberi datoteke (Izvorna ili .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Napredno: Povratak na stariju verziju</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Ova značajka omogućuje instalaciju specifične verzije ako nova ima problema.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Zalijepi ili ispusti ovdje...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Čišćenje memorije je pokrenuto.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Nije pronađeno nijedno izdanje.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Instalacijski program pokrenut.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Ažuriranje preuzeto. Ponovno pokretanje...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Molimo odaberite valjanu verziju.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Potvrdi vraćanje na prethodnu verziju</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Jeste li sigurni da želite vratiti na verziju {0}?</value>
     </data>
 </root>

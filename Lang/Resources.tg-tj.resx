@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Файлҳоро интихоб кунед (Аслӣ ё файли .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Мукаммал: Бозгашт ба версияи кӯҳна</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Ин хусусият ба шумо имкон медиҳад версияи мушаххасро насб кунед, агар версияи нав мушкилот дошта бошад.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Дар ин ҷо часбонед ё гузоред...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Тозакунии хотира оғоз ёфт.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Ягон версия ёфт нашуд.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Насбкунанда ба кор андохта шуд.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Навсозӣ зеркашӣ карда шуд. Бозоғозӣ мешавад...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Лутфан версияи дурустро интихоб кунед.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Баргардонидани такрорро тасдиқ кунед</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Оё шумо мутмаин ҳастед, ки мехоҳед ба версияи {0} баргардонед?</value>
     </data>
 </root>

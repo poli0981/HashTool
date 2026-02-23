@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>اختر الملفات (الأصلية أو ملف .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>متقدم: العودة إلى إصدار أقدم</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>تتيح لك هذه الميزة تثبيت إصدار معين إذا كان الإصدار الجديد به مشاكل.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>الصق أو أفلت هنا...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>تم بدء تنظيف الذاكرة.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>لم يتم العثور على إصدار.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>تم تشغيل المُثبِّت.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>تم تنزيل التحديث. جارٍ إعادة التشغيل...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>الرجاء اختيار إصدار صالح.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>تأكيد التراجع</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>هل أنت متأكد من رغبتك في التراجع إلى الإصدار {0}؟</value>
     </data>
 </root>

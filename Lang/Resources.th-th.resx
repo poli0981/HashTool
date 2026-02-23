@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>เลือกไฟล์ (ไฟล์ต้นฉบับหรือไฟล์ .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>ขั้นสูง: ย้อนกลับเป็นเวอร์ชันเก่า</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>คุณสมบัตินี้ช่วยให้คุณติดตั้งเวอร์ชันเฉพาะได้หากเวอร์ชันใหม่มีปัญหา</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>วางหรือลากมาที่นี่...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>เริ่มต้นการล้างหน่วยความจำแล้ว</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>ไม่พบเวอร์ชัน</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>เริ่มการติดตั้งแล้ว</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>ดาวน์โหลดการอัปเดตเสร็จแล้ว กำลังเริ่มต้นใหม่...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>โปรดเลือกเวอร์ชันที่ถูกต้อง</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>ยืนยันการย้อนกลับ</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>คุณแน่ใจหรือไม่ว่าต้องการย้อนกลับไปยังเวอร์ชัน {0}?</value>
     </data>
 </root>

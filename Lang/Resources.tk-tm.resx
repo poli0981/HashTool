@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Faýllary saýlaň (Asyl ýa-da .hash faýly)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Giňişleýin: Köne wersiýa gaýdyp gel</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Täze wersiýada mesele bar bolsa, bu aýratynlyk belli bir wersiýany gurnamaga mümkinçilik berýär.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Şu ýere ýelmeň ýa-da taşlaň...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Ýat arassalanmagy başlady.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Hiç hili wersiýa tapylmady.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Gurnawçy işe girizildi.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Täzelenme göçürilip alyndy. Gaýtadan işe girizilýär...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Dogry wersiýa saýlaň.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Gaýtarmagy tassyklaň</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value> {0} wersiýasyna gaýtarmak isleýändigiňize ynanýarsyňyzmy?</value>
     </data>
 </root>

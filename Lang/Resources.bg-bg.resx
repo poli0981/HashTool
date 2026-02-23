@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Избор на файлове (Оригинал или .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Разширени: Връщане към по-стара версия</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Тази функция позволява инсталиране на конкретна версия при проблеми.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Постави/Пусни тук...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Почистването на паметта е стартирано.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Няма намерена версия.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Инсталаторът е стартиран.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Актуализацията е изтеглена. Рестартиране...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Моля, изберете валидна версия.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Потвърждаване на връщането назад</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Наистина ли искате да се върнете към версия {0}?</value>
     </data>
 </root>

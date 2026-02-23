@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Pasirinkite failus (Originalų arba .hash failą)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Išplėstiniai: Grįžti prie senesnės versijos</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Ši funkcija leidžia įdiegti konkrečią versiją, jei naujoji turi problemų.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Įklijuokite arba vilkite čia...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Atminties valymas pradėtas.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Nerasta jokių leidimų.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Diegimo programa paleista.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Atnaujinimas atsisiųstas. Paleidžiama iš naujo...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Pasirinkite galiojančią versiją.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Patvirtinti panaikinimą</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Ar tikrai norite panaikinti panaikinimą į {0} versiją?</value>
     </data>
 </root>

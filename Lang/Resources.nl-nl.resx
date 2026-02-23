@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Selecteer bestanden (Origineel of .hash bestand)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Geavanceerd: Terugkeren naar oudere versie</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Met deze functie kun je een specifieke versie installeren als de nieuwe problemen geeft.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Plakken of hierheen slepen...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Geheugenopruiming geactiveerd.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Geen release gevonden.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Installatieprogramma gestart.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Update gedownload. Opnieuw opstarten...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Selecteer een geldige versie.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Bevestig terugdraaien</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Weet u zeker dat u wilt terugdraaien naar versie {0}?</value>
     </data>
 </root>

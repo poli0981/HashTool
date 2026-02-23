@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>選擇檔案 (原始檔案或 .hash 檔案)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>進階：回復到舊版本</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>如果新版本發生問題，此功能允許您安裝特定的舊版本。</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>在此貼上或拖放...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>已觸發記憶體清理。</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>未找到版本。 </value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>安裝程式已啟動。 </value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>更新已下載。正在重啟...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>請選擇有效版本。 </value>
-    </data>
-    <data name="Title_Rollback">
-        <value>確認回滾</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>確定要回滾到版本 {0} 嗎？ </value>
     </data>
 </root>

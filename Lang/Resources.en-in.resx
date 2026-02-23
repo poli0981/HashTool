@@ -461,12 +461,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Select Files (Original or .hash File)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Advanced: Fallback to Older Version</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>This feature allows you to install a specific version if the new one has issues.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Paste/Drop here...</value>
     </data>
@@ -731,22 +725,7 @@
     <data name="Tip_ClearHash" xml:space="preserve">
         <value>Clear Hash</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>No release found.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Installer launched.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Update downloaded. Restarting...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Please select a valid version.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Confirm Rollback</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Are you sure you want to rollback to version {0}?</value>
     </data>
 </root>

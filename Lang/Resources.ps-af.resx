@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>فایلونه وټاکئ (اصلي یا .hash فایل)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>پرمختللی: زړې نسخې ته بیرته ستنیدل</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>دا ځانګړتیا تاسو ته اجازه درکوي یوه ځانګړې نسخه نصب کړئ که نوې نسخه ستونزې ولري.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>دلته یې پیسټ یا واچوئ...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>د حافظې پاکول پیل شول.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>هیڅ خپرونه ونه موندل شوه.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>انسټالر پیل شو.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>تازه کول ډاونلوډ شوي. بیا پیل کیږي...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>مهرباني وکړئ یو باوري نسخه غوره کړئ.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>رول بیک تایید کړئ</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>ایا تاسو ډاډه یاست چې غواړئ {0} نسخه ته بیرته لاړ شئ؟</value>
     </data>
 </root>

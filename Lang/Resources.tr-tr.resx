@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Dosyaları Seçin (Orijinal veya .hash dosyası)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Gelişmiş: Eski sürüme geri dön</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Bu özellik, yenisinde sorun varsa belirli bir sürümü yüklemenizi sağlar.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Buraya Yapıştırın veya Bırakın...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Bellek temizliği tetiklendi.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Sürüm bulunamadı.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Yükleyici başlatıldı.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Güncelleme indirildi. Yeniden başlatılıyor...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Lütfen geçerli bir sürüm seçin.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Geri Almayı Onayla</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>{0} sürümüne geri dönmek istediğinizden emin misiniz?</value>
     </data>
 </root>

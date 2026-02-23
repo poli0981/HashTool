@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>ເລືອກໄຟລ໌ (ໄຟລ໌ຕົ້ນສະບັບ ຫຼື ໄຟລ໌ .hash)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>ຂັ້ນສູງ: ກັບໄປໃຊ້ເວີຊັນເກົ່າ</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>ຄຸນສົມບັດນີ້ຊ່ວຍໃຫ້ທ່ານຕິດຕັ້ງເວີຊັນສະເພາະໄດ້ ຖ້າເວີຊັນໃໝ່ມີບັນຫາ.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>ວາງ ຫຼື ລາກມາໄວ້ທີ່ນີ້...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>ເລີ່ມຕົ້ນການທຳຄວາມສະອາດໜ່ວຍຄວາມຈຳແລ້ວ.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>ບໍ່ພົບລຸ້ນ.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>ຕົວຕິດຕັ້ງໄດ້ເປີດໃຊ້ແລ້ວ.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>ດາວໂຫລດອັບເດດແລ້ວ. ກຳລັງເລີ່ມຕົ້ນໃໝ່...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>ກະລຸນາເລືອກລຸ້ນທີ່ຖືກຕ້ອງ.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>ຢືນຢັນການຍ້ອນກັບ</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>ທ່ານແນ່ໃຈບໍ່ວ່າທ່ານຕ້ອງການຍ້ອນກັບໄປໃຊ້ລຸ້ນ {0}?</value>
     </data>
 </root>

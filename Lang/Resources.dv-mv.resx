@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>ފައިލް ނަގާ (އަސްލު ނުވަތަ .hash ފައިލް)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>އެޑްވާންސްޑް: ކުރީގެ ވާޝަންއަކަށް ބަދަލުކުރޭ</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>އާ ވާޝަންގައި މައްސަލައެއް އުޅޭނަމަ ވަކި ވާޝަންއެއް އިންސްޓޯލް ކުރެވޭނެ.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>މިތަނަށް ޕޭސްޓް ނުވަތަ ޑްރޮޕްކުރޭ...</value>
     </data>
@@ -733,5 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>މެމޮރީ ސާފުކުރަން ފަށައިފި.</value>
     </data>
-    // New entries go here (remember to update the version number in the .csproj file!)
 </root>

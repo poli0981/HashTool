@@ -462,12 +462,6 @@
     <data name="Dialog_SelectCheckFiles">
         <value>Veldu skrár (Upprunalega eða .hash skrá)</value>
     </data>
-    <data name="Header_Fallback">
-        <value>Ítarlegt: Fara aftur í eldri útgáfu</value>
-    </data>
-    <data name="Desc_Fallback">
-        <value>Þessi eiginleiki gerir þér kleift að setja upp ákveðna útgáfu ef sú nýja er með vandamál.</value>
-    </data>
     <data name="Watermark_PasteDrop">
         <value>Líma eða sleppa hér...</value>
     </data>
@@ -733,22 +727,7 @@
     <data name="Msg_MemoryFreed">
         <value>Minni hreinsun hafin.</value>
     </data>
-    <data name="Msg_VersionNotFound">
-        <value>Engin útgáfa fannst.</value>
-    </data>
-    <data name="Status_InstallerLaunched">
-        <value>Uppsetningarforrit ræst.</value>
-    </data>
     <data name="Status_UpdateRestarting">
         <value>Uppfærsla sótt. Endurræsir...</value>
-    </data>
-    <data name="Msg_InvalidVersion">
-        <value>Vinsamlegast veldu gilda útgáfu.</value>
-    </data>
-    <data name="Title_Rollback">
-        <value>Staðfesta afturköllun</value>
-    </data>
-    <data name="Msg_RollbackConfirm">
-        <value>Ertu viss um að þú viljir afturkalla útgáfu {0}?</value>
     </data>
 </root>
