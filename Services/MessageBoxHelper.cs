@@ -69,7 +69,7 @@ public static class MessageBoxHelper
         };
     }
 
-    private static (Window window, StackPanel contentPanel) CreateBaseWindow(string title, MessageBoxIcon icon, double width = 450)
+    private static (Window window, StackPanel contentPanel) CreateBaseWindow(string title, MessageBoxIcon icon, double width = 450, bool canResize = false)
     {
         var window = new Window
         {
@@ -77,7 +77,7 @@ public static class MessageBoxHelper
             Width = width,
             SizeToContent = SizeToContent.Height,
             WindowStartupLocation = WindowStartupLocation.CenterOwner,
-            CanResize = false,
+            CanResize = canResize,
             TransparencyLevelHint = new[] { WindowTransparencyLevel.Transparent, WindowTransparencyLevel.None },
             Background = Brushes.Transparent
         };
@@ -172,15 +172,13 @@ public static class MessageBoxHelper
 
         if (isMarkdown)
         {
-            var markdownScrollViewer = new ScrollViewer
+            contentControl = new TextBox
             {
-                MaxHeight = 300, // Limit height to allow scrolling for long notes
-                VerticalScrollBarVisibility = ScrollBarVisibility.Auto
+                Text = message,
+                IsReadOnly = true,
+                TextWrapping = TextWrapping.Wrap,
+                MaxHeight = 500
             };
-
-            var md = new Markdown.Avalonia.Markdown();
-            markdownScrollViewer.Content = md.Transform(message);
-            contentControl = markdownScrollViewer;
         }
         else
         {
@@ -235,8 +233,8 @@ public static class MessageBoxHelper
     public static async Task<bool> ShowConfirmationAsync(string title, string message, string yesText = "Yes",
         string noText = "No", MessageBoxIcon icon = MessageBoxIcon.Question, bool isMarkdown = false)
     {
-        var width = isMarkdown ? 600 : 450;
-        var (window, contentPanel) = CreateBaseWindow(title, icon, width);
+        var width = isMarkdown ? 800 : 450;
+        var (window, contentPanel) = CreateBaseWindow(title, icon, width, canResize: isMarkdown);
 
         // Content
         var messageGrid = CreateMessageContent(message, icon, isMarkdown);
