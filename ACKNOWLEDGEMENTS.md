@@ -24,8 +24,6 @@ HashTool uses the following open-source libraries:
 - [CommunityToolkit.Mvvm](https://github.com/CommunityToolkit/dotnet) version 8.2.1 – Licensed under the MIT License.
 - [Material.Icons.Avalonia](https://github.com/AvaloniaUtils/Material.Icons.Avalonia) version 2.4.1 – Licensed under the MIT License.
 - [Velopack](https://github.com/velopack/velopack) version 0.0.1298 – Licensed under the MIT License.
-- [Markdown.Avalonia](https://github.com/whistyun/Markdown.Avalonia) version 11.0.3-a1 – Licensed under the MIT License.
-
 Thank you to all the maintainers and contributors of these projects. Your work is greatly appreciated.
 
 _© 2026 poli0981. All rights reserved._

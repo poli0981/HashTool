@@ -2,7 +2,6 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Markup.Xaml;
@@ -18,12 +17,12 @@ public partial class CheckHashView : UserControl
         InitializeComponent();
     }
 
+    private LocalizationService L => LocalizationService.Instance;
+
     private void InitializeComponent()
     {
         AvaloniaXamlLoader.Load(this);
     }
-
-    private LocalizationService L => LocalizationService.Instance;
 
     private void OnDragEnter(object? sender, DragEventArgs e)
     {

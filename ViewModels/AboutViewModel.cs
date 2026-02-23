@@ -1,5 +1,4 @@
 using System.Collections.ObjectModel;
-using System.Reflection;
 using CheckHash.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -21,20 +20,6 @@ public partial class AboutViewModel : ObservableObject
                 UpdateDocuments();
             }
         };
-    }
-
-    private void UpdateDocuments()
-    {
-        Documents.Clear();
-        const string baseUrl = "https://github.com/poli0981/HashTool/blob/main";
-
-        Documents.Add(new DocumentItem(Localization["Doc_PrivacyPolicy"], $"{baseUrl}/docs/PrivacyPolicy.md"));
-        Documents.Add(new DocumentItem(Localization["Doc_ToS"], $"{baseUrl}/docs/ToS.md"));
-        Documents.Add(new DocumentItem(Localization["Doc_EULA"], $"{baseUrl}/docs/EULA.md"));
-        Documents.Add(new DocumentItem(Localization["Doc_Disclaimer"], $"{baseUrl}/docs/DISCLAIMER.md"));
-        Documents.Add(new DocumentItem(Localization["Doc_Readme"], $"{baseUrl}/README.md"));
-        Documents.Add(new DocumentItem(Localization["Doc_Changelog"], $"{baseUrl}/CHANGELOG.md"));
-        Documents.Add(new DocumentItem(Localization["Doc_Credit"], $"{baseUrl}/ACKNOWLEDGEMENTS.md"));
     }
 
     // Basic Info
@@ -66,9 +51,22 @@ public partial class AboutViewModel : ObservableObject
         new LibraryItem("CommunityToolkit.Mvvm Ver 8.2.1", "MIT License", "https://github.com/CommunityToolkit/dotnet"),
         new LibraryItem("Material.Icons.Avalonia Ver 2.4.1", "MIT License",
             "https://github.com/AvaloniaUtils/Material.Icons.Avalonia"),
-        new LibraryItem("Velopack version 0.0.1298", "MIT License", "https://github.com/velopack/velopack"),
-        new LibraryItem("Markdown.Avalonia version 11.0.3-a1", "MIT License", "https://github.com/whistyun/Markdown.Avalonia")
+        new LibraryItem("Velopack version 0.0.1298", "MIT License", "https://github.com/velopack/velopack")
     };
+
+    private void UpdateDocuments()
+    {
+        Documents.Clear();
+        const string baseUrl = "https://github.com/poli0981/HashTool/blob/main";
+
+        Documents.Add(new DocumentItem(Localization["Doc_PrivacyPolicy"], $"{baseUrl}/docs/PrivacyPolicy.md"));
+        Documents.Add(new DocumentItem(Localization["Doc_ToS"], $"{baseUrl}/docs/ToS.md"));
+        Documents.Add(new DocumentItem(Localization["Doc_EULA"], $"{baseUrl}/docs/EULA.md"));
+        Documents.Add(new DocumentItem(Localization["Doc_Disclaimer"], $"{baseUrl}/docs/DISCLAIMER.md"));
+        Documents.Add(new DocumentItem(Localization["Doc_Readme"], $"{baseUrl}/README.md"));
+        Documents.Add(new DocumentItem(Localization["Doc_Changelog"], $"{baseUrl}/CHANGELOG.md"));
+        Documents.Add(new DocumentItem(Localization["Doc_Credit"], $"{baseUrl}/ACKNOWLEDGEMENTS.md"));
+    }
 
     // Open URL in default browser of user
     [RelayCommand]
@@ -80,4 +78,5 @@ public partial class AboutViewModel : ObservableObject
 }
 
 public record LibraryItem(string Name, string License, string Url);
+
 public record DocumentItem(string Name, string Url);

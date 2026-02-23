@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using CheckHash.Models;
 
 namespace CheckHash.Services;
 
@@ -34,8 +33,10 @@ public class ProcessingStrategyService
                 result[2].Add(item);
             }
         }
+
         return result;
     }
+
     public int GetBufferSize(long size, HashType algorithm)
     {
         if (algorithm == HashType.BLAKE3)

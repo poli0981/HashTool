@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
@@ -24,26 +23,25 @@ public class FontSettingsData
 
 public partial class FontService : ObservableObject
 {
-    private readonly string _settingsFile;
+    private readonly Dictionary<string, FontFamily> _fontCache = new(StringComparer.OrdinalIgnoreCase);
     private readonly string _logDir;
     private readonly string _logFile;
-
-    private readonly Dictionary<string, FontFamily> _fontCache = new(StringComparer.OrdinalIgnoreCase);
+    private readonly string _settingsFile;
 
     [ObservableProperty] private double _baseFontSize = 14.0;
+
+    private bool _hasCheckedSettingsDir;
 
     [ObservableProperty] private bool _isAutoFont = true;
 
     private bool _isLoading = true;
 
     [ObservableProperty] private bool _isLockedFont;
+    private CancellationTokenSource? _saveLogCts;
+    private CancellationTokenSource? _saveSettingsCts;
 
     [ObservableProperty] private FontFamily _selectedFont;
     [ObservableProperty] private double _uiScale = 1.0;
-
-    private bool _hasCheckedSettingsDir;
-    private CancellationTokenSource? _saveSettingsCts;
-    private CancellationTokenSource? _saveLogCts;
 
     public FontService()
     {

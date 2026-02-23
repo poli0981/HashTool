@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -27,14 +26,12 @@ public partial class LoggerService : ObservableObject
 
     private readonly string _logBaseDir;
     private readonly Channel<LogWriteRequest> _logChannel;
-    private readonly Channel<string> _uiLogChannel = Channel.CreateUnbounded<string>();
     private readonly List<(string Path, string Placeholder)> _replacements;
+    private readonly Channel<string> _uiLogChannel = Channel.CreateUnbounded<string>();
 
     // Settings
     [ObservableProperty] private bool _isRecording = true;
     [ObservableProperty] private bool _isSavingDebugLog;
-
-    private record struct LogWriteRequest(string Directory, string Filename, string Content);
 
     public LoggerService()
     {
@@ -160,6 +157,7 @@ public partial class LoggerService : ObservableObject
                 batch.Add(msg);
                 if (batch.Count >= 1000) break;
             }
+
             if (batch.Count == 0) continue;
 
             var fileGroups = batch.GroupBy(x => Path.Combine(x.Directory, x.Filename));
@@ -173,6 +171,7 @@ public partial class LoggerService : ObservableObject
                     {
                         sb.AppendLine(item.Content);
                     }
+
                     await File.AppendAllTextAsync(group.Key, sb.ToString());
                 }
                 catch
@@ -182,4 +181,6 @@ public partial class LoggerService : ObservableObject
             }
         }
     }
+
+    private record struct LogWriteRequest(string Directory, string Filename, string Content);
 }

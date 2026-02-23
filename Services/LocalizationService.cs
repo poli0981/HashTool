@@ -9,23 +9,23 @@ using System.Resources;
 using System.Text.Json;
 using System.Threading;
 using Avalonia.Media;
-using CheckHash.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace CheckHash.Services;
 
 public partial class LocalizationService : ObservableObject
 {
-    private readonly ResourceManager _resourceManager;
+    private static readonly HashSet<string> _rtlLanguages = new()
+        { "ar", "he", "fa", "ur", "yi", "ps", "dv", "ug", "ku", "sd" };
+
     private readonly ConcurrentDictionary<string, string> _cache = new();
+    private readonly ResourceManager _resourceManager;
     private readonly CultureInfo _systemCulture;
     private readonly CultureInfo _systemUICulture;
     private CultureInfo _currentCulture = CultureInfo.InvariantCulture;
     [ObservableProperty] private FlowDirection _flowDirection = FlowDirection.LeftToRight;
 
     [ObservableProperty] private LanguageItem _selectedLanguage;
-
-    private static readonly HashSet<string> _rtlLanguages = new() { "ar", "he", "fa", "ur", "yi", "ps", "dv", "ug", "ku", "sd" };
 
     public LocalizationService()
     {
@@ -41,6 +41,25 @@ public partial class LocalizationService : ObservableObject
     public static LocalizationService Instance { get; } = new();
 
     public List<LanguageItem> AvailableLanguages { get; } = LoadLanguages();
+
+    public string this[string key]
+    {
+        get
+        {
+            return _cache.GetOrAdd(key, k =>
+            {
+                try
+                {
+                    var str = _resourceManager.GetString(k, _currentCulture);
+                    return string.IsNullOrEmpty(str) ? $"[{k}]" : str;
+                }
+                catch
+                {
+                    return $"[{k}]";
+                }
+            });
+        }
+    }
 
     private static List<LanguageItem> LoadLanguages()
     {
@@ -77,25 +96,6 @@ public partial class LocalizationService : ObservableObject
             new("Auto (System)", "auto"),
             new("English (US)", "en-US")
         };
-    }
-
-    public string this[string key]
-    {
-        get
-        {
-            return _cache.GetOrAdd(key, k =>
-            {
-                try
-                {
-                    var str = _resourceManager.GetString(k, _currentCulture);
-                    return string.IsNullOrEmpty(str) ? $"[{k}]" : str;
-                }
-                catch
-                {
-                    return $"[{k}]";
-                }
-            });
-        }
     }
 
     partial void OnSelectedLanguageChanged(LanguageItem value)

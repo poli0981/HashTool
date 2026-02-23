@@ -1,12 +1,7 @@
-using System;
-using System.IO;
 using System.Linq;
-using System.Text.RegularExpressions;
-using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Markup.Xaml;
-using CheckHash.Services;
 using CheckHash.ViewModels;
 
 namespace CheckHash.Views;

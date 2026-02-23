@@ -1,11 +1,9 @@
-using System;
 using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Controls.Primitives;
 using Avalonia.Data;
-using Avalonia.Input;
 using Avalonia.Layout;
 using Avalonia.Media;
 using Material.Icons;
@@ -69,7 +67,8 @@ public static class MessageBoxHelper
         };
     }
 
-    private static (Window window, StackPanel contentPanel) CreateBaseWindow(string title, MessageBoxIcon icon, double width = 450, bool canResize = false)
+    private static (Window window, StackPanel contentPanel) CreateBaseWindow(string title, MessageBoxIcon icon,
+        double width = 450, bool canResize = false)
     {
         var window = new Window
         {
@@ -135,7 +134,8 @@ public static class MessageBoxHelper
         if (Application.Current != null)
         {
             titleBar.Bind(Border.BackgroundProperty, Application.Current.GetResourceObservable("AppBackgroundBrush"));
-            windowBorder.Bind(Border.BackgroundProperty, Application.Current.GetResourceObservable("PaneBackgroundBrush"));
+            windowBorder.Bind(Border.BackgroundProperty,
+                Application.Current.GetResourceObservable("PaneBackgroundBrush"));
             windowBorder.Bind(Border.BorderBrushProperty, Application.Current.GetResourceObservable("HighlightBrush"));
         }
         else
@@ -287,7 +287,8 @@ public static class MessageBoxHelper
     }
 
     public static async Task<(bool Confirmed, bool IsChecked)> ShowConfirmationWithCheckboxAsync(
-        string title, string message, string checkboxText, string yesText = "Yes", string noText = "No", MessageBoxIcon icon = MessageBoxIcon.Question)
+        string title, string message, string checkboxText, string yesText = "Yes", string noText = "No",
+        MessageBoxIcon icon = MessageBoxIcon.Question)
     {
         var (window, contentPanel) = CreateBaseWindow(title, icon);
 
