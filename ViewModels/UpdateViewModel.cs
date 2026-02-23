@@ -23,10 +23,8 @@ public partial class UpdateViewModel : ObservableObject
     [ObservableProperty] private bool _isDownloading;
     [ObservableProperty] private bool _isUpdateAvailable;
     [ObservableProperty] private LocalizationProxy _localization = new(LocalizationService.Instance);
-    [ObservableProperty] private string _rollbackVersion;
 
     [ObservableProperty] private int _selectedChannelIndex;
-    [ObservableProperty] private string? _selectedRollbackVersion;
     [ObservableProperty] private string _statusMessage;
 
     public UpdateViewModel()
@@ -44,7 +42,6 @@ public partial class UpdateViewModel : ObservableObject
         };
 
         CheckPreReleasesAvailability();
-        LoadAvailableVersions();
     }
 
     private LocalizationService L => LocalizationService.Instance;
@@ -53,26 +50,6 @@ public partial class UpdateViewModel : ObservableObject
     private async void CheckPreReleasesAvailability()
     {
         IsDevChannelEnabled = await _updateService.HasPreReleasesAsync();
-    }
-
-    private async void LoadAvailableVersions()
-    {
-        try
-        {
-            var versions = await _updateService.GetAvailableVersionsAsync();
-            AvailableVersions.Clear();
-            foreach (var v in versions)
-            {
-                if (v != _updateService.CurrentVersion.ToString())
-                {
-                    AvailableVersions.Add(v);
-                }
-            }
-        }
-        catch
-        {
-            // Ignore
-        }
     }
 
     async partial void OnSelectedChannelIndexChanged(int value)
@@ -232,65 +209,6 @@ public partial class UpdateViewModel : ObservableObject
             {
                 IsChecking = false;
             }
-        }
-    }
-
-    [RelayCommand]
-    private async Task Rollback()
-    {
-        if (string.IsNullOrWhiteSpace(SelectedRollbackVersion))
-        {
-            await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_InvalidVersion"], MessageBoxIcon.Error);
-            return;
-        }
-
-        Logger.Log($"Attempting rollback to version {SelectedRollbackVersion}...");
-        IsChecking = true;
-        StatusMessage = L["Status_Checking"];
-
-        try
-        {
-            var url = await _updateService.GetSpecificVersionUrlAsync(SelectedRollbackVersion);
-
-            if (url != null)
-            {
-                var result = await MessageBoxHelper.ShowConfirmationAsync(L["Title_Rollback"],
-                    string.Format(L["Msg_RollbackConfirm"], SelectedRollbackVersion), L["Btn_Install"], L["Btn_No"],
-                    MessageBoxIcon.Warning);
-
-                if (result)
-                {
-                    StatusMessage = L["Status_Installing"];
-                    IsDownloading = true;
-                    DownloadProgress = 0;
-
-                    await _updateService.DownloadAndRunInstallerAsync(url,
-                        progress => { DownloadProgress = progress; });
-
-                    StatusMessage = L["Status_InstallerLaunched"];
-                    Logger.Log("Installer launched for rollback.");
-                }
-                else
-                {
-                    Logger.Log("Rollback is cancelled.");
-                }
-            }
-            else
-            {
-                Logger.Log($"Version {SelectedRollbackVersion} not found or no installer available.", LogLevel.Error);
-                await MessageBoxHelper.ShowAsync(L["Msg_Error"],
-                    string.Format(L["Msg_VersionNotFound"], SelectedRollbackVersion), MessageBoxIcon.Error);
-            }
-        }
-        catch (Exception ex)
-        {
-            StatusMessage = string.Format(L["Status_CheckError"], ex.Message);
-            Logger.Log($"Rollback check failed: {ex.Message}", LogLevel.Error);
-        }
-        finally
-        {
-            IsChecking = false;
-            IsDownloading = false;
         }
     }
 
