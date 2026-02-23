@@ -729,7 +729,4 @@
     <data name="Msg_MemoryFreed">
         <value>මතකය පිරිසිදු කිරීම ආරම්භ කරන ලදී.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>යාවත්කාලීන කිරීම බාගත කර ඇත. නැවත ආරම්භ කරමින්...</value>
-    </data>
 </root>

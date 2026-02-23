@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Čišćenje memorije je pokrenuto.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Ažuriranje preuzeto. Ponovno pokretanje...</value>
-    </data>
 </root>

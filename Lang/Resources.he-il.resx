@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>ניקוי זיכרון הופעל.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>העדכון הורד. מופעל מחדש...</value>
-    </data>
 </root>

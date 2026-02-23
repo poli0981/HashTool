@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Minni hreinsun hafin.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Uppfærsla sótt. Endurræsir...</value>
-    </data>
 </root>

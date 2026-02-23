@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Atmiņas tīrīšana aktivizēta.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Atjauninājums lejupielādēts. Notiek restartēšana...</value>
-    </data>
 </root>

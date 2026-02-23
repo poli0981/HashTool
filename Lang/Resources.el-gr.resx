@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Ενεργοποιήθηκε η εκκαθάριση μνήμης.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Λήψη ενημέρωσης. Επανεκκίνηση...</value>
-    </data>
 </root>

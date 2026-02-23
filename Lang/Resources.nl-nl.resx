@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Geheugenopruiming geactiveerd.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Update gedownload. Opnieuw opstarten...</value>
-    </data>
 </root>

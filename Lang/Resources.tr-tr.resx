@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Bellek temizliği tetiklendi.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Güncelleme indirildi. Yeniden başlatılıyor...</value>
-    </data>
 </root>

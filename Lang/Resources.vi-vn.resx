@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Đã kích hoạt dọn dẹp bộ nhớ.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Bản cập nhật đã được tải xuống. Đang khởi động lại...</value>
-    </data>
 </root>

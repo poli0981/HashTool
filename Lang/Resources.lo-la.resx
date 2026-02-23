@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>ເລີ່ມຕົ້ນການທຳຄວາມສະອາດໜ່ວຍຄວາມຈຳແລ້ວ.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>ດາວໂຫລດອັບເດດແລ້ວ. ກຳລັງເລີ່ມຕົ້ນໃໝ່...</value>
-    </data>
 </root>

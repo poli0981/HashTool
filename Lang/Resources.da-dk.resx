@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Hukommelsesoprydning udløst.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Opdatering downloadet. Genstarter...</value>
-    </data>
 </root>

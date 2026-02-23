@@ -728,7 +728,4 @@
     <data name="Msg_MemoryFreed">
         <value>Muistin puhdistus käynnistetty.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Päivitys ladattu. Käynnistetään uudelleen...</value>
-    </data>
 </root>

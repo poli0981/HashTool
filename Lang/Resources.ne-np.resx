@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>मेमोरी सरसफाई सुरु गरियो।</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>अपडेट डाउनलोड भयो। पुन: सुरु हुँदैछ...</value>
-    </data>
 </root>

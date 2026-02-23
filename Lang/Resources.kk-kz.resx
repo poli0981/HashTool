@@ -729,7 +729,4 @@
     <data name="Msg_MemoryFreed">
         <value>Жадты тазалау іске қосылды.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Жаңарту жүктелді. Қайта іске қосылуда...</value>
-    </data>
 </root>

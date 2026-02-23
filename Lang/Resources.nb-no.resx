@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Minneopprydding utløst.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Oppdatering lastet ned. Starter på nytt...</value>
-    </data>
 </root>

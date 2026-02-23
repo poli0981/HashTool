@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>মেমোরি ক্লিনআপ ট্রিগার করা হয়েছে।</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>আপডেট ডাউনলোড করা হয়েছে। পুনরারম্ভ হচ্ছে...</value>
-    </data>
 </root>

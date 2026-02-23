@@ -736,7 +736,4 @@
     <data name="Msg_MemoryFreed">
         <value>Memory cleanup triggered.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Update downloaded. Restarting...</value>
-    </data>
 </root>

@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Ýat arassalanmagy başlady.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Täzelenme göçürilip alyndy. Gaýtadan işe girizilýär...</value>
-    </data>
 </root>

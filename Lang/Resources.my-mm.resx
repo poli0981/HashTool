@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>မှတ်ဉာဏ် ရှင်းလင်းခြင်း စတင်နေပြီ။</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>အပ်ဒိတ်ကို ဒေါင်းလုဒ်လုပ်ပြီးပါပြီ။ ပြန်လည်စတင်နေပါပြီ...</value>
-    </data>
 </root>

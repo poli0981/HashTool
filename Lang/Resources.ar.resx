@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>تم بدء تنظيف الذاكرة.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>تم تنزيل التحديث. جارٍ إعادة التشغيل...</value>
-    </data>
 </root>

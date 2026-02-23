@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Limpieza de memoria activada.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Actualización descargada. Reiniciando...</value>
-    </data>
 </root>

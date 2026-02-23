@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Pembersihan memori dicetuskan.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Kemas kini dimuat turun. Mulakan semula...</value>
-    </data>
 </root>

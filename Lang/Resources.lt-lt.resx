@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Atminties valymas pradėtas.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Atnaujinimas atsisiųstas. Paleidžiama iš naujo...</value>
-    </data>
 </root>

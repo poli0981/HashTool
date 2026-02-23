@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Rozpoczęto czyszczenie pamięci.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Pobrano aktualizację. Ponowne uruchamianie...</value>
-    </data>
 </root>

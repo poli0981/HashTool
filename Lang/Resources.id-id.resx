@@ -729,7 +729,4 @@
     <data name="Msg_MemoryFreed">
         <value>Pembersihan memori dipicu.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Pembaruan diunduh. Memulai ulang...</value>
-    </data>
 </root>
