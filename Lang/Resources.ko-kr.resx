@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>메모리 정리가 트리거되었습니다.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>업데이트가 다운로드되었습니다. 다시 시작하는 중...</value>
-    </data>
 </root>

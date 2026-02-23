@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Speicherbereinigung ausgelöst.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Update heruntergeladen. Neustart...</value>
-    </data>
 </root>

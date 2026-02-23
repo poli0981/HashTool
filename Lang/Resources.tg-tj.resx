@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Тозакунии хотира оғоз ёфт.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Навсозӣ зеркашӣ карда шуд. Бозоғозӣ мешавад...</value>
-    </data>
 </root>

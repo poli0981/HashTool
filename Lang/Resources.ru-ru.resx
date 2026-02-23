@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Запущена очистка памяти.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Обновление загружено. Перезапуск...</value>
-    </data>
 </root>

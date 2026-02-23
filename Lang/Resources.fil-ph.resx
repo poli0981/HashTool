@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Sinimulan na ang paglinis ng memorya.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Na-download na ang update. Nagre-restart...</value>
-    </data>
 </root>

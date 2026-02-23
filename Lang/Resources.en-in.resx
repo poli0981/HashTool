@@ -725,7 +725,4 @@
     <data name="Tip_ClearHash" xml:space="preserve">
         <value>Clear Hash</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Update downloaded. Restarting...</value>
-    </data>
 </root>

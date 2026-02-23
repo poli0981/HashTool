@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>已觸發記憶體清理。</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>更新已下載。正在重啟...</value>
-    </data>
 </root>

@@ -734,7 +734,4 @@
     <data name="Msg_MemoryFreed">
         <value>Pulizia della memoria avviata.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Aggiornamento scaricato. Riavvio in corso...</value>
-    </data>
 </root>

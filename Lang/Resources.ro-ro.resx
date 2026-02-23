@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Curățarea memoriei a fost declanșată.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Actualizare descărcată. Se repornește...</value>
-    </data>
 </root>

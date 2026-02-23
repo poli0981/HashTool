@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>ការសម្អាតអង្គចងចាំត្រូវបានចាប់ផ្តើម។</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>ការអាប់ដេតត្រូវបានទាញយក។ កំពុងចាប់ផ្តើមឡើងវិញ...</value>
-    </data>
 </root>

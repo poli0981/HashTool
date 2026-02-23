@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Почистването на паметта е стартирано.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Актуализацията е изтеглена. Рестартиране...</value>
-    </data>
 </root>

@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>پاکسازی حافظه آغاز شد.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>به‌روزرسانی دانلود شد. در حال راه‌اندازی مجدد...</value>
-    </data>
 </root>

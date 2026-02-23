@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>メモリのクリーンアップがトリガーされました。</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>アップデートをダウンロードしました。再起動しています…</value>
-    </data>
 </root>

@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Čištění paměti spuštěno.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Aktualizace stažena. Restartování...</value>
-    </data>
 </root>

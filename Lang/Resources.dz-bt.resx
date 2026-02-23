@@ -731,7 +731,4 @@
     <data name="Msg_MemoryFreed">
         <value>དྲན་ཚད་ གཙང་སྦྲ་འབད་ནི་ འགོ་བཙུགས་ཡོད།</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>ུས་མཐུན་ཕབ་ལེན་འབད་ཡོདཔ། ལོག་འགོ་བཙུགས་དོ...</value>
-    </data>
 </root>

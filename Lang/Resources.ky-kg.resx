@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Эстутумду тазалоо башталды.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Жаңыртуу жүктөлүп алынды. Кайра иштетилүүдө...</value>
-    </data>
 </root>

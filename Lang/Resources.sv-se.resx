@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Minnesrensning utlöst.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Uppdatering nedladdad. Startar om...</value>
-    </data>
 </root>

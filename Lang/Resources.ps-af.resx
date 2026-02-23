@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>د حافظې پاکول پیل شول.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>تازه کول ډاونلوډ شوي. بیا پیل کیږي...</value>
-    </data>
 </root>

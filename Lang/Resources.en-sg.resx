@@ -719,9 +719,6 @@
     <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub Profile</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Update downloaded. Restarting...</value>
-    </data>
     <data name="Settings_BtnFreeMemory">
         <value>Free Memory</value>
     </data>

@@ -729,7 +729,4 @@
     <data name="Msg_MemoryFreed">
         <value>Mälu puhastamine käivitatud.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Uuendus alla laaditud. Taaskäivitamine...</value>
-    </data>
 </root>

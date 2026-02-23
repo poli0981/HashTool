@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Санах ойг цэвэрлэх үйл явц эхэллээ.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Шинэчлэлтийг татаж авлаа. Дахин эхлүүлж байна...</value>
-    </data>
 </root>

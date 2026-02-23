@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>เริ่มต้นการล้างหน่วยความจำแล้ว</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>ดาวน์โหลดการอัปเดตเสร็จแล้ว กำลังเริ่มต้นใหม่...</value>
-    </data>
 </root>

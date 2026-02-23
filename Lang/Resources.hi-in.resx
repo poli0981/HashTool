@@ -729,7 +729,4 @@
     <data name="Msg_MemoryFreed">
         <value>मेमोरी सफाई शुरू हो गई।</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>अपडेट डाउनलोड हो गया। रीस्टार्ट हो रहा है...</value>
-    </data>
 </root>

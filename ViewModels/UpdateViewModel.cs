@@ -222,8 +222,6 @@ public partial class UpdateViewModel : ObservableObject
         try
         {
             await _updateService.DownloadUpdatesAsync(info, progress => { DownloadProgress = progress; });
-
-            StatusMessage = L["Status_UpdateRestarting"];
             _updateService.ApplyUpdatesAndRestart(info);
         }
         catch (Exception ex)

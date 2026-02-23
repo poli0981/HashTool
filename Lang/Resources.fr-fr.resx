@@ -727,7 +727,4 @@
     <data name="Msg_MemoryFreed">
         <value>Nettoyage mémoire déclenché.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Mise à jour téléchargée. Redémarrage en cours...</value>
-    </data>
 </root>

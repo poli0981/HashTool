@@ -729,7 +729,4 @@
     <data name="Msg_MemoryFreed">
         <value>Memóriatisztítás elindítva.</value>
     </data>
-    <data name="Status_UpdateRestarting">
-        <value>Frissítés letöltve. Újraindítás...</value>
-    </data>
 </root>
