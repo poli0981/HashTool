@@ -27,7 +27,7 @@ public partial class LocalizationService : ObservableObject
 
     [ObservableProperty] private LanguageItem _selectedLanguage;
 
-    public LocalizationService()
+    private LocalizationService()
     {
         _systemUICulture = CultureInfo.CurrentUICulture;
         _systemCulture = CultureInfo.CurrentCulture;

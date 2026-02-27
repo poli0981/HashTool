@@ -33,7 +33,7 @@ public partial class LoggerService : ObservableObject
     [ObservableProperty] private bool _isRecording = true;
     [ObservableProperty] private bool _isSavingDebugLog;
 
-    public LoggerService()
+    private LoggerService()
     {
         var appData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         _logBaseDir = Path.Combine(appData, "HashTool", "log");
