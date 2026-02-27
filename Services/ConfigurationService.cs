@@ -13,7 +13,7 @@ public class ConfigurationService
     private readonly SemaphoreSlim _saveLock = new(1, 1);
     private bool _hasCheckedConfigDir;
 
-    public ConfigurationService()
+    private ConfigurationService()
     {
         var appData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         _configDir = Path.Combine(appData, "HashTool", "settings");

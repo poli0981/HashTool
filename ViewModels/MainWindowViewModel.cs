@@ -45,7 +45,7 @@ public partial class MainWindowViewModel : ObservableObject
     public SettingsViewModel SettingsVM => _settingsVM ??= new SettingsViewModel();
 
     public FontService FontConfig => FontService.Instance;
-    public ThemeService Theme => ThemeService.Instance;
+    private ThemeService Theme => ThemeService.Instance;
 
     public string MenuCreateText => L["Menu_Create"];
     public string MenuCheckText => L["Menu_Check"];
@@ -99,13 +99,13 @@ public partial class MainWindowViewModel : ObservableObject
     }
 
     private UpdateViewModel? _updateVM;
-    public UpdateViewModel UpdateVM => _updateVM ??= new UpdateViewModel();
+    private UpdateViewModel UpdateVM => _updateVM ??= new UpdateViewModel();
 
     private AboutViewModel? _aboutVM;
-    public AboutViewModel AboutVM => _aboutVM ??= new AboutViewModel();
+    private AboutViewModel AboutVM => _aboutVM ??= new AboutViewModel();
 
     private DeveloperViewModel? _developerVM;
-    public DeveloperViewModel DeveloperVM => _developerVM ??= new DeveloperViewModel();
+    private DeveloperViewModel DeveloperVM => _developerVM ??= new DeveloperViewModel();
 
     public bool IsBusy => (_createHashVM?.IsComputing ?? false) || (_checkHashVM?.IsChecking ?? false);
     public bool IsIdle => !IsBusy;

@@ -29,7 +29,7 @@ public class UpdateService
 
     private UpdateManager? _manager;
 
-    public UpdateService()
+    private UpdateService()
     {
         _httpClient = new HttpClient();
         _httpClient.Timeout = TimeSpan.FromSeconds(30);
