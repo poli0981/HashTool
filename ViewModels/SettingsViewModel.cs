@@ -128,6 +128,34 @@ public partial class SettingsViewModel : ObservableObject
         Font.PropertyChanged += (s, e) =>
         {
             if (e.PropertyName == nameof(Font.IsLockedFont)) OnPropertyChanged(nameof(CanChangeFont));
+            if (!_isInitializing)
+            {
+                _ = SaveSettingsAsync();
+                string logMessage;
+                // Use string literals to avoid potential nameof issues with generated properties
+                switch (e.PropertyName)
+                {
+                    case "SelectedFont":
+                        logMessage = $"Font Family changed to: {Font.SelectedFont?.Name ?? "Default"}";
+                        break;
+                    case "BaseFontSize":
+                        logMessage = $"Base Font Size changed to: {Font.BaseFontSize}";
+                        break;
+                    case "UiScale":
+                        logMessage = $"UI Scale changed to: {Font.UiScale}";
+                        break;
+                    case "IsAutoFont":
+                        logMessage = $"Auto Font changed to: {Font.IsAutoFont}";
+                        break;
+                    case "IsLockedFont":
+                        logMessage = $"Locked Font changed to: {Font.IsLockedFont}";
+                        break;
+                    default:
+                        logMessage = $"Font setting changed: {e.PropertyName}";
+                        break;
+                }
+                Logger.Log(logMessage);
+            }
         };
 
         LocalizationService.Instance.PropertyChanged += (s, e) =>
@@ -389,7 +417,13 @@ public partial class SettingsViewModel : ObservableObject
         if (!_isInitializing) _ = SaveSettingsAsync();
     }
 
-    public async Task LoadSettingsAsync()
+    partial void OnIsDeveloperModeEnabledChanged(bool value)
+    {
+        Logger.IsSavingDebugLog = value;
+        if (!_isInitializing) _ = SaveSettingsAsync();
+    }
+
+    private async Task LoadSettingsAsync()
     {
         _isInitializing = true;
         try
@@ -413,8 +447,7 @@ public partial class SettingsViewModel : ObservableObject
 
             if (!string.IsNullOrEmpty(config.FontFamily))
             {
-                var font = Font.InstalledFonts.FirstOrDefault(x => x.Name == config.FontFamily);
-                if (font != null) Font.SelectedFont = font;
+                Font.SetTargetFont(config.FontFamily);
             }
 
             Font.BaseFontSize = config.BaseFontSize;
