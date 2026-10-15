@@ -1,7 +1,7 @@
 using System.Threading;
+using CommunityToolkit.Mvvm.ComponentModel;
 using HashTool.App.Models;
 using HashTool.App.Services;
-using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace HashTool.App.ViewModels;
 

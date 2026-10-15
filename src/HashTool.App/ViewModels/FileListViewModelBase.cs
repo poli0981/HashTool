@@ -10,10 +10,10 @@ using Avalonia.Collections;
 using Avalonia.Controls;
 using Avalonia.Platform.Storage;
 using Avalonia.Threading;
-using HashTool.App.Models;
-using HashTool.App.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using HashTool.App.Models;
+using HashTool.App.Services;
 
 namespace HashTool.App.ViewModels;
 
@@ -62,7 +62,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
     protected ConfigurationService ConfigService => ConfigurationService.Instance;
     protected PreferencesService Prefs => PreferencesService.Instance;
     protected LoggerService Logger => LoggerService.Instance;
-    
+
     public bool HasFiles
     {
         get
@@ -205,7 +205,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
             AllFiles.AddRange(list);
             foreach (var item in list) ExistingPaths.Add(item.FilePath);
         }
-        
+
         OnPropertyChanged(nameof(HasFiles));
 
         var filteredNew = FilterItems(list, SearchText, SelectedFilterStatus, SelectedSizeFilter).ToList();
@@ -446,7 +446,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
                     if (totalCount > maxFiles)
                     {
                         var skippedCount = totalCount - maxFiles;
-                        
+
                         await RunOnUIAsync(async () => await AddFilesFromPaths(filesToAdd));
 
                         await RunOnUIAsync(async () => await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
@@ -462,7 +462,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
                 else
                 {
                     var folderPaths = folders.Select(f => f.Path.LocalPath).ToList();
-                    
+
                     IEnumerable<string> EnumerateAll()
                     {
                         foreach (var path in folderPaths)
@@ -470,17 +470,17 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
                             foreach (var file in EnumerateFilesSafe(path)) yield return file;
                         }
                     }
-                    
+
                     var enumerable = EnumerateAll();
                     using var enumerator = enumerable.GetEnumerator();
-                    
+
                     if (!enumerator.MoveNext())
                     {
-                         await RunOnUIAsync(async () => await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_EmptyFolder"], MessageBoxIcon.Warning));
-                         Logger.Log("Selected folder(s) are empty.", LogLevel.Warning);
-                         return;
+                        await RunOnUIAsync(async () => await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_EmptyFolder"], MessageBoxIcon.Warning));
+                        Logger.Log("Selected folder(s) are empty.", LogLevel.Warning);
+                        return;
                     }
-                    
+
                     IEnumerable<string> EnumerateRest()
                     {
                         do
@@ -488,7 +488,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
                             yield return enumerator.Current;
                         } while (enumerator.MoveNext());
                     }
-                    
+
                     await RunOnUIAsync(async () => await AddFilesFromPaths(EnumerateRest()));
                 }
             });
@@ -561,11 +561,11 @@ public abstract partial class FileListViewModelBase : ObservableObject, IDisposa
 
         lock (ListLock)
         {
-             foreach (var item in failedItems)
-             {
-                 AllFiles.Remove(item);
-                 ExistingPaths.Remove(item.FilePath);
-             }
+            foreach (var item in failedItems)
+            {
+                AllFiles.Remove(item);
+                ExistingPaths.Remove(item.FilePath);
+            }
         }
 
         OnPropertyChanged(nameof(HasFiles));

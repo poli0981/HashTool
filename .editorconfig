@@ -34,7 +34,7 @@ csharp_new_line_before_finally = true
 csharp_indent_case_contents = true
 csharp_indent_switch_labels = true
 csharp_space_after_cast = false
-csharp_preserve_single_line_statements = false
+csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
 # Language preferences

@@ -5,9 +5,9 @@ using Avalonia;
 using Avalonia.Platform;
 using Avalonia.Styling;
 using Avalonia.Threading;
+using CommunityToolkit.Mvvm.ComponentModel;
 using HashTool.App.Models;
 using HashTool.App.Services.ThemeEffects;
-using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace HashTool.App.Services;
 

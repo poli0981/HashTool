@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Threading;
-using HashTool.App.Models;
-using HashTool.App.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using HashTool.App.Models;
+using HashTool.App.Services;
 
 namespace HashTool.App.ViewModels;
 
