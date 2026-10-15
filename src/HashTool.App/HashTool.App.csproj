@@ -11,6 +11,11 @@
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
         <!-- LibraryImport (source-generated P/Invoke) emits unsafe marshalling code. -->
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <!--
+            Use the Culture metadata below as written. Without this, a build machine whose ICU lacks a culture (Dhivehi on
+            Ubuntu) silently embeds that language in the main assembly instead of producing its satellite assembly.
+        -->
+        <RespectAlreadyAssignedItemCulture>true</RespectAlreadyAssignedItemCulture>
     </PropertyGroup>
 
     <ItemGroup>
