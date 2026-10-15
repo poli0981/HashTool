@@ -76,7 +76,7 @@
 
         <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="10" Margin="0,0,0,10"
                     IsVisible="{Binding HasFiles}" IsEnabled="{Binding !IsComputing}">
-            <TextBox Text="{Binding SearchText, Mode=TwoWay}" Watermark="{Binding Localization[Watermark_Search]}" Width="400"
+            <TextBox Text="{Binding SearchText, Mode=TwoWay}" PlaceholderText="{Binding Localization[Watermark_Search]}" Width="400"
                      Classes="DragOver" BorderThickness="0,0,0,1" CornerRadius="0" />
             <ComboBox ItemsSource="{Binding FilterStatusOptions}"
                       SelectedItem="{Binding SelectedFilterStatus, Mode=TwoWay}"

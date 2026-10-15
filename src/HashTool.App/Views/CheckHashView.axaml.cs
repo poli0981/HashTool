@@ -26,7 +26,7 @@ public partial class CheckHashView : UserControl
 
     private void OnDragEnter(object? sender, DragEventArgs e)
     {
-        if (e.Data.Contains(DataFormats.Files) && sender is Control control)
+        if (e.DataTransfer.Contains(DataFormat.File) && sender is Control control)
         {
             control.Classes.Add("DragOver");
         }
@@ -47,9 +47,9 @@ public partial class CheckHashView : UserControl
             control.Classes.Remove("DragOver");
         }
 
-        if (e.Data.Contains(DataFormats.Files))
+        if (e.DataTransfer.Contains(DataFormat.File))
         {
-            var files = e.Data.GetFiles()?.ToList();
+            var files = e.DataTransfer.TryGetFiles()?.ToList();
             if (files != null && files.Count > 0)
             {
                 var filePath = files[0].Path.LocalPath;
@@ -100,9 +100,9 @@ public partial class CheckHashView : UserControl
             control.Classes.Remove("DragOver");
         }
 
-        if (e.Data.Contains(DataFormats.Files))
+        if (e.DataTransfer.Contains(DataFormat.File))
         {
-            var files = e.Data.GetFiles()?.Select(x => x.Path.LocalPath).ToList();
+            var files = e.DataTransfer.TryGetFiles()?.Select(x => x.Path.LocalPath).ToList();
             if (files == null || files.Count == 0) return;
 
             if (DataContext is FileListViewModelBase vm)

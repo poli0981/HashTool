@@ -52,7 +52,6 @@ public static class WindowEffect
         };
 
         window.ExtendClientAreaToDecorationsHint = true;
-        window.ExtendClientAreaChromeHints = ExtendClientAreaChromeHints.PreferSystemChrome;
     }
 
     private static void ApplyWindows(Window window)
@@ -65,6 +64,5 @@ public static class WindowEffect
         };
 
         window.ExtendClientAreaToDecorationsHint = true;
-        window.ExtendClientAreaChromeHints = ExtendClientAreaChromeHints.PreferSystemChrome;
     }
 }
