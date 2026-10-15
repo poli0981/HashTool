@@ -64,15 +64,24 @@ def main(releases: Path, channel: str, version: str, main_exe: str, bundle_id: s
 
     with zipfile.ZipFile(package) as archive:
         names = archive.namelist()
-        versions = [n for n in names if n.endswith("sq.version")]
-        if len(versions) != 1:
-            fail(f"{package.name} should contain one sq.version, found {versions}")
-        manifest = archive.read(versions[0]).decode("utf-8-sig")
         expected = {"id": PACK_ID, "version": version, "channel": channel, "mainExe": main_exe}
-        for element, value in expected.items():
-            if manifest_value(manifest, element) != value:
-                fail(f"sq.version has {element}={manifest_value(manifest, element)!r}, expected {value!r}")
-        if not any(n.endswith("/" + main_exe) for n in names):
+        # The package manifest at the root; Windows and macOS also ship it as sq.version next to the app, while on Linux
+        # it lives inside the AppImage.
+        manifests = [n for n in names if "/" not in n and n.endswith(".nuspec")]
+        manifests += [n for n in names if n.endswith("sq.version")]
+        if not manifests:
+            fail(f"{package.name} contains no package manifest")
+        for name in manifests:
+            manifest = archive.read(name).decode("utf-8-sig")
+            for element, value in expected.items():
+                if manifest_value(manifest, element) != value:
+                    fail(f"{name} has {element}={manifest_value(manifest, element)!r}, expected {value!r}")
+        if channel == "linux":
+            if not any(n.endswith(".AppImage") for n in names):
+                fail(f"{package.name} does not contain the AppImage")
+        elif not any(n.endswith("sq.version") for n in names):
+            fail(f"{package.name} does not contain sq.version")
+        elif not any(n.endswith("/" + main_exe) for n in names):
             fail(f"{package.name} does not contain {main_exe}")
 
         if bundle_id is not None:

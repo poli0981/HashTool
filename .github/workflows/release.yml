@@ -176,7 +176,7 @@ jobs:
           sed "s/@VERSION@/$VERSION/g" build/macos/Info.plist > "$RUNNER_TEMP/Info.plist"
           plutil -lint "$RUNNER_TEMP/Info.plist"
           dotnet vpk pack -u "$PACK_ID" -v "$VERSION" -p "publish/$RID" -e "$MAIN_EXE" -c "$CHANNEL" -r "$RID" \
-            --packTitle "Hash Tool" --bundleId com.HashTool.HashTool --plist "$RUNNER_TEMP/Info.plist" \
+            --packTitle "Hash Tool" --plist "$RUNNER_TEMP/Info.plist" \
             --icon src/HashTool.App/Assets/icon/icons.icns --delta None --releaseNotes release-notes.md -o Releases
 
       - name: Pack (Linux)
@@ -432,7 +432,7 @@ jobs:
           gh release create "$VERSION" --repo "$GITHUB_REPOSITORY" --draft --target "$GITHUB_SHA" \
             --title "Hash Tool $VERSION" --notes-file release-notes.md
           gh release upload "$VERSION" --repo "$GITHUB_REPOSITORY" dist/*
-          expected=$(cd dist && ls -1 | sort)
+          expected=$(find dist -maxdepth 1 -type f -printf '%f\n' | sort)
           actual=$(gh release view "$VERSION" --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name' | sort)
           if [ "$expected" != "$actual" ]; then
             echo "::error::Uploaded assets differ from the build output"
