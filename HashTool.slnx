@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/HashTool.App/HashTool.App.csproj" />
+    <Project Path="src/HashTool.Core/HashTool.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/HashTool.Core.Tests/HashTool.Core.Tests.csproj" />
+  </Folder>
+</Solution>

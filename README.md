@@ -14,27 +14,27 @@ HashTool was born out of pure laziness — a simple, intuitive GUI to do the job
 
 ## Screenshots
 
-![Generate Hash](Assets/screenshots/generate.png)  
+![Generate Hash](docs/images/generate.png)  
 *Generate Hash – batch processing with multiple export options*
 
-![Verify Hash](Assets/screenshots/verify.png)  
+![Verify Hash](docs/images/verify.png)  
 *Verify Hash – smart detection and batch verification*
 
-![Settings](Assets/screenshots/setting_screenshot_1.png)  
+![Settings](docs/images/setting_screenshot_1.png)  
 *Settings – themes, localization, performance tweaks*
 
-![Settings 2](Assets/screenshots/setting_screenshot_2.png)  
+![Settings 2](docs/images/setting_screenshot_2.png)  
 *Settings – Windows Admin Mode, Hash Masking, Developer Mode, etc.*
 
-![About](Assets/screenshots/about.png) *About – version info and links*
+![About](docs/images/about.png) *About – version info and links*
 
-![Update](Assets/screenshots/update.png)  
+![Update](docs/images/update.png)  
 *Update – check for latest version*
 
-![Dev Mode](Assets/screenshots/dev.png)  
+![Dev Mode](docs/images/dev.png)  
 *Developer Mode – extra tools for power users*
 
-![Dark Mode](Assets/screenshots/dark.png) *Dark Mode – because who doesn't love dark mode?*
+![Dark Mode](docs/images/dark.png) *Dark Mode – because who doesn't love dark mode?*
 
 ## Features
 

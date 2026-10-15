@@ -1,0 +1,25 @@
+<Project>
+    <!-- Shared settings for every project in the repository. -->
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>disable</ImplicitUsings>
+
+        <!-- Single source of truth for the product version (the release workflow also passes -p:Version=<tag>). -->
+        <Version>1.1.3</Version>
+        <Authors>poli0981</Authors>
+        <Company>poli0981</Company>
+        <Product>Hash Tool</Product>
+        <Copyright>Copyright (c) 2026 poli0981</Copyright>
+        <RepositoryUrl>https://github.com/poli0981/HashTool</RepositoryUrl>
+
+        <Deterministic>true</Deterministic>
+        <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
+
+        <!-- Supply chain: audit direct and transitive packages on every restore. -->
+        <NuGetAudit>true</NuGetAudit>
+        <NuGetAuditMode>all</NuGetAuditMode>
+        <NuGetAuditLevel>low</NuGetAuditLevel>
+    </PropertyGroup>
+</Project>
