@@ -187,9 +187,8 @@ public sealed class SingleInstanceTests
         for (var i = 0; i < 100 && received.Count < 2; i++) await Task.Delay(50, TestContext.Current.CancellationToken);
         var requests = received.ToList();
         Assert.Equal(2, requests.Count);
-        Assert.Equal(ActivationVerb.Verify, requests[0].Verb);
-        Assert.Equal(["a.sha256", "b.md5"], requests[0].Paths);
-        Assert.Equal(["c.iso"], requests[1].Paths);
+        Assert.Equal(["a.sha256", "b.md5"], Assert.Single(requests, r => r.Verb == ActivationVerb.Verify).Paths);
+        Assert.Equal(["c.iso"], Assert.Single(requests, r => r.Verb == ActivationVerb.Create).Paths);
     }
 
     [Fact]

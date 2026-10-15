@@ -97,28 +97,57 @@ public sealed partial class SingleInstance : IDisposable
     {
         _ = Task.Run(async () =>
         {
+            NamedPipeServerStream? current = null, next = null;
             while (!_stop.IsCancellationRequested)
             {
                 try
                 {
-                    await using var server = new NamedPipeServerStream(_name, PipeDirection.In,
-                        NamedPipeServerStream.MaxAllowedServerInstances, PipeTransmissionMode.Byte,
-                        PipeOptions.Asynchronous | PipeOptions.CurrentUserOnly);
-                    await server.WaitForConnectionAsync(_stop.Token).ConfigureAwait(false);
-                    var request = await ReadAsync(server, _stop.Token).ConfigureAwait(false);
-                    if (request is not null) onRequest(request);
+                    current = next ?? CreateServer();
+                    next = null;
+                    await current.WaitForConnectionAsync(_stop.Token).ConfigureAwait(false);
+                    // Listen again before the connected instance is released. On Linux and macOS the pipe is a Unix
+                    // socket that closes, dropping connections already queued on it, once no server instance exists.
+                    next = CreateServer();
+                    var connected = current;
+                    current = null;
+                    _ = HandleAsync(connected, onRequest);
                 }
                 catch (OperationCanceledException) when (_stop.IsCancellationRequested)
                 {
-                    return;
+                    break;
                 }
                 catch (Exception)
                 {
                     // One bad or broken connection must never stop the listener: keep serving later launches.
+                    current?.Dispose();
+                    current = null;
                     await Task.Delay(200).ConfigureAwait(false);
                 }
             }
+
+            current?.Dispose();
+            next?.Dispose();
         });
+    }
+
+    private NamedPipeServerStream CreateServer() =>
+        new(_name, PipeDirection.In, NamedPipeServerStream.MaxAllowedServerInstances, PipeTransmissionMode.Byte,
+            PipeOptions.Asynchronous | PipeOptions.CurrentUserOnly);
+
+    private async Task HandleAsync(NamedPipeServerStream server, Action<ActivationRequest> onRequest)
+    {
+        await using (server.ConfigureAwait(false))
+        {
+            try
+            {
+                var request = await ReadAsync(server, _stop.Token).ConfigureAwait(false);
+                if (request is not null) onRequest(request);
+            }
+            catch (Exception)
+            {
+                // A client that disconnects early or sends garbage is ignored.
+            }
+        }
     }
 
     private static async Task<ActivationRequest?> ReadAsync(Stream stream, CancellationToken cancellationToken)
