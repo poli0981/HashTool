@@ -1,0 +1,38 @@
+version: 2
+
+updates:
+  - package-ecosystem: nuget
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 10
+    # The upgrade gate deliberately pins the Velopack library that Hash Tool 1.1.x shipped.
+    exclude-paths:
+      - "tests/Compat/**"
+    groups:
+      avalonia:
+        patterns: ["Avalonia*", "Material.Icons*"]
+      microsoft:
+        patterns: ["Microsoft.Extensions.*", "System.*"]
+      tests:
+        patterns: ["xunit*", "Microsoft.Testing.*", "BenchmarkDotNet*"]
+    ignore:
+      # xunit.v3 4.x breaks Avalonia.Headless.XUnit (AvaloniaUI/Avalonia#22072).
+      - dependency-name: "xunit.v3*"
+        update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: dotnet-sdk
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      actions:
+        patterns: ["*"]

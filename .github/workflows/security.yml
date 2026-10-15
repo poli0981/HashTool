@@ -1,0 +1,119 @@
+name: Security
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "23 4 * * 1"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: security-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+  AVALONIA_TELEMETRY_OPTOUT: 1
+
+jobs:
+  # `dotnet package list --vulnerable` always exits 0, so the JSON report is checked explicitly.
+  vulnerable-packages:
+    name: vulnerable-packages
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          dotnet-version: 10.0.4xx
+
+      - name: Restore
+        run: dotnet restore HashTool.slnx
+
+      - name: List vulnerable packages
+        run: |
+          dotnet package list --project HashTool.slnx --vulnerable --include-transitive --format json > vulnerable.json
+          jq -r '.projects[]? | .path as $p | .frameworks[]? | (.topLevelPackages[]?, .transitivePackages[]?)
+                 | select((.vulnerabilities // []) | length > 0)
+                 | "\($p): \(.id) \(.resolvedVersion) - \([.vulnerabilities[].severity] | join(", ")) \([.vulnerabilities[].advisoryurl] | join(" "))"' vulnerable.json \
+            | sort -u | tee vulnerable.txt
+          if [ -s vulnerable.txt ]; then
+            echo "::error::Vulnerable NuGet packages found (see above)."
+            exit 1
+          fi
+          echo "No known vulnerable packages."
+
+  # Only shipped projects are checked; test and benchmark tools are not redistributed.
+  licenses:
+    name: licenses
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          dotnet-version: 10.0.4xx
+
+      - name: Restore
+        run: |
+          dotnet tool restore
+          dotnet restore HashTool.slnx
+
+      - name: Check licenses
+        run: >
+          dotnet nuget-license -ji eng/license-inputs.json -t
+          -a eng/allowed-licenses.json -o Markdown
+
+  secrets:
+    name: secrets
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: gitleaks/gitleaks-action@e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e # v3.0.0
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITLEAKS_ENABLE_COMMENTS: false
+          GITLEAKS_ENABLE_UPLOAD_ARTIFACT: false
+
+  workflows:
+    name: workflows
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # Built from source through the Go module proxy, which verifies it against the checksum database.
+      - name: actionlint
+        run: go run github.com/rhysd/actionlint/cmd/actionlint@v1.7.12 -color
+
+      - name: zizmor
+        uses: zizmorcore/zizmor-action@cc914d7f3750a2d13d75c7f184a1060aa0e9d482 # v0.6.4
+        with:
+          version: 1.30.1
+          config: .github/zizmor.yml
+          advanced-security: false

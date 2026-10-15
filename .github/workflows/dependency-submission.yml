@@ -1,0 +1,34 @@
+name: Dependency Submission
+
+# Submits the resolved NuGet graph, including transitive packages, so Dependabot alerts cover packages that are only
+# pulled in indirectly (central package management hides versions from GitHub's static parser).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  submit:
+    name: submit
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          dotnet-version: 10.0.4xx
+
+      - name: Restore
+        run: dotnet restore HashTool.slnx
+
+      - uses: advanced-security/component-detection-dependency-submission-action@a02aeda7a175ad4dd38a13c4d3ff2df9da8f2cf0 # v0.2.0
+        with:
+          detectorsCategories: NuGet
+          directoryExclusionList: "**/tests/Compat/**"

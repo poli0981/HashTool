@@ -1,5 +1,7 @@
 name: Announce Release to Discord
 
+# Releases published by the Release workflow are announced from there (events created with GITHUB_TOKEN do not start
+# other workflows). This covers releases published by hand and re-announcements.
 on:
   release:
     types: [published]
@@ -10,14 +12,15 @@ on:
         required: true
         type: string
 
-# Reusable announce-release.yml only needs `contents: read` to fetch
-# release metadata via the gh CLI.
-permissions:
-  contents: read
+permissions: {}
 
 jobs:
   announce:
-    uses: poli0981/.github/.github/workflows/announce-release.yml@main
+    permissions:
+      contents: read
+    uses: poli0981/.github/.github/workflows/announce-release.yml@c3e118a01d40e95b36b2c3466dc206638c11eb5a
     with:
       tag_override: ${{ inputs.tag || '' }}
-    secrets: inherit
+    secrets:
+      DISCORD_RELEASES_WEBHOOK: ${{ secrets.DISCORD_RELEASES_WEBHOOK }}
+      DISCORD_REPO_WEBHOOK: ${{ secrets.DISCORD_REPO_WEBHOOK }}
