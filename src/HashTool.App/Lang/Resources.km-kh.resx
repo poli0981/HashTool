@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>ឧបករណ៍ Hash</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>បង្កើត Hash</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>ផ្ទៀងផ្ទាត់ Hash</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>ការកំណត់</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>ធ្វើបច្ចុប្បន្នភាព</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>រចនាប័ទ្ម</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>អំពី</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>អ្នកអភិវឌ្ឍន៍</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>បន្ថែមឯកសារ...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>សម្អាតបញ្ជី</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>សម្អាត Hash</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>គណនាទាំងអស់</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>បង្រួម (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>ផ្ទៀងផ្ទាត់ទាំងអស់</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>ផ្ទៀងផ្ទាត់ឥឡូវនេះ</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>ពិនិត្យមើលឥឡូវនេះ</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>ដំឡើង</value>
     </data>
-    <data name="Btn_Accept">
-        <value>យល់ព្រម</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>បដិសេធ</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>បង្កើត Hash &amp; បង្រួម</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>ការផ្ទៀងផ្ទាត់ជាបាច់</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>ពិនិត្យមើលការធ្វើបច្ចុប្បន្នភាព</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>ការព្រមានអំពីកំណែអ្នកអភិវឌ្ឍន៍</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>អំពីកម្មវិធី</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>គន្លឹះ៖ Shift+C ដើម្បីគណនា, Shift+Z ដើម្បីបង្រួម, Ctrl+F ដើម្បីបន្ថែមឯកសារ។</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>គន្លឹះ៖ ទម្លាក់ឯកសារ ឬថតឯកសារនៅទីនេះ។ Ctrl/⌘+O ដើម្បីបន្ថែមឯកសារ, Ctrl/⌘+Shift+O ដើម្បីបន្ថែមថតឯកសារ, Ctrl/⌘+Enter ដើម្បីគណនាទាំងអស់, Esc ដើម្បីបោះបង់។</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>គន្លឹះ៖ Shift+A ដើម្បីផ្ទៀងផ្ទាត់, Ctrl+F ដើម្បីបន្ថែម, Ctrl+Shift+H ដើម្បីសម្អាតបញ្ជី។</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>គន្លឹះ៖ ទម្លាក់ឯកសារ ថតឯកសារ ឬឯកសារ Checksum (SHA256SUMS, *.sha256, *.md5…) នៅទីនេះ។ Ctrl/⌘+Enter ដើម្បីផ្ទៀងផ្ទាត់ទាំងអស់, Esc ដើម្បីបោះបង់។</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>រួចរាល់</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>គំរូ៖</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>កំណែបច្ចុប្បន្ន៖ {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>ឆានែលចេញផ្សាយ៖</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>ឯកសារសរុប៖ {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>ស្ថិរភាព (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>អ្នកអភិវឌ្ឍន៍ (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>ភាសា</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>រចនាប័ទ្ម</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>ប្រភេទរចនាប័ទ្ម</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>ភ្លឺ/ងងឹត</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>ពុម្ពអក្សរ</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>ទំហំពុម្ពអក្សរ (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>ជ្រើសរើសពុម្ពអក្សរល្អបំផុតដោយស្វ័យប្រវត្តិ</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>ចាក់សោរជាពុម្ពអក្សរលំនាំដើម</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>ទំហំចំណុចប្រទាក់ (UI)</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>លាក់តម្លៃ Hash (សុវត្ថិភាព)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>កំណត់ការកំណត់ឡើងវិញ</value>
     </data>
-    <data name="Settings_Other">
-        <value>ឯកជនភាព និងសុវត្ថិភាព</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>កំណត់ជាលំនាំដើម</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>ពណ៌អត្ថបទប្ដូរតាមបំណង</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>កម្រិតខ្ពស់</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>ដំណើរការជាអ្នកគ្រប់គ្រង (Admin)</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>ទាមទារការចាប់ផ្ដើមឡើងវិញ។ អនុញ្ញាតឱ្យចូលប្រើឯកសារដែលបានការពារ។</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>ដែនកំណត់ទំហំឯកសារបញ្ចូល</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>ទំហំអតិបរមាសម្រាប់ឯកសារដែលត្រូវដំណើរការ។</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>ពេលវេលាផុតកំណត់សម្រាប់ការបិទដោយបង្ខំ</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>ពេលវេលា (វិនាទី) មុនពេលចាត់ទុកថាកម្មវិធីគាំង។</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>ពេលវេលាផុតកំណត់ដំណើរការឯកសារ</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>បោះបង់ប្រសិនបើឯកសារមួយចំណាយពេលយូរពេក។</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>សកម្មភាពបន្ទាន់</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>បិទកម្មវិធីដោយបង្ខំ និងបោះបង់កិច្ចការទាំងអស់ភ្លាមៗ។</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>បិទដោយបង្ខំ &amp; បោះបង់ទាំងអស់</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>ការកំណត់រចនាសម្ព័ន្ធ</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>ចាក់សោរការកំណត់ (រក្សាទុកជាលំនាំដើម)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>ការពារការផ្លាស់ប្តូរដោយចៃដន្យ។ មានតែ 'លាក់ Hash' ប៉ុណ្ណោះដែលអាចកែតម្រូវបាន។</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>កំណត់ការកំណត់ទាំងអស់ឡើងវិញ</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>ស្ដារទៅលំនាំដើមពីរោងចក្រ។</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>ផ្លូវឯកសារកំណត់រចនាសម្ព័ន្ធ</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>បង្ហាញផ្លូវពេញលេញ និងចម្លងទៅក្ដារតម្បៀតខ្ទាស់។</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>បង្ហាញផ្លូវ</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>ការកំណត់ត្រូវបានរក្សាទុកដោយស្វ័យប្រវត្តិទៅ config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>របៀបអ្នកអភិវឌ្ឍន៍</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>បើកការកត់ត្រាកម្រិតខ្ពស់ និងឧបករណ៍បំបាត់កំហុស។</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>កុងសូលអ្នកអភិវឌ្ឍន៍</value>
     </data>
-    <data name="Dev_Beta">
-        <value>បេតា (BETA)</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>កំពុងថត</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>បានផ្អាក</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>រក្សាទុកទៅឯកសារ</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>មិនរក្សាទុក</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>សម្អាតកុងសូល</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>ចម្លងទាំងអស់</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>បើកថតកំណត់ហេតុ</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>អ្នកនិពន្ធ</value>
     </data>
-    <data name="About_Software">
-        <value>កម្មវិធី</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>បណ្ណាល័យភាគីទីបី</value>
     </data>
-    <data name="About_Copyright">
-        <value>រក្សាសិទ្ធិ</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>ឧបករណ៍ដ៏មានអានុភាពសម្រាប់ការបង្កើត ផ្ទៀងផ្ទាត់ និងបង្រួម hash ឯកសារ។</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>ចេញផ្សាយក្រោមអាជ្ញាប័ណ្ណ MIT ។</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>បច្ចេកវិទ្យា</value>
     </data>
-    <data name="About_TechContent">
-        <value>បង្កើតឡើងដោយ C# និង .NET 10.0.102 ។</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>បង្កើតឡើងដោយ C# លើ {0} ។</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>ជំនួយ AI</value>
     </data>
-    <data name="About_AIContent">
-        <value>កម្មវិធីនេះត្រូវបានបង្កើតឡើងដោយមានជំនួយពី AI (Gemini 3 Pro និង Grok 4.1)។</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>កម្មវិធីនេះត្រូវបានបង្កើតឡើងដោយមានជំនួយពី AI (Gemini 3 Pro, Grok 4.1 និង Claude)។</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>កំពុងដំណើរការ ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>បានបញ្ចប់</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>កំហុស៖ {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>បានបោះបង់</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>បានរក្សាទុក!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>បានបង្រួម!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>កំពុងរង់ចាំ Hash/ការបញ្ចូល...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>បាត់ឯកសារដើម!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>បាត់តម្លៃ Hash (បញ្ចូល ឬផ្ទុកឯកសារ)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>ត្រឹមត្រូវ</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>មិនត្រូវគ្នាទេ!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>ឯកសារ Hash ត្រូវបានផ្ទុក</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>ឈ្មោះឯកសារ Hash មិនត្រូវគ្នាទេ!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>ឯកសារមិនមាន Hash ទេ!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>កំពុងពិនិត្យមើលការធ្វើបច្ចុប្បន្នភាព...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>បានរកឃើញកំណែថ្មី!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>អ្នកកំពុងប្រើប្រាស់កំណែចុងក្រោយបំផុត។</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>កំហុសក្នុងការពិនិត្យមើលការធ្វើបច្ចុប្បន្នភាព៖ {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>កំពុងទាញយក និងដំឡើង...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>រួចរាល់ (ពីឯកសារ Checksum)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>កំហុសក្នុងការដំឡើង៖ {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>រួចរាល់ (ពីឯកសារ .hash)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>បាត់បង់ឯកសារដើម!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>ឈ្មោះឯកសារ Hash មិនត្រូវគ្នាទេ!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>បានទម្លាក់ឯកសារ Hash ដោយជោគជ័យ</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>ឯកសារមិនមាន Hash ទេ!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>កំហុសក្នុងការអានឯកសារ</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>លទ្ធផល</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>ដំណើរការបានបញ្ចប់!
-            ✅ ជោគជ័យ៖ {0}
-            ❌ បរាជ័យ៖ {1}
-            ⛔ បានបោះបង់៖ {2}
-        </value>
+✅ ជោគជ័យ៖ {0}
+❌ បរាជ័យ៖ {1}
+⛔ បានបោះបង់៖ {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>បានពិនិត្យឯកសារ {0} ។
-            ✅ ត្រូវគ្នា៖ {1}
-            ❌ មិនត្រូវគ្នា/កំហុស៖ {2}
-            ⛔ បានបោះបង់៖ {3}
-        </value>
+✅ ត្រូវគ្នា៖ {1}
+❌ មិនត្រូវគ្នា/កំហុស៖ {2}
+⛔ បានបោះបង់៖ {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>ឯកសារខុស!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>ឯកសារ Hash មិនត្រូវគ្នាទេ!
-
-            ឯកសារដើម៖ {0}
-            ឯកសារដែលបានជ្រើសរើស៖ {1}
-
-            សូមជ្រើសរើសឯកសារ hash អមដែលត្រឹមត្រូវ។
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>ការធ្វើបច្ចុប្បន្នភាពថ្មី</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>កំណែ៖ {0}
-
-            ការផ្លាស់ប្តូរ៖
-            {1}
-
-            ចុច 'ធ្វើបច្ចុប្បន្នភាពឥឡូវនេះ' ដើម្បីទាញយក។
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>រកមិនឃើញការធ្វើបច្ចុប្បន្នភាពថ្មីទេ។</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>កំហុស</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>មិនអាចអានឯកសារ hash នេះបានទេ។</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>ការពិនិត្យការកំណត់រចនាសម្ព័ន្ធ</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>ឯកសារមាននៅ៖
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>ឯកសារមិនមានទេ!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>ឯកសារត្រូវបានបង្កើតដោយជោគជ័យ!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>ផ្លូវការកំណត់រចនាសម្ព័ន្ធត្រូវបានចម្លង។</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>របៀបអ្នកគ្រប់គ្រង</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>សូមចាប់ផ្ដើមកម្មវិធីឡើងវិញ ដើម្បីអនុវត្តការផ្លាស់ប្តូរ។</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>មិនអាចបើកថតឯកសារ៖ {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ការព្រមានអំពីកំណែអ្នកអភិវឌ្ឍន៍</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>អ្នកហៀបនឹងប្តូរទៅឆានែលធ្វើបច្ចុប្បន្នភាពអ្នកអភិវឌ្ឍន៍ (មុនចេញផ្សាយ)។
-
-            កំណែនេះអាចមានកំហុស មិនស្ថិតស្ថេរ និងអាចបណ្តាលឱ្យបាត់បង់ទិន្នន័យ។
-
-            ខ្ញុំមិនទទួលខុសត្រូវចំពោះបញ្ហាណាមួយដែលកើតឡើងពីការប្រើប្រាស់កំណែនេះទេ។
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>ខ្ញុំបានអាន និងយល់ព្រម។ ខ្ញុំទទួលខុសត្រូវទាំងស្រុង។</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>រក្សាទុកឯកសារ Hash</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>រក្សាទុកឯកសារដែលបានបង្រួម</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>ជ្រើសរើសឯកសារដើម្បី Hash</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>ជ្រើសរើសឯកសារ Hash សម្រាប់៖ {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>ជ្រើសរើសឯកសារ (ឯកសារដើម ឬឯកសារ .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>ជ្រើសរើសឯកសារ ឬឯកសារ Checksum</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>បិទភ្ជាប់ ឬទម្លាក់ទីនេះ...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>វិនាទី</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>ផ្ទៀងផ្ទាត់</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>បញ្ឈប់</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>លុបឯកសារចេញ</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>ចម្លង Hash</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>គណនា</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>សម្អាត Hash</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>រកមើល Hash</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>ងងឹត</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>ភ្លឺ</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>ប្រព័ន្ធ</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>កិច្ចការត្រូវបានបញ្ឈប់</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>បាទ/ចាស</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>យល់ព្រម</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>ទេ</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>ប័ណ្ណសារ Zip</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>បញ្ជាក់ការចាកចេញ</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>ការចាកចេញនឹងបោះបង់កិច្ចការដែលកំពុងដំណើរការទាំងអស់។ តើអ្នកប្រាកដទេ?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>កិច្ចការត្រូវបានបញ្ឈប់ដោយសារផុតកំណត់ពេលវេលា។</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>រក្សាទុកកំណត់ហេតុកែកំហុសទៅថាស។</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>ផ្អាកការកត់ត្រាពេលវេលាពិតប្រាកដ។</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>បង្ហាញ Hash</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>លាក់ Hash</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>ចម្លងផ្លូវ</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>ដ្រាយវ៍របស់អ្នកពេញហើយ។ សូមជ្រើសរើសទីតាំងផ្សេង :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>ភាពមើលឃើញ Hash</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>មិនមានឯកសារទេ។ ចុច 'បន្ថែមឯកសារ' ដើម្បីចាប់ផ្តើម។</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>ទម្លាក់ឯកសារ ឬថតឯកសារនៅទីនេះ ឬចុច “បន្ថែមឯកសារ”។</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>ចាក់សោររចនាប័ទ្មនេះជាលំនាំដើម</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>បានរំលងឯកសារ {0} ដែលលើសពីដែនកំណត់ ({1} {2})៖
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>ភាសាប្រព័ន្ធ</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>ការត្រឡប់ទៅការកំណត់ 'ស្វ័យប្រវត្តិ' ទាមទារការចាប់ផ្ដើមឡើងវិញដើម្បីឱ្យមានប្រសិទ្ធភាពពេញលេញ។ តើអ្នកចង់បន្តទេ?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>ការផ្លាស់ប្តូរភាសា</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>តើអ្នកប្រាកដអំពីវាទេ?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>កុំបង្ហាញការជូនដំណឹងនេះម្តងទៀត</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>កំហុសការតភ្ជាប់បណ្តាញ។ សូមពិនិត្យមើលអ៊ីនធឺណិតរបស់អ្នក។</value>
     </data>
-    <data name="Error_Server">
-        <value>កំហុសម៉ាស៊ីនមេ (5xx)។ សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ។</value>
-    </data>
-    <data name="Error_Client">
-        <value>កំហុសម៉ាស៊ីនភ្ញៀវ (4xx)។ សូមពិនិត្យមើលសំណើ។</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>លើសដែនកំណត់អត្រា GitHub API ។ សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ។</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>រកមិនឃើញកំណែមុនចេញផ្សាយទេ។ រក្សាកំណែបច្ចុប្បន្ន។</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>កំណែមុនចេញផ្សាយ {0} មានហើយ។
-
-            {1}
-
-            កំណែនេះប្រហែលជាមិនស្ថិតស្ថេរទេ។ តើអ្នកចង់ទាញយកទេ?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>សម្អាតការបរាជ័យ</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>បានដកចេញ {0} ធាតុ។</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>ពេលវេលានៅសល់៖ {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>រយៈពេលកិច្ចការ៖ {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>កំពុងគណនា...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>បន្ថែមថតឯកសារ...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>ថតឯកសារដែលបានជ្រើសរើសគឺទទេ។</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>ជ្រើសរើសថតឯកសារដើម្បីស្កេន</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>បោះបង់</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>ដែនកំណត់ដំណើរការ</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>ឯកសារអតិបរមាក្នុងមួយការស្កេនថត</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>កំណត់ចំនួនឯកសារដែលបានបន្ថែមពីថត ដើម្បីការពារបញ្ហាដំណើរការ។</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>ថតអតិបរមាក្នុងមួយពេល</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>កំណត់ចំនួនថតដែលបានជ្រើសរើសក្នុងពេលតែមួយ។</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>អ្នកអាចជ្រើសរើសបានត្រឹមតែ {0} ថតក្នុងពេលតែមួយ។</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>បានបន្ថែមឯកសារ {0} ។ បានរំលងឯកសារ {1} ដោយសារដែនកំណត់។</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>អាន៖ {0}/s | សរសេរ៖ {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>បង្ហាញល្បឿនអាន</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>បង្ហាញល្បឿនអាន/សរសេរ</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>បង្ហាញល្បឿនផ្ទេរទិន្នន័យជាក់ស្តែងកំឡុងពេលប្រតិបត្តិការ hash ។</value>
     </data>
-    <data name="Status_Computing">
-        <value>កំពុងគណនា Hash...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>ទំហំទាំងអស់</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>តូច (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>មធ្យម (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>ធំ (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>ធំបំផុត (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>ឯកសារ</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>គោលការណ៍ឯកជនភាព</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>លក្ខខណ្ឌនៃសេវាកម្ម</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>កិច្ចព្រមព្រៀងអាជ្ញាប័ណ្ណអ្នកប្រើប្រាស់ (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>ការបដិសេធការទទួលខុសត្រូវ</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>សូមអាន (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>កំណត់ហេតុផ្លាស់ប្តូរ</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>ការទទួលស្គាល់</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>កំពុងដំណើរការ</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>បរាជ័យ</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>ស្វែងរកតាមឈ្មោះ...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>ទំហំ</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>ប្រវត្តិរូប GitHub</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>ទាំងអស់</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>បង្កើនទំហំអង្គចងចាំ</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>ស្វ័យប្រវត្តិ (ភាសាប្រព័ន្ធ)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>បង្ខំឱ្យសម្អាតទិន្នន័យឥតបានការ (GC) ដើម្បីបង្កើន RAM ។</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>ក្បួនដោះស្រាយ</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>សម្អាតអង្គចងចាំ</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>ក្បួនដោះស្រាយលំនាំដើម</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>ការសម្អាតអង្គចងចាំត្រូវបានចាប់ផ្តើម។</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>នាំចេញ</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>រក្សាទុកឯកសារ Checksum…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>ចម្លង Hash ទាំងអស់</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>បើកឯកសារ Checksum…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>មើល</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>បិទ</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>ដំឡើងពេលចាកចេញ</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>បើកទំព័រចេញផ្សាយ</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>មានអ្វីថ្មី</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>ចាប់ផ្តើមឡើងវិញជាអ្នកគ្រប់គ្រង</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>ចម្លងព័ត៌មានលម្អិត</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>ប្រសិទ្ធភាព</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>ចំនួនឯកសារដែលដំណើរការក្នុងពេលតែមួយ</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = ស្វ័យប្រវត្តិ ({0} នៅលើកុំព្យូទ័រនេះ)។</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>បង្កើនប្រសិទ្ធភាពសម្រាប់ថាសរឹង</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>អានឯកសារម្តងមួយ ដែលលឿនជាងនៅលើថាសរឹងប្រភេទបង្វិល និងថតចែករំលែកលើបណ្តាញ។</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>រួមបញ្ចូលឯកសារដែលលាក់</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>បន្ថែមឯកសារដែលលាក់ និងឯកសារប្រព័ន្ធផងដែរ ពេលស្កេនថតឯកសារ។</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>លទ្ធផល</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>អក្សរធំ/តូចរបស់ Hash</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>អក្សរធំ (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>អក្សរតូច (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>ទម្រង់ឯកសារ Checksum លំនាំដើម</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>ការធ្វើបច្ចុប្បន្នភាព</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>ពិនិត្យរកការធ្វើបច្ចុប្បន្នភាពដោយស្វ័យប្រវត្តិ</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>ពិនិត្យ GitHub យ៉ាងច្រើនម្តងក្នុងមួយថ្ងៃ នៅពេលកម្មវិធីចាប់ផ្តើម។ ការធ្វើបច្ចុប្បន្នភាពត្រូវបានទាញយក តែនៅពេលអ្នកជ្រើសរើសដំឡើងប៉ុណ្ណោះ។</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>ការរួមបញ្ចូលជាមួយ Windows</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>ម៉ឺនុយចុចខាងស្តាំក្នុងកម្មវិធីរុករកឯកសារ</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>បន្ថែម “បង្កើត Hash” និង “ផ្ទៀងផ្ទាត់” ទៅម៉ឺនុយចុចខាងស្តាំនៃឯកសារ និងថតឯកសារ (នៅលើ Windows 11 ស្ថិតនៅក្រោម “បង្ហាញជម្រើសច្រើនទៀត”)។</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>ត្រូវការតែសម្រាប់ឯកសារដែលគណនីរបស់អ្នកមិនអាចអានបានប៉ុណ្ណោះ។ Windows រារាំងការអូស និងទម្លាក់ពីកម្មវិធីរុករកឯកសារ នៅពេលកម្មវិធីនេះដំណើរការជាអ្នកគ្រប់គ្រង។</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>បើកថតទិន្នន័យ</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>ឯកសារ Checksum GNU (ទម្រង់ sha256sum)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>ឯកសារ Checksum BSD (មានស្លាក)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>ឯកសារ SFV (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>ឯកសារ JSON</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>ឯកសារ CSV</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>ឯកសារ Checksum</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>ភាពផ្ទុយខ្ពស់</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>សម្រាប់អ្នកខ្វាក់ពណ៌</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Retro</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>កញ្ចក់</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Pastel</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>លំនាំដើម</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>បង្កើត Hash ដោយប្រើ Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>ផ្ទៀងផ្ទាត់ដោយប្រើ Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>កំពុងរង់ចាំក្នុងជួរ</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>ការចូលប្រើត្រូវបានបដិសេធ</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>កំពុងប្រើដោយកម្មវិធីផ្សេង</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>អស់ពេល</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>ត្រឹមត្រូវ (លំដាប់បៃ CRC32 ចាស់)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>មិនមែនជា Hash {0} ត្រឹមត្រូវទេ</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>កំពុងទាញយកការធ្វើបច្ចុប្បន្នភាព… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>ការធ្វើបច្ចុប្បន្នភាពនឹងត្រូវបានដំឡើងនៅពេលអ្នកបិទ Hash Tool ។</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>សូមរង់ចាំរហូតដល់កិច្ចការបច្ចុប្បន្នបានបញ្ចប់។</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>មិនអាចបន្ថែមធាតុ {0} បានទេ៖
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}៖ បានរំលងបន្ទាត់ {0} ដែលមិនមែនជាធាតុ Checksum ត្រឹមត្រូវ។</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} មិនមាន Checksum ណាមួយទេ។</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>បានរំលង “{0}”៖ ឯកសារ Checksum មិនអាចចង្អុលទៅផ្លូវបណ្តាញ ឬផ្លូវឧបករណ៍បានទេ។</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>តើលុបឯកសារទាំង {0} ចេញពីបញ្ជីមែនទេ?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>បានរក្សាទុក Hash {0} ទៅ {1} ។</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>មិនទាន់មាន Hash ដែលបានគណនាសម្រាប់នាំចេញនៅឡើយទេ។</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>ឯកសារមួយចំនួនមិនអាចអានបានទេ ដោយសារការចូលប្រើត្រូវបានបដិសេធ។ តើចាប់ផ្តើម Hash Tool ឡើងវិញជាអ្នកគ្រប់គ្រង ហើយព្យាយាមម្តងទៀតឬ?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool កំពុងដំណើរការជាអ្នកគ្រប់គ្រង ដូច្នេះ Windows រារាំងការអូស និងទម្លាក់ពីកម្មវិធីរុករកឯកសារ។ សូមប្រើ “បន្ថែមឯកសារ” ឬ “បន្ថែមថតឯកសារ” ជំនួសវិញ។</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} អាចប្រើបានហើយ។</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>ការធ្វើបច្ចុប្បន្នភាពមានតែនៅក្នុងកំណែដែលបានដំឡើង ឬកំណែចល័តពី GitHub Releases ប៉ុណ្ណោះ។</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>មិនអាចអានឯកសារការកំណត់របស់អ្នកបានទេ ដូច្នេះវាត្រូវបានកំណត់ទៅលំនាំដើមវិញ។ ឯកសារដែលខូចត្រូវបានរក្សាទុកជាការបម្រុងទុក។</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>មានបញ្ហាអ្វីមួយកើតឡើង៖ {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>អាន៖ {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>រក្សាទុកឯកសារ Checksum</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>បើកឯកសារ Checksum</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>នាំចេញកំណត់ហេតុ</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>កម្រិតអប្បបរមា</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>រំកិលស្វ័យប្រវត្តិ</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>កំណែ {0}</value>
     </data>
 </root>

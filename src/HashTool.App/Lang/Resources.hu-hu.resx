@@ -1,732 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Hash Eszköz</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Hash Generálása</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Hash Ellenőrzése</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Beállítások</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Frissítés</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Téma</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>Névjegy</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Fejlesztő</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Fájlok hozzáadása...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Lista törlése</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Hashek törlése</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>ÖSSZES SZÁMÍTÁSA</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Tömörítés (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>ÖSSZES ELLENŐRZÉSE</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>Ellenőrzés most</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>Keresés most</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Telepítés</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Elfogadás</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Elutasítás</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Hash Generálása és Tömörítés</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Kötegelt Ellenőrzés</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Frissítések keresése</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Fejlesztői verzió figyelmeztetés</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>Névjegy</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Tipp: Shift+C Számítás, Shift+Z Tömörítés, Ctrl+F Hozzáadás.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Tipp: húzza ide a fájlokat vagy mappákat. Ctrl/⌘+O: fájlok hozzáadása, Ctrl/⌘+Shift+O: mappa hozzáadása, Ctrl/⌘+Enter: összes kiszámítása, Esc: megszakítás.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Tipp: Shift+A Ellenőrzés, Ctrl+F Hozzáadás, Ctrl+Shift+H Törlés.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Tipp: húzza ide a fájlokat, mappákat vagy ellenőrzőösszeg-fájlokat (SHA256SUMS, *.sha256, *.md5…). Ctrl/⌘+Enter: összes ellenőrzése, Esc: megszakítás.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Kész</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Minta:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Jelenlegi verzió: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Kiadási csatorna:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Összes fájl: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Stabil (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Fejlesztői (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Nyelv</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Téma</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Téma stílus</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Világos/Sötét</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Betűtípus</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Betűméret (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Optimális betűtípus automatikus választása</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Zárolás alapértelmezettként</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>UI méretezés</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Hash értékek elrejtése (Biztonság)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Beállítások alaphelyzete</value>
     </data>
-    <data name="Settings_Other">
-        <value>Adatvédelem és biztonság</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Beállítás alapértelmezettként</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Egyéni szövegszín</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Haladó</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Futtatás rendszergazdaként</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Újraindítást igényel. Hozzáférést ad védett fájlokhoz.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Bemeneti fájlméret korlát</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>A feldolgozható fájlok maximális mérete.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Kényszerített kilépés időtúllépés</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Idő (másodperc), mielőtt az app lefagyottnak minősül.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Fájlfeldolgozási időtúllépés</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Megszakítás, ha egy fájl túl sokáig tart.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Vészhelyzeti művelet</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>App kényszerített bezárása és minden feladat azonnali leállítása.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Kényszerített kilépés és Mégse mind</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Konfiguráció</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Beállítások zárolása (Mentés alapértelmezettként)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Véletlen módosítások megelőzése. Csak a 'Hash elrejtése' marad állítható.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Minden beállítás visszaállítása</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Visszaállítás gyári alaphelyzetbe.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Konfigurációs fájl útvonala</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Teljes útvonal megjelenítése és vágólapra másolása.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Útvonal mutatása</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>A beállítások automatikusan mentésre kerülnek a config.json-ba</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Fejlesztői mód</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Haladó naplózás és hibakereső eszközök engedélyezése.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Fejlesztői konzol</value>
     </data>
-    <data name="Dev_Beta">
-        <value>BÉTA</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Rögzítés</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Szüneteltetve</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Mentés fájlba</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Nincs mentés</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Konzol törlése</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Összes másolása</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Napló mappa megnyitása</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Szerző</value>
     </data>
-    <data name="About_Software">
-        <value>Szoftver</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Harmadik féltől származó könyvtárak</value>
     </data>
-    <data name="About_Copyright">
-        <value>Szerzői jog</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Egy hatékony eszköz fájl hashek generálására, ellenőrzésére és tömörítésére. Vagy legalábbis így gondolom
-            :)
-        </value>
+:)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>MIT licenc alatt kiadva.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Technológia</value>
     </data>
-    <data name="About_TechContent">
-        <value>C# és .NET 10.0.102 alapokon.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>C# nyelven, {0} alapokon készült.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI Segítség</value>
     </data>
-    <data name="About_AIContent">
-        <value>Ez a szoftver AI (Gemini 3 Pro és Grok 4.1) segítségével készült.</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Ez a szoftver AI (Gemini 3 Pro, Grok 4.1 és Claude) segítségével készült.</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Feldolgozás ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Kész</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Hiba: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Megszakítva</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Mentve!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Tömörítve!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Várakozás hashre/bemenetre...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Az eredeti fájl hiányzik!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Hiányzó hash érték (Írja be vagy töltsön be fájlt)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>ÉRVÉNYES</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>NEM EGYEZIK!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Hash fájl betöltve</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Hash fájlnév eltérés!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>A fájl nem tartalmaz hasht!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Frissítések keresése...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Új verzió található!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>A legújabb verziót használja.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Frissítés ellenőrzési hiba: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Letöltés és telepítés...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Kész (ellenőrzőösszeg-fájlból)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Telepítési hiba: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Kész (.hash fájlból)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Eredeti fájl elveszett!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Hash fájlnév eltérés!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Hash fájl sikeresen behúzva</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>A fájl nem tartalmaz hasht!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Fájlolvasási hiba</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Eredmény</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Feldolgozás kész!
-            ✅ Siker: {0}
-            ❌ Sikertelen: {1}
-            ⛔ Megszakítva: {2}
-        </value>
+✅ Siker: {0}
+❌ Sikertelen: {1}
+⛔ Megszakítva: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>{0} fájl ellenőrizve.
-            ✅ Egyezik: {1}
-            ❌ Eltérés/Hiba: {2}
-            ⛔ Megszakítva: {3}
-        </value>
+✅ Egyezik: {1}
+❌ Eltérés/Hiba: {2}
+⛔ Megszakítva: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Rossz fájl!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Hash fájl eltérés!
-
-            Eredeti fájl: {0}
-            Kiválasztott fájl: {1}
-
-            Kérjük, válassza ki a helyes kísérő hash fájlt.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Új frissítés</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Verzió: {0}
-
-            Változások:
-            {1}
-
-            Kattintson a 'Frissítés most' gombra a letöltéshez.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Nem található újabb frissítés.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Hiba</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Nem lehet olvasni ezt a hash fájlt.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Konfiguráció ellenőrzés</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>A fájl létezik itt:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>A fájl nem létezik!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Fájl sikeresen létrehozva!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Konfigurációs útvonal másolva.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Rendszergazda mód</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Kérjük, indítsa újra az alkalmazást a változtatások érvénybe léptetéséhez.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Nem nyitható meg a mappa: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ FEJLESZTŐI VERZIÓ FIGYELMEZTETÉS</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Ön éppen a Fejlesztői (Pre-release) frissítési csatornára vált.
-
-            Ez a verzió hibákat tartalmazhat, instabil lehet és adatvesztést okozhat.
-
-            Nem vállalok felelősséget a verzió használatából eredő problémákért.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Elolvastam és elfogadom. Teljes felelősséget vállalok.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Hash fájl mentése</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Tömörített fájl mentése</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Fájlok kiválasztása hash-eléshez</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Hash fájl kiválasztása ehhez: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Fájlok kiválasztása (Eredeti vagy .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Fájlok vagy ellenőrzőösszeg-fájlok kiválasztása</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Beillesztés vagy Húzás ide...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Másodperc</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Ellenőrzés</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Leállítás</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Fájl eltávolítása</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Hash másolása</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Számítás</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Hash törlése</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Hash tallózása</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Sötét</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Világos</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Rendszer</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Feladat leállítva</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Igen</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>OK</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Nem</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip archívum</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Kilépés megerősítése</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>A kilépés megszakít minden folyamatban lévő feladatot. Biztos benne?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>A feladat időtúllépés miatt leállt.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Hibakeresési napló mentése lemezre.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Valós idejű naplózás szüneteltetése.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Hash mutatása</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Hash elrejtése</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Útvonal másolása</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>A lemez megtelt. Kérjük, válasszon másik helyet :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Hash láthatóság</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Nincsenek fájlok. Kattintson a 'Hozzáadás' gombra.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Húzza ide a fájlokat vagy mappákat, vagy kattintson a Fájlok hozzáadása gombra.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Téma zárolása alapértelmezettként</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>{0} fájl kihagyva a korlát ({1} {2}) túllépése miatt:
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Rendszer nyelve</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>Az 'Automatikus' beállításra való visszatéréshez újraindítás szükséges. Folytatja?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Nyelvváltás</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Biztos benne?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Ne mutassa újra ezt a figyelmeztetést</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Hálózati hiba. Kérjük, ellenőrizze az internetkapcsolatot.</value>
     </data>
-    <data name="Error_Server">
-        <value>Szerverhiba (5xx). Próbálja újra később.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Klienshiba (4xx). Kérjük, ellenőrizze a kérést.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>GitHub API korlát túllépve. Próbálja újra később.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Nem található pre-release verzió. Jelenlegi verzió megtartása.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Elérhető pre-release verzió: {0}.
-
-            {1}
-
-            Ez a verzió instabil lehet. Letölti?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Sikertelenek törlése</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>{0} elem eltávolítva.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Hátralévő idő: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Feladat időtartama: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Számítás...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Mappa hozzáadása...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>A kiválasztott mappa üres.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Mappa kiválasztása szkenneléshez</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Mégse</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Feldolgozási korlátok</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Max. fájl mappa szkennelésenként</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Korlátozza a mappából hozzáadott fájlok számát a teljesítmény érdekében.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Max. mappa egyszerre</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Korlátozza az egyszerre kiválasztott mappák számát.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Egyszerre legfeljebb {0} mappát választhat ki.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>{0} fájl hozzáadva. {1} fájl kihagyva a korlát miatt.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Olvasás: {0}/s | Írás: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Olvasási sebesség mutatása</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Olvasási/Írási sebesség mutatása</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Valós idejű átviteli sebesség mutatása hash-elés közben.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Hash számítása...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Minden méret</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Kicsi (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Közepes (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Nagy (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Nagyon nagy (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Dokumentumok</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Adatvédelmi irányelvek</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Szolgáltatási feltételek</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Végfelhasználói licencszerződés (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Jogi nyilatkozat</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>OLVASSEL (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Változásnapló</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Köszönetnyilvánítás</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Feldolgozás</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Sikertelen</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Keresés név szerint...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Méret</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub Profil</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Összes</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Memória felszabadítása</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Automatikus (a rendszer nyelve)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Szemétgyűjtés (GC) kényszerítése a RAM felszabadításához.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Algoritmus</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Memória tisztítása</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Alapértelmezett algoritmus</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Memóriatisztítás elindítva.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Exportálás</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Ellenőrzőösszeg-fájl mentése…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Összes hash másolása</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Ellenőrzőösszeg-fájl megnyitása…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Megtekintés</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Bezárás</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Telepítés kilépéskor</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Kiadási oldal megnyitása</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Újdonságok</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Újraindítás rendszergazdaként</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Részletek másolása</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Teljesítmény</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Egyszerre feldolgozott fájlok</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = automatikus (ezen a számítógépen {0}).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Optimalizálás merevlemezekhez</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Egyszerre csak egy fájlt olvas be, ami forgó merevlemezeken és hálózati megosztásokon gyorsabb.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Rejtett fájlok felvétele</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Mappák beolvasásakor a rejtett és a rendszerfájlokat is hozzáadja.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Kimenet</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Kis- vagy nagybetűs hash</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Nagybetűs (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Kisbetűs (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Alapértelmezett ellenőrzőösszeg-fájlformátum</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Frissítések</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Frissítések automatikus keresése</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Az alkalmazás indításakor legfeljebb naponta egyszer ellenőrzi a GitHubot. A frissítések csak akkor töltődnek le, ha Ön a telepítésük mellett dönt.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows-integráció</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Fájlkezelő helyi menüje</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Hozzáadja a „Hash generálása” és az „Ellenőrzés” elemet a fájlok és mappák jobb gombos menüjéhez (Windows 11-en a „További lehetőségek megjelenítése” menüpontban).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Csak olyan fájlokhoz szükséges, amelyeket a fiókja nem tud olvasni. Rendszergazdaként futtatva a Windows letiltja a Fájlkezelőből történő áthúzást.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Adatmappa megnyitása</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU ellenőrzőösszeg-fájl (sha256sum formátum)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD ellenőrzőösszeg-fájl (címkézett)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV-fájl (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON-fájl</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV-fájl</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Ellenőrzőösszeg-fájlok</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Nagy kontraszt</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Színtévesztőbarát</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Retró</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Üveg</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Pasztell</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Alapértelmezett</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Hash generálása a Hash Tool programmal</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Ellenőrzés a Hash Tool programmal</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>Sorban áll</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Hozzáférés megtagadva</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Egy másik program használja</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Időtúllépés</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>ÉRVÉNYES (régi CRC32-bájtsorrend)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Érvénytelen {0} hash</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Frissítés letöltése… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>A frissítés a Hash Tool bezárásakor települ.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Várjon, amíg az aktuális feladat befejeződik.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>{0} elemet nem sikerült hozzáadni:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: {0} sor kihagyva, mert nem érvényes ellenőrzőösszeg-bejegyzés.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>A(z) {0} fájl nem tartalmaz ellenőrzőösszegeket.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>„{0}” kihagyva: az ellenőrzőösszeg-fájlok nem hivatkozhatnak hálózati vagy eszközelérési utakra.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Eltávolítja a listáról az összes fájlt ({0} db)?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>{0} hash mentve ide: {1}.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Még nincsenek exportálható kiszámított hashek.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Néhány fájlt nem sikerült beolvasni, mert a hozzáférést megtagadták. Újraindítja a Hash Tool programot rendszergazdaként, és újrapróbálja őket?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>A Hash Tool rendszergazdaként fut, ezért a Windows letiltja a Fájlkezelőből történő áthúzást. Használja helyette a Fájlok hozzáadása vagy a Mappa hozzáadása gombot.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Elérhető a Hash Tool {0}.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Frissítések csak a GitHub Releases oldalról származó telepített vagy hordozható verzióhoz érhetők el.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>A beállításfájlt nem sikerült beolvasni, ezért vissza lett állítva az alapértékekre. A sérült fájl biztonsági másolatként megmaradt.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Hiba történt: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Olvasás: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Ellenőrzőösszeg-fájl mentése</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Ellenőrzőösszeg-fájlok megnyitása</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Napló exportálása</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Minimális szint</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Automatikus görgetés</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Verzió: {0}</value>
     </data>
 </root>

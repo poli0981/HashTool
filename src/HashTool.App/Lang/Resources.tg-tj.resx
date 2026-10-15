@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Абзори Ҳэш (Hash Tool)</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Эҷоди Ҳэш</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Санҷиши Ҳэш</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Танзимот</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Навсозӣ</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Мавзӯъ</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>Дар бораи</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Таҳиягар</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Иловаи файлҳо...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Тоза кардани рӯйхат</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Тоза кардани ҳэшҳо</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>ҲИСОБИ ҲАМА</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Фишурдан (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>САНҶИШИ ҲАМА</value>
     </data>
-    <data name="Btn_CheckNow">
+    <data name="Btn_CheckNow" xml:space="preserve">
         <value>Ҳоло санҷед</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Насб кардан</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Қабул кардан</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Рад кардан</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Эҷоди Ҳэш ва Фишурдан</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Санҷиши гурӯҳӣ</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Санҷиши навсозиҳо</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Огоҳӣ оид ба версияи таҳиягар</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>Дар бораи барнома</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Маслиҳат: Shift+C барои Ҳисоб, Shift+Z барои Фишурдан, Ctrl+F барои Илова.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Маслиҳат: файлҳо ё ҷузвдонҳоро ба ин ҷо кашида гузоред. Ctrl/⌘+O барои иловаи файлҳо, Ctrl/⌘+Shift+O барои иловаи ҷузвдон, Ctrl/⌘+Enter барои ҳисоби ҳама, Esc барои бекор кардан.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Маслиҳат: Shift+A барои Санҷиш, Ctrl+F барои Илова, Ctrl+Shift+H барои Тозакунӣ.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Маслиҳат: файлҳо, ҷузвдонҳо ё файлҳои ҷамъи назоратиро (SHA256SUMS, *.sha256, *.md5…) ба ин ҷо кашида гузоред. Ctrl/⌘+Enter барои санҷиши ҳама, Esc барои бекор кардан.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Омода</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Намуна:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Версияи ҷорӣ: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Канали интишор:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Ҳамаи файлҳо: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Устувор (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Таҳиягар (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Забон</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Мавзӯъ</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Услуби мавзӯъ</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Равшан/Торик</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Ҳуруф</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Андозаи ҳуруф (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Ба таври худкор интихоб кардани ҳуруфи беҳтарин</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Қулф кардан ҳамчун ҳуруфи пешфарз</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>Миқёси интерфейс</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Пинҳон кардани арзишҳои Ҳэш (Амният)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Барқарор кардани танзимот</value>
     </data>
-    <data name="Settings_Other">
-        <value>Махфият ва Амният</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Ҳамчун пешфарз муқаррар кардан</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Ранги матни фармоишӣ</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Мукаммал</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Ҳамчун Администратор иҷро кардан</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Бозоғозӣ лозим аст. Иҷозати дастрасӣ ба файлҳои ҳифзшударо медиҳад.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Маҳдудияти андозаи файли воридотӣ</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Андозаи ҳадди аксар барои коркарди файлҳо.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Вақти хотимаи маҷбурӣ</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Вақт (сония) пеш аз яхкарда ҳисоб шудани барнома.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Вақти коркарди файл</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Агар як файл вақти зиёдро гирад, бекор кунед.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Амалиёти фавқулодда</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Барномаро маҷбуран пӯшед ва ҳамаи вазифаҳоро фавран бекор кунед.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Хуруҷи маҷбурӣ ва Бекор кардани ҳама</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Танзимот (Configuration)</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Қулф кардани танзимот (Сабт ҳамчун пешфарз)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Пешгирии тағйироти тасодуфӣ. Танҳо 'Пинҳон кардани Ҳэш' танзимшаванда мемонад.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Барқарор кардани ҳамаи танзимот</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Баргардонидан ба танзимоти заводӣ.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Масири файли танзимот</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Масири пурраро нишон диҳед ва ба буфер нусхабардорӣ кунед.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Нишон додани масир</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Танзимот ба таври худкор дар config.json сабт мешаванд</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Ҳолати таҳиягар</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Фаъол кардани сабти мукаммал ва абзорҳои ислоҳи хатогиҳо.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Консоли таҳиягар</value>
     </data>
-    <data name="Dev_Beta">
-        <value>БЕТА</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Сабт мешавад</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Таваққуф шуд</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Сабт дар файл</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Сабт накунед</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Тоза кардани консол</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Нусхабардории ҳама</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Кушодани ҷузвдони гузоришҳо</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Муаллиф</value>
     </data>
-    <data name="About_Software">
-        <value>Нармафзор</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Китобхонаҳои тарафи сеюм</value>
     </data>
-    <data name="About_Copyright">
-        <value>Ҳуқуқи муаллиф</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Абзори пуриқтидор барои эҷод, санҷиш ва фишурдани ҳэшҳои файл. Ё ман ҳамин тавр фикр мекунам :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>Таҳти иҷозатномаи MIT интишор шудааст.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Технология</value>
     </data>
-    <data name="About_TechContent">
-        <value>Бо C# ва .NET 10.0.102 сохта шудааст.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>Бо C# дар асоси {0} сохта шудааст.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>Ёрии АИ (AI)</value>
     </data>
-    <data name="About_AIContent">
-        <value>Ин нармафзор бо ёрии зеҳни сунъӣ (Gemini 3 Pro ва Grok 4.1) таҳия шудааст.</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Ин нармафзор бо ёрии зеҳни сунъӣ (Gemini 3 Pro, Grok 4.1 ва Claude) таҳия шудааст.</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Коркард ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Анҷом ёфт</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Хатогӣ: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Бекор карда шуд</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Сабт шуд!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Фишурда шуд!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Интизори ҳэш/вуруд...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Файли аслӣ вуҷуд надорад!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Қиммати ҳэш вуҷуд надорад (Ворид кунед ё файлро бор кунед)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>ДУРУСТ</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>МУВОФИҚ НЕСТ!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Файли ҳэш бор карда шуд</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Номи файли ҳэш мувофиқ нест!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Файл ҳэш надорад!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Санҷиши навсозиҳо...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Версияи нав пайдо шуд!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Шумо версияи навтаринро истифода мебаред.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Хатогии санҷиши навсозӣ: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Боргирӣ ва насб...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Омода (аз файли ҷамъи назоратӣ)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Хатогии насб: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Омода (Аз файли .hash)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Файли аслӣ гум шудааст!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Номи файли ҳэш мувофиқ нест!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Файли ҳэш бомуваффақият гузошта шуд</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Файл ҳэш надорад!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Хатогии хондани файл</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Натиҷа</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Коркард ба анҷом расид!
-            ✅ Муваффақ: {0}
-            ❌ Ноком: {1}
-            ⛔ Бекор карда шуд: {2}
-        </value>
+✅ Муваффақ: {0}
+❌ Ноком: {1}
+⛔ Бекор карда шуд: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>{0} файл санҷида шуд.
-            ✅ Мувофиқ: {1}
-            ❌ Номувофиқ/Хатогӣ: {2}
-            ⛔ Бекор карда шуд: {3}
-        </value>
+✅ Мувофиқ: {1}
+❌ Номувофиқ/Хатогӣ: {2}
+⛔ Бекор карда шуд: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Файли нодуруст!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Номувофиқатии файли ҳэш!
-
-            Файли аслӣ: {0}
-            Файли интихобшуда: {1}
-
-            Лутфан файли ҳэши дурусти ҳамроҳро интихоб кунед.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Навсозии нав</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Версия: {0}
-
-            Тағйирот:
-            {1}
-
-            Барои боргирӣ 'Ҳоло навсозӣ кунед' -ро клик кунед.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Ягон навсозии навтар ёфт нашуд.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Хатогӣ</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Хондани ин файли ҳэш ғайриимкон аст.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Санҷиши Танзимот</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Файл вуҷуд дорад дар:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Файл вуҷуд надорад!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Файл бомуваффақият эҷод шуд!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Масири танзимот нусхабардорӣ шуд.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Ҳолати Администратор</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Лутфан барномаро бозоғоз кунед то тағйирот эътибор пайдо кунад.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Ҷузвдон кушода намешавад: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ОГОҲӢ ОИД БА ВЕРСИЯИ ТАҲИЯГАР</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Шумо ба канали навсозии Таҳиягар (Pre-release) мегузаред.
-
-            Ин версия метавонад хатогиҳо дошта бошад, ноустувор бошад ва боиси гум шудани маълумот гардад.
-
-            Ман барои ҳама гуна мушкилоте, ки аз истифодаи ин версия бармеоянд, ҷавобгар нестам.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Ман хондам ва розӣ ҳастам. Ман масъулияти пурраро ба дӯш мегирам.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Сабти файли Ҳэш</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Сабти файли фишурдашуда</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Файлҳоро барои ҳэш интихоб кунед</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Файли ҳэшро барои {0} интихоб кунед</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Файлҳоро интихоб кунед (Аслӣ ё файли .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Файлҳо ё файлҳои ҷамъи назоратиро интихоб кунед</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Дар ин ҷо часбонед ё гузоред...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Сонияҳо</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Санҷидан</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Қатъ кардан</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Файлро нест кардан</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Нусхабардории Ҳэш</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Ҳисоб кардан</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Тоза кардани Ҳэш</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Ҷустуҷӯи Ҳэш</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Торик</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Равшан</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Системавӣ</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Вазифа қать шуд</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Бале</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>ХУБ</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Не</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Архиви Zip</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Тасдиқи Хуруҷ</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Хуруҷ ҳамаи вазифаҳои ҷориро бекор мекунад. Шумо мутмаин ҳастед?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Вазифа аз сабаби тамом шудани вақт қатъ шуд.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Сабти гузориши ислоҳи хатогиҳо дар диск.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Таваққуфи гузоришдиҳии вақти воқеӣ.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Нишон додани Ҳэш</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Пинҳон кардани Ҳэш</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Нусхабардории масир</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Диски шумо пур аст. Лутфан ҷои дигарро интихоб кунед :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Аёнияти Ҳэш</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Файлҳо нест. Барои оғоз кардан 'Иловаи файлҳо...' -ро клик кунед.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Файлҳо ё ҷузвдонҳоро ба ин ҷо кашида гузоред ё тугмаи «Иловаи файлҳо»-ро пахш кунед.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Ин мавзӯъро ҳамчун пешфарз қулф кунед</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>{0} файлҳое, ки аз ҳадди аксар ({1} {2}) зиёд буданд, партофта шуданд:
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Забони система</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>Бозгашт ба танзимоти 'Автоматӣ' барои пурра эътибор пайдо кардан бозоғозиро талаб мекунад. Оё шумо мехоҳед идома диҳед?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Тағйири Забон</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Оё шумо ба ин мутмаин ҳастед?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Ин огоҳиро дигар нишон надиҳед</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Хатогии пайвасти шабака. Лутфан интернети худро тафтиш кунед.</value>
     </data>
-    <data name="Error_Server">
-        <value>Хатогии сервер (5xx). Лутфан дертар боз кӯшиш кунед.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Хатогии муштарӣ (4xx). Лутфан дархостро тафтиш кунед.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>Маҳдудияти дархостҳои GitHub API гузашт. Лутфан дертар боз кӯшиш кунед.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Ягон версияи пеш аз интишор ёфт нашуд. Нигоҳ доштани версияи ҷорӣ.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Версияи пеш аз интишор {0} дастрас аст.
-
-            {1}
-
-            Ин версия метавонад ноустувор бошад. Оё шумо мехоҳед боргирӣ кунед?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Тоза кардани нокомшудаҳо</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>{0} унсур нест карда шуд.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Вақти боқимонда: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Давомнокии вазифа: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Ҳисоб мешавад...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Иловаи ҷузвдон...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Ҷузвдони интихобшуда холӣ аст.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Ҷузвдонро барои скан интихоб кунед</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Бекор кардан</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Маҳдудиятҳои коркард</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Файлҳои ҳадди аксар дар як скани ҷузвдон</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Миқдори файлҳои аз ҷузвдон иловашударо маҳдуд кунед, то мушкилоти фаъолиятро пешгирӣ кунед.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Ҷузвдонҳои ҳадди аксар дар як вақт</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Миқдори ҷузвдонҳои дар як вақт интихобшударо маҳдуд кунед.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Шумо метавонед дар як вақт танҳо то {0} ҷузвдонро интихоб кунед.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>{0} файл илова шуд. Аз сабаби маҳдудият {1} файл партофта шуд.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Хондан: {0}/s | Навиштан: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Нишон додани суръати хондан</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Нишон додани Суръати Хондан/Навиштан</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Суръати интиқоли вақти воқеиро ҳангоми амалиёти ҳэш нишон диҳед.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Ҳисоби Ҳэш...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Ҳамаи андозаҳо</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Хурд (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Миёна (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Калон (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Хеле калон (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Ҳуҷҷатҳо</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Сиёсати махфият</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Шартҳои хизматрасонӣ</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Шартномаи литсензионии корбари ниҳоӣ</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Радди масъулият</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>README</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Таърихи тағйирот</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Миннатдорӣ</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Коркард</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Ноком шуд</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Ҷустуҷӯ аз рӯи ном...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Андоза</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>Профили GitHub</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Ҳама</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Холи кардани хотира</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Худкор (забони система)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Ҷамъоварии партовҳоро (GC) маҷбур кунед, то RAM-ро холӣ кунад.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Алгоритм</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Тоза кардани хотира</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Алгоритми пешфарз</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Тозакунии хотира оғоз ёфт.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Содир кардан</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Сабти файли ҷамъи назоратӣ…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Нусхабардории ҳамаи ҳэшҳо</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Кушодани файли ҷамъи назоратӣ…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Дидан</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Пӯшидан</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Насб ҳангоми баромадан</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Кушодани саҳифаи нашр</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Чӣ нав аст</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Бозоғозӣ ҳамчун маъмур</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Нусхабардории тафсилот</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Самаранокӣ</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Шумораи файлҳои ҳамзамон коркардшаванда</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = худкор (дар ин компютер {0}).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Беҳинасозӣ барои дискҳои сахт</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Файлҳоро як-як мехонад, ки ин дар дискҳои сахти гардишкунанда ва ҷузвдонҳои шабакавӣ тезтар аст.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Дохил кардани файлҳои пинҳон</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Ҳангоми скани ҷузвдонҳо файлҳои пинҳон ва системавӣ низ илова мешаванд.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Натиҷаҳо</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Регистри ҳарфҳои ҳэш</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Ҳарфҳои калон (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Ҳарфҳои хурд (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Формати пешфарзи файли ҷамъи назоратӣ</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Навсозиҳо</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Санҷиши худкори навсозиҳо</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Ҳангоми оғози барнома GitHub-ро на бештар аз як бор дар як рӯз месанҷад. Навсозиҳо танҳо вақте боргирӣ мешаванд, ки шумо насби онҳоро интихоб кунед.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Ҳамгироӣ бо Windows</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Менюи контекстии File Explorer</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Ба менюи контекстии файлҳо ва ҷузвдонҳо бандҳои «Эҷоди ҳэш» ва «Санҷиш»-ро илова мекунад (дар Windows 11 – дар зери «Нишон додани имконоти бештар»).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Танҳо барои файлҳое лозим аст, ки ҳисоби шумо онҳоро хонда наметавонад. Ҳангоми кор ҳамчун маъмур Windows кашидан ва гузоштанро аз File Explorer манъ мекунад.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Кушодани ҷузвдони маълумот</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>Файли ҷамъи назоратии GNU (формати sha256sum)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>Файли ҷамъи назоратии BSD (бо тегҳо)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>Файли SFV (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>Файли JSON</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>Файли CSV</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Файлҳои ҷамъи назоратӣ</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Контрасти баланд</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Барои рангкӯрон</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Ретро</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Шиша</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Киберпанк</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Пастел</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Пешфарз</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Эҷоди ҳэш бо Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Санҷиш бо Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>Дар навбат</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Дастрасӣ рад шуд</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Барномаи дигар истифода мебарад</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Вақт тамом шуд</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>ДУРУСТ (тартиби кӯҳнаи байтҳои CRC32)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Ҳэши дурусти {0} нест</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Боргирии навсозӣ… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Навсозӣ ҳангоми пӯшидани Hash Tool насб карда мешавад.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Лутфан то анҷоми вазифаи ҷорӣ интизор шавед.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>Илова кардани {0} унсур муяссар нашуд:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: {0} сатре, ки сабти дурусти ҷамъи назоратӣ нест, партофта шуд.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>Файли {0} ягон ҷамъи назоратӣ надорад.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>«{0}» партофта шуд: файлҳои ҷамъи назоратӣ наметавонанд ба масирҳои шабакавӣ ё масирҳои дастгоҳҳо ишора кунанд.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Ҳамаи {0} файл аз рӯйхат хориҷ карда шаванд?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>{0} ҳэш дар {1} сабт шуд.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Ҳоло ягон ҳэши ҳисобшуда барои содирот нест.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Баъзе файлҳо хонда нашуданд, зеро дастрасӣ рад шуд. Мехоҳед Hash Tool-ро ҳамчун маъмур бозоғозӣ карда, дубора кӯшиш кунед?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool ҳамчун маъмур кор мекунад, бинобар ин Windows кашидан ва гузоштанро аз File Explorer манъ мекунад. Ба ҷои ин «Иловаи файлҳо» ё «Иловаи ҷузвдон»-ро истифода баред.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} дастрас аст.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Навсозиҳо танҳо дар версияи насбшуда ё сайёри аз GitHub Releases гирифташуда дастрасанд.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Файли танзимот хонда нашуд ва танзимот ба ҳолати пешфарз баргардонида шуд. Файли вайроншуда ҳамчун нусхаи эҳтиётӣ нигоҳ дошта шуд.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Хатое рух дод: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Хондан: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Сабти файли ҷамъи назоратӣ</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Кушодани файлҳои ҷамъи назоратӣ</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Содир кардани гузоришҳо</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Сатҳи ҳадди ақал</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Варақзании худкор</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Версияи {0}</value>
     </data>
 </root>

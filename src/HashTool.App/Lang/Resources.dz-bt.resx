@@ -1,734 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
-        <value>ཧޭཤ་ ལག་ཆ།</value>
+    <data name="AppTitle" xml:space="preserve">
+        <value>ཧེ་ཤ་ ལག་ཆ།</value>
     </data>
-    <data name="Menu_Create">
-        <value>ཧޭཤ་ བཟོ་བ།</value>
+    <data name="Menu_Create" xml:space="preserve">
+        <value>ཧེ་ཤ་ བཟོ་བ།</value>
     </data>
-    <data name="Menu_Check">
-        <value>ཧޭཤ་ ཞིབ་དཔྱད།</value>
+    <data name="Menu_Check" xml:space="preserve">
+        <value>ཧེ་ཤ་ ཞིབ་དཔྱད།</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>སྒྲིག་སྟངས།</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>དུས་མཐུན།</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>རྒྱབ་གཞི།</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>སྐོར་ལས།</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>བཟོ་མི།</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>ཡིག་སྣོད་ ཁ་སྐོང་།...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>ཐོ་ཡིག་ བསུབ་ནི།</value>
     </data>
-    <data name="Btn_ClearHashes">
-        <value>ཧޭཤ་ བསུབ་ནི།</value>
+    <data name="Btn_ClearHashes" xml:space="preserve">
+        <value>ཧེ་ཤ་ བསུབ་ནི།</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>ག་ར་ རྩིས་བརྐྱབ།</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>བཙུགས་ནི། (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>ག་ར་ ཞིབ་དཔྱད་འབད།</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>ད་ལྟོ་ ཞིབ་དཔྱད་འབད།</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>ད་ལྟོ་ བལྟ།</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>གཞི་བཙུགས་འབད།</value>
     </data>
-    <data name="Btn_Accept">
-        <value>དང་ལེན་འབད།</value>
+    <data name="Title_CreateHash" xml:space="preserve">
+        <value>ཧེ་ཤ་ བཟོ་ནི་ དང་ བཙུགས་ནི།</value>
     </data>
-    <data name="Btn_Decline">
-        <value>ངོས་ལེན་སྤངས།</value>
-    </data>
-    <data name="Title_CreateHash">
-        <value>ཧޭཤ་ བཟོ་ནི་ དང་ བཙུགས་ནི།</value>
-    </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>སྡེབ་ཚན་ ཞིབ་དཔྱད།</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>དུས་མཐུན་ ཡོད་མེད་བལྟ།</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>བཟོ་མིའི་ ཐོན་རིམ་ ཉེན་བརྡ།</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>སྐོར་ལས།</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>བསླབ་བྱ།: Shift+C རྩིས་བརྐྱབ་ནི།, Shift+Z བཙུགས་ནི།, Ctrl+F ཡིག་སྣོད་ཁ་སྐོང་།</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>བསླབ་བྱ། ཡིག་སྣོད་ ཡང་ན་ སྣོད་འཛིན་ཚུ་ ནཱ་ལུ་ བཞག Ctrl/⌘+O ཡིག་སྣོད་ ཁ་སྐོང་ནི། Ctrl/⌘+Shift+O སྣོད་འཛིན་ ཁ་སྐོང་ནི། Ctrl/⌘+Enter ག་ར་ རྩིས་བརྐྱབ་ནི། Esc ཆ་མེད་གཏང་ནི།</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>བསླབ་བྱ།: Shift+A ཞིབ་དཔྱད།, Ctrl+F ཁ་སྐོང་།, Ctrl+Shift+H ཐོ་ཡིག་བསུབ་ནི།</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>བསླབ་བྱ། ཡིག་སྣོད་དང་ སྣོད་འཛིན་ ཡང་ན་ ཅེཀ་སམ་ ཡིག་སྣོད་ཚུ་ (SHA256SUMS, *.sha256, *.md5…) ནཱ་ལུ་ བཞག Ctrl/⌘+Enter ག་ར་ ཞིབ་དཔྱད་འབད་ནི། Esc ཆ་མེད་གཏང་ནི།</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>གྲ་སྒྲིག</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>དཔེ་ཚད།:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>ད་ལྟོའི་ ཐོན་རིམ།: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>འགྲེམས་སྤེལ་ རྒྱུ་ལམ།:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>ཡིག་སྣོད་ ཡོངས་བསྡོམས།: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>བརྟན་ཏོག (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>བཟོ་མི། (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>སྐད་ཡིག</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>རྒྱབ་གཞི།</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>བཟོ་རྣམ།</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>དཀར་པོ།/ནག་པོ།</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>ཡིག་གཟུགས།</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>ཡིག་གཟུགས་ ཚད། (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>རང་བཞིན་གྱིས་ ཡིག་གཟུགས་ སེལ་འཐུ་འབད།</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>སྔོན་སྒྲིག་ ཡིག་གཟུགས་སྦེ་ བཞག</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>UI ཚད་གཞི།</value>
     </data>
-    <data name="Settings_MaskHash">
-        <value>ཧޭཤ་ གནས་གོང་ སྦ་བཞག (ཉེན་སྲུང་།)</value>
+    <data name="Settings_MaskHash" xml:space="preserve">
+        <value>ཧེ་ཤ་ གནས་གོང་ སྦ་བཞག (ཉེན་སྲུང་།)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>སྒྲིག་སྟངས་ སླར་གསོ་འབད།</value>
     </data>
-    <data name="Settings_Other">
-        <value>སྒེར་གསང་ དང་ ཉེན་སྲུང་།</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>སྔོན་སྒྲིག་སྦེ་ གཞི་སྒྲིག་འབད།</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>ཚིག་ཡིག་ ཚོས་གཞི་ སྲོལ་སྒྲིག</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>ཡར་ཐོན་ཅན།</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>བདག་སྐྱོང་པ་སྦེ་ གཡོག་བཀོལ།</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>ལོག་འགོ་བཙུགས་དགོ། ཉེན་སྐྱོབ་ཡོད་པའི་ ཡིག་སྣོད་ལུ་ འཛུལ་སྤྱོད་འབད་བཅུགཔ་ཨིན།</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>ནང་འཇུག་ ཡིག་སྣོད་ཀྱི་ ཚད་གཞི།</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>ལས་སྦྱོར་འབད་ནིའི་ ཡིག་སྣོད་ཀྱི་ ཚད་གཞི་ མཐོ་ཤོས།</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>བང་བཙོང་ཐོག་ལས་ སྤང་ནིའི་ དུས་ཚོད།</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>གློག་རིམ་ ཁ་བསུམས་མ་བཏུབ་པར་ མ་བརྩི་བའི་ཧེ་མ། (སྐར་ཆ།)</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>ཡིག་སྣོད་ ལས་སྦྱོར་ དུས་ཚོད།</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>ཡིག་སྣོད་ཅིག་ལུ་ དུས་ཚོད་ ལེ་ཤ་འགོར་བ་ཅིན་ ཆ་མེད་གཏང་།</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>ཛ་དྲག་ བྱ་བ།</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>གློག་རིམ་ བང་བཙོང་ཐོག་ལས་ བསུམ་ཞིནམ་ལས་ ལས་ཀ་ག་ར་ དེ་འཕྲོས་ལས་ ཆ་མེད་གཏང་།</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>བང་བཙོང་ ཕྱིར་ཐོན་ &amp; ག་ར་ ཆ་མེད་གཏང་།</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>རིམ་སྒྲིག (Configuration)</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>སྒྲིག་སྟངས་ བསྡམས་བཞག (སྔོན་སྒྲིག་སྦེ་ སྲུང་བཞག་འབད།)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>བསམ་བཞིན་མེད་པར་ བསྒྱུར་བཅོས་འབད་ནི་ལས་ བཀག་འཛིན་འབད།</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>སྒྲིག་སྟངས་ ག་ར་ སླར་གསོ་འབད།</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>བཟོ་གྲྭའི་ སྔོན་སྒྲིག་ལུ་ སླར་གསོ་འབད།</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>རིམ་སྒྲིག་ ཡིག་སྣོད་ཀྱི་ འགྲུལ་ལམ།</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>འགྲུལ་ལམ་ ཆ་ཚང་སྟོན་ དེ་ལས་ འདྲ་བཤུས་རྐྱབ།</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>འགྲུལ་ལམ་ སྟོན།</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>སྒྲིག་སྟངས་ཚུ་ config.json ནང་ རང་བཞིན་གྱིས་ སྲུང་བཞག་འབདཝ་ཨིན།</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>བཟོ་མིའི་ ཐབས་ལམ།</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>ཡར་ཐོན་ཅན་གྱི་ དྲན་དེབ་ དང་ རྐྱེན་སེལ་ ལག་ཆ་ ལྕོགས་ཅན་བཟོ།</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>བཟོ་མིའི་ མ་སྒྲོམ།</value>
     </data>
-    <data name="Dev_Beta">
-        <value>ཚོད་ལྟ། (BETA)</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>སྒྲ་བཟུང་དོ།</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>ཐེམ་ཡོད།</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>ཡིག་སྣོད་ནང་ སྲུང་བཞག་འབད།</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>སྲུང་བཞག་ མ་འབད།</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>མ་སྒྲོམ་ བསུབ།</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>ག་ར་ འདྲ་བཤུས་རྐྱབ།</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>དྲན་དེབ་ སྣོད་འཛིན་ ཁ་ཕྱེ།</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>རྩོམ་པ་པོ།</value>
     </data>
-    <data name="About_Software">
-        <value>མཉེན་ཆས།</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>ཕྱོགས་གསུམ་པའི་ དཔེ་མཛོད།</value>
     </data>
-    <data name="About_Copyright">
-        <value>པར་དབང་།</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>ཡིག་སྣོད་ ཧེ་ཤ་ བཟོ་ནི་ དང་། ཞིབ་དཔྱད། བཙུགས་ནིའི་དོན་ལུ་ ལག་ཆ་ ནུས་ཤུགས་ཅན། :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>MIT ཆོག་ཐམ་ འོག་ལུ་ གསར་བཏོན་འབད་ཡོད།</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>འཕྲུལ་རིག</value>
     </data>
-    <data name="About_TechContent">
-        <value>C# དང་ .NET 10.0.102 ཐོག་ལས་ བཟོ་ཡོད།</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>{0} གུ་ C# ལག་ལེན་འཐབ་སྟེ་ བཟོ་ཡོད།</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI གྲོགས་རམ།</value>
     </data>
-    <data name="About_AIContent">
-        <value>མཉེན་ཆས་འདི་ AI (Gemini 3 Pro དང་ Grok 4.1) གི་ གྲོགས་རམ་ཐོག་ལས་ བཟོ་ཡོད།</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>མཉེན་ཆས་འདི་ AI (Gemini 3 Pro, Grok 4.1 དང་ Claude) གི་ གྲོགས་རམ་ཐོག་ལས་ བཟོ་ཡོད།</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>ལས་སྦྱོར་འབད་དོ། ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>མཇུག་བསྡུ་ཡོད།</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>འཛོལ་བ།: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>ཆ་མེད་གཏང་ཡོད།</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>སྲུང་བཞག་འབད་ཡོད།</value>
     </data>
-    <data name="Status_Compressed">
-        <value>བཙུགས་ཡོད།</value>
+    <data name="Status_Waiting" xml:space="preserve">
+        <value>ཧེ་ཤ་/ནང་འཇུག་ ལུ་ བསྒུག་དོ...</value>
     </data>
-    <data name="Status_Waiting">
-        <value>ཧޭཤ་/ནང་འཇུག་ ལུ་ བསྒུག་དོ...</value>
-    </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>ངོ་མ་ ཡིག་སྣོད་ མིན་འདུག</value>
     </data>
-    <data name="Status_MissingHash">
-        <value>ཧޭཤ་ གནས་གོང་ མིན་འདུག (ཡིག་སྣོད་ ནང་འཇུག་འབད་ ཡང་ན་ མངོན་གསལ་འབད)</value>
+    <data name="Status_MissingHash" xml:space="preserve">
+        <value>ཧེ་ཤ་ གནས་གོང་ མིན་འདུག (ཡིག་སྣོད་ ནང་འཇུག་འབད་ ཡང་ན་ མངོན་གསལ་འབད)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>ནུས་ཅན།</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>མི་མཐུན་པ།</value>
     </data>
-    <data name="Status_HashFileLoaded">
-        <value>ཧޭཤ་ ཡིག་སྣོད་ མངོན་གསལ་འབད་ཡོད།</value>
+    <data name="Status_HashFileLoaded" xml:space="preserve">
+        <value>ཧེ་ཤ་ ཡིག་སྣོད་ མངོན་གསལ་འབད་ཡོད།</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>ཧޭཤ་ ཡིག་སྣོད་ཀྱི་ མིང་ མི་མཐུན་པས།</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>ཡིག་སྣོད་ནང་ ཧޭཤ་ མིན་འདུག</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>དུས་མཐུན་ ཡོད་མེད་ བལྟ་དོ...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>ཐོན་རིམ་ གསརཔ་ ཐོབ་ཅི།</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>ཁྱོད་ཀྱིས་ ཐོན་རིམ་ གསར་ཤོས་ ལག་ལེན་འཐབ་དོ།</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>དུས་མཐུན་ ཞིབ་དཔྱད་ འཛོལ་བ།: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>ཕབ་ལེན་ དང་ གཞི་བཙུགས་འབད་དོ...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>གྲ་སྒྲིག (ཅེཀ་སམ་ ཡིག་སྣོད་ལས།)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>གཞི་བཙུགས་ འཛོལ་བ།: {0}</value>
+    <data name="Status_DropNoHash" xml:space="preserve">
+        <value>ཡིག་སྣོད་ནང་ ཧེ་ཤ་ མིན་འདུག</value>
     </data>
-    <data name="Status_ReadyFromHash">
-        <value>གྲ་སྒྲིག (.hash ཡིག་སྣོད་ལས།)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>ངོ་མ་ ཡིག་སྣོད་ བརླག་སོང་ནུག</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>ཧޭཤ་ ཡིག་སྣོད་ཀྱི་ མིང་ མི་མཐུན་པས།</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>ཧޭཤ་ ཡིག་སྣོད་ མཐར་འཁྱོལ་སྦེ་ བཞག་ཅི།</value>
-    </data>
-    <data name="Status_DropNoHash">
-        <value>ཡིག་སྣོད་ནང་ ཧޭཤ་ མིན་འདུག</value>
-    </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>ཡིག་སྣོད་ ལྷག་ནིའི་ འཛོལ་བ།</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>གྲུབ་འབྲས།</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>ལས་སྦྱོར་ མཇུག་བསྡུ་ཡོད།
-            ✅ མཐར་འཁྱོལ།: {0}
-            ❌ མཐར་མ་འཁྱོལ།: {1}
-            ⛔ ཆ་མེད་གཏང་ཡོད།: {2}
-        </value>
+✅ མཐར་འཁྱོལ།: {0}
+❌ མཐར་མ་འཁྱོལ།: {1}
+⛔ ཆ་མེད་གཏང་ཡོད།: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>{0} ཡིག་སྣོད་ ཞིབ་དཔྱད་འབད་ཡོད།
-            ✅ མཐུན་པ།: {1}
-            ❌ མི་མཐུན་པ/འཛོལ་བ།: {2}
-            ⛔ ཆ་མེད་གཏང་ཡོད།: {3}
-        </value>
+✅ མཐུན་པ།: {1}
+❌ མི་མཐུན་པ/འཛོལ་བ།: {2}
+⛔ ཆ་མེད་གཏང་ཡོད།: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>ཡིག་སྣོད་ ཕྱི་འགྱུར་ཨིན་པས།</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>ཧޭཤ་ ཡིག་སྣོད་ མི་མཐུན་པས།
-
-            ངོ་མ་ ཡིག་སྣོད།: {0}
-            སེལ་འཐུ་འབད་ཡོད་པའི་ ཡིག་སྣོད།: {1}
-
-            ཧޭཤ་ ཡིག་སྣོད་ ངོ་མ་དེ་ སེལ་འཐུ་འབད་གནང་།
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>དུས་མཐུན་ གསརཔ།</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>ཐོན་རིམ།: {0}
-
-            བསྒྱུར་བཅོས།:
-            {1}
-
-            ཕབ་ལེན་འབད་ནིའི་དོན་ལུ་ 'ད་ལྟོ་ དུས་མཐུན་བཟོ་' ལུ་ ཨེབ་གཏང་འབད།
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>དུས་མཐུན་ གསརཔ་ ག་ནི་ཡང་ མ་ཐོབ།</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>འཛོལ་བ།</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>ཧޭཤ་ ཡིག་སྣོད་འདི་ ལྷག་ མ་ཚུགས།</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>རིམ་སྒྲིག་ ཞིབ་དཔྱད།</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>ཡིག་སྣོད་ འདི་ནང་ འདུག:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>ཡིག་སྣོད་ མིན་འདུག</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>ཡིག་སྣོད་ མཐར་འཁྱོལ་སྦེ་ བཟོ་ཡོད།</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>རིམ་སྒྲིག་ འགྲུལ་ལམ་ འདྲ་བཤུས་རྐྱབ་ཡོད།</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>བདག་སྐྱོང་པའི་ ཐབས་ལམ།</value>
+    <data name="Dialog_SaveHash" xml:space="preserve">
+        <value>ཧེ་ཤ་ ཡིག་སྣོད་ སྲུང་བཞག་འབད།</value>
     </data>
-    <data name="Msg_AdminRestart">
-        <value>བསྒྱུར་བཅོས་ཚུ་ ཆ་གནས་འབད་ནིའི་དོན་ལུ་ གློག་རིམ་ ལོག་འགོ་བཙུགས་གནང་།</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>སྣོད་འཛིན་ ཁ་ཕྱེ་ མ་ཚུགས།: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ བཟོ་མིའི་ ཐོན་རིམ་ ཉེན་བརྡ།</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>ཁྱོད་ བཟོ་མིའི་ དུས་མཐུན་ རྒྱུ་ལམ་ (Pre-release) ལུ་ འགྱོ་དོ།
-
-            ཐོན་རིམ་འདི་ནང་ འཛོལ་བ་འོང་ནི་དང་། བརྟན་ཏོག་མེད་པ། གནས་སྡུད་ བརླག་སྟོར་ཞུགས་ནིའི་ ཉེན་ཁ་ཡོད།
-
-            ཐོན་རིམ་འདི་ ལག་ལེན་འཐབ་པ་ལུ་བརྟེན་ བྱུང་བའི་ གནད་དོན་ཚུ་ལུ་ ང་གིས་ འགན་ཁུར་ མི་འབག
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>ངས་ ལྷག་ཅི། ཁས་ལེན་འབདཝ་ཨིན། ངས་ འགན་ཁུར་ ཆ་ཚང་ འབག་འོང་།</value>
-    </data>
-    <data name="Dialog_SaveHash">
-        <value>ཧޭཤ་ ཡིག་སྣོད་ སྲུང་བཞག་འབད།</value>
-    </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>བཙུགས་ཡོད་པའི་ ཡིག་སྣོད་ སྲུང་བཞག་འབད།</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>ཧེ་ཤ་བཟོ་ནིའི་ ཡིག་སྣོད་ སེལ་འཐུ་འབད།</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>{0} གི་དོན་ལུ་ ཧེ་ཤ་ ཡིག་སྣོད་ སེལ་འཐུ་འབད།</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>ཡིག་སྣོད་ སེལ་འཐུ་འབད། (ངོ་མ་ ཡང་ན་ .hash ཡིག་སྣོད)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>ཡིག་སྣོད་ ཡང་ན་ ཅེཀ་སམ་ ཡིག་སྣོད་ སེལ་འཐུ་འབད།</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>ནཱ་ལུ་ སྦྱར་ ཡང་ན་ བཞག...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>སྐར་ཆ།</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>ཞིབ་དཔྱད།</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>བཀག་བཞག</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>ཡིག་སྣོད་ རྩ་བསྐྲད་གཏང་།</value>
     </data>
-    <data name="Tip_CopyHash">
-        <value>ཧޭཤ་ འདྲ་བཤུས་རྐྱབ།</value>
+    <data name="Tip_CopyHash" xml:space="preserve">
+        <value>ཧེ་ཤ་ འདྲ་བཤུས་རྐྱབ།</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>རྩིས་བརྐྱབ།</value>
     </data>
-    <data name="Tip_ClearHash">
-        <value>ཧޭཤ་ བསུབ།</value>
+    <data name="Tip_ClearHash" xml:space="preserve">
+        <value>ཧེ་ཤ་ བསུབ།</value>
     </data>
-    <data name="Tip_BrowseHash">
-        <value>ཧޭཤ་ བརྡ་འཚོལ་འབད།</value>
+    <data name="Tip_BrowseHash" xml:space="preserve">
+        <value>ཧེ་ཤ་ བརྡ་འཚོལ་འབད།</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>ནག་པོ།</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>དཀར་པོ།</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>མ་ལག</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>ལས་ཀ་ བཀག་ཡོད།</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>ཨིན།</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>བཏུབ།</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>མེན།</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip ཡིག་མཛོད།</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>ཕྱིར་ཐོན་ ངེས་གཏན་བཟོ།</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>ཕྱིར་ཐོན་འབད་བ་ཅིན་ ད་ལྟོ་འབད་བའི་ ལས་ཀ་ག་ར་ ཆ་མེད་འགྱོ་འོང་། ཁྱོད་ ཐད་རི་བ་རི་ཨིན་ན?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>དུས་ཚོད་ རྫོགས་ནི་འདི་གིས་ ལས་ཀ་ བཀག་ཡོད།</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>རྐྱེན་སེལ་ དྲན་དེབ་ ཌིཀསི་ནང་ སྲུང་བཞག་འབད།</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>དུས་ཐོག་ དྲན་དེབ་བཟོ་ནི་ ཐེམ་བཞག</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>ཧޭཤ་ སྟོན།</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>ཧޭཤ་ སྦ་བཞག</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>འགྲུལ་ལམ་ འདྲ་བཤུས་རྐྱབ།</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>ཁྱོད་ཀྱི་ ཌིཀསི་ གང་སོང་ནུག ས་གནས་ གཞན་ཅིག་ སེལ་འཐུ་འབད་གནང་། :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>ཧེ་ཤ་ མཐོང་ཚུལ།</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>ཡིག་སྣོད་ མིན་འདུག འགོ་བཙུགས་ནིའི་དོན་ལུ་ 'ཡིག་སྣོད་ ཁ་སྐོང་' ལུ་ ཨེབ་གཏང་འབད།</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>ཡིག་སྣོད་ ཡང་ན་ སྣོད་འཛིན་ཚུ་ ནཱ་ལུ་ བཞག ཡང་ན་ “ཡིག་སྣོད་ ཁ་སྐོང་” ལུ་ ཨེབ་གཏང་འབད།</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>བརྗོད་དོན་འདི་ སྔོན་སྒྲིག་སྦེ་ བསྡམས་བཞག</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>ཚད་གཞི་ ({1} {2}) ལས་བརྒལ་བའི་ ཡིག་སྣོད་ {0} གོམ་འགྱོ་ཡོད།:
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>མ་ལག་ སྐད་ཡིག</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>'རང་བཞིན་' སྒྲིག་སྟངས་ལུ་ ལོག་འགྱོ་བ་ཅིན་ ཆ་ཚང་སྦེ་ ལག་ལེན་འཐབ་ནིའི་དོན་ལུ་ ལོག་འགོ་བཙུགས་དགོ། ཁྱོད་
-            འཕྲོ་མཐུད་ནི་ཨིན་ན?
-        </value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>སྐད་ཡིག་ བསྒྱུར་བཅོས།</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>ཁྱོད་ ཐད་རི་བ་རི་ཨིན་ན?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>ཉེན་བརྡ་འདི་ ལོག་མ་སྟོན།</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>ཡོངས་འབྲེལ་ མཐུད་ལམ་ འཛོལ་བ། ཁྱོད་རའི་ ཨིན་ཊར་ནེཊ་ མཐུད་ལམ་ ཞིབ་དཔྱད་འབད་གནང་།</value>
     </data>
-    <data name="Error_Server">
-        <value>སར་བར་ འཛོལ་བ། (5xx). ཤུལ་ལས་ ལོག་འབད་རྩོལ་བསྐྱེད་གནང་།</value>
-    </data>
-    <data name="Error_Client">
-        <value>ཞབས་ཏོག་ལེན་མིའི་ འཛོལ་བ། (4xx). ཞུ་བ་ ཞིབ་དཔྱད་འབད་གནང་།</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>GitHub API ཚད་གཞི་ ལས་བརྒལ་སོང་ནུག ཤུལ་ལས་ ལོག་འབད་རྩོལ་བསྐྱེད་གནང་།</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>སྔོན་གཏོང་ ཐོན་རིམ་ མ་ཐོབ། ད་ལྟོའི་ ཐོན་རིམ་ བཞག་དོ།</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>སྔོན་གཏོང་ ཐོན་རིམ་ {0} ཐོབ་ཚུགས།
-
-            {1}
-
-            ཐོན་རིམ་འདི་ བརྟན་ཏོག་ མེདཔ་འོང་། ཁྱོད་ ཕབ་ལེན་འབད་ནི་ཨིན་ན?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>མཐར་མ་འཁྱོལ་མི་ཚུ་ བསུབ།</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>དངོས་པོ་ {0} རྩ་བསྐྲད་གཏང་ཡོད།</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>ལྷག་ལུས་ དུས་ཚོད།: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>ལས་ཀའི་ དུས་ཡུན།: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>རྩིས་བརྐྱབ་དོ...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>སྣོད་འཛིན་ ཁ་སྐོང་...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>སེལ་འཐུ་འབད་ཡོད་པའི་ སྣོད་འཛིན་འདི་ སྟོང་པ་ཨིན་པས།</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>ཞིབ་ལྟ་འབད་ནིའི་ སྣོད་འཛིན་ སེལ་འཐུ་འབད།</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>ཆ་མེད་གཏང་།</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>ལས་སྦྱོར་ ཚད་གཞི།</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>སྣོད་འཛིན་ ཞིབ་ལྟ་རེ་ལུ་ ཡིག་སྣོད་ མང་ཤོས།</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>ལས་སྦྱོར་ལུ་ གནོད་པ་མི་འབྱུང་ནིའི་དོན་ལུ་ སྣོད་འཛིན་ནང་ལས་ ཁ་སྐོང་འབད་མི་ ཡིག་སྣོད་ཀྱི་ གྲངས་ཁ་
-            ཚད་འཛིན་འབད།
-        </value>
+ཚད་འཛིན་འབད།</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>ཨེབ་གཏང་རེ་ལུ་ སྣོད་འཛིན་ མང་ཤོས།</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>དུས་གཅིག་ལུ་ སེལ་འཐུ་འབད་ཡོད་པའི་ སྣོད་འཛིན་གྱི་ གྲངས་ཁ་ ཚད་འཛིན་འབད།</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>ཁྱོད་ཀྱིས་ དུས་གཅིག་ལུ་ སྣོད་འཛིན་ {0} ལས་ལྷག་ སེལ་འཐུ་འབད་མི་ཚུགས།</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>ཡིག་སྣོད་ {0} ཁ་སྐོང་འབད་ཡོད། ཚད་གཞི་ལས་བརྒལ་ནི་འདི་གིས་ ཡིག་སྣོད་ {1} གོམ་འགྱོ་ཡོད།</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>ལྷག་ནི།: {0}/s | འབྲི་ནི།: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>ལྷག་ནིའི་ མགྱོགས་ཚད་ སྟོན།</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>ལྷག་ནི་/འབྲི་ནིའི་ མགྱོགས་ཚད་ སྟོན།</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>ཧེ་ཤ་ བཟོ་བའི་སྐབས་ དུས་ཐོག་ མགྱོགས་ཚད་ སྟོན།</value>
     </data>
-    <data name="Status_Computing">
-        <value>ཧེ་ཤ་ རྩིས་བརྐྱབ་དོ...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>ཚད་ ག་ར།</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>ཆུང་ཀུ། (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>བར་མ། (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>སྦོམ་ (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>སྦོམ་ཤོས། (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>ཡིག་ཆ།</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>སྒེར་གསང་ སྲིད་བྱུས།</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>ཞབས་ཏོག་གི་ ཆ་རྐྱེན།</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>མཐའ་མཇུག་ ལག་ལེན་པའི་ ཆོག་ཐམ་ གན་རྒྱ། (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>ཁས་མི་ལེན་པ།</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>README</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>བསྒྱུར་བཅོས་ ཐོ་ཡིག</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>བཀྲིན་བསམ་ཤེས།</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>ལས་སྦྱོར་འབད་དོ།</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>མཐར་མ་འཁྱོལ།</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>མིང་གི་ཐོག་ལས་ འཚོལ...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>ཚད།</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub གསལ་སྡུད།</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>ག་ར།</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>དྲན་ཚད་ སྟོངམ་བཏོན།</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>རང་བཞིན་གྱིས། (མ་ལག་གི་ སྐད་ཡིག)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>RAM སྟོངམ་བཏོན་ནིའི་དོན་ལུ་ Garbage Collection (GC) བང་བཙོང་འབད།</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>རྩིས་ཐབས།</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>དྲན་ཚད་ གཙང་སྦྲ་འབད།</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>སྔོན་སྒྲིག་ རྩིས་ཐབས།</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>དྲན་ཚད་ གཙང་སྦྲ་འབད་ནི་ འགོ་བཙུགས་ཡོད།</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>ཕྱིར་འདྲེན།</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>ཅེཀ་སམ་ ཡིག་སྣོད་ སྲུང་བཞག་འབད།…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>ཧེ་ཤ་ ག་ར་ འདྲ་བཤུས་རྐྱབ།</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>ཅེཀ་སམ་ ཡིག་སྣོད་ ཁ་ཕྱེ།…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>བལྟ།</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>ཁ་བསྡམས།</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>ཕྱིར་ཐོན་འབད་བའི་སྐབས་ གཞི་བཙུགས་འབད།</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>གསར་བཏོན་ ཤོག་ལེབ་ ཁ་ཕྱེ།</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>ཁྱད་ཆོས་ གསརཔ།</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>བདག་སྐྱོང་པ་སྦེ་ ལོག་འགོ་བཙུགས།</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>ཁ་གསལ་ འདྲ་བཤུས་རྐྱབ།</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>ལཱ་ཤུལ།</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>དུས་གཅིག་ལུ་ ལས་སྦྱོར་འབད་མི་ ཡིག་སྣོད།</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = རང་བཞིན་གྱིས་ (གློག་རིག་འདི་ནང་ {0})།</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>སྲ་སྡེར་གྱི་དོན་ལུ་ ལེགས་བཅོས་འབད།</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>ཐེངས་རེ་ལུ་ ཡིག་སྣོད་ གཅིག་རྐྱངམ་ཅིག་ ལྷགཔ་ཨིན། འདི་ འཁོར་བའི་ སྲ་སྡེར་ དང་ ཡོངས་འབྲེལ་ བགོ་བཤའ་ཚུ་ནང་ མགྱོགས་དྲགས་ཨིན།</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>སྦ་ཡོད་པའི་ ཡིག་སྣོད་ཚུ་ གྲངས་སུ་བཙུགས།</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>སྣོད་འཛིན་ཚུ་ ཞིབ་ལྟ་འབད་བའི་སྐབས་ སྦ་ཡོད་པའི་ ཡིག་སྣོད་ དང་ མ་ལག་ ཡིག་སྣོད་ཚུ་ཡང་ ཁ་སྐོང་འབད།</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>ཐོན་འབྲས།</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>ཧེ་ཤ་ ཡིག་འབྲུའི་ ཆེ་ཆུང་།</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>ཡིག་འབྲུ་ ཆེ་བ། (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>ཡིག་འབྲུ་ ཆུང་བ། (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>སྔོན་སྒྲིག་ ཅེཀ་སམ་ ཡིག་སྣོད་ཀྱི་ རྩ་སྒྲིག</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>དུས་མཐུན།</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>དུས་མཐུན་ ཡོད་མེད་ རང་བཞིན་གྱིས་ བལྟ།</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>གློག་རིམ་ འགོ་བཙུགས་པའི་སྐབས་ ཉིན་ཅིག་ལུ་ ཐེངས་གཅིག་ལས་ མ་བརྒལ་བར་ GitHub ཞིབ་དཔྱད་འབདཝ་ཨིན། ཁྱོད་ཀྱིས་ གཞི་བཙུགས་འབད་ནི་ སེལ་འཐུ་འབད་བའི་སྐབས་རྐྱངམ་ཅིག་ དུས་མཐུན་ཚུ་ ཕབ་ལེན་འབདཝ་ཨིན།</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows མཉམ་སྡེབ།</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>File Explorer གྱི་ གཡས་ཨེབ་ དཀར་ཆག</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>ཡིག་སྣོད་ དང་ སྣོད་འཛིན་ཚུ་གི་ གཡས་ཨེབ་ དཀར་ཆག་ (Windows 11 ནང་ “གདམ་ཁ་ མང་བ་ སྟོན” གི་འོག་) ནང་ “ཧེ་ཤ་ བཟོ” དང་ “ཞིབ་དཔྱད” ཁ་སྐོང་འབདཝ་ཨིན།</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>ཁྱོད་ཀྱི་ རྩིས་ཐོ་གིས་ ལྷག་མ་ཚུགས་པའི་ ཡིག་སྣོད་ཚུ་གི་དོན་ལུ་རྐྱངམ་ཅིག་ དགོཔ་ཨིན། བདག་སྐྱོང་པ་སྦེ་ གཡོག་བཀོལ་བའི་སྐབས་ Windows གིས་ File Explorer ནང་ལས་ འདྲུད་དེ་བཞག་ནི་འདི་ བཀག་ཆ་འབདཝ་ཨིན།</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>གནད་སྡུད་ སྣོད་འཛིན་ ཁ་ཕྱེ།</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU ཅེཀ་སམ་ ཡིག་སྣོད། (sha256sum རྩ་སྒྲིག)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD ཅེཀ་སམ་ ཡིག་སྣོད། (ངོ་རྟགས་ཅན།)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV ཡིག་སྣོད། (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON ཡིག་སྣོད།</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV ཡིག་སྣོད།</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>ཅེཀ་སམ་ ཡིག་སྣོད་ཚུ།</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>ཁྱད་པར་ མཐོ་བ།</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>ཚོས་ལོང་ཚུ་གི་དོན་ལུ།</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Retro</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>ཤེལ།</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Pastel</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>སྔོན་སྒྲིག</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Hash Tool གིས་ ཧེ་ཤ་ བཟོ།</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Hash Tool གིས་ ཞིབ་དཔྱད་འབད།</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>གྲལ་ཐིག་ནང་ བསྒུག་དོ།</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>འཛུལ་སྤྱོད་ བཀག་ཆ།</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>ལས་རིམ་ གཞན་ཅིག་གིས་ ལག་ལེན་འཐབ་དོ།</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>དུས་ཚོད་ ཡོལ་ཡོད།</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>ནུས་ཅན། (CRC32 བཱའིཊ་ གོ་རིམ་ རྙིངམ།)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>ནུས་ཅན་གྱི་ {0} ཧེ་ཤ་ མེན།</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>དུས་མཐུན་ ཕབ་ལེན་འབད་དོ… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Hash Tool ཁ་བསྡམས་པའི་སྐབས་ དུས་མཐུན་འདི་ གཞི་བཙུགས་འབད་འོང་།</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>ད་ལྟོའི་ ལཱ་འདི་ མ་ཚར་ཚུན་ བསྒུག་གནང་།</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>རྣམ་གྲངས་ {0} ཁ་སྐོང་འབད་མ་ཚུགས།:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: ནུས་ཅན་གྱི་ ཅེཀ་སམ་ ཐོ་བཀོད་ མེན་པའི་ གྲལ་ཐིག་ {0} གོམ་འགྱོ་ཡོད།</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} ནང་ ཅེཀ་སམ་ གཅིག་ཡང་ མིན་འདུག</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>“{0}” གོམ་འགྱོ་ཡོད། ཅེཀ་སམ་ ཡིག་སྣོད་ཚུ་གིས་ ཡོངས་འབྲེལ་ ཡང་ན་ ཐབས་ཆས་ཀྱི་ འགྲུལ་ལམ་ལུ་ སྟོན་མི་ཆོག</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>ཐོ་ཡིག་ནང་ལས་ ཡིག་སྣོད་ {0} ག་ར་ རྩ་བསྐྲད་གཏང་ནི་ཨིན་ན?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>{1} ནང་ ཧེ་ཤ་ {0} སྲུང་བཞག་འབད་ཡོད།</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>ཕྱིར་འདྲེན་འབད་ནི་ལུ་ རྩིས་བརྐྱབ་ཡོད་པའི་ ཧེ་ཤ་ ད་ཚུན་ མིན་འདུག</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>འཛུལ་སྤྱོད་ བཀག་ཆ་འབད་མི་འདི་གིས་ ཡིག་སྣོད་ ལ་ལོ་ ལྷག་མ་ཚུགས། Hash Tool བདག་སྐྱོང་པ་སྦེ་ ལོག་འགོ་བཙུགས་ཏེ་ ལོག་འབད་རྩོལ་བསྐྱེད་ནི་ཨིན་ན?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool བདག་སྐྱོང་པ་སྦེ་ གཡོག་བཀོལ་དོ། དེ་འབདཝ་ལས་ Windows གིས་ File Explorer ནང་ལས་ འདྲུད་དེ་བཞག་ནི་འདི་ བཀག་ཆ་འབདཝ་ཨིན། དེ་གི་ཚབ་ལུ་ “ཡིག་སྣོད་ ཁ་སྐོང་” ཡང་ན་ “སྣོད་འཛིན་ ཁ་སྐོང་” ལག་ལེན་འཐབ།</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} ཐོབ་ཚུགས།</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>དུས་མཐུན་ཚུ་ GitHub Releases ལས་ ཐོབ་པའི་ གཞི་བཙུགས་འབད་ཡོད་པའི་ ཡང་ན་ འཁྱེར་བཏུབ་པའི་ ཐོན་རིམ་ནང་རྐྱངམ་ཅིག་ ཐོབ་ཚུགས།</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>ཁྱོད་ཀྱི་ སྒྲིག་སྟངས་ ཡིག་སྣོད་ ལྷག་མ་ཚུགསཔ་ལས་ སྔོན་སྒྲིག་ལུ་ སླར་གསོ་འབད་ཡོད། གནོད་པ་བྱུང་བའི་ ཡིག་སྣོད་འདི་ གྲབས་ཉར་སྦེ་ བཞག་ཡོད།</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>འཛོལ་བ་ཅིག་ བྱུང་ཡོད།: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>ལྷག་ནི།: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>ཅེཀ་སམ་ ཡིག་སྣོད་ སྲུང་བཞག་འབད།</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>ཅེཀ་སམ་ ཡིག་སྣོད་ཚུ་ ཁ་ཕྱེ།</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>དྲན་དེབ་ ཕྱིར་འདྲེན།</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>གནས་རིམ་ དམའ་ཤོས།</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>རང་བཞིན་གྱིས་ འགྲིལ།</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>ཐོན་རིམ་ {0}</value>
     </data>
 </root>

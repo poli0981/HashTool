@@ -1,732 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Alat Hash</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Buat Hash</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Verifikasi Hash</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Pengaturan</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Pembaruan</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Tema</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>Tentang</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Pengembang</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Tambah Berkas...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Bersihkan Daftar</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Hapus Hash</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>HITUNG SEMUA</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Kompres (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>VERIFIKASI SEMUA</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>Verifikasi Sekarang</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>Cek Sekarang</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Pasang</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Terima</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Tolak</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Buat Hash &amp; Kompres</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Verifikasi Batch</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Cek Pembaruan</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Peringatan Versi Pengembang</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>Tentang</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Tips: Shift+C untuk Hitung, Shift+Z untuk Kompres, Ctrl+F untuk Tambah.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Tips: seret berkas atau folder ke sini. Ctrl/⌘+O menambahkan berkas, Ctrl/⌘+Shift+O menambahkan folder, Ctrl/⌘+Enter menghitung semua, Esc membatalkan.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Tips: Shift+A untuk Verifikasi, Ctrl+F untuk Tambah, Ctrl+Shift+H untuk Bersihkan.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Tips: seret berkas, folder, atau berkas checksum (SHA256SUMS, *.sha256, *.md5…) ke sini. Ctrl/⌘+Enter memverifikasi semua, Esc membatalkan.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Siap</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Sampel:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Versi saat ini: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Saluran rilis:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Total berkas: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Stabil (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Pengembang (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Bahasa</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Tema</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Gaya tema</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Terang/Gelap</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Font</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Ukuran font (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Pilih font optimal secara otomatis</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Kunci sebagai font default</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>Skala UI</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Sembunyikan Nilai Hash (Keamanan)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Atur Ulang Pengaturan</value>
     </data>
-    <data name="Settings_Other">
-        <value>Privasi &amp; Keamanan</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Jadikan Default</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Warna Teks Kustom</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Lanjutan</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Jalankan sebagai Admin</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Perlu restart. Mengizinkan akses ke berkas yang dilindungi.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Batas Ukuran Berkas Masukan</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Ukuran maksimum berkas untuk diproses.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Batas Waktu Paksa Keluar</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Waktu (detik) sebelum aplikasi dianggap macet.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Batas Waktu Proses Berkas</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Batalkan jika satu berkas memakan waktu terlalu lama.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Tindakan Darurat</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Paksa tutup aplikasi dan batalkan semua tugas segera.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Paksa Keluar &amp; Batal Semua</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Konfigurasi</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Kunci Pengaturan (Simpan sebagai Default)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Cegah perubahan yang tidak disengaja. Hanya 'Masking Hash' yang bisa diubah.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Atur Ulang Semua</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Kembalikan ke pengaturan pabrik.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Jalur Berkas Konfigurasi</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Tampilkan jalur lengkap dan salin ke papan klip.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Tampilkan Jalur</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Pengaturan disimpan otomatis ke config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Mode Pengembang</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Aktifkan logging tingkat lanjut dan alat debugging.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Konsol Pengembang</value>
     </data>
-    <data name="Dev_Beta">
-        <value>BETA</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Merekam</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Dijeda</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Simpan ke Berkas</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Jangan Simpan</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Bersihkan Konsol</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Salin Semua</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Buka Folder Log</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Penulis</value>
     </data>
-    <data name="About_Software">
-        <value>Perangkat Lunak</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Pustaka Pihak Ketiga</value>
     </data>
-    <data name="About_Copyright">
-        <value>Hak Cipta</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Alat ampuh untuk membuat, memverifikasi, dan mengompres hash berkas. Atau setidaknya menurut saya begitu
-            :)
-        </value>
+:)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>Dirilis di bawah Lisensi MIT.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Teknologi</value>
     </data>
-    <data name="About_TechContent">
-        <value>Dibuat dengan C# dan .NET 10.0.102.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>Dibuat dengan C# di atas {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>Bantuan AI</value>
     </data>
-    <data name="About_AIContent">
-        <value>Perangkat lunak ini dikembangkan dengan bantuan AI (Gemini 3 Pro dan Grok 4.1).</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Perangkat lunak ini dikembangkan dengan bantuan AI (Gemini 3 Pro, Grok 4.1, dan Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Memproses ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Selesai</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Galat: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Dibatalkan</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Disimpan!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Dikompres!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Menunggu hash/masukan...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Berkas asli hilang!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Nilai hash hilang (Masukkan atau muat berkas)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>VALID</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>TIDAK COCOK!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Berkas hash dimuat</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Nama berkas hash tidak cocok!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Berkas tidak mengandung hash!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Mengecek pembaruan...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Versi baru terdeteksi!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Anda menggunakan versi terbaru.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Galat cek pembaruan: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Mengunduh dan memasang...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Siap (dari berkas checksum)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Galat pemasangan: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Siap (Dari berkas .hash)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Berkas asli hilang!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Nama berkas hash tidak cocok!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Berkas hash berhasil dilepas</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Berkas tidak mengandung hash!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Galat membaca berkas</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Hasil</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Pemrosesan selesai!
-            ✅ Sukses: {0}
-            ❌ Gagal: {1}
-            ⛔ Dibatalkan: {2}
-        </value>
+✅ Sukses: {0}
+❌ Gagal: {1}
+⛔ Dibatalkan: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>Mengecek {0} berkas.
-            ✅ Cocok: {1}
-            ❌ Tidak Cocok/Galat: {2}
-            ⛔ Dibatalkan: {3}
-        </value>
+✅ Cocok: {1}
+❌ Tidak Cocok/Galat: {2}
+⛔ Dibatalkan: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Berkas Salah!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Berkas hash tidak cocok!
-
-            Berkas asli: {0}
-            Berkas dipilih: {1}
-
-            Silakan pilih berkas hash pendamping yang benar.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Pembaruan Baru</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Versi: {0}
-
-            Perubahan:
-            {1}
-
-            Klik 'Perbarui Sekarang' untuk mengunduh.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Tidak ada pembaruan baru.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Galat</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Tidak dapat membaca berkas hash ini.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Cek Konfigurasi</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Berkas ada di:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Berkas tidak ada!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Berkas berhasil dibuat!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Jalur konfigurasi disalin.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Mode Administrator</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Silakan mulai ulang aplikasi agar perubahan berlaku.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Tidak dapat membuka folder: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ PERINGATAN VERSI DEV</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Anda akan beralih ke saluran pembaruan Pengembang (Pra-rilis).
-
-            Versi ini mungkin mengandung bug, tidak stabil, dan menyebabkan kehilangan data.
-
-            Saya tidak bertanggung jawab atas masalah yang timbul dari penggunaan versi ini.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Saya sudah baca dan setuju. Saya tanggung jawab penuh.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Simpan Berkas Hash</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Simpan Berkas Kompresi</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Pilih Berkas untuk Hash</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Pilih berkas hash untuk: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Pilih Berkas (Asli atau .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Pilih Berkas atau Berkas Checksum</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Tempel atau Lepas di sini...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Detik</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Verifikasi</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Berhenti</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Hapus Berkas</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Salin Hash</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Hitung</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Hapus Hash</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Telusuri Hash</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Gelap</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Terang</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Sistem</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Tugas Dihentikan</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Ya</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>OK</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Tidak</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Arsip Zip</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Konfirmasi Keluar</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Keluar akan membatalkan semua tugas yang berjalan. Anda yakin?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Tugas dihentikan karena batas waktu.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Simpan log debug ke disk.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Jeda logging waktu nyata.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Tampilkan Hash</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Sembunyikan Hash</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Salin Jalur</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Drive Anda penuh. Silakan pilih lokasi lain :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Visibilitas Hash</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Tidak ada berkas. Klik 'Tambah Berkas' untuk mulai.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Seret berkas atau folder ke sini, atau klik Tambah Berkas.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Kunci tema ini sebagai default</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>Melewati {0} berkas yang melebihi batas ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Bahasa Sistem</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>Kembali ke pengaturan 'Otomatis' memerlukan restart agar berlaku sepenuhnya. Lanjutkan?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Ganti Bahasa</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Apakah Anda yakin?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Jangan tampilkan peringatan ini lagi</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Galat koneksi jaringan. Silakan periksa internet Anda.</value>
     </data>
-    <data name="Error_Server">
-        <value>Galat server (5xx). Silakan coba lagi nanti.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Galat klien (4xx). Silakan periksa permintaan.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>Batas tarif API GitHub terlampaui. Silakan coba lagi nanti.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Tidak ada versi pra-rilis ditemukan. Mempertahankan versi saat ini.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Versi pra-rilis {0} tersedia.
-
-            {1}
-
-            Versi ini mungkin tidak stabil. Apakah Anda ingin mengunduh?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Hapus Gagal</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>Menghapus {0} item.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Sisa Waktu: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Durasi Tugas: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Menghitung...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Tambah Folder...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Folder yang dipilih kosong.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Pilih Folder untuk Pindai</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Batal</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Batas Pemrosesan</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Maks Berkas per Pindai Folder</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Batasi jumlah berkas yang ditambahkan dari folder untuk mencegah masalah kinerja.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Maks Folder Sekaligus</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Batasi jumlah folder yang dipilih sekaligus.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Anda hanya dapat memilih hingga {0} folder sekaligus.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>Menambahkan {0} berkas. Melewati {1} berkas karena batas.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Baca: {0}/s | Tulis: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Tampilkan Kecepatan Baca</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Tampilkan Kecepatan Baca/Tulis</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Tampilkan kecepatan transfer waktu nyata selama operasi hash.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Menghitung Hash...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Semua Ukuran</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Kecil (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Sedang (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Besar (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Sangat Besar (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Dokumen</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Kebijakan Privasi</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Ketentuan Layanan</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Perjanjian Lisensi Pengguna Akhir (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Penyangkalan (Disclaimer)</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>README</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Log Perubahan</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Ucapan Terima Kasih</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Memproses</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Gagal</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Cari berdasarkan nama...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Ukuran</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>Profil GitHub</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Semua</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Bebaskan Memori</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Otomatis (bahasa sistem)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Paksa Garbage Collection (GC) untuk membebaskan RAM.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Algoritma</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Bersihkan Memori</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Algoritma default</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Pembersihan memori dipicu.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Ekspor</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Simpan Berkas Checksum…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Salin Semua Hash</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Buka Berkas Checksum…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Lihat</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Tutup</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Pasang Saat Keluar</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Buka Halaman Rilis</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Yang baru</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Mulai Ulang sebagai Administrator</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Salin Detail</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Kinerja</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Berkas yang diproses bersamaan</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = otomatis ({0} di komputer ini).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Optimalkan untuk hard disk</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Membaca berkas satu per satu, yang lebih cepat pada hard disk mekanis dan folder bersama di jaringan.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Sertakan berkas tersembunyi</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Juga menambahkan berkas tersembunyi dan berkas sistem saat memindai folder.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Keluaran</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Huruf besar/kecil hash</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Huruf besar (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Huruf kecil (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Format default berkas checksum</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Pembaruan</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Cek pembaruan secara otomatis</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Memeriksa GitHub paling banyak sekali sehari saat aplikasi dimulai. Pembaruan hanya diunduh jika Anda memilih untuk memasangnya.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Integrasi Windows</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Menu konteks File Explorer</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Menambahkan “Buat hash” dan “Verifikasi” ke menu klik kanan pada berkas dan folder (di Windows 11, di bawah “Tampilkan opsi lainnya”).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Hanya diperlukan untuk berkas yang tidak dapat dibaca oleh akun Anda. Saat berjalan sebagai administrator, Windows memblokir seret dan lepas dari File Explorer.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Buka Folder Data</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>Berkas checksum GNU (format sha256sum)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>Berkas checksum BSD (bertag)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>Berkas SFV (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>Berkas JSON</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>Berkas CSV</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Berkas checksum</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Kontras tinggi</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Ramah buta warna</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Retro</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Kaca</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Pastel</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Default</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Buat hash dengan Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Verifikasi dengan Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>Dalam antrean</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Akses ditolak</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Sedang digunakan program lain</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Waktu habis</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>VALID (urutan byte CRC32 lama)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Bukan hash {0} yang valid</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Mengunduh pembaruan… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Pembaruan akan dipasang saat Anda menutup Hash Tool.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Harap tunggu hingga tugas saat ini selesai.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>{0} item tidak dapat ditambahkan:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: {0} baris dilewati karena bukan entri checksum yang valid.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} tidak berisi checksum apa pun.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>“{0}” dilewati: berkas checksum tidak boleh merujuk ke jalur jaringan atau perangkat.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Hapus semua {0} berkas dari daftar?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>{0} hash disimpan ke {1}.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Belum ada hash terhitung untuk diekspor.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Beberapa berkas tidak dapat dibaca karena akses ditolak. Mulai ulang Hash Tool sebagai administrator dan coba lagi?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool berjalan sebagai administrator, sehingga Windows memblokir seret dan lepas dari File Explorer. Gunakan Tambah Berkas atau Tambah Folder sebagai gantinya.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} telah tersedia.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Pembaruan hanya tersedia untuk versi terpasang atau portabel dari GitHub Releases.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Berkas pengaturan Anda tidak dapat dibaca dan telah diatur ulang ke default. Berkas yang rusak disimpan sebagai cadangan.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Terjadi kesalahan: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Baca: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Simpan Berkas Checksum</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Buka Berkas Checksum</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Ekspor Log</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Tingkat minimum</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Gulir otomatis</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Versi {0}</value>
     </data>
 </root>

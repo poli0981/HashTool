@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>雜湊工具 (Hash Tool)</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>建立雜湊</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>驗證雜湊</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>設定</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>更新</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>主題</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>關於</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>開發人員</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>新增檔案...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>清除清單</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>清除雜湊</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>全部計算</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>壓縮 (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>全部驗證</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>立即驗證</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>立即檢查</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>安裝</value>
     </data>
-    <data name="Btn_Accept">
-        <value>接受</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>拒絕</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>建立雜湊與壓縮</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>批次驗證</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>檢查更新</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>開發人員版本警告</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>關於</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>提示：按 Shift+C 計算，Shift+Z 壓縮，Ctrl+F 新增檔案。</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>提示：將檔案或資料夾拖放到這裡。按 Ctrl/⌘+O 新增檔案，Ctrl/⌘+Shift+O 新增資料夾，Ctrl/⌘+Enter 全部計算，Esc 取消。</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>提示：按 Shift+A 驗證，Ctrl+F 新增檔案，Ctrl+Shift+H 清除清單。</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>提示：將檔案、資料夾或總和檢查碼檔案（SHA256SUMS、*.sha256、*.md5 等）拖放到這裡。按 Ctrl/⌘+Enter 全部驗證，Esc 取消。</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>就緒</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>範例：</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>目前版本：{0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>發布管道：</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>總檔案數：{0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>正式版 (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>開發人員版 (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>語言</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>主題</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>主題風格</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>淺色/深色</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>字型</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>字型大小 (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>自動選擇最適合該語言的字型</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>鎖定為預設字型</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>介面縮放</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>隱藏雜湊值 (安全性)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>重設設定</value>
     </data>
-    <data name="Settings_Other">
-        <value>隱私與安全性</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>設為預設</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>自訂文字顏色</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>進階</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>以系統管理員身分執行</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>需要重新啟動。允許存取受保護的檔案。</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>輸入檔案大小限制</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>允許處理的最大檔案大小。</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>強制退出逾時時間</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>判定應用程式沒有回應前的等待時間 (秒)。</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>檔案處理逾時時間</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>如果單一檔案處理時間過長則取消。</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>緊急動作</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>強制關閉應用程式並立即取消所有工作。</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>強制退出並取消全部</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>設定檔</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>鎖定設定 (儲存為預設)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>防止意外變更。只有「隱藏雜湊」可以調整。</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>重設所有設定</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>還原為原廠預設值。</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>設定檔路徑</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>顯示完整路徑並複製到剪貼簿。</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>顯示路徑</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>設定已自動儲存至 config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>開發人員模式</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>啟用進階記錄與偵錯工具。</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>開發人員主控台</value>
     </data>
-    <data name="Dev_Beta">
-        <value>測試版</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>記錄中</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>已暫停</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>儲存至檔案</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>不儲存</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>清除主控台</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>全部複製</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>開啟記錄資料夾</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>作者</value>
     </data>
-    <data name="About_Software">
-        <value>軟體</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>第三方函式庫</value>
     </data>
-    <data name="About_Copyright">
-        <value>版權所有</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>一款用於建立、驗證和壓縮檔案雜湊的強大工具。至少我是這麼認為的 :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>根據 MIT 授權條款發布。</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>技術</value>
     </data>
-    <data name="About_TechContent">
-        <value>使用 C# 與 .NET 10.0.102 建置。</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>基於 {0}，使用 C# 建置。</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI 協助</value>
     </data>
-    <data name="About_AIContent">
-        <value>本軟體在 AI (Gemini 3 Pro 與 Grok 4.1) 的協助下開發。</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>本軟體在 AI（Gemini 3 Pro、Grok 4.1 與 Claude）的協助下開發。</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>處理中 ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>已完成</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>錯誤：{0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>已取消</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>已儲存！</value>
     </data>
-    <data name="Status_Compressed">
-        <value>已壓縮！</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>等待雜湊/輸入...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>遺失原始檔案！</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>缺少雜湊值 (請輸入或載入檔案)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>驗證成功</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>不相符！</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>已載入雜湊檔</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>雜湊檔案名稱不相符！</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>該檔案不包含雜湊值！</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>正在檢查更新...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>發現新版本！</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>您使用的是最新版本。</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>檢查更新錯誤：{0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>正在下載並安裝...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>就緒（來自總和檢查碼檔案）</value>
     </data>
-    <data name="Status_InstallError">
-        <value>安裝錯誤：{0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>就緒 (來自 .hash 檔案)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>原始檔案已遺失！</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>雜湊檔案名稱不相符！</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>成功拖入雜湊檔</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>該檔案不包含雜湊值！</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>檔案讀取錯誤</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>處理結果</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>處理完成！
-            ✅ 成功：{0}
-            ❌ 失敗：{1}
-            ⛔ 已取消：{2}
-        </value>
+✅ 成功：{0}
+❌ 失敗：{1}
+⛔ 已取消：{2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>共驗證了 {0} 個檔案。
-            ✅ 相符：{1}
-            ❌ 不相符/錯誤：{2}
-            ⛔ 已取消：{3}
-        </value>
+✅ 相符：{1}
+❌ 不相符/錯誤：{2}
+⛔ 已取消：{3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>檔案錯誤！</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>雜湊檔案不相符！
-
-            原始檔案：{0}
-            所選檔案：{1}
-
-            請選擇正確的隨附雜湊檔。
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>發現新版本</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>版本：{0}
-
-            更新內容：
-            {1}
-
-            點擊「立即更新」進行下載。
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>未發現新版本。</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>錯誤</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>無法讀取此雜湊檔。</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>設定檔檢查</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>檔案存在於：
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>檔案不存在！</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>檔案建立成功！</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>已複製設定檔路徑。</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>系統管理員模式</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>請重新啟動應用程式以使變更生效。</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>無法開啟資料夾：{0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ 開發人員版本警告</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>您即將切換到開發人員 (預先發行) 更新管道。
-
-            該版本可能存在錯誤、運作不穩定並可能導致資料遺失。
-
-            對於使用此版本引起的任何問題，本人概不負責。
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>我已閱讀並同意。我將承擔全部責任。</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>儲存雜湊檔</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>儲存壓縮檔</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>選擇要進行雜湊的檔案</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>為 {0} 選擇雜湊檔</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>選擇檔案 (原始檔案或 .hash 檔案)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>選擇檔案或總和檢查碼檔案</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>在此貼上或拖放...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>秒</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>驗證</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>停止</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>移除檔案</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>複製雜湊</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>計算</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>清除雜湊</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>瀏覽雜湊</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>深色</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>淺色</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>跟隨系統</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>工作已停止</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>是</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>確定</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>否</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip 壓縮檔</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>確認退出</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>退出將取消所有正在進行的工作。確定要退出嗎？</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>工作因逾時而停止。</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>將偵錯記錄儲存到磁碟。</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>暫停即時記錄。</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>顯示雜湊</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>隱藏雜湊</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>複製路徑</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>您的磁碟已滿。請選擇其他位置 :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>雜湊可見度</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>暫無檔案。點擊「新增檔案」開始。</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>將檔案或資料夾拖放到這裡，或按一下「新增檔案」。</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>將此主題鎖定為預設</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>略過了 {0} 個超出大小限制 ({1} {2}) 的檔案：
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>系統語言</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>恢復為「自動」設定需要重新啟動才能完全生效。是否繼續？</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>變更語言</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>您確定要變更嗎？</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>不再顯示此警告</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>網路連線錯誤。請檢查您的網路設定。</value>
     </data>
-    <data name="Error_Server">
-        <value>伺服器錯誤 (5xx)。請稍後再試。</value>
-    </data>
-    <data name="Error_Client">
-        <value>用戶端錯誤 (4xx)。請檢查請求。</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>超出了 GitHub API 的速率限制。請稍後再試。</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>未找到預先發行版本。保留目前版本。</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>發現預先發行版本 {0}。
-
-            {1}
-
-            此版本可能不穩定。您要下載嗎？
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>清除失敗項目</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>已移除 {0} 個項目。</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>剩餘時間：{0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>工作耗時：{0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>計算中...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>新增資料夾...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>所選資料夾為空。</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>選擇要掃描的資料夾</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>取消</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>處理限制</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>單次資料夾掃描最大檔案數</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>限制從資料夾新增的檔案數量，以防出現效能問題。</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>同時處理的最大資料夾數</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>限制一次可選擇的資料夾數量。</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>您一次最多只能選擇 {0} 個資料夾。</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>已新增 {0} 個檔案。因超出限制，略過了 {1} 個檔案。</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>讀取：{0}/s | 寫入：{1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>顯示讀取速度</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>顯示讀寫速度</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>在雜湊作業期間顯示即時傳輸速度。</value>
     </data>
-    <data name="Status_Computing">
-        <value>正在計算雜湊...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>所有大小</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>小 (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>中 (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>大 (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>超大 (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>文件</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>隱私權政策</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>服務條款</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>使用者授權合約 (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>免責聲明</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>讀我檔案 (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>更新日誌</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>鳴謝</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>處理中</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>失敗</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>依名稱搜尋...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>大小</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub 個人檔案</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>全部</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>釋放記憶體</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>自動（系統語言）</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>強制執行垃圾回收 (GC) 以釋放記憶體 (RAM)。</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>演算法</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>清理記憶體</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>預設演算法</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>已觸發記憶體清理。</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>匯出</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>儲存總和檢查碼檔案…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>複製所有雜湊</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>開啟總和檢查碼檔案…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>檢視</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>關閉</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>結束時安裝</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>開啟發行頁面</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>更新內容</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>以系統管理員身分重新啟動</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>複製詳細資料</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>效能</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>同時處理的檔案數</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = 自動（本機為 {0}）。</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>針對傳統硬碟最佳化</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>一次只讀取一個檔案，在傳統硬碟和網路共用資料夾上速度較快。</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>包含隱藏檔案</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>掃描資料夾時，也一併加入隱藏檔案和系統檔案。</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>輸出</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>雜湊字母大小寫</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>大寫 (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>小寫 (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>預設總和檢查碼檔案格式</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>更新</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>自動檢查更新</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>應用程式啟動時檢查 GitHub，每天最多一次。只有在您選擇安裝時才會下載更新。</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows 整合</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>檔案總管右鍵選單</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>在檔案和資料夾的右鍵選單中加入「建立雜湊」和「驗證」（在 Windows 11 中位於「顯示其他選項」下）。</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>僅在您的帳戶無法讀取某些檔案時才需要。以系統管理員身分執行時，Windows 會封鎖從檔案總管拖放檔案。</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>開啟資料存放位置</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU 總和檢查碼檔案（sha256sum 格式）</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD 總和檢查碼檔案（含演算法標記）</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV 檔案 (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON 檔案</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV 檔案</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>總和檢查碼檔案</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>高對比</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>色盲友善</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>復古</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>毛玻璃</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>賽博龐克</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>粉彩</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>預設</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>使用 Hash Tool 建立雜湊</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>使用 Hash Tool 驗證</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>已排入佇列</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>存取被拒</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>正被其他程式使用</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>已逾時</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>驗證成功（舊版 CRC32 位元組順序）</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>不是有效的 {0} 雜湊值</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>正在下載更新… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>更新將在您關閉 Hash Tool 時安裝。</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>請等候目前的工作完成。</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>有 {0} 個項目無法新增：
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}：已略過 {0} 行無效的總和檢查碼項目。</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} 不包含任何總和檢查碼。</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>已略過「{0}」：總和檢查碼檔案不得指向網路路徑或裝置路徑。</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>要從清單中移除全部 {0} 個檔案嗎？</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>已將 {0} 個雜湊值儲存至 {1}。</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>尚無已計算的雜湊值可供匯出。</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>部分檔案因存取被拒而無法讀取。是否要以系統管理員身分重新啟動 Hash Tool 並重試這些檔案？</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool 正以系統管理員身分執行，因此 Windows 會封鎖從檔案總管拖放檔案。請改用「新增檔案」或「新增資料夾」。</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} 現已推出。</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>只有從 GitHub Releases 下載的安裝版或免安裝版才支援更新。</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>無法讀取您的設定檔，已將其重設為預設值。損毀的檔案已保留作為備份。</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>發生問題：{0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>讀取：{0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>儲存總和檢查碼檔案</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>開啟總和檢查碼檔案</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>匯出記錄</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>最低層級</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>自動捲動</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>版本 {0}</value>
     </data>
 </root>

@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>ހޭޝް ޓޫލް</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>ހޭޝް އުފައްދާ</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>ހޭޝް ޗެކްކުރޭ</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>ސެޓިންގްސް</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>އަޕްޑޭޓް</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>ތީމް</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>މައުލޫމާތު</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>ޑިވެލޮޕަރ</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>ފައިލް އިތުރުކުރޭ...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>ލިސްޓް ހުސްކުރޭ</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>ހޭޝްތައް ފުހެލާ</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>ހުރިހާ އެއްޗެއް ހިސާބުކުރޭ</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>ކޮމްޕްރެސް (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>ހުރިހާ އެއްޗެއް ޗެކްކުރޭ</value>
     </data>
-    <data name="Btn_CheckNow">
+    <data name="Btn_CheckNow" xml:space="preserve">
         <value>މިހާރު ޗެކްކުރޭ</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>އިންސްޓޯލް</value>
     </data>
-    <data name="Btn_Accept">
-        <value>ޤަބޫލުކުރޭ</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>ޤަބޫލުނުކުރޭ</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>ހޭޝް އުފައްދާ &amp; ކޮމްޕްރެސް</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>ބެޗް ވެރިފިކޭޝަން</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>އަޕްޑޭޓް ޗެކްކުރޭ</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>ޑިވެލޮޕަރ ވާޝަން އިންޒާރު</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>މައުލޫމާތު</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>ޓިޕް: Shift+C ހިސާބުކުރުމަށް، Shift+Z ކޮމްޕްރެސްކުރުމަށް، Ctrl+F ފައިލް އިތުރުކުރުމަށް.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>ޓިޕް: ފައިލް ނުވަތަ ފޯލްޑަރ މިތަނަށް ޑްރޮޕްކުރޭ. Ctrl/⌘+O ފައިލް އިތުރުކުރުމަށް، Ctrl/⌘+Shift+O ފޯލްޑަރ އިތުރުކުރުމަށް، Ctrl/⌘+Enter ހުރިހާ އެއްޗެއް ހިސާބުކުރުމަށް، Esc ކެންސަލްކުރުމަށް.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>ޓިޕް: Shift+A ޗެކްކުރުމަށް، Ctrl+F ފައިލް އިތުރުކުރުމަށް، Ctrl+Shift+H ލިސްޓް ފުހެލުމަށް.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>ޓިޕް: ފައިލް، ފޯލްޑަރ ނުވަތަ ޗެކްސަމް ފައިލް (SHA256SUMS، *.sha256، *.md5…) މިތަނަށް ޑްރޮޕްކުރޭ. Ctrl/⌘+Enter ހުރިހާ އެއްޗެއް ޗެކްކުރުމަށް، Esc ކެންސަލްކުރުމަށް.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>ތައްޔާރު</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>ސާމްޕަލް:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>މިހާރުގެ ވާޝަން: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>ރިލީޒް ޗެނަލް:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>ޖުމްލަ ފައިލް: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>ސްޓޭބަލް (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>ޑިވެލޮޕަރ (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>ބަސް</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>ތީމް</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>ތީމް ސްޓައިލް</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>ލައިޓް/ޑާކް</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>ފޮންޓް</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>ފޮންޓް ސައިޒް (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>ބަހަށް އެންމެ އެކަށީގެންވާ ފޮންޓް އޮޓޮއިން ނަގާ</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>ޑިފޯލްޓް ފޮންޓްގެ ގޮތުގައި ލޮކްކުރޭ</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>UI ސްކޭލް</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>ހޭޝް ވެލިއުތައް ފޮރުވާ (ސެކިއުރިޓީ)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>ސެޓިންގްސް ރިސެޓްކުރޭ</value>
     </data>
-    <data name="Settings_Other">
-        <value>ޕްރައިވެސީ &amp; ސެކިއުރިޓީ</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>ޑިފޯލްޓްކޮށް ސެޓްކުރޭ</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>ކަސްޓަމް ޓެކްސްޓް ކުލަ</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>އެޑްވާންސްޑް</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>އެޑްމިނިސްޓްރޭޓަރގެ ގޮތުގައި ހުޅުވާ</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>ރީސްޓާޓް ބޭނުންވޭ. ޕްރޮޓެކްޓެޑް ފައިލްތަކަށް ވަދެވޭނެ.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>އިންޕުޓް ފައިލް ސައިޒް ލިމިޓް</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>ޕްރޮސެސް ކުރެވޭނެ އެންމެ ބޮޑު ފައިލް ސައިޒް.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>ފޯސް ކުއިޓް ޓައިމްއައުޓް</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>އެޕް ހުއްޓިއްޖެކަމަށް ބަލާނެ ވަގުތު (ސިކުންތުން).</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>ފައިލް ޕްރޮސެސިންގ ޓައިމްއައުޓް</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>ފައިލްއެއް މާ ގިނައިރު ވަންޏާ ކެންސަލްކުރޭ.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>އިމަޖެންސީ އެކްޝަން</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>އެޕް ގަދަކަމުން ބަންދުކޮށް ހުރިހާ މަސައްކަތެއް ވަގުތުން ހުއްޓާލާ.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>ފޯސް ކުއިޓް &amp; ހުރިހާކަމެއް ކެންސަލް</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>ކޮންފިގަރޭޝަން</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>ސެޓިންގްސް ލޮކްކުރޭ (ޑިފޯލްޓްކޮށް ސޭވްކުރޭ)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>އޮޅިގެން ބަދަލުވިޔަ ނުދީ ހިފަހައްޓާ. ހަމައެކަނި 'ހޭޝް ފޮރުވުން' ބަދަލުކުރެވޭނެ.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>ހުރިހާ ސެޓިންގްސް ރިސެޓްކުރޭ</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>ފެކްޓަރީ ޑިފޯލްޓަށް ބަދަލުކުރޭ.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>ކޮންފިގަރޭޝަން ފައިލް ޕާތު</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>ފުލް ޕާތު ދައްކާ އަދި ކޮޕީކުރޭ.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>ޕާތު ދައްކާ</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>ސެޓިންގްސް އަމިއްލައަށް config.json އަށް ސޭވްވާނެ</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>ޑިވެލޮޕަރ މޯޑް</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>އެޑްވާންސްޑް ލޮގިންގ އަދި ޑިބަގިންގ ޓޫލްސް އޮންކުރޭ.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>ޑިވެލޮޕަރ ކޮންސޯލް</value>
     </data>
-    <data name="Dev_Beta">
-        <value>ބީޓާ (BETA)</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>ރެކޯޑިންގ</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>ޕޯސްކުރެވިފައި</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>ފައިލްއަށް ސޭވްކުރޭ</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>ސޭވް ނުކުރޭ</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>ކޮންސޯލް ސާފުކުރޭ</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>ހުރިހާ އެއްޗެއް ކޮޕީކުރޭ</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>ލޮގް ފޯލްޑަރ ހުޅުވާ</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>އުފެއްދި ފަރާތް</value>
     </data>
-    <data name="About_Software">
-        <value>ސޮފްޓްވެއަރ</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>ތާޑް ޕާޓީ ލައިބްރަރީތައް</value>
     </data>
-    <data name="About_Copyright">
-        <value>ކޮޕީރައިޓް</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>ފައިލް ހޭޝް އުފެއްދުމަށާއި، ޗެކްކުރުމަށް އަދި ކޮމްޕްރެސް ކުރުމަށް ވަރުގަދަ ޓޫލްއެއް. :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>MIT ލައިސަންސްގެ ދަށުން ދޫކުރެވިފައި.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>ޓެކްނޮލޮޖީ</value>
     </data>
-    <data name="About_TechContent">
-        <value>C# އަދި .NET 10.0.102 އިން ހަދާފައި.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>C# އިން، {0} ބޭނުންކޮށް ހަދާފައި.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI އެހީތެރިކަން</value>
     </data>
-    <data name="About_AIContent">
-        <value>މި ސޮފްޓްވެއަރ ހެދުމުގައި AI (Gemini 3 Pro އަދި Grok 4.1) ގެ އެހީތެރިކަން ހޯދާފައިވޭ.</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>މި ސޮފްޓްވެއަރ ހެދުމުގައި AI (Gemini 3 Pro، Grok 4.1 އަދި Claude) ގެ އެހީތެރިކަން ހޯދާފައިވޭ.</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>ޕްރޮސެސް ކުރަނީ ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>ނިމިއްޖެ</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>މައްސަލައެއް: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>ކެންސަލްކޮށްފި</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>ސޭވްކޮށްފި!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>ކޮމްޕްރެސްކޮށްފި!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>ހޭޝް/އިންޕުޓް އަށް އިންތިޒާރުކުރަނީ...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>އަސްލު ފައިލް ނެތް!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>ހޭޝް ވެލިއު ނެތް (ލިޔޭ ނުވަތަ ފައިލް ލޯޑްކުރޭ)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>ރަނގަޅު (VALID)</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>ދިމައެއްނުވޭ! (MISMATCH!)</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>ހޭޝް ފައިލް ލޯޑްކޮށްފި</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>ހޭޝް ފައިލްގެ ނަން ދިމައެއްނުވޭ!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>ފައިލްގައި ހޭޝްއެއް ނެތް!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>އަޕްޑޭޓް ޗެކްކުރަނީ...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>އާ ވާޝަންއެއް ފެނިއްޖެ!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>ތި ބޭނުންކުރަނީ އެންމެ ފަހުގެ ވާޝަން.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>އަޕްޑޭޓް ޗެކްކުރުމުގައި މައްސަލައެއް: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>ޑައުންލޯޑްކޮށް އިންސްޓޯލްކުރަނީ...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>ތައްޔާރު (ޗެކްސަމް ފައިލް އިން)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>އިންސްޓޯލް މައްސަލައެއް: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>ތައްޔާރު (.hash ފައިލް އިން)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>އަސްލު ފައިލް ގެއްލިއްޖެ!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>ހޭޝް ފައިލްގެ ނަން ދިމައެއްނުވޭ!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>ހޭޝް ފައިލް ލާފި</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>ފައިލްގައި ހޭޝްއެއް ނެތް!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>ފައިލް ކިޔުމުގައި މައްސަލައެއް</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>ނަތީޖާ</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>ޕްރޮސެސިންގ ނިމިއްޖެ!
-            ✅ ކާމިޔާބު: {0}
-            ❌ ފެއިލްވީ: {1}
-            ⛔ ކެންސަލްވީ: {2}
-        </value>
+✅ ކާމިޔާބު: {0}
+❌ ފެއިލްވީ: {1}
+⛔ ކެންސަލްވީ: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>{0} ފައިލް ޗެކްކޮށްފި.
-            ✅ ދިމާވީ: {1}
-            ❌ ދިމާނުވީ/މައްސަލަ: {2}
-            ⛔ ކެންސަލްވީ: {3}
-        </value>
+✅ ދިމާވީ: {1}
+❌ ދިމާނުވީ/މައްސަލަ: {2}
+⛔ ކެންސަލްވީ: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>ނުބައި ފައިލްއެއް!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>ހޭޝް ފައިލް ދިމައެއްނުވޭ!
-
-            އަސްލު ފައިލް: {0}
-            ނެގި ފައިލް: {1}
-
-            ހެޔޮކޮށް ރަނގަޅު ހޭޝް ފައިލް ނަގާ.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>އާ އަޕްޑޭޓް</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>ވާޝަން: {0}
-
-            ބަދަލުތައް:
-            {1}
-
-            ޑައުންލޯޑްކުރުމަށް 'މިހާރު އަޕްޑޭޓްކުރޭ' އަށް ފިއްތާލާ.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>އާ އަޕްޑޭޓެއް ނެތް.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>މައްސަލައެއް</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>މި ހޭޝް ފައިލް ކިޔޭގޮތެއް ނުވި.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>ކޮންފިގަރޭޝަން ޗެކް</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>ފައިލް އެބައިން:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>ފައިލްއެއް ނެތް!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>ފައިލް ހަދައިފި!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>ކޮންފިގަރޭޝަން ޕާތު ކޮޕީކޮށްފި.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>އެޑްމިނިސްޓްރޭޓަރ މޯޑް</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>ބަދަލުތައް ފެންނާނީ އެޕް ރީސްޓާޓް ކުރުމުން.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>ފޯލްޑަރ ހުޅުވޭގޮތެއް ނުވި: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ޑިވެލޮޕަރ ވާޝަން އިންޒާރު</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>ތި ބަދަލުކުރަނީ ޑިވެލޮޕަރ (ޕްރީ-ރިލީޒް) އަޕްޑޭޓް ޗެނަލްއަށް.
-
-            މި ވާޝަންގައި މައްސަލަ ހުރެދާނެ، އަދި ޑޭޓާ ގެއްލިދާނެ.
-
-            މި ވާޝަން ބޭނުންކޮށްގެން ދިމާވާ އެއްވެސް ކަމަކަށް އަހަރެން ޒިންމާއެއް ނުނަގާނަން.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>ކިޔައިފިން އަދި އެއްބަސްވަން. ފުރިހަމަ ޒިންމާ ނަގަން.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>ހޭޝް ފައިލް ސޭވްކުރޭ</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>ކޮމްޕްރެސް ފައިލް ސޭވްކުރޭ</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>ހޭޝްކުރަން ފައިލް ނަގާ</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>{0} އަށް ހޭޝް ފައިލް ނަގާ</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>ފައިލް ނަގާ (އަސްލު ނުވަތަ .hash ފައިލް)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>ފައިލް ނުވަތަ ޗެކްސަމް ފައިލް ނަގާ</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>މިތަނަށް ޕޭސްޓް ނުވަތަ ޑްރޮޕްކުރޭ...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>ސިކުންތު</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>ވެރިފައި</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>ހުއްޓާލާ</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>ފައިލް ނަގާ</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>ހޭޝް ކޮޕީކުރޭ</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>ހިސާބުކުރޭ</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>ހޭޝް ފުހެލާ</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>ހޭޝް ހޯދާ</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>ޑާކް</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>ލައިޓް</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>ސިސްޓަމް</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>މަސައްކަތް ހުއްޓިއްޖެ</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>އާނ</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>އޯކޭ</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>ނޫން</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip ފައިލް</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>ބަންދުކުރުން ޔަޤީންކުރޭ</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>ބަންދުކޮށްފިނަމަ ކުރަމުންދާ ހުރިހާކަމެއް ހުއްޓޭނެ. ޔަޤީންތަ؟</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>ވަގުތު ހަމަވެގެން މަސައްކަތް ހުއްޓިއްޖެ.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>ޑިބަގް ލޮގް ޑިސްކަށް ސޭވްކުރޭ.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>ރިއަލް-ޓައިމް ލޮގިންގ މެދުކަނޑާލާ.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>ހޭޝް ދައްކާ</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>ހޭޝް ފޮރުވާ</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>ޕާތު ކޮޕީކުރޭ</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>ޑިސްކް ފުރިއްޖެ. އެހެން ތަނެއް ނަގާ :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>ހޭޝް ފެންނަގޮތް</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>ފައިލްއެއް ނެތް. ފަށަން 'ފައިލް އިތުރުކުރޭ' އަށް ފިއްތާ.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>ފައިލް ނުވަތަ ފޯލްޑަރ މިތަނަށް ޑްރޮޕްކުރޭ، ނުވަތަ "ފައިލް އިތުރުކުރޭ" އަށް ފިއްތާ.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>މި ތީމް ޑިފޯލްޓްކޮށް ލޮކްކުރޭ</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>ލިމިޓަށްވުރެ ބޮޑު {0} ފައިލް ދޫކޮށްލައިފި ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>ސިސްޓަމް ލޭންގުއޭޖް</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>'އޮޓޯ' އަށް ބަދަލުކޮށްފިނަމަ އެކަން ވާނީ ރީސްޓާޓް ކުރުމުން. ކުރިއަށް ގެންދަންވީ؟</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>ބަސް ބަދަލުކުރުން</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>ޔަޤީންތަ؟</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>މި އިންޒާރު ދެން ނުދައްކާ</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>ނެޓްވޯކް މައްސަލައެއް. އިންޓަނެޓް ޗެކްކުރޭ.</value>
     </data>
-    <data name="Error_Server">
-        <value>ސާވަރ މައްސަލައެއް (5xx). ފަހުން ޓްރައިކުރޭ.</value>
-    </data>
-    <data name="Error_Client">
-        <value>ކްލައިންޓް މައްސަލައެއް (4xx). ރިކުއެސްޓް ޗެކްކުރޭ.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>GitHub API ލިމިޓް ހަމަވެއްޖެ. ފަހުން ޓްރައިކުރޭ.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>ޕްރީ-ރިލީޒް ވާޝަންއެއް ނެތް. މިހާރު ހުރި ވާޝަން ބަހައްޓަނީ.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>ޕްރީ-ރިލީޒް ވާޝަން {0} އެބައިން.
-
-            {1}
-
-            މިއީ ސްޓޭބަލް ވާޝަންއެއް ނޫން. ޑައުންލޯޑްކުރަންވީ؟
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>ފެއިލްވީ އެއްޗެހި ފުހެލާ</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>{0} އެތި ފުހެލައިފި.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>ބާކީ އޮތް ވަގުތު: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>ނެގި ވަގުތު: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>ހިސާބުކުރަނީ...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>ފޯލްޑަރ އިތުރުކުރޭ...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>ނެގި ފޯލްޑަރ ހުސް.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>ސްކޭންކުރަން ފޯލްޑަރ ނަގާ</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>ކެންސަލް</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>ޕްރޮސެސިންގ ލިމިޓްތައް</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>ފޯލްޑަރަކުން ނެގޭނެ އެންމެ ގިނަ ފައިލް</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>ޕާފޯމަންސް ދަށްވިޔަ ނުދިނުމަށް، ފޯލްޑަރަކުން ނެގޭނެ ފައިލްގެ އަދަދު ލިމިޓްކުރޭ.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>އެއްފަހަރާ ނެގޭނެ އެންމެ ގިނަ ފޯލްޑަރ</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>އެއްފަހަރާ ސިލެކްޓްކުރެވޭނެ ފޯލްޑަރގެ އަދަދު ލިމިޓްކުރޭ.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>އެއްފަހަރާ ނެގޭނީ {0} ފޯލްޑަރ.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>{0} ފައިލް އިތުރުކޮށްފި. ލިމިޓް ހަމަވާތީ {1} ފައިލް ދޫކޮށްލައިފި.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>ކިޔަނީ: {0}/s | ލިޔަނީ: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>ކިޔުމުގެ ސްޕީޑް ދައްކާ</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>ލިޔާ/ކިޔާ ސްޕީޑް ދައްކާ</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>ހޭޝް ކުރަމުންދާއިރު ޓްރާންސްފަރ ސްޕީޑް ދައްކާ.</value>
     </data>
-    <data name="Status_Computing">
-        <value>ހޭޝް ހިސާބުކުރަނީ...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>ހުރިހާ ސައިޒެއް</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>ކުދި (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>މެދުމިނުގެ (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>ބޮޑެތި (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>ވަރަށް ބޮޑެތި (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>ލިޔެކިޔުންތައް</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>ޕްރައިވެސީ ޕޮލިސީ</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>ޚިދުމަތުގެ ޝަރުތުތައް</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>ލައިސަންސް އެއްބަސްވުން (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>ޑިސްކްލެއިމަރ</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>ރީޑްމީ (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>ޗޭންޖްލޮގް</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>ޝުކުރުއަދާކުރުން</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>ޕްރޮސެސް ކުރަނީ</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>ފެއިލްވީ</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>ނަމުން ހޯދާ...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>ސައިޒް</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub ޕްރޮފައިލް</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>ހުރިހާ</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>މެމޮރީ ހުސްކުރޭ</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>އޮޓޮމެޓިކް (ސިސްޓަމްގެ ބަސް)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>ރެމް (RAM) ހުސްކުރުމަށް ގާބޭޖް ކަލެކްޝަން (GC) ހިންގާ.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>އަލްގޮރިދަމް</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>މެމޮރީ ސާފުކުރޭ</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>ޑިފޯލްޓް އަލްގޮރިދަމް</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>މެމޮރީ ސާފުކުރަން ފަށައިފި.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>އެކްސްޕޯޓް</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>ޗެކްސަމް ފައިލް ސޭވްކުރޭ…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>ހުރިހާ ހޭޝެއް ކޮޕީކުރޭ</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>ޗެކްސަމް ފައިލް ހުޅުވާ…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>ބަލާ</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>ބަންދުކުރޭ</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>ބަންދުކުރާއިރު އިންސްޓޯލްކުރޭ</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>ރިލީސް ޕޭޖް ހުޅުވާ</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>އާ ބަދަލުތައް</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>އެޑްމިނިސްޓްރޭޓަރ ގޮތުގައި ރީސްޓާޓްކުރޭ</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>ތަފްޞީލު ކޮޕީކުރޭ</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>ޕާފޯމަންސް</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>އެއްފަހަރާ ޕްރޮސެސްކުރާ ފައިލްގެ އަދަދު</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = އޮޓޮމެޓިކް (މި ކޮމްޕިއުޓަރުގައި {0}).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>ހާޑް ޑްރައިވްތަކަށް އޮޕްޓިމައިޒްކުރޭ</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>އެއްފަހަރާ އެއް ފައިލް ކިޔާނެ، މިއީ ސްޕިނިންގ ހާޑް ޑްރައިވްތަކާއި ނެޓްވޯކް ޝެއަރތަކުގައި ހަލުވި ގޮތެވެ.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>ފޮރުވިފައިވާ ފައިލްތައް ހިމަނާ</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>ފޯލްޑަރ ސްކޭންކުރާއިރު ފޮރުވިފައިވާ ފައިލްތަކާއި ސިސްޓަމް ފައިލްތައްވެސް އިތުރުކުރޭ.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>އައުޓްޕުޓް</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>ހޭޝްގެ އަކުރު (ބޮޑު/ކުޑަ)</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>ބޮޑު އަކުރު (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>ކުޑަ އަކުރު (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>ޗެކްސަމް ފައިލްގެ ޑިފޯލްޓް ފޯމެޓް</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>އަޕްޑޭޓްތައް</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>އޮޓޮމެޓިކުން އަޕްޑޭޓް ޗެކްކުރޭ</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>އެޕް ފަށާއިރު، ދުވާލަކު އެންމެ ގިނަވެގެން އެއްފަހަރު GitHub ޗެކްކުރާނެ. އަޕްޑޭޓްތައް ޑައުންލޯޑްކުރެވޭނީ ހަމައެކަނި އިންސްޓޯލްކުރަން ހޮވައިފިނަމައެވެ.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows އިންޓަގްރޭޝަން</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>ފައިލް އެކްސްޕްލޯރަރގެ ރައިޓް-ކްލިކް މެނޫ</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>ފައިލްތަކާއި ފޯލްޑަރތަކުގެ ރައިޓް-ކްލިކް މެނޫއަށް "ހޭޝް އުފައްދާ" އާއި "ޗެކްކުރޭ" އިތުރުކުރެވޭނެ (Windows 11 ގައި "Show more options" ގެ ދަށުގައި).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>ބޭނުންވާނީ ހަމައެކަނި ތިބާގެ އެކައުންޓަށް ކިޔުމުގެ ހުއްދަ ނެތް ފައިލްތަކަށް. އެޑްމިނިސްޓްރޭޓަރ ގޮތުގައި ހިންގާއިރު، ފައިލް އެކްސްޕްލޯރަރ އިން ޑްރެގް އެންޑް ޑްރޮޕް ކުރުން Windows ބްލޮކްކުރޭ.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>ޑޭޓާ ފޯލްޑަރ ހުޅުވާ</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU ޗެކްސަމް ފައިލް (sha256sum ފޯމެޓް)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD ޗެކްސަމް ފައިލް (ޓެގްކުރެވިފައި)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV ފައިލް (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON ފައިލް</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV ފައިލް</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>ޗެކްސަމް ފައިލްތައް</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>ހައި ކޮންޓްރާސްޓް</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>ކަލަރބްލައިންޑް ފްރެންޑްލީ</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>ރެޓްރޯ</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>ބިއްލޫރި</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>ސައިބަރޕަންކް</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>ޕޭސްޓަލް</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>ޑިފޯލްޓް</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Hash Tool އިން ހޭޝް އުފައްދާ</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Hash Tool އިން ޗެކްކުރޭ</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>ކިއުގައި</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>އެކްސެސް ނުލިބުނު</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>އެހެން ޕްރޮގްރާމެއް ބޭނުންކުރަމުންދަނީ</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>ވަގުތު ހަމަވެއްޖެ</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>ރަނގަޅު (CRC32 ގެ ކުރީގެ ބައިޓް ތަރުތީބު)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>ރަނގަޅު {0} ހޭޝްއެއް ނޫން</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>އަޕްޑޭޓް ޑައުންލޯޑްކުރަނީ… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Hash Tool ބަންދުކުރާއިރު އަޕްޑޭޓް އިންސްޓޯލްކުރެވޭނެ.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>މިހާރު ކުރަމުންދާ މަސައްކަތް ނިމެންދެން މަޑުކުރައްވާ.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>{0} އައިޓަމް އިތުރުނުކުރެވުނު:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: ރަނގަޅު ޗެކްސަމް އެންޓްރީއެއް ނޫން {0} ލައިން ދޫކޮށްލައިފި.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} ގައި އެއްވެސް ޗެކްސަމެއް ނެތް.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>"{0}" ދޫކޮށްލައިފި: ޗެކްސަމް ފައިލްތަކުން ނެޓްވޯކް ނުވަތަ ޑިވައިސް ޕާތަކަށް ޕޮއިންޓްކުރުމުގެ ހުއްދައެއް ނެތް.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>ލިސްޓުން ހުރިހާ {0} ފައިލް ނަގާލަންތަ؟</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>{0} ހޭޝް {1} އަށް ސޭވްކޮށްފި.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>އެކްސްޕޯޓްކުރަން ހިސާބުކުރެވިފައިވާ ހޭޝެއް އަދި ނެތް.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>އެކްސެސް ނުލިބުމުން ބައެއް ފައިލް ކިޔައެއް ނުލެވުނު. Hash Tool އެޑްމިނިސްޓްރޭޓަރ ގޮތުގައި ރީސްޓާޓްކޮށް އަލުން ޓްރައިކުރަންތަ؟</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool ހިންގަނީ އެޑްމިނިސްޓްރޭޓަރ ގޮތުގައި ކަމުން، ފައިލް އެކްސްޕްލޯރަރ އިން ޑްރެގް އެންޑް ޑްރޮޕް ކުރުން Windows ބްލޮކްކުރޭ. އޭގެ ބަދަލުގައި "ފައިލް އިތުރުކުރޭ" ނުވަތަ "ފޯލްޑަރ އިތުރުކުރޭ" ބޭނުންކުރޭ.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} ލިބެން އެބަހުރި.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>އަޕްޑޭޓްތައް ލިބޭނީ ހަމައެކަނި GitHub ގެ ރިލީސް ޕޭޖުން ލިބޭ އިންސްޓޯލްކުރެވޭ ނުވަތަ ޕޯޓަބަލް ވާޝަނަށް.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>ސެޓިންގްސް ފައިލް ކިޔައެއް ނުލެވުނީތީ ޑިފޯލްޓަށް ރިސެޓްކޮށްފި. ހަލާކުވެފައިވާ ފައިލް ބެކަޕެއްގެ ގޮތުގައި ބަހައްޓާފައިވޭ.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>މައްސަލައެއް ދިމާވެއްޖެ: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>ކިޔުން: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>ޗެކްސަމް ފައިލް ސޭވްކުރޭ</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>ޗެކްސަމް ފައިލްތައް ހުޅުވާ</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>ލޮގް އެކްސްޕޯޓްކުރޭ</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>އެންމެ ދަށު ލެވެލް</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>އޮޓޮ ސްކްރޯލް</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>ވާޝަން {0}</value>
     </data>
 </root>

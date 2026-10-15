@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>해시 도구</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>해시 생성</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>해시 검증</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>설정</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>업데이트</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>테마</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>정보</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>개발자</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>파일 추가...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>목록 지우기</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>해시 지우기</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>모두 계산</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>압축 (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>모두 검증</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>지금 검증</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>지금 확인</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>설치</value>
     </data>
-    <data name="Btn_Accept">
-        <value>동의</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>거절</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>해시 생성 및 압축</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>일괄 검증</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>업데이트 확인</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>개발 버전 경고</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>정보</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>팁: Shift+C 모두 계산, Shift+Z 압축, Ctrl+F 파일 추가.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>팁: 여기에 파일이나 폴더를 끌어다 놓으세요. Ctrl/⌘+O 파일 추가, Ctrl/⌘+Shift+O 폴더 추가, Ctrl/⌘+Enter 모두 계산, Esc 취소.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>팁: Shift+A 모두 검증, Ctrl+F 파일 추가, Ctrl+Shift+H 목록 지우기.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>팁: 여기에 파일, 폴더 또는 체크섬 파일(SHA256SUMS, *.sha256, *.md5 등)을 끌어다 놓으세요. Ctrl/⌘+Enter 모두 검증, Esc 취소.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>준비 완료</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>샘플:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>현재 버전: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>릴리스 채널:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>총 파일 수: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>안정 (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>개발자용 (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>언어</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>테마</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>테마 스타일</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>라이트/다크</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>글꼴</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>글꼴 크기 (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>언어에 최적화된 글꼴 자동 선택</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>기본 글꼴로 잠금</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>UI 배율</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>해시 값 마스킹 (보안)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>설정 초기화</value>
     </data>
-    <data name="Settings_Other">
-        <value>개인정보 및 보안</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>기본값으로 설정</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>사용자 지정 텍스트 색상</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>고급</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>관리자 권한으로 실행</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>재시작이 필요합니다. 보호된 파일에 접근을 허용합니다.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>입력 파일 크기 제한</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>처리할 파일의 최대 크기입니다.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>강제 종료 타임아웃</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>앱이 응답 없음으로 간주되기 전 대기 시간(초)입니다.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>파일 처리 타임아웃</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>단일 파일 처리가 너무 오래 걸리면 취소합니다.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>비상 조치</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>앱을 강제 종료하고 모든 작업을 즉시 취소합니다.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>강제 종료 및 모두 취소</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>구성 (Configuration)</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>설정 잠금 (기본값으로 저장)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>우발적인 변경을 방지합니다. '해시 마스킹'만 조정 가능합니다.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>모든 설정 초기화</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>공장 초기값으로 복원합니다.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>구성 파일 경로</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>전체 경로를 표시하고 클립보드에 복사합니다.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>경로 표시</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>설정은 config.json에 자동 저장됩니다</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>개발자 모드</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>고급 로깅 및 디버깅 도구를 활성화합니다.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>개발자 콘솔</value>
     </data>
-    <data name="Dev_Beta">
-        <value>베타</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>기록 중</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>일시 중지됨</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>파일로 저장</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>저장 안 함</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>콘솔 지우기</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>모두 복사</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>로그 폴더 열기</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>작성자</value>
     </data>
-    <data name="About_Software">
-        <value>소프트웨어</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>타사 라이브러리</value>
     </data>
-    <data name="About_Copyright">
-        <value>저작권</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>파일 해시를 생성, 검증 및 압축하는 강력한 도구입니다. 아마도요 :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>MIT 라이선스 하에 배포됩니다.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>기술</value>
     </data>
-    <data name="About_TechContent">
-        <value>C# 및 .NET 10.0.102로 제작되었습니다.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>{0} 기반의 C#으로 제작되었습니다.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI 지원</value>
     </data>
-    <data name="About_AIContent">
-        <value>이 소프트웨어는 AI(Gemini 3 Pro 및 Grok 4.1)의 지원을 받아 개발되었습니다.</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>이 소프트웨어는 AI(Gemini 3 Pro, Grok 4.1 및 Claude)의 지원을 받아 개발되었습니다.</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>처리 중 ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>완료</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>오류: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>취소됨</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>저장됨!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>압축됨!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>해시/입력 대기 중...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>원본 파일이 없습니다!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>해시 값이 없습니다 (입력하거나 해시 파일 로드)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>유효함 (VALID)</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>불일치 (MISMATCH!)</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>해시 파일 로드됨</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>해시 파일 이름 불일치!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>파일에 해시가 포함되어 있지 않습니다!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>업데이트 확인 중...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>새 버전이 감지되었습니다!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>최신 버전을 사용 중입니다.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>업데이트 확인 오류: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>다운로드 및 설치 중...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>준비 완료 (체크섬 파일에서)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>설치 오류: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>준비 완료 (.hash 파일에서)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>원본 파일 손실!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>해시 파일 이름 불일치!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>해시 파일 드롭 성공</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>파일에 해시가 포함되어 있지 않습니다!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>파일 읽기 오류</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>결과</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>처리 완료!
-            ✅ 성공: {0}
-            ❌ 실패: {1}
-            ⛔ 취소됨: {2}
-        </value>
+✅ 성공: {0}
+❌ 실패: {1}
+⛔ 취소됨: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>{0}개 파일을 검증했습니다.
-            ✅ 일치: {1}
-            ❌ 불일치/오류: {2}
-            ⛔ 취소됨: {3}
-        </value>
+✅ 일치: {1}
+❌ 불일치/오류: {2}
+⛔ 취소됨: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>잘못된 파일!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>해시 파일 불일치!
-
-            원본 파일: {0}
-            선택된 파일: {1}
-
-            올바른 해시 파일을 선택해 주세요.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>새로운 업데이트</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>버전: {0}
-
-            변경 사항:
-            {1}
-
-            다운로드하려면 '지금 업데이트'를 클릭하세요.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>새로운 업데이트를 찾을 수 없습니다.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>오류</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>이 해시 파일을 읽을 수 없습니다.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>구성 확인</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>파일이 존재합니다:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>파일이 존재하지 않습니다!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>파일이 성공적으로 생성되었습니다!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>구성 경로가 복사되었습니다.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>관리자 모드</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>변경 사항을 적용하려면 애플리케이션을 다시 시작하세요.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>폴더를 열 수 없습니다: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ 개발 버전 경고</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>개발자(Pre-release) 업데이트 채널로 전환하려고 합니다.
-
-            이 버전은 버그가 있거나 불안정할 수 있으며 데이터 손실을 초래할 수 있습니다.
-
-            이 버전 사용으로 인해 발생하는 문제에 대해 저는 책임을 지지 않습니다.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>읽었으며 동의합니다. 모든 책임을 지겠습니다.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>해시 파일 저장</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>압축 파일 저장</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>해시할 파일 선택</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>{0}에 대한 해시 파일 선택</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>파일 선택 (원본 또는 .hash 파일)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>파일 또는 체크섬 파일 선택</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>여기에 붙여넣기/드롭...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>초</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>검증</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>중지</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>파일 제거</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>해시 복사</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>계산</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>해시 지우기</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>해시 찾아보기</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>다크</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>라이트</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>시스템</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>작업 중지됨</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>예</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>확인</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>아니요</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip 아카이브</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>종료 확인</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>종료하면 진행 중인 모든 작업이 취소됩니다. 확실합니까?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>타임아웃으로 인해 작업이 중지되었습니다.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>디버그 로그를 디스크에 저장합니다.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>실시간 로깅을 일시 중지합니다.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>해시 표시</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>해시 숨기기</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>경로 복사</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>드라이브 공간이 부족합니다. 다른 위치를 선택해 주세요 :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>해시 표시 설정</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>파일이 없습니다. 시작하려면 '파일 추가'를 클릭하세요.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>여기에 파일이나 폴더를 끌어다 놓거나 '파일 추가'를 클릭하세요.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>이 테마를 기본값으로 잠금</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>제한({1} {2})을 초과하여 {0}개 파일을 건너뛰었습니다:
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>시스템 언어</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>'자동' 설정으로 돌아가면 완전히 적용하기 위해 재시작이 필요합니다. 계속하시겠습니까?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>언어 변경</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>정말로 변경하시겠습니까?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>이 경고를 다시 표시하지 않음</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>네트워크 연결 오류입니다. 인터넷 연결을 확인하세요.</value>
     </data>
-    <data name="Error_Server">
-        <value>서버 오류(5xx). 나중에 다시 시도해 주세요.</value>
-    </data>
-    <data name="Error_Client">
-        <value>클라이언트 오류(4xx). 요청을 확인해 주세요.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>GitHub API 속도 제한을 초과했습니다. 나중에 다시 시도해 주세요.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>프리릴리스 버전을 찾을 수 없습니다. 현재 버전을 유지합니다.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>프리릴리스 버전 {0}을(를) 사용할 수 있습니다.
-
-            {1}
-
-            이 버전은 불안정할 수 있습니다. 다운로드하시겠습니까?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>실패 항목 지우기</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>{0}개 항목을 제거했습니다.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>남은 시간: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>소요 시간: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>계산 중...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>폴더 추가...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>선택한 폴더가 비어 있습니다.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>스캔할 폴더 선택</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>취소</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>처리 제한</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>폴더 스캔 당 최대 파일 수</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>성능 문제를 방지하기 위해 폴더에서 추가되는 파일 수를 제한합니다.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>한 번에 선택 가능한 최대 폴더 수</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>한 번에 선택되는 폴더의 수를 제한합니다.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>한 번에 최대 {0}개의 폴더만 선택할 수 있습니다.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>{0}개 파일을 추가했습니다. 제한으로 인해 {1}개 파일을 건너뛰었습니다.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>읽기: {0}/s | 쓰기: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>읽기 속도 표시</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>읽기/쓰기 속도 표시</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>해시 작업 중 실시간 전송 속도를 표시합니다.</value>
     </data>
-    <data name="Status_Computing">
-        <value>해시 계산 중...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>모든 크기</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>작음 (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>중간 (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>큼 (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>매우 큼 (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>문서</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>개인정보 처리방침</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>서비스 약관</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>최종 사용자 사용권 계약 (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>면책 조항</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>README</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>변경 로그</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>감사의 글</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>처리 중</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>실패</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>이름으로 검색...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>크기</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub 프로필</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>모두</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>메모리 확보</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>자동 (시스템 언어)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>가비지 컬렉션을 강제 실행하여 메모리를 확보합니다.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>알고리즘</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>메모리 정리</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>기본 알고리즘</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>메모리 정리가 트리거되었습니다.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>내보내기</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>체크섬 파일 저장…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>모든 해시 복사</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>체크섬 파일 열기…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>보기</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>닫기</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>종료 시 설치</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>릴리스 페이지 열기</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>새로운 기능</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>관리자 권한으로 다시 시작</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>세부 정보 복사</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>성능</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>동시에 처리할 파일 수</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = 자동 (이 컴퓨터에서는 {0}개).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>HDD에 최적화</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>한 번에 한 파일씩 읽으므로 HDD와 네트워크 공유에서 더 빠릅니다.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>숨김 파일 포함</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>폴더를 스캔할 때 숨김 파일과 시스템 파일도 추가합니다.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>출력</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>해시 대/소문자</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>대문자 (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>소문자 (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>기본 체크섬 파일 형식</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>업데이트</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>자동으로 업데이트 확인</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>앱을 시작할 때 GitHub에서 업데이트를 확인합니다(하루 최대 1회). 업데이트는 설치를 선택한 경우에만 다운로드됩니다.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows 통합</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>파일 탐색기 상황에 맞는 메뉴</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>파일 및 폴더의 오른쪽 클릭 메뉴에 '해시 생성'과 '검증'을 추가합니다. Windows 11에서는 '더 많은 옵션 표시' 아래에 있습니다.</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>현재 계정으로 읽을 수 없는 파일이 있을 때만 필요합니다. 관리자 권한으로 실행하는 동안에는 Windows가 파일 탐색기에서의 끌어서 놓기를 차단합니다.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>데이터 폴더 열기</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU 체크섬 파일 (sha256sum 형식)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD 체크섬 파일 (알고리즘 이름 포함)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV 파일 (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON 파일</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV 파일</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>체크섬 파일</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>고대비</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>색맹 친화적</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>레트로</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>유리</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>사이버펑크</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>파스텔</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>기본값</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Hash Tool로 해시 생성</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Hash Tool로 검증</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>대기 중</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>액세스 거부됨</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>다른 프로그램에서 사용 중</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>시간 초과</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>유효함 (이전 CRC32 바이트 순서)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>유효한 {0} 해시가 아닙니다</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>업데이트 다운로드 중… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Hash Tool을 닫으면 업데이트가 설치됩니다.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>현재 작업이 끝날 때까지 기다려 주세요.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>{0}개 항목을 추가할 수 없습니다:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: 유효한 체크섬 항목이 아닌 {0}줄을 건너뛰었습니다.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0}에 체크섬이 없습니다.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>'{0}' 항목을 건너뛰었습니다: 체크섬 파일은 네트워크 경로나 장치 경로를 가리킬 수 없습니다.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>목록에서 파일 {0}개를 모두 제거하시겠습니까?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>해시 {0}개를 {1}에 저장했습니다.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>아직 내보낼 계산된 해시가 없습니다.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>액세스가 거부되어 일부 파일을 읽을 수 없습니다. Hash Tool을 관리자 권한으로 다시 시작하고 해당 파일을 다시 시도하시겠습니까?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool이 관리자 권한으로 실행 중이므로 Windows가 파일 탐색기에서의 끌어서 놓기를 차단합니다. 대신 '파일 추가' 또는 '폴더 추가'를 사용하세요.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} 버전이 출시되었습니다.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>업데이트는 GitHub Releases에서 받은 설치 버전 또는 포터블 버전에서만 사용할 수 있습니다.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>설정 파일을 읽을 수 없어 기본값으로 초기화했습니다. 손상된 파일은 백업으로 보관했습니다.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>문제가 발생했습니다: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>읽기: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>체크섬 파일 저장</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>체크섬 파일 열기</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>로그 내보내기</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>최소 수준</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>자동 스크롤</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>버전 {0}</value>
     </data>
 </root>

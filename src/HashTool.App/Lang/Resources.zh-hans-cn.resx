@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>哈希工具</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>生成哈希</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>校验哈希</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>设置</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>更新</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>主题</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>关于</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>开发者</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>添加文件...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>清空列表</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>清除哈希</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>计算全部</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>压缩 (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>校验全部</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>立即校验</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>立即检查</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>安装</value>
     </data>
-    <data name="Btn_Accept">
-        <value>接受</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>拒绝</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>生成哈希与压缩</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>批量校验</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>检查更新</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>开发者版本警告</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>关于</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>提示：按 Shift+C 计算，Shift+Z 压缩，Ctrl+F 添加文件。</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>提示：将文件或文件夹拖放到此处。按 Ctrl/⌘+O 添加文件，Ctrl/⌘+Shift+O 添加文件夹，Ctrl/⌘+Enter 计算全部，Esc 取消。</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>提示：按 Shift+A 校验，Ctrl+F 添加文件，Ctrl+Shift+H 清空列表。</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>提示：将文件、文件夹或校验和文件（SHA256SUMS、*.sha256、*.md5 等）拖放到此处。按 Ctrl/⌘+Enter 校验全部，Esc 取消。</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>就绪</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>示例：</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>当前版本：{0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>发布渠道：</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>总文件数：{0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>正式版 (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>开发者版 (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>语言</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>主题</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>主题风格</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>浅色/深色</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>字体</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>字体大小 (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>自动选择最适合该语言的字体</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>锁定为默认字体</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>界面缩放</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>隐藏哈希值（安全）</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>重置设置</value>
     </data>
-    <data name="Settings_Other">
-        <value>隐私与安全</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>设为默认</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>自定义文本颜色</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>高级</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>以管理员身份运行</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>需要重启。允许访问受保护的文件。</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>输入文件大小限制</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>允许处理的最大文件大小。</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>强制退出超时时间</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>判定应用程序卡死前的等待时间（秒）。</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>文件处理超时时间</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>如果单个文件处理时间过长，则取消操作。</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>紧急操作</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>强制关闭应用程序并立即取消所有任务。</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>强制退出并取消全部</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>配置</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>锁定设置（保存为默认）</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>防止意外更改。只有“隐藏哈希”可以调整。</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>重置所有设置</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>恢复为出厂默认设置。</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>配置文件路径</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>显示完整路径并复制到剪贴板。</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>显示路径</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>设置已自动保存至 config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>开发者模式</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>启用高级日志记录和调试工具。</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>开发者控制台</value>
     </data>
-    <data name="Dev_Beta">
-        <value>测试版</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>记录中</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>已暂停</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>保存到文件</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>不保存</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>清空控制台</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>复制全部</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>打开日志文件夹</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>作者</value>
     </data>
-    <data name="About_Software">
-        <value>软件</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>第三方库</value>
     </data>
-    <data name="About_Copyright">
-        <value>版权</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>一款用于生成、校验和压缩文件哈希的强大工具。至少我是这么认为的 :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>基于 MIT 许可证发布。</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>技术</value>
     </data>
-    <data name="About_TechContent">
-        <value>基于 C# 和 .NET 10.0.102 构建。</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>基于 {0}，使用 C# 构建。</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI 辅助</value>
     </data>
-    <data name="About_AIContent">
-        <value>本软件在 AI（Gemini 3 Pro 和 Grok 4.1）的辅助下开发。</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>本软件在 AI（Gemini 3 Pro、Grok 4.1 和 Claude）的辅助下开发。</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>正在处理 ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>已完成</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>错误：{0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>已取消</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>已保存！</value>
     </data>
-    <data name="Status_Compressed">
-        <value>已压缩！</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>等待哈希/输入...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>原文件丢失！</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>缺少哈希值（请输入或加载文件）</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>校验通过</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>不匹配！</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>已加载哈希文件</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>哈希文件名不匹配！</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>该文件不包含哈希值！</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>正在检查更新...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>发现新版本！</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>您使用的是最新版本。</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>检查更新出错：{0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>正在下载并安装...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>就绪（来自校验和文件）</value>
     </data>
-    <data name="Status_InstallError">
-        <value>安装错误：{0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>就绪（来自 .hash 文件）</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>原文件已丢失！</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>哈希文件名不匹配！</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>成功拖入哈希文件</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>该文件不包含哈希值！</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>文件读取错误</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>处理结果</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>处理完成！
-            ✅ 成功：{0}
-            ❌ 失败：{1}
-            ⛔ 已取消：{2}
-        </value>
+✅ 成功：{0}
+❌ 失败：{1}
+⛔ 已取消：{2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>共校验了 {0} 个文件。
-            ✅ 匹配：{1}
-            ❌ 不匹配/错误：{2}
-            ⛔ 已取消：{3}
-        </value>
+✅ 匹配：{1}
+❌ 不匹配/错误：{2}
+⛔ 已取消：{3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>文件错误！</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>哈希文件不匹配！
-
-            原始文件：{0}
-            所选文件：{1}
-
-            请选择正确的随附哈希文件。
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>发现新版本</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>版本号：{0}
-
-            更新内容：
-            {1}
-
-            点击“立即更新”进行下载。
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>未发现新版本。</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>错误</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>无法读取此哈希文件。</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>配置检查</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>文件存在于：
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>文件不存在！</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>文件创建成功！</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>已复制配置路径。</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>管理员模式</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>请重启应用程序以使更改生效。</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>无法打开文件夹：{0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ 开发者版本警告</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>您即将切换到开发者（预发布）更新渠道。
-
-            该版本可能存在漏洞、运行不稳定并可能导致数据丢失。
-
-            对于使用此版本引起的任何问题，我概不负责。
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>我已阅读并同意。我将承担全部责任。</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>保存哈希文件</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>保存压缩文件</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>选择要哈希的文件</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>为 {0} 选择哈希文件</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>选择文件（原始文件或 .hash 文件）</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>选择文件或校验和文件</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>在此处粘贴或拖放...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>秒</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>校验</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>停止</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>移除文件</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>复制哈希</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>计算</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>清除哈希</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>浏览哈希</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>深色</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>浅色</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>跟随系统</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>任务已停止</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>是</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>确定</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>否</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip 压缩包</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>确认退出</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>退出将取消所有正在进行的任务。确定要退出吗？</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>任务因超时而停止。</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>将调试日志保存到磁盘。</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>暂停实时日志记录。</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>显示哈希</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>隐藏哈希</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>复制路径</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>您的磁盘已满。请选择其他位置 :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>哈希可见性</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>暂无文件。点击“添加文件”开始。</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>将文件或文件夹拖放到此处，或点击“添加文件”。</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>将此主题锁定为默认</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>跳过了 {0} 个超出大小限制 ({1} {2}) 的文件：
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>系统语言</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>恢复为“自动”设置需要重启才能完全生效。是否继续？</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>更改语言</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>您确定要更改吗？</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>不再显示此警告</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>网络连接错误。请检查您的网络设置。</value>
     </data>
-    <data name="Error_Server">
-        <value>服务器错误 (5xx)。请稍后再试。</value>
-    </data>
-    <data name="Error_Client">
-        <value>客户端错误 (4xx)。请检查请求。</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>超出了 GitHub API 的速率限制。请稍后再试。</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>未找到预发布版本。保留当前版本。</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>发现预发布版本 {0}。
-
-            {1}
-
-            此版本可能不稳定。您要下载吗？
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>清除失败项</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>已移除 {0} 个项目。</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>剩余时间：{0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>任务耗时：{0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>正在计算...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>添加文件夹...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>所选文件夹为空。</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>选择要扫描的文件夹</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>取消</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>处理限制</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>单次文件夹扫描最大文件数</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>限制从文件夹添加的文件数量，以防出现性能问题。</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>同时处理的最大文件夹数</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>限制一次可选择的文件夹数量。</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>您一次最多只能选择 {0} 个文件夹。</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>已添加 {0} 个文件。因超出限制，跳过了 {1} 个文件。</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>读取：{0}/s | 写入：{1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>显示读取速度</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>显示读写速度</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>在哈希操作期间显示实时传输速度。</value>
     </data>
-    <data name="Status_Computing">
-        <value>正在计算哈希...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>所有大小</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>小 (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>中 (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>大 (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>超大 (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>文档</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>隐私政策</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>服务条款</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>最终用户许可协议 (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>免责声明</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>自述文件 (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>更新日志</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>鸣谢</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>正在处理</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>失败</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>按名称搜索...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>大小</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub 主页</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>全部</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>释放内存</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>自动（系统语言）</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>强制执行垃圾回收 (GC) 以释放内存 (RAM)。</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>算法</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>清理内存</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>默认算法</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>已触发内存清理。</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>导出</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>保存校验和文件…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>复制全部哈希</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>打开校验和文件…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>查看</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>关闭</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>退出时安装</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>打开发布页面</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>更新内容</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>以管理员身份重新启动</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>复制详细信息</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>性能</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>同时处理的文件数</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = 自动（本机为 {0}）。</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>针对机械硬盘优化</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>一次只读取一个文件，在机械硬盘和网络共享上速度更快。</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>包含隐藏文件</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>扫描文件夹时也添加隐藏文件和系统文件。</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>输出</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>哈希字母大小写</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>大写 (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>小写 (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>默认校验和文件格式</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>更新</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>自动检查更新</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>应用启动时检查 GitHub，每天最多一次。只有在您选择安装时才会下载更新。</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows 集成</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>文件资源管理器右键菜单</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>在文件和文件夹的右键菜单中添加“生成哈希”和“校验”（在 Windows 11 中位于“显示更多选项”下）。</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>仅当您的账户无法读取某些文件时才需要。以管理员身份运行时，Windows 会阻止从文件资源管理器拖放文件。</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>打开数据文件夹</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU 校验和文件（sha256sum 格式）</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD 校验和文件（带算法标记）</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV 文件 (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON 文件</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV 文件</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>校验和文件</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>高对比度</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>色盲友好</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>复古</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>毛玻璃</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>赛博朋克</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>粉彩</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>默认</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>使用 Hash Tool 生成哈希</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>使用 Hash Tool 校验</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>排队中</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>拒绝访问</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>被其他程序占用</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>已超时</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>校验通过（旧版 CRC32 字节序）</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>不是有效的 {0} 哈希值</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>正在下载更新… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>更新将在您关闭 Hash Tool 时安装。</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>请等待当前任务完成。</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>有 {0} 个项目无法添加：
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}：已跳过 {0} 行无效的校验和条目。</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} 不包含任何校验和。</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>已跳过“{0}”：校验和文件不能指向网络路径或设备路径。</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>要从列表中移除全部 {0} 个文件吗？</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>已将 {0} 个哈希值保存到 {1}。</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>还没有已计算的哈希值可供导出。</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>部分文件因访问被拒绝而无法读取。是否以管理员身份重新启动 Hash Tool 并重试这些文件？</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool 正以管理员身份运行，因此 Windows 会阻止从文件资源管理器拖放文件。请改用“添加文件”或“添加文件夹”。</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} 现已发布。</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>只有从 GitHub Releases 下载的安装版或便携版才支持更新。</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>无法读取您的设置文件，已将其重置为默认值。损坏的文件已作为备份保留。</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>出现问题：{0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>读取：{0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>保存校验和文件</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>打开校验和文件</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>导出日志</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>最低级别</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>自动滚动</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>版本 {0}</value>
     </data>
 </root>

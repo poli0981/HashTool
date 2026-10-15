@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Hash Tool</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Hash Genereren</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Hash Verifiëren</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Instellingen</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Updaten</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Thema</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>Over</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Ontwikkelaar</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Bestanden toevoegen...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Lijst wissen</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Hashes wissen</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>ALLES BEREKENEN</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Comprimeren (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>ALLES VERIFIËREN</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>Nu verifiëren</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>Nu controleren</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Installeren</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Accepteren</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Weigeren</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Hash Genereren &amp; Comprimeren</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Batchverificatie</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Controleren op updates</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Waarschuwing Ontwikkelaarsversie</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>Over</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Tip: Shift+C om te berekenen, Shift+Z om te comprimeren, Ctrl+F om bestanden toe te voegen.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Tip: sleep bestanden of mappen hierheen. Ctrl/⌘+O voegt bestanden toe, Ctrl/⌘+Shift+O voegt een map toe, Ctrl/⌘+Enter berekent alles, Esc annuleert.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Tip: Shift+A om te verifiëren, Ctrl+F om bestanden toe te voegen, Ctrl+Shift+H om de lijst te wissen.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Tip: sleep bestanden, mappen of controlesombestanden (SHA256SUMS, *.sha256, *.md5…) hierheen. Ctrl/⌘+Enter verifieert alles, Esc annuleert.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Klaar</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Voorbeeld:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Huidige versie: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Releasekanaal:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Totaal aantal bestanden: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Stabiel (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Ontwikkelaar (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Taal</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Thema</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Themastijl</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Licht/Donker</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Lettertype</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Lettergrootte (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Kies automatisch het optimale lettertype</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Vergrendelen als standaardlettertype</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>UI Schaal</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Hashwaarden verbergen (Beveiliging)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Instellingen resetten</value>
     </data>
-    <data name="Settings_Other">
-        <value>Privacy &amp; Beveiliging</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Instellen als standaard</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Aangepaste tekstkleur</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Geavanceerd</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Als administrator uitvoeren</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Vereist een herstart. Geeft toegang tot beveiligde bestanden.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Limiet bestandsgrootte invoer</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Maximale grootte van te verwerken bestanden.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Time-out geforceerd afsluiten</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Tijd (seconden) voordat de app als vastgelopen wordt beschouwd.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Time-out bestandsverwerking</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Annuleren als een enkel bestand te veel tijd in beslag neemt.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Noodactie</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Sluit de app geforceerd af en annuleer onmiddellijk alle taken.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Geforceerd afsluiten &amp; Alles annuleren</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Configuratie</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Instellingen vergrendelen (Opslaan als standaard)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Voorkom onbedoelde wijzigingen. Alleen 'Hash verbergen' blijft aanpasbaar.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Alle instellingen resetten</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Terugzetten naar fabrieksinstellingen.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Pad naar configuratiebestand</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Toon volledig pad en kopieer naar klembord.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Pad tonen</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Instellingen worden automatisch opgeslagen in config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Ontwikkelaarsmodus</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Schakel geavanceerde logboekregistratie en debugging-tools in.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Ontwikkelaarsconsole</value>
     </data>
-    <data name="Dev_Beta">
-        <value>BÈTA</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Aan het opnemen</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Gepauzeerd</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Opslaan in bestand</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Niet opslaan</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Console wissen</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Alles kopiëren</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Logmap openen</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Auteur</value>
     </data>
-    <data name="About_Software">
-        <value>Software</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Bibliotheken van derden</value>
     </data>
-    <data name="About_Copyright">
-        <value>Auteursrecht</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Een krachtige tool voor het genereren, verifiëren en comprimeren van bestands-hashes. Of dat denk ik tenminste :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>Uitgebracht onder de MIT-licentie.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Technologie</value>
     </data>
-    <data name="About_TechContent">
-        <value>Gebouwd met C# en .NET 10.0.102.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>Gebouwd met C# op {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI-Assistentie</value>
     </data>
-    <data name="About_AIContent">
-        <value>Deze software is ontwikkeld met behulp van AI (Gemini 3 Pro en Grok 4.1).</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Deze software is ontwikkeld met hulp van AI (Gemini 3 Pro, Grok 4.1 en Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Bezig met verwerken ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Voltooid</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Fout: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Geannuleerd</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Opgeslagen!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Gecomprimeerd!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Wachten op hash/invoer...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Origineel bestand ontbreekt!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Hashwaarde ontbreekt (Typ in of laad bestand)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>GELDIG</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>KOMT NIET OVEREEN!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Hashbestand geladen</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Naam hashbestand komt niet overeen!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Bestand bevat geen hash!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Controleren op updates...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Nieuwe versie gevonden!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Je gebruikt de nieuwste versie.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Fout bij updatecontrole: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Downloaden en installeren...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Klaar (uit controlesombestand)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Installatiefout: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Klaar (Vanuit .hash bestand)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Origineel bestand verloren!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Naam hashbestand komt niet overeen!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Hashbestand succesvol toegevoegd</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Bestand bevat geen hash!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Fout bij lezen van bestand</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Resultaat</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Verwerking voltooid!
-            ✅ Gelukt: {0}
-            ❌ Mislukt: {1}
-            ⛔ Geannuleerd: {2}
-        </value>
+✅ Gelukt: {0}
+❌ Mislukt: {1}
+⛔ Geannuleerd: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>{0} bestanden gecontroleerd.
-            ✅ Komt overeen: {1}
-            ❌ Fout/Komt niet overeen: {2}
-            ⛔ Geannuleerd: {3}
-        </value>
+✅ Komt overeen: {1}
+❌ Fout/Komt niet overeen: {2}
+⛔ Geannuleerd: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Verkeerd bestand!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Hashbestand komt niet overeen!
-
-            Origineel bestand: {0}
-            Geselecteerd bestand: {1}
-
-            Selecteer het juiste bijbehorende hashbestand.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Nieuwe Update</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Versie: {0}
-
-            Wijzigingen:
-            {1}
-
-            Klik op 'Nu updaten' om te downloaden.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Geen nieuwere updates gevonden.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Fout</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Kan dit hashbestand niet lezen.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Configuratiecontrole</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Bestand bestaat op:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Bestand bestaat niet!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Bestand succesvol aangemaakt!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Configuratiepad gekopieerd.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Beheerdersmodus</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Start de app opnieuw op om de wijzigingen door te voeren.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Kan map niet openen: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ WAARSCHUWING ONTWIKKELAARSVERSIE</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Je staat op het punt over te schakelen naar het updatekanaal voor Ontwikkelaars (Pre-release).
-
-            Deze versie kan fouten bevatten, instabiel zijn en gegevensverlies veroorzaken.
-
-            Ik ben niet verantwoordelijk voor eventuele problemen die voortvloeien uit het gebruik van deze versie.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Ik heb dit gelezen en ga akkoord. Ik neem de volledige verantwoordelijkheid.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Hashbestand opslaan</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Gecomprimeerd bestand opslaan</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Selecteer bestanden om te hashen</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Selecteer hashbestand voor: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Selecteer bestanden (Origineel of .hash bestand)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Selecteer bestanden of controlesombestanden</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Plakken of hierheen slepen...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Seconden</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Verifiëren</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Stoppen</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Bestand verwijderen</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Hash kopiëren</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Berekenen</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Hash wissen</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Hash bladeren</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Donker</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Licht</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Systeem</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Taak gestopt</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Ja</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>OK</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Nee</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip-archief</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Afsluiten bevestigen</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Als je afsluit, worden alle lopende taken geannuleerd. Weet je het zeker?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Taak is gestopt vanwege een time-out.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Bewaar debug-logboek op schijf.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Pauzeer realtime logboekregistratie.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Hash tonen</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Hash verbergen</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Pad kopiëren</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Je schijf is vol. Kies een andere locatie :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Zichtbaarheid van hash</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Geen bestanden. Klik op 'Bestanden toevoegen' om te beginnen.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Sleep bestanden of mappen hierheen of klik op “Bestanden toevoegen”.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Vergrendel dit thema als standaard</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>{0} bestanden die de limiet ({1} {2}) overschrijden, zijn overgeslagen:
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Systeemtaal</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>Terugkeren naar de 'Auto' instelling vereist een herstart om volledig effect te hebben. Wil je doorgaan?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Taal wijzigen</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Weet je dit zeker?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Toon deze waarschuwing niet meer</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Fout met netwerkverbinding. Controleer je internet.</value>
     </data>
-    <data name="Error_Server">
-        <value>Serverfout (5xx). Probeer het later opnieuw.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Clientfout (4xx). Controleer je verzoek.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>GitHub API-limiet overschreden. Probeer het later opnieuw.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Geen pre-release versie gevonden. Huidige versie blijft behouden.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Pre-release versie {0} is beschikbaar.
-
-            {1}
-
-            Deze versie kan instabiel zijn. Wil je deze downloaden?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Mislukte wissen</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>{0} items verwijderd.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Resterende tijd: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Duur van taak: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Aan het berekenen...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Map toevoegen...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>De geselecteerde map is leeg.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Selecteer map om te scannen</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Annuleren</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Verwerkingslimieten</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Max. bestanden per mapscan</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Beperk het aantal bestanden dat uit een map wordt toegevoegd om prestatieproblemen te voorkomen.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Max. mappen tegelijk</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Beperk het aantal mappen dat in één keer wordt geselecteerd.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Je kunt maximaal {0} mappen tegelijk selecteren.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>{0} bestanden toegevoegd. {1} bestanden overgeslagen vanwege de limiet.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Lezen: {0}/s | Schrijven: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Leessnelheid tonen</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Toon Lees/Schrijfsnelheid</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Toon de real-time overdrachtssnelheid tijdens hash-operaties.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Hash berekenen...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Alle groottes</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Klein (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Gemiddeld (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Groot (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Zeer groot (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Documenten</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Privacybeleid</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Servicevoorwaarden</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Licentieovereenkomst voor eindgebruikers (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Vrijwaring</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>LEESMIJ (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Wijzigingslogboek</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Dankbetuigingen</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Verwerken</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Mislukt</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Zoeken op naam...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Grootte</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub Profiel</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Alles</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Geheugen vrijmaken</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Automatisch (systeemtaal)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Forceer geheugenopruiming (GC) om RAM vrij te maken.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Algoritme</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Geheugen opschonen</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Standaardalgoritme</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Geheugenopruiming geactiveerd.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Exporteren</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Controlesombestand opslaan…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Alle hashes kopiëren</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Controlesombestand openen…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Bekijken</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Sluiten</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Installeren bij afsluiten</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Releasepagina openen</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Wat is er nieuw</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Opnieuw starten als administrator</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Details kopiëren</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Prestaties</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Gelijktijdig verwerkte bestanden</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = automatisch ({0} op deze computer).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Optimaliseren voor harde schijven</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Leest één bestand tegelijk, wat sneller is op mechanische harde schijven en gedeelde netwerkmappen.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Verborgen bestanden opnemen</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Ook verborgen bestanden en systeembestanden toevoegen bij het scannen van mappen.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Uitvoer</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Hoofdlettergebruik van hashes</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Hoofdletters (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Kleine letters (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Standaardindeling voor controlesombestanden</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Updates</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Automatisch controleren op updates</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Controleert GitHub hooguit één keer per dag bij het starten van de app. Updates worden pas gedownload als je ervoor kiest ze te installeren.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows-integratie</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Contextmenu van Verkenner</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Voegt “Hash genereren” en “Verifiëren” toe aan het contextmenu van bestanden en mappen (in Windows 11 onder “Meer opties weergeven”).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Alleen nodig voor bestanden die je account niet kan lezen. Zolang de app als administrator wordt uitgevoerd, blokkeert Windows slepen en neerzetten vanuit Verkenner.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Gegevensmap openen</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU-controlesombestand (sha256sum-indeling)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD-controlesombestand (met algoritmenaam)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV-bestand (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON-bestand</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV-bestand</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Controlesombestanden</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Hoog contrast</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Kleurenblindvriendelijk</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Retro</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Glas</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Pastel</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Standaard</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Hash genereren met Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Verifiëren met Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>In wachtrij</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Toegang geweigerd</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>In gebruik door een ander programma</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Time-out</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>GELDIG (oude CRC32-bytevolgorde)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Geen geldige {0}-hash</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Update wordt gedownload… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>De update wordt geïnstalleerd wanneer je Hash Tool sluit.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Wacht tot de huidige taak is voltooid.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>{0} items konden niet worden toegevoegd:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: {0} regels overgeslagen die geen geldige controlesomvermeldingen zijn.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} bevat geen controlesommen.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>“{0}” overgeslagen: controlesombestanden mogen niet naar netwerk- of apparaatpaden verwijzen.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Alle {0} bestanden uit de lijst verwijderen?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>{0} hashes opgeslagen in {1}.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Er zijn nog geen berekende hashes om te exporteren.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Sommige bestanden konden niet worden gelezen omdat de toegang is geweigerd. Wil je Hash Tool als administrator opnieuw starten en het nog eens proberen?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool wordt uitgevoerd als administrator, waardoor Windows slepen en neerzetten vanuit Verkenner blokkeert. Gebruik in plaats daarvan “Bestanden toevoegen” of “Map toevoegen”.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} is beschikbaar.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Updates zijn alleen beschikbaar in de geïnstalleerde of portable versie van GitHub Releases.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Je instellingenbestand kon niet worden gelezen en is teruggezet naar de standaardwaarden. Het beschadigde bestand is als back-up bewaard.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Er is iets misgegaan: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Lezen: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Controlesombestand opslaan</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Controlesombestanden openen</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Logboek exporteren</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Minimumniveau</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Automatisch scrollen</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Versie {0}</value>
     </data>
 </root>

@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Hash-verktyg</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Generera hash</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Verifiera hash</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Inställningar</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Uppdatera</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Tema</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>Om</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Utvecklare</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Lägg till filer...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Rensa lista</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Rensa hashar</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>BERÄKNA ALLA</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Komprimera (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>VERIFIERA ALLA</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>Verifiera nu</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>Sök nu</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Installera</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Acceptera</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Avböj</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Generera hash &amp; Komprimera</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Batch-verifiering</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Sök efter uppdateringar</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Varning för utvecklarversion</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>Om programmet</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Tips: Shift+C för att beräkna, Shift+Z för att komprimera, Ctrl+F för att lägga till.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Tips: Släpp filer eller mappar här. Ctrl/⌘+O lägger till filer, Ctrl/⌘+Shift+O lägger till en mapp, Ctrl/⌘+Enter beräknar alla, Esc avbryter.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Tips: Shift+A för att verifiera, Ctrl+F för att lägga till, Ctrl+Shift+H för att rensa.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Tips: Släpp filer, mappar eller kontrollsummefiler (SHA256SUMS, *.sha256, *.md5…) här. Ctrl/⌘+Enter verifierar alla, Esc avbryter.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Klar</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Exempel:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Aktuell version: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Utgivningskanal:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Totalt antal filer: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Stabil (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Utvecklare (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Språk</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Tema</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Temastil</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Ljust/Mörkt</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Typsnitt</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Teckenstorlek (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Välj automatiskt optimalt typsnitt för språket</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Lås som standardtypsnitt</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>UI-skalning</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Dölj hashvärden (Säkerhet)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Återställ inställningar</value>
     </data>
-    <data name="Settings_Other">
-        <value>Integritet &amp; Säkerhet</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Sätt som standard</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Anpassad textfärg</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Avancerat</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Kör som administratör</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Kräver omstart. Ger åtkomst till skyddade filer.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Storleksgräns för inmatningsfil</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Maximal storlek för filer som ska bearbetas.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Tidsgräns för framtvingad avslutning</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Tid (sekunder) innan appen anses ha hängt sig.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Tidsgräns för filbearbetning</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Avbryt om en enskild fil tar för lång tid.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Nödåtgärd</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Stäng appen med tvång och avbryt alla uppgifter omedelbart.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Tvinga avslut &amp; Avbryt allt</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Konfiguration</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Lås inställningar (Spara som standard)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Förhindrar oavsiktliga ändringar. Endast 'Dölj hash' förblir justerbar.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Återställ alla inställningar</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Återställ till fabriksinställningar.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Sökväg till konfigurationsfil</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Visa hela sökvägen och kopiera till urklipp.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Visa sökväg</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Inställningar sparas automatiskt i config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Utvecklarläge</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Aktivera avancerad loggning och felsökningsverktyg.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Utvecklarkonsol</value>
     </data>
-    <data name="Dev_Beta">
-        <value>BETA</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Spelar in</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Pausad</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Spara till fil</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Spara inte</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Rensa konsol</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Kopiera allt</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Öppna loggmapp</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Författare</value>
     </data>
-    <data name="About_Software">
-        <value>Programvara</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Tredjepartsbibliotek</value>
     </data>
-    <data name="About_Copyright">
-        <value>Upphovsrätt</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Ett kraftfullt verktyg för att generera, verifiera och komprimera filhashar. Eller det tror jag åtminstone :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>Utgiven under MIT-licensen.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Teknik</value>
     </data>
-    <data name="About_TechContent">
-        <value>Byggd med C# och .NET 10.0.102.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>Byggd med C# på {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI-assistans</value>
     </data>
-    <data name="About_AIContent">
-        <value>Denna programvara utvecklades med hjälp av AI (Gemini 3 Pro och Grok 4.1).</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Denna programvara har utvecklats med hjälp av AI (Gemini 3 Pro, Grok 4.1 och Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Bearbetar ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Klar</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Fel: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Avbruten</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Sparad!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Komprimerad!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Väntar på hash/inmatning...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Originalfil saknas!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Hashvärde saknas (Ange eller ladda fil)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>GILTIG</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>MATCHAR INTE!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Hash-fil inläst</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Namnet på hash-filen matchar inte!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Filen innehåller ingen hash!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Söker efter uppdateringar...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Ny version upptäckt!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Du använder den senaste versionen.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Fel vid uppdateringskontroll: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Laddar ner och installerar...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Klar (från kontrollsummefil)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Installationsfel: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Klar (Från .hash-fil)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Originalfil förlorad!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Namnet på hash-filen matchar inte!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Hash-fil har släppts</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Filen innehåller ingen hash!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Filsläsningsfel</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Resultat</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Bearbetning slutförd!
-            ✅ Lyckades: {0}
-            ❌ Misslyckades: {1}
-            ⛔ Avbrutna: {2}
-        </value>
+✅ Lyckades: {0}
+❌ Misslyckades: {1}
+⛔ Avbrutna: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>Kontrollerade {0} filer.
-            ✅ Matchar: {1}
-            ❌ Matchar inte/Fel: {2}
-            ⛔ Avbrutna: {3}
-        </value>
+✅ Matchar: {1}
+❌ Matchar inte/Fel: {2}
+⛔ Avbrutna: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Fel fil!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Hash-filen matchar inte!
-
-            Originalfil: {0}
-            Vald fil: {1}
-
-            Vänligen välj rätt tillhörande hash-fil.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Ny uppdatering</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Version: {0}
-
-            Ändringar:
-            {1}
-
-            Klicka på 'Uppdatera nu' för att ladda ner.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Inga nyare uppdateringar hittades.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Fel</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Kan inte läsa denna hash-fil.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Konfigurationskontroll</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Filen finns på:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Filen existerar inte!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Filen skapades framgångsrikt!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Konfigurationssökväg kopierad.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Administratörsläge</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Starta om programmet för att ändringarna ska träda i kraft.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Kan inte öppna mappen: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ VARNING FÖR UTVECKLARVERSION</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Du håller på att byta till utvecklarens (Pre-release) uppdateringskanal.
-
-            Denna version kan innehålla buggar, vara instabil och orsaka dataförlust.
-
-            Jag ansvarar inte för några problem som uppstår vid användning av denna version.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Jag har läst och accepterar. Jag tar fullt ansvar.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Spara hash-fil</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Spara komprimerad fil</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Välj filer för hashning</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Välj hash-fil för: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Välj filer (Original eller .hash-fil)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Välj filer eller kontrollsummefiler</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Klistra in eller släpp här...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Sekunder</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Verifiera</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Stoppa</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Ta bort fil</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Kopiera hash</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Beräkna</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Rensa hash</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Bläddra hash</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Mörkt</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Ljust</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>System</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Uppgift stoppad</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Ja</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>OK</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Nej</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip-arkiv</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Bekräfta avslut</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Att avsluta kommer att avbryta alla pågående uppgifter. Är du säker?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Uppgiften stoppades på grund av tidsgräns.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Spara felsökningslogg till disk.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Pausa realtidsloggning.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Visa hash</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Dölj hash</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Kopiera sökväg</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Din enhet är full. Välj en annan plats :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Hash-synlighet</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Inga filer. Klicka på 'Lägg till filer' för att börja.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Släpp filer eller mappar här, eller klicka på ”Lägg till filer”.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Lås detta tema som standard</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>Hoppade över {0} filer som överskrider gränsen ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Systemspråk</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>Att återgå till 'Automatisk' inställning kräver en omstart för att få full effekt. Vill du fortsätta?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Byt språk</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Är du säker på det?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Visa inte denna varning igen</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Nätverksanslutningsfel. Kontrollera ditt internet.</value>
     </data>
-    <data name="Error_Server">
-        <value>Serverfel (5xx). Försök igen senare.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Klientfel (4xx). Kontrollera begäran.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>Gränsen för GitHub API överskreds. Försök igen senare.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Ingen förhandsversion hittades. Behåller aktuell version.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Förhandsversion {0} är tillgänglig.
-
-            {1}
-
-            Denna version kan vara instabil. Vill du ladda ner den?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Rensa misslyckade</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>Tog bort {0} objekt.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Återstående tid: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Uppgiftens varaktighet: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Beräknar...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Lägg till mapp...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Den valda mappen är tom.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Välj mapp för skanning</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Avbryt</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Bearbetningsgränser</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Max filer per mappskanning</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Begränsa antalet filer som läggs till från en mapp för att förhindra prestandaproblem.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Max mappar samtidigt</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Begränsa antalet mappar som väljs på en gång.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Du kan bara välja upp till {0} mappar åt gången.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>Lade till {0} filer. Hoppade över {1} filer på grund av gränsen.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Läs: {0}/s | Skriv: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Visa läshastighet</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Visa Läs/Skriv-hastighet</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Visa överföringshastighet i realtid under hash-operationer.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Beräknar hash...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Alla storlekar</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Liten (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Mellan (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Stor (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Extra stor (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Dokument</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Integritetspolicy</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Användarvillkor</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Slutanvändaravtal (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Friskrivning</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>LÄSMIG (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Ändringslogg</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Erkännanden</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Bearbetar</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Misslyckades</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Sök på namn...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Storlek</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub-profil</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Alla</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Frigör minne</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Automatiskt (systemspråk)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Tvinga skräpsamling (GC) för att frigöra RAM-minne.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Algoritm</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Rensa minne</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Standardalgoritm</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Minnesrensning utlöst.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Exportera</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Spara kontrollsummefil…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Kopiera alla hashar</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Öppna kontrollsummefil…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Visa</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Stäng</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Installera vid avslut</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Öppna versionssida</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Nyheter</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Starta om som administratör</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Kopiera detaljer</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Prestanda</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Filer som bearbetas samtidigt</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = automatiskt ({0} på den här datorn).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Optimera för hårddiskar</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Läser en fil i taget, vilket går snabbare på mekaniska hårddiskar och nätverksresurser.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Inkludera dolda filer</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Lägg även till dolda filer och systemfiler när mappar genomsöks.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Utdata</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Skiftläge för hashar</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Versaler (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Gemener (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Standardformat för kontrollsummefiler</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Uppdateringar</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Sök efter uppdateringar automatiskt</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Kontrollerar GitHub högst en gång per dag när appen startar. Uppdateringar laddas bara ned när du väljer att installera dem.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows-integrering</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Snabbmeny i Utforskaren</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Lägger till ”Generera hash” och ”Verifiera” i högerklicksmenyn för filer och mappar (i Windows 11 under ”Visa fler alternativ”).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Behövs bara för filer som ditt konto inte kan läsa. När appen körs som administratör blockerar Windows dra och släpp från Utforskaren.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Öppna datamapp</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU-kontrollsummefil (sha256sum-format)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD-kontrollsummefil (med algoritmnamn)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV-fil (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON-fil</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV-fil</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Kontrollsummefiler</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Hög kontrast</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Färgblindvänligt</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Retro</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Glas</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Pastell</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Standard</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Generera hash med Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Verifiera med Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>I kö</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Åtkomst nekad</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Används av ett annat program</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Tidsgränsen överskreds</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>GILTIG (gammal CRC32-byteordning)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Inte en giltig {0}-hash</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Laddar ned uppdatering… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Uppdateringen installeras när du stänger Hash Tool.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Vänta tills den aktuella uppgiften är klar.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>{0} objekt kunde inte läggas till:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: hoppade över {0} rader som inte är giltiga kontrollsummeposter.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} innehåller inga kontrollsummor.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>Hoppade över ”{0}”: kontrollsummefiler får inte peka på nätverks- eller enhetssökvägar.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Ta bort alla {0} filer från listan?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>Sparade {0} hashar i {1}.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Det finns inga beräknade hashar att exportera än.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Vissa filer kunde inte läsas eftersom åtkomst nekades. Vill du starta om Hash Tool som administratör och försöka igen?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool körs som administratör, så Windows blockerar dra och släpp från Utforskaren. Använd ”Lägg till filer” eller ”Lägg till mapp” i stället.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} är tillgänglig.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Uppdateringar är bara tillgängliga i den installerade eller portabla versionen från GitHub Releases.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Din inställningsfil kunde inte läsas och har återställts till standardvärdena. Den skadade filen har sparats som säkerhetskopia.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Något gick fel: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Läsning: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Spara kontrollsummefil</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Öppna kontrollsummefiler</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Exportera logg</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Lägsta nivå</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Rulla automatiskt</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Version {0}</value>
     </data>
 </root>

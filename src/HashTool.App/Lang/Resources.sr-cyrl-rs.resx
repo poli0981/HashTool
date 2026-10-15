@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Хеш Алатка</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Генериши хеш</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Провери хеш</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Подешавања</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Ажурирање</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Тема</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>О програму</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Програмер</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Додај датотеке...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Очисти листу</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Очисти хешеве</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>ИЗРАЧУНАЈ СВЕ</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Компримуј (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>ПРОВЕРИ СВЕ</value>
     </data>
-    <data name="Btn_CheckNow">
+    <data name="Btn_CheckNow" xml:space="preserve">
         <value>Провери сада</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Инсталирај</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Прихвати</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Одбиј</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Генериши хеш и компримуј</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Групна провера</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Провери ажурирања</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Упозорење развојне верзије</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>О програму</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Савет: Shift+C за рачунање, Shift+Z за компримовање, Ctrl+F за додавање.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Савет: превуците датотеке или фасцикле овде. Ctrl/⌘+O за додавање датотека, Ctrl/⌘+Shift+O за додавање фасцикле, Ctrl/⌘+Enter за израчунавање свих, Esc за отказивање.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Савет: Shift+A за проверу, Ctrl+F за додавање, Ctrl+Shift+H за чишћење листе.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Савет: превуците овде датотеке, фасцикле или датотеке контролних збирова (SHA256SUMS, *.sha256, *.md5…). Ctrl/⌘+Enter за проверу свих, Esc за отказивање.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Спремно</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Узорак:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Тренутна верзија: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Канал издања:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Укупно датотека: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Стабилна (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Развојна (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Језик</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Тема</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Стил теме</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Светла/Тамна</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Фонт</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Величина фонта (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Аутоматски изабери оптималан фонт за језик</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Закључај као подразумевани фонт</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>Скалирање интерфејса</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Сакриј вредности хеша (Безбедност)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Ресетуј подешавања</value>
     </data>
-    <data name="Settings_Other">
-        <value>Приватност и безбедност</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Постави као подразумевано</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Прилагођена боја текста</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Напредно</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Покрени као Администратор</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Захтева поновно покретање. Омогућава приступ заштићеним датотекама.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Ограничење величине улазне датотеке</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Максимална величина датотека за обраду.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Време до присилног затварања</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Време (секунде) пре него што се сматра да је апликација замрзнута.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Време обраде датотеке</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Откажи ако једна датотека траје предуго.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Хитна акција</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Присилно затвори апликацију и одмах откажи све задатке.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Присилно затварање и откажи све</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Конфигурација</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Закључај подешавања (Сачувај као подразумевано)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Спречава случајне промене. Само 'Сакриј хеш' остаје подесиво.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Ресетуј сва подешавања</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Врати на фабричка подешавања.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Путања конфигурационе датотеке</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Прикажи пуну путању и копирај у меморију.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Прикажи путању</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Подешавања се аутоматски чувају у config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Развојни режим</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Омогући напредно логовање и алате за отклањање грешака.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Развојна конзола</value>
     </data>
-    <data name="Dev_Beta">
-        <value>БЕТА</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Снимање</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Паузирано</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Сачувај у датотеку</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Не чувај</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Очисти конзолу</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Копирај све</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Отвори фасциклу дневника</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Аутор</value>
     </data>
-    <data name="About_Software">
-        <value>Софтвер</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Библиотеке трећих страна</value>
     </data>
-    <data name="About_Copyright">
-        <value>Ауторска права</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Моћна алатка за генерисање, проверу и компримовање хешева датотека. Или бар тако мислим :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>Издато под MIT лиценцом.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Технологија</value>
     </data>
-    <data name="About_TechContent">
-        <value>Направљено помоћу C# и .NET 10.0.102.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>Направљено помоћу C# и {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>АИ Помоћ</value>
     </data>
-    <data name="About_AIContent">
-        <value>Овај софтвер је развијен уз помоћ вештачке интелигенције (Gemini 3 Pro и Grok 4.1).</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Овај софтвер је развијен уз помоћ вештачке интелигенције (Gemini 3 Pro, Grok 4.1 и Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Обрада у току ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Завршено</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Грешка: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Отказано</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Сачувано!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Компримовано!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Чекање на хеш/унос...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Недостаје оригинална датотека!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Недостаје хеш вредност (Унесите или учитајте датотеку)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>ВАЛИДНО</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>НЕ ПОКЛАПА СЕ!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Хеш датотека учитана</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Име хеш датотеке се не поклапа!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Датотека не садржи хеш!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Провера ажурирања...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Откривена је нова верзија!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Користите најновију верзију.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Грешка при провери ажурирања: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Преузимање и инсталација...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Спремно (из датотеке контролних збирова)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Грешка при инсталацији: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Спремно (Из .hash датотеке)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Оригинална датотека изгубљена!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Име хеш датотеке се не поклапа!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Хеш датотека успешно убачена</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Датотека не садржи хеш!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Грешка при читању датотеке</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Резултат</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Обрада је завршена!
-            ✅ Успешно: {0}
-            ❌ Неуспешно: {1}
-            ⛔ Отказано: {2}
-        </value>
+✅ Успешно: {0}
+❌ Неуспешно: {1}
+⛔ Отказано: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>Проверено {0} датотека.
-            ✅ Поклапа се: {1}
-            ❌ Не поклапа се/Грешка: {2}
-            ⛔ Отказано: {3}
-        </value>
+✅ Поклапа се: {1}
+❌ Не поклапа се/Грешка: {2}
+⛔ Отказано: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Погрешна датотека!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Непоклапање хеш датотеке!
-
-            Оригинална датотека: {0}
-            Изабрана датотека: {1}
-
-            Молимо изаберите правилну пратећу хеш датотеку.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Ново ажурирање</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Верзија: {0}
-
-            Промене:
-            {1}
-
-            Кликните 'Ажурирај сада' да бисте преузели.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Нису пронађена новија ажурирања.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Грешка</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Није могуће прочитати ову хеш датотеку.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Провера конфигурације</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Датотека постоји на:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Датотека не постоји!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Датотека је успешно креирана!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Путања конфигурације копирана.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Администраторски режим</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Молимо поново покрените апликацију да би промене ступиле на снагу.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Није могуће отворити фасциклу: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ УПОЗОРЕЊЕ РАЗВОЈНЕ ВЕРЗИЈЕ</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Спремате се да пређете на канал за ажурирање Развојне верзије (Pre-release).
-
-            Ова верзија може садржати грешке, бити нестабилна и проузроковати губитак података.
-
-            Не сносим одговорност за било какве проблеме настале коришћењем ове верзије.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Прочитао сам и слажем се. Преузимам пуну одговорност.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Сачувај хеш датотеку</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Сачувај компримовану датотеку</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Изаберите датотеке за хеширање</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Изаберите хеш датотеку за: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Изаберите датотеке (Оригинална или .hash датотека)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Изаберите датотеке или датотеке контролних збирова</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Налепите или превуците овде...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Секунди</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Провери</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Заустави</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Уклони датотеку</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Копирај хеш</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Израчунај</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Очисти хеш</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Прегледај хеш</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Тамна</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Светла</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Системска</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Задатак заустављен</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Да</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>У реду</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Не</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip архива</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Потврди излаз</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Излазак ће отказати све тренутне задатке. Да ли сте сигурни?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Задатак је заустављен због истека времена.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Сачувај дневник за отклањање грешака на диск.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Паузирај евидентирање у реалном времену.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Прикажи хеш</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Сакриј хеш</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Копирај путању</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Ваш диск је пун. Молимо изаберите другу локацију :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Видљивост хеша</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Нема датотека. Кликните на 'Додај датотеке' да бисте почели.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Превуците овде датотеке или фасцикле, или кликните на „Додај датотеке“.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Закључај ову тему као подразумевану</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>Прескочено {0} датотека које премашују ограничење ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Језик система</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>Враћање на 'Аутоматски' подешавање захтева поновно покретање. Да ли желите да наставите?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Промена језика</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Да ли сте сигурни?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Не приказуј поново ово упозорење</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Грешка у мрежној вези. Проверите ваш интернет.</value>
     </data>
-    <data name="Error_Server">
-        <value>Грешка сервера (5xx). Покушајте поново касније.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Грешка клијента (4xx). Проверите захтев.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>Премашено ограничење GitHub API-ја. Покушајте поново касније.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Није пронађена пре-релеасе верзија. Задржавам тренутну верзију.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Пре-релеасе верзија {0} је доступна.
-
-            {1}
-
-            Ова верзија може бити нестабилна. Да ли желите да је преузмете?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Очисти неуспешне</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>Уклоњено {0} ставки.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Преостало време: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Трајање задатка: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Рачунање...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Додај фасциклу...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Изабрана фасцикла је празна.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Изаберите фасциклу за скенирање</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Откажи</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Ограничења обраде</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Макс. датотека по скенирању фасцикле</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Ограничите број датотека додатих из фасцикле да бисте спречили проблеме са перформансама.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Макс. фасцикли истовремено</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Ограничите број истовремено изабраних фасцикли.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Можете изабрати само до {0} фасцикли одједном.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>Додато {0} датотека. Прескочено {1} датотека због ограничења.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Читање: {0}/s | Писање: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Прикажи брзину читања</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Прикажи брзину Читања/Писања</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Прикажи брзину преноса у реалном времену током хеш операција.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Рачунање хеша...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Све величине</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Мале (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Средње (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Велике (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Екстра велике (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Документи</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Политика приватности</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Услови коришћења</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Уговор о лиценцирању (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Одрицање од одговорности</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>ПРОЧИТАЈМЕ (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Дневник промена</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Захвалнице</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Обрада у току</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Неуспешно</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Претрага по имену...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Величина</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub Профил</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Све</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Ослободи меморију</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Аутоматски (језик система)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Присилно сакупљање смећа (GC) да бисте ослободили RAM.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Алгоритам</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Очисти меморију</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Подразумевани алгоритам</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Чишћење меморије је покренуто.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Извези</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Сачувај датотеку контролних збирова…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Копирај све хешеве</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Отвори датотеку контролних збирова…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Прикажи</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Затвори</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Инсталирај при изласку</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Отвори страницу издања</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Шта је ново</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Поново покрени као администратор</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Копирај детаље</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Перформансе</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Број истовремено обрађиваних датотека</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = аутоматски ({0} на овом рачунару).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Оптимизуј за чврсте дискове</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Чита датотеке једну по једну, што је брже на чврстим дисковима и мрежним фасциклама.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Укључи скривене датотеке</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Приликом скенирања фасцикли додаје и скривене и системске датотеке.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Излазни подаци</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Величина слова у хешу</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Велика слова (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Мала слова (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Подразумевани формат датотеке контролних збирова</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Ажурирања</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Аутоматски проверавај ажурирања</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Проверава GitHub највише једном дневно при покретању апликације. Ажурирања се преузимају само ако одлучите да их инсталирате.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Интеграција са системом Windows</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Контекстни мени Истраживача датотека</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Додаје „Генериши хеш“ и „Провери“ у контекстни мени датотека и фасцикли (у Windows 11 под „Прикажи још опција“).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Потребно је само за датотеке које ваш налог не може да прочита. Док апликација ради као администратор, Windows блокира превлачење и отпуштање из Истраживача датотека.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Отвори фасциклу са подацима</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>Датотека контролних збирова GNU (формат sha256sum)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>Датотека контролних збирова BSD (са ознакама)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV датотека (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON датотека</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV датотека</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Датотеке контролних збирова</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Висок контраст</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>За далтонисте</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Ретро</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Стакло</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Сајберпанк</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Пастел</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Подразумевани</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Генериши хеш у програму Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Провери у програму Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>У реду чекања</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Приступ је одбијен</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Користи га други програм</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Време је истекло</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>ВАЛИДНО (стари редослед бајтова CRC32)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Неважећи хеш {0}</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Преузимање ажурирања… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Ажурирање ће бити инсталирано када затворите Hash Tool.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Сачекајте да се тренутни задатак заврши.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>Следеће ставке ({0}) није било могуће додати:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: прескочено неважећих редова: {0}.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>Датотека {0} не садржи контролне збирове.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>Прескочено „{0}“: датотеке контролних збирова не смеју да упућују на мрежне путање или путање уређаја.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Желите ли да уклоните све датотеке ({0}) са листе?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>Хешеви ({0}) су сачувани у {1}.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Још нема израчунатих хешева за извоз.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Неке датотеке није било могуће прочитати јер је приступ одбијен. Желите ли да поново покренете Hash Tool као администратор и још једном покушате?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool ради као администратор, па Windows блокира превлачење и отпуштање из Истраживача датотека. Уместо тога користите „Додај датотеке“ или „Додај фасциклу“.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Доступна је верзија {0} програма Hash Tool.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Ажурирања су доступна само у инсталираној или преносној верзији са GitHub Releases.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Датотеку подешавања није било могуће прочитати, па су враћена подразумевана подешавања. Оштећена датотека је сачувана као резервна копија.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Дошло је до грешке: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Читање: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Сачувај датотеку контролних збирова</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Отвори датотеке контролних збирова</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Извези дневник</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Минимални ниво</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Аутоматско померање</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Верзија {0}</value>
     </data>
 </root>

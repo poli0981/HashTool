@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>হ্যাশ টুল (Hash Tool)</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>হ্যাশ তৈরি করুন</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>হ্যাশ যাচাই করুন</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>সেটিংস</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>হালনাগাদ</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>থিম</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>সম্পর্কে</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>ডেভেলপার</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>ফাইল যোগ করুন...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>তালিকা মুছুন</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>হ্যাশ মুছুন</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>সব গণনা করুন</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>কমপ্রেস (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>সব যাচাই করুন</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>এখন যাচাই করুন</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>এখনই চেক করুন</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>ইনস্টল করুন</value>
     </data>
-    <data name="Btn_Accept">
-        <value>গ্রহণ করুন</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>প্রত্যাখ্যান করুন</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>হ্যাশ তৈরি ও কমপ্রেস</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>ব্যাচ যাচাইকরণ</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>আপডেট চেক করুন</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>ডেভেলপার ভার্সন সতর্কতা</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>সম্পর্কে</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>টিপস: Shift+C গণনা করতে, Shift+Z কমপ্রেস করতে, Ctrl+F ফাইল যোগ করতে।</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>টিপস: ফাইল বা ফোল্ডার এখানে ড্রপ করুন। ফাইল যোগ করতে Ctrl/⌘+O, ফোল্ডার যোগ করতে Ctrl/⌘+Shift+O, সব গণনা করতে Ctrl/⌘+Enter এবং বাতিল করতে Esc চাপুন।</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>টিপস: Shift+A সব যাচাই করতে, Ctrl+F ফাইল যোগ করতে, Ctrl+Shift+H তালিকা মুছতে।</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>টিপস: ফাইল, ফোল্ডার বা চেকসাম ফাইল (SHA256SUMS, *.sha256, *.md5…) এখানে ড্রপ করুন। সব যাচাই করতে Ctrl/⌘+Enter এবং বাতিল করতে Esc চাপুন।</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>প্রস্তুত</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>নমুনা:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>বর্তমান সংস্করণ: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>রিলিজ চ্যানেল:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>মোট ফাইল: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>স্থিতিশীল (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>ডেভেলপার (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>ভাষা</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>থিম</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>থিম স্টাইল</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>লাইট/ডার্ক</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>ফন্ট</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>ফন্ট সাইজ (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>ভাষার জন্য সঠিক ফন্ট স্বয়ংক্রিয়ভাবে বাছুন</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>ডিফল্ট ফন্ট হিসেবে লক করুন</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>UI স্কেল</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>হ্যাশ মান লুকান (নিরাপত্তা)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>সেটিংস রিসেট করুন</value>
     </data>
-    <data name="Settings_Other">
-        <value>গোপনীয়তা এবং নিরাপত্তা</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>ডিফল্ট হিসেবে সেট করুন</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>কাস্টম টেক্সট কালার</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>উন্নত</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>অ্যাডমিনিস্ট্রেটর হিসেবে চালান</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>রিস্টার্ট প্রয়োজন। সুরক্ষিত ফাইলে অ্যাক্সেসের অনুমতি দেয়।</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>ইনপুট ফাইল সাইজ লিমিট</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>প্রসেস করার জন্য ফাইলের সর্বোচ্চ সাইজ।</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>ফোর্স কুইট টাইমআউট</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>অ্যাপটি হ্যাং হয়েছে কিনা তা বোঝার আগের সময় (সেকেন্ড)।</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>ফাইল প্রসেসিং টাইমআউট</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>একটি ফাইল খুব বেশি সময় নিলে বাতিল করুন।</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>জরুরি পদক্ষেপ</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>অ্যাপটি জোরপূর্বক বন্ধ করুন এবং সমস্ত কাজ অবিলম্বে বাতিল করুন।</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>ফোর্স কুইট এবং সব বাতিল</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>কনফিগারেশন</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>সেটিংস লক করুন (ডিফল্ট হিসেবে সেভ)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>অনিচ্ছাকৃত পরিবর্তন রোধ করুন। শুধুমাত্র 'হ্যাশ মাস্কিং' পরিবর্তনযোগ্য থাকবে।</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>সব সেটিংস রিসেট করুন</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>ফ্যাক্টরি ডিফল্টে ফিরিয়ে আনুন।</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>কনফিগারেশন ফাইলের পাথ</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>পুরো পাথ দেখান এবং ক্লিপবোর্ডে কপি করুন।</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>পাথ দেখান</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>সেটিংস স্বয়ংক্রিয়ভাবে config.json এ সেভ হয়</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>ডেভেলপার মোড</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>উন্নত লগিং এবং ডিবাগিং টুল চালু করুন।</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>ডেভেলপার কনসোল</value>
     </data>
-    <data name="Dev_Beta">
-        <value>বিটা</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>রেকর্ডিং হচ্ছে</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>বিরতি দেওয়া হয়েছে</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>ফাইলে সেভ করুন</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>সেভ করবেন না</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>কনসোল পরিষ্কার করুন</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>সব কপি করুন</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>লগ ফোল্ডার খুলুন</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>লেখক</value>
     </data>
-    <data name="About_Software">
-        <value>সফটওয়্যার</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>থার্ড-পার্টি লাইব্রেরি</value>
     </data>
-    <data name="About_Copyright">
-        <value>কপিরাইট</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>ফাইল হ্যাশ তৈরি, যাচাই এবং কমপ্রেস করার একটি শক্তিশালী টুল। অথবা আমি তাই মনে করি :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>MIT লাইসেন্সের অধীনে প্রকাশিত।</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>প্রযুক্তি</value>
     </data>
-    <data name="About_TechContent">
-        <value>C# এবং .NET 10.0.102 দিয়ে তৈরি।</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>C# দিয়ে {0}-এ তৈরি।</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI সহায়তা</value>
     </data>
-    <data name="About_AIContent">
-        <value>এই সফটওয়্যারটি AI (Gemini 3 Pro এবং Grok 4.1) এর সহায়তায় তৈরি করা হয়েছে।</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>এই সফটওয়্যারটি AI (Gemini 3 Pro, Grok 4.1 এবং Claude)-এর সহায়তায় তৈরি করা হয়েছে।</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>প্রসেসিং হচ্ছে ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>সম্পন্ন</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>ত্রুটি: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>বাতিল করা হয়েছে</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>সেভ করা হয়েছে!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>কমপ্রেস করা হয়েছে!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>হ্যাশ/ইনপুটের অপেক্ষায়...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>আসল ফাইল পাওয়া যাচ্ছে না!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>হ্যাশ মান নেই (এন্টার করুন বা ফাইল লোড করুন)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>সঠিক (VALID)</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>অমিল! (MISMATCH!)</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>হ্যাশ ফাইল লোড হয়েছে</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>হ্যাশ ফাইলের নাম মিলছে না!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>ফাইলে কোন হ্যাশ নেই!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>আপডেট চেক করা হচ্ছে...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>নতুন সংস্করণ পাওয়া গেছে!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>আপনি সর্বশেষ সংস্করণ ব্যবহার করছেন।</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>আপডেট চেক করতে ত্রুটি: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>ডাউনলোড এবং ইনস্টল করা হচ্ছে...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>প্রস্তুত (চেকসাম ফাইল থেকে)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>ইনস্টলেশন ত্রুটি: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>প্রস্তুত (.hash ফাইল থেকে)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>আসল ফাইল হারিয়ে গেছে!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>হ্যাশ ফাইলের নাম মিলছে না!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>হ্যাশ ফাইল সফলভাবে ড্রপ করা হয়েছে</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>ফাইলে কোন হ্যাশ নেই!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>ফাইল রিড করতে ত্রুটি</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>ফলাফল</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>প্রসেসিং সম্পন্ন!
-            ✅ সফল: {0}
-            ❌ ব্যর্থ: {1}
-            ⛔ বাতিল: {2}
-        </value>
+✅ সফল: {0}
+❌ ব্যর্থ: {1}
+⛔ বাতিল: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>{0} টি ফাইল চেক করা হয়েছে।
-            ✅ মিল: {1}
-            ❌ অমিল/ত্রুটি: {2}
-            ⛔ বাতিল: {3}
-        </value>
+✅ মিল: {1}
+❌ অমিল/ত্রুটি: {2}
+⛔ বাতিল: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>ভুল ফাইল!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>হ্যাশ ফাইল মিলছে না!
-
-            আসল ফাইল: {0}
-            নির্বাচিত ফাইল: {1}
-
-            দয়া করে সঠিক হ্যাশ ফাইলটি নির্বাচন করুন।
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>নতুন আপডেট</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>সংস্করণ: {0}
-
-            পরিবর্তনসমূহ:
-            {1}
-
-            ডাউনলোড করতে 'এখনই আপডেট করুন'-এ ক্লিক করুন।
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>কোনো নতুন আপডেট পাওয়া যায়নি।</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>ত্রুটি</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>এই হ্যাশ ফাইলটি পড়া যাচ্ছে না।</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>কনফিগারেশন চেক</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>ফাইলটি বিদ্যমান:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>ফাইলটি নেই!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>ফাইলটি সফলভাবে তৈরি হয়েছে!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>কনফিগারেশন পাথ কপি হয়েছে।</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>অ্যাডমিনিস্ট্রেটর মোড</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>পরিবর্তনগুলো কার্যকর করতে অনুগ্রহ করে অ্যাপ্লিকেশনটি রিস্টার্ট করুন।</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>ফোল্ডার খোলা যাচ্ছে না: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ডেভেলপার ভার্সন সতর্কতা</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>আপনি ডেভেলপার (প্রি-রিলিজ) আপডেট চ্যানেলে স্যুইচ করতে যাচ্ছেন।
-
-            এই সংস্করণে বাগ থাকতে পারে, এটি অস্থিতিশীল হতে পারে এবং ডেটা হারানোর কারণ হতে পারে।
-
-            এই সংস্করণ ব্যবহারের ফলে উদ্ভূত কোনো সমস্যার জন্য আমি দায়ী নই।
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>আমি পড়েছি এবং একমত। আমি সম্পূর্ণ দায়িত্ব নিচ্ছি।</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>হ্যাশ ফাইল সেভ করুন</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>কমপ্রেসড ফাইল সেভ করুন</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>হ্যাশ করার জন্য ফাইল নির্বাচন করুন</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>{0} এর জন্য হ্যাশ ফাইল নির্বাচন করুন</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>ফাইল নির্বাচন করুন (আসল বা .hash ফাইল)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>ফাইল বা চেকসাম ফাইল নির্বাচন করুন</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>এখানে পেস্ট বা ড্রপ করুন...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>সেকেন্ড</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>যাচাই</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>থামুন</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>ফাইল সরান</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>হ্যাশ কপি করুন</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>গণনা করুন</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>হ্যাশ মুছুন</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>হ্যাশ ব্রাউজ করুন</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>ডার্ক</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>লাইট</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>সিস্টেম</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>টাস্ক থামানো হয়েছে</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>হ্যাঁ</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>ঠিক আছে</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>না</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip আর্কাইভ</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>প্রস্থান নিশ্চিত করুন</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>প্রস্থান করলে চলমান সমস্ত কাজ বাতিল হয়ে যাবে। আপনি কি নিশ্চিত?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>টাইমআউটের কারণে টাস্ক থামানো হয়েছে।</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>ডিবাগ লগ ডিস্কে সেভ করুন।</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>রিয়েল-টাইম লগিং পজ করুন।</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>হ্যাশ দেখান</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>হ্যাশ লুকান</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>পাথ কপি করুন</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>আপনার ড্রাইভের জায়গা শেষ। দয়া করে অন্য লোকেশন বেছে নিন :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>হ্যাশ দৃশ্যমানতা</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>কোনো ফাইল নেই। শুরু করতে 'ফাইল যোগ করুন'-এ ক্লিক করুন।</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>ফাইল বা ফোল্ডার এখানে ড্রপ করুন, অথবা “ফাইল যোগ করুন”-এ ক্লিক করুন।</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>এই থিমটি ডিফল্ট হিসেবে লক করুন</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>লিমিটের বেশি হওয়ায় {0} টি ফাইল বাদ দেওয়া হয়েছে ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>সিস্টেম ল্যাঙ্গুয়েজ</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>'স্বয়ংক্রিয়' সেটিংয়ে ফিরে গেলে পুরোপুরি কার্যকর হতে রিস্টার্ট প্রয়োজন। আপনি কি চালিয়ে যেতে চান?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>ভাষা পরিবর্তন</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>আপনি কি এ ব্যাপারে নিশ্চিত?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>এই সতর্কতা আর দেখাবেন না</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>নেটওয়ার্ক সংযোগ ত্রুটি। অনুগ্রহ করে আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।</value>
     </data>
-    <data name="Error_Server">
-        <value>সার্ভার ত্রুটি (5xx)। অনুগ্রহ করে পরে আবার চেষ্টা করুন।</value>
-    </data>
-    <data name="Error_Client">
-        <value>ক্লায়েন্ট ত্রুটি (4xx)। অনুগ্রহ করে অনুরোধটি পরীক্ষা করুন।</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>GitHub API রেট লিমিট অতিক্রম করেছে। অনুগ্রহ করে পরে আবার চেষ্টা করুন।</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>কোনো প্রি-রিলিজ সংস্করণ পাওয়া যায়নি। বর্তমান সংস্করণ রাখা হচ্ছে।</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>প্রি-রিলিজ সংস্করণ {0} উপলব্ধ।
-
-            {1}
-
-            এই সংস্করণটি অস্থিতিশীল হতে পারে। আপনি কি ডাউনলোড করতে চান?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>ব্যর্থগুলো মুছুন</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>{0} টি আইটেম সরানো হয়েছে।</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>বাকি সময়: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>কাজের সময়কাল: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>গণনা করা হচ্ছে...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>ফোল্ডার যোগ করুন...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>নির্বাচিত ফোল্ডারটি খালি।</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>স্ক্যান করার জন্য ফোল্ডার নির্বাচন করুন</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>বাতিল</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>প্রসেসিং লিমিট</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>প্রতি ফোল্ডার স্ক্যানে সর্বোচ্চ ফাইল</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>পারফরম্যান্স সমস্যা এড়াতে ফোল্ডার থেকে যোগ করা ফাইলের সংখ্যা সীমাবদ্ধ করুন।</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>একবারে সর্বোচ্চ ফোল্ডার</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>একবারে নির্বাচিত ফোল্ডারের সংখ্যা সীমাবদ্ধ করুন।</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>আপনি একবারে সর্বোচ্চ {0} টি ফোল্ডার নির্বাচন করতে পারবেন।</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>{0} টি ফাইল যোগ করা হয়েছে। লিমিটের কারণে {1} টি ফাইল বাদ দেওয়া হয়েছে।</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>রিড: {0}/s | রাইট: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>রিড স্পিড দেখান</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>রিড/রাইট স্পিড দেখান</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>হ্যাশ অপারেশনের সময় রিয়েল-টাইম ট্রান্সফার স্পিড প্রদর্শন করুন।</value>
     </data>
-    <data name="Status_Computing">
-        <value>হ্যাশ গণনা করা হচ্ছে...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>সব সাইজ</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>ছোট (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>মাঝারি (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>বড় (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>অনেক বড় (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>নথিপত্র</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>গোপনীয়তা নীতি</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>পরিষেবার শর্তাবলী</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>লাইসেন্স চুক্তি (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>দাবিত্যাগ</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>README</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>চেঞ্জলগ</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>কৃতজ্ঞতা স্বীকার</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>প্রসেসিং</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>ব্যর্থ</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>নাম দিয়ে খুঁজুন...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>সাইজ</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub প্রোফাইল</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>সব</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>মেমোরি ফাঁকা করুন</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>স্বয়ংক্রিয় (সিস্টেমের ভাষা)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>RAM ফাঁকা করতে গারবেজ কালেকশন (GC) ফোর্স করুন।</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>অ্যালগরিদম</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>মেমোরি ক্লিন করুন</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>ডিফল্ট অ্যালগরিদম</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>মেমোরি ক্লিনআপ ট্রিগার করা হয়েছে।</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>এক্সপোর্ট</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>চেকসাম ফাইল সেভ করুন…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>সব হ্যাশ কপি করুন</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>চেকসাম ফাইল খুলুন…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>দেখুন</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>বন্ধ করুন</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>প্রস্থানের সময় ইনস্টল করুন</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>রিলিজ পেজ খুলুন</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>নতুন কী আছে</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>অ্যাডমিনিস্ট্রেটর হিসেবে রিস্টার্ট করুন</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>বিস্তারিত কপি করুন</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>পারফরম্যান্স</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>একসাথে প্রসেস করা ফাইল</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = স্বয়ংক্রিয় (এই কম্পিউটারে {0})।</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>হার্ড ড্রাইভের জন্য অপ্টিমাইজ করুন</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>একবারে একটি করে ফাইল পড়ে, যা মেকানিক্যাল হার্ড ড্রাইভ ও নেটওয়ার্ক শেয়ারে বেশি দ্রুত।</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>লুকানো ফাইল অন্তর্ভুক্ত করুন</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>ফোল্ডার স্ক্যান করার সময় লুকানো ও সিস্টেম ফাইলও যোগ করুন।</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>আউটপুট</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>হ্যাশের বড়/ছোট হাতের অক্ষর</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>বড় হাতের অক্ষর (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>ছোট হাতের অক্ষর (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>ডিফল্ট চেকসাম ফাইল ফরম্যাট</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>আপডেট</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>স্বয়ংক্রিয়ভাবে আপডেট চেক করুন</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>অ্যাপ চালু হলে দিনে সর্বোচ্চ একবার GitHub চেক করে। আপনি ইনস্টল করতে চাইলে তবেই আপডেট ডাউনলোড হয়।</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows ইন্টিগ্রেশন</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>ফাইল এক্সপ্লোরার কনটেক্সট মেনু</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>ফাইল ও ফোল্ডারের রাইট-ক্লিক মেনুতে “হ্যাশ তৈরি করুন” ও “যাচাই করুন” যোগ করে (Windows 11-এ “আরও বিকল্প দেখান”-এর অধীনে)।</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>শুধুমাত্র সেসব ফাইলের জন্য প্রয়োজন, যেগুলো আপনার অ্যাকাউন্ট পড়তে পারে না। অ্যাডমিনিস্ট্রেটর হিসেবে চলার সময়, Windows ফাইল এক্সপ্লোরার থেকে ড্র্যাগ অ্যান্ড ড্রপ ব্লক করে।</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>ডেটা ফোল্ডার খুলুন</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU চেকসাম ফাইল (sha256sum ফরম্যাট)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD চেকসাম ফাইল (ট্যাগযুক্ত)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV ফাইল (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON ফাইল</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV ফাইল</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>চেকসাম ফাইল</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>উচ্চ বৈপরীত্য</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>বর্ণান্ধ-বান্ধব</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>রেট্রো</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>কাচ</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>সাইবারপাঙ্ক</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>প্যাস্টেল</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>ডিফল্ট</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Hash Tool দিয়ে হ্যাশ তৈরি করুন</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Hash Tool দিয়ে যাচাই করুন</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>সারিতে</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>অ্যাক্সেস প্রত্যাখ্যাত</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>অন্য প্রোগ্রাম ব্যবহার করছে</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>সময় শেষ</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>সঠিক (পুরোনো CRC32 বাইট ক্রম)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>বৈধ {0} হ্যাশ নয়</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>আপডেট ডাউনলোড হচ্ছে… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Hash Tool বন্ধ করলে আপডেটটি ইনস্টল হবে।</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>অনুগ্রহ করে বর্তমান কাজটি শেষ হওয়া পর্যন্ত অপেক্ষা করুন।</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>{0} টি আইটেম যোগ করা যায়নি:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: বৈধ চেকসাম এন্ট্রি নয় এমন {0} টি লাইন বাদ দেওয়া হয়েছে।</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0}-এ কোনো চেকসাম নেই।</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>“{0}” বাদ দেওয়া হয়েছে: চেকসাম ফাইল নেটওয়ার্ক বা ডিভাইস পাথ নির্দেশ করতে পারবে না।</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>তালিকা থেকে সব {0} টি ফাইল সরাবেন?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>{0} টি হ্যাশ {1}-এ সেভ করা হয়েছে।</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>এক্সপোর্ট করার মতো কোনো গণনা করা হ্যাশ এখনো নেই।</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>অ্যাক্সেস প্রত্যাখ্যাত হওয়ায় কিছু ফাইল পড়া যায়নি। Hash Tool অ্যাডমিনিস্ট্রেটর হিসেবে রিস্টার্ট করে আবার চেষ্টা করবেন?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool অ্যাডমিনিস্ট্রেটর হিসেবে চলছে, তাই Windows ফাইল এক্সপ্লোরার থেকে ড্র্যাগ অ্যান্ড ড্রপ ব্লক করে। এর পরিবর্তে “ফাইল যোগ করুন” বা “ফোল্ডার যোগ করুন” ব্যবহার করুন।</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} পাওয়া যাচ্ছে।</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>আপডেট শুধুমাত্র GitHub Releases থেকে নেওয়া ইনস্টল করা বা পোর্টেবল সংস্করণে পাওয়া যায়।</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>আপনার সেটিংস ফাইলটি পড়া যায়নি, তাই ডিফল্টে রিসেট করা হয়েছে। ক্ষতিগ্রস্ত ফাইলটি ব্যাকআপ হিসেবে রাখা হয়েছে।</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>কিছু একটা ভুল হয়েছে: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>রিড: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>চেকসাম ফাইল সেভ করুন</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>চেকসাম ফাইল খুলুন</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>লগ এক্সপোর্ট করুন</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>সর্বনিম্ন স্তর</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>অটো-স্ক্রল</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>সংস্করণ {0}</value>
     </data>
 </root>

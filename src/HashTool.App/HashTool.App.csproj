@@ -36,6 +36,10 @@
     </ItemGroup>
 
     <ItemGroup>
+        <InternalsVisibleTo Include="HashTool.App.Tests" />
+    </ItemGroup>
+
+    <ItemGroup>
         <Using Include="HashTool.Core" />
         <Using Include="HashTool.Core.Configuration" />
         <Using Include="HashTool.Core.Hashing" />
@@ -62,7 +66,6 @@
         <EmbeddedResource Update="Lang\Resources.el-gr.resx" Culture="el-GR" />
         <EmbeddedResource Update="Lang\Resources.en-gb.resx" Culture="en-GB" />
         <EmbeddedResource Update="Lang\Resources.en-in.resx" Culture="en-IN" />
-        <EmbeddedResource Update="Lang\Resources.en-us.resx" Culture="en-US" />
         <EmbeddedResource Update="Lang\Resources.en-sg.resx" Culture="en-SG" />
         <EmbeddedResource Update="Lang\Resources.es-419.resx" Culture="es-419" />
         <EmbeddedResource Update="Lang\Resources.es-es.resx" Culture="es-ES" />
@@ -114,14 +117,5 @@
         <EmbeddedResource Update="Lang\Resources.zh-hans-cn.resx" Culture="zh-Hans-CN" />
         <EmbeddedResource Update="Lang\Resources.zh-hans-sg.resx" Culture="zh-Hans-SG" />
         <EmbeddedResource Update="Lang\Resources.zh-hant.resx" Culture="zh-Hant" />
-    </ItemGroup>
-
-    <!-- macOS bundle icon -->
-    <ItemGroup Condition="$(RuntimeIdentifier.StartsWith('osx'))">
-        <Content Include="Assets\icon\icons.icns">
-            <Link>icons.icns</Link>
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-            <PublishState>Included</PublishState>
-        </Content>
     </ItemGroup>
 </Project>

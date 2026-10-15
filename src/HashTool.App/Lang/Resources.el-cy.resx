@@ -1,731 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Hash Tool</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Δημιουργία Hash</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Έλεγχος Hash</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Ρυθμίσεις</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Ενημέρωση</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Θέμα</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>Σχετικά</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Προγραμματιστής</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Προσθήκη Αρχείων...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Εκκαθάριση Λίστας</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_ClearHashes" xml:space="preserve">
+        <value>Εκκαθάριση κατακερματισμών</value>
+    </data>
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>ΥΠΟΛΟΓΙΣΜΟΣ ΌΛΩΝ</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Συμπίεση (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>ΕΛΕΓΧΟΣ ΌΛΩΝ</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>Έλεγχος Τώρα</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>Έλεγχος τώρα</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Εγκατάσταση</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Αποδοχή</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Απόρριψη</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Δημιουργία Hash &amp; Συμπίεση</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Μαζικός Έλεγχος</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Έλεγχος Ενημερώσεων</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Προειδοποίηση Έκδοσης Προγραμματιστή</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>Σχετικά</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Συμβουλή: Shift+C για Υπολογισμό Όλων, Shift+Z για Συμπίεση, Ctrl+F για Προσθήκη Αρχείων.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Συμβουλή: σύρετε εδώ αρχεία ή φακέλους. Ctrl/⌘+O για προσθήκη αρχείων, Ctrl/⌘+Shift+O για προσθήκη φακέλου, Ctrl/⌘+Enter για υπολογισμό όλων, Esc για ακύρωση.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Συμβουλή: Shift+A για Έλεγχο Όλων, Ctrl+F για Προσθήκη Αρχείων, Ctrl+Shift+H για Εκκαθάριση Λίστας.
-        </value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Συμβουλή: σύρετε εδώ αρχεία, φακέλους ή αρχεία αθροισμάτων ελέγχου (SHA256SUMS, *.sha256, *.md5…). Ctrl/⌘+Enter για έλεγχο όλων, Esc για ακύρωση.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Έτοιμο</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Δείγμα:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Τρέχουσα έκδοση: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Κανάλι κυκλοφορίας:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Σύνολο αρχείων: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Σταθερή (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Προγραμματιστή (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Γλώσσα</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Θέμα</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Στυλ θέματος</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Φωτεινό/Σκοτεινό</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Γραμματοσειρά</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Μέγεθος γραμματοσειράς (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Αυτόματη επιλογή για τη γλώσσα</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Κλείδωμα ως προεπιλογή</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>Κλίμακα UI</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Απόκρυψη τιμών Hash (Ασφάλεια)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Επαναφορά ρυθμίσεων</value>
     </data>
-    <data name="Settings_Other">
-        <value>Απόρρητο &amp; Ασφάλεια</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Ορισμός ως προεπιλογή</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Προσαρμοσμένο χρώμα κειμένου</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Για προχωρημένους</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Εκτέλεση ως Διαχειριστής</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Απαιτεί επανεκκίνηση. Επιτρέπει την πρόσβαση σε προστατευμένα αρχεία.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Όριο μεγέθους αρχείου εισόδου</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Μέγιστο μέγεθος αρχείων για επεξεργασία.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Χρονικό όριο αναγκαστικού τερματισμού</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Χρόνος (δευτ.) πριν θεωρηθεί ότι η εφαρμογή κόλλησε.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Χρονικό όριο επεξεργασίας αρχείου</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Ακύρωση εάν ένα αρχείο καθυστερεί πολύ.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Ενέργεια Έκτακτης Ανάγκης</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Αναγκαστικός τερματισμός και ακύρωση όλων άμεσα.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Τερματισμός &amp; Ακύρωση Όλων</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Διαμόρφωση (Configuration)</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Κλείδωμα ρυθμίσεων (Αποθήκευση ως προεπιλογή)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Αποτροπή τυχαίων αλλαγών. Μόνο η 'Απόκρυψη Hash' παραμένει ρυθμιζόμενη.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Επαναφορά όλων των ρυθμίσεων</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Επαναφορά στις εργοστασιακές ρυθμίσεις.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Διαδρομή αρχείου ρυθμίσεων</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Εμφάνιση πλήρους διαδρομής και αντιγραφή.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Εμφάνιση διαδρομής</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Οι ρυθμίσεις αποθηκεύονται αυτόματα στο config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Λειτουργία Προγραμματιστή</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Ενεργοποίηση καταγραφής και εργαλείων αποσφαλμάτωσης.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Κονσόλα Προγραμματιστή</value>
     </data>
-    <data name="Dev_Beta">
-        <value>BETA</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Εγγραφή</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Σε παύση</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Αποθήκευση σε αρχείο</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Χωρίς αποθήκευση</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Καθαρισμός κονσόλας</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Αντιγραφή όλων</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Άνοιγμα φακέλου καταγραφής</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Δημιουργός</value>
     </data>
-    <data name="About_Software">
-        <value>Λογισμικό</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Βιβλιοθήκες τρίτων</value>
     </data>
-    <data name="About_Copyright">
-        <value>Πνευματικά δικαιώματα</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Ένα ισχυρό εργαλείο για δημιουργία, επαλήθευση και συμπίεση hash αρχείων. Ή έτσι νομίζω :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>Κυκλοφορεί υπό την άδεια MIT.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Τεχνολογία</value>
     </data>
-    <data name="About_TechContent">
-        <value>Δημιουργήθηκε με C# και .NET 10.0.102.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>Δημιουργήθηκε με C# στο {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>Βοήθεια AI</value>
     </data>
-    <data name="About_AIContent">
-        <value>Αυτό το λογισμικό αναπτύχθηκε με τη βοήθεια AI (Gemini 3 Pro και Grok 4.1).</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Αυτό το λογισμικό αναπτύχθηκε με τη βοήθεια AI (Gemini 3 Pro, Grok 4.1 και Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Επεξεργασία ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Ολοκληρώθηκε</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Σφάλμα: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Ακυρώθηκε</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Αποθηκεύτηκε!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Συμπιέστηκε!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Αναμονή για hash/είσοδο...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Λείπει το αρχικό αρχείο!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Λείπει η τιμή Hash (Εισάγετε ή φορτώστε αρχείο)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>ΕΓΚΥΡΟ</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>ΑΣΥΜΦΩΝΙΑ!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Το αρχείο Hash φορτώθηκε</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Ασυμφωνία ονόματος αρχείου Hash!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Το αρχείο δεν περιέχει hash!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Έλεγχος για ενημερώσεις...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Εντοπίστηκε νέα έκδοση!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Χρησιμοποιείτε την τελευταία έκδοση.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Σφάλμα ελέγχου ενημέρωσης: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Λήψη και εγκατάσταση...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Έτοιμο (από αρχείο αθροισμάτων ελέγχου)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Σφάλμα εγκατάστασης: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Έτοιμο (Από αρχείο .hash)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Το αρχικό αρχείο χάθηκε!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Ασυμφωνία ονόματος αρχείου Hash!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Το αρχείο Hash μεταφέρθηκε επιτυχώς</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Το αρχείο δεν περιέχει hash!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Σφάλμα ανάγνωσης αρχείου</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Αποτέλεσμα</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Η επεξεργασία ολοκληρώθηκε!
-            ✅ Επιτυχία: {0}
-            ❌ Αποτυχία: {1}
-            ⛔ Ακυρώθηκε: {2}
-        </value>
+✅ Επιτυχία: {0}
+❌ Αποτυχία: {1}
+⛔ Ακυρώθηκε: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>Ελέγχθηκαν {0} αρχεία.
-            ✅ Ταίριασμα: {1}
-            ❌ Ασυμφωνία/Σφάλμα: {2}
-            ⛔ Ακυρώθηκε: {3}
-        </value>
+✅ Ταίριασμα: {1}
+❌ Ασυμφωνία/Σφάλμα: {2}
+⛔ Ακυρώθηκε: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Λάθος αρχείο!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Ασυμφωνία αρχείου Hash!
-
-            Αρχικό αρχείο: {0}
-            Επιλεγμένο αρχείο: {1}
-
-            Παρακαλώ επιλέξτε το σωστό συνοδευτικό αρχείο hash.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Νέα Ενημέρωση</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Έκδοση: {0}
-
-            Αλλαγές:
-            {1}
-
-            Κάντε κλικ στο 'Ενημέρωση Τώρα' για λήψη.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Δεν βρέθηκαν νεότερες ενημερώσεις.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Σφάλμα</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Αδυναμία ανάγνωσης αυτού του αρχείου hash.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Έλεγχος Διαμόρφωσης</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Το αρχείο υπάρχει στο:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Το αρχείο δεν υπάρχει!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Το αρχείο δημιουργήθηκε επιτυχώς!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Η διαδρομή αντιγράφηκε.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Λειτουργία Διαχειριστή</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Παρακαλώ επανεκκινήστε την εφαρμογή για να ισχύσουν οι αλλαγές.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Αδυναμία ανοίγματος φακέλου: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΕΚΔΟΣΗΣ DEV</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Πρόκειται να μεταβείτε στο κανάλι ενημερώσεων Προγραμματιστή (Pre-release).
-
-            Αυτή η έκδοση μπορεί να περιέχει σφάλματα, να είναι ασταθής και να προκαλέσει απώλεια δεδομένων.
-
-            Δεν φέρω ευθύνη για τυχόν προβλήματα που προκύψουν από τη χρήση αυτής της έκδοσης.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Διάβασα και συμφωνώ. Αναλαμβάνω την πλήρη ευθύνη.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Αποθήκευση Αρχείου Hash</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Αποθήκευση Συμπιεσμένου Αρχείου</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Επιλογή Αρχείων για Hash</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Επιλογή αρχείου hash για: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Επιλογή Αρχείων (Αρχικό ή .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Επιλογή αρχείων ή αρχείων αθροισμάτων ελέγχου</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Επικόλληση ή Απόθεση εδώ...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Δευτερόλεπτα</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Επαλήθευση</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Διακοπή</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Αφαίρεση Αρχείου</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Αντιγραφή Hash</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Υπολογισμός</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Καθαρισμός Hash</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Αναζήτηση Hash</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Σκοτεινό</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Φωτεινό</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Συστήματος</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Η εργασία διακόπηκε</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Ναι</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>ΟΚ</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Όχι</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Αρχείο Zip</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Επιβεβαίωση εξόδου</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Η έξοδος θα ακυρώσει όλες τις τρέχουσες εργασίες. Είστε σίγουροι;</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Η εργασία διακόπηκε λόγω χρονικού ορίου.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Αποθήκευση αρχείου καταγραφής στο δίσκο.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Παύση καταγραφής σε πραγματικό χρόνο.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Εμφάνιση Hash</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Απόκρυψη Hash</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Αντιγραφή Διαδρομής</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Ο δίσκος σας είναι γεμάτος. Παρακαλώ επιλέξτε άλλη τοποθεσία :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Ορατότητα Hash</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Δεν υπάρχουν αρχεία. Κάντε κλικ στο 'Προσθήκη αρχείων'.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Σύρετε εδώ αρχεία ή φακέλους ή κάντε κλικ στο «Προσθήκη Αρχείων».</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Κλείδωμα αυτού του θέματος ως προεπιλογή</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>Παραλείφθηκαν {0} αρχεία που υπερβαίνουν το όριο ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Γλώσσα Συστήματος</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>Η επιστροφή στη ρύθμιση 'Αυτόματα' απαιτεί επανεκκίνηση. Θέλετε να συνεχίσετε;</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Αλλαγή Γλώσσας</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Είστε σίγουροι;</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Να μην εμφανιστεί ξανά</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Σφάλμα σύνδεσης δικτύου. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.</value>
     </data>
-    <data name="Error_Server">
-        <value>Σφάλμα διακομιστή (5xx). Δοκιμάστε ξανά αργότερα.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Σφάλμα πελάτη (4xx). Ελέγξτε το αίτημα.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>Υπέρβαση ορίου GitHub API. Δοκιμάστε ξανά αργότερα.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Δεν βρέθηκε έκδοση pre-release. Διατήρηση τρέχουσας.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Η έκδοση pre-release {0} είναι διαθέσιμη.
-
-            {1}
-
-            Αυτή η έκδοση μπορεί να είναι ασταθής. Θέλετε να την κατεβάσετε;
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Καθαρισμός Αποτυχημένων</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>Αφαιρέθηκαν {0} αντικείμενα.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Υπολειπόμενος χρόνος: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Διάρκεια εργασίας: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Υπολογισμός...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Προσθήκη Φακέλου...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Ο επιλεγμένος φάκελος είναι άδειος.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Επιλογή φακέλου για σάρωση</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Ακύρωση</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Όρια Επεξεργασίας</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Μέγιστος αριθμός αρχείων ανά φάκελο</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Περιορισμός αριθμού αρχείων από φάκελο για αποφυγή προβλημάτων απόδοσης.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Μέγιστος αριθμός φακέλων ταυτόχρονα</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Περιορισμός αριθμού επιλεγμένων φακέλων.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Μπορείτε να επιλέξετε μέχρι {0} φακέλους ταυτόχρονα.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>Προστέθηκαν {0} αρχεία. Παραλείφθηκαν {1} λόγω ορίου.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Ανάγνωση: {0}/s | Εγγραφή: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Εμφάνιση ταχύτητας ανάγνωσης</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Εμφάνιση ταχύτητας Ανάγνωσης/Εγγραφής</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Εμφάνιση ταχύτητας μεταφοράς σε πραγματικό χρόνο.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Υπολογισμός Hash...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Όλα τα μεγέθη</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Μικρό (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Μεσαίο (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Μεγάλο (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Πολύ μεγάλο (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Έγγραφα</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Πολιτική Απορρήτου</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Όροι Χρήσης</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Άδεια Χρήσης (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Αποποίηση Ευθύνης</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>README</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Ιστορικό αλλαγών</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Ευχαριστίες</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Επεξεργασία</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Αποτυχία</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Αναζήτηση με όνομα...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Μέγεθος</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>Προφίλ GitHub</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Όλα</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Ελευθέρωση Μνήμης</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Αυτόματα (γλώσσα συστήματος)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Αναγκαστική εκκαθάριση μνήμης (GC) για ελευθέρωση RAM.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Αλγόριθμος</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Εκκαθάριση Μνήμης</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Προεπιλεγμένος αλγόριθμος</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Ενεργοποιήθηκε η εκκαθάριση μνήμης.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Εξαγωγή</value>
     </data>
-    <data name="Btn_ClearHashes">
-        <value>Εκκαθάριση κατακερματισμών</value>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Αποθήκευση αρχείου αθροισμάτων ελέγχου…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Αντιγραφή όλων των Hash</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Άνοιγμα αρχείου αθροισμάτων ελέγχου…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Προβολή</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Κλείσιμο</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Εγκατάσταση κατά την έξοδο</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Άνοιγμα σελίδας έκδοσης</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Τι νέο υπάρχει</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Επανεκκίνηση ως διαχειριστής</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Αντιγραφή λεπτομερειών</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Απόδοση</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Αρχεία που επεξεργάζονται ταυτόχρονα</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = αυτόματα ({0} σε αυτόν τον υπολογιστή).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Βελτιστοποίηση για σκληρούς δίσκους</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Διαβάζει ένα αρχείο κάθε φορά, κάτι που είναι ταχύτερο σε μηχανικούς σκληρούς δίσκους και κοινόχρηστους φακέλους δικτύου.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Συμπερίληψη κρυφών αρχείων</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Προσθέτει επίσης κρυφά αρχεία και αρχεία συστήματος κατά τη σάρωση φακέλων.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Έξοδος</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Πεζά/κεφαλαία γράμματα Hash</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Κεφαλαία (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Πεζά (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Προεπιλεγμένη μορφή αρχείου αθροισμάτων ελέγχου</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Ενημερώσεις</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Αυτόματος έλεγχος για ενημερώσεις</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Ελέγχει το GitHub το πολύ μία φορά την ημέρα, κατά την εκκίνηση της εφαρμογής. Οι ενημερώσεις λαμβάνονται μόνο όταν επιλέξετε να τις εγκαταστήσετε.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Ενσωμάτωση στα Windows</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Μενού περιβάλλοντος της Εξερεύνησης αρχείων</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Προσθέτει τις επιλογές «Δημιουργία Hash» και «Έλεγχος» στο μενού δεξιού κλικ των αρχείων και των φακέλων (στα Windows 11 στην ενότητα «Εμφάνιση περισσότερων επιλογών»).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Χρειάζεται μόνο για αρχεία που δεν μπορεί να διαβάσει ο λογαριασμός σας. Όταν η εφαρμογή εκτελείται ως διαχειριστής, τα Windows αποκλείουν τη μεταφορά και απόθεση από την Εξερεύνηση αρχείων.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Άνοιγμα φακέλου δεδομένων</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>Αρχείο αθροισμάτων ελέγχου GNU (μορφή sha256sum)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>Αρχείο αθροισμάτων ελέγχου BSD (με ετικέτες)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>Αρχείο SFV (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>Αρχείο JSON</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>Αρχείο CSV</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Αρχεία αθροισμάτων ελέγχου</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Υψηλή αντίθεση</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Φιλικό για αχρωματοψία</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Ρετρό</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Γυαλί</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Παστέλ</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Προεπιλογή</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Δημιουργία Hash με το Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Έλεγχος με το Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>Σε αναμονή</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Δεν επιτρέπεται η πρόσβαση</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Χρησιμοποιείται από άλλο πρόγραμμα</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Λήξη χρονικού ορίου</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>ΕΓΚΥΡΟ (παλιά σειρά byte CRC32)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Μη έγκυρο Hash {0}</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Λήψη ενημέρωσης… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Η ενημέρωση θα εγκατασταθεί όταν κλείσετε το Hash Tool.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Περιμένετε μέχρι να ολοκληρωθεί η τρέχουσα εργασία.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>Δεν ήταν δυνατή η προσθήκη {0} στοιχείων:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: παραλείφθηκαν {0} γραμμές που δεν είναι έγκυρες εγγραφές αθροισμάτων ελέγχου.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>Το αρχείο {0} δεν περιέχει αθροίσματα ελέγχου.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>Παραλείφθηκε το «{0}»: τα αρχεία αθροισμάτων ελέγχου δεν επιτρέπεται να παραπέμπουν σε διαδρομές δικτύου ή συσκευών.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Να αφαιρεθούν και τα {0} αρχεία από τη λίστα;</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>Αποθηκεύτηκαν {0} Hash στο {1}.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Δεν υπάρχουν ακόμη υπολογισμένα Hash για εξαγωγή.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Ορισμένα αρχεία δεν ήταν δυνατό να διαβαστούν επειδή δεν επιτράπηκε η πρόσβαση. Να γίνει επανεκκίνηση του Hash Tool ως διαχειριστής και νέα προσπάθεια;</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Το Hash Tool εκτελείται ως διαχειριστής, επομένως τα Windows αποκλείουν τη μεταφορά και απόθεση από την Εξερεύνηση αρχείων. Χρησιμοποιήστε αντί γι' αυτό το «Προσθήκη Αρχείων» ή το «Προσθήκη Φακέλου».</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Το Hash Tool {0} είναι διαθέσιμο.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Οι ενημερώσεις είναι διαθέσιμες μόνο στην εγκατεστημένη ή στη φορητή έκδοση από τη σελίδα εκδόσεων του GitHub.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Δεν ήταν δυνατή η ανάγνωση του αρχείου ρυθμίσεων, οπότε έγινε επαναφορά στις προεπιλογές. Το κατεστραμμένο αρχείο διατηρήθηκε ως αντίγραφο ασφαλείας.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Κάτι πήγε στραβά: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Ανάγνωση: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Αποθήκευση αρχείου αθροισμάτων ελέγχου</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Άνοιγμα αρχείων αθροισμάτων ελέγχου</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Εξαγωγή αρχείου καταγραφής</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Ελάχιστο επίπεδο</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Αυτόματη κύλιση</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Έκδοση {0}</value>
     </data>
 </root>

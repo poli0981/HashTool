@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Nástroj Hash</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Generovat hash</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Ověřit hash</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Nastavení</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Aktualizace</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Motiv</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>O aplikaci</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Vývojář</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Přidat soubory...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Vymazat seznam</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Vymazat hashe</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>SPOČÍTAT VŠE</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Komprimovat (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>OVĚŘIT VŠE</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>Ověřit nyní</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>Zkontrolovat nyní</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Instalovat</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Přijmout</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Odmítnout</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Generovat hash a komprimovat</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Hromadné ověření</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Zkontrolovat aktualizace</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Upozornění vývojářské verze</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>O aplikaci</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Tip: Shift+C pro výpočet, Shift+Z pro kompresi, Ctrl+F pro přidání souborů.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Tip: přetáhněte sem soubory nebo složky. Ctrl/⌘+O přidá soubory, Ctrl/⌘+Shift+O přidá složku, Ctrl/⌘+Enter spočítá vše, Esc zruší.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Tip: Shift+A pro ověření, Ctrl+F pro přidání souborů, Ctrl+Shift+H pro vymazání seznamu.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Tip: přetáhněte sem soubory, složky nebo soubory kontrolních součtů (SHA256SUMS, *.sha256, *.md5…). Ctrl/⌘+Enter ověří vše, Esc zruší.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Připraveno</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Vzorek:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Aktuální verze: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Distribuční kanál:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Celkem souborů: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Stabilní (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Vývojářská (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Jazyk</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Motiv</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Styl motivu</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Světlý/Tmavý</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Písmo</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Velikost písma (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Automaticky vybrat písmo pro jazyk</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Uzamknout jako výchozí písmo</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>Měřítko UI</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Skrýt hodnoty hashe (Bezpečnost)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Obnovit nastavení</value>
     </data>
-    <data name="Settings_Other">
-        <value>Soukromí a zabezpečení</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Nastavit jako výchozí</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Vlastní barva textu</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Pokročilé</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Spustit jako správce</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Vyžaduje restart. Umožňuje přístup k chráněným souborům.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Limit velikosti vstupního souboru</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Maximální velikost souborů pro zpracování.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Časový limit pro vynucené ukončení</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Čas (sekundy) před považováním aplikace za zamrzlou.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Časový limit zpracování souboru</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Zrušit, pokud soubor trvá příliš dlouho.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Nouzová akce</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Vynutit ukončení aplikace a okamžitě zrušit všechny úlohy.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Vynutit ukončení a zrušit vše</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Konfigurace</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Uzamknout nastavení (Uložit jako výchozí)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Zabránit náhodným změnám. Pouze 'Skrývání hashe' zůstane nastavitelné.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Obnovit všechna nastavení</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Obnovit do továrního nastavení.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Cesta ke konfiguračnímu souboru</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Zobrazit celou cestu a zkopírovat do schránky.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Zobrazit cestu</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Nastavení se automaticky ukládají do config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Vývojářský režim</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Povolit pokročilé logování a ladicí nástroje.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Vývojářská konzole</value>
     </data>
-    <data name="Dev_Beta">
-        <value>BETA</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Nahrávání</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Pozastaveno</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Uložit do souboru</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Neukládat</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Vymazat konzoli</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Kopírovat vše</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Otevřít složku logů</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Autor</value>
     </data>
-    <data name="About_Software">
-        <value>Software</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Knihovny třetích stran</value>
     </data>
-    <data name="About_Copyright">
-        <value>Autorská práva</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Mocný nástroj pro generování, ověřování a kompresi hashů souborů. Nebo si to alespoň myslím :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>Vydáno pod licencí MIT.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Technologie</value>
     </data>
-    <data name="About_TechContent">
-        <value>Vytvořeno v C# a .NET 10.0.102.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>Vytvořeno v jazyce C# na platformě {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI Asistence</value>
     </data>
-    <data name="About_AIContent">
-        <value>Tento software byl vyvinut s pomocí AI (Gemini 3 Pro a Grok 4.1).</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Tento software byl vyvinut s pomocí umělé inteligence (Gemini 3 Pro, Grok 4.1 a Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Zpracování ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Dokončeno</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Chyba: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Zrušeno</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Uloženo!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Zkomprimováno!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Čekání na hash/vstup...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Chybí původní soubor!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Chybí hodnota hashe (Zadejte nebo načtěte soubor)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>PLATNÝ</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>NESHODA!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Soubor hashe načten</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Neshoda názvu souboru hashe!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Soubor neobsahuje hash!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Kontrola aktualizací...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Zjištěna nová verze!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Používáte nejnovější verzi.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Chyba kontroly aktualizace: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Stahování a instalace...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Připraveno (ze souboru kontrolních součtů)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Chyba instalace: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Připraveno (Z .hash souboru)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Původní soubor ztracen!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Neshoda názvu souboru hashe!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Soubor hashe úspěšně vložen</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Soubor neobsahuje hash!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Chyba čtení souboru</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Výsledek</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Zpracování dokončeno!
-            ✅ Úspěch: {0}
-            ❌ Selhání: {1}
-            ⛔ Zrušeno: {2}
-        </value>
+✅ Úspěch: {0}
+❌ Selhání: {1}
+⛔ Zrušeno: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>Zkontrolováno {0} souborů.
-            ✅ Shoda: {1}
-            ❌ Neshoda/Chyba: {2}
-            ⛔ Zrušeno: {3}
-        </value>
+✅ Shoda: {1}
+❌ Neshoda/Chyba: {2}
+⛔ Zrušeno: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Špatný soubor!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Neshoda souboru hashe!
-
-            Původní soubor: {0}
-            Vybraný soubor: {1}
-
-            Vyberte prosím správný doprovodný soubor hashe.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Nová aktualizace</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Verze: {0}
-
-            Změny:
-            {1}
-
-            Klikněte na 'Aktualizovat nyní' pro stažení.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Nebyly nalezeny žádné novější aktualizace.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Chyba</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Nelze přečíst tento soubor hashe.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Kontrola konfigurace</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Soubor existuje v:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Soubor neexistuje!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Soubor úspěšně vytvořen!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Cesta konfigurace zkopírována.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Režim správce</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Pro provedení změn restartujte aplikaci.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Nelze otevřít složku: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ UPOZORNĚNÍ VÝVOJÁŘSKÉ VERZE</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Chystáte se přepnout na vývojářský (Pre-release) aktualizační kanál.
-
-            Tato verze může obsahovat chyby, být nestabilní a způsobit ztrátu dat.
-
-            Nenesu odpovědnost za žádné problémy vzniklé používáním této verze.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Přečetl jsem a souhlasím. Přebírám plnou odpovědnost.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Uložit soubor hashe</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Uložit komprimovaný soubor</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Vybrat soubory pro hashování</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Vybrat soubor hashe pro: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Vybrat soubory (Původní nebo .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Vybrat soubory nebo soubory kontrolních součtů</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Vložit nebo přetáhnout sem...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Sekundy</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Ověřit</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Zastavit</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Odebrat soubor</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Kopírovat hash</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Spočítat</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Vymazat hash</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Procházet hash</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Tmavý</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Světlý</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Systémový</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Úloha zastavena</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Ano</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>OK</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Ne</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Archiv Zip</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Potvrzení ukončení</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Ukončení zruší všechny probíhající úlohy. Jste si jistí?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Úloha byla zastavena z důvodu časového limitu.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Uložit debug log na disk.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Pozastavit logování v reálném čase.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Zobrazit hash</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Skrýt hash</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Kopírovat cestu</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Váš disk je plný. Vyberte prosím jiné umístění :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Viditelnost hashe</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Žádné soubory. Klikněte na 'Přidat soubory' pro začátek.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Přetáhněte sem soubory nebo složky, nebo klikněte na „Přidat soubory“.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Uzamknout tento motiv jako výchozí</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>Přeskočeno {0} souborů překračujících limit ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Jazyk systému</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>Návrat k nastavení 'Automaticky' vyžaduje restart pro plný účinek. Chcete pokračovat?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Změna jazyka</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Jste si tím jistí?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Toto upozornění již nezobrazovat</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Chyba síťového připojení. Zkontrolujte prosím internet.</value>
     </data>
-    <data name="Error_Server">
-        <value>Chyba serveru (5xx). Zkuste to prosím později.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Chyba klienta (4xx). Zkontrolujte prosím požadavek.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>Překročen limit GitHub API. Zkuste to prosím později.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Nebyla nalezena žádná pre-release verze. Ponechání aktuální verze.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Pre-release verze {0} je k dispozici.
-
-            {1}
-
-            Tato verze může být nestabilní. Chcete ji stáhnout?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Vymazat neúspěšné</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>Odebráno {0} položek.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Zbývající čas: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Trvání úlohy: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Výpočet...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Přidat složku...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Vybraná složka je prázdná.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Vybrat složku pro skenování</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Zrušit</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Limity zpracování</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Max. souborů na sken složky</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Omezit počet souborů přidaných ze složky pro prevenci problémů s výkonem.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Max. složek najednou</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Omezit počet složek vybraných najednou.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Můžete vybrat maximálně {0} složek najednou.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>Přidáno {0} souborů. Přeskočeno {1} souborů kvůli limitu.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Čtení: {0}/s | Zápis: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Zobrazit rychlost čtení</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Zobrazit rychlost Čtení/Zápisu</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Zobrazovat rychlost přenosu v reálném čase během operací hashe.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Výpočet hashe...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Všechny velikosti</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Malé (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Střední (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Velké (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Extra velké (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Dokumenty</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Zásady ochrany osobních údajů</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Podmínky služby</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Licenční smlouva (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Vyloučení odpovědnosti</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>ČTĚTE MĚ (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Seznam změn</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Poděkování</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Zpracování</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Selhání</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Hledat podle názvu...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Velikost</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub Profil</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Vše</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Uvolnit paměť</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Automaticky (jazyk systému)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Vynutit úklid paměti (GC) pro uvolnění RAM.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Algoritmus</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Vyčistit paměť</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Výchozí algoritmus</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Čištění paměti spuštěno.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Exportovat</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Uložit soubor kontrolních součtů…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Kopírovat všechny hashe</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Otevřít soubor kontrolních součtů…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Zobrazit</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Zavřít</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Instalovat při ukončení</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Otevřít stránku vydání</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Co je nového</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Restartovat jako správce</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Kopírovat podrobnosti</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Výkon</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Počet současně zpracovávaných souborů</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = automaticky ({0} na tomto počítači).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Optimalizovat pro pevné disky</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Čte soubory po jednom, což je rychlejší u klasických pevných disků a sdílených síťových složek.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Zahrnout skryté soubory</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Při skenování složek přidávat i skryté a systémové soubory.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Výstup</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Velikost písmen v hashích</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Velká písmena (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Malá písmena (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Výchozí formát souboru kontrolních součtů</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Aktualizace</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Automaticky kontrolovat aktualizace</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Kontroluje GitHub nejvýše jednou denně při spuštění aplikace. Aktualizace se stahují, jen když se je rozhodnete nainstalovat.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Integrace se systémem Windows</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Místní nabídka Průzkumníka souborů</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Přidá položky „Generovat hash“ a „Ověřit“ do místní nabídky souborů a složek (ve Windows 11 pod položkou „Zobrazit další možnosti“).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Je potřeba jen u souborů, které váš účet nemůže číst. Když aplikace běží s oprávněními správce, Windows blokuje přetahování z Průzkumníka souborů.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Otevřít složku s daty</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>Soubor kontrolních součtů GNU (formát sha256sum)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>Soubor kontrolních součtů BSD (se značkami)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>Soubor SFV (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>Soubor JSON</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>Soubor CSV</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Soubory kontrolních součtů</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Vysoký kontrast</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Pro barvoslepé</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Retro</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Sklo</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Pastel</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Výchozí</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Generovat hash pomocí Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Ověřit pomocí Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>Ve frontě</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Přístup odepřen</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Používán jiným programem</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Vypršel časový limit</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>PLATNÝ (staré pořadí bajtů CRC32)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Neplatný hash {0}</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Stahování aktualizace… {0} %</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Aktualizace se nainstaluje po zavření aplikace Hash Tool.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Počkejte prosím na dokončení aktuální úlohy.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>Nepodařilo se přidat položky ({0}):
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: přeskočeny řádky, které nejsou platnými záznamy kontrolních součtů (počet: {0}).</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>Soubor {0} neobsahuje žádné kontrolní součty.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>Přeskočeno „{0}“: soubory kontrolních součtů nesmí odkazovat na síťové cesty ani cesty k zařízením.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Odebrat ze seznamu všechny soubory ({0})?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>Hashe byly uloženy do souboru {1} (počet: {0}).</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Zatím nejsou k dispozici žádné vypočítané hashe k exportu.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Některé soubory nebylo možné přečíst, protože byl odepřen přístup. Restartovat aplikaci Hash Tool jako správce a zkusit je znovu?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool běží s oprávněními správce, a proto Windows blokuje přetahování z Průzkumníka souborů. Použijte místo toho „Přidat soubory“ nebo „Přidat složku“.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Je k dispozici Hash Tool {0}.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Aktualizace jsou k dispozici jen v instalované nebo přenosné verzi z GitHub Releases.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Soubor s nastavením nebylo možné přečíst, proto bylo obnoveno výchozí nastavení. Poškozený soubor byl ponechán jako záloha.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Něco se pokazilo: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Čtení: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Uložit soubor kontrolních součtů</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Otevřít soubory kontrolních součtů</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Exportovat log</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Minimální úroveň</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Automatické posouvání</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Verze {0}</value>
     </data>
 </root>

@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Hash Tool</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Generiši heš</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Provjeri heš</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Postavke</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Ažuriranje</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Tema</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>O programu</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Programer</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Dodaj datoteke...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Očisti listu</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Očisti hešove</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>IZRAČUNAJ SVE</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Kompresuj (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>PROVJERI SVE</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>Provjeri sad</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>Provjeri sada</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Instaliraj</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Prihvati</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Odbij</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Generiši heš i kompresuj</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Grupna provjera</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Provjeri ažuriranja</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Upozorenje za razvojnu verziju</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>O programu</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Savjet: Shift+C za izračun, Shift+Z za kompresiju, Ctrl+F za dodavanje.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Savjet: prevucite ovdje datoteke ili mape. Ctrl/⌘+O dodaje datoteke, Ctrl/⌘+Shift+O dodaje mapu, Ctrl/⌘+Enter izračunava sve, Esc otkazuje.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Savjet: Shift+A za provjeru, Ctrl+F za dodavanje, Ctrl+Shift+H za brisanje liste.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Savjet: prevucite ovdje datoteke, mape ili datoteke kontrolnih zbirova (SHA256SUMS, *.sha256, *.md5…). Ctrl/⌘+Enter provjerava sve, Esc otkazuje.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Spremno</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Uzorak:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Trenutna verzija: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Kanal izdanja:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Ukupno datoteka: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Stabilna (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Razvojna (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Jezik</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Tema</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Stil teme</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Svijetla/Tamna</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Font</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Veličina fonta (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Automatski odaberi font za jezik</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Zaključaj kao zadani font</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>Skaliranje sučelja</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Sakrij heš vrijednosti (Sigurnost)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Resetuj postavke</value>
     </data>
-    <data name="Settings_Other">
-        <value>Privatnost i sigurnost</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Postavi kao zadano</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Prilagođena boja teksta</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Napredno</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Pokreni kao administrator</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Zahtijeva ponovno pokretanje. Omogućuje pristup zaštićenim datotekama.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Limit veličine ulazne datoteke</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Maksimalna veličina datoteka za obradu.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Vrijeme do prisilnog prekida</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Vrijeme (sekunde) prije nego se aplikacija smatra smrznutom.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Vrijeme obrade datoteke</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Otkaži ako jedna datoteka traje predugo.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Hitna akcija</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Prisilno zatvori aplikaciju i odmah otkaži sve zadatke.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Prisilni izlaz i otkaži sve</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Konfiguracija</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Zaključaj postavke (Spremi kao zadano)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Spriječi slučajne promjene. Samo 'Sakrij heš' ostaje dostupno.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Resetuj sve postavke</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Vrati na tvorničke postavke.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Putanja konfiguracijske datoteke</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Prikaži punu putanju i kopiraj u međuspremnik.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Prikaži putanju</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Postavke se automatski spremaju u config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Razvojni način rada</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Omogući napredno bilježenje i alate za otklanjanje grešaka.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Razvojna konzola</value>
     </data>
-    <data name="Dev_Beta">
-        <value>BETA</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Snimanje</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Pauzirano</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Spremi u datoteku</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Ne spremaj</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Očisti konzolu</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Kopiraj sve</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Otvori mapu logova</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Autor</value>
     </data>
-    <data name="About_Software">
-        <value>Softver</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Biblioteke trećih strana</value>
     </data>
-    <data name="About_Copyright">
-        <value>Autorska prava</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Moćan alat za generisanje, provjeru i kompresiju hešova datoteka. Ili barem ja tako mislim :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>Objavljeno pod MIT licencom.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Tehnologija</value>
     </data>
-    <data name="About_TechContent">
-        <value>Izrađeno u C# i .NET 10.0.102.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>Izrađeno u jeziku C# na platformi {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI Pomoć</value>
     </data>
-    <data name="About_AIContent">
-        <value>Ovaj softver je razvijen uz pomoć AI (Gemini 3 Pro i Grok 4.1).</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Ovaj softver je razvijen uz pomoć vještačke inteligencije (Gemini 3 Pro, Grok 4.1 i Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Obrada ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Završeno</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Greška: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Otkazano</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Spremljeno!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Kompresovano!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Čekanje heša/unosa...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Originalna datoteka nedostaje!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Nedostaje heš vrijednost (Unesi ili učitaj datoteku)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>ISPRAVNO (VALID)</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>NE POKLAPA SE (MISMATCH!)</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Heš datoteka učitana</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Ime heš datoteke se ne poklapa!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Datoteka ne sadrži heš!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Provjera ažuriranja...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Otkrivena nova verzija!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Koristite najnoviju verziju.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Greška pri provjeri ažuriranja: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Preuzimanje i instalacija...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Spremno (iz datoteke kontrolnih zbirova)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Greška pri instalaciji: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Spremno (Iz .hash datoteke)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Originalna datoteka izgubljena!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Ime heš datoteke se ne poklapa!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Heš datoteka uspješno ispuštena</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Datoteka ne sadrži heš!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Greška pri čitanju datoteke</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Rezultat</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Obrada završena!
-            ✅ Uspjeh: {0}
-            ❌ Neuspjeh: {1}
-            ⛔ Otkazano: {2}
-        </value>
+✅ Uspjeh: {0}
+❌ Neuspjeh: {1}
+⛔ Otkazano: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>Provjereno {0} datoteka.
-            ✅ Poklapanje: {1}
-            ❌ Nepoklapanje/Greška: {2}
-            ⛔ Otkazano: {3}
-        </value>
+✅ Poklapanje: {1}
+❌ Nepoklapanje/Greška: {2}
+⛔ Otkazano: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Pogrešna datoteka!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Nepoklapanje heš datoteke!
-
-            Originalna datoteka: {0}
-            Odabrana datoteka: {1}
-
-            Molimo odaberite ispravnu prateću heš datoteku.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Novo ažuriranje</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Verzija: {0}
-
-            Promjene:
-            {1}
-
-            Kliknite 'Ažuriraj sad' za preuzimanje.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Nema novijih ažuriranja.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Greška</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Nije moguće pročitati ovu heš datoteku.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Provjera konfiguracije</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Datoteka postoji na:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Datoteka ne postoji!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Datoteka uspješno kreirana!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Putanja konfiguracije kopirana.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Administrator način</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Molimo ponovno pokrenite aplikaciju da bi promjene stupile na snagu.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Nije moguće otvoriti mapu: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ UPOZORENJE ZA RAZVOJNU VERZIJU</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Upravo prelazite na razvojni (Pre-release) kanal ažuriranja.
-
-            Ova verzija može sadržavati greške, biti nestabilna i uzrokovati gubitak podataka.
-
-            Ne snosim odgovornost za bilo kakve probleme nastale korištenjem ove verzije.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Pročitao sam i slažem se. Preuzimam punu odgovornost.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Spremi heš datoteku</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Spremi kompresovanu datoteku</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Odaberi datoteke za heširanje</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Odaberi heš datoteku za: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Odaberi datoteke (Original ili .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Odaberi datoteke ili datoteke kontrolnih zbirova</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Zalijepi ili ispusti ovdje...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Sekundi</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Provjeri</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Stop</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Ukloni datoteku</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Kopiraj heš</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Izračunaj</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Očisti heš</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Pretraži heš</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Tamna</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Svijetla</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Sistemska</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Zadatak zaustavljen</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Da</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>U redu</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Ne</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip arhiva</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Potvrda izlaza</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Izlaz će otkazati sve tekuće zadatke. Jeste li sigurni?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Zadatak je zaustavljen zbog isteka vremena.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Spremi debug log na disk.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Pauziraj logiranje u stvarnom vremenu.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Prikaži heš</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Sakrij heš</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Kopiraj putanju</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Vaš disk je pun. Molimo odaberite drugu lokaciju :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Vidljivost heša</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Nema datoteka. Kliknite 'Dodaj datoteke' za početak.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Prevucite ovdje datoteke ili mape, ili kliknite „Dodaj datoteke“.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Zaključaj ovu temu kao zadanu</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>Preskočeno {0} datoteka iznad limita ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Sistemski jezik</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>Povratak na postavku 'Automatski' zahtijeva ponovno pokretanje. Želite li nastaviti?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Promjena jezika</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Jeste li sigurni u to?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Ne prikazuj ovo upozorenje ponovo</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Greška mrežne veze. Molimo provjerite internet.</value>
     </data>
-    <data name="Error_Server">
-        <value>Greška servera (5xx). Molimo pokušajte kasnije.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Greška klijenta (4xx). Molimo provjerite zahtjev.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>Prekoračen limit GitHub API-ja. Molimo pokušajte kasnije.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Nije pronađena pre-release verzija. Zadržavanje trenutne.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Dostupna je pre-release verzija {0}.
-
-            {1}
-
-            Ova verzija može biti nestabilna. Želite li je preuzeti?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Očisti neuspjele</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>Uklonjeno {0} stavki.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Preostalo vrijeme: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Trajanje zadatka: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Računanje...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Dodaj mapu...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Odabrana mapa je prazna.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Odaberi mapu za skeniranje</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Odustani</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Limiti obrade</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Maksimalno datoteka po mapi</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Limitiraj broj datoteka dodanih iz mape radi performansi.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Maksimalno mapa odjednom</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Limitiraj broj mapa odabranih odjednom.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Možete odabrati najviše {0} mapa odjednom.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>Dodano {0} datoteka. Preskočeno {1} zbog limita.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Čitanje: {0}/s | Pisanje: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Prikaži brzinu čitanja</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Prikaži brzinu Čitanja/Pisanja</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Prikaži brzinu prijenosa u stvarnom vremenu tokom heširanja.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Računanje heša...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Sve veličine</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Male (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Srednje (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Velike (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Vrlo velike (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Dokumenti</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Politika privatnosti</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Uslovi korištenja</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Licencni ugovor (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Odricanje odgovornosti</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>README</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Zapisnik promjena</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Zahvale</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Obrada</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Neuspjeh</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Pretraži po imenu...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Veličina</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub Profil</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Sve</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Oslobodi memoriju</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Automatski (jezik sistema)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Prisilno pokreni Garbage Collection (GC) za oslobađanje memorije.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Algoritam</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Očisti memoriju</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Zadani algoritam</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Čišćenje memorije je pokrenuto.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Izvezi</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Spremi datoteku kontrolnih zbirova…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Kopiraj sve hešove</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Otvori datoteku kontrolnih zbirova…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Prikaži</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Zatvori</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Instaliraj pri izlazu</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Otvori stranicu izdanja</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Šta je novo</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Ponovo pokreni kao administrator</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Kopiraj detalje</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Performanse</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Broj istovremeno obrađivanih datoteka</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = automatski ({0} na ovom računaru).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Optimizuj za tvrde diskove</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Čita jednu po jednu datoteku, što je brže na klasičnim tvrdim diskovima i dijeljenim mrežnim mapama.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Uključi skrivene datoteke</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Pri skeniranju mapa dodaj i skrivene i sistemske datoteke.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Rezultati</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Veličina slova u hešovima</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Velika slova (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Mala slova (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Zadani format datoteke kontrolnih zbirova</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Ažuriranja</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Automatski provjeravaj ažuriranja</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Provjerava GitHub najviše jednom dnevno pri pokretanju aplikacije. Ažuriranja se preuzimaju tek kada odlučite da ih instalirate.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Integracija sa sistemom Windows</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Kontekstni meni Istraživača datoteka</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Dodaje stavke „Generiši heš“ i „Provjeri“ u kontekstni meni datoteka i mapa (u sistemu Windows 11 pod „Prikaži više opcija“).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Potrebno samo za datoteke koje vaš račun ne može čitati. Dok je aplikacija pokrenuta s administratorskim privilegijama, Windows blokira prevlačenje i ispuštanje iz Istraživača datoteka.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Otvori mapu s podacima</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>Datoteka kontrolnih zbirova GNU (format sha256sum)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>Datoteka kontrolnih zbirova BSD (s oznakama)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>Datoteka SFV (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>Datoteka JSON</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>Datoteka CSV</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Datoteke kontrolnih zbirova</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Visoki kontrast</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Za daltoniste</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Retro</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Staklo</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Pastel</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Zadani</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Generiši heš pomoću programa Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Provjeri pomoću programa Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>U redu čekanja</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Pristup odbijen</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Koristi ga drugi program</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Isteklo je vrijeme</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>ISPRAVNO (stari redoslijed bajtova CRC32)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Nevažeći heš {0}</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Preuzimanje ažuriranja… {0} %</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Ažuriranje će biti instalirano kada zatvorite Hash Tool.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Sačekajte da se trenutni zadatak završi.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>Nije bilo moguće dodati stavke ({0}):
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: preskočeni su redovi koji nisu ispravni unosi kontrolnih zbirova (broj: {0}).</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>Datoteka {0} ne sadrži nijedan kontrolni zbir.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>Preskočeno „{0}“: datoteke kontrolnih zbirova ne smiju upućivati na mrežne putanje ni putanje uređaja.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Ukloniti sve datoteke sa liste ({0})?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>Hešovi su spremljeni u datoteku {1} (broj: {0}).</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Još nema izračunatih hešova za izvoz.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Neke datoteke nije bilo moguće pročitati jer je pristup odbijen. Želite li ponovo pokrenuti Hash Tool kao administrator i pokušati još jednom?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool je pokrenut s administratorskim privilegijama, pa Windows blokira prevlačenje i ispuštanje iz Istraživača datoteka. Umjesto toga koristite „Dodaj datoteke“ ili „Dodaj mapu“.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Dostupan je Hash Tool {0}.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Ažuriranja su dostupna samo u instaliranoj ili prenosivoj verziji sa GitHub Releases.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Datoteku s postavkama nije bilo moguće pročitati, pa su postavke vraćene na zadane vrijednosti. Oštećena datoteka je sačuvana kao rezervna kopija.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Došlo je do greške: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Čitanje: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Spremi datoteku kontrolnih zbirova</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Otvori datoteke kontrolnih zbirova</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Izvezi log</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Minimalni nivo</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Automatsko pomjeranje</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Verzija {0}</value>
     </data>
 </root>

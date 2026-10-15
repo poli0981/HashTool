@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Hash Įrankis</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Generuoti Hash</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Tikrinti Hash</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Nustatymai</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Atnaujinti</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Tema</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>Apie</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Kūrėjas</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Pridėti failus...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Išvalyti sąrašą</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Išvalyti Hash</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>SKAIČIUOTI VISKĄ</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Suspausti (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>TIKRINTI VISKĄ</value>
     </data>
-    <data name="Btn_CheckNow">
+    <data name="Btn_CheckNow" xml:space="preserve">
         <value>Tikrinti dabar</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Įdiegti</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Sutikti</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Atmesti</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Generuoti Hash ir Suspausti</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Grupinis tikrinimas</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Ieškoti atnaujinimų</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Kūrėjo versijos įspėjimas</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>Apie</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Patarimas: Shift+C – skaičiuoti, Shift+Z – suspausti, Ctrl+F – pridėti failų.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Patarimas: vilkite čia failus ar aplankus. Ctrl/⌘+O – pridėti failų, Ctrl/⌘+Shift+O – pridėti aplanką, Ctrl/⌘+Enter – skaičiuoti viską, Esc – atšaukti.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Patarimas: Shift+A – tikrinti, Ctrl+F – pridėti failų, Ctrl+Shift+H – išvalyti sąrašą.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Patarimas: vilkite čia failus, aplankus ar kontrolinių sumų failus (SHA256SUMS, *.sha256, *.md5…). Ctrl/⌘+Enter – tikrinti viską, Esc – atšaukti.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Paruošta</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Pavyzdys:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Dabartinė versija: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Išleidimo kanalas:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Iš viso failų: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Stabili (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Kūrėjo (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Kalba</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Tema</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Temos stilius</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Šviesi/Tamsi</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Šriftas</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Šrifto dydis (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Automatiškai parinkti optimalų šriftą kalbai</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Užrakinti kaip numatytąjį šriftą</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>UI mastelis</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Slėpti Hash reikšmes (Saugumas)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Atstatyti nustatymus</value>
     </data>
-    <data name="Settings_Other">
-        <value>Privatumas ir saugumas</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Nustatyti kaip numatytąjį</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Pasirinktinė teksto spalva</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Išplėstiniai</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Paleisti kaip administratoriui</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Reikalingas perkrovimas. Leidžia pasiekti apsaugotus failus.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Įvesties failo dydžio limitas</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Maksimalus failų, kuriuos galima apdoroti, dydis.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Priverstinio uždarymo laikas</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Laikas (sekundėmis), po kurio programa laikoma užstrigusia.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Failo apdorojimo laikas</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Atšaukti, jei vieno failo apdorojimas trunka per ilgai.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Skubus veiksmas</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Priverstinai uždaryti programą ir nedelsiant atšaukti visas užduotis.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Priverstinai uždaryti ir atšaukti viską</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Konfigūracija</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Užrakinti nustatymus (Išsaugoti kaip numatytuosius)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Užkirsti kelią atsitiktiniams pakeitimams. Tik 'Slėpti Hash' lieka keičiamas.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Atstatyti visus nustatymus</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Grąžinti į gamyklinius nustatymus.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Konfigūracijos failo kelias</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Rodyti visą kelią ir kopijuoti į iškarpinę.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Rodyti kelią</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Nustatymai automatiškai išsaugomi į config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Kūrėjo režimas</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Įgalinti išplėstinį žurnalų rašymą ir derinimo įrankius.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Kūrėjo konsolė</value>
     </data>
-    <data name="Dev_Beta">
-        <value>BETA</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Įrašoma</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Pristabdyta</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Išsaugoti į failą</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Neišsaugoti</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Išvalyti konsolę</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Kopijuoti viską</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Atidaryti žurnalų aplanką</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Autorius</value>
     </data>
-    <data name="About_Software">
-        <value>Programinė įranga</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Trečiųjų šalių bibliotekos</value>
     </data>
-    <data name="About_Copyright">
-        <value>Autorių teisės</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Galingas įrankis failų hash generavimui, tikrinimui ir suspaudimui. Arba taip aš manau :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>Išleista pagal MIT licenciją.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Technologija</value>
     </data>
-    <data name="About_TechContent">
-        <value>Sukurta naudojant C# ir .NET 10.0.102.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>Sukurta naudojant C# ir {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI Pagalba</value>
     </data>
-    <data name="About_AIContent">
-        <value>Ši programinė įranga sukurta padedant dirbtiniam intelektui (Gemini 3 Pro ir Grok 4.1).</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Ši programinė įranga sukurta padedant dirbtiniam intelektui (Gemini 3 Pro, Grok 4.1 ir Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Apdorojama ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Baigta</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Klaida: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Atšaukta</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Išsaugota!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Suspausta!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Laukiama Hash/įvesties...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Trūksta originalaus failo!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Trūksta Hash reikšmės (Įveskite arba įkelkite failą)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>GALIOJA</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>NESUTAPIMAS!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Hash failas įkeltas</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Hash failo pavadinimas nesutampa!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Faile nėra Hash!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Ieškoma atnaujinimų...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Aptikta nauja versija!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Naudojate naujausią versiją.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Atnaujinimų tikrinimo klaida: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Atsiunčiama ir diegiama...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Paruošta (iš kontrolinių sumų failo)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Diegimo klaida: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Paruošta (Iš .hash failo)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Originalus failas prarastas!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Hash failo pavadinimas nesutampa!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Hash failas sėkmingai įkeltas</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Faile nėra Hash!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Failo skaitymo klaida</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Rezultatas</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Apdorojimas baigtas!
-            ✅ Sėkmingai: {0}
-            ❌ Nepavyko: {1}
-            ⛔ Atšaukta: {2}
-        </value>
+✅ Sėkmingai: {0}
+❌ Nepavyko: {1}
+⛔ Atšaukta: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>Patikrinta {0} failų.
-            ✅ Sutampa: {1}
-            ❌ Nesutampa/Klaida: {2}
-            ⛔ Atšaukta: {3}
-        </value>
+✅ Sutampa: {1}
+❌ Nesutampa/Klaida: {2}
+⛔ Atšaukta: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Neteisingas failas!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Hash failas nesutampa!
-
-            Originalus failas: {0}
-            Pasirinktas failas: {1}
-
-            Pasirinkite teisingą pridedamą hash failą.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Naujas atnaujinimas</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Versija: {0}
-
-            Pakeitimai:
-            {1}
-
-            Spustelėkite 'Atnaujinti dabar', kad atsisiųstumėte.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Naujesnių atnaujinimų nerasta.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Klaida</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Nepavyko perskaityti šio hash failo.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Konfigūracijos patikrinimas</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Failas egzistuoja:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Failas neegzistuoja!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Failas sėkmingai sukurtas!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Konfigūracijos kelias nukopijuotas.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Administratoriaus režimas</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Iš naujo paleiskite programą, kad pakeitimai įsigaliotų.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Nepavyko atidaryti aplanko: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ KŪRĖJO VERSIJOS ĮSPĖJIMAS</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Ketinate pereiti prie Kūrėjo (Pre-release) atnaujinimų kanalo.
-
-            Šioje versijoje gali būti klaidų, ji gali būti nestabili ir sukelti duomenų praradimą.
-
-            Aš neprisiimu atsakomybės už jokias problemas, kilusias naudojant šią versiją.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Perskaičiau ir sutinku. Prisiimu visą atsakomybę.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Išsaugoti Hash failą</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Išsaugoti suspaustą failą</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Pasirinkite failus</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Pasirinkite hash failą: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Pasirinkite failus (Originalų arba .hash failą)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Pasirinkite failus arba kontrolinių sumų failus</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Įklijuokite arba vilkite čia...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Sekundės</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Tikrinti</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Stabdyti</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Pašalinti failą</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Kopijuoti Hash</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Skaičiuoti</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Išvalyti Hash</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Naršyti Hash</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Tamsi</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Šviesi</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Sistemos</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Užduotis sustabdyta</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Taip</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>Gerai</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Ne</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip archyvas</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Patvirtinti išėjimą</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Išėjus bus atšauktos visos vykdomos užduotys. Ar tikrai norite išeiti?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Užduotis buvo sustabdyta dėl laiko limito.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Išsaugoti derinimo žurnalą į diską.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Pristabdyti realaus laiko žurnalą.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Rodyti Hash</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Slėpti Hash</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Kopijuoti kelią</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Jūsų diskas pilnas. Pasirinkite kitą vietą :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Hash matomumas</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Nėra failų. Spustelėkite 'Pridėti failus', kad pradėtumėte.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Vilkite čia failus ar aplankus arba spustelėkite „Pridėti failus“.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Užrakinti šią temą kaip numatytąją</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>Praleista {0} failų, viršijančių limitą ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Sistemos kalba</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>Norint grįžti prie 'Automatinio' nustatymo, reikia perkrauti programą. Ar norite tęsti?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Kalbos keitimas</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Ar esate tuo tikras?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Daugiau nerodyti šio įspėjimo</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Tinklo ryšio klaida. Patikrinkite interneto ryšį.</value>
     </data>
-    <data name="Error_Server">
-        <value>Serverio klaida (5xx). Bandykite dar kartą vėliau.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Kliento klaida (4xx). Patikrinkite užklausą.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>Viršytas GitHub API užklausų limitas. Bandykite dar kartą vėliau.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Pre-release versija nerasta. Paliekama dabartinė versija.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Yra pre-release versija {0}.
-
-            {1}
-
-            Ši versija gali būti nestabili. Ar norite atsisiųsti?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Išvalyti nepavykusius</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>Pašalinta {0} elementų.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Liko laiko: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Užduoties trukmė: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Skaičiuojama...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Pridėti aplanką...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Pasirinktas aplankas yra tuščias.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Pasirinkite aplanką skenavimui</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Atšaukti</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Apdorojimo limitai</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Maks. failų skaičius aplanko skenavimui</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Apribokite failų, pridedamų iš aplanko, skaičių, kad išvengtumėte našumo problemų.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Maks. aplankų vienu metu</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Apribokite vienu metu pasirenkamų aplankų skaičių.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Vienu metu galite pasirinkti tik iki {0} aplankų.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>Pridėta {0} failų. Praleista {1} failų dėl limito.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Skaitymas: {0}/s | Rašymas: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Rodyti skaitymo greitį</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Rodyti skaitymo / rašymo greitį</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Rodyti perdavimo greitį realiuoju laiku hash operacijų metu.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Skaičiuojamas Hash...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Visi dydžiai</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Mažas (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Vidutinis (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Didelis (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Labai didelis (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Dokumentai</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Privatumo politika</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Paslaugų teikimo sąlygos</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Galutinio vartotojo licencijos sutartis (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Atsakomybės atsisakymas</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>SKAITYK MANE (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Pakeitimų žurnalas</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Padėkos</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Apdorojama</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Nepavyko</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Ieškoti pagal pavadinimą...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Dydis</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub profilis</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Visi</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Atlaisvinti atmintį</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Automatiškai (sistemos kalba)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Priverstinai iškviesti šiukšlių surinkėją (GC), kad atlaisvintumėte RAM.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Algoritmas</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Išvalyti atmintį</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Numatytasis algoritmas</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Atminties valymas pradėtas.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Eksportuoti</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Išsaugoti kontrolinių sumų failą…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Kopijuoti visas Hash reikšmes</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Atidaryti kontrolinių sumų failą…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Peržiūrėti</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Uždaryti</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Įdiegti išeinant</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Atidaryti leidimo puslapį</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Kas naujo</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Paleisti iš naujo kaip administratorių</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Kopijuoti išsamią informaciją</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Našumas</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Vienu metu apdorojami failai</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = automatiškai (šiame kompiuteryje {0}).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Optimizuoti standiesiems diskams</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Skaito po vieną failą – taip greičiau besisukančiuose standžiuosiuose diskuose ir bendrinamuose tinklo aplankuose.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Įtraukti paslėptus failus</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Skenuojant aplankus taip pat pridedami paslėpti ir sistemos failai.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Išvestis</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Hash raidžių dydis</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Didžiosios raidės (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Mažosios raidės (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Numatytasis kontrolinių sumų failo formatas</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Atnaujinimai</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Automatiškai ieškoti atnaujinimų</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Paleidžiant programą, atnaujinimų ieškoma GitHub svetainėje ne dažniau kaip kartą per dieną. Atnaujinimai atsisiunčiami tik tada, kai nusprendžiate juos įdiegti.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows integracija</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Failų naršyklės kontekstinis meniu</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Prideda „Generuoti Hash“ ir „Tikrinti“ į failų ir aplankų dešiniojo pelės mygtuko meniu (Windows 11 sistemoje – skiltyje „Rodyti daugiau parinkčių“).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Reikia tik failams, kurių jūsų paskyra negali skaityti. Kai programa veikia administratoriaus teisėmis, Windows blokuoja vilkimą iš Failų naršyklės.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Atidaryti duomenų aplanką</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU kontrolinių sumų failas (sha256sum formatas)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD kontrolinių sumų failas (su žymėmis)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV failas (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON failas</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV failas</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Kontrolinių sumų failai</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Didelis kontrastas</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Pritaikyta daltonikams</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Retro</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Stiklas</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Pastelinė</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Numatytasis</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Generuoti Hash naudojant Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Tikrinti naudojant Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>Eilėje</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Prieiga uždrausta</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Naudoja kita programa</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Baigėsi skirtasis laikas</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>GALIOJA (senoji CRC32 baitų tvarka)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Netinkama {0} Hash reikšmė</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Atsisiunčiamas atnaujinimas… {0} %</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Atnaujinimas bus įdiegtas uždarius Hash Tool.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Palaukite, kol bus baigta dabartinė užduotis.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>Nepavyko pridėti elementų ({0}):
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: praleistos eilutės, kurios nėra tinkami kontrolinių sumų įrašai ({0}).</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>Faile {0} nėra jokių kontrolinių sumų.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>Praleista „{0}“: kontrolinių sumų failuose negali būti nuorodų į tinklo ar įrenginių kelius.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Pašalinti visus failus iš sąrašo ({0})?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>Hash reikšmės ({0}) išsaugotos faile {1}.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Kol kas nėra apskaičiuotų Hash reikšmių, kurias būtų galima eksportuoti.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Kai kurių failų nepavyko perskaityti, nes prieiga buvo uždrausta. Paleisti Hash Tool iš naujo kaip administratorių ir bandyti dar kartą?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool veikia administratoriaus teisėmis, todėl Windows blokuoja vilkimą iš Failų naršyklės. Vietoj to naudokite „Pridėti failus“ arba „Pridėti aplanką“.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Galima atsisiųsti Hash Tool {0}.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Atnaujinimai pasiekiami tik įdiegtoje arba nešiojamojoje versijoje iš GitHub Releases.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Nepavyko perskaityti nustatymų failo, todėl atkurti numatytieji nustatymai. Sugadintas failas išsaugotas kaip atsarginė kopija.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Įvyko klaida: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Skaitymas: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Išsaugoti kontrolinių sumų failą</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Atidaryti kontrolinių sumų failus</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Eksportuoti žurnalą</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Minimalus lygis</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Automatinis slinkimas</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Versija {0}</value>
     </data>
 </root>
