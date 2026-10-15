@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.2.0] - Unreleased
+## [1.2.0] - 2026-10-15
 
 A big rework under the hood: faster hashing, standard checksum files, a command-line tool, a Linux build and a long list of fixes.
 
