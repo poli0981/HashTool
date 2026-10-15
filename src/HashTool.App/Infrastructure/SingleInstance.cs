@@ -25,7 +25,7 @@ public sealed partial class SingleInstance : IDisposable
     private Mutex? _mutex;
     private FileStream? _lockFile;
 
-    private SingleInstance(string name) => _name = name;
+    internal SingleInstance(string name) => _name = name;
 
     public static SingleInstance Create(bool elevated)
     {
@@ -74,7 +74,7 @@ public sealed partial class SingleInstance : IDisposable
                 using var client = new NamedPipeClientStream(".", _name, PipeDirection.Out, PipeOptions.CurrentUserOnly);
                 client.Connect(Math.Max(100, (int)(deadline - DateTime.UtcNow).TotalMilliseconds));
                 if (OperatingSystem.IsWindows()) AllowSetForegroundWindow(-1);
-                var payload = JsonSerializer.SerializeToUtf8Bytes(new PipeMessage(request.Verb, request.Paths), PipeJsonContext.Default.PipeMessage);
+                var payload = JsonSerializer.SerializeToUtf8Bytes(new PipeMessage(request.Verb, [.. request.Paths]), PipeJsonContext.Default.PipeMessage);
                 Span<byte> header = stackalloc byte[4];
                 BinaryPrimitives.WriteInt32LittleEndian(header, payload.Length);
                 client.Write(header);
@@ -108,12 +108,13 @@ public sealed partial class SingleInstance : IDisposable
                     var request = await ReadAsync(server, _stop.Token).ConfigureAwait(false);
                     if (request is not null) onRequest(request);
                 }
-                catch (OperationCanceledException)
+                catch (OperationCanceledException) when (_stop.IsCancellationRequested)
                 {
                     return;
                 }
-                catch (Exception ex) when (ex is IOException or JsonException or UnauthorizedAccessException)
+                catch (Exception)
                 {
+                    // One bad or broken connection must never stop the listener: keep serving later launches.
                     await Task.Delay(200).ConfigureAwait(false);
                 }
             }
@@ -153,12 +154,8 @@ public sealed partial class SingleInstance : IDisposable
     [return: MarshalAs(UnmanagedType.Bool)]
     private static partial bool AllowSetForegroundWindow(int processId);
 
-    internal sealed record PipeMessage(ActivationVerb Verb, string[] Paths)
-    {
-        public PipeMessage(ActivationVerb verb, System.Collections.Generic.IReadOnlyList<string> paths) : this(verb, [.. paths])
-        {
-        }
-    }
+    /// <summary>Wire format; a single constructor so the source-generated serializer can create it.</summary>
+    internal sealed record PipeMessage(ActivationVerb Verb, string[] Paths);
 }
 
 [JsonSerializable(typeof(SingleInstance.PipeMessage))]

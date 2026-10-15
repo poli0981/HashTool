@@ -29,9 +29,6 @@ public static partial class ChecksumParser
     [GeneratedRegex(@"^(?<escaped>\\)?(?<xxh3>XXH3_)?(?<hash>[0-9A-Fa-f]{8,128})(?: \*| {1,2})(?<name>\S.*)$", RegexOptions.CultureInvariant, MatchTimeoutMilliseconds)]
     private static partial Regex GnuLine();
 
-    [GeneratedRegex(@"^(?<name>.+?)\s+(?<hash>[0-9A-Fa-f]{8})$", RegexOptions.CultureInvariant, MatchTimeoutMilliseconds)]
-    private static partial Regex SfvLine();
-
     [GeneratedRegex(@"^(?:XXH3_)?[0-9A-Fa-f]{2}(?:\s?[0-9A-Fa-f]{2}){3,63}$", RegexOptions.CultureInvariant, MatchTimeoutMilliseconds)]
     private static partial Regex BareLine();
 
@@ -53,14 +50,19 @@ public static partial class ChecksumParser
             text = await reader.ReadToEndAsync(cancellationToken).ConfigureAwait(false);
 
         ChecksumFileNames.IsChecksumFile(path, out var nameHint);
-        return Parse(text, nameHint, userHint);
+        var isSfv = Path.GetExtension(path).Equals(".sfv", StringComparison.OrdinalIgnoreCase);
+        return Parse(text, nameHint, userHint, preferSfv: isSfv);
     }
 
     /// <summary>Parses checksum file content.</summary>
     /// <param name="text">File content.</param>
     /// <param name="fileNameHint">Algorithm implied by the checksum file's name (<c>.sha256</c>, <c>SHA256SUMS</c>).</param>
     /// <param name="userHint">Algorithm to prefer when neither the line nor the file name decides.</param>
-    public static ChecksumDocument Parse(string text, HashType? fileNameHint = null, HashType? userHint = null)
+    /// <param name="preferSfv">
+    /// Read <c>name CRC32</c> lines first (an <c>.sfv</c> file): otherwise a name that starts with eight hex digits and a
+    /// space, such as <c>20231015 Trip.jpg 1A2B3C4D</c>, looks like a GNU line.
+    /// </param>
+    public static ChecksumDocument Parse(string text, HashType? fileNameHint = null, HashType? userHint = null, bool preferSfv = false)
     {
         ArgumentNullException.ThrowIfNull(text);
         var entries = new List<ChecksumEntry>();
@@ -68,10 +70,11 @@ public static partial class ChecksumParser
         ChecksumFormat? format = null;
         var lineNumber = 0;
 
-        foreach (var rawLine in text.AsSpan().EnumerateLines())
+        // Only '\n' ends a line: names may legally contain other Unicode line separators (U+2028, U+0085, form feed).
+        foreach (var rawLine in text.Split('\n'))
         {
             lineNumber++;
-            var line = rawLine.TrimEnd('\r').ToString();
+            var line = rawLine.TrimEnd('\r');
             if (lineNumber == 1) line = line.TrimStart('﻿');
             var trimmed = line.Trim();
             if (trimmed.Length == 0 || trimmed[0] is '#' or ';') continue;
@@ -82,7 +85,7 @@ public static partial class ChecksumParser
             }
 
             if (IsNoise(trimmed)) continue;
-            if (TryParseLineSafely(line, trimmed, fileNameHint, userHint, lineNumber, out var entry, out var lineFormat))
+            if (TryParseLineSafely(line, trimmed, fileNameHint, userHint, preferSfv, lineNumber, out var entry, out var lineFormat))
             {
                 entries.Add(entry);
                 format ??= lineFormat;
@@ -109,11 +112,17 @@ public static partial class ChecksumParser
     }
 
     /// <summary>A line that makes a pattern time out is reported as invalid instead of failing the whole file.</summary>
-    private static bool TryParseLineSafely(string line, string trimmed, HashType? fileNameHint, HashType? userHint, int lineNumber,
-        out ChecksumEntry entry, out ChecksumFormat format)
+    private static bool TryParseLineSafely(string line, string trimmed, HashType? fileNameHint, HashType? userHint, bool preferSfv,
+        int lineNumber, out ChecksumEntry entry, out ChecksumFormat format)
     {
         try
         {
+            if (preferSfv && TryParseSfv(trimmed, fileNameHint, userHint, lineNumber, out entry))
+            {
+                format = ChecksumFormat.Sfv;
+                return true;
+            }
+
             return TryParseLine(line, trimmed, fileNameHint, userHint, lineNumber, out entry, out format);
         }
         catch (RegexMatchTimeoutException)
@@ -155,16 +164,29 @@ public static partial class ChecksumParser
             return TryCreate(hash, null, explicitType, fileNameHint, userHint, lineNumber, out entry);
         }
 
-        var sfv = SfvLine().Match(trimmed);
-        if (sfv.Success)
+        if (TryParseSfv(trimmed, fileNameHint, userHint, lineNumber, out entry))
         {
             format = ChecksumFormat.Sfv;
-            return TryCreate(sfv.Groups["hash"].Value, sfv.Groups["name"].Value, HashType.CRC32, fileNameHint, userHint,
-                lineNumber, out entry);
+            return true;
         }
 
         format = default;
         return false;
+    }
+
+    /// <summary>
+    /// <c>name CRC32</c>: the last whitespace-separated token is eight hex digits. Parsed by hand because the equivalent
+    /// lazy regular expression backtracks quadratically on long lines of spaces.
+    /// </summary>
+    private static bool TryParseSfv(string trimmed, HashType? fileNameHint, HashType? userHint, int lineNumber, out ChecksumEntry entry)
+    {
+        entry = null!;
+        var cut = trimmed.LastIndexOfAny([' ', '\t']);
+        if (cut <= 0 || trimmed.Length - cut - 1 != 8) return false;
+        var hash = trimmed[(cut + 1)..];
+        var name = trimmed[..cut].TrimEnd();
+        return name.Length > 0 && HashMatcher.IsHex(hash) &&
+               TryCreate(hash, name, HashType.CRC32, fileNameHint, userHint, lineNumber, out entry);
     }
 
     private static bool TryCreate(string hash, string? name, HashType? explicitType, HashType? fileNameHint, HashType? userHint,

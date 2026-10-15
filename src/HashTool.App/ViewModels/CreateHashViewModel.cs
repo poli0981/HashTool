@@ -49,7 +49,7 @@ public sealed partial class CreateHashViewModel : FileListViewModelBase
     {
         if (result.Status == HashJobStatus.Succeeded && result.Results is [var hash, ..])
         {
-            item.ResultHash = hash.ToHex(Settings.HashLetterCase);
+            item.SetResult(hash.Algorithm, hash.ToHex(Settings.HashLetterCase));
             item.State = FileStatus.Success;
             item.SetStatus(ItemStatus.Done);
             Logger.LogDebug("{Algorithm} {File}", item.Algorithm, item.FileName);
@@ -60,7 +60,9 @@ public sealed partial class CreateHashViewModel : FileListViewModelBase
         if (result.Error is not null) Logger.LogWarning(result.Error, "Hashing {File} failed", item.FileName);
     }
 
-    private List<FileItem> ItemsWithResults() => AllItems.Where(i => !string.IsNullOrEmpty(i.ResultHash)).ToList();
+    private List<FileItem> ItemsWithResults() => AllItems.Where(i => i.ResultAlgorithm is not null && !string.IsNullOrEmpty(i.ResultHash)).ToList();
+
+    private static HashType AlgorithmOf(FileItem item) => item.ResultAlgorithm ?? item.Algorithm;
 
     // ------------------------------------------------------------------ export
 
@@ -68,12 +70,12 @@ public sealed partial class CreateHashViewModel : FileListViewModelBase
     private async Task SaveHashFileAsync(FileItem? item)
     {
         if (item is null || string.IsNullOrEmpty(item.ResultHash)) return;
-        var extension = HashAlgorithms.FileExtension(item.Algorithm);
-        var choice = new FileTypeChoice(item.Algorithm.ToString(), $"*.{extension}");
+        var extension = HashAlgorithms.FileExtension(AlgorithmOf(item));
+        var choice = new FileTypeChoice(AlgorithmOf(item).ToString(), $"*.{extension}");
         var target = await Services.Storage.SaveFileAsync(L["Dialog_SaveHash"], $"{item.FileName}.{extension}", [choice]);
         if (target is not { } t) return;
 
-        var line = ChecksumWriter.Write([new ChecksumLine(item.FileName, item.Algorithm, item.ResultHash, item.Size)], ExportFormat.Gnu, Settings.HashLetterCase);
+        var line = ChecksumWriter.Write([new ChecksumLine(item.FileName, AlgorithmOf(item), item.ResultHash, item.Size)], ExportFormat.Gnu, Settings.HashLetterCase);
         if (await WriteAsync(t.Path, line))
         {
             item.SetStatus(ItemStatus.Saved);
@@ -91,7 +93,7 @@ public sealed partial class CreateHashViewModel : FileListViewModelBase
             return;
         }
 
-        var algorithms = items.Select(i => i.Algorithm).Distinct().ToList();
+        var algorithms = items.Select(AlgorithmOf).Distinct().ToList();
         HashType? single = algorithms.Count == 1 ? algorithms[0] : null;
         var types = new List<FileTypeChoice>
         {
@@ -117,7 +119,7 @@ public sealed partial class CreateHashViewModel : FileListViewModelBase
         if (format == ExportFormat.Gnu && single is null) format = ExportFormat.Bsd; // GNU lines cannot name the algorithm
 
         var baseDirectory = Path.GetDirectoryName(t.Path)!;
-        var lines = items.Select(i => new ChecksumLine(RelativePath(baseDirectory, i.FilePath), i.Algorithm, i.ResultHash, i.Size));
+        var lines = items.Select(i => new ChecksumLine(RelativePath(baseDirectory, i.FilePath), AlgorithmOf(i), i.ResultHash, i.Size));
         // Checksum files use lower case like sha256sum; SFV conventionally uses upper case.
         var text = ChecksumWriter.Write(lines, format, format == ExportFormat.Sfv ? HexCase.Upper : HexCase.Lower);
         if (await WriteAsync(t.Path, text))
@@ -153,11 +155,11 @@ public sealed partial class CreateHashViewModel : FileListViewModelBase
                 foreach (var item in items)
                 {
                     var relative = RelativePath(baseDirectory, item.FilePath);
-                    var entryName = UniqueName(used, $"{ZipEntryName(relative)}.{HashAlgorithms.FileExtension(item.Algorithm)}");
+                    var entryName = UniqueName(used, $"{ZipEntryName(relative)}.{HashAlgorithms.FileExtension(AlgorithmOf(item))}");
                     var entry = zip.CreateEntry(entryName, CompressionLevel.Optimal);
                     using (var writer = new StreamWriter(entry.Open(), new UTF8Encoding(false)))
-                        writer.Write(ChecksumWriter.Write([new ChecksumLine(item.FileName, item.Algorithm, item.ResultHash)], ExportFormat.Gnu, Settings.HashLetterCase));
-                    manifest.Add(new ChecksumLine(relative, item.Algorithm, item.ResultHash, item.Size));
+                        writer.Write(ChecksumWriter.Write([new ChecksumLine(item.FileName, AlgorithmOf(item), item.ResultHash)], ExportFormat.Gnu, Settings.HashLetterCase));
+                    manifest.Add(new ChecksumLine(relative, AlgorithmOf(item), item.ResultHash, item.Size));
                 }
 
                 var all = zip.CreateEntry(UniqueName(used, "CHECKSUMS.txt"), CompressionLevel.Optimal);
@@ -178,8 +180,8 @@ public sealed partial class CreateHashViewModel : FileListViewModelBase
     {
         var items = ItemsWithResults();
         if (items.Count == 0) return;
-        var text = ChecksumWriter.Write(items.Select(i => new ChecksumLine(i.FileName, i.Algorithm, i.ResultHash)),
-            items.Select(i => i.Algorithm).Distinct().Count() == 1 ? ExportFormat.Gnu : ExportFormat.Bsd, Settings.HashLetterCase);
+        var text = ChecksumWriter.Write(items.Select(i => new ChecksumLine(i.FileName, AlgorithmOf(i), i.ResultHash)),
+            items.Select(AlgorithmOf).Distinct().Count() == 1 ? ExportFormat.Gnu : ExportFormat.Bsd, Settings.HashLetterCase);
         await Services.Clipboard.SetTextAsync(text);
     }
 

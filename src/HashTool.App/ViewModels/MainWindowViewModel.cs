@@ -120,7 +120,7 @@ public sealed partial class MainWindowViewModel : ObservableObject
     /// <summary>Called once the window is shown.</summary>
     public async Task OnOpenedAsync()
     {
-        _activation.Attach(request => _ = HandleActivationAsync(request));
+        _activation.Attach(HandleActivationAsync);
         await Update.CheckInBackgroundIfDueAsync();
     }
 
@@ -136,6 +136,8 @@ public sealed partial class MainWindowViewModel : ObservableObject
         FileListViewModelBase target = verify ? Check : Create;
         CurrentPage = target;
         ActivateWindowRequested?.Invoke(this, EventArgs.Empty);
+        // Files handed over while that page is hashing or importing are added once it is free again.
+        while (!target.CanModify) await Task.Delay(250);
         await target.AddPathsAsync(request.Paths);
     }
 
@@ -164,8 +166,12 @@ public sealed partial class MainWindowViewModel : ObservableObject
         Theme.CurrentThemeVariant = Theme.IsDark ? AppThemeVariant.Light : AppThemeVariant.Dark;
     }
 
+    /// <summary>The update banner's View button; like the navigation buttons it waits until no batch is running.</summary>
     [RelayCommand]
-    private void ShowUpdate() => CurrentPage = Update;
+    private void ShowUpdate()
+    {
+        if (!IsBusy) CurrentPage = Update;
+    }
 
     [RelayCommand]
     private void DismissNotice() => NoticeText = null;

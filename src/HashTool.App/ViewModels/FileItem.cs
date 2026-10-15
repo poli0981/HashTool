@@ -66,6 +66,9 @@ public sealed partial class FileItem : ObservableObject
     [ObservableProperty] private bool _isAlgorithmKnown;
 
     [ObservableProperty] private string _resultHash = string.Empty;
+
+    /// <summary>The algorithm that produced <see cref="ResultHash"/>; exports use it, not the row's current choice.</summary>
+    public HashType? ResultAlgorithm { get; private set; }
     [ObservableProperty] private string _expectedHash = string.Empty;
     [ObservableProperty] private FileStatus _state = FileStatus.Ready;
     [ObservableProperty] private ItemStatus _status = ItemStatus.Ready;
@@ -98,6 +101,18 @@ public sealed partial class FileItem : ObservableObject
         ShowProgress = false;
     }
 
+    public void SetResult(HashType algorithm, string hash)
+    {
+        ResultAlgorithm = algorithm;
+        ResultHash = hash;
+    }
+
+    /// <summary>A result computed with another algorithm no longer describes this row, so it is cleared.</summary>
+    partial void OnAlgorithmChanged(HashType value)
+    {
+        if (ResultAlgorithm is { } produced && produced != value && !IsProcessing) ResetResult();
+    }
+
     public void SetStatus(ItemStatus status, string? detail = null)
     {
         StatusDetail = detail;
@@ -108,6 +123,7 @@ public sealed partial class FileItem : ObservableObject
     public void ResetResult(ItemStatus status = ItemStatus.Ready)
     {
         ResultHash = string.Empty;
+        ResultAlgorithm = null;
         IsMatch = null;
         Duration = string.Empty;
         State = FileStatus.Ready;

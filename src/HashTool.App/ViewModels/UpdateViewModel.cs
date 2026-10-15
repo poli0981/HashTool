@@ -71,6 +71,9 @@ public sealed partial class UpdateViewModel : ObservableObject
     /// <summary>Raised when an update is found by the background check (the main window shows a banner).</summary>
     public event EventHandler? UpdateFound;
 
+    /// <summary>Raised right before the app exits to install an update, so the window can save its state.</summary>
+    public event EventHandler? RestartRequested;
+
     private LocalizationService L => _localizationService;
 
     public string CurrentVersionText => L.Format("Lbl_CurrentVersion", _updates.CurrentVersion);
@@ -125,7 +128,18 @@ public sealed partial class UpdateViewModel : ObservableObject
     {
         State = UpdateState.Checking;
         ErrorDetail = null;
-        var result = await _updates.CheckAsync();
+        UpdateCheckResult result;
+        try
+        {
+            result = await _updates.CheckAsync();
+        }
+        catch (Exception ex)
+        {
+            // Never leave the page stuck on "Checking".
+            _logger.LogError(ex, "Update check failed");
+            result = new UpdateCheckResult(UpdateCheckStatus.Failed, Error: ex);
+        }
+
         _settings.Update(s => s.LastUpdateCheck = DateTimeOffset.UtcNow);
 
         switch (result.Status)
@@ -158,7 +172,13 @@ public sealed partial class UpdateViewModel : ObservableObject
     [RelayCommand(CanExecute = nameof(CanInstall))]
     private async Task InstallAsync()
     {
-        if (await DownloadAsync() && _update is not null) _updates.ApplyAndRestart(_update);
+        if (await DownloadAsync() && _update is not null)
+        {
+            // Velopack exits the process immediately: save what normally is saved on close.
+            RestartRequested?.Invoke(this, EventArgs.Empty);
+            _settings.Flush();
+            _updates.ApplyAndRestart(_update);
+        }
     }
 
     [RelayCommand(CanExecute = nameof(CanInstall))]

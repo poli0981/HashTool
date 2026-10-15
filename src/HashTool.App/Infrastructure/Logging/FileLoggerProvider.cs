@@ -23,7 +23,7 @@ public sealed class FileLoggerProvider : ILoggerProvider
     private readonly Lock _gate = new();
     private readonly Timer _flushTimer;
     private StreamWriter? _writer;
-    private string? _currentPath;
+    private string? _currentDay;
     private bool _disposed;
 
     public FileLoggerProvider(string directory, Func<LogLevel> minimumLevel, PathSanitizer sanitizer)
@@ -95,9 +95,11 @@ public sealed class FileLoggerProvider : ILoggerProvider
 
     private StreamWriter EnsureWriter(DateTimeOffset now)
     {
-        var path = Path.Combine(_directory, $"hashtool-{now.ToString("yyyyMMdd", CultureInfo.InvariantCulture)}.log");
-        if (_writer is not null && path == _currentPath && _writer.BaseStream.Length < MaxFileSize) return _writer;
+        // Compare the day, not the path: after a size rollover the open file is "hashtool-<day>.1.log".
+        var day = now.ToString("yyyyMMdd", CultureInfo.InvariantCulture);
+        if (_writer is not null && day == _currentDay && _writer.BaseStream.Length < MaxFileSize) return _writer;
 
+        var path = Path.Combine(_directory, $"hashtool-{day}.log");
         _writer?.Dispose();
         System.IO.Directory.CreateDirectory(_directory);
         if (File.Exists(path) && new FileInfo(path).Length >= MaxFileSize)
@@ -115,7 +117,7 @@ public sealed class FileLoggerProvider : ILoggerProvider
 
         var stream = new FileStream(path, FileMode.Append, FileAccess.Write, FileShare.ReadWrite | FileShare.Delete);
         _writer = new StreamWriter(stream, new UTF8Encoding(false)) { AutoFlush = false };
-        _currentPath = path;
+        _currentDay = day;
         return _writer;
     }
 
