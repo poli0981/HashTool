@@ -73,10 +73,10 @@ public static class FileEnumerator
         {
             enumerator = new FileSystemEnumerable<FileEntry>(Path.GetFullPath(directory),
                     static (ref FileSystemEntry entry) => new FileEntry(entry.ToFullPath(), entry.Length), enumerationOptions)
-                {
-                    ShouldIncludePredicate = static (ref FileSystemEntry entry) => !entry.IsDirectory,
-                    ShouldRecursePredicate = static (ref FileSystemEntry entry) => !IsLink(ref entry)
-                }
+            {
+                ShouldIncludePredicate = static (ref FileSystemEntry entry) => !entry.IsDirectory,
+                ShouldRecursePredicate = static (ref FileSystemEntry entry) => !IsLink(ref entry)
+            }
                 .GetEnumerator();
         }
         catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or ArgumentException)
