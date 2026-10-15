@@ -6,9 +6,10 @@ developer machine.
 ## Steps
 
 1. Make sure `main` is green (CI, Security).
-2. On `main`, in one commit `chore(release): X.Y.Z`:
-   - set `<Version>` in `Directory.Build.props`;
-   - rename `## [Unreleased]` / `## [X.Y.Z] - Unreleased` in `CHANGELOG.md` to `## [X.Y.Z] - YYYY-MM-DD`.
+2. Open a pull request `chore(release): X.Y.Z` (`main` only accepts changes through pull requests) that:
+   - sets `<Version>` in `Directory.Build.props`;
+   - renames `## [Unreleased]` / `## [X.Y.Z] - Unreleased` in `CHANGELOG.md` to `## [X.Y.Z] - YYYY-MM-DD`.
+   Merge it once the checks pass.
 3. *Actions → Release → Run workflow* on `main` with `version = X.Y.Z` (no `v`) and **publish unchecked** — a dry run.
 4. When it is green, run it again with **publish checked**.
 

@@ -81,9 +81,24 @@ public sealed partial class LocalizationTests
         var resources = new ResourceManager("HashTool.App.Lang.Resources", typeof(App).Assembly);
         foreach (var (_, code) in LanguagesJson().Where(l => l.Code != "en-US"))
         {
-            var set = resources.GetResourceSet(CultureInfo.GetCultureInfo(code), createIfNotExists: true, tryParents: false);
-            Assert.True(set is not null, $"No satellite assembly for {code}");
+            var culture = CultureInfo.GetCultureInfo(code);
+            var set = resources.GetResourceSet(culture, createIfNotExists: true, tryParents: false);
+            Assert.True(set is not null, $"No resources for {code} ({SatelliteDiagnostics(culture)})");
             Assert.Equal(Cultures[code.ToLowerInvariant()]["Menu_Create"], set.GetString("Menu_Create"));
+        }
+    }
+
+    private static string SatelliteDiagnostics(CultureInfo culture)
+    {
+        var folder = Path.Combine(AppContext.BaseDirectory, culture.Name);
+        try
+        {
+            var satellite = typeof(App).Assembly.GetSatelliteAssembly(culture);
+            return $"culture '{culture.Name}', satellite contains: {string.Join(", ", satellite.GetManifestResourceNames())}";
+        }
+        catch (Exception ex) when (ex is FileNotFoundException or FileLoadException)
+        {
+            return $"culture '{culture.Name}', folder {(Directory.Exists(folder) ? "exists" : "missing")}: {ex.GetType().Name}";
         }
     }
 

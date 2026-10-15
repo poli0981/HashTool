@@ -24,6 +24,12 @@
         <NuGetAuditMode>all</NuGetAuditMode>
         <NuGetAuditLevel>low</NuGetAuditLevel>
 
+        <!--
+            Treat every culture of the translations as valid even when the build machine's ICU does not know it (Dhivehi on
+            Ubuntu): otherwise its satellite assembly gets a wrong resource name and is not copied to referencing projects.
+        -->
+        <EnableCustomCulture>true</EnableCustomCulture>
+
         <!-- ReferenceTrimmer reports package and project references that are never used. -->
         <ReferenceTrimmerUseSymbolAnalysis>true</ReferenceTrimmerUseSymbolAnalysis>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
