@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Hash Aracı</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Hash Oluştur</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Hash Doğrula</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Ayarlar</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Güncelle</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Tema</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>Hakkında</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Geliştirici</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Dosya Ekle...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Listeyi Temizle</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Hash'leri Temizle</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>TÜMÜNÜ HESAPLA</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Sıkıştır (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>TÜMÜNÜ DOĞRULA</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>Şimdi Doğrula</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>Şimdi Denetle</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Yükle</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Kabul Et</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Reddet</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Hash Oluştur ve Sıkıştır</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Toplu Doğrulama</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Güncellemeleri Denetle</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Geliştirici Sürümü Uyarısı</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>Hakkında</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>İpucu: Hesaplamak için Shift+C, Sıkıştırmak için Shift+Z, Eklemek için Ctrl+F.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>İpucu: Dosyaları veya klasörleri buraya bırakın. Ctrl/⌘+O dosya ekler, Ctrl/⌘+Shift+O klasör ekler, Ctrl/⌘+Enter tümünü hesaplar, Esc iptal eder.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>İpucu: Doğrulamak için Shift+A, Eklemek için Ctrl+F, Temizlemek için Ctrl+Shift+H.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>İpucu: Dosyaları, klasörleri veya sağlama toplamı dosyalarını (SHA256SUMS, *.sha256, *.md5…) buraya bırakın. Ctrl/⌘+Enter tümünü doğrular, Esc iptal eder.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Hazır</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Örnek:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Geçerli sürüm: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Sürüm kanalı:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Toplam dosya: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Kararlı (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Geliştirici (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Dil</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Tema</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Tema Stili</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Açık/Koyu</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Yazı Tipi</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Yazı Tipi Boyutu (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Dil için en uygun yazı tipini otomatik seç</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Varsayılan yazı tipi olarak kilitle</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>Arayüz Ölçeği</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Hash Değerlerini Gizle (Güvenlik)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Ayarları Sıfırla</value>
     </data>
-    <data name="Settings_Other">
-        <value>Gizlilik ve Güvenlik</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Varsayılan Olarak Ayarla</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Özel Metin Rengi</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Gelişmiş</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Yönetici Olarak Çalıştır</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Yeniden başlatma gerektirir. Korumalı dosyalara erişim sağlar.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Girdi Dosyası Boyut Sınırı</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>İşlenecek dosyalar için maksimum boyut.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Zorla Kapatma Zaman Aşımı</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Uygulamanın donmuş sayılmasından önceki süre (saniye).</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Dosya İşleme Zaman Aşımı</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Tek bir dosya çok uzun sürerse iptal et.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Acil Durum Eylemi</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Uygulamayı zorla kapat ve tüm görevleri anında iptal et.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Zorla Kapat ve Tümünü İptal Et</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Yapılandırma</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Ayarları Kilitle (Varsayılan olarak kaydet)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Yanlışlıkla yapılan değişiklikleri önler. Sadece 'Hash Gizle' değiştirilebilir.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Tüm Ayarları Sıfırla</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Fabrika ayarlarına geri dön.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Yapılandırma Dosyası Yolu</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Tam yolu göster ve panoya kopyala.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Yolu Göster</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Ayarlar otomatik olarak config.json dosyasına kaydedilir</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Geliştirici Modu</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Gelişmiş günlük kaydı ve hata ayıklama araçlarını etkinleştir.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Geliştirici Konsolu</value>
     </data>
-    <data name="Dev_Beta">
-        <value>BETA</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Kaydediliyor</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Duraklatıldı</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Dosyaya Kaydet</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Kaydetme</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Konsolu Temizle</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Tümünü Kopyala</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Günlük Klasörünü Aç</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Yazar</value>
     </data>
-    <data name="About_Software">
-        <value>Yazılım</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Üçüncü Taraf Kütüphaneleri</value>
     </data>
-    <data name="About_Copyright">
-        <value>Telif Hakkı</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Dosya hash'lerini oluşturmak, doğrulamak ve sıkıştırmak için güçlü bir araç. Veya en azından ben öyle düşünüyorum :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>MIT Lisansı altında yayınlanmıştır.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Teknoloji</value>
     </data>
-    <data name="About_TechContent">
-        <value>C# ve .NET 10.0.102 ile oluşturulmuştur.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>{0} üzerinde C# ile geliştirilmiştir.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>Yapay Zeka (AI) Yardımı</value>
     </data>
-    <data name="About_AIContent">
-        <value>Bu yazılım AI (Gemini 3 Pro ve Grok 4.1) yardımıyla geliştirilmiştir.</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Bu yazılım AI (Gemini 3 Pro, Grok 4.1 ve Claude) yardımıyla geliştirilmiştir.</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>İşleniyor ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Tamamlandı</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Hata: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>İptal Edildi</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Kaydedildi!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Sıkıştırıldı!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Hash/giriş bekleniyor...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Orijinal dosya eksik!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Hash değeri eksik (Girin veya dosyayı yükleyin)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>GEÇERLİ</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>EŞLEŞMİYOR!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Hash dosyası yüklendi</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Hash dosya adı eşleşmiyor!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Dosya hash içermiyor!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Güncellemeler denetleniyor...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Yeni sürüm tespit edildi!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>En son sürümü kullanıyorsunuz.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Güncelleme denetimi hatası: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>İndiriliyor ve yükleniyor...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Hazır (sağlama toplamı dosyasından)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Yükleme hatası: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Hazır (.hash dosyasından)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Orijinal dosya kayboldu!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Hash dosya adı eşleşmiyor!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Hash dosyası başarıyla bırakıldı</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Dosya hash içermiyor!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Dosya okuma hatası</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Sonuç</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>İşlem tamamlandı!
-            ✅ Başarılı: {0}
-            ❌ Başarısız: {1}
-            ⛔ İptal: {2}
-        </value>
+✅ Başarılı: {0}
+❌ Başarısız: {1}
+⛔ İptal: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>{0} dosya kontrol edildi.
-            ✅ Eşleşen: {1}
-            ❌ Eşleşmeyen/Hata: {2}
-            ⛔ İptal: {3}
-        </value>
+✅ Eşleşen: {1}
+❌ Eşleşmeyen/Hata: {2}
+⛔ İptal: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Yanlış dosya!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Hash dosyası uyuşmazlığı!
-
-            Orijinal dosya: {0}
-            Seçilen dosya: {1}
-
-            Lütfen doğru eşlik eden hash dosyasını seçin.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Yeni Güncelleme</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Sürüm: {0}
-
-            Değişiklikler:
-            {1}
-
-            İndirmek için 'Şimdi Güncelle'ye tıklayın.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Daha yeni bir güncelleme bulunamadı.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Hata</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Bu hash dosyası okunamıyor.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Yapılandırma Kontrolü</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Dosya şu konumda mevcut:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Dosya mevcut değil!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Dosya başarıyla oluşturuldu!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Yapılandırma yolu kopyalandı.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Yönetici Modu</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Değişikliklerin geçerli olması için lütfen uygulamayı yeniden başlatın.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Klasör açılamıyor: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ GELİŞTİRİCİ SÜRÜMÜ UYARISI</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Geliştirici (Pre-release) güncelleme kanalına geçmek üzeresiniz.
-
-            Bu sürüm hatalar içerebilir, kararsız olabilir ve veri kaybına neden olabilir.
-
-            Bu sürümün kullanılmasından kaynaklanan hiçbir sorundan sorumlu değilim.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Okudum ve kabul ediyorum. Tüm sorumluluğu üstleniyorum.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Hash Dosyasını Kaydet</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Sıkıştırılmış Dosyayı Kaydet</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Hashlenecek Dosyaları Seçin</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>{0} için hash dosyası seçin</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Dosyaları Seçin (Orijinal veya .hash dosyası)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Dosyaları veya Sağlama Toplamı Dosyalarını Seçin</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Buraya Yapıştırın veya Bırakın...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Saniye</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Doğrula</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Durdur</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Dosyayı Kaldır</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Hash Kopyala</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Hesapla</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Hash Temizle</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Hash'e Gözat</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Koyu</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Açık</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Sistem</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Görev Durduruldu</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Evet</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>Tamam</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Hayır</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip Arşivi</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Çıkışı Onayla</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Çıkmak, devam eden tüm görevleri iptal edecektir. Emin misiniz?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Zaman aşımı nedeniyle görev durduruldu.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Hata ayıklama günlüğünü diske kaydet.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Gerçek zamanlı günlük kaydını duraklat.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Hash Göster</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Hash Gizle</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Yolu Kopyala</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Diskiniz dolu. Lütfen başka bir konum seçin :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Hash Görünürlüğü</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Dosya yok. Başlamak için 'Dosya Ekle'ye tıklayın.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Dosyaları veya klasörleri buraya bırakın ya da “Dosya Ekle” düğmesine tıklayın.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Bu temayı varsayılan olarak kilitle</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>Sınırı ({1} {2}) aşan {0} dosya atlandı:
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Sistem Dili</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>'Otomatik' ayarına geri dönmek, tam olarak etkili olması için yeniden başlatma gerektirir. Devam etmek istiyor musunuz?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Dil Değişikliği</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Bunu yapmak istediğinizden emin misiniz?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Bu uyarıyı bir daha gösterme</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Ağ bağlantısı hatası. Lütfen internetinizi kontrol edin.</value>
     </data>
-    <data name="Error_Server">
-        <value>Sunucu hatası (5xx). Lütfen daha sonra tekrar deneyin.</value>
-    </data>
-    <data name="Error_Client">
-        <value>İstemci hatası (4xx). Lütfen isteği kontrol edin.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>GitHub API hız sınırı aşıldı. Lütfen daha sonra tekrar deneyin.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Ön sürüm (Pre-release) bulunamadı. Mevcut sürüm korunuyor.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Ön sürüm (Pre-release) {0} mevcut.
-
-            {1}
-
-            Bu sürüm kararsız olabilir. İndirmek istiyor musunuz?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Başarısız Olanları Temizle</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>{0} öğe kaldırıldı.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Kalan Süre: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Görev Süresi: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Hesaplanıyor...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Klasör Ekle...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Seçilen klasör boş.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Taranacak Klasörü Seçin</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>İptal</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>İşlem Sınırları</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Klasör Taraması Başına Maksimum Dosya</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Performans sorunlarını önlemek için bir klasörden eklenen dosya sayısını sınırlayın.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Aynı Anda Maksimum Klasör</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Tek seferde seçilebilecek klasör sayısını sınırlayın.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Aynı anda en fazla {0} klasör seçebilirsiniz.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>{0} dosya eklendi. Sınır nedeniyle {1} dosya atlandı.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Okuma: {0}/s | Yazma: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Okuma Hızını Göster</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Okuma/Yazma Hızını Göster</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Hash işlemleri sırasında gerçek zamanlı aktarım hızını görüntüleyin.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Hash Hesaplanıyor...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Tüm Boyutlar</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Küçük (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Orta (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Büyük (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Çok Büyük (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Belgeler</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Gizlilik Politikası</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Hizmet Şartları</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Son Kullanıcı Lisans Sözleşmesi (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Sorumluluk Reddi</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>BENİOKU (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Değişiklik Günlüğü</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Teşekkürler</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>İşleniyor</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Başarısız</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>İsme göre ara...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Boyut</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub Profili</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Tümü</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Belleği Boşalt</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Otomatik (sistem dili)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>RAM'i boşaltmak için Çöp Toplamayı (GC) zorla çalıştır.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Algoritma</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Belleği Temizle</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Varsayılan algoritma</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Bellek temizliği tetiklendi.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Dışa Aktar</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Sağlama Toplamı Dosyasını Kaydet…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Tüm Hash'leri Kopyala</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Sağlama Toplamı Dosyası Aç…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Görüntüle</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Kapat</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Çıkışta Yükle</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Sürüm Sayfasını Aç</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Yenilikler</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Yönetici Olarak Yeniden Başlat</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Ayrıntıları Kopyala</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Performans</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Aynı anda işlenen dosya sayısı</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = otomatik (bu bilgisayarda {0}).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Sabit diskler için iyileştir</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Dosyaları tek tek okur; bu, dönen sabit disklerde ve ağ paylaşımlarında daha hızlıdır.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Gizli dosyaları dahil et</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Klasörler taranırken gizli dosyaları ve sistem dosyalarını da ekler.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Çıktı</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Hash büyük/küçük harf</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Büyük harf (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Küçük harf (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Varsayılan sağlama toplamı dosyası biçimi</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Güncellemeler</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Güncellemeleri otomatik denetle</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Uygulama başlarken GitHub'ı günde en fazla bir kez denetler. Güncellemeler yalnızca yüklemeyi seçtiğinizde indirilir.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows tümleştirmesi</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Dosya Gezgini bağlam menüsü</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Dosya ve klasörlerin sağ tık menüsüne “Hash oluştur” ve “Doğrula” öğelerini ekler (Windows 11'de “Daha fazla seçenek göster” altında).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Yalnızca hesabınızın okuyamadığı dosyalar için gereklidir. Uygulama yönetici olarak çalışırken Windows, Dosya Gezgini'nden sürükleyip bırakmayı engeller.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Veri Klasörünü Aç</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU sağlama toplamı dosyası (sha256sum biçimi)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD sağlama toplamı dosyası (etiketli)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV dosyası (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON dosyası</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV dosyası</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Sağlama toplamı dosyaları</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Yüksek karşıtlık</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Renk körlüğü dostu</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Retro</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Cam</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Pastel</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Varsayılan</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Hash Tool ile hash oluştur</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Hash Tool ile doğrula</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>Sırada</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Erişim reddedildi</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Başka bir program tarafından kullanılıyor</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Zaman aşımı</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>GEÇERLİ (eski CRC32 bayt sırası)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Geçersiz {0} hash değeri</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Güncelleme indiriliyor… %{0}</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Güncelleme, Hash Tool kapatıldığında yüklenecek.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Lütfen geçerli görev bitene kadar bekleyin.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>{0} öğe eklenemedi:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: Geçerli sağlama toplamı girdisi olmayan {0} satır atlandı.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} hiç sağlama toplamı içermiyor.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>“{0}” atlandı: Sağlama toplamı dosyaları ağ veya aygıt yollarını gösteremez.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>{0} dosyanın tümü listeden kaldırılsın mı?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>{0} hash, {1} dosyasına kaydedildi.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Henüz dışa aktarılacak hesaplanmış hash yok.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Erişim reddedildiği için bazı dosyalar okunamadı. Hash Tool yönetici olarak yeniden başlatılıp bu dosyalar tekrar denensin mi?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool yönetici olarak çalıştığı için Windows, Dosya Gezgini'nden sürükleyip bırakmayı engelliyor. Bunun yerine “Dosya Ekle” veya “Klasör Ekle” düğmesini kullanın.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} kullanılabilir.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Güncellemeler yalnızca GitHub Releases sayfasından edinilen yüklü veya taşınabilir sürümde kullanılabilir.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Ayarlar dosyanız okunamadı ve varsayılanlara sıfırlandı. Hasarlı dosya yedek olarak saklandı.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Bir sorun oluştu: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Okuma: {0}/sn</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Sağlama Toplamı Dosyasını Kaydet</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Sağlama Toplamı Dosyalarını Aç</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Günlüğü Dışa Aktar</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>En düşük düzey</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Otomatik kaydır</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Sürüm {0}</value>
     </data>
 </root>

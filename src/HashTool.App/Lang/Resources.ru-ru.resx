@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Хэш-инструмент</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Создать хэш</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Проверить хэш</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Настройки</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Обновление</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Тема</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>О программе</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Разработчик</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Добавить файлы...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Очистить список</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Очистить хэши</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>ВЫЧИСЛИТЬ ВСЕ</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Сжать (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>ПРОВЕРИТЬ ВСЕ</value>
     </data>
-    <data name="Btn_CheckNow">
+    <data name="Btn_CheckNow" xml:space="preserve">
         <value>Проверить сейчас</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Установить</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Принять</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Отклонить</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Создать хэш и сжать</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Пакетная проверка</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Проверка обновлений</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Предупреждение версии для разработчиков</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>О программе</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Подсказка: Shift+C — Вычислить, Shift+Z — Сжать, Ctrl+F — Добавить файлы.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Подсказка: перетащите сюда файлы или папки. Ctrl/⌘+O — добавить файлы, Ctrl/⌘+Shift+O — добавить папку, Ctrl/⌘+Enter — вычислить все, Esc — отменить.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Подсказка: Shift+A — Проверить, Ctrl+F — Добавить файлы, Ctrl+Shift+H — Очистить.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Подсказка: перетащите сюда файлы, папки или файлы контрольных сумм (SHA256SUMS, *.sha256, *.md5…). Ctrl/⌘+Enter — проверить все, Esc — отменить.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Готово</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Пример:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Текущая версия: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Канал обновлений:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Всего файлов: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Стабильная (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Для разработчиков (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Язык</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Тема</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Стиль темы</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Светлая/Темная</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Шрифт</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Размер шрифта (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Автовыбор оптимального шрифта для языка</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Зафиксировать как шрифт по умолчанию</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>Масштаб интерфейса</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Скрывать значения хэша (Безопасность)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Сбросить настройки</value>
     </data>
-    <data name="Settings_Other">
-        <value>Конфиденциальность и безопасность</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Установить по умолчанию</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Пользовательский цвет текста</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Дополнительно</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Запуск от имени администратора</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Требует перезапуска. Дает доступ к защищенным файлам.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Лимит размера входного файла</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Максимальный размер файлов для обработки.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Таймаут принудительного закрытия</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Время (сек.), прежде чем приложение будет считаться зависшим.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Таймаут обработки файла</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Отменить, если один файл обрабатывается слишком долго.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Экстренное действие</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Принудительно закрыть приложение и немедленно отменить все задачи.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Принудительно закрыть и отменить все</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Конфигурация</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Заблокировать настройки (Сохранить как по умолчанию)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Предотвращает случайные изменения. Можно менять только 'Скрытие хэша'.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Сбросить все настройки</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Восстановить заводские настройки.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Путь к файлу конфигурации</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Показать полный путь и скопировать в буфер обмена.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Показать путь</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Настройки автоматически сохраняются в config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Режим разработчика</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Включить расширенное логирование и инструменты отладки.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Консоль разработчика</value>
     </data>
-    <data name="Dev_Beta">
-        <value>БЕТА</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Запись</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Пауза</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Сохранить в файл</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Не сохранять</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Очистить консоль</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Скопировать все</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Открыть папку журналов</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Автор</value>
     </data>
-    <data name="About_Software">
-        <value>Программное обеспечение</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Сторонние библиотеки</value>
     </data>
-    <data name="About_Copyright">
-        <value>Авторские права</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Мощный инструмент для создания, проверки и сжатия хэшей файлов. Или я так думаю :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>Выпущено под лицензией MIT.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Технологии</value>
     </data>
-    <data name="About_TechContent">
-        <value>Создано с использованием C# и .NET 10.0.102.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>Создано на C# с использованием {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>Помощь ИИ</value>
     </data>
-    <data name="About_AIContent">
-        <value>Это ПО было разработано при содействии ИИ (Gemini 3 Pro и Grok 4.1).</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Это ПО было разработано при содействии ИИ (Gemini 3 Pro, Grok 4.1 и Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Обработка ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Завершено</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Ошибка: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Отменено</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Сохранено!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Сжато!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Ожидание хэша/ввода...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Исходный файл отсутствует!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Значение хэша отсутствует (Введите или загрузите файл)</value>
     </data>
-    <data name="Status_Valid">
-        <value>ДЕЙСТВИТЕЛЬНО</value>
+    <data name="Status_Valid" xml:space="preserve">
+        <value>СОВПАДАЕТ</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>НЕ СОВПАДАЕТ!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Файл хэша загружен</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Имя файла хэша не совпадает!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Файл не содержит хэш!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Проверка обновлений...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Обнаружена новая версия!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Вы используете последнюю версию.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Ошибка проверки обновлений: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Загрузка и установка...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Готово (из файла контрольных сумм)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Ошибка установки: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Готово (Из файла .hash)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Исходный файл утерян!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Имя файла хэша не совпадает!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Файл хэша успешно добавлен</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Файл не содержит хэш!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Ошибка чтения файла</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Результат</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Обработка завершена!
-            ✅ Успешно: {0}
-            ❌ Ошибка: {1}
-            ⛔ Отменено: {2}
-        </value>
+✅ Успешно: {0}
+❌ Ошибка: {1}
+⛔ Отменено: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>Проверено файлов: {0}.
-            ✅ Совпадение: {1}
-            ❌ Не совпадает/Ошибка: {2}
-            ⛔ Отменено: {3}
-        </value>
+✅ Совпадение: {1}
+❌ Не совпадает/Ошибка: {2}
+⛔ Отменено: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Неправильный файл!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Файл хэша не совпадает!
-
-            Исходный файл: {0}
-            Выбранный файл: {1}
-
-            Пожалуйста, выберите правильный сопровождающий файл хэша.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Новое обновление</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Версия: {0}
-
-            Изменения:
-            {1}
-
-            Нажмите 'Обновить сейчас' для загрузки.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Новых обновлений не найдено.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Ошибка</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Невозможно прочитать этот файл хэша.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Проверка конфигурации</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Файл существует по пути:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Файл не существует!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Файл успешно создан!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Путь конфигурации скопирован.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Режим администратора</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Пожалуйста, перезапустите приложение, чтобы изменения вступили в силу.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Не удалось открыть папку: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ПРЕДУПРЕЖДЕНИЕ ВЕРСИИ ДЛЯ РАЗРАБОТЧИКОВ</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Вы собираетесь переключиться на канал обновлений для Разработчиков (Pre-release).
-
-            Эта версия может содержать ошибки, быть нестабильной и привести к потере данных.
-
-            Я не несу ответственности за любые проблемы, возникшие при использовании этой версии.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Я прочитал и согласен. Беру на себя полную ответственность.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Сохранить файл хэша</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Сохранить сжатый файл</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Выберите файлы для хэширования</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Выберите файл хэша для: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Выберите файлы (Исходный или файл .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Выберите файлы или файлы контрольных сумм</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Вставьте или перетащите сюда...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Секунд</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Проверить</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Остановить</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Удалить файл</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Копировать хэш</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Вычислить</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Очистить хэш</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Обзор хэша</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Темная</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Светлая</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Системная</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Задача остановлена</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Да</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>ОК</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Нет</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip-архив</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Подтверждение выхода</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Выход приведет к отмене всех текущих задач. Вы уверены?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Задача была остановлена по таймауту.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Сохранить журнал отладки на диск.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Приостановить ведение журнала в реальном времени.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Показать хэш</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Скрыть хэш</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Копировать путь</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Ваш диск заполнен. Пожалуйста, выберите другое место :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Видимость хэша</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Нет файлов. Нажмите 'Добавить файлы', чтобы начать.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Перетащите сюда файлы или папки либо нажмите «Добавить файлы».</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Зафиксировать эту тему по умолчанию</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>Пропущено файлов, превышающих лимит ({1} {2}): {0}
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Язык системы</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>Для возврата к настройке 'Автоматически' потребуется перезапуск. Хотите продолжить?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Изменение языка</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Вы уверены?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Больше не показывать это предупреждение</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Ошибка сетевого подключения. Пожалуйста, проверьте ваш интернет.</value>
     </data>
-    <data name="Error_Server">
-        <value>Ошибка сервера (5xx). Пожалуйста, повторите попытку позже.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Ошибка клиента (4xx). Пожалуйста, проверьте запрос.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>Превышен лимит запросов GitHub API. Пожалуйста, повторите попытку позже.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Предварительная версия не найдена. Сохранение текущей версии.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Доступна предварительная версия {0}.
-
-            {1}
-
-            Эта версия может быть нестабильной. Хотите скачать?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Очистить неудачные</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>Удалено элементов: {0}.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Осталось времени: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Длительность задачи: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Вычисление...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Добавить папку...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Выбранная папка пуста.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Выберите папку для сканирования</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Отмена</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Лимиты обработки</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Макс. файлов при сканировании папки</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Ограничьте количество добавляемых файлов из папки для предотвращения проблем с производительностью.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Макс. папок одновременно</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Ограничьте количество одновременно выбираемых папок.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Вы можете выбрать не более {0} папок одновременно.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>Добавлено файлов: {0}. Пропущено из-за лимита: {1}.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Чтение: {0}/с | Запись: {1}/с</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Показывать скорость чтения</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Показывать скорость чтения/записи</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Отображать скорость передачи данных в реальном времени во время операций хэширования.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Вычисление хэша...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Все размеры</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Маленькие (&lt; 1 МБ)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Средние (1 МБ - 100 МБ)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Большие (100 МБ - 1 ГБ)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Очень большие (&gt; 1 ГБ)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Документы</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Политика конфиденциальности</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Условия использования</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Лицензионное соглашение (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Отказ от ответственности</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>ЧИТАЙМЕНЯ (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>История изменений</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Благодарности</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Обработка</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Ошибка</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Поиск по имени...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Размер</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>Профиль GitHub</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Все</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Освободить память</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Автоматически (язык системы)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Принудительно запустить сборщик мусора (GC) для освобождения ОЗУ.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Алгоритм</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Очистить память</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Алгоритм по умолчанию</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Запущена очистка памяти.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Экспорт</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Сохранить файл контрольных сумм…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Копировать все хэши</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Открыть файл контрольных сумм…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Подробнее</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Закрыть</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Установить при выходе</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Открыть страницу выпуска</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Что нового</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Перезапустить от имени администратора</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Копировать подробности</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Производительность</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Число одновременно обрабатываемых файлов</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = автоматически ({0} на этом компьютере).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Оптимизация для жестких дисков</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Файлы читаются по одному — так быстрее на жестких дисках и в сетевых папках.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Включать скрытые файлы</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>При сканировании папок также добавлять скрытые и системные файлы.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Вывод</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Регистр букв хэша</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Верхний регистр (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Нижний регистр (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Формат файла контрольных сумм по умолчанию</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Обновления</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Автоматически проверять обновления</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>При запуске программы проверяет GitHub не чаще одного раза в день. Обновления загружаются, только если вы решите их установить.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Интеграция с Windows</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Контекстное меню Проводника</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Добавляет пункты «Создать хэш» и «Проверить» в контекстное меню файлов и папок (в Windows 11 — в меню «Показать дополнительные параметры»).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Нужно только для файлов, которые ваша учетная запись не может прочитать. Пока программа запущена от имени администратора, Windows блокирует перетаскивание из Проводника.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Открыть папку данных</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>Файл контрольных сумм GNU (формат sha256sum)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>Файл контрольных сумм BSD (с тегами)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>Файл SFV (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>Файл JSON</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>Файл CSV</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Файлы контрольных сумм</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Высокая контрастность</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Для дальтоников</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Ретро</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Стекло</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Киберпанк</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Пастель</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>По умолчанию</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Создать хэш с помощью Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Проверить с помощью Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>В очереди</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Отказано в доступе</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Используется другой программой</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Превышено время ожидания</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>СОВПАДАЕТ (старый порядок байтов CRC32)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Некорректный хэш {0}</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Загрузка обновления… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Обновление будет установлено после закрытия Hash Tool.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Дождитесь завершения текущей задачи.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>Не удалось добавить элементы ({0}):
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: пропущено некорректных строк: {0}.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>Файл {0} не содержит контрольных сумм.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>Пропущено «{0}»: файлы контрольных сумм не могут ссылаться на сетевые пути и пути к устройствам.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Удалить все файлы из списка ({0})?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>Хэши ({0}) сохранены в файл {1}.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Пока нет вычисленных хэшей для экспорта.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Некоторые файлы не удалось прочитать: отказано в доступе. Перезапустить Hash Tool от имени администратора и повторить попытку?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool запущен от имени администратора, поэтому Windows блокирует перетаскивание из Проводника. Используйте вместо этого кнопки «Добавить файлы» или «Добавить папку».</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Доступна версия Hash Tool {0}.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Обновления доступны только в установленной или портативной версии из GitHub Releases.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Не удалось прочитать файл настроек, поэтому восстановлены значения по умолчанию. Поврежденный файл сохранен как резервная копия.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Что-то пошло не так: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Чтение: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Сохранить файл контрольных сумм</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Открыть файлы контрольных сумм</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Экспортировать журнал</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Минимальный уровень</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Автопрокрутка</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Версия {0}</value>
     </data>
 </root>

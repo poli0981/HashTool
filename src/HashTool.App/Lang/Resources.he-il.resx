@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>כלי Hash</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>צור Hash</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>אמת Hash</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>הגדרות</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>עדכון</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>ערכת נושא</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>אודות</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>מפתח</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>הוסף קבצים...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>נקה רשימה</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>נקה ערכי Hash</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>חשב הכל</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>דחוס (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>אמת הכל</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>אמת כעת</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>בדוק כעת</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>התקן</value>
     </data>
-    <data name="Btn_Accept">
-        <value>אשר</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>דחה</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>צור Hash ודחוס</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>אימות קבוצתי</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>בדוק עדכונים</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>אזהרת גרסת מפתח</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>אודות</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>טיפ: Shift+C לחישוב, Shift+Z לדחיסה, Ctrl+F להוספה.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>טיפ: גרור לכאן קבצים או תיקיות. Ctrl/⌘+O להוספת קבצים, Ctrl/⌘+Shift+O להוספת תיקייה, Ctrl/⌘+Enter לחישוב הכל, Esc לביטול.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>טיפ: Shift+A לאימות, Ctrl+F להוספה, Ctrl+Shift+H לניקוי.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>טיפ: גרור לכאן קבצים, תיקיות או קבצי סכום ביקורת (SHA256SUMS, *.sha256, *.md5…). Ctrl/⌘+Enter לאימות הכל, Esc לביטול.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>מוכן</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>דוגמה:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>גרסה נוכחית: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>ערוץ שחרור:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>סה"כ קבצים: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>יציב (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>מפתח (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>שפה</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>ערכת נושא</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>סגנון ערכת נושא</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>בהיר/כהה</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>גופן</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>גודל גופן (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>בחר גופן אופטימלי לשפה אוטומטית</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>נעל כגופן ברירת מחדל</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>קנה מידה של הממשק</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>הסתר ערכי Hash (אבטחה)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>אפס הגדרות</value>
     </data>
-    <data name="Settings_Other">
-        <value>פרטיות ואבטחה</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>קבע כברירת מחדל</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>צבע טקסט מותאם אישית</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>מתקדם</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>הפעל כמנהל מערכת</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>דורש הפעלה מחדש. מאפשר גישה לקבצים מוגנים.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>מגבלת גודל קובץ קלט</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>גודל מקסימלי לקבצים לעיבוד.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>פסק זמן לסגירה מאולצת</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>זמן (שניות) לפני שהיישום נחשב כקפוא.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>פסק זמן לעיבוד קובץ</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>בטל אם קובץ יחיד לוקח יותר מדי זמן.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>פעולת חירום</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>סגור את היישום בכוח ובטל את כל המשימות מיד.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>סגירה מאולצת וביטול הכל</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>תצורה</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>נעל הגדרות (שמור כברירת מחדל)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>מנע שינויים מקריים. רק 'הסתרת Hash' נשארת ניתנת לשינוי.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>אפס את כל ההגדרות</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>שחזר להגדרות יצרן.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>נתיב קובץ תצורה</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>הצג נתיב מלא והעתק ללוח.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>הצג נתיב</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>ההגדרות נשמרות אוטומטית ל-config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>מצב מפתח</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>אפשר רישום מתקדם וכלי ניפוי באגים.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>מסוף מפתחים</value>
     </data>
-    <data name="Dev_Beta">
-        <value>בטא</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>מקליט</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>מושהה</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>שמור לקובץ</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>אל תשמור</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>נקה מסוף</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>העתק הכל</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>פתח תיקיית לוגים</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>מחבר</value>
     </data>
-    <data name="About_Software">
-        <value>תוכנה</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>ספריות צד שלישי</value>
     </data>
-    <data name="About_Copyright">
-        <value>זכויות יוצרים</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>כלי חזק ליצירה, אימות ודחיסה של Hash קבצים. או לפחות כך אני חושב :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>שוחרר תחת רישיון MIT.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>טכנולוגיה</value>
     </data>
-    <data name="About_TechContent">
-        <value>נבנה עם C# ו-.NET 10.0.102.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>נבנה ב-C# על גבי {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>סיוע בינה מלאכותית</value>
     </data>
-    <data name="About_AIContent">
-        <value>תוכנה זו פותחה בסיוע בינה מלאכותית (Gemini 3 Pro ו-Grok 4.1).</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>תוכנה זו פותחה בסיוע בינה מלאכותית (Gemini 3 Pro, Grok 4.1 ו-Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>מעבד ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>הושלם</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>שגיאה: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>בוטל</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>נשמר!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>נדחס!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>ממתין ל-Hash/קלט...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>קובץ מקורי חסר!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>ערך Hash חסר (הכנס או טען קובץ)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>תקין</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>אי התאמה!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>קובץ Hash נטען</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>שם קובץ Hash אינו תואם!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>הקובץ אינו מכיל Hash!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>בודק עדכונים...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>גרסה חדשה זוהתה!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>אתה משתמש בגרסה האחרונה.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>שגיאת בדיקת עדכון: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>מוריד ומתקין...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>מוכן (מקובץ סכום ביקורת)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>שגיאת התקנה: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>מוכן (מקובץ .hash)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>קובץ מקורי אבד!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>שם קובץ Hash אינו תואם!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>קובץ Hash נגרר בהצלחה</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>הקובץ אינו מכיל Hash!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>שגיאת קריאת קובץ</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>תוצאה</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>העיבוד הושלם!
-            ✅ הצלחה: {0}
-            ❌ נכשל: {1}
-            ⛔ בוטל: {2}
-        </value>
+✅ הצלחה: {0}
+❌ נכשל: {1}
+⛔ בוטל: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>נבדקו {0} קבצים.
-            ✅ התאמה: {1}
-            ❌ אי התאמה/שגיאה: {2}
-            ⛔ בוטל: {3}
-        </value>
+✅ התאמה: {1}
+❌ אי התאמה/שגיאה: {2}
+⛔ בוטל: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>קובץ שגוי!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>אי התאמה בקובץ Hash!
-
-            קובץ מקורי: {0}
-            קובץ נבחר: {1}
-
-            אנא בחר את קובץ ה-Hash המתאים הנכון.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>עדכון חדש</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>גרסה: {0}
-
-            שינויים:
-            {1}
-
-            לחץ על 'עדכן כעת' להורדה.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>לא נמצאו עדכונים חדשים.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>שגיאה</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>לא ניתן לקרוא קובץ Hash זה.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>בדיקת תצורה</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>הקובץ קיים ב:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>הקובץ אינו קיים!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>הקובץ נוצר בהצלחה!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>נתיב התצורה הועתק.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>מצב מנהל</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>אנא הפעל מחדש את היישום כדי שהשינויים ייכנסו לתוקף.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>לא ניתן לפתוח תיקייה: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ אזהרת גרסת מפתח</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>אתה עומד לעבור לערוץ עדכון מפתחים (טרום-שחרור).
-
-            גרסה זו עשויה להכיל באגים, להיות לא יציבה ולגרום לאובדן נתונים.
-
-            איני אחראי לכל בעיה הנובעת משימוש בגרסה זו.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>קראתי ואני מסכים. אני לוקח אחריות מלאה.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>שמור קובץ Hash</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>שמור קובץ דחוס</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>בחר קבצים ל-Hash</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>בחר קובץ Hash עבור: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>בחר קבצים (מקורי או קובץ .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>בחר קבצים או קבצי סכום ביקורת</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>הדבק או גרור לכאן...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>שניות</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>אמת</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>עצור</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>הסר קובץ</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>העתק Hash</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>חשב</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>נקה Hash</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>דפדף Hash</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>כהה</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>בהיר</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>מערכת</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>המשימה הופסקה</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>כן</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>אישור</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>לא</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>ארכיון Zip</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>אישור יציאה</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>יציאה תבטל את כל המשימות הפעילות. האם אתה בטוח?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>המשימה הופסקה עקב פסק זמן.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>שמור יומן דיבאג לדיסק.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>השהה רישום בזמן אמת.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>הצג Hash</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>הסתר Hash</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>העתק נתיב</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>הכונן שלך מלא. אנא בחר מיקום אחר :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>נראות Hash</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>אין קבצים. לחץ על 'הוסף קבצים' כדי להתחיל.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>גרור לכאן קבצים או תיקיות, או לחץ על "הוסף קבצים".</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>נעל ערכת נושא זו כברירת מחדל</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>דולגו {0} קבצים החורגים מהמגבלה ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>שפת מערכת</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>חזרה להגדרה 'אוטומטי' דורשת הפעלה מחדש. האם ברצונך להמשיך?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>שינוי שפה</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>האם אתה בטוח בכך?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>אל תציג התראה זו שוב</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>שגיאת חיבור רשת. אנא בדוק את האינטרנט שלך.</value>
     </data>
-    <data name="Error_Server">
-        <value>שגיאת שרת (5xx). אנא נסה שוב מאוחר יותר.</value>
-    </data>
-    <data name="Error_Client">
-        <value>שגיאת לקוח (4xx). אנא בדוק את הבקשה.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>חריגה ממגבלת ה-API של GitHub. אנא נסה שוב מאוחר יותר.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>לא נמצאה גרסת טרום-שחרור. שומר על הגרסה הנוכחית.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>גרסת טרום-שחרור {0} זמינה.
-
-            {1}
-
-            גרסה זו עשויה להיות לא יציבה. האם ברצונך להוריד?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>נקה נכשלים</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>הוסרו {0} פריטים.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>זמן נותר: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>משך משימה: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>מחשב...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>הוסף תיקייה...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>התיקייה שנבחרה ריקה.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>בחר תיקייה לסריקה</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>ביטול</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>מגבלות עיבוד</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>מקסימום קבצים לסריקת תיקייה</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>הגבל את מספר הקבצים המתווספים מתיקייה למניעת בעיות ביצועים.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>מקסימום תיקיות בבת אחת</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>הגבל את מספר התיקיות שנבחרו בבת אחת.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>ניתן לבחור עד {0} תיקיות בבת אחת.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>נוספו {0} קבצים. דולגו {1} קבצים עקב המגבלה.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>קריאה: {0}/s | כתיבה: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>הצג מהירות קריאה</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>הצג מהירות קריאה/כתיבה</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>הצג קצב העברה בזמן אמת במהלך פעולות Hash.</value>
     </data>
-    <data name="Status_Computing">
-        <value>חישוב Hash...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>כל הגדלים</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>קטן (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>בינוני (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>גדול (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>גדול מאוד (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>מסמכים</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>מדיניות פרטיות</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>תנאי שימוש</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>הסכם רישיון למשתמש קצה (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>הסרת אחריות</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>README</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>יומן שינויים</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>תודות</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>מעבד</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>נכשל</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>חפש לפי שם...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>גודל</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>פרופיל GitHub</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>הכל</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>שחרר זיכרון</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>אוטומטי (שפת המערכת)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>כפה איסוף זבל (GC) לשחרור RAM.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>אלגוריתם</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>נקה זיכרון</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>אלגוריתם ברירת מחדל</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>ניקוי זיכרון הופעל.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>ייצוא</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>שמור קובץ סכום ביקורת…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>העתק את כל ערכי ה-Hash</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>פתח קובץ סכום ביקורת…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>הצג</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>סגור</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>התקן ביציאה</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>פתח את דף הגרסה</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>מה חדש</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>הפעל מחדש כמנהל</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>העתק פרטים</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>ביצועים</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>קבצים המעובדים בו-זמנית</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = אוטומטי ({0} במחשב זה).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>מיטוב לכוננים קשיחים</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>קורא קובץ אחד בכל פעם, דבר שמהיר יותר בכוננים קשיחים מכניים ובתיקיות משותפות ברשת.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>כלול קבצים מוסתרים</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>הוסף גם קבצים מוסתרים וקבצי מערכת בעת סריקת תיקיות.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>פלט</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>רישיות אותיות ה-Hash</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>אותיות רישיות (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>אותיות קטנות (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>פורמט ברירת מחדל לקובץ סכום ביקורת</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>עדכונים</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>בדוק עדכונים אוטומטית</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>בודק ב-GitHub לכל היותר פעם ביום, בעת הפעלת התוכנה. העדכונים מורדים רק כשתבחר להתקין אותם.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>שילוב עם Windows</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>תפריט ההקשר של סייר הקבצים</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>מוסיף את "צור Hash" ואת "אמת" לתפריט הלחיצה הימנית של קבצים ותיקיות (ב-Windows 11 תחת "הצג אפשרויות נוספות").</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>נדרש רק עבור קבצים שהחשבון שלך אינו יכול לקרוא. כשהתוכנה פועלת כמנהל, Windows חוסם גרירה ושחרור מסייר הקבצים.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>פתח את תיקיית הנתונים</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>קובץ סכום ביקורת של GNU (בפורמט sha256sum)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>קובץ סכום ביקורת של BSD (מתויג)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>קובץ SFV (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>קובץ JSON</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>קובץ CSV</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>קבצי סכום ביקורת</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>ניגודיות גבוהה</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>ידידותי לעיוורי צבעים</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>רטרו</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>זכוכית</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>סייברפאנק</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>פסטל</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>ברירת מחדל</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>צור Hash באמצעות Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>אמת באמצעות Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>בתור</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>הגישה נדחתה</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>בשימוש על ידי תוכנית אחרת</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>תם הזמן הקצוב</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>תקין (סדר בתים ישן של CRC32)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>ערך {0} לא תקין</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>מוריד עדכון… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>העדכון יותקן כשתסגור את Hash Tool.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>אנא המתן עד לסיום המשימה הנוכחית.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>לא ניתן היה להוסיף {0} פריטים:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: דולגו {0} שורות שאינן רשומות סכום ביקורת תקינות.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} אינו מכיל סכומי ביקורת.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>"{0}" דולג: קבצי סכום ביקורת אינם רשאים להפנות לנתיבי רשת או התקנים.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>להסיר את כל {0} הקבצים מהרשימה?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>נשמרו {0} ערכי Hash בקובץ {1}.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>עדיין אין ערכי Hash מחושבים לייצוא.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>לא ניתן היה לקרוא חלק מהקבצים כי הגישה נדחתה. להפעיל מחדש את Hash Tool כמנהל ולנסות שוב?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool פועל כמנהל, ולכן Windows חוסם גרירה ושחרור מסייר הקבצים. השתמש במקום זאת ב"הוסף קבצים" או ב"הוסף תיקייה".</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>גרסה {0} של Hash Tool זמינה.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>העדכונים זמינים רק בגרסה המותקנת או בגרסה הניידת מדף הגרסאות ב-GitHub.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>לא ניתן היה לקרוא את קובץ ההגדרות, ולכן הוא אופס לברירות המחדל. הקובץ הפגום נשמר כגיבוי.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>משהו השתבש: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>קריאה: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>שמור קובץ סכום ביקורת</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>פתח קבצי סכום ביקורת</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>ייצא יומן</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>רמה מינימלית</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>גלילה אוטומטית</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>גרסה {0}</value>
     </data>
 </root>

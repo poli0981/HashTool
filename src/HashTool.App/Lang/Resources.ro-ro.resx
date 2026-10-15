@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Instrument Hash</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Generează Hash</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Verifică Hash</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Setări</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Actualizare</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Temă</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>Despre</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Dezvoltator</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Adaugă fișiere...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Golește lista</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Șterge hash-urile</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>CALCULEAZĂ TOT</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Comprimă (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>VERIFICĂ TOT</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>Verifică acum</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>Caută acum</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Instalează</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Acceptă</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Refuză</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Generează Hash și Comprimă</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Verificare în lot</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Caută actualizări</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Avertisment Versiune Dev</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>Despre aplicație</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Sfat: Shift+C pentru Calcul, Shift+Z pentru Comprimare, Ctrl+F pentru Adăugare.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Sfat: trageți aici fișiere sau foldere. Ctrl/⌘+O adaugă fișiere, Ctrl/⌘+Shift+O adaugă un folder, Ctrl/⌘+Enter calculează tot, Esc anulează.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Sfat: Shift+A pentru Verificare, Ctrl+F pentru Adăugare, Ctrl+Shift+H pentru Golire listă.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Sfat: trageți aici fișiere, foldere sau fișiere de sume de control (SHA256SUMS, *.sha256, *.md5…). Ctrl/⌘+Enter verifică tot, Esc anulează.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Pregătit</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Exemplu:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Versiune curentă: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Canal de lansare:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Total fișiere: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Stabil (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Dezvoltator (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Limbă</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Temă</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Stilul temei</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Luminos/Întunecat</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Font</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Dimensiune font (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Selectează automat fontul optim</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Blochează ca font implicit</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>Scară UI</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Ascunde valorile Hash (Securitate)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Resetează setările</value>
     </data>
-    <data name="Settings_Other">
-        <value>Confidențialitate și Securitate</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Setează ca implicit</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Culoare personalizată text</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Avansat</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Rulează ca Administrator</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Necesită repornire. Permite accesul la fișierele protejate.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Limită dimensiune fișier intrare</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Dimensiunea maximă a fișierelor de procesat.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Timp limită pentru închidere forțată</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Timp (secunde) înainte de a considera aplicația blocată.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Timp limită procesare fișier</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Anulează dacă un singur fișier durează prea mult.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Acțiune de urgență</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Închide forțat aplicația și anulează imediat toate sarcinile.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Închidere forțată și Anulează tot</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Configurație</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Blochează setările (Salvează ca implicit)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Previne modificările accidentale. Doar 'Ascunde Hash' rămâne ajustabil.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Resetează toate setările</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Restaurează la setările din fabrică.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Calea fișierului de configurare</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Afișează calea completă și copiază în clipboard.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Arată calea</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Setările sunt salvate automat în config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Mod Dezvoltator</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Activează jurnalizarea avansată și instrumentele de depanare.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Consolă Dezvoltator</value>
     </data>
-    <data name="Dev_Beta">
-        <value>BETA</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Înregistrare</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Pauză</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Salvează în fișier</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Nu salva</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Golește consola</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Copiază tot</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Deschide folderul cu jurnale</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Autor</value>
     </data>
-    <data name="About_Software">
-        <value>Software</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Biblioteci terțe</value>
     </data>
-    <data name="About_Copyright">
-        <value>Drepturi de autor</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Un instrument puternic pentru generarea, verificarea și comprimarea hash-urilor de fișiere. Sau cel puțin așa cred :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>Lansat sub licența MIT.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Tehnologie</value>
     </data>
-    <data name="About_TechContent">
-        <value>Construit cu C# și .NET 10.0.102.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>Dezvoltat în C# pe {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>Asistență AI</value>
     </data>
-    <data name="About_AIContent">
-        <value>Acest software a fost dezvoltat cu asistența AI (Gemini 3 Pro și Grok 4.1).</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Acest software a fost dezvoltat cu asistența AI (Gemini 3 Pro, Grok 4.1 și Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Se procesează ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Finalizat</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Eroare: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Anulat</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Salvat!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Comprimat!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Așteptare hash/intrare...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Fișierul original lipsește!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Valoare hash lipsă (Introduceți sau încărcați fișierul)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>VALID</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>NEPOTRIVIRE!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Fișier hash încărcat</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Numele fișierului hash nu se potrivește!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Fișierul nu conține un hash!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Se verifică actualizările...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Versiune nouă detectată!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Utilizați cea mai recentă versiune.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Eroare la verificarea actualizării: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Se descarcă și se instalează...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Pregătit (din fișierul de sume de control)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Eroare de instalare: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Pregătit (Din fișierul .hash)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Fișierul original pierdut!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Numele fișierului hash nu se potrivește!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Fișier hash plasat cu succes</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Fișierul nu conține un hash!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Eroare la citirea fișierului</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Rezultat</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Procesare finalizată!
-            ✅ Succes: {0}
-            ❌ Eșuat: {1}
-            ⛔ Anulat: {2}
-        </value>
+✅ Succes: {0}
+❌ Eșuat: {1}
+⛔ Anulat: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>S-au verificat {0} fișiere.
-            ✅ Potrivire: {1}
-            ❌ Nepotrivire/Eroare: {2}
-            ⛔ Anulat: {3}
-        </value>
+✅ Potrivire: {1}
+❌ Nepotrivire/Eroare: {2}
+⛔ Anulat: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Fișier greșit!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Nepotrivire fișier hash!
-
-            Fișier original: {0}
-            Fișier selectat: {1}
-
-            Vă rugăm să selectați fișierul hash însoțitor corect.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Actualizare nouă</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Versiune: {0}
-
-            Modificări:
-            {1}
-
-            Faceți clic pe 'Actualizați acum' pentru a descărca.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Nu s-au găsit actualizări mai noi.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Eroare</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Nu se poate citi acest fișier hash.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Verificare Configurație</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Fișierul există la:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Fișierul nu există!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Fișier creat cu succes!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Calea de configurare copiată.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Mod Administrator</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Vă rugăm să reporniți aplicația pentru ca modificările să aibă efect.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Nu se poate deschide folderul: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ AVERTISMENT VERSIUNE DEV</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Sunteți pe cale să comutați la canalul de actualizare pentru Dezvoltatori (Pre-lansare).
-
-            Această versiune poate conține erori, poate fi instabilă și ar putea cauza pierderi de date.
-
-            Nu sunt responsabil pentru problemele apărute din utilizarea acestei versiuni.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Am citit și sunt de acord. Îmi asum întreaga responsabilitate.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Salvează fișier Hash</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Salvează fișier comprimat</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Selectează fișiere pentru hash</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Selectează fișierul hash pentru: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Selectează fișiere (Original sau fișier .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Selectează fișiere sau fișiere de sume de control</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Lipește sau trage aici...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Secunde</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Verifică</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Oprește</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Elimină fișier</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Copiază Hash</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Calculează</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Șterge Hash</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Răsfoiește Hash</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Întunecat</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Luminos</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Sistem</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Sarcină oprită</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Da</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>OK</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Nu</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Arhivă Zip</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Confirmare ieșire</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Ieșirea va anula toate sarcinile în curs. Sunteți sigur?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Sarcina a fost oprită din cauza expirării timpului.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Salvează jurnalul de depanare pe disc.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Pauză înregistrare în timp real.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Arată Hash</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Ascunde Hash</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Copiază calea</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Unitatea dvs. este plină. Vă rugăm să alegeți altă locație :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Vizibilitate Hash</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Niciun fișier. Faceți clic pe 'Adaugă fișiere' pentru a începe.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Trageți aici fișiere sau foldere ori faceți clic pe Adaugă fișiere.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Blochează această temă ca implicită</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>S-au omis {0} fișiere care depășesc limita ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Limba sistemului</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>Revenirea la setarea 'Automat' necesită repornire pentru a avea efect complet. Doriți să continuați?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Schimbare limbă</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Sunteți sigur de asta?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Nu mai afișa această alertă</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Eroare conexiune rețea. Verificați internetul.</value>
     </data>
-    <data name="Error_Server">
-        <value>Eroare server (5xx). Încercați din nou mai târziu.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Eroare client (4xx). Verificați cererea.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>Limita de cereri GitHub API a fost depășită. Încercați mai târziu.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Nu s-a găsit nicio versiune de pre-lansare. Se păstrează versiunea curentă.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Versiunea de pre-lansare {0} este disponibilă.
-
-            {1}
-
-            Această versiune poate fi instabilă. Doriți să descărcați?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Șterge Eșuate</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>S-au eliminat {0} elemente.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Timp rămas: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Durata sarcinii: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Se calculează...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Adaugă folder...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Folderul selectat este gol.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Selectează folderul pentru scanare</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Anulează</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Limite de procesare</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Număr maxim fișiere la scanarea folderului</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Limitați numărul de fișiere adăugate dintr-un folder pentru a preveni problemele de performanță.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Număr maxim foldere simultan</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Limitați numărul de foldere selectate în același timp.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Puteți selecta doar până la {0} foldere simultan.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>S-au adăugat {0} fișiere. S-au omis {1} fișiere din cauza limitei.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Citire: {0}/s | Scriere: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Afișează viteza de citire</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Afișează viteza de Citire/Scriere</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Afișează viteza de transfer în timp real în timpul operațiunilor de hash.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Se calculează Hash...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Toate dimensiunile</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Mic (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Mediu (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Mare (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Foarte mare (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Documente</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Politica de confidențialitate</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Termeni de utilizare</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Acord de licență (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Precizări legale</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>CITEȘTE-MĂ (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Jurnal de modificări</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Mulțumiri</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Se procesează</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Eșuat</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Căutare după nume...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Dimensiune</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>Profil GitHub</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Toate</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Eliberează memorie</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Automat (limba sistemului)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Forțează colectarea gunoiului (GC) pentru a elibera RAM.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Algoritm</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Curăță memoria</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Algoritm implicit</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Curățarea memoriei a fost declanșată.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Exportă</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Salvează fișier de sume de control…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Copiază toate hash-urile</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Deschide fișier de sume de control…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Vezi</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Închide</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Instalează la ieșire</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Deschide pagina versiunii</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Noutăți</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Repornește ca administrator</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Copiază detaliile</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Performanță</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Fișiere procesate simultan</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = automat ({0} pe acest computer).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Optimizează pentru hard-diskuri</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Citește fișierele pe rând, ceea ce este mai rapid pe hard-diskurile mecanice și pe resursele partajate din rețea.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Include fișierele ascunse</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Adaugă inclusiv fișierele ascunse și de sistem la scanarea folderelor.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Rezultate</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Majuscule/minuscule în hash-uri</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Majuscule (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Minuscule (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Format implicit pentru fișierele de sume de control</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Actualizări</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Caută automat actualizări</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Verifică GitHub cel mult o dată pe zi, la pornirea aplicației. Actualizările se descarcă doar dacă alegeți să le instalați.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Integrare cu Windows</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Meniul contextual din Explorer de fișiere</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Adaugă „Generează hash” și „Verifică” în meniul contextual al fișierelor și folderelor (în Windows 11, la „Afișați mai multe opțiuni”).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Necesar doar pentru fișierele pe care contul dvs. nu le poate citi. Cât timp aplicația rulează ca administrator, Windows blochează glisarea și fixarea din Explorer de fișiere.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Deschide folderul de date</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>Fișier de sume de control GNU (format sha256sum)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>Fișier de sume de control BSD (cu etichete)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>Fișier SFV (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>Fișier JSON</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>Fișier CSV</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Fișiere de sume de control</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Contrast ridicat</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Adaptat pentru daltoniști</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Retro</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Sticlă</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Pastel</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Implicit</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Generează hash cu Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Verifică cu Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>În coadă</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Acces refuzat</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Folosit de alt program</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Timp expirat</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>VALID (ordinea veche a octeților CRC32)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Hash {0} nevalid</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Se descarcă actualizarea… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Actualizarea va fi instalată când închideți Hash Tool.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Așteptați finalizarea sarcinii curente.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>Nu s-au putut adăuga aceste elemente ({0}):
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: s-au omis liniile care nu sunt intrări valide de sumă de control ({0}).</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} nu conține nicio sumă de control.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>S-a omis „{0}”: fișierele de sume de control nu pot indica spre căi de rețea sau de dispozitiv.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Eliminați toate fișierele din listă ({0})?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>Hash-urile au fost salvate în {1} ({0}).</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Nu există încă hash-uri calculate de exportat.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Unele fișiere nu au putut fi citite deoarece accesul a fost refuzat. Doriți să reporniți Hash Tool ca administrator și să încercați din nou?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool rulează ca administrator, așa că Windows blochează glisarea și fixarea din Explorer de fișiere. Folosiți în schimb Adaugă fișiere sau Adaugă folder.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} este disponibil.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Actualizările sunt disponibile doar pentru versiunea instalată sau portabilă descărcată de pe GitHub Releases.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Fișierul de setări nu a putut fi citit și a fost resetat la valorile implicite. Fișierul deteriorat a fost păstrat ca copie de rezervă.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>A apărut o eroare: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Citire: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Salvează fișierul de sume de control</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Deschide fișiere de sume de control</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Exportă jurnalul</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Nivel minim</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Derulare automată</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Versiunea {0}</value>
     </data>
 </root>

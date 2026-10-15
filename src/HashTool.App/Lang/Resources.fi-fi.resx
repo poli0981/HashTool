@@ -1,731 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Hash Tool</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Luo tiiviste</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Tarkista tiiviste</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Asetukset</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Päivitys</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Teema</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>Tietoja</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Kehittäjä</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Lisää tiedostoja...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Tyhjennä luettelo</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Tyhjennä tiivisteet</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>LASKE KAIKKI</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Pakkaa (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>TARKISTA KAIKKI</value>
     </data>
-    <data name="Btn_CheckNow">
+    <data name="Btn_CheckNow" xml:space="preserve">
         <value>Tarkista nyt</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Asenna</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Hyväksy</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Hylkää</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Luo tiiviste &amp; pakkaa</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Erätarkistus</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Tarkista päivitykset</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Kehittäjäversion varoitus</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>Tietoja</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Vinkki: Shift+C laskeaksesi, Shift+Z pakataksesi, Ctrl+F lisätäksesi.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Vinkki: vedä tiedostoja tai kansioita tähän. Ctrl/⌘+O lisää tiedostoja, Ctrl/⌘+Shift+O lisää kansion, Ctrl/⌘+Enter laskee kaikki, Esc peruuttaa.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Vinkki: Shift+A tarkistaaksesi, Ctrl+F lisätäksesi, Ctrl+Shift+H tyhjentääksesi.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Vinkki: vedä tähän tiedostoja, kansioita tai tarkistussummatiedostoja (SHA256SUMS, *.sha256, *.md5…). Ctrl/⌘+Enter tarkistaa kaikki, Esc peruuttaa.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Valmis</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Näyte:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Nykyinen versio: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Julkaisukanava:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Tiedostoja yhteensä: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Vakaa (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Kehittäjä (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Kieli</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Teema</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Teeman tyyli</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Vaalea/Tumma</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Fontti</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Fonttikoko (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Valitse kielelle optimaalinen fontti automaattisesti</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Lukitse oletusfontiksi</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>Käyttöliittymän skaalaus</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Piilota tiivistearvot (Tietoturva)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Palauta asetukset</value>
     </data>
-    <data name="Settings_Other">
-        <value>Yksityisyys ja turvallisuus</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Aseta oletukseksi</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Mukautettu tekstin väri</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Lisäasetukset</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Suorita järjestelmänvalvojana</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Vaatii uudelleenkäynnistyksen. Sallii pääsyn suojattuihin tiedostoihin.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Syötetiedoston kokorajoitus</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Käsiteltävien tiedostojen enimmäiskoko.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Pakotetun lopetuksen aikakatkaisu</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Aika (sekuntia) ennen kuin sovelluksen katsotaan jumiutuneen.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Tiedoston käsittelyn aikakatkaisu</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Peruuta, jos yksittäinen tiedosto kestää liian kauan.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Hätätoiminto</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Pakota sovelluksen sulkeminen ja peruuta kaikki tehtävät välittömästi.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Pakota lopetus &amp; peruuta kaikki</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Konfiguraatio</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Lukitse asetukset (Tallenna oletukseksi)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Estä tahattomat muutokset. Vain 'Tiivisteen piilotus' pysyy säädettävänä.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Palauta kaikki asetukset</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Palauta tehdasasetuksiin.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Konfiguraatiotiedoston polku</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Näytä koko polku ja kopioi leikepöydälle.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Näytä polku</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Asetukset tallennetaan automaattisesti config.json-tiedostoon</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Kehittäjätila</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Ota käyttöön edistynyt lokikirjaus ja virheenkorjaustyökalut.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Kehittäjäkonsoli</value>
     </data>
-    <data name="Dev_Beta">
-        <value>BETA</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Tallennetaan</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Keskeytetty</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Tallenna tiedostoon</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Älä tallenna</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Tyhjennä konsoli</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Kopioi kaikki</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Avaa lokikansio</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Tekijä</value>
     </data>
-    <data name="About_Software">
-        <value>Ohjelmisto</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Kolmannen osapuolen kirjastot</value>
     </data>
-    <data name="About_Copyright">
-        <value>Tekijänoikeus</value>
+    <data name="About_Desc" xml:space="preserve">
+        <value>Tehokas työkalu tiedostojen tiivisteiden luomiseen, tarkistamiseen ja pakkaamiseen. Tai niin luulen :)</value>
     </data>
-    <data name="About_Desc">
-        <value>Tehokas työkalu tiedostojen tiivisteiden luomiseen, tarkistamiseen ja pakkaamiseen. Tai niin luulen :)
-        </value>
-    </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>Julkaistu MIT-lisenssillä.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Teknologia</value>
     </data>
-    <data name="About_TechContent">
-        <value>Rakennettu C#:lla ja .NET 10.0.102:lla.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>Tehty C#-kielellä, alustana {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>Tekoälyavustus</value>
     </data>
-    <data name="About_AIContent">
-        <value>Tämä ohjelmisto kehitettiin tekoälyn (Gemini 3 Pro ja Grok 4.1) avustuksella.</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Tämä ohjelmisto kehitettiin tekoälyn avustuksella (Gemini 3 Pro, Grok 4.1 ja Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Käsitellään ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Valmis</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Virhe: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Peruutettu</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Tallennettu!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Pakattu!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Odotetaan tiivistettä/syötettä...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Alkuperäinen tiedosto puuttuu!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Tiivistearvo puuttuu (Syötä tai lataa tiedosto)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>PÄTEVÄ</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>EI TÄSMÄÄ!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Tiivistetiedosto ladattu</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Tiivistetiedoston nimi ei täsmää!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Tiedosto ei sisällä tiivistettä!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Tarkistetaan päivityksiä...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Uusi versio havaittu!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Käytät uusinta versiota.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Päivityksen tarkistusvirhe: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Ladataan ja asennetaan...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Valmis (tarkistussummatiedostosta)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Asennusvirhe: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Valmis (.hash-tiedostosta)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Alkuperäinen tiedosto kadonnut!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Tiivistetiedoston nimi ei täsmää!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Tiivistetiedosto pudotettu onnistuneesti</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Tiedosto ei sisällä tiivistettä!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Tiedoston lukuvirhe</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Tulos</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Käsittely valmis!
-            ✅ Onnistui: {0}
-            ❌ Epäonnistui: {1}
-            ⛔ Peruutettu: {2}
-        </value>
+✅ Onnistui: {0}
+❌ Epäonnistui: {1}
+⛔ Peruutettu: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>Tarkistettu {0} tiedostoa.
-            ✅ Täsmää: {1}
-            ❌ Ei täsmää/Virhe: {2}
-            ⛔ Peruutettu: {3}
-        </value>
+✅ Täsmää: {1}
+❌ Ei täsmää/Virhe: {2}
+⛔ Peruutettu: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Väärä tiedosto!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Tiivistetiedosto ei täsmää!
-
-            Alkuperäinen tiedosto: {0}
-            Valittu tiedosto: {1}
-
-            Valitse oikea vastaava tiivistetiedosto.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Uusi päivitys</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Versio: {0}
-
-            Muutokset:
-            {1}
-
-            Napsauta 'Päivitä nyt' ladataksesi.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Uudempia päivityksiä ei löytynyt.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Virhe</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Tätä tiivistetiedostoa ei voi lukea.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Konfiguraation tarkistus</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Tiedosto on olemassa:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Tiedostoa ei ole olemassa!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Tiedosto luotu onnistuneesti!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Konfiguraatiopolku kopioitu.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Järjestelmänvalvojan tila</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Käynnistä sovellus uudelleen ottaaksesi muutokset käyttöön.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Kansiota ei voi avata: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ KEHITTÄJÄVERSION VAROITUS</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Olet vaihtamassa kehittäjä (Pre-release) -päivityskanavaan.
-
-            Tämä versio voi sisältää virheitä, olla epävakaa ja aiheuttaa tietojen katoamisen.
-
-            En ole vastuussa mistään ongelmista, jotka johtuvat tämän version käytöstä.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Olen lukenut ja hyväksyn. Otan täyden vastuun.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Tallenna tiivistetiedosto</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Tallenna pakattu tiedosto</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Valitse tiedostot tiivistettäväksi</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Valitse tiivistetiedosto kohteelle: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Valitse tiedostot (Alkuperäinen tai .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Valitse tiedostot tai tarkistussummatiedostot</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Liitä tai pudota tähän...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Sekuntia</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Tarkista</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Pysäytä</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Poista tiedosto</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Kopioi tiiviste</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Laske</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Tyhjennä tiiviste</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Selaa tiivistettä</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Tumma</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Vaalea</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Järjestelmä</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Tehtävä pysäytetty</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Kyllä</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>OK</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Ei</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip-arkisto</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Vahvista lopetus</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Lopettaminen peruuttaa kaikki käynnissä olevat tehtävät. Oletko varma?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Tehtävä pysäytettiin aikakatkaisun vuoksi.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Tallenna virheenkorjausloki levylle.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Keskeytä reaaliaikainen lokikirjaus.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Näytä tiiviste</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Piilota tiiviste</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Kopioi polku</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Levysi on täynnä. Valitse toinen sijainti :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Tiivisteen näkyvyys</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Ei tiedostoja. Aloita napsauttamalla 'Lisää tiedostoja'.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Vedä tiedostoja tai kansioita tähän tai napsauta ”Lisää tiedostoja”.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Lukitse tämä teema oletukseksi</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>Ohitettiin {0} tiedostoa, jotka ylittävät rajan ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Järjestelmän kieli</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>'Automaattinen'-asetukseen palaaminen vaatii uudelleenkäynnistyksen. Haluatko jatkaa?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Kielen vaihto</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Oletko varma?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Älä näytä tätä varoitusta uudelleen</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Verkkoyhteysvirhe. Tarkista internetyhteytesi.</value>
     </data>
-    <data name="Error_Server">
-        <value>Palvelinvirhe (5xx). Yritä myöhemmin uudelleen.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Asiakasvirhe (4xx). Tarkista pyyntö.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>GitHub API -raja ylitetty. Yritä myöhemmin uudelleen.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Esiversiota ei löytynyt. Pidetään nykyinen versio.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Esiversio {0} on saatavilla.
-
-            {1}
-
-            Tämä versio voi olla epävakaa. Haluatko ladata?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Tyhjennä epäonnistuneet</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>Poistettiin {0} kohdetta.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Aikaa jäljellä: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Tehtävän kesto: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Lasketaan...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Lisää kansio...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Valittu kansio on tyhjä.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Valitse skannattava kansio</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Peruuta</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Käsittelyrajat</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Tiedostojen enimmäismäärä kansioskannauksessa</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Rajoita kansiosta lisättävien tiedostojen määrää suorituskykyongelmien estämiseksi.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Kansioiden enimmäismäärä kerralla</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Rajoita kerralla valittavien kansioiden määrää.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Voit valita enintään {0} kansiota kerralla.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>Lisättiin {0} tiedostoa. Ohitettiin {1} tiedostoa rajoituksen vuoksi.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Luku: {0}/s | Kirjoitus: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Näytä lukunopeus</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Näytä luku-/kirjoitusnopeus</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Näytä reaaliaikainen siirtonopeus tiivistyksen aikana.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Tiivisteen laskenta...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Kaikki koot</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Pieni (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Keskikokoinen (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Suuri (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Erittäin suuri (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Dokumentit</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Tietosuojakäytäntö</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Käyttöehdot</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Loppukäyttäjän lisenssisopimus (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Vastuuvapauslauseke</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>LUEMINUT (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Muutosloki</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Kiitokset</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Käsitellään</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Epäonnistui</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Hae nimellä...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Koko</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub-profiili</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Kaikki</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Vapauta muistia</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Automaattinen (järjestelmän kieli)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Pakota roskienkeruu (GC) vapauttaaksesi RAM-muistia.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Algoritmi</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Puhdista muisti</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Oletusalgoritmi</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Muistin puhdistus käynnistetty.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Vie</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Tallenna tarkistussummatiedosto…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Kopioi kaikki tiivisteet</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Avaa tarkistussummatiedosto…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Näytä</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Sulje</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Asenna suljettaessa</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Avaa julkaisusivu</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Mitä uutta</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Käynnistä uudelleen järjestelmänvalvojana</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Kopioi tiedot</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Suorituskyky</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Samanaikaisesti käsiteltävät tiedostot</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = automaattinen (tällä tietokoneella {0}).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Optimoi kiintolevyille</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Lukee yhden tiedoston kerrallaan, mikä on nopeampaa pyörivillä kiintolevyillä ja jaetuissa verkkokansioissa.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Sisällytä piilotetut tiedostot</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Lisää kansioita skannattaessa myös piilotetut tiedostot ja järjestelmätiedostot.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Tulokset</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Tiivisteen kirjainkoko</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Isot kirjaimet (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Pienet kirjaimet (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Tarkistussummatiedoston oletusmuoto</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Päivitykset</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Tarkista päivitykset automaattisesti</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Tarkistaa GitHubista enintään kerran päivässä sovelluksen käynnistyessä. Päivitykset ladataan vain, jos päätät asentaa ne.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows-integraatio</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Resurssienhallinnan pikavalikko</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Lisää tiedostojen ja kansioiden hiiren kakkospainikkeen valikkoon kohdat ”Luo tiiviste” ja ”Tarkista” (Windows 11:ssä kohdan ”Näytä lisää vaihtoehtoja” alle).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Tarvitaan vain tiedostoille, joita tilisi ei voi lukea. Kun sovellus on käynnissä järjestelmänvalvojana, Windows estää vetämisen ja pudottamisen Resurssienhallinnasta.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Avaa tietokansio</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU-tarkistussummatiedosto (sha256sum-muoto)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD-tarkistussummatiedosto (tunnisteellinen)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV-tiedosto (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON-tiedosto</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV-tiedosto</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Tarkistussummatiedostot</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Suuri kontrasti</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Värisokeille sopiva</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Retro</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Lasi</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Pastelli</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Oletus</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Luo tiiviste sovelluksella Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Tarkista sovelluksella Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>Jonossa</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Käyttö estetty</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Toisen ohjelman käytössä</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Aikakatkaistu</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>PÄTEVÄ (vanha CRC32-tavujärjestys)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Ei kelvollinen {0}-tiiviste</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Ladataan päivitystä… {0} %</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Päivitys asennetaan, kun Hash Tool suljetaan.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Odota, kunnes nykyinen tehtävä on valmis.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>{0} kohdetta ei voitu lisätä:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: ohitettiin {0} riviä, jotka eivät ole kelvollisia tarkistussummamerkintöjä.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} ei sisällä tarkistussummia.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>Ohitettiin ”{0}”: tarkistussummatiedostot eivät saa osoittaa verkko- tai laitepolkuihin.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Poistetaanko kaikki {0} tiedostoa luettelosta?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>{0} tiivistettä tallennettiin tiedostoon {1}.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Vietäviä laskettuja tiivisteitä ei ole vielä.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Joitakin tiedostoja ei voitu lukea, koska käyttö estettiin. Käynnistetäänkö Hash Tool uudelleen järjestelmänvalvojana ja yritetäänkö niitä uudelleen?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool on käynnissä järjestelmänvalvojana, joten Windows estää vetämisen ja pudottamisen Resurssienhallinnasta. Käytä sen sijaan painikkeita ”Lisää tiedostoja” tai ”Lisää kansio”.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} on saatavilla.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Päivitykset ovat saatavilla vain asennetussa tai siirrettävässä versiossa, joka on ladattu GitHub Releases -sivulta.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Asetustiedostoa ei voitu lukea, joten asetukset palautettiin oletuksiin. Vioittunut tiedosto säilytettiin varmuuskopiona.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Jokin meni vikaan: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Luku: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Tallenna tarkistussummatiedosto</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Avaa tarkistussummatiedostot</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Vie loki</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Vähimmäistaso</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Automaattinen vieritys</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Versio {0}</value>
     </data>
 </root>

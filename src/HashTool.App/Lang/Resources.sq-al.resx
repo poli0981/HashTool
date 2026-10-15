@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Mjeti Hash</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Gjenero Hash</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Verifiko Hash</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Cilësimet</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Përditëso</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Tema</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>Rreth</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Zhvilluesi</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Shto Skedarë...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Pastro Listën</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Pastro Hashes</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>LLOGARIT TË GJITHA</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Ngjesh (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>VERIFIKO TË GJITHA</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>Verifiko Tani</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>Kontrollo Tani</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Instalo</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Prano</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Refuzo</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Gjenero Hash &amp; Ngjesh</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Verifikim në Grup</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Kontrollo për Përditësime</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Paralajmërim për Versionin e Zhvilluesit</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>Rreth Programit</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Këshillë: Shift+C për të Llogaritur, Shift+Z për të Ngjeshur, Ctrl+F për të Shtuar.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Këshillë: lëshoni këtu skedarë ose dosje. Ctrl/⌘+O shton skedarë, Ctrl/⌘+Shift+O shton një dosje, Ctrl/⌘+Enter i llogarit të gjitha, Esc anulon.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Këshillë: Shift+A për të Verifikuar, Ctrl+F për të Shtuar, Ctrl+Shift+H për të Pastruar.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Këshillë: lëshoni këtu skedarë, dosje ose skedarë të shumave të kontrollit (SHA256SUMS, *.sha256, *.md5…). Ctrl/⌘+Enter i verifikon të gjitha, Esc anulon.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Gati</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Mostër:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Versioni aktual: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Kanali i lëshimit:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Skedarët në total: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>I qëndrueshëm (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Zhvilluesi (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Gjuha</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Tema</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Stili i temës</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Dritë/Errësirë</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Fonti</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Madhësia e fontit (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Zgjidh automatikisht fontin optimal</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Kyç si font të paracaktuar</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>Shkalla UI</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Fshih Vlerat e Hash (Siguria)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Rivendos Cilësimet</value>
     </data>
-    <data name="Settings_Other">
-        <value>Privatësia &amp; Siguria</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Cakto si të Paracaktuar</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Ngjyrë e Personalizuar e Tekstit</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>E avancuar</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Ekzekuto si Administrator</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Kërkon rinisje. Lejon qasjen në skedarët e mbrojtur.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Kufiri i Madhësisë së Skedarit të Hyrjes</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Madhësia maksimale e skedarëve për t'u përpunuar.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Koha e Mbylljes së Detyruar</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Koha (sekonda) para se aplikacioni të konsiderohet i ngrirë.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Koha e Përpunimit të Skedarit</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Anulo nëse një skedar i vetëm kërkon shumë kohë.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Veprim Emergjence</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Mbyll me forcë aplikacionin dhe anulo të gjitha detyrat menjëherë.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Mbyll me Forcë &amp; Anulo të Gjitha</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Konfigurimi</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Kyç Cilësimet (Ruaj si të paracaktuar)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Parandalon ndryshimet aksidentale. Vetëm 'Fshih Hash' mbetet e rregullueshme.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Rivendos të Gjitha Cilësimet</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Kthe në standardet e fabrikës.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Rruga e Skedarit të Konfigurimit</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Trego rrugën e plotë dhe kopjo në kujtesë.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Trego Rrugën</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Cilësimet ruhen automatikisht në config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Modaliteti i Zhvilluesit</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Aktivizo detajet e avancuara të logimit dhe mjetet e korrigjimit.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Konsola e Zhvilluesit</value>
     </data>
-    <data name="Dev_Beta">
-        <value>BETA</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Duke regjistruar</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Në pauzë</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Ruaj në Skedar</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Mos Ruaj</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Pastro Konsolën</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Kopjo të Gjitha</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Hap Dosjen e Log-ut</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Autori</value>
     </data>
-    <data name="About_Software">
-        <value>Softueri</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Libraritë e palëve të treta</value>
     </data>
-    <data name="About_Copyright">
-        <value>E Drejta e Autorit</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Një mjet i fuqishëm për të gjeneruar, verifikuar dhe ngjeshur hashet e skedarëve. Ose të paktën kështu mendoj :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>Lëshuar nën Licencën MIT.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Teknologjia</value>
     </data>
-    <data name="About_TechContent">
-        <value>Ndërtuar me C# dhe .NET 10.0.102.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>Ndërtuar me C# dhe {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>Asistencë e AI</value>
     </data>
-    <data name="About_AIContent">
-        <value>Ky softuer u zhvillua me ndihmën e AI (Gemini 3 Pro dhe Grok 4.1).</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Ky softuer u zhvillua me ndihmën e AI (Gemini 3 Pro, Grok 4.1 dhe Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Duke përpunuar ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>U krye</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Gabim: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>U anulua</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>U ruajt!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>U ngjesh!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Në pritje për hash/hyrje...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Mungon skedari origjinal!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Mungon vlera e hash-it (Fut ose ngarko skedarin)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>E VLEFSHME</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>NUK PËRPUTHET!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Skedari Hash u ngarkua</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Emri i skedarit hash nuk përputhet!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Skedari nuk përmban një hash!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Duke kontrolluar për përditësime...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>U zbulua një version i ri!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Po përdorni versionin më të fundit.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Gabim në kontrollin e përditësimit: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Duke shkarkuar dhe instaluar...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Gati (nga skedari i shumave të kontrollit)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Gabim instalimi: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Gati (Nga skedari .hash)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Skedari origjinal ka humbur!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Emri i skedarit hash nuk përputhet!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Skedari hash u vendos me sukses</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Skedari nuk përmban një hash!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Gabim në leximin e skedarit</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Rezultati</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Përpunimi përfundoi!
-            ✅ Sukses: {0}
-            ❌ Dështoi: {1}
-            ⛔ U Anulua: {2}
-        </value>
+✅ Sukses: {0}
+❌ Dështoi: {1}
+⛔ U Anulua: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>U kontrolluan {0} skedarë.
-            ✅ Përputhje: {1}
-            ❌ Mospërputhje/Gabim: {2}
-            ⛔ U Anulua: {3}
-        </value>
+✅ Përputhje: {1}
+❌ Mospërputhje/Gabim: {2}
+⛔ U Anulua: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Skedar i gabuar!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Mospërputhje e skedarit hash!
-
-            Skedari origjinal: {0}
-            Skedari i zgjedhur: {1}
-
-            Ju lutemi zgjidhni skedarin e saktë shoqërues të hash-it.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Përditësim i ri</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Versioni: {0}
-
-            Ndryshimet:
-            {1}
-
-            Kliko 'Përditëso Tani' për ta shkarkuar.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Nuk u gjetën përditësime të reja.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Gabim</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Nuk mund të lexohet ky skedar hash.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Kontrolli i Konfigurimit</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Skedari ekziston në:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Skedari nuk ekziston!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Skedari u krijua me sukses!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Rruga e konfigurimit u kopjua.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Modaliteti i Administratorit</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Ju lutemi rinisni aplikacionin që ndryshimet të hyjnë në fuqi.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Nuk mund të hapet dosja: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ PARALAJMËRIM PËR VERSIONIN E ZHVILLUESIT</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Jeni gati të kaloni në kanalin e përditësimit të Zhvilluesit (Pre-release).
-
-            Ky version mund të përmbajë gabime, të jetë i paqëndrueshëm dhe të shkaktojë humbje të të dhënave.
-
-            Unë nuk mbaj përgjegjësi për asnjë problem që lind nga përdorimi i këtij versioni.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>E kam lexuar dhe pajtohem. Marr përgjegjësi të plotë.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Ruaj Skedarin Hash</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Ruaj Skedarin e Ngjeshur</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Zgjidh Skedarët për Hash</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Zgjidh skedarin hash për: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Zgjidh Skedarët (Origjinal ose skedarin .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Zgjidh Skedarët ose Skedarët e Shumave të Kontrollit</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Ngjit ose Lësho këtu...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Sekonda</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Verifiko</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Ndal</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Hiq Skedarin</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Kopjo Hash</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Llogarit</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Pastro Hash</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Shfleto Hash</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>E Errët</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>E Ndritshme</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Sistemi</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Detyra u Ndal</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Po</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>Në rregull</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Jo</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Arkiv Zip</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Konfirmo Daljen</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Dalja do të anulojë të gjitha detyrat në vazhdim. Jeni të sigurt?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Detyra u ndal për shkak të kalimit të kohës (timeout).</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Ruaj log-un e debug në disk.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Pauzë logimin në kohë reale.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Trego Hash</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Fshih Hash</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Kopjo Rrugën</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Disku juaj është plot. Ju lutemi zgjidhni një vendndodhje tjetër :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Dukshmëria e Hash-it</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Nuk ka skedarë. Klikoni 'Shto Skedarë' për të filluar.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Lëshoni këtu skedarë ose dosje, ose klikoni „Shto Skedarë“.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Kyç këtë temë si të paracaktuar</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>U kapërcyen {0} skedarë që tejkalojnë kufirin ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Gjuha e Sistemit</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>Kthimi te cilësimi 'Automatike' kërkon një rinisje që të hyjë plotësisht në fuqi. Dëshironi të vazhdoni?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Ndryshimi i Gjuhës</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Jeni të sigurt për këtë?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Mos e shfaq më këtë paralajmërim</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Gabim në lidhjen e rrjetit. Ju lutemi kontrolloni internetin tuaj.</value>
     </data>
-    <data name="Error_Server">
-        <value>Gabim në server (5xx). Ju lutemi provoni përsëri më vonë.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Gabim i klientit (4xx). Ju lutemi kontrolloni kërkesën.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>U tejkalua kufiri i API-së së GitHub. Ju lutemi provoni përsëri më vonë.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Nuk u gjet asnjë version pre-release. Po ruhet versioni aktual.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Versioni pre-release {0} është në dispozicion.
-
-            {1}
-
-            Ky version mund të jetë i paqëndrueshëm. Dëshironi ta shkarkoni?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Pastro të Dështuarat</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>U hoqën {0} elementë.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Koha e mbetur: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Kohëzgjatja e detyrës: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Duke llogaritur...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Shto Dosje...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Dosja e zgjedhur është e zbrazët.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Zgjidh Dosjen për Skanim</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Anulo</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Kufijtë e Përpunimit</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Skedarët Maksimalë për Skanim Dosjeje</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Kufizoni numrin e skedarëve të shtuar nga një dosje për të parandaluar problemet e performancës.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Dosjet Maksimale në të njëjtën Kohë</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Kufizoni numrin e dosjeve të zgjedhura në të njëjtën kohë.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Ju mund të zgjidhni vetëm deri në {0} dosje njëherësh.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>U shtuan {0} skedarë. U kapërcyen {1} skedarë për shkak të kufirit.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Lexim: {0}/s | Shkrim: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Trego Shpejtësinë e Leximit</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Trego Shpejtësinë e Leximit/Shkrimit</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Shfaq shpejtësinë e transferimit në kohë reale gjatë operacioneve të hash-it.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Duke llogaritur Hash-in...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Të gjitha Madhësitë</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>E vogël (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>E mesme (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>E madhe (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Shumë e madhe (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Dokumentet</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Politika e Privatësisë</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Kushtet e Shërbimit</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Marrëveshja e Licencës EULA</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Mohim Përgjegjësie</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>MË_LEXO (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Logu i Ndryshimeve</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Mirënjohje</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Duke përpunuar</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Dështoi</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Kërko nga emri...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Madhësia</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>Profili GitHub</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Të gjitha</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Liro Kujtesën</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Automatike (gjuha e sistemit)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Detyro Mbledhjen e Mbeturinave (GC) për të liruar RAM-in.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Algoritmi</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Pastro Kujtesën</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Algoritmi i paracaktuar</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Filloi pastrimi i kujtesës.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Eksporto</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Ruaj Skedarin e Shumave të Kontrollit…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Kopjo Të Gjitha Hash-et</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Hap Skedarin e Shumave të Kontrollit…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Shiko</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Mbyll</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Instalo në Dalje</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Hap Faqen e Publikimit</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Çfarë ka të re</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Rinis si Administrator</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Kopjo Detajet</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Performanca</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Skedarë të përpunuar njëkohësisht</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = automatike ({0} në këtë kompjuter).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Optimizo për hard disqe</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Lexon një skedar në një kohë, gjë që është më e shpejtë në hard disqet rrotulluese dhe në dosjet e ndara në rrjet.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Përfshi skedarët e fshehur</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Gjatë skanimit të dosjeve shton edhe skedarët e fshehur dhe ata të sistemit.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Rezultatet</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Madhësia e shkronjave të hash-it</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Shkronja të mëdha (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Shkronja të vogla (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Formati i paracaktuar i skedarit të shumave të kontrollit</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Përditësimet</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Kontrollo automatikisht për përditësime</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Kontrollon GitHub-in më së shumti një herë në ditë kur niset aplikacioni. Përditësimet shkarkohen vetëm kur zgjidhni t'i instaloni.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Integrimi me Windows</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Menyja kontekstuale e Eksploruesit të skedarëve</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Shton „Gjenero Hash“ dhe „Verifiko“ në menynë e klikimit të djathtë për skedarët dhe dosjet (në Windows 11 nën „Shfaq më shumë opsione“).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Nevojitet vetëm për skedarët që llogaria juaj nuk mund t'i lexojë. Kur aplikacioni ekzekutohet si administrator, Windows bllokon tërheqjen dhe lëshimin nga Eksploruesi i skedarëve.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Hap Dosjen e të Dhënave</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>Skedar GNU i shumave të kontrollit (formati sha256sum)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>Skedar BSD i shumave të kontrollit (me etiketa)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>Skedar SFV (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>Skedar JSON</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>Skedar CSV</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Skedarët e shumave të kontrollit</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Kontrast i lartë</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>I përshtatshëm për daltonikët</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Retro</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Xham</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Pastel</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>I paracaktuar</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Gjenero Hash me Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Verifiko me Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>Në radhë</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Qasja u refuzua</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Në përdorim nga një program tjetër</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Koha mbaroi</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>E VLEFSHME (renditja e vjetër e bajteve CRC32)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Nuk është hash i vlefshëm {0}</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Po shkarkohet përditësimi… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Përditësimi do të instalohet kur të mbyllni Hash Tool.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Ju lutemi prisni derisa të përfundojë detyra aktuale.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>Elementet që nuk mund të shtoheshin ({0}):
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: u anashkaluan rreshtat që nuk janë hyrje të vlefshme shumash kontrolli ({0}).</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} nuk përmban asnjë shumë kontrolli.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>U anashkalua „{0}“: skedarët e shumave të kontrollit nuk mund të tregojnë shtigje rrjeti ose pajisjesh.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Të hiqen nga lista të gjithë skedarët ({0})?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>Hash-et ({0}) u ruajtën në {1}.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Ende nuk ka hash-e të llogaritura për t'u eksportuar.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Disa skedarë nuk mund të lexoheshin sepse qasja u refuzua. Të riniset Hash Tool si administrator dhe të provohen sërish?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool po ekzekutohet si administrator, prandaj Windows bllokon tërheqjen dhe lëshimin nga Eksploruesi i skedarëve. Përdorni në vend të kësaj „Shto Skedarë“ ose „Shto Dosje“.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} është i disponueshëm.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Përditësimet ofrohen vetëm në versionin e instaluar ose portativ nga GitHub Releases.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Skedari i cilësimeve nuk mund të lexohej dhe u rivendos në vlerat e paracaktuara. Skedari i dëmtuar u ruajt si kopje rezervë.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Diçka shkoi keq: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Leximi: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Ruaj Skedarin e Shumave të Kontrollit</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Hap Skedarët e Shumave të Kontrollit</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Eksporto Log-un</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Niveli minimal</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Lëvizje automatike</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Versioni {0}</value>
     </data>
 </root>

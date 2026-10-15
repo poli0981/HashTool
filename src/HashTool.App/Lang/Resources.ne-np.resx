@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>ह्यास उपकरण (Hash Tool)</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>ह्यास सिर्जना गर्नुहोस्</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>ह्यास प्रमाणित गर्नुहोस्</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>सेटिङहरू</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>अपडेट</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>थिम</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>बारेमा</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>विकासकर्ता</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>फाइलहरू थप्नुहोस्...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>सूची खाली गर्नुहोस्</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>ह्यासहरू खाली गर्नुहोस्</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>सबै गणना गर्नुहोस्</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>कम्प्रेस गर्नुहोस् (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>सबै प्रमाणित गर्नुहोस्</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>अहिले प्रमाणित गर्नुहोस्</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>अहिले जाँच गर्नुहोस्</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>स्थापना गर्नुहोस्</value>
     </data>
-    <data name="Btn_Accept">
-        <value>स्वीकार गर्नुहोस्</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>अस्वीकार गर्नुहोस्</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>ह्यास सिर्जना र कम्प्रेस गर्नुहोस्</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>समूह प्रमाणीकरण (Batch Check)</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>अपडेटहरू जाँच गर्नुहोस्</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>विकासकर्ता संस्करण चेतावनी</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>बारेमा</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>सुझाव: गणनाको लागि Shift+C, कम्प्रेसको लागि Shift+Z, फाइल थप्न Ctrl+F थिच्नुहोस्।</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>सुझाव: फाइल वा फोल्डरहरू यहाँ छोड्नुहोस्। फाइल थप्न Ctrl/⌘+O, फोल्डर थप्न Ctrl/⌘+Shift+O, सबै गणना गर्न Ctrl/⌘+Enter र रद्द गर्न Esc थिच्नुहोस्।</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>सुझाव: प्रमाणित गर्न Shift+A, थप्न Ctrl+F, सूची खाली गर्न Ctrl+Shift+H थिच्नुहोस्।</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>सुझाव: फाइल, फोल्डर वा चेकसम फाइलहरू (SHA256SUMS, *.sha256, *.md5…) यहाँ छोड्नुहोस्। सबै प्रमाणित गर्न Ctrl/⌘+Enter र रद्द गर्न Esc थिच्नुहोस्।</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>तयार छ</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>नमूना:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>हालको संस्करण: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>रिलिज च्यानल:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>कुल फाइलहरू: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>स्थिर (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>विकासकर्ता (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>भाषा</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>थिम</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>थिम शैली</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>उज्यालो/अँध्यारो</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>फन्ट</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>फन्ट साइज (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>भाषाको लागि उत्तम फन्ट स्वतः छान्नुहोस्</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>पूर्वनिर्धारित फन्टको रूपमा लक गर्नुहोस्</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>UI स्केल</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>ह्यास मानहरू लुकाउनुहोस् (सुरक्षा)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>सेटिङहरू रिसेट गर्नुहोस्</value>
     </data>
-    <data name="Settings_Other">
-        <value>गोपनीयता र सुरक्षा</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>पूर्वनिर्धारित रूपमा सेट गर्नुहोस्</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>कस्टम टेक्स्ट रङ</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>उन्नत (Advanced)</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>प्रशासकको रूपमा चलाउनुहोस्</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>पुनः सुरु गर्न आवश्यक छ। सुरक्षित फाइलहरू पहुँच गर्न अनुमति दिन्छ।</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>इनपुट फाइल साइज सीमा</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>प्रशोधन गर्न फाइलहरूको अधिकतम साइज।</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>जबरजस्ती बन्द गर्ने समय सीमा</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>एप ह्याङ्ग भएको मान्नु अघिको समय (सेकेन्ड)।</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>फाइल प्रशोधन समय सीमा</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>यदि एउटा फाइलले धेरै समय लिन्छ भने रद्द गर्नुहोस्।</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>आपतकालीन कार्य</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>एपलाई जबरजस्ती बन्द गर्नुहोस् र सबै कार्यहरू तुरुन्तै रद्द गर्नुहोस्।</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>जबरजस्ती बन्द र सबै रद्द गर्नुहोस्</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>कन्फिगरेसन</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>सेटिङहरू लक गर्नुहोस् (पूर्वनिर्धारित रूपमा बचत गर्नुहोस्)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>आकस्मिक परिवर्तनहरू रोक्नुहोस्। 'ह्यास लुकाउने' मात्र समायोजन गर्न सकिन्छ।</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>सबै सेटिङहरू रिसेट गर्नुहोस्</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>फ्याक्ट्री पूर्वनिर्धारितहरूमा पुनर्स्थापना गर्नुहोस्।</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>कन्फिगरेसन फाइल पथ</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>पूर्ण पथ देखाउनुहोस् र क्लिपबोर्डमा प्रतिलिपि गर्नुहोस्।</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>पथ देखाउनुहोस्</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>सेटिङहरू स्वतः config.json मा बचत हुन्छन्</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>विकासकर्ता मोड</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>उन्नत लगिङ र डिबगिङ उपकरणहरू सक्षम गर्नुहोस्।</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>विकासकर्ता कन्सोल</value>
     </data>
-    <data name="Dev_Beta">
-        <value>बेटा (BETA)</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>रेकर्डिङ हुँदैछ</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>पज गरिएको छ</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>फाइलमा बचत गर्नुहोस्</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>बचत नगर्नुहोस्</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>कन्सोल खाली गर्नुहोस्</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>सबै प्रतिलिपि गर्नुहोस्</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>लग फोल्डर खोल्नुहोस्</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>लेखक</value>
     </data>
-    <data name="About_Software">
-        <value>सफ्टवेयर</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>थर्ड-पार्टी पुस्तकालयहरू</value>
     </data>
-    <data name="About_Copyright">
-        <value>प्रतिलिपि अधिकार</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>फाइल ह्यासहरू सिर्जना गर्न, प्रमाणित गर्न र कम्प्रेस गर्न एक शक्तिशाली उपकरण।</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>MIT लाइसेन्स अन्तर्गत जारी गरिएको छ।</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>प्रविधि</value>
     </data>
-    <data name="About_TechContent">
-        <value>C# र .NET 10.0.102 सँग निर्मित।</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>{0} मा C# सँग निर्मित।</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI सहायता</value>
     </data>
-    <data name="About_AIContent">
-        <value>यो सफ्टवेयर AI (Gemini 3 Pro र Grok 4.1) को सहयोगमा विकसित गरिएको थियो।</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>यो सफ्टवेयर AI (Gemini 3 Pro, Grok 4.1 र Claude) को सहयोगमा विकसित गरिएको हो।</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>प्रशोधन हुँदैछ ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>सम्पन्न भयो</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>त्रुटि: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>रद्द गरियो</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>बचत भयो!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>कम्प्रेस भयो!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>ह्यास/इनपुटको प्रतीक्षा गर्दै...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>मूल फाइल छुटेको छ!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>ह्यास मान छुटेको छ (प्रविष्ट गर्नुहोस् वा फाइल लोड गर्नुहोस्)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>मान्य (VALID)</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>मेल खाँदैन (MISMATCH!)</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>ह्यास फाइल लोड भयो</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>ह्यास फाइलको नाम मेल खाँदैन!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>फाइलमा ह्यास समावेश छैन!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>अपडेटहरू जाँच गरिँदैछ...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>नयाँ संस्करण फेला पर्यो!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>तपाईं नवीनतम संस्करण प्रयोग गर्दै हुनुहुन्छ।</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>अपडेट जाँच त्रुटि: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>डाउनलोड र स्थापना हुँदैछ...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>तयार छ (चेकसम फाइलबाट)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>स्थापना त्रुटि: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>तयार छ (.hash फाइलबाट)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>मूल फाइल हरायो!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>ह्यास फाइलको नाम मेल खाँदैन!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>ह्यास फाइल सफलतापूर्वक ड्रप गरियो</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>फाइलमा ह्यास समावेश छैन!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>फाइल पढ्न त्रुटि</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>परिणाम</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>प्रशोधन सम्पन्न भयो!
-            ✅ सफल: {0}
-            ❌ असफल: {1}
-            ⛔ रद्द गरियो: {2}
-        </value>
+✅ सफल: {0}
+❌ असफल: {1}
+⛔ रद्द गरियो: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>{0} फाइलहरू जाँच गरियो।
-            ✅ मेल खायो: {1}
-            ❌ मेल खाएन/त्रुटि: {2}
-            ⛔ रद्द गरियो: {3}
-        </value>
+✅ मेल खायो: {1}
+❌ मेल खाएन/त्रुटि: {2}
+⛔ रद्द गरियो: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>गलत फाइल!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>ह्यास फाइल मेल खाएन!
-
-            मूल फाइल: {0}
-            चयन गरिएको फाइल: {1}
-
-            कृपया सही सम्बन्धित ह्यास फाइल चयन गर्नुहोस्।
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>नयाँ अपडेट</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>संस्करण: {0}
-
-            परिवर्तनहरू:
-            {1}
-
-            डाउनलोड गर्न 'अहिले अपडेट गर्नुहोस्' मा क्लिक गर्नुहोस्।
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>कुनै नयाँ अपडेटहरू फेला परेन।</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>त्रुटि</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>यो ह्यास फाइल पढ्न असमर्थ।</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>कन्फिगरेसन जाँच</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>फाइल यहाँ अवस्थित छ:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>फाइल अवस्थित छैन!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>फाइल सफलतापूर्वक सिर्जना गरियो!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>कन्फिगरेसन पथ प्रतिलिपि गरियो।</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>प्रशासक मोड</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>परिवर्तनहरू लागू गर्न कृपया अनुप्रयोग पुनः सुरु गर्नुहोस्।</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>फोल्डर खोल्न सकिएन: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ विकासकर्ता संस्करण चेतावनी</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>तपाईं विकासकर्ता (प्रि-रिलिज) अपडेट च्यानलमा स्विच गर्न लाग्दै हुनुहुन्छ।
-
-            यो संस्करणमा बगहरू हुन सक्छन्, अस्थिर हुन सक्छ र डेटा हराउन सक्छ।
-
-            यो संस्करण प्रयोग गर्दा उत्पन्न हुने कुनै पनि समस्याको लागि म जिम्मेवार छैन।
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>मैले पढेँ र म सहमत छु। म पूर्ण जिम्मेवारी लिन्छु।</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>ह्यास फाइल बचत गर्नुहोस्</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>कम्प्रेस गरिएको फाइल बचत गर्नुहोस्</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>ह्यास गर्न फाइलहरू चयन गर्नुहोस्</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>{0} को लागि ह्यास फाइल चयन गर्नुहोस्</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>फाइलहरू चयन गर्नुहोस् (मूल वा .hash फाइल)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>फाइलहरू वा चेकसम फाइलहरू चयन गर्नुहोस्</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>यहाँ टाँस्नुहोस् वा छोड्नुहोस्...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>सेकेन्ड</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>प्रमाणित गर्नुहोस्</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>रोक्नुहोस्</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>फाइल हटाउनुहोस्</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>ह्यास प्रतिलिपि गर्नुहोस्</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>गणना गर्नुहोस्</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>ह्यास खाली गर्नुहोस्</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>ह्यास ब्राउज गर्नुहोस्</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>अँध्यारो</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>उज्यालो</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>प्रणाली</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>कार्य रोकियो</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>हो</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>ठिक छ</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>होइन</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip अभिलेख</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>बाहिर निस्कने पुष्टि गर्नुहोस्</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>बाहिर निस्कँदा चलिरहेका सबै कार्यहरू रद्द हुनेछन्। के तपाईं निश्चित हुनुहुन्छ?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>समय सीमा (Timeout) को कारणले कार्य रोकिएको थियो।</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>डिबग लगलाई डिस्कमा बचत गर्नुहोस्।</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>वास्तविक-समय लगिङलाई पज गर्नुहोस्।</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>ह्यास देखाउनुहोस्</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>ह्यास लुकाउनुहोस्</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>पथ प्रतिलिपि गर्नुहोस्</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>तपाईंको ड्राइभ भरिएको छ। कृपया अर्को स्थान छान्नुहोस् :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>ह्यास दृश्यता</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>कुनै फाइल छैन। सुरु गर्न 'फाइलहरू थप्नुहोस्' मा क्लिक गर्नुहोस्।</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>फाइल वा फोल्डरहरू यहाँ छोड्नुहोस्, वा “फाइलहरू थप्नुहोस्” मा क्लिक गर्नुहोस्।</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>यो थिमलाई पूर्वनिर्धारित रूपमा लक गर्नुहोस्</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>सीमा ({1} {2}) नाघेका {0} फाइलहरू छोडियो:
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>प्रणाली भाषा</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>'अटो' सेटिङमा फर्कन पूर्ण रूपमा लागू हुनको लागि पुन: सुरु गर्न आवश्यक छ। के तपाइँ जारी राख्न चाहनुहुन्छ?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>भाषा परिवर्तन</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>के तपाईं यसमा निश्चित हुनुहुन्छ?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>यो चेतावनी फेरि नदेखाउनुहोस्</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>नेटवर्क जडान त्रुटि। कृपया आफ्नो इन्टरनेट जाँच गर्नुहोस्।</value>
     </data>
-    <data name="Error_Server">
-        <value>सर्भर त्रुटि (5xx)। कृपया पछि फेरि प्रयास गर्नुहोस्।</value>
-    </data>
-    <data name="Error_Client">
-        <value>क्लाइन्ट त्रुटि (4xx)। कृपया अनुरोध जाँच गर्नुहोस्।</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>GitHub API दर सीमा नाघ्यो। कृपया पछि फेरि प्रयास गर्नुहोस्।</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>कुनै प्रि-रिलिज संस्करण फेला परेन। हालको संस्करण कायम राख्दै।</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>प्रि-रिलिज संस्करण {0} उपलब्ध छ।
-
-            {1}
-
-            यो संस्करण अस्थिर हुन सक्छ। के तपाइँ डाउनलोड गर्न चाहनुहुन्छ?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>असफललाई खाली गर्नुहोस्</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>{0} वस्तुहरू हटाइयो।</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>बाँकी समय: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>कार्य अवधि: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>गणना गरिँदै...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>फोल्डर थप्नुहोस्...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>चयन गरिएको फोल्डर खाली छ।</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>स्क्यान गर्न फोल्डर चयन गर्नुहोस्</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>रद्द गर्नुहोस्</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>प्रशोधन सीमाहरू</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>प्रति फोल्डर स्क्यान अधिकतम फाइलहरू</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>कार्यसम्पादन समस्याहरू रोक्नको लागि फोल्डरबाट थपिने फाइलहरूको संख्या सीमित गर्नुहोस्।</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>एकै पटकमा अधिकतम फोल्डरहरू</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>एकैचोटि चयन गरिएका फोल्डरहरूको सङ्ख्या सीमित गर्नुहोस्।</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>तपाईं एक पटकमा {0} वटा सम्म फोल्डरहरू मात्र चयन गर्न सक्नुहुन्छ।</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>{0} फाइलहरू थपियो। सीमाको कारणले {1} फाइलहरू छोडियो।</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>पढ्ने: {0}/s | लेख्ने: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>पढ्ने गति देखाउनुहोस्</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>पढ्ने/लेख्ने गति देखाउनुहोस्</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>ह्यास सञ्चालनको समयमा वास्तविक-समय स्थानान्तरण गति प्रदर्शन गर्नुहोस्।</value>
     </data>
-    <data name="Status_Computing">
-        <value>ह्यास गणना गरिँदै...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>सबै साइजहरू</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>सानो (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>मध्यम (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>ठूलो (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>धेरै ठूलो (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>कागजातहरू</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>गोपनीयता नीति</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>सेवाका सर्तहरू</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>अन्तिम प्रयोगकर्ता लाइसेन्स सम्झौता (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>अस्वीकरण</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>README</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>परिवर्तन लग</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>आभार</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>प्रशोधन हुँदैछ</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>असफल</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>नामद्वारा खोज्नुहोस्...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>साइज</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub प्रोफाइल</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>सबै</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>मेमोरी खाली गर्नुहोस्</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>स्वचालित (प्रणालीको भाषा)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>RAM खाली गर्न गार्बेज कलेक्सन (GC) बाध्य पार्नुहोस्।</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>एल्गोरिदम</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>मेमोरी सफा गर्नुहोस्</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>पूर्वनिर्धारित एल्गोरिदम</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>मेमोरी सरसफाई सुरु गरियो।</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>निर्यात</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>चेकसम फाइल बचत गर्नुहोस्…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>सबै ह्यासहरू प्रतिलिपि गर्नुहोस्</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>चेकसम फाइल खोल्नुहोस्…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>हेर्नुहोस्</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>बन्द गर्नुहोस्</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>बाहिर निस्कँदा स्थापना गर्नुहोस्</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>रिलिज पृष्ठ खोल्नुहोस्</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>नयाँ के छ</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>प्रशासकको रूपमा पुनः सुरु गर्नुहोस्</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>विवरण प्रतिलिपि गर्नुहोस्</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>कार्यसम्पादन</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>एकैसाथ प्रशोधन हुने फाइलहरू</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = स्वचालित (यो कम्प्युटरमा {0})।</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>हार्ड ड्राइभका लागि अनुकूलन गर्नुहोस्</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>एक पटकमा एउटा मात्र फाइल पढ्छ, जुन मेकानिकल हार्ड ड्राइभ र नेटवर्क सेयरहरूमा छिटो हुन्छ।</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>लुकेका फाइलहरू समावेश गर्नुहोस्</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>फोल्डरहरू स्क्यान गर्दा लुकेका र प्रणाली फाइलहरू पनि थप्नुहोस्।</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>आउटपुट</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>ह्यास अक्षरको केस</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>ठूला अक्षर (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>साना अक्षर (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>पूर्वनिर्धारित चेकसम फाइल ढाँचा</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>अपडेटहरू</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>अपडेटहरू स्वतः जाँच गर्नुहोस्</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>एप सुरु हुँदा दिनमा बढीमा एक पटक GitHub जाँच गर्छ। तपाईंले स्थापना गर्ने छनौट गरेपछि मात्र अपडेटहरू डाउनलोड हुन्छन्।</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows एकीकरण</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>फाइल एक्सप्लोरर सन्दर्भ मेनु</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>फाइल र फोल्डरहरूको राइट-क्लिक मेनुमा “ह्यास सिर्जना गर्नुहोस्” र “प्रमाणित गर्नुहोस्” थप्छ (Windows 11 मा “थप विकल्पहरू देखाउनुहोस्” अन्तर्गत)।</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>तपाईंको खाताले पढ्न नसक्ने फाइलहरूका लागि मात्र आवश्यक छ। प्रशासकको रूपमा चलिरहेको बेला Windows ले फाइल एक्सप्लोररबाट ड्र्याग एन्ड ड्रप रोक्छ।</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>डेटा फोल्डर खोल्नुहोस्</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU चेकसम फाइल (sha256sum ढाँचा)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD चेकसम फाइल (ट्याग गरिएको)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV फाइल (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON फाइल</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV फाइल</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>चेकसम फाइलहरू</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>उच्च कन्ट्रास्ट</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>रङ्गान्ध-मैत्री</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>रेट्रो</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>सिसा</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>साइबरपंक</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>प्यास्टल</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>पूर्वनिर्धारित</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Hash Tool मार्फत ह्यास सिर्जना गर्नुहोस्</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Hash Tool मार्फत प्रमाणित गर्नुहोस्</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>लाममा</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>पहुँच अस्वीकृत</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>अर्को प्रोग्रामले प्रयोग गरिरहेको छ</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>समय सकियो</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>मान्य (पुरानो CRC32 बाइट क्रम)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>मान्य {0} ह्यास होइन</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>अपडेट डाउनलोड हुँदैछ… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Hash Tool बन्द गर्दा अपडेट स्थापना हुनेछ।</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>कृपया हालको कार्य सकिएसम्म पर्खनुहोस्।</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>{0} वटा वस्तुहरू थप्न सकिएन:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: मान्य चेकसम प्रविष्टि नभएका {0} वटा पङ्क्तिहरू छोडियो।</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} मा कुनै चेकसम छैन।</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>“{0}” छोडियो: चेकसम फाइलहरूले नेटवर्क वा डिभाइस पथलाई सङ्केत गर्न पाउँदैनन्।</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>सूचीबाट सबै {0} फाइलहरू हटाउने हो?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>{0} वटा ह्यासहरू {1} मा बचत गरियो।</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>निर्यात गर्नका लागि अहिलेसम्म कुनै गणना गरिएको ह्यास छैन।</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>पहुँच अस्वीकृत भएकाले केही फाइलहरू पढ्न सकिएन। Hash Tool लाई प्रशासकको रूपमा पुनः सुरु गरेर फेरि प्रयास गर्ने हो?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool प्रशासकको रूपमा चलिरहेको छ, त्यसैले Windows ले फाइल एक्सप्लोररबाट ड्र्याग एन्ड ड्रप रोक्छ। यसको सट्टा “फाइलहरू थप्नुहोस्” वा “फोल्डर थप्नुहोस्” प्रयोग गर्नुहोस्।</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} उपलब्ध छ।</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>अपडेटहरू GitHub Releases बाट लिइएको स्थापित वा पोर्टेबल संस्करणमा मात्र उपलब्ध छन्।</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>तपाईंको सेटिङ फाइल पढ्न सकिएन, त्यसैले यसलाई पूर्वनिर्धारितमा रिसेट गरियो। बिग्रिएको फाइललाई ब्याकअपको रूपमा राखिएको छ।</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>केही गडबड भयो: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>पढ्ने गति: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>चेकसम फाइल बचत गर्नुहोस्</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>चेकसम फाइलहरू खोल्नुहोस्</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>लग निर्यात गर्नुहोस्</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>न्यूनतम स्तर</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>स्वतः स्क्रोल</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>संस्करण {0}</value>
     </data>
 </root>

@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Хэш хэрэгсэл</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Хэш үүсгэх</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Хэш шалгах</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Тохиргоо</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Шинэчлэх</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Загвар</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>Тухай</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Хөгжүүлэгч</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Файл нэмэх...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Жагсаалт цэвэрлэх</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Хэшүүдийг цэвэрлэх</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>БҮГДИЙГ ТООЦООЛОХ</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Шахах (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>БҮГДИЙГ ШАЛГАХ</value>
     </data>
-    <data name="Btn_CheckNow">
+    <data name="Btn_CheckNow" xml:space="preserve">
         <value>Одоо шалгах</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Суулгах</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Зөвшөөрөх</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Татгалзах</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Хэш үүсгэх болон Шахах</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Багцаар шалгах</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Шинэчлэлт шалгах</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Хөгжүүлэгчийн хувилбарын анхааруулга</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>Тухай</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Зөвлөгөө: Shift+C Тооцоолох, Shift+Z Шахах, Ctrl+F Файл нэмэх.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Зөвлөгөө: файл эсвэл хавтсыг энд чирж оруулна уу. Ctrl/⌘+O файл нэмэх, Ctrl/⌘+Shift+O хавтас нэмэх, Ctrl/⌘+Enter бүгдийг тооцоолох, Esc цуцлах.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Зөвлөгөө: Shift+A Шалгах, Ctrl+F Файл нэмэх, Ctrl+Shift+H Жагсаалт цэвэрлэх.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Зөвлөгөө: файл, хавтас эсвэл хяналтын нийлбэрийн файлыг (SHA256SUMS, *.sha256, *.md5…) энд чирж оруулна уу. Ctrl/⌘+Enter бүгдийг шалгах, Esc цуцлах.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Бэлэн</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Загвар:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Одоогийн хувилбар: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Гаргах суваг:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Нийт файл: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Тогтвортой (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Хөгжүүлэгч (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Хэл</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Загвар</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Загварын хэв маяг</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Цайвар/Бараан</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Фонт</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Фонтын хэмжээ (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Хэлэнд тохирох фонтыг автоматаар сонгох</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Үндсэн фонтоор түгжих</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>Дэлгэцийн хэмжээс</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Хэшийн утгыг нуух (Аюулгүй байдал)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Тохиргоог дахин тохируулах</value>
     </data>
-    <data name="Settings_Other">
-        <value>Нууцлал болон Аюулгүй байдал</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Үндсэн болгох</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Текстний өнгө</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Нарийвчилсан</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Администратороор ажиллуулах</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Дахин эхлүүлэх шаардлагатай. Хамгаалагдсан файлд хандахыг зөвшөөрнө.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Оруулах файлын хэмжээний хязгаар</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Боловсруулах файлын дээд хэмжээ.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Хүчээр гарах хугацаа</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Апп гацсан гэж үзэх хүртэлх хугацаа (секунд).</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Файл боловсруулах хугацаа</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Нэг файл хэт их хугацаа шаардвал цуцлах.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Яаралтай үйлдэл</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Аппыг хүчээр хааж, бүх үйлдлийг нэн даруй цуцлах.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Хүчээр гарах &amp; Бүгдийг цуцлах</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Тохиргоо</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Тохиргоог түгжих (Үндсэн болгож хадгалах)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Санамсаргүй өөрчлөлтөөс сэргийлэх. Зөвхөн 'Хэш нуух' өөрчлөгдөнө.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Бүх тохиргоог дахин тохируулах</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Үйлдвэрийн тохиргоонд буцаах.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Тохиргооны файлын зам</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Бүрэн замыг харуулж, санах ойд хуулах.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Зам харуулах</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Тохиргоог config.json-д автоматаар хадгална</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Хөгжүүлэгчийн горим</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Нарийвчилсан бүртгэл болон дибаг хийх хэрэгслүүдийг идэвхжүүлэх.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Хөгжүүлэгчийн консол</value>
     </data>
-    <data name="Dev_Beta">
-        <value>БЕТА</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Бичиж байна</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Түр зогссон</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Файлд хадгалах</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Хадгалахгүй</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Консол цэвэрлэх</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Бүгдийг хуулах</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Лог хавтас нээх</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Зохиогч</value>
     </data>
-    <data name="About_Software">
-        <value>Програм хангамж</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Гуравдагч талын сангууд</value>
     </data>
-    <data name="About_Copyright">
-        <value>Зохиогчийн эрх</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Файлын хэш үүсгэх, шалгах, шахах хүчирхэг хэрэгсэл. Эсвэл би тэгж бодож байна :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>MIT лицензийн дагуу гаргасан.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Технологи</value>
     </data>
-    <data name="About_TechContent">
-        <value>C# болон .NET 10.0.102 ашиглан бүтээсэн.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>{0} дээр C# хэлээр бүтээсэн.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI тусламж</value>
     </data>
-    <data name="About_AIContent">
-        <value>Энэхүү программыг AI (Gemini 3 Pro болон Grok 4.1) тусламжтайгаар хөгжүүлсэн.</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Энэхүү программыг AI (Gemini 3 Pro, Grok 4.1 болон Claude) тусламжтайгаар хөгжүүлсэн.</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Боловсруулж байна ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Дууссан</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Алдаа: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Цуцлагдсан</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Хадгалагдсан!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Шахагдсан!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Хэш/Оролтыг хүлээж байна...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Эх файл алга байна!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Хэшийн утга алга (Оруулах эсвэл файл ачаална уу)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>ХҮЧИНТЭЙ</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>ТААРАХГҮЙ БАЙНА!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Хэш файл ачаалагдсан</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Хэш файлын нэр таарахгүй байна!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Файлд хэш алга!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Шинэчлэлтүүдийг шалгаж байна...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Шинэ хувилбар олдлоо!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Та хамгийн сүүлийн хувилбарыг ашиглаж байна.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Шинэчлэлт шалгах алдаа: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Татаж аваад суулгаж байна...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Бэлэн (хяналтын нийлбэрийн файлаас)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Суулгах алдаа: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Бэлэн (.hash файлаас)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Эх файл устсан байна!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Хэш файлын нэр таарахгүй байна!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Хэш файл амжилттай орлоо</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Файлд хэш алга!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Файл унших алдаа</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Үр дүн</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Боловсруулалт дууслаа!
-            ✅ Амжилттай: {0}
-            ❌ Амжилтгүй: {1}
-            ⛔ Цуцлагдсан: {2}
-        </value>
+✅ Амжилттай: {0}
+❌ Амжилтгүй: {1}
+⛔ Цуцлагдсан: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>{0} файл шалгагдсан.
-            ✅ Таарсан: {1}
-            ❌ Таараагүй/Алдаа: {2}
-            ⛔ Цуцлагдсан: {3}
-        </value>
+✅ Таарсан: {1}
+❌ Таараагүй/Алдаа: {2}
+⛔ Цуцлагдсан: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Буруу файл!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Хэш файл таарахгүй байна!
-
-            Эх файл: {0}
-            Сонгосон файл: {1}
-
-            Тохирох хэш файлыг сонгоно уу.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Шинэ шинэчлэлт</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Хувилбар: {0}
-
-            Өөрчлөлтүүд:
-            {1}
-
-            Татаж авахын тулд 'Одоо шинэчлэх'-ийг дарна уу.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Шинэ хувилбар олдсонгүй.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Алдаа</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Энэ хэш файлыг унших боломжгүй байна.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Тохиргоог шалгах</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Файл энд байна:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Файл алга байна!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Файл амжилттай үүсгэгдлээ!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Тохиргооны зам хуулагдлаа.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Администраторын горим</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Өөрчлөлтүүдийг хэрэгжүүлэхийн тулд аппыг дахин эхлүүлнэ үү.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Хавтас нээх боломжгүй: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ХӨГЖҮҮЛЭГЧИЙН ХУВИЛБАРЫН АНХААРУУЛГА</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Та Хөгжүүлэгчийн (Pre-release) шинэчлэлтийн суваг руу шилжих гэж байна.
-
-            Энэ хувилбар алдаатай, тогтворгүй байж болох бөгөөд өгөгдөл алдагдахад хүргэж болзошгүй.
-
-            Энэ хувилбарыг ашигласнаас үүдэн гарах аливаа асуудалд би хариуцлага хүлээхгүй.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Би уншиж танилцсан бөгөөд зөвшөөрч байна. Би бүрэн хариуцлага хүлээнэ.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Хэш файл хадгалах</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Шахсан файл хадгалах</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Хэш хийх файлуудаа сонгоно уу</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Хэш файл сонгох: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Файл сонгох (Эх файл эсвэл .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Файл эсвэл хяналтын нийлбэрийн файл сонгох</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Энд буулгах эсвэл чирж авчрах...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Секунд</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Шалгах</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Зогсоох</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Файл хасах</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Хэш хуулах</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Тооцоолох</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Хэш цэвэрлэх</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Хэш хайх</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Бараан</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Цайвар</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Систем</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Үйлдэл зогссон</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Тийм</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>OK</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Үгүй</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip архив</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Гарахыг баталгаажуулах</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Гарах нь одоо хийгдэж буй бүх үйлдлийг цуцлах болно. Та итгэлтэй байна уу?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Хугацаа дууссан тул үйлдэл зогссон.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Дибаг логийг дискэнд хадгалах.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Бодит хугацааны бүртгэлийг түр зогсоох.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Хэш харуулах</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Хэш нуух</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Зам хуулах</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Таны диск дүүрсэн байна. Өөр газар сонгоно уу :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Хэш харагдац</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Файл алга. Эхлэхийн тулд 'Файл нэмэх'-ийг дарна уу.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Файл эсвэл хавтсыг энд чирж оруулна уу, эсвэл «Файл нэмэх» товчийг дарна уу.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Энэ загварыг үндсэн болгож түгжих</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>Хязгаараас хэтэрсэн ({1} {2}) {0} файлыг алгаслаа:
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Системийн хэл</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>'Автомат' тохиргоо руу буцахад бүрэн хэрэгжихийн тулд дахин эхлүүлэх шаардлагатай. Үргэлжлүүлэх үү?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Хэл солих</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Та үүнд итгэлтэй байна уу?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Энэ анхааруулгыг дахин харуулахгүй</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Сүлжээний холболтын алдаа. Интернэтээ шалгана уу.</value>
     </data>
-    <data name="Error_Server">
-        <value>Серверийн алдаа (5xx). Дараа дахин оролдоно уу.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Үйлчлүүлэгчийн алдаа (4xx). Хүсэлтээ шалгана уу.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>GitHub API хязгаар хэтэрсэн. Дараа дахин оролдоно уу.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Pre-release хувилбар олдсонгүй. Одоогийн хувилбарыг хадгалж байна.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Pre-release хувилбар {0} бэлэн байна.
-
-            {1}
-
-            Энэ хувилбар тогтворгүй байж болзошгүй. Та татаж авахыг хүсэж байна уу?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Амжилтгүй болсонг цэвэрлэх</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>{0} зүйлийг устгалаа.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Үлдсэн хугацаа: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Үйлдлийн хугацаа: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Тооцоолж байна...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Хавтас нэмэх...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Сонгосон хавтас хоосон байна.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Скан хийх хавтас сонгох</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Цуцлах</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Боловсруулах хязгаарлалт</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Хавтас скан хийх хамгийн их файл</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Гүйцэтгэлийн асуудлаас урьдчилан сэргийлэхийн тулд хавтаснаас нэмэх файлын тоог хязгаарлах.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Нэг удаад сонгох хавтас</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Нэгэн зэрэг сонгох хавтсуудын тоог хязгаарлах.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Та нэг дор хамгийн ихдээ {0} хавтас сонгох боломжтой.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>{0} файл нэмэгдлээ. Хязгаарлалтын улмаас {1} файлыг алгаслаа.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Унших: {0}/s | Бичих: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Унших хурдыг харуулах</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Унших/Бичих хурд харуулах</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Хэш хийх үед дамжуулах хурдыг бодит цагт харуулах.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Хэш тооцоолж байна...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Бүх хэмжээ</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Жижиг (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Дунд (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Том (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Маш том (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Баримт бичиг</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Нууцлалын бодлого</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Үйлчилгээний нөхцөл</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Эцсийн хэрэглэгчийн лицензийн гэрээ (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Хариуцлагаас татгалзах</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>README</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Өөрчлөлтийн бүртгэл</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Талархал</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Боловсруулж байна</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Амжилтгүй</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Нэрээр хайх...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Хэмжээ</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub Профайл</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Бүгд</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Санах ой суллах</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Автомат (системийн хэл)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>RAM-г суллахын тулд Хог цуглуулагчийг (GC) хүчээр ажиллуулах.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Алгоритм</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Санах ой цэвэрлэх</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Үндсэн алгоритм</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Санах ойг цэвэрлэх үйл явц эхэллээ.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Экспортлох</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Хяналтын нийлбэрийн файл хадгалах…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Бүх хэшийг хуулах</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Хяналтын нийлбэрийн файл нээх…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Харах</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Хаах</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Гарахад суулгах</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Хувилбарын хуудсыг нээх</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Шинэ зүйлс</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Администратороор дахин эхлүүлэх</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Дэлгэрэнгүйг хуулах</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Гүйцэтгэл</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Зэрэг боловсруулах файлын тоо</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = автомат (энэ компьютер дээр {0}).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Хатуу дискэнд зориулж оновчлох</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Файлуудыг нэг нэгээр нь уншдаг тул эргэлддэг хатуу диск болон сүлжээний хавтсанд илүү хурдан ажиллана.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Далд файлуудыг оруулах</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Хавтас скан хийхдээ далд болон системийн файлуудыг мөн нэмнэ.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Гаралт</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Хэшийн үсгийн хэлбэр</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Том үсэг (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Жижиг үсэг (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Хяналтын нийлбэрийн файлын үндсэн формат</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Шинэчлэлт</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Шинэчлэлтийг автоматаар шалгах</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Программ эхлэх үед GitHub дээр шинэчлэлт байгаа эсэхийг өдөрт нэгээс илүүгүй удаа шалгана. Шинэчлэлтийг зөвхөн та суулгахаар сонгосон үед татаж авна.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows интеграц</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>File Explorer программын контекст цэс</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Файл болон хавтасны контекст цэсэнд «Хэш үүсгэх», «Шалгах» гэсэн сонголтыг нэмнэ (Windows 11 дээр «Илүү олон сонголт харуулах» дотор).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Зөвхөн таны хэрэглэгчийн бүртгэл уншиж чадахгүй файлуудад хэрэгтэй. Администратороор ажиллаж байх үед Windows нь File Explorer программаас чирж оруулахыг хориглоно.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Өгөгдлийн хавтас нээх</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU хяналтын нийлбэрийн файл (sha256sum формат)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD хяналтын нийлбэрийн файл (шошготой)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV файл (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON файл</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV файл</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Хяналтын нийлбэрийн файлууд</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Өндөр контраст</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Өнгөний харалганд ээлтэй</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Ретро</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Шил</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Киберпанк</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Пастел</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Үндсэн</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Hash Tool ашиглан хэш үүсгэх</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Hash Tool ашиглан шалгах</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>Дараалалд</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Хандах эрхгүй</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Өөр программ ашиглаж байна</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Хугацаа хэтэрсэн</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>ХҮЧИНТЭЙ (хуучин CRC32 байтын дараалал)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Хүчинтэй {0} хэш биш</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Шинэчлэлтийг татаж байна… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Та Hash Tool программыг хаахад шинэчлэлт суулгагдана.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Одоогийн ажил дуусах хүртэл хүлээнэ үү.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>{0} зүйлийг нэмж чадсангүй:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: хяналтын нийлбэрийн хүчинтэй бичлэг биш {0} мөрийг алгаслаа.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} файлд хяналтын нийлбэр алга.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>«{0}» алгасагдлаа: хяналтын нийлбэрийн файл сүлжээний эсвэл төхөөрөмжийн зам руу заах ёсгүй.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Жагсаалтаас бүх {0} файлыг хасах уу?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>{0} хэшийг хадгаллаа: {1}.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Экспортлох тооцоолсон хэш одоогоор алга.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Хандах эрхгүй тул зарим файлыг уншиж чадсангүй. Hash Tool программыг администратороор дахин эхлүүлээд эдгээр файлыг ахин оролдох уу?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool администратороор ажиллаж байгаа тул Windows нь File Explorer программаас чирж оруулахыг хориглож байна. Оронд нь «Файл нэмэх» эсвэл «Хавтас нэмэх» товчийг ашиглана уу.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} хувилбар гарлаа.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Шинэчлэлт зөвхөн GitHub Releases дээрх суулгах эсвэл зөөврийн хувилбарт боломжтой.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Тохиргооны файлыг уншиж чадаагүй тул үндсэн тохиргоонд буцаалаа. Гэмтсэн файлыг нөөц хуулбар болгон хадгалсан.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Ямар нэг алдаа гарлаа: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Унших: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Хяналтын нийлбэрийн файл хадгалах</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Хяналтын нийлбэрийн файлууд нээх</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Лог экспортлох</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Хамгийн бага түвшин</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Автомат гүйлгэх</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Хувилбар {0}</value>
     </data>
 </root>

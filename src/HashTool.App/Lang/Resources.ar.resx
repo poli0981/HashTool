@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Hash Tool</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>توليد الهاش</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>التحقق من الهاش</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>الإعدادات</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>تحديث</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>المظهر</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>حول</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>المطور</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>إضافة ملفات...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>مسح القائمة</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>مسح الهاش</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>حساب الكل</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>ضغط (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>تحقق من الكل</value>
     </data>
-    <data name="Btn_CheckNow">
+    <data name="Btn_CheckNow" xml:space="preserve">
         <value>تحقق الآن</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>تثبيت</value>
     </data>
-    <data name="Btn_Accept">
-        <value>قبول</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>رفض</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>توليد الهاش وضغط الملفات</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>التحقق المجمع</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>التحقق من وجود تحديثات</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>تحذير نسخة المطورين</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>حول البرنامج</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>تلميح: Shift+C لحساب الكل، Shift+Z للضغط، Ctrl+F لإضافة ملفات.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>تلميح: أفلت الملفات أو المجلدات هنا. Ctrl/⌘+O لإضافة ملفات، Ctrl/⌘+Shift+O لإضافة مجلد، Ctrl/⌘+Enter لحساب الكل، Esc للإلغاء.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>تلميح: Shift+A للتحقق من الكل، Ctrl+F لإضافة ملفات، Ctrl+Shift+H لمسح القائمة.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>تلميح: أفلت هنا الملفات أو المجلدات أو ملفات المجموع الاختباري (مثل SHA256SUMS و *.sha256 و *.md5). Ctrl/⌘+Enter للتحقق من الكل، Esc للإلغاء.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>جاهز</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>عينة:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>الإصدار الحالي: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>قناة الإصدار:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>إجمالي الملفات: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>مستقر (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>نسخة المطورين (Dev)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>الغة</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>السمة</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>نمط المظهر</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>فاتح/داكن</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>الخط</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>حجم الخط (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>اختيار الخط الأمثل للغة تلقائياً</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>تثبيت كخط افتراضي</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>مقياس واجهة المستخدم</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>إخفاء قيم الهاش (أمان)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>إعادة تعيين الإعدادات</value>
     </data>
-    <data name="Settings_Other">
-        <value>الخصوصية والأمان</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>تعيين كافتراضي</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>لون نص مخصص</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>متقدم</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>تشغيل كمسؤول</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>يتطلب إعادة التشغيل. يسمح بالوصول إلى الملفات المحمية.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>حد حجم ملف الإدخال</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>الحد الأقصى لحجم الملفات المراد معالجتها.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>مهلة الإنهاء الإجباري</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>الوقت (بالثواني) قبل اعتبار التطبيق متجمداً.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>مهلة معالجة الملف</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>إلغاء الأمر إذا استغرق ملف واحد وقتًا طويلاً.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>إجراء طوارئ</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>إجبار التطبيق على الإغلاق وإلغاء جميع المهام فوراً.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>إغلاق إجباري وإلغاء الكل</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>التكوين (Configuration)</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>قفل الإعدادات (حفظ كافتراضي)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>منع التغييرات العرضية. يمكن تعديل 'إخفاء الهاش' فقط.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>إعادة تعيين جميع الإعدادات</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>استعادة إعدادات المصنع الافتراضية.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>مسار ملف التكوين</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>إظهار المسار الكامل والنسخ إلى الحافظة.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>إظهار المسار</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>يتم حفظ الإعدادات تلقائياً في config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>وضع المطور</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>تفعيل التسجيل المتقدم وأدوات التصحيح.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>وحدة تحكم المطور</value>
     </data>
-    <data name="Dev_Beta">
-        <value>بيتا</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>جاري التسجيل</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>متوقف مؤقتاً</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>حفظ إلى ملف</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>لا تحفظ</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>مسح وحدة التحكم</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>نسخ الكل</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>فتح مجلد السجلات</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>المؤلف</value>
     </data>
-    <data name="About_Software">
-        <value>البرنامج</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>مكتبات الطرف الثالث</value>
     </data>
-    <data name="About_Copyright">
-        <value>حقوق النشر</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>أداة قوية لتوليد، التحقق من، وضغط هاش الملفات. أو هكذا أعتقد :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>تم الإصدار بموجب ترخيص MIT.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>التقنية</value>
     </data>
-    <data name="About_TechContent">
-        <value>مبني باستخدام C# و .NET 10.0.102.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>مبني بلغة C# على {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>مساعدة الذكاء الاصطناعي</value>
     </data>
-    <data name="About_AIContent">
-        <value>تم تطوير هذا البرنامج بمساعدة الذكاء الاصطناعي (Gemini 3 Pro و Grok 4.1).</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>تم تطوير هذا البرنامج بمساعدة الذكاء الاصطناعي (Gemini 3 Pro و Grok 4.1 و Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>جاري المعالجة ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>اكتمل</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>خطأ: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>تم الإلغاء</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>تم الحفظ!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>تم الضغط!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>في انتظار الهاش/المدخلات...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>الملف الأصلي مفقود!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>قيمة الهاش مفقودة (أدخل أو حمل ملف .hash)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>صحيح (VALID)</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>غير متطابق (MISMATCH!)</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>تم تحميل ملف الهاش</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>اسم ملف الهاش غير متطابق!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>الملف لا يحتوي على هاش!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>جاري التحقق من التحديثات...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>تم اكتشاف إصدار جديد!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>أنت تستخدم أحدث إصدار.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>خطأ في التحقق من التحديث: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>جاري التنزيل والتثبيت...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>جاهز (من ملف المجموع الاختباري)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>خطأ في التثبيت: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>جاهز (من ملف .hash)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>فُقد الملف الأصلي!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>اسم ملف الهاش غير متطابق!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>تم إفلات ملف الهاش بنجاح</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>الملف لا يحتوي على هاش!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>خطأ في قراءة الملف</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>النتيجة</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>اكتملت المعالجة!
-            ✅ نجاح: {0}
-            ❌ فشل: {1}
-            ⛔ إلغاء: {2}
-        </value>
+✅ نجاح: {0}
+❌ فشل: {1}
+⛔ إلغاء: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>تم فحص {0} ملفات.
-            ✅ تطابق: {1}
-            ❌ عدم تطابق/خطأ: {2}
-            ⛔ إلغاء: {3}
-        </value>
+✅ تطابق: {1}
+❌ عدم تطابق/خطأ: {2}
+⛔ إلغاء: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>ملف خاطئ!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>عدم تطابق ملف الهاش!
-
-            الملف الأصلي: {0}
-            الملف المحدد: {1}
-
-            يرجى تحديد ملف الهاش الصحيح المصاحب.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>تحديث جديد</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>الإصدار: {0}
-
-            التغييرات:
-            {1}
-
-            انقر فوق 'تحديث الآن' للتنزيل.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>لم يتم العثور على تحديثات جديدة.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>خطأ</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>غير قادر على قراءة ملف الهاش هذا.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>فحص التكوين</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>الملف موجود في:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>الملف غير موجود!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>تم إنشاء الملف بنجاح!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>تم نسخ مسار التكوين.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>وضع المسؤول</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>يرجى إعادة تشغيل التطبيق لتطبيق التغييرات.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>لا يمكن فتح المجلد: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ تحذير نسخة المطورين</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>أنت على وشك التبديل إلى قناة تحديث المطورين (ما قبل الإصدار).
-
-            قد يحتوي هذا الإصدار على أخطاء، ويكون غير مستقر، وقد يتسبب في فقدان البيانات.
-
-            أنا لست مسؤولاً عن أي مشاكل تنشأ عن استخدام هذا الإصدار.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>لقد قرأت وأوافق. أتحمل كامل المسؤولية.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>حفظ ملف الهاش</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>حفظ الملف المضغوط</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>اختر ملفات للهاش</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>اختر ملف هاش لـ: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>اختر الملفات (الأصلية أو ملف .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>اختر الملفات أو ملفات المجموع الاختباري</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>الصق أو أفلت هنا...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>ثواني</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>تحقق</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>توقف</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>إزالة الملف</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>نسخ الهاش</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>حساب</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>مسح الهاش</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>تصفح الهاش</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>داكن</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>فاتح</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>النظام</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>تم إيقاف المهمة</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>نعم</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>موافق</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>لا</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>أرشيف Zip</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>تأكيد الخروج</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>الخروج سيلغي جميع المهام الجارية. هل أنت متأكد؟</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>تم إيقاف المهمة بسبب المهلة.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>حفظ سجل التصحيح إلى القرص.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>إيقاف التسجيل في الوقت الحقيقي مؤقتاً.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>إظهار الهاش</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>إخفاء الهاش</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>نسخ المسار</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>محرك الأقراص ممتلئ. يرجى اختيار موقع آخر :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>رؤية الهاش</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>لا توجد ملفات. انقر فوق 'إضافة ملفات' للبدء.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>أفلت الملفات أو المجلدات هنا، أو انقر فوق «إضافة ملفات».</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>قفل هذا المظهر كافتراضي</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>تم تخطي {0} ملفات تتجاوز الحد ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>لغة النظام</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>العودة إلى الإعداد 'تلقائي' تتطلب إعادة التشغيل لتأخذ مفعولها الكامل. هل تريد الاستمرار؟</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>تغيير اللغة</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>هل أنت متأكد من ذلك؟</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>لا تظهر هذا التنبيه مرة أخرى</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>خطأ في الاتصال بالشبكة. يرجى التحقق من اتصال الإنترنت الخاص بك.</value>
     </data>
-    <data name="Error_Server">
-        <value>خطأ في الخادم (5xx). يرجى المحاولة مرة أخرى لاحقاً.</value>
-    </data>
-    <data name="Error_Client">
-        <value>خطأ العميل (4xx). يرجى التحقق من الطلب.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>تم تجاوز حد معدل GitHub API. يرجى المحاولة مرة أخرى لاحقاً.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>لم يتم العثور على نسخة ما قبل الإصدار. الإبقاء على الإصدار الحالي.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>نسخة ما قبل الإصدار {0} متوفرة.
-
-            {1}
-
-            قد تكون هذه النسخة غير مستقرة. هل تريد التنزيل؟
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>مسح الفاشلة</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>تمت إزالة {0} عنصر.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>الوقت المتبقي: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>مدة المهمة: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>جاري الحساب...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>إضافة مجلد...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>المجلد المحدد فارغ.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>حدد مجلداً للمسح</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>إلغاء</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>حدود المعالجة</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>أقصى عدد ملفات لكل فحص مجلد</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>تحديد عدد الملفات المضافة من مجلد لمنع مشاكل الأداء.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>أقصى عدد مجلدات لكل نقرة</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>تحديد عدد المجلدات المحددة في وقت واحد.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>يمكنك تحديد ما يصل إلى {0} مجلدات فقط في المرة الواحدة.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>تمت إضافة {0} ملفات. تم تخطي {1} ملفات بسبب الحد.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>قراءة: {0}/s | كتابة: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>إظهار سرعة القراءة</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>إظهار سرعة القراءة/الكتابة</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>عرض سرعة النقل في الوقت الفعلي أثناء عمليات الهاش.</value>
     </data>
-    <data name="Status_Computing">
-        <value>جاري حساب الهاش...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>كل الأحجام</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>صغير (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>متوسط (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>كبير (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>كبير جداً (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>وثائق</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>سياسة الخصوصية</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>شروط الخدمة</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>اتفاقية ترخيص المستخدم النهائي</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>إخلاء المسؤولية</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>اقرأني (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>سجل التغييرات</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>شكر وتقدير</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>يعالج</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>فشل</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>بحث بالاسم...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>الحجم</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>ملف GitHub الشخصي</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>الكل</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>تحرير الذاكرة</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>تلقائي (لغة النظام)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>فرض جمع البيانات المهملة (GC) لتحرير الذاكرة.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>الخوارزمية</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>تنظيف الذاكرة</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>الخوارزمية الافتراضية</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>تم بدء تنظيف الذاكرة.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>تصدير</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>حفظ ملف المجموع الاختباري…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>نسخ جميع قيم الهاش</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>فتح ملف المجموع الاختباري…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>عرض</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>إغلاق</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>التثبيت عند الخروج</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>فتح صفحة الإصدار</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>ما الجديد</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>إعادة التشغيل كمسؤول</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>نسخ التفاصيل</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>الأداء</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>عدد الملفات المعالجة في وقت واحد</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = تلقائي ({0} على هذا الكمبيوتر).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>تحسين الأداء للأقراص الصلبة</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>يقرأ ملفاً واحداً في كل مرة، وهذا أسرع على الأقراص الصلبة الدوّارة ومجلدات الشبكة المشتركة.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>تضمين الملفات المخفية</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>إضافة الملفات المخفية وملفات النظام أيضاً عند فحص المجلدات.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>الإخراج</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>حالة أحرف الهاش</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>أحرف كبيرة (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>أحرف صغيرة (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>التنسيق الافتراضي لملف المجموع الاختباري</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>التحديثات</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>التحقق من وجود تحديثات تلقائياً</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>يتحقق من GitHub مرة واحدة يومياً على الأكثر عند بدء تشغيل البرنامج. لا يتم تنزيل التحديثات إلا عندما تختار تثبيتها.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>التكامل مع Windows</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>قائمة السياق في مستكشف الملفات</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>يضيف «توليد الهاش» و«التحقق» إلى قائمة النقر بزر الماوس الأيمن للملفات والمجلدات (في Windows 11 ضمن «إظهار المزيد من الخيارات»).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>مطلوب فقط للملفات التي لا يستطيع حسابك قراءتها. أثناء التشغيل كمسؤول، يمنع Windows السحب والإفلات من مستكشف الملفات.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>فتح مجلد البيانات</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>ملف مجموع اختباري GNU (بتنسيق sha256sum)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>ملف مجموع اختباري BSD (موسوم)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>ملف SFV (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>ملف JSON</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>ملف CSV</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>ملفات المجموع الاختباري</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>تباين عالٍ</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>مناسب لعمى الألوان</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>ريترو</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>زجاجي</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>سايبربانك</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>باستيل</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>افتراضي</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>توليد الهاش باستخدام Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>التحقق باستخدام Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>في قائمة الانتظار</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>تم رفض الوصول</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>قيد الاستخدام من قِبل برنامج آخر</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>انتهت المهلة</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>صحيح (ترتيب بايتات CRC32 القديم)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>قيمة هاش {0} غير صالحة</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>جاري تنزيل التحديث… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>سيتم تثبيت التحديث عند إغلاق Hash Tool.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>يرجى الانتظار حتى تنتهي المهمة الحالية.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>تعذرت إضافة {0} من العناصر:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: تم تخطي {0} من الأسطر لأنها ليست إدخالات مجموع اختباري صالحة.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>لا يحتوي الملف {0} على أي مجاميع اختبارية.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>تم تخطي «{0}»: لا يُسمح لملفات المجموع الاختباري بالإشارة إلى مسارات الشبكة أو الأجهزة.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>هل تريد إزالة جميع الملفات ({0}) من القائمة؟</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>تم حفظ {0} من قيم الهاش في {1}.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>لا توجد قيم هاش محسوبة لتصديرها بعد.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>تعذرت قراءة بعض الملفات بسبب رفض الوصول. هل تريد إعادة تشغيل Hash Tool كمسؤول والمحاولة مرة أخرى؟</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>يعمل Hash Tool كمسؤول، لذلك يمنع Windows السحب والإفلات من مستكشف الملفات. استخدم «إضافة ملفات» أو «إضافة مجلد» بدلاً من ذلك.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>الإصدار {0} من Hash Tool متاح.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>التحديثات متاحة فقط في الإصدار المثبت أو المحمول من صفحة الإصدارات على GitHub.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>تعذرت قراءة ملف الإعدادات، لذا تمت إعادة تعيينه إلى القيم الافتراضية. تم الاحتفاظ بالملف التالف كنسخة احتياطية.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>حدث خطأ ما: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>القراءة: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>حفظ ملف المجموع الاختباري</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>فتح ملفات المجموع الاختباري</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>تصدير السجل</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>أدنى مستوى</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>التمرير التلقائي</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>الإصدار {0}</value>
     </data>
 </root>

@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Herramienta Hash</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Generar Hash</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Verificar Hash</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Ajustes</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Actualizar</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Tema</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>Acerca de</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Desarrollador</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Añadir archivos...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Borrar lista</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Borrar hashes</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>CALCULAR TODO</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Comprimir (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>VERIFICAR TODO</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>Verificar ahora</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>Comprobar ahora</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Instalar</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Aceptar</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Rechazar</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Generar Hash y Comprimir</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Verificación por lotes</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Comprobar actualizaciones</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Advertencia de versión Dev</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>Acerca de</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Consejo: Shift+C para Calcular, Shift+Z para Comprimir, Ctrl+F para Añadir.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Consejo: arrastre aquí archivos o carpetas. Ctrl/⌘+O añade archivos, Ctrl/⌘+Shift+O añade una carpeta, Ctrl/⌘+Enter calcula todo y Esc cancela.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Consejo: Shift+A para Verificar, Ctrl+F para Añadir, Ctrl+Shift+H para Borrar lista.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Consejo: arrastre aquí archivos, carpetas o archivos de sumas de comprobación (SHA256SUMS, *.sha256, *.md5…). Ctrl/⌘+Enter verifica todo y Esc cancela.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Listo</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Muestra:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Versión actual: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Canal de lanzamiento:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Total de archivos: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Estable (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Desarrollador (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Idioma</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Tema</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Estilo del tema</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Claro/Oscuro</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Fuente</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Tamaño de fuente (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Seleccionar fuente óptima automáticamente</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Bloquear como fuente predeterminada</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>Escala de la interfaz</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Ocultar valores Hash (Seguridad)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Restablecer ajustes</value>
     </data>
-    <data name="Settings_Other">
-        <value>Privacidad y Seguridad</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Establecer como predeterminado</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Color de texto personalizado</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Avanzado</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Ejecutar como Administrador</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Requiere reinicio. Permite el acceso a archivos protegidos.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Límite de tamaño de archivo</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Tamaño máximo de archivos para procesar.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Tiempo de espera para cierre forzoso</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Tiempo (segundos) antes de considerar que la aplicación se ha bloqueado.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Tiempo de espera de archivo</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Cancelar si un archivo tarda demasiado.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Acción de emergencia</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Forzar el cierre de la aplicación y cancelar todo inmediatamente.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Forzar cierre y Cancelar todo</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Configuración</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Bloquear ajustes (Guardar como predeterminado)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Evita cambios accidentales. Solo 'Ocultar Hash' permanece ajustable.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Restablecer todo</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Restaurar a valores de fábrica.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Ruta del archivo de configuración</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Mostrar ruta completa y copiar al portapapeles.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Mostrar ruta</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Los ajustes se guardan en config.json</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Modo Desarrollador</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Habilitar registros avanzados y herramientas de depuración.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Consola de desarrollador</value>
     </data>
-    <data name="Dev_Beta">
-        <value>BETA</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Grabando</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Pausado</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Guardar en archivo</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>No guardar</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Borrar consola</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Copiar todo</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Abrir carpeta de logs</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Autor</value>
     </data>
-    <data name="About_Software">
-        <value>Software</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Librerías de terceros</value>
     </data>
-    <data name="About_Copyright">
-        <value>Derechos de autor</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Una potente herramienta para generar, verificar y comprimir hashes. O eso creo :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>Publicado bajo la Licencia MIT.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Tecnología</value>
     </data>
-    <data name="About_TechContent">
-        <value>Creado con C# y .NET 10.0.102.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>Creado con C# sobre {0}.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>Asistencia de IA</value>
     </data>
-    <data name="About_AIContent">
-        <value>Este software fue desarrollado con ayuda de IA (Gemini 3 Pro y Grok 4.1).</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Este software se ha desarrollado con ayuda de IA (Gemini 3 Pro, Grok 4.1 y Claude).</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Procesando ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Completado</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Error: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Cancelado</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>¡Guardado!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>¡Comprimido!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Esperando hash/entrada...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>¡Falta el archivo original!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Falta valor hash (Introduzca o cargue archivo)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>VÁLIDO</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>¡NO COINCIDE!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Archivo hash cargado</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>¡El nombre del archivo hash no coincide!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>¡El archivo no contiene un hash!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Comprobando actualizaciones...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>¡Nueva versión detectada!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Ya dispone de la última versión.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Error al comprobar actualización: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Descargando e instalando...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Listo (desde archivo de sumas de comprobación)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Error de instalación: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Listo (Desde archivo .hash)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>¡Archivo original perdido!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>¡El nombre del archivo hash no coincide!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Archivo hash soltado con éxito</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>¡El archivo no contiene un hash!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Error de lectura de archivo</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Resultado</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>¡Procesamiento completado!
-            ✅ Éxito: {0}
-            ❌ Fallo: {1}
-            ⛔ Cancelado: {2}
-        </value>
+✅ Éxito: {0}
+❌ Fallo: {1}
+⛔ Cancelado: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>Se han comprobado {0} archivos.
-            ✅ Coinciden: {1}
-            ❌ No coinciden/Error: {2}
-            ⛔ Cancelado: {3}
-        </value>
+✅ Coinciden: {1}
+❌ No coinciden/Error: {2}
+⛔ Cancelado: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>¡Archivo incorrecto!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>¡El archivo hash no coincide!
-
-            Archivo original: {0}
-            Archivo seleccionado: {1}
-
-            Por favor, seleccione el archivo hash correcto.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Nueva actualización</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Versión: {0}
-
-            Cambios:
-            {1}
-
-            Haga clic en 'Actualizar ahora' para descargar.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>No se encontraron actualizaciones nuevas.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Error</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>No se puede leer este archivo hash.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Comprobación de configuración</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>El archivo existe en:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>¡El archivo no existe!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>¡Archivo creado con éxito!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Ruta de configuración copiada.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Modo Administrador</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Por favor, reinicie la aplicación para aplicar los cambios.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>No se puede abrir la carpeta: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ADVERTENCIA DE VERSIÓN DEV</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Está a punto de cambiar al canal de actualizaciones de Desarrollador (Pre-lanzamiento).
-
-            Esta versión puede contener errores, ser inestable y causar pérdida de datos.
-
-            No me hago responsable de cualquier problema que surja al usar esta versión.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>He leído y acepto. Asumo toda la responsabilidad.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Guardar archivo Hash</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Guardar archivo comprimido</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Seleccionar archivos para hash</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>Seleccionar archivo hash para: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Seleccionar archivos (Original o .hash)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Seleccionar archivos o archivos de sumas de comprobación</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Pegar o Soltar aquí...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Segundos</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Verificar</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Detener</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Quitar archivo</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Copiar Hash</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Calcular</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Borrar Hash</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Buscar Hash</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Oscuro</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Claro</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Sistema</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Tarea detenida</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Sí</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>Aceptar</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>No</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Archivo Zip</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Confirmar salida</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Salir cancelará todas las tareas en curso. ¿Está seguro?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>La tarea se detuvo por tiempo de espera.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Guardar registro de depuración en disco.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Pausar registro en tiempo real.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Mostrar Hash</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Ocultar Hash</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Copiar ruta</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Su disco está lleno. Por favor, elija otra ubicación :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Visibilidad del Hash</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Sin archivos. Haga clic en 'Añadir archivos' para empezar.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Arrastre aquí archivos o carpetas, o haga clic en Añadir archivos.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Fijar este tema como predeterminado</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>Se han omitido {0} archivos que exceden el límite ({1} {2}):
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Idioma del sistema</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>Volver a 'Automático' requiere reiniciar para surtir efecto completo. ¿Desea continuar?</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Cambio de idioma</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>¿Está seguro?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>No volver a mostrar esta alerta</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Error de conexión de red. Por favor, compruebe su internet.</value>
     </data>
-    <data name="Error_Server">
-        <value>Error del servidor (5xx). Inténtelo más tarde.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Error del cliente (4xx). Por favor, revise la solicitud.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>Límite de la API de GitHub excedido. Inténtelo más tarde.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>No se encontró versión pre-release. Manteniendo versión actual.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>La versión pre-release {0} está disponible.
-
-            {1}
-
-            Esta versión puede ser inestable. ¿Desea descargarla?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Borrar fallidos</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>Se eliminaron {0} elementos.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Tiempo restante: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Duración: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Calculando...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Añadir carpeta...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>La carpeta seleccionada está vacía.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Seleccionar carpeta para escanear</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Cancelar</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Límites de procesamiento</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Máx. archivos por escaneo de carpeta</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Limita la cantidad de archivos añadidos desde una carpeta para evitar problemas de rendimiento.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Máx. carpetas a la vez</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Limita la cantidad de carpetas seleccionadas al mismo tiempo.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Solo puede seleccionar hasta {0} carpetas a la vez.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>Se añadieron {0} archivos. Se omitieron {1} archivos por el límite.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Lectura: {0}/s | Escritura: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Mostrar velocidad de lectura</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Mostrar velocidad de Lectura/Escritura</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Mostrar velocidad de transferencia en tiempo real durante el hash.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Calculando Hash...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Todos los tamaños</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Pequeño (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Mediano (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Grande (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Muy grande (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Documentos</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Política de Privacidad</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Términos de Servicio</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Acuerdo de Licencia (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Aviso Legal</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>LÉAME (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Registro de cambios</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Agradecimientos</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Procesando</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Falló</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Buscar por nombre...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Tamaño</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>Perfil de GitHub</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Todo</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Liberar memoria</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Automático (idioma del sistema)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>Forzar recolección de basura (GC) para liberar RAM.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Algoritmo</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Limpiar memoria</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Algoritmo predeterminado</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Limpieza de memoria activada.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Exportar</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Guardar archivo de sumas de comprobación…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Copiar todos los hashes</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Abrir archivo de sumas de comprobación…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Ver</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Cerrar</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Instalar al salir</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Abrir página de la versión</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Novedades</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Reiniciar como administrador</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Copiar detalles</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Rendimiento</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Archivos procesados simultáneamente</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = automático ({0} en este ordenador).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Optimizar para discos duros</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Lee los archivos de uno en uno, lo que es más rápido en discos duros mecánicos y recursos compartidos de red.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Incluir archivos ocultos</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Añade también los archivos ocultos y de sistema al escanear carpetas.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Salida</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Mayúsculas/minúsculas del hash</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Mayúsculas (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Minúsculas (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Formato predeterminado del archivo de sumas de comprobación</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Actualizaciones</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Comprobar actualizaciones automáticamente</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Consulta GitHub como máximo una vez al día al iniciar la aplicación. Las actualizaciones solo se descargan si decide instalarlas.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Integración con Windows</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Menú contextual del Explorador de archivos</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Añade «Generar hash» y «Verificar» al menú contextual de archivos y carpetas (en Windows 11, dentro de «Mostrar más opciones»).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Solo es necesario para archivos que su cuenta no puede leer. Mientras se ejecuta como administrador, Windows bloquea la función de arrastrar y soltar desde el Explorador de archivos.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Abrir carpeta de datos</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>Archivo de sumas de comprobación GNU (formato sha256sum)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>Archivo de sumas de comprobación BSD (etiquetado)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>Archivo SFV (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>Archivo JSON</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>Archivo CSV</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Archivos de sumas de comprobación</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Contraste alto</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Apto para daltónicos</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Retro</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Cristal</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Cyberpunk</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Pastel</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Predeterminada</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Generar hash con Hash Tool</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Verificar con Hash Tool</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>En cola</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Acceso denegado</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>En uso por otro programa</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Tiempo de espera agotado</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>VÁLIDO (orden de bytes CRC32 antiguo)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Hash {0} no válido</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Descargando actualización… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>La actualización se instalará al cerrar Hash Tool.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Espere a que finalice la tarea actual.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>No se han podido añadir estos elementos ({0}):
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: se han omitido {0} líneas que no son entradas válidas de suma de comprobación.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} no contiene ninguna suma de comprobación.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>Se ha omitido «{0}»: los archivos de sumas de comprobación no pueden apuntar a rutas de red o de dispositivo.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>¿Quitar los {0} archivos de la lista?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>Se han guardado {0} hashes en {1}.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Todavía no hay hashes calculados para exportar.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>No se han podido leer algunos archivos porque se ha denegado el acceso. ¿Desea reiniciar Hash Tool como administrador y volver a intentarlo?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool se está ejecutando como administrador, por lo que Windows bloquea la función de arrastrar y soltar desde el Explorador de archivos. Use Añadir archivos o Añadir carpeta en su lugar.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} está disponible.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Las actualizaciones solo están disponibles en la versión instalada o portátil descargada de GitHub Releases.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>No se ha podido leer el archivo de ajustes, por lo que se han restablecido los valores predeterminados. El archivo dañado se ha conservado como copia de seguridad.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Se ha producido un error: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Lectura: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Guardar archivo de sumas de comprobación</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Abrir archivos de sumas de comprobación</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Exportar registro</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Nivel mínimo</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Desplazamiento automático</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Versión {0}</value>
     </data>
 </root>

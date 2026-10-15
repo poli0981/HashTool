@@ -1,732 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>Хэш құралы</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>Хэш жасау</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>Хэшті тексеру</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>Баптаулар</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>Жаңарту</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>Тақырып</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>Бағдарлама туралы</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>Әзірлеуші</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>Файлдарды қосу...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>Тізімді тазалау</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>Хэштерді тазалау</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>БАРЛЫҒЫН ЕСЕПТЕУ</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>Қысу (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>БАРЛЫҒЫН ТЕКСЕРУ</value>
     </data>
-    <data name="Btn_CheckNow">
+    <data name="Btn_CheckNow" xml:space="preserve">
         <value>Қазір тексеру</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>Орнату</value>
     </data>
-    <data name="Btn_Accept">
-        <value>Қабылдау</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>Бас тарту</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>Хэш жасау және Қысу</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>Топтамалық тексеру</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>Жаңартуларды тексеру</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>Әзірлеуші нұсқасы туралы ескерту</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>Бағдарлама туралы</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>Кеңес: Есептеу үшін Shift+C, Қысу үшін Shift+Z, Қосу үшін Ctrl+F.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>Кеңес: файлдарды немесе қалталарды осында сүйреп әкеліңіз. Файлдарды қосу үшін Ctrl/⌘+O, қалтаны қосу үшін Ctrl/⌘+Shift+O, барлығын есептеу үшін Ctrl/⌘+Enter, болдырмау үшін Esc.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>Кеңес: Тексеру үшін Shift+A, Қосу үшін Ctrl+F, Тазалау үшін Ctrl+Shift+H.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>Кеңес: файлдарды, қалталарды немесе бақылау сомасы файлдарын (SHA256SUMS, *.sha256, *.md5…) осында сүйреп әкеліңіз. Барлығын тексеру үшін Ctrl/⌘+Enter, болдырмау үшін Esc.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>Дайын</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>Үлгі:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>Ағымдағы нұсқасы: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>Шығарылым арнасы:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>Барлық файлдар: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>Тұрақты (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>Әзірлеуші (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>Тіл</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>Тақырып</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>Тақырып стилі</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>Ашық/Қараңғы</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>Қаріп</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>Қаріп өлшемі (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>Тіл үшін оңтайлы қаріпті автоматты түрде таңдау</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>Әдепкі қаріп ретінде құлыптау</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>Интерфейс масштабы</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>Хэш мәндерін жасыру (Қауіпсіздік)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>Баптауларды қалпына келтіру</value>
     </data>
-    <data name="Settings_Other">
-        <value>Құпиялылық және Қауіпсіздік</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>Әдепкі ретінде орнату</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>Мәтіннің пайдаланушы түсі</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>Қосымша</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>Әкімші ретінде іске қосу</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>Қайта іске қосуды қажет етеді. Қорғалған файлдарға кіруге рұқсат береді.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>Енгізу файлының өлшем шегі</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>Өңделетін файлдардың максималды өлшемі.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>Мәжбүрлі түрде шығу күту уақыты</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>Қолданбаны қатып қалды деп санағанға дейінгі уақыт (секунд).</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>Файлды өңдеу күту уақыты</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>Егер бір файл тым көп уақыт алса, тоқтату.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>Төтенше әрекет</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>Қолданбаны мәжбүрлеп жабу және барлық тапсырмаларды дереу тоқтату.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>Мәжбүрлеп шығу және барлығын тоқтату</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>Конфигурация</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>Баптауларды құлыптау (Әдепкі ретінде сақтау)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>Кездейсоқ өзгерістерді болдырмау. Тек 'Хэшті жасыру' өзгертілуі мүмкін.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>Барлық баптауларды қалпына келтіру</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>Зауыттық параметрлерге қайтару.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>Конфигурация файлының жолы</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>Толық жолды көрсету және алмасу буферіне көшіру.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>Жолды көрсету</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>Баптаулар config.json файлында автоматты түрде сақталады</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>Әзірлеуші режимі</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>Кеңейтілген журнал жүргізуді және жөндеу құралдарын қосу.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>Әзірлеуші консолі</value>
     </data>
-    <data name="Dev_Beta">
-        <value>БЕТА</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>Жазылуда</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>Кідіртілді</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>Файлға сақтау</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>Сақтамау</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>Консольді тазалау</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>Барлығын көшіру</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>Журнал қалтасын ашу</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>Автор</value>
     </data>
-    <data name="About_Software">
-        <value>Бағдарламалық жасақтама</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>Үшінші тарап кітапханалары</value>
     </data>
-    <data name="About_Copyright">
-        <value>Авторлық құқық</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>Файл хэштерін жасау, тексеру және қысу үшін қуатты құрал. Немесе мен солай ойлаймын :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>MIT лицензиясы бойынша шығарылды.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>Технология</value>
     </data>
-    <data name="About_TechContent">
-        <value>C# және .NET 10.0.102 арқылы жасалған.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>{0} негізінде C# тілінде жасалған.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>AI көмегі</value>
     </data>
-    <data name="About_AIContent">
-        <value>Бұл бағдарламалық жасақтама AI (Gemini 3 Pro және Grok 4.1) көмегімен әзірленді.</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>Бұл бағдарламалық жасақтама AI (Gemini 3 Pro, Grok 4.1 және Claude) көмегімен әзірленді.</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>Өңделуде ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>Аяқталды</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>Қате: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>Болдырманды</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>Сақталды!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>Қысылды!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>Хэшті/енгізуді күтуде...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>Түпнұсқа файл жоқ!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>Хэш мәні жоқ (Енгізіңіз немесе файлды жүктеңіз)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>ЖАРАМДЫ</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>СӘЙКЕС ЕМЕС!</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>Хэш файлы жүктелді</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>Хэш файлының аты сәйкес келмейді!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>Файлда хэш жоқ!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>Жаңартулар тексерілуде...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>Жаңа нұсқа анықталды!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>Сіз ең соңғы нұсқаны пайдаланып отырсыз.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>Жаңартуды тексеру қатесі: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>Жүктелуде және орнатылуда...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>Дайын (бақылау сомасы файлынан)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>Орнату қатесі: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>Дайын (.hash файлынан)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>Түпнұсқа файл жоғалды!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>Хэш файлының аты сәйкес келмейді!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>Хэш файлы сәтті қосылды</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>Файлда хэш жоқ!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>Файлды оқу қатесі</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>Нәтиже</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>Өңдеу аяқталды!
-            ✅ Сәтті: {0}
-            ❌ Қатемен: {1}
-            ⛔ Тоқтатылды: {2}
-        </value>
+✅ Сәтті: {0}
+❌ Қатемен: {1}
+⛔ Тоқтатылды: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>{0} файл тексерілді.
-            ✅ Сәйкес: {1}
-            ❌ Сәйкес емес/Қате: {2}
-            ⛔ Тоқтатылды: {3}
-        </value>
+✅ Сәйкес: {1}
+❌ Сәйкес емес/Қате: {2}
+⛔ Тоқтатылды: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>Қате файл!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>Хэш файлы сәйкес келмейді!
-
-            Түпнұсқа файл: {0}
-            Таңдалған файл: {1}
-
-            Дұрыс ілеспе хэш файлын таңдаңыз.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>Жаңа жаңарту</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>Нұсқа: {0}
-
-            Өзгерістер:
-            {1}
-
-            Жүктеп алу үшін 'Қазір жаңарту' түймесін басыңыз.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>Жаңа жаңартулар табылмады.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>Қате</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>Бұл хэш файлын оқу мүмкін емес.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>Конфигурацияны тексеру</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>Файл мына жерде бар:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>Файл жоқ!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>Файл сәтті жасалды!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>Конфигурация жолы көшірілді.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>Әкімші режимі</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>Өзгерістер күшіне енуі үшін қолданбаны қайта іске қосыңыз.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>Қалтаны ашу мүмкін емес: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ ӘЗІРЛЕУШІ НҰСҚАСЫ ТУРАЛЫ ЕСКЕРТУ</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>Сіз Әзірлеуші (Pre-release) жаңарту арнасына ауысқалы жатырсыз.
-
-            Бұл нұсқада қателер болуы мүмкін, тұрақсыз болуы және деректердің жоғалуына әкелуі мүмкін.
-
-            Мен осы нұсқаны пайдаланудан туындаған кез келген мәселелерге жауапты емеспін.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>Мен оқыдым және келісемін. Толық жауапкершілікті өз мойныма аламын.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>Хэш файлын сақтау</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>Қысылған файлды сақтау</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>Хэштеу үшін файлдарды таңдаңыз</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>{0} үшін хэш файлын таңдаңыз</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>Файлдарды таңдаңыз (Түпнұсқа немесе .hash файлы)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>Файлдарды немесе бақылау сомасы файлдарын таңдаңыз</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>Осында қойыңыз немесе тастаңыз...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>Секунд</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>Тексеру</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>Тоқтату</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>Файлды өшіру</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>Хэшті көшіру</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>Есептеу</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>Хэшті тазалау</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>Хэшті іздеу</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>Қараңғы</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>Ашық</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>Жүйелі</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>Тапсырма тоқтатылды</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>Иә</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>ОК</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>Жоқ</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>Zip мұрағаты</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>Шығуды растау</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>Шығу барлық ағымдағы тапсырмаларды тоқтатады. Сенімдісіз бе?</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>Тапсырма күту уақытына байланысты тоқтатылды.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>Жөндеу журналын дискіге сақтау.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>Нақты уақыттағы журналды кідірту.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>Хэшті көрсету</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>Хэшті жасыру</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>Жолды көшіру</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>Дисктің орны толды. Басқа орынды таңдаңыз :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>Хэштің көрінуі</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>Файлдар жоқ. Бастау үшін 'Файлдарды қосу' түймесін басыңыз.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>Файлдарды не қалталарды осында сүйреп әкеліңіз немесе «Файлдарды қосу» түймесін басыңыз.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>Бұл тақырыпты әдепкі ретінде құлыптау</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>Шектен асқан ({1} {2}) {0} файл өткізіп жіберілді:
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>Жүйе тілі</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>'Автоматты' параметріне оралу толық күшіне енуі үшін қайта іске қосуды қажет етеді. Жалғастырғыңыз келе
-            ме?
-        </value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>Тілді өзгерту</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>Бұған сенімдісіз бе?</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>Бұл ескертуді қайта көрсетпеу</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>Желілік қосылым қатесі. Интернет қосылымын тексеріңіз.</value>
     </data>
-    <data name="Error_Server">
-        <value>Сервер қатесі (5xx). Кейінірек қайталап көріңіз.</value>
-    </data>
-    <data name="Error_Client">
-        <value>Клиент қатесі (4xx). Сұрауды тексеріңіз.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>GitHub API сұраулар шегінен асты. Кейінірек қайталап көріңіз.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>Алдын ала шығарылым табылмады. Ағымдағы нұсқаны сақтау.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>Алдын ала шығарылым нұсқасы {0} қолжетімді.
-
-            {1}
-
-            Бұл нұсқа тұрақсыз болуы мүмкін. Жүктеп алғыңыз келе ме?
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>Қателерді тазалау</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>{0} элемент жойылды.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>Қалған уақыт: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>Тапсырма ұзақтығы: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>Есептелуде...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>Қалтаны қосу...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>Таңдалған қалта бос.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>Скандеу үшін қалтаны таңдаңыз</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>Болдырмау</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>Өңдеу шектеулері</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>Қалтаны сканерлеуге арналған максималды файлдар</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>Өнімділік мәселелерін болдырмау үшін қалтадан қосылатын файлдар санын шектеңіз.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>Бір уақыттағы максималды қалталар</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>Бір уақытта таңдалатын қалталар санын шектеңіз.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>Бір уақытта ең көбі {0} қалтаны ғана таңдай аласыз.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>{0} файл қосылды. Шектеуге байланысты {1} файл өткізіп жіберілді.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>Оқу: {0}/с | Жазу: {1}/с</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>Оқу жылдамдығын көрсету</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>Оқу/Жазу жылдамдығын көрсету</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>Хэштеу кезінде нақты уақыттағы тасымалдау жылдамдығын көрсету.</value>
     </data>
-    <data name="Status_Computing">
-        <value>Хэш есептелуде...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>Барлық өлшемдер</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>Кішкентай (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>Орташа (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>Үлкен (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>Өте үлкен (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>Құжаттар</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>Құпиялылық саясаты</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>Қызмет көрсету шарттары</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>Лицензиялық келісім (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>Жауапкершіліктен бас тарту</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>ОҚЫҢЫЗ (README)</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>Өзгерістер тарихы</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>Алғыстар</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>Өңделуде</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>Сәтсіз</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>Аты бойынша іздеу...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>Өлшемі</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>GitHub профилі</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>Барлығы</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>Жадты босату</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>Автоматты (жүйе тілі)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>ЖЖҚ (RAM) босату үшін қоқыс жинауды (GC) мәжбүрлеу.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>Алгоритм</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>Жадты тазалау</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>Әдепкі алгоритм</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>Жадты тазалау іске қосылды.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>Экспорттау</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>Бақылау сомасы файлын сақтау…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>Барлық хэштерді көшіру</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>Бақылау сомасы файлын ашу…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>Көру</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>Жабу</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>Шыққанда орнату</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>Шығарылым бетін ашу</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>Не жаңалық</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>Әкімші ретінде қайта іске қосу</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>Мәліметтерді көшіру</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>Өнімділік</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>Бір уақытта өңделетін файлдар саны</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = автоматты (бұл компьютерде {0}).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>Қатты дискілер үшін оңтайландыру</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>Файлдарды бір-бірден оқиды, бұл айналмалы қатты дискілерде және желілік қалталарда жылдамырақ.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>Жасырын файлдарды қосу</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>Қалталарды сканерлегенде жасырын және жүйелік файлдарды да қосу.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>Шығыс деректер</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>Хэш әріптерінің регистрі</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>Бас әріптер (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>Кіші әріптер (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>Бақылау сомасы файлының әдепкі пішімі</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>Жаңартулар</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>Жаңартуларды автоматты түрде тексеру</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>Бағдарлама іске қосылғанда GitHub-ты тексереді, бірақ күніне бір реттен жиі емес. Жаңартулар сіз оларды орнатуды таңдағанда ғана жүктеледі.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>Windows жүйесімен интеграция</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>Зерттеушінің контекстік мәзірі</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>Файлдар мен қалталардың контекстік мәзіріне «Хэш жасау» және «Тексеру» командаларын қосады (Windows 11 жүйесінде «Қосымша параметрлерді көрсету» ішінде).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>Тек тіркелгіңіз оқи алмайтын файлдар үшін қажет. Әкімші ретінде жұмыс істегенде Windows Зерттеушіден сүйреп әкелуге тыйым салады.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>Деректер қалтасын ашу</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>GNU бақылау сомасы файлы (sha256sum пішімі)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>BSD бақылау сомасы файлы (тегтермен)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>SFV файлы (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>JSON файлы</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>CSV файлы</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>Бақылау сомасы файлдары</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>Жоғары контраст</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>Дальтониктерге арналған</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>Ретро</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>Шыны</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>Киберпанк</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>Пастель</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>Әдепкі</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>Hash Tool арқылы хэш жасау</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>Hash Tool арқылы тексеру</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>Кезекте</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>Кіруге рұқсат жоқ</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>Басқа бағдарлама пайдаланып жатыр</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>Күту уақыты өтті</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>ЖАРАМДЫ (ескі CRC32 байт реті)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>Жарамсыз {0} хэші</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>Жаңарту жүктелуде… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>Жаңарту Hash Tool жабылғанда орнатылады.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>Ағымдағы тапсырма аяқталғанша күте тұрыңыз.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>{0} элементті қосу мүмкін болмады:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: бақылау сомасының жарамды жазбасы емес {0} жол өткізіп жіберілді.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} файлында бақылау сомалары жоқ.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>«{0}» өткізіп жіберілді: бақылау сомасы файлдары желілік жолдарға немесе құрылғы жолдарына сілтей алмайды.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>Барлық {0} файлды тізімнен алып тастау керек пе?</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>{0} хэш {1} файлына сақталды.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>Экспорттайтын есептелген хэштер әлі жоқ.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>Кейбір файлдарды оқу мүмкін болмады, себебі кіруге рұқсат жоқ. Hash Tool бағдарламасын әкімші ретінде қайта іске қосып, әрекетті қайталау керек пе?</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool әкімші ретінде іске қосылған, сондықтан Windows Зерттеушіден сүйреп әкелуге тыйым салады. Оның орнына «Файлдарды қосу» немесе «Қалтаны қосу» түймесін пайдаланыңыз.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>Hash Tool {0} нұсқасы қолжетімді.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>Жаңартулар GitHub Releases арқылы алынған орнатылған немесе портативті нұсқада ғана қолжетімді.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>Баптаулар файлын оқу мүмкін болмады, сондықтан әдепкі баптаулар қалпына келтірілді. Зақымдалған файл сақтық көшірме ретінде сақталды.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>Бірдеңе дұрыс болмады: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>Оқу: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>Бақылау сомасы файлын сақтау</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>Бақылау сомасы файлдарын ашу</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>Журналды экспорттау</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>Ең төменгі деңгей</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>Автоматты айналдыру</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>Нұсқа {0}</value>
     </data>
 </root>

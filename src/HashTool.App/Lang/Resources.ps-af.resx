@@ -1,730 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
 <root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
-        <value>1.3</value>
+        <value>2.0</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        </value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="AppTitle">
+    <data name="AppTitle" xml:space="preserve">
         <value>د هیش وسیله (Hash Tool)</value>
     </data>
-    <data name="Menu_Create">
+    <data name="Menu_Create" xml:space="preserve">
         <value>هیش جوړول</value>
     </data>
-    <data name="Menu_Check">
+    <data name="Menu_Check" xml:space="preserve">
         <value>هیش تاییدول</value>
     </data>
-    <data name="Menu_Settings">
+    <data name="Menu_Settings" xml:space="preserve">
         <value>تنظیمات</value>
     </data>
-    <data name="Menu_Update">
+    <data name="Menu_Update" xml:space="preserve">
         <value>تازه کول</value>
     </data>
-    <data name="Menu_Theme">
+    <data name="Menu_Theme" xml:space="preserve">
         <value>بڼه</value>
     </data>
-    <data name="Menu_About">
+    <data name="Menu_About" xml:space="preserve">
         <value>په اړه</value>
     </data>
-    <data name="Menu_Developer">
+    <data name="Menu_Developer" xml:space="preserve">
         <value>جوړوونکی</value>
     </data>
-    <data name="Btn_AddFiles">
+    <data name="Btn_AddFiles" xml:space="preserve">
         <value>فایلونه اضافه کول...</value>
     </data>
-    <data name="Btn_Clear">
+    <data name="Btn_Clear" xml:space="preserve">
         <value>نوملړ پاکول</value>
     </data>
-    <data name="Btn_ClearHashes">
+    <data name="Btn_ClearHashes" xml:space="preserve">
         <value>هیشونه پاکول</value>
     </data>
-    <data name="Btn_CalcAll">
+    <data name="Btn_CalcAll" xml:space="preserve">
         <value>ټول محاسبه کول</value>
     </data>
-    <data name="Btn_Compress">
+    <data name="Btn_Compress" xml:space="preserve">
         <value>فشارول (.Zip)</value>
     </data>
-    <data name="Btn_CheckAll">
+    <data name="Btn_CheckAll" xml:space="preserve">
         <value>ټول تاییدول</value>
     </data>
-    <data name="Btn_CheckNow">
-        <value>اوس تاییدول</value>
+    <data name="Btn_CheckNow" xml:space="preserve">
+        <value>اوس وګورئ</value>
     </data>
-    <data name="Btn_Install">
+    <data name="Btn_Install" xml:space="preserve">
         <value>نصبول</value>
     </data>
-    <data name="Btn_Accept">
-        <value>منل</value>
-    </data>
-    <data name="Btn_Decline">
-        <value>ردول</value>
-    </data>
-    <data name="Title_CreateHash">
+    <data name="Title_CreateHash" xml:space="preserve">
         <value>هیش جوړول او فشارول</value>
     </data>
-    <data name="Title_CheckHash">
+    <data name="Title_CheckHash" xml:space="preserve">
         <value>ډله ایز تایید</value>
     </data>
-    <data name="Title_Update">
+    <data name="Title_Update" xml:space="preserve">
         <value>د تازه معلوماتو لپاره کتل</value>
     </data>
-    <data name="Title_Disclaimer">
-        <value>د جوړوونکي نسخې خبرداری</value>
-    </data>
-    <data name="Title_About">
+    <data name="Title_About" xml:space="preserve">
         <value>په اړه</value>
     </data>
-    <data name="Help_CreateHash">
-        <value>لارښوونه: Shift+C د محاسبې لپاره، Shift+Z د فشارولو لپاره، Ctrl+F د اضافه کولو لپاره.</value>
+    <data name="Help_CreateHash" xml:space="preserve">
+        <value>لارښوونه: فایلونه یا فولډرونه دلته واچوئ. Ctrl/⌘+O د فایلونو د اضافه کولو لپاره، Ctrl/⌘+Shift+O د فولډر د اضافه کولو لپاره، Ctrl/⌘+Enter د ټولو د محاسبې لپاره، Esc د لغوه کولو لپاره.</value>
     </data>
-    <data name="Help_CheckHash">
-        <value>لارښوونه: Shift+A د تایید لپاره، Ctrl+F د اضافه کولو لپاره، Ctrl+Shift+H د پاکولو لپاره.</value>
+    <data name="Help_CheckHash" xml:space="preserve">
+        <value>لارښوونه: فایلونه، فولډرونه یا د چیکسم فایلونه (SHA256SUMS، *.sha256، *.md5…) دلته واچوئ. Ctrl/⌘+Enter د ټولو د تاییدولو لپاره، Esc د لغوه کولو لپاره.</value>
     </data>
-    <data name="Lbl_Status_Ready">
+    <data name="Lbl_Status_Ready" xml:space="preserve">
         <value>چمتو</value>
     </data>
-    <data name="Lbl_Sample">
-        <value>بیلګه:</value>
-    </data>
-    <data name="Lbl_CurrentVersion">
+    <data name="Lbl_CurrentVersion" xml:space="preserve">
         <value>اوسنۍ نسخه: {0}</value>
     </data>
-    <data name="Lbl_Channel">
-        <value>د خپرولو چینل:</value>
-    </data>
-    <data name="Lbl_TotalFiles">
+    <data name="Lbl_TotalFiles" xml:space="preserve">
         <value>ټول فایلونه: {0}</value>
     </data>
-    <data name="Channel_Stable">
-        <value>ثابت (Stable)</value>
-    </data>
-    <data name="Channel_Dev">
-        <value>جوړوونکی (Dev Edition)</value>
-    </data>
-    <data name="Settings_Language">
+    <data name="Settings_Language" xml:space="preserve">
         <value>ژبه</value>
     </data>
-    <data name="Settings_Theme">
+    <data name="Settings_Theme" xml:space="preserve">
         <value>بڼه</value>
     </data>
-    <data name="Settings_ThemeStyle">
+    <data name="Settings_ThemeStyle" xml:space="preserve">
         <value>د بڼې سټایل</value>
     </data>
-    <data name="Settings_ThemeVariant">
+    <data name="Settings_ThemeVariant" xml:space="preserve">
         <value>روښانه/تیاره</value>
     </data>
-    <data name="Settings_Font">
+    <data name="Settings_Font" xml:space="preserve">
         <value>لیکبڼه (Font)</value>
     </data>
-    <data name="Settings_FontSize">
+    <data name="Settings_FontSize" xml:space="preserve">
         <value>د لیکبڼې اندازه (pt)</value>
     </data>
-    <data name="Settings_AutoFont">
+    <data name="Settings_AutoFont" xml:space="preserve">
         <value>په اوتومات ډول د ژبې لپاره غوره لیکبڼه غوره کړئ</value>
     </data>
-    <data name="Settings_LockFont">
+    <data name="Settings_LockFont" xml:space="preserve">
         <value>د ډیفالټ لیکبڼې په توګه لاک کړئ</value>
     </data>
-    <data name="Settings_Scale">
+    <data name="Settings_Scale" xml:space="preserve">
         <value>د UI کچه</value>
     </data>
-    <data name="Settings_MaskHash">
+    <data name="Settings_MaskHash" xml:space="preserve">
         <value>د هیش ارزښتونه پټ کړئ (امنیت)</value>
     </data>
-    <data name="Settings_Reset">
+    <data name="Settings_Reset" xml:space="preserve">
         <value>تنظیمات بیا تنظیمول</value>
     </data>
-    <data name="Settings_Other">
-        <value>محرمیت او امنیت</value>
-    </data>
-    <data name="Settings_SetDefault">
-        <value>د ډیفالټ په توګه وټاکئ</value>
-    </data>
-    <data name="Settings_CustomColor">
-        <value>د متن دودیز رنګ</value>
-    </data>
-    <data name="Settings_Advanced">
-        <value>پرمختللی</value>
-    </data>
-    <data name="Settings_AdminMode">
-        <value>د مدیر (Admin) په توګه چلول</value>
-    </data>
-    <data name="Settings_AdminDesc">
-        <value>بیا پیلولو ته اړتیا لري. خوندي شوي فایلونو ته د لاسرسي اجازه ورکوي.</value>
-    </data>
-    <data name="Settings_FileSizeLimit">
+    <data name="Settings_FileSizeLimit" xml:space="preserve">
         <value>د فایل اندازې حد</value>
     </data>
-    <data name="Settings_FileSizeDesc">
+    <data name="Settings_FileSizeDesc" xml:space="preserve">
         <value>د پروسس لپاره د فایلونو اعظمي اندازه.</value>
     </data>
-    <data name="Settings_ForceQuitTimeout">
-        <value>د جبري وتلو وخت ختمیدل</value>
-    </data>
-    <data name="Settings_ForceQuitDesc">
-        <value>وخت (ثانیې) مخکې لدې چې غوښتنلیک کنګل شوی وګڼل شي.</value>
-    </data>
-    <data name="Settings_FileTimeout">
+    <data name="Settings_FileTimeout" xml:space="preserve">
         <value>د فایل پروسس کولو وخت ختمیدل</value>
     </data>
-    <data name="Settings_FileTimeoutDesc">
+    <data name="Settings_FileTimeoutDesc" xml:space="preserve">
         <value>که یو فایل ډیر وخت ونیسي نو لغوه یې کړئ.</value>
     </data>
-    <data name="Settings_Emergency">
-        <value>بیړنی عمل</value>
-    </data>
-    <data name="Settings_EmergencyDesc">
-        <value>اپلیکیشن په جبري توګه وتړئ او سمدلاسه ټولې دندې لغوه کړئ.</value>
-    </data>
-    <data name="Settings_BtnForceQuit">
-        <value>جبري وتل او ټول لغوه کول</value>
-    </data>
-    <data name="Settings_Configuration">
+    <data name="Settings_Configuration" xml:space="preserve">
         <value>ترتیب (Configuration)</value>
     </data>
-    <data name="Settings_LockSettings">
+    <data name="Settings_LockSettings" xml:space="preserve">
         <value>تنظیمات لاک کړئ (د ډیفالټ په توګه خوندي کړئ)</value>
     </data>
-    <data name="Settings_LockDesc">
+    <data name="Settings_LockDesc" xml:space="preserve">
         <value>د تصادفي بدلونونو مخه نیسي. یوازې 'هیش پټول' د بدلون وړ پاتې کیږي.</value>
     </data>
-    <data name="Settings_ResetAll">
+    <data name="Settings_ResetAll" xml:space="preserve">
         <value>ټول تنظیمات بیا تنظیمول</value>
     </data>
-    <data name="Settings_ResetDesc">
+    <data name="Settings_ResetDesc" xml:space="preserve">
         <value>فابریکې ډیفالټونو ته بیرته راګرځول.</value>
     </data>
-    <data name="Settings_ConfigPath">
+    <data name="Settings_ConfigPath" xml:space="preserve">
         <value>د تنظیم فایل لار</value>
     </data>
-    <data name="Settings_ConfigDesc">
+    <data name="Settings_ConfigDesc" xml:space="preserve">
         <value>بشپړه لار وښایاست او کلیپ بورډ ته یې کاپي کړئ.</value>
     </data>
-    <data name="Settings_ShowPath">
+    <data name="Settings_ShowPath" xml:space="preserve">
         <value>لار وښایاست</value>
     </data>
-    <data name="Settings_AutoSave">
+    <data name="Settings_AutoSave" xml:space="preserve">
         <value>تنظیمات په اوتومات ډول په config.json کې خوندي کیږي</value>
     </data>
-    <data name="Settings_DeveloperMode">
+    <data name="Settings_DeveloperMode" xml:space="preserve">
         <value>د جوړوونکي حالت</value>
     </data>
-    <data name="Settings_DeveloperDesc">
+    <data name="Settings_DeveloperDesc" xml:space="preserve">
         <value>پرمختللي لاګنګ او د ډیبګ کولو وسیلې فعال کړئ.</value>
     </data>
-    <data name="Dev_Console">
+    <data name="Dev_Console" xml:space="preserve">
         <value>د جوړوونکي کنسول</value>
     </data>
-    <data name="Dev_Beta">
-        <value>بیټا (BETA)</value>
-    </data>
-    <data name="Dev_Recording">
+    <data name="Dev_Recording" xml:space="preserve">
         <value>ثبت کول</value>
     </data>
-    <data name="Dev_Paused">
+    <data name="Dev_Paused" xml:space="preserve">
         <value>درول شوی</value>
     </data>
-    <data name="Dev_SaveToFile">
-        <value>په فایل کې خوندي کول</value>
-    </data>
-    <data name="Dev_NoSave">
-        <value>خوندي نه کړئ</value>
-    </data>
-    <data name="Dev_Clear">
+    <data name="Dev_Clear" xml:space="preserve">
         <value>کنسول پاکول</value>
     </data>
-    <data name="Dev_Copy">
+    <data name="Dev_Copy" xml:space="preserve">
         <value>ټول کاپي کول</value>
     </data>
-    <data name="Dev_OpenFolder">
+    <data name="Dev_OpenFolder" xml:space="preserve">
         <value>د لاګ فولډر خلاصول</value>
     </data>
-    <data name="About_Author">
+    <data name="About_Author" xml:space="preserve">
         <value>لیکوال</value>
     </data>
-    <data name="About_Software">
-        <value>سافټویر</value>
-    </data>
-    <data name="About_ThirdParty">
+    <data name="About_ThirdParty" xml:space="preserve">
         <value>د دریمې ډلې کتابتونونه</value>
     </data>
-    <data name="About_Copyright">
-        <value>د کاپي حق</value>
-    </data>
-    <data name="About_Desc">
+    <data name="About_Desc" xml:space="preserve">
         <value>د فایلونو هیش رامینځته کولو ، تاییدولو او فشارولو لپاره یو پیاوړی وسیله. یا لږترلږه زه داسې فکر کوم :)</value>
     </data>
-    <data name="About_License">
+    <data name="About_License" xml:space="preserve">
         <value>د MIT جواز لاندې خپور شوی.</value>
     </data>
-    <data name="About_Tech">
+    <data name="About_Tech" xml:space="preserve">
         <value>ټیکنالوژي</value>
     </data>
-    <data name="About_TechContent">
-        <value>د C# او .NET 10.0.102 سره جوړ شوی.</value>
+    <data name="About_TechContent" xml:space="preserve">
+        <value>د {0} پر بنسټ په C# جوړ شوی.</value>
     </data>
-    <data name="About_AI">
+    <data name="About_AI" xml:space="preserve">
         <value>د AI مرسته</value>
     </data>
-    <data name="About_AIContent">
-        <value>دا سافټویر د AI (Gemini 3 Pro او Grok 4.1) په مرسته جوړ شوی.</value>
+    <data name="About_AIContent" xml:space="preserve">
+        <value>دا سافټویر د AI (Gemini 3 Pro، Grok 4.1 او Claude) په مرسته جوړ شوی.</value>
     </data>
-    <data name="Status_Processing">
+    <data name="Status_Processing" xml:space="preserve">
         <value>پروسس کیږي ({0})...</value>
     </data>
-    <data name="Status_Done">
+    <data name="Status_Done" xml:space="preserve">
         <value>بشپړ شو</value>
     </data>
-    <data name="Status_Error">
+    <data name="Status_Error" xml:space="preserve">
         <value>تېروتنه: {0}</value>
     </data>
-    <data name="Status_Cancelled">
+    <data name="Status_Cancelled" xml:space="preserve">
         <value>لغوه شو</value>
     </data>
-    <data name="Status_Saved">
+    <data name="Status_Saved" xml:space="preserve">
         <value>خوندي شو!</value>
     </data>
-    <data name="Status_Compressed">
-        <value>فشار ورکړل شو!</value>
-    </data>
-    <data name="Status_Waiting">
+    <data name="Status_Waiting" xml:space="preserve">
         <value>هیش/انپټ ته انتظار کیږي...</value>
     </data>
-    <data name="Status_MissingOriginal">
+    <data name="Status_MissingOriginal" xml:space="preserve">
         <value>اصلي فایل ورک دی!</value>
     </data>
-    <data name="Status_MissingHash">
+    <data name="Status_MissingHash" xml:space="preserve">
         <value>د هیش ارزښت ورک دی (ننوتل یا فایل پورته کول)</value>
     </data>
-    <data name="Status_Valid">
+    <data name="Status_Valid" xml:space="preserve">
         <value>د اعتبار وړ</value>
     </data>
-    <data name="Status_Invalid">
+    <data name="Status_Invalid" xml:space="preserve">
         <value>سم نه دی! (MISMATCH)</value>
     </data>
-    <data name="Status_HashFileLoaded">
+    <data name="Status_HashFileLoaded" xml:space="preserve">
         <value>د هیش فایل پورته شو</value>
     </data>
-    <data name="Status_HashFileMismatch">
-        <value>د هیش فایل نوم سم نه دی!</value>
-    </data>
-    <data name="Status_NoHashFound">
-        <value>فایل هیش نلري!</value>
-    </data>
-    <data name="Status_Checking">
+    <data name="Status_Checking" xml:space="preserve">
         <value>د تازه معلوماتو لپاره کتل کیږي...</value>
     </data>
-    <data name="Status_NewVersion">
-        <value>نوې نسخه وموندل شوه!</value>
-    </data>
-    <data name="Status_Latest">
+    <data name="Status_Latest" xml:space="preserve">
         <value>تاسو وروستۍ نسخه کاروئ.</value>
     </data>
-    <data name="Status_CheckError">
+    <data name="Status_CheckError" xml:space="preserve">
         <value>د تازه معلوماتو کتلو تېروتنه: {0}</value>
     </data>
-    <data name="Status_Installing">
-        <value>ډاونلوډ او نصب کیږي...</value>
+    <data name="Status_ReadyFromHash" xml:space="preserve">
+        <value>چمتو (د چیکسم فایل څخه)</value>
     </data>
-    <data name="Status_InstallError">
-        <value>د نصبولو تېروتنه: {0}</value>
-    </data>
-    <data name="Status_ReadyFromHash">
-        <value>چمتو (د .hash فایل څخه)</value>
-    </data>
-    <data name="Status_LostOriginal">
-        <value>اصلي فایل ورک شو!</value>
-    </data>
-    <data name="Status_DropHashMismatch">
-        <value>د هیش فایل نوم سم نه دی!</value>
-    </data>
-    <data name="Status_DropHashSuccess">
-        <value>د هیش فایل په بریالیتوب سره واچول شو</value>
-    </data>
-    <data name="Status_DropNoHash">
+    <data name="Status_DropNoHash" xml:space="preserve">
         <value>فایل هیش نلري!</value>
     </data>
-    <data name="Status_ReadError">
+    <data name="Status_ReadError" xml:space="preserve">
         <value>د فایل لوستلو تېروتنه</value>
     </data>
-    <data name="Msg_Result_Title">
+    <data name="Msg_Result_Title" xml:space="preserve">
         <value>پایله</value>
     </data>
-    <data name="Msg_Result_Content">
+    <data name="Msg_Result_Content" xml:space="preserve">
         <value>پروسس بشپړ شو!
-            ✅ بریالی: {0}
-            ❌ ناکام: {1}
-            ⛔ لغوه شوی: {2}
-        </value>
+✅ بریالی: {0}
+❌ ناکام: {1}
+⛔ لغوه شوی: {2}</value>
     </data>
-    <data name="Msg_CheckResult">
+    <data name="Msg_CheckResult" xml:space="preserve">
         <value>{0} فایلونه وکتل شول.
-            ✅ سم دی: {1}
-            ❌ سم نه دی/تېروتنه: {2}
-            ⛔ لغوه شوی: {3}
-        </value>
+✅ سم دی: {1}
+❌ سم نه دی/تېروتنه: {2}
+⛔ لغوه شوی: {3}</value>
     </data>
-    <data name="Msg_WrongHashFile">
-        <value>ناسم فایل!</value>
-    </data>
-    <data name="Msg_WrongHashFileContent">
-        <value>د هیش فایل سم نه دی!
-
-            اصلي فایل: {0}
-            ټاکل شوی فایل: {1}
-
-            مهرباني وکړئ سم اړوند هیش فایل وټاکئ.
-        </value>
-    </data>
-    <data name="Msg_UpdateTitle">
-        <value>نوی تازه معلومات</value>
-    </data>
-    <data name="Msg_UpdateContent">
-        <value>نسخه: {0}
-
-            بدلونونه:
-            {1}
-
-            د ډاونلوډ لپاره 'اوس تازه کړئ' کلیک وکړئ.
-        </value>
-    </data>
-    <data name="Msg_NoUpdate">
-        <value>هیڅ نوي تازه معلومات ونه موندل شول.</value>
-    </data>
-    <data name="Msg_Error">
+    <data name="Msg_Error" xml:space="preserve">
         <value>تېروتنه</value>
     </data>
-    <data name="Msg_ReadHashError">
-        <value>د دې هیش فایل لوستل نشي کیدی.</value>
-    </data>
-    <data name="Msg_ConfigCheck">
+    <data name="Msg_ConfigCheck" xml:space="preserve">
         <value>د ترتیب کتنه</value>
     </data>
-    <data name="Msg_ConfigExists">
-        <value>فایل شتون لري په:
-            {0}
-        </value>
-    </data>
-    <data name="Msg_ConfigMissing">
-        <value>فایل شتون نلري!</value>
-    </data>
-    <data name="Msg_ConfigCreated">
-        <value>فایل په بریالیتوب سره جوړ شو!</value>
-    </data>
-    <data name="Msg_ConfigCopied">
+    <data name="Msg_ConfigCopied" xml:space="preserve">
         <value>د ترتیب لار کاپي شوه.</value>
     </data>
-    <data name="Msg_AdminMode">
-        <value>د مدیر حالت</value>
-    </data>
-    <data name="Msg_AdminRestart">
-        <value>مهرباني وکړئ د بدلونونو پلي کولو لپاره اپلیکیشن بیا پیل کړئ.</value>
-    </data>
-    <data name="Msg_OpenFolderError">
-        <value>فولډر نشي خلاصولی: {0}</value>
-    </data>
-    <data name="Msg_DisclaimerTitle">
-        <value>⚠️ د جوړوونکي نسخې خبرداری</value>
-    </data>
-    <data name="Msg_DisclaimerContent">
-        <value>تاسو د جوړوونکي (Pre-release) تازه کولو چینل ته بدلیدو په حال کې یاست.
-
-            دا نسخه ممکن بګونه ولري، بې ثباته وي، او د معلوماتو له لاسه ورکولو لامل شي.
-
-            زه د دې نسخې کارولو څخه راپورته شوي ستونزو لپاره مسؤل نه یم.
-        </value>
-    </data>
-    <data name="Msg_DisclaimerAgree">
-        <value>ما لوستلی او موافق یم. زه بشپړ مسؤلیت په غاړه اخلم.</value>
-    </data>
-    <data name="Dialog_SaveHash">
+    <data name="Dialog_SaveHash" xml:space="preserve">
         <value>د هیش فایل خوندي کول</value>
     </data>
-    <data name="Dialog_SaveZip">
+    <data name="Dialog_SaveZip" xml:space="preserve">
         <value>فشار شوی فایل خوندي کول</value>
     </data>
-    <data name="Dialog_SelectFiles">
+    <data name="Dialog_SelectFiles" xml:space="preserve">
         <value>د هیش لپاره فایلونه وټاکئ</value>
     </data>
-    <data name="Dialog_SelectHashFile">
+    <data name="Dialog_SelectHashFile" xml:space="preserve">
         <value>د دې لپاره هیش فایل وټاکئ: {0}</value>
     </data>
-    <data name="Dialog_SelectCheckFiles">
-        <value>فایلونه وټاکئ (اصلي یا .hash فایل)</value>
+    <data name="Dialog_SelectCheckFiles" xml:space="preserve">
+        <value>فایلونه یا د چیکسم فایلونه وټاکئ</value>
     </data>
-    <data name="Watermark_PasteDrop">
+    <data name="Watermark_PasteDrop" xml:space="preserve">
         <value>دلته یې پیسټ یا واچوئ...</value>
     </data>
-    <data name="Unit_Seconds">
+    <data name="Unit_Seconds" xml:space="preserve">
         <value>ثانیې</value>
     </data>
-    <data name="Tip_Verify">
+    <data name="Tip_Verify" xml:space="preserve">
         <value>تاییدول</value>
     </data>
-    <data name="Tip_Stop">
+    <data name="Tip_Stop" xml:space="preserve">
         <value>درول</value>
     </data>
-    <data name="Tip_RemoveFile">
+    <data name="Tip_RemoveFile" xml:space="preserve">
         <value>فایل لرې کول</value>
     </data>
-    <data name="Tip_CopyHash">
+    <data name="Tip_CopyHash" xml:space="preserve">
         <value>هیش کاپي کول</value>
     </data>
-    <data name="Tip_Compute">
+    <data name="Tip_Compute" xml:space="preserve">
         <value>محاسبه کول</value>
     </data>
-    <data name="Tip_ClearHash">
+    <data name="Tip_ClearHash" xml:space="preserve">
         <value>هیش پاکول</value>
     </data>
-    <data name="Tip_BrowseHash">
+    <data name="Tip_BrowseHash" xml:space="preserve">
         <value>هیش لټون</value>
     </data>
-    <data name="Settings_ThemeDark">
+    <data name="Settings_ThemeDark" xml:space="preserve">
         <value>تیاره</value>
     </data>
-    <data name="Settings_ThemeLight">
+    <data name="Settings_ThemeLight" xml:space="preserve">
         <value>روښانه</value>
     </data>
-    <data name="Settings_ThemeSystem">
+    <data name="Settings_ThemeSystem" xml:space="preserve">
         <value>سیسټم</value>
     </data>
-    <data name="Msg_TaskCancelled_Title">
-        <value>دنده ودرول شوه</value>
-    </data>
-    <data name="Btn_Yes">
+    <data name="Btn_Yes" xml:space="preserve">
         <value>هو</value>
     </data>
-    <data name="Btn_OK">
+    <data name="Btn_OK" xml:space="preserve">
         <value>ښه</value>
     </data>
-    <data name="Btn_No">
+    <data name="Btn_No" xml:space="preserve">
         <value>نه</value>
     </data>
-    <data name="Dialog_FileType_Zip">
+    <data name="Dialog_FileType_Zip" xml:space="preserve">
         <value>زپ آرشیف (Zip)</value>
     </data>
-    <data name="Msg_ConfirmExit_Title">
+    <data name="Msg_ConfirmExit_Title" xml:space="preserve">
         <value>وتل تایید کړئ</value>
     </data>
-    <data name="Msg_ConfirmExit_Content">
+    <data name="Msg_ConfirmExit_Content" xml:space="preserve">
         <value>وتل به ټول روان کارونه لغوه کړي. ایا تاسو ډاډه یاست؟</value>
     </data>
-    <data name="Msg_TaskCancelled_Content">
-        <value>دنده د وخت ختمیدو له امله ودرول شوه.</value>
-    </data>
-    <data name="Dev_ToolTip_Save">
-        <value>د ډیبګ لاګ په ډیسک کې خوندي کړئ.</value>
-    </data>
-    <data name="Dev_ToolTip_Pause">
+    <data name="Dev_ToolTip_Pause" xml:space="preserve">
         <value>د ریښتیني وخت لاګنګ ودروئ.</value>
     </data>
-    <data name="Tip_ShowHash">
-        <value>هیش ښودل</value>
-    </data>
-    <data name="Tip_HideHash">
-        <value>هیش پټول</value>
-    </data>
-    <data name="Tip_CopyPath">
+    <data name="Tip_CopyPath" xml:space="preserve">
         <value>لار کاپي کول</value>
     </data>
-    <data name="Msg_DiskFull">
+    <data name="Msg_DiskFull" xml:space="preserve">
         <value>ستاسو ډرایو ډک دی. مهرباني وکړئ بل ځای وټاکئ :)</value>
     </data>
-    <data name="Tip_HashVisibility">
+    <data name="Tip_HashVisibility" xml:space="preserve">
         <value>د هیش لیدل</value>
     </data>
-    <data name="EmptyState_DropFiles">
-        <value>هیڅ فایل نشته. د پیل لپاره 'فایلونه اضافه کول' کلیک وکړئ.</value>
+    <data name="EmptyState_DropFiles" xml:space="preserve">
+        <value>فایلونه یا فولډرونه دلته واچوئ، یا په «فایلونه اضافه کول» کلیک وکړئ.</value>
     </data>
-    <data name="Settings_LockTheme">
+    <data name="Settings_LockTheme" xml:space="preserve">
         <value>دا بڼه د ډیفالټ په توګه لاک کړئ</value>
     </data>
-    <data name="Msg_FileSizeLimitExceeded_Summary">
+    <data name="Msg_FileSizeLimitExceeded_Summary" xml:space="preserve">
         <value>{0} فایلونه چې له حد څخه ډیر وو ({1} {2}) پریښودل شول:
-            {3}
-        </value>
+{3}</value>
     </data>
-    <data name="Msg_SystemLanguage">
-        <value>د سیسټم ژبه</value>
-    </data>
-    <data name="Msg_SystemLanguageWarning">
-        <value>'اوتومات' ترتیب ته بیرته ستنیدل د بشپړ اغیز لپاره بیا پیل کولو ته اړتیا لري. ایا غواړئ دوام ورکړئ؟</value>
-    </data>
-    <data name="Msg_LanguageChangeTitle">
-        <value>د ژبې بدلون</value>
-    </data>
-    <data name="Msg_LanguageChangeConfirmation">
-        <value>ایا تاسو پدې اړه ډاډه یاست؟</value>
-    </data>
-    <data name="Msg_DontShowAgain">
-        <value>دا خبرداری بیا مه ښایاست</value>
-    </data>
-    <data name="Error_Network">
+    <data name="Error_Network" xml:space="preserve">
         <value>د شبکې پیوستون تېروتنه. مهرباني وکړئ خپل انټرنیټ چیک کړئ.</value>
     </data>
-    <data name="Error_Server">
-        <value>د سرور تېروتنه (5xx). مهرباني وکړئ وروسته بیا هڅه وکړئ.</value>
-    </data>
-    <data name="Error_Client">
-        <value>د مراجعینو تېروتنه (4xx). مهرباني وکړئ غوښتنه چیک کړئ.</value>
-    </data>
-    <data name="Error_ApiLimit">
+    <data name="Error_ApiLimit" xml:space="preserve">
         <value>د GitHub API حد څخه تیر شو. مهرباني وکړئ وروسته بیا هڅه وکړئ.</value>
     </data>
-    <data name="Msg_NoPreRelease">
-        <value>د خپریدو دمخه نسخه ونه موندل شوه. اوسنۍ نسخه ساتل کیږي.</value>
-    </data>
-    <data name="Msg_PreReleaseWarning">
-        <value>د خپریدو دمخه نسخه {0} شتون لري.
-
-            {1}
-
-            دا نسخه ممکن بې ثباته وي. ایا تاسو غواړئ ډاونلوډ کړئ؟
-        </value>
-    </data>
-    <data name="Btn_ClearFailed">
+    <data name="Btn_ClearFailed" xml:space="preserve">
         <value>ناکام شوي پاک کړئ</value>
     </data>
-    <data name="Msg_ClearedFailed">
-        <value>{0} توکي لرې شول.</value>
-    </data>
-    <data name="Msg_EstimatedTime">
+    <data name="Msg_EstimatedTime" xml:space="preserve">
         <value>پاتې وخت: {0}</value>
     </data>
-    <data name="Msg_TaskDuration">
+    <data name="Msg_TaskDuration" xml:space="preserve">
         <value>د دندې موده: {0}</value>
     </data>
-    <data name="Msg_TimeUnknown">
+    <data name="Msg_TimeUnknown" xml:space="preserve">
         <value>محاسبه کیږي...</value>
     </data>
-    <data name="Btn_AddFolder">
+    <data name="Btn_AddFolder" xml:space="preserve">
         <value>فولډر اضافه کول...</value>
     </data>
-    <data name="Msg_EmptyFolder">
+    <data name="Msg_EmptyFolder" xml:space="preserve">
         <value>ټاکل شوی فولډر خالي دی.</value>
     </data>
-    <data name="Dialog_SelectFolder">
+    <data name="Dialog_SelectFolder" xml:space="preserve">
         <value>د سکن کولو لپاره فولډر وټاکئ</value>
     </data>
-    <data name="Btn_Cancel">
+    <data name="Btn_Cancel" xml:space="preserve">
         <value>لغوه کول</value>
     </data>
-    <data name="Settings_Limits">
+    <data name="Settings_Limits" xml:space="preserve">
         <value>د پروسس کولو محدودیتونه</value>
     </data>
-    <data name="Settings_MaxFileCount">
+    <data name="Settings_MaxFileCount" xml:space="preserve">
         <value>د فولډر سکن کولو لپاره اعظمي فایلونه</value>
     </data>
-    <data name="Settings_MaxFileCountDesc">
+    <data name="Settings_MaxFileCountDesc" xml:space="preserve">
         <value>د فعالیت ستونزو مخنیوي لپاره د فولډر څخه اضافه شوي فایلونو شمیر محدود کړئ.</value>
     </data>
-    <data name="Settings_MaxFolderCount">
+    <data name="Settings_MaxFolderCount" xml:space="preserve">
         <value>په یو وخت کې اعظمي فولډرونه</value>
     </data>
-    <data name="Settings_MaxFolderCountDesc">
+    <data name="Settings_MaxFolderCountDesc" xml:space="preserve">
         <value>په یو وخت کې غوره شوي فولډرونو شمیر محدود کړئ.</value>
     </data>
-    <data name="Msg_FolderLimit">
+    <data name="Msg_FolderLimit" xml:space="preserve">
         <value>تاسو کولی شئ په یو وخت کې یوازې تر {0} فولډرونو پورې وټاکئ.</value>
     </data>
-    <data name="Msg_FileLimit">
+    <data name="Msg_FileLimit" xml:space="preserve">
         <value>{0} فایلونه اضافه شول. {1} فایلونه د حد له امله پریښودل شول.</value>
     </data>
-    <data name="Lbl_ProgressStats">
+    <data name="Lbl_ProgressStats" xml:space="preserve">
         <value>{0}/{1} ({2:F2}%)</value>
     </data>
-    <data name="Lbl_DetailedStats">
+    <data name="Lbl_DetailedStats" xml:space="preserve">
         <value>✅ {0} ({1:F2}%) | ❌ {2} ({3:F2}%) | ⛔ {4} ({5:F2}%)</value>
     </data>
-    <data name="Lbl_Speed">
-        <value>لوستل: {0}/s | لیکل: {1}/s</value>
+    <data name="Settings_ShowSpeed" xml:space="preserve">
+        <value>د لوستلو سرعت ښودل</value>
     </data>
-    <data name="Settings_ShowSpeed">
-        <value>د لوستلو/لیکلو سرعت ښودل</value>
-    </data>
-    <data name="Settings_ShowSpeedDesc">
+    <data name="Settings_ShowSpeedDesc" xml:space="preserve">
         <value>د هیش عملیاتو پرمهال د ریښتیني وخت لیږد سرعت وښایاست.</value>
     </data>
-    <data name="Status_Computing">
-        <value>هیش محاسبه کیږي...</value>
-    </data>
-    <data name="Size_All">
+    <data name="Size_All" xml:space="preserve">
         <value>ټولې اندازې</value>
     </data>
-    <data name="Size_Small">
+    <data name="Size_Small" xml:space="preserve">
         <value>کوچنی (&lt; 1MB)</value>
     </data>
-    <data name="Size_Medium">
+    <data name="Size_Medium" xml:space="preserve">
         <value>منځنی (1MB - 100MB)</value>
     </data>
-    <data name="Size_Large">
+    <data name="Size_Large" xml:space="preserve">
         <value>لوی (100MB - 1GB)</value>
     </data>
-    <data name="Size_ExtraLarge">
+    <data name="Size_ExtraLarge" xml:space="preserve">
         <value>خورا لوی (&gt; 1GB)</value>
     </data>
-    <data name="About_Documents">
+    <data name="About_Documents" xml:space="preserve">
         <value>اسناد</value>
     </data>
-    <data name="Doc_PrivacyPolicy">
+    <data name="Doc_PrivacyPolicy" xml:space="preserve">
         <value>د محرمیت تګلاره</value>
     </data>
-    <data name="Doc_ToS">
+    <data name="Doc_ToS" xml:space="preserve">
         <value>د خدماتو شرایط</value>
     </data>
-    <data name="Doc_EULA">
+    <data name="Doc_EULA" xml:space="preserve">
         <value>د کارونکي جواز تړون (EULA)</value>
     </data>
-    <data name="Doc_Disclaimer">
+    <data name="Doc_Disclaimer" xml:space="preserve">
         <value>اعلان (Disclaimer)</value>
     </data>
-    <data name="Doc_Readme">
+    <data name="Doc_Readme" xml:space="preserve">
         <value>README</value>
     </data>
-    <data name="Doc_Changelog">
+    <data name="Doc_Changelog" xml:space="preserve">
         <value>د بدلونونو لاګ</value>
     </data>
-    <data name="Doc_Credit">
+    <data name="Doc_Credit" xml:space="preserve">
         <value>مننه</value>
     </data>
-    <data name="Status_Processing_Filter">
+    <data name="Status_Processing_Filter" xml:space="preserve">
         <value>پروسس کیږي</value>
     </data>
-    <data name="Status_Failure">
+    <data name="Status_Failure" xml:space="preserve">
         <value>ناکام شو</value>
     </data>
-    <data name="Watermark_Search">
+    <data name="Watermark_Search" xml:space="preserve">
         <value>په نوم لټون...</value>
     </data>
-    <data name="Placeholder_Size">
-        <value>اندازه</value>
-    </data>
-    <data name="Tip_GitHubProfile">
+    <data name="Tip_GitHubProfile" xml:space="preserve">
         <value>د GitHub پروفایل</value>
     </data>
-    <data name="Filter_All">
+    <data name="Filter_All" xml:space="preserve">
         <value>ټول</value>
     </data>
-    <data name="Settings_FreeMemory">
-        <value>حافظه خالي کړئ</value>
+    <data name="Lang_Auto" xml:space="preserve">
+        <value>اوتومات (د سیسټم ژبه)</value>
     </data>
-    <data name="Settings_FreeMemoryDesc">
-        <value>د RAM خالي کولو لپاره د کثافاتو راټولولو (GC) ته اړ ایستل.</value>
+    <data name="Lbl_Algorithm" xml:space="preserve">
+        <value>الګوریتم</value>
     </data>
-    <data name="Settings_BtnFreeMemory">
-        <value>حافظه پاکه کړئ</value>
+    <data name="Lbl_DefaultAlgorithm" xml:space="preserve">
+        <value>ډیفالټ الګوریتم</value>
     </data>
-    <data name="Msg_MemoryFreed">
-        <value>د حافظې پاکول پیل شول.</value>
+    <data name="Btn_Export" xml:space="preserve">
+        <value>صادرول</value>
+    </data>
+    <data name="Export_ChecksumFile" xml:space="preserve">
+        <value>د چیکسم فایل خوندي کول…</value>
+    </data>
+    <data name="Export_CopyAll" xml:space="preserve">
+        <value>ټول هیشونه کاپي کول</value>
+    </data>
+    <data name="Btn_OpenChecksumFile" xml:space="preserve">
+        <value>د چیکسم فایل خلاصول…</value>
+    </data>
+    <data name="Btn_View" xml:space="preserve">
+        <value>کتل</value>
+    </data>
+    <data name="Btn_Close" xml:space="preserve">
+        <value>بندول</value>
+    </data>
+    <data name="Btn_InstallOnExit" xml:space="preserve">
+        <value>د وتلو پر مهال نصبول</value>
+    </data>
+    <data name="Btn_OpenReleasePage" xml:space="preserve">
+        <value>د خپرونې پاڼه خلاصول</value>
+    </data>
+    <data name="Lbl_ReleaseNotes" xml:space="preserve">
+        <value>نوي بدلونونه</value>
+    </data>
+    <data name="Btn_RestartAdmin" xml:space="preserve">
+        <value>د اډمین په توګه بیا پیلول</value>
+    </data>
+    <data name="Btn_CopyDetails" xml:space="preserve">
+        <value>جزییات کاپي کول</value>
+    </data>
+    <data name="Settings_Performance" xml:space="preserve">
+        <value>فعالیت</value>
+    </data>
+    <data name="Settings_ParallelFiles" xml:space="preserve">
+        <value>په یو وخت کې پروسس کیدونکي فایلونه</value>
+    </data>
+    <data name="Settings_ParallelFilesDesc" xml:space="preserve">
+        <value>0 = اوتومات (په دې کمپیوټر کې {0}).</value>
+    </data>
+    <data name="Settings_HddMode" xml:space="preserve">
+        <value>د هارډ ډیسکونو لپاره ښه کول</value>
+    </data>
+    <data name="Settings_HddModeDesc" xml:space="preserve">
+        <value>په یو وخت کې یو فایل لولي، چې په میخانیکي هارډ ډیسکونو او د شبکې په شریکو فولډرونو کې ګړندی دی.</value>
+    </data>
+    <data name="Settings_IncludeHidden" xml:space="preserve">
+        <value>پټ فایلونه شاملول</value>
+    </data>
+    <data name="Settings_IncludeHiddenDesc" xml:space="preserve">
+        <value>د فولډرونو د سکن پر مهال پټ او سیسټمي فایلونه هم اضافه کوي.</value>
+    </data>
+    <data name="Settings_Output" xml:space="preserve">
+        <value>وتنه</value>
+    </data>
+    <data name="Settings_HexCase" xml:space="preserve">
+        <value>د هیش د تورو ډول</value>
+    </data>
+    <data name="Settings_HexUpper" xml:space="preserve">
+        <value>لوی توري (ABCDEF)</value>
+    </data>
+    <data name="Settings_HexLower" xml:space="preserve">
+        <value>واړه توري (abcdef)</value>
+    </data>
+    <data name="Settings_DefaultExport" xml:space="preserve">
+        <value>د چیکسم فایل ډیفالټ فارمټ</value>
+    </data>
+    <data name="Settings_Updates" xml:space="preserve">
+        <value>تازه کول</value>
+    </data>
+    <data name="Settings_AutoUpdate" xml:space="preserve">
+        <value>په اوتومات ډول د تازه معلوماتو لپاره کتل</value>
+    </data>
+    <data name="Settings_AutoUpdateDesc" xml:space="preserve">
+        <value>د پروګرام د پیل پر مهال په ورځ کې تر یو ځل زیات GitHub نه ګوري. نوې نسخې یوازې هغه وخت ډاونلوډ کیږي چې تاسو یې د نصبولو پرېکړه وکړئ.</value>
+    </data>
+    <data name="Settings_Integration" xml:space="preserve">
+        <value>د Windows سره ادغام</value>
+    </data>
+    <data name="Settings_ShellMenu" xml:space="preserve">
+        <value>د فایل اکسپلورر د ښي کلیک مینو</value>
+    </data>
+    <data name="Settings_ShellMenuDesc" xml:space="preserve">
+        <value>«هیش جوړول» او «تاییدول» د فایلونو او فولډرونو د ښي کلیک مینو ته اضافه کوي (په Windows 11 کې د «نور انتخابونه وښایاست» لاندې).</value>
+    </data>
+    <data name="Settings_RestartAdminDesc" xml:space="preserve">
+        <value>یوازې د هغو فایلونو لپاره اړین دی چې ستاسو حساب یې نشي لوستلی. کله چې پروګرام د اډمین په توګه چلیږي، Windows له فایل اکسپلورر څخه کشول او پرېښودل بندوي.</value>
+    </data>
+    <data name="Settings_OpenDataFolder" xml:space="preserve">
+        <value>د ډیټا فولډر خلاصول</value>
+    </data>
+    <data name="FileType_Gnu" xml:space="preserve">
+        <value>د GNU چیکسم فایل (sha256sum فارمټ)</value>
+    </data>
+    <data name="FileType_Bsd" xml:space="preserve">
+        <value>د BSD چیکسم فایل (نښه شوی)</value>
+    </data>
+    <data name="FileType_Sfv" xml:space="preserve">
+        <value>د SFV فایل (CRC32)</value>
+    </data>
+    <data name="FileType_Json" xml:space="preserve">
+        <value>د JSON فایل</value>
+    </data>
+    <data name="FileType_Csv" xml:space="preserve">
+        <value>د CSV فایل</value>
+    </data>
+    <data name="FileType_Checksum" xml:space="preserve">
+        <value>د چیکسم فایلونه</value>
+    </data>
+    <data name="Theme_Fluent" xml:space="preserve">
+        <value>Fluent</value>
+    </data>
+    <data name="Theme_Google" xml:space="preserve">
+        <value>Google (Material)</value>
+    </data>
+    <data name="Theme_HighContrast" xml:space="preserve">
+        <value>لوړ کنټراسټ</value>
+    </data>
+    <data name="Theme_Colorblind" xml:space="preserve">
+        <value>د رنګ ړوندو لپاره مناسب</value>
+    </data>
+    <data name="Theme_Retro" xml:space="preserve">
+        <value>ریټرو</value>
+    </data>
+    <data name="Theme_Glassmorphism" xml:space="preserve">
+        <value>ښیښه</value>
+    </data>
+    <data name="Theme_Cyberpunk" xml:space="preserve">
+        <value>سایبرپنک</value>
+    </data>
+    <data name="Theme_Pastel" xml:space="preserve">
+        <value>پاسټل</value>
+    </data>
+    <data name="Font_Default" xml:space="preserve">
+        <value>ډیفالټ</value>
+    </data>
+    <data name="Shell_Create" xml:space="preserve">
+        <value>د Hash Tool سره هیش جوړول</value>
+    </data>
+    <data name="Shell_Verify" xml:space="preserve">
+        <value>د Hash Tool سره تاییدول</value>
+    </data>
+    <data name="Status_Queued" xml:space="preserve">
+        <value>په کتار کې</value>
+    </data>
+    <data name="Status_AccessDenied" xml:space="preserve">
+        <value>لاسرسی رد شو</value>
+    </data>
+    <data name="Status_InUse" xml:space="preserve">
+        <value>د بل پروګرام لخوا کارول کیږي</value>
+    </data>
+    <data name="Status_TimedOut" xml:space="preserve">
+        <value>وخت پای ته ورسید</value>
+    </data>
+    <data name="Status_ValidLegacy" xml:space="preserve">
+        <value>د اعتبار وړ (د CRC32 زوړ بایټ ترتیب)</value>
+    </data>
+    <data name="Status_LengthMismatch" xml:space="preserve">
+        <value>د {0} معتبر هیش نه دی</value>
+    </data>
+    <data name="Status_Downloading" xml:space="preserve">
+        <value>نوې نسخه ډاونلوډ کیږي… {0}%</value>
+    </data>
+    <data name="Status_ReadyToInstall" xml:space="preserve">
+        <value>نوې نسخه به هغه وخت نصب شي چې تاسو Hash Tool بند کړئ.</value>
+    </data>
+    <data name="Msg_BusyTryLater" xml:space="preserve">
+        <value>مهرباني وکړئ تر هغه انتظار وکړئ چې اوسنۍ دنده پای ته ورسیږي.</value>
+    </data>
+    <data name="Msg_ImportErrors" xml:space="preserve">
+        <value>{0} توکي اضافه نشول:
+{1}</value>
+    </data>
+    <data name="Msg_ChecksumFileInvalid" xml:space="preserve">
+        <value>{1}: {0} کرښې پرېښودل شوې چې د چیکسم سمې ننوتنې نه وې.</value>
+    </data>
+    <data name="Msg_ChecksumFileEmpty" xml:space="preserve">
+        <value>{0} هیڅ چیکسم نلري.</value>
+    </data>
+    <data name="Msg_UnsafePath" xml:space="preserve">
+        <value>«{0}» پرېښودل شو: د چیکسم فایلونه نشي کولی د شبکې یا وسیلې لارو ته اشاره وکړي.</value>
+    </data>
+    <data name="Msg_ConfirmClear" xml:space="preserve">
+        <value>ایا ټول {0} فایلونه له نوملړ څخه لرې شي؟</value>
+    </data>
+    <data name="Msg_ExportDone" xml:space="preserve">
+        <value>{0} هیشونه په {1} کې خوندي شول.</value>
+    </data>
+    <data name="Msg_NothingToExport" xml:space="preserve">
+        <value>لا تر اوسه د صادرولو لپاره هیڅ محاسبه شوي هیشونه نشته.</value>
+    </data>
+    <data name="Msg_AccessDeniedRestart" xml:space="preserve">
+        <value>ځینې فایلونه ونه لوستل شول ځکه چې لاسرسی رد شو. ایا Hash Tool د اډمین په توګه بیا پیل شي او دا فایلونه بیا وازمویل شي؟</value>
+    </data>
+    <data name="Msg_ElevatedDragDrop" xml:space="preserve">
+        <value>Hash Tool د اډمین په توګه چلیږي، نو Windows له فایل اکسپلورر څخه کشول او پرېښودل بندوي. پر ځای یې «فایلونه اضافه کول» یا «فولډر اضافه کول» وکاروئ.</value>
+    </data>
+    <data name="Msg_UpdateAvailableBanner" xml:space="preserve">
+        <value>د Hash Tool {0} نسخه شتون لري.</value>
+    </data>
+    <data name="Msg_UpdatesUnavailable" xml:space="preserve">
+        <value>تازه کول یوازې په هغه نصب شوې یا پورټبل نسخه کې شتون لري چې د GitHub له Releases پاڼې څخه ترلاسه شوې وي.</value>
+    </data>
+    <data name="Msg_SettingsRecovered" xml:space="preserve">
+        <value>ستاسو د تنظیماتو فایل ونه لوستل شو او ډیفالټ حالت ته بیرته وګرځول شو. خراب شوی فایل د بیک اپ په توګه وساتل شو.</value>
+    </data>
+    <data name="Msg_UnexpectedError" xml:space="preserve">
+        <value>یوه ستونزه رامنځته شوه: {0}</value>
+    </data>
+    <data name="Lbl_ReadSpeed" xml:space="preserve">
+        <value>لوستل: {0}/s</value>
+    </data>
+    <data name="Dialog_SaveChecksumFile" xml:space="preserve">
+        <value>د چیکسم فایل خوندي کول</value>
+    </data>
+    <data name="Dialog_OpenChecksumFile" xml:space="preserve">
+        <value>د چیکسم فایلونه خلاصول</value>
+    </data>
+    <data name="Dev_Export" xml:space="preserve">
+        <value>لاګ صادرول</value>
+    </data>
+    <data name="Dev_Level" xml:space="preserve">
+        <value>لږترلږه کچه</value>
+    </data>
+    <data name="Dev_AutoScroll" xml:space="preserve">
+        <value>اوتومات سکرول</value>
+    </data>
+    <data name="About_Version" xml:space="preserve">
+        <value>نسخه {0}</value>
     </data>
 </root>
