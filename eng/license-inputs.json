@@ -1,0 +1,4 @@
+[
+  "src/HashTool.App/HashTool.App.csproj",
+  "src/HashTool.Cli/HashTool.Cli.csproj"
+]

@@ -1,0 +1,59 @@
+name: Bug report
+description: Something does not work as expected.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Generate Hash
+        2. Drop a folder with ...
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Hash Tool version
+      description: Shown on the About page.
+      placeholder: "1.2.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows 11
+        - Windows 10
+        - macOS (Apple silicon)
+        - macOS (Intel)
+        - Linux
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How did you install it?
+      options:
+        - Installer (Setup)
+        - Portable
+        - Linux AppImage
+        - Command-line tool (hashtool)
+        - Built from source
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: >
+        Settings > Configuration > Open Data Folder, then the "log" folder. User folders are already masked in the log,
+        but please check before posting.
+      render: text

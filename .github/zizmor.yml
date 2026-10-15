@@ -1,0 +1,7 @@
+rules:
+  dangerous-triggers:
+    ignore:
+      # workflow_run is the only way to report other workflows' results. These jobs check out no code from the
+      # triggering run, only call the maintainer's pinned notifier, and are limited to this repository's own runs.
+      - notify-ci-failure.yml
+      - notify-release-pipeline.yml

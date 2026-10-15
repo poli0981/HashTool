@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/poli0981/HashTool/security/advisories/new
+    about: Please report security issues privately, not as public issues.
+  - name: Questions and ideas
+    url: https://github.com/poli0981/HashTool/discussions
+    about: Ask questions or discuss ideas before opening a feature request.

@@ -16,6 +16,7 @@ env:
   DOTNET_NOLOGO: true
   DOTNET_CLI_TELEMETRY_OPTOUT: true
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  AVALONIA_TELEMETRY_OPTOUT: 1
 
 jobs:
   build-test:
@@ -46,14 +47,26 @@ jobs:
       - name: Restore
         run: dotnet restore HashTool.slnx
 
+      # Warnings fail the build, including NuGet audit (NU1901-NU1904) for vulnerable packages.
       - name: Build
-        run: dotnet build HashTool.slnx -c Release --no-restore
+        run: dotnet build HashTool.slnx -c Release --no-restore -warnaserror
 
       - name: Test
         run: >
           dotnet test --solution HashTool.slnx -c Release --no-build
           --results-directory TestResults
           --coverage --coverage-output-format cobertura
+
+      - name: Coverage gate (HashTool.Core >= 80%)
+        if: runner.os == 'Linux'
+        run: python3 -I eng/coverage-gate.py TestResults HashTool.Core 80
+
+      # Starts the real app headless: every page, every language, hashing and verifying a file.
+      - name: Smoke test
+        shell: bash
+        env:
+          HASHTOOL_DATA_DIR: ${{ runner.temp }}/smoke-data
+        run: dotnet src/HashTool.App/bin/Release/net10.0/CheckHash.dll --smoke-test --smoke-out TestResults/smoke.json
 
       - name: Upload test results
         if: always()
@@ -84,3 +97,23 @@ jobs:
 
       - name: Check formatting
         run: dotnet format HashTool.slnx --no-restore --verify-no-changes --verbosity minimal
+
+      - name: Check translations
+        run: python3 -I eng/loc.py check
+
+  # Single required status check for branch protection.
+  ci-ok:
+    name: ci-ok
+    if: always()
+    needs: [build-test, format]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions: {}
+    steps:
+      - name: All CI jobs passed
+        env:
+          BUILD_TEST: ${{ needs.build-test.result }}
+          FORMAT: ${{ needs.format.result }}
+        run: |
+          echo "build-test: $BUILD_TEST, format: $FORMAT"
+          test "$BUILD_TEST" = success && test "$FORMAT" = success
