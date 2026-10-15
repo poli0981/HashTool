@@ -44,6 +44,9 @@ public sealed record AppCommandLine(
         for (var i = 0; i < args.Count; i++)
         {
             var arg = args[i];
+            // Explorer passes a drive root as "C:\" and Windows reads \" as an escaped quote, so the argument arrives as
+            // C:" - restore the backslash.
+            if (OperatingSystem.IsWindows() && arg.Length > 1 && arg[^1] == '"') arg = arg[..^1] + "\\";
             string? Next() => i + 1 < args.Count ? args[++i] : null;
             switch (arg.ToLowerInvariant())
             {

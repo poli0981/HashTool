@@ -34,6 +34,10 @@ public sealed record FileListServices(
 public sealed class ImportReport
 {
     public int Added;
+
+    /// <summary>Existing rows that received an expected hash (Verify).</summary>
+    public int Merged;
+
     public int Duplicates;
     public readonly List<string> TooLarge = [];
     public readonly List<string> Errors = [];
@@ -293,8 +297,8 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
         {
             if (_byPath.TryGetValue(item.FilePath, out var existing))
             {
-                if (Merge(existing, item)) continue;
-                report.Duplicates++;
+                if (Merge(existing, item)) report.Merged++;
+                else report.Duplicates++;
                 continue;
             }
 
@@ -329,7 +333,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
         if (report.Errors.Count > 0)
             lines.Add(L.Format("Msg_ImportErrors", report.Errors.Count, string.Join("\n", report.Errors.Take(10))));
 
-        if (report.Added == 0 && lines.Count == 0 && report.Duplicates == 0) lines.Add(L["Msg_EmptyFolder"]);
+        if (report.Added == 0 && report.Merged == 0 && report.Duplicates == 0 && lines.Count == 0) lines.Add(L["Msg_EmptyFolder"]);
         if (lines.Count > 0)
             await Services.Dialogs.ShowAsync(L["Msg_Result_Title"], string.Join("\n\n", lines),
                 report.Errors.Count > 0 ? DialogIcon.Warning : DialogIcon.Information);
@@ -493,7 +497,8 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
         finally
         {
             StopPump();
-            DrainEvents();
+            // Every item has reported by now; apply all of it (one pump tick only handles a slice of a large batch).
+            while (!_events.IsEmpty) DrainEvents();
             _batchClock.Stop();
             UpdateBatchTexts();
             IsBusy = false;

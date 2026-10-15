@@ -28,6 +28,7 @@ public partial class MainWindow : Window
             if (WindowState == WindowState.Minimized) WindowState = WindowState.Normal;
             Activate();
         };
+        vm.Update.RestartRequested += (_, _) => SavePlacement();
         await vm.OnOpenedAsync();
     }
 

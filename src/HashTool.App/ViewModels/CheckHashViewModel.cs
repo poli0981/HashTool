@@ -124,7 +124,8 @@ public sealed partial class CheckHashViewModel : FileListViewModelBase
     [RelayCommand]
     private async Task BrowseHashFileAsync(FileItem? item)
     {
-        if (item is null || item.IsProcessing) return;
+        // Queued rows already have their jobs; changing the expected hash mid-batch would compare against the wrong value.
+        if (item is null || !CanModify) return;
         var files = await Services.Storage.PickFilesAsync(L.Format("Dialog_SelectHashFile", item.FileName), allowMultiple: false);
         if (files.Count == 1) await LoadHashFileAsync(item, files[0]);
     }
@@ -132,6 +133,7 @@ public sealed partial class CheckHashViewModel : FileListViewModelBase
     /// <summary>Reads a dropped or browsed checksum file and copies the matching hash onto the row.</summary>
     public async Task LoadHashFileAsync(FileItem item, string hashFile)
     {
+        if (!CanModify || item.IsProcessing) return;
         try
         {
             ChecksumFileNames.IsChecksumFile(hashFile, out var hint);
@@ -264,7 +266,7 @@ public sealed partial class CheckHashViewModel : FileListViewModelBase
         if (best.Result is not null)
         {
             item.Algorithm = best.Result.Algorithm;
-            item.ResultHash = best.Result.ToHex(Settings.HashLetterCase);
+            item.SetResult(best.Result.Algorithm, best.Result.ToHex(Settings.HashLetterCase));
             item.IsMatch = true;
             item.State = FileStatus.Success;
             item.SetStatus(best.Match == HashMatch.LegacyByteOrderMatch ? ItemStatus.ValidLegacyCrc : ItemStatus.Valid);
@@ -273,7 +275,8 @@ public sealed partial class CheckHashViewModel : FileListViewModelBase
         }
 
         var primary = comparisons[0];
-        item.ResultHash = primary.Result.ToHex(Settings.HashLetterCase);
+        item.Algorithm = primary.Result.Algorithm;
+        item.SetResult(primary.Result.Algorithm, primary.Result.ToHex(Settings.HashLetterCase));
         item.IsMatch = false;
         item.State = FileStatus.Failure;
         if (primary.Match is HashMatch.LengthMismatch or HashMatch.InvalidExpected)
@@ -290,8 +293,12 @@ public sealed partial class CheckHashViewModel : FileListViewModelBase
     protected override async Task OnBatchFinishedAsync(IReadOnlyList<FileItem> items)
     {
         if (items.Count <= 1) return;
-        var icon = FailedCount > 0 || CancelledCount > 0 ? DialogIcon.Warning : DialogIcon.Success;
-        var message = $"{L.Format("Msg_CheckResult", items.Count, SucceededCount, FailedCount, CancelledCount)}\n{L.Format("Msg_TaskDuration", FormatClock(BatchElapsed))}";
+        // Count every row of the run: missing files and rows without an expected hash never reach the hasher.
+        var matched = items.Count(i => i.IsMatch == true);
+        var cancelled = items.Count(i => i.IsMatch is null && i.State == FileStatus.Cancelled);
+        var failed = items.Count - matched - cancelled;
+        var icon = failed > 0 || cancelled > 0 ? DialogIcon.Warning : DialogIcon.Success;
+        var message = $"{L.Format("Msg_CheckResult", items.Count, matched, failed, cancelled)}\n{L.Format("Msg_TaskDuration", FormatClock(BatchElapsed))}";
         await Services.Dialogs.ShowAsync(L["Msg_Result_Title"], message, icon);
         await OfferElevationAsync(items);
     }

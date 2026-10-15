@@ -80,9 +80,15 @@ public sealed class UpdateService
             _logger.LogInformation("Update {Version} is available", version);
             return new UpdateCheckResult(UpdateCheckStatus.UpdateAvailable, update, version, notes);
         }
-        catch (OperationCanceledException)
+        catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
         {
             throw;
+        }
+        catch (Exception ex) when (ex is OperationCanceledException or TimeoutException)
+        {
+            // HttpClient reports its own time-out as a cancellation; a stalled connection is a network problem.
+            _logger.LogWarning(ex, "Update check timed out");
+            return new UpdateCheckResult(UpdateCheckStatus.NetworkError, Error: ex);
         }
         catch (HttpRequestException ex) when (ex.StatusCode is System.Net.HttpStatusCode.Forbidden or System.Net.HttpStatusCode.TooManyRequests)
         {
