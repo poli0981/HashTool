@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Info.plist of the macOS app bundle. The release workflow replaces @VERSION@ and hands the file to vpk (plist option).
+  Velopack copies a custom plist verbatim, so every key it would otherwise generate is listed here. CFBundleIdentifier,
+  CFBundleName and CFBundleExecutable must never change: they are what Hash Tool 1.1.x installed (Velopack's defaults).
+-->
+<plist version="1.0">
+  <dict>
+    <key>CFBundleName</key>
+    <string>Hash Tool</string>
+    <key>CFBundleDisplayName</key>
+    <string>Hash Tool</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.HashTool.HashTool</string>
+    <key>CFBundleVersion</key>
+    <string>@VERSION@</string>
+    <key>CFBundleShortVersionString</key>
+    <string>@VERSION@</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleSignature</key>
+    <string>????</string>
+    <key>CFBundleExecutable</key>
+    <string>CheckHash</string>
+    <key>CFBundleIconFile</key>
+    <string>icons.icns</string>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <key>NSHighResolutionCapable</key>
+    <true />
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.utilities</string>
+    <!-- "Open With > Hash Tool": checksum files open on the Verify page, anything else on the Generate page. -->
+    <key>CFBundleDocumentTypes</key>
+    <array>
+      <dict>
+        <key>CFBundleTypeName</key>
+        <string>Checksum File</string>
+        <key>CFBundleTypeRole</key>
+        <string>Viewer</string>
+        <key>LSHandlerRank</key>
+        <string>Alternate</string>
+        <key>CFBundleTypeExtensions</key>
+        <array>
+          <string>md5</string>
+          <string>md5sum</string>
+          <string>sha1</string>
+          <string>sha1sum</string>
+          <string>sha256</string>
+          <string>sha256sum</string>
+          <string>sha384</string>
+          <string>sha384sum</string>
+          <string>sha512</string>
+          <string>sha512sum</string>
+          <string>blake3</string>
+          <string>b3</string>
+          <string>b3sum</string>
+          <string>xxhash32</string>
+          <string>xxh32</string>
+          <string>xxhash64</string>
+          <string>xxh64</string>
+          <string>xxhash3</string>
+          <string>xxh3</string>
+          <string>xxhash128</string>
+          <string>xxh128</string>
+          <string>crc32</string>
+          <string>sfv</string>
+        </array>
+      </dict>
+      <dict>
+        <key>CFBundleTypeName</key>
+        <string>File or Folder</string>
+        <key>CFBundleTypeRole</key>
+        <string>Viewer</string>
+        <key>LSHandlerRank</key>
+        <string>None</string>
+        <key>LSItemContentTypes</key>
+        <array>
+          <string>public.data</string>
+          <string>public.folder</string>
+        </array>
+      </dict>
+    </array>
+  </dict>
+</plist>

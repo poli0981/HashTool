@@ -1,9 +1,15 @@
 <Solution>
+  <Folder Name="/bench/">
+    <Project Path="bench/HashTool.Benchmarks/HashTool.Benchmarks.csproj" />
+  </Folder>
   <Folder Name="/src/">
     <Project Path="src/HashTool.App/HashTool.App.csproj" />
+    <Project Path="src/HashTool.Cli/HashTool.Cli.csproj" />
     <Project Path="src/HashTool.Core/HashTool.Core.csproj" />
   </Folder>
   <Folder Name="/tests/">
+    <Project Path="tests/HashTool.App.Tests/HashTool.App.Tests.csproj" />
+    <Project Path="tests/HashTool.Cli.Tests/HashTool.Cli.Tests.csproj" />
     <Project Path="tests/HashTool.Core.Tests/HashTool.Core.Tests.csproj" />
   </Folder>
 </Solution>

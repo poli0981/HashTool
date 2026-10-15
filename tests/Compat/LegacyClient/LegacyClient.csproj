@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <!--
+        Upgrade gate for releases: behaves like an installed Hash Tool 1.1.x, which ships Velopack 0.0.1298. Not part of
+        HashTool.slnx; the release workflow builds and runs it against the freshly packed release files.
+    -->
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <IsPackable>false</IsPackable>
+        <!-- The old library's dependencies are what 1.1.x users run; auditing them here would only block the gate. -->
+        <NuGetAudit>false</NuGetAudit>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Velopack" VersionOverride="0.0.1298" />
+    </ItemGroup>
+</Project>

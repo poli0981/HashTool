@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>HashTool.Cli</RootNamespace>
+        <AssemblyName>hashtool</AssemblyName>
+        <AssemblyTitle>Hash Tool CLI</AssemblyTitle>
+        <Description>Command-line companion of Hash Tool: compute and verify file hashes and checksum files.</Description>
+        <!-- Published as a single native executable per platform. -->
+        <PublishAot>true</PublishAot>
+        <IsAotCompatible>true</IsAotCompatible>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <!-- Messages are English only; do not ship System.CommandLine's satellite assemblies. -->
+        <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.CommandLine" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\HashTool.Core\HashTool.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="HashTool.Cli.Tests" />
+    </ItemGroup>
+</Project>
