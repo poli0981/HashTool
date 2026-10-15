@@ -1,21 +1,34 @@
 # Privacy Policy for HashTool
 
-**Version 1.1.3**  
-**Last updated: February 2026**
+**Last updated: October 2026**
 
 HashTool is a free, open-source desktop application distributed under the MIT License (see LICENSE file).
 
 ### Data Collection and Usage
-HashTool is **100% offline** and does **not** collect, store, or transmit any personal data, usage statistics, or telemetry.
+HashTool does **not** collect, store, or transmit any personal data, usage statistics, or telemetry.
 
 - No user information is gathered.
 - No analytics or tracking of any kind.
 - The application processes only the files you explicitly select for hashing, and all operations occur locally on your device.
 
 ### Online Features
-The only optional network activity is the "Check for Updates" feature, which queries the public GitHub Releases API to check for new versions.  
-No personal data or usage information is sent during this request.  
+HashTool only talks to the network to look for updates:
+
+- **Automatic update check** (on by default, can be turned off in *Settings → Updates*): at most once a day, when the app starts, it asks the public GitHub Releases API whether a newer version exists.
+- **Check Now** on the *Update* page does the same on request.
+- An update is downloaded from GitHub only when you choose to install it.
+
+These requests contain nothing about you or your files — GitHub sees the usual information of any web request (such as your IP address).
 For details about GitHub's data handling, please refer to [GitHub's Privacy Policy](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+
+### Data Stored on Your Device
+HashTool keeps its settings and logs in a local folder (`%LOCALAPPDATA%\HashTool` on Windows, `~/Library/Application Support/HashTool` on macOS, `~/.local/share/HashTool` on Linux):
+
+- `settings/config.json` — your preferences.
+- `log/` — diagnostic logs, kept for 14 days. They may contain names of files you hashed; your user folder name is masked.
+
+Nothing in this folder is ever sent anywhere. *Settings → Configuration → Open Data Folder* shows it; deleting it resets the app.
+If you turn on the Explorer context menu (Windows), HashTool adds entries under your user's registry (`HKEY_CURRENT_USER\Software\Classes`); turning the option off or uninstalling removes them.
 
 ### Translations
 Any non-English translations (if provided) are generated with AI assistance and provided as-is. They do not involve sending your data anywhere.
