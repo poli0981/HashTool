@@ -52,7 +52,7 @@ internal abstract class HashFunction : IDisposable
     }
 
     /// <summary>
-    /// <see cref="Crc32.GetCurrentHash()"/> emits little-endian bytes; every checksum tool (7-Zip, SFV, cksum -a crc32b)
+    /// <c>Crc32.GetCurrentHash()</c> emits little-endian bytes; every checksum tool (7-Zip, SFV, cksum -a crc32b)
     /// prints the CRC as a big-endian number, so convert it.
     /// </summary>
     private sealed class Crc32HashFunction : HashFunction

@@ -154,8 +154,8 @@ public sealed class LauncherService(MainWindowAccessor main, ILogger<LauncherSer
     {
         // Only folders inside the app's data directory are opened (logs, settings).
         var full = Path.GetFullPath(path);
-        var root = Path.GetFullPath(AppPaths.DataDirectory);
-        if (!full.StartsWith(root, StringComparison.OrdinalIgnoreCase) || !Directory.Exists(full))
+        var relative = Path.GetRelativePath(Path.GetFullPath(AppPaths.DataDirectory), full);
+        if (relative.StartsWith("..", StringComparison.Ordinal) || Path.IsPathRooted(relative) || !Directory.Exists(full))
         {
             logger.LogWarning("Refused to open folder {Path}", path);
             return;

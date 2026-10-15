@@ -57,7 +57,7 @@ public sealed record AppCommandLine(
                     if (Next() is { } list && File.Exists(list))
                     {
                         paths.AddRange(File.ReadAllLines(list).Where(l => !string.IsNullOrWhiteSpace(l)));
-                        TryDelete(list);
+                        if (IsTemporaryFileList(list)) TryDelete(list);
                     }
 
                     break;
@@ -79,8 +79,24 @@ public sealed record AppCommandLine(
             }
         }
 
-        var resolved = paths.Select(p => Path.GetFullPath(Path.Combine(workingDirectory, p))).Distinct().ToList();
+        var resolved = paths.Select(p => Path.GetFullPath(Path.Combine(workingDirectory, p)))
+            .Distinct(OperatingSystem.IsLinux() ? StringComparer.Ordinal : StringComparer.OrdinalIgnoreCase).ToList();
         return new AppCommandLine(verb, resolved, smoke, smokeOutput, expected, waitPid);
+    }
+
+    /// <summary>
+    /// True only for the list <see cref="Elevation.RestartElevated"/> writes (<c>%TEMP%\hashtool-&lt;guid&gt;.txt</c>), so a
+    /// crafted command line cannot make the app delete any other file.
+    /// </summary>
+    internal static bool IsTemporaryFileList(string path)
+    {
+        var full = Path.GetFullPath(path);
+        var name = Path.GetFileNameWithoutExtension(full);
+        return string.Equals(Path.GetDirectoryName(full), Path.GetFullPath(Path.GetTempPath()).TrimEnd(Path.DirectorySeparatorChar),
+                   OperatingSystem.IsLinux() ? StringComparison.Ordinal : StringComparison.OrdinalIgnoreCase) &&
+               Path.GetExtension(full) == ".txt" &&
+               name.StartsWith("hashtool-", StringComparison.Ordinal) &&
+               Guid.TryParseExact(name["hashtool-".Length..], "N", out _);
     }
 
     private static void TryDelete(string path)

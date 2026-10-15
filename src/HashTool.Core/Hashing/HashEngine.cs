@@ -49,7 +49,7 @@ public sealed class HashEngine(HashEngineOptions? options = null)
 
         // Allow other processes to keep the file open for writing or deletion: refusing to hash a file just because a
         // downloader or editor still has a handle produced most of the "file in use" errors in 1.x.
-        await using var stream = new FileStream(path, new FileStreamOptions
+        var stream = new FileStream(path, new FileStreamOptions
         {
             Mode = FileMode.Open,
             Access = FileAccess.Read,
@@ -57,6 +57,7 @@ public sealed class HashEngine(HashEngineOptions? options = null)
             BufferSize = 0,
             Options = FileOptions.Asynchronous | FileOptions.SequentialScan
         });
+        await using var disposeStream = stream.ConfigureAwait(false);
 
         var bufferSize = stream.Length >= _options.LargeFileThreshold ? _options.LargeFileBufferSize : _options.BufferSize;
         return await ComputeStreamAsync(stream, algorithms, bufferSize, onBytesRead, cancellationToken).ConfigureAwait(false);

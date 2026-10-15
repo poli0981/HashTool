@@ -99,8 +99,8 @@ public sealed partial class CreateHashViewModel : FileListViewModelBase
             new(L["FileType_Bsd"], "*.txt", ExportFormat.Bsd)
         };
         if (single == HashType.CRC32) types.Add(new FileTypeChoice(L["FileType_Sfv"], "*.sfv", ExportFormat.Sfv));
-        types.Add(new FileTypeChoice("JSON", "*.json", ExportFormat.Json));
-        types.Add(new FileTypeChoice("CSV", "*.csv", ExportFormat.Csv));
+        types.Add(new FileTypeChoice(L["FileType_Json"], "*.json", ExportFormat.Json));
+        types.Add(new FileTypeChoice(L["FileType_Csv"], "*.csv", ExportFormat.Csv));
 
         var preferred = types.FirstOrDefault(t => (ExportFormat)t.Tag! == Settings.DefaultExportFormat) ?? types[0];
         types.Remove(preferred);

@@ -521,7 +521,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
     {
         if (!Elevation.CanRestartElevated || !items.Any(i => i.Status == ItemStatus.AccessDenied)) return;
         if (!await Services.Dialogs.ConfirmAsync(L["Btn_RestartAdmin"], L["Msg_AccessDeniedRestart"], DialogIcon.Question)) return;
-        if (Elevation.RestartElevated(ElevationVerb, _all.Select(i => SourcePathForRestart(i)).Distinct().ToList()))
+        if (Elevation.RestartElevated(ElevationVerb, _all.Select(i => SourcePathForRestart(i)).Distinct(_byPath.Comparer).ToList()))
             RequestShutdown?.Invoke(this, EventArgs.Empty);
     }
 

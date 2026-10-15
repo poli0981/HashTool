@@ -65,7 +65,7 @@ public static class FileEnumerator
             RecurseSubdirectories = true,
             IgnoreInaccessible = true,
             ReturnSpecialDirectories = false,
-            AttributesToSkip = options.IncludeHidden ? 0 : FileAttributes.Hidden | FileAttributes.System
+            AttributesToSkip = options.IncludeHidden ? default : FileAttributes.Hidden | FileAttributes.System
         };
 
         IEnumerator<FileEntry> enumerator;
@@ -113,7 +113,7 @@ public static class FileEnumerator
     /// </summary>
     private static bool IsLink(ref FileSystemEntry entry)
     {
-        if ((entry.Attributes & FileAttributes.ReparsePoint) == 0) return false;
+        if (!entry.Attributes.HasFlag(FileAttributes.ReparsePoint)) return false;
         try
         {
             return new DirectoryInfo(entry.ToFullPath()).LinkTarget is not null;

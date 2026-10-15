@@ -218,13 +218,40 @@ public sealed partial class UpdateViewModel : ObservableObject
     internal static string? ToPlainText(string? markdown)
     {
         if (string.IsNullOrWhiteSpace(markdown)) return null;
-        var text = markdown.Replace("\r\n", "\n");
-        text = Regex.Replace(text, @"^#{1,6}\s*", "", RegexOptions.Multiline);
-        text = Regex.Replace(text, @"^\s*[-*+]\s+", "• ", RegexOptions.Multiline);
-        text = Regex.Replace(text, @"\*\*(.+?)\*\*|__(.+?)__", "$1$2");
-        text = Regex.Replace(text, @"`([^`]+)`", "$1");
-        text = Regex.Replace(text, @"\[([^\]]+)\]\([^)]+\)", "$1");
-        text = Regex.Replace(text, @"\n{3,}", "\n\n");
+        var text = markdown.Replace("\r\n", "\n", StringComparison.Ordinal);
+        try
+        {
+            text = Heading().Replace(text, "");
+            text = Bullet().Replace(text, "• ");
+            text = Bold().Replace(text, "${a}${b}");
+            text = Code().Replace(text, "${code}");
+            text = Link().Replace(text, "${text}");
+            text = BlankLines().Replace(text, "\n\n");
+        }
+        catch (RegexMatchTimeoutException)
+        {
+            // Notes come from the network; show them unformatted rather than hang on a pathological input.
+        }
+
         return text.Trim();
     }
+
+    // [ \t] rather than \s: \s also matches line breaks, which swallowed the blank line before a list.
+    [GeneratedRegex(@"^#{1,6}[ \t]*", RegexOptions.Multiline, 1000)]
+    private static partial Regex Heading();
+
+    [GeneratedRegex(@"^[ \t]*[-*+][ \t]+", RegexOptions.Multiline, 1000)]
+    private static partial Regex Bullet();
+
+    [GeneratedRegex(@"\*\*(?<a>.+?)\*\*|__(?<b>.+?)__", RegexOptions.ExplicitCapture, 1000)]
+    private static partial Regex Bold();
+
+    [GeneratedRegex(@"`(?<code>[^`]+)`", RegexOptions.ExplicitCapture, 1000)]
+    private static partial Regex Code();
+
+    [GeneratedRegex(@"\[(?<text>[^\]]+)\]\([^)]+\)", RegexOptions.ExplicitCapture, 1000)]
+    private static partial Regex Link();
+
+    [GeneratedRegex(@"\n{3,}", RegexOptions.None, 1000)]
+    private static partial Regex BlankLines();
 }
