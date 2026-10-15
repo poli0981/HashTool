@@ -32,6 +32,7 @@
 
     <ItemGroup>
         <Using Include="HashTool.Core" />
+        <Using Include="HashTool.Core.Configuration" />
         <Using Include="HashTool.Core.Hashing" />
         <Using Include="HashTool.Core.IO" />
         <Using Include="HashTool.Core.Processing" />
