@@ -41,7 +41,7 @@ public sealed partial class DeveloperViewModel : ObservableObject
         localization.LanguageChanged += (_, _) => Localization = new LocalizationProxy(localization);
 
         Entries.AddRange(sink.Snapshot());
-        sink.EntryAdded += (_, entry) => _incoming.Enqueue(entry);
+        sink.EntryAdded += (_, e) => _incoming.Enqueue(e.Entry);
         _timer = new DispatcherTimer(TimeSpan.FromMilliseconds(250), DispatcherPriority.Background, (_, _) => Flush());
         _timer.Start();
     }

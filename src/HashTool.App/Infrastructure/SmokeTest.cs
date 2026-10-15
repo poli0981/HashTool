@@ -37,7 +37,7 @@ public static class SmokeTest
             AppBuilder.Configure<App>().UseHeadless(new AvaloniaHeadlessPlatformOptions()).WithInterFont().SetupWithoutStarting();
             using var done = new CancellationTokenSource();
             var checks = RunChecksAsync(commandLine, report);
-            checks.ContinueWith(_ => done.Cancel(), TaskScheduler.Default);
+            _ = checks.ContinueWith(_ => done.Cancel(), TaskScheduler.Default);
             Dispatcher.UIThread.MainLoop(done.Token);
             checks.GetAwaiter().GetResult();
         }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Threading;
 using Microsoft.Extensions.Logging;
 
 namespace HashTool.App.Infrastructure.Logging;
@@ -22,6 +23,11 @@ public sealed record LogEntry(DateTimeOffset Timestamp, LogLevel Level, string C
         $"{Timestamp.ToString("HH:mm:ss.fff", CultureInfo.InvariantCulture)} [{LevelTag}] {Category}: {Message}";
 }
 
+public sealed class LogEntryEventArgs(LogEntry entry) : EventArgs
+{
+    public LogEntry Entry { get; } = entry;
+}
+
 /// <summary>Keeps the most recent log entries in memory for the Developer console.</summary>
 public sealed class LogSink : ILoggerProvider
 {
@@ -29,12 +35,12 @@ public sealed class LogSink : ILoggerProvider
 
     private readonly Queue<LogEntry> _entries = new(Capacity);
     private readonly PathSanitizer _sanitizer;
-    private readonly object _gate = new();
+    private readonly Lock _gate = new();
 
     public LogSink(PathSanitizer sanitizer) => _sanitizer = sanitizer;
 
     /// <summary>Raised on the logging thread for every entry.</summary>
-    public event EventHandler<LogEntry>? EntryAdded;
+    public event EventHandler<LogEntryEventArgs>? EntryAdded;
 
     /// <summary>When false, entries are not recorded (the console's pause button).</summary>
     public bool IsRecording { get; set; } = true;
@@ -66,7 +72,7 @@ public sealed class LogSink : ILoggerProvider
             _entries.Enqueue(entry);
         }
 
-        EntryAdded?.Invoke(this, entry);
+        EntryAdded?.Invoke(this, new LogEntryEventArgs(entry));
     }
 
     private sealed class SinkLogger(LogSink sink, string category) : ILogger

@@ -7,7 +7,7 @@
         <ImplicitUsings>disable</ImplicitUsings>
 
         <!-- Single source of truth for the product version (the release workflow also passes -p:Version=<tag>). -->
-        <Version>1.1.3</Version>
+        <Version>1.2.0</Version>
         <Authors>poli0981</Authors>
         <Company>poli0981</Company>
         <Product>Hash Tool</Product>
@@ -23,5 +23,17 @@
         <NuGetAudit>true</NuGetAudit>
         <NuGetAuditMode>all</NuGetAuditMode>
         <NuGetAuditLevel>low</NuGetAuditLevel>
+
+        <!-- ReferenceTrimmer reports package and project references that are never used. -->
+        <ReferenceTrimmerUseSymbolAnalysis>true</ReferenceTrimmerUseSymbolAnalysis>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <!-- Documentation comments are for readers, not a public API: do not demand them for every member or parameter. -->
+        <NoWarn>$(NoWarn);CS1591;CS1573</NoWarn>
     </PropertyGroup>
+
+    <!-- Analyzers for every project: unused references and common .NET mistakes (culture, async, comparisons). -->
+    <ItemGroup>
+        <PackageReference Include="ReferenceTrimmer" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers" />
+        <PackageReference Include="Meziantou.Analyzer" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers" />
+    </ItemGroup>
 </Project>

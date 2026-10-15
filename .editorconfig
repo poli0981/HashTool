@@ -63,3 +63,19 @@ dotnet_naming_symbols.private_fields.applicable_kinds = field
 dotnet_naming_symbols.private_fields.applicable_accessibilities = private
 dotnet_naming_style.underscore_camel.capitalization = camel_case
 dotnet_naming_style.underscore_camel.required_prefix = _
+
+# Meziantou.Analyzer rules that do not fit this code base.
+dotnet_diagnostic.MA0006.severity = none # string == is already ordinal
+dotnet_diagnostic.MA0016.severity = none # concrete collection types in signatures are fine here
+dotnet_diagnostic.MA0048.severity = none # small related types share a file
+dotnet_diagnostic.MA0049.severity = none # HashTool.App.App
+dotnet_diagnostic.MA0051.severity = none # method length
+
+# UI code, tests and benchmarks resume on the caller's context; async void is how UI event handlers are written.
+[{src/HashTool.App/**.cs,tests/**.cs,bench/**.cs}]
+dotnet_diagnostic.MA0004.severity = none
+dotnet_diagnostic.MA0147.severity = none
+
+[{tests/**.cs,bench/**.cs}]
+dotnet_diagnostic.MA0002.severity = none
+dotnet_diagnostic.MA0009.severity = none

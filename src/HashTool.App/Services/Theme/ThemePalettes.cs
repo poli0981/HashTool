@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Avalonia.Media;
 using HashTool.Core.Configuration;
@@ -57,7 +58,7 @@ public static class ThemePalettes
         string? success = null, string? error = null, string? warning = null, string? info = null, string? muted = null,
         string? secondary = null)
     {
-        var p = new Dictionary<string, object>
+        var p = new Dictionary<string, object>(StringComparer.Ordinal)
         {
             ["AppBackgroundBrush"] = Brush.Parse(background),
             ["PaneBackgroundBrush"] = Brush.Parse(pane),

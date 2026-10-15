@@ -199,6 +199,11 @@ public sealed partial class LocalizationService : ObservableObject
             codes.Contains("es-419", StringComparer.OrdinalIgnoreCase))
             return "es-419";
 
+        // Commonwealth English uses British spelling.
+        if (language == "en" && name.Split('-')[^1].ToUpperInvariant() is "AU" or "NZ" or "IE" or "ZA" or "MT" or "CY" &&
+            codes.Contains("en-GB", StringComparer.OrdinalIgnoreCase))
+            return "en-GB";
+
         // 3. Same language, preferred variant first, then any variant whose language subtag matches exactly.
         if (PreferredVariants.TryGetValue(language, out var preferred) && codes.Contains(preferred, StringComparer.OrdinalIgnoreCase))
             return preferred;

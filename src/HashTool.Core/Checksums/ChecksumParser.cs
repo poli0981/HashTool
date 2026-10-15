@@ -18,19 +18,24 @@ public static partial class ChecksumParser
     /// <summary>Larger files are rejected instead of being read into memory.</summary>
     public const long MaxFileSize = 16L * ByteSize.OneMB;
 
-    [GeneratedRegex(@"^(?<tag>[A-Za-z][A-Za-z0-9_\-]*)\s?\((?<name>.*)\)\s?=\s?(?<hash>[0-9A-Fa-f]+)$", RegexOptions.CultureInvariant)]
+    /// <summary>Longer lines cannot hold a real path and are reported as invalid without running the patterns.</summary>
+    private const int MaxLineLength = 32 * 1024;
+
+    private const int MatchTimeoutMilliseconds = 1000;
+
+    [GeneratedRegex(@"^(?<tag>[A-Za-z][A-Za-z0-9_\-]*)\s?\((?<name>.*)\)\s?=\s?(?<hash>[0-9A-Fa-f]+)$", RegexOptions.CultureInvariant, MatchTimeoutMilliseconds)]
     private static partial Regex BsdLine();
 
-    [GeneratedRegex(@"^(?<escaped>\\)?(?<xxh3>XXH3_)?(?<hash>[0-9A-Fa-f]{8,128})(?: \*| {1,2})(?<name>\S.*)$", RegexOptions.CultureInvariant)]
+    [GeneratedRegex(@"^(?<escaped>\\)?(?<xxh3>XXH3_)?(?<hash>[0-9A-Fa-f]{8,128})(?: \*| {1,2})(?<name>\S.*)$", RegexOptions.CultureInvariant, MatchTimeoutMilliseconds)]
     private static partial Regex GnuLine();
 
-    [GeneratedRegex(@"^(?<name>.+?)\s+(?<hash>[0-9A-Fa-f]{8})$", RegexOptions.CultureInvariant)]
+    [GeneratedRegex(@"^(?<name>.+?)\s+(?<hash>[0-9A-Fa-f]{8})$", RegexOptions.CultureInvariant, MatchTimeoutMilliseconds)]
     private static partial Regex SfvLine();
 
-    [GeneratedRegex(@"^(?:XXH3_)?[0-9A-Fa-f]{2}(?:\s?[0-9A-Fa-f]{2}){3,63}$", RegexOptions.CultureInvariant)]
+    [GeneratedRegex(@"^(?:XXH3_)?[0-9A-Fa-f]{2}(?:\s?[0-9A-Fa-f]{2}){3,63}$", RegexOptions.CultureInvariant, MatchTimeoutMilliseconds)]
     private static partial Regex BareLine();
 
-    [GeneratedRegex(@"^(?:[A-Za-z0-9\-]+ hash of .*:|CertUtil: .*)$", RegexOptions.CultureInvariant)]
+    [GeneratedRegex(@"^(?:[A-Za-z0-9\-]+ hash of .*:|CertUtil: .*)$", RegexOptions.CultureInvariant, MatchTimeoutMilliseconds)]
     private static partial Regex CertUtilNoise();
 
     /// <summary>Reads and parses a checksum file.</summary>
@@ -69,9 +74,15 @@ public static partial class ChecksumParser
             var line = rawLine.TrimEnd('\r').ToString();
             if (lineNumber == 1) line = line.TrimStart('﻿');
             var trimmed = line.Trim();
-            if (trimmed.Length == 0 || trimmed[0] is '#' or ';' || CertUtilNoise().IsMatch(trimmed)) continue;
+            if (trimmed.Length == 0 || trimmed[0] is '#' or ';') continue;
+            if (trimmed.Length > MaxLineLength)
+            {
+                invalid.Add(lineNumber);
+                continue;
+            }
 
-            if (TryParseLine(line, trimmed, fileNameHint, userHint, lineNumber, out var entry, out var lineFormat))
+            if (IsNoise(trimmed)) continue;
+            if (TryParseLineSafely(line, trimmed, fileNameHint, userHint, lineNumber, out var entry, out var lineFormat))
             {
                 entries.Add(entry);
                 format ??= lineFormat;
@@ -83,6 +94,34 @@ public static partial class ChecksumParser
         }
 
         return new ChecksumDocument(entries, invalid, format ?? ChecksumFormat.Gnu);
+    }
+
+    private static bool IsNoise(string trimmed)
+    {
+        try
+        {
+            return CertUtilNoise().IsMatch(trimmed);
+        }
+        catch (RegexMatchTimeoutException)
+        {
+            return false;
+        }
+    }
+
+    /// <summary>A line that makes a pattern time out is reported as invalid instead of failing the whole file.</summary>
+    private static bool TryParseLineSafely(string line, string trimmed, HashType? fileNameHint, HashType? userHint, int lineNumber,
+        out ChecksumEntry entry, out ChecksumFormat format)
+    {
+        try
+        {
+            return TryParseLine(line, trimmed, fileNameHint, userHint, lineNumber, out entry, out format);
+        }
+        catch (RegexMatchTimeoutException)
+        {
+            entry = null!;
+            format = default;
+            return false;
+        }
     }
 
     private static bool TryParseLine(string line, string trimmed, HashType? fileNameHint, HashType? userHint, int lineNumber,

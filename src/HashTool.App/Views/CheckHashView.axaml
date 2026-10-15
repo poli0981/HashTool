@@ -174,13 +174,16 @@
 
                             <StackPanel Grid.Column="4" Orientation="Horizontal" Spacing="2" VerticalAlignment="Center">
                                 <Button Classes="icon" Command="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).RunItemCommand}"
-                                        CommandParameter="{Binding}"
+                                        CommandParameter="{Binding}" IsVisible="{Binding !IsProcessing}"
                                         ToolTip.Tip="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_Verify]}"
                                         AutomationProperties.Name="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_Verify]}">
-                                    <Panel>
-                                        <icons:MaterialIcon Kind="PlayCircleOutline" Width="18" Height="18" Foreground="{DynamicResource StatusSuccessBrush}" IsVisible="{Binding !IsProcessing}" />
-                                        <icons:MaterialIcon Kind="StopCircleOutline" Width="18" Height="18" Foreground="{DynamicResource StatusWarningBrush}" IsVisible="{Binding IsProcessing}" />
-                                    </Panel>
+                                    <icons:MaterialIcon Kind="PlayCircleOutline" Width="18" Height="18" Foreground="{DynamicResource StatusSuccessBrush}" />
+                                </Button>
+                                <Button Classes="icon" Command="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).RunItemCommand}"
+                                        CommandParameter="{Binding}" IsVisible="{Binding IsProcessing}"
+                                        ToolTip.Tip="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_Stop]}"
+                                        AutomationProperties.Name="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_Stop]}">
+                                    <icons:MaterialIcon Kind="StopCircleOutline" Width="18" Height="18" Foreground="{DynamicResource StatusWarningBrush}" />
                                 </Button>
                                 <Button Classes="icon" Command="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).ClearItemResultCommand}"
                                         CommandParameter="{Binding}"
