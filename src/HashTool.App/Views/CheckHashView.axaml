@@ -25,9 +25,6 @@
             <Button Content="{Binding Localization[Btn_AddFiles]}" Command="{Binding AddFilesCommand}" ToolTip.Tip="Ctrl+O" />
             <Button Content="{Binding Localization[Btn_AddFolder]}" Command="{Binding AddFolderCommand}" ToolTip.Tip="Ctrl+Shift+O" />
             <Button Content="{Binding Localization[Btn_OpenChecksumFile]}" Command="{Binding OpenChecksumFileCommand}" IsEnabled="{Binding CanModify}" />
-            <Button Content="{Binding Localization[Btn_Clear]}" Command="{Binding ClearListCommand}" IsVisible="{Binding HasItems}" />
-            <Button Content="{Binding Localization[Btn_ClearHashes]}" Command="{Binding ClearResultsCommand}" IsVisible="{Binding HasItems}" />
-            <Button Content="{Binding Localization[Btn_ClearFailed]}" Command="{Binding ClearFailedCommand}" IsVisible="{Binding HasItems}" />
             <StackPanel Orientation="Horizontal" Spacing="6" IsEnabled="{Binding CanModify}">
                 <TextBlock Text="{Binding Localization[Lbl_DefaultAlgorithm]}" VerticalAlignment="Center" />
                 <ComboBox ItemsSource="{Binding Algorithms}" SelectedItem="{Binding DefaultAlgorithm}" MinWidth="130"
@@ -37,6 +34,9 @@
                     IsVisible="{Binding !IsBusy}" ToolTip.Tip="Ctrl+Enter" />
             <Button Content="{Binding Localization[Btn_Cancel]}" Command="{Binding CancelCommand}" IsVisible="{Binding IsBusy}" ToolTip.Tip="Esc" />
             <TextBlock Text="{Binding RemainingText}" VerticalAlignment="Center" FontWeight="SemiBold" IsVisible="{Binding IsBusy}" />
+            <Button Content="{Binding Localization[Btn_Clear]}" Command="{Binding ClearListCommand}" IsVisible="{Binding HasItems}" />
+            <Button Content="{Binding Localization[Btn_ClearHashes]}" Command="{Binding ClearResultsCommand}" IsVisible="{Binding HasItems}" />
+            <Button Content="{Binding Localization[Btn_ClearFailed]}" Command="{Binding ClearFailedCommand}" IsVisible="{Binding HasItems}" />
         </WrapPanel>
 
         <Grid Grid.Row="2" ColumnDefinitions="*,Auto,Auto" Margin="0,0,0,8" IsVisible="{Binding HasItems}">
