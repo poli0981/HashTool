@@ -7,7 +7,7 @@
         Width="400" Height="350"
         WindowStartupLocation="CenterOwner"
         CanResize="False"
-        SystemDecorations="BorderOnly">
+        WindowDecorations="BorderOnly">
 
     <Border BorderBrush="Red" BorderThickness="2" Padding="20" Background="{DynamicResource PaneBackgroundBrush}">
         <StackPanel Spacing="15">

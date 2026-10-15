@@ -5,24 +5,24 @@
     </PropertyGroup>
 
     <ItemGroup Label="Avalonia">
-        <PackageVersion Include="Avalonia" Version="11.3.11" />
-        <PackageVersion Include="Avalonia.Controls.ColorPicker" Version="11.3.11" />
-        <PackageVersion Include="Avalonia.Controls.DataGrid" Version="11.3.11" />
-        <PackageVersion Include="Avalonia.Desktop" Version="11.3.11" />
-        <PackageVersion Include="Avalonia.Diagnostics" Version="11.3.11" />
-        <PackageVersion Include="Avalonia.Fonts.Inter" Version="11.3.11" />
-        <PackageVersion Include="Avalonia.Themes.Fluent" Version="11.3.11" />
-        <PackageVersion Include="Material.Icons.Avalonia" Version="2.4.1" />
+        <PackageVersion Include="Avalonia" Version="12.1.4" />
+        <PackageVersion Include="Avalonia.Desktop" Version="12.1.4" />
+        <PackageVersion Include="Avalonia.Fonts.Inter" Version="12.1.4" />
+        <PackageVersion Include="Avalonia.Headless" Version="12.1.4" />
+        <PackageVersion Include="Avalonia.Headless.XUnit" Version="12.1.4" />
+        <PackageVersion Include="Avalonia.Themes.Fluent" Version="12.1.4" />
+        <PackageVersion Include="Material.Icons.Avalonia" Version="3.0.2" />
     </ItemGroup>
 
     <ItemGroup Label="Application">
-        <PackageVersion Include="Blake3" Version="2.2.0" />
-        <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.2.1" />
-        <PackageVersion Include="System.IO.Hashing" Version="11.0.0-preview.1.26104.118" />
-        <PackageVersion Include="Velopack" Version="0.0.1298" />
+        <PackageVersion Include="Blake3" Version="3.0.2" />
+        <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+        <PackageVersion Include="System.IO.Hashing" Version="10.0.13" />
+        <PackageVersion Include="Velopack" Version="1.2.161" />
     </ItemGroup>
 
     <ItemGroup Label="Tests">
+        <!-- xunit.v3 4.x breaks Avalonia.Headless.XUnit (AvaloniaUI/Avalonia#22072); stay on 3.2.x until it is fixed. -->
         <PackageVersion Include="xunit.v3.mtp-v2" Version="3.2.2" />
         <PackageVersion Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.12.0" />
     </ItemGroup>
