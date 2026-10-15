@@ -1,0 +1,67 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:HashTool.App.ViewModels"
+             xmlns:logging="using:HashTool.App.Infrastructure.Logging"
+             xmlns:conv="using:HashTool.App.Converters"
+             xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             x:Class="HashTool.App.Views.DeveloperView"
+             x:DataType="vm:DeveloperViewModel">
+
+    <Grid RowDefinitions="Auto,*">
+        <WrapPanel Margin="0,0,0,10" ItemSpacing="8" LineSpacing="8">
+            <TextBlock Text="{Binding Localization[Dev_Console]}" FontSize="24" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,12,0" />
+            <ComboBox ItemsSource="{Binding Levels}" SelectedItem="{Binding MinimumLevel}" MinWidth="130" VerticalAlignment="Center"
+                      AutomationProperties.Name="{Binding Localization[Dev_Level]}" ToolTip.Tip="{Binding Localization[Dev_Level]}" />
+            <ToggleSwitch IsChecked="{Binding IsRecording}" VerticalAlignment="Center"
+                          OnContent="{Binding Localization[Dev_Recording]}" OffContent="{Binding Localization[Dev_Paused]}"
+                          ToolTip.Tip="{Binding Localization[Dev_ToolTip_Pause]}" />
+            <ToggleSwitch IsChecked="{Binding AutoScroll}" VerticalAlignment="Center"
+                          OnContent="{Binding Localization[Dev_AutoScroll]}" OffContent="{Binding Localization[Dev_AutoScroll]}" />
+            <Button Classes="icon" Command="{Binding ClearCommand}" ToolTip.Tip="{Binding Localization[Dev_Clear]}"
+                    AutomationProperties.Name="{Binding Localization[Dev_Clear]}">
+                <icons:MaterialIcon Kind="Broom" Width="20" Height="20" />
+            </Button>
+            <Button Classes="icon" Command="{Binding CopyCommand}" ToolTip.Tip="{Binding Localization[Dev_Copy]}"
+                    AutomationProperties.Name="{Binding Localization[Dev_Copy]}">
+                <icons:MaterialIcon Kind="ContentCopy" Width="20" Height="20" />
+            </Button>
+            <Button Classes="icon" Command="{Binding ExportCommand}" ToolTip.Tip="{Binding Localization[Dev_Export]}"
+                    AutomationProperties.Name="{Binding Localization[Dev_Export]}">
+                <icons:MaterialIcon Kind="ContentSave" Width="20" Height="20" />
+            </Button>
+            <Button Classes="icon" Command="{Binding OpenLogFolderCommand}" ToolTip.Tip="{Binding Localization[Dev_OpenFolder]}"
+                    AutomationProperties.Name="{Binding Localization[Dev_OpenFolder]}">
+                <icons:MaterialIcon Kind="FolderOpen" Width="20" Height="20" />
+            </Button>
+        </WrapPanel>
+
+        <Border Grid.Row="1" Background="#1E1E1E" CornerRadius="6" Padding="6">
+            <ListBox x:Name="LogList" ItemsSource="{Binding Entries}" Background="Transparent"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.Styles>
+                    <Style Selector="ListBoxItem">
+                        <Setter Property="Padding" Value="4,1" />
+                        <Setter Property="MinHeight" Value="0" />
+                    </Style>
+                </ListBox.Styles>
+                <ListBox.ItemTemplate>
+                    <DataTemplate x:DataType="logging:LogEntry">
+                        <SelectableTextBlock Text="{Binding}" FontFamily="Consolas, Menlo, monospace" FontSize="12" TextWrapping="Wrap"
+                                             Foreground="#D4D4D4"
+                                             Classes.warn="{Binding Level, Converter={x:Static conv:LogLevelSeverity.IsWarning}}"
+                                             Classes.err="{Binding Level, Converter={x:Static conv:LogLevelSeverity.IsError}}">
+                            <SelectableTextBlock.Styles>
+                                <Style Selector="SelectableTextBlock.warn">
+                                    <Setter Property="Foreground" Value="#E5C07B" />
+                                </Style>
+                                <Style Selector="SelectableTextBlock.err">
+                                    <Setter Property="Foreground" Value="#F48771" />
+                                </Style>
+                            </SelectableTextBlock.Styles>
+                        </SelectableTextBlock>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Border>
+    </Grid>
+</UserControl>

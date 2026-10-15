@@ -1,221 +1,200 @@
+using System;
 using System.ComponentModel;
+using System.Linq;
 using System.Threading.Tasks;
-using Avalonia;
-using Avalonia.Controls.ApplicationLifetimes;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using HashTool.App.Models;
+using HashTool.App.Infrastructure;
 using HashTool.App.Services;
+using HashTool.App.Services.Theme;
+using HashTool.Core.Checksums;
+using HashTool.Core.Configuration;
 
 namespace HashTool.App.ViewModels;
 
-public partial class MainWindowViewModel : ObservableObject
+/// <summary>Navigation, window-level commands and notices.</summary>
+public sealed partial class MainWindowViewModel : ObservableObject
 {
-    [ObservableProperty] private object _currentPage;
+    private readonly SettingsService _settings;
+    private readonly ActivationService _activation;
+
+    [ObservableProperty] private ObservableObject _currentPage;
+    [ObservableProperty] private LocalizationProxy _localization;
     [ObservableProperty] private bool _isPaneOpen = true;
+    [ObservableProperty] private string? _noticeText;
 
-    public MainWindowViewModel()
+    public MainWindowViewModel(CreateHashViewModel create, CheckHashViewModel check, SettingsViewModel settingsPage,
+        UpdateViewModel update, AboutViewModel about, DeveloperViewModel developer, SettingsService settings,
+        LocalizationService localization, FontService fonts, ThemeService theme, ActivationService activation)
     {
-        CurrentPage = CreateHashVM;
-        LocalizationService.Instance.PropertyChanged += OnLocalizationChanged;
+        Create = create;
+        Check = check;
+        SettingsPage = settingsPage;
+        Update = update;
+        About = about;
+        Developer = developer;
+        _settings = settings;
+        _activation = activation;
+        Loc = localization;
+        Fonts = fonts;
+        Theme = theme;
+        _currentPage = create;
+        _localization = new LocalizationProxy(localization);
 
-        CreateHashVM.PropertyChanged += (s, e) =>
+        localization.LanguageChanged += (_, _) =>
         {
-            if (e.PropertyName == nameof(CreateHashViewModel.IsComputing))
-            {
-                OnPropertyChanged(nameof(IsBusy));
-                OnPropertyChanged(nameof(IsIdle));
-            }
+            Localization = new LocalizationProxy(localization);
+            OnPropertyChanged(nameof(UpdateBannerText));
+            settingsPage.RefreshShellIntegration();
+        };
+        create.PropertyChanged += OnPagePropertyChanged;
+        check.PropertyChanged += OnPagePropertyChanged;
+        settings.Changed += (_, _) =>
+        {
+            OnPropertyChanged(nameof(IsDeveloperModeEnabled));
+            OnPropertyChanged(nameof(IsHashMaskingEnabled));
+        };
+        update.UpdateFound += (_, _) => OnPropertyChanged(nameof(UpdateBannerText));
+        update.PropertyChanged += (_, e) =>
+        {
+            if (e.PropertyName == nameof(UpdateViewModel.State)) OnPropertyChanged(nameof(UpdateBannerText));
         };
 
-        CheckHashVM.PropertyChanged += (s, e) =>
-        {
-            if (e.PropertyName == nameof(CheckHashViewModel.IsChecking))
-            {
-                OnPropertyChanged(nameof(IsBusy));
-                OnPropertyChanged(nameof(IsIdle));
-            }
-        };
+        if (settings.LoadResult == SettingsLoadResult.RecoveredFromCorruption) _noticeText = localization["Msg_SettingsRecovered"];
+        else if (Elevation.IsElevated && OperatingSystem.IsWindows()) _noticeText = localization["Msg_ElevatedDragDrop"];
     }
 
-    public PreferencesService Prefs => PreferencesService.Instance;
-    public LocalizationService L => LocalizationService.Instance;
-    public LocalizationService Localization => LocalizationService.Instance;
-    private SettingsViewModel? _settingsVM;
-    public SettingsViewModel SettingsVM => _settingsVM ??= new SettingsViewModel();
+    public CreateHashViewModel Create { get; }
+    public CheckHashViewModel Check { get; }
+    public SettingsViewModel SettingsPage { get; }
+    public UpdateViewModel Update { get; }
+    public AboutViewModel About { get; }
+    public DeveloperViewModel Developer { get; }
+    public LocalizationService Loc { get; }
+    public FontService Fonts { get; }
+    public ThemeService Theme { get; }
 
-    public FontService FontConfig => FontService.Instance;
-    private ThemeService Theme => ThemeService.Instance;
+    public AppSettings Settings => _settings.Current;
 
-    public string MenuCreateText => L["Menu_Create"];
-    public string MenuCheckText => L["Menu_Check"];
-    public string MenuSettingsText => L["Menu_Settings"];
-    public string MenuUpdateText => L["Menu_Update"];
-    public string MenuThemeText => L["Menu_Theme"];
-    public string MenuAboutText => L["Menu_About"];
-    public string MenuDeveloperText => L["Menu_Developer"]; // Thêm property này
-    public string AppTitleText => L["AppTitle"];
+    public bool IsBusy => Create.IsBusy || Check.IsBusy || Create.IsImporting || Check.IsImporting;
 
-    private CreateHashViewModel? _createHashVM;
-    public CreateHashViewModel CreateHashVM
-    {
-        get
-        {
-            if (_createHashVM == null)
-            {
-                _createHashVM = new CreateHashViewModel();
-                _createHashVM.PropertyChanged += (s, e) =>
-                {
-                    if (e.PropertyName == nameof(CreateHashViewModel.IsComputing))
-                    {
-                        OnPropertyChanged(nameof(IsBusy));
-                        OnPropertyChanged(nameof(IsIdle));
-                    }
-                };
-            }
-            return _createHashVM;
-        }
-    }
-
-    private CheckHashViewModel? _checkHashVM;
-    public CheckHashViewModel CheckHashVM
-    {
-        get
-        {
-            if (_checkHashVM == null)
-            {
-                _checkHashVM = new CheckHashViewModel();
-                _checkHashVM.PropertyChanged += (s, e) =>
-                {
-                    if (e.PropertyName == nameof(CheckHashViewModel.IsChecking))
-                    {
-                        OnPropertyChanged(nameof(IsBusy));
-                        OnPropertyChanged(nameof(IsIdle));
-                    }
-                };
-            }
-            return _checkHashVM;
-        }
-    }
-
-    private UpdateViewModel? _updateVM;
-    private UpdateViewModel UpdateVM => _updateVM ??= new UpdateViewModel();
-
-    private AboutViewModel? _aboutVM;
-    private AboutViewModel AboutVM => _aboutVM ??= new AboutViewModel();
-
-    private DeveloperViewModel? _developerVM;
-    private DeveloperViewModel DeveloperVM => _developerVM ??= new DeveloperViewModel();
-
-    public bool IsBusy => (_createHashVM?.IsComputing ?? false) || (_checkHashVM?.IsChecking ?? false);
     public bool IsIdle => !IsBusy;
 
-    [RelayCommand]
-    private void NavigateToSettings()
+    public bool IsDeveloperModeEnabled => _settings.Current.IsDeveloperModeEnabled;
+
+    public bool IsHashMaskingEnabled => _settings.Current.IsHashMaskingEnabled;
+
+    /// <summary>Text of the "new version available" banner, or null when there is nothing to show.</summary>
+    public string? UpdateBannerText => Update.State == UpdateState.Available && CurrentPage != Update
+        ? Loc.Format("Msg_UpdateAvailableBanner", Update.AvailableVersion)
+        : null;
+
+    private FileListViewModelBase? CurrentList => CurrentPage as FileListViewModelBase;
+
+    /// <summary>Name of the visible page, used to highlight the navigation button.</summary>
+    public string CurrentPageName => CurrentPage switch
     {
-        CurrentPage = SettingsVM;
+        CheckHashViewModel => "Check",
+        SettingsViewModel => "Settings",
+        UpdateViewModel => "Update",
+        AboutViewModel => "About",
+        DeveloperViewModel => "Developer",
+        _ => "Create"
+    };
+
+    partial void OnCurrentPageChanged(ObservableObject value)
+    {
+        OnPropertyChanged(nameof(UpdateBannerText));
+        OnPropertyChanged(nameof(CurrentPageName));
     }
 
-    private void OnLocalizationChanged(object? sender, PropertyChangedEventArgs e)
+    private void OnPagePropertyChanged(object? sender, PropertyChangedEventArgs e)
     {
-        if (e.PropertyName == "Item[]")
+        if (e.PropertyName is nameof(FileListViewModelBase.IsBusy) or nameof(FileListViewModelBase.IsImporting))
         {
-            OnPropertyChanged(nameof(Localization));
-            OnPropertyChanged(nameof(MenuCreateText));
-            OnPropertyChanged(nameof(MenuCheckText));
-            OnPropertyChanged(nameof(MenuSettingsText));
-            OnPropertyChanged(nameof(MenuUpdateText));
-            OnPropertyChanged(nameof(MenuThemeText));
-            OnPropertyChanged(nameof(MenuAboutText));
-            OnPropertyChanged(nameof(MenuDeveloperText));
-            OnPropertyChanged(nameof(AppTitleText));
+            OnPropertyChanged(nameof(IsBusy));
+            OnPropertyChanged(nameof(IsIdle));
         }
     }
 
-    [RelayCommand]
-    private void NavigateToCreate()
+    /// <summary>Called once the window is shown.</summary>
+    public async Task OnOpenedAsync()
     {
-        CurrentPage = CreateHashVM;
+        _activation.Attach(request => _ = HandleActivationAsync(request));
+        await Update.CheckInBackgroundIfDueAsync();
     }
 
-    [RelayCommand]
-    private void NavigateToCheck()
+    /// <summary>Files from the command line, Explorer, a second launch or macOS "Open With".</summary>
+    public async Task HandleActivationAsync(ActivationRequest request)
     {
-        CurrentPage = CheckHashVM;
+        var verify = request.Verb switch
+        {
+            ActivationVerb.Verify => true,
+            ActivationVerb.Create => false,
+            _ => request.Paths.All(p => ChecksumFileNames.IsChecksumFile(p, out _))
+        };
+        FileListViewModelBase target = verify ? Check : Create;
+        CurrentPage = target;
+        ActivateWindowRequested?.Invoke(this, EventArgs.Empty);
+        await target.AddPathsAsync(request.Paths);
     }
 
-    [RelayCommand]
-    private void NavigateToUpdate()
-    {
-        CurrentPage = UpdateVM;
-    }
+    /// <summary>Raised when the window should come to the front.</summary>
+    public event EventHandler? ActivateWindowRequested;
 
     [RelayCommand]
-    private void NavigateToAbout()
+    private void Navigate(string page)
     {
-        CurrentPage = AboutVM;
-    }
-
-    [RelayCommand]
-    private void NavigateToDeveloper()
-    {
-        CurrentPage = DeveloperVM;
+        if (IsBusy && page is not ("Create" or "Check")) return;
+        CurrentPage = page switch
+        {
+            "Check" => Check,
+            "Settings" => SettingsPage,
+            "Update" => Update,
+            "About" => About,
+            "Developer" => Developer,
+            _ => Create
+        };
     }
 
     [RelayCommand]
     private void ToggleTheme()
     {
-        if (!SettingsVM.CanChangeTheme) return;
-
-        if (Theme.CurrentThemeVariant == AppThemeVariant.Dark)
-            Theme.CurrentThemeVariant = AppThemeVariant.Light;
-        else
-            Theme.CurrentThemeVariant = AppThemeVariant.Dark;
+        if (!SettingsPage.CanChangeTheme) return;
+        Theme.CurrentThemeVariant = Theme.IsDark ? AppThemeVariant.Light : AppThemeVariant.Dark;
     }
 
     [RelayCommand]
-    private async Task OpenFilePicker()
-    {
-        var window = Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop
-            ? desktop.MainWindow
-            : null;
-        if (window == null) return;
+    private void ShowUpdate() => CurrentPage = Update;
 
-        if (CurrentPage == CreateHashVM)
-            await CreateHashVM.AddFilesCommand.ExecuteAsync(window);
-        else if (CurrentPage == CheckHashVM) await CheckHashVM.AddFilesCommand.ExecuteAsync(window);
+    [RelayCommand]
+    private void DismissNotice() => NoticeText = null;
+
+    // Keyboard shortcuts act on the current list page.
+    [RelayCommand]
+    private async Task AddFilesAsync()
+    {
+        if (CurrentList is { } list && list.AddFilesCommand.CanExecute(null)) await list.AddFilesCommand.ExecuteAsync(null);
     }
 
     [RelayCommand]
-    private void ClearAllLists()
+    private async Task AddFolderAsync()
     {
-        _createHashVM?.ClearListCommand.Execute(null);
-        _checkHashVM?.ClearListCommand.Execute(null);
+        if (CurrentList is { } list && list.AddFolderCommand.CanExecute(null)) await list.AddFolderCommand.ExecuteAsync(null);
     }
 
     [RelayCommand]
-    private async Task HotkeyCheckAll()
+    private async Task RunAllAsync()
     {
-        if (CurrentPage == CheckHashVM && CheckHashVM.VerifyAllCommand.CanExecute(null))
-            await CheckHashVM.VerifyAllCommand.ExecuteAsync(null);
+        if (CurrentList is { } list && list.RunAllCommand.CanExecute(null)) await list.RunAllCommand.ExecuteAsync(null);
     }
 
     [RelayCommand]
-    private async Task HotkeyCreateAll()
+    private void CancelAll()
     {
-        if (CurrentPage == CreateHashVM && CreateHashVM.ComputeAllCommand.CanExecute(null))
-            await CreateHashVM.ComputeAllCommand.ExecuteAsync(null);
+        if (CurrentList is { } list && list.CancelCommand.CanExecute(null)) list.CancelCommand.Execute(null);
     }
 
     [RelayCommand]
-    private async Task HotkeyCompressAll()
-    {
-        var window = Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop
-            ? desktop.MainWindow
-            : null;
-        if (window == null) return;
-
-        if (CurrentPage == CreateHashVM && CreateHashVM.CompressFilesCommand.CanExecute(window))
-            await CreateHashVM.CompressFilesCommand.ExecuteAsync(window);
-    }
+    private void FocusSearch() => CurrentList?.RequestSearchFocus();
 }

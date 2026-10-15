@@ -1,93 +1,73 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using Avalonia;
 using Avalonia.Platform;
 using Avalonia.Styling;
 using Avalonia.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
-using HashTool.App.Models;
-using HashTool.App.Services.ThemeEffects;
+using HashTool.Core.Configuration;
 
-namespace HashTool.App.Services;
+namespace HashTool.App.Services.Theme;
 
-public partial class ThemeService : ObservableObject
+/// <summary>Applies the light/dark variant, the colour palette of the selected style and window effects.</summary>
+public sealed partial class ThemeService : ObservableObject
 {
     [ObservableProperty] private AppThemeStyle _currentThemeStyle = AppThemeStyle.Fluent;
     [ObservableProperty] private AppThemeVariant _currentThemeVariant = AppThemeVariant.System;
     [ObservableProperty] private bool _isThemeLocked;
 
-    public ThemeService()
+    private IPlatformSettings? _platformSettings;
+
+    public static AppThemeStyle[] Styles { get; } = Enum.GetValues<AppThemeStyle>();
+
+    /// <summary>Starts following the operating system's light/dark setting. Call once the application exists.</summary>
+    public void Attach(Application application)
     {
-        if (Application.Current?.PlatformSettings != null)
-            Application.Current.PlatformSettings.ColorValuesChanged += OnPlatformColorValuesChanged;
+        _platformSettings = application.PlatformSettings;
+        if (_platformSettings is not null)
+        {
+            _platformSettings.ColorValuesChanged += (_, _) =>
+            {
+                if (CurrentThemeVariant == AppThemeVariant.System) Dispatcher.UIThread.Post(Apply);
+            };
+        }
+
+        Apply();
     }
 
-    public static ThemeService Instance { get; } = new();
+    partial void OnCurrentThemeStyleChanged(AppThemeStyle value) => Apply();
 
-    private void OnPlatformColorValuesChanged(object? sender, PlatformColorValues e)
+    partial void OnCurrentThemeVariantChanged(AppThemeVariant value) => Apply();
+
+    public bool IsDark
     {
-        if (CurrentThemeVariant == AppThemeVariant.System) Dispatcher.UIThread.Post(() => ApplyTheme());
+        get
+        {
+            return CurrentThemeVariant switch
+            {
+                AppThemeVariant.Dark => true,
+                AppThemeVariant.Light => false,
+                _ => _platformSettings?.GetColorValues().ThemeVariant == PlatformThemeVariant.Dark
+            };
+        }
     }
 
-    partial void OnCurrentThemeStyleChanged(AppThemeStyle value)
-    {
-        ApplyTheme();
-    }
-
-    partial void OnCurrentThemeVariantChanged(AppThemeVariant value)
-    {
-        ApplyTheme();
-    }
-
-    public void ApplyTheme()
+    public void Apply()
     {
         var app = Application.Current;
-        if (app == null) return;
+        if (app is null) return;
 
-        // 1. Apply Theme Variant
-        var requestedVariant = CurrentThemeVariant switch
+        app.RequestedThemeVariant = CurrentThemeVariant switch
         {
             AppThemeVariant.Light => ThemeVariant.Light,
             AppThemeVariant.Dark => ThemeVariant.Dark,
             _ => ThemeVariant.Default
         };
 
-        if (app.RequestedThemeVariant != requestedVariant) app.RequestedThemeVariant = requestedVariant;
+        foreach (var (key, value) in ThemePalettes.Get(CurrentThemeStyle, IsDark))
+            app.Resources[key] = value;
 
-        // 2. Determine effective variant for palette logic
-        var effectiveVariant = CurrentThemeVariant;
-        if (CurrentThemeVariant == AppThemeVariant.System)
-        {
-            var systemVariant = app.PlatformSettings?.GetColorValues().ThemeVariant;
-            if (systemVariant == PlatformThemeVariant.Light)
-                effectiveVariant = AppThemeVariant.Light;
-            else
-                effectiveVariant = AppThemeVariant.Dark;
-        }
-
-        // 3. Get Palette with effective variant
-        var palette = ThemePalettes.GetPalette(CurrentThemeStyle, effectiveVariant);
-
-        // 4. Apply Palette
-        foreach (var kvp in palette)
-        {
-            if (app.Resources.ContainsKey(kvp.Key))
-            {
-                app.Resources.Remove(kvp.Key);
-            }
-            app.Resources[kvp.Key] = kvp.Value;
-        }
-
-        // 5. Apply Window Effects
-        if (CurrentThemeStyle == AppThemeStyle.Fluent || CurrentThemeStyle == AppThemeStyle.Glassmorphism)
-            WindowEffect.ApplyToMainWindow();
-        else
-            WindowEffect.DisableForMainWindow();
-    }
-
-    public List<AppThemeStyle> GetAvailableThemesForVariant(AppThemeVariant variant)
-    {
-        return Enum.GetValues(typeof(AppThemeStyle)).Cast<AppThemeStyle>().ToList();
+        if (CurrentThemeStyle is AppThemeStyle.Fluent or AppThemeStyle.Glassmorphism) WindowEffect.ApplyToMainWindow();
+        else WindowEffect.DisableForMainWindow();
+        OnPropertyChanged(nameof(IsDark));
     }
 }

@@ -1,227 +1,126 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:HashTool.App.ViewModels"
-        xmlns:views="using:HashTool.App.Views"
-        xmlns:controls="using:HashTool.App.Views.Controls"
-        xmlns:conv="using:HashTool.App.Converters"
         xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
         x:Class="HashTool.App.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/icon/favicon.ico"
-        Title="{Binding AppTitleText}"
-        Width="1600" Height="900"
+        Title="{Binding Localization[AppTitle]}"
+        Width="1280" Height="800" MinWidth="900" MinHeight="560"
         WindowStartupLocation="CenterScreen"
         Background="{DynamicResource AppBackgroundBrush}"
-        WindowDecorations="Full"
         ExtendClientAreaToDecorationsHint="True"
-        CanResize="True"
-        FontFamily="{Binding SettingsVM.Font.SelectedFont}"
-        FontSize="{Binding SettingsVM.Font.BaseFontSize}"
-        FlowDirection="{Binding L.FlowDirection}">
+        FontFamily="{Binding Fonts.SelectedFont}"
+        FontSize="{Binding Fonts.BaseFontSize}"
+        FlowDirection="{Binding Loc.FlowDirection}">
 
-    <!-- Key Bindings -->
     <Window.KeyBindings>
-        <KeyBinding Gesture="Shift+A" Command="{Binding HotkeyCheckAllCommand}" />
-        <KeyBinding Gesture="Shift+C" Command="{Binding HotkeyCreateAllCommand}" />
-        <KeyBinding Gesture="Ctrl+F" Command="{Binding OpenFilePickerCommand}" />
-        <KeyBinding Gesture="Meta+F" Command="{Binding OpenFilePickerCommand}" />
-        <KeyBinding Gesture="Shift+Z" Command="{Binding HotkeyCompressAllCommand}" />
-        <KeyBinding Gesture="Ctrl+Shift+H" Command="{Binding ClearAllListsCommand}" />
-        <KeyBinding Gesture="Meta+Shift+H" Command="{Binding ClearAllListsCommand}" />
+        <KeyBinding Gesture="Ctrl+O" Command="{Binding AddFilesCommand}" />
+        <KeyBinding Gesture="Meta+O" Command="{Binding AddFilesCommand}" />
+        <KeyBinding Gesture="Ctrl+Shift+O" Command="{Binding AddFolderCommand}" />
+        <KeyBinding Gesture="Meta+Shift+O" Command="{Binding AddFolderCommand}" />
+        <KeyBinding Gesture="Ctrl+F" Command="{Binding FocusSearchCommand}" />
+        <KeyBinding Gesture="Meta+F" Command="{Binding FocusSearchCommand}" />
+        <KeyBinding Gesture="Ctrl+Enter" Command="{Binding RunAllCommand}" />
+        <KeyBinding Gesture="Meta+Enter" Command="{Binding RunAllCommand}" />
+        <KeyBinding Gesture="Escape" Command="{Binding CancelAllCommand}" />
     </Window.KeyBindings>
 
     <Window.Styles>
-        <Style Selector="StackPanel.DragOver">
-            <Setter Property="Background">
-                <SolidColorBrush Color="{DynamicResource SystemAccentColor}" Opacity="0.2" />
-            </Setter>
-            <Setter Property="Opacity" Value="1.0" />
-        </Style>
-
-        <Style Selector="ListBox.DragOver">
-            <Setter Property="Background">
-                <SolidColorBrush Color="{DynamicResource SystemAccentColor}" Opacity="0.2" />
-            </Setter>
-        </Style>
-
-        <Style Selector="TextBox.DragOver">
-            <Setter Property="Background">
-                <SolidColorBrush Color="{DynamicResource SystemAccentColor}" Opacity="0.2" />
-            </Setter>
-        </Style>
-
-        <Style Selector="Button.MenuBtn">
+        <Style Selector="Button.nav">
             <Setter Property="Background" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0" />
-            <Setter Property="Height" Value="50" />
+            <Setter Property="Height" Value="46" />
             <Setter Property="Padding" Value="0" />
             <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
             <Setter Property="CornerRadius" Value="8" />
-            <Setter Property="Margin" Value="5,2" />
-            <Setter Property="Transitions">
-                <Transitions>
-                    <BrushTransition Property="Background" Duration="0:0:0.2" />
-                    <TransformOperationsTransition Property="RenderTransform" Duration="0:0:0.1" />
-                </Transitions>
-            </Setter>
+            <Setter Property="Margin" Value="6,1" />
         </Style>
-
-        <Style Selector="Button.MenuBtn:pointerover">
-            <Setter Property="Background" Value="{DynamicResource SystemAccentColorLight}" />
-            <Setter Property="RenderTransform" Value="scale(1.02)" />
+        <Style Selector="Button.nav.active">
+            <Setter Property="Background" Value="{DynamicResource SystemAccentColorLight1}" />
         </Style>
-
-        <Style Selector="Button.MenuBtn:pressed">
-            <Setter Property="RenderTransform" Value="scale(0.98)" />
-        </Style>
-
-        <Style Selector="Button.MenuBtn icons|MaterialIcon">
-            <Setter Property="Transitions">
-                <Transitions>
-                    <BrushTransition Property="Foreground" Duration="0:0:0.2" />
-                </Transitions>
-            </Setter>
-        </Style>
-
-        <Style Selector="SplitView[IsPaneOpen=False] Button.MenuBtn:pointerover icons|MaterialIcon">
+        <Style Selector="Button.nav:pointerover icons|MaterialIcon">
             <Setter Property="Foreground" Value="{DynamicResource SystemAccentColor}" />
         </Style>
-
-        <Style Selector="SplitView[IsPaneOpen=True] Button.MenuBtn:pointerover icons|MaterialIcon">
-            <Setter Property="Foreground" Value="{DynamicResource SystemAccentColor}" />
-        </Style>
-        <Style Selector="SplitView[IsPaneOpen=True] Button.MenuBtn:pointerover TextBlock">
-            <Setter Property="Foreground" Value="{DynamicResource SystemAccentColor}" />
+        <Style Selector="Border.banner">
+            <Setter Property="CornerRadius" Value="8" />
+            <Setter Property="Padding" Value="12,8" />
+            <Setter Property="Margin" Value="0,0,0,10" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="{DynamicResource HighlightBrush}" />
+            <Setter Property="Background" Value="{DynamicResource PaneBackgroundBrush}" />
         </Style>
     </Window.Styles>
 
-    <Window.DataTemplates>
-        <DataTemplate DataType="vm:SettingsViewModel">
-            <views:SettingsView />
-        </DataTemplate>
-        <DataTemplate DataType="vm:AboutViewModel">
-            <views:AboutView />
-        </DataTemplate>
-        <DataTemplate DataType="vm:DeveloperViewModel">
-            <views:DeveloperView />
-        </DataTemplate>
-        <DataTemplate DataType="vm:CreateHashViewModel">
-            <views:CreateHashView />
-        </DataTemplate>
-        <DataTemplate DataType="vm:CheckHashViewModel">
-            <views:CheckHashView />
-        </DataTemplate>
-        <DataTemplate DataType="vm:UpdateViewModel">
-            <views:UpdateView />
-        </DataTemplate>
-    </Window.DataTemplates>
-
     <LayoutTransformControl>
         <LayoutTransformControl.LayoutTransform>
-            <ScaleTransform ScaleX="{Binding SettingsVM.Font.UiScale}"
-                            ScaleY="{Binding SettingsVM.Font.UiScale}" />
+            <ScaleTransform ScaleX="{Binding Fonts.UiScale}" ScaleY="{Binding Fonts.UiScale}" />
         </LayoutTransformControl.LayoutTransform>
 
-        <SplitView IsPaneOpen="{Binding IsPaneOpen}"
-                   DisplayMode="Inline"
-                   OpenPaneLength="265"
-                   PaneBackground="Transparent">
-
+        <SplitView IsPaneOpen="{Binding IsPaneOpen}" DisplayMode="Inline" OpenPaneLength="240" PaneBackground="Transparent">
             <SplitView.Pane>
-                <Border Background="{DynamicResource PaneBackgroundBrush}"
-                        CornerRadius="12"
-                        Margin="15,40, 15,25"
-                        BorderBrush="{DynamicResource GlassBorderBrush}"
-                        BorderThickness="1">
-                    <Grid RowDefinitions="Auto, *, Auto" Margin="0,10">
-                        <!-- Logo / App Name -->
-                        <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="10" Margin="20,10,0,20">
-                            <Image Source="/Assets/logo_in_app.png" Width="32" Height="32" VerticalAlignment="Center" />
-                            <TextBlock Text="{Binding AppTitleText}" FontSize="20" FontWeight="Bold"
-                                       VerticalAlignment="Center" />
+                <Border Classes="card" Margin="12,36,12,16" Padding="0,10">
+                    <Grid RowDefinitions="Auto,*,Auto">
+                        <StackPanel Orientation="Horizontal" Spacing="10" Margin="18,6,0,18">
+                            <Image Source="/Assets/logo_in_app.png" Width="30" Height="30" VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding Localization[AppTitle]}" FontSize="19" FontWeight="Bold" VerticalAlignment="Center" />
                         </StackPanel>
 
                         <ScrollViewer Grid.Row="1">
-                            <StackPanel Spacing="5">
-                                <Button Command="{Binding NavigateToCreateCommand}" Classes="MenuBtn"
-                                        IsEnabled="{Binding IsIdle}">
-                                    <Grid ColumnDefinitions="60, *">
-                                        <icons:MaterialIcon Grid.Column="0" Kind="FilePlus" Width="24" Height="24"
-                                                            HorizontalAlignment="Center" />
-                                        <TextBlock Grid.Column="1" Text="{Binding MenuCreateText}"
-                                                   VerticalAlignment="Center"
-                                                   FontWeight="SemiBold" />
+                            <StackPanel>
+                                <Button Classes="nav" Classes.active="{Binding CurrentPageName, Converter={x:Static ObjectConverters.Equal}, ConverterParameter=Create}" Command="{Binding NavigateCommand}" CommandParameter="Create"
+                                        AutomationProperties.Name="{Binding Localization[Menu_Create]}">
+                                    <Grid ColumnDefinitions="52,*">
+                                        <icons:MaterialIcon Kind="FilePlus" Width="22" Height="22" />
+                                        <TextBlock Grid.Column="1" Text="{Binding Localization[Menu_Create]}" VerticalAlignment="Center" FontWeight="SemiBold" />
                                     </Grid>
                                 </Button>
-
-                                <Button Command="{Binding NavigateToCheckCommand}" Classes="MenuBtn"
-                                        IsEnabled="{Binding IsIdle}">
-                                    <Grid ColumnDefinitions="60, *">
-                                        <icons:MaterialIcon Grid.Column="0" Kind="FileCheck" Width="24" Height="24"
-                                                            HorizontalAlignment="Center" />
-                                        <TextBlock Grid.Column="1" Text="{Binding MenuCheckText}"
-                                                   VerticalAlignment="Center"
-                                                   FontWeight="SemiBold" />
+                                <Button Classes="nav" Classes.active="{Binding CurrentPageName, Converter={x:Static ObjectConverters.Equal}, ConverterParameter=Check}" Command="{Binding NavigateCommand}" CommandParameter="Check"
+                                        AutomationProperties.Name="{Binding Localization[Menu_Check]}">
+                                    <Grid ColumnDefinitions="52,*">
+                                        <icons:MaterialIcon Kind="FileCheck" Width="22" Height="22" />
+                                        <TextBlock Grid.Column="1" Text="{Binding Localization[Menu_Check]}" VerticalAlignment="Center" FontWeight="SemiBold" />
                                     </Grid>
                                 </Button>
-
-                                <Button Command="{Binding NavigateToSettingsCommand}" Classes="MenuBtn"
-                                        IsEnabled="{Binding IsIdle}">
-                                    <Grid ColumnDefinitions="60, *">
-                                        <icons:MaterialIcon Grid.Column="0" Kind="Cog" Width="24" Height="24"
-                                                            HorizontalAlignment="Center" />
-                                        <TextBlock Grid.Column="1" Text="{Binding MenuSettingsText}"
-                                                   VerticalAlignment="Center"
-                                                   FontWeight="SemiBold" />
+                                <Button Classes="nav" Classes.active="{Binding CurrentPageName, Converter={x:Static ObjectConverters.Equal}, ConverterParameter=Settings}" Command="{Binding NavigateCommand}" CommandParameter="Settings" IsEnabled="{Binding IsIdle}"
+                                        AutomationProperties.Name="{Binding Localization[Menu_Settings]}">
+                                    <Grid ColumnDefinitions="52,*">
+                                        <icons:MaterialIcon Kind="Cog" Width="22" Height="22" />
+                                        <TextBlock Grid.Column="1" Text="{Binding Localization[Menu_Settings]}" VerticalAlignment="Center" FontWeight="SemiBold" />
                                     </Grid>
                                 </Button>
-
-                                <Button Command="{Binding NavigateToUpdateCommand}" Classes="MenuBtn"
-                                        IsEnabled="{Binding IsIdle}">
-                                    <Grid ColumnDefinitions="60, *">
-                                        <icons:MaterialIcon Grid.Column="0" Kind="CloudDownload" Width="24" Height="24"
-                                                            HorizontalAlignment="Center" />
-                                        <TextBlock Grid.Column="1" Text="{Binding MenuUpdateText}"
-                                                   VerticalAlignment="Center"
-                                                   FontWeight="SemiBold" />
+                                <Button Classes="nav" Classes.active="{Binding CurrentPageName, Converter={x:Static ObjectConverters.Equal}, ConverterParameter=Update}" Command="{Binding NavigateCommand}" CommandParameter="Update" IsEnabled="{Binding IsIdle}"
+                                        AutomationProperties.Name="{Binding Localization[Menu_Update]}">
+                                    <Grid ColumnDefinitions="52,*">
+                                        <icons:MaterialIcon Kind="CloudDownload" Width="22" Height="22" />
+                                        <TextBlock Grid.Column="1" Text="{Binding Localization[Menu_Update]}" VerticalAlignment="Center" FontWeight="SemiBold" />
                                     </Grid>
                                 </Button>
-
-                                <Button Command="{Binding NavigateToAboutCommand}" Classes="MenuBtn"
-                                        IsEnabled="{Binding IsIdle}">
-                                    <Grid ColumnDefinitions="60, *">
-                                        <icons:MaterialIcon Grid.Column="0" Kind="InformationOutline" Width="24"
-                                                            Height="24"
-                                                            HorizontalAlignment="Center" />
-                                        <TextBlock Grid.Column="1" Text="{Binding MenuAboutText}"
-                                                   VerticalAlignment="Center"
-                                                   FontWeight="SemiBold" />
+                                <Button Classes="nav" Classes.active="{Binding CurrentPageName, Converter={x:Static ObjectConverters.Equal}, ConverterParameter=About}" Command="{Binding NavigateCommand}" CommandParameter="About" IsEnabled="{Binding IsIdle}"
+                                        AutomationProperties.Name="{Binding Localization[Menu_About]}">
+                                    <Grid ColumnDefinitions="52,*">
+                                        <icons:MaterialIcon Kind="InformationOutline" Width="22" Height="22" />
+                                        <TextBlock Grid.Column="1" Text="{Binding Localization[Menu_About]}" VerticalAlignment="Center" FontWeight="SemiBold" />
                                     </Grid>
                                 </Button>
-
-                                <Button Command="{Binding NavigateToDeveloperCommand}" Classes="MenuBtn"
-                                        IsEnabled="{Binding IsIdle}"
-                                        IsVisible="{Binding SettingsVM.IsDeveloperModeEnabled}">
-                                    <Grid ColumnDefinitions="60, *">
-                                        <icons:MaterialIcon Grid.Column="0" Kind="Console" Width="24" Height="24"
-                                                            HorizontalAlignment="Center" Foreground="#00FF00" />
-                                        <TextBlock Grid.Column="1" Text="{Binding MenuDeveloperText}"
-                                                   VerticalAlignment="Center"
-                                                   FontWeight="SemiBold" Foreground="#00FF00" />
+                                <Button Classes="nav" Classes.active="{Binding CurrentPageName, Converter={x:Static ObjectConverters.Equal}, ConverterParameter=Developer}" Command="{Binding NavigateCommand}" CommandParameter="Developer"
+                                        IsEnabled="{Binding IsIdle}" IsVisible="{Binding IsDeveloperModeEnabled}"
+                                        AutomationProperties.Name="{Binding Localization[Menu_Developer]}">
+                                    <Grid ColumnDefinitions="52,*">
+                                        <icons:MaterialIcon Kind="Console" Width="22" Height="22" Foreground="{DynamicResource StatusSuccessBrush}" />
+                                        <TextBlock Grid.Column="1" Text="{Binding Localization[Menu_Developer]}" VerticalAlignment="Center" FontWeight="SemiBold" />
                                     </Grid>
                                 </Button>
-
                             </StackPanel>
                         </ScrollViewer>
 
-                        <Button Grid.Row="2" Command="{Binding ToggleThemeCommand}"
-                                IsEnabled="{Binding SettingsVM.CanChangeTheme}"
-
-                                Classes="MenuBtn">
-                            <Grid ColumnDefinitions="60, *">
-                                <icons:MaterialIcon Grid.Column="0" Kind="ThemeLightDark" Width="24" Height="24"
-                                                    HorizontalAlignment="Center" />
-                                <TextBlock Grid.Column="1" Text="{Binding MenuThemeText}" VerticalAlignment="Center" />
+                        <Button Grid.Row="2" Classes="nav" Command="{Binding ToggleThemeCommand}"
+                                IsEnabled="{Binding SettingsPage.CanChangeTheme}"
+                                AutomationProperties.Name="{Binding Localization[Menu_Theme]}">
+                            <Grid ColumnDefinitions="52,*">
+                                <icons:MaterialIcon Kind="ThemeLightDark" Width="22" Height="22" />
+                                <TextBlock Grid.Column="1" Text="{Binding Localization[Menu_Theme]}" VerticalAlignment="Center" />
                             </Grid>
                         </Button>
                     </Grid>
@@ -229,12 +128,28 @@
             </SplitView.Pane>
 
             <SplitView.Content>
-                <Border Padding="20" CornerRadius="12"
-                        Background="{DynamicResource AppBackgroundBrush}"
-                        Margin="0,40,25,25"
-                        BorderBrush="{DynamicResource GlassBorderBrush}"
-                        BorderThickness="1">
-                    <ContentControl Content="{Binding CurrentPage}" />
+                <Border Classes="card" Margin="0,36,16,16" Background="{DynamicResource AppBackgroundBrush}">
+                    <DockPanel>
+                        <Border DockPanel.Dock="Top" Classes="banner" IsVisible="{Binding UpdateBannerText, Converter={x:Static ObjectConverters.IsNotNull}}">
+                            <Grid ColumnDefinitions="Auto,*,Auto">
+                                <icons:MaterialIcon Kind="Update" Width="20" Height="20" Margin="0,0,10,0" Foreground="{DynamicResource StatusInfoBrush}" />
+                                <TextBlock Grid.Column="1" Text="{Binding UpdateBannerText}" VerticalAlignment="Center" TextWrapping="Wrap" />
+                                <Button Grid.Column="2" Content="{Binding Localization[Btn_View]}" Command="{Binding ShowUpdateCommand}" />
+                            </Grid>
+                        </Border>
+                        <Border DockPanel.Dock="Top" Classes="banner" IsVisible="{Binding NoticeText, Converter={x:Static ObjectConverters.IsNotNull}}">
+                            <Grid ColumnDefinitions="Auto,*,Auto">
+                                <icons:MaterialIcon Kind="Alert" Width="20" Height="20" Margin="0,0,10,0" Foreground="{DynamicResource StatusWarningBrush}" />
+                                <TextBlock Grid.Column="1" Text="{Binding NoticeText}" VerticalAlignment="Center" TextWrapping="Wrap" />
+                                <Button Grid.Column="2" Classes="icon" Command="{Binding DismissNoticeCommand}"
+                                        ToolTip.Tip="{Binding Localization[Btn_Close]}"
+                                        AutomationProperties.Name="{Binding Localization[Btn_Close]}">
+                                    <icons:MaterialIcon Kind="Close" Width="16" Height="16" />
+                                </Button>
+                            </Grid>
+                        </Border>
+                        <ContentControl Content="{Binding CurrentPage}" />
+                    </DockPanel>
                 </Border>
             </SplitView.Content>
         </SplitView>

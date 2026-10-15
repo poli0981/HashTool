@@ -2,36 +2,21 @@ using System;
 using System.Globalization;
 using Avalonia.Data.Converters;
 using Avalonia.Media;
+using HashTool.App.Services;
 
 namespace HashTool.App.Converters;
 
-public class FontNameConverter : IValueConverter
+/// <summary>Shows the default font as a translated "Default" label.</summary>
+public sealed class FontNameConverter : IValueConverter
 {
-    public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
+    public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture) => value switch
     {
-        if (value is FontFamily font)
-        {
-            if (font == FontFamily.Default ||
-                (font.Name != null && (font.Name == FontFamily.Default.Name || font.Name == "$Default" || font.Name == "#Default")))
-            {
-                return "Default";
-            }
+        FontFamily font when font == FontFamily.Default || font.Name.StartsWith('$') =>
+            LocalizationService.Current?["Font_Default"] ?? "Default",
+        FontFamily font => font.Name,
+        _ => value
+    };
 
-            return font.Name;
-        }
-        return value;
-    }
-
-    public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)
-    {
-        if (value is string name)
-        {
-            if (name == "Default")
-            {
-                return FontFamily.Default;
-            }
-            return new FontFamily(name);
-        }
-        return value;
-    }
+    public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture) =>
+        throw new NotSupportedException();
 }

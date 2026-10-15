@@ -1,526 +1,358 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
+using System.ComponentModel;
 using System.Linq;
-using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
-using Avalonia;
-using Avalonia.Controls.ApplicationLifetimes;
-using Avalonia.Input.Platform;
-using Avalonia.Threading;
+using Avalonia.Media;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using HashTool.App.Models;
+using HashTool.App.Infrastructure;
+using HashTool.App.Infrastructure.Logging;
 using HashTool.App.Services;
+using HashTool.App.Services.Theme;
+using HashTool.Core.Checksums;
+using HashTool.Core.Configuration;
+using HashTool.Core.Hashing;
+using Microsoft.Extensions.Logging;
 
 namespace HashTool.App.ViewModels;
 
-public partial class SettingsViewModel : ObservableObject
+/// <summary>Something displayed through a translation key (see <c>EnumLabelConverter</c>).</summary>
+public interface ILabeled
 {
-    [DllImport("kernel32.dll")]
-    private static extern bool SetProcessWorkingSetSize(IntPtr proc, int min, int max);
+    string LabelKey { get; }
+}
 
-    [DllImport("/usr/lib/libSystem.dylib")]
-    private static extern void malloc_zone_pressure_relief(IntPtr zone, ulong goal);
+/// <summary>A ComboBox option whose label is a translation key.</summary>
+public sealed record Option<T>(T Value, string LabelKey) : ILabeled;
 
-    // Config Path
-    [ObservableProperty] private string _configFilePath;
+/// <summary>Minimum level written to the log file; Developer Mode lowers it to Debug.</summary>
+public sealed class LogLevelSwitch
+{
+    public LogLevel Minimum { get; set; } = LogLevel.Information;
+}
 
-    [ObservableProperty] private List<AppThemeStyle> _filteredThemeStyles = new();
-    [ObservableProperty] private int _forceQuitTimeout;
+/// <summary>The Settings page. Every change is saved immediately (debounced) through <see cref="SettingsService"/>.</summary>
+public sealed partial class SettingsViewModel : ObservableObject
+{
+    private readonly SettingsService _settings;
+    private readonly IDialogService _dialogs;
+    private readonly IClipboardService _clipboard;
+    private readonly ILauncherService _launcher;
+    private readonly UpdateService _updates;
+    private readonly LogLevelSwitch _logLevel;
+    private readonly ILogger<SettingsViewModel> _logger;
+    private bool _applying;
 
-    [ObservableProperty] private bool _isAdminModeEnabled;
-
-    [ObservableProperty] private bool _isDeveloperModeEnabled;
-
-    [ObservableProperty]
-    [NotifyPropertyChangedFor(nameof(CanChangeFont))]
-    [NotifyPropertyChangedFor(nameof(CanChangeTheme))]
-    private bool _isSettingsLocked;
-
-    [ObservableProperty] private LocalizationProxy _localization = new(LocalizationService.Instance);
+    [ObservableProperty] private LocalizationProxy _localization;
     [ObservableProperty] private bool _showConfigPath;
 
-    [ObservableProperty] private bool _showReadWriteSpeed;
+    public SettingsViewModel(SettingsService settings, LocalizationService localization, FontService font, ThemeService theme,
+        IDialogService dialogs, IClipboardService clipboard, ILauncherService launcher, UpdateService updates, LogLevelSwitch logLevel,
+        ILogger<SettingsViewModel> logger)
+    {
+        _settings = settings;
+        Loc = localization;
+        Font = font;
+        Theme = theme;
+        _dialogs = dialogs;
+        _clipboard = clipboard;
+        _launcher = launcher;
+        _updates = updates;
+        _logLevel = logLevel;
+        _logger = logger;
+        _localization = new LocalizationProxy(localization);
 
-    private bool _showLanguageChangeWarning = true;
+        localization.LanguageChanged += (_, _) =>
+        {
+            Localization = new LocalizationProxy(localization);
+            OnPropertyChanged(nameof(ParallelFilesHint));
+        };
+        font.PropertyChanged += OnFontChanged;
+        theme.PropertyChanged += OnThemeChanged;
+        // The update check option is also on the Update page.
+        settings.Changed += (_, _) => OnPropertyChanged(nameof(CheckForUpdatesOnStartup));
+    }
+
+    public LocalizationService Loc { get; }
+
+    public FontService Font { get; }
+
+    public ThemeService Theme { get; }
+
+    private AppSettings S => _settings.Current;
+
+    public string ConfigFilePath => _settings.FilePath;
+
+    public IReadOnlyList<AppThemeStyle> ThemeStyles { get; } = ThemeService.Styles;
+
+    public IReadOnlyList<FileSizeUnit> FileSizeUnits { get; } = Enum.GetValues<FileSizeUnit>();
+
+    public IReadOnlyList<Option<HexCase>> HexCaseOptions { get; } =
+        [new(HexCase.Upper, "Settings_HexUpper"), new(HexCase.Lower, "Settings_HexLower")];
+
+    public IReadOnlyList<Option<ExportFormat>> ExportFormatOptions { get; } =
+    [
+        new(ExportFormat.Gnu, "FileType_Gnu"), new(ExportFormat.Bsd, "FileType_Bsd"), new(ExportFormat.Sfv, "FileType_Sfv"),
+        new(ExportFormat.Json, "FileType_Json"), new(ExportFormat.Csv, "FileType_Csv")
+    ];
+
+    public bool CanEdit => !S.IsSettingsLocked;
+
+    public bool CanChangeTheme => CanEdit && !Theme.IsThemeLocked;
+
+    public bool CanChangeFont => CanEdit && !Font.IsLockedFont;
+
+    public int AutomaticParallelism => new Core.Processing.BatchOptions().EffectiveParallelism;
+
+    /// <summary>"0 = automatic (N on this computer)".</summary>
+    public string ParallelFilesHint => Loc.Format("Settings_ParallelFilesDesc", AutomaticParallelism);
+
+    // ------------------------------------------------------------------ language & appearance
 
     public LanguageItem SelectedLanguage
     {
-        get => Localization.SelectedLanguage;
+        get => Loc.SelectedLanguage;
         set
         {
-            if (value == null || value == Localization.SelectedLanguage) return;
-
-            if (value.Code == "auto")
-            {
-                Dispatcher.UIThread.InvokeAsync(async () =>
-                {
-                    if (_showLanguageChangeWarning)
-                    {
-                        var (confirmed, isChecked) = await MessageBoxHelper.ShowConfirmationWithCheckboxAsync(
-                            L["Msg_LanguageChangeTitle"],
-                            L["Msg_LanguageChangeConfirmation"],
-                            L["Msg_DontShowAgain"],
-                            L["Btn_Yes"],
-                            L["Btn_No"],
-                            MessageBoxIcon.Question);
-
-                        if (!confirmed)
-                        {
-                            OnPropertyChanged(nameof(SelectedLanguage));
-                            return;
-                        }
-
-                        if (isChecked)
-                        {
-                            _showLanguageChangeWarning = false;
-                        }
-                    }
-
-                    Localization.SelectedLanguage = value;
-                    OnPropertyChanged(nameof(CanSetLanguageDefault));
-                    await SaveSettingsAsync();
-                });
-            }
-            else
-            {
-                Localization.SelectedLanguage = value;
-                OnPropertyChanged(nameof(CanSetLanguageDefault));
-            }
+            if (value is null || Equals(value, Loc.SelectedLanguage)) return;
+            Loc.SelectedLanguage = value;
+            Font.ApplyAutomaticFont(Loc.Culture);
+            _settings.Update(s => s.LanguageCode = value.Code);
+            OnPropertyChanged();
+            _logger.LogInformation("Language changed to {Code}", value.Code);
         }
     }
 
-    private bool _isInitializing;
-
-    public SettingsViewModel()
+    [RelayCommand]
+    private void SetVariant(AppThemeVariant variant)
     {
-        UpdateFilteredThemes();
+        if (CanChangeTheme) Theme.CurrentThemeVariant = variant;
+    }
 
-        Theme.PropertyChanged += (s, e) =>
+    private void OnThemeChanged(object? sender, PropertyChangedEventArgs e)
+    {
+        if (_applying) return;
+        switch (e.PropertyName)
         {
-            if (e.PropertyName == nameof(Theme.CurrentThemeVariant))
-            {
-                UpdateFilteredThemes();
-            }
-            else if (e.PropertyName == nameof(Theme.IsThemeLocked))
-            {
+            case nameof(ThemeService.CurrentThemeStyle):
+                _settings.Update(s => s.ThemeStyle = Theme.CurrentThemeStyle);
+                break;
+            case nameof(ThemeService.CurrentThemeVariant):
+                _settings.Update(s => s.ThemeVariant = Theme.CurrentThemeVariant);
+                break;
+            case nameof(ThemeService.IsThemeLocked):
+                _settings.Update(s => s.IsThemeLocked = Theme.IsThemeLocked);
                 OnPropertyChanged(nameof(CanChangeTheme));
-            }
-
-            if (_isInitializing) return;
-
-            if (e.PropertyName == nameof(Theme.CurrentThemeVariant))
-            {
-                Logger.Log($"Theme variant changed to {Theme.CurrentThemeVariant}");
-            }
-            else if (e.PropertyName == nameof(Theme.CurrentThemeStyle))
-            {
-                Logger.Log($"Theme style changed to {Theme.CurrentThemeStyle}");
-            }
-            else if (e.PropertyName == nameof(Theme.IsThemeLocked))
-            {
-                _ = SaveSettingsAsync();
-                Logger.Log($"Theme lock changed: {Theme.IsThemeLocked}");
-            }
-        };
-
-        Font.PropertyChanged += (s, e) =>
-        {
-            if (e.PropertyName == nameof(Font.IsLockedFont)) OnPropertyChanged(nameof(CanChangeFont));
-            if (!_isInitializing)
-            {
-                _ = SaveSettingsAsync();
-                string logMessage;
-                // Use string literals to avoid potential nameof issues with generated properties
-                switch (e.PropertyName)
-                {
-                    case "SelectedFont":
-                        logMessage = $"Font Family changed to: {Font.SelectedFont?.Name ?? "Default"}";
-                        break;
-                    case "BaseFontSize":
-                        logMessage = $"Base Font Size changed to: {Font.BaseFontSize}";
-                        break;
-                    case "UiScale":
-                        logMessage = $"UI Scale changed to: {Font.UiScale}";
-                        break;
-                    case "IsAutoFont":
-                        logMessage = $"Auto Font changed to: {Font.IsAutoFont}";
-                        break;
-                    case "IsLockedFont":
-                        logMessage = $"Locked Font changed to: {Font.IsLockedFont}";
-                        break;
-                    default:
-                        logMessage = $"Font setting changed: {e.PropertyName}";
-                        break;
-                }
-                Logger.Log(logMessage);
-            }
-        };
-
-        LocalizationService.Instance.PropertyChanged += (s, e) =>
-        {
-            if (e.PropertyName == nameof(LocalizationService.Instance.SelectedLanguage))
-            {
-                OnPropertyChanged(nameof(CanSetLanguageDefault));
-                OnPropertyChanged(nameof(SelectedLanguage));
-                if (!_isInitializing)
-                    Logger.Log($"Language changed to {LocalizationService.Instance.SelectedLanguage.Code}");
-            }
-            else if (e.PropertyName == "Item[]")
-            {
-                Localization = new LocalizationProxy(LocalizationService.Instance);
-            }
-        };
-
-        Prefs.PropertyChanged += (s, e) =>
-        {
-            if (_isInitializing) return;
-
-            if (!IsSettingsLocked)
-            {
-                _ = SaveSettingsAsync();
-                Logger.Log($"Preference changed: {e.PropertyName}");
-            }
-        };
-
-        ConfigFilePath = ConfigService.ConfigPath;
-        _ = LoadSettingsAsync();
-    }
-
-    private LocalizationService L => LocalizationService.Instance;
-    public FontService Font => FontService.Instance;
-    public PreferencesService Prefs => PreferencesService.Instance;
-    public ThemeService Theme => ThemeService.Instance;
-    private ConfigurationService ConfigService => ConfigurationService.Instance;
-    private LoggerService Logger => LoggerService.Instance;
-
-    public bool CanSetLanguageDefault => Localization.SelectedLanguage.Code != "auto";
-    public bool CanChangeFont => !IsSettingsLocked && !Font.IsLockedFont;
-    public bool CanChangeTheme => !IsSettingsLocked && !Theme.IsThemeLocked;
-
-    public List<FileSizeUnit> FileSizeUnits { get; } =
-        Enum.GetValues(typeof(FileSizeUnit)).Cast<FileSizeUnit>().ToList();
-
-    public bool IsAdminModeSupported => RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
-
-    private void UpdateFilteredThemes()
-    {
-        FilteredThemeStyles = Theme.GetAvailableThemesForVariant(Theme.CurrentThemeVariant);
-        if (!FilteredThemeStyles.Contains(Theme.CurrentThemeStyle)) Theme.CurrentThemeStyle = AppThemeStyle.Fluent;
-    }
-
-    [RelayCommand]
-    private async Task ResetSettings()
-    {
-        if (IsSettingsLocked) return;
-
-        var defaultConfig = new AppConfig();
-
-        // Reset Appearance
-        Font.ResetSettings();
-        Theme.CurrentThemeStyle = defaultConfig.ThemeStyle;
-        Theme.CurrentThemeVariant = defaultConfig.ThemeVariant;
-        Theme.IsThemeLocked = defaultConfig.IsThemeLocked;
-
-        // Reset Language
-        Localization.SelectedLanguage =
-            Localization.AvailableLanguages.FirstOrDefault(x => x.Code == defaultConfig.LanguageCode) ??
-            Localization.AvailableLanguages[0];
-        _showLanguageChangeWarning = defaultConfig.ShowLanguageChangeWarning;
-
-        // Reset Developer & Admin Mode
-        IsDeveloperModeEnabled = defaultConfig.IsDeveloperModeEnabled;
-        IsAdminModeEnabled = defaultConfig.IsAdminModeEnabled;
-
-        // Reset Timeouts & Monitor
-        ForceQuitTimeout = defaultConfig.ForceQuitTimeout;
-        ShowReadWriteSpeed = defaultConfig.ShowReadWriteSpeed;
-
-        // Reset Preferences
-        Prefs.IsHashMaskingEnabled = defaultConfig.IsHashMaskingEnabled;
-
-        Prefs.IsFileSizeLimitEnabled = defaultConfig.IsFileSizeLimitEnabled;
-        Prefs.FileSizeLimitValue = defaultConfig.FileSizeLimitValue;
-        Prefs.FileSizeLimitUnit = defaultConfig.FileSizeLimitUnit;
-
-        Prefs.IsFileTimeoutEnabled = defaultConfig.IsFileTimeoutEnabled;
-        Prefs.FileTimeoutSeconds = defaultConfig.FileTimeoutSeconds;
-
-        Prefs.IsMaxFileCountEnabled = defaultConfig.IsMaxFileCountEnabled;
-        Prefs.MaxFileCount = defaultConfig.MaxFileCount;
-
-        Prefs.IsMaxFolderCountEnabled = defaultConfig.IsMaxFolderCountEnabled;
-        Prefs.MaxFolderCount = defaultConfig.MaxFolderCount;
-
-        await SaveSettingsAsync();
-        Logger.Log("All settings reset to default.", LogLevel.Warning);
-    }
-
-    [RelayCommand]
-    private void SetVariantSystem()
-    {
-        if (!IsSettingsLocked) Theme.CurrentThemeVariant = AppThemeVariant.System;
-    }
-
-    [RelayCommand]
-    private void SetVariantLight()
-    {
-        if (!IsSettingsLocked) Theme.CurrentThemeVariant = AppThemeVariant.Light;
-    }
-
-    [RelayCommand]
-    private void SetVariantDark()
-    {
-        if (!IsSettingsLocked) Theme.CurrentThemeVariant = AppThemeVariant.Dark;
-    }
-
-    [RelayCommand]
-    private async Task ToggleLockSettings()
-    {
-        if (IsSettingsLocked)
-        {
-            await SaveSettingsAsync();
-            Logger.Log("Settings locked.");
-        }
-        else
-        {
-            Logger.Log("Settings unlocked.");
+                break;
         }
     }
 
-    [RelayCommand]
-    private async Task ToggleDeveloperMode()
+    private void OnFontChanged(object? sender, PropertyChangedEventArgs e)
     {
-        await SaveSettingsAsync();
-        Logger.Log($"Developer Mode: {IsDeveloperModeEnabled}");
-    }
-
-    [RelayCommand]
-    private async Task SetCurrentLanguageAsDefault()
-    {
-        if (IsSettingsLocked) return;
-
-        if (_showLanguageChangeWarning)
+        if (_applying) return;
+        switch (e.PropertyName)
         {
-            var (confirmed, isChecked) = await MessageBoxHelper.ShowConfirmationWithCheckboxAsync(
-                L["Msg_LanguageChangeTitle"],
-                L["Msg_LanguageChangeConfirmation"],
-                L["Msg_DontShowAgain"],
-                L["Btn_Yes"],
-                L["Btn_No"],
-                MessageBoxIcon.Question);
-
-            if (!confirmed) return;
-
-            if (isChecked)
-            {
-                _showLanguageChangeWarning = false;
-            }
-        }
-
-        await SaveSettingsAsync();
-        Logger.Log("Language saved as default.");
-    }
-
-    [RelayCommand]
-    private async Task CheckConfigFile()
-    {
-        var path = ConfigService.ConfigPath;
-        if (File.Exists(path))
-            await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigExists"].Replace("{0}", path), MessageBoxIcon.Information);
-        else
-            await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigMissing"], MessageBoxIcon.Warning);
-    }
-
-    [RelayCommand]
-    private async Task CopyConfigPath()
-    {
-        if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime
-            {
-                MainWindow: { } window
-            })
-        {
-            var clipboard = window.Clipboard;
-            if (clipboard != null)
-            {
-                await clipboard.SetTextAsync(ConfigFilePath);
-                await MessageBoxHelper.ShowAsync(L["Msg_ConfigCheck"], L["Msg_ConfigCopied"], MessageBoxIcon.Success);
-                Logger.Log("Config path copied to clipboard.");
-            }
+            case nameof(FontService.SelectedFont):
+                _settings.Update(s => s.FontFamily = Font.SelectedFontName);
+                break;
+            case nameof(FontService.BaseFontSize):
+                _settings.Update(s => s.BaseFontSize = Font.BaseFontSize);
+                break;
+            case nameof(FontService.UiScale):
+                _settings.Update(s => s.UiScale = Font.UiScale);
+                break;
+            case nameof(FontService.IsAutoFont):
+                _settings.Update(s => s.IsAutoFont = Font.IsAutoFont);
+                if (Font.IsAutoFont) Font.ApplyAutomaticFont(Loc.Culture);
+                break;
+            case nameof(FontService.IsLockedFont):
+                _settings.Update(s => s.IsFontLocked = Font.IsLockedFont);
+                OnPropertyChanged(nameof(CanChangeFont));
+                break;
         }
     }
 
-    [RelayCommand]
-    private void ForceQuitAndCancelAll()
+    // ------------------------------------------------------------------ processing
+
+    public bool IsFileSizeLimitEnabled { get => S.IsFileSizeLimitEnabled; set => Set(s => s.IsFileSizeLimitEnabled = value); }
+    public decimal FileSizeLimitValue { get => (decimal)S.FileSizeLimitValue; set => Set(s => s.FileSizeLimitValue = (double)value); }
+    public FileSizeUnit FileSizeLimitUnit { get => S.FileSizeLimitUnit; set => Set(s => s.FileSizeLimitUnit = value); }
+    public bool IsFileTimeoutEnabled { get => S.IsFileTimeoutEnabled; set => Set(s => s.IsFileTimeoutEnabled = value); }
+    public decimal FileTimeoutSeconds { get => S.FileTimeoutSeconds; set => Set(s => s.FileTimeoutSeconds = (int)value); }
+    public bool IsMaxFileCountEnabled { get => S.IsMaxFileCountEnabled; set => Set(s => s.IsMaxFileCountEnabled = value); }
+    public decimal MaxFileCount { get => S.MaxFileCount; set => Set(s => s.MaxFileCount = (int)value); }
+    public bool IsMaxFolderCountEnabled { get => S.IsMaxFolderCountEnabled; set => Set(s => s.IsMaxFolderCountEnabled = value); }
+    public decimal MaxFolderCount { get => S.MaxFolderCount; set => Set(s => s.MaxFolderCount = (int)value); }
+    public decimal MaxParallelFiles { get => S.MaxParallelFiles; set => Set(s => s.MaxParallelFiles = (int)value); }
+    public bool OptimizeForHdd { get => S.OptimizeForHdd; set => Set(s => s.OptimizeForHdd = value); }
+    public bool IncludeHiddenFiles { get => S.IncludeHiddenFiles; set => Set(s => s.IncludeHiddenFiles = value); }
+
+    // ------------------------------------------------------------------ output, privacy, updates
+
+    public Option<HexCase> HashLetterCase
     {
-        Logger.Log("Force Quit initiated by user.", LogLevel.Error);
-        Prefs.RequestForceCancel();
-        Environment.Exit(0);
+        get => HexCaseOptions.First(o => o.Value == S.HashLetterCase);
+        set => Set(s => s.HashLetterCase = value.Value);
     }
 
-    [RelayCommand]
-    private async Task ToggleAdminMode()
+    public Option<ExportFormat> DefaultExportFormat
     {
-        await SaveSettingsAsync();
-        Logger.Log($"Admin Mode toggled: {IsAdminModeEnabled}");
-        if (IsAdminModeEnabled) await MessageBoxHelper.ShowAsync(L["Msg_AdminMode"], L["Msg_AdminRestart"], MessageBoxIcon.Warning);
+        get => ExportFormatOptions.First(o => o.Value == S.DefaultExportFormat);
+        set => Set(s => s.DefaultExportFormat = value.Value);
     }
 
-    [RelayCommand]
-    private void FreeMemory()
-    {
-        System.Runtime.GCSettings.LargeObjectHeapCompactionMode = System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce;
-        GC.Collect(GC.MaxGeneration, GCCollectionMode.Forced, true);
-        GC.WaitForPendingFinalizers();
-        GC.Collect(GC.MaxGeneration, GCCollectionMode.Forced, true);
+    /// <summary>Deliberately stays editable while settings are locked (see Settings_LockDesc).</summary>
+    public bool IsHashMaskingEnabled { get => S.IsHashMaskingEnabled; set => Set(s => s.IsHashMaskingEnabled = value); }
 
-        if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+    public bool ShowReadWriteSpeed { get => S.ShowReadWriteSpeed; set => Set(s => s.ShowReadWriteSpeed = value); }
+
+    public bool CheckForUpdatesOnStartup { get => S.CheckForUpdatesOnStartup; set => Set(s => s.CheckForUpdatesOnStartup = value); }
+
+    public bool IsDeveloperModeEnabled
+    {
+        get => S.IsDeveloperModeEnabled;
+        set
         {
+            Set(s => s.IsDeveloperModeEnabled = value);
+            _logLevel.Minimum = value ? LogLevel.Debug : LogLevel.Information;
+        }
+    }
+
+    public bool IsSettingsLocked
+    {
+        get => S.IsSettingsLocked;
+        set
+        {
+            Set(s => s.IsSettingsLocked = value);
+            OnPropertyChanged(nameof(CanEdit));
+            OnPropertyChanged(nameof(CanChangeTheme));
+            OnPropertyChanged(nameof(CanChangeFont));
+        }
+    }
+
+    // ------------------------------------------------------------------ system integration (Windows)
+
+    public bool IsWindows => OperatingSystem.IsWindows();
+
+    /// <summary>Only installed or portable builds register shell entries (never a development build's temporary path).</summary>
+    public bool CanUseShellIntegration => ShellIntegration.IsSupported && !Elevation.IsElevated &&
+                                          (_updates.IsInstalled || _updates.IsPortable ||
+                                           Environment.GetEnvironmentVariable("HASHTOOL_ALLOW_SHELL") == "1");
+
+    public bool IsShellIntegrationEnabled
+    {
+        get => S.IsShellIntegrationEnabled;
+        set
+        {
+            if (value == S.IsShellIntegrationEnabled) return;
             try
             {
-                using var proc = Process.GetCurrentProcess();
-                SetProcessWorkingSetSize(proc.Handle, -1, -1);
+                if (value) RegisterShell();
+                else ShellIntegration.Unregister();
+                Set(s => s.IsShellIntegrationEnabled = value);
             }
-            catch
+            catch (Exception ex)
             {
-                // Ignore errors during working set trimming
+                _logger.LogError(ex, "Changing the Explorer integration failed");
+                _ = _dialogs.ShowErrorAsync(Loc["Msg_Error"], Loc.Format("Msg_UnexpectedError", ex.Message), ex.ToString());
+                OnPropertyChanged();
             }
         }
-        else if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
-        {
-            try
-            {
-                malloc_zone_pressure_relief(IntPtr.Zero, 0);
-            }
-            catch
-            {
-                // Ignore errors
-            }
-        }
-
-        Logger.Log(L["Msg_MemoryFreed"], LogLevel.Success);
     }
 
-    partial void OnForceQuitTimeoutChanged(int value)
+    /// <summary>Re-registers the context menu (new labels after a language change, or a moved portable folder).</summary>
+    public void RefreshShellIntegration()
     {
-        if (!_isInitializing) _ = SaveSettingsAsync();
-    }
-
-    partial void OnShowReadWriteSpeedChanged(bool value)
-    {
-        if (!_isInitializing) _ = SaveSettingsAsync();
-    }
-
-    partial void OnIsAdminModeEnabledChanged(bool value)
-    {
-        if (!_isInitializing) _ = SaveSettingsAsync();
-    }
-
-    partial void OnIsDeveloperModeEnabledChanged(bool value)
-    {
-        Logger.IsSavingDebugLog = value;
-        if (!_isInitializing) _ = SaveSettingsAsync();
-    }
-
-    private async Task LoadSettingsAsync()
-    {
-        _isInitializing = true;
+        if (!S.IsShellIntegrationEnabled || !CanUseShellIntegration) return;
         try
         {
-            var config = await ConfigService.LoadAsync();
-
-            IsSettingsLocked = config.IsSettingsLocked;
-            IsDeveloperModeEnabled = config.IsDeveloperModeEnabled;
-
-            var lang = Localization.AvailableLanguages.FirstOrDefault(x => x.Code == config.LanguageCode);
-            if (lang != null)
-            {
-                Localization.SelectedLanguage = lang;
-                OnPropertyChanged(nameof(SelectedLanguage));
-                OnPropertyChanged(nameof(CanSetLanguageDefault));
-            }
-
-            Theme.CurrentThemeStyle = config.ThemeStyle;
-            Theme.CurrentThemeVariant = config.ThemeVariant;
-            Theme.IsThemeLocked = config.IsThemeLocked;
-
-            if (!string.IsNullOrEmpty(config.FontFamily))
-            {
-                Font.SetTargetFont(config.FontFamily);
-            }
-
-            Font.BaseFontSize = config.BaseFontSize;
-            Font.UiScale = config.UiScale;
-            Font.IsLockedFont = config.IsFontLocked;
-            Font.IsAutoFont = config.IsAutoFont;
-
-            Prefs.IsHashMaskingEnabled = config.IsHashMaskingEnabled;
-
-            Prefs.IsFileSizeLimitEnabled = config.IsFileSizeLimitEnabled;
-            Prefs.FileSizeLimitValue = config.FileSizeLimitValue;
-            Prefs.FileSizeLimitUnit = config.FileSizeLimitUnit;
-
-            Prefs.IsFileTimeoutEnabled = config.IsFileTimeoutEnabled;
-            Prefs.FileTimeoutSeconds = config.FileTimeoutSeconds;
-
-            Prefs.IsMaxFileCountEnabled = config.IsMaxFileCountEnabled;
-            Prefs.MaxFileCount = config.MaxFileCount;
-
-            Prefs.IsMaxFolderCountEnabled = config.IsMaxFolderCountEnabled;
-            Prefs.MaxFolderCount = config.MaxFolderCount;
-
-            IsAdminModeEnabled = config.IsAdminModeEnabled;
-            ForceQuitTimeout = config.ForceQuitTimeout;
-            _showLanguageChangeWarning = config.ShowLanguageChangeWarning;
-            ShowReadWriteSpeed = config.ShowReadWriteSpeed;
-
-            Logger.Log("Settings loaded from config.");
+            RegisterShell();
         }
         catch (Exception ex)
         {
-            Logger.Log($"Error loading settings: {ex.Message}", LogLevel.Error);
-        }
-        finally
-        {
-            _isInitializing = false;
+            _logger.LogWarning(ex, "Refreshing the Explorer integration failed");
         }
     }
 
-    public async Task SaveSettingsAsync()
+    private void RegisterShell()
     {
-        var config = new AppConfig
+        if (Environment.ProcessPath is { } exe) ShellIntegration.Register(exe, Loc["Shell_Create"], Loc["Shell_Verify"]);
+    }
+
+    public bool CanRestartElevated => Elevation.CanRestartElevated;
+
+    public bool IsElevated => Elevation.IsElevated;
+
+    /// <summary>Raised after an elevated copy has been started; the app should close.</summary>
+    public event EventHandler? RequestShutdown;
+
+    [RelayCommand]
+    private void RestartElevated()
+    {
+        if (Elevation.RestartElevated(ActivationVerb.Auto, [])) RequestShutdown?.Invoke(this, EventArgs.Empty);
+    }
+
+    // ------------------------------------------------------------------ configuration
+
+    [RelayCommand]
+    private async Task CopyConfigPathAsync()
+    {
+        await _clipboard.SetTextAsync(ConfigFilePath);
+        await _dialogs.ShowAsync(Loc["Msg_ConfigCheck"], Loc["Msg_ConfigCopied"], DialogIcon.Success);
+    }
+
+    [RelayCommand]
+    private Task OpenDataFolderAsync() => _launcher.OpenFolderAsync(AppPaths.DataDirectory);
+
+    [RelayCommand]
+    private async Task ResetSettingsAsync()
+    {
+        if (!CanEdit) return;
+        if (!await _dialogs.ConfirmAsync(Loc["Settings_ResetAll"], Loc["Settings_ResetDesc"], DialogIcon.Warning)) return;
+
+        var defaults = new AppSettings();
+        var keepShell = S.IsShellIntegrationEnabled;
+        _settings.Update(s =>
         {
-            IsSettingsLocked = IsSettingsLocked,
-            IsDeveloperModeEnabled = IsDeveloperModeEnabled,
-            LanguageCode = Localization.SelectedLanguage.Code,
-            ThemeStyle = Theme.CurrentThemeStyle,
-            ThemeVariant = Theme.CurrentThemeVariant,
-            IsThemeLocked = Theme.IsThemeLocked,
-            FontFamily = Font.SelectedFont?.Name,
-            BaseFontSize = Font.BaseFontSize,
-            UiScale = Font.UiScale,
-            IsFontLocked = Font.IsLockedFont,
-            IsAutoFont = Font.IsAutoFont,
-            IsHashMaskingEnabled = Prefs.IsHashMaskingEnabled,
-            IsFileSizeLimitEnabled = Prefs.IsFileSizeLimitEnabled,
-            FileSizeLimitValue = Prefs.FileSizeLimitValue,
-            FileSizeLimitUnit = Prefs.FileSizeLimitUnit,
-            IsFileTimeoutEnabled = Prefs.IsFileTimeoutEnabled,
-            FileTimeoutSeconds = Prefs.FileTimeoutSeconds,
-            IsMaxFileCountEnabled = Prefs.IsMaxFileCountEnabled,
-            MaxFileCount = Prefs.MaxFileCount,
-            IsMaxFolderCountEnabled = Prefs.IsMaxFolderCountEnabled,
-            MaxFolderCount = Prefs.MaxFolderCount,
-            IsAdminModeEnabled = IsAdminModeEnabled,
-            ForceQuitTimeout = ForceQuitTimeout,
+            foreach (var property in typeof(AppSettings).GetProperties().Where(p => p.CanWrite))
+                property.SetValue(s, property.GetValue(defaults));
+            s.IsShellIntegrationEnabled = keepShell;
+        });
+        Apply();
+        _logger.LogWarning("All settings were reset to defaults");
+    }
 
-            ShowLanguageChangeWarning = _showLanguageChangeWarning,
-            ShowReadWriteSpeed = ShowReadWriteSpeed
-        };
+    /// <summary>Pushes the stored settings into the live services (startup and reset).</summary>
+    public void Apply()
+    {
+        _applying = true;
+        try
+        {
+            Loc.SelectedLanguage = Loc.Find(S.LanguageCode);
+            Theme.IsThemeLocked = S.IsThemeLocked;
+            Theme.CurrentThemeStyle = S.ThemeStyle;
+            Theme.CurrentThemeVariant = S.ThemeVariant;
+            Font.BaseFontSize = S.BaseFontSize;
+            Font.UiScale = S.UiScale;
+            Font.IsLockedFont = S.IsFontLocked;
+            Font.IsAutoFont = S.IsAutoFont;
+            if (S.IsAutoFont) Font.ApplyAutomaticFont(Loc.Culture);
+            else Font.SelectFont(S.FontFamily);
+            _logLevel.Minimum = S.IsDeveloperModeEnabled ? LogLevel.Debug : LogLevel.Information;
+        }
+        finally
+        {
+            _applying = false;
+        }
 
-        await ConfigService.SaveAsync(config);
-        Logger.Log("Settings saved.");
+        OnPropertyChanged(string.Empty);
+    }
+
+    private void Set(Action<AppSettings> change, [CallerMemberName] string? name = null)
+    {
+        _settings.Update(change);
+        OnPropertyChanged(name);
     }
 }

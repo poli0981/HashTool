@@ -1,81 +1,57 @@
 using System;
-using System.Diagnostics;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Security.Principal;
 using Avalonia;
+using HashTool.App.Infrastructure;
+using HashTool.App.Infrastructure.Logging;
 using HashTool.App.Services;
+using Microsoft.Extensions.Logging;
 using Velopack;
 
 namespace HashTool.App;
 
-internal sealed class Program
+internal static class Program
 {
     [STAThread]
-    public static void Main(string[] args)
+    public static int Main(string[] args)
     {
-        VelopackApp.Build().Run();
+        // Must run first: handles Velopack install/update/uninstall hooks and exits for them.
+        var velopack = VelopackApp.Build();
+        if (OperatingSystem.IsWindows()) velopack.OnBeforeUninstallFastCallback(_ => ShellIntegration.TryUnregister());
+        velopack.Run();
+
+        var commandLine = AppCommandLine.Parse(args);
+        if (commandLine.SmokeTest) return SmokeTest.Run(commandLine);
+        if (commandLine.WaitPid is { } pid) Elevation.WaitForExit(pid);
+
+        using var instance = SingleInstance.Create(Elevation.IsElevated);
+        if (!instance.TryBecomePrimary() && instance.TryForward(commandLine.ToRequest(), TimeSpan.FromSeconds(3))) return 0;
 
         try
         {
-            ConfigurationService.Instance.EnsureConfigFileExists();
-            var config = ConfigurationService.Instance.Load();
-            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-                if (config.IsAdminModeEnabled && !IsRunAsAdmin())
-                {
-                    var moduleName = Process.GetCurrentProcess().MainModule?.FileName;
-                    if (!string.IsNullOrEmpty(moduleName))
-                    {
-                        var arguments = string.Join(" ", args.Select(arg => arg.Contains(" ") ? $"\"{arg}\"" : arg));
-                        var processInfo = new ProcessStartInfo(moduleName)
-                        {
-                            UseShellExecute = true,
-                            Verb = "runas",
-                            Arguments = arguments
-                        };
-
-                        try
-                        {
-                            Process.Start(processInfo);
-                            return;
-                        }
-                        catch (Exception)
-                        {
-                            // User cancelled UAC or other error, continue as normal user
-                        }
-                    }
-                }
+            AppHost.Initialize();
+            var activation = AppHost.Get<ActivationService>();
+            activation.Enqueue(commandLine.ToRequest());
+            instance.StartServer(activation.Enqueue);
+            return BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);
         }
         catch (Exception ex)
         {
-            LoggerService.Instance.Log($"Startup error: {ex.Message}", LogLevel.Error);
+            CrashReporter.Report(ex);
+            throw;
         }
-
-        BuildAvaloniaApp()
-            .StartWithClassicDesktopLifetime(args);
-    }
-
-    private static bool IsRunAsAdmin()
-    {
-        try
+        finally
         {
-            if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) return false;
-
-            using var identity = WindowsIdentity.GetCurrent();
-            var principal = new WindowsPrincipal(identity);
-            return principal.IsInRole(WindowsBuiltInRole.Administrator);
-        }
-        catch
-        {
-            return false;
+            AppHost.Shutdown();
         }
     }
 
-    public static AppBuilder BuildAvaloniaApp()
-    {
-        return AppBuilder.Configure<App>()
+    /// <summary>Also used by the XAML previewer.</summary>
+    public static AppBuilder BuildAvaloniaApp() =>
+        AppBuilder.Configure<App>()
             .UsePlatformDetect()
             .WithInterFont()
-            .LogToTrace();
-    }
+            .AfterSetup(_ =>
+            {
+                if (AppHost.IsInitialized)
+                    Avalonia.Logging.Logger.Sink = new AvaloniaLogForwarder(AppHost.Get<ILoggerFactory>().CreateLogger("Avalonia"));
+            });
 }

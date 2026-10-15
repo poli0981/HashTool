@@ -1,376 +1,457 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vm="using:HashTool.App.ViewModels"
-             xmlns:models="using:HashTool.Core.Configuration"
-             xmlns:converters="using:HashTool.App.Converters"
+             xmlns:config="using:HashTool.Core.Configuration"
              xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
              x:Class="HashTool.App.Views.SettingsView"
              x:DataType="vm:SettingsViewModel">
 
-    <UserControl.Resources>
-        <converters:FontNameConverter x:Key="FontNameConverter" />
-    </UserControl.Resources>
+    <UserControl.Styles>
+        <Style Selector="Grid.row > StackPanel.label">
+            <Setter Property="Margin" Value="0,0,16,0" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style Selector="StackPanel.label > TextBlock.title">
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
+        <Style Selector="StackPanel.label > TextBlock.secondary">
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
+        <Style Selector="StackPanel.header">
+            <Setter Property="Orientation" Value="Horizontal" />
+            <Setter Property="Spacing" Value="10" />
+        </Style>
+        <Style Selector="StackPanel.header > icons|MaterialIcon">
+            <Setter Property="Width" Value="24" />
+            <Setter Property="Height" Value="24" />
+            <Setter Property="Foreground" Value="{DynamicResource SystemAccentColor}" />
+        </Style>
+    </UserControl.Styles>
 
-    <ScrollViewer Padding="0,0,20,0"
-                  HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden">
-        <StackPanel Spacing="20">
-            <TextBlock Text="{Binding Localization[Menu_Settings]}" FontSize="28" FontWeight="Bold" Margin="0,0,0,10" />
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled" Padding="0,0,16,0">
+        <StackPanel Spacing="16" Margin="0,0,0,20">
+            <TextBlock Text="{Binding Localization[Menu_Settings]}" FontSize="24" FontWeight="Bold" />
 
-            <!-- 1. LANGUAGE & REGION -->
-            <Border Background="{DynamicResource PaneBackgroundBrush}" CornerRadius="8" Padding="20"
-                    BorderBrush="{DynamicResource GlassBorderBrush}" BorderThickness="1">
-                <StackPanel Spacing="15">
-                    <StackPanel Orientation="Horizontal" Spacing="10">
-                        <icons:MaterialIcon Kind="Translate" Width="24" Height="24"
-                                            Foreground="{DynamicResource SystemAccentColor}" />
-                        <TextBlock Text="{Binding Localization[Settings_Language]}" FontSize="18" FontWeight="SemiBold" />
+            <!-- Language & appearance -->
+            <Border Classes="card">
+                <StackPanel Spacing="16">
+                    <StackPanel Classes="header">
+                        <icons:MaterialIcon Kind="Palette" />
+                        <TextBlock Classes="sectionTitle" Text="{Binding Localization[Settings_Theme]}" />
                     </StackPanel>
 
-                    <Grid ColumnDefinitions="*, Auto">
-                        <TextBlock Text="{Binding Localization[Settings_Language]}" VerticalAlignment="Center"
-                                   Opacity="0.8" />
-                        <ComboBox Grid.Column="1"
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_Language]}" />
+                        </StackPanel>
+                        <ComboBox Grid.Column="1" Width="240" MaxDropDownHeight="360"
                                   ItemsSource="{Binding Localization.AvailableLanguages}"
                                   SelectedItem="{Binding SelectedLanguage}"
-                                  IsEnabled="{Binding !IsSettingsLocked}"
-                                  Width="200"
-                                  MaxDropDownHeight="300" />
+                                  IsEnabled="{Binding CanEdit}"
+                                  AutomationProperties.Name="{Binding Localization[Settings_Language]}" />
                     </Grid>
 
-                    <Button Command="{Binding SetCurrentLanguageAsDefaultCommand}"
-                            IsEnabled="{Binding CanSetLanguageDefault}"
-                            Content="{Binding Localization[Settings_SetDefault]}"
-                            HorizontalAlignment="Right"
-                            IsVisible="{Binding !IsSettingsLocked}" />
-                </StackPanel>
-            </Border>
-
-            <!-- 2. APPEARANCE -->
-            <Border Background="{DynamicResource PaneBackgroundBrush}" CornerRadius="8" Padding="20"
-                    BorderBrush="{DynamicResource GlassBorderBrush}" BorderThickness="1">
-                <StackPanel Spacing="15">
-                    <StackPanel Orientation="Horizontal" Spacing="10">
-                        <icons:MaterialIcon Kind="Palette" Width="24" Height="24"
-                                            Foreground="{DynamicResource SystemAccentColor}" />
-                        <TextBlock Text="{Binding Localization[Settings_Theme]}" FontSize="18" FontWeight="SemiBold" />
-                    </StackPanel>
-
-                    <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto, 15, Auto, 15, Auto">
-                        <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding Localization[Settings_ThemeVariant]}"
-                                   VerticalAlignment="Center" />
-                        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Spacing="5"
-                                    IsEnabled="{Binding CanChangeTheme}">
-                            <RadioButton Content="{Binding Localization[Settings_ThemeSystem]}"
-                                         Command="{Binding SetVariantSystemCommand}"
-                                         IsChecked="{Binding Theme.CurrentThemeVariant, Mode=OneWay, Converter={x:Static ObjectConverters.Equal}, ConverterParameter={x:Static models:AppThemeVariant.System}}"
-                                         Theme="{DynamicResource MaterialButtonToggle}" />
-                            <RadioButton Content="{Binding Localization[Settings_ThemeLight]}"
-                                         Command="{Binding SetVariantLightCommand}"
-                                         IsChecked="{Binding Theme.CurrentThemeVariant, Mode=OneWay, Converter={x:Static ObjectConverters.Equal}, ConverterParameter={x:Static models:AppThemeVariant.Light}}"
-                                         Theme="{DynamicResource MaterialButtonToggle}" />
-                            <RadioButton Content="{Binding Localization[Settings_ThemeDark]}"
-                                         Command="{Binding SetVariantDarkCommand}"
-                                         IsChecked="{Binding Theme.CurrentThemeVariant, Mode=OneWay, Converter={x:Static ObjectConverters.Equal}, ConverterParameter={x:Static models:AppThemeVariant.Dark}}"
-                                         Theme="{DynamicResource MaterialButtonToggle}" />
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_ThemeVariant]}" />
                         </StackPanel>
+                        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="12" IsEnabled="{Binding CanChangeTheme}">
+                            <RadioButton GroupName="ThemeVariant" Content="{Binding Localization[Settings_ThemeSystem]}"
+                                         Command="{Binding SetVariantCommand}" CommandParameter="{x:Static config:AppThemeVariant.System}"
+                                         IsChecked="{Binding Theme.CurrentThemeVariant, Mode=OneWay, Converter={x:Static ObjectConverters.Equal}, ConverterParameter={x:Static config:AppThemeVariant.System}}" />
+                            <RadioButton GroupName="ThemeVariant" Content="{Binding Localization[Settings_ThemeLight]}"
+                                         Command="{Binding SetVariantCommand}" CommandParameter="{x:Static config:AppThemeVariant.Light}"
+                                         IsChecked="{Binding Theme.CurrentThemeVariant, Mode=OneWay, Converter={x:Static ObjectConverters.Equal}, ConverterParameter={x:Static config:AppThemeVariant.Light}}" />
+                            <RadioButton GroupName="ThemeVariant" Content="{Binding Localization[Settings_ThemeDark]}"
+                                         Command="{Binding SetVariantCommand}" CommandParameter="{x:Static config:AppThemeVariant.Dark}"
+                                         IsChecked="{Binding Theme.CurrentThemeVariant, Mode=OneWay, Converter={x:Static ObjectConverters.Equal}, ConverterParameter={x:Static config:AppThemeVariant.Dark}}" />
+                        </StackPanel>
+                    </Grid>
 
-                        <TextBlock Grid.Row="2" Grid.Column="0" Text="{Binding Localization[Settings_ThemeStyle]}"
-                                   VerticalAlignment="Center" />
-                        <ComboBox Grid.Row="2" Grid.Column="1"
-                                  ItemsSource="{Binding FilteredThemeStyles}"
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_ThemeStyle]}" />
+                        </StackPanel>
+                        <ComboBox Grid.Column="1" Width="240" MaxDropDownHeight="360"
+                                  ItemsSource="{Binding ThemeStyles}"
                                   SelectedItem="{Binding Theme.CurrentThemeStyle}"
                                   IsEnabled="{Binding CanChangeTheme}"
-                                  Width="200"
-                                  MaxDropDownHeight="300" />
+                                  AutomationProperties.Name="{Binding Localization[Settings_ThemeStyle]}">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock>
+                                        <TextBlock.Text>
+                                            <MultiBinding Converter="{StaticResource EnumLabelConverter}">
+                                                <Binding />
+                                                <Binding Path="$parent[UserControl].((vm:SettingsViewModel)DataContext).Localization" />
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                    </Grid>
 
-                        <TextBlock Grid.Row="4" Grid.Column="0" Text="{Binding Localization[Settings_LockTheme]}"
-                                   VerticalAlignment="Center" />
-                        <ToggleSwitch Grid.Row="4" Grid.Column="1" IsChecked="{Binding Theme.IsThemeLocked}"
-                                      IsEnabled="{Binding !IsSettingsLocked}" />
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_LockTheme]}" />
+                        </StackPanel>
+                        <ToggleSwitch Grid.Column="1" IsChecked="{Binding Theme.IsThemeLocked}" IsEnabled="{Binding CanEdit}"
+                                      AutomationProperties.Name="{Binding Localization[Settings_LockTheme]}" />
                     </Grid>
                 </StackPanel>
             </Border>
 
-            <!-- 3. TYPOGRAPHY -->
-            <Border Background="{DynamicResource PaneBackgroundBrush}" CornerRadius="8" Padding="20"
-                    BorderBrush="{DynamicResource GlassBorderBrush}" BorderThickness="1">
-                <StackPanel Spacing="15">
-                    <StackPanel Orientation="Horizontal" Spacing="10">
-                        <icons:MaterialIcon Kind="FormatFont" Width="24" Height="24"
-                                            Foreground="{DynamicResource SystemAccentColor}" />
-                        <TextBlock Text="{Binding Localization[Settings_Font]}" FontSize="18" FontWeight="SemiBold" />
+            <!-- Typography -->
+            <Border Classes="card">
+                <StackPanel Spacing="16">
+                    <StackPanel Classes="header">
+                        <icons:MaterialIcon Kind="FormatFont" />
+                        <TextBlock Classes="sectionTitle" Text="{Binding Localization[Settings_Font]}" />
                     </StackPanel>
 
-                    <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto, 15, Auto, 15, Auto">
-                        <StackPanel Grid.Row="0" Grid.Column="0" Spacing="5">
-                            <TextBlock Text="{Binding Localization[Settings_Font]}" VerticalAlignment="Center" />
-                            <StackPanel Orientation="Horizontal" Spacing="10" IsEnabled="{Binding !IsSettingsLocked}">
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label" Spacing="6">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_Font]}" />
+                            <WrapPanel ItemSpacing="16" IsEnabled="{Binding CanEdit}">
+                                <ToggleSwitch IsChecked="{Binding Font.IsAutoFont}" IsEnabled="{Binding !Font.IsLockedFont}"
+                                              OnContent="{Binding Localization[Settings_AutoFont]}" OffContent="{Binding Localization[Settings_AutoFont]}" />
                                 <ToggleSwitch IsChecked="{Binding Font.IsLockedFont}"
-                                              Content="{Binding Localization[Settings_LockFont]}" FontSize="12" />
-                                <ToggleSwitch IsChecked="{Binding Font.IsAutoFont}"
-                                              IsEnabled="{Binding !Font.IsLockedFont}"
-                                              Content="{Binding Localization[Settings_AutoFont]}" FontSize="12" />
-                            </StackPanel>
+                                              OnContent="{Binding Localization[Settings_LockFont]}" OffContent="{Binding Localization[Settings_LockFont]}" />
+                            </WrapPanel>
                         </StackPanel>
-
-                        <ComboBox Grid.Row="0" Grid.Column="1"
+                        <ComboBox Grid.Column="1" Width="260" MaxDropDownHeight="360" VerticalAlignment="Top"
                                   ItemsSource="{Binding Font.InstalledFonts}"
                                   SelectedItem="{Binding Font.SelectedFont}"
                                   IsEnabled="{Binding CanChangeFont}"
-                                  Width="250" MaxDropDownHeight="300"
-                                  VerticalAlignment="Top">
+                                  AutomationProperties.Name="{Binding Localization[Settings_Font]}">
                             <ComboBox.ItemTemplate>
-                                <DataTemplate>
+                                <DataTemplate x:DataType="FontFamily">
                                     <TextBlock Text="{Binding Converter={StaticResource FontNameConverter}}" FontFamily="{Binding}" />
                                 </DataTemplate>
                             </ComboBox.ItemTemplate>
                         </ComboBox>
+                    </Grid>
 
-                        <TextBlock Grid.Row="2" Grid.Column="0" Text="{Binding Localization[Settings_FontSize]}"
-                                   VerticalAlignment="Center" />
-                        <Grid Grid.Row="2" Grid.Column="1" ColumnDefinitions="*, 40" Width="250"
-                              IsEnabled="{Binding !IsSettingsLocked}">
-                            <Slider Grid.Column="0" Minimum="10" Maximum="32"
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_FontSize]}" />
+                        </StackPanel>
+                        <Grid Grid.Column="1" ColumnDefinitions="*,48" Width="260" IsEnabled="{Binding CanEdit}">
+                            <Slider Minimum="10" Maximum="32" TickFrequency="1" IsSnapToTickEnabled="True"
                                     Value="{Binding Font.BaseFontSize}"
-                                    TickFrequency="1" IsSnapToTickEnabled="True" />
+                                    AutomationProperties.Name="{Binding Localization[Settings_FontSize]}" />
                             <TextBlock Grid.Column="1" Text="{Binding Font.BaseFontSize, StringFormat='{}{0:0}'}"
                                        VerticalAlignment="Center" HorizontalAlignment="Right" />
                         </Grid>
+                    </Grid>
 
-                        <TextBlock Grid.Row="4" Grid.Column="0" Text="{Binding Localization[Settings_Scale]}"
-                                   VerticalAlignment="Center" />
-                        <Grid Grid.Row="4" Grid.Column="1" ColumnDefinitions="*, 40" Width="250"
-                              IsEnabled="{Binding !IsSettingsLocked}">
-                            <Slider Grid.Column="0" Minimum="0.8" Maximum="2.5"
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_Scale]}" />
+                        </StackPanel>
+                        <Grid Grid.Column="1" ColumnDefinitions="*,48" Width="260" IsEnabled="{Binding CanEdit}">
+                            <Slider Minimum="0.8" Maximum="2.5" TickFrequency="0.1" IsSnapToTickEnabled="True"
                                     Value="{Binding Font.UiScale}"
-                                    TickFrequency="0.1" IsSnapToTickEnabled="True" />
-                            <TextBlock Grid.Column="1" Text="{Binding Font.UiScale, StringFormat='{}{0:0.0}x'}"
+                                    AutomationProperties.Name="{Binding Localization[Settings_Scale]}" />
+                            <TextBlock Grid.Column="1" Text="{Binding Font.UiScale, StringFormat='{}{0:0.0}×'}"
                                        VerticalAlignment="Center" HorizontalAlignment="Right" />
                         </Grid>
                     </Grid>
                 </StackPanel>
             </Border>
 
-            <!-- 4. PROCESSING LIMITS -->
-            <Border Background="{DynamicResource PaneBackgroundBrush}" CornerRadius="8" Padding="20"
-                    BorderBrush="{DynamicResource GlassBorderBrush}" BorderThickness="1">
-                <StackPanel Spacing="15">
-                    <StackPanel Orientation="Horizontal" Spacing="10">
-                        <icons:MaterialIcon Kind="Speedometer" Width="24" Height="24"
-                                            Foreground="{DynamicResource SystemAccentColor}" />
-                        <TextBlock Text="{Binding Localization[Settings_Limits]}" FontSize="18" FontWeight="SemiBold" />
+            <!-- Performance -->
+            <Border Classes="card">
+                <StackPanel Spacing="16" IsEnabled="{Binding CanEdit}">
+                    <StackPanel Classes="header">
+                        <icons:MaterialIcon Kind="Speedometer" />
+                        <TextBlock Classes="sectionTitle" Text="{Binding Localization[Settings_Performance]}" />
                     </StackPanel>
 
-                    <Grid ColumnDefinitions="*, Auto"
-                          RowDefinitions="Auto, 15, Auto, 15, Auto, 15, Auto">
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_ParallelFiles]}" />
+                            <TextBlock Classes="secondary" Text="{Binding ParallelFilesHint}" />
+                        </StackPanel>
+                        <NumericUpDown Grid.Column="1" Width="160" Minimum="0" Maximum="64" Increment="1" FormatString="0"
+                                       Value="{Binding MaxParallelFiles}" IsEnabled="{Binding !OptimizeForHdd}"
+                                       AutomationProperties.Name="{Binding Localization[Settings_ParallelFiles]}" />
+                    </Grid>
 
-                        <!-- File Size Limit -->
-                        <StackPanel Grid.Row="0" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_FileSizeLimit]}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Localization[Settings_FileSizeDesc]}" FontSize="12" Opacity="0.7" />
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_HddMode]}" />
+                            <TextBlock Classes="secondary" Text="{Binding Localization[Settings_HddModeDesc]}" />
                         </StackPanel>
-                        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Spacing="10"
-                                    IsEnabled="{Binding !IsSettingsLocked}">
-                            <ToggleSwitch IsChecked="{Binding Prefs.IsFileSizeLimitEnabled}" />
-                            <NumericUpDown Value="{Binding Prefs.FileSizeLimitValue}" Minimum="1" Width="150"
-                                           IsEnabled="{Binding Prefs.IsFileSizeLimitEnabled}" />
-                            <ComboBox ItemsSource="{Binding FileSizeUnits}"
-                                      SelectedItem="{Binding Prefs.FileSizeLimitUnit}"
-                                      IsEnabled="{Binding Prefs.IsFileSizeLimitEnabled}"
-                                      Width="80" />
-                        </StackPanel>
+                        <ToggleSwitch Grid.Column="1" IsChecked="{Binding OptimizeForHdd}"
+                                      AutomationProperties.Name="{Binding Localization[Settings_HddMode]}" />
+                    </Grid>
 
-                        <!-- File Processing Timeout -->
-                        <StackPanel Grid.Row="2" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_FileTimeout]}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Localization[Settings_FileTimeoutDesc]}" FontSize="12"
-                                       Opacity="0.7" />
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_IncludeHidden]}" />
+                            <TextBlock Classes="secondary" Text="{Binding Localization[Settings_IncludeHiddenDesc]}" />
                         </StackPanel>
-                        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Spacing="10"
-                                    IsEnabled="{Binding !IsSettingsLocked}">
-                            <ToggleSwitch IsChecked="{Binding Prefs.IsFileTimeoutEnabled}" />
-                            <NumericUpDown Value="{Binding Prefs.FileTimeoutSeconds}" Minimum="10" Maximum="3600"
-                                           Width="150"
-                                           IsEnabled="{Binding Prefs.IsFileTimeoutEnabled}" />
-                            <TextBlock Text="{Binding Localization[Unit_Seconds]}" VerticalAlignment="Center" />
-                        </StackPanel>
+                        <ToggleSwitch Grid.Column="1" IsChecked="{Binding IncludeHiddenFiles}"
+                                      AutomationProperties.Name="{Binding Localization[Settings_IncludeHidden]}" />
+                    </Grid>
+                </StackPanel>
+            </Border>
 
-                        <!-- Max Files per Folder Scan -->
-                        <StackPanel Grid.Row="4" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_MaxFileCount]}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Localization[Settings_MaxFileCountDesc]}" FontSize="12"
-                                       Opacity="0.7" />
-                        </StackPanel>
-                        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" Spacing="10"
-                                    IsEnabled="{Binding !IsSettingsLocked}">
-                            <ToggleSwitch IsChecked="{Binding Prefs.IsMaxFileCountEnabled}" />
-                            <NumericUpDown Value="{Binding Prefs.MaxFileCount}" Minimum="1" Maximum="100000"
-                                           Width="150"
-                                           IsEnabled="{Binding Prefs.IsMaxFileCountEnabled}" />
-                        </StackPanel>
+            <!-- Limits -->
+            <Border Classes="card">
+                <StackPanel Spacing="16" IsEnabled="{Binding CanEdit}">
+                    <StackPanel Classes="header">
+                        <icons:MaterialIcon Kind="Filter" />
+                        <TextBlock Classes="sectionTitle" Text="{Binding Localization[Settings_Limits]}" />
+                    </StackPanel>
 
-                        <!-- Max Folders per Click -->
-                        <StackPanel Grid.Row="6" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_MaxFolderCount]}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Localization[Settings_MaxFolderCountDesc]}" FontSize="12"
-                                       Opacity="0.7" />
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_FileSizeLimit]}" />
+                            <TextBlock Classes="secondary" Text="{Binding Localization[Settings_FileSizeDesc]}" />
                         </StackPanel>
-                        <StackPanel Grid.Row="6" Grid.Column="1" Orientation="Horizontal" Spacing="10"
-                                    IsEnabled="{Binding !IsSettingsLocked}">
-                            <ToggleSwitch IsChecked="{Binding Prefs.IsMaxFolderCountEnabled}" />
-                            <NumericUpDown Value="{Binding Prefs.MaxFolderCount}" Minimum="1" Maximum="100"
-                                           Width="150"
-                                           IsEnabled="{Binding Prefs.IsMaxFolderCountEnabled}" />
+                        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10">
+                            <ToggleSwitch IsChecked="{Binding IsFileSizeLimitEnabled}" OnContent="" OffContent=""
+                                          AutomationProperties.Name="{Binding Localization[Settings_FileSizeLimit]}" />
+                            <NumericUpDown Width="150" Minimum="1" Maximum="1000000" Increment="1" FormatString="0.##"
+                                           Value="{Binding FileSizeLimitValue}" IsEnabled="{Binding IsFileSizeLimitEnabled}" />
+                            <ComboBox Width="90" ItemsSource="{Binding FileSizeUnits}" SelectedItem="{Binding FileSizeLimitUnit}"
+                                      IsEnabled="{Binding IsFileSizeLimitEnabled}" />
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_FileTimeout]}" />
+                            <TextBlock Classes="secondary" Text="{Binding Localization[Settings_FileTimeoutDesc]}" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10">
+                            <ToggleSwitch IsChecked="{Binding IsFileTimeoutEnabled}" OnContent="" OffContent=""
+                                          AutomationProperties.Name="{Binding Localization[Settings_FileTimeout]}" />
+                            <NumericUpDown Width="150" Minimum="10" Maximum="3600" Increment="10" FormatString="0"
+                                           Value="{Binding FileTimeoutSeconds}" IsEnabled="{Binding IsFileTimeoutEnabled}" />
+                            <TextBlock Text="{Binding Localization[Unit_Seconds]}" VerticalAlignment="Center" MinWidth="90" />
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_MaxFileCount]}" />
+                            <TextBlock Classes="secondary" Text="{Binding Localization[Settings_MaxFileCountDesc]}" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10">
+                            <ToggleSwitch IsChecked="{Binding IsMaxFileCountEnabled}" OnContent="" OffContent=""
+                                          AutomationProperties.Name="{Binding Localization[Settings_MaxFileCount]}" />
+                            <NumericUpDown Width="150" Minimum="1" Maximum="1000000" Increment="100" FormatString="0"
+                                           Value="{Binding MaxFileCount}" IsEnabled="{Binding IsMaxFileCountEnabled}" />
+                            <Panel MinWidth="90" />
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_MaxFolderCount]}" />
+                            <TextBlock Classes="secondary" Text="{Binding Localization[Settings_MaxFolderCountDesc]}" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10">
+                            <ToggleSwitch IsChecked="{Binding IsMaxFolderCountEnabled}" OnContent="" OffContent=""
+                                          AutomationProperties.Name="{Binding Localization[Settings_MaxFolderCount]}" />
+                            <NumericUpDown Width="150" Minimum="1" Maximum="100" Increment="1" FormatString="0"
+                                           Value="{Binding MaxFolderCount}" IsEnabled="{Binding IsMaxFolderCountEnabled}" />
+                            <Panel MinWidth="90" />
                         </StackPanel>
                     </Grid>
                 </StackPanel>
             </Border>
 
-            <!-- 5. ADVANCED SETTINGS -->
-            <Border Background="{DynamicResource PaneBackgroundBrush}" CornerRadius="8" Padding="20"
-                    BorderBrush="{DynamicResource GlassBorderBrush}" BorderThickness="1">
-                <StackPanel Spacing="15">
-                    <StackPanel Orientation="Horizontal" Spacing="10">
-                        <icons:MaterialIcon Kind="Tune" Width="24" Height="24"
-                                            Foreground="{DynamicResource SystemAccentColor}" />
-                        <TextBlock Text="{Binding Localization[Settings_Advanced]}" FontSize="18" FontWeight="SemiBold" />
+            <!-- Output -->
+            <Border Classes="card">
+                <StackPanel Spacing="16">
+                    <StackPanel Classes="header">
+                        <icons:MaterialIcon Kind="FileExport" />
+                        <TextBlock Classes="sectionTitle" Text="{Binding Localization[Settings_Output]}" />
                     </StackPanel>
 
-                    <Grid ColumnDefinitions="*, Auto"
-                          RowDefinitions="Auto, 15, Auto, 15, Auto, 15, Auto, 15, Auto, 15, Auto">
+                    <Grid Classes="row" ColumnDefinitions="*,Auto" IsEnabled="{Binding CanEdit}">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_HexCase]}" />
+                        </StackPanel>
+                        <ComboBox Grid.Column="1" Width="240" ItemsSource="{Binding HexCaseOptions}" SelectedItem="{Binding HashLetterCase}"
+                                  AutomationProperties.Name="{Binding Localization[Settings_HexCase]}">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock>
+                                        <TextBlock.Text>
+                                            <MultiBinding Converter="{StaticResource EnumLabelConverter}">
+                                                <Binding />
+                                                <Binding Path="$parent[UserControl].((vm:SettingsViewModel)DataContext).Localization" />
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                    </Grid>
 
-                        <!-- Show Speed -->
-                        <StackPanel Grid.Row="0" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_ShowSpeed]}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Localization[Settings_ShowSpeedDesc]}" FontSize="12"
-                                       Opacity="0.7" />
+                    <Grid Classes="row" ColumnDefinitions="*,Auto" IsEnabled="{Binding CanEdit}">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_DefaultExport]}" />
                         </StackPanel>
-                        <ToggleSwitch Grid.Row="0" Grid.Column="1"
-                                      IsChecked="{Binding ShowReadWriteSpeed}"
-                                      IsEnabled="{Binding !IsSettingsLocked}" />
+                        <ComboBox Grid.Column="1" Width="240" ItemsSource="{Binding ExportFormatOptions}" SelectedItem="{Binding DefaultExportFormat}"
+                                  AutomationProperties.Name="{Binding Localization[Settings_DefaultExport]}">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock>
+                                        <TextBlock.Text>
+                                            <MultiBinding Converter="{StaticResource EnumLabelConverter}">
+                                                <Binding />
+                                                <Binding Path="$parent[UserControl].((vm:SettingsViewModel)DataContext).Localization" />
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                    </Grid>
 
-                        <!-- Developer Mode -->
-                        <StackPanel Grid.Row="2" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_DeveloperMode]}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Localization[Settings_DeveloperDesc]}" FontSize="12"
-                                       Opacity="0.7" />
+                    <Grid Classes="row" ColumnDefinitions="*,Auto" IsEnabled="{Binding CanEdit}">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_ShowSpeed]}" />
+                            <TextBlock Classes="secondary" Text="{Binding Localization[Settings_ShowSpeedDesc]}" />
                         </StackPanel>
-                        <ToggleSwitch Grid.Row="2" Grid.Column="1"
-                                      IsChecked="{Binding IsDeveloperModeEnabled}"
-                                      Command="{Binding ToggleDeveloperModeCommand}"
-                                      IsEnabled="{Binding !IsSettingsLocked}" />
+                        <ToggleSwitch Grid.Column="1" IsChecked="{Binding ShowReadWriteSpeed}"
+                                      AutomationProperties.Name="{Binding Localization[Settings_ShowSpeed]}" />
+                    </Grid>
 
-                        <!-- Admin Mode -->
-                        <StackPanel Grid.Row="4" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_AdminMode]}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Localization[Settings_AdminDesc]}" FontSize="12" Opacity="0.7" />
+                    <!-- Hash masking stays editable while settings are locked (see Settings_LockDesc). -->
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_MaskHash]}" />
                         </StackPanel>
-                        <ToggleSwitch Grid.Row="4" Grid.Column="1"
-                                      IsChecked="{Binding IsAdminModeEnabled}"
-                                      Command="{Binding ToggleAdminModeCommand}"
-                                      IsEnabled="{Binding IsAdminModeSupported}" />
-
-                        <!-- Force Quit Timeout -->
-                        <StackPanel Grid.Row="6" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_ForceQuitTimeout]}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Localization[Settings_ForceQuitDesc]}" FontSize="12"
-                                       Opacity="0.7" />
-                        </StackPanel>
-                        <StackPanel Grid.Row="6" Grid.Column="1" Orientation="Horizontal" Spacing="10"
-                                    IsEnabled="{Binding !IsSettingsLocked}">
-                            <NumericUpDown Value="{Binding ForceQuitTimeout}" Minimum="1" Maximum="60" Width="150" />
-                            <TextBlock Text="{Binding Localization[Unit_Seconds]}" VerticalAlignment="Center" />
-                        </StackPanel>
-
-                        <!-- Free Memory -->
-                        <StackPanel Grid.Row="8" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_FreeMemory]}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Localization[Settings_FreeMemoryDesc]}" FontSize="12"
-                                       Opacity="0.7" />
-                        </StackPanel>
-                        <Button Grid.Row="8" Grid.Column="1"
-                                Content="{Binding Localization[Settings_BtnFreeMemory]}"
-                                Command="{Binding FreeMemoryCommand}" />
-
-                        <!-- Force Quit Button -->
-                        <StackPanel Grid.Row="10" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_Emergency]}" FontWeight="Bold"
-                                       Foreground="Red" />
-                            <TextBlock Text="{Binding Localization[Settings_EmergencyDesc]}" FontSize="12"
-                                       Opacity="0.7" />
-                        </StackPanel>
-                        <Button Grid.Row="10" Grid.Column="1"
-                                Content="{Binding Localization[Settings_BtnForceQuit]}"
-                                Command="{Binding ForceQuitAndCancelAllCommand}"
-                                Background="#FF4444" Foreground="White" />
+                        <ToggleSwitch Grid.Column="1" IsChecked="{Binding IsHashMaskingEnabled}"
+                                      AutomationProperties.Name="{Binding Localization[Settings_MaskHash]}" />
                     </Grid>
                 </StackPanel>
             </Border>
 
-            <!-- 5. PRIVACY & OTHERS -->
-            <Border Background="{DynamicResource PaneBackgroundBrush}" CornerRadius="8" Padding="20"
-                    BorderBrush="{DynamicResource GlassBorderBrush}" BorderThickness="1">
-                <StackPanel Spacing="15">
-                    <StackPanel Orientation="Horizontal" Spacing="10">
-                        <icons:MaterialIcon Kind="ShieldAccount" Width="24" Height="24"
-                                            Foreground="{DynamicResource SystemAccentColor}" />
-                        <TextBlock Text="{Binding Localization[Settings_Other]}" FontSize="18" FontWeight="SemiBold" />
+            <!-- Updates -->
+            <Border Classes="card">
+                <StackPanel Spacing="16">
+                    <StackPanel Classes="header">
+                        <icons:MaterialIcon Kind="CloudSync" />
+                        <TextBlock Classes="sectionTitle" Text="{Binding Localization[Settings_Updates]}" />
                     </StackPanel>
 
-                    <Grid ColumnDefinitions="*, Auto">
-                        <TextBlock Text="{Binding Localization[Settings_MaskHash]}" VerticalAlignment="Center" />
-                        <ToggleSwitch Grid.Column="1" IsChecked="{Binding Prefs.IsHashMaskingEnabled}" />
+                    <Grid Classes="row" ColumnDefinitions="*,Auto" IsEnabled="{Binding CanEdit}">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_AutoUpdate]}" />
+                            <TextBlock Classes="secondary" Text="{Binding Localization[Settings_AutoUpdateDesc]}" />
+                        </StackPanel>
+                        <ToggleSwitch Grid.Column="1" IsChecked="{Binding CheckForUpdatesOnStartup}"
+                                      AutomationProperties.Name="{Binding Localization[Settings_AutoUpdate]}" />
                     </Grid>
                 </StackPanel>
             </Border>
 
-            <!-- 6. CONFIGURATION ACTIONS -->
-            <Border Background="{DynamicResource PaneBackgroundBrush}" CornerRadius="8" Padding="20"
-                    BorderBrush="{DynamicResource GlassBorderBrush}" BorderThickness="1">
-                <StackPanel Spacing="15">
-                    <StackPanel Orientation="Horizontal" Spacing="10">
-                        <icons:MaterialIcon Kind="Cogs" Width="24" Height="24"
-                                            Foreground="{DynamicResource SystemAccentColor}" />
-                        <TextBlock Text="{Binding Localization[Settings_Configuration]}" FontSize="18"
-                                   FontWeight="SemiBold" />
+            <!-- Windows integration -->
+            <Border Classes="card" IsVisible="{Binding IsWindows}">
+                <StackPanel Spacing="16">
+                    <StackPanel Classes="header">
+                        <icons:MaterialIcon Kind="MicrosoftWindows" />
+                        <TextBlock Classes="sectionTitle" Text="{Binding Localization[Settings_Integration]}" />
                     </StackPanel>
 
-                    <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto, 15, Auto, 15, Auto, 15, Auto">
-                        <!-- Lock Settings -->
-                        <StackPanel Grid.Row="0" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_LockSettings]}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Localization[Settings_LockDesc]}" FontSize="12" Opacity="0.7" />
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_ShellMenu]}" />
+                            <TextBlock Classes="secondary" Text="{Binding Localization[Settings_ShellMenuDesc]}" />
                         </StackPanel>
-                        <ToggleSwitch Grid.Row="0" Grid.Column="1"
-                                      IsChecked="{Binding IsSettingsLocked}"
-                                      Command="{Binding ToggleLockSettingsCommand}" />
+                        <ToggleSwitch Grid.Column="1" IsChecked="{Binding IsShellIntegrationEnabled}"
+                                      AutomationProperties.Name="{Binding Localization[Settings_ShellMenu]}">
+                            <ToggleSwitch.IsEnabled>
+                                <MultiBinding Converter="{x:Static BoolConverters.And}">
+                                    <Binding Path="CanEdit" />
+                                    <Binding Path="CanUseShellIntegration" />
+                                </MultiBinding>
+                            </ToggleSwitch.IsEnabled>
+                        </ToggleSwitch>
+                    </Grid>
 
-                        <!-- Reset All -->
-                        <StackPanel Grid.Row="2" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_ResetAll]}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Localization[Settings_ResetDesc]}" FontSize="12" Opacity="0.7" />
+                    <Grid Classes="row" ColumnDefinitions="*,Auto" IsVisible="{Binding CanRestartElevated}">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Btn_RestartAdmin]}" />
+                            <TextBlock Classes="secondary" Text="{Binding Localization[Settings_RestartAdminDesc]}" />
                         </StackPanel>
-                        <Button Grid.Row="2" Grid.Column="1"
-                                Command="{Binding ResetSettingsCommand}"
-                                Content="{Binding Localization[Settings_Reset]}"
-                                IsEnabled="{Binding !IsSettingsLocked}" />
-
-                        <!-- Config File Actions -->
-                        <StackPanel Grid.Row="4" Grid.Column="0">
-                            <TextBlock Text="{Binding Localization[Settings_ConfigPath]}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Localization[Settings_ConfigDesc]}" FontSize="12" Opacity="0.7" />
-                        </StackPanel>
-                        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Vertical" Spacing="5"
-                                    HorizontalAlignment="Right">
-                            <StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Right">
-                                <TextBlock Text="{Binding Localization[Settings_ShowPath]}" VerticalAlignment="Center" />
-                                <ToggleSwitch IsChecked="{Binding ShowConfigPath}" />
+                        <Button Grid.Column="1" Command="{Binding RestartElevatedCommand}">
+                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                <icons:MaterialIcon Kind="ShieldAccount" Width="18" Height="18" />
+                                <TextBlock Text="{Binding Localization[Btn_RestartAdmin]}" />
                             </StackPanel>
+                        </Button>
+                    </Grid>
+                </StackPanel>
+            </Border>
 
-                            <Grid ColumnDefinitions="*, Auto" IsVisible="{Binding ShowConfigPath}" Width="300">
-                                <TextBox Text="{Binding ConfigFilePath}" IsReadOnly="True" Margin="0,0,5,0" />
-                                <Button Grid.Column="1" Command="{Binding CopyConfigPathCommand}"
-                                        ToolTip.Tip="{Binding Localization[Tip_CopyPath]}">
+            <!-- Advanced -->
+            <Border Classes="card">
+                <StackPanel Spacing="16">
+                    <StackPanel Classes="header">
+                        <icons:MaterialIcon Kind="Cogs" />
+                        <TextBlock Classes="sectionTitle" Text="{Binding Localization[Settings_Configuration]}" />
+                    </StackPanel>
+
+                    <Grid Classes="row" ColumnDefinitions="*,Auto" IsEnabled="{Binding CanEdit}">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_DeveloperMode]}" />
+                            <TextBlock Classes="secondary" Text="{Binding Localization[Settings_DeveloperDesc]}" />
+                        </StackPanel>
+                        <ToggleSwitch Grid.Column="1" IsChecked="{Binding IsDeveloperModeEnabled}"
+                                      AutomationProperties.Name="{Binding Localization[Settings_DeveloperMode]}" />
+                    </Grid>
+
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_LockSettings]}" />
+                            <TextBlock Classes="secondary" Text="{Binding Localization[Settings_LockDesc]}" />
+                        </StackPanel>
+                        <ToggleSwitch Grid.Column="1" IsChecked="{Binding IsSettingsLocked}"
+                                      AutomationProperties.Name="{Binding Localization[Settings_LockSettings]}" />
+                    </Grid>
+
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_ResetAll]}" />
+                            <TextBlock Classes="secondary" Text="{Binding Localization[Settings_ResetDesc]}" />
+                        </StackPanel>
+                        <Button Grid.Column="1" Content="{Binding Localization[Settings_Reset]}" Command="{Binding ResetSettingsCommand}"
+                                IsEnabled="{Binding CanEdit}" />
+                    </Grid>
+
+                    <Grid Classes="row" ColumnDefinitions="*,Auto">
+                        <StackPanel Classes="label">
+                            <TextBlock Classes="title" Text="{Binding Localization[Settings_ConfigPath]}" />
+                            <TextBlock Classes="secondary" Text="{Binding Localization[Settings_ConfigDesc]}" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Spacing="8" HorizontalAlignment="Right">
+                            <StackPanel Orientation="Horizontal" Spacing="8" HorizontalAlignment="Right">
+                                <Button Command="{Binding OpenDataFolderCommand}">
+                                    <StackPanel Orientation="Horizontal" Spacing="8">
+                                        <icons:MaterialIcon Kind="FolderOpen" Width="18" Height="18" />
+                                        <TextBlock Text="{Binding Localization[Settings_OpenDataFolder]}" />
+                                    </StackPanel>
+                                </Button>
+                                <ToggleButton IsChecked="{Binding ShowConfigPath}" Content="{Binding Localization[Settings_ShowPath]}" />
+                            </StackPanel>
+                            <Grid ColumnDefinitions="*,Auto" Width="360" IsVisible="{Binding ShowConfigPath}">
+                                <TextBox Text="{Binding ConfigFilePath, Mode=OneWay}" IsReadOnly="True" Margin="0,0,6,0"
+                                         AutomationProperties.Name="{Binding Localization[Settings_ConfigPath]}" />
+                                <Button Grid.Column="1" Classes="icon" Command="{Binding CopyConfigPathCommand}"
+                                        ToolTip.Tip="{Binding Localization[Tip_CopyPath]}"
+                                        AutomationProperties.Name="{Binding Localization[Tip_CopyPath]}">
                                     <icons:MaterialIcon Kind="ContentCopy" Width="16" Height="16" />
                                 </Button>
                             </Grid>
@@ -379,8 +460,7 @@
                 </StackPanel>
             </Border>
 
-            <TextBlock Text="{Binding Localization[Settings_AutoSave]}"
-                       HorizontalAlignment="Center" Opacity="0.4" FontStyle="Italic" Margin="0,0,0,20" />
+            <TextBlock Text="{Binding Localization[Settings_AutoSave]}" Classes="secondary" HorizontalAlignment="Center" FontStyle="Italic" />
         </StackPanel>
     </ScrollViewer>
 </UserControl>

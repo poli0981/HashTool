@@ -1,63 +1,97 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="HashTool.App.App"
-             xmlns:local="using:HashTool.App"
+             xmlns:vm="using:HashTool.App.ViewModels"
+             xmlns:views="using:HashTool.App.Views"
              xmlns:conv="using:HashTool.App.Converters"
-             xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             x:Class="HashTool.App.App"
              Name="Hash Tool"
-             RequestedThemeVariant="Dark">
+             RequestedThemeVariant="Default">
 
     <Application.DataTemplates>
-        <local:ViewLocator />
+        <DataTemplate DataType="vm:CreateHashViewModel">
+            <views:CreateHashView />
+        </DataTemplate>
+        <DataTemplate DataType="vm:CheckHashViewModel">
+            <views:CheckHashView />
+        </DataTemplate>
+        <DataTemplate DataType="vm:SettingsViewModel">
+            <views:SettingsView />
+        </DataTemplate>
+        <DataTemplate DataType="vm:UpdateViewModel">
+            <views:UpdateView />
+        </DataTemplate>
+        <DataTemplate DataType="vm:AboutViewModel">
+            <views:AboutView />
+        </DataTemplate>
+        <DataTemplate DataType="vm:DeveloperViewModel">
+            <views:DeveloperView />
+        </DataTemplate>
     </Application.DataTemplates>
 
     <Application.Styles>
         <FluentTheme />
-        <avalonia:MaterialIconStyles />
+        <icons:MaterialIconStyles />
+
         <Style Selector="Window">
             <Setter Property="Transitions">
                 <Transitions>
-                    <BrushTransition Property="Background" Duration="0:0:0.55" />
+                    <BrushTransition Property="Background" Duration="0:0:0.3" />
                 </Transitions>
             </Setter>
         </Style>
 
-        <Style Selector="TextBlock">
-            <Setter Property="Transitions">
-                <Transitions>
-                    <BrushTransition Property="Foreground" Duration="0:0:0.01" />
-                </Transitions>
-            </Setter>
+        <!-- Status colours come from the active theme palette (Colorblind / High Contrast change them). -->
+        <Style Selector="TextBlock.status">
+            <Setter Property="Foreground" Value="{DynamicResource StatusInfoBrush}" />
         </Style>
-
+        <Style Selector="TextBlock.status.success">
+            <Setter Property="Foreground" Value="{DynamicResource StatusSuccessBrush}" />
+        </Style>
+        <Style Selector="TextBlock.status.error">
+            <Setter Property="Foreground" Value="{DynamicResource StatusErrorBrush}" />
+        </Style>
+        <Style Selector="TextBlock.status.warning">
+            <Setter Property="Foreground" Value="{DynamicResource StatusWarningBrush}" />
+        </Style>
+        <Style Selector="TextBlock.secondary">
+            <Setter Property="Foreground" Value="{DynamicResource SecondaryTextBrush}" />
+        </Style>
+        <Style Selector="Border.card">
+            <Setter Property="Background" Value="{DynamicResource PaneBackgroundBrush}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource GlassBorderBrush}" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="CornerRadius" Value="8" />
+            <Setter Property="Padding" Value="20" />
+        </Style>
+        <Style Selector="TextBlock.sectionTitle">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+        </Style>
+        <Style Selector="Button.icon">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Padding" Value="5" />
+        </Style>
     </Application.Styles>
-
 
     <Application.Resources>
         <ResourceDictionary>
             <conv:HashMaskConverter x:Key="HashMaskConverter" />
-            <conv:CountToVisibilityConverter x:Key="CountToVisibilityConverter" />
-            <conv:ComputeButtonEnabledConverter x:Key="ComputeButtonEnabledConverter" />
-            <conv:AlgorithmEnabledConverter x:Key="AlgorithmEnabledConverter" />
-            <conv:FileStatusConverter x:Key="FileStatusConverter" />
-            <conv:FileSizeFilterConverter x:Key="FileSizeFilterConverter" />
+            <conv:EnumLabelConverter x:Key="EnumLabelConverter" />
+            <conv:StatusTextConverter x:Key="StatusTextConverter" />
+            <conv:FontNameConverter x:Key="FontNameConverter" />
 
-            <ResourceDictionary.ThemeDictionaries>
-                <ResourceDictionary x:Key="Light">
-                    <Color x:Key="AppBackgroundColor">#F8F9FA</Color>
-                    <Color x:Key="PaneBackgroundColor">#FFFFFF</Color>
-                    <SolidColorBrush x:Key="AppBackgroundBrush" Color="{StaticResource AppBackgroundColor}" />
-                    <SolidColorBrush x:Key="PaneBackgroundBrush" Color="{StaticResource PaneBackgroundColor}" />
-                    <SolidColorBrush x:Key="HighlightBrush" Color="#0066CC" />
-                </ResourceDictionary>
-                <ResourceDictionary x:Key="Dark">
-                    <Color x:Key="AppBackgroundColor"> #121212</Color>
-                    <Color x:Key="PaneBackgroundColor">#212529</Color>
-                    <SolidColorBrush x:Key="AppBackgroundBrush" Color="{StaticResource AppBackgroundColor}" />
-                    <SolidColorBrush x:Key="PaneBackgroundBrush" Color="{StaticResource PaneBackgroundColor}" />
-                    <SolidColorBrush x:Key="HighlightBrush" Color="#FFD700" />
-                </ResourceDictionary>
-            </ResourceDictionary.ThemeDictionaries>
+            <!-- Defaults; ThemeService replaces these with the selected palette at startup. -->
+            <SolidColorBrush x:Key="AppBackgroundBrush" Color="#202020" />
+            <SolidColorBrush x:Key="PaneBackgroundBrush" Color="#2C2C2C" />
+            <SolidColorBrush x:Key="GlassBorderBrush" Color="Transparent" />
+            <SolidColorBrush x:Key="HighlightBrush" Color="#FFD700" />
+            <SolidColorBrush x:Key="StatusSuccessBrush" Color="#6CCB5F" />
+            <SolidColorBrush x:Key="StatusErrorBrush" Color="#FF99A4" />
+            <SolidColorBrush x:Key="StatusWarningBrush" Color="#FCE100" />
+            <SolidColorBrush x:Key="StatusInfoBrush" Color="#60CDFF" />
+            <SolidColorBrush x:Key="StatusMutedBrush" Color="#A0A0A0" />
+            <SolidColorBrush x:Key="SecondaryTextBrush" Color="#B8B8B8" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

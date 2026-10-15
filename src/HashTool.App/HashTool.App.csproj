@@ -9,6 +9,8 @@
         <ApplicationManifest>app.manifest</ApplicationManifest>
         <ApplicationIcon>Assets\icon\favicon.ico</ApplicationIcon>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+        <!-- LibraryImport (source-generated P/Invoke) emits unsafe marshalling code. -->
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
 
     <ItemGroup>
@@ -21,8 +23,11 @@
         <PackageReference Include="Avalonia.Desktop" />
         <PackageReference Include="Avalonia.Themes.Fluent" />
         <PackageReference Include="Avalonia.Fonts.Inter" />
+        <PackageReference Include="Avalonia.Headless" />
         <PackageReference Include="CommunityToolkit.Mvvm" />
         <PackageReference Include="Material.Icons.Avalonia" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+        <PackageReference Include="Microsoft.Extensions.Logging" />
         <PackageReference Include="Velopack" />
     </ItemGroup>
 
@@ -34,8 +39,6 @@
         <Using Include="HashTool.Core" />
         <Using Include="HashTool.Core.Configuration" />
         <Using Include="HashTool.Core.Hashing" />
-        <Using Include="HashTool.Core.IO" />
-        <Using Include="HashTool.Core.Processing" />
     </ItemGroup>
 
     <ItemGroup>
