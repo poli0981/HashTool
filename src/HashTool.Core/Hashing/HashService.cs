@@ -1,11 +1,11 @@
 using System;
 using System.Buffers;
 using System.IO;
+using System.IO.Hashing;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
-using System.IO.Hashing;
 using Blake3;
 using HashTool.Core.IO;
 

@@ -1,6 +1,6 @@
 using System;
-using HashTool.App.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
+using HashTool.App.Models;
 
 namespace HashTool.App.Services;
 

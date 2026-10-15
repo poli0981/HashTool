@@ -1,9 +1,9 @@
+using System;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.Documents;
 using Avalonia.Markup.Xaml;
 using Avalonia.Media;
-using System;
 
 namespace HashTool.App.Views.Controls;
 
@@ -118,10 +118,10 @@ public partial class HighlightTextBlock : UserControl
 
             index = matchIndex + highlight.Length;
         }
-        
+
         if (index < text.Length)
         {
-             _textBlock.Inlines?.Add(new Run { Text = text.Substring(index) });
+            _textBlock.Inlines?.Add(new Run { Text = text.Substring(index) });
         }
     }
 }

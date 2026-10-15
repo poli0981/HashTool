@@ -3,10 +3,10 @@ using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
-using HashTool.App.Services;
-using HashTool.App.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using HashTool.App.Services;
+using HashTool.App.Views;
 using Velopack;
 
 namespace HashTool.App.ViewModels;

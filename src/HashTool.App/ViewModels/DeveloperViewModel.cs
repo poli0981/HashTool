@@ -3,9 +3,9 @@ using System.IO;
 using Avalonia;
 using Avalonia.Collections;
 using Avalonia.Controls.ApplicationLifetimes;
-using HashTool.App.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using HashTool.App.Services;
 
 namespace HashTool.App.ViewModels;
 
