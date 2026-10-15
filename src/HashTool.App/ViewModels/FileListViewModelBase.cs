@@ -1,612 +1,658 @@
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Avalonia;
 using Avalonia.Collections;
-using Avalonia.Controls;
-using Avalonia.Platform.Storage;
 using Avalonia.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using HashTool.App.Infrastructure;
 using HashTool.App.Models;
 using HashTool.App.Services;
+using HashTool.Core.Files;
+using HashTool.Core.Hashing;
+using HashTool.Core.Processing;
+using Microsoft.Extensions.Logging;
 
 namespace HashTool.App.ViewModels;
 
-public abstract partial class FileListViewModelBase : ObservableObject, IDisposable
-{
-    protected CancellationTokenSource? _batchCts;
-    [ObservableProperty] private int _cancelledCount;
-    [ObservableProperty] private string _detailedStatsText = "";
-    [ObservableProperty] private int _failCount;
+/// <summary>Services shared by the Create and Verify pages.</summary>
+public sealed record FileListServices(
+    LocalizationService Localization,
+    SettingsService Settings,
+    IDialogService Dialogs,
+    IStorageService Storage,
+    IClipboardService Clipboard,
+    HashEngine Engine,
+    ILoggerFactory LoggerFactory);
 
-    private CancellationTokenSource? _filterCts;
-    [ObservableProperty] private LocalizationProxy _localization = new(LocalizationService.Instance);
+/// <summary>What happened while adding files, summarised for the user afterwards.</summary>
+public sealed class ImportReport
+{
+    public int Added;
+    public int Duplicates;
+    public readonly List<string> TooLarge = [];
+    public readonly List<string> Errors = [];
+    public int OverLimit;
+}
+
+/// <summary>
+/// File list, filtering, importing and batch hashing shared by the Create and Verify pages. All list mutations happen on
+/// the UI thread; enumeration and hashing run in the background.
+/// </summary>
+public abstract partial class FileListViewModelBase : ObservableObject, IHashJobObserver<FileItem>
+{
+    private const int UiBatchSize = 1000;
+
+    private readonly List<FileItem> _all = [];
+    private readonly Dictionary<string, FileItem> _byPath = new(OperatingSystem.IsLinux() ? StringComparer.Ordinal : StringComparer.OrdinalIgnoreCase);
+    private readonly ConcurrentQueue<(FileItem Item, HashJobResult? Result)> _events = new();
+    private readonly List<FileItem> _active = [];
+    private readonly DispatcherTimer _filterTimer;
+    private DispatcherTimer? _pump;
+    private CancellationTokenSource? _batchCts;
+    private Stopwatch _batchClock = new();
+    private long _batchBytesDone;
+    private long _batchBytesTotal;
+
+    [ObservableProperty] private LocalizationProxy _localization;
+
+    [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(CanModify))]
+    [NotifyCanExecuteChangedFor(nameof(AddFilesCommand), nameof(AddFolderCommand), nameof(ClearListCommand),
+        nameof(ClearResultsCommand), nameof(ClearFailedCommand), nameof(RunAllCommand), nameof(CancelCommand))]
+    private bool _isBusy;
+
+    [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(CanModify))]
+    [NotifyCanExecuteChangedFor(nameof(AddFilesCommand), nameof(AddFolderCommand), nameof(ClearListCommand),
+        nameof(ClearResultsCommand), nameof(ClearFailedCommand), nameof(RunAllCommand))]
+    private bool _isImporting;
+
+    [ObservableProperty] private string _searchText = string.Empty;
+    [ObservableProperty] private FileStatus? _selectedStatusFilter;
+    [ObservableProperty] private FileSizeFilter _selectedSizeFilter = FileSizeFilter.All;
+    [ObservableProperty] private FileItem? _selectedItem;
 
     [ObservableProperty] private int _processedCount;
-    [ObservableProperty] private double _progressMax = 100;
-
-    [ObservableProperty] private string _progressStatsText = "";
+    [ObservableProperty] private int _queuedCount;
+    [ObservableProperty] private int _succeededCount;
+    [ObservableProperty] private int _failedCount;
+    [ObservableProperty] private int _cancelledCount;
     [ObservableProperty] private double _progressValue;
-    [ObservableProperty] private string _remainingTime = "";
+    [ObservableProperty] private string _progressText = string.Empty;
+    [ObservableProperty] private string _detailText = string.Empty;
+    [ObservableProperty] private string _remainingText = string.Empty;
+    [ObservableProperty] private string _speedText = string.Empty;
 
-    [ObservableProperty] private string _searchText = "";
-    [ObservableProperty] private FileStatus? _selectedFilterStatus = null;
-    [ObservableProperty] private FileSizeFilter _selectedSizeFilter = FileSizeFilter.All;
-    [ObservableProperty] private string _speedText = "";
-    [ObservableProperty] private int _successCount;
-
-    protected readonly List<FileItem> AllFiles = new();
-    protected readonly HashSet<string> ExistingPaths = new(StringComparer.OrdinalIgnoreCase);
-    protected readonly object ListLock = new();
-
-    protected FileListViewModelBase()
+    protected FileListViewModelBase(FileListServices services)
     {
-        Prefs.ForceCancelRequested += OnForceCancelRequested;
-        LocalizationService.Instance.PropertyChanged += (s, e) =>
+        Services = services;
+        Logger = services.LoggerFactory.CreateLogger(GetType());
+        _localization = new LocalizationProxy(services.Localization);
+        services.Localization.LanguageChanged += (_, _) =>
         {
-            if (e.PropertyName == "Item[]")
-            {
-                Localization = new LocalizationProxy(LocalizationService.Instance);
-                OnPropertyChanged(nameof(TotalFilesText));
-                UpdateStatsText();
-            }
+            Localization = new LocalizationProxy(services.Localization);
+            OnPropertyChanged(nameof(TotalFilesText));
+            UpdateBatchTexts();
+        };
+        _filterTimer = new DispatcherTimer(TimeSpan.FromMilliseconds(250), DispatcherPriority.Background, (_, _) => ApplyFilterNow());
+    }
+
+    protected FileListServices Services { get; }
+
+    protected ILogger Logger { get; }
+
+    protected LocalizationService L => Services.Localization;
+
+    protected Core.Configuration.AppSettings Settings => Services.Settings.Current;
+
+    /// <summary>Visible (filtered) items.</summary>
+    public AvaloniaList<FileItem> Items { get; } = [];
+
+    /// <summary>All items, including those hidden by the filter.</summary>
+    protected IReadOnlyList<FileItem> AllItems => _all;
+
+    public IReadOnlyList<HashType> Algorithms { get; } = HashAlgorithms.All;
+
+    public IReadOnlyList<FileStatus?> StatusFilterOptions { get; } =
+        [null, FileStatus.Ready, FileStatus.Processing, FileStatus.Success, FileStatus.Failure, FileStatus.Cancelled];
+
+    public IReadOnlyList<FileSizeFilter> SizeFilterOptions { get; } = Enum.GetValues<FileSizeFilter>();
+
+    public bool HasItems => _all.Count > 0;
+
+    public bool CanModify => !IsBusy && !IsImporting;
+
+    public string TotalFilesText => Items.Count == _all.Count
+        ? L.Format("Lbl_TotalFiles", _all.Count)
+        : $"{L.Format("Lbl_TotalFiles", Items.Count)} / {_all.Count}";
+
+    /// <summary>Raised when the view should move keyboard focus to the search box.</summary>
+    public event EventHandler? FocusSearchRequested;
+
+    public void RequestSearchFocus() => FocusSearchRequested?.Invoke(this, EventArgs.Empty);
+
+    // ------------------------------------------------------------------ filtering
+
+    partial void OnSearchTextChanged(string value) => RestartFilterTimer();
+
+    partial void OnSelectedStatusFilterChanged(FileStatus? value) => ApplyFilterNow();
+
+    partial void OnSelectedSizeFilterChanged(FileSizeFilter value) => ApplyFilterNow();
+
+    private void RestartFilterTimer()
+    {
+        _filterTimer.Stop();
+        _filterTimer.Start();
+    }
+
+    protected void ApplyFilterNow()
+    {
+        _filterTimer.Stop();
+        var visible = _all.Where(Matches).ToList();
+        Items.Clear();
+        Items.AddRange(visible);
+        OnPropertyChanged(nameof(TotalFilesText));
+    }
+
+    private bool Matches(FileItem item)
+    {
+        if (!string.IsNullOrWhiteSpace(SearchText) && !item.FileName.Contains(SearchText.Trim(), StringComparison.CurrentCultureIgnoreCase))
+            return false;
+        if (SelectedStatusFilter is { } state && item.State != state) return false;
+        return SelectedSizeFilter switch
+        {
+            FileSizeFilter.Small => item.Size < ByteSize.OneMB,
+            FileSizeFilter.Medium => item.Size is >= ByteSize.OneMB and < 100L * ByteSize.OneMB,
+            FileSizeFilter.Large => item.Size is >= 100L * ByteSize.OneMB and < ByteSize.OneGB,
+            FileSizeFilter.ExtraLarge => item.Size >= ByteSize.OneGB,
+            _ => true
         };
     }
 
-    protected LocalizationService L => LocalizationService.Instance;
-    protected ConfigurationService ConfigService => ConfigurationService.Instance;
-    protected PreferencesService Prefs => PreferencesService.Instance;
-    protected LoggerService Logger => LoggerService.Instance;
+    // ------------------------------------------------------------------ adding files
 
-    public bool HasFiles
+    [RelayCommand(CanExecute = nameof(CanModify))]
+    private async Task AddFilesAsync()
     {
-        get
-        {
-            lock (ListLock)
-            {
-                return AllFiles.Count > 0;
-            }
-        }
+        var files = await Services.Storage.PickFilesAsync(L[PickFilesTitleKey]);
+        if (files.Count > 0) await AddPathsAsync(files);
     }
 
-    public AvaloniaList<FileItem> Files { get; } = new();
-
-    public ObservableCollection<HashType> AlgorithmList { get; } = new(Enum.GetValues<HashType>());
-
-    public List<FileStatus?> FilterStatusOptions { get; } = new()
+    [RelayCommand(CanExecute = nameof(CanModify))]
+    private async Task AddFolderAsync()
     {
-        null,
-        FileStatus.Ready,
-        FileStatus.Processing,
-        FileStatus.Success,
-        FileStatus.Failure,
-        FileStatus.Cancelled
-    };
-
-    public List<FileSizeFilter> SizeFilterOptions { get; } = Enum.GetValues<FileSizeFilter>().ToList();
-
-    public virtual string TotalFilesText => string.Format(L["Lbl_TotalFiles"], Files.Count);
-
-    protected abstract bool IsGlobalBusy { get; }
-
-    protected bool CanModifyList => !IsGlobalBusy;
-
-    public void Dispose()
-    {
-        Prefs.ForceCancelRequested -= OnForceCancelRequested;
-        foreach (var file in Files) file.Cts?.Dispose();
-    }
-
-    partial void OnSearchTextChanged(string value) => ApplyFilter(true);
-    partial void OnSelectedFilterStatusChanged(FileStatus? value) => ApplyFilter(true);
-    partial void OnSelectedSizeFilterChanged(FileSizeFilter value) => ApplyFilter(true);
-
-    protected async void ApplyFilter(bool debounce = false)
-    {
-        _filterCts?.Cancel();
-        _filterCts = new CancellationTokenSource();
-        var token = _filterCts.Token;
-
-        if (debounce)
+        var folders = await Services.Storage.PickFoldersAsync(L["Dialog_SelectFolder"]);
+        if (folders.Count == 0) return;
+        if (Settings.IsMaxFolderCountEnabled && folders.Count > Settings.MaxFolderCount)
         {
-            try
-            {
-                await Task.Delay(300, token); // Debounce
-            }
-            catch (OperationCanceledException)
-            {
-                return;
-            }
-        }
-
-        if (token.IsCancellationRequested) return;
-
-        // Snapshot (atomic read of immutable list)
-        List<FileItem> snapshot;
-        lock (ListLock)
-        {
-            snapshot = AllFiles.ToList();
-        }
-        var text = SearchText;
-        var status = SelectedFilterStatus;
-        var sizeFilter = SelectedSizeFilter;
-
-        await Task.Run(async () =>
-        {
-            if (token.IsCancellationRequested) return;
-
-            var result = FilterItems(snapshot, text, status, sizeFilter).ToList();
-
-            if (token.IsCancellationRequested) return;
-
-            await RunOnUIAsync(() =>
-            {
-                if (token.IsCancellationRequested) return Task.CompletedTask;
-
-                Files.Clear();
-                Files.AddRange(result);
-                OnPropertyChanged(nameof(TotalFilesText));
-                NotifyCommands();
-                return Task.CompletedTask;
-            });
-        }, token);
-    }
-
-    private static IEnumerable<FileItem> FilterItems(IEnumerable<FileItem> items, string text, FileStatus? status, FileSizeFilter sizeFilter)
-    {
-        var filtered = items;
-
-        if (!string.IsNullOrWhiteSpace(text))
-        {
-            filtered = filtered.Where(f => f.FileName.Contains(text, StringComparison.OrdinalIgnoreCase));
-        }
-
-        if (status.HasValue)
-        {
-            filtered = filtered.Where(f => f.ProcessingState == status.Value);
-        }
-
-        if (sizeFilter != FileSizeFilter.All)
-        {
-            long oneMB = AppConstants.OneMB;
-            long oneHundredMB = 100L * AppConstants.OneMB;
-            long oneGB = AppConstants.OneGB;
-
-            filtered = filtered.Where(f =>
-            {
-                var size = f.RawSizeBytes;
-                return sizeFilter switch
-                {
-                    FileSizeFilter.Small => size < oneMB,
-                    FileSizeFilter.Medium => size >= oneMB && size < oneHundredMB,
-                    FileSizeFilter.Large => size >= oneHundredMB && size < oneGB,
-                    FileSizeFilter.ExtraLarge => size >= oneGB,
-                    _ => true
-                };
-            });
-        }
-        return filtered;
-    }
-
-    protected void AddItemsToAll(IEnumerable<FileItem> items)
-    {
-        var list = items.ToList();
-        if (list.Count == 0) return;
-
-        _filterCts?.Cancel();
-
-        lock (ListLock)
-        {
-            AllFiles.AddRange(list);
-            foreach (var item in list) ExistingPaths.Add(item.FilePath);
-        }
-
-        OnPropertyChanged(nameof(HasFiles));
-
-        var filteredNew = FilterItems(list, SearchText, SelectedFilterStatus, SelectedSizeFilter).ToList();
-        if (filteredNew.Count > 0)
-        {
-            Files.AddRange(filteredNew);
-            OnPropertyChanged(nameof(TotalFilesText));
-            NotifyCommands();
-        }
-    }
-
-    private void OnForceCancelRequested(object? sender, EventArgs e)
-    {
-        Logger.Log($"Force Cancel requested by user ({GetType().Name}).", LogLevel.Warning);
-        foreach (var file in Files) file.Cts?.Cancel();
-    }
-
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    protected virtual async Task ClearList()
-    {
-        lock (ListLock)
-        {
-            foreach (var file in AllFiles)
-            {
-                file.Cts?.Cancel();
-                file.Cts?.Dispose();
-            }
-            AllFiles.Clear();
-            ExistingPaths.Clear();
-        }
-
-        Files.Clear();
-        OnPropertyChanged(nameof(HasFiles));
-        ProgressValue = 0;
-        RemainingTime = "";
-        OnPropertyChanged(nameof(TotalFilesText));
-        NotifyCommands();
-        Logger.Log(GetClearLogMessage());
-    }
-
-    protected virtual string GetClearLogMessage() => "Cleared file list.";
-
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    protected virtual void RemoveFile(FileItem? item)
-    {
-        if (item == null || item.IsProcessing) return;
-        item.Cts?.Cancel();
-        item.Cts?.Dispose();
-        item.IsDeleted = true;
-
-        lock (ListLock)
-        {
-            AllFiles.Remove(item);
-            ExistingPaths.Remove(item.FilePath);
-        }
-
-        if (Files.Contains(item))
-        {
-            Files.Remove(item);
-            OnPropertyChanged(nameof(TotalFilesText));
-            NotifyCommands();
-            Logger.Log($"{GetRemoveLogPrefix()}: {item.FileName}");
-        }
-        OnPropertyChanged(nameof(HasFiles));
-    }
-
-    protected virtual string GetRemoveLogPrefix() => "Removed file";
-
-    protected bool CanClearHash(FileItem? item)
-    {
-        return CanModifyList && item != null && item.ProcessingState != FileStatus.Ready;
-    }
-
-    [RelayCommand(CanExecute = nameof(CanClearHash))]
-    protected virtual void ClearHash(FileItem? item)
-    {
-        if (item == null || item.IsProcessing) return;
-        ResetItem(item);
-        Logger.Log($"Cleared hash for {item.FileName}");
-        NotifyCommands();
-    }
-
-    protected bool CanClearAllHashes()
-    {
-        return CanModifyList && Files.Any(f => f.ProcessingState != FileStatus.Ready);
-    }
-
-    [RelayCommand(CanExecute = nameof(CanClearAllHashes))]
-    protected virtual void ClearAllHashes()
-    {
-        var count = 0;
-        foreach (var item in Files)
-        {
-            if (!item.IsProcessing)
-            {
-                ResetItem(item);
-                count++;
-            }
-        }
-        if (count > 0)
-        {
-            Logger.Log($"Cleared hashes for {count} files.");
-            NotifyCommands();
-        }
-    }
-
-    protected virtual void ResetItem(FileItem item)
-    {
-        item.ResultHash = "";
-        item.Status = L["Lbl_Status_Ready"];
-        item.ProcessingState = FileStatus.Ready;
-        item.IsMatch = null;
-        item.IsCancelled = false;
-        item.ProcessDuration = "";
-    }
-
-    public void UpdateStatsText()
-    {
-        var total = Files.Count;
-        var percentage = total > 0 ? (double)ProcessedCount / total * 100 : 0;
-        ProgressStatsText = string.Format(L["Lbl_ProgressStats"], ProcessedCount, total, percentage);
-
-        var successPct = total > 0 ? (double)SuccessCount / total * 100 : 0;
-        var failPct = total > 0 ? (double)FailCount / total * 100 : 0;
-        var cancelPct = total > 0 ? (double)CancelledCount / total * 100 : 0;
-
-        DetailedStatsText = string.Format(L["Lbl_DetailedStats"],
-            SuccessCount, successPct,
-            FailCount, failPct,
-            CancelledCount, cancelPct);
-    }
-
-    public void UpdateSpeedText(double readBytesPerSecond, double writeBytesPerSecond = 0)
-    {
-        var readStr = FileItem.FormatSize((long)readBytesPerSecond);
-        var writeStr = FileItem.FormatSize((long)writeBytesPerSecond);
-        SpeedText = string.Format(L["Lbl_Speed"], readStr, writeStr);
-    }
-
-    // Abstract methods to hook into subclass specific logic
-    protected abstract void NotifyCommands();
-
-    [RelayCommand(CanExecute = nameof(IsGlobalBusy))]
-    protected virtual void CancelAll()
-    {
-        Logger.Log("Cancel all requested.");
-        _batchCts?.Cancel();
-        foreach (var file in Files)
-        {
-            if (file.IsProcessing) file.Cts?.Cancel();
-        }
-    }
-
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    protected virtual async Task AddFiles(Window window)
-    {
-        try
-        {
-            Logger.Log($"Opening file picker for {GetType().Name}...");
-            var files = await window.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
-            {
-                AllowMultiple = true,
-                Title = L["Dialog_SelectFiles"]
-            });
-
-            if (files.Count == 0) return;
-
-            var paths = files.Select(x => x.Path.LocalPath);
-            await AddFilesFromPaths(paths);
-        }
-        catch (Exception ex)
-        {
-            Logger.Log($"Error adding files: {ex.Message}", LogLevel.Error);
-            await MessageBoxHelper.ShowAsync(L["Msg_Error"], ex.Message, MessageBoxIcon.Error);
-        }
-    }
-
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    protected virtual async Task AddFolder(Window window)
-    {
-        try
-        {
-            Logger.Log($"Opening folder picker for {GetType().Name}...");
-            var folders = await window.StorageProvider.OpenFolderPickerAsync(new FolderPickerOpenOptions
-            {
-                AllowMultiple = true,
-                Title = L["Dialog_SelectFolder"]
-            });
-
-            if (folders.Count == 0) return;
-
-            if (Prefs.IsMaxFolderCountEnabled && folders.Count > Prefs.MaxFolderCount)
-            {
-                await MessageBoxHelper.ShowAsync(L["Msg_Error"],
-                    string.Format(L["Msg_FolderLimit"], Prefs.MaxFolderCount), MessageBoxIcon.Error);
-                return;
-            }
-
-            await Task.Run(async () =>
-            {
-                var maxFiles = Prefs.MaxFileCount;
-                var limitEnabled = Prefs.IsMaxFileCountEnabled;
-
-                if (limitEnabled)
-                {
-                    var filesToAdd = new List<string>();
-                    var totalCount = 0;
-                    var hasFiles = false;
-
-                    foreach (var folder in folders)
-                    {
-                        try
-                        {
-                            var folderPath = folder.Path.LocalPath;
-                            foreach (var file in EnumerateFilesSafe(folderPath))
-                            {
-                                hasFiles = true;
-                                totalCount++;
-                                if (filesToAdd.Count < maxFiles)
-                                {
-                                    filesToAdd.Add(file);
-                                }
-                            }
-                        }
-                        catch (Exception ex)
-                        {
-                            Logger.Log($"Error reading folder {folder.Path.LocalPath}: {ex.Message}", LogLevel.Error);
-                        }
-                    }
-
-                    if (!hasFiles)
-                    {
-                        await RunOnUIAsync(async () => await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_EmptyFolder"], MessageBoxIcon.Warning));
-                        Logger.Log("Selected folder(s) are empty.", LogLevel.Warning);
-                        return;
-                    }
-
-                    if (totalCount > maxFiles)
-                    {
-                        var skippedCount = totalCount - maxFiles;
-
-                        await RunOnUIAsync(async () => await AddFilesFromPaths(filesToAdd));
-
-                        await RunOnUIAsync(async () => await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
-                            string.Format(L["Msg_FileLimit"], filesToAdd.Count, skippedCount), MessageBoxIcon.Warning));
-
-                        Logger.Log($"Added {filesToAdd.Count} files, skipped {skippedCount} due to limit.");
-                    }
-                    else
-                    {
-                        await RunOnUIAsync(async () => await AddFilesFromPaths(filesToAdd));
-                    }
-                }
-                else
-                {
-                    var folderPaths = folders.Select(f => f.Path.LocalPath).ToList();
-
-                    IEnumerable<string> EnumerateAll()
-                    {
-                        foreach (var path in folderPaths)
-                        {
-                            foreach (var file in EnumerateFilesSafe(path)) yield return file;
-                        }
-                    }
-
-                    var enumerable = EnumerateAll();
-                    using var enumerator = enumerable.GetEnumerator();
-
-                    if (!enumerator.MoveNext())
-                    {
-                        await RunOnUIAsync(async () => await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_EmptyFolder"], MessageBoxIcon.Warning));
-                        Logger.Log("Selected folder(s) are empty.", LogLevel.Warning);
-                        return;
-                    }
-
-                    IEnumerable<string> EnumerateRest()
-                    {
-                        do
-                        {
-                            yield return enumerator.Current;
-                        } while (enumerator.MoveNext());
-                    }
-
-                    await RunOnUIAsync(async () => await AddFilesFromPaths(EnumerateRest()));
-                }
-            });
-        }
-        catch (Exception ex)
-        {
-            Logger.Log($"Error adding folder: {ex.Message}", LogLevel.Error);
-            await MessageBoxHelper.ShowAsync(L["Msg_Error"], string.Format(L["Msg_OpenFolderError"], ex.Message), MessageBoxIcon.Error);
-        }
-    }
-
-    private IEnumerable<string> EnumerateFilesSafe(string path)
-    {
-        var stack = new Stack<string>();
-        stack.Push(path);
-
-        while (stack.Count > 0)
-        {
-            var current = stack.Pop();
-            IEnumerable<string>? files = null;
-            try
-            {
-                files = Directory.EnumerateFiles(current);
-            }
-            catch (Exception ex)
-            {
-                Logger.Log($"Error enumerating files in {current}: {ex.Message}", LogLevel.Warning);
-            }
-
-            if (files != null)
-            {
-                foreach (var f in files) yield return f;
-            }
-
-            IEnumerable<string>? dirs = null;
-            try
-            {
-                dirs = Directory.EnumerateDirectories(current);
-            }
-            catch
-            {
-                // Ignore directory access errors
-            }
-
-            if (dirs != null)
-            {
-                foreach (var d in dirs) stack.Push(d);
-            }
-        }
-    }
-
-    public abstract Task AddFilesFromPaths(IEnumerable<string> filePaths);
-
-    protected abstract IEnumerable<FileItem> GetFailedItems();
-    protected virtual string GetClearFailedLogMessage(int count) => $"Cleared {count} failed/cancelled items.";
-
-    [RelayCommand(CanExecute = nameof(CanModifyList))]
-    protected virtual async Task ClearFailedAsync()
-    {
-        var failedItems = GetFailedItems().ToList();
-        if (failedItems.Count == 0) return;
-
-        foreach (var item in failedItems)
-        {
-            item.Cts?.Cancel();
-            item.Cts?.Dispose();
-            item.IsDeleted = true;
-            Files.Remove(item);
-        }
-
-        lock (ListLock)
-        {
-            foreach (var item in failedItems)
-            {
-                AllFiles.Remove(item);
-                ExistingPaths.Remove(item.FilePath);
-            }
-        }
-
-        OnPropertyChanged(nameof(HasFiles));
-        OnPropertyChanged(nameof(TotalFilesText));
-        NotifyCommands();
-        Logger.Log(GetClearFailedLogMessage(failedItems.Count));
-
-        await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"],
-            string.Format(L["Msg_ClearedFailed"], failedItems.Count), MessageBoxIcon.Information);
-    }
-
-    protected async Task RunOnUIAsync(Func<Task> action)
-    {
-        if (Application.Current == null)
-        {
-            await action();
+            await Services.Dialogs.ShowAsync(L["Msg_Error"], L.Format("Msg_FolderLimit", Settings.MaxFolderCount), DialogIcon.Warning);
             return;
         }
 
+        await AddPathsAsync(folders, fromFolderPicker: true);
+    }
+
+    protected virtual string PickFilesTitleKey => "Dialog_SelectFiles";
+
+    /// <summary>Adds files and folders (dropped, picked, or passed on the command line).</summary>
+    public async Task AddPathsAsync(IReadOnlyList<string> paths, bool fromFolderPicker = false)
+    {
+        if (paths.Count == 0) return;
+        if (!CanModify)
+        {
+            await Services.Dialogs.ShowAsync(L["Msg_Error"], L["Msg_BusyTryLater"], DialogIcon.Warning);
+            return;
+        }
+
+        IsImporting = true;
+        var report = new ImportReport();
         try
         {
-            if (Dispatcher.UIThread.CheckAccess())
+            var hasFolders = fromFolderPicker || paths.Any(Directory.Exists);
+            var maxFiles = hasFolders && Settings.IsMaxFileCountEnabled ? Settings.MaxFileCount : int.MaxValue;
+            var maxSize = Settings.MaxFileSizeBytes();
+            var options = new FileEnumerationOptions { IncludeHidden = Settings.IncludeHiddenFiles };
+            var known = new HashSet<string>(_byPath.Keys, _byPath.Comparer);
+
+            await Task.Run(async () =>
             {
-                await action();
+                var batch = new List<FileEntry>(UiBatchSize);
+                var accepted = 0;
+                foreach (var entry in FileEnumerator.Expand(paths, options, (path, ex) =>
+                         {
+                             lock (report) report.Errors.Add($"{Path.GetFileName(path)}: {ex.Message}");
+                         }))
+                {
+                    if (!known.Add(entry.FullPath))
+                    {
+                        report.Duplicates++;
+                        continue;
+                    }
+
+                    if (entry.Length > maxSize)
+                    {
+                        report.TooLarge.Add(Path.GetFileName(entry.FullPath));
+                        continue;
+                    }
+
+                    if (accepted >= maxFiles)
+                    {
+                        report.OverLimit++;
+                        continue;
+                    }
+
+                    accepted++;
+                    batch.Add(entry);
+                    if (batch.Count >= UiBatchSize)
+                    {
+                        await AddBatchAsync(batch, report).ConfigureAwait(false);
+                        batch = new List<FileEntry>(UiBatchSize);
+                    }
+                }
+
+                if (batch.Count > 0) await AddBatchAsync(batch, report).ConfigureAwait(false);
+            });
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Adding files failed");
+            report.Errors.Add(ex.Message);
+        }
+        finally
+        {
+            IsImporting = false;
+            OnPropertyChanged(nameof(HasItems));
+            OnPropertyChanged(nameof(TotalFilesText));
+        }
+
+        Logger.LogInformation("Added {Added} files ({Duplicates} duplicates, {TooLarge} too large, {OverLimit} over the limit, {Errors} errors)",
+            report.Added, report.Duplicates, report.TooLarge.Count, report.OverLimit, report.Errors.Count);
+        await ShowImportReportAsync(report);
+    }
+
+    private async Task AddBatchAsync(List<FileEntry> entries, ImportReport report)
+    {
+        var items = await CreateItemsAsync(entries, report).ConfigureAwait(false);
+        await Dispatcher.UIThread.InvokeAsync(() => AddItems(items, report));
+    }
+
+    /// <summary>Turns files into list items (runs on a background thread). Verify reads checksum files here.</summary>
+    protected abstract Task<IReadOnlyList<FileItem>> CreateItemsAsync(IReadOnlyList<FileEntry> files, ImportReport report);
+
+    /// <summary>Adds items, or merges them into existing rows for the same path (UI thread).</summary>
+    protected void AddItems(IEnumerable<FileItem> items, ImportReport report)
+    {
+        var added = new List<FileItem>();
+        foreach (var item in items)
+        {
+            if (_byPath.TryGetValue(item.FilePath, out var existing))
+            {
+                if (Merge(existing, item)) continue;
+                report.Duplicates++;
+                continue;
             }
-            else
+
+            _byPath[item.FilePath] = item;
+            _all.Add(item);
+            added.Add(item);
+        }
+
+        report.Added += added.Count;
+        var visible = added.Where(Matches).ToList();
+        if (visible.Count > 0) Items.AddRange(visible);
+        OnPropertyChanged(nameof(HasItems));
+        OnPropertyChanged(nameof(TotalFilesText));
+    }
+
+    /// <summary>Lets Verify copy an expected hash onto a row that already exists. Returns true when merged.</summary>
+    protected virtual bool Merge(FileItem existing, FileItem incoming) => false;
+
+    protected FileItem? FindItem(string path) => _byPath.GetValueOrDefault(path);
+
+    private async Task ShowImportReportAsync(ImportReport report)
+    {
+        var lines = new List<string>();
+        if (report.OverLimit > 0) lines.Add(L.Format("Msg_FileLimit", report.Added, report.OverLimit));
+        if (report.TooLarge.Count > 0)
+        {
+            var names = string.Join("\n", report.TooLarge.Take(10)) + (report.TooLarge.Count > 10 ? "\n…" : "");
+            lines.Add(L.Format("Msg_FileSizeLimitExceeded_Summary", report.TooLarge.Count, Settings.FileSizeLimitValue,
+                Settings.FileSizeLimitUnit, names));
+        }
+
+        if (report.Errors.Count > 0)
+            lines.Add(L.Format("Msg_ImportErrors", report.Errors.Count, string.Join("\n", report.Errors.Take(10))));
+
+        if (report.Added == 0 && lines.Count == 0 && report.Duplicates == 0) lines.Add(L["Msg_EmptyFolder"]);
+        if (lines.Count > 0)
+            await Services.Dialogs.ShowAsync(L["Msg_Result_Title"], string.Join("\n\n", lines),
+                report.Errors.Count > 0 ? DialogIcon.Warning : DialogIcon.Information);
+    }
+
+    // ------------------------------------------------------------------ list commands
+
+    [RelayCommand(CanExecute = nameof(CanModify))]
+    private async Task ClearListAsync()
+    {
+        if (_all.Count == 0) return;
+        if (_all.Count > 20 &&
+            !await Services.Dialogs.ConfirmAsync(L["Btn_Clear"], L.Format("Msg_ConfirmClear", _all.Count), DialogIcon.Warning))
+            return;
+
+        foreach (var item in _all) item.IsRemoved = true;
+        _all.Clear();
+        _byPath.Clear();
+        Items.Clear();
+        ResetBatchStats();
+        OnPropertyChanged(nameof(HasItems));
+        OnPropertyChanged(nameof(TotalFilesText));
+        Logger.LogInformation("List cleared");
+    }
+
+    [RelayCommand]
+    private void RemoveItem(FileItem? item)
+    {
+        if (item is null || item.IsProcessing) return;
+        item.Cancellation?.Cancel();
+        item.IsRemoved = true;
+        _all.Remove(item);
+        _byPath.Remove(item.FilePath);
+        Items.Remove(item);
+        OnPropertyChanged(nameof(HasItems));
+        OnPropertyChanged(nameof(TotalFilesText));
+    }
+
+    /// <summary>Delete key: removes the selected row.</summary>
+    [RelayCommand]
+    private void RemoveSelected()
+    {
+        if (CanModify && SelectedItem is { } item) RemoveItem(item);
+    }
+
+    [RelayCommand(CanExecute = nameof(CanModify))]
+    private void ClearResults()
+    {
+        foreach (var item in Items) ResetItem(item);
+        ResetBatchStats();
+        ApplyFilterNow();
+    }
+
+    [RelayCommand]
+    private void ClearItemResult(FileItem? item)
+    {
+        if (item is null || item.IsProcessing || !CanModify) return;
+        ResetItem(item);
+    }
+
+    protected virtual void ResetItem(FileItem item) => item.ResetResult();
+
+    [RelayCommand(CanExecute = nameof(CanModify))]
+    private void ClearFailed()
+    {
+        var failed = _all.Where(IsFailedForCleanup).ToList();
+        foreach (var item in failed)
+        {
+            item.IsRemoved = true;
+            _all.Remove(item);
+            _byPath.Remove(item.FilePath);
+            Items.Remove(item);
+        }
+
+        OnPropertyChanged(nameof(HasItems));
+        OnPropertyChanged(nameof(TotalFilesText));
+        Logger.LogInformation("Removed {Count} failed or cancelled items", failed.Count);
+    }
+
+    protected virtual bool IsFailedForCleanup(FileItem item) => item.State is FileStatus.Failure or FileStatus.Cancelled;
+
+    [RelayCommand(CanExecute = nameof(CanRunAll))]
+    private Task RunAllAsync() => RunBatchAsync(Items.Where(i => !i.IsProcessing).ToList());
+
+    private bool CanRunAll() => CanModify && Items.Count > 0;
+
+    [RelayCommand(CanExecute = nameof(IsBusy))]
+    private void Cancel()
+    {
+        Logger.LogInformation("Cancel requested");
+        _batchCts?.Cancel();
+    }
+
+    /// <summary>Row button: starts this file, or stops it while it is being processed.</summary>
+    [RelayCommand]
+    private async Task RunItemAsync(FileItem? item)
+    {
+        if (item is null) return;
+        if (item.IsProcessing)
+        {
+            item.Cancellation?.Cancel();
+            return;
+        }
+
+        if (CanModify) await RunBatchAsync([item]);
+    }
+
+    [RelayCommand]
+    private async Task CopyTextAsync(string? text)
+    {
+        if (!string.IsNullOrEmpty(text)) await Services.Clipboard.SetTextAsync(text);
+    }
+
+    // ------------------------------------------------------------------ batch processing
+
+    /// <summary>Prepares items before hashing (e.g. Verify loads sidecar files); returns the items to hash.</summary>
+    protected virtual Task<IReadOnlyList<FileItem>> PrepareAsync(IReadOnlyList<FileItem> items) => Task.FromResult(items);
+
+    protected abstract HashJob? CreateJob(FileItem item);
+
+    /// <summary>Applies a finished job to its row (UI thread).</summary>
+    protected abstract void ApplyResult(FileItem item, HashJobResult result);
+
+    protected virtual ItemStatus QueuedStatus => ItemStatus.Queued;
+
+    protected async Task RunBatchAsync(IReadOnlyList<FileItem> items)
+    {
+        if (items.Count == 0 || !CanModify) return;
+        IsBusy = true;
+        ResetBatchStats();
+        _batchCts = new CancellationTokenSource();
+        try
+        {
+            var toHash = await PrepareAsync(items);
+            foreach (var item in toHash)
             {
-                await Dispatcher.UIThread.InvokeAsync(action, DispatcherPriority.Background);
+                item.ResetResult(QueuedStatus);
+                item.Cancellation?.Dispose();
+                item.Cancellation = CancellationTokenSource.CreateLinkedTokenSource(_batchCts.Token);
+            }
+
+            QueuedCount = toHash.Count;
+            _batchBytesTotal = toHash.Sum(i => i.Size);
+            _batchClock = Stopwatch.StartNew();
+            StartPump();
+            Logger.LogInformation("Processing {Count} files ({Bytes})", toHash.Count, ByteSize.Format(_batchBytesTotal));
+
+            var processor = new BatchProcessor(Services.Engine, new BatchOptions
+            {
+                MaxParallelFiles = Settings.MaxParallelFiles,
+                SequentialDisk = Settings.OptimizeForHdd,
+                PerFileTimeout = Settings.IsFileTimeoutEnabled ? TimeSpan.FromSeconds(Settings.FileTimeoutSeconds) : null
+            });
+            await Task.Run(() => processor.RunAsync(toHash, CreateJob, this, _batchCts.Token));
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Batch failed");
+            await Services.Dialogs.ShowErrorAsync(L["Msg_Error"], L.Format("Msg_UnexpectedError", ex.Message), ex.ToString());
+        }
+        finally
+        {
+            StopPump();
+            DrainEvents();
+            _batchClock.Stop();
+            UpdateBatchTexts();
+            IsBusy = false;
+            _batchCts.Dispose();
+            _batchCts = null;
+            ApplyFilterNow();
+        }
+
+        Logger.LogInformation("Finished in {Elapsed}: {Succeeded} succeeded, {Failed} failed, {Cancelled} cancelled",
+            _batchClock.Elapsed, SucceededCount, FailedCount, CancelledCount);
+        await OnBatchFinishedAsync(items);
+    }
+
+    /// <summary>Shows the result summary; Verify also offers the elevated restart on access errors.</summary>
+    protected virtual async Task OnBatchFinishedAsync(IReadOnlyList<FileItem> items)
+    {
+        if (items.Count <= 1) return;
+        var icon = FailedCount > 0 || CancelledCount > 0 ? DialogIcon.Warning : DialogIcon.Success;
+        var message = $"{L.Format("Msg_Result_Content", SucceededCount, FailedCount, CancelledCount)}\n{L.Format("Msg_TaskDuration", FormatClock(BatchElapsed))}";
+        await Services.Dialogs.ShowAsync(L["Msg_Result_Title"], message, icon);
+        await OfferElevationAsync(items);
+    }
+
+    protected async Task OfferElevationAsync(IReadOnlyList<FileItem> items)
+    {
+        if (!Elevation.CanRestartElevated || !items.Any(i => i.Status == ItemStatus.AccessDenied)) return;
+        if (!await Services.Dialogs.ConfirmAsync(L["Btn_RestartAdmin"], L["Msg_AccessDeniedRestart"], DialogIcon.Question)) return;
+        if (Elevation.RestartElevated(ElevationVerb, _all.Select(i => SourcePathForRestart(i)).Distinct().ToList()))
+            RequestShutdown?.Invoke(this, EventArgs.Empty);
+    }
+
+    protected abstract ActivationVerb ElevationVerb { get; }
+
+    protected virtual string SourcePathForRestart(FileItem item) => item.SourceChecksumFile ?? item.FilePath;
+
+    /// <summary>Raised when the app should close (after handing over to an elevated instance).</summary>
+    public event EventHandler? RequestShutdown;
+
+    void IHashJobObserver<FileItem>.OnStarted(FileItem item) => _events.Enqueue((item, null));
+
+    void IHashJobObserver<FileItem>.OnProgress(FileItem item, long bytesRead)
+    {
+        item.AddBytesRead(bytesRead);
+        Interlocked.Add(ref _batchBytesDone, bytesRead);
+    }
+
+    void IHashJobObserver<FileItem>.OnCompleted(FileItem item, HashJobResult result) => _events.Enqueue((item, result));
+
+    private void StartPump()
+    {
+        _pump ??= new DispatcherTimer(TimeSpan.FromMilliseconds(100), DispatcherPriority.Background, (_, _) =>
+        {
+            DrainEvents();
+            UpdateBatchTexts();
+        });
+        _pump.Start();
+    }
+
+    private void StopPump() => _pump?.Stop();
+
+    private void DrainEvents()
+    {
+        var budget = 2000;
+        while (budget-- > 0 && _events.TryDequeue(out var e))
+        {
+            if (e.Result is null)
+            {
+                e.Item.IsProcessing = true;
+                e.Item.State = FileStatus.Processing;
+                e.Item.SetStatus(ItemStatus.Hashing, e.Item.Algorithm.ToString());
+                e.Item.ShowProgress = e.Item.Size >= FileItem.ProgressThreshold;
+                _active.Add(e.Item);
+                continue;
+            }
+
+            _active.Remove(e.Item);
+            e.Item.IsProcessing = false;
+            e.Item.ShowProgress = false;
+            e.Item.Duration = FileItem.FormatDuration(e.Result.Elapsed);
+            ApplyResult(e.Item, e.Result);
+            ProcessedCount++;
+            switch (e.Item.State)
+            {
+                case FileStatus.Success:
+                    SucceededCount++;
+                    break;
+                case FileStatus.Cancelled:
+                    CancelledCount++;
+                    break;
+                default:
+                    FailedCount++;
+                    break;
             }
         }
-        catch
+
+        foreach (var item in _active)
         {
-            await action();
+            if (item.ShowProgress && item.Size > 0) item.Progress = Math.Min(1, (double)item.BytesRead / item.Size);
         }
     }
 
-    public bool ContainsPath(string path)
+    private void ResetBatchStats()
     {
-        lock (ListLock)
+        ProcessedCount = QueuedCount = SucceededCount = FailedCount = CancelledCount = 0;
+        _batchBytesDone = 0;
+        _batchBytesTotal = 0;
+        ProgressValue = 0;
+        ProgressText = DetailText = RemainingText = SpeedText = string.Empty;
+    }
+
+    private void UpdateBatchTexts()
+    {
+        var total = QueuedCount;
+        if (total == 0) return;
+        var done = Interlocked.Read(ref _batchBytesDone);
+        ProgressValue = _batchBytesTotal > 0 ? Math.Min(1, (double)done / _batchBytesTotal) : (double)ProcessedCount / total;
+        ProgressText = L.Format("Lbl_ProgressStats", ProcessedCount, total, ProgressValue * 100);
+        DetailText = L.Format("Lbl_DetailedStats", SucceededCount, Percent(SucceededCount), FailedCount, Percent(FailedCount),
+            CancelledCount, Percent(CancelledCount));
+
+        var elapsed = _batchClock.Elapsed.TotalSeconds;
+        var rate = elapsed > 0.5 ? done / elapsed : 0;
+        SpeedText = Settings.ShowReadWriteSpeed && rate > 0 ? L.Format("Lbl_ReadSpeed", ByteSize.Format((long)rate)) : string.Empty;
+        RemainingText = IsBusy && rate > 0 && done < _batchBytesTotal
+            ? L.Format("Msg_EstimatedTime", FormatClock(TimeSpan.FromSeconds((_batchBytesTotal - done) / rate)))
+            : IsBusy ? L["Msg_TimeUnknown"] : string.Empty;
+
+        double Percent(int count) => total > 0 ? count * 100.0 / total : 0;
+    }
+
+    protected static string FormatClock(TimeSpan time) => $"{(int)time.TotalHours}:{time.Minutes:D2}:{time.Seconds:D2}";
+
+    protected TimeSpan BatchElapsed => _batchClock.Elapsed;
+
+    /// <summary>Maps a failed job to the row's status.</summary>
+    protected static void ApplyFailure(FileItem item, HashJobResult result)
+    {
+        item.IsMatch = result.Status == HashJobStatus.Succeeded ? item.IsMatch : false;
+        switch (result.Status)
         {
-            return ExistingPaths.Contains(path);
+            case HashJobStatus.Cancelled:
+                item.State = FileStatus.Cancelled;
+                item.IsMatch = null;
+                item.SetStatus(ItemStatus.Cancelled);
+                return;
+            case HashJobStatus.TimedOut:
+                item.State = FileStatus.Cancelled;
+                item.IsMatch = null;
+                item.SetStatus(ItemStatus.TimedOut);
+                return;
         }
+
+        item.State = FileStatus.Failure;
+        item.SetStatus(FileErrors.Classify(result.Error) switch
+        {
+            FileErrorKind.NotFound => ItemStatus.NotFound,
+            FileErrorKind.AccessDenied => ItemStatus.AccessDenied,
+            FileErrorKind.InUse => ItemStatus.InUse,
+            _ => ItemStatus.Failed
+        }, result.Error?.Message);
     }
 }

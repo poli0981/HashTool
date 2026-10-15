@@ -10,10 +10,11 @@ using Xunit;
 
 namespace HashTool.Core.Tests.Hashing;
 
-public sealed class HashServiceTests : IDisposable
+/// <summary>Published test vectors for every algorithm, computed through files on disk.</summary>
+public sealed class KnownAnswerTests : IDisposable
 {
     private readonly DirectoryInfo _dir = Directory.CreateTempSubdirectory("hashtool-tests-");
-    private readonly HashService _service = new();
+    private readonly HashEngine _engine = new(new HashEngineOptions { BufferSize = 4096 });
 
     public void Dispose() => _dir.Delete(recursive: true);
 
@@ -45,7 +46,7 @@ public sealed class HashServiceTests : IDisposable
     {
         var path = WriteFile(Encoding.ASCII.GetBytes(input));
 
-        var actual = await _service.ComputeHashAsync(path, type, TestContext.Current.CancellationToken);
+        var actual = (await _engine.ComputeFileAsync(path, type, cancellationToken: TestContext.Current.CancellationToken)).ToHex();
 
         Assert.Equal(expected, actual);
     }
@@ -56,7 +57,7 @@ public sealed class HashServiceTests : IDisposable
         // 1.1.x printed the little-endian bytes (2639F4CB); every other tool prints the CRC check value CBF43926.
         var path = WriteFile("123456789"u8.ToArray());
 
-        var actual = await _service.ComputeHashAsync(path, HashType.CRC32, TestContext.Current.CancellationToken);
+        var actual = (await _engine.ComputeFileAsync(path, HashType.CRC32, cancellationToken: TestContext.Current.CancellationToken)).ToHex();
 
         Assert.Equal("CBF43926", actual);
     }
@@ -72,7 +73,8 @@ public sealed class HashServiceTests : IDisposable
         new Random(42).NextBytes(content);
         var path = WriteFile(content);
 
-        var actual = await _service.ComputeHashAsync(path, type, TestContext.Current.CancellationToken, bufferSize);
+        var engine = bufferSize is { } size ? new HashEngine(new HashEngineOptions { BufferSize = size }) : new HashEngine();
+        var actual = (await engine.ComputeFileAsync(path, type, cancellationToken: TestContext.Current.CancellationToken)).ToHex();
 
         var expected = type switch
         {
@@ -91,8 +93,8 @@ public sealed class HashServiceTests : IDisposable
         var path = WriteFile(content);
         long total = 0;
 
-        await _service.ComputeHashAsync(path, HashType.SHA256, TestContext.Current.CancellationToken, 64 * 1024,
-            read => Interlocked.Add(ref total, read));
+        await _engine.ComputeFileAsync(path, HashType.SHA256, read => Interlocked.Add(ref total, read),
+            TestContext.Current.CancellationToken);
 
         Assert.Equal(content.Length, total);
     }
@@ -105,7 +107,7 @@ public sealed class HashServiceTests : IDisposable
         await cts.CancelAsync();
 
         await Assert.ThrowsAnyAsync<OperationCanceledException>(
-            () => _service.ComputeHashAsync(path, HashType.SHA256, cts.Token));
+            () => _engine.ComputeFileAsync(path, HashType.SHA256, cancellationToken: cts.Token));
     }
 
     [Fact]
@@ -114,6 +116,6 @@ public sealed class HashServiceTests : IDisposable
         var path = Path.Combine(_dir.FullName, "missing.bin");
 
         await Assert.ThrowsAsync<FileNotFoundException>(
-            () => _service.ComputeHashAsync(path, HashType.SHA256, TestContext.Current.CancellationToken));
+            () => _engine.ComputeFileAsync(path, HashType.SHA256, cancellationToken: TestContext.Current.CancellationToken));
     }
 }

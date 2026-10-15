@@ -1,55 +1,120 @@
+using System;
+using System.IO;
 using System.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
 using HashTool.App.Models;
-using HashTool.App.Services;
+using HashTool.Core.Hashing;
 
 namespace HashTool.App.ViewModels;
 
-public partial class FileItem : ObservableObject
+/// <summary>What the status column shows. The text is looked up when displayed, so it follows language changes.</summary>
+public enum ItemStatus
 {
-    // Check Hash
-    [ObservableProperty] private string _expectedHash = "";
+    Ready,
+    Queued,
+    Hashing,
+    Done,
+    Saved,
+    Failed,
+    NotFound,
+    AccessDenied,
+    InUse,
+    TimedOut,
+    Cancelled,
+    Waiting,
+    Valid,
+    ValidLegacyCrc,
+    Mismatch,
+    LengthMismatch,
+    MissingHash,
+    FromChecksumFile,
+    HashLoaded,
+    NoHashInFile,
+    UnreadableHashFile
+}
 
-    [ObservableProperty] private string _fileName = "";
-    [ObservableProperty] private string _filePath = "";
-    [ObservableProperty] private string _fileSize = "";
-    [ObservableProperty] private bool _hasSpecificAlgorithm;
-    [ObservableProperty] private bool _isCancelled;
+/// <summary>One file in the Create or Verify list.</summary>
+public sealed partial class FileItem : ObservableObject
+{
+    /// <summary>Files at least this large show a per-file progress bar while hashing.</summary>
+    public const long ProgressThreshold = 64L * 1024 * 1024;
+
+    private long _bytesRead;
+
+    public FileItem(string path, long size, HashType algorithm)
+    {
+        FilePath = path;
+        FileName = Path.GetFileName(path);
+        DirectoryName = Path.GetDirectoryName(path) ?? string.Empty;
+        Size = size;
+        _algorithm = algorithm;
+    }
+
+    public string FilePath { get; }
+
+    public string FileName { get; }
+
+    public string DirectoryName { get; }
+
+    public long Size { get; }
+
+    public string SizeText => Core.ByteSize.Format(Size);
+
+    [ObservableProperty] private HashType _algorithm;
+
+    /// <summary>The algorithm came from a checksum file (BSD tag, extension) and is not a guess.</summary>
+    [ObservableProperty] private bool _isAlgorithmKnown;
+
+    [ObservableProperty] private string _resultHash = string.Empty;
+    [ObservableProperty] private string _expectedHash = string.Empty;
+    [ObservableProperty] private FileStatus _state = FileStatus.Ready;
+    [ObservableProperty] private ItemStatus _status = ItemStatus.Ready;
+
+    /// <summary>Extra status information, e.g. an error message or an algorithm name.</summary>
+    [ObservableProperty] private string? _statusDetail;
+
     [ObservableProperty] private bool? _isMatch;
+    [ObservableProperty] private double _progress;
+    [ObservableProperty] private bool _showProgress;
+    [ObservableProperty] private string _duration = string.Empty;
+    [ObservableProperty] private bool _isRevealed;
     [ObservableProperty] private bool _isProcessing;
 
-    // Reveal/Hide Expected Hash
-    [ObservableProperty] private bool _isRevealed;
-    [ObservableProperty] private string _processDuration = "";
-    [ObservableProperty] private FileStatus _processingState = FileStatus.Ready;
-    [ObservableProperty] private long _rawSizeBytes;
-    [ObservableProperty] private string _resultHash = "";
+    /// <summary>Checksum file the expected hash was read from, if any.</summary>
+    public string? SourceChecksumFile { get; set; }
 
-    // Algorithm Select
-    [ObservableProperty] private HashType _selectedAlgorithm = HashType.SHA256;
-    [ObservableProperty] private string _status;
+    public bool IsRemoved { get; set; }
 
-    public FileItem()
+    internal CancellationTokenSource? Cancellation { get; set; }
+
+    internal long BytesRead => Interlocked.Read(ref _bytesRead);
+
+    internal void AddBytesRead(long count) => Interlocked.Add(ref _bytesRead, count);
+
+    internal void ResetProgress()
     {
-        _status = L["Lbl_Status_Ready"];
+        Interlocked.Exchange(ref _bytesRead, 0);
+        Progress = 0;
+        ShowProgress = false;
     }
 
-    private LocalizationService L => LocalizationService.Instance;
-
-    public CancellationTokenSource? Cts { get; set; }
-    public bool IsDeleted { get; set; }
-
-    public static string FormatSize(long bytes)
+    public void SetStatus(ItemStatus status, string? detail = null)
     {
-        string[] sizes = { "B", "KB", "MB", "GB", "TB" };
-        double len = bytes;
-        var order = 0;
-        while (len >= AppConstants.OneKB && order < sizes.Length - 1)
-        {
-            order++;
-            len /= AppConstants.OneKB;
-        }
-
-        return $"{len:0.##} {sizes[order]}";
+        StatusDetail = detail;
+        Status = status;
     }
+
+    /// <summary>Clears computed results so the item can be processed again.</summary>
+    public void ResetResult(ItemStatus status = ItemStatus.Ready)
+    {
+        ResultHash = string.Empty;
+        IsMatch = null;
+        Duration = string.Empty;
+        State = FileStatus.Ready;
+        ResetProgress();
+        SetStatus(status);
+    }
+
+    internal static string FormatDuration(TimeSpan elapsed) =>
+        elapsed.TotalSeconds < 1 ? $"{elapsed.TotalMilliseconds:0} ms" : $"{elapsed.TotalSeconds:0.00} s";
 }

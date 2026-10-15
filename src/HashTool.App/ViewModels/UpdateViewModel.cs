@@ -1,235 +1,230 @@
 using System;
-using System.Collections.ObjectModel;
+using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
-using Avalonia;
-using Avalonia.Controls.ApplicationLifetimes;
+using Avalonia.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using HashTool.App.Services;
-using HashTool.App.Views;
+using Microsoft.Extensions.Logging;
 using Velopack;
 
 namespace HashTool.App.ViewModels;
 
-public partial class UpdateViewModel : ObservableObject
+public enum UpdateState
 {
-    private readonly UpdateService _updateService = UpdateService.Instance;
-    [ObservableProperty] private ObservableCollection<string> _availableVersions = new();
+    Idle,
+    Checking,
+    UpToDate,
+    Available,
+    Downloading,
+    ReadyToInstall,
+    NotInstalled,
+    Error
+}
 
-    [ObservableProperty] private string _currentVersionText;
+/// <summary>The Update page and the once-a-day background check.</summary>
+public sealed partial class UpdateViewModel : ObservableObject
+{
+    private static readonly TimeSpan AutomaticCheckInterval = TimeSpan.FromHours(24);
+
+    private readonly UpdateService _updates;
+    private readonly SettingsService _settings;
+    private readonly LocalizationService _localizationService;
+    private readonly ILauncherService _launcher;
+    private readonly ILogger<UpdateViewModel> _logger;
+    private UpdateInfo? _update;
+    private CancellationTokenSource? _downloadCts;
+
+    [ObservableProperty] private LocalizationProxy _localization;
+
+    [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(StatusText), nameof(IsChecking), nameof(IsDownloading), nameof(CanInstall), nameof(CanCheck))]
+    [NotifyCanExecuteChangedFor(nameof(CheckCommand), nameof(InstallCommand), nameof(InstallOnExitCommand))]
+    private UpdateState _state = UpdateState.Idle;
+
+    [ObservableProperty] private string? _errorDetail;
+    [ObservableProperty] private string? _availableVersion;
+    [ObservableProperty] private string? _releaseNotes;
     [ObservableProperty] private int _downloadProgress;
-    [ObservableProperty] private bool _isChecking;
-    [ObservableProperty] private bool _isDevChannelEnabled = true;
-    [ObservableProperty] private bool _isDownloading;
-    [ObservableProperty] private bool _isUpdateAvailable;
-    [ObservableProperty] private LocalizationProxy _localization = new(LocalizationService.Instance);
 
-    [ObservableProperty] private int _selectedChannelIndex;
-    [ObservableProperty] private string _statusMessage;
-
-    public UpdateViewModel()
+    public UpdateViewModel(UpdateService updates, SettingsService settings, LocalizationService localization, ILauncherService launcher,
+        ILogger<UpdateViewModel> logger)
     {
-        CurrentVersionText = string.Format(L["Lbl_CurrentVersion"], _updateService.CurrentVersion);
-        StatusMessage = L["Lbl_Status_Ready"];
-
-        LocalizationService.Instance.PropertyChanged += (s, e) =>
+        _updates = updates;
+        _settings = settings;
+        _localizationService = localization;
+        _launcher = launcher;
+        _logger = logger;
+        _localization = new LocalizationProxy(localization);
+        localization.LanguageChanged += (_, _) =>
         {
-            if (e.PropertyName == "Item[]")
-            {
-                CurrentVersionText = string.Format(L["Lbl_CurrentVersion"], _updateService.CurrentVersion);
-                Localization = new LocalizationProxy(LocalizationService.Instance);
-            }
+            Localization = new LocalizationProxy(localization);
+            OnPropertyChanged(nameof(StatusText));
+            OnPropertyChanged(nameof(CurrentVersionText));
         };
-
-        CheckPreReleasesAvailability();
+        // The same option is also on the Settings page.
+        settings.Changed += (_, _) => OnPropertyChanged(nameof(CheckOnStartup));
+        if (!updates.IsInstalled) _state = UpdateState.NotInstalled;
     }
 
-    private LocalizationService L => LocalizationService.Instance;
-    private LoggerService Logger => LoggerService.Instance;
+    /// <summary>Raised when an update is found by the background check (the main window shows a banner).</summary>
+    public event EventHandler? UpdateFound;
 
-    private async void CheckPreReleasesAvailability()
+    private LocalizationService L => _localizationService;
+
+    public string CurrentVersionText => L.Format("Lbl_CurrentVersion", _updates.CurrentVersion);
+
+    public bool IsChecking => State == UpdateState.Checking;
+
+    public bool IsDownloading => State == UpdateState.Downloading;
+
+    public bool CanCheck => State is not (UpdateState.Checking or UpdateState.Downloading or UpdateState.NotInstalled);
+
+    public bool CanInstall => State is UpdateState.Available or UpdateState.ReadyToInstall;
+
+    public bool CheckOnStartup
     {
-        IsDevChannelEnabled = await _updateService.HasPreReleasesAsync();
+        get => _settings.Current.CheckForUpdatesOnStartup;
+        set
+        {
+            _settings.Update(s => s.CheckForUpdatesOnStartup = value);
+            OnPropertyChanged();
+        }
     }
 
-    async partial void OnSelectedChannelIndexChanged(int value)
+    public string StatusText => State switch
     {
-        if (value == 1) // Developer Channel
-        {
-            if (!IsDevChannelEnabled)
-            {
-                SelectedChannelIndex = 0;
-                await MessageBoxHelper.ShowAsync(L["Msg_Error"], L["Msg_NoPreRelease"], MessageBoxIcon.Warning);
-                return;
-            }
+        UpdateState.Checking => L["Status_Checking"],
+        UpdateState.UpToDate => L["Status_Latest"],
+        UpdateState.Available => L.Format("Msg_UpdateAvailableBanner", AvailableVersion),
+        UpdateState.Downloading => L.Format("Status_Downloading", DownloadProgress),
+        UpdateState.ReadyToInstall => L["Status_ReadyToInstall"],
+        UpdateState.NotInstalled => L["Msg_UpdatesUnavailable"],
+        UpdateState.Error => L.Format("Status_CheckError", ErrorDetail),
+        _ => L["Lbl_Status_Ready"]
+    };
 
-            var accepted = await ShowDisclaimer();
-            if (!accepted)
-            {
-                SelectedChannelIndex = 0;
-                return;
-            }
+    partial void OnDownloadProgressChanged(int value) => OnPropertyChanged(nameof(StatusText));
 
-            Logger.Log("Switched to Developer Channel.", LogLevel.Warning);
-        }
-        else
-        {
-            Logger.Log("Switched to Stable Channel.");
-        }
+    /// <summary>Checks quietly at most once a day when enabled (never in CI or smoke tests).</summary>
+    public async Task CheckInBackgroundIfDueAsync()
+    {
+        var settings = _settings.Current;
+        if (!settings.CheckForUpdatesOnStartup || !_updates.IsInstalled || Environment.GetEnvironmentVariable("CI") is not null) return;
+        if (settings.LastUpdateCheck is { } last && DateTimeOffset.UtcNow - last < AutomaticCheckInterval) return;
 
-        await CheckUpdate();
+        await CheckCoreAsync(interactive: false);
+        if (State == UpdateState.Available) UpdateFound?.Invoke(this, EventArgs.Empty);
     }
 
-    private async Task<bool> ShowDisclaimer()
+    [RelayCommand(CanExecute = nameof(CanCheck))]
+    private Task CheckAsync() => CheckCoreAsync(interactive: true);
+
+    private async Task CheckCoreAsync(bool interactive)
     {
-        if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
+        State = UpdateState.Checking;
+        ErrorDetail = null;
+        var result = await _updates.CheckAsync();
+        _settings.Update(s => s.LastUpdateCheck = DateTimeOffset.UtcNow);
+
+        switch (result.Status)
         {
-            if (desktop.MainWindow == null) return false;
-
-            var dialog = new DisclaimerWindow();
-            await dialog.ShowDialog(desktop.MainWindow);
-            return dialog.IsAccepted;
+            case UpdateCheckStatus.UpToDate:
+                State = UpdateState.UpToDate;
+                break;
+            case UpdateCheckStatus.UpdateAvailable:
+                _update = result.Update;
+                AvailableVersion = result.Version;
+                ReleaseNotes = ToPlainText(result.ReleaseNotes);
+                State = UpdateState.Available;
+                break;
+            case UpdateCheckStatus.NotInstalled:
+                State = UpdateState.NotInstalled;
+                break;
+            default:
+                ErrorDetail = result.Status switch
+                {
+                    UpdateCheckStatus.NetworkError => L["Error_Network"],
+                    UpdateCheckStatus.RateLimited => L["Error_ApiLimit"],
+                    _ => result.Error?.Message
+                };
+                State = UpdateState.Error;
+                if (!interactive) _logger.LogInformation("Background update check failed: {Status}", result.Status);
+                break;
         }
+    }
 
-        return false;
+    [RelayCommand(CanExecute = nameof(CanInstall))]
+    private async Task InstallAsync()
+    {
+        if (await DownloadAsync() && _update is not null) _updates.ApplyAndRestart(_update);
+    }
+
+    [RelayCommand(CanExecute = nameof(CanInstall))]
+    private async Task InstallOnExitAsync()
+    {
+        if (await DownloadAsync() && _update is not null)
+        {
+            _updates.ApplyOnExit(_update);
+            State = UpdateState.ReadyToInstall;
+        }
     }
 
     [RelayCommand]
-    private async Task CheckUpdate()
-    {
-        Logger.Log("Checking for updates...");
-        IsChecking = true;
-        StatusMessage = L["Status_Checking"];
-        IsUpdateAvailable = false;
+    private void CancelDownload() => _downloadCts?.Cancel();
 
+    [RelayCommand]
+    private Task OpenReleasePageAsync() =>
+        _launcher.OpenUrlAsync(AvailableVersion is null
+            ? $"{UpdateService.RepositoryUrl}/releases"
+            : $"{UpdateService.RepositoryUrl}/releases/tag/{Uri.EscapeDataString(AvailableVersion)}");
+
+    private async Task<bool> DownloadAsync()
+    {
+        if (_update is null) return false;
+        if (State == UpdateState.ReadyToInstall) return true;
+
+        State = UpdateState.Downloading;
+        DownloadProgress = 0;
+        _downloadCts = new CancellationTokenSource();
         try
         {
-            var netStatus = await _updateService.CheckConnectivityAsync();
-
-            if (netStatus != NetworkStatus.Connected)
-            {
-                var errorKey = netStatus switch
-                {
-                    NetworkStatus.NoConnection => "Error_Network",
-                    NetworkStatus.ServerError => "Error_Server",
-                    NetworkStatus.ClientError => "Error_Client",
-                    NetworkStatus.ApiLimitExceeded => "Error_ApiLimit",
-                    _ => "Msg_Error"
-                };
-
-                var msg = L[errorKey];
-                Logger.Log($"Network check failed: {netStatus}", LogLevel.Error);
-                StatusMessage = string.Format(L["Status_CheckError"], msg);
-                await MessageBoxHelper.ShowAsync(L["Msg_Error"], msg, MessageBoxIcon.Error);
-                return;
-            }
-
-            var isDev = SelectedChannelIndex == 1;
-            var updateInfo = await _updateService.CheckForUpdatesAsync(isDev);
-
-            if (updateInfo != null)
-            {
-                var version = updateInfo.TargetFullRelease.Version;
-                var versionString = version.ToString();
-                var isPreRelease = versionString.Contains('-'); // Simple check for pre-release tag
-
-                if (isDev)
-                {
-                    if (!isPreRelease)
-                    {
-                        Logger.Log(
-                            $"Dev Mode: Update found {versionString} is not a pre-release. Keeping current version.");
-                        StatusMessage = L["Msg_NoPreRelease"];
-                        await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], L["Msg_NoPreRelease"],
-                            MessageBoxIcon.Information);
-                        return;
-                    }
-
-                    // Pre-release available
-                    IsUpdateAvailable = true;
-                    StatusMessage = L["Status_NewVersion"];
-                    Logger.Log($"New pre-release found: {versionString}", LogLevel.Warning);
-
-                    var notes = await _updateService.GetReleaseNotesAsync(versionString);
-                    var result = await MessageBoxHelper.ShowConfirmationAsync(L["Title_Disclaimer"],
-                        string.Format(L["Msg_PreReleaseWarning"], versionString, notes), L["Btn_Install"], L["Btn_No"],
-                        MessageBoxIcon.Warning, true);
-
-                    if (result)
-                    {
-                        await InstallUpdate(updateInfo);
-                    }
-
-                    return;
-                }
-
-                // Stable Channel
-                IsUpdateAvailable = true;
-                StatusMessage = L["Status_NewVersion"];
-
-                Logger.Log($"New version found: {versionString}", LogLevel.Success);
-
-                var notesStable = await _updateService.GetReleaseNotesAsync(versionString);
-
-                var resultStable = await MessageBoxHelper.ShowConfirmationAsync(L["Msg_UpdateTitle"],
-                    string.Format(L["Msg_UpdateContent"], versionString, notesStable), L["Btn_Install"], L["Btn_No"],
-                    MessageBoxIcon.Question, true);
-
-                if (resultStable)
-                {
-                    await InstallUpdate(updateInfo);
-                }
-            }
-            else
-            {
-                if (isDev)
-                {
-                    StatusMessage = L["Msg_NoPreRelease"];
-                    Logger.Log("Dev Mode: No pre-release found.");
-                    await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], L["Msg_NoPreRelease"],
-                        MessageBoxIcon.Information);
-                }
-                else
-                {
-                    StatusMessage = L["Status_Latest"];
-                    Logger.Log("Application is up to date.");
-                    await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], L["Msg_NoUpdate"],
-                        MessageBoxIcon.Information);
-                }
-            }
+            // Velopack reports progress from a background thread.
+            await _updates.DownloadAsync(_update, p => Dispatcher.UIThread.Post(() => DownloadProgress = p), _downloadCts.Token);
+            State = UpdateState.ReadyToInstall;
+            return true;
+        }
+        catch (OperationCanceledException)
+        {
+            State = UpdateState.Available;
+            return false;
         }
         catch (Exception ex)
         {
-            StatusMessage = string.Format(L["Status_CheckError"], ex.Message);
-            Logger.Log($"Update check failed: {ex.Message}", LogLevel.Error);
+            _logger.LogError(ex, "Downloading the update failed");
+            ErrorDetail = ex.Message;
+            State = UpdateState.Error;
+            return false;
         }
         finally
         {
-            if (!IsDownloading)
-            {
-                IsChecking = false;
-            }
+            _downloadCts.Dispose();
+            _downloadCts = null;
         }
     }
 
-    private async Task InstallUpdate(UpdateInfo info)
+    /// <summary>Release notes are Markdown; show them as readable plain text.</summary>
+    internal static string? ToPlainText(string? markdown)
     {
-        StatusMessage = L["Status_Installing"];
-        IsChecking = true;
-        IsDownloading = true;
-        DownloadProgress = 0;
-        Logger.Log("Downloading update...");
-        try
-        {
-            await _updateService.DownloadUpdatesAsync(info, progress => { DownloadProgress = progress; });
-            _updateService.ApplyUpdatesAndRestart(info);
-        }
-        catch (Exception ex)
-        {
-            StatusMessage = string.Format(L["Status_InstallError"], ex.Message);
-            IsChecking = false;
-            IsDownloading = false;
-            Logger.Log($"Install failed: {ex.Message}", LogLevel.Error);
-        }
+        if (string.IsNullOrWhiteSpace(markdown)) return null;
+        var text = markdown.Replace("\r\n", "\n");
+        text = Regex.Replace(text, @"^#{1,6}\s*", "", RegexOptions.Multiline);
+        text = Regex.Replace(text, @"^\s*[-*+]\s+", "• ", RegexOptions.Multiline);
+        text = Regex.Replace(text, @"\*\*(.+?)\*\*|__(.+?)__", "$1$2");
+        text = Regex.Replace(text, @"`([^`]+)`", "$1");
+        text = Regex.Replace(text, @"\[([^\]]+)\]\([^)]+\)", "$1");
+        text = Regex.Replace(text, @"\n{3,}", "\n\n");
+        return text.Trim();
     }
 }

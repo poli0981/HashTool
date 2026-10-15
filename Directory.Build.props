@@ -13,6 +13,8 @@
         <Product>Hash Tool</Product>
         <Copyright>Copyright (c) 2026 poli0981</Copyright>
         <RepositoryUrl>https://github.com/poli0981/HashTool</RepositoryUrl>
+        <!-- Show "1.2.0", not "1.2.0+<commit>", in the app and in Velopack's version checks. -->
+        <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
 
         <Deterministic>true</Deterministic>
         <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>

@@ -90,38 +90,37 @@ public partial class HighlightTextBlock : UserControl
             return;
         }
 
-        int index = 0;
+        foreach (var (segment, isMatch) in Split(text, highlight.Trim()))
+        {
+            _textBlock.Inlines?.Add(isMatch
+                ? new Run { Text = segment, Foreground = HighlightBrush, FontWeight = FontWeight.Bold }
+                : new Run { Text = segment });
+        }
+    }
+
+    /// <summary>Splits <paramref name="text"/> into alternating plain and matching segments (case-insensitive).</summary>
+    internal static System.Collections.Generic.IEnumerable<(string Segment, bool IsMatch)> Split(string text, string highlight)
+    {
+        if (highlight.Length == 0)
+        {
+            yield return (text, false);
+            yield break;
+        }
+
+        // Same comparison as the list filter; a culture-aware match can be longer or shorter than the search text.
+        var compare = System.Globalization.CultureInfo.CurrentCulture.CompareInfo;
+        var index = 0;
         while (index < text.Length)
         {
-            int matchIndex = text.IndexOf(highlight, index, StringComparison.OrdinalIgnoreCase);
-            if (matchIndex == -1)
-            {
-                if (index < text.Length)
-                {
-                    _textBlock.Inlines?.Add(new Run { Text = text.Substring(index) });
-                }
-                break;
-            }
-
-            if (matchIndex > index)
-            {
-                _textBlock.Inlines?.Add(new Run { Text = text.Substring(index, matchIndex - index) });
-            }
-
-            var matchText = text.Substring(matchIndex, highlight.Length);
-            _textBlock.Inlines?.Add(new Run
-            {
-                Text = matchText,
-                Foreground = HighlightBrush,
-                FontWeight = FontWeight.Bold
-            });
-
-            index = matchIndex + highlight.Length;
+            var offset = compare.IndexOf(text.AsSpan(index), highlight, System.Globalization.CompareOptions.IgnoreCase, out var length);
+            if (offset < 0 || length == 0) break;
+            var match = index + offset;
+            if (match > index) yield return (text[index..match], false);
+            yield return (text.Substring(match, length), true);
+            index = match + length;
         }
 
-        if (index < text.Length)
-        {
-            _textBlock.Inlines?.Add(new Run { Text = text.Substring(index) });
-        }
+        // The tail after the last match is emitted exactly once (1.x appended it twice).
+        if (index < text.Length) yield return (text[index..], false);
     }
 }

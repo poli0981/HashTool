@@ -112,10 +112,19 @@ public sealed class SettingsStore
         }
     }
 
-    public async Task SaveAsync(AppSettings settings, CancellationToken cancellationToken = default)
+    /// <summary>Serialises settings in the on-disk format.</summary>
+    public static string Serialize(AppSettings settings)
     {
         ArgumentNullException.ThrowIfNull(settings);
-        var json = JsonSerializer.Serialize(settings, SettingsJsonContext.Default.AppSettings);
+        return JsonSerializer.Serialize(settings, SettingsJsonContext.Default.AppSettings);
+    }
+
+    public Task SaveAsync(AppSettings settings, CancellationToken cancellationToken = default) =>
+        SaveJsonAsync(Serialize(settings), cancellationToken);
+
+    /// <summary>Atomically writes JSON produced by <see cref="Serialize"/>, so callers can take the snapshot under their own lock.</summary>
+    public async Task SaveJsonAsync(string json, CancellationToken cancellationToken = default)
+    {
         await _gate.WaitAsync(cancellationToken).ConfigureAwait(false);
         try
         {
@@ -131,10 +140,10 @@ public sealed class SettingsStore
     }
 
     /// <summary>Synchronous save for shutdown paths.</summary>
-    public void Save(AppSettings settings)
+    public void Save(AppSettings settings) => SaveJson(Serialize(settings));
+
+    public void SaveJson(string json)
     {
-        ArgumentNullException.ThrowIfNull(settings);
-        var json = JsonSerializer.Serialize(settings, SettingsJsonContext.Default.AppSettings);
         _gate.Wait();
         try
         {

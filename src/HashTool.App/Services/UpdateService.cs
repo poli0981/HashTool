@@ -1,180 +1,154 @@
 using System;
-using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Reflection;
-using System.Text.Json.Nodes;
+using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 using Velopack;
 using Velopack.Sources;
 
 namespace HashTool.App.Services;
 
-public enum NetworkStatus
+public enum UpdateCheckStatus
 {
-    Connected,
-    NoConnection,
-    ClientError,
-    ServerError,
-    ApiLimitExceeded
+    UpToDate,
+    UpdateAvailable,
+
+    /// <summary>Running from a build that Velopack did not install (e.g. <c>dotnet run</c>): updates are unavailable.</summary>
+    NotInstalled,
+    NetworkError,
+    RateLimited,
+    Failed
 }
 
-public class UpdateService
+public sealed record UpdateCheckResult(UpdateCheckStatus Status, UpdateInfo? Update = null, string? Version = null,
+    string? ReleaseNotes = null, Exception? Error = null);
+
+/// <summary>Wraps Velopack's <see cref="UpdateManager"/> for the stable GitHub release channel.</summary>
+public sealed class UpdateService
 {
-    // URL GitHub Repo
-    private const string RepoUrl = "https://github.com/poli0981/HashTool";
-    private static UpdateService? _instance;
-    private readonly HttpClient _httpClient;
+    public const string RepositoryUrl = "https://github.com/poli0981/HashTool";
 
-    private UpdateManager? _manager;
+    private static readonly HttpClient Http = CreateHttpClient();
 
-    private UpdateService()
+    private readonly ILogger<UpdateService> _logger;
+    private readonly UpdateManager? _manager;
+
+    public UpdateService(ILogger<UpdateService> logger)
     {
-        _httpClient = new HttpClient();
-        _httpClient.Timeout = TimeSpan.FromSeconds(30);
-        var version = Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "1.0.0";
-        _httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("HashTool", version));
-
+        _logger = logger;
         try
         {
-            _manager = new UpdateManager(new GithubSource(RepoUrl, null, false));
+            _manager = new UpdateManager(new GithubSource(RepositoryUrl, null, false));
         }
-        catch
+        catch (Exception ex)
         {
-            // Ignore initialization errors
+            _logger.LogWarning(ex, "Velopack update manager is unavailable");
         }
     }
 
-    public static UpdateService Instance => _instance ??= new UpdateService();
+    public bool IsInstalled => _manager?.IsInstalled ?? false;
 
-    public string CurrentVersion => _manager?.CurrentVersion?.ToString() ?? "0.0.0 (Debug)";
+    public bool IsPortable => _manager?.IsPortable ?? false;
 
-    public async Task<UpdateInfo?> CheckForUpdatesAsync(bool allowPrerelease)
+    public bool IsUpdatePendingRestart => _manager?.UpdatePendingRestart is not null;
+
+    /// <summary>Installed version, or the assembly's version when running an uninstalled build.</summary>
+    public string CurrentVersion =>
+        _manager?.CurrentVersion?.ToString()
+        ?? typeof(UpdateService).Assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion
+        ?? "0.0.0";
+
+    public async Task<UpdateCheckResult> CheckAsync(CancellationToken cancellationToken = default)
     {
+        if (_manager is null || !_manager.IsInstalled) return new UpdateCheckResult(UpdateCheckStatus.NotInstalled);
+
         try
         {
-            _manager = new UpdateManager(new GithubSource(RepoUrl, null, allowPrerelease));
-            return await _manager.CheckForUpdatesAsync();
-        }
-        catch
-        {
-            return null;
-        }
-    }
-
-    public async Task<bool> HasPreReleasesAsync()
-    {
-        try
-        {
-            var apiUrlBase = RepoUrl.Replace("https://github.com/", "https://api.github.com/repos/");
-            var url = $"{apiUrlBase}/releases?per_page=10";
-
-            var response = await _httpClient.GetAsync(url);
-
-            if (response.IsSuccessStatusCode)
+            var update = await _manager.CheckForUpdatesAsync().WaitAsync(cancellationToken).ConfigureAwait(false);
+            if (update is null)
             {
-                await using var stream = await response.Content.ReadAsStreamAsync();
-                var node = await JsonNode.ParseAsync(stream);
-                if (node is JsonArray array)
-                {
-                    foreach (var item in array)
-                    {
-                        if (item?["prerelease"]?.GetValue<bool>() == true)
-                        {
-                            return true;
-                        }
-                    }
-                }
-            }
-        }
-        catch
-        {
-            // Ignore
-        }
-
-        return false;
-    }
-
-    public async Task DownloadUpdatesAsync(UpdateInfo info, Action<int>? progress = null)
-    {
-        if (_manager == null) return;
-
-        await _manager.DownloadUpdatesAsync(info, progress);
-    }
-
-    public void ApplyUpdatesAndRestart(UpdateInfo info)
-    {
-        _manager?.ApplyUpdatesAndRestart(info);
-    }
-
-    public async Task<NetworkStatus> CheckConnectivityAsync()
-    {
-        try
-        {
-            var apiUrlBase = RepoUrl.Replace("https://github.com/", "https://api.github.com/repos/");
-            using var request = new HttpRequestMessage(HttpMethod.Head, apiUrlBase);
-            var response = await _httpClient.SendAsync(request);
-
-            if (response.IsSuccessStatusCode) return NetworkStatus.Connected;
-
-            var code = (int)response.StatusCode;
-
-            if (code == 403 || code == 429) // 403 Forbidden (Rate Limit) or 429 Too Many Requests
-            {
-                if (response.Headers.TryGetValues("X-RateLimit-Remaining", out var values))
-                {
-                    var remaining = values.FirstOrDefault();
-                    if (remaining == "0") return NetworkStatus.ApiLimitExceeded;
-                }
-
-                if (code == 429) return NetworkStatus.ApiLimitExceeded;
+                _logger.LogInformation("No update available (current {Version})", CurrentVersion);
+                return new UpdateCheckResult(UpdateCheckStatus.UpToDate);
             }
 
-            if (code >= 500) return NetworkStatus.ServerError;
-            if (code >= 400) return NetworkStatus.ClientError;
-
-            return NetworkStatus.NoConnection;
+            var version = update.TargetFullRelease.Version.ToString();
+            var notes = update.TargetFullRelease.NotesMarkdown;
+            if (string.IsNullOrWhiteSpace(notes)) notes = await GetReleaseNotesAsync(version, cancellationToken).ConfigureAwait(false);
+            _logger.LogInformation("Update {Version} is available", version);
+            return new UpdateCheckResult(UpdateCheckStatus.UpdateAvailable, update, version, notes);
         }
-        catch (HttpRequestException)
+        catch (OperationCanceledException)
         {
-            return NetworkStatus.NoConnection;
+            throw;
         }
-        catch
+        catch (HttpRequestException ex) when (ex.StatusCode is System.Net.HttpStatusCode.Forbidden or System.Net.HttpStatusCode.TooManyRequests)
         {
-            return NetworkStatus.NoConnection;
+            _logger.LogWarning(ex, "GitHub rate limit reached while checking for updates");
+            return new UpdateCheckResult(UpdateCheckStatus.RateLimited, Error: ex);
+        }
+        catch (HttpRequestException ex)
+        {
+            _logger.LogWarning(ex, "Network error while checking for updates");
+            return new UpdateCheckResult(UpdateCheckStatus.NetworkError, Error: ex);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Update check failed");
+            return new UpdateCheckResult(UpdateCheckStatus.Failed, Error: ex);
         }
     }
 
-    // Release Notes from GitHub API
-    public async Task<string> GetReleaseNotesAsync(string version)
+    /// <summary>Downloads the update. <paramref name="progress"/> is called on a background thread.</summary>
+    public Task DownloadAsync(UpdateInfo update, Action<int>? progress, CancellationToken cancellationToken) =>
+        _manager is null
+            ? Task.CompletedTask
+            : _manager.DownloadUpdatesAsync(update, progress, cancellationToken);
+
+    public void ApplyAndRestart(UpdateInfo update)
     {
-        try
+        _logger.LogInformation("Restarting to install {Version}", update.TargetFullRelease.Version);
+        _manager?.ApplyUpdatesAndRestart(update.TargetFullRelease);
+    }
+
+    /// <summary>Installs the downloaded update after the app exits, without restarting it.</summary>
+    public void ApplyOnExit(UpdateInfo update)
+    {
+        _logger.LogInformation("Update {Version} will be installed on exit", update.TargetFullRelease.Version);
+        _manager?.WaitExitThenApplyUpdates(update.TargetFullRelease, silent: true, restart: false);
+    }
+
+    /// <summary>Release notes from the GitHub release body (for releases packed without notes in the feed).</summary>
+    private async Task<string?> GetReleaseNotesAsync(string version, CancellationToken cancellationToken)
+    {
+        foreach (var tag in new[] { version, "v" + version })
         {
-            var apiUrlBase = RepoUrl.Replace("https://github.com/", "https://api.github.com/repos/");
-
-            var url = $"{apiUrlBase}/releases/tags/{version}";
-
-            var response = await _httpClient.GetAsync(url);
-
-            if (response.StatusCode == HttpStatusCode.NotFound)
+            try
             {
-                url = $"{apiUrlBase}/releases/tags/v{version}";
-                response = await _httpClient.GetAsync(url);
+                using var response = await Http.GetAsync($"https://api.github.com/repos/poli0981/HashTool/releases/tags/{Uri.EscapeDataString(tag)}",
+                    cancellationToken).ConfigureAwait(false);
+                if (!response.IsSuccessStatusCode) continue;
+                await using var stream = await response.Content.ReadAsStreamAsync(cancellationToken).ConfigureAwait(false);
+                using var document = await JsonDocument.ParseAsync(stream, cancellationToken: cancellationToken).ConfigureAwait(false);
+                if (document.RootElement.TryGetProperty("body", out var body)) return body.GetString();
             }
-
-            if (response.IsSuccessStatusCode)
+            catch (Exception ex) when (ex is HttpRequestException or JsonException or TaskCanceledException)
             {
-                await using var stream = await response.Content.ReadAsStreamAsync();
-                var node = await JsonNode.ParseAsync(stream);
-                return node?["body"]?.ToString() ?? "No release notes available.";
+                _logger.LogDebug(ex, "Could not fetch release notes for {Tag}", tag);
             }
         }
-        catch
-        {
-            // Ignore network errors
-        }
 
-        return "Don't download information on GitHub";
+        return null;
+    }
+
+    private static HttpClient CreateHttpClient()
+    {
+        var client = new HttpClient { Timeout = TimeSpan.FromSeconds(20) };
+        var version = typeof(UpdateService).Assembly.GetName().Version?.ToString(3) ?? "1.0.0";
+        client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("HashTool", version));
+        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/vnd.github+json"));
+        return client;
     }
 }

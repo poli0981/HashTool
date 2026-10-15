@@ -1,592 +1,251 @@
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
-using System.Threading;
+using System.Text;
 using System.Threading.Tasks;
-using Avalonia;
-using Avalonia.Controls;
-using Avalonia.Controls.ApplicationLifetimes;
-using Avalonia.Input.Platform;
-using Avalonia.Platform.Storage;
-using Avalonia.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using HashTool.App.Infrastructure;
 using HashTool.App.Models;
 using HashTool.App.Services;
+using HashTool.Core.Checksums;
+using HashTool.Core.Files;
+using HashTool.Core.Hashing;
+using HashTool.Core.Processing;
+using Microsoft.Extensions.Logging;
 
 namespace HashTool.App.ViewModels;
 
-public partial class CreateHashViewModel : FileListViewModelBase
+/// <summary>The "Generate Hash" page.</summary>
+public sealed partial class CreateHashViewModel : FileListViewModelBase
 {
-    private readonly HashService _hashService = new();
+    private const int ErrorDiskFull = 0x70;
+    private const int ErrorHandleDiskFull = 0x27;
 
-    [ObservableProperty] private bool _isComputing;
+    [ObservableProperty] private HashType _selectedAlgorithm;
 
-    [ObservableProperty] private HashType _selectedAlgorithm = HashType.SHA256;
-
-    protected override bool IsGlobalBusy => IsComputing;
-
-    private bool CanComputeAll => Files.Count > 0 && !IsComputing;
-    private bool CanCompress => Files.Count > 0 && !IsComputing;
-
-    partial void OnIsComputingChanged(bool value)
+    public CreateHashViewModel(FileListServices services) : base(services)
     {
-        NotifyCommands();
+        _selectedAlgorithm = services.Settings.Current.CreateAlgorithm;
     }
 
-    protected override void NotifyCommands()
-    {
-        ComputeAllCommand.NotifyCanExecuteChanged();
-        CancelAllCommand.NotifyCanExecuteChanged();
-        CompressFilesCommand.NotifyCanExecuteChanged();
+    partial void OnSelectedAlgorithmChanged(HashType value) => Services.Settings.Update(s => s.CreateAlgorithm = value);
 
-        // Base commands
-        AddFilesCommand.NotifyCanExecuteChanged();
-        AddFolderCommand.NotifyCanExecuteChanged();
-        ClearListCommand.NotifyCanExecuteChanged();
-        RemoveFileCommand.NotifyCanExecuteChanged();
-        ClearHashCommand.NotifyCanExecuteChanged();
-        ClearAllHashesCommand.NotifyCanExecuteChanged();
-        ClearFailedCommand.NotifyCanExecuteChanged();
-        CopyToClipboardCommand.NotifyCanExecuteChanged();
-        SaveHashFileCommand.NotifyCanExecuteChanged();
+    protected override ActivationVerb ElevationVerb => ActivationVerb.Create;
+
+    protected override Task<IReadOnlyList<FileItem>> CreateItemsAsync(IReadOnlyList<FileEntry> files, ImportReport report)
+    {
+        var algorithm = SelectedAlgorithm;
+        IReadOnlyList<FileItem> items = files.Select(f => new FileItem(f.FullPath, f.Length, algorithm)).ToList();
+        return Task.FromResult(items);
     }
 
-    protected override IEnumerable<FileItem> GetFailedItems()
+    protected override HashJob? CreateJob(FileItem item) =>
+        item.IsRemoved ? null : new HashJob(item.FilePath, item.Size, [item.Algorithm], item.Cancellation?.Token ?? default);
+
+    protected override void ApplyResult(FileItem item, HashJobResult result)
     {
-        return Files.Where(f => string.IsNullOrEmpty(f.ResultHash));
+        if (result.Status == HashJobStatus.Succeeded && result.Results is [var hash, ..])
+        {
+            item.ResultHash = hash.ToHex(Settings.HashLetterCase);
+            item.State = FileStatus.Success;
+            item.SetStatus(ItemStatus.Done);
+            Logger.LogDebug("{Algorithm} {File}", item.Algorithm, item.FileName);
+            return;
+        }
+
+        ApplyFailure(item, result);
+        if (result.Error is not null) Logger.LogWarning(result.Error, "Hashing {File} failed", item.FileName);
     }
 
-    public override async Task AddFilesFromPaths(IEnumerable<string> filePaths)
+    private List<FileItem> ItemsWithResults() => AllItems.Where(i => !string.IsNullOrEmpty(i.ResultHash)).ToList();
+
+    // ------------------------------------------------------------------ export
+
+    [RelayCommand]
+    private async Task SaveHashFileAsync(FileItem? item)
     {
-        var config = await ConfigService.LoadAsync();
-        long limitBytes = 0;
-        if (config.IsFileSizeLimitEnabled) limitBytes = Prefs.GetMaxSizeBytes();
+        if (item is null || string.IsNullOrEmpty(item.ResultHash)) return;
+        var extension = HashAlgorithms.FileExtension(item.Algorithm);
+        var choice = new FileTypeChoice(item.Algorithm.ToString(), $"*.{extension}");
+        var target = await Services.Storage.SaveFileAsync(L["Dialog_SaveHash"], $"{item.FileName}.{extension}", [choice]);
+        if (target is not { } t) return;
 
-        IsComputing = true;
-        var selectedAlgo = SelectedAlgorithm;
-        try
+        var line = ChecksumWriter.Write([new ChecksumLine(item.FileName, item.Algorithm, item.ResultHash, item.Size)], ExportFormat.Gnu, Settings.HashLetterCase);
+        if (await WriteAsync(t.Path, line))
         {
-            await Task.Run(async () =>
-            {
-                var skippedFiles = new ConcurrentQueue<string>();
-                var seenInThisImport = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
-
-                foreach (var batch in filePaths.Chunk(2000))
-                {
-                    var batchPaths = new List<string>();
-                    foreach (var path in batch)
-                    {
-                        if (!seenInThisImport.Add(path)) continue;
-                        if (ContainsPath(path)) continue;
-                        batchPaths.Add(path);
-                    }
-
-                    if (batchPaths.Count == 0) continue;
-
-                    var inputs = batchPaths.ToArray();
-                    var results = new FileItem?[inputs.Length];
-
-                    Parallel.For(0, inputs.Length,
-                        new ParallelOptions { MaxDegreeOfParallelism = Environment.ProcessorCount }, i =>
-                        {
-                            var path = inputs[i];
-                            var info = new FileInfo(path);
-                            var len = info.Length;
-                            var fileName = Path.GetFileName(path);
-
-                            if (config.IsFileSizeLimitEnabled && len > limitBytes)
-                            {
-                                var msg = string.Format(L["Msg_FileSizeLimitExceeded"], fileName, config.FileSizeLimitValue,
-                                    config.FileSizeLimitUnit);
-                                Logger.Log(msg, LogLevel.Warning);
-                                skippedFiles.Enqueue(fileName);
-                                return;
-                            }
-
-                            var item = new FileItem
-                            {
-                                FileName = fileName,
-                                FilePath = path,
-                                FileSize = FileItem.FormatSize(len),
-                                RawSizeBytes = len,
-                                SelectedAlgorithm = selectedAlgo
-                            };
-                            results[i] = item;
-                        });
-
-                    var newItems = new List<FileItem>(inputs.Length);
-                    foreach (var res in results)
-                    {
-                        if (res != null) newItems.Add(res);
-                    }
-
-                    if (newItems.Count > 0)
-                    {
-                        await Dispatcher.UIThread.InvokeAsync(() => { AddItemsToAll(newItems); });
-                        Logger.Log($"Added {newItems.Count} files to list.");
-                    }
-                }
-
-                if (!skippedFiles.IsEmpty)
-                {
-                    var fileList = string.Join("\n", skippedFiles.Take(10));
-                    if (skippedFiles.Count > 10) fileList += "\n...";
-
-                    var summaryMsg = string.Format(L["Msg_FileSizeLimitExceeded_Summary"], skippedFiles.Count,
-                        config.FileSizeLimitValue, config.FileSizeLimitUnit, fileList);
-
-                    await Dispatcher.UIThread.InvokeAsync(async () =>
-                        await MessageBoxHelper.ShowAsync(L["Msg_Error"], summaryMsg, MessageBoxIcon.Error));
-                }
-            });
-
-            await Task.Run(() =>
-            {
-                GC.Collect();
-                GC.WaitForPendingFinalizers();
-            });
-        }
-        finally
-        {
-            IsComputing = false;
-            OnPropertyChanged(nameof(TotalFilesText));
-            ComputeAllCommand.NotifyCanExecuteChanged();
-        }
-    }
-
-    [RelayCommand(CanExecute = nameof(CanCompress))]
-    private async Task CompressFiles(Window window)
-    {
-        if (Files.Count == 0) return;
-
-        var fileSave = await window.StorageProvider.SaveFilePickerAsync(new FilePickerSaveOptions
-        {
-            Title = L["Dialog_SaveZip"],
-            SuggestedFileName = $"Archive_{DateTime.Now:yyyyMMdd_HHmmss}.zip",
-            DefaultExtension = "zip",
-            FileTypeChoices = new[]
-            {
-                new FilePickerFileType(L["Dialog_FileType_Zip"])
-                {
-                    Patterns = new[] { "*.zip" },
-                    MimeTypes = new[] { "application/zip" }
-                }
-            }
-        });
-
-        if (fileSave != null)
-            try
-            {
-                var zipPath = fileSave.Path.LocalPath;
-                Logger.Log($"Compressing files to: {zipPath}");
-                var filesToCompress = Files.ToList();
-
-
-                await Task.Run(async () =>
-                {
-                    await using var fs = new FileStream(zipPath, FileMode.Create, FileAccess.Write, FileShare.None,
-                        4096, useAsync: true);
-                    await using var archive = new ZipArchive(fs, ZipArchiveMode.Create);
-                    foreach (var item in filesToCompress)
-                        if (!string.IsNullOrEmpty(item.ResultHash))
-                        {
-                            var ext = item.SelectedAlgorithm.ToString().ToLower();
-                            var hashFileName = $"{item.FileName}.{ext}";
-
-                            var entry = archive.CreateEntry(hashFileName);
-                            await using var entryStream = entry.Open();
-                            await using var writer = new StreamWriter(entryStream);
-                            await writer.WriteAsync(item.ResultHash);
-                        }
-                });
-
-                foreach (var f in Files) f.Status = L["Status_Compressed"];
-                Logger.Log("Compression successful.", LogLevel.Success);
-            }
-            catch (Exception ex)
-            {
-                Logger.Log($"Compression failed: {ex.Message}", LogLevel.Error);
-            }
-    }
-
-    [RelayCommand(CanExecute = nameof(CanComputeAll))]
-    private async Task ComputeAll()
-    {
-        Logger.Log("Starting batch computation...");
-        IsComputing = true;
-        ProgressMax = Files.Count;
-        ProgressValue = 0;
-        RemainingTime = L["Msg_TimeUnknown"];
-
-        // Reset Stats
-        ProcessedCount = 0;
-        SuccessCount = 0;
-        FailCount = 0;
-        CancelledCount = 0;
-        SpeedText = "";
-        UpdateStatsText();
-
-        var success = 0;
-        var fail = 0;
-        var cancelled = 0;
-        var processedCounter = 0;
-
-        long totalBytesRead = 0;
-        long totalBytesWritten = 0;
-        long lastBytesRead = 0;
-        long lastBytesWritten = 0;
-        var lastSpeedUpdate = DateTime.UtcNow;
-        var showSpeed = (await ConfigService.LoadAsync()).ShowReadWriteSpeed;
-
-        List<FileItem> queue;
-        lock (ListLock)
-        {
-            queue = Files.ToList();
-        }
-        var startTime = DateTime.UtcNow;
-
-        var statusDone = L["Status_Done"];
-        var statusCancelled = L["Status_Cancelled"];
-
-        // Reset items
-        foreach (var item in queue)
-        {
-            item.ResultHash = "";
-            item.Status = L["Status_Computing"];
-            item.ProcessingState = FileStatus.Ready;
-            item.IsMatch = null;
-            item.IsCancelled = false;
-            item.ProcessDuration = "";
-        }
-
-        _batchCts = new CancellationTokenSource();
-        using var progressCts = new CancellationTokenSource();
-        var progressTask = Task.Run(async () =>
-        {
-            try
-            {
-                while (!progressCts.Token.IsCancellationRequested)
-                {
-                    await Task.Delay(250, progressCts.Token);
-                    var current = processedCounter;
-
-                    var elapsed = (DateTime.UtcNow - startTime).TotalSeconds;
-                    var rate = current / elapsed;
-                    var remainingCount = queue.Count - current;
-                    var eta = rate > 0 ? TimeSpan.FromSeconds(remainingCount / rate) : TimeSpan.Zero;
-                    var etaStr = current > 0 && current < queue.Count
-                        ? string.Format(L["Msg_EstimatedTime"], $"{(int)eta.TotalHours}:{eta.Minutes:D2}:{eta.Seconds:D2}")
-                        : L["Msg_TimeUnknown"];
-
-                    // Speed Calculation
-                    if (showSpeed)
-                    {
-                        var now = DateTime.UtcNow;
-                        var currentTotalRead = Interlocked.Read(ref totalBytesRead);
-                        var currentTotalWrite = Interlocked.Read(ref totalBytesWritten);
-
-                        var diffRead = currentTotalRead - lastBytesRead;
-                        var diffWrite = currentTotalWrite - lastBytesWritten;
-
-                        var timeDiff = (now - lastSpeedUpdate).TotalSeconds;
-
-                        if (timeDiff > 0.5) // Update every 0.5s to avoid jitter
-                        {
-                            var readBytesPerSec = diffRead / timeDiff;
-                            var writeBytesPerSec = diffWrite / timeDiff;
-
-                            await Dispatcher.UIThread.InvokeAsync(() =>
-                                UpdateSpeedText(readBytesPerSec, writeBytesPerSec));
-
-                            lastBytesRead = currentTotalRead;
-                            lastBytesWritten = currentTotalWrite;
-                            lastSpeedUpdate = now;
-                        }
-                    }
-
-                    await Dispatcher.UIThread.InvokeAsync(() =>
-                    {
-                        ProgressValue = current;
-                        RemainingTime = etaStr;
-
-                        ProcessedCount = current;
-                        SuccessCount = success;
-                        FailCount = fail;
-                        CancelledCount = cancelled;
-                        UpdateStatsText();
-                    });
-
-                    if (current >= queue.Count) break;
-                }
-            }
-            catch (OperationCanceledException)
-            {
-            }
-        });
-
-        try
-        {
-            var strategyService = new ProcessingStrategyService();
-            var batches = strategyService.GetProcessingBatches(queue, f => f.RawSizeBytes);
-            Logger.Log($"Starting processing with 3 streams. Small: {batches[0].Count}, Medium: {batches[1].Count}, Large: {batches[2].Count}");
-
-            Action<long>? progressCallback = null;
-            if (showSpeed)
-            {
-                progressCallback = (bytes) => Interlocked.Add(ref totalBytesRead, bytes);
-            }
-
-            var tasks = new List<Task>();
-
-            foreach (var batch in batches)
-            {
-                if (batch.Count == 0) continue;
-
-                tasks.Add(Task.Run(async () =>
-                {
-                    foreach (var file in batch)
-                    {
-                        if (_batchCts?.Token.IsCancellationRequested == true) break;
-
-                        if (file.IsDeleted)
-                        {
-                            Interlocked.Increment(ref processedCounter);
-                            continue;
-                        }
-
-                        var bufferSize = strategyService.GetBufferSize(file.RawSizeBytes, file.SelectedAlgorithm);
-                        await ProcessItemAsync(file, bufferSize, progressCallback);
-
-                        Interlocked.Increment(ref processedCounter);
-
-                        if (file.Status == statusDone) Interlocked.Increment(ref success);
-                        else if (file.Status == statusCancelled) Interlocked.Increment(ref cancelled);
-                        else Interlocked.Increment(ref fail);
-                    }
-                }, _batchCts?.Token ?? CancellationToken.None));
-            }
-
-            await Task.WhenAll(tasks);
-        }
-        catch (OperationCanceledException)
-        {
-            Logger.Log("Batch computation cancelled.");
-        }
-        finally
-        {
-            progressCts.Cancel();
-            _batchCts?.Dispose();
-            _batchCts = null;
-        }
-
-        var cancelledStatus = L["Status_Cancelled"];
-        await Dispatcher.UIThread.InvokeAsync(() =>
-        {
-            foreach (var item in queue)
-            {
-                if (item.ProcessingState == FileStatus.Ready)
-                {
-                    item.Status = cancelledStatus;
-                    item.ProcessingState = FileStatus.Cancelled;
-                    item.IsCancelled = true;
-                    cancelled++;
-                    processedCounter++;
-                }
-            }
-        });
-
-        try
-        {
-            await progressTask;
-        }
-        catch
-        {
-            // Ignore cancellation/tasks errors
-        }
-
-        ProgressValue = processedCounter;
-        RemainingTime = "";
-        IsComputing = false;
-
-        ProcessedCount = processedCounter;
-        SuccessCount = success;
-        FailCount = fail;
-        CancelledCount = cancelled;
-        UpdateStatsText();
-        SpeedText = "";
-
-        await Task.Run(() =>
-        {
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-        });
-
-        var totalDuration = DateTime.UtcNow - startTime;
-        var durationStr = $"{(int)totalDuration.TotalHours}:{totalDuration.Minutes:D2}:{totalDuration.Seconds:D2}";
-        Logger.Log($"Batch finished in {durationStr}. Success: {success}, Failed: {fail}, Cancelled: {cancelled}");
-
-        var icon = (fail > 0 || cancelled > 0) ? MessageBoxIcon.Warning : MessageBoxIcon.Success;
-        var resultMsg = string.Format(L["Msg_Result_Content"], success, fail, cancelled);
-        resultMsg += $"\n{string.Format(L["Msg_TaskDuration"], durationStr)}";
-
-        await MessageBoxHelper.ShowAsync(L["Msg_Result_Title"], resultMsg, icon);
-    }
-
-    private bool CanSaveHashFile(FileItem? item)
-    {
-        return !IsComputing && item != null && !string.IsNullOrEmpty(item.ResultHash);
-    }
-
-    [RelayCommand(CanExecute = nameof(CanSaveHashFile))]
-    private async Task SaveHashFile(FileItem item)
-    {
-        if (string.IsNullOrEmpty(item.ResultHash)) return;
-
-        var ext = item.SelectedAlgorithm.ToString().ToLower();
-
-        var window =
-            Application.Current?.ApplicationLifetime is
-                IClassicDesktopStyleApplicationLifetime desktop
-                ? desktop.MainWindow
-                : null;
-        if (window == null) return;
-
-        var file = await window.StorageProvider.SaveFilePickerAsync(new FilePickerSaveOptions
-        {
-            Title = L["Dialog_SaveHash"],
-            SuggestedFileName = $"{item.FileName}.{ext}",
-            DefaultExtension = ext
-        });
-
-        if (file != null)
-        {
-            await using var stream = await file.OpenWriteAsync();
-            using var writer = new StreamWriter(stream);
-            await writer.WriteAsync(item.ResultHash);
-            item.Status = L["Status_Saved"];
-            Logger.Log($"Saved hash file for {item.FileName}", LogLevel.Success);
-        }
-    }
-
-    private bool CanCopyToClipboard(string? hash)
-    {
-        return !IsComputing && !string.IsNullOrEmpty(hash);
-    }
-
-    [RelayCommand(CanExecute = nameof(CanCopyToClipboard))]
-    private async Task CopyToClipboard(string? hash)
-    {
-        if (string.IsNullOrEmpty(hash)) return;
-
-        if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime
-            {
-                MainWindow: { } window
-            })
-        {
-            var clipboard = window.Clipboard;
-            if (clipboard != null)
-            {
-                await clipboard.SetTextAsync(hash);
-                Logger.Log("Hash copied to clipboard.");
-            }
-        }
-    }
-
-    private async Task ProcessItemAsync(FileItem item, int? bufferSize = null, Action<long>? progressCallback = null)
-    {
-        await Dispatcher.UIThread.InvokeAsync(() =>
-        {
-            item.IsProcessing = true;
-            item.ProcessingState = FileStatus.Processing;
-            item.Status = string.Format(L["Status_Processing"], item.SelectedAlgorithm);
-            item.ProcessDuration = "";
-        });
-
-        item.Cts = new CancellationTokenSource();
-
-        if (Prefs.IsFileTimeoutEnabled) item.Cts.CancelAfter(TimeSpan.FromSeconds(Prefs.FileTimeoutSeconds));
-
-        var stopwatch = Stopwatch.StartNew();
-        Logger.Log($"Computing hash for {item.FileName} ({item.SelectedAlgorithm})...");
-        if (item.SelectedAlgorithm.IsInsecure())
-        {
-            LoggerService.Instance.Log($"Weak algorithm selected: {item.SelectedAlgorithm}", LogLevel.Warning);
-        }
-
-        string? resultHash = null;
-        string status = "";
-
-        try
-        {
-            resultHash = await _hashService.ComputeHashAsync(item.FilePath, item.SelectedAlgorithm, item.Cts.Token,
-                bufferSize, progressCallback);
-            status = L["Status_Done"];
-            await Dispatcher.UIThread.InvokeAsync(() => item.ProcessingState = FileStatus.Success);
-            Logger.Log($"Computed {item.FileName}: {resultHash}", LogLevel.Success);
-        }
-        catch (OperationCanceledException)
-        {
-            status = L["Status_Cancelled"];
-            await Dispatcher.UIThread.InvokeAsync(() =>
-            {
-                item.IsCancelled = true;
-                item.ProcessingState = FileStatus.Cancelled;
-            });
-            Logger.Log($"Cancelled computation for {item.FileName}", LogLevel.Warning);
-        }
-        catch (Exception ex)
-        {
-            status = string.Format(L["Status_Error"], ex.Message);
-            await Dispatcher.UIThread.InvokeAsync(() => item.ProcessingState = FileStatus.Failure);
-            Logger.Log($"Error computing {item.FileName}: {ex.Message}", LogLevel.Error);
-        }
-        finally
-        {
-            stopwatch.Stop();
-            var duration = stopwatch.Elapsed.TotalSeconds < 1
-                ? $"{stopwatch.ElapsedMilliseconds}ms"
-                : $"{stopwatch.Elapsed.TotalSeconds:F2}s";
-
-            await Dispatcher.UIThread.InvokeAsync(() =>
-            {
-                if (resultHash != null) item.ResultHash = resultHash;
-                item.Status = status;
-                item.ProcessDuration = duration;
-                item.IsProcessing = false;
-            });
-
-            item.Cts?.Dispose();
-            item.Cts = null;
+            item.SetStatus(ItemStatus.Saved);
+            Logger.LogInformation("Saved {File}", Path.GetFileName(t.Path));
         }
     }
 
     [RelayCommand]
-    private async Task ComputeSingle(FileItem item)
+    private async Task ExportChecksumFileAsync()
     {
-        if (IsComputing && !item.IsProcessing) return;
-        if (item.IsProcessing)
+        var items = ItemsWithResults();
+        if (items.Count == 0)
         {
-            item.Cts?.Cancel();
+            await Services.Dialogs.ShowAsync(L["Msg_Result_Title"], L["Msg_NothingToExport"], DialogIcon.Information);
             return;
         }
 
+        var algorithms = items.Select(i => i.Algorithm).Distinct().ToList();
+        HashType? single = algorithms.Count == 1 ? algorithms[0] : null;
+        var types = new List<FileTypeChoice>
+        {
+            new(L["FileType_Gnu"], $"*.{ChecksumWriter.SuggestedExtension(ExportFormat.Gnu, single)}", ExportFormat.Gnu),
+            new(L["FileType_Bsd"], "*.txt", ExportFormat.Bsd)
+        };
+        if (single == HashType.CRC32) types.Add(new FileTypeChoice(L["FileType_Sfv"], "*.sfv", ExportFormat.Sfv));
+        types.Add(new FileTypeChoice("JSON", "*.json", ExportFormat.Json));
+        types.Add(new FileTypeChoice("CSV", "*.csv", ExportFormat.Csv));
+
+        var preferred = types.FirstOrDefault(t => (ExportFormat)t.Tag! == Settings.DefaultExportFormat) ?? types[0];
+        types.Remove(preferred);
+        types.Insert(0, preferred);
+        var format = (ExportFormat)preferred.Tag!;
+        var suggested = format == ExportFormat.Gnu && single is { } s
+            ? $"{HashAlgorithms.BsdTag(s)}SUMS.{ChecksumWriter.SuggestedExtension(ExportFormat.Gnu, s)}"
+            : $"checksums.{ChecksumWriter.SuggestedExtension(format, single)}";
+
+        var target = await Services.Storage.SaveFileAsync(L["Dialog_SaveChecksumFile"], suggested, types);
+        if (target is not { } t) return;
+        format = t.Type?.Tag is ExportFormat chosen ? chosen : FormatFromExtension(t.Path, format);
+        if (format == ExportFormat.Sfv && single != HashType.CRC32) format = ExportFormat.Bsd;
+        if (format == ExportFormat.Gnu && single is null) format = ExportFormat.Bsd; // GNU lines cannot name the algorithm
+
+        var baseDirectory = Path.GetDirectoryName(t.Path)!;
+        var lines = items.Select(i => new ChecksumLine(RelativePath(baseDirectory, i.FilePath), i.Algorithm, i.ResultHash, i.Size));
+        // Checksum files use lower case like sha256sum; SFV conventionally uses upper case.
+        var text = ChecksumWriter.Write(lines, format, format == ExportFormat.Sfv ? HexCase.Upper : HexCase.Lower);
+        if (await WriteAsync(t.Path, text))
+        {
+            Logger.LogInformation("Exported {Count} checksums as {Format}", items.Count, format);
+            await Services.Dialogs.ShowAsync(L["Msg_Result_Title"], L.Format("Msg_ExportDone", items.Count, Path.GetFileName(t.Path)), DialogIcon.Success);
+        }
+    }
+
+    [RelayCommand]
+    private async Task CompressAsync()
+    {
+        var items = ItemsWithResults();
+        if (items.Count == 0)
+        {
+            await Services.Dialogs.ShowAsync(L["Msg_Result_Title"], L["Msg_NothingToExport"], DialogIcon.Information);
+            return;
+        }
+
+        var target = await Services.Storage.SaveFileAsync(L["Dialog_SaveZip"],
+            $"hashes-{DateTime.Now.ToString("yyyyMMdd-HHmmss", System.Globalization.CultureInfo.InvariantCulture)}.zip",
+            [new FileTypeChoice(L["Dialog_FileType_Zip"], "*.zip")]);
+        if (target is not { } t) return;
+
         try
         {
-            IsComputing = true;
-            item.ResultHash = "";
-            item.Status = L["Status_Computing"];
-            item.ProcessingState = FileStatus.Ready;
-            item.IsCancelled = false;
-            await ProcessItemAsync(item);
+            var baseDirectory = CommonDirectory(items.Select(i => i.DirectoryName));
+            await Task.Run(() =>
+            {
+                using var zip = ZipFile.Open(t.Path, ZipArchiveMode.Create);
+                var used = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+                var manifest = new List<ChecksumLine>();
+                foreach (var item in items)
+                {
+                    var relative = RelativePath(baseDirectory, item.FilePath);
+                    var entryName = UniqueName(used, $"{ZipEntryName(relative)}.{HashAlgorithms.FileExtension(item.Algorithm)}");
+                    var entry = zip.CreateEntry(entryName, CompressionLevel.Optimal);
+                    using (var writer = new StreamWriter(entry.Open(), new UTF8Encoding(false)))
+                        writer.Write(ChecksumWriter.Write([new ChecksumLine(item.FileName, item.Algorithm, item.ResultHash)], ExportFormat.Gnu, Settings.HashLetterCase));
+                    manifest.Add(new ChecksumLine(relative, item.Algorithm, item.ResultHash, item.Size));
+                }
+
+                var all = zip.CreateEntry(UniqueName(used, "CHECKSUMS.txt"), CompressionLevel.Optimal);
+                using var manifestWriter = new StreamWriter(all.Open(), new UTF8Encoding(false));
+                manifestWriter.Write(ChecksumWriter.Write(manifest, ExportFormat.Bsd));
+            });
+            Logger.LogInformation("Wrote {Count} hash files to a zip archive", items.Count);
+            await Services.Dialogs.ShowAsync(L["Msg_Result_Title"], L.Format("Msg_ExportDone", items.Count, Path.GetFileName(t.Path)), DialogIcon.Success);
         }
-        finally
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException)
         {
-            IsComputing = false;
+            await ShowWriteErrorAsync(ex);
         }
+    }
+
+    [RelayCommand]
+    private async Task CopyAllAsync()
+    {
+        var items = ItemsWithResults();
+        if (items.Count == 0) return;
+        var text = ChecksumWriter.Write(items.Select(i => new ChecksumLine(i.FileName, i.Algorithm, i.ResultHash)),
+            items.Select(i => i.Algorithm).Distinct().Count() == 1 ? ExportFormat.Gnu : ExportFormat.Bsd, Settings.HashLetterCase);
+        await Services.Clipboard.SetTextAsync(text);
+    }
+
+    private async Task<bool> WriteAsync(string path, string content)
+    {
+        try
+        {
+            await File.WriteAllTextAsync(path, content, new UTF8Encoding(false));
+            return true;
+        }
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException)
+        {
+            await ShowWriteErrorAsync(ex);
+            return false;
+        }
+    }
+
+    private async Task ShowWriteErrorAsync(Exception ex)
+    {
+        Logger.LogError(ex, "Writing an export failed");
+        var diskFull = (ex.HResult & 0xFFFF) is ErrorDiskFull or ErrorHandleDiskFull;
+        await Services.Dialogs.ShowErrorAsync(L["Msg_Error"], diskFull ? L["Msg_DiskFull"] : L.Format("Status_Error", ex.Message), ex.ToString());
+    }
+
+    private static ExportFormat FormatFromExtension(string path, ExportFormat fallback) => Path.GetExtension(path).ToLowerInvariant() switch
+    {
+        ".json" => ExportFormat.Json,
+        ".csv" => ExportFormat.Csv,
+        ".sfv" => ExportFormat.Sfv,
+        ".txt" => fallback == ExportFormat.Gnu ? ExportFormat.Gnu : ExportFormat.Bsd,
+        _ => fallback
+    };
+
+    /// <summary>Path of <paramref name="file"/> relative to <paramref name="baseDirectory"/> with '/' separators, or the full path.</summary>
+    internal static string RelativePath(string baseDirectory, string file)
+    {
+        var relative = Path.GetRelativePath(baseDirectory, file);
+        return relative.StartsWith("..", StringComparison.Ordinal) || Path.IsPathRooted(relative) ? file : relative.Replace('\\', '/');
+    }
+
+    internal static string CommonDirectory(IEnumerable<string> directories)
+    {
+        string? common = null;
+        foreach (var directory in directories)
+        {
+            if (common is null)
+            {
+                common = directory;
+                continue;
+            }
+
+            while (!directory.StartsWith(common, StringComparison.OrdinalIgnoreCase) && Path.GetDirectoryName(common) is { } parent)
+                common = parent;
+        }
+
+        return common ?? string.Empty;
+    }
+
+    /// <summary>Zip entry names must be relative and use '/' (files on another drive keep their path without the colon).</summary>
+    private static string ZipEntryName(string path) => path.Replace('\\', '/').Replace(":", "").TrimStart('/');
+
+    private static string UniqueName(HashSet<string> used, string name)
+    {
+        var candidate = name;
+        for (var i = 2; !used.Add(candidate); i++)
+            candidate = $"{Path.ChangeExtension(name, null)} ({i}){Path.GetExtension(name)}";
+        return candidate;
     }
 }
