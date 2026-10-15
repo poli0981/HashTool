@@ -3,25 +3,34 @@
 *.log
 *.swp
 
-# Visual Studio / .NET / Avalonia
+# .NET build output
 [Bb]in/
 [Oo]bj/
+artifacts/
+publish/
+TestResults/
+*.trx
+coverage*.xml
+coverage*.cobertura.xml
+BenchmarkDotNet.Artifacts/
+
+# Velopack output
+Releases/
+
+# Visual Studio / Rider / VS Code
 .vs/
 *.user
 *.suo
 *.userprefs
 *.sln.docstates
-*.lock.json
-*.nupkg
-
-# JetBrains (Rider, ReSharper)
 .idea/
 _ReSharper*/
 *.DotSettings.user
 *.sln.iml
-
-# Visual Studio Code
 .vscode/
+
+# Packages
+*.nupkg
 
 # OS generated
 Thumbs.db

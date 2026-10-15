@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <!-- UI-independent hashing engine shared by the desktop app and the CLI. -->
+    <PropertyGroup>
+        <RootNamespace>HashTool.Core</RootNamespace>
+        <IsAotCompatible>true</IsAotCompatible>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Blake3" />
+        <PackageReference Include="System.IO.Hashing" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="HashTool.Core.Tests" />
+    </ItemGroup>
+</Project>
