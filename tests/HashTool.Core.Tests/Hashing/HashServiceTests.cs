@@ -51,15 +51,14 @@ public sealed class HashServiceTests : IDisposable
     }
 
     [Fact]
-    public async Task Crc32_CurrentlyEmitsLittleEndianBytes()
+    public async Task Crc32_UsesConventionalByteOrder()
     {
-        // Characterization of the 1.1.x behaviour: the conventional CRC-32 of "123456789" is CBF43926,
-        // but the bytes come out reversed. A later commit fixes this.
+        // 1.1.x printed the little-endian bytes (2639F4CB); every other tool prints the CRC check value CBF43926.
         var path = WriteFile("123456789"u8.ToArray());
 
         var actual = await _service.ComputeHashAsync(path, HashType.CRC32, TestContext.Current.CancellationToken);
 
-        Assert.Equal("2639F4CB", actual);
+        Assert.Equal("CBF43926", actual);
     }
 
     [Theory]

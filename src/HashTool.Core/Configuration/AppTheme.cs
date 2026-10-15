@@ -1,4 +1,4 @@
-namespace HashTool.App.Models;
+namespace HashTool.Core.Configuration;
 
 public enum AppThemeStyle
 {
