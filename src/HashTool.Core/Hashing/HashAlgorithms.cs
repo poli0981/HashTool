@@ -1,6 +1,6 @@
 using System;
-using System.Collections.Generic;
 using System.Collections.Frozen;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace HashTool.Core.Hashing;
