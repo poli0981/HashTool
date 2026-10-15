@@ -1,9 +1,8 @@
 # End User License Agreement (EULA) for Hash Tool
 
-**Version 1.1.3**  
-**Last updated: February 2026**
+**Last updated: October 2026**
 
-HashTool is a free, open-source desktop application licensed under the MIT License (see [LICENSE](LICENSE) file).
+HashTool is a free, open-source desktop application licensed under the MIT License (see the [LICENSE](../LICENSE) file).
 
 ### 1. Grant of License
 The author grants you a non-exclusive, royalty-free, worldwide license to use, copy, distribute, and modify HashTool for any purpose, subject to the terms of the MIT License.
@@ -16,8 +15,8 @@ The author makes no guarantee that the software will be error-free, secure, or m
 In no event shall the author be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including loss of data, revenue, or profit) arising from the use or inability to use HashTool, even if advised of the possibility of such damage.
 
 ### 4. Privacy & Data Collection
-HashTool is **100% offline**. It does not collect, store, or transmit any personal data.  
-The only online feature is _**"Check for Updates",**_ which simply queries GitHub's public release API. No usage data is sent. For details on GitHub's privacy practices, see their policy.
+HashTool works offline. It does not collect, store, or transmit any personal data.
+The only online feature is the update check, which queries GitHub's public release API (automatically at most once a day — it can be turned off in Settings — or when you click Check Now). No usage data is sent. See the [Privacy Policy](PrivacyPolicy.md) for details.
 
 ### 5. Translations
 Non-English translations (if any) are provided as-is and generated with AI assistance. The author makes no guarantee of accuracy or completeness.

@@ -1,7 +1,6 @@
 # Terms of Service (ToS) for HashTool
 
-**Version 1.1.3**  
-**Last updated: February 2026**
+**Last updated: October 2026**
 
 HashTool is free, open-source desktop software distributed under the **MIT License** (see LICENSE file for full text).
 
@@ -19,8 +18,8 @@ All software has bugs. Even big tech companies ship imperfect products. Use at y
 The author shall not be liable for any damages (direct, indirect, incidental, consequential, loss of data, profit, or otherwise) arising from the use or inability to use HashTool.
 
 ### 5. Privacy & Data Collection
-HashTool is **100% offline** and does not collect, store, or transmit any personal information.  
-The only optional online feature is "Check for Updates," which queries public GitHub releases. No telemetry or analytics are sent. See GitHub's privacy policy for their practices.
+HashTool works offline and does not collect, store, or transmit any personal information. No telemetry or analytics are sent.
+The only network activity is the update check against public GitHub releases (automatic at most once a day — it can be turned off in Settings — or on request). See the [Privacy Policy](PrivacyPolicy.md) for details.
 
 ### 6. Translations
 Non-English translations (if provided) are AI-generated and offered as-is. The author does not guarantee accuracy.

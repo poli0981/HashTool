@@ -1,17 +1,21 @@
 # Security Policy for HashTool
 
-**Version 1.1.3**  
-**Last updated: February 2026**
+**Last updated: October 2026**
 
-HashTool is a free, open-source desktop application built with C# (.NET 10) and Avalonia UI. It runs **100% offline** (except optional update check via GitHub), processes files locally, and has no network server components.
+HashTool is a free, open-source desktop application built with C# (.NET 10) and Avalonia UI. It processes files locally, has no server components, and only goes online to check GitHub for updates.
 
 ### Supported Versions
-Currently, security updates are provided for the latest release only:
+Security fixes are released for the latest minor version only. Installed and portable copies update themselves, so please stay on the newest release.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.0.x   | :white_check_mark: |
-| < 1.0   | :x:                |
+| 1.2.x   | :white_check_mark: |
+| < 1.2   | :x:                |
+
+### How releases are protected
+- Releases are built, tested and published by GitHub Actions from the `main` branch; every release includes `SHA256SUMS`, CycloneDX SBOMs and [build provenance attestations](https://docs.github.com/actions/security-for-github-actions/using-artifact-attestations) (`gh attestation verify <file> --repo poli0981/HashTool`).
+- Every pull request is checked for vulnerable NuGet packages, licences, leaked secrets and unsafe workflow patterns, in addition to CodeQL and OpenSSF Scorecard.
+- The apps are not code-signed yet, so Windows SmartScreen and macOS Gatekeeper may warn when they are first opened.
 
 ### Reporting a Vulnerability
 If you discover a potential security vulnerability, please report it responsibly:

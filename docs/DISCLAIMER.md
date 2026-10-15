@@ -1,7 +1,6 @@
 # Disclaimer for HashTool
 
-**Version 1.1.3**  
-**Last updated: February 2026**
+**Last updated: October 2026**
 
 HashTool is free, open-source software distributed under the MIT License (see LICENSE file).
 
@@ -17,8 +16,8 @@ The author shall not be liable for any damages, losses, or issues (including dat
 
 ### Privacy
 
-HashTool is **completely offline** and does not collect, store, or transmit any personal data.  
-The only network activity is the optional "Check for Updates" feature, which queries public GitHub releases. No telemetry or analytics are sent. Refer to GitHub's privacy policy for their handling.
+HashTool works offline and does not collect, store, or transmit any personal data.
+The only network activity is the update check against public GitHub releases (automatic at most once a day — it can be turned off in Settings — or on request). No telemetry or analytics are sent. See the [Privacy Policy](PrivacyPolicy.md).
 
 ### Translations
 
