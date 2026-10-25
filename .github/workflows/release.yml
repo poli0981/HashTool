@@ -17,6 +17,8 @@ on:
   pull_request:
     paths:
       - .github/workflows/release.yml
+      # vpk and CycloneDX versions.
+      - .config/dotnet-tools.json
       - build/**
       - eng/assert-release.py
       - eng/release-notes.py
