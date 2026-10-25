@@ -14,18 +14,20 @@ public partial class CheckHashView : UserControl
     public CheckHashView()
     {
         AvaloniaXamlLoader.Load(this);
-        FileDrop.Attach(this.FindControl<Panel>("DropArea")!, this.FindControl<Border>("DropHighlight"), paths =>
-            DataContext is CheckHashViewModel vm ? vm.AddPathsAsync(paths) : Task.CompletedTask);
+        var dropArea = this.FindControl<Panel>("DropArea")!;
 
-        // A checksum file dropped onto a row's hash box fills in that row's expected hash.
-        AddHandler(DragDrop.DropEvent, async (sender, e) =>
+        // A checksum file dropped onto a row's hash box fills in that row's expected hash. Drop events only bubble, so
+        // this handler sits on the list ahead of the one that adds dropped files as new rows.
+        dropArea.AddHandler(DragDrop.DropEvent, async (_, e) =>
         {
             if (e.Source is not Control { DataContext: FileItem item } source || !IsHashInput(source)) return;
             var paths = FileDrop.Paths(e);
             if (paths.Count == 0 || DataContext is not CheckHashViewModel vm) return;
             e.Handled = true;
             await vm.LoadHashFileAsync(item, paths[0]);
-        }, Avalonia.Interactivity.RoutingStrategies.Tunnel);
+        });
+        FileDrop.Attach(dropArea, this.FindControl<Border>("DropHighlight"), paths =>
+            DataContext is CheckHashViewModel vm ? vm.AddPathsAsync(paths) : Task.CompletedTask);
     }
 
     private static bool IsHashInput(Control control)
