@@ -1,6 +1,8 @@
 version: 2
 
 updates:
+  # Projects, Directory.Packages.props and the tools in .config/dotnet-tools.json (Dependabot only looks for the tool
+  # manifest there, not in the repository root).
   - package-ecosystem: nuget
     directory: /
     schedule:
@@ -19,7 +21,10 @@ updates:
       microsoft:
         patterns: ["Microsoft.Extensions.*", "System.*"]
       tests:
-        patterns: ["xunit*", "Microsoft.Testing.*", "BenchmarkDotNet*"]
+        patterns: ["xunit*", "Microsoft.Testing.*", "BenchmarkDotNet*", "dotnet-coverage"]
+      # vpk packs the releases that the Velopack library in the app installs: keep both on the same version.
+      velopack:
+        patterns: ["Velopack", "vpk"]
     ignore:
       # xunit.v3 4.x breaks Avalonia.Headless.XUnit (AvaloniaUI/Avalonia#22072).
       - dependency-name: "xunit.v3*"
