@@ -233,12 +233,17 @@ public sealed partial class CreateHashViewModel : FileListViewModelBase
                 continue;
             }
 
-            while (!directory.StartsWith(common, StringComparison.OrdinalIgnoreCase) && Path.GetDirectoryName(common) is { } parent)
+            while (!IsSameOrInside(directory, common) && Path.GetDirectoryName(common) is { } parent)
                 common = parent;
         }
 
         return common ?? string.Empty;
     }
+
+    // "C:\data\photos-2024" shares a prefix with "C:\data\photos" but is not inside it.
+    private static bool IsSameOrInside(string directory, string folder) =>
+        directory.StartsWith(folder, StringComparison.OrdinalIgnoreCase)
+        && (directory.Length == folder.Length || Path.EndsInDirectorySeparator(folder) || directory[folder.Length] is '/' or '\\');
 
     /// <summary>Zip entry names must be relative and use '/' (files on another drive keep their path without the colon).</summary>
     private static string ZipEntryName(string path) => path.Replace('\\', '/').Replace(":", "").TrimStart('/');
