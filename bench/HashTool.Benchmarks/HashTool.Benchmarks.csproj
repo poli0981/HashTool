@@ -4,6 +4,8 @@
         <IsPackable>false</IsPackable>
         <!-- Run manually, see docs/ARCHITECTURE.md (Benchmarks). -->
         <Optimize>true</Optimize>
+        <!-- SonarCloud analyses benchmarks as test code: they are not product code and have no coverage. -->
+        <SonarQubeTestProject>true</SonarQubeTestProject>
     </PropertyGroup>
 
     <ItemGroup>

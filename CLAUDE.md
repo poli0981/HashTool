@@ -43,6 +43,8 @@ Run the app or smoke test with `HASHTOOL_DATA_DIR` pointing at a scratch folder 
   workflow; `ci-ok` is the single required check.
 - Don't embed C# or regex text containing backslashes in Python/bash heredocs — the escapes get mangled. Edit such
   files with the editor tools.
+- .NET tools (vpk, nuget-license, CycloneDX, dotnet-sonarscanner, dotnet-coverage) live in `.config/dotnet-tools.json`;
+  Dependabot doesn't read a root `dotnet-tools.json`. vpk and the Velopack package move together.
 
 ## Workflows
 
@@ -50,3 +52,6 @@ Run the app or smoke test with `HASHTOOL_DATA_DIR` pointing at a scratch folder 
 - `security.yml` — vulnerable packages, licences (eng/allowed-licenses.json), gitleaks, actionlint, zizmor.
 - `release.yml` — manual (`workflow_dispatch`, version + publish) with an upgrade gate from 1.1.3; dry run on PRs that
   touch release files. Discord notifications use the maintainer's `poli0981/.github` reusable workflows, pinned by SHA.
+- `sonarcloud.yml` — SonarCloud CI analysis (Automatic Analysis is off; project `poli0981_HashTool`): scanner build,
+  Cobertura coverage from the tests and the smoke test (`dotnet-coverage`), "Sonar way" gate on new code. Skipped when
+  `SONAR_TOKEN` isn't available (forks, Dependabot). Issues and hotspots can't be resolved from here; fix them in code.

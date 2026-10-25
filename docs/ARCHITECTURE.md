@@ -14,7 +14,8 @@ build/              packaging inputs (macOS Info.plist, Linux icon)
 
 Shared build settings: `Directory.Build.props` (version, nullable, analyzers, NuGet audit), `Directory.Packages.props`
 (central package versions with transitive pinning), `global.json` (SDK and the Microsoft.Testing.Platform runner),
-`dotnet-tools.json` (vpk, nuget-license, CycloneDX).
+`.config/dotnet-tools.json` (vpk, nuget-license, CycloneDX, SonarScanner for .NET, dotnet-coverage; Dependabot keeps
+them up to date).
 
 ## HashTool.Core
 
@@ -59,6 +60,11 @@ mismatched file, 2 usage error or unreadable checksum file. Published per platfo
   integrity (keys, placeholders, Languages.json ↔ resx ↔ project, satellite assemblies, unused keys), language detection.
 - `tests/Compat/LegacyClient` — not in the solution: the release workflow uses it to update a real 1.1.3 install with
   its own Velopack 0.0.1298 library and updater (see [RELEASING.md](RELEASING.md)).
+
+[SonarCloud](https://sonarcloud.io/project/overview?id=poli0981_HashTool) analyses every pull request and `main` from
+the SonarCloud workflow: the C# during a real build, with coverage from the tests above and from the smoke test
+(`dotnet-coverage`), plus the scripts and workflows. Its quality gate ("Sonar way") applies to new code; `bench/` is
+analysed as test code and `eng/` is left out of coverage.
 
 ## Benchmarks
 

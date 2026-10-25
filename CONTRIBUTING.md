@@ -34,7 +34,7 @@ How the code is organised: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 2. Keep the change focused; follow the existing style (the analyzers and `.editorconfig` help).
 3. Add or update tests — hashing and checksum logic belongs in `HashTool.Core` with tests in `tests/HashTool.Core.Tests`.
 4. Add a line under `## [Unreleased]` in [CHANGELOG.md](CHANGELOG.md) for anything users will notice.
-5. Open the pull request and link the issue. CI builds and tests on Windows, macOS and Linux, and scans dependencies, licences, secrets and workflows; everything must be green before merging.
+5. Open the pull request and link the issue. CI builds and tests on Windows, macOS and Linux, and scans dependencies, licences, secrets and workflows; everything must be green before merging. SonarCloud also analyses the pull request: new code should pass its quality gate (A ratings, at least 80% coverage, little duplication).
 
 Commit messages follow [Conventional Commits](https://www.conventionalcommits.org/) (`fix(core): …`, `feat(app): …`, `docs: …`).
 
