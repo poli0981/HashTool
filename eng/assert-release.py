@@ -25,7 +25,8 @@ def releases_folder(name: str) -> Path:
     """The folder named on the command line; it must be inside the repository (CI passes "Releases")."""
     path = os.path.realpath(name)
     if not path.startswith(ROOT + os.sep):
-        fail(f"{name} is outside the repository")
+        print(f"::error::{name} is outside the repository")
+        raise SystemExit(1)
     return Path(path)
 
 
