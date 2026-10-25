@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+
+### Fixed
+- Verify: a hash file dropped onto a row's hash box fills in that row's expected hash again, instead of being added to the list as one more file.
+- ZIP export: files from folders whose names share a beginning (such as `photos` and `photos-2024`) keep their relative paths instead of being stored with absolute ones.
+
+### Security
+- Every pull request and `main` are analysed by SonarCloud, including test coverage, and Dependabot now also keeps the build tools (vpk, licence and SBOM tools) up to date.
+
+---
+
 ## [1.2.0] - 2026-10-15
 
 A big rework under the hood: faster hashing, standard checksum files, a command-line tool, a Linux build and a long list of fixes.
