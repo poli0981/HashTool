@@ -16,48 +16,11 @@ using Xunit;
 
 namespace HashTool.App.Tests;
 
-/// <summary>Records dialogs instead of showing them, so batch summaries can be checked.</summary>
-internal sealed class RecordingDialogs : IDialogService
-{
-    public List<(string Message, DialogIcon Icon)> Shown { get; } = [];
-
-    public Task ShowAsync(string title, string message, DialogIcon icon = DialogIcon.Information)
-    {
-        Shown.Add((message, icon));
-        return Task.CompletedTask;
-    }
-
-    public Task<bool> ConfirmAsync(string title, string message, DialogIcon icon = DialogIcon.Question, string? yesText = null,
-        string? noText = null) => Task.FromResult(false);
-
-    public Task ShowErrorAsync(string title, string message, string? details = null)
-    {
-        Shown.Add((message, DialogIcon.Error));
-        return Task.CompletedTask;
-    }
-}
-
-internal sealed class NoStorage : IStorageService
-{
-    public Task<IReadOnlyList<string>> PickFilesAsync(string title, bool allowMultiple = true, IReadOnlyList<FileTypeChoice>? types = null) =>
-        Task.FromResult<IReadOnlyList<string>>([]);
-
-    public Task<IReadOnlyList<string>> PickFoldersAsync(string title) => Task.FromResult<IReadOnlyList<string>>([]);
-
-    public Task<(string Path, FileTypeChoice? Type)?> SaveFileAsync(string title, string suggestedName, IReadOnlyList<FileTypeChoice> types) =>
-        Task.FromResult<(string Path, FileTypeChoice? Type)?>(null);
-}
-
-internal sealed class NoClipboard : IClipboardService
-{
-    public Task SetTextAsync(string text) => Task.CompletedTask;
-}
-
 public sealed class BatchRegressionTests
 {
     private static FileListServices Services(RecordingDialogs dialogs) => new(
-        AppHost.Get<LocalizationService>(), AppHost.Get<SettingsService>(), dialogs, new NoStorage(), new NoClipboard(), new HashEngine(),
-        AppHost.Get<ILoggerFactory>());
+        AppHost.Get<LocalizationService>(), AppHost.Get<SettingsService>(), dialogs, new ScriptedStorage(), new RecordingClipboard(),
+        new HashEngine(), AppHost.Get<ILoggerFactory>());
 
     [AvaloniaFact]
     public async Task LargeBatch_FinishesEveryRow()

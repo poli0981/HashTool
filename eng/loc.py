@@ -9,7 +9,8 @@ Run with `python -I eng/loc.py <command>` from the repository root:
   normalize                Rewrite every resx in canonical form (neutral key order, one line per header, trimmed
                            multi-line values). Values never get re-wrapped.
   set FILE.json [...]      Set values from JSON files shaped {"<culture>": {"Key": "value"}}. Use "neutral" for the
-                           English source; new keys are appended to the neutral file in the order given.
+                           English source; new keys are appended to the neutral file in the order given. The files
+                           must be inside the repository or the temporary folder.
   remove KEY [...]         Delete keys from every resx.
   untranslated CULTURE     List keys whose value is still identical to the English text.
   export CULTURE           Print a culture's strings as JSON ("neutral" for English).
@@ -21,8 +22,10 @@ from __future__ import annotations
 
 import html
 import json
+import os
 import re
 import sys
+import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -178,11 +181,20 @@ def cmd_normalize() -> int:
     return 0
 
 
+def input_file(name: str) -> Path:
+    """A file named on the command line; only files in the repository or the temporary folder are read."""
+    path = os.path.realpath(name)
+    for root in (os.path.realpath(ROOT), os.path.realpath(tempfile.gettempdir())):
+        if path.startswith(root + os.sep):
+            return Path(path)
+    raise SystemExit(f"{name}: only files inside the repository or the temporary folder are accepted")
+
+
 def cmd_set(files: list[str]) -> int:
     neutral, cultures = load_all()
     changed: set[Path] = set()
     for file in files:
-        data = json.loads(Path(file).read_text(encoding="utf-8"))
+        data = json.loads(input_file(file).read_text(encoding="utf-8"))
         # Neutral first, so new keys get their position before cultures are written.
         for code in sorted(data, key=lambda c: c.lower() != "neutral"):
             resx = find_culture(cultures, neutral, code)

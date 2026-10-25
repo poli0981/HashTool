@@ -31,21 +31,34 @@ public sealed class UpdateService
 {
     public const string RepositoryUrl = "https://github.com/poli0981/HashTool";
 
-    private static readonly HttpClient Http = CreateHttpClient();
+    private static readonly HttpClient SharedHttp = CreateHttpClient();
 
     private readonly ILogger<UpdateService> _logger;
     private readonly UpdateManager? _manager;
+    private readonly HttpClient _http;
 
-    public UpdateService(ILogger<UpdateService> logger)
+    public UpdateService(ILogger<UpdateService> logger) : this(logger, CreateManager(logger), SharedHttp)
+    {
+    }
+
+    /// <summary>Tests pass a manager over a local feed and an HTTP client that never reaches GitHub.</summary>
+    internal UpdateService(ILogger<UpdateService> logger, UpdateManager? manager, HttpClient http)
     {
         _logger = logger;
+        _manager = manager;
+        _http = http;
+    }
+
+    private static UpdateManager? CreateManager(ILogger logger)
+    {
         try
         {
-            _manager = new UpdateManager(new GithubSource(RepositoryUrl, null, false));
+            return new UpdateManager(new GithubSource(RepositoryUrl, null, false));
         }
         catch (Exception ex)
         {
-            _logger.LogWarning(ex, "Velopack update manager is unavailable");
+            logger.LogWarning(ex, "Velopack update manager is unavailable");
+            return null;
         }
     }
 
@@ -133,7 +146,7 @@ public sealed class UpdateService
         {
             try
             {
-                using var response = await Http.GetAsync($"https://api.github.com/repos/poli0981/HashTool/releases/tags/{Uri.EscapeDataString(tag)}",
+                using var response = await _http.GetAsync($"https://api.github.com/repos/poli0981/HashTool/releases/tags/{Uri.EscapeDataString(tag)}",
                     cancellationToken).ConfigureAwait(false);
                 if (!response.IsSuccessStatusCode) continue;
                 await using var stream = await response.Content.ReadAsStreamAsync(cancellationToken).ConfigureAwait(false);

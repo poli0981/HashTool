@@ -8,11 +8,21 @@ Prints the body of the "## [<version>]" section and fails when it is missing or 
 """
 
 import argparse
+import os
 import re
 import sys
 from pathlib import Path
 
 MAX_LENGTH = 20_000
+ROOT = os.path.realpath(Path(__file__).resolve().parent.parent)
+
+
+def repository_file(name: str) -> Path:
+    """A file named on the command line; only files of this repository are read."""
+    path = os.path.realpath(name)
+    if not path.startswith(ROOT + os.sep):
+        raise SystemExit(f"::error::{name} is outside the repository")
+    return Path(path)
 
 
 def find_section(changelog: str, version: str) -> tuple[str, str] | None:
@@ -36,7 +46,7 @@ def main() -> int:
     parser.add_argument("--require-date", action="store_true")
     args = parser.parse_args()
 
-    section = find_section(Path(args.changelog).read_text(encoding="utf-8"), args.version)
+    section = find_section(repository_file(args.changelog).read_text(encoding="utf-8"), args.version)
     if section is None or not section[1]:
         print(f"::error::CHANGELOG has no notes for {args.version}", file=sys.stderr)
         return 1

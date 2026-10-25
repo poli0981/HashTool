@@ -31,7 +31,7 @@
 
     <ItemGroup Label="Analyzers">
         <PackageVersion Include="Meziantou.Analyzer" Version="3.0.303" />
-        <PackageVersion Include="ReferenceTrimmer" Version="3.5.9" />
+        <PackageVersion Include="ReferenceTrimmer" Version="3.5.13" />
     </ItemGroup>
 
     <ItemGroup Label="Tests">

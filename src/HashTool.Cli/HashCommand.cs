@@ -64,13 +64,14 @@ internal static class HashCommand
         var format = request.Format ?? (request.Algorithms.Count == 1 ? ExportFormat.Gnu : ExportFormat.Bsd);
         if (format == ExportFormat.Gnu && request.Algorithms.Count > 1)
         {
-            error.WriteLine("hashtool: the gnu format holds a single algorithm; use --format bsd, json or csv for several.");
+            await error.WriteLineAsync("hashtool: the gnu format holds a single algorithm; use --format bsd, json or csv for several.")
+                .ConfigureAwait(false);
             return HashToolCommand.UsageError;
         }
 
         if (format == ExportFormat.Sfv && request.Algorithms.Any(a => a != HashType.CRC32))
         {
-            error.WriteLine("hashtool: sfv files contain CRC32 only; add -a crc32.");
+            await error.WriteLineAsync("hashtool: sfv files contain CRC32 only; add -a crc32.").ConfigureAwait(false);
             return HashToolCommand.UsageError;
         }
 

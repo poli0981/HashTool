@@ -88,7 +88,7 @@ internal static class VerifyCommand
             malformed += document.InvalidLines.Count;
             if (document.IsEmpty)
             {
-                error.WriteLine($"hashtool: {checksumFile}: no properly formatted checksum lines found");
+                await error.WriteLineAsync($"hashtool: {checksumFile}: no properly formatted checksum lines found").ConfigureAwait(false);
                 exitCode = HashToolCommand.UsageError;
                 continue;
             }
@@ -101,7 +101,8 @@ internal static class VerifyCommand
                 var shown = entry.FileName ?? (target is null ? checksumFile : Path.GetFileName(target));
                 if (target is null)
                 {
-                    error.WriteLine($"hashtool: {checksumFile}:{entry.LineNumber}: refusing to open network or device path '{shown}'");
+                    await error.WriteLineAsync($"hashtool: {checksumFile}:{entry.LineNumber}: refusing to open network or device path '{shown}'")
+                        .ConfigureAwait(false);
                     unreadable++;
                     continue;
                 }
@@ -114,14 +115,17 @@ internal static class VerifyCommand
                 var outcome = await CheckAsync(engine, target, entry.Hash, candidates, cancellationToken).ConfigureAwait(false);
                 if (outcome.Error is not null) unreadable++;
                 else if (!outcome.IsOk) mismatched++;
-                if (!quiet || !outcome.IsOk) output.WriteLine($"{shown}: {outcome.Describe()}");
+                if (!quiet || !outcome.IsOk) await output.WriteLineAsync($"{shown}: {outcome.Describe()}").ConfigureAwait(false);
                 if (outcome.Error is { } ex) HashToolCommand.ReportError(error, shown, ex);
             }
         }
 
-        if (malformed > 0) error.WriteLine($"hashtool: WARNING: {Count(malformed, "line is", "lines are")} improperly formatted");
-        if (unreadable > 0) error.WriteLine($"hashtool: WARNING: {Count(unreadable, "listed file", "listed files")} could not be read");
-        if (mismatched > 0) error.WriteLine($"hashtool: WARNING: {Count(mismatched, "computed checksum", "computed checksums")} did NOT match");
+        if (malformed > 0)
+            await error.WriteLineAsync($"hashtool: WARNING: {Count(malformed, "line is", "lines are")} improperly formatted").ConfigureAwait(false);
+        if (unreadable > 0)
+            await error.WriteLineAsync($"hashtool: WARNING: {Count(unreadable, "listed file", "listed files")} could not be read").ConfigureAwait(false);
+        if (mismatched > 0)
+            await error.WriteLineAsync($"hashtool: WARNING: {Count(mismatched, "computed checksum", "computed checksums")} did NOT match").ConfigureAwait(false);
         if (exitCode == HashToolCommand.Success && (mismatched > 0 || unreadable > 0)) exitCode = HashToolCommand.Failure;
         return exitCode;
     }

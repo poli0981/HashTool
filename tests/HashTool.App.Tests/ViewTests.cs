@@ -16,6 +16,7 @@ using Xunit;
 namespace HashTool.App.Tests;
 
 /// <summary>Renders the real window and pages on Avalonia's headless platform.</summary>
+[Collection(SharedStateCollection.Name)]
 public sealed class ViewTests
 {
     private const string Sha256Of123456789 = "15E2B0D3C33891EBB0F1EF609EC419420C20E320CE94C65FBC8C3312448EB225";

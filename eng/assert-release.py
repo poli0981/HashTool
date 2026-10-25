@@ -10,6 +10,7 @@ pack id HashTool, the channel, the main executable and, on macOS, the original b
 
 import hashlib
 import json
+import os
 import plistlib
 import re
 import sys
@@ -17,6 +18,16 @@ import zipfile
 from pathlib import Path
 
 PACK_ID = "HashTool"
+ROOT = os.path.realpath(Path(__file__).resolve().parent.parent)
+
+
+def releases_folder(name: str) -> Path:
+    """The folder named on the command line; it must be inside the repository (CI passes "Releases")."""
+    path = os.path.realpath(name)
+    if not path.startswith(ROOT + os.sep):
+        print(f"::error::{name} is outside the repository")
+        raise SystemExit(1)
+    return Path(path)
 
 
 def fail(message: str) -> None:
@@ -103,4 +114,4 @@ if __name__ == "__main__":
     if len(sys.argv) not in (5, 6):
         print(__doc__)
         sys.exit(2)
-    main(Path(sys.argv[1]), sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5] if len(sys.argv) == 6 else None)
+    main(releases_folder(sys.argv[1]), sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5] if len(sys.argv) == 6 else None)

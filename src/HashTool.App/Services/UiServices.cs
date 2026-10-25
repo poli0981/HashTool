@@ -65,8 +65,17 @@ public interface ILauncherService
 /// <summary>Gives services access to the main window once it exists.</summary>
 public sealed class MainWindowAccessor
 {
-    public Window? Window =>
-        Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime { MainWindow: { } window } ? window : null;
+    private readonly Func<Window?> _window;
+
+    public MainWindowAccessor() : this(static () =>
+        Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime { MainWindow: { } window } ? window : null)
+    {
+    }
+
+    /// <summary>Tests hand in a window of their own: the headless test application has no desktop lifetime.</summary>
+    internal MainWindowAccessor(Func<Window?> window) => _window = window;
+
+    public Window? Window => _window();
 
     public TopLevel? TopLevel => Window;
 }
