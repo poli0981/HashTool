@@ -131,7 +131,8 @@ public sealed partial class UpdateViewModel : ObservableObject
         UpdateCheckResult result;
         try
         {
-            result = await _updates.CheckAsync();
+            // A check is short and not cancellable from the page.
+            result = await _updates.CheckAsync(CancellationToken.None);
         }
         catch (Exception ex)
         {
