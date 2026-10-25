@@ -55,3 +55,6 @@ Run the app or smoke test with `HASHTOOL_DATA_DIR` pointing at a scratch folder 
 - `sonarcloud.yml` — SonarCloud CI analysis (Automatic Analysis is off; project `poli0981_HashTool`): scanner build,
   Cobertura coverage from the tests and the smoke test (`dotnet-coverage`), "Sonar way" gate on new code. Skipped when
   `SONAR_TOKEN` isn't available (forks, Dependabot). Issues and hotspots can't be resolved from here; fix them in code.
+- `codeql.yml` — CodeQL advanced setup, mirroring default setup (actions, csharp, python; build mode none; default
+  suite; `/language:` categories) but also analysing Dependabot pull requests. The `Analyze (…)` job names are required
+  checks. Default setup must stay off: while it is on, it rejects uploads from workflows.
