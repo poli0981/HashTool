@@ -121,13 +121,14 @@ public sealed partial class SingleInstance : IDisposable
                     // One bad or broken connection must never stop the listener: keep serving later launches.
                     current?.Dispose();
                     current = null;
-                    await Task.Delay(200).ConfigureAwait(false);
+                    // Not the stop token: a cancelled delay would throw out of this handler and skip the cleanup below.
+                    await Task.Delay(200, CancellationToken.None).ConfigureAwait(false);
                 }
             }
 
             current?.Dispose();
             next?.Dispose();
-        });
+        }, _stop.Token);
     }
 
     private NamedPipeServerStream CreateServer() =>
