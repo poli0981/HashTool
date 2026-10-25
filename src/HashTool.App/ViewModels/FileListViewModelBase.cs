@@ -224,6 +224,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
             var options = new FileEnumerationOptions { IncludeHidden = Settings.IncludeHiddenFiles };
             var known = new HashSet<string>(_byPath.Keys, _byPath.Comparer);
 
+            // Importing cannot be cancelled (the batch token belongs to hashing).
             await Task.Run(async () =>
             {
                 var batch = new List<FileEntry>(UiBatchSize);
@@ -231,7 +232,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
                 foreach (var entry in FileEnumerator.Expand(paths, options, (path, ex) =>
                          {
                              lock (report) report.Errors.Add($"{Path.GetFileName(path)}: {ex.Message}");
-                         }))
+                         }, CancellationToken.None))
                 {
                     if (!known.Add(entry.FullPath))
                     {
@@ -261,7 +262,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
                 }
 
                 if (batch.Count > 0) await AddBatchAsync(batch, report).ConfigureAwait(false);
-            });
+            }, CancellationToken.None);
         }
         catch (Exception ex)
         {
@@ -434,7 +435,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
         if (item is null) return;
         if (item.IsProcessing)
         {
-            item.Cancellation?.Cancel();
+            if (item.Cancellation is { } cancellation) await cancellation.CancelAsync();
             return;
         }
 
@@ -487,7 +488,8 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
                 SequentialDisk = Settings.OptimizeForHdd,
                 PerFileTimeout = Settings.IsFileTimeoutEnabled ? TimeSpan.FromSeconds(Settings.FileTimeoutSeconds) : null
             });
-            await Task.Run(() => processor.RunAsync(toHash, CreateJob, this, _batchCts.Token));
+            // The processor observes the batch token itself and reports cancelled files; Task.Run must still start.
+            await Task.Run(() => processor.RunAsync(toHash, CreateJob, this, _batchCts.Token), CancellationToken.None);
         }
         catch (Exception ex)
         {
