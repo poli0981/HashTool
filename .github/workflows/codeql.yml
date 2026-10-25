@@ -1,0 +1,50 @@
+name: CodeQL
+
+# Advanced setup in place of CodeQL default setup, which never analyses Dependabot pull requests: the required
+# `Analyze (...)` checks never reported there, so they could not be merged. Same languages, build mode, default query
+# suite and `/language:` categories as default setup, so existing alerts carry over. Default setup must stay disabled
+# in the repository settings: while it is enabled, code scanning rejects this workflow's uploads.
+on:
+  push:
+    branches: [main]
+  # Dependabot pull requests too: code scanning accepts uploads from pull_request runs despite their read-only token.
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "17 3 * * 3"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: codeql-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  analyze:
+    # Required checks of the main ruleset: keep the job names.
+    name: Analyze (${{ matrix.language }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      security-events: write
+      actions: read
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [actions, csharp, python]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # No build, for C# too: the extractor installs the SDK from global.json and restores the packages itself.
+      - uses: github/codeql-action/init@24c54180a607b1449ed407dd24f251e4e9147c8d # v4.38.3
+        with:
+          languages: ${{ matrix.language }}
+          build-mode: none
+
+      - uses: github/codeql-action/analyze@24c54180a607b1449ed407dd24f251e4e9147c8d # v4.38.3
+        with:
+          category: "/language:${{ matrix.language }}"
