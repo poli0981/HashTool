@@ -189,6 +189,7 @@ public sealed class MainWindowViewModelTests
         await page.Vm.OnOpenedAsync();
 
         await Wait.UntilAsync(() => page.Create.Items.Count == 1);
+        Assert.Equal("queued.bin", page.Create.Items[0].FileName);
     }
 
     [AvaloniaFact]
@@ -302,6 +303,7 @@ public sealed class DeveloperViewModelTests
         for (var i = 0; i <= LogSink.Capacity; i++) console.Logger.LogInformation("entry {Index}", i);
 
         await Wait.UntilAsync(() => console.Vm.Entries.Count == LogSink.Capacity && console.Vm.Entries[^1].Message == $"entry {LogSink.Capacity}");
+        Assert.Equal("entry 1", console.Vm.Entries[0].Message);
     }
 
     [AvaloniaFact]
@@ -320,7 +322,7 @@ public sealed class DeveloperViewModelTests
         await console.Vm.ExportCommand.ExecuteAsync(null);
         console.Storage.SavePath = Path.Combine(console.Temp.Path, "log.txt");
         await console.Vm.ExportCommand.ExecuteAsync(null);
-        Assert.Contains("before the console opened", File.ReadAllText(console.Storage.SavePath), StringComparison.Ordinal);
+        Assert.Contains("before the console opened", (await File.ReadAllTextAsync(console.Storage.SavePath, TestContext.Current.CancellationToken)), StringComparison.Ordinal);
         Assert.StartsWith("hashtool-log-", console.Storage.SuggestedName, StringComparison.Ordinal);
 
         await console.Vm.OpenLogFolderCommand.ExecuteAsync(null);
