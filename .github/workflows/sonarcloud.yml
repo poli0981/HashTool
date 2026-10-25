@@ -1,0 +1,114 @@
+name: SonarCloud
+
+# CI-based analysis (Automatic Analysis is turned off in SonarCloud): the C# is analysed during a real build, with
+# coverage from the unit tests and the smoke test; scripts and workflows are analysed too. SonarCloud reports the
+# quality gate on pull requests itself.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: sonarcloud-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  AVALONIA_TELEMETRY_OPTOUT: 1
+
+jobs:
+  # Pull requests from forks and from Dependabot get no repository secrets: skip the analysis instead of failing it.
+  token:
+    name: token
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions: {}
+    outputs:
+      available: ${{ steps.check.outputs.available }}
+    steps:
+      - name: Check for SONAR_TOKEN
+        id: check
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: |
+          if [ -n "$SONAR_TOKEN" ]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::SONAR_TOKEN is not available to this run (fork or Dependabot pull request); analysis skipped."
+          fi
+
+  sonarcloud:
+    name: sonarcloud
+    needs: token
+    # Manual runs analyse main only: other branches would create separate SonarCloud branch analyses.
+    if: needs.token.outputs.available == 'true' && (github.event_name != 'workflow_dispatch' || github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Full history: SonarCloud uses blame to tell new code from old.
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          dotnet-version: 10.0.4xx
+
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~/.nuget/packages
+          key: nuget-${{ runner.os }}-${{ hashFiles('**/*.csproj', 'Directory.Packages.props', 'Directory.Build.props', 'global.json') }}
+          restore-keys: nuget-${{ runner.os }}-
+
+      - name: Install tools
+        run: dotnet tool restore
+
+      # Coverage: the Cobertura reports of the unit tests and of the smoke test. eng/ holds the CI and release scripts
+      # (Python), for which no coverage is collected, so they stay out of the coverage figure.
+      # Third-party Roslyn analyzers (Meziantou, ReferenceTrimmer) already fail the CI build when they warn; their
+      # suggestions are not imported as SonarCloud issues.
+      - name: Begin analysis
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: |
+          version=$(sed -n 's:.*<Version>\(.*\)</Version>.*:\1:p' Directory.Build.props)
+          dotnet sonarscanner begin /k:poli0981_HashTool /o:poli0981 /v:"$version" \
+            /d:sonar.host.url=https://sonarcloud.io /d:sonar.token="$SONAR_TOKEN" \
+            /d:sonar.cs.cobertura.reportsPaths="TestResults/**/*.cobertura.xml" \
+            /d:sonar.coverage.exclusions="eng/**" \
+            /d:sonar.cs.roslyn.ignoreIssues=true \
+            /d:sonar.qualitygate.wait=true
+
+      # No -warnaserror: CI enforces it, and here it would turn SonarCloud findings into build errors.
+      - name: Build
+        run: dotnet build HashTool.slnx -c Release
+
+      - name: Test
+        run: >
+          dotnet test --solution HashTool.slnx -c Release --no-build
+          --results-directory TestResults
+          --coverage --coverage-output-format cobertura
+
+      # The real app, headless: every page and language, hashing and verifying a file (see ci.yml).
+      - name: Smoke test with coverage
+        env:
+          HASHTOOL_DATA_DIR: ${{ runner.temp }}/smoke-data
+        run: >
+          dotnet coverage collect -f cobertura -o TestResults/smoke.cobertura.xml
+          "dotnet src/HashTool.App/bin/Release/net10.0/CheckHash.dll --smoke-test"
+
+      # Fails when the quality gate fails.
+      - name: End analysis
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: dotnet sonarscanner end /d:sonar.token="$SONAR_TOKEN"

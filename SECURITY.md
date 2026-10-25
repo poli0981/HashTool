@@ -14,7 +14,7 @@ Security fixes are released for the latest minor version only. Installed and por
 
 ### How releases are protected
 - Releases are built, tested and published by GitHub Actions from the `main` branch; every release includes `SHA256SUMS`, CycloneDX SBOMs and [build provenance attestations](https://docs.github.com/actions/security-for-github-actions/using-artifact-attestations) (`gh attestation verify <file> --repo poli0981/HashTool`).
-- Every pull request is checked for vulnerable NuGet packages, licences, leaked secrets and unsafe workflow patterns, in addition to CodeQL and OpenSSF Scorecard.
+- Every pull request is checked for vulnerable NuGet packages, licences, leaked secrets and unsafe workflow patterns, in addition to CodeQL, SonarCloud and OpenSSF Scorecard.
 - The apps are not code-signed yet, so Windows SmartScreen and macOS Gatekeeper may warn when they are first opened.
 
 ### Reporting a Vulnerability

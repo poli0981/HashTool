@@ -2,7 +2,7 @@ name: Notify CI Failures
 
 on:
   workflow_run:
-    workflows: [CI, Security, Scorecard]
+    workflows: [CI, Security, Scorecard, SonarCloud]
     types: [completed]
 
 permissions: {}

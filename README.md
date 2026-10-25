@@ -2,6 +2,8 @@
 
 [![Release](https://img.shields.io/github/v/release/poli0981/HashTool?sort=semver)](https://github.com/poli0981/HashTool/releases/latest)
 [![CI](https://github.com/poli0981/HashTool/actions/workflows/ci.yml/badge.svg)](https://github.com/poli0981/HashTool/actions/workflows/ci.yml)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=poli0981_HashTool&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=poli0981_HashTool)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=poli0981_HashTool&metric=coverage)](https://sonarcloud.io/component_measures?id=poli0981_HashTool&metric=coverage)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/poli0981/HashTool/badge)](https://scorecard.dev/viewer/?uri=github.com/poli0981/HashTool)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Downloads](https://img.shields.io/github/downloads/poli0981/HashTool/total.svg)](https://github.com/poli0981/HashTool/releases)
