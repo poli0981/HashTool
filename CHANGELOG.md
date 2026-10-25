@@ -2,7 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [1.2.1] - 2026-10-25
+
+A small maintenance release: two fixes found while adding several hundred tests, and code analysis on every change.
 
 ### Fixed
 - Verify: a hash file dropped onto a row's hash box fills in that row's expected hash again, instead of being added to the list as one more file.
