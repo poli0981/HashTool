@@ -276,7 +276,8 @@ public sealed class SettingsViewModelTests
         Assert.NotEmpty(page.Vm.FileSizeUnits);
 
         // Setting the current value again does nothing (and never touches the registry).
-        page.Vm.IsShellIntegrationEnabled = page.Vm.IsShellIntegrationEnabled;
+        var current = page.Vm.IsShellIntegrationEnabled;
+        page.Vm.IsShellIntegrationEnabled = current;
         page.Vm.RefreshShellIntegration();
         // Elsewhere than Windows the Explorer integration is a no-op, so the switch itself can be exercised.
         if (OperatingSystem.IsWindows()) return;
