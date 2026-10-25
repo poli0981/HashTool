@@ -57,6 +57,9 @@ internal sealed class ScriptedStorage : IStorageService
 
     public FileTypeChoice? SaveType { get; set; }
 
+    /// <summary>Picks the file type in the save dialog from the offered ones (instead of <see cref="SaveType"/>).</summary>
+    public Func<IReadOnlyList<FileTypeChoice>, FileTypeChoice?>? PickType { get; set; }
+
     public string? SuggestedName { get; private set; }
 
     public IReadOnlyList<FileTypeChoice> OfferedTypes { get; private set; } = [];
@@ -70,7 +73,8 @@ internal sealed class ScriptedStorage : IStorageService
     {
         SuggestedName = suggestedName;
         OfferedTypes = types;
-        return Task.FromResult<(string Path, FileTypeChoice? Type)?>(SavePath is null ? null : (SavePath, SaveType));
+        var type = PickType is null ? SaveType : PickType(types);
+        return Task.FromResult<(string Path, FileTypeChoice? Type)?>(SavePath is null ? null : (SavePath, type));
     }
 }
 
