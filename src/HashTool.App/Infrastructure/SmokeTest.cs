@@ -18,8 +18,9 @@ namespace HashTool.App.Infrastructure;
 
 /// <summary>
 /// <c>CheckHash --smoke-test [--smoke-out result.json] [--expect-version 1.2.0]</c>: starts the app headless, loads every
-/// page and language, hashes and verifies a file, and reports the Velopack install state. Used by CI and the release
-/// upgrade gate on published (single-file) builds.
+/// page and language, hashes and verifies a file, and reports the Velopack install state and the .NET runtime it runs on
+/// (the one bundled into self-contained releases). Used by CI and the release upgrade gate on published (single-file)
+/// builds.
 /// </summary>
 public static class SmokeTest
 {
@@ -131,6 +132,7 @@ public static class SmokeTest
         public int Languages { get; set; }
         public string? DataDirectory { get; set; }
         public string Culture { get; set; } = CultureInfo.CurrentUICulture.Name;
+        public string Runtime { get; set; } = Environment.Version.ToString();
         public List<string> Errors { get; } = [];
     }
 }
