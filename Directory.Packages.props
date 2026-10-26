@@ -17,11 +17,11 @@
     <ItemGroup Label="Application">
         <PackageVersion Include="Blake3" Version="3.0.2" />
         <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2" />
-        <PackageVersion Include="System.CommandLine" Version="2.0.13" />
-        <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.13" />
-        <PackageVersion Include="Microsoft.Extensions.Logging" Version="10.0.13" />
-        <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.13" />
-        <PackageVersion Include="System.IO.Hashing" Version="10.0.13" />
+        <PackageVersion Include="System.CommandLine" Version="2.0.14" />
+        <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.14" />
+        <PackageVersion Include="Microsoft.Extensions.Logging" Version="10.0.14" />
+        <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.14" />
+        <PackageVersion Include="System.IO.Hashing" Version="10.0.14" />
         <PackageVersion Include="Velopack" Version="1.2.161" />
     </ItemGroup>
 
@@ -30,7 +30,7 @@
     </ItemGroup>
 
     <ItemGroup Label="Analyzers">
-        <PackageVersion Include="Meziantou.Analyzer" Version="3.0.303" />
+        <PackageVersion Include="Meziantou.Analyzer" Version="3.0.317" />
         <PackageVersion Include="ReferenceTrimmer" Version="3.5.13" />
     </ItemGroup>
 
