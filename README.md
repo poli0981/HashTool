@@ -103,7 +103,7 @@ gh attestation verify HashTool-win-Setup.exe --repo poli0981/HashTool
 
 ## Building from source
 
-Requires the [.NET 10 SDK](https://dotnet.microsoft.com/download) (10.0.400 or newer).
+Requires the [.NET 10 SDK](https://dotnet.microsoft.com/download) (10.0.403 or newer).
 
 ```text
 dotnet build HashTool.slnx

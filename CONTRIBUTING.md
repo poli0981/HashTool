@@ -14,7 +14,7 @@ Security problems: please **don't** open a public issue — see [SECURITY.md](SE
 
 ## Building and testing
 
-You need the [.NET 10 SDK](https://dotnet.microsoft.com/download) (10.0.400 or newer) — `global.json` picks it up. Python 3 is only needed for the translation tool.
+You need the [.NET 10 SDK](https://dotnet.microsoft.com/download) (10.0.403 or newer) — `global.json` picks it up. Python 3 is only needed for the translation tool.
 
 ```text
 dotnet build HashTool.slnx -warnaserror          # what CI runs; warnings are errors
