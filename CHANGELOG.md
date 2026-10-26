@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [1.2.2] - 2026-10-26
 
 A security update: the app and the command-line tool now ship with the .NET 10.0.14 runtime.
 
