@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Text.Json;
 using HashTool.App.Infrastructure;
 using HashTool.App.Infrastructure.Logging;
 using HashTool.App.ViewModels;
@@ -71,6 +72,20 @@ public sealed class AppCommandLineTests
         Assert.False(File.Exists(ownList));
         Assert.Equal([Path.Combine(temp.Path, "b.bin")], fromUser.Paths);
         Assert.True(File.Exists(userFile));
+    }
+}
+
+public sealed class SmokeReportTests
+{
+    [Fact]
+    public void Json_NamesTheRuntimeTheAppRunsOn()
+    {
+        // Release logs show this value to prove which .NET runtime a self-contained build bundles.
+        using var json = JsonDocument.Parse(JsonSerializer.Serialize(new SmokeTest.SmokeReport(), SmokeJsonContext.Default.SmokeReport));
+
+        Assert.Equal(Environment.Version.ToString(), json.RootElement.GetProperty("runtime").GetString());
+        Assert.False(json.RootElement.GetProperty("ok").GetBoolean());
+        Assert.Equal(0, json.RootElement.GetProperty("errors").GetArrayLength());
     }
 }
 
