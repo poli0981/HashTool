@@ -7,7 +7,7 @@
         <ImplicitUsings>disable</ImplicitUsings>
 
         <!-- Single source of truth for the product version (the release workflow also passes -p:Version=<tag>). -->
-        <Version>1.2.1</Version>
+        <Version>1.2.2</Version>
         <Authors>poli0981</Authors>
         <Company>poli0981</Company>
         <Product>Hash Tool</Product>

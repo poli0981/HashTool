@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [1.2.2] - 2026-10-26
 
 A security update: the app and the command-line tool now ship with the .NET 10.0.14 runtime.
 
@@ -10,7 +10,7 @@ A security update: the app and the command-line tool now ship with the .NET 10.0
 - Updated to the .NET 10.0.14 runtime (out-of-band security release with fixes for the Brotli decoder, CVE-2026-111497, and network sockets, CVE-2026-70197), which the self-contained downloads include.
 
 ### Changed
-- Updated Microsoft.Extensions, System.IO.Hashing and System.CommandLine to their 10.0.14 servicing releases, and the build and analysis tools to their latest versions.
+- Updated Microsoft.Extensions and System.IO.Hashing to 10.0.14, System.CommandLine to 2.0.14, and the code analyzers and CI actions (CodeQL, zizmor) to their latest versions.
 
 ---
 
