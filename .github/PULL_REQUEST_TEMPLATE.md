@@ -11,4 +11,5 @@
 - [ ] `dotnet build HashTool.slnx -warnaserror` and `dotnet test --solution HashTool.slnx` pass
 - [ ] `dotnet format HashTool.slnx --verify-no-changes` passes
 - [ ] New or changed UI text is added to every language (`python -I eng/loc.py check` passes)
+- [ ] UI changes work with the keyboard alone, have translated names for screen readers and don't rely on colour alone ([ACCESSIBILITY.md](../ACCESSIBILITY.md#for-contributors))
 - [ ] User-visible changes are listed under `[Unreleased]` in CHANGELOG.md

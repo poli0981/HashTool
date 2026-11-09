@@ -33,6 +33,11 @@ Run the app or smoke test with `HASHTOOL_DATA_DIR` pointing at a scratch folder 
 - Every UI string goes through `Localization[Key]` / `L["Key"]` and must exist in all 67 resx files; add keys with
   `eng/loc.py set` (JSON `{culture: {key: value}}`, `"neutral"` = English). App.Tests fail on missing, unused or
   mismatched keys. Keep "Hash Tool" untranslated inside sentences.
+- Accessibility (ACCESSIBILITY.md): every focusable control needs a translated name — `AutomationProperties.Name` on
+  icon buttons and on buttons whose content is a panel (Avalonia announces the panel's type name otherwise); rows of
+  lists get `controls:RowTabNavigation.IsEnabled`, buttons that swap places `controls:FocusHandOff.Target`; palette text
+  colours ≥ 4.5:1, icon colours ≥ 3:1. `AccessibilityTests` enforce this; the UI Automation tree of a running app is the
+  real check (Windows PowerShell 5.1 + `UIAutomationClient`).
 - Core is UI-free and AOT/trim compatible: no reflection-based JSON (use the source-generated contexts), keep
   `ConfigureAwait(false)` (Meziantou MA0004 is on for Core and CLI, off for App/tests).
 - Culture: use invariant formatting for logs, file names and machine-readable output; the UI uses the selected culture.

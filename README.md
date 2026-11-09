@@ -57,6 +57,8 @@ More: [About](docs/images/about.png) · [Update](docs/images/update.png) · [Dev
 - **System integration**: Explorer right-click menu on Windows (optional), "Open With" on macOS, `--create`/`--verify` command-line arguments.
 - Automatic update check (at most once a day, can be turned off) with release notes; updates install in place.
 - Developer console with live logs.
+- **Accessible**: works with the keyboard alone and with screen readers, statuses in words rather than colour alone,
+  and readable contrast in every theme — see [ACCESSIBILITY.md](ACCESSIBILITY.md).
 
 > Hashing speed depends mostly on your drive (SSD vs HDD) and system load. Turn on *Optimize for hard drives* in Settings for spinning disks and network shares.
 
@@ -116,7 +118,8 @@ How the code is organised: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). How rel
 
 ## Contributing
 
-Bug reports, translations and pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+Bug reports, translations and pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Something hard to
+use with a keyboard, screen reader or other assistive technology? See [ACCESSIBILITY.md](ACCESSIBILITY.md).
 
 ## Legal Stuff
 
