@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>Έκδοση {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>Φιλτράρισμα κατά κατάσταση</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>Φιλτράρισμα κατά μέγεθος</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>Αρχεία</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>Πρόοδος</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>Μονάδα μεγέθους</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Τιμή hash</value>
+    </data>
 </root>

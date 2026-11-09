@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>Versija {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>Filtrēt pēc statusa</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>Filtrēt pēc izmēra</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>Faili</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>Progress</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>Izmēra vienība</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Hash vērtība</value>
+    </data>
 </root>

@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>版本 {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>依狀態篩選</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>依大小篩選</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>檔案</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>進度</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>大小單位</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>雜湊值</value>
+    </data>
 </root>

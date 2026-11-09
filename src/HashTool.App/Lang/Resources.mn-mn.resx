@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>Хувилбар {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>Төлөвөөр шүүх</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>Хэмжээгээр шүүх</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>Файлууд</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>Явц</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>Хэмжээний нэгж</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Хэшийн утга</value>
+    </data>
 </root>

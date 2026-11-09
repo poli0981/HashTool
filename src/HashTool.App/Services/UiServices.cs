@@ -80,18 +80,21 @@ public sealed class MainWindowAccessor
     public TopLevel? TopLevel => Window;
 }
 
-public sealed class DialogService(MainWindowAccessor main, LocalizationService localization) : IDialogService
+public sealed class DialogService(MainWindowAccessor main, LocalizationService localization, FontService? fonts = null)
+    : IDialogService
 {
+    private double Scale => fonts?.UiScale ?? 1;
+
     public Task ShowAsync(string title, string message, DialogIcon icon = DialogIcon.Information) =>
-        DialogWindow.ShowAsync(main.Window, localization, title, message, icon);
+        DialogWindow.ShowAsync(main.Window, localization, title, message, icon, scale: Scale);
 
     public Task<bool> ConfirmAsync(string title, string message, DialogIcon icon = DialogIcon.Question, string? yesText = null,
         string? noText = null) =>
         DialogWindow.ConfirmAsync(main.Window, localization, title, message, icon, yesText ?? localization["Btn_Yes"],
-            noText ?? localization["Btn_No"]);
+            noText ?? localization["Btn_No"], Scale);
 
     public Task ShowErrorAsync(string title, string message, string? details = null) =>
-        DialogWindow.ShowAsync(main.Window, localization, title, message, DialogIcon.Error, details);
+        DialogWindow.ShowAsync(main.Window, localization, title, message, DialogIcon.Error, details, Scale);
 }
 
 public sealed class StorageService(MainWindowAccessor main) : IStorageService

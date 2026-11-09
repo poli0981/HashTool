@@ -10,7 +10,7 @@
     <Grid RowDefinitions="Auto,Auto,Auto,Auto,*">
         <Grid ColumnDefinitions="*,Auto" Margin="0,0,0,10">
             <StackPanel>
-                <TextBlock Text="{Binding Localization[Title_CheckHash]}" FontSize="24" FontWeight="Bold" />
+                <TextBlock Text="{Binding Localization[Title_CheckHash]}" FontSize="24" FontWeight="Bold" AutomationProperties.HeadingLevel="1" />
                 <TextBlock Text="{Binding Localization[Help_CheckHash]}" Classes="secondary" FontSize="12" TextWrapping="Wrap" />
             </StackPanel>
             <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Spacing="2">
@@ -30,9 +30,10 @@
                 <ComboBox ItemsSource="{Binding Algorithms}" SelectedItem="{Binding DefaultAlgorithm}" MinWidth="130"
                           AutomationProperties.Name="{Binding Localization[Lbl_DefaultAlgorithm]}" />
             </StackPanel>
-            <Button Content="{Binding Localization[Btn_CheckAll]}" Classes="accent" Command="{Binding RunAllCommand}"
-                    IsVisible="{Binding !IsBusy}" ToolTip.Tip="Ctrl+Enter" />
-            <Button Content="{Binding Localization[Btn_Cancel]}" Command="{Binding CancelCommand}" IsVisible="{Binding IsBusy}" ToolTip.Tip="Esc" />
+            <Button x:Name="RunAllButton" Content="{Binding Localization[Btn_CheckAll]}" Classes="accent" Command="{Binding RunAllCommand}"
+                    IsVisible="{Binding !IsBusy}" ToolTip.Tip="Ctrl+Enter" controls:FocusHandOff.Target="{Binding #CancelButton}" />
+            <Button x:Name="CancelButton" Content="{Binding Localization[Btn_Cancel]}" Command="{Binding CancelCommand}" IsVisible="{Binding IsBusy}"
+                    ToolTip.Tip="Esc" controls:FocusHandOff.Target="{Binding #RunAllButton}" />
             <TextBlock Text="{Binding RemainingText}" VerticalAlignment="Center" FontWeight="SemiBold" IsVisible="{Binding IsBusy}" />
             <Button Content="{Binding Localization[Btn_Clear]}" Command="{Binding ClearListCommand}" IsVisible="{Binding HasItems}" />
             <Button Content="{Binding Localization[Btn_ClearHashes]}" Command="{Binding ClearResultsCommand}" IsVisible="{Binding HasItems}" />
@@ -44,7 +45,7 @@
                      MaxWidth="420" HorizontalAlignment="Left" MinWidth="200"
                      AutomationProperties.Name="{Binding Localization[Watermark_Search]}" />
             <ComboBox Grid.Column="1" ItemsSource="{Binding StatusFilterOptions}" SelectedItem="{Binding SelectedStatusFilter}"
-                      MinWidth="150" Margin="8,0,0,0">
+                      MinWidth="150" Margin="8,0,0,0" AutomationProperties.Name="{Binding Localization[Lbl_FilterStatus]}">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <TextBlock>
@@ -59,7 +60,7 @@
                 </ComboBox.ItemTemplate>
             </ComboBox>
             <ComboBox Grid.Column="2" ItemsSource="{Binding SizeFilterOptions}" SelectedItem="{Binding SelectedSizeFilter}"
-                      MinWidth="170" Margin="8,0,0,0">
+                      MinWidth="170" Margin="8,0,0,0" AutomationProperties.Name="{Binding Localization[Lbl_FilterSize]}">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <TextBlock>
@@ -76,7 +77,7 @@
         </Grid>
 
         <ProgressBar Grid.Row="3" Minimum="0" Maximum="1" Value="{Binding ProgressValue}" IsVisible="{Binding IsBusy}"
-                     Height="4" Margin="0,0,0,8" />
+                     Height="4" Margin="0,0,0,8" AutomationProperties.Name="{Binding Localization[Lbl_Progress]}" />
 
         <Panel Grid.Row="4" x:Name="DropArea" DragDrop.AllowDrop="True" Background="Transparent">
             <Border x:Name="DropHighlight" CornerRadius="8" BorderThickness="2" BorderBrush="{DynamicResource SystemAccentColor}"
@@ -87,10 +88,17 @@
                 <TextBlock Text="{Binding Localization[EmptyState_DropFiles]}" FontSize="16" HorizontalAlignment="Center" TextWrapping="Wrap" />
             </StackPanel>
 
-            <ListBox ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}" Background="Transparent" IsVisible="{Binding HasItems}">
+            <ListBox ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}" Background="Transparent" IsVisible="{Binding HasItems}"
+                     AutomationProperties.Name="{Binding Localization[Lbl_FileList]}" controls:RowTabNavigation.IsEnabled="True">
                 <ListBox.KeyBindings>
                     <KeyBinding Gesture="Delete" Command="{Binding RemoveSelectedCommand}" />
                 </ListBox.KeyBindings>
+                <ListBox.Styles>
+                    <!-- Screen readers announce a row by its file name, not by the row's type. -->
+                    <Style Selector="ListBoxItem" x:DataType="vm:FileItem">
+                        <Setter Property="AutomationProperties.Name" Value="{Binding FileName}" />
+                    </Style>
+                </ListBox.Styles>
                 <ListBox.ItemTemplate>
                     <DataTemplate x:DataType="vm:FileItem">
                         <Grid ColumnDefinitions="3*,Auto,5*,2*,Auto" Margin="0,2">
@@ -138,7 +146,7 @@
                                         </TextBox.IsVisible>
                                     </TextBox>
                                     <ProgressBar Minimum="0" Maximum="1" Value="{Binding Progress}" IsVisible="{Binding ShowProgress}"
-                                                 VerticalAlignment="Bottom" Height="3" />
+                                                 VerticalAlignment="Bottom" Height="3" AutomationProperties.Name="{Binding FileName}" />
                                 </Panel>
                                 <ToggleButton Grid.Column="1" IsChecked="{Binding IsRevealed}" Background="Transparent" Padding="4" Margin="2,0,0,0"
                                               IsVisible="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).IsHashMaskingEnabled}"
@@ -173,14 +181,14 @@
                             </TextBlock>
 
                             <StackPanel Grid.Column="4" Orientation="Horizontal" Spacing="2" VerticalAlignment="Center">
-                                <Button Classes="icon" Command="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).RunItemCommand}"
-                                        CommandParameter="{Binding}" IsVisible="{Binding !IsProcessing}"
+                                <Button x:Name="RunButton" Classes="icon" Command="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).RunItemCommand}"
+                                        CommandParameter="{Binding}" IsVisible="{Binding !IsProcessing}" controls:FocusHandOff.Target="{Binding #StopButton}"
                                         ToolTip.Tip="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_Verify]}"
                                         AutomationProperties.Name="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_Verify]}">
                                     <icons:MaterialIcon Kind="PlayCircleOutline" Width="18" Height="18" Foreground="{DynamicResource StatusSuccessBrush}" />
                                 </Button>
-                                <Button Classes="icon" Command="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).RunItemCommand}"
-                                        CommandParameter="{Binding}" IsVisible="{Binding IsProcessing}"
+                                <Button x:Name="StopButton" Classes="icon" Command="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).RunItemCommand}"
+                                        CommandParameter="{Binding}" IsVisible="{Binding IsProcessing}" controls:FocusHandOff.Target="{Binding #RunButton}"
                                         ToolTip.Tip="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_Stop]}"
                                         AutomationProperties.Name="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_Stop]}">
                                     <icons:MaterialIcon Kind="StopCircleOutline" Width="18" Height="18" Foreground="{DynamicResource StatusWarningBrush}" />

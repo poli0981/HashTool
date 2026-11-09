@@ -732,4 +732,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>ཐོན་རིམ་ {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>གནས་སྟངས་ལྟར་ ཚགས་མ་བཙགས།</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>ཚད་ལྟར་ ཚགས་མ་བཙགས།</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>ཡིག་སྣོད་ཚུ།</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>ཡར་འཕེལ།</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>ཚད་ཀྱི་ ཚད་གཞི།</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>ཧེ་ཤ་ གནས་གོང་།</value>
+    </data>
 </root>

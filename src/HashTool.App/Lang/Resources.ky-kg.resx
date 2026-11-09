@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>Версия {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>Абалы боюнча чыпкалоо</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>Өлчөмү боюнча чыпкалоо</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>Файлдар</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>Жүрүшү</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>Өлчөм бирдиги</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Хэш мааниси</value>
+    </data>
 </root>

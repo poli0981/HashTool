@@ -9,6 +9,7 @@ using Avalonia.Headless.XUnit;
 using Avalonia.Input;
 using Avalonia.Input.Platform;
 using Avalonia.Interactivity;
+using Avalonia.Media;
 using Avalonia.Threading;
 using Avalonia.VisualTree;
 using HashTool.App.Infrastructure;
@@ -99,6 +100,31 @@ public sealed class DialogTests
             dialog.RaiseEvent(new KeyEventArgs { RoutedEvent = InputElement.KeyDownEvent, Key = Key.Escape, Source = dialog });
 
             Assert.False(await answer.WaitAsync(TimeSpan.FromSeconds(10), TestContext.Current.CancellationToken));
+        }
+        finally
+        {
+            owner.Close();
+        }
+    }
+
+    [AvaloniaFact]
+    public async Task Dialogs_FollowTheUiScale()
+    {
+        var owner = ShowOwner();
+        try
+        {
+            var fonts = new FontService(TestServices.Loggers.CreateLogger<FontService>()) { UiScale = 1.5 };
+            var service = new DialogService(new MainWindowAccessor(() => owner), L, fonts);
+            var shown = service.ShowAsync("Scaled", "Message");
+            var dialog = Dialog(owner);
+
+            Assert.Equal(690, dialog.Width);
+            var transform = Assert.IsType<ScaleTransform>(Assert.IsType<LayoutTransformControl>(dialog.Content).LayoutTransform);
+            Assert.Equal(1.5, transform.ScaleX);
+            Assert.Equal(1.5, transform.ScaleY);
+
+            Click(ButtonOf(dialog, L["Btn_OK"]));
+            await shown.WaitAsync(TimeSpan.FromSeconds(10), TestContext.Current.CancellationToken);
         }
         finally
         {

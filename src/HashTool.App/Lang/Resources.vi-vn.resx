@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>Phiên bản {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>Lọc theo trạng thái</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>Lọc theo kích thước</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>Danh sách tệp</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>Tiến độ</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>Đơn vị kích thước</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Giá trị băm</value>
+    </data>
 </root>

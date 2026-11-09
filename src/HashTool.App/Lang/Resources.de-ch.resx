@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>Version {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>Nach Status filtern</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>Nach Grösse filtern</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>Dateien</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>Fortschritt</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>Grösseneinheit</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Hashwert</value>
+    </data>
 </root>

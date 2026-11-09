@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>កំណែ {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>ត្រងតាមស្ថានភាព</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>ត្រងតាមទំហំ</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>ឯកសារ</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>វឌ្ឍនភាព</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>ឯកតាទំហំ</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>តម្លៃ Hash</value>
+    </data>
 </root>

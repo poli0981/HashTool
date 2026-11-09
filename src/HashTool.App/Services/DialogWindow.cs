@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Controls;
@@ -13,14 +14,14 @@ namespace HashTool.App.Services;
 
 /// <summary>
 /// Themed message box: keyboard friendly (Enter = primary button, Escape = cancel), follows the UI language's reading
-/// direction, scrolls long content and lets users select or copy the text.
+/// direction and the UI scale, scrolls long content and lets users select or copy the text.
 /// </summary>
 internal static class DialogWindow
 {
     public static async Task ShowAsync(Window? owner, LocalizationService localization, string title, string message,
-        DialogIcon icon, string? details = null)
+        DialogIcon icon, string? details = null, double scale = 1)
     {
-        var (window, buttons) = Create(owner, localization, title, message, icon, details);
+        var (window, buttons) = Create(owner, localization, title, message, icon, details, scale);
         var ok = Button(localization["Btn_OK"], isDefault: true, isCancel: true);
         ok.Click += (_, _) => window.Close();
         buttons.Children.Add(ok);
@@ -28,9 +29,9 @@ internal static class DialogWindow
     }
 
     public static async Task<bool> ConfirmAsync(Window? owner, LocalizationService localization, string title, string message,
-        DialogIcon icon, string yesText, string noText)
+        DialogIcon icon, string yesText, string noText, double scale = 1)
     {
-        var (window, buttons) = Create(owner, localization, title, message, icon, null);
+        var (window, buttons) = Create(owner, localization, title, message, icon, null, scale);
         var result = false;
         var yes = Button(yesText, isDefault: true, isCancel: false);
         var no = Button(noText, isDefault: false, isCancel: true);
@@ -53,14 +54,24 @@ internal static class DialogWindow
     }
 
     private static (Window Window, StackPanel Buttons) Create(Window? owner, LocalizationService localization, string title,
-        string message, DialogIcon icon, string? details)
+        string message, DialogIcon icon, string? details, double scale)
     {
+        // The main window scales its content with a layout transform (Settings > UI scale); dialogs do the same, but stay
+        // on the screen: the message scrolls when the height runs out.
+        scale = double.IsFinite(scale) && scale > 0 ? scale : 1;
+        var (width, maxHeight) = ((details is null ? 460 : 560) * scale, 640 * scale);
+        if (owner?.Screens.ScreenFromWindow(owner) is { } screen)
+        {
+            width = Math.Min(width, screen.WorkingArea.Width / screen.Scaling * 0.9);
+            maxHeight = Math.Min(maxHeight, screen.WorkingArea.Height / screen.Scaling * 0.9);
+        }
+
         var window = new Window
         {
             Title = title,
             WindowDecorations = WindowDecorations.None,
-            Width = details is null ? 460 : 560,
-            MaxHeight = 640,
+            Width = width,
+            MaxHeight = maxHeight,
             SizeToContent = SizeToContent.Height,
             WindowStartupLocation = WindowStartupLocation.CenterOwner,
             CanResize = false,
@@ -125,7 +136,7 @@ internal static class DialogWindow
         var frame = new Border { CornerRadius = new CornerRadius(10), BorderThickness = new Thickness(1), ClipToBounds = true, Child = layout };
         frame.Bind(Border.BackgroundProperty, window.GetResourceObservable("PaneBackgroundBrush"));
         frame.Bind(Border.BorderBrushProperty, window.GetResourceObservable("HighlightBrush"));
-        window.Content = frame;
+        window.Content = new LayoutTransformControl { LayoutTransform = new ScaleTransform(scale, scale), Child = frame };
         return (window, buttons);
     }
 

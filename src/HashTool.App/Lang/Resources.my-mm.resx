@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>ဗားရှင်း {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>အခြေအနေအလိုက် စစ်ထုတ်ရန်</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>အရွယ်အစားအလိုက် စစ်ထုတ်ရန်</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>ဖိုင်များ</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>တိုးတက်မှု</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>အရွယ်အစား ယူနစ်</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Hash တန်ဖိုး</value>
+    </data>
 </root>

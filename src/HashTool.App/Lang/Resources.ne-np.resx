@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>संस्करण {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>स्थितिअनुसार फिल्टर गर्नुहोस्</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>साइजअनुसार फिल्टर गर्नुहोस्</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>फाइलहरू</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>प्रगति</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>साइजको एकाइ</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>ह्यास मान</value>
+    </data>
 </root>
