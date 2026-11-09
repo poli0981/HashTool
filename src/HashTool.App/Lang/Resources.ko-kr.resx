@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>버전 {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>상태별 필터</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>크기별 필터</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>파일</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>진행률</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>크기 단위</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>해시 값</value>
+    </data>
 </root>

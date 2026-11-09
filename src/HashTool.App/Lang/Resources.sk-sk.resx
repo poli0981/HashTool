@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>Verzia {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>Filtrovať podľa stavu</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>Filtrovať podľa veľkosti</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>Súbory</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>Priebeh</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>Jednotka veľkosti</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Hodnota hashu</value>
+    </data>
 </root>

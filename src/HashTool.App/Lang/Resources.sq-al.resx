@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>Versioni {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>Filtro sipas gjendjes</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>Filtro sipas madhësisë</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>Skedarët</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>Përparimi</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>Njësia e madhësisë</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Vlera e hash-it</value>
+    </data>
 </root>

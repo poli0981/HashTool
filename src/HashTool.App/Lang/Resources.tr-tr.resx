@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>Sürüm {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>Duruma göre filtrele</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>Boyuta göre filtrele</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>Dosyalar</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>İlerleme</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>Boyut birimi</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Hash değeri</value>
+    </data>
 </root>

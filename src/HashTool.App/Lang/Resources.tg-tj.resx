@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>Версияи {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>Филтр аз рӯи ҳолат</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>Филтр аз рӯи андоза</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>Файлҳо</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>Пешрафт</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>Воҳиди андоза</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Қимати ҳэш</value>
+    </data>
 </root>

@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>Versjon {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>Filtrer etter status</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>Filtrer etter størrelse</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>Filer</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>Fremdrift</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>Størrelsesenhet</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Hash-verdi</value>
+    </data>
 </root>

@@ -19,11 +19,13 @@
 
     <ScrollViewer HorizontalScrollBarVisibility="Disabled" Padding="0,0,16,0">
         <StackPanel Spacing="16" Margin="0,0,0,20">
-            <TextBlock Text="{Binding Localization[Title_About]}" FontSize="24" FontWeight="Bold" />
+            <TextBlock Text="{Binding Localization[Title_About]}" FontSize="24" FontWeight="Bold" AutomationProperties.HeadingLevel="1" />
 
             <Border Classes="card">
                 <Grid ColumnDefinitions="Auto,*">
-                    <Image Source="/Assets/logo_in_app.png" Width="80" Height="80" VerticalAlignment="Top" Margin="0,0,24,0" />
+                    <!-- Decorative: the app name is right next to it. -->
+                    <Image Source="/Assets/logo_in_app.png" Width="80" Height="80" VerticalAlignment="Top" Margin="0,0,24,0"
+                           AutomationProperties.AccessibilityView="Raw" />
                     <StackPanel Grid.Column="1" Spacing="4">
                         <TextBlock Text="{Binding AppName}" FontSize="24" FontWeight="Bold" />
                         <SelectableTextBlock Text="{Binding VersionText}" Classes="secondary" />
@@ -45,6 +47,12 @@
                                 <Button Classes="icon" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
                                         Command="{Binding $parent[UserControl].((vm:AboutViewModel)DataContext).OpenUrlCommand}"
                                         CommandParameter="{Binding Url}" ToolTip.Tip="{Binding Url}">
+                                    <AutomationProperties.Name>
+                                        <MultiBinding Converter="{StaticResource EnumLabelConverter}">
+                                            <Binding />
+                                            <Binding Path="$parent[UserControl].((vm:AboutViewModel)DataContext).Localization" />
+                                        </MultiBinding>
+                                    </AutomationProperties.Name>
                                     <Grid ColumnDefinitions="*,Auto">
                                         <TextBlock FontWeight="SemiBold" VerticalAlignment="Center">
                                             <TextBlock.Text>
@@ -88,7 +96,7 @@
                     </StackPanel>
                     <Button Classes="icon" Margin="34,0,0,0" Command="{Binding OpenUrlCommand}" CommandParameter="{Binding GitHubProfile}"
                             ToolTip.Tip="{Binding Localization[Tip_GitHubProfile]}"
-                            AutomationProperties.Name="{Binding Localization[Tip_GitHubProfile]}">
+                            AutomationProperties.Name="{Binding AuthorName}">
                         <StackPanel Orientation="Horizontal" Spacing="10">
                             <icons:MaterialIcon Kind="Github" Width="24" Height="24" />
                             <TextBlock Text="{Binding AuthorName}" VerticalAlignment="Center" FontWeight="Bold" />
@@ -108,7 +116,8 @@
                             <DataTemplate x:DataType="vm:LibraryItem">
                                 <Button Classes="icon" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
                                         Command="{Binding $parent[UserControl].((vm:AboutViewModel)DataContext).OpenUrlCommand}"
-                                        CommandParameter="{Binding Url}" ToolTip.Tip="{Binding Url}">
+                                        CommandParameter="{Binding Url}" ToolTip.Tip="{Binding Url}"
+                                        AutomationProperties.Name="{Binding Name}">
                                     <Grid ColumnDefinitions="*,Auto">
                                         <StackPanel Spacing="2">
                                             <TextBlock FontWeight="SemiBold">

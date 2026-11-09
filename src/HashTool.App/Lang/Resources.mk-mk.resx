@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>Верзија {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>Филтрирај по статус</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>Филтрирај по големина</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>Датотеки</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>Напредок</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>Единица за големина</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Вредност на хешот</value>
+    </data>
 </root>

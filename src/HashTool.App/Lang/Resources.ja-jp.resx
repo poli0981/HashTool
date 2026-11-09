@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>バージョン {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>状態で絞り込み</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>サイズで絞り込み</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>ファイル</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>進行状況</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>サイズの単位</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>ハッシュ値</value>
+    </data>
 </root>

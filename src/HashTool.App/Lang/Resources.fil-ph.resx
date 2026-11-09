@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>Bersyon {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>I-filter ayon sa status</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>I-filter ayon sa laki</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>Mga file</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>Progreso</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>Yunit ng laki</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Halaga ng hash</value>
+    </data>
 </root>

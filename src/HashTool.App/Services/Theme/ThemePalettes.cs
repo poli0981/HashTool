@@ -27,10 +27,11 @@ public static class ThemePalettes
                     warning: "#FFFF00", info: "#00FFFF", muted: "#FFFFFF", secondary: "#FFFFFF")
                 : Make("#FFFFFF", "#FFFFFF", "#000000", highlight: "#0000CC", success: "#006400", error: "#B00000",
                     warning: "#7A4F00", info: "#00008B", muted: "#000000", secondary: "#000000"),
-            // Okabe-Ito colours: distinguishable with every common form of colour blindness.
+            // Okabe-Ito colours: distinguishable with every common form of colour blindness. On light backgrounds the
+            // vermillion, yellow and reddish purple are darkened to reach 4.5:1 (WCAG AA) for status text.
             AppThemeStyle.Colorblind => isDark
                 ? Make("#121212", "#212529", null, success: "#56B4E9", error: "#E69F00", warning: "#F0E442", info: "#CC79A7")
-                : Make("#F8F9FA", "#FFFFFF", null, success: "#0072B2", error: "#D55E00", warning: "#B8860B", info: "#CC79A7"),
+                : Make("#F8F9FA", "#FFFFFF", null, success: "#0072B2", error: "#B34E00", warning: "#876200", info: "#A8487F"),
             AppThemeStyle.Retro => isDark ? Make("#282828", "#3C3836", null) : Make("#FBF1C7", "#EBDBB2", null),
             AppThemeStyle.Glassmorphism => isDark
                 ? Make("#99000000", "#991E1E1E", "#40FFFFFF")

@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>الإصدار {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>تصفية حسب الحالة</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>تصفية حسب الحجم</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>الملفات</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>التقدم</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>وحدة الحجم</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>قيمة الهاش</value>
+    </data>
 </root>

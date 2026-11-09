@@ -731,4 +731,22 @@
     <data name="About_Version" xml:space="preserve">
         <value>Útgáfa {0}</value>
     </data>
+    <data name="Lbl_FilterStatus" xml:space="preserve">
+        <value>Sía eftir stöðu</value>
+    </data>
+    <data name="Lbl_FilterSize" xml:space="preserve">
+        <value>Sía eftir stærð</value>
+    </data>
+    <data name="Lbl_FileList" xml:space="preserve">
+        <value>Skrár</value>
+    </data>
+    <data name="Lbl_Progress" xml:space="preserve">
+        <value>Framvinda</value>
+    </data>
+    <data name="Lbl_SizeUnit" xml:space="preserve">
+        <value>Stærðareining</value>
+    </data>
+    <data name="Lbl_HashValue" xml:space="preserve">
+        <value>Hash-gildi</value>
+    </data>
 </root>
