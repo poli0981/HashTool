@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [1.2.3] - 2026-11-09
 
 An accessibility update: Hash Tool now works better with screen readers and the keyboard alone, and its accessibility is documented.
 
