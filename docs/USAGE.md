@@ -31,6 +31,23 @@ Results: **VALID**, **MISMATCH!**, *Not a valid … hash* (wrong length or chara
 On Windows, files you cannot read can be retried with **Restart as Administrator** (offered after a run, and in
 Settings). While elevated, Windows blocks drag and drop from Explorer.
 
+### Keyboard
+
+| Keys | Action |
+|---|---|
+| Ctrl/⌘+O | Add files |
+| Ctrl/⌘+Shift+O | Add a folder |
+| Ctrl/⌘+F | Go to the search box |
+| Ctrl/⌘+Enter | Compute (Generate) or verify (Verify) all |
+| Esc | Cancel the run; close a dialog |
+| Delete | Remove the selected row |
+| Up/Down | Move between rows |
+| Tab / Shift+Tab | Next / previous control; in a row, its algorithm, hash and buttons, then out of the list |
+| Enter, Space | Press the focused button; in a dialog, Enter presses the highlighted button |
+
+Everything you can drop has a button too (**Add Files…**, **Add Folder…**, **Open Checksum File…**, **Browse** on a
+row). Screen readers, themes and other accessibility notes: [ACCESSIBILITY.md](../ACCESSIBILITY.md).
+
 ### Settings worth knowing
 
 | Setting | What it does |

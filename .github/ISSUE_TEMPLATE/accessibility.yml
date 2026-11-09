@@ -1,0 +1,93 @@
+name: Accessibility issue
+description: Something is hard or impossible to use with a keyboard, a screen reader, magnification, high contrast or other assistive technology.
+labels: [accessibility]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Thanks for reporting this. You do not need to tell us about any disability; describing what gets in your way is
+        enough. See [ACCESSIBILITY.md](https://github.com/poli0981/HashTool/blob/main/ACCESSIBILITY.md) for what is
+        already known.
+  - type: textarea
+    id: barrier
+    attributes:
+      label: What gets in your way?
+      description: What were you trying to do, what did you expect, and what happened instead?
+      placeholder: "Example: With NVDA, the buttons on a file row are announced only as \"button\"."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Verify Hash with the keyboard
+        2. Press Tab until ...
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: How much does it affect you?
+      options:
+        - Critical - I cannot generate or verify a hash at all
+        - High - it works only with a workaround or with great effort
+        - Medium - annoying or inconsistent, but I can get it done
+        - Low - minor or cosmetic
+    validations:
+      required: true
+  - type: dropdown
+    id: technology
+    attributes:
+      label: Assistive technology
+      multiple: true
+      options:
+        - Keyboard only
+        - Narrator
+        - NVDA
+        - JAWS
+        - VoiceOver
+        - Orca
+        - Screen magnifier or zoom
+        - System high contrast or contrast theme
+        - Voice control or speech recognition
+        - Switch access
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: technology-version
+    attributes:
+      label: Assistive technology version
+      placeholder: "NVDA 2026.3"
+  - type: input
+    id: version
+    attributes:
+      label: Hash Tool version
+      description: Shown on the About page, or `hashtool --version` for the command-line tool.
+      placeholder: "1.2.3"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows 11
+        - Windows 10
+        - macOS (Apple silicon)
+        - macOS (Intel)
+        - Linux
+    validations:
+      required: true
+  - type: textarea
+    id: settings
+    attributes:
+      label: Settings that may matter
+      description: Language, theme style, light or dark, font size, UI scale, system text size or contrast settings.
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or recordings
+      description: Optional. Drag files here; describe anything important that is only visible in them.

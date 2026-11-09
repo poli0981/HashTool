@@ -57,7 +57,9 @@ mismatched file, 2 usage error or unreadable checksum file. Published per platfo
   settings store. CI requires at least 80% line coverage of Core.
 - `HashTool.Cli.Tests` — commands, output formats and exit codes.
 - `HashTool.App.Tests` — Avalonia headless: every page in several languages, a create-and-verify flow, translation
-  integrity (keys, placeholders, Languages.json ↔ resx ↔ project, satellite assemblies, unused keys), language detection.
+  integrity (keys, placeholders, Languages.json ↔ resx ↔ project, satellite assemblies, unused keys), language detection,
+  and accessibility (`AccessibilityTests`: a real, translated automation name for every control, headings, Tab inside
+  file rows, focus when buttons swap, WCAG contrast of every theme palette; see [ACCESSIBILITY.md](../ACCESSIBILITY.md)).
 - `tests/Compat/LegacyClient` — not in the solution: the release workflow uses it to update a real 1.1.3 install with
   its own Velopack 0.0.1298 library and updater (see [RELEASING.md](RELEASING.md)).
 

@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+
+An accessibility update: Hash Tool now works better with screen readers and the keyboard alone, and its accessibility is documented.
+
+### Added
+- `ACCESSIBILITY.md` in the repository: what works with keyboards, screen readers and other assistive technology, known limitations, and how to report a problem — with a new *Accessibility issue* form.
+- Page and section titles are headings, and the navigation pane and the page are landmarks, so screen reader users can jump between them. Update and notice banners are announced when they change.
+
+### Fixed
+- Screen readers announce every control by a translated name. Before, rows of the file lists were read as "HashTool.App.ViewModels.FileItem", buttons with an icon and a label (Export, Check Now, Install, Restart as Administrator, Open Data Folder, the links on About) as "Avalonia.Controls.StackPanel", the arrows of number boxes as "PathIcon", and the filters, number boxes, progress bars and several switches had no name.
+- Tab now reaches the controls of a file row (algorithm, hash, copy, save, run, clear, remove) and then leaves the list; before, they could only be used with a mouse. The arrows of number boxes are no longer extra tab stops; Up/Down change the value.
+- Keyboard focus moves to **Cancel** when **COMPUTE ALL** / **VERIFY ALL** starts a run, and back when the run ends, instead of getting lost.
+- The light variant of the colour-blind theme shows error, warning and in-progress statuses with enough contrast (at least 4.5:1).
+- Dialogs follow the UI scale set in Settings.
+
+---
+
 ## [1.2.2] - 2026-10-26
 
 A security update: the app and the command-line tool now ship with the .NET 10.0.14 runtime.

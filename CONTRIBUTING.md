@@ -7,7 +7,7 @@ This project is still small and solo-maintained, so keep it simple and direct �
 
 ## Reporting bugs or requesting features
 
-Open an [issue](https://github.com/poli0981/HashTool/issues/new/choose) and pick **Bug report** or **Feature request** — the form asks for what's needed (version, OS, steps, logs).
+Open an [issue](https://github.com/poli0981/HashTool/issues/new/choose) and pick **Bug report**, **Feature request** or **Accessibility issue** — the form asks for what's needed (version, OS, steps, logs).
 Questions and ideas are welcome in [Discussions](https://github.com/poli0981/HashTool/discussions).
 
 Security problems: please **don't** open a public issue — see [SECURITY.md](SECURITY.md).
@@ -50,6 +50,12 @@ python -I eng/loc.py set changes.json      # {"vi-vn": {"Key": "text"}, "neutral
 ```
 
 New text needs a key in **every** file — the localization tests fail otherwise. Keep placeholders such as `{0}` exactly, and keep the product name "Hash Tool". Corrections from native speakers are very welcome; most translations were made with AI assistance.
+
+## Accessibility
+
+UI changes must keep the app usable with the keyboard alone and with screen readers: translated names for controls,
+Tab reaching every control, no colour-only signals, and readable contrast. [ACCESSIBILITY.md](ACCESSIBILITY.md) has the
+checklist, the automated tests that enforce it and how to check by hand.
 
 ## Code of Conduct
 
