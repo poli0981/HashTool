@@ -5,12 +5,12 @@
     </PropertyGroup>
 
     <ItemGroup Label="Avalonia">
-        <PackageVersion Include="Avalonia" Version="12.1.4" />
-        <PackageVersion Include="Avalonia.Desktop" Version="12.1.4" />
-        <PackageVersion Include="Avalonia.Fonts.Inter" Version="12.1.4" />
-        <PackageVersion Include="Avalonia.Headless" Version="12.1.4" />
-        <PackageVersion Include="Avalonia.Headless.XUnit" Version="12.1.4" />
-        <PackageVersion Include="Avalonia.Themes.Fluent" Version="12.1.4" />
+        <PackageVersion Include="Avalonia" Version="12.1.5" />
+        <PackageVersion Include="Avalonia.Desktop" Version="12.1.5" />
+        <PackageVersion Include="Avalonia.Fonts.Inter" Version="12.1.5" />
+        <PackageVersion Include="Avalonia.Headless" Version="12.1.5" />
+        <PackageVersion Include="Avalonia.Headless.XUnit" Version="12.1.5" />
+        <PackageVersion Include="Avalonia.Themes.Fluent" Version="12.1.5" />
         <PackageVersion Include="Material.Icons.Avalonia" Version="3.0.2" />
     </ItemGroup>
 
