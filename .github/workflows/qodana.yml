@@ -1,0 +1,86 @@
+name: Qodana
+
+# JetBrains Qodana for .NET (linter qodana-dotnet, Ultimate licence) in native mode: the solution is analysed with the
+# .NET SDK installed by setup-dotnet, as CI builds it (configuration in qodana.yaml). Results go to Qodana Cloud (the
+# token selects the project), to check annotations, to a pull request comment and to the qodana-report artifact.
+# Pull requests analyse the files they change; pushes to main, the weekly run and manual runs analyse everything.
+# Not a required check.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "37 4 * * 4"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: qodana-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  AVALONIA_TELEMETRY_OPTOUT: 1
+
+jobs:
+  # Pull requests from forks and from Dependabot get no repository secrets: skip the analysis instead of failing it.
+  token:
+    name: token
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions: {}
+    outputs:
+      available: ${{ steps.check.outputs.available }}
+    steps:
+      - name: Check for QODANA_TOKEN
+        id: check
+        env:
+          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
+        run: |
+          if [ -n "$QODANA_TOKEN" ]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::QODANA_TOKEN is not available to this run (fork or Dependabot pull request); analysis skipped."
+          fi
+
+  qodana:
+    name: qodana
+    needs: token
+    if: needs.token.outputs.available == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: read
+      # Annotations on the changed lines and a comment with the results on pull requests.
+      checks: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Pull requests: the head commit rather than the merge commit, so findings point at the changed lines. The
+          # full history lets the pull request mode compare with the base branch.
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      # Native mode analyses with this SDK (global.json picks the version), installed where the linter looks for it.
+      - uses: actions/setup-dotnet@0f4a354dd5547a28c70b7853dbd95d5b67886e73 # v6.1.0
+        with:
+          dotnet-version: 10.0.4xx
+
+      - name: Restore
+        run: dotnet restore HashTool.slnx
+
+      - name: Qodana scan
+        uses: JetBrains/qodana-action@3e8d76ff0e0241618abd808682f426afe84bab3f # v2026.2.2
+        with:
+          upload-result: true
+          cache-default-branch-only: true
+        env:
+          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
+          QODANA_ENDPOINT: https://qodana.cloud
