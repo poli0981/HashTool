@@ -3,7 +3,6 @@ using Avalonia;
 using Avalonia.Controls;
 using HashTool.App.Services;
 using HashTool.App.ViewModels;
-using HashTool.Core.Configuration;
 
 namespace HashTool.App.Views;
 

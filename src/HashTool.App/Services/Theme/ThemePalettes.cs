@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Avalonia.Media;
-using HashTool.Core.Configuration;
 
 namespace HashTool.App.Services.Theme;
 

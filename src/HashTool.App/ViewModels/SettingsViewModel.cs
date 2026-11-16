@@ -4,16 +4,12 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
-using Avalonia.Media;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using HashTool.App.Infrastructure;
-using HashTool.App.Infrastructure.Logging;
 using HashTool.App.Services;
 using HashTool.App.Services.Theme;
 using HashTool.Core.Checksums;
-using HashTool.Core.Configuration;
-using HashTool.Core.Hashing;
 using Microsoft.Extensions.Logging;
 
 namespace HashTool.App.ViewModels;
@@ -111,7 +107,7 @@ public sealed partial class SettingsViewModel : ObservableObject
 
     // ------------------------------------------------------------------ language & appearance
 
-    public LanguageItem SelectedLanguage
+    public LanguageItem? SelectedLanguage
     {
         get => Loc.SelectedLanguage;
         set

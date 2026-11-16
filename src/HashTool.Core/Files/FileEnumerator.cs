@@ -72,10 +72,10 @@ public static class FileEnumerator
         try
         {
             enumerator = new FileSystemEnumerable<FileEntry>(Path.GetFullPath(directory),
-                    static (ref FileSystemEntry entry) => new FileEntry(entry.ToFullPath(), entry.Length), enumerationOptions)
+                    static (ref entry) => new FileEntry(entry.ToFullPath(), entry.Length), enumerationOptions)
             {
-                ShouldIncludePredicate = static (ref FileSystemEntry entry) => !entry.IsDirectory,
-                ShouldRecursePredicate = static (ref FileSystemEntry entry) => !IsLink(ref entry)
+                ShouldIncludePredicate = static (ref entry) => !entry.IsDirectory,
+                ShouldRecursePredicate = static (ref entry) => !IsLink(ref entry)
             }
                 .GetEnumerator();
         }

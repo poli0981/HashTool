@@ -1,7 +1,6 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using HashTool.Core.Configuration;
 using Microsoft.Extensions.Logging;
 
 namespace HashTool.App.Services;
@@ -26,7 +25,7 @@ public sealed class SettingsService : IDisposable
         _logger = logger;
         LoadResult = store.Load(out var settings);
         Current = settings;
-        _saveTimer = new Timer(_ => _ = SaveNowAsync(), null, Timeout.Infinite, Timeout.Infinite);
+        _saveTimer = new Timer(state => _ = SaveNowAsync(), null, Timeout.Infinite, Timeout.Infinite);
         _logger.LogInformation("Settings {Result} from {Path}", LoadResult, store.FilePath);
     }
 

@@ -132,7 +132,7 @@ internal static class VerifyCommand
 
     private static string Count(int count, string singular, string plural) => $"{count} {(count == 1 ? singular : plural)}";
 
-    internal readonly record struct Outcome(HashMatch Match, HashType? Algorithm, Exception? Error)
+    internal readonly record struct Outcome(HashMatch Match, Exception? Error)
     {
         public bool IsOk => Error is null && Match is HashMatch.Match or HashMatch.LegacyByteOrderMatch;
 
@@ -151,7 +151,7 @@ internal static class VerifyCommand
     internal static async Task<Outcome> CheckAsync(HashEngine engine, string path, string expected, IReadOnlyList<HashType> candidates,
         CancellationToken cancellationToken)
     {
-        if (candidates.Count == 0) return new Outcome(HashMatch.LengthMismatch, null, null);
+        if (candidates.Count == 0) return new Outcome(HashMatch.LengthMismatch, null);
         HashResult[] results;
         try
         {
@@ -159,13 +159,13 @@ internal static class VerifyCommand
         }
         catch (Exception ex) when (ex is IOException or UnauthorizedAccessException)
         {
-            return new Outcome(HashMatch.Mismatch, null, ex);
+            return new Outcome(HashMatch.Mismatch, ex);
         }
 
         var matches = results.Select(r => (Result: r, Match: HashMatcher.Compare(expected, r))).ToList();
         var best = matches.FirstOrDefault(m => m.Match == HashMatch.Match);
         if (best.Result is null) best = matches.FirstOrDefault(m => m.Match == HashMatch.LegacyByteOrderMatch);
         if (best.Result is null) best = matches[0];
-        return new Outcome(best.Match, best.Result.Algorithm, null);
+        return new Outcome(best.Match, null);
     }
 }

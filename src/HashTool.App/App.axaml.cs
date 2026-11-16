@@ -36,7 +36,7 @@ public partial class App : Application
             };
         }
 
-        Dispatcher.UIThread.UnhandledException += (_, e) =>
+        Dispatcher.UIThread.UnhandledException += (sender, e) =>
         {
             logger.LogError(e.Exception, "Unhandled UI exception");
             e.Handled = true;

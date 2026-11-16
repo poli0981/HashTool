@@ -4,8 +4,6 @@ using HashTool.App.Infrastructure.Logging;
 using HashTool.App.Services;
 using HashTool.App.Services.Theme;
 using HashTool.App.ViewModels;
-using HashTool.Core.Configuration;
-using HashTool.Core.Hashing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 

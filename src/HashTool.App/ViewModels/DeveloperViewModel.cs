@@ -24,7 +24,6 @@ public sealed partial class DeveloperViewModel : ObservableObject
     private readonly IStorageService _storage;
     private readonly ILauncherService _launcher;
     private readonly ConcurrentQueue<LogEntry> _incoming = new();
-    private readonly DispatcherTimer _timer;
 
     [ObservableProperty] private LocalizationProxy _localization;
     [ObservableProperty] private LogLevel _minimumLevel = LogLevel.Debug;
@@ -42,8 +41,8 @@ public sealed partial class DeveloperViewModel : ObservableObject
 
         Entries.AddRange(sink.Snapshot());
         sink.EntryAdded += (_, e) => _incoming.Enqueue(e.Entry);
-        _timer = new DispatcherTimer(TimeSpan.FromMilliseconds(250), DispatcherPriority.Background, (_, _) => Flush());
-        _timer.Start();
+        // The dispatcher keeps a running timer alive.
+        new DispatcherTimer(TimeSpan.FromMilliseconds(250), DispatcherPriority.Background, (_, _) => Flush()).Start();
     }
 
     /// <summary>Entries at or above <see cref="MinimumLevel"/>, newest last.</summary>

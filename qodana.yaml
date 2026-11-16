@@ -5,14 +5,61 @@ version: "1.0"
 linter: qodana-dotnet
 withinDocker: false
 
-profile:
-  name: qodana.recommended
-
 dotnet:
   solution: HashTool.slnx
 
+# The shipped code. Tests and benchmarks are checked by the compiler, the analyzers and SonarCloud; the legacy client is
+# pinned to Velopack 0.0.1298 on purpose (the release upgrade gate runs it like a Hash Tool 1.1.x client).
 exclude:
   - name: All
     paths:
-      # Pinned to Velopack 0.0.1298 on purpose: the release upgrade gate runs it like a Hash Tool 1.1.x client.
-      - tests/Compat
+      - tests
+      - bench
+
+profile:
+  base:
+    name: qodana.recommended
+  groups:
+    - groupId: RoslynAnalyzers
+      groups:
+        - "category:C#/Roslyn Analyzers"
+  inspections:
+    # Roslyn analyzers (Meziantou, .NET, CommunityToolkit.Mvvm) already run in every build, where their warnings fail
+    # CI; their suggestions are not repeated here (SonarCloud ignores them too).
+    - group: RoslynAnalyzers
+      enabled: false
+    # Translations may equal the English text: en-GB/en-IN/en-SG, product and technical names.
+    - inspection: OverriddenWithSameValue
+      ignore:
+        - "src/HashTool.App/Lang/**"
+    # Compiled bindings such as $parent[Window].((vm:MainWindowViewModel)DataContext).X: the data context is set by the
+    # view that hosts the control.
+    - inspection: Xaml.PossibleNullReferenceException
+      enabled: false
+    # "accent" comes from the Fluent theme; "hashInput" marks the expected-hash box for code-behind.
+    - inspection: Xaml.StyleClassNotFound
+      enabled: false
+    # OnXChanged(value) partial methods are declared by CommunityToolkit.Mvvm's generator.
+    - inspection: UnusedParameterInPartialMethod
+      enabled: false
+    # Drag and drop handlers must be async void; their exceptions reach Dispatcher.UIThread.UnhandledException.
+    - inspection: AsyncVoidLambda
+      ignore:
+        - "src/HashTool.App/Views/**"
+    # The application manifest uses the Windows side-by-side schema, which the XML checker does not know.
+    - inspection: XmlHighlighting
+      ignore:
+        - "src/HashTool.App/app.manifest"
+    # Avalonia's application class, completed by the XAML compiler.
+    - inspection: PartialTypeWithSinglePart
+      ignore:
+        - "src/HashTool.App/App.axaml.cs"
+    # The smoke test cancels the token from a continuation that runs before the dispatcher loop returns.
+    - inspection: AccessToDisposedClosure
+      ignore:
+        - "src/HashTool.App/Infrastructure/SmokeTest.cs"
+
+failureConditions:
+  severityThresholds:
+    critical: 0
+    high: 0

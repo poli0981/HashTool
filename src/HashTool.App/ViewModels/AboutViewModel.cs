@@ -67,7 +67,7 @@ public sealed partial class AboutViewModel : ObservableObject
         Library("Avalonia UI", typeof(Avalonia.Application), "MIT", "https://avaloniaui.net/"),
         Library("Inter font", typeof(Avalonia.Fonts.Inter.InterFontCollection), "SIL OFL 1.1", "https://rsms.me/inter/"),
         Library("Blake3.NET", typeof(Blake3.Hasher), "BSD-2-Clause", "https://github.com/xoofx/Blake3.NET"),
-        Library("CommunityToolkit.Mvvm", typeof(CommunityToolkit.Mvvm.ComponentModel.ObservableObject), "MIT", "https://github.com/CommunityToolkit/dotnet"),
+        Library("CommunityToolkit.Mvvm", typeof(ObservableObject), "MIT", "https://github.com/CommunityToolkit/dotnet"),
         Library("Material.Icons.Avalonia", typeof(Material.Icons.Avalonia.MaterialIcon), "MIT", "https://github.com/SKProCH/Material.Icons"),
         Library("Microsoft.Extensions.*", typeof(Microsoft.Extensions.Logging.ILogger), "MIT", "https://github.com/dotnet/runtime"),
         Library("System.IO.Hashing", typeof(System.IO.Hashing.XxHash3), "MIT", "https://github.com/dotnet/runtime"),

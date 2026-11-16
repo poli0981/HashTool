@@ -5,7 +5,6 @@ using Avalonia.Data.Converters;
 using HashTool.App.Models;
 using HashTool.App.Services;
 using HashTool.App.ViewModels;
-using HashTool.Core.Configuration;
 
 namespace HashTool.App.Converters;
 

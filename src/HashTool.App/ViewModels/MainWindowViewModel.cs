@@ -8,7 +8,6 @@ using HashTool.App.Infrastructure;
 using HashTool.App.Services;
 using HashTool.App.Services.Theme;
 using HashTool.Core.Checksums;
-using HashTool.Core.Configuration;
 
 namespace HashTool.App.ViewModels;
 

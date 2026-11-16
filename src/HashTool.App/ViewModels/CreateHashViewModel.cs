@@ -12,7 +12,6 @@ using HashTool.App.Models;
 using HashTool.App.Services;
 using HashTool.Core.Checksums;
 using HashTool.Core.Files;
-using HashTool.Core.Hashing;
 using HashTool.Core.Processing;
 using Microsoft.Extensions.Logging;
 
@@ -89,7 +88,7 @@ public sealed partial class CreateHashViewModel : FileListViewModelBase
         var items = ItemsWithResults();
         if (items.Count == 0)
         {
-            await Services.Dialogs.ShowAsync(L["Msg_Result_Title"], L["Msg_NothingToExport"], DialogIcon.Information);
+            await Services.Dialogs.ShowAsync(L["Msg_Result_Title"], L["Msg_NothingToExport"]);
             return;
         }
 
@@ -104,7 +103,7 @@ public sealed partial class CreateHashViewModel : FileListViewModelBase
         types.Add(new FileTypeChoice(L["FileType_Json"], "*.json", ExportFormat.Json));
         types.Add(new FileTypeChoice(L["FileType_Csv"], "*.csv", ExportFormat.Csv));
 
-        var preferred = types.FirstOrDefault(t => (ExportFormat)t.Tag! == Settings.DefaultExportFormat) ?? types[0];
+        var preferred = types.FirstOrDefault(type => (ExportFormat)type.Tag! == Settings.DefaultExportFormat) ?? types[0];
         types.Remove(preferred);
         types.Insert(0, preferred);
         var format = (ExportFormat)preferred.Tag!;
@@ -135,7 +134,7 @@ public sealed partial class CreateHashViewModel : FileListViewModelBase
         var items = ItemsWithResults();
         if (items.Count == 0)
         {
-            await Services.Dialogs.ShowAsync(L["Msg_Result_Title"], L["Msg_NothingToExport"], DialogIcon.Information);
+            await Services.Dialogs.ShowAsync(L["Msg_Result_Title"], L["Msg_NothingToExport"]);
             return;
         }
 

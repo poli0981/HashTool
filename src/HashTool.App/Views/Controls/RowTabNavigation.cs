@@ -33,7 +33,7 @@ public static class RowTabNavigation
     private static void OnKeyDown(object? sender, KeyEventArgs e)
     {
         if (e.Handled || e.Key != Key.Tab || (e.KeyModifiers & ~KeyModifiers.Shift) != KeyModifiers.None) return;
-        if (TopLevel.GetTopLevel(sender as Visual)?.FocusManager?.GetFocusedElement() is not Control focused) return;
+        if (TopLevel.GetTopLevel(sender as Visual)?.FocusManager.GetFocusedElement() is not Control focused) return;
         var row = focused as ListBoxItem ?? focused.FindAncestorOfType<ListBoxItem>();
         if (row is null) return;
 

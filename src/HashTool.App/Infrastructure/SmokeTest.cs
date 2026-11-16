@@ -82,7 +82,7 @@ public static class SmokeTest
         // Hash a text.
         main.Text.Text = "123456789";
         await main.Text.Pending;
-        var textHash = main.Text.Results.Single(r => r.Algorithm == Core.Hashing.HashType.SHA256).Hash;
+        var textHash = main.Text.Results.Single(r => r.Algorithm == HashType.SHA256).Hash;
         if (!string.Equals(textHash, Sha256Of123456789, StringComparison.OrdinalIgnoreCase))
             report.Errors.Add($"Text: unexpected hash {textHash}");
 
@@ -110,7 +110,7 @@ public static class SmokeTest
         {
             var file = Path.Combine(folder.FullName, "check.txt");
             await File.WriteAllTextAsync(file, "123456789");
-            main.Create.SelectedAlgorithm = Core.Hashing.HashType.SHA256;
+            main.Create.SelectedAlgorithm = HashType.SHA256;
             await main.Create.AddPathsAsync([file]);
             await main.Create.RunAllCommand.ExecuteAsync(null);
             var created = main.Create.Items.Single();
