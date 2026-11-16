@@ -782,4 +782,13 @@
     <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
         <value>{0} ह्यास प्रतिलिपि गर्नुहोस्</value>
     </data>
+    <data name="Lbl_ExpectedHash" xml:space="preserve">
+        <value>अपेक्षित ह्यास</value>
+    </data>
+    <data name="Lbl_ComputedHash" xml:space="preserve">
+        <value>गणना गरिएको ह्यास</value>
+    </data>
+    <data name="Msg_RowResult" xml:space="preserve">
+        <value>{0}: {1}</value>
+    </data>
 </root>

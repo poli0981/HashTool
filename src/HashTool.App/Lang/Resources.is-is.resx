@@ -782,4 +782,13 @@
     <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
         <value>Afrita {0}-hash</value>
     </data>
+    <data name="Lbl_ExpectedHash" xml:space="preserve">
+        <value>Vænt hash</value>
+    </data>
+    <data name="Lbl_ComputedHash" xml:space="preserve">
+        <value>Reiknað hash</value>
+    </data>
+    <data name="Msg_RowResult" xml:space="preserve">
+        <value>{0}: {1}</value>
+    </data>
 </root>

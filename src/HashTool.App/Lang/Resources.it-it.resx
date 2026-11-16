@@ -782,4 +782,13 @@
     <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
         <value>Copia hash {0}</value>
     </data>
+    <data name="Lbl_ExpectedHash" xml:space="preserve">
+        <value>Hash atteso</value>
+    </data>
+    <data name="Lbl_ComputedHash" xml:space="preserve">
+        <value>Hash calcolato</value>
+    </data>
+    <data name="Msg_RowResult" xml:space="preserve">
+        <value>{0}: {1}</value>
+    </data>
 </root>

@@ -783,4 +783,13 @@
     <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
         <value>{0} ཧེ་ཤ་ འདྲ་བཤུས་རྐྱབ།</value>
     </data>
+    <data name="Lbl_ExpectedHash" xml:space="preserve">
+        <value>རེ་བ་བསྐྱེད་མི་ ཧེ་ཤ།</value>
+    </data>
+    <data name="Lbl_ComputedHash" xml:space="preserve">
+        <value>རྩིས་བརྐྱབ་ཡོད་པའི་ ཧེ་ཤ།</value>
+    </data>
+    <data name="Msg_RowResult" xml:space="preserve">
+        <value>{0}: {1}</value>
+    </data>
 </root>
