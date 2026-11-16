@@ -782,4 +782,13 @@
     <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
         <value>复制 {0} 哈希值</value>
     </data>
+    <data name="Lbl_ExpectedHash" xml:space="preserve">
+        <value>预期哈希值</value>
+    </data>
+    <data name="Lbl_ComputedHash" xml:space="preserve">
+        <value>计算出的哈希值</value>
+    </data>
+    <data name="Msg_RowResult" xml:space="preserve">
+        <value>{0}：{1}</value>
+    </data>
 </root>

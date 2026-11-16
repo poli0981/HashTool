@@ -782,4 +782,13 @@
     <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
         <value>Kopioi {0}-tiiviste</value>
     </data>
+    <data name="Lbl_ExpectedHash" xml:space="preserve">
+        <value>Odotettu tiiviste</value>
+    </data>
+    <data name="Lbl_ComputedHash" xml:space="preserve">
+        <value>Laskettu tiiviste</value>
+    </data>
+    <data name="Msg_RowResult" xml:space="preserve">
+        <value>{0}: {1}</value>
+    </data>
 </root>

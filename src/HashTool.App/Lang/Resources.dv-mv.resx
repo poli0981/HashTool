@@ -782,4 +782,13 @@
     <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
         <value>{0} ހޭޝް ކޮޕީކުރޭ</value>
     </data>
+    <data name="Lbl_ExpectedHash" xml:space="preserve">
+        <value>އުންމީދުކުރާ ހޭޝް</value>
+    </data>
+    <data name="Lbl_ComputedHash" xml:space="preserve">
+        <value>ހިސާބުކުރެވިފައިވާ ހޭޝް</value>
+    </data>
+    <data name="Msg_RowResult" xml:space="preserve">
+        <value>{0}: {1}</value>
+    </data>
 </root>
