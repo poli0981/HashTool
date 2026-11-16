@@ -48,7 +48,8 @@ public sealed partial class TextHashViewModel : ObservableObject
     private long _byteCount;
 
     [ObservableProperty] private LocalizationProxy _localization;
-    [ObservableProperty] private string _text = string.Empty;
+    /// <summary>The text to hash; the text box can set null when it is cleared.</summary>
+    [ObservableProperty] private string? _text = string.Empty;
     [ObservableProperty] private TextEncodingOption _selectedEncoding;
     [ObservableProperty] private LineBreak _selectedLineBreak = LineBreak.Lf;
     [ObservableProperty] private string _sizeText = string.Empty;
@@ -91,7 +92,7 @@ public sealed partial class TextHashViewModel : ObservableObject
     /// <summary>The latest computation; tests wait for it.</summary>
     internal Task Pending { get; private set; } = Task.CompletedTask;
 
-    partial void OnTextChanged(string value) => Recompute(immediately: false);
+    partial void OnTextChanged(string? value) => Recompute(immediately: false);
 
     partial void OnSelectedEncodingChanged(TextEncodingOption value) => Recompute(immediately: true);
 
