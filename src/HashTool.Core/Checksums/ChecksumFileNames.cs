@@ -2,6 +2,7 @@ using System;
 using System.Collections.Frozen;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using HashTool.Core.Hashing;
 
 namespace HashTool.Core.Checksums;
@@ -35,6 +36,12 @@ public static class ChecksumFileNames
         [".crc32"] = HashType.CRC32,
         [".sfv"] = HashType.CRC32
     }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+
+    /// <summary>
+    /// Every checksum file extension Hash Tool recognises (with the dot). The Windows context menu and the macOS
+    /// document types (build/macos/Info.plist) offer "Verify" for exactly these.
+    /// </summary>
+    public static IReadOnlyList<string> KnownExtensions { get; } = [.. Extensions.Keys.Order(StringComparer.Ordinal)];
 
     private static readonly FrozenDictionary<string, HashType?> WellKnownNames = new Dictionary<string, HashType?>(StringComparer.OrdinalIgnoreCase)
     {

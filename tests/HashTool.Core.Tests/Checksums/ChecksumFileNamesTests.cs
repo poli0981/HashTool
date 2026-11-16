@@ -24,6 +24,19 @@ public sealed class ChecksumFileNamesTests
     }
 
     [Fact]
+    public void KnownExtensions_CoverEveryAlgorithm_AndAreAllRecognised()
+    {
+        Assert.All(HashAlgorithms.All, a => Assert.Contains("." + HashAlgorithms.FileExtension(a), ChecksumFileNames.KnownExtensions));
+        Assert.All(ChecksumFileNames.KnownExtensions, e =>
+        {
+            Assert.StartsWith(".", e, System.StringComparison.Ordinal);
+            Assert.True(ChecksumFileNames.IsChecksumFile("file" + e, out _), e);
+        });
+        Assert.Contains(".sha384sum", ChecksumFileNames.KnownExtensions);
+        Assert.Contains(".b3sum", ChecksumFileNames.KnownExtensions);
+    }
+
+    [Fact]
     public void GenericChecksumsFile_HasNoAlgorithmHint()
     {
         Assert.True(ChecksumFileNames.IsChecksumFile("/dl/CHECKSUMS.txt", out var algorithm));

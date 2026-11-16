@@ -1,7 +1,9 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
+using HashTool.Core.Checksums;
 using Microsoft.Win32;
 
 namespace HashTool.App.Infrastructure;
@@ -16,12 +18,11 @@ public static partial class ShellIntegration
     private const string VerifyVerb = "HashTool.Verify";
     private const string OwnerValue = "HashToolOwner";
 
-    /// <summary>Checksum file types that get "Verify with Hash Tool".</summary>
-    private static readonly string[] ChecksumExtensions =
-    [
-        ".md5", ".sha1", ".sha256", ".sha384", ".sha512", ".sfv", ".b3", ".blake3", ".crc32", ".xxh32", ".xxh64", ".xxh3",
-        ".xxh128", ".xxhash32", ".xxhash64", ".xxhash3", ".xxhash128", ".md5sum", ".sha1sum", ".sha256sum", ".sha512sum"
-    ];
+    /// <summary>
+    /// Checksum file types that get "Verify with Hash Tool": every type Hash Tool reads. The entries are written again at
+    /// each start (see SettingsViewModel.RefreshShellIntegration), so new types reach existing installations.
+    /// </summary>
+    private static IReadOnlyList<string> ChecksumExtensions => ChecksumFileNames.KnownExtensions;
 
     public static bool IsSupported => OperatingSystem.IsWindows();
 

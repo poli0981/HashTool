@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using HashTool.App.Infrastructure;
 using HashTool.App.Infrastructure.Logging;
@@ -124,5 +125,21 @@ public sealed class TextHelperTests
         var entry = new LogEntry(new DateTimeOffset(2026, 10, 15, 8, 30, 5, 123, TimeSpan.Zero), Microsoft.Extensions.Logging.LogLevel.Warning, "Test", "message");
 
         Assert.Equal("08:30:05.123 [WARN] Test: message", entry.ToString());
+    }
+}
+
+public sealed class PackagingTests
+{
+    [Fact]
+    public void MacOSDocumentTypes_ListEveryChecksumExtension()
+    {
+        // Info.plist (build/macos) is kept by hand; Windows registers ChecksumFileNames.KnownExtensions directly.
+        var plist = System.Xml.Linq.XDocument.Load(Path.Combine(RepositoryFiles.Root, "build", "macos", "Info.plist"));
+        var declared = plist.Descendants("key")
+            .Where(k => k.Value == "CFBundleTypeExtensions")
+            .SelectMany(k => ((System.Xml.Linq.XElement)k.NextNode!).Elements("string").Select(e => "." + e.Value))
+            .Order(StringComparer.Ordinal);
+
+        Assert.Equal(HashTool.Core.Checksums.ChecksumFileNames.KnownExtensions.Order(StringComparer.Ordinal), declared);
     }
 }
