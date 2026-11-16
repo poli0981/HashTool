@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
 - Accessibility: when a file does not match, Verify shows the hash it really has under the expected one, in a box the keyboard and screen readers reach; before, it was only in a tooltip, which also ignored hash masking. The expected-hash box is announced as "Expected hash" instead of its placeholder text.
 - Accessibility: the result of a run of one file (for example "photo.jpg: VALID") is announced by screen readers and shown at the top of the page; a run of several files still ends with the summary dialog.
 - Accessibility: tooltips show shortcuts the macOS way (⌘O) on macOS, and screen readers announce the shortcuts of Add Files, Add Folder, Compute/Verify All, Cancel and the search box.
+- Windows: the Explorer context menu offers "Verify with Hash Tool" for `.sha384sum` and `.b3sum` files too; the menu is updated the next time Hash Tool starts.
 
 ### Security
 - Updated to the .NET 10.0.15 runtime, which the self-contained downloads include. It fixes denial of service and elevation of privilege vulnerabilities in .NET (CVE-2026-109475, CVE-2026-105544, CVE-2026-114155, CVE-2026-118747).
