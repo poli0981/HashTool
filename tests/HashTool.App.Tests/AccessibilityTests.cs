@@ -17,6 +17,7 @@ using HashTool.App.Services;
 using HashTool.App.Services.Theme;
 using HashTool.App.ViewModels;
 using HashTool.App.Views;
+using HashTool.App.Views.Controls;
 using HashTool.Core.Configuration;
 using HashTool.Core.Tests;
 using Xunit;
@@ -221,6 +222,70 @@ public sealed class AccessibilityTests
         Assert.Same(search, screen.Focused);
         list.IsBusy = false;
     }
+
+    [AvaloniaFact]
+    public async Task HashesAndPaths_StayLeftToRight_InRightToLeftLanguages()
+    {
+        await using var screen = await Screen.ShowAsync();
+        screen.Localization.SelectedLanguage = screen.Localization.Find("ar");
+        var problems = new List<string>();
+        foreach (var page in new[] { "Create", "Check", "Text" })
+        {
+            screen.Navigate(page);
+            Assert.Equal(FlowDirection.RightToLeft, screen.Window.FlowDirection);
+            // File names, folders and hash boxes (the read-only ones and Verify's expected hash); not the search box or
+            // the text to hash, which hold text in the user's language.
+            var targets = screen.Window.GetVisualDescendants().OfType<Control>()
+                .Where(c => c.IsEffectivelyVisible && c.TemplatedParent is null && c switch
+                {
+                    HighlightTextBlock => true,
+                    TextBlock block => ReferenceEquals(block.TextTrimming, TextTrimming.LeadingCharacterEllipsis),
+                    TextBox box => box.IsReadOnly || box.Classes.Contains("hashInput"),
+                    _ => false
+                })
+                .ToList();
+            Assert.NotEmpty(targets);
+            problems.AddRange(targets.Where(c => c.FlowDirection != FlowDirection.LeftToRight).Select(c => $"{page}: {Describe(c)}"));
+        }
+
+        Assert.True(problems.Count == 0, string.Join(Environment.NewLine, problems));
+    }
+
+    [AvaloniaFact]
+    public async Task AMismatch_ShowsTheComputedHashInAFocusableBox_AndAnnouncesTheResult()
+    {
+        await using var screen = await Screen.ShowAsync();
+        screen.Navigate("Check");
+        var alpha = screen.Check.Items.Single(i => i.FileName == "alpha.txt");
+        alpha.ExpectedHash = new string('0', 64);
+
+        await screen.Check.RunItemCommand.ExecuteAsync(alpha);
+        await Wait.UntilAsync(() => alpha.Status == ItemStatus.Mismatch && !screen.Check.IsBusy);
+        screen.Settle();
+
+        var name = screen.Localization["Lbl_ComputedHash"];
+        var computed = screen.Window.GetVisualDescendants().OfType<TextBox>()
+            .Single(t => t.IsEffectivelyVisible && AutomationProperties.GetName(t) == name);
+        Assert.True(computed.Focusable && computed.IsReadOnly);
+        Assert.Equal(alpha.ResultHash, computed.Text);
+        Assert.Contains(screen.Window.GetVisualDescendants().OfType<TextBox>(),
+            t => t.Classes.Contains("hashInput") && AutomationProperties.GetName(t) == screen.Localization["Lbl_ExpectedHash"]);
+
+        // One file: no summary dialog, the result goes to the page's live text instead.
+        var expected = screen.Localization.Format("Msg_RowResult", "alpha.txt", screen.Localization["Status_Invalid"]);
+        Assert.Equal(expected, screen.Check.Announcement);
+        var live = screen.Window.GetVisualDescendants().OfType<TextBlock>().Single(t => t.Text == expected);
+        Assert.Equal(AutomationLiveSetting.Polite, AutomationProperties.GetLiveSetting(live));
+    }
+
+    [Theory]
+    [InlineData("Ctrl+O", false, "Ctrl+O")]
+    [InlineData("Ctrl+O", true, "⌘O")]
+    [InlineData("Ctrl+Shift+O", true, "⇧⌘O")]
+    [InlineData("Ctrl+Enter", true, "⌘↩")]
+    [InlineData("Esc", true, "Esc")]
+    public void Shortcuts_UseThePlatformsNotation(string gesture, bool macOS, string expected) =>
+        Assert.Equal(expected, Shortcuts.Format(gesture, macOS));
 
     private static Color Opaque(IBrush brush, Color under)
     {

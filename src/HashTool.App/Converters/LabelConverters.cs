@@ -50,8 +50,12 @@ public sealed class StatusTextConverter : IMultiValueConverter
     public object? Convert(IList<object?> values, Type targetType, object? parameter, CultureInfo culture)
     {
         if (values.Count < 3 || values[0] is not ItemStatus status || values[2] is not LocalizationProxy localization) return null;
-        var detail = values[1] as string;
-        return status switch
+        return Text(status, values[1] as string, localization);
+    }
+
+    /// <summary>The translated text of a row's status.</summary>
+    public static string Text(ItemStatus status, string? detail, LocalizationProxy localization) =>
+        status switch
         {
             ItemStatus.Ready => localization["Lbl_Status_Ready"],
             ItemStatus.Queued => localization["Status_Queued"],
@@ -76,7 +80,6 @@ public sealed class StatusTextConverter : IMultiValueConverter
             ItemStatus.UnreadableHashFile => localization["Status_ReadError"],
             _ => status.ToString()
         };
-    }
 }
 
 /// <summary>Severity class for the status column (success / error / warning / muted).</summary>
@@ -91,6 +94,8 @@ public static class StatusSeverity
 
     public static readonly IValueConverter IsWarning = new FuncValueConverter<ItemStatus, bool>(s =>
         s is ItemStatus.Cancelled or ItemStatus.TimedOut or ItemStatus.MissingHash or ItemStatus.NoHashInFile);
+
+    public static readonly IValueConverter IsMismatch = new FuncValueConverter<ItemStatus, bool>(s => s == ItemStatus.Mismatch);
 }
 
 /// <summary>Colour classes for log entries in the Developer console.</summary>

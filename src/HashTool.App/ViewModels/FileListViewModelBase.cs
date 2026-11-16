@@ -10,6 +10,7 @@ using Avalonia.Collections;
 using Avalonia.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using HashTool.App.Converters;
 using HashTool.App.Infrastructure;
 using HashTool.App.Models;
 using HashTool.App.Services;
@@ -63,6 +64,12 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
     private long _batchBytesTotal;
 
     [ObservableProperty] private LocalizationProxy _localization;
+
+    /// <summary>
+    /// The result of a run of one file ("name: VALID"), shown in the page header and read by screen readers (a live
+    /// region); a run of several files ends with the summary dialog instead.
+    /// </summary>
+    [ObservableProperty] private string? _announcement;
 
     [ObservableProperty]
     [NotifyPropertyChangedFor(nameof(CanModify))]
@@ -354,6 +361,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
         _byPath.Clear();
         Items.Clear();
         ResetBatchStats();
+        Announcement = null;
         OnPropertyChanged(nameof(HasItems));
         OnPropertyChanged(nameof(TotalFilesText));
         Logger.LogInformation("List cleared");
@@ -463,6 +471,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
     {
         if (items.Count == 0 || !CanModify) return;
         IsBusy = true;
+        Announcement = null;
         ResetBatchStats();
         _batchCts = new CancellationTokenSource();
         try
@@ -510,6 +519,8 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
 
         Logger.LogInformation("Finished in {Elapsed}: {Succeeded} succeeded, {Failed} failed, {Cancelled} cancelled",
             _batchClock.Elapsed, SucceededCount, FailedCount, CancelledCount);
+        if (items is [var single])
+            Announcement = L.Format("Msg_RowResult", single.FileName, StatusTextConverter.Text(single.Status, single.StatusDetail, Localization));
         await OnBatchFinishedAsync(items);
     }
 
