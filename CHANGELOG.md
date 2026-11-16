@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+
+### Security
+- Updated to the .NET 10.0.15 runtime, which the self-contained downloads include. It fixes denial of service and elevation of privilege vulnerabilities in .NET (CVE-2026-109475, CVE-2026-105544, CVE-2026-114155, CVE-2026-118747).
+
+### Changed
+- Updated Avalonia to 12.1.6 (including fixes to its screen reader support on macOS and Linux), Microsoft.Extensions and System.IO.Hashing to 10.0.15, System.CommandLine to 2.0.15, and the code analyzers.
+
+---
+
 ## [1.2.3] - 2026-11-09
 
 An accessibility update: Hash Tool now works better with screen readers and the keyboard alone, and its accessibility is documented.
