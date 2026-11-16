@@ -16,11 +16,21 @@ namespace HashTool.Cli;
 /// <summary><c>hashtool hash</c>: prints or writes checksum lines for files and folders.</summary>
 internal static class HashCommand
 {
-    private sealed record Input(string FullPath, string Display);
+    /// <summary>The path that stands for standard input, as in coreutils (a file named "-" is "./-").</summary>
+    internal const string StandardInput = "-";
 
-    public static Command Create(TextWriter output, TextWriter error)
+    private sealed record Input(string FullPath, string Display)
     {
-        var paths = new Argument<string[]>("paths") { Description = "Files to hash (folders need --recursive).", Arity = ArgumentArity.OneOrMore };
+        public bool IsStandardInput => FullPath == StandardInput;
+    }
+
+    public static Command Create(TextWriter output, TextWriter error, Func<Stream> openStandardInput)
+    {
+        var paths = new Argument<string[]>("paths")
+        {
+            Description = "Files to hash (folders need --recursive; - reads standard input, e.g. printf '%s' text | hashtool hash -).",
+            Arity = ArgumentArity.OneOrMore
+        };
         var algorithms = HashToolCommand.AlgorithmOption("Algorithm(s) to use: sha256 (default), sha1, md5, sha384, sha512, blake3, xxhash3, ...");
         var recursive = new Option<bool>("--recursive", "-r") { Description = "Hash every file inside the given folders." };
         var hidden = new Option<bool>("--hidden") { Description = "Include hidden and system files when walking folders." };
@@ -45,7 +55,7 @@ internal static class HashCommand
             result.GetValue(format),
             result.GetValue(outputFile),
             result.GetValue(upper) ? HexCase.Upper : HexCase.Lower,
-            result.GetValue(jobs)), output, error, cancellationToken));
+            result.GetValue(jobs)), output, error, openStandardInput, cancellationToken));
         return command;
     }
 
@@ -59,7 +69,8 @@ internal static class HashCommand
         HexCase LetterCase,
         int Jobs);
 
-    internal static async Task<int> RunAsync(Request request, TextWriter output, TextWriter error, CancellationToken cancellationToken)
+    internal static async Task<int> RunAsync(Request request, TextWriter output, TextWriter error, Func<Stream> openStandardInput,
+        CancellationToken cancellationToken)
     {
         var format = request.Format ?? (request.Algorithms.Count == 1 ? ExportFormat.Gnu : ExportFormat.Bsd);
         if (format == ExportFormat.Gnu && request.Algorithms.Count > 1)
@@ -82,6 +93,7 @@ internal static class HashCommand
         var engine = new HashEngine();
         var results = new HashResult[]?[inputs.Count];
         var errors = new Exception?[inputs.Count];
+        var sizes = new long?[inputs.Count];
         var parallelism = request.Jobs > 0 ? request.Jobs : new BatchOptions().EffectiveParallelism;
         await Parallel.ForEachAsync(Enumerable.Range(0, inputs.Count),
             new ParallelOptions { MaxDegreeOfParallelism = parallelism, CancellationToken = cancellationToken },
@@ -89,7 +101,22 @@ internal static class HashCommand
             {
                 try
                 {
-                    results[i] = await engine.ComputeFileAsync(inputs[i].FullPath, request.Algorithms, null, token).ConfigureAwait(false);
+                    if (inputs[i].IsStandardInput)
+                    {
+                        long read = 0;
+                        var stream = openStandardInput();
+                        await using (stream.ConfigureAwait(false))
+                        {
+                            results[i] = await engine.ComputeStreamAsync(stream, request.Algorithms, n => read += n, token).ConfigureAwait(false);
+                        }
+
+                        sizes[i] = read;
+                    }
+                    else
+                    {
+                        results[i] = await engine.ComputeFileAsync(inputs[i].FullPath, request.Algorithms, null, token).ConfigureAwait(false);
+                        sizes[i] = SafeLength(inputs[i].FullPath);
+                    }
                 }
                 catch (Exception ex) when (ex is IOException or UnauthorizedAccessException)
                 {
@@ -107,7 +134,7 @@ internal static class HashCommand
                 continue;
             }
 
-            var size = SafeLength(inputs[i].FullPath);
+            var size = sizes[i];
             lines.AddRange(results[i]!.Select(r => new ChecksumLine(inputs[i].Display, r.Algorithm, r.ToHex(request.LetterCase), size)));
         }
 
@@ -138,8 +165,23 @@ internal static class HashCommand
         var seen = new HashSet<string>(OperatingSystem.IsLinux() ? StringComparer.Ordinal : StringComparer.OrdinalIgnoreCase);
         var options = new FileEnumerationOptions { IncludeHidden = request.IncludeHidden };
         var errors = 0;
+        var readsStandardInput = false;
         foreach (var path in request.Paths)
         {
+            if (path == StandardInput)
+            {
+                if (readsStandardInput)
+                {
+                    error.WriteLine("hashtool: -: standard input can be read only once");
+                    errors++;
+                    continue;
+                }
+
+                readsStandardInput = true;
+                inputs.Add(new Input(StandardInput, StandardInput));
+                continue;
+            }
+
             // Relative input stays relative in the output, like sha256sum; with --output it is relative to that file.
             var displayBase = relativeTo ?? (Path.IsPathRooted(path) ? null : Environment.CurrentDirectory);
             if (Directory.Exists(path))

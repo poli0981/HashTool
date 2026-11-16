@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>قيمة الهاش</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>هاش النص</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>هاش النص</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>اكتب نصاً أو الصقه لعرض الهاش الخاص به بكل خوارزمية. يُحسب الهاش من النص كما هو تماماً، بالترميز وفواصل الأسطر المحددة أدناه، ودون إضافة فاصل أسطر في نهايته.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>النص المراد حساب الهاش له</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>الترميز</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>فواصل الأسطر</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux، macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>الحجم: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>هاش {0}</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>نسخ هاش {0}</value>
+    </data>
 </root>

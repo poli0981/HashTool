@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Хэш мааниси</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Текстти хэштөө</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Текстти хэштөө</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>Ар бир алгоритм боюнча хэшин көрүү үчүн текстти териңиз же чаптаңыз. Текст дал ошол бойдон, төмөндө тандалган коддоо жана сап которуу белгилери менен хэштелет; аягына сап которуу кошулбайт.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Хэштеле турган текст</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>Коддоо</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>Сап которуу</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>Өлчөмү: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0} хэши</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>{0} хэшин көчүрүү</value>
+    </data>
 </root>

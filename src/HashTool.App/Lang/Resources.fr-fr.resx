@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Valeur du hash</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Hacher un texte</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Hacher un texte</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>Saisissez ou collez du texte pour voir son hash avec chaque algorithme. Le texte est haché tel quel, dans l'encodage et avec les sauts de ligne choisis ci-dessous, sans saut de ligne ajouté à la fin.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Texte à hacher</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>Encodage</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>Sauts de ligne</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>Taille : {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>Hash {0}</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>Copier le hash {0}</value>
+    </data>
 </root>

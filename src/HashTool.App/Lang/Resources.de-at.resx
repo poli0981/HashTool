@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Hashwert</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Text hashen</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Text hashen</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>Text eingeben oder einfügen, um seinen Hash für jeden Algorithmus zu sehen. Der Text wird unverändert gehasht, mit Codierung und Zeilenumbrüchen wie unten gewählt, und am Ende wird kein Zeilenumbruch angefügt.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Zu hashender Text</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>Codierung</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>Zeilenumbrüche</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>Größe: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0}-Hash</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>{0}-Hash kopieren</value>
+    </data>
 </root>

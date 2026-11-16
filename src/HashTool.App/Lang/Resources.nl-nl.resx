@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Hashwaarde</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Tekst Hashen</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Tekst Hashen</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>Typ of plak tekst om de hash ervan voor elk algoritme te zien. De tekst wordt gehasht precies zoals hij is, met de hieronder gekozen codering en regeleinden, en zonder extra regeleinde aan het eind.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Te hashen tekst</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>Codering</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>Regeleinden</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>Grootte: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0}-hash</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>{0}-hash kopiëren</value>
+    </data>
 </root>

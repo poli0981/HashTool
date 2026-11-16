@@ -22,9 +22,14 @@ public static class HashToolCommand
     public const int Failure = 1;
     public const int UsageError = 2;
 
-    public static Task<int> RunAsync(string[] args, TextWriter output, TextWriter error, CancellationToken cancellationToken = default)
+    public static Task<int> RunAsync(string[] args, TextWriter output, TextWriter error, CancellationToken cancellationToken = default) =>
+        RunAsync(args, output, error, Console.OpenStandardInput, cancellationToken);
+
+    /// <summary>Runs a command line; <paramref name="openStandardInput"/> supplies what <c>hashtool hash -</c> reads.</summary>
+    public static Task<int> RunAsync(string[] args, TextWriter output, TextWriter error, Func<Stream> openStandardInput,
+        CancellationToken cancellationToken = default)
     {
-        var parseResult = Build(output, error).Parse(args);
+        var parseResult = Build(output, error, openStandardInput).Parse(args);
         if (parseResult.Errors.Count > 0)
         {
             // Short message and exit code 2, like coreutils, instead of the full help text.
@@ -36,10 +41,10 @@ public static class HashToolCommand
         return parseResult.InvokeAsync(new InvocationConfiguration { Output = output, Error = error }, cancellationToken);
     }
 
-    internal static RootCommand Build(TextWriter output, TextWriter error)
+    internal static RootCommand Build(TextWriter output, TextWriter error, Func<Stream> openStandardInput)
     {
         var root = new RootCommand($"Hash Tool {Version} - compute and verify file hashes and checksum files (SHA256SUMS, .md5, .sfv...).");
-        root.Subcommands.Add(HashCommand.Create(output, error));
+        root.Subcommands.Add(HashCommand.Create(output, error, openStandardInput));
         root.Subcommands.Add(VerifyCommand.Create(output, error));
         root.Subcommands.Add(VerifyCommand.CreateCheck(output, error));
         root.Subcommands.Add(CreateAlgorithmsCommand(output));

@@ -1,0 +1,89 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:HashTool.App.ViewModels"
+             xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             x:Class="HashTool.App.Views.TextHashView"
+             x:DataType="vm:TextHashViewModel">
+
+    <Grid RowDefinitions="Auto,Auto,Auto,*">
+        <StackPanel Margin="0,0,0,10">
+            <TextBlock Text="{Binding Localization[Title_HashText]}" FontSize="24" FontWeight="Bold" AutomationProperties.HeadingLevel="1" />
+            <TextBlock Text="{Binding Localization[Help_HashText]}" Classes="secondary" FontSize="12" TextWrapping="Wrap" />
+        </StackPanel>
+
+        <!-- Tab leaves the box (AcceptsTab is off), so the keyboard can always move on to the options and the hashes. -->
+        <StackPanel Grid.Row="1" Spacing="4" Margin="0,0,0,10">
+            <TextBlock Text="{Binding Localization[Lbl_TextToHash]}" FontWeight="SemiBold" />
+            <TextBox x:Name="InputBox" Text="{Binding Text}" AcceptsReturn="True" AcceptsTab="False" TextWrapping="Wrap"
+                     MinHeight="110" MaxHeight="240" ScrollViewer.VerticalScrollBarVisibility="Auto"
+                     AutomationProperties.Name="{Binding Localization[Lbl_TextToHash]}" />
+        </StackPanel>
+
+        <WrapPanel Grid.Row="2" Margin="0,0,0,10" ItemSpacing="16" LineSpacing="8">
+            <StackPanel Orientation="Horizontal" Spacing="6">
+                <TextBlock Text="{Binding Localization[Lbl_TextEncoding]}" VerticalAlignment="Center" />
+                <ComboBox ItemsSource="{Binding Encodings}" SelectedItem="{Binding SelectedEncoding}" MinWidth="120"
+                          AutomationProperties.Name="{Binding Localization[Lbl_TextEncoding]}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Spacing="6">
+                <TextBlock Text="{Binding Localization[Lbl_LineBreaks]}" VerticalAlignment="Center" />
+                <ComboBox ItemsSource="{Binding LineBreaks}" SelectedItem="{Binding SelectedLineBreak}" MinWidth="170"
+                          AutomationProperties.Name="{Binding Localization[Lbl_LineBreaks]}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock>
+                                <TextBlock.Text>
+                                    <MultiBinding Converter="{StaticResource EnumLabelConverter}">
+                                        <Binding />
+                                        <Binding Path="$parent[UserControl].((vm:TextHashViewModel)DataContext).Localization" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </StackPanel>
+            <TextBlock Text="{Binding SizeText}" Classes="secondary" VerticalAlignment="Center" />
+            <ToggleButton IsChecked="{Binding IsRevealed}" Background="Transparent" Padding="4" VerticalAlignment="Center"
+                          IsVisible="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).IsHashMaskingEnabled}"
+                          ToolTip.Tip="{Binding Localization[Tip_HashVisibility]}"
+                          AutomationProperties.Name="{Binding Localization[Tip_HashVisibility]}">
+                <Panel>
+                    <icons:MaterialIcon Kind="EyeOutline" Width="16" Height="16" IsVisible="{Binding !IsRevealed}" />
+                    <icons:MaterialIcon Kind="EyeOffOutline" Width="16" Height="16" IsVisible="{Binding IsRevealed}" />
+                </Panel>
+            </ToggleButton>
+        </WrapPanel>
+
+        <!-- One row per algorithm. Hashes stay left-to-right in right-to-left languages. -->
+        <Border Grid.Row="3" Classes="card" Padding="12,8">
+            <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+                <ItemsControl ItemsSource="{Binding Results}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="vm:TextHashResult">
+                            <Grid ColumnDefinitions="110,*,Auto" Margin="0,2">
+                                <TextBlock Text="{Binding Algorithm}" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <TextBox Grid.Column="1" IsReadOnly="True" FontFamily="Consolas, Menlo, monospace" FontSize="12" BorderThickness="0"
+                                         Background="Transparent" TextWrapping="NoWrap" VerticalAlignment="Center" FlowDirection="LeftToRight"
+                                         AutomationProperties.Name="{Binding HashName}">
+                                    <TextBox.Text>
+                                        <MultiBinding Converter="{StaticResource HashMaskConverter}">
+                                            <Binding Path="Hash" />
+                                            <Binding Path="$parent[Window].((vm:MainWindowViewModel)DataContext).IsHashMaskingEnabled" />
+                                            <Binding Path="$parent[UserControl].((vm:TextHashViewModel)DataContext).IsRevealed" />
+                                        </MultiBinding>
+                                    </TextBox.Text>
+                                </TextBox>
+                                <Button Grid.Column="2" Classes="icon"
+                                        Command="{Binding $parent[UserControl].((vm:TextHashViewModel)DataContext).CopyCommand}"
+                                        CommandParameter="{Binding}" ToolTip.Tip="{Binding CopyName}" AutomationProperties.Name="{Binding CopyName}">
+                                    <icons:MaterialIcon Kind="ContentCopy" Width="16" Height="16" />
+                                </Button>
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

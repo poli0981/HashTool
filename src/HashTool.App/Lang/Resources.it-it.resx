@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Valore hash</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Hash del testo</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Hash del testo</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>Digita o incolla del testo per vederne l'hash con ogni algoritmo. L'hash viene calcolato sul testo così com'è, con la codifica e i fine riga scelti qui sotto, senza aggiungere un a capo alla fine.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Testo di cui calcolare l'hash</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>Codifica</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>Fine riga</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>Dimensione: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>Hash {0}</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>Copia hash {0}</value>
+    </data>
 </root>

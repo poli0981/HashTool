@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Τιμή hash</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Hash κειμένου</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Hash κειμένου</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>Πληκτρολογήστε ή επικολλήστε κείμενο για να δείτε το hash του με κάθε αλγόριθμο. Το hash υπολογίζεται από το κείμενο ακριβώς όπως είναι, με την κωδικοποίηση και τις αλλαγές γραμμής που επιλέγονται παρακάτω, χωρίς να προστίθεται αλλαγή γραμμής στο τέλος.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Κείμενο για υπολογισμό hash</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>Κωδικοποίηση</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>Αλλαγές γραμμής</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>Μέγεθος: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>Hash {0}</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>Αντιγραφή Hash {0}</value>
+    </data>
 </root>

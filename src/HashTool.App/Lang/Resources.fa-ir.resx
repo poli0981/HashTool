@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>مقدار هش</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>هش متن</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>هش متن</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>متن را تایپ یا جایگذاری کنید تا هش آن را با هر الگوریتم ببینید. متن دقیقاً همان‌طور که هست، با کدگذاری و شکست خطی که در پایین انتخاب کرده‌اید، هش می‌شود و در انتهای آن شکست خطی اضافه نمی‌شود.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>متن برای هش کردن</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>کدگذاری</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>شکست خط</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux، macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>اندازه: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>هش {0}</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>کپی هش {0}</value>
+    </data>
 </root>

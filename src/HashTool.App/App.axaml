@@ -15,6 +15,9 @@
         <DataTemplate DataType="vm:CheckHashViewModel">
             <views:CheckHashView />
         </DataTemplate>
+        <DataTemplate DataType="vm:TextHashViewModel">
+            <views:TextHashView />
+        </DataTemplate>
         <DataTemplate DataType="vm:SettingsViewModel">
             <views:SettingsView />
         </DataTemplate>

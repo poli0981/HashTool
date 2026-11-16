@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>해시 값</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>텍스트 해시</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>텍스트 해시</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>텍스트를 입력하거나 붙여넣으면 모든 알고리즘의 해시가 표시됩니다. 텍스트는 아래에서 선택한 인코딩과 줄 바꿈으로 있는 그대로 해시되며, 끝에 줄 바꿈이 추가되지 않습니다.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>해시할 텍스트</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>인코딩</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>줄 바꿈</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>크기: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0} 해시</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>{0} 해시 복사</value>
+    </data>
 </root>

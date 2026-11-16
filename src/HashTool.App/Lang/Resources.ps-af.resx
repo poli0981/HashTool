@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>د هیش ارزښت</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>متن هیش کول</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>متن هیش کول</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>متن ولیکئ یا یې پیسټ کړئ ترڅو د هر الګوریتم لپاره یې هیش وګورئ. متن هماغسې چې دی، د لاندې ټاکل شوې کوډبندۍ او د کرښې ماتولو سره هیش کیږي، او په پای کې یې د کرښې ماتول نه ورزیاتیږي.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>د هیش کولو لپاره متن</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>کوډبندي</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>د کرښې ماتول</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux، macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>اندازه: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>د {0} هیش</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>د {0} هیش کاپي کول</value>
+    </data>
 </root>

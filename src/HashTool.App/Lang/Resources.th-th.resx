@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>ค่าแฮช</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>แฮชข้อความ</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>แฮชข้อความ</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>พิมพ์หรือวางข้อความเพื่อดูค่าแฮชในทุกอัลกอริทึม ข้อความจะถูกแฮชตามที่เป็นอยู่ทุกประการ ด้วยการเข้ารหัสและการขึ้นบรรทัดใหม่ที่เลือกไว้ด้านล่าง โดยไม่เพิ่มการขึ้นบรรทัดใหม่ต่อท้าย</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>ข้อความที่จะแฮช</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>การเข้ารหัส</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>การขึ้นบรรทัดใหม่</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>ขนาด: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>แฮช {0}</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>คัดลอกแฮช {0}</value>
+    </data>
 </root>

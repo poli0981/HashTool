@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Значення хешу</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Хешувати текст</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Хешувати текст</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>Введіть або вставте текст, щоб побачити його хеш для кожного алгоритму. Текст хешується точно як є — з кодуванням і кінцями рядків, вибраними нижче, і без додавання нового рядка в кінці.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Текст для хешування</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>Кодування</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>Кінці рядків</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>Розмір: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>Хеш {0}</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>Копіювати хеш {0}</value>
+    </data>
 </root>

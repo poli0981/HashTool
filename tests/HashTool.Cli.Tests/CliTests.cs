@@ -26,6 +26,20 @@ public sealed class CliTests : IDisposable
         return (exitCode, output.ToString(), error.ToString());
     }
 
+    /// <summary>Runs with <paramref name="input"/> as standard input; counts how often it is opened.</summary>
+    private static async Task<(int ExitCode, string Output, string Error, int Opened)> RunWithInputAsync(string input, params string[] args)
+    {
+        using var output = new StringWriter { NewLine = "\n" };
+        using var error = new StringWriter { NewLine = "\n" };
+        var opened = 0;
+        var exitCode = await HashToolCommand.RunAsync(args, output, error, () =>
+        {
+            opened++;
+            return new MemoryStream(System.Text.Encoding.UTF8.GetBytes(input), writable: false);
+        }, TestContext.Current.CancellationToken);
+        return (exitCode, output.ToString(), error.ToString(), opened);
+    }
+
     [Fact]
     public async Task Hash_SingleFile_PrintsGnuLine()
     {
@@ -36,6 +50,50 @@ public sealed class CliTests : IDisposable
         Assert.Equal(0, exitCode);
         Assert.Equal($"{Sha256Of123456789}  {Shown(file)}\n", output);
         Assert.Empty(error);
+    }
+
+    [Fact]
+    public async Task Hash_Dash_ReadsStandardInput()
+    {
+        var (exitCode, output, error, opened) = await RunWithInputAsync("hello", "hash", "-");
+
+        Assert.Equal(0, exitCode);
+        Assert.Equal($"{Sha256OfHello}  -\n", output);
+        Assert.Empty(error);
+        Assert.Equal(1, opened);
+    }
+
+    [Fact]
+    public async Task Hash_Dash_WorksWithFilesAndSeveralAlgorithms()
+    {
+        var file = _temp.File("check.txt", "123456789");
+
+        var (exitCode, output, _, _) = await RunWithInputAsync("123456789", "hash", "-a", "sha256,crc32", file, "-");
+
+        Assert.Equal(0, exitCode);
+        Assert.Contains($"SHA256 (-) = {Sha256Of123456789}", output, StringComparison.OrdinalIgnoreCase);
+        Assert.Contains("CRC32 (-) = CBF43926", output, StringComparison.OrdinalIgnoreCase);
+        Assert.Contains($"SHA256 ({Shown(file)}) = {Sha256Of123456789}", output, StringComparison.OrdinalIgnoreCase);
+    }
+
+    [Fact]
+    public async Task Hash_Dash_JsonReportsTheBytesRead()
+    {
+        var (exitCode, output, _, _) = await RunWithInputAsync("hello", "hash", "-f", "json", "-");
+
+        Assert.Equal(0, exitCode);
+        Assert.Contains("\"size\": 5", output, StringComparison.Ordinal);
+    }
+
+    [Fact]
+    public async Task Hash_DashTwice_ReadsStandardInputOnce()
+    {
+        var (exitCode, output, error, opened) = await RunWithInputAsync("hello", "hash", "-", "-");
+
+        Assert.Equal(1, exitCode);
+        Assert.Equal($"{Sha256OfHello}  -\n", output);
+        Assert.Contains("standard input can be read only once", error, StringComparison.Ordinal);
+        Assert.Equal(1, opened);
     }
 
     [Fact]

@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Hodnota hashe</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Hashovat text</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Hashovat text</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>Napište nebo vložte text a zobrazí se jeho hash pro každý algoritmus. Text se hashuje přesně tak, jak je, v kódování a s konci řádků zvolenými níže, bez přidání nového řádku na konci.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Text k hashování</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>Kódování</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>Konce řádků</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>Velikost: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>Hash {0}</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>Kopírovat hash {0}</value>
+    </data>
 </root>

@@ -84,6 +84,13 @@
                                         <TextBlock Grid.Column="1" Text="{Binding Localization[Menu_Check]}" VerticalAlignment="Center" FontWeight="SemiBold" />
                                     </Grid>
                                 </Button>
+                                <Button Classes="nav" Classes.active="{Binding CurrentPageName, Converter={x:Static ObjectConverters.Equal}, ConverterParameter=Text}" Command="{Binding NavigateCommand}" CommandParameter="Text"
+                                        AutomationProperties.Name="{Binding Localization[Menu_HashText]}">
+                                    <Grid ColumnDefinitions="52,*">
+                                        <icons:MaterialIcon Kind="FormatText" Width="22" Height="22" />
+                                        <TextBlock Grid.Column="1" Text="{Binding Localization[Menu_HashText]}" VerticalAlignment="Center" FontWeight="SemiBold" />
+                                    </Grid>
+                                </Button>
                                 <Button Classes="nav" Classes.active="{Binding CurrentPageName, Converter={x:Static ObjectConverters.Equal}, ConverterParameter=Settings}" Command="{Binding NavigateCommand}" CommandParameter="Settings" IsEnabled="{Binding IsIdle}"
                                         AutomationProperties.Name="{Binding Localization[Menu_Settings]}">
                                     <Grid ColumnDefinitions="52,*">

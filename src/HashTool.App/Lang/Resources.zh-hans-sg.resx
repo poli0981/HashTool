@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>哈希值</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>文本哈希</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>文本哈希</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>输入或粘贴文本，即可查看它在每种算法下的哈希值。文本会按原样进行哈希，使用下方选择的编码和换行符，末尾不会添加换行符。</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>要计算哈希的文本</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>编码</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>换行符</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>大小：{0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0} 哈希值</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>复制 {0} 哈希值</value>
+    </data>
 </root>

@@ -30,7 +30,7 @@ namespace HashTool.App.Tests;
 [Collection(SharedStateCollection.Name)]
 public sealed class AccessibilityTests
 {
-    private static readonly string[] Pages = ["Create", "Check", "Settings", "Update", "About", "Developer"];
+    private static readonly string[] Pages = ["Create", "Check", "Text", "Settings", "Update", "About", "Developer"];
 
     /// <summary>A shown main window with two files on Generate and Verify; cleans up after itself.</summary>
     private sealed class Screen : IAsyncDisposable

@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Вредност на хешот</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Хеш на текст</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Хеш на текст</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>Внесете или залепете текст за да го видите неговиот хеш за секој алгоритам. Хешот се пресметува од текстот токму таков каков што е, со кодирањето и прекините на ред избрани подолу, без да се додава нов ред на крајот.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Текст за хеширање</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>Кодирање</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>Прекини на ред</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>Големина: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>Хеш {0}</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>Копирај Хеш {0}</value>
+    </data>
 </root>

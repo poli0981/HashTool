@@ -48,6 +48,12 @@ More: [About](docs/images/about.png) · [Update](docs/images/update.png) · [Dev
 - Paste an expected hash, or drop a hash file onto a row; the algorithm is guessed from the file name or the hash length when needed.
 - Clear results: **VALID**, **MISMATCH**, missing files, access denied, files in use, time-outs.
 
+### Hash Text
+
+- Type or paste text and see its hash in every algorithm, updated as you type, with a copy button for each.
+- Choose UTF-8 or UTF-16 and LF or CRLF line breaks; nothing is added at the end, so the result matches
+  `printf '%s' 'text' | sha256sum`.
+
 ### Everything else
 
 - **11 algorithms**: MD5, SHA-1, SHA-256, SHA-384, SHA-512, BLAKE3, xxHash32, xxHash64, XXH3, XXH128, CRC32 (MD5 and SHA-1 are fine for detecting corruption, not for security).
@@ -89,6 +95,7 @@ hashtool hash -r ./dist -o ./dist/SHA256SUMS     # every file in a folder, paths
 hashtool hash -a sha256,blake3 big.iso           # several algorithms, one read (BSD tagged output)
 hashtool verify SHA256SUMS                       # like sha256sum -c: exit 0 = all OK, 1 = mismatch/missing
 hashtool check big.iso -e 4f2c…                  # one file against one hash (algorithm guessed from length)
+printf '%s' 'hello' | hashtool hash -           # text from standard input
 hashtool algorithms
 ```
 
