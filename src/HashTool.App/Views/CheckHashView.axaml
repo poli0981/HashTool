@@ -15,6 +15,9 @@
             </StackPanel>
             <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Spacing="2">
                 <TextBlock Text="{Binding TotalFilesText}" Classes="secondary" HorizontalAlignment="Right" IsVisible="{Binding !IsBusy}" />
+                <!-- The result of a one-file run, announced by screen readers (a run of several files ends with a dialog). -->
+                <TextBlock Text="{Binding Announcement}" FontWeight="SemiBold" HorizontalAlignment="Right" MaxWidth="420"
+                           TextTrimming="CharacterEllipsis" AutomationProperties.LiveSetting="Polite" />
                 <TextBlock Text="{Binding ProgressText}" FontWeight="Bold" HorizontalAlignment="Right" IsVisible="{Binding IsBusy}" />
                 <TextBlock Text="{Binding DetailText}" FontSize="11" HorizontalAlignment="Right" IsVisible="{Binding IsBusy}" />
                 <TextBlock Text="{Binding SpeedText}" FontSize="11" Classes="status" HorizontalAlignment="Right" IsVisible="{Binding IsBusy}" />
@@ -22,8 +25,10 @@
         </Grid>
 
         <WrapPanel Grid.Row="1" Margin="0,0,0,10" ItemSpacing="8" LineSpacing="8">
-            <Button Content="{Binding Localization[Btn_AddFiles]}" Command="{Binding AddFilesCommand}" ToolTip.Tip="Ctrl+O" />
-            <Button Content="{Binding Localization[Btn_AddFolder]}" Command="{Binding AddFolderCommand}" ToolTip.Tip="Ctrl+Shift+O" />
+            <Button Content="{Binding Localization[Btn_AddFiles]}" Command="{Binding AddFilesCommand}"
+                    ToolTip.Tip="{x:Static controls:Shortcuts.AddFiles}" AutomationProperties.AcceleratorKey="{x:Static controls:Shortcuts.AddFiles}" />
+            <Button Content="{Binding Localization[Btn_AddFolder]}" Command="{Binding AddFolderCommand}"
+                    ToolTip.Tip="{x:Static controls:Shortcuts.AddFolder}" AutomationProperties.AcceleratorKey="{x:Static controls:Shortcuts.AddFolder}" />
             <Button Content="{Binding Localization[Btn_OpenChecksumFile]}" Command="{Binding OpenChecksumFileCommand}" IsEnabled="{Binding CanModify}" />
             <StackPanel Orientation="Horizontal" Spacing="6" IsEnabled="{Binding CanModify}">
                 <TextBlock Text="{Binding Localization[Lbl_DefaultAlgorithm]}" VerticalAlignment="Center" />
@@ -31,9 +36,11 @@
                           AutomationProperties.Name="{Binding Localization[Lbl_DefaultAlgorithm]}" />
             </StackPanel>
             <Button x:Name="RunAllButton" Content="{Binding Localization[Btn_CheckAll]}" Classes="accent" Command="{Binding RunAllCommand}"
-                    IsVisible="{Binding !IsBusy}" ToolTip.Tip="Ctrl+Enter" controls:FocusHandOff.Target="{Binding #CancelButton}" />
+                    IsVisible="{Binding !IsBusy}" ToolTip.Tip="{x:Static controls:Shortcuts.RunAll}"
+                    AutomationProperties.AcceleratorKey="{x:Static controls:Shortcuts.RunAll}" controls:FocusHandOff.Target="{Binding #CancelButton}" />
             <Button x:Name="CancelButton" Content="{Binding Localization[Btn_Cancel]}" Command="{Binding CancelCommand}" IsVisible="{Binding IsBusy}"
-                    ToolTip.Tip="Esc" controls:FocusHandOff.Target="{Binding #RunAllButton}" />
+                    ToolTip.Tip="{x:Static controls:Shortcuts.Cancel}" AutomationProperties.AcceleratorKey="{x:Static controls:Shortcuts.Cancel}"
+                    controls:FocusHandOff.Target="{Binding #RunAllButton}" />
             <TextBlock Text="{Binding RemainingText}" VerticalAlignment="Center" FontWeight="SemiBold" IsVisible="{Binding IsBusy}" />
             <Button Content="{Binding Localization[Btn_Clear]}" Command="{Binding ClearListCommand}" IsVisible="{Binding HasItems}" />
             <Button Content="{Binding Localization[Btn_ClearHashes]}" Command="{Binding ClearResultsCommand}" IsVisible="{Binding HasItems}" />
@@ -43,7 +50,7 @@
         <Grid Grid.Row="2" ColumnDefinitions="*,Auto,Auto" Margin="0,0,0,8" IsVisible="{Binding HasItems}">
             <TextBox x:Name="SearchBox" Text="{Binding SearchText}" PlaceholderText="{Binding Localization[Watermark_Search]}"
                      MaxWidth="420" HorizontalAlignment="Left" MinWidth="200"
-                     AutomationProperties.Name="{Binding Localization[Watermark_Search]}" />
+                     AutomationProperties.Name="{Binding Localization[Watermark_Search]}" AutomationProperties.AcceleratorKey="{x:Static controls:Shortcuts.Search}" />
             <ComboBox Grid.Column="1" ItemsSource="{Binding StatusFilterOptions}" SelectedItem="{Binding SelectedStatusFilter}"
                       MinWidth="150" Margin="8,0,0,0" AutomationProperties.Name="{Binding Localization[Lbl_FilterStatus]}">
                 <ComboBox.ItemTemplate>
@@ -103,10 +110,10 @@
                     <DataTemplate x:DataType="vm:FileItem">
                         <Grid ColumnDefinitions="3*,Auto,5*,2*,Auto" Margin="0,2">
                             <StackPanel VerticalAlignment="Center" Margin="0,0,10,0" ToolTip.Tip="{Binding FilePath}" MinWidth="140">
-                                <controls:HighlightTextBlock Text="{Binding FileName}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis"
+                                <controls:HighlightTextBlock Text="{Binding FileName}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" FlowDirection="LeftToRight"
                                                              HighlightText="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).SearchText}"
                                                              HighlightBrush="{DynamicResource SystemAccentColor}" />
-                                <TextBlock Text="{Binding DirectoryName}" FontSize="10" Classes="secondary" TextTrimming="LeadingCharacterEllipsis" />
+                                <TextBlock Text="{Binding DirectoryName}" FontSize="10" Classes="secondary" TextTrimming="LeadingCharacterEllipsis" FlowDirection="LeftToRight" />
                             </StackPanel>
 
                             <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="0,0,10,0" MinWidth="86">
@@ -116,10 +123,10 @@
                                            IsVisible="{Binding Duration, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
                             </StackPanel>
 
-                            <Grid Grid.Column="2" ColumnDefinitions="*,Auto,Auto" VerticalAlignment="Center" MinWidth="180" Margin="0,0,8,0">
+                            <Grid Grid.Column="2" ColumnDefinitions="*,Auto,Auto" RowDefinitions="Auto,Auto" VerticalAlignment="Center" MinWidth="180" Margin="0,0,8,0">
                                 <Panel>
                                     <!-- Masked display when hash masking is on and the row is not revealed. -->
-                                    <TextBlock FontFamily="Consolas, Menlo, monospace" FontSize="11" VerticalAlignment="Center" Margin="6,0">
+                                    <TextBlock FontFamily="Consolas, Menlo, monospace" FontSize="11" VerticalAlignment="Center" Margin="6,0" FlowDirection="LeftToRight">
                                         <TextBlock.Text>
                                             <MultiBinding Converter="{StaticResource HashMaskConverter}">
                                                 <Binding Path="ExpectedHash" />
@@ -134,10 +141,10 @@
                                             </MultiBinding>
                                         </TextBlock.IsVisible>
                                     </TextBlock>
-                                    <TextBox Classes="hashInput" Text="{Binding ExpectedHash}" FontFamily="Consolas, Menlo, monospace" FontSize="11"
+                                    <TextBox Classes="hashInput" Text="{Binding ExpectedHash}" FontFamily="Consolas, Menlo, monospace" FontSize="11" FlowDirection="LeftToRight"
                                              PlaceholderText="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Watermark_PasteDrop]}"
                                              DragDrop.AllowDrop="True" VerticalAlignment="Center"
-                                             AutomationProperties.Name="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Watermark_PasteDrop]}">
+                                             AutomationProperties.Name="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Lbl_ExpectedHash]}">
                                         <TextBox.IsVisible>
                                             <MultiBinding Converter="{x:Static BoolConverters.Or}">
                                                 <Binding Path="!$parent[Window].((vm:MainWindowViewModel)DataContext).IsHashMaskingEnabled" />
@@ -164,13 +171,35 @@
                                         AutomationProperties.Name="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Tip_BrowseHash]}">
                                     <icons:MaterialIcon Kind="FileFind" Width="18" Height="18" Foreground="{DynamicResource StatusInfoBrush}" />
                                 </Button>
+                                <!-- On a mismatch, the hash the file really has, under the expected one: readable and focusable, not only
+                                     in the status tooltip. -->
+                                <TextBox Grid.Row="1" Grid.ColumnSpan="3" IsReadOnly="True" FontFamily="Consolas, Menlo, monospace" FontSize="11"
+                                         BorderThickness="0" Background="Transparent" TextWrapping="NoWrap" FlowDirection="LeftToRight"
+                                         IsVisible="{Binding Status, Converter={x:Static conv:StatusSeverity.IsMismatch}}"
+                                         ToolTip.Tip="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Lbl_ComputedHash]}"
+                                         AutomationProperties.Name="{Binding $parent[ListBox].((vm:CheckHashViewModel)DataContext).Localization[Lbl_ComputedHash]}">
+                                    <TextBox.Text>
+                                        <MultiBinding Converter="{StaticResource HashMaskConverter}">
+                                            <Binding Path="ResultHash" />
+                                            <Binding Path="$parent[Window].((vm:MainWindowViewModel)DataContext).IsHashMaskingEnabled" />
+                                            <Binding Path="IsRevealed" />
+                                        </MultiBinding>
+                                    </TextBox.Text>
+                                </TextBox>
                             </Grid>
 
                             <TextBlock Grid.Column="3" Classes="status" VerticalAlignment="Center" TextWrapping="Wrap" FontSize="12" FontWeight="SemiBold"
-                                       ToolTip.Tip="{Binding ResultHash}"
                                        Classes.success="{Binding Status, Converter={x:Static conv:StatusSeverity.IsSuccess}}"
                                        Classes.error="{Binding Status, Converter={x:Static conv:StatusSeverity.IsError}}"
                                        Classes.warning="{Binding Status, Converter={x:Static conv:StatusSeverity.IsWarning}}">
+                                <!-- The computed hash, masked like everywhere else when hash masking is on. -->
+                                <ToolTip.Tip>
+                                    <MultiBinding Converter="{StaticResource HashMaskConverter}">
+                                        <Binding Path="ResultHash" />
+                                        <Binding Path="$parent[Window].((vm:MainWindowViewModel)DataContext).IsHashMaskingEnabled" />
+                                        <Binding Path="IsRevealed" />
+                                    </MultiBinding>
+                                </ToolTip.Tip>
                                 <TextBlock.Text>
                                     <MultiBinding Converter="{StaticResource StatusTextConverter}">
                                         <Binding Path="Status" />

@@ -456,7 +456,7 @@
                                 <ToggleButton IsChecked="{Binding ShowConfigPath}" Content="{Binding Localization[Settings_ShowPath]}" />
                             </StackPanel>
                             <Grid ColumnDefinitions="*,Auto" Width="360" IsVisible="{Binding ShowConfigPath}">
-                                <TextBox Text="{Binding ConfigFilePath, Mode=OneWay}" IsReadOnly="True" Margin="0,0,6,0"
+                                <TextBox Text="{Binding ConfigFilePath, Mode=OneWay}" IsReadOnly="True" Margin="0,0,6,0" FlowDirection="LeftToRight"
                                          AutomationProperties.Name="{Binding Localization[Settings_ConfigPath]}" />
                                 <Button Grid.Column="1" Classes="icon" Command="{Binding CopyConfigPathCommand}"
                                         ToolTip.Tip="{Binding Localization[Tip_CopyPath]}"

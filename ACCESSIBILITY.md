@@ -1,6 +1,6 @@
 # Accessibility
 
-**Last reviewed: November 2026 (Hash Tool 1.2.3)**
+**Last reviewed: November 2026 (Hash Tool 1.3.0)**
 
 Hash Tool should work for everyone who needs to check a file: with a keyboard alone, with a screen reader, with large
 text or high contrast, and in their own language. This page describes what works today, what does not work yet, and how
@@ -40,11 +40,16 @@ options and to each algorithm's hash and copy button.
 | Delete | Remove the selected row |
 | Enter, in a dialog | The highlighted button (OK, Yes) |
 
+Tooltips show a button's shortcut in your platform's notation (⌘O on macOS), and screen readers announce it with the
+button.
+
 **Screen readers.** Every button, box, list and row has a translated name: icon buttons are named after their action
 ("Copy Hash", "Remove File") and rows after their file name. Page titles and section titles are headings, and the
 navigation pane and the page are landmarks, so you can jump between them. The update and notice banners and the status
-on the Update page are announced when they change. After a run with several files, a summary dialog opens and takes the
-focus.
+on the Update page are announced when they change. After a run of one file, its result (for example "photo.jpg: VALID")
+is announced and shown at the top of the page; after a run with several files, a summary dialog opens and takes the
+focus. When a file does not match, Verify shows the hash it really has under the expected one, in a box you can focus
+and copy.
 
 **Results in words, not only colour.** Every status is text: **VALID**, **MISMATCH!**, *Access denied*, *Timed out* and
 so on. Search matches are shown in bold as well as in colour.
@@ -57,8 +62,8 @@ least 3:1; automated tests check this. Settings has the font, a font size from 1
 **No mouse or drag and drop needed.** Everything you can drop has a button too: **Add Files…**, **Add Folder…**,
 **Open Checksum File…**, and **Browse** for the expected hash of a row. You can also paste the expected hash.
 
-**Language.** The app comes in 67 languages, with right-to-left layouts for Arabic, Persian, Hebrew, Dhivehi and Pashto.
-It picks your system language automatically.
+**Language.** The app comes in 67 languages, with right-to-left layouts for Arabic, Persian, Hebrew, Dhivehi and Pashto,
+in which hashes, file names and paths keep their left-to-right order. It picks your system language automatically.
 
 **Motion and sound.** The only animation is a 0.3-second colour fade when the theme changes. The app makes no sounds,
 and nothing flashes.
@@ -76,7 +81,7 @@ and nothing flashes.
 
 | Platform | Assistive technology | Status |
 |---|---|---|
-| Windows 10 and 11 | Keyboard only, Narrator | Tested by the maintainer with Hash Tool 1.2 (November 2026). The 1.2.3 fixes were checked with automated tests and with the UI Automation tree that screen readers read. |
+| Windows 10 and 11 | Keyboard only (mouse turned off), Narrator | Tested by the maintainer on Windows 11 with Hash Tool 1.2.3 (November 2026); no problems found. The 1.3.0 changes were checked with automated tests and with the UI Automation tree that screen readers read. |
 | Windows 10 and 11 | NVDA, JAWS | Expected to work, since they read the same UI Automation tree as Narrator. Not tested regularly; reports are welcome. |
 | macOS (Apple silicon and Intel) | VoiceOver | Not tested yet. Avalonia exposes the app to macOS accessibility. |
 | Linux (x64 AppImage) | Orca | Not tested yet. Avalonia's AT-SPI support is newer and may be incomplete. |
@@ -86,8 +91,8 @@ and nothing flashes.
 
 These are known problems, with a workaround where one exists. Please report anything else.
 
-- **Progress is not read aloud during a run.** Each row shows its status as text, and a run with several files ends
-  with a summary dialog. After a single file, move to its row to hear the result.
+- **Progress is not read aloud during a run.** Each row shows its status as text, the result of a run of one file is
+  announced, and a run with several files ends with a summary dialog.
 - **The app does not follow the system's contrast themes** (Windows contrast themes, macOS *Increase contrast*). Choose
   *Settings → Theme style → High Contrast*. Standard controls such as buttons and the focus rectangle keep the colours
   of the Fluent theme.
@@ -96,12 +101,9 @@ These are known problems, with a workaround where one exists. Please report anyt
 - **The Developer console uses fixed colours** (light text on a dark background) in every theme.
 - **The Glassmorphism style and the translucent window background** (Windows and macOS) depend on what is behind the
   window. Pick another style if text is hard to read.
-- **Tooltips appear on mouse hover only.** On Verify, the computed hash is only in the tooltip of the status; Generate
-  shows it in a text box you can focus and copy.
+- **Tooltips appear on mouse hover only.** What they show is also on screen or announced: a button's shortcut, a file's
+  folder, and on Verify the computed hash of a file that does not match.
 - **Dialogs cannot be moved with the keyboard.** They open centred over the main window.
-- **Hashes and paths are not forced left-to-right** in right-to-left layouts, so they may be displayed in the wrong
-  direction.
-- **Shortcuts in tooltips say Ctrl on macOS too.** Use ⌘.
 - **Most translations were made with AI assistance**, including the names screen readers announce. Corrections from
   native speakers are welcome.
 - **The command-line tool is in English only.**
@@ -111,7 +113,8 @@ These are known problems, with a workaround where one exists. Please report anyt
 
 Open an issue with the
 [Accessibility issue form](https://github.com/poli0981/HashTool/issues/new?template=accessibility.yml). If the form is
-hard to use, a plain issue or a post in [Discussions](https://github.com/poli0981/HashTool/discussions) is fine too.
+hard to use, a plain issue or a post in [Discussions](https://github.com/poli0981/HashTool/discussions) is fine too. If
+you cannot use GitHub, email [accessibility@poli0981.dev](mailto:accessibility@poli0981.dev).
 
 Helpful details:
 
@@ -149,13 +152,18 @@ When you change the UI:
   while focused hands the focus on with `controls:FocusHandOff.Target`; lists with controls in their rows use
   `controls:RowTabNavigation.IsEnabled`.
 - Never use colour as the only signal. New colours in `ThemePalettes` keep 4.5:1 for text and 3:1 for icons.
+- Hashes, file names and paths get `FlowDirection="LeftToRight"`, so right-to-left languages do not reorder them.
+- Shortcut texts come from `controls:Shortcuts` (tooltip and `AutomationProperties.AcceleratorKey`), never a literal
+  "Ctrl+…".
 - Page titles use `AutomationProperties.HeadingLevel="1"`; section titles use the `sectionTitle` class.
 - Add new text to every language with `python -I eng/loc.py set` (see [CONTRIBUTING.md](CONTRIBUTING.md)).
 
 Testing:
 
 - **Automated:** `tests/HashTool.App.Tests/AccessibilityTests.cs` checks names on every page in two languages, headings,
-  Tab inside file rows, focus when buttons swap, and the contrast of every theme. CI runs it on Windows, macOS and Linux.
+  Tab inside file rows, focus when buttons swap, left-to-right hashes and paths in Arabic, the computed hash and the
+  announced result of a mismatch, shortcut notation, and the contrast of every theme. CI runs it on Windows, macOS and
+  Linux.
 - **By hand, for UI changes:** one pass with the keyboard only, a quick check with a screen reader (Narrator:
   Win+Ctrl+Enter; VoiceOver: ⌘+F5; Orca on Linux), UI scale 2.0, and the High Contrast style.
   [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/windows/overview/) shows what screen

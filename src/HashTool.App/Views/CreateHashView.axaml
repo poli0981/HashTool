@@ -16,6 +16,9 @@
             </StackPanel>
             <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Spacing="2">
                 <TextBlock Text="{Binding TotalFilesText}" Classes="secondary" HorizontalAlignment="Right" IsVisible="{Binding !IsBusy}" />
+                <!-- The result of a one-file run, announced by screen readers (a run of several files ends with a dialog). -->
+                <TextBlock Text="{Binding Announcement}" FontWeight="SemiBold" HorizontalAlignment="Right" MaxWidth="420"
+                           TextTrimming="CharacterEllipsis" AutomationProperties.LiveSetting="Polite" />
                 <TextBlock Text="{Binding ProgressText}" FontWeight="Bold" HorizontalAlignment="Right" IsVisible="{Binding IsBusy}" />
                 <TextBlock Text="{Binding DetailText}" FontSize="11" HorizontalAlignment="Right" IsVisible="{Binding IsBusy}" />
                 <TextBlock Text="{Binding SpeedText}" FontSize="11" Classes="status" HorizontalAlignment="Right" IsVisible="{Binding IsBusy}" />
@@ -24,8 +27,10 @@
 
         <!-- Toolbar -->
         <WrapPanel Grid.Row="1" Margin="0,0,0,10" ItemSpacing="8" LineSpacing="8">
-            <Button Content="{Binding Localization[Btn_AddFiles]}" Command="{Binding AddFilesCommand}" ToolTip.Tip="Ctrl+O" />
-            <Button Content="{Binding Localization[Btn_AddFolder]}" Command="{Binding AddFolderCommand}" ToolTip.Tip="Ctrl+Shift+O" />
+            <Button Content="{Binding Localization[Btn_AddFiles]}" Command="{Binding AddFilesCommand}"
+                    ToolTip.Tip="{x:Static controls:Shortcuts.AddFiles}" AutomationProperties.AcceleratorKey="{x:Static controls:Shortcuts.AddFiles}" />
+            <Button Content="{Binding Localization[Btn_AddFolder]}" Command="{Binding AddFolderCommand}"
+                    ToolTip.Tip="{x:Static controls:Shortcuts.AddFolder}" AutomationProperties.AcceleratorKey="{x:Static controls:Shortcuts.AddFolder}" />
             <StackPanel Orientation="Horizontal" Spacing="6" IsEnabled="{Binding CanModify}">
                 <TextBlock Text="{Binding Localization[Lbl_Algorithm]}" VerticalAlignment="Center" />
                 <ComboBox ItemsSource="{Binding Algorithms}" SelectedItem="{Binding SelectedAlgorithm}" MinWidth="130"
@@ -45,9 +50,11 @@
                 </Button.Flyout>
             </Button>
             <Button x:Name="RunAllButton" Content="{Binding Localization[Btn_CalcAll]}" Classes="accent" Command="{Binding RunAllCommand}"
-                    IsVisible="{Binding !IsBusy}" ToolTip.Tip="Ctrl+Enter" controls:FocusHandOff.Target="{Binding #CancelButton}" />
+                    IsVisible="{Binding !IsBusy}" ToolTip.Tip="{x:Static controls:Shortcuts.RunAll}"
+                    AutomationProperties.AcceleratorKey="{x:Static controls:Shortcuts.RunAll}" controls:FocusHandOff.Target="{Binding #CancelButton}" />
             <Button x:Name="CancelButton" Content="{Binding Localization[Btn_Cancel]}" Command="{Binding CancelCommand}" IsVisible="{Binding IsBusy}"
-                    ToolTip.Tip="Esc" controls:FocusHandOff.Target="{Binding #RunAllButton}" />
+                    ToolTip.Tip="{x:Static controls:Shortcuts.Cancel}" AutomationProperties.AcceleratorKey="{x:Static controls:Shortcuts.Cancel}"
+                    controls:FocusHandOff.Target="{Binding #RunAllButton}" />
             <TextBlock Text="{Binding RemainingText}" VerticalAlignment="Center" FontWeight="SemiBold" IsVisible="{Binding IsBusy}" />
             <Button Content="{Binding Localization[Btn_Clear]}" Command="{Binding ClearListCommand}" IsVisible="{Binding HasItems}" />
             <Button Content="{Binding Localization[Btn_ClearHashes]}" Command="{Binding ClearResultsCommand}" IsVisible="{Binding HasItems}" />
@@ -58,7 +65,7 @@
         <Grid Grid.Row="2" ColumnDefinitions="*,Auto,Auto" Margin="0,0,0,8" IsVisible="{Binding HasItems}">
             <TextBox x:Name="SearchBox" Text="{Binding SearchText}" PlaceholderText="{Binding Localization[Watermark_Search]}"
                      MaxWidth="420" HorizontalAlignment="Left" MinWidth="200"
-                     AutomationProperties.Name="{Binding Localization[Watermark_Search]}" />
+                     AutomationProperties.Name="{Binding Localization[Watermark_Search]}" AutomationProperties.AcceleratorKey="{x:Static controls:Shortcuts.Search}" />
             <ComboBox Grid.Column="1" ItemsSource="{Binding StatusFilterOptions}" SelectedItem="{Binding SelectedStatusFilter}"
                       MinWidth="150" Margin="8,0,0,0" AutomationProperties.Name="{Binding Localization[Lbl_FilterStatus]}">
                 <ComboBox.ItemTemplate>
@@ -119,10 +126,10 @@
                     <DataTemplate x:DataType="vm:FileItem">
                         <Grid ColumnDefinitions="3*,Auto,Auto,4*,2*,Auto" Margin="0,2">
                             <StackPanel VerticalAlignment="Center" Margin="0,0,10,0" ToolTip.Tip="{Binding FilePath}" MinWidth="140">
-                                <controls:HighlightTextBlock Text="{Binding FileName}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis"
+                                <controls:HighlightTextBlock Text="{Binding FileName}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" FlowDirection="LeftToRight"
                                                              HighlightText="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).SearchText}"
                                                              HighlightBrush="{DynamicResource SystemAccentColor}" />
-                                <TextBlock Text="{Binding DirectoryName}" FontSize="10" Classes="secondary" TextTrimming="LeadingCharacterEllipsis" />
+                                <TextBlock Text="{Binding DirectoryName}" FontSize="10" Classes="secondary" TextTrimming="LeadingCharacterEllipsis" FlowDirection="LeftToRight" />
                             </StackPanel>
 
                             <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="0,0,10,0" MinWidth="76">
@@ -144,7 +151,7 @@
 
                             <Grid Grid.Column="3" ColumnDefinitions="*,Auto,Auto" VerticalAlignment="Center" MinWidth="160">
                                 <Panel>
-                                    <TextBox IsReadOnly="True" FontFamily="Consolas, Menlo, monospace" FontSize="11" BorderThickness="0"
+                                    <TextBox IsReadOnly="True" FontFamily="Consolas, Menlo, monospace" FontSize="11" BorderThickness="0" FlowDirection="LeftToRight"
                                              Background="Transparent" TextWrapping="NoWrap" IsVisible="{Binding !ShowProgress}"
                                              AutomationProperties.Name="{Binding $parent[ListBox].((vm:CreateHashViewModel)DataContext).Localization[Lbl_HashValue]}">
                                         <TextBox.Text>

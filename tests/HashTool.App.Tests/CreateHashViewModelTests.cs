@@ -58,6 +58,24 @@ public sealed class CreateHashViewModelTests
     private const string HelloMd5 = "5d41402abc4b2a76b9719d911017c592";
 
     [AvaloniaFact]
+    public async Task ARunOfOneFile_IsAnnounced_ARunOfSeveralShowsTheSummaryInstead()
+    {
+        using var page = new CreatePage();
+        var localization = TestServices.Localization;
+
+        await page.HashAsync(("one.txt", "hello"));
+        Assert.Equal(localization.Format("Msg_RowResult", "one.txt", localization["Status_Done"]), page.Vm.Announcement);
+        Assert.Empty(page.Dialogs.Shown);
+
+        await page.HashAsync(("two.txt", "hello"));
+        Assert.Null(page.Vm.Announcement);
+        Assert.Single(page.Dialogs.Shown);
+
+        await page.Vm.ClearListCommand.ExecuteAsync(null);
+        Assert.Null(page.Vm.Announcement);
+    }
+
+    [AvaloniaFact]
     public async Task ExportsOneChecksumFile_WithPathsRelativeToIt()
     {
         using var page = new CreatePage();
