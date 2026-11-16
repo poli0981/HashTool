@@ -24,7 +24,7 @@ body:
     attributes:
       label: Hash Tool version
       description: Shown on the About page.
-      placeholder: "1.2.0"
+      placeholder: "1.3.0"
     validations:
       required: true
   - type: dropdown

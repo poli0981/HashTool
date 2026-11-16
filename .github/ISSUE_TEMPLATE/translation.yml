@@ -1,0 +1,52 @@
+name: Translation problem
+description: Wrong, misleading or culturally inappropriate wording, or a typo that changes the meaning, in one language.
+labels: [translation]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Thank you! Most of Hash Tool's 67 languages were translated with AI assistance, so corrections from native
+        speakers are very welcome. Keep "Hash Tool" and placeholders such as {0} as they are. You can also open a pull
+        request: see "Translations" in
+        [CONTRIBUTING.md](https://github.com/poli0981/HashTool/blob/main/CONTRIBUTING.md#translations).
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      placeholder: "Vietnamese (vi-VN)"
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where in the app?
+      placeholder: "Verify Hash, the status of a row"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current text
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: suggested
+    attributes:
+      label: Suggested text
+      render: text
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: What is wrong with it?
+      multiple: true
+      options:
+        - Wrong or misleading meaning
+        - Unnatural or not how people say it here
+        - Culturally inappropriate
+        - Spelling or grammar
+        - Something else
+    validations:
+      required: true
