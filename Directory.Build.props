@@ -30,6 +30,13 @@
         -->
         <EnableCustomCulture>true</EnableCustomCulture>
 
+        <!--
+            Restore only the runtime packs of the frameworks a project really references. Otherwise every project with a
+            runtime identifier (the NativeAOT CLI) also downloads the ASP.NET Core and Windows Desktop runtime packs, which
+            Hash Tool never ships, and their security advisories show up as alerts for this repository.
+        -->
+        <DisableTransitiveFrameworkReferenceDownloads>true</DisableTransitiveFrameworkReferenceDownloads>
+
         <!-- ReferenceTrimmer reports package and project references that are never used. -->
         <ReferenceTrimmerUseSymbolAnalysis>true</ReferenceTrimmerUseSymbolAnalysis>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>

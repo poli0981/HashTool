@@ -29,6 +29,13 @@ updates:
       # xunit.v3 4.x breaks Avalonia.Headless.XUnit (AvaloniaUI/Avalonia#22072).
       - dependency-name: "xunit.v3*"
         update-types: ["version-update:semver-major"]
+      # These follow the .NET major version the app targets (.NET 10 LTS); move them together with the SDK.
+      - dependency-name: "Microsoft.Extensions.*"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "System.IO.Hashing"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "System.CommandLine"
+        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: dotnet-sdk
     directory: /
@@ -38,6 +45,10 @@ updates:
     # Wait a week after a release before proposing it (security updates are not delayed).
     cooldown:
       default-days: 7
+    ignore:
+      # Stay on .NET 10 (LTS) until the move to a new major version is made on purpose.
+      - dependency-name: "dotnet-sdk"
+        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: github-actions
     directory: /
