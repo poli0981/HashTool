@@ -63,3 +63,7 @@ Run the app or smoke test with `HASHTOOL_DATA_DIR` pointing at a scratch folder 
 - `codeql.yml` — CodeQL advanced setup, mirroring default setup (actions, csharp, python; build mode none; default
   suite; `/language:` categories) but also analysing Dependabot pull requests. The `Analyze (…)` job names are required
   checks. Default setup must stay off: while it is on, it rejects uploads from workflows.
+- `qodana.yml` — JetBrains Qodana for .NET (Ultimate licence, `qodana-dotnet` in native mode, settings in `qodana.yaml`):
+  results in Qodana Cloud, as annotations and a pull request comment, and in the `qodana-report` artifact
+  (`gh run download <run> -n qodana-report`, then read `qodana.sarif.json`). Skipped when `QODANA_TOKEN` isn't
+  available (forks, Dependabot); not a required check.

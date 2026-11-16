@@ -1,0 +1,18 @@
+# Qodana for .NET (Ultimate licence), run by .github/workflows/qodana.yml.
+version: "1.0"
+
+# Native mode: analyses with the .NET SDK installed on the runner instead of the one bundled in the Docker image.
+linter: qodana-dotnet
+withinDocker: false
+
+profile:
+  name: qodana.recommended
+
+dotnet:
+  solution: HashTool.slnx
+
+exclude:
+  - name: All
+    paths:
+      # Pinned to Velopack 0.0.1298 on purpose: the release upgrade gate runs it like a Hash Tool 1.1.x client.
+      - tests/Compat
