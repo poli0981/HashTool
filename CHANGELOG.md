@@ -2,7 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [1.3.0] - 2026-11-16
+
+The last feature release: a **Hash Text** page, accessibility fixes and the .NET 10.0.15 security update. From this version on, Hash Tool is in maintenance mode.
 
 ### Added
 - **Hash Text** page: type or paste text and see its hash in every algorithm, updated as you type, with a copy button for each. Choose UTF-8 or UTF-16 and LF or CRLF line breaks; nothing is added at the end, so the SHA-256 matches `printf '%s' 'text' | sha256sum`. Suggested in [Discussions #23](https://github.com/poli0981/HashTool/discussions/23). This is Hash Tool's last new feature: from 1.3.0 on, the project is in maintenance mode.
