@@ -67,6 +67,7 @@ public sealed partial class SingleInstance : IDisposable
         request ??= new ActivationRequest(ActivationVerb.Auto, []);
         var deadline = DateTime.UtcNow + timeout;
         var delay = 50;
+        Span<byte> header = stackalloc byte[4];
         while (DateTime.UtcNow < deadline)
         {
             try
@@ -75,7 +76,6 @@ public sealed partial class SingleInstance : IDisposable
                 client.Connect(Math.Max(100, (int)(deadline - DateTime.UtcNow).TotalMilliseconds));
                 if (OperatingSystem.IsWindows()) AllowSetForegroundWindow(-1);
                 var payload = JsonSerializer.SerializeToUtf8Bytes(new PipeMessage(request.Verb, [.. request.Paths]), PipeJsonContext.Default.PipeMessage);
-                Span<byte> header = stackalloc byte[4];
                 BinaryPrimitives.WriteInt32LittleEndian(header, payload.Length);
                 client.Write(header);
                 client.Write(payload);
@@ -180,9 +180,9 @@ public sealed partial class SingleInstance : IDisposable
         _stop.Dispose();
     }
 
+    // Returns whether it worked; there is nothing to do when it did not.
     [LibraryImport("user32.dll")]
-    [return: MarshalAs(UnmanagedType.Bool)]
-    private static partial bool AllowSetForegroundWindow(int processId);
+    private static partial void AllowSetForegroundWindow(int processId);
 
     /// <summary>Wire format; a single constructor so the source-generated serializer can create it.</summary>
     internal sealed record PipeMessage(ActivationVerb Verb, string[] Paths);

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -42,6 +43,9 @@ internal sealed record LanguageEntry(string Name, string Code);
 /// </summary>
 public sealed partial class LocalizationService : ObservableObject
 {
+    /// <summary>Raised for <c>Localization[Key]</c> bindings: every translated string may have changed.</summary>
+    private static readonly PropertyChangedEventArgs IndexerChanged = new("Item[]");
+
     private static readonly Dictionary<string, string> PreferredVariants = new(StringComparer.OrdinalIgnoreCase)
     {
         ["zh"] = "zh-Hans-CN",
@@ -153,7 +157,7 @@ public sealed partial class LocalizationService : ObservableObject
         Culture = ApplyCulture(code);
         _cache.Clear();
         RefreshAutoName();
-        OnPropertyChanged("Item[]");
+        OnPropertyChanged(IndexerChanged);
         LanguageChanged?.Invoke(this, EventArgs.Empty);
     }
 

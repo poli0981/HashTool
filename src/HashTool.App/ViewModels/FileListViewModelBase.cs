@@ -14,7 +14,6 @@ using HashTool.App.Infrastructure;
 using HashTool.App.Models;
 using HashTool.App.Services;
 using HashTool.Core.Files;
-using HashTool.Core.Hashing;
 using HashTool.Core.Processing;
 using Microsoft.Extensions.Logging;
 
@@ -113,7 +112,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
 
     protected LocalizationService L => Services.Localization;
 
-    protected Core.Configuration.AppSettings Settings => Services.Settings.Current;
+    protected AppSettings Settings => Services.Settings.Current;
 
     /// <summary>Visible (filtered) items.</summary>
     public AvaloniaList<FileItem> Items { get; } = [];
@@ -527,7 +526,7 @@ public abstract partial class FileListViewModelBase : ObservableObject, IHashJob
     protected async Task OfferElevationAsync(IReadOnlyList<FileItem> items)
     {
         if (!Elevation.CanRestartElevated || !items.Any(i => i.Status == ItemStatus.AccessDenied)) return;
-        if (!await Services.Dialogs.ConfirmAsync(L["Btn_RestartAdmin"], L["Msg_AccessDeniedRestart"], DialogIcon.Question)) return;
+        if (!await Services.Dialogs.ConfirmAsync(L["Btn_RestartAdmin"], L["Msg_AccessDeniedRestart"])) return;
         if (Elevation.RestartElevated(ElevationVerb, _all.Select(i => SourcePathForRestart(i)).Distinct(_byPath.Comparer).ToList()))
             RequestShutdown?.Invoke(this, EventArgs.Empty);
     }

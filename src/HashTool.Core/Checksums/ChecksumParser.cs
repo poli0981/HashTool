@@ -196,7 +196,7 @@ public static partial class ChecksumParser
         hash = HashMatcher.Normalize(hash);
         if (!HashMatcher.IsHex(hash)) return false;
 
-        HashType? algorithm = null;
+        HashType algorithm;
         var guessed = false;
         if (explicitType is { } e && HashAlgorithms.HexLength(e) == hash.Length) algorithm = e;
         else if (explicitType is not null) return false;

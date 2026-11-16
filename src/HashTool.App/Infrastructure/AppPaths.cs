@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using HashTool.Core.Configuration;
 
 namespace HashTool.App.Infrastructure;
 

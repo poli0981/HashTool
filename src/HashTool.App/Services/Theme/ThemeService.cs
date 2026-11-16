@@ -4,7 +4,6 @@ using Avalonia.Platform;
 using Avalonia.Styling;
 using Avalonia.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
-using HashTool.Core.Configuration;
 
 namespace HashTool.App.Services.Theme;
 

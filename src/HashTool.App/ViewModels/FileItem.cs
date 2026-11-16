@@ -3,7 +3,6 @@ using System.IO;
 using System.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
 using HashTool.App.Models;
-using HashTool.Core.Hashing;
 
 namespace HashTool.App.ViewModels;
 
@@ -58,7 +57,7 @@ public sealed partial class FileItem : ObservableObject
 
     public long Size { get; }
 
-    public string SizeText => Core.ByteSize.Format(Size);
+    public string SizeText => ByteSize.Format(Size);
 
     [ObservableProperty] private HashType _algorithm;
 

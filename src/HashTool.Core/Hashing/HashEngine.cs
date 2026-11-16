@@ -74,15 +74,16 @@ public sealed class HashEngine(HashEngineOptions? options = null)
         ArgumentNullException.ThrowIfNull(algorithms);
         if (algorithms.Count == 0) throw new ArgumentException("At least one algorithm is required.", nameof(algorithms));
 
-        var functions = new HashFunction[algorithms.Count];
+        // Only the functions created so far are disposed if creating one of them fails.
+        var functions = new List<HashFunction>(algorithms.Count);
         var current = ArrayPool<byte>.Shared.Rent(bufferSize);
         var next = ArrayPool<byte>.Shared.Rent(bufferSize);
         ValueTask<int> pendingRead = default;
         var readInFlight = false;
         try
         {
-            for (var i = 0; i < functions.Length; i++)
-                functions[i] = HashFunction.Create(algorithms[i], _options.Blake3ParallelThreshold);
+            foreach (var algorithm in algorithms)
+                functions.Add(HashFunction.Create(algorithm, _options.Blake3ParallelThreshold));
 
             pendingRead = stream.ReadAsync(current.AsMemory(0, bufferSize), cancellationToken);
             readInFlight = true;
@@ -101,8 +102,8 @@ public sealed class HashEngine(HashEngineOptions? options = null)
                 (current, next) = (next, current);
             }
 
-            var results = new HashResult[functions.Length];
-            for (var i = 0; i < functions.Length; i++)
+            var results = new HashResult[functions.Count];
+            for (var i = 0; i < functions.Count; i++)
                 results[i] = new HashResult(algorithms[i], functions[i].GetHash());
             return results;
         }
@@ -121,20 +122,20 @@ public sealed class HashEngine(HashEngineOptions? options = null)
                 }
             }
 
-            foreach (var function in functions) function?.Dispose();
+            foreach (var function in functions) function.Dispose();
             ArrayPool<byte>.Shared.Return(current);
             ArrayPool<byte>.Shared.Return(next);
         }
     }
 
-    private static void Append(HashFunction[] functions, byte[] buffer, int count)
+    private static void Append(List<HashFunction> functions, byte[] buffer, int count)
     {
-        if (functions.Length == 1)
+        if (functions.Count == 1)
         {
             functions[0].Append(buffer.AsSpan(0, count));
             return;
         }
 
-        Parallel.For(0, functions.Length, i => functions[i].Append(buffer.AsSpan(0, count)));
+        Parallel.For(0, functions.Count, i => functions[i].Append(buffer.AsSpan(0, count)));
     }
 }

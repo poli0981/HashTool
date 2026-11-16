@@ -29,7 +29,8 @@ public static class ChecksumWriter
 {
     public static string Write(IEnumerable<ChecksumLine> lines, ExportFormat format, HexCase letterCase = HexCase.Lower)
     {
-        using var writer = new StringWriter(CultureInfo.InvariantCulture) { NewLine = "\n" };
+        using var writer = new StringWriter(CultureInfo.InvariantCulture);
+        writer.NewLine = "\n";
         Write(writer, lines, format, letterCase);
         return writer.ToString();
     }

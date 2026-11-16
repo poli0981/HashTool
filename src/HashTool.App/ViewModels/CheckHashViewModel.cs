@@ -10,7 +10,6 @@ using HashTool.App.Models;
 using HashTool.App.Services;
 using HashTool.Core.Checksums;
 using HashTool.Core.Files;
-using HashTool.Core.Hashing;
 using HashTool.Core.Processing;
 using Microsoft.Extensions.Logging;
 

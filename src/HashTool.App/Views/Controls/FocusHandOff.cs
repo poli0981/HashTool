@@ -36,7 +36,7 @@ public static class FocusHandOff
         // The target usually becomes visible in the same update, possibly after this control was hidden.
         Dispatcher.UIThread.Post(() =>
         {
-            var focused = topLevel.FocusManager?.GetFocusedElement();
+            var focused = topLevel.FocusManager.GetFocusedElement();
             if ((focused is null || ReferenceEquals(focused, topLevel)) && ReferenceEquals(TopLevel.GetTopLevel(target), topLevel) &&
                 target.IsEffectivelyVisible && target.IsEffectivelyEnabled)
                 target.Focus(NavigationMethod.Tab);

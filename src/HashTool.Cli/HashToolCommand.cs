@@ -7,7 +7,6 @@ using System.Linq;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
-using HashTool.Core.Checksums;
 using HashTool.Core.Hashing;
 
 namespace HashTool.Cli;

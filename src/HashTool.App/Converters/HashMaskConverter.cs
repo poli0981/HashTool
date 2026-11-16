@@ -7,9 +7,9 @@ namespace HashTool.App.Converters;
 
 public class HashMaskConverter : IMultiValueConverter
 {
-    public object? Convert(IList<object?> values, Type targetType, object? parameter, CultureInfo culture)
+    public object Convert(IList<object?> values, Type targetType, object? parameter, CultureInfo culture)
     {
-        if (values == null || values.Count < 3) return "";
+        if (values.Count < 3) return "";
 
         var hash = values[0] as string ?? "";
         var isMaskingEnabled = values[1] as bool? ?? false;
