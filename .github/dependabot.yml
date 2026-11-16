@@ -21,7 +21,7 @@ updates:
       microsoft:
         patterns: ["Microsoft.Extensions.*", "System.*"]
       tests:
-        patterns: ["xunit*", "Microsoft.Testing.*", "BenchmarkDotNet*", "dotnet-coverage"]
+        patterns: ["xunit*", "Microsoft.Testing.*", "BenchmarkDotNet*", "dotnet-coverage", "FsCheck*"]
       # vpk packs the releases that the Velopack library in the app installs: keep both on the same version.
       velopack:
         patterns: ["Velopack", "vpk"]
