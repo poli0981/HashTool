@@ -3,6 +3,11 @@ contact_links:
   - name: Report a security vulnerability
     url: https://github.com/poli0981/HashTool/security/advisories/new
     about: Please report security issues privately, not as public issues.
-  - name: Questions and ideas
-    url: https://github.com/poli0981/HashTool/discussions
-    about: Ask questions or discuss ideas before opening a feature request.
+  - name: Questions
+    url: https://github.com/poli0981/HashTool/discussions/categories/q-a
+    about: Ask how to do something with Hash Tool.
+  - name: Ideas for new features
+    url: https://github.com/poli0981/HashTool/discussions/categories/ideas
+    about: >
+      Hash Tool is in maintenance mode and new features are generally not added. Ideas are still welcome in Discussions;
+      see "Project status" in CONTRIBUTING.md for what is accepted.

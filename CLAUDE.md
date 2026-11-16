@@ -10,6 +10,11 @@ in Vietnamese; reply in Vietnamese unless asked otherwise. Code, comments, commi
 
 Read docs/ARCHITECTURE.md before larger changes and docs/RELEASING.md before touching packaging or the Release workflow.
 
+**Project status: maintenance mode since 1.3.0** (CONTRIBUTING.md, "Project status"). Accepted: security fixes
+(high/critical CVEs in .NET or dependencies get a prompt release), dependency and .NET updates, bug and UI/UX fixes,
+accessibility, translation fixes, adding or removing hash algorithms on real demand. Do not add features unless the
+maintainer explicitly asks; propose them instead.
+
 ## Commands
 
 ```text

@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 - **Hash Text** page: type or paste text and see its hash in every algorithm, updated as you type, with a copy button for each. Choose UTF-8 or UTF-16 and LF or CRLF line breaks; nothing is added at the end, so the SHA-256 matches `printf '%s' 'text' | sha256sum`. Suggested in [Discussions #23](https://github.com/poli0981/HashTool/discussions/23). This is Hash Tool's last new feature: from 1.3.0 on, the project is in maintenance mode.
 - `hashtool hash -` hashes standard input, as `sha256sum -` does.
 
+### Changed
+- Hash Tool is now in **maintenance mode**: security fixes, dependency and .NET updates, bug fixes, accessibility and translation fixes, and hash algorithms when someone needs one, but no new features. See "Project status" in CONTRIBUTING.md. Feature ideas move to Discussions, and there are new issue forms for translation problems and hash algorithm requests.
+- Updated Avalonia to 12.1.6 (including fixes to its screen reader support on macOS and Linux), Microsoft.Extensions and System.IO.Hashing to 10.0.15, System.CommandLine to 2.0.15, and the code analyzers.
+
 ### Fixed
 - Accessibility: in right-to-left languages, hashes, file names and paths keep their left-to-right order.
 - Accessibility: when a file does not match, Verify shows the hash it really has under the expected one, in a box the keyboard and screen readers reach; before, it was only in a tooltip, which also ignored hash masking. The expected-hash box is announced as "Expected hash" instead of its placeholder text.
@@ -17,9 +21,6 @@ All notable changes to this project will be documented in this file.
 
 ### Security
 - Updated to the .NET 10.0.15 runtime, which the self-contained downloads include. It fixes denial of service and elevation of privilege vulnerabilities in .NET (CVE-2026-109475, CVE-2026-105544, CVE-2026-114155, CVE-2026-118747).
-
-### Changed
-- Updated Avalonia to 12.1.6 (including fixes to its screen reader support on macOS and Linux), Microsoft.Extensions and System.IO.Hashing to 10.0.15, System.CommandLine to 2.0.15, and the code analyzers.
 
 ---
 
