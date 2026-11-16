@@ -27,7 +27,8 @@ Priorities, in this order:
 **Keyboard.** Tab and Shift+Tab move between controls, the arrow keys move between rows of a file list, and Enter or
 Space activates the focused control. In a file row, Tab moves through that row's controls (algorithm, hash, copy, save,
 run, clear, remove) and then leaves the list. When a run starts, focus moves from **COMPUTE ALL** / **VERIFY ALL** to
-**Cancel**, and back when it ends.
+**Cancel**, and back when it ends. On **Hash Text**, Enter starts a new line in the text box and Tab moves on to the
+options and to each algorithm's hash and copy button.
 
 | Keys | Action |
 |---|---|

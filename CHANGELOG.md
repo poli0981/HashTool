@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+- **Hash Text** page: type or paste text and see its hash in every algorithm, updated as you type, with a copy button for each. Choose UTF-8 or UTF-16 and LF or CRLF line breaks; nothing is added at the end, so the SHA-256 matches `printf '%s' 'text' | sha256sum`. Suggested in [Discussions #23](https://github.com/poli0981/HashTool/discussions/23). This is Hash Tool's last new feature: from 1.3.0 on, the project is in maintenance mode.
+- `hashtool hash -` hashes standard input, as `sha256sum -` does.
+
 ### Security
 - Updated to the .NET 10.0.15 runtime, which the self-contained downloads include. It fixes denial of service and elevation of privilege vulnerabilities in .NET (CVE-2026-109475, CVE-2026-105544, CVE-2026-114155, CVE-2026-118747).
 

@@ -31,6 +31,17 @@ Results: **VALID**, **MISMATCH!**, *Not a valid … hash* (wrong length or chara
 On Windows, files you cannot read can be retried with **Restart as Administrator** (offered after a run, and in
 Settings). While elevated, Windows blocks drag and drop from Explorer.
 
+### Hash Text
+
+Type or paste text on the **Hash Text** page to see its hash in every algorithm, updated as you type, with a copy
+button for each. The hash is of exactly the text in the box:
+
+- **Encoding** — UTF-8 (the usual choice), UTF-16 LE or UTF-16 BE, without a byte order mark.
+- **Line breaks** — LF (Linux, macOS, `printf` output) or CRLF (Windows text files). Every line break in the text is
+  written that way, whatever Enter inserts.
+- Nothing is added at the end: `printf '%s' 'text' | sha256sum` gives the same SHA-256, while `echo text | sha256sum`
+  also hashes the line break that `echo` adds.
+
 ### Keyboard
 
 | Keys | Action |
@@ -42,7 +53,7 @@ Settings). While elevated, Windows blocks drag and drop from Explorer.
 | Esc | Cancel the run; close a dialog |
 | Delete | Remove the selected row |
 | Up/Down | Move between rows |
-| Tab / Shift+Tab | Next / previous control; in a row, its algorithm, hash and buttons, then out of the list |
+| Tab / Shift+Tab | Next / previous control; in a row, its algorithm, hash and buttons, then out of the list; on Hash Text, out of the text box (Enter starts a new line) |
 | Enter, Space | Press the focused button; in a dialog, Enter presses the highlighted button |
 
 Everything you can drop has a button too (**Add Files…**, **Add Folder…**, **Open Checksum File…**, **Browse** on a
@@ -89,6 +100,7 @@ hashtool algorithms
 
 | Option | Meaning |
 |---|---|
+| `-` (as a path) | `hash`: read standard input instead of a file, once per command: `printf '%s' 'text' \| hashtool hash -`. |
 | `-a, --algorithm` | `sha256` (default), `sha1`, `md5`, `sha384`, `sha512`, `blake3`, `xxhash32`, `xxhash64`, `xxhash3`, `xxhash128`, `crc32`. Repeat or separate with commas: `-a sha256,blake3`. |
 | `-r, --recursive` | Hash every file inside the given folders (links are not followed). |
 | `-f, --format` | Output format. Default: `gnu` for one algorithm, `bsd` for several. |
@@ -107,4 +119,5 @@ Examples:
 hashtool hash -r . -o SHA256SUMS && hashtool verify SHA256SUMS
 hashtool hash -a crc32 -f sfv *.rar > files.sfv
 hashtool check ubuntu.iso -e 3b1c…               # algorithm guessed from the hash length
+printf '%s' 'hello' | hashtool hash -a sha256,md5 -   # text from standard input
 ```

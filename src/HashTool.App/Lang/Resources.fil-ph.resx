@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Halaga ng hash</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>I-hash ang Teksto</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>I-hash ang Teksto</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>Mag-type o mag-paste ng teksto para makita ang hash nito sa bawat algorithm. Iha-hash ang teksto nang eksakto kung ano ito, gamit ang encoding at line break na pinili sa ibaba, nang walang idinadagdag na line break sa dulo.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Tekstong iha-hash</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>Encoding</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>Mga line break</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>Laki: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0} hash</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>Kopyahin ang {0} hash</value>
+    </data>
 </root>

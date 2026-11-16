@@ -51,6 +51,7 @@ public static class AppHost
         services.AddSingleton<FileListServices>();
         services.AddSingleton<CreateHashViewModel>();
         services.AddSingleton<CheckHashViewModel>();
+        services.AddSingleton<TextHashViewModel>();
         services.AddSingleton<SettingsViewModel>();
         services.AddSingleton<UpdateViewModel>();
         services.AddSingleton<AboutViewModel>();

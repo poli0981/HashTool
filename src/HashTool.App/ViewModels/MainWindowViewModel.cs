@@ -23,12 +23,13 @@ public sealed partial class MainWindowViewModel : ObservableObject
     [ObservableProperty] private bool _isPaneOpen = true;
     [ObservableProperty] private string? _noticeText;
 
-    public MainWindowViewModel(CreateHashViewModel create, CheckHashViewModel check, SettingsViewModel settingsPage,
+    public MainWindowViewModel(CreateHashViewModel create, CheckHashViewModel check, TextHashViewModel text, SettingsViewModel settingsPage,
         UpdateViewModel update, AboutViewModel about, DeveloperViewModel developer, SettingsService settings,
         LocalizationService localization, FontService fonts, ThemeService theme, ActivationService activation)
     {
         Create = create;
         Check = check;
+        Text = text;
         SettingsPage = settingsPage;
         Update = update;
         About = about;
@@ -66,6 +67,7 @@ public sealed partial class MainWindowViewModel : ObservableObject
 
     public CreateHashViewModel Create { get; }
     public CheckHashViewModel Check { get; }
+    public TextHashViewModel Text { get; }
     public SettingsViewModel SettingsPage { get; }
     public UpdateViewModel Update { get; }
     public AboutViewModel About { get; }
@@ -95,6 +97,7 @@ public sealed partial class MainWindowViewModel : ObservableObject
     public string CurrentPageName => CurrentPage switch
     {
         CheckHashViewModel => "Check",
+        TextHashViewModel => "Text",
         SettingsViewModel => "Settings",
         UpdateViewModel => "Update",
         AboutViewModel => "About",
@@ -147,10 +150,12 @@ public sealed partial class MainWindowViewModel : ObservableObject
     [RelayCommand]
     private void Navigate(string page)
     {
-        if (IsBusy && page is not ("Create" or "Check")) return;
+        // Hashing text works while a list is busy; the other pages wait until the run ends.
+        if (IsBusy && page is not ("Create" or "Check" or "Text")) return;
         CurrentPage = page switch
         {
             "Check" => Check,
+            "Text" => Text,
             "Settings" => SettingsPage,
             "Update" => Update,
             "About" => About,

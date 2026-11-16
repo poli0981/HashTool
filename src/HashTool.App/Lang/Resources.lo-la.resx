@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>ຄ່າ Hash</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Hash ຂໍ້ຄວາມ</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Hash ຂໍ້ຄວາມ</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>ພິມ ຫຼື ວາງຂໍ້ຄວາມເພື່ອເບິ່ງ Hash ຂອງມັນໃນທຸກອັນກໍຣິທຶມ. ຂໍ້ຄວາມຈະຖືກ Hash ຕາມທີ່ມັນເປັນທຸກປະການ, ດ້ວຍການເຂົ້າລະຫັດ ແລະ ການຂຶ້ນແຖວໃໝ່ທີ່ເລືອກໄວ້ດ້ານລຸ່ມ, ໂດຍບໍ່ເພີ່ມການຂຶ້ນແຖວໃໝ່ຕໍ່ທ້າຍ.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>ຂໍ້ຄວາມທີ່ຈະ Hash</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>ການເຂົ້າລະຫັດ</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>ການຂຶ້ນແຖວໃໝ່</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>ຂະໜາດ: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>Hash {0}</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>ສຳເນົາ Hash {0}</value>
+    </data>
 </root>

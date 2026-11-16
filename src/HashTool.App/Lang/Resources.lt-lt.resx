@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Hash reikšmė</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Teksto Hash</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Teksto Hash</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>Įveskite arba įklijuokite tekstą, kad pamatytumėte jo Hash reikšmę kiekvienu algoritmu. Hash apskaičiuojamas tekstui tiksliai tokiam, koks jis yra, naudojant žemiau pasirinktą koduotę ir eilučių pabaigas; pabaigoje eilutės pabaiga nepridedama.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Tekstas Hash apskaičiavimui</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>Koduotė</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>Eilučių pabaigos</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>Dydis: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0} Hash reikšmė</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>Kopijuoti {0} Hash reikšmę</value>
+    </data>
 </root>

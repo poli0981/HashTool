@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Hash අගය</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>පෙළ Hash කරන්න</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>පෙළ Hash කරන්න</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>සෑම ඇල්ගොරිතමයකින්ම එහි Hash බැලීමට පෙළ ටයිප් කරන්න හෝ අලවන්න. පෙළ පහත තෝරාගත් කේතනය සහ පේළි බිඳීම් සමඟ තිබෙන ආකාරයෙන්ම Hash කෙරෙන අතර, අවසානයට පේළි බිඳීමක් එක් නොකෙරේ.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Hash කළ යුතු පෙළ</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>කේතනය</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>පේළි බිඳීම්</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>ප්‍රමාණය: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0} Hash</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>{0} Hash පිටපත් කරන්න</value>
+    </data>
 </root>

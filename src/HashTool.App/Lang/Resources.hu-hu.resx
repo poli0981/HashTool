@@ -750,4 +750,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Hash érték</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Szöveg Hashelése</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Szöveg Hashelése</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>Írjon be vagy illesszen be szöveget, hogy minden algoritmussal lássa a hashét. A program a szöveget pontosan úgy hasheli, ahogy van, az alább kiválasztott kódolással és sortörésekkel, és nem fűz sortörést a végére.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Hashelendő szöveg</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>Kódolás</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>Sortörések</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>Méret: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0} hash</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>{0} hash másolása</value>
+    </data>
 </root>

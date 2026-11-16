@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Vlera e hash-it</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Hash i tekstit</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Hash i tekstit</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>Shkruani ose ngjitni tekst për të parë hash-in e tij me çdo algoritëm. Hash-i llogaritet nga teksti saktësisht ashtu siç është, me kodimin dhe ndërprerjet e rreshtave të zgjedhura më poshtë, pa shtuar ndërprerje rreshti në fund.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Teksti për hash</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>Kodimi</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>Ndërprerjet e rreshtave</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>Madhësia: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>Hash-i {0}</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>Kopjo hash-in {0}</value>
+    </data>
 </root>

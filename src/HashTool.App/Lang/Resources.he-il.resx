@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>ערך Hash</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Hash לטקסט</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Hash לטקסט</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>הקלד או הדבק טקסט כדי לראות את ה-Hash שלו בכל אלגוריתם. ה-Hash מחושב על הטקסט בדיוק כפי שהוא, בקידוד ובמעברי השורה שנבחרו למטה, בלי להוסיף מעבר שורה בסוף.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>טקסט לחישוב Hash</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>קידוד</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>מעברי שורה</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>גודל: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>Hash של {0}</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>העתק את ה-Hash של {0}</value>
+    </data>
 </root>

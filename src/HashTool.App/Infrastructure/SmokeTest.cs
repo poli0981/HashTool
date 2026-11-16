@@ -73,11 +73,18 @@ public static class SmokeTest
         var main = AppHost.Get<MainWindowViewModel>();
         var window = new MainWindow { DataContext = main };
         window.Show();
-        foreach (var page in new[] { "Check", "Settings", "Update", "About", "Developer", "Create" })
+        foreach (var page in new[] { "Check", "Text", "Settings", "Update", "About", "Developer", "Create" })
         {
             main.NavigateCommand.Execute(page);
             Dispatcher.UIThread.RunJobs();
         }
+
+        // Hash a text.
+        main.Text.Text = "123456789";
+        await main.Text.Pending;
+        var textHash = main.Text.Results.Single(r => r.Algorithm == Core.Hashing.HashType.SHA256).Hash;
+        if (!string.Equals(textHash, Sha256Of123456789, StringComparison.OrdinalIgnoreCase))
+            report.Errors.Add($"Text: unexpected hash {textHash}");
 
         // Every language has its satellite resources and core strings.
         var localization = AppHost.Get<LocalizationService>();

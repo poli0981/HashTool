@@ -750,4 +750,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>ཧེ་ཤ་ གནས་གོང་།</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>ཚིག་ཡིག་ ཧེ་ཤ།</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>ཚིག་ཡིག་ ཧེ་ཤ།</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>ཚིག་ཡིག་ ཡིག་དཔར་རྐྱབ་ ཡང་ན་ སྦྱར་ཞིནམ་ལས་ རྩིས་ཐབས་ རེ་རེ་གི་ ཧེ་ཤ་ བལྟ། ཚིག་ཡིག་འདི་ འོག་ལུ་ གདམ་ཁ་རྐྱབ་ཡོད་པའི་ ཨིན་ཀོ་ཌིང་ དང་ གྲལ་ཐིག་ བར་ཆད་ཚུ་གིས་ ཡོད་དོ་བཟུམ་སྦེ་ ཧེ་ཤ་ བཟོཝ་ཨིན། མཇུག་ལུ་ གྲལ་ཐིག་ བར་ཆད་ ཁ་སྐོང་མི་འབད།</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>ཧེ་ཤ་ བཟོ་ནིའི་ ཚིག་ཡིག</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>ཨིན་ཀོ་ཌིང་།</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>གྲལ་ཐིག་ བར་ཆད།</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>ཚད།: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0} ཧེ་ཤ།</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>{0} ཧེ་ཤ་ འདྲ་བཤུས་རྐྱབ།</value>
+    </data>
 </root>

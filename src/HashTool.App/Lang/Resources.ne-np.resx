@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>ह्यास मान</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>पाठ ह्यास गर्नुहोस्</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>पाठ ह्यास गर्नुहोस्</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>हरेक एल्गोरिदममा यसको ह्यास हेर्न पाठ टाइप गर्नुहोस् वा टाँस्नुहोस्। पाठलाई जस्ताको तस्तै, तल छानिएको इन्कोडिङ र लाइन ब्रेकसहित ह्यास गरिन्छ, र अन्त्यमा कुनै लाइन ब्रेक थपिँदैन।</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>ह्यास गर्ने पाठ</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>इन्कोडिङ</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>लाइन ब्रेक</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>साइज: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0} ह्यास</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>{0} ह्यास प्रतिलिपि गर्नुहोस्</value>
+    </data>
 </root>

@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>តម្លៃ Hash</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Hash អត្ថបទ</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Hash អត្ថបទ</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>វាយ ឬបិទភ្ជាប់អត្ថបទ ដើម្បីមើល Hash របស់វាតាមគ្រប់ក្បួនដោះស្រាយ។ អត្ថបទត្រូវបាន Hash តាមដែលវាមានពិតប្រាកដ ជាមួយការអ៊ិនកូដ និងការចុះបន្ទាត់ដែលបានជ្រើសនៅខាងក្រោម ដោយមិនបន្ថែមការចុះបន្ទាត់នៅខាងចុងទេ។</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>អត្ថបទដែលត្រូវ Hash</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>ការអ៊ិនកូដ</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>ការចុះបន្ទាត់</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>ទំហំ៖ {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>Hash {0}</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>ចម្លង Hash {0}</value>
+    </data>
 </root>

@@ -38,6 +38,7 @@ public sealed class EnumLabelConverter : IMultiValueConverter
                 _ => "Size_All"
             }],
             AppThemeStyle style => localization[$"Theme_{style}"],
+            LineBreak lineBreak => localization[lineBreak == LineBreak.CrLf ? "Lbl_LineBreaksCrLf" : "Lbl_LineBreaksLf"],
             ILabeled labeled => localization[labeled.LabelKey],
             var other => other.ToString()
         };

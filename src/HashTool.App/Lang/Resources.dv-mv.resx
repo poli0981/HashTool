@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>ހޭޝްގެ އަގު</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>ޓެކްސްޓް ހޭޝްކުރޭ</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>ޓެކްސްޓް ހޭޝްކުރޭ</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>ކޮންމެ އަލްގޮރިދަމަކުން ހޭޝް ބެލުމަށް ޓެކްސްޓް ލިޔޭ ނުވަތަ ޕޭސްޓްކުރޭ. ޓެކްސްޓް ހޭޝްކުރެވެނީ އޮތް ގޮތަށް، ތިރީގައި ހޮވާފައިވާ އެންކޯޑިންގ އާއި ލައިން ބްރޭކްތަކާއެކު، ފަހަތަށް ލައިން ބްރޭކެއް އިތުރު ނުކޮށެވެ.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>ހޭޝްކުރާ ޓެކްސްޓް</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>އެންކޯޑިންގ</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>ލައިން ބްރޭކް</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux، macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>ސައިޒު: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0} ހޭޝް</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>{0} ހޭޝް ކޮޕީކުރޭ</value>
+    </data>
 </root>

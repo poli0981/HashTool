@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>雜湊值</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>文字雜湊</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>文字雜湊</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>輸入或貼上文字，即可查看它在每種演算法下的雜湊值。文字會依原樣進行雜湊，使用下方選擇的編碼和換行字元，結尾不會加上換行字元。</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>要計算雜湊的文字</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>編碼</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>換行字元</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>大小：{0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0} 雜湊值</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>複製 {0} 雜湊值</value>
+    </data>
 </root>

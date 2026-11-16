@@ -21,7 +21,7 @@ them up to date).
 
 | Area | Types | Notes |
 |---|---|---|
-| Hashing | `HashEngine`, `HashType`, `HashAlgorithms`, `HashResult`, `HashMatcher` | One read per file for any number of algorithms: double-buffered reads (1 MiB, 4 MiB above 1 GiB), each block fed to every algorithm in parallel; BLAKE3 uses its multi-threaded update for large blocks. CRC32 is big-endian (as 7-Zip/SFV); `HashMatcher` still accepts the reversed order Hash Tool 1.1 wrote. |
+| Hashing | `HashEngine`, `HashType`, `HashAlgorithms`, `HashResult`, `HashMatcher`, `TextHashing` | One read per file for any number of algorithms: double-buffered reads (1 MiB, 4 MiB above 1 GiB), each block fed to every algorithm in parallel; BLAKE3 uses its multi-threaded update for large blocks. CRC32 is big-endian (as 7-Zip/SFV); `HashMatcher` still accepts the reversed order Hash Tool 1.1 wrote. `TextHashing` turns text into the bytes the Hash Text page and `hashtool hash -` hash: UTF-8/UTF-16 without a byte order mark, LF or CRLF line breaks, nothing appended. |
 | Checksum files | `ChecksumParser`, `ChecksumWriter`, `ChecksumDocument`, `ChecksumFileNames` | Reads GNU (`hash  name`, `*name`, escaped names), BSD tagged, SFV, xxhsum `XXH3_` and bare sidecar hashes; writes GNU/BSD/SFV/JSON/CSV. The algorithm comes from the line, then the file name, then the user's choice, then the hash length. Paths may not point to UNC or device locations; CSV output neutralises formulas. |
 | Files | `FileEnumerator`, `FileErrors` | Walks folders without following symbolic links or junctions, skips unreadable folders, optionally hidden files. |
 | Processing | `BatchProcessor`, `HashJob`, `IHashJobObserver<T>` | Small files in parallel (default `min(cores, 4)`), files ≥ 1 GiB in a separate lane, one at a time in HDD mode; per-file time-out; every item is reported exactly once. |
@@ -34,6 +34,7 @@ them up to date).
 - **Views and view models** — compiled bindings everywhere; `App.axaml` maps each view model to its view.
   `FileListViewModelBase` holds what Generate and Verify share: importing (background enumeration, batches of 1000),
   filtering, running a `BatchProcessor` with UI updates pumped every 100 ms, and the summary dialog.
+  `TextHashViewModel` (Hash Text) hashes text in memory with every algorithm, shortly after each change.
 - **Localization** — `LocalizationService` reads the satellite resources, detects the system language, sets the culture
   (including `DefaultThreadCurrentCulture`, so async work keeps it) and right-to-left flow. Views bind
   `Localization[Key]`; view models swap their `LocalizationProxy` when the language changes, which refreshes every
@@ -48,7 +49,7 @@ them up to date).
 
 ## HashTool.Cli
 
-`hashtool hash | verify | check | algorithms`, built on Core. Exit codes follow `sha256sum`: 0 success, 1 failed or
+`hashtool hash | verify | check | algorithms`, built on Core; `hash -` reads standard input. Exit codes follow `sha256sum`: 0 success, 1 failed or
 mismatched file, 2 usage error or unreadable checksum file. Published per platform as a single NativeAOT executable.
 
 ## Tests

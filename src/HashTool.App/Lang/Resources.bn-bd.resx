@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>হ্যাশ মান</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>টেক্সট হ্যাশ করুন</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>টেক্সট হ্যাশ করুন</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>প্রতিটি অ্যালগরিদমে এর হ্যাশ দেখতে টেক্সট টাইপ বা পেস্ট করুন। টেক্সটটি নিচে বেছে নেওয়া এনকোডিং ও লাইন ব্রেকসহ হুবহু যেমন আছে তেমনভাবে হ্যাশ করা হয়, এবং শেষে কোনো লাইন ব্রেক যোগ করা হয় না।</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>হ্যাশ করার টেক্সট</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>এনকোডিং</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>লাইন ব্রেক</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>সাইজ: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0} হ্যাশ</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>{0} হ্যাশ কপি করুন</value>
+    </data>
 </root>

@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Vrijednost heša</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>Heš teksta</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>Heš teksta</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>Upišite ili zalijepite tekst da biste vidjeli njegov heš za svaki algoritam. Heš se računa iz teksta tačno onakvog kakav jeste, u kodiranju i s prelomima redova odabranim ispod, bez dodavanja preloma reda na kraju.</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Tekst za izračun heša</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>Kodiranje</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>Prelomi redova</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>Veličina: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>Heš {0}</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>Kopiraj heš {0}</value>
+    </data>
 </root>

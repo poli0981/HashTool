@@ -749,4 +749,37 @@
     <data name="Lbl_HashValue" xml:space="preserve">
         <value>Hash တန်ဖိုး</value>
     </data>
+    <data name="Menu_HashText" xml:space="preserve">
+        <value>စာသား Hash လုပ်ရန်</value>
+    </data>
+    <data name="Title_HashText" xml:space="preserve">
+        <value>စာသား Hash လုပ်ရန်</value>
+    </data>
+    <data name="Help_HashText" xml:space="preserve">
+        <value>စာသားကို ရိုက်ထည့်ပါ သို့မဟုတ် Paste လုပ်ပါ၊ အယ်လဂိုရီသမ်တိုင်းအတွက် ၎င်း၏ Hash ကို မြင်ရပါမည်။ စာသားကို အောက်တွင် ရွေးထားသော ကုဒ်စနစ်နှင့် စာကြောင်းခွဲဖြင့် ရှိသည့်အတိုင်း အတိအကျ Hash လုပ်ပြီး အဆုံးတွင် စာကြောင်းခွဲ ထပ်မထည့်ပါ။</value>
+    </data>
+    <data name="Lbl_TextToHash" xml:space="preserve">
+        <value>Hash လုပ်မည့် စာသား</value>
+    </data>
+    <data name="Lbl_TextEncoding" xml:space="preserve">
+        <value>ကုဒ်စနစ်</value>
+    </data>
+    <data name="Lbl_LineBreaks" xml:space="preserve">
+        <value>စာကြောင်းခွဲ</value>
+    </data>
+    <data name="Lbl_LineBreaksLf" xml:space="preserve">
+        <value>LF (Linux, macOS)</value>
+    </data>
+    <data name="Lbl_LineBreaksCrLf" xml:space="preserve">
+        <value>CRLF (Windows)</value>
+    </data>
+    <data name="Lbl_TextSize" xml:space="preserve">
+        <value>အရွယ်အစား: {0}</value>
+    </data>
+    <data name="Lbl_AlgorithmHash" xml:space="preserve">
+        <value>{0} Hash</value>
+    </data>
+    <data name="Tip_CopyAlgorithmHash" xml:space="preserve">
+        <value>{0} Hash ကို ကူးယူရန်</value>
+    </data>
 </root>

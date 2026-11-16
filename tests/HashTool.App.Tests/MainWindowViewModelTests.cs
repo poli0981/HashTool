@@ -10,6 +10,7 @@ using HashTool.App.Services;
 using HashTool.App.Services.Theme;
 using HashTool.App.ViewModels;
 using HashTool.Core.Configuration;
+using HashTool.Core.Hashing;
 using HashTool.Core.Tests;
 using Microsoft.Extensions.Logging;
 using Xunit;
@@ -27,6 +28,8 @@ internal sealed class MainPage : IDisposable
         var services = TestServices.Create(Dialogs, Storage, Clipboard, Settings);
         Create = new CreateHashViewModel(services);
         Check = new CheckHashViewModel(services);
+        Text = new TextHashViewModel(new HashEngine(), Settings, Clipboard, TestServices.Localization,
+            TestServices.Loggers.CreateLogger<TextHashViewModel>());
         Theme = new ThemeService();
         var fonts = new FontService(TestServices.Loggers.CreateLogger<FontService>());
         var notInstalled = new UpdateService(TestServices.Loggers.CreateLogger<UpdateService>(), null, new System.Net.Http.HttpClient());
@@ -35,7 +38,7 @@ internal sealed class MainPage : IDisposable
         Update = new UpdateViewModel(notInstalled, Settings, TestServices.Localization, Launcher, TestServices.Loggers.CreateLogger<UpdateViewModel>());
         Developer = new DeveloperViewModel(new LogSink(PathSanitizer.Shared), TestServices.Localization, Clipboard, Storage, Launcher);
         Activation = new ActivationService(TestServices.Loggers.CreateLogger<ActivationService>());
-        Vm = new MainWindowViewModel(Create, Check, SettingsPage, Update, new AboutViewModel(notInstalled, TestServices.Localization, Launcher),
+        Vm = new MainWindowViewModel(Create, Check, Text, SettingsPage, Update, new AboutViewModel(notInstalled, TestServices.Localization, Launcher),
             Developer, Settings, TestServices.Localization, fonts, Theme, Activation);
     }
 
@@ -54,6 +57,8 @@ internal sealed class MainPage : IDisposable
     public CreateHashViewModel Create { get; }
 
     public CheckHashViewModel Check { get; }
+
+    public TextHashViewModel Text { get; }
 
     public ThemeService Theme { get; }
 
@@ -83,7 +88,7 @@ public sealed class MainWindowViewModelTests
 
         foreach (var (name, expected) in new (string, object)[]
                  {
-                     ("Check", page.Check), ("Settings", page.SettingsPage), ("Update", page.Update), ("About", page.Vm.About),
+                     ("Check", page.Check), ("Text", page.Text), ("Settings", page.SettingsPage), ("Update", page.Update), ("About", page.Vm.About),
                      ("Developer", page.Developer), ("Create", page.Create), ("Unknown", page.Create)
                  })
         {
@@ -104,6 +109,8 @@ public sealed class MainWindowViewModelTests
         Assert.Same(page.Create, page.Vm.CurrentPage);
         page.Vm.NavigateCommand.Execute("Check");
         Assert.Same(page.Check, page.Vm.CurrentPage);
+        page.Vm.NavigateCommand.Execute("Text");
+        Assert.Same(page.Text, page.Vm.CurrentPage);
 
         page.Create.IsBusy = false;
         page.Vm.ShowUpdateCommand.Execute(null);
