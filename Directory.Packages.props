@@ -38,5 +38,7 @@
         <!-- xunit.v3 4.x breaks Avalonia.Headless.XUnit (AvaloniaUI/Avalonia#22072); stay on 3.2.x until it is fixed. -->
         <PackageVersion Include="xunit.v3.mtp-v2" Version="3.2.2" />
         <PackageVersion Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.12.0" />
+        <!-- Property-based tests (random input); OpenSSF Scorecard counts them as fuzzing. -->
+        <PackageVersion Include="FsCheck" Version="3.6.0" />
     </ItemGroup>
 </Project>
