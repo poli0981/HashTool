@@ -4,13 +4,23 @@
 [![CI](https://github.com/poli0981/HashTool/actions/workflows/ci.yml/badge.svg)](https://github.com/poli0981/HashTool/actions/workflows/ci.yml)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=poli0981_HashTool&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=poli0981_HashTool)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=poli0981_HashTool&metric=coverage)](https://sonarcloud.io/component_measures?id=poli0981_HashTool&metric=coverage)
+[![Qodana](https://github.com/poli0981/HashTool/actions/workflows/qodana.yml/badge.svg)](https://github.com/poli0981/HashTool/actions/workflows/qodana.yml)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/poli0981/HashTool/badge)](https://scorecard.dev/viewer/?uri=github.com/poli0981/HashTool)
+[![Maintenance mode](https://img.shields.io/badge/status-maintenance%20mode-blue.svg)](#project-status)
+[![.NET 10 LTS](https://img.shields.io/badge/.NET-10%20LTS-512BD4.svg)](https://dotnet.microsoft.com/download/dotnet/10.0)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Downloads](https://img.shields.io/github/downloads/poli0981/HashTool/total.svg)](https://github.com/poli0981/HashTool/releases)
 
 **A friendly desktop app for Windows, macOS and Linux that generates and verifies file hashes and checksum files — no terminal commands required.** A small `hashtool` command-line tool comes along for when you do want the terminal.
 
 Built with C# on .NET 10 and Avalonia UI.
+
+## Project status
+
+**Maintenance mode** since Hash Tool 1.3.0 (November 2026). Hash Tool keeps getting security fixes, dependency and .NET
+updates, bug fixes, accessibility and translation fixes, and new hash algorithms when someone needs one — but no new
+features. Details: [CONTRIBUTING.md](CONTRIBUTING.md#project-status-maintenance-mode) and the
+[announcement](https://github.com/poli0981/HashTool/discussions/categories/announcements).
 
 ## Motivation
 
@@ -125,7 +135,8 @@ How the code is organised: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). How rel
 
 ## Contributing
 
-Bug reports, translations and pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Something hard to
+Bug reports, translation fixes and pull requests within the maintenance scope are welcome — see
+[CONTRIBUTING.md](CONTRIBUTING.md). Something hard to
 use with a keyboard, screen reader or other assistive technology? See [ACCESSIBILITY.md](ACCESSIBILITY.md).
 
 ## Legal Stuff

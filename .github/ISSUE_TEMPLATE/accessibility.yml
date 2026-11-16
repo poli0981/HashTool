@@ -7,7 +7,7 @@ body:
       value: >
         Thanks for reporting this. You do not need to tell us about any disability; describing what gets in your way is
         enough. See [ACCESSIBILITY.md](https://github.com/poli0981/HashTool/blob/main/ACCESSIBILITY.md) for what is
-        already known.
+        already known. If you cannot use GitHub, email accessibility@poli0981.dev instead.
   - type: textarea
     id: barrier
     attributes:
@@ -66,7 +66,7 @@ body:
     attributes:
       label: Hash Tool version
       description: Shown on the About page, or `hashtool --version` for the command-line tool.
-      placeholder: "1.2.3"
+      placeholder: "1.3.0"
     validations:
       required: true
   - type: dropdown

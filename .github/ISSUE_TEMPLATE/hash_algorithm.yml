@@ -1,0 +1,49 @@
+name: Hash algorithm request
+description: Ask for a hash algorithm to be added (or removed) because you need it to check real files.
+labels: [hash-algorithm]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Hash Tool is in maintenance mode: algorithms are added or removed only when someone really needs them. Tell us
+        where the algorithm is used, ideally with a real checksum file. Candidates already considered are listed in
+        [CONTRIBUTING.md](https://github.com/poli0981/HashTool/blob/main/CONTRIBUTING.md#hash-algorithms).
+  - type: dropdown
+    id: change
+    attributes:
+      label: Add or remove?
+      options:
+        - Add an algorithm
+        - Remove an algorithm
+    validations:
+      required: true
+  - type: input
+    id: algorithm
+    attributes:
+      label: Algorithm
+      placeholder: "BLAKE2b-512"
+    validations:
+      required: true
+  - type: textarea
+    id: usage
+    attributes:
+      label: Where is it used?
+      description: Which projects publish checksums with it, which tools create or check them, and what you need to verify.
+      placeholder: "Example: Arch Linux publishes b2sums.txt next to its ISO images; coreutils' b2sum creates them."
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: A checksum file or link
+      description: A link to a published checksum file, or a few lines of one (with the file names if they are public).
+      render: text
+  - type: dropdown
+    id: format
+    attributes:
+      label: Checksum file format
+      multiple: true
+      options:
+        - GNU (hash  file name)
+        - BSD tagged (ALGORITHM (file name) = hash)
+        - Something else (described above)

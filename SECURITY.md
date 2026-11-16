@@ -1,6 +1,6 @@
 # Security Policy for HashTool
 
-**Last updated: October 2026**
+**Last updated: November 2026**
 
 HashTool is a free, open-source desktop application built with C# (.NET 10) and Avalonia UI. It processes files locally, has no server components, and only goes online to check GitHub for updates.
 
@@ -9,12 +9,14 @@ Security fixes are released for the latest minor version only. Installed and por
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.2.x   | :white_check_mark: |
-| < 1.2   | :x:                |
+| 1.3.x   | :white_check_mark: |
+| < 1.3   | :x:                |
+
+Hash Tool is in maintenance mode (see [CONTRIBUTING.md](CONTRIBUTING.md#project-status-maintenance-mode)), which does not change this: vulnerabilities rated *high* or *critical* in the .NET runtime or a dependency, and other serious security problems, get a new release as soon as practical.
 
 ### How releases are protected
 - Releases are built, tested and published by GitHub Actions from the `main` branch; every release includes `SHA256SUMS`, CycloneDX SBOMs and [build provenance attestations](https://docs.github.com/actions/security-for-github-actions/using-artifact-attestations) (`gh attestation verify <file> --repo poli0981/HashTool`).
-- Every pull request is checked for vulnerable NuGet packages, licences, leaked secrets and unsafe workflow patterns, in addition to CodeQL, SonarCloud and OpenSSF Scorecard.
+- Every pull request is checked for vulnerable NuGet packages, licences, leaked secrets and unsafe workflow patterns, in addition to CodeQL, Qodana, SonarCloud and OpenSSF Scorecard.
 - The apps are not code-signed yet, so Windows SmartScreen and macOS Gatekeeper may warn when they are first opened.
 
 ### Reporting a Vulnerability

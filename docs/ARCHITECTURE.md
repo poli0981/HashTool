@@ -69,6 +69,24 @@ the SonarCloud workflow: the C# during a real build, with coverage from the test
 (`dotnet-coverage`), plus the scripts and workflows. Its quality gate ("Sonar way") applies to new code; `bench/` is
 analysed as test code and `eng/` is left out of coverage.
 
+## Adding a hash algorithm
+
+In maintenance mode an algorithm is added only on real demand (CONTRIBUTING.md, "Hash algorithms"). What it touches:
+
+- `HashType`: append only, never rename. Settings store the name (`"SHA256"`), an unknown name resets `config.json`
+  (so would a downgrade after a new algorithm was chosen), and the name is what the UI, the CLI and `-a` show.
+- `HashAlgorithms`: `GuessPriority` (every algorithm must be listed), `Aliases`, `SizeInBytes`, `FileExtension`,
+  `BsdTag`, `IsInsecure`.
+- `HashFunction.Create`: the implementation. `HashEngine` creates every requested function before reading, so one that
+  can fail on some platforms (the SHA-3 of .NET on macOS and Windows 10) breaks unrelated rows: use a managed
+  implementation.
+- `ChecksumFileNames`: extensions and well-known file names (`B2SUMS`…). The Windows context menu uses the same list,
+  and `build/macos/Info.plist` must match it (`PackagingTests`).
+- Digests of the same length become guesses (64 hex digits: SHA-256, BLAKE3…): Verify hashes every candidate in one
+  read, except when the Default algorithm of the page has that length.
+- Tests: `KnownAnswerTests` (published vectors), `EdgeCaseTests` and `CliTests` (both assert that `sha3` is unknown
+  today), `HashMatcherTests`; docs: README, USAGE, `hashtool hash --help`.
+
 ## Benchmarks
 
 ```text
